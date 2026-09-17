@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 469"
+community: "Community 481"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/Community_481
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[SKILL_137]] - `contains` [EXTRACTED]
+- [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/Community_481

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 85"
+location: "L4872"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_85
+---
+
+# .test_two_messages_within_window_send_only_one_mirror()
+
+## Connections
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOwnerMirrorCoalescing]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_85

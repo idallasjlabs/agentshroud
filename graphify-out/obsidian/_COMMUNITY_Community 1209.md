@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer_3]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[Purpose_74]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[README_79]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[Related Skills_80]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[Usage_82]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[dot-agentsskillsi-sec-defenseREADME]] - document - .agents/skills/i-sec-defense/README.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
+- [[Purpose_31]] - document - .agents/skills/i-sec-defense/README.md
+- [[Related Skills_22]] - document - .agents/skills/i-sec-defense/README.md
+- [[Usage_26]] - document - .agents/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 

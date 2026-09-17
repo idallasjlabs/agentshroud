@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Community 322"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Community_322
 ---
 
 # Multiple messages through pipeline concurrently — thread safety.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_concurrent_messages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_322

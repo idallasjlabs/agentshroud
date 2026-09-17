@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.09
 members: 22
 ---
 
 # Community 404
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[.test_allows_env_in_name()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_mixed_quotes()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_question()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_social_phrasing()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_safe_command()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_dollar_env()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_env_pipe()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_printenv()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_proc_environ()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_proc_star_environ()]] - code - gateway/tests/test_env_guard.py
-- [[.test_clean_text_unchanged()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_aws_key()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_github_token()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_multiple_keys()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_openai_key()]] - code - gateway/tests/test_env_guard.py
-- [[Check if command execution should be allowed.      Args         cmd Command to]] - rationale - gateway/security/env_guard.py
-- [[Scrub API keys and sensitive patterns from text output.      Args         text]] - rationale - gateway/security/env_guard.py
-- [[TestCheckCommand]] - code - gateway/tests/test_env_guard.py
-- [[TestScrubOutput]] - code - gateway/tests/test_env_guard.py
-- [[check_command()]] - code - gateway/security/env_guard.py
-- [[scrub_output()]] - code - gateway/security/env_guard.py
-- [[test_env_guard.py]] - code - gateway/tests/test_env_guard.py
+- [[AWS Cloud Management & FinOps Agent_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cost Optimization Priority_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Decision Framework_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Deliverables_3]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS bottleneck vs oversize distinction]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Expertise_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FinOps agent safety model (dry-run default, tiered approval)]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Guardrails_8]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Identity_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Numbered script naming convention (00-99)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[Reports (`.reports`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Required Tags (All Resources)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Script Templates_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tag Audit Process_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tagging Standard_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Workflow_4]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[hermesskillsi-awsSKILL]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,8 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 1063]]
+- 1 edge to [[_COMMUNITY_Community 1133]]
+- 1 edge to [[_COMMUNITY_Community 1062]]
+- 1 edge to [[_COMMUNITY_Community 721]]
 
 ## Top bridge nodes
-- [[check_command()]] - degree 15, connects to 1 community
-- [[scrub_output()]] - degree 8, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent_1]] - degree 16, connects to 4 communities

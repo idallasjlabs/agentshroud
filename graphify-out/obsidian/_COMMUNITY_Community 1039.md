@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.36
+members: 8
 ---
 
 # Community 1039
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.36 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[dot-test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[HostStatus]] - code - gateway/tools/multi_host_test.py
+- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
+- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestClassify_1]] - code - gateway/tests/test_multi_host_test.py
+- [[classify()_1]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,20 @@ members: 7
 TABLE source_file, type FROM #community/Community_1039
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 947]]
+- 4 edges to [[_COMMUNITY_Community 497]]
+- 3 edges to [[_COMMUNITY_Community 911]]
+- 2 edges to [[_COMMUNITY_Community 859]]
+- 2 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Community 764]]
+- 1 edge to [[_COMMUNITY_Community 860]]
+- 1 edge to [[_COMMUNITY_Community 1300]]
+- 1 edge to [[_COMMUNITY_Community 1158]]
+- 1 edge to [[_COMMUNITY_Community 1040]]
+
+## Top bridge nodes
+- [[HostStatus]] - degree 18, connects to 10 communities
+- [[classify()_1]] - degree 8, connects to 3 communities
+- [[TestClassify_1]] - degree 7, connects to 2 communities

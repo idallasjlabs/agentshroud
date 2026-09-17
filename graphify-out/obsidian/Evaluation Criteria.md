@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Community 781"
+community: "Community 823"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_781
+  - community/Community_823
 ---
 
 # Evaluation Criteria
 
 ## Connections
-- [[Context_1]] - `contains` [EXTRACTED]
+- [[Context_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_781
+#graphify/document #graphify/EXTRACTED #community/Community_823

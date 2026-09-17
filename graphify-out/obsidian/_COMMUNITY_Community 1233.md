@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Incident Response (INCIDENT)_1]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Purpose_98]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[README_103]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Usage_108]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Purpose_51]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Related Skills_42]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Usage_46]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[hermesskillsi-mcREADME]] - document - docker/config/hermes/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)
 

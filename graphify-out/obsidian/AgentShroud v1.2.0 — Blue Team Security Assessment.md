@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 924"
+community: "Community 971"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_971
 ---
 
 # AgentShroud v1.2.0 — Blue Team Security Assessment
@@ -23,4 +23,4 @@ tags:
 - [[§7 — Summary Table]] - `contains` [EXTRACTED]
 - [[§8 — Regression Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_924
+#graphify/document #graphify/EXTRACTED #community/Community_971

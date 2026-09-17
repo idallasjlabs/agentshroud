@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.24
+cohesion: 0.13
 members: 15
 ---
 
 # Community 644
 
-**Cohesion:** 0.24 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._filter_msg()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.setup_method()_7]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_aws_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_clean_message_unchanged()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_credit_card_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_filter_always_returns_true()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_openai_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_password_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_secret_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_ssn_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_telegram_bot_token_in_url_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_telegram_bot_token_shorter_id_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_token_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_user_path_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[TestLogSanitizer]] - code - gateway/tests/test_log_sanitizer.py
+- [[Configuration  Environment Variables_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Function Details_22]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Hash Chain Structure_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Related_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_644
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 2 edges to [[_COMMUNITY_Community 95]]
-
-## Top bridge nodes
-- [[TestLogSanitizer]] - degree 17, connects to 2 communities
-- [[.setup_method()_7]] - degree 2, connects to 1 community

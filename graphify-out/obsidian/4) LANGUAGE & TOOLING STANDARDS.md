@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 280"
+community: "Community 324"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_324
 ---
 
 # 4) LANGUAGE & TOOLING STANDARDS
@@ -20,4 +20,4 @@ tags:
 - [[Python]] - `contains` [EXTRACTED]
 - [[Python Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_280
+#graphify/document #graphify/EXTRACTED #community/Community_324

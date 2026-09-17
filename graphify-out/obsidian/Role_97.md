@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 659"
+community: "Community 920"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/Community_920
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/Community_920

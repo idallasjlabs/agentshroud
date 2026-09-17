@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.10
 members: 23
 ---
 
 # Community 387
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Architecture_6]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Endpoints]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Injection vectors explicitly covered]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Key points the Cisco finding implies]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Module Status Summary]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P0 Fix Pre-Existing Test Failures ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P2 Credential Isolation via op-proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P3 Channel Ownership — Telegram + Email ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P4 Wire MCP Proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P5 Wire SecurityPipeline to forward ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[PII Detection]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Roadmap_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[SECURITY_PLAN]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[What Security Experts Will See]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Why This Matters_3]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[dot-__init__()_140]] - code - gateway/security/audit_store.py
+- [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
+- [[dot-_get_latest_hash()]] - code - gateway/security/audit_store.py
+- [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
+- [[dot-compute_entry_hash()]] - code - gateway/security/audit_store.py
+- [[dot-log_event()_2]] - code - gateway/security/audit_store.py
+- [[dot-test_content_hash()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_event_creation()]] - code - gateway/tests/test_audit_export.py
+- [[dot-to_dict()_11]] - code - gateway/security/audit_store.py
+- [[dot-verify_hash_chain()]] - code - gateway/security/audit_store.py
+- [[AuditEvent]] - code - gateway/security/audit_store.py
+- [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
+- [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
+- [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
+- [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
+- [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
+- [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
+- [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
+- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +40,17 @@ members: 23
 TABLE source_file, type FROM #community/Community_387
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 15 edges to [[_COMMUNITY_Community 112]]
+- 2 edges to [[_COMMUNITY_Community 675]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 1397]]
+- 1 edge to [[_COMMUNITY_Community 906]]
+
+## Top bridge nodes
+- [[AuditEvent]] - degree 25, connects to 5 communities
+- [[dot-log_event()_2]] - degree 5, connects to 1 community
+- [[dot-verify_hash_chain()]] - degree 4, connects to 1 community
+- [[dot-_get_latest_hash()]] - degree 3, connects to 1 community
+- [[dot-test_content_hash()]] - degree 3, connects to 1 community

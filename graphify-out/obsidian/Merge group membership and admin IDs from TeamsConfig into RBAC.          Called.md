@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Merge group membership and admin IDs from TeamsConfig into RBAC.          Called
 
 ## Connections
-- [[.wire_teams_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-wire_teams_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1143
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation]] - document - .agents/skills/i-browser/README.md
-- [[Purpose_4]] - document - .agents/skills/i-browser/README.md
-- [[README_4]] - document - .agents/skills/i-browser/README.md
-- [[Related Skills_4]] - document - .agents/skills/i-browser/README.md
-- [[Usage_5]] - document - .agents/skills/i-browser/README.md
+- [[Agent Trust Levels (UNTRUSTED, BASIC, STANDARD, TRUSTED, ADMIN)]] - concept - docs/flows/state-diagrams.md
+- [[AgentShroud State Diagrams (doc)]] - document - docs/flows/state-diagrams.md
+- [[Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)]] - concept - docs/flows/state-diagrams.md
+- [[Diagram 16 State — Approval Queue]] - image - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - concept - docs/flows/state-diagrams.md
+- [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - concept - docs/flows/state-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

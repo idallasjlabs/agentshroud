@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 231"
+community: "Community 144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Community_144
 ---
 
 # Skills Guide (catalog)
@@ -19,6 +19,6 @@ tags:
 - [[Pull Request Generator (README)]] - `references` [EXTRACTED]
 - [[Quality Assurance (README)]] - `references` [EXTRACTED]
 - [[System Audit Documentation (README)]] - `references` [EXTRACTED]
-- [[incident-response]] - `references` [EXTRACTED]
+- [[operationsincident-response]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Community_144

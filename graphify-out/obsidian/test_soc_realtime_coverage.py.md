@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
+- [[Action]] - `imports` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Resource_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[Resource]] - `imports` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
-- [[SCLCaller]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
+- [[SCLCaller_1]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
@@ -38,10 +38,10 @@ tags:
 - [[TestTokenStorePruning]] - `contains` [EXTRACTED]
 - [[TestVerifyBearer]] - `contains` [EXTRACTED]
 - [[TestWSSOCEndpoint]] - `contains` [EXTRACTED]
-- [[WSEvent]] - `imports` [EXTRACTED]
+- [[WSEvent_1]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

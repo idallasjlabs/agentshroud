@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Configuration  Environment Variables_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Function Details_7]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Purpose_128]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Related_12]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Responsibilities_12]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Security Notes_6]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Approval Router — `gatewayingest_apiroutesapproval.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Core  Root — main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Dashboard API Router — `gatewaywebdashboard_endpoints.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Dashboard Router — `gatewayingest_apiroutesdashboard.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Environment Variables Used_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Forward Router — `gatewayingest_apiroutesforward.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Health Router — `gatewayingest_apirouteshealth.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Key Dependencies — Modules Wired at Init]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Lifespan  Startup]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Overview_13]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Security Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[main.py_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +40,9 @@ members: 23
 TABLE source_file, type FROM #community/Community_382
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 253]]
+
+## Top bridge nodes
+- [[main.py_1]] - degree 13, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.png"
 type: "image"
-community: "Community 604"
+community: "Community 184"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/Community_184
 ---
 
 # Observability Map Diagram
@@ -16,4 +16,4 @@ tags:
 - [[Phase 5 — Stability Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams]] - `references` [EXTRACTED]
 - [[What Is Instrumented (bot apihealth, gateway status and ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_604
+#graphify/image #graphify/EXTRACTED #community/Community_184

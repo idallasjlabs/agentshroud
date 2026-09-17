@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Code Review (CR)_1]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[Purpose_81]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[README_86]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[Related Skills_87]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[Usage_90]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
+- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
+- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
+- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
+- [[security__init__.py]] - code - gateway/security/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

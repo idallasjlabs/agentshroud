@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.20
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 757
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[AgentShroud Red Team Assessment — Live Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[CIS Docker Benchmark 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Container Security Profile 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Deep Integration Test 3637 (97%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Expected v0.7.0 Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Identified Gaps (Steve Hay's Assessment)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Module Status 3333 Active]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Sprint Status]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Test Environment]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Unit Tests 1953 passed, 0 failures]] - document - docs/planning/redteam/live-assessment-results.md
+- [[live-assessment-results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.6.0 Baseline Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.7.0 Remediation (In Progress)]] - document - docs/planning/redteam/live-assessment-results.md
 
 ## Live Query (requires Dataview plugin)
 

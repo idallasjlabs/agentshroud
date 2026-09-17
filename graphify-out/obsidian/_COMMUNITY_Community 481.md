@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[1. Purpose and Scope]] - document - docs/requirements/system-requirements.md
-- [[1.1 Purpose]] - document - docs/requirements/system-requirements.md
-- [[1.2 Scope]] - document - docs/requirements/system-requirements.md
-- [[1.3 Intended Audience]] - document - docs/requirements/system-requirements.md
-- [[2. Functional Requirements]] - document - docs/requirements/system-requirements.md
-- [[2.1 Core Security Modules]] - document - docs/requirements/system-requirements.md
-- [[3. Non-Functional Requirements]] - document - docs/requirements/system-requirements.md
-- [[4. Constraints and Assumptions]] - document - docs/requirements/system-requirements.md
-- [[4.1 Technical Constraints]] - document - docs/requirements/system-requirements.md
-- [[4.2 Operational Constraints]] - document - docs/requirements/system-requirements.md
-- [[4.3 Assumptions]] - document - docs/requirements/system-requirements.md
-- [[5. Compliance Requirements]] - document - docs/requirements/system-requirements.md
-- [[5.1 Security Standards]] - document - docs/requirements/system-requirements.md
-- [[5.2 Audit Requirements]] - document - docs/requirements/system-requirements.md
-- [[6. Risk Assessment]] - document - docs/requirements/system-requirements.md
-- [[6.1 Security Risks]] - document - docs/requirements/system-requirements.md
-- [[6.2 Operational Risks]] - document - docs/requirements/system-requirements.md
-- [[AgentShroud v0.9.0]] - document - docs/requirements/system-requirements.md
-- [[System Requirements Specification (SRS)]] - document - docs/requirements/system-requirements.md
+- [[Anti-Patterns to Flag_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_18]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_52]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[openclawskillsi-bsSKILL]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +36,3 @@ members: 19
 TABLE source_file, type FROM #community/Community_481
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 92]]
-
-## Top bridge nodes
-- [[System Requirements Specification (SRS)]] - degree 2, connects to 1 community

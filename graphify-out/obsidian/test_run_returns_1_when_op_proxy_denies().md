@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Community 168"
+community: "Community 169"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/Community_169
 ---
 
 # test_run_returns_1_when_op_proxy_denies()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_168
+#graphify/code #graphify/EXTRACTED #community/Community_169

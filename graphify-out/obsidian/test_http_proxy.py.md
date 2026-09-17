@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 75"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_72
 ---
 
 # test_http_proxy.py
 
 ## Connections
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[HTTPConnectProxy]] - `imports` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[_DummyTargetWriter]] - `contains` [EXTRACTED]
-- [[_MockWriter]] - `contains` [EXTRACTED]
-- [[_make_stream()]] - `contains` [EXTRACTED]
+- [[_MockWriter_1]] - `contains` [EXTRACTED]
+- [[_make_stream()_1]] - `contains` [EXTRACTED]
 - [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_forward_dns_hit()]] - `contains` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[web_config.py (WebProxyConfig)]] - `references` [EXTRACTED]
 - [[web_proxy.py (WebProxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_72

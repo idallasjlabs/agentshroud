@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 432"
+community: "Community 441"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_432
+  - community/Community_441
 ---
 
 # Mock validation that can be controlled.
 
 ## Connections
-- [[.validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_432
+#graphify/rationale #graphify/EXTRACTED #community/Community_441

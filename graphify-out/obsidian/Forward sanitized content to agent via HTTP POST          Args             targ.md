@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Forward sanitized content to agent via HTTP POST          Args:             targ
 
 ## Connections
-- [[.forward_to_agent()]] - `rationale_for` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

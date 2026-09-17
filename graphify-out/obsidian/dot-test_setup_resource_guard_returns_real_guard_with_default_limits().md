@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_resource_guard_wiring.py"
+type: "code"
+community: "P3 Infrastructure Security Modules"
+location: "L23"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/P3_Infrastructure_Security_Modules
+---
+
+# .test_setup_resource_guard_returns_real_guard_with_default_limits()
+
+## Connections
+- [[TestResourceGuardWiring]] - `method` [EXTRACTED]
+- [[setup_resource_guard()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

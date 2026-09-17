@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-greeter-state.sh"
 type: "code"
-community: "Community 1536"
+community: "Community 1663"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1536
+  - community/Community_1663
 ---
 
 # verify-greeter-state.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify-greeter-state.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1536
+#graphify/code #graphify/EXTRACTED #community/Community_1663

@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1668
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[App Icon 128x128 (AgentShroud logo mark)]] - image - branding/icons/app/icon-128x128.png
+- [[agentshroud-redteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

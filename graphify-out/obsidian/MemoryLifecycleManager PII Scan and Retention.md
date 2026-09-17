@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 1395"
+community: "Community 1461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1395
+  - community/Community_1461
 ---
 
 # MemoryLifecycleManager PII Scan and Retention
@@ -14,4 +14,4 @@ tags:
 - [[MemoryIntegrityMonitor Tamper Detection]] - `shares_data_with` [EXTRACTED]
 - [[Test Memory Lifecycle and Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1395
+#graphify/code #graphify/EXTRACTED #community/Community_1461

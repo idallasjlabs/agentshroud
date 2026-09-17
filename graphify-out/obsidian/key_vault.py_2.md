@@ -1,25 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
-type: "document"
-community: "Community 505"
-location: "L10"
+source_file: "gateway/security/key_vault.py"
+type: "code"
+community: "Community 80"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_80
 ---
 
 # key_vault.py
 
 ## Connections
-- [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
-- [[Function Details_42]] - `contains` [EXTRACTED]
-- [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
-- [[Purpose_163]] - `contains` [EXTRACTED]
-- [[Related_49]] - `contains` [EXTRACTED]
-- [[Responsibilities_47]] - `contains` [EXTRACTED]
-- [[Threat Model_18]] - `contains` [EXTRACTED]
-- [[key_vault.py_1]] - `contains` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
+- [[KeyAuditEvent]] - `contains` [EXTRACTED]
+- [[KeyEntry]] - `contains` [EXTRACTED]
+- [[KeyInjector]] - `contains` [EXTRACTED]
+- [[KeyLeakDetector]] - `contains` [EXTRACTED]
+- [[KeyScope]] - `contains` [EXTRACTED]
+- [[KeyVault]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `contains` [EXTRACTED]
+- [[LeakScanResult]] - `contains` [EXTRACTED]
+- [[egress_config.py]] - `references` [EXTRACTED]
+- [[egress_monitor.py]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
+- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_505
+#graphify/code #graphify/EXTRACTED #community/Community_80

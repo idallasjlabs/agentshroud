@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_cron_state_monitor.py"
+type: "code"
+community: "Community 90"
+location: "L113"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_90
+---
+
+# .test_first_sight_failing_alerts_once()
+
+## Connections
+- [[CronStateMonitor]] - `calls` [EXTRACTED]
+- [[TestTransitions]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `calls` [EXTRACTED]
+- [[_hermes_job()]] - `calls` [EXTRACTED]
+- [[_hermes_store()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_90

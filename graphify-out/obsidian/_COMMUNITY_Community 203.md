@@ -1,50 +1,51 @@
 ---
 type: community
 cohesion: 0.06
-members: 35
+members: 36
 ---
 
 # Community 203
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 35 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Config Search Order]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Current Status_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Purpose_176]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_19]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_28]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_34]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Set In_2]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Top-Level Sections]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Usage_125]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Value_3]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[agentshroud.yaml]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[channels section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[gateway section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[mcp_proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security_modules section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[ssh section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[AgentShroud Docker Configuration]] - document - docker/README.md
+- [[Architecture_3]] - document - docker/README.md
+- [[Check Status]] - document - docker/README.md
+- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
+- [[Container Stack]] - document - docker/README.md
+- [[Core Configuration]] - document - docker/README.md
+- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
+- [[Detection contract]] - document - docker/README.md
+- [[Development_1]] - document - docker/README.md
+- [[Documentation_3]] - document - docker/README.md
+- [[Exec into Container]] - document - docker/README.md
+- [[Files_1]] - document - docker/README.md
+- [[Hermes  HCI]] - document - docker/README.md
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
+- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
+- [[Next Steps (Phase 4+)]] - document - docker/README.md
+- [[Port Reference]] - document - docker/README.md
+- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
+- [[Quick Start_4]] - document - docker/README.md
+- [[Rebuild Containers]] - document - docker/README.md
+- [[Reference]] - document - docker/README.md
+- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[Secrets]] - document - docker/README.md
+- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
+- [[Security Features (Implemented)]] - document - docker/README.md
+- [[Start the Stack]] - document - docker/README.md
+- [[Startup Warnings Reference]] - document - docker/README.md
+- [[Stop the Stack]] - document - docker/README.md
+- [[Test Chat]] - document - docker/README.md
+- [[Troubleshooting_10]] - document - docker/README.md
+- [[Usage_110]] - document - docker/README.md
+- [[Verify Security]] - document - docker/README.md
+- [[View Logs]] - document - docker/README.md
+- [[dockerREADME]] - document - docker/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,12 +55,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 48]]
-- 1 edge to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 821]]
-- 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Community 57]]
 
 ## Top bridge nodes
-- [[agentshroud.yaml]] - degree 8, connects to 4 communities
-- [[HTTP_PROXY]] - degree 4, connects to 2 communities
+- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community

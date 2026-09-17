@@ -1,0 +1,19 @@
+---
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+type: "code"
+community: "Community 136"
+location: "L401"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_136
+---
+
+# .close()
+
+## Connections
+- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_136

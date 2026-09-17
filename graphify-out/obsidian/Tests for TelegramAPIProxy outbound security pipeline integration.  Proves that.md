@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_proxy_outbound.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

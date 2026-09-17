@@ -1,0 +1,19 @@
+---
+source_file: "gateway/approval_queue/queue.py"
+type: "code"
+community: "Community 423"
+location: "L252"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_423
+---
+
+# .get_item()
+
+## Connections
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_423

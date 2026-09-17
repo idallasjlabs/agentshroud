@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 550"
+community: "Community 566"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_550
+  - community/Community_566
 ---
 
 # 📝 To-Do
@@ -16,4 +16,4 @@ tags:
 - [[Assets Needed]] - `contains` [EXTRACTED]
 - [[Documentation Needed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_550
+#graphify/document #graphify/EXTRACTED #community/Community_566

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 460"
+community: "Community 470"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Community_470
 ---
 
 # Option 4: Volume-Safe Reset
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recovery Procedures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/Community_470

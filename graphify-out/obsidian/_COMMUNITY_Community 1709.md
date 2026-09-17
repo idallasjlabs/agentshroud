@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1709
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Favicon 32x32 (AgentShroud logo mark)]] - image - branding/favicons/favicon-32x32.png
+- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Delayed-starting notices should also be deduplicated in cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1709
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 69]]
+
+## Top bridge nodes
+- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - degree 4, connects to 3 communities

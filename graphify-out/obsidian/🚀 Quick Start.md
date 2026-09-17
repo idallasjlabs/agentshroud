@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 221"
+community: "Community 229"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_229
 ---
 
 # 🚀 Quick Start
@@ -16,4 +16,4 @@ tags:
 - [[For Developers]] - `contains` [EXTRACTED]
 - [[For New Users]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_221
+#graphify/document #graphify/EXTRACTED #community/Community_229

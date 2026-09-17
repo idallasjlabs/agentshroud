@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 150"
+community: "Community 151"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/Community_151
 ---
 
 # Publishing to ClawHub
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Test Locally]] - `contains` [EXTRACTED]
 - [[Step 3 Publish]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_150
+#graphify/document #graphify/EXTRACTED #community/Community_151

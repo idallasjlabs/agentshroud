@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_12]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Function Details_18]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_139]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Related_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Responsibilities_23]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_47]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[When to Use_3]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 13
 TABLE source_file, type FROM #community/Community_720
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 254]]
+
+## Top bridge nodes
+- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

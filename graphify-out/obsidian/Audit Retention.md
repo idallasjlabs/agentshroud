@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 426"
+community: "Community 437"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/Community_437
 ---
 
 # Audit Retention
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Trail Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/Community_437

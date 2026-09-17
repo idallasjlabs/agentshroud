@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 924"
+community: "Community 971"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_971
 ---
 
 # Previously OPEN findings — current status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-audit of v0.8.0 Prior Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_924
+#graphify/document #graphify/EXTRACTED #community/Community_971

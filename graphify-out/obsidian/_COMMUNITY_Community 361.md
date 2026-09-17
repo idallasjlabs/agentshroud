@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
-- [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Current Status_6]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Next Steps_4]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 3 Both Services]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[PREREQUISITES]] - document - docs/reference/PREREQUISITES.md
-- [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
-- [[Security Tailscale ACLs]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Stop Tailscale Serve]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[TAILSCALE_COMMANDS]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Tailscale Remote Access (Pi)]] - concept - docs/operations/raspberry-pi.md
-- [[Tailscale Remote Access Setup]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Telegram Bot]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Troubleshooting_20]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Verify Tailscale Serve Status]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[graphify_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For --update and --cluster-only_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify add and --watch_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify query_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For the commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Honesty Rules_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2 - Detect files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 5 - Label communities_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Usage_118]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What graphify is for_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[hermesskillsgraphifySKILL]] - document - docker/config/hermes/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,15 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_361
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 284]]
-- 1 edge to [[_COMMUNITY_Community 328]]
-- 1 edge to [[_COMMUNITY_Community 166]]
-- 1 edge to [[_COMMUNITY_Community 314]]
-
-## Top bridge nodes
-- [[PREREQUISITES]] - degree 4, connects to 2 communities
-- [[QUICK_REFERENCE]] - degree 4, connects to 1 community
-- [[TAILSCALE_COMMANDS]] - degree 4, connects to 1 community
-- [[Tailscale Remote Access (Pi)]] - degree 2, connects to 1 community

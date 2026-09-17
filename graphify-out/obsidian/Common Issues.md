@@ -1,17 +1,25 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 328"
-location: "L642"
+community: "Community 323"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/Community_323
 ---
 
 # Common Issues
 
 ## Connections
-- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
+- [[Bot Not Responding to Telegram Messages]] - `contains` [EXTRACTED]
+- [[Container Keeps Restarting]] - `contains` [EXTRACTED]
+- [[Dashboard Not Loading]] - `contains` [EXTRACTED]
+- [[Kill Switch Won't Deactivate]] - `contains` [EXTRACTED]
+- [[PII Sanitizer Blocking Legitimate Content]] - `contains` [EXTRACTED]
+- [[SSH Command Approval Stuck]] - `contains` [EXTRACTED]
+- [[Tailscale Serve Not Working]] - `contains` [EXTRACTED]
+- [[Tests Failing]] - `contains` [EXTRACTED]
+- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/Community_323

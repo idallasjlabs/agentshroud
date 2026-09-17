@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "Community 246"
+community: "Community 268"
 location: "L481"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/Community_268
 ---
 
 # Return per-agent advisory lists from snapshot or live GitHub.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gather_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_246
+#graphify/rationale #graphify/EXTRACTED #community/Community_268

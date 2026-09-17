@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
-- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
+- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
+- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

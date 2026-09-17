@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.14
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 594
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Installation_2]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_185]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_195]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_50]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Trivy]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[clamav]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[trivy]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_594
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 410]]
-- 2 edges to [[_COMMUNITY_Community 243]]
-- 1 edge to [[_COMMUNITY_Community 650]]
-- 1 edge to [[_COMMUNITY_Community 339]]
-
-## Top bridge nodes
-- [[clamav]] - degree 6, connects to 2 communities
-- [[openscap]] - degree 4, connects to 2 communities
-- [[trivy]] - degree 4, connects to 1 community

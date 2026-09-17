@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_llm_quota_detector.py"
+type: "code"
+community: "Community 120"
+location: "L289"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_120
+---
+
+# .test_gemini_resource_exhausted_stays_quota_territory()
+
+## Connections
+- [[TestOverloadedMultiProvider]] - `method` [EXTRACTED]
+- [[is_overloaded()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_120

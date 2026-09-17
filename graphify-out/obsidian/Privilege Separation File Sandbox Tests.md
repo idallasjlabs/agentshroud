@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "File Sandbox & Privilege Separation Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # Privilege Separation File Sandbox Tests
@@ -14,4 +14,4 @@ tags:
 - [[FileSandbox]] - `references` [EXTRACTED]
 - [[Path Isolation Manager Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

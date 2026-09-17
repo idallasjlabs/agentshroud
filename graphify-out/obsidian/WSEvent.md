@@ -1,30 +1,22 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 69"
-location: "L270"
+community: "Community 187"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_187
 ---
 
 # WSEvent
 
 ## Connections
-- [[.test_construction()_2]] - `calls` [EXTRACTED]
-- [[.test_send_event_serializes()]] - `calls` [EXTRACTED]
-- [[.test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
-- [[.test_wsevent_passthrough()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
+- [[dot-_send_event()]] - `references` [EXTRACTED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_7]] - `uses` [INFERRED]
-- [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
-- [[_connectWS()]] - `shares_data_with` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `imports` [EXTRACTED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[_coerce_to_ws_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_187

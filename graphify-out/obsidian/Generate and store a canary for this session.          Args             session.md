@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Community 1026"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1026
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Generate and store a canary for this session.          Args:             session
 
 ## Connections
-- [[.generate_canary()]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1026
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

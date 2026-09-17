@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ci/SKILL.md"
 type: "document"
-community: "Community 848"
+community: "Community 325"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_848
+  - community/Community_325
 ---
 
 # CI Skill (Continuous Integration pipeline)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_848
+#graphify/document #graphify/INFERRED #community/Community_325

@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1416
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[PATH_2]] - code - scripts/deploy.sh
-- [[deploy.sh]] - code - scripts/deploy.sh
-- [[deploy.sh script]] - code - scripts/deploy.sh
+- [[dot-test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[AWS credentials path probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Cloud metadata endpoint probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,11 @@ members: 3
 TABLE source_file, type FROM #community/Community_1416
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 2 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+
+## Top bridge nodes
+- [[dot-test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

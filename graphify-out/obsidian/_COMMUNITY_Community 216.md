@@ -1,49 +1,49 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.06
 members: 34
 ---
 
 # Community 216
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 34 nodes
 
 ## Members
-- [[.test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_level_to_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_parse_empty()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_fim_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_rootkit_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_65]] - code - gateway/security/wazuh_client.py
-- [[Filter alerts to file integrity monitoring events only.      Args         alert]] - rationale - gateway/security/wazuh_client.py
-- [[Filter alerts to rootkit detection events only.      Args         alerts List]] - rationale - gateway/security/wazuh_client.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
-- [[Map Wazuh alert level to severity string.      Args         level Wazuh alert]] - rationale - gateway/security/wazuh_client.py
-- [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - rationale - gateway/security/wazuh_client.py
-- [[Path_20]] - code - gateway/security/wazuh_client.py
-- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/wazuh_client.py
-- [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestWazuhParser]] - code - gateway/tests/test_security_toolchain.py
-- [[datetime_5]] - code - gateway/security/wazuh_client.py
-- [[generate_summary()_3]] - code - gateway/security/wazuh_client.py
-- [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
-- [[get_fim_events()]] - code - gateway/security/wazuh_client.py
-- [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
-- [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
-- [[level_to_severity()]] - code - gateway/security/wazuh_client.py
-- [[parse_alert()_1]] - code - gateway/security/wazuh_client.py
-- [[read_alerts()_1]] - code - gateway/security/wazuh_client.py
+- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Configuration_2]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,24 +51,3 @@ members: 34
 TABLE source_file, type FROM #community/Community_216
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 72]]
-- 7 edges to [[_COMMUNITY_Community 410]]
-- 6 edges to [[_COMMUNITY_Community 112]]
-- 4 edges to [[_COMMUNITY_Community 196]]
-- 4 edges to [[_COMMUNITY_Community 187]]
-- 3 edges to [[_COMMUNITY_Community 399]]
-- 2 edges to [[_COMMUNITY_Community 201]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 1 edge to [[_COMMUNITY_Community 347]]
-- 1 edge to [[_COMMUNITY_Community 863]]
-- 1 edge to [[_COMMUNITY_Community 983]]
-
-## Top bridge nodes
-- [[generate_summary()_3]] - degree 13, connects to 7 communities
-- [[get_wazuh_summary()]] - degree 14, connects to 5 communities
-- [[get_falco_summary()]] - degree 13, connects to 4 communities
-- [[read_alerts()_1]] - degree 9, connects to 2 communities
-- [[TestWazuhParser]] - degree 8, connects to 2 communities

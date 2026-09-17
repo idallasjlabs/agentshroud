@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
+- [[AWS Athena (data lakehouse)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

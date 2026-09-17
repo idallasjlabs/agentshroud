@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Community 23"
+community: "Enhanced Approval Queue"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Enhanced_Approval_Queue
 ---
 
 # temp_store()
 
 ## Connections
-- [[ApprovalStore]] - `calls` [INFERRED]
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[Create a temporary SQLite store for testing.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_23
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

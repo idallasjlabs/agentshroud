@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[1. Find the Bot]] - document - docs/user-guide.md
-- [[2. Verify You're Authorized]] - document - docs/user-guide.md
-- [[3. Start Chatting]] - document - docs/user-guide.md
-- [[AgentShroud User Guide]] - document - docs/user-guide.md
-- [[Commands_2]] - document - docs/user-guide.md
-- [[Dashboard Overview]] - document - docs/user-guide.md
-- [[FAQ_1]] - document - docs/user-guide.md
-- [[Getting Started]] - document - docs/user-guide.md
-- [[Interacting via Telegram]] - document - docs/user-guide.md
-- [[Need Help_1]] - document - docs/user-guide.md
-- [[Q Can I request the AI to do something on the server]] - document - docs/user-guide.md
-- [[Q Can I use the bot in group chats]] - document - docs/user-guide.md
-- [[Q Can the AI see my personal information]] - document - docs/user-guide.md
-- [[Q How do I know my data is being protected]] - document - docs/user-guide.md
-- [[Q The bot isn't responding. What do I do]] - document - docs/user-guide.md
-- [[Q What happens if I accidentally send a password]] - document - docs/user-guide.md
-- [[Q What's the kill switch]] - document - docs/user-guide.md
-- [[Reading the Audit Trail]] - document - docs/user-guide.md
-- [[Regular Messages]] - document - docs/user-guide.md
-- [[SSH Access]] - document - docs/user-guide.md
-- [[Tips]] - document - docs/user-guide.md
-- [[Understanding Approval Requests]] - document - docs/user-guide.md
-- [[What Requires Approval]] - document - docs/user-guide.md
-- [[What You'll See]] - document - docs/user-guide.md
-- [[What is AgentShroud_3]] - document - docs/user-guide.md
-- [[Why Approvals Exist]] - document - docs/user-guide.md
-- [[user-guide]] - document - docs/user-guide.md
+- [[Anti-Patterns to Flag_5]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Decision Tree Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Dependencies_6]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Invocation Pattern_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Markmap Source Format_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Outline Template_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Project Planning Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Role_27]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Rules_5]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Use Case Patterns_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Validation Checklist_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[hermesskillsi-mmSKILL]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

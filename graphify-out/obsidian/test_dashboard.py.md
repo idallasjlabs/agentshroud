@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 21"
+community: "Community 65"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_65
 ---
 
 # test_dashboard.py
@@ -18,7 +18,7 @@ tags:
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_parse_collaborator_log_dirs()]] - `imports` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
+- [[client()_5]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `contains` [EXTRACTED]
 - [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - `contains` [EXTRACTED]
 - [[test_dashboard_has_csp_header()]] - `contains` [EXTRACTED]
-- [[test_dashboard_requires_auth()]] - `contains` [EXTRACTED]
+- [[test_dashboard_requires_auth()_1]] - `contains` [EXTRACTED]
 - [[test_dashboard_serves_html()]] - `contains` [EXTRACTED]
 - [[test_dashboard_stats_endpoint()]] - `contains` [EXTRACTED]
 - [[test_dashboard_stats_requires_auth()]] - `contains` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `contains` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/Community_65

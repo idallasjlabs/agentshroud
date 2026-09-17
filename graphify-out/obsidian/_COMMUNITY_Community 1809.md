@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[AgentShroud Logo on White Background]] - image - branding/logos/variants/logo-on-white-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 253"
+community: "Community 209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Community_209
 ---
 
 # Browser — Secure Browser Automation (SKILL)
@@ -21,6 +21,6 @@ tags:
 - [[SecureBrowser.extract()]] - `references` [EXTRACTED]
 - [[SecureBrowser.fill_field()]] - `references` [EXTRACTED]
 - [[SecureBrowser.navigate()]] - `references` [EXTRACTED]
-- [[browserFetch()_4]] - `references` [EXTRACTED]
+- [[browserFetch()_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Community_209

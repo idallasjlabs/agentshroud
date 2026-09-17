@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "Community 135"
+community: "Community 127"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_127
 ---
 
 # was_filtered is False when no XML blocks are present.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_was_filtered_false_when_no_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_135
+#graphify/rationale #graphify/EXTRACTED #community/Community_127

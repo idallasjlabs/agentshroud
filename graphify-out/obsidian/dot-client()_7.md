@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_report_store.py"
+type: "code"
+community: "Community 87"
+location: "L132"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_87
+---
+
+# .client()
+
+## Connections
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[TestReportAPI]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_87

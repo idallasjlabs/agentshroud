@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[.test_clean_code_passes()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_clean_content_passes()_1]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_1password_token()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_aws_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_github_token()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_google_oauth_secret()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_jwt_token()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_detect_openai_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[Test that credential patterns are detected in outbound content.]] - rationale - gateway/tests/test_credential_isolation.py
-- [[TestCredentialLeakDetection]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-agentsskillsi-browserpackage.json]] - code - .agents/skills/i-browser/package.json
+- [[author_1]] - code - .agents/skills/i-browser/package.json
+- [[description_11]] - code - .agents/skills/i-browser/package.json
+- [[keywords_1]] - code - .agents/skills/i-browser/package.json
+- [[license_5]] - code - .agents/skills/i-browser/package.json
+- [[main]] - code - .agents/skills/i-browser/package.json
+- [[name_3]] - code - .agents/skills/i-browser/package.json
+- [[scripts_1]] - code - .agents/skills/i-browser/package.json
+- [[test_1]] - code - .agents/skills/i-browser/package.json
+- [[version_5]] - code - .agents/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_868
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 605]]
-- 1 edge to [[_COMMUNITY_Community 1056]]
-
-## Top bridge nodes
-- [[TestCredentialLeakDetection]] - degree 12, connects to 2 communities

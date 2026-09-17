@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 497"
+community: "Community 508"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/Community_508
 ---
 
 # OKE Channel — CPA Exam Prep Dialogue Guidelines
@@ -17,4 +17,4 @@ tags:
 - [[Expert Persona_2]] - `contains` [EXTRACTED]
 - [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_497
+#graphify/document #graphify/EXTRACTED #community/Community_508

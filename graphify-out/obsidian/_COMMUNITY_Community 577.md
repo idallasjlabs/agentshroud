@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.13
 members: 16
 ---
 
 # Community 577
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Apple Containers vs DockerPodman]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.pause(name)  unpause(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Configuration  Environment Variables_13]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Function Details_19]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Purpose_140]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Related_26]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[apple_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[apple_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
+- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - rationale - docs/runbooks/RUNBOOK.md
+- [[Glibc TLS Incompatibility (Trillian)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
+- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
+- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,14 @@ members: 16
 TABLE source_file, type FROM #community/Community_577
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 590]]
+- 1 edge to [[_COMMUNITY_Community 696]]
+- 1 edge to [[_COMMUNITY_Community 323]]
+
+## Top bridge nodes
+- [[TELEGRAM_ISSUES]] - degree 14, connects to 3 communities
+- [[SYSTEM_STATUS]] - degree 3, connects to 1 community
+- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - degree 2, connects to 1 community

@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_93]] - `method` [EXTRACTED]
-- [[._compile_patterns()]] - `method` [EXTRACTED]
-- [[._sanitize_text()]] - `method` [EXTRACTED]
-- [[.filter()_1]] - `method` [EXTRACTED]
-- [[.sanitizer()_2]] - `calls` [EXTRACTED]
-- [[.setup_method()_7]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[dot-__init__()_18]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
+- [[dot-_sanitize_text()]] - `method` [EXTRACTED]
+- [[dot-filter()]] - `method` [EXTRACTED]
+- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -47,16 +47,16 @@ tags:
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[get_sanitizer_stats()]] - `calls` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[install_log_sanitizer()]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

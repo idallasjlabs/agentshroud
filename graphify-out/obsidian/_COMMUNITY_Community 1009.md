@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1009
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)]] - document - .agents/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Role_8]] - document - .agents/skills/i-cicd/SKILL.md
-- [[SKILL_14]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1009
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 842]]
+
+## Top bridge nodes
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community

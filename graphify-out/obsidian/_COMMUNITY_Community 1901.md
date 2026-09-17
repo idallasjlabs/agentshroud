@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SlackAPIProxy Outbound Scanning Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[AI Agent]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

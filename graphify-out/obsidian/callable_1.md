@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 223"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()_2]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_223
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

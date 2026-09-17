@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "Community 147"
+community: "Community 145"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/Community_145
 ---
 
 # test_status_report_to_display()
@@ -16,4 +16,4 @@ tags:
 - [[ProxyStatusReport.to_display should produce readable strings.]] - `rationale_for` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/Community_145

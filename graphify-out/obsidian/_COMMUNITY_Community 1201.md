@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[README_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_72]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_73]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[dot-agentsskillsi-mcpm-doctorREADME]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Purpose_24]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Related Skills_15]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Usage_19]] - document - .agents/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 

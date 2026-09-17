@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-observability/SKILL.md"
 type: "document"
-community: "Community 1483"
+community: "Community 1564"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1483
+  - community/Community_1564
 ---
 
 # Skill: observability
 
 ## Connections
-- [[SKILL_164]] - `contains` [EXTRACTED]
+- [[openclawskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1483
+#graphify/document #graphify/EXTRACTED #community/Community_1564

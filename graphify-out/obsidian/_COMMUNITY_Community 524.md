@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # Community 524
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_4]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[CPA Curriculum Frontmatter Addition_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Coverage Types_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Episode Closing_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Input Requirements_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Output Format_27]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Persona_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Quality Checklist_20]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Role_79]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[SKILL_133]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[System Prompt_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Architecture_10]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +35,10 @@ members: 17
 TABLE source_file, type FROM #community/Community_524
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 349]]
+- 1 edge to [[_COMMUNITY_Community 123]]
+
+## Top bridge nodes
+- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities

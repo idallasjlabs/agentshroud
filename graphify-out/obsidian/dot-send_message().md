@@ -1,0 +1,20 @@
+---
+source_file: "gateway/proxy/telegram_gateway_relay.py"
+type: "code"
+community: "Community 894"
+location: "L61"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_894
+---
+
+# .send_message()
+
+## Connections
+- [[dot-send_status_update()]] - `calls` [EXTRACTED]
+- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - `rationale_for` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[TelegramSendResult]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_894

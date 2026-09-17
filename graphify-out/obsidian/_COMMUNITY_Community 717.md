@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.18
+members: 14
 ---
 
 # Community 717
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
-- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
-- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
-- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
-- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
-- [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
-- [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
-- [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
-- [[REPORTED_ISSUES]] - document - docs/project/REPORTED_ISSUES.md
-- [[📁 Infrastructure Limitations]] - document - docs/project/REPORTED_ISSUES.md
-- [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
-- [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
-- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
+- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
+- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
+- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
+- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
+- [[_get_model()]] - code - voice_gateway/stt.py
+- [[_get_model() — lazy-loads faster-whisper WhisperModel]] - code - voice_gateway/stt.py
+- [[_resolve_model_size()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency() — RTFlatency structured log]] - code - voice_gateway/stt.py
+- [[reset_model()]] - code - voice_gateway/stt.py
+- [[select_model_size()]] - code - voice_gateway/stt.py
+- [[stt.py]] - code - voice_gateway/stt.py
+- [[transcribe()]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1109]]
-- 1 edge to [[_COMMUNITY_Community 906]]
-- 1 edge to [[_COMMUNITY_Community 770]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Test Fixtures]]
+- 1 edge to [[_COMMUNITY_Community 122]]
+- 1 edge to [[_COMMUNITY_Community 287]]
 
 ## Top bridge nodes
-- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 3 communities
+- [[stt.py]] - degree 9, connects to 3 communities

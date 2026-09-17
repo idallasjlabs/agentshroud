@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 298"
+community: "Community 307"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/Community_307
 ---
 
 # Decision Tree Map
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Case Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_298
+#graphify/document #graphify/EXTRACTED #community/Community_307

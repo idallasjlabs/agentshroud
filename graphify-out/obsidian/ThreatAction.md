@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 30"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # ThreatAction
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestNewPatternsV080]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
@@ -41,9 +41,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline

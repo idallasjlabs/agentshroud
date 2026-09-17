@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Community 182"
+community: "Community 190"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Community_190
 ---
 
 # RateLimitGuard
 
 ## Connections
-- [[.__init__()_111]] - `method` [EXTRACTED]
-- [[._burst_limit()]] - `method` [EXTRACTED]
-- [[._sustained_limit()]] - `method` [EXTRACTED]
-- [[.check()_6]] - `method` [EXTRACTED]
-- [[.get_stats()_19]] - `method` [EXTRACTED]
+- [[dot-__init__()_83]] - `method` [EXTRACTED]
+- [[dot-_burst_limit()]] - `method` [EXTRACTED]
+- [[dot-_sustained_limit()]] - `method` [EXTRACTED]
+- [[dot-check()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_14]] - `method` [EXTRACTED]
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `conceptually_related_to` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/Community_190

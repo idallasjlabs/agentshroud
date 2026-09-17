@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "rationale"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # Build the system-prompt injection for project_scoped mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_project_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

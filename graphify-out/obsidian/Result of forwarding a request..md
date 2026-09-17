@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Result of forwarding a request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

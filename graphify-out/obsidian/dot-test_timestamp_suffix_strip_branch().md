@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1331"
+location: "L306"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1331
+---
+
+# .test_timestamp_suffix_strip_branch()
+
+## Connections
+- [[TestTrivyImageSummaries]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1331

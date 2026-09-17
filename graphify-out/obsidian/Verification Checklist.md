@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 788"
-location: "L226"
+community: "Community 199"
+location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Community_199
 ---
 
 # Verification Checklist
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Community_199

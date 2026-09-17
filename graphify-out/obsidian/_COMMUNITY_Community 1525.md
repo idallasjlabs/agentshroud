@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
-- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
+- [[Constrained query-vocabulary expansion]] - rationale - docker/config/hermes/skills/graphify/references/query.md
+- [[save-result Feedback Loop]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

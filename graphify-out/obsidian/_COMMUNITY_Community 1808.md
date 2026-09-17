@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[AgentShroud Logo on Dark Background]] - image - branding/logos/variants/logo-on-dark-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

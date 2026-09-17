@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 662"
+community: "Community 685"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_662
+  - community/Community_685
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_662
+#graphify/document #graphify/EXTRACTED #community/Community_685

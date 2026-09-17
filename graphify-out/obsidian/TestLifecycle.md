@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 142"
-location: "L152"
+community: "Community 1368"
+location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_1368
 ---
 
 # TestLifecycle
 
 ## Connections
-- [[.test_start_creates_task()]] - `method` [EXTRACTED]
-- [[.test_stats_returns_counts()]] - `method` [EXTRACTED]
-- [[.test_stop_cancels_task()]] - `method` [EXTRACTED]
-- [[DNSBlocklist]] - `uses` [INFERRED]
-- [[Lifecycle start_periodic_updates()stop() task management.]] - `rationale_for` [EXTRACTED]
-- [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
+- [[dot-test_deregister_cleans_up()]] - `method` [EXTRACTED]
+- [[dot-test_deregister_returns_usage()]] - `method` [EXTRACTED]
+- [[dot-test_summary()]] - `method` [EXTRACTED]
+- [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/Community_1368

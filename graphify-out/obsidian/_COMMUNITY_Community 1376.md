@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1376
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Required Tags (All Resources)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Tag Audit Process]] - document - .agents/skills/i-aws/SKILL.md
-- [[Tagging Standard]] - document - .agents/skills/i-aws/SKILL.md
+- [[Architecture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 515]]
+- 1 edge to [[_COMMUNITY_Community 806]]
 
 ## Top bridge nodes
-- [[Tagging Standard]] - degree 3, connects to 1 community
+- [[Technical Details]] - degree 4, connects to 1 community

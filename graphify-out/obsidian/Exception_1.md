@@ -1,32 +1,64 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L392"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L459"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Exception
 
 ## Connections
-- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[dot-_record_guard_init_failure()]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
+- [[BrowserSecurityGuard]] - `uses` [INFERRED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressMonitor]] - `uses` [INFERRED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[MultiTurnTracker]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[OAuthSecurityValidator]] - `uses` [INFERRED]
+- [[OutputCanary]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PathIsolationConfig]] - `uses` [INFERRED]
+- [[PathIsolationManager]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[ToolResultPIIConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

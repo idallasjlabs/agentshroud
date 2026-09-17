@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_api_contract.py"
+type: "code"
+community: "Community 557"
+location: "L28"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_557
+---
+
+# .client()
+
+## Connections
+- [[Create a FastAPI test client.]] - `rationale_for` [EXTRACTED]
+- [[TestOpenAPIContract]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_557

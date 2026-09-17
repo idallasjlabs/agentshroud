@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "Community 388"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_388
 ---
 
 # Remove a collaborator from effective access (file-locked).      Strips the UID f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[revoke_approved_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/Community_388

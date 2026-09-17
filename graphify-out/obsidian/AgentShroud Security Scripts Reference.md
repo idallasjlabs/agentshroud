@@ -1,25 +1,25 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 346"
+community: "Community 350"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/Community_350
 ---
 
 # AgentShroud Security Scripts Reference
 
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
-- [[Best Practices_6]] - `contains` [EXTRACTED]
+- [[Best Practices_7]] - `contains` [EXTRACTED]
 - [[Kill Switch]] - `contains` [EXTRACTED]
 - [[Monitoring Integration]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `contains` [EXTRACTED]
 - [[Script Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_22]] - `contains` [EXTRACTED]
-- [[scan.sh_1]] - `contains` [EXTRACTED]
-- [[verify-security.sh_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[scan.sh]] - `contains` [EXTRACTED]
+- [[verify-security.sh]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/Community_350

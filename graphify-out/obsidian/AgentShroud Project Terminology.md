@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Community 327"
+community: "Community 337"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/Community_337
 ---
 
 # AgentShroud Project Terminology
@@ -18,7 +18,7 @@ tags:
 - [[D]] - `contains` [EXTRACTED]
 - [[E]] - `contains` [EXTRACTED]
 - [[F]] - `contains` [EXTRACTED]
-- [[Glossary]] - `contains` [EXTRACTED]
+- [[Glossary_1]] - `contains` [EXTRACTED]
 - [[H]] - `contains` [EXTRACTED]
 - [[I]] - `contains` [EXTRACTED]
 - [[K]] - `contains` [EXTRACTED]
@@ -28,10 +28,10 @@ tags:
 - [[P]] - `contains` [EXTRACTED]
 - [[R]] - `contains` [EXTRACTED]
 - [[S]] - `contains` [EXTRACTED]
-- [[T_1]] - `contains` [EXTRACTED]
+- [[T]] - `contains` [EXTRACTED]
 - [[U]] - `contains` [EXTRACTED]
 - [[V]] - `contains` [EXTRACTED]
 - [[W]] - `contains` [EXTRACTED]
 - [[Z]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/Community_337

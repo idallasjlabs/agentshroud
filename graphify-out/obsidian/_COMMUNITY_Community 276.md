@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.07
-members: 29
+cohesion: 0.15
+members: 30
 ---
 
 # Community 276
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Executive Summary_13]] - document - docs/security/ws-e-audit-v1.2.md
-- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
-- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[gatewayingest_apiroutesforward.py]] - code - gateway/ingest_api/routes/forward.py
-- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
-- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
+- [[dot-test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_by_name_lookup()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_deploy_copies_files_to_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_deploy_is_idempotent()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_deploy_overwrites_changed_content()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_deploy_to_multiple_destinations()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_deploy_writes_manifest_json()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_from_empty_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_manifest_json_in_source_is_excluded()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_missing_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_classifies_create_when_dest_absent()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_classifies_skip_when_hash_matches()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_classifies_update_when_content_differs()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_is_deterministic()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_is_pure_writes_nothing()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_plan_maps_canonical_to_each_bot_destination()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - rationale - gateway/skills/manifest.py
+- [[Path_28]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestDeployManifest]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestPlanDeploy]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestSkillsManifest]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[_write_tree()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[manifest.json must never appear as an entry even when present in source.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[plan_deploy()]] - code - gateway/skills/manifest.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,7 +49,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 92]]
+- 47 edges to [[_COMMUNITY_Community 247]]
+- 3 edges to [[_COMMUNITY_Community 1154]]
+- 1 edge to [[_COMMUNITY_Community 475]]
 
 ## Top bridge nodes
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 19, connects to 1 community
+- [[Path_28]] - degree 36, connects to 2 communities
+- [[_write_tree()]] - degree 28, connects to 2 communities
+- [[plan_deploy()]] - degree 13, connects to 2 communities
+- [[TestSkillsManifest]] - degree 12, connects to 1 community
+- [[TestPlanDeploy]] - degree 11, connects to 1 community

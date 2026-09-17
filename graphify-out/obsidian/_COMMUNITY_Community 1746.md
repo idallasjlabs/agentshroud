@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1746
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Vulcan (i-vulcan skill, script approver)]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Legacy 'Protected by AgentShroud' wording should normalize to canonical protecte]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1746
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 69]]
+
+## Top bridge nodes
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - degree 4, connects to 3 communities

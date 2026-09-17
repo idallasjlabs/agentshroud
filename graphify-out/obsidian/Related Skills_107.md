@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 1233"
-location: "L14"
+community: "Community 202"
+location: "L346"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1233
+  - community/Community_202
 ---
 
 # Related Skills
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1233
+#graphify/document #graphify/EXTRACTED #community/Community_202

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 198"
+community: "Session Manager & PII/Context Guard"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # Detect repetition-based context stuffing attacks.
 
 ## Connections
-- [[._detect_repetition_attacks()]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_repetition_attacks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_198
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

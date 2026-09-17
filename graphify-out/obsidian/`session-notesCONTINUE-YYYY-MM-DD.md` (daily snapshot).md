@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 463"
+community: "Community 473"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Community_473
 ---
 
 # `session-notes/CONTINUE-YYYY-MM-DD.md` (daily snapshot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Community_473

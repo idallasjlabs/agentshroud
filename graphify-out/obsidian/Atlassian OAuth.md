@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 788"
+community: "Community 262"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Community_262
 ---
 
 # Atlassian OAuth
 
 ## Connections
-- [[Security Best Practices]] - `contains` [EXTRACTED]
+- [[Security Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Community_262

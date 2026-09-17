@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 1352"
-location: "L248"
+community: "Community 550"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/Community_550
 ---
 
 # TestLoadLatestJson
 
 ## Connections
-- [[.test_empty_files_skipped()]] - `method` [EXTRACTED]
-- [[.test_invalid_then_valid()]] - `method` [EXTRACTED]
-- [[.test_missing_dir_returns_none()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_prefix_filter()]] - `method` [EXTRACTED]
+- [[dot-test_returns_most_recent_file()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_for_empty_directory()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_for_missing_directory()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_on_invalid_json()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_when_all_files_empty()]] - `method` [EXTRACTED]
+- [[dot-test_skips_empty_files_returns_next_valid()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1352
+#graphify/code #graphify/EXTRACTED #community/Community_550

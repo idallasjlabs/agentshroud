@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 941
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Hermes — Reference Verifier]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Input Requirements_5]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Output Format_4]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Persona_3]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Quality Checklist_4]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Role_15]] - document - .agents/skills/i-hermes/SKILL.md
-- [[SKILL_24]] - document - .agents/skills/i-hermes/SKILL.md
-- [[System Prompt_3]] - document - .agents/skills/i-hermes/SKILL.md
+- [[1Password (trusted for secrets, gateway-only access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Bot (no direct credentialinternet access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Gateway (holds 1Password service account)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Isaiah Jefferson (full control)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 0 — Owner (Highest Trust)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 1 — Gateway (Trusted Enforcer)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 2 — Bot (Supervised Agent)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 3 — External Services (Conditional)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 4 — Infrastructure Nodes (SSH-gated)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
 
 ## Live Query (requires Dataview plugin)
 

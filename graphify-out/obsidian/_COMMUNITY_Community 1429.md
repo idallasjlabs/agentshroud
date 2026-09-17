@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[.test_full_stack_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_secrets_path_is_file_iterdir_error()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSecretsManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
+- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
+- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +20,3 @@ members: 3
 TABLE source_file, type FROM #community/Community_1429
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 193]]
-- 1 edge to [[_COMMUNITY_Community 288]]
-
-## Top bridge nodes
-- [[TestSecretsManagement]] - degree 3, connects to 1 community
-- [[.test_full_stack_scores_five()]] - degree 2, connects to 1 community
-- [[.test_secrets_path_is_file_iterdir_error()]] - degree 2, connects to 1 community

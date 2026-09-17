@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "Community 313"
+community: "Community 318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Community_318
 ---
 
 # Console Access Only (Layer 2)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_313
+#graphify/rationale #graphify/EXTRACTED #community/Community_318

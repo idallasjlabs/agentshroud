@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.52
+members: 7
 ---
 
 # Community 1090
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.52 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[button_cb_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[button_event_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button_delete()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button_register_cb()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
+- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
+- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
+- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_6]] - code - docker/bots/hermes/render_md_email.py
+- [[render()]] - code - docker/bots/hermes/render_md_email.py
+- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1090
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 474]]
+
+## Top bridge nodes
+- [[render_md_email.py]] - degree 6, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Test Cron Jobs Prompts Module]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[Roadmap (v0.9.5 → v0.9.8 → v1.0.0 → Post-v1.0.0)]] - concept - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Community 83"
-location: "L332"
+community: "Community 61"
+location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/Community_61
 ---
 
 # Return a monkeypatched urlopen that captures the Request headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_fake_urlopen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

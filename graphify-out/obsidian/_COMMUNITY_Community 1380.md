@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1380
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[browser-fetch skill.json (tool manifest)]] - code - skills/custom/browser-fetch/skill.json
-- [[run-as-root.sh]] - code - skills/custom/browser-fetch/run-as-root.sh
-- [[run-as-root.sh script]] - code - skills/custom/browser-fetch/run-as-root.sh
+- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1380
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 123]]
+
+## Top bridge nodes
+- [[2. Steve Hay Heat Map Assessment]] - degree 4, connects to 1 community

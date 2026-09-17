@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_51]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[README_56]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Related Skills_54]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Usage_57]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)_1]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[dot-agentsskillsi-apolloREADME]] - document - .agents/skills/i-apollo/README.md
+- [[Apollo — Audio Systems Producer]] - document - .agents/skills/i-apollo/README.md
+- [[Purpose_10]] - document - .agents/skills/i-apollo/README.md
+- [[Related Skills_1]] - document - .agents/skills/i-apollo/README.md
+- [[Usage_5]] - document - .agents/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)
 

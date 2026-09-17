@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 904
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
+- [[Assets Under Protection]] - document - docs/security/threat-model.md
+- [[Executive Summary_16]] - document - docs/security/threat-model.md
+- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
+- [[System Components in Scope]] - document - docs/security/threat-model.md
+- [[Threat Feeds]] - document - docs/security/threat-model.md
+- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
+- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
+- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
+- [[threat-model]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 402]]
+- 1 edge to [[_COMMUNITY_Community 1032]]
+- 1 edge to [[_COMMUNITY_Community 962]]
 
 ## Top bridge nodes
-- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

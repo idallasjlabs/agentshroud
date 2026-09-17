@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # strict_sandbox()
@@ -16,4 +16,4 @@ tags:
 - [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

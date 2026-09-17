@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Community 1758"
+community: "Community 1861"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1758
+  - community/Community_1861
 ---
 
 # i-devsecops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1758
+#graphify/document #graphify/EXTRACTED #community/Community_1861

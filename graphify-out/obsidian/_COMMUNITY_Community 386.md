@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - concept - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[H1 Telegram Proxy middleware_manager Never Initialized]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[H3 Gateway Password Still in auth.token]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[HIGH — Should Fix]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L1 State Dir is a Symlink]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L2 Browser Control Enabled]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L3 Memory Index Not Built]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[LOW — Informational_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M1 No Rate Limiting on Security Endpoints]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M2 subprocess Calls Use Lists (Good) but No Resource Limits]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Summary_14]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[dot-test_body_agent_id_used_when_header_missing()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_clean_tool_call_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_empty_parameters_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_header_user_id_overrides_body_agent_id()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_injection_in_parameters_blocked()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_invalid_header_identity_rejected()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_missing_required_fields_returns_422()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_owner_body_identity_rejected_without_header()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_response_includes_processing_time()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[A clean tool call with no threats should be allowed (200).]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body agent_id is used only when trusted header is absent.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body-only owner identity must be rejected to prevent impersonation.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Missing server_name or tool_name should return 422.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[POST mcpproxy without auth should return 401.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Response should include processing_time_ms.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestMCPProxyEndpoint_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with injection pattern in parameters should return 403.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with no parameters should be accepted.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[x-agentshroud-user-id header must override spoofable body agent_id.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,10 +42,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 337]]
-- 1 edge to [[_COMMUNITY_Community 345]]
-- 1 edge to [[_COMMUNITY_Community 366]]
+- 4 edges to [[_COMMUNITY_Community 175]]
+- 3 edges to [[_COMMUNITY_Community 211]]
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 1 edge to [[_COMMUNITY_Community 129]]
+- 1 edge to [[_COMMUNITY_Community 143]]
+- 1 edge to [[_COMMUNITY_Gateway Config & PII Sanitizer]]
+- 1 edge to [[_COMMUNITY_Community 218]]
+- 1 edge to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 519]]
+- 1 edge to [[_COMMUNITY_Community 89]]
 
 ## Top bridge nodes
-- [[blue-team-assessment-v0.8.0]] - degree 4, connects to 2 communities
-- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - degree 3, connects to 1 community
+- [[ProxyResult]] - degree 18, connects to 8 communities
+- [[test_mcp_proxy_endpoint.py]] - degree 5, connects to 3 communities

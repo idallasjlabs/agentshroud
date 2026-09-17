@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 306"
+community: "Community 315"
 location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_315
 ---
 
 # Changing AI Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_315

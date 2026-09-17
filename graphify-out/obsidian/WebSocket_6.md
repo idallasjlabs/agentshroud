@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 14"
-location: "L2704"
+community: "Community 888"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_14
+  - graphify/EXTRACTED
+  - community/Community_888
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_888

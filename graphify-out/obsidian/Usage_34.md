@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Community 1073"
+community: "Community 1221"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1073
+  - community/Community_1221
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1073
+#graphify/document #graphify/EXTRACTED #community/Community_1221

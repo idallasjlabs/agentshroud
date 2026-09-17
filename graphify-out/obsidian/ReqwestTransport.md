@@ -12,8 +12,8 @@ tags:
 # ReqwestTransport
 
 ## Connections
-- [[.new()]] - `method` [EXTRACTED]
-- [[.request()]] - `method` [EXTRACTED]
+- [[dot-new()_1]] - `method` [EXTRACTED]
+- [[dot-request()_1]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 886"
+community: "Community 931"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_886
+  - community/Community_931
 ---
 
 # Data Ledger Viewer
 
 ## Connections
-- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_886
+#graphify/document #graphify/EXTRACTED #community/Community_931

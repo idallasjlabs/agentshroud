@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Community 119"
+community: "Community 113"
 location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/Community_113
 ---
 
 # Resolve the outbound trust level for `request`, shared by the blocking     and s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_user_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_119
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

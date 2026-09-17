@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 55"
+community: "PII Sanitizer & Redaction"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/PII_Sanitizer__Redaction
 ---
 
 # Test the ToolResultSanitizer class
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_55
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

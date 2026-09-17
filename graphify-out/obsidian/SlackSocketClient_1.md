@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Community 161"
+community: "Community 162"
 location: "L19"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_161
+  - graphify/EXTRACTED
+  - community/Community_162
 ---
 
 # SlackSocketClient
@@ -15,4 +15,4 @@ tags:
 - [[SlackSocketClient]] - `uses` [INFERRED]
 - [[_make_client()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_161
+#graphify/code #graphify/EXTRACTED #community/Community_162

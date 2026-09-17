@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1472
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_129]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
-- [[Skill agile_2]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
+- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Podcast Production Pipeline (multi-agent)_1]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

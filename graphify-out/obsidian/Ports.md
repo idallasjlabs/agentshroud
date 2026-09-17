@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 595"
+community: "Community 224"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_595
+  - community/Community_224
 ---
 
 # Ports
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_595
+#graphify/document #graphify/EXTRACTED #community/Community_224

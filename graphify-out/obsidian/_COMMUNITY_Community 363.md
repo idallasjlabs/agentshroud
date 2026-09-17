@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.16
 members: 24
 ---
 
 # Community 363
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.16 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.__init__()_37]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._api_url()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._async_send()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._send_request()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._token_for()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.send_text()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
-- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
+- [[_agent_btn_pressed]] - code - firmware/voice-terminal/main/wakeword.c
+- [[_btn_pressed]] - code - firmware/voice-terminal/main/wakeword.c
+- [[_btn_released]] - code - firmware/voice-terminal/main/wakeword.c
+- [[_on_event]] - code - firmware/voice-terminal/main/ws_client.c
+- [[_ptt_end]] - code - firmware/voice-terminal/main/wakeword.c
+- [[_ptt_start]] - code - firmware/voice-terminal/main/wakeword.c
+- [[_touch_pressed]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_touch_start_only]] - code - firmware/voice-terminal/main/ui_face.c
+- [[esp_event_base_t_1]] - code
+- [[lv_event_t]] - code
+- [[remote_log.h (WS-mirrored diagnostic log declaration)]] - code - firmware/voice-terminal/main/remote_log.h
+- [[vt_agent_count]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_remote_log]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_remote_log_1]] - code - firmware/voice-terminal/main/remote_log.c
+- [[wakeword.c]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_deinit()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_next_agent]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ptt_finish]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ptt_press]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ptt_release]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_push_frame]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tick]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_stop_request]] - code - firmware/voice-terminal/main/wakeword.c
+- [[ws_ctrl_cb_t (server control frame callback type)]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 916]]
-- 3 edges to [[_COMMUNITY_Community 1095]]
-- 3 edges to [[_COMMUNITY_Community 209]]
-- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 13 edges to [[_COMMUNITY_Community 431]]
+- 11 edges to [[_COMMUNITY_Community 246]]
+- 11 edges to [[_COMMUNITY_Community 352]]
+- 5 edges to [[_COMMUNITY_Community 273]]
 
 ## Top bridge nodes
-- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
-- [[.answer_callback()]] - degree 4, connects to 1 community
-- [[.edit_decision_message()]] - degree 4, connects to 1 community
+- [[wakeword.c]] - degree 27, connects to 4 communities
+- [[vt_remote_log]] - degree 15, connects to 2 communities
+- [[_touch_pressed]] - degree 9, connects to 2 communities
+- [[wakeword_ptt_finish]] - degree 8, connects to 2 communities
+- [[wakeword_ptt_press]] - degree 7, connects to 2 communities

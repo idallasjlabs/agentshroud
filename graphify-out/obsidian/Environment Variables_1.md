@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 264"
+community: "Community 1106"
 location: "L698"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Community_1106
 ---
 
 # Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Community_1106

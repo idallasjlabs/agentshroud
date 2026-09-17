@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[build_merge() avoids NetworkX round-trip (801)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
+- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

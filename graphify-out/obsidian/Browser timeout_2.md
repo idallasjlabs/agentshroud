@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 257"
-location: "L292"
+community: "Community 251"
+location: "L328"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/Community_251
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_257
+#graphify/document #graphify/EXTRACTED #community/Community_251

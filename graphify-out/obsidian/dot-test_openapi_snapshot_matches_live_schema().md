@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_api_contract.py"
+type: "code"
+community: "Community 557"
+location: "L98"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_557
+---
+
+# .test_openapi_snapshot_matches_live_schema()
+
+## Connections
+- [[TestOpenAPIContract]] - `method` [EXTRACTED]
+- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_557

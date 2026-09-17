@@ -13,8 +13,8 @@ members: 40
 - [[Advanced Direct Docker Commands]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Backup Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Backup and Restore]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Common Workflows_1]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Configuration_4]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Common Workflows]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Configuration_1]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[Create Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Current Setup (Kept)]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[Decision Summary]] - document - docs/architecture/WORKSPACE_DECISION.md
@@ -23,19 +23,19 @@ members: 40
 - [[Files Created]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[Helper Script]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[Integration with Bot]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Next Steps_3]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Next Steps]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[OpenClaw Workspace Usage Guide]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem Container not running]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem File not found]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem Permission denied]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Quick Reference_4]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Quick Reference_1]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Summary_2]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Troubleshooting_16]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Summary_6]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Troubleshooting_6]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Via Telegram_2]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Via Telegram]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[WORKSPACE_DECISION]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[WORKSPACE_USAGE]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[What is the Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "Community 43"
+community: "Approval Routing & Event Bus"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Approval_Routing__Event_Bus
 ---
 
 # verify.sh
 
 ## Connections
-- [[config.py]] - `references` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 - [[verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

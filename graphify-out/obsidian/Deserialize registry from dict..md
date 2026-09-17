@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Community 51"
+community: "Agent Isolation & Group Config Tests"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/Agent_Isolation__Group_Config_Tests
 ---
 
 # Deserialize registry from dict.
 
 ## Connections
-- [[.from_dict()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_51
+#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests

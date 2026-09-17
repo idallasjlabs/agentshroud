@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 117"
-location: "L46"
+community: "Community 697"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Community_697
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
-- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
-- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Community_697

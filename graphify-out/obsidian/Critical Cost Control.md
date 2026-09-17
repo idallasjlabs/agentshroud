@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Community 827"
+community: "Community 869"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_827
+  - community/Community_869
 ---
 
 # Critical: Cost Control
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_827
+#graphify/document #graphify/EXTRACTED #community/Community_869

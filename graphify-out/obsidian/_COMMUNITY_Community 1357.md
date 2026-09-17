@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[For --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify reference incremental update and cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[openclawskillsgraphifyreferencesupdate]] - document - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1357
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 646]]
-
-## Top bridge nodes
-- [[TestScoreLoggingMonitoring_1]] - degree 4, connects to 1 community

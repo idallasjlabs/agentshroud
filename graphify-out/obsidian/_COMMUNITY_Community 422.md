@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1. Clone the Repository_2]] - document - docs/operations/raspberry-pi.md
-- [[2. Install Docker_1]] - document - docs/operations/raspberry-pi.md
-- [[3. Set Up Secrets_2]] - document - docs/operations/raspberry-pi.md
-- [[4. Configure AgentShroud_2]] - document - docs/operations/raspberry-pi.md
-- [[5. Build and Start_2]] - document - docs/operations/raspberry-pi.md
-- [[6. Verify_2]] - document - docs/operations/raspberry-pi.md
-- [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
-- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
-- [[Fresh Install_2]] - document - docs/operations/raspberry-pi.md
-- [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
-- [[From a Tagged Release]] - document - docs/operations/raspberry-pi.md
-- [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
-- [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
-- [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
-- [[Prerequisites_6]] - document - docs/operations/raspberry-pi.md
-- [[Slow Builds]] - document - docs/operations/raspberry-pi.md
-- [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
-- [[Troubleshooting_18]] - document - docs/operations/raspberry-pi.md
-- [[Updating to Latest Release_2]] - document - docs/operations/raspberry-pi.md
-- [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
+- [[dot-agentsskillsi-psSKILL]] - document - .agents/skills/i-ps/SKILL.md
+- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
+- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
+- [[4. Blast Radius]] - document - .agents/skills/i-ps/SKILL.md
+- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
+- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
+- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
+- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_40]] - document - .agents/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,9 +38,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_422
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 284]]
-
-## Top bridge nodes
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community

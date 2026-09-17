@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.23
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 758
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
-- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
-- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
-- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
-- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
-- [[chat-console launcher]] - code - scripts/chat-console
-- [[chat_console.py]] - code - src/interfaces/chat_console.py
-- [[check_status()]] - code - src/interfaces/chat_console.py
-- [[main()_32]] - code - src/interfaces/chat_console.py
-- [[print_banner()]] - code - src/interfaces/chat_console.py
-- [[print_help()]] - code - src/interfaces/chat_console.py
-- [[send_message()]] - code - src/interfaces/chat_console.py
+- [[AgentShroud Security Proxy]] - document - docs/requirements/use-cases.md
+- [[Overview_26]] - document - docs/requirements/use-cases.md
+- [[UC-001 User Sends Message to Agent (PII Sanitization Flow)]] - document - docs/requirements/use-cases.md
+- [[UC-002 Agent Calls MCP Tool (Inspection + Permission Check)]] - document - docs/requirements/use-cases.md
+- [[UC-003 Agent Fetches Web Content (SSRF Check + Content Scan)]] - document - docs/requirements/use-cases.md
+- [[UC-004 Admin Activates Kill Switch]] - document - docs/requirements/use-cases.md
+- [[UC-005 Agent Requests SSH Access (Approval Queue)]] - document - docs/requirements/use-cases.md
+- [[UC-006 Security Alert Triggers Notification]] - document - docs/requirements/use-cases.md
+- [[UC-007 New Agent Onboarding (Trust Level 0)]] - document - docs/requirements/use-cases.md
+- [[UC-008 Operator Reviews Audit Trail]] - document - docs/requirements/use-cases.md
+- [[UC-009 System Detects Prompt Injection]] - document - docs/requirements/use-cases.md
+- [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - document - docs/requirements/use-cases.md
+- [[Use Cases_3]] - document - docs/requirements/use-cases.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,9 @@ members: 12
 TABLE source_file, type FROM #community/Community_758
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 271]]
+
+## Top bridge nodes
+- [[Use Cases_3]] - degree 12, connects to 1 community

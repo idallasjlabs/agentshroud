@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 19"
+community: "Community 68"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_68
 ---
 
 # services.py
 
 ## Connections
-- [[HealthStatus]] - `imports` [EXTRACTED]
-- [[ServiceDescriptor]] - `imports` [EXTRACTED]
+- [[HealthStatus_1]] - `imports` [EXTRACTED]
+- [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `contains` [EXTRACTED]
-- [[ServiceStatus]] - `imports` [EXTRACTED]
+- [[ServiceStatus_1]] - `imports` [EXTRACTED]
 - [[_check_clamd()]] - `contains` [EXTRACTED]
 - [[_check_fluent_bit()]] - `contains` [EXTRACTED]
 - [[_check_openscap()]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[_inspect_via_socket()]] - `contains` [EXTRACTED]
 - [[_known_services()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `imports_from` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_68

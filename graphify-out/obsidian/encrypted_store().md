@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Encrypted Store & Drift Detector"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # encrypted_store()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 45"
+community: "Community 46"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_46
 ---
 
 # ToolResultPIIReport
 
 ## Connections
-- [[._scan()]] - `references` [EXTRACTED]
-- [[.scan_prompt()]] - `references` [EXTRACTED]
-- [[.scan_tool_result()_1]] - `references` [EXTRACTED]
+- [[dot-_scan()]] - `references` [EXTRACTED]
+- [[dot-scan_prompt()]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()_3]] - `references` [EXTRACTED]
 - [[Full scan result for a tool result or prompt.]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/Community_46

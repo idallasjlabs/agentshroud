@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Community 824"
-location: "L145"
+community: "Community 978"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_824
+  - community/Community_978
 ---
 
 # Related Notes
 
 ## Connections
-- [[Restart Procedure_2]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_824
+#graphify/document #graphify/EXTRACTED #community/Community_978

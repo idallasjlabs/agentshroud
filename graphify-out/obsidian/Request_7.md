@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 14"
-location: "L2717"
+community: "Community 460"
+location: "L55"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_14
+  - graphify/EXTRACTED
+  - community/Community_460
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[installer_page()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_460

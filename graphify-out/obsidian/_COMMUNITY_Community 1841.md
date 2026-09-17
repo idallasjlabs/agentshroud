@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_6]] - code - gateway/ingest_api/routes/__init__.py
+- [[docker-compose.agentshroud-bot.marvin.yml (dev host override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
 
 ## Live Query (requires Dataview plugin)
 

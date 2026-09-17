@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 370"
+community: "Community 499"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/Community_499
 ---
 
 # Policy Table
 
 ## Connections
-- [[Decision_10]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_370
+#graphify/document #graphify/EXTRACTED #community/Community_499

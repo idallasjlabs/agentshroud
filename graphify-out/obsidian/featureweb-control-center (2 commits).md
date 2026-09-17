@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 1047"
+community: "Community 1098"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1047
+  - community/Community_1098
 ---
 
 # feature/web-control-center (2 commits)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1047
+#graphify/document #graphify/EXTRACTED #community/Community_1098

@@ -1,0 +1,504 @@
+---
+type: community
+cohesion: 0.01
+members: 407
+---
+
+# Alert Dispatcher & RBAC Reliability
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 407 nodes
+
+## Members
+- [[dot-__init__()_12]] - code - gateway/ingest_api/middleware.py
+- [[dot-__init__()_13]] - code - gateway/security/approval_hardening.py
+- [[dot-__init__()_14]] - code - gateway/security/browser_security.py
+- [[dot-__init__()_15]] - code - gateway/security/consent_framework.py
+- [[dot-__init__()_16]] - code - gateway/security/drift_detector.py
+- [[dot-__init__()_17]] - code - gateway/security/env_guard.py
+- [[dot-__init__()_18]] - code - gateway/security/log_sanitizer.py
+- [[dot-__init__()_19]] - code - gateway/security/metadata_guard.py
+- [[dot-__init__()_20]] - code - gateway/security/path_isolation.py
+- [[dot-__init__()_21]] - code - gateway/security/subagent_monitor.py
+- [[dot-_analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_apply_path_rewriting()]] - code - gateway/security/path_isolation.py
+- [[dot-_check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_check_cross_user_access()]] - code - gateway/security/path_isolation.py
+- [[dot-_check_description_parameter_mismatch()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_misleading_language()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_parameter_obfuscation()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_check_repeat_request_patterns()]] - code - gateway/security/approval_hardening.py
+- [[dot-_cleanup_old_denied_requests()]] - code - gateway/security/approval_hardening.py
+- [[dot-_cleanup_user_directory()]] - code - gateway/security/path_isolation.py
+- [[dot-_compile_patterns()]] - code - gateway/security/log_sanitizer.py
+- [[dot-_contains_env_access_patterns()]] - code - gateway/security/env_guard.py
+- [[dot-_create_detection_patterns()]] - code - gateway/security/output_canary.py
+- [[dot-_create_invisible_canary()]] - code - gateway/security/output_canary.py
+- [[dot-_create_parameter_fingerprint()]] - code - gateway/security/approval_hardening.py
+- [[dot-_enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_ensure_base_directory()]] - code - gateway/security/path_isolation.py
+- [[dot-_ensure_user_directory()]] - code - gateway/security/path_isolation.py
+- [[dot-_extract_user_id()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_format_parameters_with_highlighting()]] - code - gateway/security/approval_hardening.py
+- [[dot-_get_user_temp_dir()]] - code - gateway/security/path_isolation.py
+- [[dot-_init_db()_1]] - code - gateway/security/drift_detector.py
+- [[dot-_is_base_directory_access()]] - code - gateway/security/path_isolation.py
+- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_log_event()]] - code - gateway/security/subagent_monitor.py
+- [[dot-_looks_like_credential()]] - code - gateway/security/env_guard.py
+- [[dot-_normalize_description()]] - code - gateway/security/approval_hardening.py
+- [[dot-_record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_record_leakage()]] - code - gateway/security/env_guard.py
+- [[dot-_sanitize_text()]] - code - gateway/security/log_sanitizer.py
+- [[dot-_sanitize_user_id()]] - code - gateway/security/path_isolation.py
+- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-acknowledge_alert()]] - code - gateway/security/drift_detector.py
+- [[dot-add_alert_callback()]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-add_alert_callback()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-add_to_blacklist()]] - code - gateway/security/consent_framework.py
+- [[dot-add_to_whitelist()]] - code - gateway/security/consent_framework.py
+- [[dot-analyze_request()]] - code - gateway/security/approval_hardening.py
+- [[dot-approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-check_command_execution()]] - code - gateway/security/env_guard.py
+- [[dot-check_file_access()]] - code - gateway/security/env_guard.py
+- [[dot-check_for_exif()]] - code - gateway/security/metadata_guard.py
+- [[dot-check_oversized_headers()]] - code - gateway/security/metadata_guard.py
+- [[dot-check_tool_usage()]] - code - gateway/security/subagent_monitor.py
+- [[dot-cleanup_abandoned_directories()]] - code - gateway/security/path_isolation.py
+- [[dot-cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
+- [[dot-cleanup_seen()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-clear_detected_leakages()]] - code - gateway/security/env_guard.py
+- [[dot-close()_2]] - code - gateway/security/drift_detector.py
+- [[dot-config()_3]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-deregister()]] - code - gateway/security/subagent_monitor.py
+- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-end_user_session()]] - code - gateway/security/path_isolation.py
+- [[dot-export_leakage_report()]] - code - gateway/security/env_guard.py
+- [[dot-filter()]] - code - gateway/security/log_sanitizer.py
+- [[dot-format_hardened_message()]] - code - gateway/security/approval_hardening.py
+- [[dot-generate_canary()]] - code - gateway/security/output_canary.py
+- [[dot-get_active()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_active_users()]] - code - gateway/security/path_isolation.py
+- [[dot-get_alerts()]] - code - gateway/security/drift_detector.py
+- [[dot-get_blacklist()]] - code - gateway/security/consent_framework.py
+- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_leakage_summary()]] - code - gateway/security/env_guard.py
+- [[dot-get_stats()_1]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_2]] - code - gateway/security/approval_hardening.py
+- [[dot-get_stats()_3]] - code - gateway/security/path_isolation.py
+- [[dot-get_user_temp_path()]] - code - gateway/security/path_isolation.py
+- [[dot-get_whitelist()]] - code - gateway/security/consent_framework.py
+- [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-is_request_in_cooldown()]] - code - gateway/security/approval_hardening.py
+- [[dot-kill_agent()]] - code - gateway/security/subagent_monitor.py
+- [[dot-kill_all()]] - code - gateway/security/subagent_monitor.py
+- [[dot-monitor_environment_access()]] - code - gateway/security/env_guard.py
+- [[dot-process_request()]] - code - gateway/ingest_api/middleware.py
+- [[dot-record_denied_request()]] - code - gateway/security/approval_hardening.py
+- [[dot-register_screenshot_hook()]] - code - gateway/security/browser_security.py
+- [[dot-register_spawn()]] - code - gateway/security/subagent_monitor.py
+- [[dot-register_user_session()]] - code - gateway/security/path_isolation.py
+- [[dot-remove_from_blacklist()]] - code - gateway/security/consent_framework.py
+- [[dot-remove_from_whitelist()]] - code - gateway/security/consent_framework.py
+- [[dot-reset_session()]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-rewrite_path()]] - code - gateway/security/path_isolation.py
+- [[dot-sanitize_filename()]] - code - gateway/security/metadata_guard.py
+- [[dot-sanitize_headers()]] - code - gateway/security/metadata_guard.py
+- [[dot-sanitize_image_metadata()]] - code - gateway/security/metadata_guard.py
+- [[dot-scrub_command_output()]] - code - gateway/security/env_guard.py
+- [[dot-test_alert_dedup()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_alert_dispatcher_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_alert_dispatcher_write()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_basic_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_browser_security_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_browser_security_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_canary_system_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_custom_config()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_config()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_denied_request_creation()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_dns_entropy_calculator()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_dns_low_entropy_legit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_drift_detector_baseline()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_drift_detector_detects_change()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_drift_no_false_positive()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_egress_filter_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_egress_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_get_stats()_1]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_health_report_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_initialization()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_metadata_oversized_headers()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_path_traversal_stripped()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_sanitize_filename()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_network_validator_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_oauth_redirect_mismatch()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_path_isolation_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_unparseable_text_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
+- [[Action_1]] - code - gateway/ingest_api/middleware.py
+- [[Add a callback function for alerts.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[AlertDispatcher]] - code - gateway/security/alert_dispatcher.py
+- [[Analyze an approval request for potential deception or social engineering.]] - rationale - gateway/security/approval_hardening.py
+- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
+- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
+- [[Any_2]] - code - gateway/ingest_api/middleware.py
+- [[Any_3]] - code - gateway/security/alert_dispatcher.py
+- [[Any_4]] - code - gateway/security/approval_hardening.py
+- [[Any_5]] - code - gateway/security/env_guard.py
+- [[Any_6]] - code - gateway/security/log_sanitizer.py
+- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
+- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
+- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
+- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
+- [[Check for misleading language patterns in description.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for mismatch between description and actual parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for obfuscated or encoded parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for patterns indicating repeat request attempts.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
+- [[Check if a similar request is still in cooldown period.]] - rationale - gateway/security/approval_hardening.py
+- [[Check if a value looks like a credential.]] - rationale - gateway/security/env_guard.py
+- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if binary data contains EXIF metadata.]] - rationale - gateway/security/metadata_guard.py
+- [[Check if command contains patterns that could access environment.]] - rationale - gateway/security/env_guard.py
+- [[Check if command execution should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if file access should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if headers exceed size limits.]] - rationale - gateway/security/metadata_guard.py
+- [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
+- [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
+- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - rationale - gateway/security/output_canary.py
+- [[Clean up old denied requests beyond cooldown period.]] - rationale - gateway/security/approval_hardening.py
+- [[Clear the list of detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Compile regex patterns for sensitive data detection.]] - rationale - gateway/security/log_sanitizer.py
+- [[Configuration for approval queue hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ConsentFramework]] - code - gateway/security/consent_framework.py
+- [[Create a fingerprint for request parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Create an invisible version of the canary using various techniques.          Arg]] - rationale - gateway/security/output_canary.py
+- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Create base agentshroud temp directory if it doesn't exist.]] - rationale - gateway/security/path_isolation.py
+- [[Create regex patterns to detect the canary in responses.          Args]] - rationale - gateway/security/output_canary.py
+- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Custom logging filter that sanitizes sensitive data from log records.]] - rationale - gateway/security/log_sanitizer.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[DeceptionDetection]] - code - gateway/security/approval_hardening.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[DeniedRequest]] - code - gateway/security/approval_hardening.py
+- [[Detect configuration drift from known-good baselines.]] - rationale - gateway/security/drift_detector.py
+- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
+- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
+- [[Dispatches security alerts with dedup and rate limiting.]] - rationale - gateway/security/alert_dispatcher.py
+- [[DriftDetector]] - code - gateway/security/drift_detector.py
+- [[Duplicate alerts should be deduplicated.]] - rationale - gateway/tests/test_security_audit.py
+- [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
+- [[End a user session and optionally clean up their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
+- [[Ensure user's isolated directory exists.]] - rationale - gateway/security/path_isolation.py
+- [[EnvironmentGuard]] - code - gateway/security/env_guard.py
+- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
+- [[Exception_1]] - code - gateway/ingest_api/middleware.py
+- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
+- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
+- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
+- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Format an approval message with hardening measures applied.]] - rationale - gateway/security/approval_hardening.py
+- [[Format parameters with risk highlighting.]] - rationale - gateway/security/approval_hardening.py
+- [[Generate and store a canary for this session.          Args             session]] - rationale - gateway/security/output_canary.py
+- [[Get a path within the user's isolated temp directory.]] - rationale - gateway/security/path_isolation.py
+- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get set of currently active users.]] - rationale - gateway/security/path_isolation.py
+- [[Get statistics about approval hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Get statistics about path isolation manager.]] - rationale - gateway/security/path_isolation.py
+- [[Get statistics about sanitization patterns.]] - rationale - gateway/security/log_sanitizer.py
+- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
+- [[Get the isolated temp directory path for a user.]] - rationale - gateway/security/path_isolation.py
+- [[Guard against environment variable leakage and unauthorized access.]] - rationale - gateway/security/env_guard.py
+- [[Guards against metadata channel attacks and information disclosure.]] - rationale - gateway/security/metadata_guard.py
+- [[High-entropy domains (potential tunneling).]] - rationale - gateway/tests/test_security_audit.py
+- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Kaizen Fix AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14week) at ERROR level]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
+- [[Legit domains have lower entropy.]] - rationale - gateway/tests/test_security_audit.py
+- [[LogRecord]] - code - gateway/security/log_sanitizer.py
+- [[LogSanitizer]] - code - gateway/ingest_api/middleware.py
+- [[LogSanitizer_1]] - code - gateway/security/log_sanitizer.py
+- [[Main Output Canary System for detecting prompt leakage.      This system generat]] - rationale - gateway/security/output_canary.py
+- [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
+- [[Manages per-user path isolation for temporary files and directories.]] - rationale - gateway/security/path_isolation.py
+- [[Mark an alert as acknowledged.]] - rationale - gateway/security/drift_detector.py
+- [[MetadataGuard]] - code - gateway/security/metadata_guard.py
+- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
+- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
+- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[MultiTurnTracker]] - code - gateway/security/multi_turn_tracker.py
+- [[Normalize description by removing misleading language.]] - rationale - gateway/security/approval_hardening.py
+- [[Output Canary System Tests]] - code - gateway/tests/test_output_canary.py
+- [[OutputCanary]] - code - gateway/security/output_canary.py
+- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
+- [[Path]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[PathIsolationConfig]] - code - gateway/security/path_isolation.py
+- [[PathIsolationManager]] - code - gateway/security/path_isolation.py
+- [[Pattern]] - code - gateway/security/log_sanitizer.py
+- [[Pattern_1]] - code - gateway/security/output_canary.py
+- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[RBACManager_1]] - code - gateway/ingest_api/middleware.py
+- [[Record a denied request for cooldown tracking.]] - rationale - gateway/security/approval_hardening.py
+- [[Record a detected environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
+- [[Record of a denied approval request.]] - rationale - gateway/security/approval_hardening.py
+- [[Register a new user session and create their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Remove EXIF metadata from image data if present.]] - rationale - gateway/security/metadata_guard.py
+- [[Remove expired entries from seen IDs cache.          Returns             Number]] - rationale - gateway/security/alert_dispatcher.py
+- [[Reset session score after owner review.          Args             session_id S]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Resource_1]] - code - gateway/ingest_api/middleware.py
+- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
+- [[Result of deception detection analysis.]] - rationale - gateway/security/approval_hardening.py
+- [[Retrieve stored drift alerts.]] - rationale - gateway/security/drift_detector.py
+- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
+- [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
+- [[Sanitize HTTP headers by removing sensitive information.]] - rationale - gateway/security/metadata_guard.py
+- [[Sanitize filename by removing unicode control characters and normalizing.]] - rationale - gateway/security/metadata_guard.py
+- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
+- [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
+- [[Scrub environment variables and API keys from command output.          Args]] - rationale - gateway/security/env_guard.py
+- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitorConfig]] - code - gateway/security/subagent_monitor.py
+- [[Test DNS filtering, SSRF prevention, and egress control.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test DeceptionDetection dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test DeniedRequest dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test approval hardening configuration.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test audit chain integrity and tamper detection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test basic detection result creation.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration values.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test default configuration values.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test denied request creation.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of misleading descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection with default values.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
+- [[TestApprovalHardeningConfig]] - code - gateway/tests/test_approval_hardening.py
+- [[TestAuditTrail]] - code - gateway/tests/test_security_audit.py
+- [[TestAuditTrail_1]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestDeceptionDetection]] - code - gateway/tests/test_approval_hardening.py
+- [[TestDeniedRequest]] - code - gateway/tests/test_approval_hardening.py
+- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
+- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestNetworkSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
+- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolTier_2]] - code - gateway/ingest_api/middleware.py
+- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
+- [[any_7]] - code - gateway/security/path_isolation.py
+- [[approval_hardening.py]] - code - gateway/security/approval_hardening.py
+- [[callable]] - code - gateway/security/multi_turn_tracker.py
+- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[default_config()]] - code - gateway/tests/test_subagent_monitor.py
+- [[dispatcher()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[env_guard.py]] - code - gateway/security/env_guard.py
+- [[get_env_guard()]] - code - gateway/security/env_guard.py
+- [[get_sanitizer_stats()]] - code - gateway/security/log_sanitizer.py
+- [[log_sanitizer.py]] - code - gateway/security/log_sanitizer.py
+- [[middleware.py]] - code - gateway/ingest_api/middleware.py
+- [[monitor()]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor_config()]] - code - gateway/tests/test_subagent_monitor.py
+- [[path_isolation.py]] - code - gateway/security/path_isolation.py
+- [[strict_config()]] - code - gateway/tests/test_subagent_monitor.py
+- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
+- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
+- [[test_approval_hardening.py]] - code - gateway/tests/test_approval_hardening.py
+- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Alert_Dispatcher__RBAC_Reliability
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 107 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 87 edges to [[_COMMUNITY_Session Manager & PIIContext Guard]]
+- 82 edges to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+- 53 edges to [[_COMMUNITY_File Sandbox & Privilege Separation Tests]]
+- 51 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 40 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 38 edges to [[_COMMUNITY_Community 48]]
+- 36 edges to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+- 29 edges to [[_COMMUNITY_Memory Integrity & Lifecycle]]
+- 27 edges to [[_COMMUNITY_PII Sanitizer & Redaction]]
+- 25 edges to [[_COMMUNITY_Community 63]]
+- 24 edges to [[_COMMUNITY_Community 155]]
+- 24 edges to [[_COMMUNITY_Community 64]]
+- 23 edges to [[_COMMUNITY_Encrypted Store & Drift Detector]]
+- 18 edges to [[_COMMUNITY_Community 157]]
+- 15 edges to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 13 edges to [[_COMMUNITY_Community 487]]
+- 13 edges to [[_COMMUNITY_Community 100]]
+- 12 edges to [[_COMMUNITY_Community 539]]
+- 11 edges to [[_COMMUNITY_Community 54]]
+- 11 edges to [[_COMMUNITY_Community 204]]
+- 10 edges to [[_COMMUNITY_Community 133]]
+- 10 edges to [[_COMMUNITY_Community 101]]
+- 10 edges to [[_COMMUNITY_Community 659]]
+- 8 edges to [[_COMMUNITY_Prompt Guard & Context Integrity]]
+- 8 edges to [[_COMMUNITY_Community 215]]
+- 7 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 6 edges to [[_COMMUNITY_Community 182]]
+- 6 edges to [[_COMMUNITY_Community 598]]
+- 6 edges to [[_COMMUNITY_Community 213]]
+- 5 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+- 5 edges to [[_COMMUNITY_Community 493]]
+- 5 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 5 edges to [[_COMMUNITY_Community 42]]
+- 4 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 4 edges to [[_COMMUNITY_Community 119]]
+- 4 edges to [[_COMMUNITY_Community 414]]
+- 4 edges to [[_COMMUNITY_Community 80]]
+- 4 edges to [[_COMMUNITY_Community 658]]
+- 4 edges to [[_COMMUNITY_Community 890]]
+- 4 edges to [[_COMMUNITY_Community 192]]
+- 3 edges to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
+- 3 edges to [[_COMMUNITY_Community 521]]
+- 3 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 3 edges to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 2 edges to [[_COMMUNITY_Community 1033]]
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 2 edges to [[_COMMUNITY_Community 322]]
+- 2 edges to [[_COMMUNITY_Community 354]]
+- 2 edges to [[_COMMUNITY_Community 170]]
+- 2 edges to [[_COMMUNITY_Tool Result Sanitizer & XML Injection Filtering]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 249]]
+- 1 edge to [[_COMMUNITY_Community 861]]
+- 1 edge to [[_COMMUNITY_Community 40]]
+- 1 edge to [[_COMMUNITY_Community 666]]
+- 1 edge to [[_COMMUNITY_Community 522]]
+- 1 edge to [[_COMMUNITY_Community 915]]
+- 1 edge to [[_COMMUNITY_Proxy Sidecar & Forwarder]]
+- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 86]]
+- 1 edge to [[_COMMUNITY_Community 535]]
+- 1 edge to [[_COMMUNITY_Community 131]]
+- 1 edge to [[_COMMUNITY_Community 67]]
+- 1 edge to [[_COMMUNITY_Collaborator Activity & Telegram Proxy]]
+- 1 edge to [[_COMMUNITY_Community 793]]
+
+## Top bridge nodes
+- [[MiddlewareResult]] - degree 124, connects to 30 communities
+- [[middleware.py]] - degree 56, connects to 21 communities
+- [[Any_2]] - degree 55, connects to 18 communities
+- [[RBACManager_1]] - degree 49, connects to 18 communities
+- [[ToolTier_2]] - degree 49, connects to 18 communities

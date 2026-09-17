@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 531"
+community: "Community 542"
 location: "L337"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_542
 ---
 
 # Step 7: Add the module to gateway configuration
 
 ## Connections
-- [[Remediation_7]] - `contains` [EXTRACTED]
+- [[Remediation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/Community_542

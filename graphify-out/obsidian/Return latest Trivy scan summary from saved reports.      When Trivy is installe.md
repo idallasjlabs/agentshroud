@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 863"
+community: "Community 518"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_863
+  - community/Community_518
 ---
 
 # Return latest Trivy scan summary from saved reports.      When Trivy is installe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_trivy_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_863
+#graphify/rationale #graphify/EXTRACTED #community/Community_518

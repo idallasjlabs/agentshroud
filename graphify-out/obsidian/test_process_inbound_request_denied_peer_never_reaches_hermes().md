@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 110"
+community: "Community 103"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_103
 ---
 
 # test_process_inbound_request_denied_peer_never_reaches_hermes()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
+- [[A2AProxy]] - `calls` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
+- [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_103

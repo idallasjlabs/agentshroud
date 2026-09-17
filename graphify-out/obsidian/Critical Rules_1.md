@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 371"
-location: "L142"
+community: "Community 241"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Community_241
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Community_241

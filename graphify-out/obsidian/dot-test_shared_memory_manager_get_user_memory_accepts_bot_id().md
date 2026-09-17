@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
+type: "code"
+community: "Community 912"
+location: "L121"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_912
+---
+
+# .test_shared_memory_manager_get_user_memory_accepts_bot_id()
+
+## Connections
+- [[BT-H1 SharedMemoryManager.get_user_memory must accept a bot_id parameter.]] - `rationale_for` [EXTRACTED]
+- [[TestBotIdIsolationInSharedMemory]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_912

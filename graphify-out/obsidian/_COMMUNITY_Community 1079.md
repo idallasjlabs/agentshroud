@@ -1,21 +1,22 @@
 ---
 type: community
 cohesion: 0.33
-members: 6
+members: 7
 ---
 
 # Community 1079
 
 **Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
-- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
-- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
-- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
-- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
-- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
+- [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
+- [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
+- [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
+- [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 344]]
+- 2 edges to [[_COMMUNITY_Community 1161]]
+- 1 edge to [[_COMMUNITY_Community 1016]]
+- 1 edge to [[_COMMUNITY_Community 1093]]
 
 ## Top bridge nodes
-- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - degree 6, connects to 1 community
+- [[USPTO-APPLICATION]] - degree 6, connects to 2 communities
+- [[PRIOR-USE]] - degree 5, connects to 2 communities

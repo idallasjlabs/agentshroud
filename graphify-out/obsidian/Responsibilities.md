@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "Community 745"
-location: "L15"
+community: "Community 1185"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Community_1185
 ---
 
 # Responsibilities
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Community_1185

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "rationale"
-community: "Community 580"
+community: "Community 578"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/Community_578
 ---
 
 # Approval Queue — Core Security Value
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue Control]] - `semantically_similar_to` [INFERRED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_580
+#graphify/rationale #graphify/EXTRACTED #community/Community_578

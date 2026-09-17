@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 441
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Approval Required By]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Blast Radius]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[CLAUDE]] - document - CLAUDE.md
-- [[COPILOT_CLI_SETUP]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Effort]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Guidance for Claude Code (claude.aicode) when working in this repository.]] - document - CLAUDE.md
-- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - document - CLAUDE.md
-- [[Outcome]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Problem]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - rationale - .github/COPILOT_CLI_SETUP.md
-- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[These instructions are authoritative. Follow them strictly.]] - document - CLAUDE.md
-- [[Timeline]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[gsd]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[dot-__init__()_148]] - code - gateway/tests/test_key_rotation.py
+- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-validate()_3]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 255]]
-- 1 edge to [[_COMMUNITY_Community 172]]
-- 1 edge to [[_COMMUNITY_Community 344]]
+- 6 edges to [[_COMMUNITY_Community 291]]
+- 4 edges to [[_COMMUNITY_Community 133]]
+- 4 edges to [[_COMMUNITY_Community 232]]
+- 4 edges to [[_COMMUNITY_Community 544]]
+- 2 edges to [[_COMMUNITY_Community 848]]
+- 1 edge to [[_COMMUNITY_Community 715]]
 
 ## Top bridge nodes
-- [[CLAUDE]] - degree 7, connects to 1 community
-- [[gsd]] - degree 7, connects to 1 community
-- [[COPILOT_CLI_SETUP]] - degree 2, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[dot-test_register_validator()]] - degree 3, connects to 1 community

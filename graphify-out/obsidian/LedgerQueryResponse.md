@@ -1,20 +1,35 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L206"
+community: "Ingest API & RBAC Core"
+location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # LedgerQueryResponse
 
 ## Connections
-- [[.query()]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[Any_26]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Paginated ledger query results]] - `rationale_for` [EXTRACTED]
+- [[Request]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

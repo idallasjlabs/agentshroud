@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 1415"
+location: "L2544"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1415
+---
+
+# .test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[Sensitive path probes should be blockedquarantined for collaborators.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1415

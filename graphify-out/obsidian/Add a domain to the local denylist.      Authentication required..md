@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L4083"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Add a domain to the local denylist.      Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[add_blocked_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

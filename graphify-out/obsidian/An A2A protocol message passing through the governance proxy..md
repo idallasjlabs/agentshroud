@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "Community 40"
+community: "Community 39"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # An A2A protocol message passing through the governance proxy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AMessage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_40
+#graphify/rationale #graphify/EXTRACTED #community/Community_39

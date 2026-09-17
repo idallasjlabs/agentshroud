@@ -1,19 +1,19 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 318"
+community: "Community 328"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_318
+  - community/Community_328
 ---
 
 # If not → escalate to field team via #ops-alerts
 
 ## Connections
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[API  Function Reference]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)]] - `contains` [EXTRACTED]
-- [[SKILL_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_318
+#graphify/document #graphify/EXTRACTED #community/Community_328

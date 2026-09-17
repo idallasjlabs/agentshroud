@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 690"
+community: "Community 712"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_690
+  - community/Community_712
 ---
 
 # ✅ Step-by-Step Pairing Process
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Enter the Gateway Token]] - `contains` [EXTRACTED]
 - [[Step 4 Verify Connection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_690
+#graphify/document #graphify/EXTRACTED #community/Community_712

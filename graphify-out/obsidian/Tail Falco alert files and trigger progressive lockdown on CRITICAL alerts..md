@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Community 501"
+community: "Community 98"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/Community_98
 ---
 
 # Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_501
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

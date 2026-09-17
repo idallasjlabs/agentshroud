@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.38
+members: 7
 ---
 
 # Community 1071
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.38 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[appendLog()]] - code - .agents/skills/i-browser/browse.js
-- [[browse.js]] - code - .agents/skills/i-browser/browse.js
-- [[browserFetch()]] - code - .agents/skills/i-browser/browse.js
-- [[fs]] - code - .agents/skills/i-browser/browse.js
-- [[path]] - code - .agents/skills/i-browser/browse.js
-- [[{ chromium }]] - code - .agents/skills/i-browser/browse.js
+- [[_oc_config_set]] - code - docker/scripts/init-openclaw-config.sh
+- [[_sha256]] - code - docker/scripts/init-openclaw-config.sh
+- [[agentshroud-isolated Network (DMZ tier)]] - code - docker/docker-compose.yml
+- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[init-openclaw-config.sh]] - code - docker/scripts/init-openclaw-config.sh
+- [[init-openclaw-config.sh script]] - code - docker/scripts/init-openclaw-config.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1071
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 454]]
+
+## Top bridge nodes
+- [[entrypoint-agentshroud.sh]] - degree 3, connects to 1 community

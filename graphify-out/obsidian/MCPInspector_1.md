@@ -1,24 +1,93 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 324"
-location: "L230"
+community: "Community 211"
+location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_324
+  - community/Community_211
 ---
 
 # MCPInspector
 
 ## Connections
-- [[.__init__()_31]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
+- [[dot-__init__()_95]] - `method` [EXTRACTED]
+- [[dot-_redact_pii()]] - `method` [EXTRACTED]
+- [[dot-_scan_text()]] - `method` [EXTRACTED]
+- [[dot-_scan_value()]] - `method` [EXTRACTED]
+- [[dot-_should_block()]] - `method` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `method` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `method` [EXTRACTED]
+- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[Any_35]] - `uses` [INFERRED]
+- [[ConnectionPool]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[FakeApprovalQueue]] - `uses` [INFERRED]
+- [[FakeConn]] - `uses` [INFERRED]
+- [[FakeProcess]] - `uses` [INFERRED]
+- [[HttpSseConnection]] - `uses` [INFERRED]
+- [[Inspects MCP tool calls and responses for security threats.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
+- [[MCPProxy.process_tool_result]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `shares_data_with` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[ProxyResult]] - `uses` [INFERRED]
+- [[StdioConnection]] - `uses` [INFERRED]
+- [[TestAllowDenyList]] - `uses` [INFERRED]
+- [[TestApprovalQueue]] - `uses` [INFERRED]
+- [[TestAuditQueries]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestAuditTrailBounded]] - `uses` [INFERRED]
+- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
+- [[TestConfigParsing]] - `uses` [INFERRED]
+- [[TestConnectionPool]] - `uses` [INFERRED]
+- [[TestDataclasses]] - `uses` [INFERRED]
+- [[TestEgressFilterPaths]] - `uses` [INFERRED]
+- [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
+- [[TestExecuteToolCall]] - `uses` [INFERRED]
+- [[TestExtractEgressTargets]] - `uses` [INFERRED]
+- [[TestHashChainIntegration]] - `uses` [INFERRED]
+- [[TestHttpSseConnection]] - `uses` [INFERRED]
+- [[TestInjectionDetection]] - `uses` [INFERRED]
+- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPassthrough]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
+- [[TestProcessingTime]] - `uses` [INFERRED]
+- [[TestProxyInterception]] - `uses` [INFERRED]
+- [[TestProxyPermissions]] - `uses` [INFERRED]
+- [[TestProxyRateLimiting]] - `uses` [INFERRED]
+- [[TestProxyResultProcessing]] - `uses` [INFERRED]
+- [[TestProxyStats]] - `uses` [INFERRED]
+- [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
+- [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
+- [[TestSensitiveOps]] - `uses` [INFERRED]
+- [[TestStdioConnection]] - `uses` [INFERRED]
+- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
+- [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[inspector()]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
+- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[proxy()_3]] - `calls` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
+- [[strict_inspector()]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_324
+#graphify/code #graphify/INFERRED #community/Community_211

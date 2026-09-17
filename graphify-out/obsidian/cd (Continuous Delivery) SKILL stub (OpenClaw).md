@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cd/SKILL.md"
 type: "document"
-community: "Community 1801"
+community: "Community 1997"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1801
+  - community/Community_1997
 ---
 
 # cd (Continuous Delivery) SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1801
+#graphify/document #graphify/EXTRACTED #community/Community_1997

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 162"
+community: "Community 128"
 location: "L855"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Community_128
 ---
 
 # What's Working Well
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[14. Gap Analysis & Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_162
+#graphify/document #graphify/EXTRACTED #community/Community_128

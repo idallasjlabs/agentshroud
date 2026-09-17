@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Community 48"
+community: "Voice Gateway STT & Browser Security"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Scan web content for prompt injection, PII, and hidden payloads.      All findin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebContentScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

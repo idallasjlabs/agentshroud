@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 72"
+community: "Community 60"
 location: "L1502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_60
 ---
 
 # _score_registry_security()
 
 ## Connections
-- [[Path_17]] - `calls` [EXTRACTED]
+- [[Path_52]] - `calls` [EXTRACTED]
 - [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[_is_containerized()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_60

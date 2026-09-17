@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 707"
+community: "Community 938"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_938
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/Community_938

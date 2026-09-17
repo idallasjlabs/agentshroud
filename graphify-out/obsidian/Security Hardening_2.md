@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 820"
-location: "L51"
+community: "Community 643"
+location: "L417"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/Community_643
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/Community_643

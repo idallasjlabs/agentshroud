@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.22
+members: 13
 ---
 
 # Community 764
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_10]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Function Details_16]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Purpose_137]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Related_23]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[dot-render_summary()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_dry_run_default_command()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_dry_run_touches_nothing()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_all_pass_with_injected_runner()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_default_hosts()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_failure_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_unreachable_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
+- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - rationale - gateway/tools/multi_host_test.py
+- [[Render an aligned PASSFAIL table plus a totals line.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestMain_1]] - code - gateway/tests/test_multi_host_test.py
+- [[main()_30]] - code - gateway/tools/multi_host_test.py
+- [[multi-host-test.sh]] - code - scripts/multi-host-test.sh
+- [[multi-host-test.sh script]] - code - scripts/multi-host-test.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,20 @@ members: 12
 TABLE source_file, type FROM #community/Community_764
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 859]]
+- 3 edges to [[_COMMUNITY_Community 497]]
+- 3 edges to [[_COMMUNITY_Community 911]]
+- 2 edges to [[_COMMUNITY_Community 1158]]
+- 2 edges to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 1039]]
+- 1 edge to [[_COMMUNITY_Community 1300]]
+- 1 edge to [[_COMMUNITY_Community 860]]
+
+## Top bridge nodes
+- [[main()_30]] - degree 18, connects to 6 communities
+- [[TestMain_1]] - degree 10, connects to 3 communities
+- [[dot-test_main_all_pass_with_injected_runner()]] - degree 3, connects to 1 community
+- [[dot-test_main_failure_nonzero_exit()]] - degree 3, connects to 1 community
+- [[dot-test_main_unreachable_nonzero_exit()]] - degree 3, connects to 1 community

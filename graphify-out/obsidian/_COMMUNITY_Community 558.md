@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 558
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
-- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[dot-mock_app_state()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-mock_auth()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_add_egress_rule_endpoint()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_approve_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_deny_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_get_egress_rules_endpoint()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_pending_requests_endpoint()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_remove_egress_rule_endpoint()]] - code - gateway/tests/test_egress_approval.py
+- [[Mock app_state with egress approval queue.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Mock authentication dependency.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test DELETE manageegressrules{domain} endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test GET manageegresspending endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test GET manageegressrules endpoint.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test POST manageegressapprove{request_id} endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test POST manageegressrules endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Test suite for egress approval API endpoints.]] - rationale - gateway/tests/test_egress_approval.py
+- [[TestEgressApprovalAPI]] - code - gateway/tests/test_egress_approval.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 279]]
-- 1 edge to [[_COMMUNITY_Community 1171]]
-- 1 edge to [[_COMMUNITY_Community 744]]
-- 1 edge to [[_COMMUNITY_Community 1246]]
-- 1 edge to [[_COMMUNITY_Community 1305]]
-- 1 edge to [[_COMMUNITY_Community 588]]
+- 3 edges to [[_COMMUNITY_Community 117]]
+- 2 edges to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Community 81]]
 
 ## Top bridge nodes
-- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 4 communities
-- [[Quick Reference Commands]] - degree 2, connects to 1 community
-- [[Quick-reference commands]] - degree 2, connects to 1 community
+- [[TestEgressApprovalAPI]] - degree 15, connects to 4 communities
+- [[dot-mock_app_state()]] - degree 3, connects to 1 community
+- [[dot-mock_auth()]] - degree 3, connects to 1 community

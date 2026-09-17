@@ -1,19 +1,19 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 596"
-location: "L1"
+community: "Community 396"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_596
+  - community/Community_396
 ---
 
-# Network Topology.md
+# Network Topology
 
 ## Connections
-- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
-- [[Full System Flowchart]] - `references` [EXTRACTED]
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
+- [[Three-Network Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_596
+#graphify/document #graphify/EXTRACTED #community/Community_396

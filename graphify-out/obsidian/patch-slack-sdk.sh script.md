@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-slack-sdk.sh"
 type: "code"
-community: "Community 620"
+community: "Community 1656"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_620
+  - community/Community_1656
 ---
 
 # patch-slack-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-slack-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_620
+#graphify/code #graphify/EXTRACTED #community/Community_1656

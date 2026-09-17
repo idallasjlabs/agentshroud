@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Community 1232"
+community: "Community 144"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1232
+  - community/Community_144
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1232
+#graphify/document #graphify/EXTRACTED #community/Community_144

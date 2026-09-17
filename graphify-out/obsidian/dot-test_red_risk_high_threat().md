@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_soc_egress.py"
+type: "code"
+community: "Community 68"
+location: "L49"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_68
+---
+
+# .test_red_risk_high_threat()
+
+## Connections
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
+- [[TestEgressRequestModel]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_68

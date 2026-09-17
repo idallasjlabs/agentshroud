@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 88"
+community: "P3 Infrastructure Security Modules"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Start tracking resources for a specific agent/request.
 
 ## Connections
-- [[.start_request_tracking()]] - `rationale_for` [EXTRACTED]
+- [[dot-start_request_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_88
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

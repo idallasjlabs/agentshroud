@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Purpose_2]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Related Notes_2]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 266]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community
+- [[Pydantic]] - degree 7, connects to 1 community

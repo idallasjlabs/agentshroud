@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1330
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[2. Security Value Audit_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[⚠️ Areas Requiring Vigilance]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[✅ Genuine Security Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[❌ Potential Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[dot-test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 200]]
+- 1 edge to [[_COMMUNITY_Community 297]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit_1]] - degree 4, connects to 1 community
+- [[TestTextReaders]] - degree 5, connects to 1 community
+- [[dot-test_compose_text_skips_unreadable_then_reads()]] - degree 2, connects to 1 community
+- [[dot-test_security_scan_sh_read()]] - degree 2, connects to 1 community

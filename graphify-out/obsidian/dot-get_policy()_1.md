@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/key_rotation_config.py"
+type: "code"
+community: "Community 291"
+location: "L119"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_291
+---
+
+# .get_policy()
+
+## Connections
+- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
+- [[Get rotation policy for a credential type, falling back to api_key default.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_291

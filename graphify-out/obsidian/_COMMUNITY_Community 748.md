@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.29
+members: 13
 ---
 
 # Community 748
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Cloud & FinOps]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Content & Communication]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Core Development]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Data Operations]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Investigation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[MCP Tools]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Safety]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Reference_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[SecureClaw (Project-Specific)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skills by Category]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[System Utilities]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Workflow_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[dot-_make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_dedup()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_stats()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
+- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 523]]
+- 1 edge to [[_COMMUNITY_Community 56]]
 
 ## Top bridge nodes
-- [[Skills by Category]] - degree 12, connects to 1 community
+- [[TestAlertDispatcher]] - degree 13, connects to 1 community

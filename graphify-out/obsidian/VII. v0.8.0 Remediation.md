@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 158"
+community: "Community 234"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/Community_234
 ---
 
 # VII. v0.8.0 Remediation
@@ -20,4 +20,4 @@ tags:
 - [[VII-E. Human-in-the-Loop (R-08, R-09)]] - `contains` [EXTRACTED]
 - [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_158
+#graphify/document #graphify/EXTRACTED #community/Community_234

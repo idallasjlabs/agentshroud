@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 606"
+community: "Community 621"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/Community_621
 ---
 
 # Step 4 — Triage each finding
@@ -17,4 +17,4 @@ tags:
 - [[Check C — Still broken at HEAD (not self-healed)_1]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/Community_621

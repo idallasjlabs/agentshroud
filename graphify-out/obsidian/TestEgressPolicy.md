@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 217"
+community: "Community 185"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/Community_185
 ---
 
 # TestEgressPolicy
 
 ## Connections
-- [[.test_matches_domain_exact()]] - `method` [EXTRACTED]
-- [[.test_matches_domain_wildcard()]] - `method` [EXTRACTED]
-- [[.test_matches_ip_cidr()]] - `method` [EXTRACTED]
-- [[.test_matches_ip_invalid()]] - `method` [EXTRACTED]
-- [[.test_matches_ip_single()]] - `method` [EXTRACTED]
-- [[.test_matches_port()]] - `method` [EXTRACTED]
-- [[.test_matches_port_empty_allows_all()]] - `method` [EXTRACTED]
+- [[dot-test_matches_domain_exact()]] - `method` [EXTRACTED]
+- [[dot-test_matches_domain_wildcard()]] - `method` [EXTRACTED]
+- [[dot-test_matches_ip_cidr()]] - `method` [EXTRACTED]
+- [[dot-test_matches_ip_invalid()]] - `method` [EXTRACTED]
+- [[dot-test_matches_ip_single()]] - `method` [EXTRACTED]
+- [[dot-test_matches_port()]] - `method` [EXTRACTED]
+- [[dot-test_matches_port_empty_allows_all()]] - `method` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[Unit tests for EgressPolicy matching methods.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_217
+#graphify/code #graphify/EXTRACTED #community/Community_185

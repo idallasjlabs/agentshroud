@@ -1,18 +1,34 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L65"
+community: "Memory Integrity & Lifecycle"
+location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # MemoryIntegrityConfig
 
 ## Connections
-- [[.__init__()_95]] - `references` [EXTRACTED]
+- [[dot-setup_method()_16]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
+- [[Any_28]] - `uses` [INFERRED]
+- [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[ModificationSource]] - `uses` [INFERRED]
+- [[Path_17]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
+- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[memory_config.py]] - `contains` [EXTRACTED]
+- [[memory_integrity.py]] - `imports` [EXTRACTED]
+- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Memory_Integrity__Lifecycle

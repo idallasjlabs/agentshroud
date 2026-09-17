@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
-- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
+- [[i-hermes README — Podcast Production Orchestrator]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[i-hermes SKILL — Reference Verifier]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

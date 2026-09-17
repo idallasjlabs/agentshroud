@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 142"
+community: "Community 138"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_138
 ---
 
 # Domain blocklist with Pi-hole-compatible list parsing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_142
+#graphify/rationale #graphify/EXTRACTED #community/Community_138

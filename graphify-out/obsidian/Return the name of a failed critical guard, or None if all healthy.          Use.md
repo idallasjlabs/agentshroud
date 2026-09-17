@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Middleware & Lifespan"
+community: "Ingest Middleware & File Sandbox"
 location: "L482"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Return the name of a failed critical guard, or None if all healthy.          Use
 
 ## Connections
-- [[._critical_guard_failure()]] - `rationale_for` [EXTRACTED]
+- [[dot-_critical_guard_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

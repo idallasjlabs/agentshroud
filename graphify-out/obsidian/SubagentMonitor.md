@@ -1,43 +1,43 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 97"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_97
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # SubagentMonitor
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_120]] - `method` [EXTRACTED]
-- [[._log_event()_1]] - `method` [EXTRACTED]
-- [[.check_tool_usage()]] - `method` [EXTRACTED]
-- [[.deregister()_1]] - `method` [EXTRACTED]
-- [[.get_active()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_6]] - `method` [EXTRACTED]
-- [[.get_flagged_events()]] - `method` [EXTRACTED]
-- [[.kill_agent()]] - `method` [EXTRACTED]
-- [[.kill_all()]] - `method` [EXTRACTED]
-- [[.register_spawn()]] - `method` [EXTRACTED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
+- [[dot-_log_event()]] - `method` [EXTRACTED]
+- [[dot-check_tool_usage()]] - `method` [EXTRACTED]
+- [[dot-deregister()]] - `method` [EXTRACTED]
+- [[dot-get_active()]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_5]] - `method` [EXTRACTED]
+- [[dot-get_flagged_events()]] - `method` [EXTRACTED]
+- [[dot-kill_agent()]] - `method` [EXTRACTED]
+- [[dot-kill_all()]] - `method` [EXTRACTED]
+- [[dot-register_spawn()]] - `method` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `semantically_similar_to` [INFERRED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestKillSwitch]] - `uses` [INFERRED]
@@ -49,15 +49,15 @@ tags:
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSubagentMonitorConfig]] - `uses` [INFERRED]
 - [[TestSubagentTracking]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `conceptually_related_to` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[TrustManager]] - `conceptually_related_to` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor()_1]] - `calls` [EXTRACTED]
+- [[monitor()]] - `calls` [EXTRACTED]
 - [[strict_monitor()]] - `calls` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_97
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

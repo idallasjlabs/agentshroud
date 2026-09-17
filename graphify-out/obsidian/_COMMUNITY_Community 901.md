@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.39
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 901
 
-**Cohesion:** 0.39 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_901
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 295]]
+
+## Top bridge nodes
+- [[RBAC Role Definitions]] - degree 3, connects to 1 community

@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 862
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[._check_encoded_content()]] - code - gateway/security/prompt_guard.py
-- [[._check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
-- [[.scan()_4]] - code - gateway/security/prompt_guard.py
-- [[.scan_tool_result()_2]] - code - gateway/security/prompt_guard.py
-- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
-- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
-- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
-- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
+- [[dot-test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,15 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 2 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 30]]
+- 4 edges to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
 
 ## Top bridge nodes
-- [[.scan()_4]] - degree 8, connects to 3 communities
-- [[detect_base64_payloads()]] - degree 5, connects to 2 communities
-- [[.scan_tool_result()_2]] - degree 4, connects to 2 communities
-- [[._check_encoded_content()]] - degree 4, connects to 1 community
-- [[._check_unicode_tricks()]] - degree 3, connects to 1 community
+- [[TestTrustProgression]] - degree 11, connects to 1 community

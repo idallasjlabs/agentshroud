@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 553"
-location: "L62"
+community: "Community 219"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Community_219
 ---
 
 # Path
 
 ## Connections
-- [[.from_file()]] - `references` [EXTRACTED]
-- [[.from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[dot-__init__()_98]] - `references` [EXTRACTED]
+- [[dot-_hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_553
+#graphify/code #graphify/EXTRACTED #community/Community_219

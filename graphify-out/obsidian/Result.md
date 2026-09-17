@@ -12,14 +12,14 @@ tags:
 # Result
 
 ## Connections
-- [[.fmt()]] - `references` [EXTRACTED]
-- [[.get()]] - `references` [EXTRACTED]
-- [[.get()_1]] - `references` [EXTRACTED]
-- [[.post()]] - `references` [EXTRACTED]
-- [[.post()_1]] - `references` [EXTRACTED]
-- [[.request()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
-- [[main()_1]] - `references` [EXTRACTED]
+- [[dot-fmt()]] - `references` [EXTRACTED]
+- [[dot-get()_2]] - `references` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
+- [[main()_18]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 - [[run_approvals_decide()]] - `references` [EXTRACTED]
 - [[run_approvals_list()]] - `references` [EXTRACTED]

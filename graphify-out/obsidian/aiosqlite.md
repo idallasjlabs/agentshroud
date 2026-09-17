@@ -1,21 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Community 289"
-location: "L1"
+community: "Community 1121"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/Community_1121
 ---
 
-# aiosqlite.md
+# aiosqlite
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
+- [[Database Files]] - `contains` [EXTRACTED]
+- [[Purpose_5]] - `contains` [EXTRACTED]
+- [[Related Notes_6]] - `contains` [EXTRACTED]
+- [[WAL Mode]] - `contains` [EXTRACTED]
+- [[Where Used_1]] - `contains` [EXTRACTED]
 - [[aiosqlite_1]] - `contains` [EXTRACTED]
-- [[audit_store.py]] - `references` [EXTRACTED]
-- [[ledger.py]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_289
+#graphify/document #graphify/EXTRACTED #community/Community_1121

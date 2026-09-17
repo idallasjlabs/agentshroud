@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_env_guard_class.py"
+type: "code"
+community: "Community 215"
+location: "L46"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_215
+---
+
+# .test_allows_file_named_environ_elsewhere()
+
+## Connections
+- [[TestCheckFileAccess]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_215

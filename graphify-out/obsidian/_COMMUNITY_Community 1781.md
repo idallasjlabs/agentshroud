@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_run_hermes_dashboard_forwarder() — TCP tunnel gateway9119-hermes]] - code - gateway/ingest_api/lifespan.py
+- [[EnhancedApprovalQueue.submit]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -12,6 +12,6 @@ tags:
 # Test that PII sanitizer defaults to redact action.
 
 ## Connections
-- [[.test_pii_sanitizer_default_action()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_pii_sanitizer_default_action()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

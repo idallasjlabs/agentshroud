@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # test_main_simple.py
 
 ## Connections
-- [[ApprovalDecision]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[ApprovalDecision_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]
 - [[log_requests()]] - `imports` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

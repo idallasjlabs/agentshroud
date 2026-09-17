@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 262"
+community: "Voice Gateway STT & Browser Security"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_262
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Result of scanning tool parameters for injection patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ParamScanResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_262
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

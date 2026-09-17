@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 313"
+community: "Community 318"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Community_318
 ---
 
 # CREDENTIAL-PROTECTION-IMPLEMENTED.md
@@ -17,7 +17,7 @@ tags:
 - [[Credential Access Audit Logging (Layer 3)]] - `references` [EXTRACTED]
 - [[Gateway Credential Filter (Layer 1)]] - `references` [EXTRACTED]
 - [[SECURITY-POLICY-FINAL]] - `conceptually_related_to` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[✅ What the Bot CAN Do via Telegram]] - `contains` [EXTRACTED]
 - [[✅ Your Requirements Met]] - `contains` [EXTRACTED]
 - [[❌ What the Bot CANNOT Do via Telegram]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[🛡️ Protection Layers]] - `contains` [EXTRACTED]
 - [[🧪 Testing the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/Community_318

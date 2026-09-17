@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Community 826"
-location: "L9"
+community: "Community 678"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/Community_678
 ---
 
 # keywords
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_826
+#graphify/code #graphify/EXTRACTED #community/Community_678

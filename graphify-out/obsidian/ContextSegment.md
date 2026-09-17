@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 155"
+community: "Prompt Guard & Context Integrity"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # ContextSegment
 
 ## Connections
-- [[.get_segment_provenance()]] - `references` [EXTRACTED]
-- [[.record_segment()]] - `references` [EXTRACTED]
-- [[.tag_segment()]] - `references` [EXTRACTED]
-- [[Any_36]] - `uses` [INFERRED]
+- [[dot-get_segment_provenance()]] - `references` [EXTRACTED]
+- [[dot-record_segment()]] - `references` [EXTRACTED]
+- [[dot-tag_segment()]] - `references` [EXTRACTED]
+- [[Any_38]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
 - [[Tagged provenance record for a context segment.]] - `rationale_for` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

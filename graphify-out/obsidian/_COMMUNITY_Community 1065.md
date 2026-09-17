@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.33
 members: 7
 ---
 
 # Community 1065
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Post-v1.0.0 Roadmap]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Platform Integration]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Watch Support]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Control Center Widget (iPhone + macOS)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Implementation Notes_1]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Push Notifications (iPhone + Mac + Apple Watch)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[ROADMAP-POST-v1.0]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[i-ab merge regression audit skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[i-pr PR description skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[crSKILL.md code review skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
+- [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[tddSKILL.md test-driven development skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

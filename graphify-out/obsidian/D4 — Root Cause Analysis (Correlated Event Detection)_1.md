@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 235"
+community: "Community 241"
 location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/Community_241
 ---
 
 # D4 — Root Cause Analysis (Correlated Event Detection)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_235
+#graphify/document #graphify/EXTRACTED #community/Community_241

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 754"
-location: "L62"
+community: "Community 744"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Community_744
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_754
+#graphify/document #graphify/EXTRACTED #community/Community_744

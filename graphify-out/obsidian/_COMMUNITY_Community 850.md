@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.29
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 850
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Any_69]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_api_key_patterns()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_clean_text_no_patterns()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_credit_card_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_email_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_exfil_base64()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_exfil_hex()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_exfil_webhook()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_injection_role()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_injection_system_prompt()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_ssn_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestPatternDetection]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 88]]
-- 2 edges to [[_COMMUNITY_Community 225]]
-- 1 edge to [[_COMMUNITY_Community 807]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
 
 ## Top bridge nodes
-- [[TestResourceGuardAlertBridge]] - degree 9, connects to 3 communities
-- [[Any_69]] - degree 3, connects to 2 communities
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - degree 4, connects to 1 community
+- [[TestPatternDetection]] - degree 11, connects to 1 community

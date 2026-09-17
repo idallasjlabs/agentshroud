@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 637"
+community: "Community 709"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Community_709
 ---
 
 # Function Details
 
 ## Connections
-- [[categorize_alerts(alerts)]] - `contains` [EXTRACTED]
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
-- [[generate_summary(alerts)]] - `contains` [EXTRACTED]
-- [[is_agentshroud_rule(rule_name)]] - `contains` [EXTRACTED]
-- [[parse_alert(raw)]] - `contains` [EXTRACTED]
-- [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_637
+#graphify/document #graphify/EXTRACTED #community/Community_709

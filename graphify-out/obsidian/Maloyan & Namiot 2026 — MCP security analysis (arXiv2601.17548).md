@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "paper"
-community: "Community 132"
+community: "Alert Dispatcher & RBAC Reliability"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Maloyan & Namiot 2026 — MCP security analysis (arXiv:2601.17548)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ConsentFramework]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/Community_132
+#graphify/paper #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

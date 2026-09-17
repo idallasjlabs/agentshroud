@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 467"
+community: "Community 479"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_467
+  - community/Community_479
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -15,10 +15,10 @@ tags:
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities_1]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_1]] - `contains` [EXTRACTED]
-- [[Output Format_18]] - `contains` [EXTRACTED]
-- [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Role_55]] - `contains` [EXTRACTED]
-- [[SKILL_97]] - `contains` [EXTRACTED]
+- [[Output Format_17]] - `contains` [EXTRACTED]
+- [[Related Skills_113]] - `contains` [EXTRACTED]
+- [[Role_50]] - `contains` [EXTRACTED]
 - [[When to Invoke_5]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_467
+#graphify/document #graphify/EXTRACTED #community/Community_479

@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 108"
-location: "L127"
+community: "Community 566"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_566
 ---
 
 # Social Media
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[📊 Asset Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_108
+#graphify/document #graphify/EXTRACTED #community/Community_566

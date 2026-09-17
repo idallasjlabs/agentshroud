@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_7]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[1. Clone the Repository]] - document - docs/operations/raspberry-pi.md
+- [[2. Install Docker]] - document - docs/operations/raspberry-pi.md
+- [[3. Set Up Secrets]] - document - docs/operations/raspberry-pi.md
+- [[4. Configure AgentShroud]] - document - docs/operations/raspberry-pi.md
+- [[5. Build and Start]] - document - docs/operations/raspberry-pi.md
+- [[6. Verify]] - document - docs/operations/raspberry-pi.md
+- [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
+- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
+- [[Fresh Install]] - document - docs/operations/raspberry-pi.md
+- [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
+- [[From a Tagged Release]] - document - docs/operations/raspberry-pi.md
+- [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
+- [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
+- [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
+- [[Prerequisites_9]] - document - docs/operations/raspberry-pi.md
+- [[Slow Builds_1]] - document - docs/operations/raspberry-pi.md
+- [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
+- [[Troubleshooting_32]] - document - docs/operations/raspberry-pi.md
+- [[Updating to Latest Release]] - document - docs/operations/raspberry-pi.md
+- [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 367]]
+- 1 edge to [[_COMMUNITY_Community 785]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L299"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_15
+  - graphify/EXTRACTED
+  - community/Approval_Queue_WebSocket
 ---
 
 # TestDashboardSecureCookie
 
 ## Connections
-- [[.test_cookie_not_secure_on_http()]] - `method` [EXTRACTED]
+- [[dot-test_cookie_not_secure_on_http()]] - `method` [EXTRACTED]
 - [[Dashboard cookie secure flag is dynamic based on request scheme]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

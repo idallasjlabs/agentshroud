@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 257"
-location: "L55"
+community: "Community 1275"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/Community_1275
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
-- [[Fill Form_2]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_257
+#graphify/document #graphify/EXTRACTED #community/Community_1275

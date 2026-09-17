@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_108]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[README_113]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Related Skills_117]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Technical Illustrator (TI)_1]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_118]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Purpose_61]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Related Skills_52]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Usage_56]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[hermesskillsi-psREADME]] - document - docker/config/hermes/skills/i-ps/README.md
 
 ## Live Query (requires Dataview plugin)
 

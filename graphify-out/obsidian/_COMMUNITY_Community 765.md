@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.18
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 765
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[A competitive-intel body with multiple CVEs is not collapsed into redaction tags]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[CVE IDs with 5-digit suffix must also be excluded.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[CVE identifiers must NOT be treated as US_SSN.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[Real SSNs (not preceded by uppercase) must still be detected.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[SSN at the very start of a string (no preceding character) is still flagged.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[US_SSN regex tightened to exclude CVE IDs]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_dense_report_body_preserved()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_pattern_not_flagged_as_ssn()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_with_five_digit_suffix_not_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_real_ssn_still_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_ssn_at_start_of_string_still_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_us_ssn_regex_tightened.py]] - code - gateway/tests/test_us_ssn_regex_tightened.py
+- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 55]]
+- 1 edge to [[_COMMUNITY_Community 389]]
 
 ## Top bridge nodes
-- [[US_SSN regex tightened to exclude CVE IDs]] - degree 3, connects to 1 community
+- [[Where's The REAL Value]] - degree 4, connects to 1 community

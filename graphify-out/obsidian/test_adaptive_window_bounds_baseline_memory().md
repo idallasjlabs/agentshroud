@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 181"
+community: "Community 189"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_189
 ---
 
 # test_adaptive_window_bounds_baseline_memory()
@@ -17,4 +17,4 @@ tags:
 - [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - `rationale_for` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/Community_189

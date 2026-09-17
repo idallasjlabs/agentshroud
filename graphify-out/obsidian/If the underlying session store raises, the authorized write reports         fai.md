@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 27"
+community: "Community 41"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_41
 ---
 
 # If the underlying session store raises, the authorized write reports         fai
 
 ## Connections
-- [[.test_group_write_io_failure_returns_false()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_group_write_io_failure_returns_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_27
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

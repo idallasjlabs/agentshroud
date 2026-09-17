@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1332
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[dot-test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestWazuhSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 297]]
+- 1 edge to [[_COMMUNITY_Community 200]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - degree 4, connects to 1 community
+- [[TestWazuhSummary_1]] - degree 5, connects to 1 community
+- [[dot-test_installed_not_running()]] - degree 2, connects to 1 community

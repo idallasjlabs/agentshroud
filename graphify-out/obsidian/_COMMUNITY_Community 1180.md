@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1180
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_2]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Purpose_45]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[README_50]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Related Skills_48]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Usage_51]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[dot-test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked internal-network probes should return deterministic Protect egress wordi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Internal-network target probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Obfuscated decode+execute prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,12 @@ members: 5
 TABLE source_file, type FROM #community/Community_1180
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 15 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 3 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+
+## Top bridge nodes
+- [[dot-test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

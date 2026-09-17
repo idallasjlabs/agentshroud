@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Session Management"
+community: "Ingest Middleware & File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # test_session_isolation.py
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Management
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

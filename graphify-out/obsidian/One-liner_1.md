@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # One-liner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

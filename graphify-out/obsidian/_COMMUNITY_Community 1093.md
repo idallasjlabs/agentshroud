@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1093
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[1. Agent Trust Levels]] - document - docs/flows/state-diagrams.md
-- [[2. Kill Switch States]] - document - docs/flows/state-diagrams.md
-- [[3. Approval Queue States]] - document - docs/flows/state-diagrams.md
-- [[4. Gateway Operational Modes]] - document - docs/flows/state-diagrams.md
-- [[AgentShroud State Diagrams]] - document - docs/flows/state-diagrams.md
-- [[state-diagrams]] - document - docs/flows/state-diagrams.md
+- [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
+- [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
+- [[GitHub Repository Evidence]] - document - docs/project/legal/PRIOR-USE.md
+- [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
+- [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1093
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1079]]
+
+## Top bridge nodes
+- [[AgentShroud™ — Trademark Prior Use Record]] - degree 7, connects to 1 community

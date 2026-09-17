@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/forwarder.py"
+type: "code"
+community: "Proxy Sidecar & Forwarder"
+location: "L157"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Proxy_Sidecar__Forwarder
+---
+
+# .last_forward_time()
+
+## Connections
+- [[HTTPForwarder]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

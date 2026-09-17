@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 473"
-location: "L119"
+community: "Proxy Sidecar & Forwarder"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_473
+  - graphify/EXTRACTED
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Any
 
 ## Connections
-- [[._execute_tool_call()]] - `references` [EXTRACTED]
-- [[._extract_egress_targets()]] - `references` [EXTRACTED]
-- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[.get_stats()_5]] - `references` [EXTRACTED]
-- [[.send_request()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-get_stats()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_473
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

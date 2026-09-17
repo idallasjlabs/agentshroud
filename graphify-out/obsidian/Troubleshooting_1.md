@@ -1,22 +1,22 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1072"
+community: "Community 1136"
 location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1072
+  - community/Community_1136
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1072
+#graphify/document #graphify/EXTRACTED #community/Community_1136

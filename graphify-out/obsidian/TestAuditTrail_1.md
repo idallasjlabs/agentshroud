@@ -1,59 +1,24 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Security Audit & Drift Detection"
-location: "L759"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L184"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - graphify/EXTRACTED
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[.test_alert_dedup()]] - `method` [EXTRACTED]
-- [[.test_alert_dispatcher_init()]] - `method` [EXTRACTED]
-- [[.test_alert_dispatcher_write()]] - `method` [EXTRACTED]
-- [[.test_canary_system_importable()]] - `method` [EXTRACTED]
-- [[.test_drift_detector_baseline()]] - `method` [EXTRACTED]
-- [[.test_drift_detector_detects_change()]] - `method` [EXTRACTED]
-- [[.test_drift_no_false_positive()]] - `method` [EXTRACTED]
-- [[.test_health_report_importable()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ConfusedDeputyError]] - `uses` [INFERRED]
-- [[ConsentDecision]] - `uses` [INFERRED]
-- [[ContainerSnapshot]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncryptedStore]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[IsolationStatus]] - `uses` [INFERRED]
-- [[KeyVault]] - `uses` [INFERRED]
-- [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[RedirectMismatch]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
-- [[Session]] - `uses` [INFERRED]
-- [[SubagentEvent]] - `uses` [INFERRED]
+- [[dot-test_audit_filterable_by_agent()]] - `method` [EXTRACTED]
+- [[dot-test_audit_has_timestamps()]] - `method` [EXTRACTED]
+- [[dot-test_deregister_logged()]] - `method` [EXTRACTED]
+- [[dot-test_spawn_logged()]] - `method` [EXTRACTED]
+- [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
-- [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
-- [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_security_audit.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

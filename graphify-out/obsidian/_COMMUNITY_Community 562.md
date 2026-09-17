@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.12
 members: 16
 ---
 
 # Community 562
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_12]] - code - gateway/proxy/canvas_proxy.py
-- [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Return gateway password from secret file or env var.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate HTTP Basic Auth credentials against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate token query parameter against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[_build_proxy_headers()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_basic_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_token_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_http()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_websocket()]] - code - gateway/proxy/canvas_proxy.py
-- [[_read_gateway_password()]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy.py]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy_app()]] - code - gateway/proxy/canvas_proxy.py
+- [[Description_3]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Effect]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[OpenClaw Service_1]] - code - docker/docker-compose.yml
+- [[Related Notes_34]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Set In_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Value_2]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[init-openclaw-config.sh bootstrap]] - code - docker/scripts/init-openclaw-config.sh
+- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[start-agentshroud.sh (OpenClaw entrypoint)]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 424]]
+- 1 edge to [[_COMMUNITY_Community 454]]
+- 1 edge to [[_COMMUNITY_TeamsGroup Collaborator Responses]]
+- 1 edge to [[_COMMUNITY_Community 561]]
+- 1 edge to [[_COMMUNITY_Community 834]]
+- 1 edge to [[_COMMUNITY_Community 160]]
 
 ## Top bridge nodes
-- [[canvas_proxy_app()]] - degree 8, connects to 3 communities
+- [[init-openclaw-config.sh bootstrap]] - degree 4, connects to 1 community
+- [[patch-telegram-sdk.sh]] - degree 4, connects to 1 community
+- [[TELEGRAM_API_BASE_URL]] - degree 3, connects to 1 community
+- [[patch-anthropic-sdk.sh]] - degree 3, connects to 1 community
+- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - degree 2, connects to 1 community

@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Backup & Restore Runbook — AgentShroud]] - document - docs/runbooks/backup-restore.md
-- [[Backup Procedure]] - document - docs/runbooks/backup-restore.md
-- [[Backup Retention]] - document - docs/runbooks/backup-restore.md
-- [[Daily Audit Ledger Review]] - concept - docs/runbooks/daily-operations.md
-- [[Daily Automated Backup]] - document - docs/runbooks/backup-restore.md
-- [[Disaster Recovery (Full Rebuild)]] - document - docs/runbooks/backup-restore.md
-- [[Disaster Recovery Full Rebuild Procedure]] - concept - docs/runbooks/backup-restore.md
-- [[Manual Backup]] - document - docs/runbooks/backup-restore.md
-- [[Off-Site Backup]] - document - docs/runbooks/backup-restore.md
-- [[Restore Procedure]] - document - docs/runbooks/backup-restore.md
-- [[Restore from Backup]] - document - docs/runbooks/backup-restore.md
-- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[What to Back Up]] - document - docs/runbooks/backup-restore.md
-- [[backup-restore]] - document - docs/runbooks/backup-restore.md
-- [[daily-operations]] - document - docs/runbooks/daily-operations.md
+- [[Check A — Substantive change on the losing side_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Guardrails_11]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Invocation Forms_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Role_64]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[hermesskillsi-abSKILL]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_621
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 284]]
-- 1 edge to [[_COMMUNITY_Community 166]]
-- 1 edge to [[_COMMUNITY_Community 679]]
-
-## Top bridge nodes
-- [[daily-operations]] - degree 3, connects to 1 community
-- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - degree 2, connects to 1 community
-- [[Disaster Recovery Full Rebuild Procedure]] - degree 2, connects to 1 community

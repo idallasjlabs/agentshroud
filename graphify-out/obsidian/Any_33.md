@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Community 65"
-location: "L50"
+community: "P3 Infrastructure Security Modules"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_65
+  - graphify/INFERRED
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_6]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

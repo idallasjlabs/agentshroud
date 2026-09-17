@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/manifest.json"
+source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Community 415"
-location: "L4"
+community: "Community 1015"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/Community_1015
 ---
 
 # version
 
 ## Connections
-- [[manifest.json]] - `contains` [EXTRACTED]
+- [[openclawmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_415
+#graphify/code #graphify/EXTRACTED #community/Community_1015

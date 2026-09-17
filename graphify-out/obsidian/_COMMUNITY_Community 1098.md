@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1098
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_ssh_runner_none_streams()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_ssh_runner_uses_subprocess()]] - code - gateway/tests/test_multi_host_test.py
-- [[HostRunner]] - code - gateway/tools/multi_host_test.py
-- [[Return a HostRunner that executes the command on the host over SSH.      SSH con]] - rationale - gateway/tools/multi_host_test.py
-- [[TestSshRunner]] - code - gateway/tests/test_multi_host_test.py
-- [[ssh_runner()]] - code - gateway/tools/multi_host_test.py
+- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,14 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 898]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 2 edges to [[_COMMUNITY_Community 728]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 813]]
+- 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[ssh_runner()]] - degree 7, connects to 3 communities
-- [[TestSshRunner]] - degree 6, connects to 3 communities
-- [[HostRunner]] - degree 3, connects to 2 communities
+- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community

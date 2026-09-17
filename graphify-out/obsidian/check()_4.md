@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_live.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "Community 1419"
-location: "L29"
+community: "Community 464"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1419
+  - community/Community_464
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1419
+#graphify/code #graphify/EXTRACTED #community/Community_464

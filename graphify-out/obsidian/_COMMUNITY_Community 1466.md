@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1466
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_112]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
-- [[Skill scrum_1]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrepSKILL]] - document - skills/openclaw/gifgrep/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "Community 519"
+community: "Community 565"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_519
+  - community/Community_565
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_519
+#graphify/image #graphify/INFERRED #community/Community_565

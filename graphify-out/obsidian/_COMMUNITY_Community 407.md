@@ -10,28 +10,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Phone number with separator must still be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Regex-only path must not match bare 10-digit digit string as phone number.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with multiple PII types]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with no PII]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test credit card redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test email address redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test empty content handling]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test phone number redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[UID in parens — as written in contributor logs — must not be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_email_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_empty_content()]] - code - gateway/tests/test_sanitizer.py
-- [[test_mixed_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_no_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_phone_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_real_phone_still_redacted()]] - code - gateway/tests/test_sanitizer.py
-- [[test_regex_fallback_requires_separator()]] - code - gateway/tests/test_sanitizer.py
-- [[test_sanitizer.py]] - code - gateway/tests/test_sanitizer.py
-- [[test_ssn_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_telegram_uid_not_redacted_as_phone()]] - code - gateway/tests/test_sanitizer.py
-- [[test_uid_inside_parens_preserved()]] - code - gateway/tests/test_sanitizer.py
+- [[Base-Image Change Flagged For Decision, Not Attempted]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Container-Image CVE Domain (our own images)]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Currently Unmitigable Residual Class]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Dev-Side Copy of the 2026-09-06 Report]] - document - reports/upgrade-2026-09-06-dev.md
+- [[DevProd Mapping Keyed Off $USER via scriptsasb]] - rationale - reports/upgrade-2026-09-06.md
+- [[Fresh-DB vs Cached-DB Trivy Verification]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Governed Voice Path (device to gateway to Hermes)]] - concept - firmware/voice-terminal/SETUP.md
+- [[Hermes Vendored-Base Residual (upstream-owned)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[One-Cause-Per-Failure Bring-Up Order]] - rationale - firmware/voice-terminal/SETUP.md
+- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - rationale - reports/upgrade-2026-09-14.md
+- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - concept - reports/upgrade-2026-09-14.md
+- [[Reachability Context (cap_drop ALL, isolated network)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Spoken High-Risk Command Approval Pause]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - document - reports/upgrade-2026-09-06.md
+- [[Tailscale Funnel Exposure (supersedes on-device client)]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Transitive-Dependency Security Floors]] - rationale - gateway/requirements.txt
+- [[Two-Terminal-State Finding Taxonomy]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Voice Gateway Service (STTTTS on marvin)]] - concept - firmware/voice-terminal/SETUP.md
+- [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - rationale - reports/upgrade-2026-09-06.md
+- [[Zeroed .trivyignore (no suppressions)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[python-jose Removal (CVE-2024-3366333664)]] - rationale - gateway/requirements.txt
+- [[slsa-verifier From-Source Dependency Override]] - concept - docs/security/cve-mitigation-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Community 210]]
+- 1 edge to [[_COMMUNITY_Community 569]]
+- 1 edge to [[_COMMUNITY_Community 316]]
+- 1 edge to [[_COMMUNITY_Community 430]]
 
 ## Top bridge nodes
-- [[test_sanitizer.py]] - degree 12, connects to 1 community
+- [[Currently Unmitigable Residual Class]] - degree 7, connects to 1 community
+- [[Container-Image CVE Domain (our own images)]] - degree 4, connects to 1 community
+- [[Governed Voice Path (device to gateway to Hermes)]] - degree 4, connects to 1 community
+- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - degree 3, connects to 1 community
+- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - degree 2, connects to 1 community

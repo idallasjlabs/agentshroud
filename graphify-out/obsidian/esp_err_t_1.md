@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
+source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Community 270"
-location: "L157"
+community: "Community 1364"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/Community_1364
 ---
 
 # esp_err_t
 
 ## Connections
-- [[face_animation_init()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_270
+#graphify/code #graphify/EXTRACTED #community/Community_1364

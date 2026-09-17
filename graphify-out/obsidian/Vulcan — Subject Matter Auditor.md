@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1166"
+community: "Community 1213"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1166
+  - community/Community_1213
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Purpose_36]] - `contains` [EXTRACTED]
-- [[README_36]] - `contains` [EXTRACTED]
-- [[Related Skills_39]] - `contains` [EXTRACTED]
-- [[Usage_39]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-vulcanREADME]] - `contains` [EXTRACTED]
+- [[Purpose_35]] - `contains` [EXTRACTED]
+- [[Related Skills_26]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1166
+#graphify/document #graphify/EXTRACTED #community/Community_1213

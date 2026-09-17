@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 238"
+community: "Community 245"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/Community_245
 ---
 
 # Setup (One-Time)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 - [[Step 1 Add Your API Key]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_238
+#graphify/document #graphify/EXTRACTED #community/Community_245

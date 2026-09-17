@@ -1,20 +1,20 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 896"
+community: "Community 944"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_896
+  - community/Community_944
 ---
 
 # D - Denial of Service
 
 ## Connections
 - [[STRIDE Threat Analysis]] - `contains` [EXTRACTED]
-- [[Threat Model_1]] - `contains` [EXTRACTED]
+- [[Threat Model_28]] - `contains` [EXTRACTED]
 - [[Threat Context Window Stuffing]] - `contains` [EXTRACTED]
 - [[Threat Resource Exhaustion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_896
+#graphify/document #graphify/EXTRACTED #community/Community_944

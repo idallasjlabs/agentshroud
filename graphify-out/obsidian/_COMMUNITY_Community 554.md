@@ -1,31 +1,32 @@
 ---
 type: community
-cohesion: 0.20
-members: 16
+cohesion: 0.12
+members: 17
 ---
 
 # Community 554
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - concept - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, googleapis.com, .github.com, .githubusercontent.com, imapsmtp.mail.me.com)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
-- [[BlockedUntrusted (LAN RFC1918, unlisted domains)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on macOS (docsoperationsmacos.md)]] - document - docs/operations/macos.md
-- [[Docker Buildx multi-arch build (linuxamd64, linuxarm64)]] - concept - docs/operations/linux.md
-- [[Docker Desktop (Apple Silicon  Intel transparent arch handling; resource allocation guidance)]] - concept - docs/operations/macos.md
-- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.png
-- [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - concept - docs/operations/macos.md
-- [[Trust Boundary Diagram]] - concept - docs/diagrams/04-security.md
-- [[Trust Zone 0 — Owner (Isaiah Jefferson approvereject, gateway admin, container restart, secret rotation)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - concept - docs/operations/linux.md
-- [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - concept - docs/operations/linux.md
+- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,16 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 492]]
-- 2 edges to [[_COMMUNITY_Community 1102]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 376]]
-- 1 edge to [[_COMMUNITY_Community 604]]
+- 1 edge to [[_COMMUNITY_Community 1296]]
 
 ## Top bridge nodes
-- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - degree 7, connects to 3 communities
-- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - degree 10, connects to 2 communities
-- [[Trust Boundary Diagram]] - degree 8, connects to 2 communities
-- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - degree 5, connects to 1 community
-- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - degree 4, connects to 1 community
+- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community

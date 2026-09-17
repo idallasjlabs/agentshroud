@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 439
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Additional Costs (Option 2 vs Option 1)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Architecture Comparison]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Benefits Gained]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Best Use Cases for Distributed Node Approach]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Comparison Matrix]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Concept Overview]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Conclusion]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Cost-Benefit Analysis]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Current Approach (Option 1 Direct SSH)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Decision Points]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Defense in Depth]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Future Approach (Option 2 Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Implementation Timeline]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Next Steps_1]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Not Ideal For]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Prerequisites (Before Implementation)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Security Architecture_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Use Cases]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Environment Variables_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Function Details_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Mode Enforce vs Monitor_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Purpose_126]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Related_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Threat Model_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,13 +38,3 @@ members: 20
 TABLE source_file, type FROM #community/Community_439
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1168]]
-- 1 edge to [[_COMMUNITY_Community 1015]]
-- 1 edge to [[_COMMUNITY_Community 1293]]
-- 1 edge to [[_COMMUNITY_Community 701]]
-- 1 edge to [[_COMMUNITY_Community 603]]
-
-## Top bridge nodes
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - degree 14, connects to 5 communities

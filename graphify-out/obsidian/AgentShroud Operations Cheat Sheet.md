@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Community 440"
+community: "Community 449"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_440
+  - community/Community_449
 ---
 
 # AgentShroud Operations Cheat Sheet
@@ -25,12 +25,12 @@ tags:
 - [[OpenClaw (Bot) Management]] - `contains` [EXTRACTED]
 - [[SOC API]] - `references` [EXTRACTED]
 - [[SOC API — Common Queries]] - `contains` [EXTRACTED]
-- [[Secrets]] - `contains` [EXTRACTED]
+- [[Secrets_2]] - `contains` [EXTRACTED]
 - [[Security Scanners]] - `contains` [EXTRACTED]
 - [[Telegram Bot Commands (Owner)]] - `contains` [EXTRACTED]
-- [[Tests_1]] - `contains` [EXTRACTED]
+- [[Tests]] - `contains` [EXTRACTED]
 - [[Upgrades & Rollbacks]] - `contains` [EXTRACTED]
 - [[Web Management UI]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_440
+#graphify/document #graphify/EXTRACTED #community/Community_449

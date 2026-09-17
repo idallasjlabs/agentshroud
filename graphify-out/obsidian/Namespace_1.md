@@ -1,12 +1,11 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: ""
 type: "code"
-community: "Community 120"
-location: "L808"
+community: "Community 99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_99
 ---
 
 # Namespace
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_run_nvd_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/Community_99

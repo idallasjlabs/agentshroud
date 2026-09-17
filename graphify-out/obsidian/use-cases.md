@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Community 92"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_271
 ---
 
 # use-cases.md
@@ -20,8 +20,8 @@ tags:
 - [[Prompt Injection]] - `references` [EXTRACTED]
 - [[SSRF (Server-Side Request Forgery)]] - `references` [EXTRACTED]
 - [[Trust Level]] - `references` [EXTRACTED]
-- [[Use Cases_2]] - `contains` [EXTRACTED]
+- [[Use Cases_3]] - `contains` [EXTRACTED]
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/Community_271

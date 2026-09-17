@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1488"
+location: "L1874"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1488
+---
+
+# .test_urlencoded_without_content_type_draft_is_still_filtered()
+
+## Connections
+- [[Missing content-type must not bypass form draft leak filtering.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1488

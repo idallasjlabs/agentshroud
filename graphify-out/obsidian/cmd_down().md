@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "Community 528"
-location: "L224"
+community: "Community 995"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Community_995
 ---
 
 # cmd_down()
@@ -15,4 +15,4 @@ tags:
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 - [[run-standalone.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_528
+#graphify/code #graphify/EXTRACTED #community/Community_995

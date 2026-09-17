@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "concept"
-community: "Community 391"
+community: "Community 398"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_391
+  - graphify/EXTRACTED
+  - community/Community_398
 ---
 
 # GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)
@@ -14,4 +14,4 @@ tags:
 - [[GIT-GUARD Skill]] - `conceptually_related_to` [INFERRED]
 - [[GSDE&G Development Master Checklist Skill]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_391
+#graphify/concept #graphify/EXTRACTED #community/Community_398

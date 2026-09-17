@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[dockerscripts README]] - document - docker/scripts/README.md
+- [[drift-detector.sh (planned)]] - concept - scripts/README.md
+- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
+- [[security-audit.sh (planned)]] - concept - scripts/README.md
+- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
+- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
+- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 329]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 348]]
-- 1 edge to [[_COMMUNITY_Community 207]]
+- 1 edge to [[_COMMUNITY_Community 454]]
 
 ## Top bridge nodes
-- [[TestInstallerAPI]] - degree 11, connects to 5 communities
+- [[dockerscripts README]] - degree 7, connects to 1 community

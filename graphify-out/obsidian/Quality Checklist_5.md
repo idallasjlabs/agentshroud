@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 942"
-location: "L101"
+community: "Community 508"
+location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_942
+  - community/Community_508
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_942
+#graphify/document #graphify/EXTRACTED #community/Community_508

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 172"
+community: "Community 177"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/Community_177
 ---
 
 # GitHub Copilot CLI Setup Guide
@@ -17,7 +17,7 @@ tags:
 - [[Basic Usage]] - `contains` [EXTRACTED]
 - [[Built-in Default Agents]] - `contains` [EXTRACTED]
 - [[COPILOT_CLI_SETUP]] - `contains` [EXTRACTED]
-- [[Common Workflows]] - `contains` [EXTRACTED]
+- [[Common Workflows_1]] - `contains` [EXTRACTED]
 - [[Configuration Files]] - `contains` [EXTRACTED]
 - [[Context Management]] - `contains` [EXTRACTED]
 - [[Custom Agents]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Security & Permissions]] - `contains` [EXTRACTED]
 - [[Troubleshooting_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_172
+#graphify/document #graphify/EXTRACTED #community/Community_177

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/bot-access-audit.sh"
 type: "code"
-community: "Community 323"
+community: "Community 172"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_323
+  - community/Community_172
 ---
 
 # run_op()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bot-access-audit.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_323
+#graphify/code #graphify/EXTRACTED #community/Community_172

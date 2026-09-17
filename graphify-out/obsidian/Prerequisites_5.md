@@ -1,17 +1,20 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 670"
-location: "L3"
+community: "Community 340"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_670
+  - community/Community_340
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Optional Requirements]] - `contains` [EXTRACTED]
+- [[Supported Platforms]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_670
+#graphify/document #graphify/EXTRACTED #community/Community_340

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Result of deception detection analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DeceptionDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 423"
+community: "Community 540"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/Community_540
 ---
 
 # AgentShroud Shared Tasks:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders — Items Recovered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_423
+#graphify/document #graphify/EXTRACTED #community/Community_540

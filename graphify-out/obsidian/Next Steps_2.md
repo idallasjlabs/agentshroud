@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 373"
-location: "L293"
+community: "Community 221"
+location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Community_221
 ---
 
 # Next Steps
 
 ## Connections
-- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/Community_221

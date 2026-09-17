@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Middleware & Lifespan"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # Middleware manager for request processing tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[middleware_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

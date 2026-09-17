@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 897
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Data Flow Diagrams (doc)]] - document - docs/flows/data-flow-diagram.md
-- [[Audit Ledger (blockchain-style chain)]] - concept - docs/flows/data-flow-diagram.md
-- [[Diagram 11 Trust Boundary]] - image - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Diagram 13 Network Security Egress]] - image - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Diagram 14 Logic Flow]] - image - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Kill Switch (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[MCP Proxy Detailed Flow (tool call inspection, permission check, rate limit, forward, result inspection)]] - concept - docs/flows/data-flow-diagram.md
-- [[PII Sanitizer (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[Trust Manager (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
+- [[Abstract Method Reference]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Configuration  Environment Variables_31]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[ContainerEngine._run(cmd, check, capture, timeout)]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Function Details_51]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Key Classes  Functions_54]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Purpose_188]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Related_58]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[engine.py_2]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[engine.py_1]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
 
 ## Live Query (requires Dataview plugin)
 

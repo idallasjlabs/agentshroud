@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1086
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
-- [[_cr_plugin_works()]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh script]] - code - scripts/lib/container-runtime.sh
-- [[container_runtime_engine()]] - code - scripts/lib/container-runtime.sh
-- [[detect_container_runtime()]] - code - scripts/lib/container-runtime.sh
+- [[dot-test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1086
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1014]]
+
+## Top bridge nodes
+- [[TestToolAuthorization]] - degree 7, connects to 1 community

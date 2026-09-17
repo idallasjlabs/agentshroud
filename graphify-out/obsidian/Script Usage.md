@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Community 594"
+community: "Community 612"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_594
+  - community/Community_612
 ---
 
 # Script Usage
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_594
+#graphify/document #graphify/EXTRACTED #community/Community_612

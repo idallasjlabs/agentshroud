@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_security_audit.py"
+type: "code"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L850"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Alert_Dispatcher__RBAC_Reliability
+---
+
+# .test_canary_system_importable()
+
+## Connections
+- [[TestAuditTrail]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

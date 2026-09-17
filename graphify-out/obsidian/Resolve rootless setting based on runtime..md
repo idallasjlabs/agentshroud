@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Community 348"
+community: "Community 808"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_348
+  - community/Community_808
 ---
 
 # Resolve rootless setting based on runtime.
 
 ## Connections
-- [[.effective_rootless()]] - `rationale_for` [EXTRACTED]
+- [[dot-effective_rootless()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_348
+#graphify/rationale #graphify/EXTRACTED #community/Community_808

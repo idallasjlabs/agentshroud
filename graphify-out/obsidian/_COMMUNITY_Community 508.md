@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Dialogue Adaptations_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Dialogue Techniques_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[EXPERT_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Expert Persona_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[HOST_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Input Requirements_8]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Output Format_20]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Persona_5]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Quality Checklist_5]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Role_56]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Speaker Definitions_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[System Prompt_5]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[User Prompt Template_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[openclawskillsi-socratesSKILL]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_508
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 26]]
-- 1 edge to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 39]]
-
-## Top bridge nodes
-- [[TestMCPResultEndpoint]] - degree 17, connects to 6 communities

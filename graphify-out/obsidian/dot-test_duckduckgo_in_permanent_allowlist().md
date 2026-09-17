@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
+type: "code"
+community: "Community 816"
+location: "L465"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_816
+---
+
+# .test_duckduckgo_in_permanent_allowlist()
+
+## Connections
+- [[Hermes ddgs-based web search requires duckduckgo.com.]] - `rationale_for` [EXTRACTED]
+- [[TestHermesEgressAllowlist]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_816

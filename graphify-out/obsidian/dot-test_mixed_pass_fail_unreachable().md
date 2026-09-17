@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_multi_host_test.py"
+type: "code"
+community: "Community 859"
+location: "L116"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_859
+---
+
+# .test_mixed_pass_fail_unreachable()
+
+## Connections
+- [[TestRunMultiHost]] - `method` [EXTRACTED]
+- [[_fake_runner()]] - `calls` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_859

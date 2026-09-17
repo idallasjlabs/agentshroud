@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L317"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_freeze_reports_failure_when_pause_fails()
+
+## Connections
+- [[TestKillSwitch_1]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # DomainSettings
 
 ## Connections
-- [[.get_domain_settings()]] - `references` [EXTRACTED]
-- [[.test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
-- [[.test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
-- [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
+- [[dot-get_domain_settings()]] - `references` [EXTRACTED]
+- [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
+- [[dot-test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
+- [[dot-test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[Per-domain configuration overrides.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
-- [[TestDataExfiltration_1]] - `uses` [INFERRED]
+- [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy

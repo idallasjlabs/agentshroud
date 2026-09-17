@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 967"
-location: "L516"
+community: "Community 68"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_967
+  - community/Community_68
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[dot-__init__()_107]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_967
+#graphify/code #graphify/EXTRACTED #community/Community_68

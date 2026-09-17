@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 58"
+community: "Runtime Security Comparison & Intel Report"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # Load all reports in chronological order (oldest first).
 
 ## Connections
-- [[.load_all()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-load_all()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

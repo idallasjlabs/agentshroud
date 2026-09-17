@@ -1,12 +1,11 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: ""
 type: "code"
-community: "Community 114"
-location: "L375"
+community: "Community 122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/Community_122
 ---
 
 # Response
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/Community_122

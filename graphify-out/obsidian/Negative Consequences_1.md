@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 781"
-location: "L56"
+community: "Community 499"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_781
+  - community/Community_499
 ---
 
 # Negative Consequences
 
 ## Connections
-- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_781
+#graphify/document #graphify/EXTRACTED #community/Community_499

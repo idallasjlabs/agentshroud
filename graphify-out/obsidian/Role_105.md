@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 497"
+community: "Community 940"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/Community_940
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_497
+#graphify/document #graphify/EXTRACTED #community/Community_940

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L1746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # List security modules with availability, mode, and descriptions (CC-42, CC-43).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router

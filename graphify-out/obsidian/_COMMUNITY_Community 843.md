@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 843
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[1. Schema Validation_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[2. Partition Coverage_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[3. Data Quality Checks_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Critical Cost Control_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Role_85]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[SKILL_145]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Validation Layers_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[ABSTRACT_1]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[BACKGROUND OF THE INVENTION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[CROSS-REFERENCE TO RELATED APPLICATIONS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[DETAILED DESCRIPTION — INTERCEPTION MECHANISMS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[DETAILED DESCRIPTION — SECURITY MODULE PIPELINE]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[DETAILED DESCRIPTION — SYSTEM ARCHITECTURE]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIELD OF THE INVENTION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[INDUSTRIAL APPLICABILITY]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[NOVEL ASPECTS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SUMMARY OF THE INVENTION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,9 @@ members: 10
 TABLE source_file, type FROM #community/Community_843
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 842]]
+
+## Top bridge nodes
+- [[ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS]] - degree 11, connects to 1 community

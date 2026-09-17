@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 21"
+community: "Community 65"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_65
 ---
 
 # test_build_egress_live_snapshot_enriches_pending_metrics()
@@ -15,4 +15,4 @@ tags:
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/Community_65

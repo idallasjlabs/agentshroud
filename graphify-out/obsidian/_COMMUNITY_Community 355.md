@@ -1,39 +1,40 @@
 ---
 type: community
 cohesion: 0.08
-members: 24
+members: 25
 ---
 
 # Community 355
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[1. Always Specify Risk Level]] - document - .agents/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally]] - document - .agents/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail]] - document - .agents/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully]] - document - .agents/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials]] - document - .agents/skills/i-browser/SKILL.md
-- [[Approval Integration]] - document - .agents/skills/i-browser/SKILL.md
-- [[Audit Logging]] - document - .agents/skills/i-browser/SKILL.md
-- [[Best Practices]] - document - .agents/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation_1]] - document - .agents/skills/i-browser/SKILL.md
-- [[Click Element]] - document - .agents/skills/i-browser/SKILL.md
-- [[Core Security Principles]] - document - .agents/skills/i-browser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)]] - document - .agents/skills/i-browser/SKILL.md
-- [[Extract Data]] - document - .agents/skills/i-browser/SKILL.md
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - .agents/skills/i-browser/SKILL.md
-- [[Fill Form]] - document - .agents/skills/i-browser/SKILL.md
-- [[Limitations]] - document - .agents/skills/i-browser/SKILL.md
-- [[Navigate to URL]] - document - .agents/skills/i-browser/SKILL.md
-- [[Risk Levels]] - document - .agents/skills/i-browser/SKILL.md
-- [[SKILL_9]] - document - .agents/skills/i-browser/SKILL.md
-- [[Security Architecture]] - document - .agents/skills/i-browser/SKILL.md
-- [[Security Configuration]] - document - .agents/skills/i-browser/SKILL.md
-- [[Security Guarantees]] - document - .agents/skills/i-browser/SKILL.md
-- [[Take Screenshot]] - document - .agents/skills/i-browser/SKILL.md
-- [[Usage_6]] - document - .agents/skills/i-browser/SKILL.md
+- [[1) v0.8.0 Baseline Delivery (Documented)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[3) Verification Evidence (Current Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[4) v0.8.0 Done Gate — 2026-03-14 Status]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Items Still Remaining (Tracked Separately)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Notes]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[6) Owner Readout — Daily Telegram Validation Checklist]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[A. Startup + baseline]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Assessmentquality loop support delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[B. Collaborator onboarding]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Bot container verification (2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[C. Command contract (role split)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[D. Egress behavior]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Delivered capability groups (baseline)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[E. Leak-safety checks]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Executive Summary_9]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[F. Rate-limit UX]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[G. Daily evidence capture]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Gateway regression suites]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[P0P1 Fixes Applied (2026-03-14 cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Security assessment (V8-7 quality loop pass — 2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Targeted stabilization tests addedexercised]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Telegram securityUX hardening delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[v0.8.0-execution-summary-draft]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 341]]
+- 5 edges to [[_COMMUNITY_Community 271]]
+- 2 edges to [[_COMMUNITY_Community 457]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[Browser — Secure Browser Automation_1]] - degree 13, connects to 1 community
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - degree 22, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 437"
+community: "Community 445"
 location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_437
+  - community/Community_445
 ---
 
 # Step 2: Add Command Restrictions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_437
+#graphify/document #graphify/EXTRACTED #community/Community_445

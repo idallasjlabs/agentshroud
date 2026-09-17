@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L458"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_default_bot_dockerfile_used()
+
+## Connections
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

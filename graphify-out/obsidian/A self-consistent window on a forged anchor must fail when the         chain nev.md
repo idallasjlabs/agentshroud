@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # A self-consistent window on a forged anchor must fail when the         chain nev
 
 ## Connections
-- [[.test_unwrapped_chain_must_anchor_at_genesis()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline

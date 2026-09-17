@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+cohesion: 0.10
+members: 20
 ---
 
 # Community 462
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[1. Check MCP Configuration]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_5]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_21]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Role_18]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[SKILL_33]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_2]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Address Formats]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Attachments]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Basic Message Structure]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Composing from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Forward]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Headers]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Inline Images]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Interactive compose]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[MML Tag Reference]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[MML for Rich Emails]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Message Composition with MML (MIME Meta Language)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Mixed Content (Text + Attachments)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Multipart Messages]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Plain Text Body]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Prefill headers from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Reply (opens editor with quoted message)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Send from stdin]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Tips_3]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[`multipart`]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[`part`]] - document - skills/openclaw/himalaya/references/message-composition.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +37,9 @@ members: 19
 TABLE source_file, type FROM #community/Community_462
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 381]]
+
+## Top bridge nodes
+- [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community

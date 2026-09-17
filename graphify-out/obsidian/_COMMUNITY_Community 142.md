@@ -1,59 +1,59 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.08
 members: 44
 ---
 
 # Community 142
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[.is_blocked()]] - code - gateway/proxy/dns_blocklist.py
-- [[.is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
-- [[.stats()]] - code - gateway/proxy/dns_blocklist.py
-- [[.stop()]] - code - gateway/proxy/dns_blocklist.py
-- [[.test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_exact_match()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_not_blocked()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_parent_allowlist_overrides_grandparent_block()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_parent_domain_wildcard()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_periodic_loop_survives_errors_until_cancelled()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_start_creates_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_attributes()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_returns_counts()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stop_cancels_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_system_allowlist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_trailing_dot_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_update_rebuilds_blocked_domains()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_wildcard_denylist_blocks_subdomains()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks nothing.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Check if a domain should be blocked.          Checks the domain and all parent d]] - rationale - gateway/proxy/dns_blocklist.py
-- [[DNSBlocklist]] - code - gateway/proxy/dns_blocklist.py
-- [[Domain blocklist with Pi-hole-compatible list parsing.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Lifecycle start_periodic_updates()stop() task management.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[Return blocklist statistics.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Stop periodic updates.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Test DNS Blocklist Suite]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestBlocklistDownload]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestBlocklistUpdate]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestBlocklistWildcardsAndAllowlist]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestIsBlocked]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLifecycle]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestStats]] - code - gateway/tests/test_dns_blocklist.py
-- [[_BlockNone]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[stats() returns the expected keys.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[stats() — verify blockedallowlistdenylist counts.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[test_dns_blocklist.py]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-__init__()_61]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_load_config()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_log_action()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_log_security_event()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_requires_approval()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_take_screenshot()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-close()_8]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-get_audit_log()_4]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-navigate()_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[CLI interface for SecureBrowser_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Clean up browser resources_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Initialize browser with security settings_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Load security configuration_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Log browser action to audit trail_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Log security-related events_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Raised when security policy is violated_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Return complete audit log_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Risk classification for browser actions_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[RiskLevel_4]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[SecureBrowser_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[Security configuration for browser automation_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[SecurityConfig_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[SecurityError_3]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[Take screenshot and save to audit directory_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
+- [[main()_11]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[securebrowserscriptsbrowse.py]] - code - skills/custom/securebrowser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,22 +63,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 557]]
-- 9 edges to [[_COMMUNITY_Community 424]]
-- 7 edges to [[_COMMUNITY_Community 664]]
-- 5 edges to [[_COMMUNITY_Community 277]]
-- 4 edges to [[_COMMUNITY_Community 24]]
-- 3 edges to [[_COMMUNITY_Community 988]]
-- 3 edges to [[_COMMUNITY_Community 691]]
-- 3 edges to [[_COMMUNITY_Community 643]]
-- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Community 732]]
-- 1 edge to [[_COMMUNITY_Community 977]]
-- 1 edge to [[_COMMUNITY_Community 718]]
+- 3 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
 
 ## Top bridge nodes
-- [[DNSBlocklist]] - degree 60, connects to 11 communities
-- [[_BlockNone]] - degree 6, connects to 3 communities
-- [[test_dns_blocklist.py]] - degree 6, connects to 2 communities
-- [[TestBlocklistDownload]] - degree 6, connects to 2 communities
-- [[TestBlocklistWildcardsAndAllowlist]] - degree 6, connects to 2 communities
+- [[SecurityError_3]] - degree 7, connects to 1 community
+- [[securebrowserscriptsbrowse.py]] - degree 6, connects to 1 community
+- [[RiskLevel_4]] - degree 6, connects to 1 community

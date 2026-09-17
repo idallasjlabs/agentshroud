@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Constrained query-vocabulary expansion]] - rationale - docker/config/hermes/skills/graphify/references/query.md
-- [[save-result Feedback Loop]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[clawhub CLI]] - concept - skills/openclaw/clawhub/SKILL.md
+- [[clawhubSKILL]] - document - skills/openclaw/clawhub/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

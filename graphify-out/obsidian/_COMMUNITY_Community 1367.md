@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Hidden-channel exfil prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Pairingaccess bootstrap probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 115]]
 
 ## Top bridge nodes
-- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[TestEnforcementModeResolver]] - degree 4, connects to 1 community

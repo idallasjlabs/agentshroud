@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_llm_quota_detector.py"
+type: "code"
+community: "Community 120"
+location: "L223"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_120
+---
+
+# .test_anthropic_api_error_500_not_flagged()
+
+## Connections
+- [[TestOverloadedMultiProvider]] - `method` [EXTRACTED]
+- [[is_overloaded()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_120

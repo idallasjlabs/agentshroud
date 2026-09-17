@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Proxy Inbound Tests"
+location: "L987"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Inbound_Tests
+---
+
+# .test_owner_approve_command_requires_pending_request()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[Owner approve should fail closed when target has no pending request.]] - `rationale_for` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

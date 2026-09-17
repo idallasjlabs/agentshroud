@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1698"
+location: "L1763"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1698
+---
+
+# .test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()
+
+## Connections
+- [[Cannot access' healthcheck SKILL.md sandbox wording should rewrite for form payl]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1698

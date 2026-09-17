@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 500"
+community: "Community 509"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_500
+  - community/Community_509
 ---
 
 # Behavior Examples
@@ -16,4 +16,4 @@ tags:
 - [[✅ What SHOULD Happen]] - `contains` [EXTRACTED]
 - [[❌ What Should NOT Happen (Blocked)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_500
+#graphify/document #graphify/EXTRACTED #community/Community_509

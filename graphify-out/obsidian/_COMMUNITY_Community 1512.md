@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[bspesp-bsp.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h
-- [[iot_button.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[auto_format_python.sh]] - code - .claude/scripts/claude-hooks/auto_format_python.sh
+- [[auto_format_python.sh script]] - code - .claude/scripts/claude-hooks/auto_format_python.sh
 
 ## Live Query (requires Dataview plugin)
 

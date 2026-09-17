@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 867"
+community: "Community 907"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_867
+  - community/Community_907
 ---
 
 # TestCredentialInjection
 
 ## Connections
-- [[.test_anthropic_default_strips_x_api_key()]] - `method` [EXTRACTED]
-- [[.test_credential_injected_into_request()]] - `method` [EXTRACTED]
-- [[.test_credential_not_injected_for_unknown_domain()]] - `method` [EXTRACTED]
-- [[.test_has_credential_false_for_missing()]] - `method` [EXTRACTED]
-- [[.test_has_credential_true_for_loaded()]] - `method` [EXTRACTED]
-- [[.test_injection_disabled()]] - `method` [EXTRACTED]
-- [[.test_strip_headers_removes_conflicting_header()]] - `method` [EXTRACTED]
+- [[dot-test_anthropic_default_strips_x_api_key()]] - `method` [EXTRACTED]
+- [[dot-test_credential_injected_into_request()]] - `method` [EXTRACTED]
+- [[dot-test_credential_not_injected_for_unknown_domain()]] - `method` [EXTRACTED]
+- [[dot-test_has_credential_false_for_missing()]] - `method` [EXTRACTED]
+- [[dot-test_has_credential_true_for_loaded()]] - `method` [EXTRACTED]
+- [[dot-test_injection_disabled()]] - `method` [EXTRACTED]
+- [[dot-test_strip_headers_removes_conflicting_header()]] - `method` [EXTRACTED]
 - [[TestCredentialInjector]] - `semantically_similar_to` [INFERRED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_867
+#graphify/code #graphify/EXTRACTED #community/Community_907

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 92"
+community: "Community 457"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_457
 ---
 
 # DNS Tunneling
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_92
+#graphify/concept #graphify/EXTRACTED #community/Community_457

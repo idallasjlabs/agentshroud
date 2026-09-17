@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Device Pairing Management]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approve All Pending Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approving Device Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[File Locations_2]] - document - docs/setup/DEVICE_PAIRING.md
-- [[How Device Pairing Works]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Integration with AgentShroud Workflow_1]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Listing Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Overview_15]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Quick Approval (Single Device)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Rejecting Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Revoking Device Access]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Notes_1]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Verify Approval]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View All Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View Detailed Device Information]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Why Device Pairing Matters]] - document - docs/setup/DEVICE_PAIRING.md
+- [[3. Security Controls]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.1 PII Sanitizer]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.10 Egress Filtering — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.11 Drift Detection — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.12 Container Hardening]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.13 MCP Proxy Layer — Phase 9]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.14 Web Traffic Proxy — Phase 10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.15 Full Egress Control — Phase 11]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.2 Audit Ledger]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.3 Approval Queue]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.4 Kill Switch]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.5 SSH Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.6 Live Security Dashboard]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.7 Encrypted Memory (AES-256-GCM) — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.8 Prompt Injection Defense — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.9 Progressive Trust System — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,12 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 580]]
-- 1 edge to [[_COMMUNITY_Community 1120]]
-- 1 edge to [[_COMMUNITY_Community 1344]]
-- 1 edge to [[_COMMUNITY_Community 558]]
-- 1 edge to [[_COMMUNITY_Community 1119]]
-- 1 edge to [[_COMMUNITY_Community 1345]]
+- 1 edge to [[_COMMUNITY_Community 412]]
 
 ## Top bridge nodes
-- [[AgentShroud Device Pairing Management]] - degree 16, connects to 6 communities
+- [[3. Security Controls]] - degree 16, connects to 1 community

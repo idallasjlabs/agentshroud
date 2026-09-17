@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[_PII_PATTERNS (URL PII regex set)]] - code - gateway/proxy/url_analyzer.py
-- [[_RESPONSE_PII_PATTERNS (content PII regex set)]] - code - gateway/proxy/web_content_scanner.py
+- [[block_main_commits.sh]] - code - .claude/scripts/claude-hooks/block_main_commits.sh
+- [[block_main_commits.sh script]] - code - .claude/scripts/claude-hooks/block_main_commits.sh
 
 ## Live Query (requires Dataview plugin)
 

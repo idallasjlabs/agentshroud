@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 347"
+community: "Community 56"
 location: "L770"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/Community_56
 ---
 
 # TestHealthOverallScore
 
 ## Connections
-- [[.test_all_clean()_1]] - `method` [EXTRACTED]
-- [[.test_empty_summaries()]] - `method` [EXTRACTED]
-- [[.test_partial_tools()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dot-test_all_clean()]] - `method` [EXTRACTED]
+- [[dot-test_empty_summaries()]] - `method` [EXTRACTED]
+- [[dot-test_partial_tools()]] - `method` [EXTRACTED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_347
+#graphify/code #graphify/EXTRACTED #community/Community_56

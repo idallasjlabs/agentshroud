@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
+- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

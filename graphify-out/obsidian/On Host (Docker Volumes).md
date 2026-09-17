@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 218"
+community: "Community 221"
 location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/Community_221
 ---
 
 # On Host (Docker Volumes)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Locations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/Community_221

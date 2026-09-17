@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "concept"
-community: "Key Vault & Audit Chain"
+community: "Community 80"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Community_80
 ---
 
 # Per-agent API key scoping, redaction, leak detection, and rotation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[KeyVault]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/concept #graphify/EXTRACTED #community/Community_80

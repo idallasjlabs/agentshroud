@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1455
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_68]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review_1]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
+- [[eightctl]] - document - skills/openclaw/eightctl/SKILL.md
+- [[eightctl CLI]] - concept - skills/openclaw/eightctl/SKILL.md
+- [[eightctlSKILL]] - document - skills/openclaw/eightctl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

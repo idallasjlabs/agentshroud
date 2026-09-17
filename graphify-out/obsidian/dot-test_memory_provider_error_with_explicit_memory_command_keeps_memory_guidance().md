@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 69"
+location: "L975"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_69
+---
+
+# .test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance()
+
+## Connections
+- [[Explicit memory-search command context should keep memory-specific remediation t]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_69

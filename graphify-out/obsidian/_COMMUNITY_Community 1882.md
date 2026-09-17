@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wire_llm_settings.js — ~.llm_settings wiring isolation test]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[scriptsaudit_merge_regression.py_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

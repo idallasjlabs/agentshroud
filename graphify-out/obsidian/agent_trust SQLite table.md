@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Community 937"
+community: "Community 256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_937
+  - community/Community_256
 ---
 
 # agent_trust SQLite table
@@ -14,4 +14,4 @@ tags:
 - [[ADR-008 Progressive Trust Level System]] - `implements` [EXTRACTED]
 - [[agentshroud.yaml (main config schema)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_937
+#graphify/code #graphify/EXTRACTED #community/Community_256

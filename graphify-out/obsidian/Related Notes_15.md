@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 1137"
-location: "L40"
+community: "Community 253"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1137
+  - community/Community_253
 ---
 
 # Related Notes
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1137
+#graphify/document #graphify/EXTRACTED #community/Community_253

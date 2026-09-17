@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_progressive_lockdown.py"
+type: "code"
+community: "Community 58"
+location: "L151"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_58
+---
+
+# .test_suspended_level_at_10_blocks()
+
+## Connections
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[TestProgressiveLockdownUnit]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_58

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 929
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Coverage Requirements_3]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_180]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_24]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[1. Clone]] - document - README.md
+- [[2. Store credentials]] - document - README.md
+- [[3. Start the stack]] - document - README.md
+- [[4. Verify_1]] - document - README.md
+- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
+- [[Prerequisites_16]] - document - README.md
+- [[Quickstart_1]] - document - README.md
+- [[`asb` reference]] - document - README.md
+- [[asb Wrapper Script]] - concept - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 243]]
+- 1 edge to [[_COMMUNITY_Community 449]]
+- 1 edge to [[_COMMUNITY_Community 178]]
 
 ## Top bridge nodes
-- [[pytest.ini_1]] - degree 8, connects to 1 community
+- [[Quickstart_1]] - degree 9, connects to 1 community
+- [[asb Wrapper Script]] - degree 2, connects to 1 community

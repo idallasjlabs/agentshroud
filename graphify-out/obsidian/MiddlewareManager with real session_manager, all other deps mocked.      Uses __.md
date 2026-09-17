@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "Community 286"
+community: "Ingest Middleware & File Sandbox"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_286
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # MiddlewareManager with real session_manager, all other deps mocked.      Uses __
 
 ## Connections
-- [[manager()]] - `rationale_for` [EXTRACTED]
+- [[manager()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_286
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

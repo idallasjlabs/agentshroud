@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_group_rbac.py"
+type: "code"
+community: "Community 496"
+location: "L111"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_496
+---
+
+# .test_owner_resolves_to_owner_role()
+
+## Connections
+- [[TestGroupRoleResolver]] - `method` [EXTRACTED]
+- [[owner_in_group resolves to GroupRole.OWNER.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_496

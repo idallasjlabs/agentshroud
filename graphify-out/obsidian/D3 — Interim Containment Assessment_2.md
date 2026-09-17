@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 237"
+community: "Community 244"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/Community_244
 ---
 
 # D3 — Interim Containment Assessment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 8D Investigation Process_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/Community_244

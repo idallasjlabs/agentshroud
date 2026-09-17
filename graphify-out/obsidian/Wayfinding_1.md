@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 248"
+community: "Community 261"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/Community_261
 ---
 
 # Wayfinding
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Information Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_248
+#graphify/document #graphify/EXTRACTED #community/Community_261

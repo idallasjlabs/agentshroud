@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 1025"
+community: "Session Manager & PII/Context Guard"
 location: "L536"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1025
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # Export attack detection report.
 
 ## Connections
-- [[.export_attack_report()]] - `rationale_for` [EXTRACTED]
+- [[dot-export_attack_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1025
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

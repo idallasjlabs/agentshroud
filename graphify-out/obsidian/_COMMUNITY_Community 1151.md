@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.60
+members: 6
 ---
 
 # Community 1151
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.60 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_13]] - document - .agents/skills/i-icloud/README.md
-- [[README_13]] - document - .agents/skills/i-icloud/README.md
-- [[Related Skills_13]] - document - .agents/skills/i-icloud/README.md
-- [[Usage_15]] - document - .agents/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)]] - document - .agents/skills/i-icloud/README.md
+- [[BaseException]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_err_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_is_stale_callback_error()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_is_stale_edit_error()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[telegram_egress_notify.py]] - code - gateway/proxy/telegram_egress_notify.py
+- [[urllib HTTPError carries the response body on .read(); fall back to str.]] - rationale - gateway/proxy/telegram_egress_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,12 @@ members: 5
 TABLE source_file, type FROM #community/Community_1151
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 965]]
+- 3 edges to [[_COMMUNITY_Community 368]]
+
+## Top bridge nodes
+- [[_is_stale_callback_error()]] - degree 6, connects to 2 communities
+- [[_is_stale_edit_error()]] - degree 6, connects to 2 communities
+- [[telegram_egress_notify.py]] - degree 4, connects to 1 community

@@ -1,22 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 372"
-location: "L44"
+community: "Community 852"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/Community_852
 ---
 
 # Function Details
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
-- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
+- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
+- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/Community_852

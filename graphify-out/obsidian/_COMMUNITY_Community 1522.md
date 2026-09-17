@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[check-status.sh]] - code - docker/scripts/check-status.sh
-- [[check-status.sh script]] - code - docker/scripts/check-status.sh
+- [[_read]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[patch_telegram_send_base_url.py patch driver]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
 
 ## Live Query (requires Dataview plugin)
 

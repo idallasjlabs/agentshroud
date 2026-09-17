@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.19
 members: 16
 ---
 
 # Community 584
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.19 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_31]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Function Details_51]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Classes  Functions_54]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Rule ID Sets]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Purpose_172]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Related_58]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Wazuh Level to Severity Mapping]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[generate_summary(alerts)_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[level_to_severity(level)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[parse_alert(raw)_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[read_alerts(alert_dir, since)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_2]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Bootstrap cron copy must also have denial-token avoidance.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct the LLM to avoid 'denied'.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Path_51]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
 
 ## Live Query (requires Dataview plugin)
 

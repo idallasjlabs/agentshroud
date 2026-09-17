@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 656"
+community: "Community 679"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/Community_679
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/Community_679

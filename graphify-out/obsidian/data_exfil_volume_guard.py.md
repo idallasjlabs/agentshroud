@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Community 181"
+community: "Community 189"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_189
 ---
 
 # data_exfil_volume_guard.py
@@ -16,6 +16,6 @@ tags:
 - [[DataExfilVolumeGuard]] - `contains` [EXTRACTED]
 - [[VolumeVerdict]] - `contains` [EXTRACTED]
 - [[_SessionState]] - `contains` [EXTRACTED]
-- [[egress_filter.py]] - `conceptually_related_to` [EXTRACTED]
+- [[egress_filter.py_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/Community_189

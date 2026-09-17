@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 280"
-location: "L19"
+community: "Community 314"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_314
 ---
 
 # Rules
 
 ## Connections
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_280
+#graphify/document #graphify/EXTRACTED #community/Community_314

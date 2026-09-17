@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 1120"
+community: "Community 206"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1120
+  - community/Community_206
 ---
 
 # Scenario 5: Clear All Devices (Nuclear Option)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1120
+#graphify/document #graphify/EXTRACTED #community/Community_206

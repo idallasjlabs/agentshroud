@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Test global exception handler with HTTPException
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_global_exception_handler_http_exception()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

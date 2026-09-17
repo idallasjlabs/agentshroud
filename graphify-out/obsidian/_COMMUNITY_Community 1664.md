@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[CI Workflow]] - code - .github/workflows/ci.yml
-- [[Leak Gate Scoped to ubuntu+3.11]] - rationale - .github/workflows/ci.yml
+- [[PromptGuard.reanchor_delimiters() (C8)]] - code - gateway/security/prompt_guard.py
+- [[UserSessionManager.reanchor_system_prompt() (C16)]] - code - gateway/security/session_manager.py
 
 ## Live Query (requires Dataview plugin)
 

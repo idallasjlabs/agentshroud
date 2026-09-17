@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1409"
+community: "Community 77"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1409
+  - community/Community_77
 ---
 
 # Sidecar Mode (Advanced)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1409
+#graphify/document #graphify/EXTRACTED #community/Community_77

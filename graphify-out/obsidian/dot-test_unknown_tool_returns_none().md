@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L253"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_unknown_tool_returns_none()
+
+## Connections
+- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
+- [[TestToolGating]] - `method` [EXTRACTED]
+- [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - `rationale_for` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+- [[_set_state()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Community 21"
+community: "Community 116"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_116
 ---
 
 # Unsubscribed callback stops receiving events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_unsubscribe_stops_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_21
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

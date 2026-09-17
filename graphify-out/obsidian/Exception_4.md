@@ -1,31 +1,33 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: ""
 type: "code"
-community: "Community 44"
-location: "L125"
+community: "Voice Gateway STT & Browser Security"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_44
+  - graphify/EXTRACTED
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Exception
 
 ## Connections
-- [[.__init__()_174]] - `references` [EXTRACTED]
-- [[ConnectionPool]] - `uses` [INFERRED]
-- [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[StdioConnection]] - `uses` [INFERRED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
+- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SecurityError_3]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[TokenError]] - `inherits` [EXTRACTED]
+- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
+- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
+- [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

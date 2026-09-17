@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer.sanitize_tool_params (C34)]] - code - gateway/security/tool_chain_analyzer.py
+- [[Chaos Engineering Skill_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

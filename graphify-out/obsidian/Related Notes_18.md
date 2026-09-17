@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 820"
-location: "L96"
+community: "Community 255"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/Community_255
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/Community_255

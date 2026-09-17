@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[I - Information Disclosure]] - document - docs/security/threat-model.md
-- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
-- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
-- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
-- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_84]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Related Skills_75]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_79]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[openclawskillsi-ggREADME]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1267
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 913]]
-
-## Top bridge nodes
-- [[I - Information Disclosure]] - degree 5, connects to 1 community

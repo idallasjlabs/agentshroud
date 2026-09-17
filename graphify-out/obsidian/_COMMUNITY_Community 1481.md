@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1481
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_154]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
-- [[Skill kaizen_2]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[dot-test_get_stats()_2]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,11 @@ members: 2
 TABLE source_file, type FROM #community/Community_1481
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 170]]
+- 1 edge to [[_COMMUNITY_Community 192]]
+
+## Top bridge nodes
+- [[dot-test_global_stats()]] - degree 2, connects to 1 community
+- [[dot-test_get_stats()_2]] - degree 2, connects to 1 community

@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1070
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[FY26 Cost Reduction Context]] - document - .agents/skills/i-aws/SKILL.md
-- [[In-Scope Departments (Cost Reduction)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Infrastructure You Must Know]] - document - .agents/skills/i-aws/SKILL.md
-- [[Out-of-Scope Departments (Inventory & Tag Only)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Savings Levers (Ranked by Impact)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Target 40% Full-Year Reduction on Global Services Resources]] - document - .agents/skills/i-aws/SKILL.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 515]]
+- 2 edges to [[_COMMUNITY_Community 399]]
+- 1 edge to [[_COMMUNITY_Community 840]]
 
 ## Top bridge nodes
-- [[FY26 Cost Reduction Context]] - degree 6, connects to 1 community
+- [[Discovery Strategy_2]] - degree 7, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -19,16 +19,16 @@ tags:
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[Directory Structure]] - `contains` [EXTRACTED]
 - [[File Formats]] - `contains` [EXTRACTED]
-- [[Key Messaging]] - `contains` [EXTRACTED]
-- [[License]] - `contains` [EXTRACTED]
+- [[Key Messaging_1]] - `contains` [EXTRACTED]
+- [[License_1]] - `contains` [EXTRACTED]
 - [[Logo Usage]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
-- [[README_38]] - `contains` [EXTRACTED]
 - [[Social Handles]] - `contains` [EXTRACTED]
-- [[Trademark]] - `contains` [EXTRACTED]
-- [[Typography_1]] - `contains` [EXTRACTED]
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
-- [[Voice & Tone_1]] - `contains` [EXTRACTED]
+- [[Trademark_2]] - `contains` [EXTRACTED]
+- [[Typography]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Voice & Tone]] - `contains` [EXTRACTED]
+- [[brandingREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

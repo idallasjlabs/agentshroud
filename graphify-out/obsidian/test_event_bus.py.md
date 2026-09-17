@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "Community 21"
+community: "Community 116"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_116
 ---
 
 # test_event_bus.py
@@ -21,8 +21,8 @@ tags:
 - [[test_emit_to_multiple_subscribers()]] - `contains` [EXTRACTED]
 - [[test_event_has_required_fields()]] - `contains` [EXTRACTED]
 - [[test_get_recent()]] - `contains` [EXTRACTED]
-- [[test_get_stats()_1]] - `contains` [EXTRACTED]
+- [[test_get_stats()]] - `contains` [EXTRACTED]
 - [[test_subscribe_receive_events()]] - `contains` [EXTRACTED]
 - [[test_unsubscribe_stops_events()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/Community_116

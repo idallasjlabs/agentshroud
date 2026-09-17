@@ -1,0 +1,18 @@
+---
+source_file: "gateway/runtime/config.py"
+type: "code"
+community: "Community 808"
+location: "L67"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_808
+---
+
+# .effective_rootless()
+
+## Connections
+- [[Resolve rootless setting based on runtime.]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_808

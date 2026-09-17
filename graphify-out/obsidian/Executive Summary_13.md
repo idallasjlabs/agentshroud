@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/ws-e-audit-v1.2.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 276"
-location: "L16"
+community: "Community 609"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Community_609
 ---
 
 # Executive Summary
 
 ## Connections
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/Community_609

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.68
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 962
 
-**Cohesion:** 0.68 - moderately connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
-- [[log()_4]] - code - docker/scripts/security-scan.sh
-- [[run_clamav()]] - code - docker/scripts/security-scan.sh
-- [[run_oscap()]] - code - docker/scripts/security-scan.sh
-- [[run_sbom()]] - code - docker/scripts/security-scan.sh
-- [[run_trivy()]] - code - docker/scripts/security-scan.sh
-- [[security-scan.sh]] - code - docker/scripts/security-scan.sh
-- [[security-scan.sh script]] - code - docker/scripts/security-scan.sh
+- [[R - Repudiation]] - document - docs/security/threat-model.md
+- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
+- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
+- [[T - Tampering with Data]] - document - docs/security/threat-model.md
+- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
+- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
+- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
+- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
+- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,12 @@ members: 8
 TABLE source_file, type FROM #community/Community_962
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1315]]
+- 1 edge to [[_COMMUNITY_Community 1399]]
+- 1 edge to [[_COMMUNITY_Community 904]]
+- 1 edge to [[_COMMUNITY_Community 944]]
+
+## Top bridge nodes
+- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

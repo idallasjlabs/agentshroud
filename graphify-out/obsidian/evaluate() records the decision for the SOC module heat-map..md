@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 33"
+community: "Community 35"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_35
 ---
 
 # evaluate() records the decision for the SOC module heat-map.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decision_records_soc_heatmap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_33
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

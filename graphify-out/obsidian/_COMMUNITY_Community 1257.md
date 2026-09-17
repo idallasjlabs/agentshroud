@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1257
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[active]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[Athena — Knowledge Distiller_2]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Purpose_74]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Related Skills_65]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Usage_69]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

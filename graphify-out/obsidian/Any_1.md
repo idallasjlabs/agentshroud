@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 123"
-location: "L49"
+community: "Ingest API & RBAC Core"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_123
+  - graphify/INFERRED
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_4]] - `references` [EXTRACTED]
-- [[._default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_123
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

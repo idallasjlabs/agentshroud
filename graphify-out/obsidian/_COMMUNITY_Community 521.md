@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.17
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # Community 521
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[AI Security Standards Watch Prompt]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
-- [[Agentic AI Threat Intelligence Prompt]] - document - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[ApprovalQueue Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[AuditChain Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[CVE Triage 3-Job Pipeline]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Daily CVE Triage & Remediation Scan Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
-- [[Daily Memory Journal Prompt]] - document - docker/config/hermes/cron/prompts/daily-memory-journal.txt
-- [[EgressFilter Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[Gateway Python Dependencies]] - code - gateway/requirements.txt
-- [[Governed forward Voice Path]] - rationale - firmware/voice-terminal/SETUP.md
-- [[NO_REPLY Suppression Token]] - concept - docker/config/openclaw/cron/prompts/cve-triage-report.txt
-- [[Presidio PII Detection (analyzer + anonymizer)]] - code - gateway/requirements.txt
-- [[PromptGuard Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[Today in AI Newsletter Cron Prompt]] - document - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[ToolACL Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
-- [[append_finding.py Finding Appender]] - code - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[cve_prefetch.py (CVE fetch-and-diff)]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[dot-process_inbound()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_clean_message_passes_through()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_encoding_detected_on_getUpdates()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_inbound_text_normalized_before_pipeline()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_message_not_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_prompt_injection_blocked_on_getUpdates()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Base64-encoded injection via getUpdates must be caught.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[BlockingPipeline]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[EncodingDetectingPipeline]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[FakePipelineResult]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Normal messages must pass through the pipeline unmodified.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner messages must pass even if the pipeline would block them.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Pipeline that blocks any message containing injection keywords.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Pipeline that detects base64-encoded injections.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Prompt injection via getUpdates must be blocked by the pipeline.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width obfuscation should be normalized before pipeline evaluation.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,13 +37,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 213]]
-- 1 edge to [[_COMMUNITY_Community 282]]
-- 1 edge to [[_COMMUNITY_Community 279]]
+- 21 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 8 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+- 3 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 3 edges to [[_COMMUNITY_Community 119]]
+- 3 edges to [[_COMMUNITY_Collaborator Activity & Telegram Proxy]]
+- 1 edge to [[_COMMUNITY_Community 419]]
+- 1 edge to [[_COMMUNITY_Community 69]]
+- 1 edge to [[_COMMUNITY_Community 608]]
 
 ## Top bridge nodes
-- [[Daily Memory Journal Prompt]] - degree 3, connects to 2 communities
-- [[Agentic AI Threat Intelligence Prompt]] - degree 7, connects to 1 community
-- [[AI Security Standards Watch Prompt]] - degree 6, connects to 1 community
-- [[Daily CVE Triage & Remediation Scan Prompt]] - degree 6, connects to 1 community
-- [[Governed forward Voice Path]] - degree 4, connects to 1 community
+- [[BlockingPipeline]] - degree 13, connects to 7 communities
+- [[EncodingDetectingPipeline]] - degree 7, connects to 4 communities
+- [[FakePipelineResult]] - degree 7, connects to 4 communities
+- [[dot-test_clean_message_passes_through()]] - degree 7, connects to 2 communities
+- [[dot-test_encoding_detected_on_getUpdates()]] - degree 7, connects to 2 communities

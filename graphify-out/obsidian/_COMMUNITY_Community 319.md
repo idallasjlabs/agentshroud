@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.09
-members: 26
+cohesion: 0.08
+members: 27
 ---
 
 # Community 319
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
-- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
-- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
-- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[SKILL_203]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[SKILL_206]] - document - skills/openclaw/gemini/SKILL.md
-- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
-- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Architecture_5]] - document - docs/setup-slack.md
+- [[Collaborators]] - document - docs/setup-slack.md
+- [[Collaborators_1]] - document - docs/setup-telegram.md
+- [[Prerequisites_4]] - document - docs/setup-telegram.md
+- [[Sending Messages to the Bot]] - document - docs/setup-slack.md
+- [[Slack Channel Setup]] - document - docs/setup-slack.md
+- [[Step 10 Verify]] - document - docs/setup-slack.md
+- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
+- [[Step 1 Create a Slack App]] - document - docs/setup-slack.md
+- [[Step 2 Enable Socket Mode]] - document - docs/setup-slack.md
+- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
+- [[Step 3 Add Bot Token Scopes]] - document - docs/setup-slack.md
+- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
+- [[Step 4 Enable Event Subscriptions]] - document - docs/setup-slack.md
+- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
+- [[Step 5 Enable App Home Messages Tab]] - document - docs/setup-slack.md
+- [[Step 6 Install the App]] - document - docs/setup-slack.md
+- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
+- [[Step 7 Find Your Slack User ID]] - document - docs/setup-slack.md
+- [[Step 7 Verify]] - document - docs/setup-telegram.md
+- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
+- [[Step 9 Rebuild and Start]] - document - docs/setup-slack.md
+- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
+- [[Troubleshooting_23]] - document - docs/setup-slack.md
+- [[Troubleshooting_24]] - document - docs/setup-telegram.md
+- [[setup-slack]] - document - docs/setup-slack.md
+- [[setup-telegram]] - document - docs/setup-telegram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,10 +46,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1027]]
-- 1 edge to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 945]]
+- 1 edge to [[_COMMUNITY_Community 429]]
+- 1 edge to [[_COMMUNITY_Community 822]]
 
 ## Top bridge nodes
-- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
-- [[SKILL_203]] - degree 9, connects to 1 community
+- [[Collaborators]] - degree 3, connects to 1 community
+- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community

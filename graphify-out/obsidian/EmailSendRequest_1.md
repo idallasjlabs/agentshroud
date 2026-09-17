@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 159"
-location: "L176"
+community: "Approval Routing & Event Bus"
+location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Approval_Routing__Event_Bus
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `calls` [EXTRACTED]
+- [[dot-body_not_empty()]] - `method` [EXTRACTED]
+- [[dot-subject_not_empty()]] - `method` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - `rationale_for` [EXTRACTED]
+- [[forward.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

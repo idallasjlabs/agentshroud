@@ -1,20 +1,19 @@
 ---
 source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Community 380"
+community: "Community 900"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/Community_900
 ---
 
 # list_registry_ghsa_ids.py
 
 ## Connections
-- [[agent_cve_registry.py]] - `shares_data_with` [EXTRACTED]
-- [[gatewaysecurityagent_cve_registry.py (known CVE registry, referenced)]] - `imports_from` [EXTRACTED]
-- [[main()_22]] - `contains` [EXTRACTED]
+- [[gateway.security.agent_cve_registry]] - `shares_data_with` [EXTRACTED]
+- [[main()_34]] - `contains` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/Community_900

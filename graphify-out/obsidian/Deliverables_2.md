@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 236"
-location: "L191"
+community: "Community 250"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/Community_250
 ---
 
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Reports (`.reports`)_2]] - `contains` [EXTRACTED]
-- [[Script Templates_2]] - `contains` [EXTRACTED]
-- [[Scripts (`.scripts`)_2]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_236
+#graphify/document #graphify/EXTRACTED #community/Community_250

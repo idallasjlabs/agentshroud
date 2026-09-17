@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.10
 members: 20
 ---
 
 # Community 451
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[._make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_send_token_returns_default_outside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_proxy_request_contextvar_visible_inside_impl()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_proxy_request_resets_contextvar_after_return()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_send_telegram_text_falls_back_to_default_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_send_telegram_text_uses_inbound_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Cross-bot reply misrouting fix via contextvar-scoped send token]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Outside a proxy_request call, _active_send_token() returns self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestMultiBotContextvarRouting]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[The contextvar set by proxy_request is visible throughout _proxy_request_impl.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When _inbound_bot_id is set, _active_bot_id() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When _inbound_bot_token is set, _active_send_token() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Without contextvar, _send_telegram_text uses self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[_send_telegram_text uses the inbound contextvar token, not self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[04-security]] - document - docs/diagrams/04-security.md
+- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
+- [[11. Trust Boundary Diagram]] - document - docs/diagrams/04-security.md
+- [[12. Credential Flow Diagram]] - document - docs/diagrams/04-security.md
+- [[13. Network Security Diagram — Egress Controls]] - document - docs/diagrams/04-security.md
+- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
+- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
+- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
+- [[AgentShroud — Diagram Library]] - document - docs/diagrams/README.md
+- [[AgentShroud — Security & Access Diagrams]] - document - docs/diagrams/04-security.md
+- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
+- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
+- [[Credential Flow Diagram (op-proxy)]] - concept - docs/diagrams/04-security.md
+- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
+- [[Diagrams Not Yet Implemented]] - document - docs/diagrams/README.md
+- [[Index]] - document - docs/diagrams/README.md
+- [[Network Security Diagram — Egress Controls]] - concept - docs/diagrams/04-security.md
+- [[Priority Reading Order]] - document - docs/diagrams/README.md
+- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[diagramsREADME]] - document - docs/diagrams/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,8 +39,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 91]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
+- 2 edges to [[_COMMUNITY_Community 835]]
+- 1 edge to [[_COMMUNITY_Community 240]]
+- 1 edge to [[_COMMUNITY_Community 225]]
+- 1 edge to [[_COMMUNITY_Community 874]]
+- 1 edge to [[_COMMUNITY_Community 572]]
+- 1 edge to [[_COMMUNITY_Community 875]]
+- 1 edge to [[_COMMUNITY_Community 994]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 731]]
 
 ## Top bridge nodes
-- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities
+- [[diagramsREADME]] - degree 8, connects to 5 communities
+- [[04-security]] - degree 5, connects to 1 community
+- [[Credential Flow Diagram (op-proxy)]] - degree 2, connects to 1 community
+- [[Network Security Diagram — Egress Controls]] - degree 2, connects to 1 community
+- [[Dependency Graph — Component Deployment Order]] - degree 2, connects to 1 community

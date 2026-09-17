@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 1821"
+community: "Community 2009"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1821
+  - community/Community_2009
 ---
 
 # SCRUM-110: restart recovery must preserve original timeout_action, not hardcoded deny
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1821
+#graphify/rationale #graphify/EXTRACTED #community/Community_2009

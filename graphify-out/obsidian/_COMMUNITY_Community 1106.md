@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.47
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1106
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
-- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Default Configuration]] - document - docs/setup/setup-guide.md
+- [[Environment Variables_1]] - document - docs/setup/setup-guide.md
+- [[Mac Studio Example]] - document - docs/setup/setup-guide.md
+- [[Multi-Instance Setup]] - document - docs/setup/setup-guide.md
+- [[Port Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Step 5 Configure Ports]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 549]]
+- 1 edge to [[_COMMUNITY_Community 340]]
+- 1 edge to [[_COMMUNITY_Community 392]]
 
 ## Top bridge nodes
-- [[test-container-runtime.sh]] - degree 6, connects to 1 community
+- [[Multi-Instance Setup]] - degree 5, connects to 1 community
+- [[Step 5 Configure Ports]] - degree 4, connects to 1 community

@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Community 314
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Approval Queue Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
-- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
-- [[Connectivity Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
-- [[Container Stability Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
-- [[Debugging Commands]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
-- [[Egress  Network Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
-- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
-- [[Kill Switch Won't Deactivate Troubleshooting]] - concept - docs/runbooks/troubleshooting.md
-- [[PII  Sanitization Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
-- [[Prompt Injection Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Quick Diagnosis Flow]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Related Notes_64]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
-- [[Security Module Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Startup Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
-- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
-- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
-- [[troubleshooting]] - document - docs/runbooks/troubleshooting.md
+- [[Accessibility Requirements_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Anti-Patterns to Flag_8]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[BEM (Block Element Modifier)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Breakpoints (mobile-first)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Button_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[CSS Architecture Recommendations_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[CSS Modules (React  Next.js)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Component Patterns_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Component contract rules_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Component file structure_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Container Query Pattern (preferred over breakpoints for components)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Core Discipline Structure → Component → Layout → Validate_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Dark  Light Theme Implementation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Dashboard Grid_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Data Table_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Dependencies_9]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Form Field_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Modal  Dialog_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Role_33]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Rules_8]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Utility-First (Tailwind  custom utilities)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[openclawskillsi-uiSKILL]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,14 +44,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_314
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 284]]
-- 2 edges to [[_COMMUNITY_Community 499]]
-- 1 edge to [[_COMMUNITY_Community 361]]
-- 1 edge to [[_COMMUNITY_Community 289]]
-
-## Top bridge nodes
-- [[troubleshooting]] - degree 18, connects to 4 communities
-- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 1 community
-- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community

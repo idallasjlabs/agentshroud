@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 467"
+community: "Community 479"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_467
+  - community/Community_479
 ---
 
 # Issue: "Docker not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_467
+#graphify/document #graphify/EXTRACTED #community/Community_479

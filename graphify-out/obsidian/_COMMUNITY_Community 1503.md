@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ForwardResponse]] - code - gateway/ingest_api/models.py
-- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,11 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1503
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
-- 1 edge to [[_COMMUNITY_Community 159]]
-
-## Top bridge nodes
-- [[ForwardResponse]] - degree 4, connects to 3 communities

@@ -1,25 +1,23 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Community 419"
-location: "L550"
+community: "Community 431"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/Community_431
 ---
 
 # main()
 
 ## Connections
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_svg_logos()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
+- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
+- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
+- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_419
+#graphify/code #graphify/EXTRACTED #community/Community_431

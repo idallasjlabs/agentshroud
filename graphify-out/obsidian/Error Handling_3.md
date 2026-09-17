@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 656"
-location: "L121"
+community: "Community 399"
+location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/Community_399
 ---
 
 # Error Handling
 
 ## Connections
-- [[Technical Specification_1]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/Community_399

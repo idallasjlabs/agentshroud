@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "concept"
-community: "Community 1407"
+community: "Community 1432"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1407
+  - community/Community_1432
 ---
 
 # Podcast Production Pipeline (multi-agent)
 
 ## Connections
-- [[Hermes — Reference Verifier Skill]] - `conceptually_related_to` [EXTRACTED]
-- [[i-hermes README (Podcast Production Orchestrator)]] - `conceptually_related_to` [EXTRACTED]
+- [[Hermes Podcast Production Orchestrator README]] - `conceptually_related_to` [EXTRACTED]
+- [[Hermes Reference Verifier Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1407
+#graphify/concept #graphify/EXTRACTED #community/Community_1432

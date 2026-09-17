@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware & Lifespan"
+community: "Ingest Middleware & File Sandbox"
 location: "L899"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # _bot()
 
 ## Connections
-- [[.test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
-- [[.test_non_default_bot_fallback()]] - `calls` [EXTRACTED]
+- [[dot-test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
+- [[dot-test_non_default_bot_fallback()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

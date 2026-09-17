@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 60"
 location: "L1268"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_60
 ---
 
 # Score domain 13: Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_identity_authentication()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

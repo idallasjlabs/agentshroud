@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Community 557"
-location: "L309"
+community: "Community 1467"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_557
+  - community/Community_1467
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_557
+#graphify/code #graphify/EXTRACTED #community/Community_1467

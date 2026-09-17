@@ -1,17 +1,19 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "document"
-community: "Community 213"
+community: "Community 783"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_213
+  - graphify/EXTRACTED
+  - community/Community_783
 ---
 
 # AgentShroud Job Schedule Dashboard
 
 ## Connections
-- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `conceptually_related_to` [INFERRED]
-- [[generate-job-schedule.py_1]] - `references` [EXTRACTED]
+- [[Per-Bot Status Badge Vocabulary]] - `implements` [EXTRACTED]
+- [[Pre-Dedupe Scheduled Jobs Listing]] - `semantically_similar_to` [INFERRED]
+- [[Prefers-Color-Scheme Token Palette]] - `implements` [EXTRACTED]
+- [[Responsive Table-to-Card Collapse Pattern]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/Community_783

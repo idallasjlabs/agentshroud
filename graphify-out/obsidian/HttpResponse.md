@@ -12,8 +12,8 @@ tags:
 # HttpResponse
 
 ## Connections
-- [[.request()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

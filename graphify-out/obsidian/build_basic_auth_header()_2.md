@@ -1,19 +1,20 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 164"
-location: "L95"
+community: "Community 242"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Community_242
 ---
 
 # build_basic_auth_header()
 
 ## Connections
 - [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - `rationale_for` [EXTRACTED]
-- [[_auth_headers()_1]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket build_basic_auth_header()]] - `semantically_similar_to` [INFERRED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[post_comment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_164
+#graphify/code #graphify/EXTRACTED #community/Community_242

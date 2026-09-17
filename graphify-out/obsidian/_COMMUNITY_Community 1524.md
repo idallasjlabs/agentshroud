@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
-- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
+- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[hermesskillsgraphifyreferencesextraction-spec]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 881
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[apiconfig]] - concept - gateway/web/templates/management.html
-- [[apikillswitch{mode}]] - concept - gateway/web/templates/management.html
-- [[apilogs]] - concept - gateway/web/templates/management.html
-- [[apirebuild]] - concept - gateway/web/templates/management.html
-- [[apisecurityreport]] - concept - gateway/web/templates/management.html
-- [[apiservices{name}{action}]] - concept - gateway/web/templates/management.html
-- [[apistatus]] - concept - gateway/web/templates/management.html
-- [[apiupdatesbotopenclaw]] - concept - gateway/web/templates/management.html
-- [[Management Dashboard]] - code - gateway/web/templates/management.html
+- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[hermesworkspacecompetitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 

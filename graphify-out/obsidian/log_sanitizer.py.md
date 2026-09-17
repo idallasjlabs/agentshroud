@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 95"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # log_sanitizer.py
@@ -17,7 +17,7 @@ tags:
 - [[env_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `contains` [EXTRACTED]
-- [[key_vault.py]] - `semantically_similar_to` [INFERRED]
+- [[key_vault.py_2]] - `semantically_similar_to` [INFERRED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 24"
+community: "Slack Proxy & Main Endpoint Tests"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Slack_Proxy__Main_Endpoint_Tests
 ---
 
 # Create a mock forwarder.
 
 ## Connections
-- [[.mock_forwarder()]] - `rationale_for` [EXTRACTED]
+- [[dot-mock_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests

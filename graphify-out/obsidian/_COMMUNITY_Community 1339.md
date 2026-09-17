@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[devices.sh]] - code - docker/scripts/devices.sh
-- [[devices.sh script]] - code - docker/scripts/devices.sh
-- [[telegram.sh]] - code - docker/scripts/telegram.sh
-- [[telegram.sh script]] - code - docker/scripts/telegram.sh
+- [[dot-agentsskillsgraphifyreferencesupdate]] - document - .agents/skills/graphify/references/update.md
+- [[For --cluster-only]] - document - .agents/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)]] - document - .agents/skills/graphify/references/update.md
+- [[graphify reference incremental update and cluster-only]] - document - .agents/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

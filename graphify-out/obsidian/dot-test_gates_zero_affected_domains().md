@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1485"
+location: "L1035"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1485
+---
+
+# .test_gates_zero_affected_domains()
+
+## Connections
+- [[TestMandatoryGates]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1485

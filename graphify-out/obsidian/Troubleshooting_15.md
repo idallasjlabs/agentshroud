@@ -1,20 +1,22 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 306"
-location: "L247"
+community: "Community 251"
+location: "L317"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_251
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[Container unhealthy]] - `contains` [EXTRACTED]
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
-- [[Telegram bot not responding]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
+- [[Browser timeout_2]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_251

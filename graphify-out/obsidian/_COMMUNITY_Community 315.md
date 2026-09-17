@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.09
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Community 315
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[AgentShroud Gateway]] - concept - docker/config/hermes/SOUL.md
-- [[AgentShroud Hermes System Identity (agentshermes-soul.md)]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[AgentShroud Hermes — System Identity]] - document - docker/config/hermes/SOUL.md
-- [[Agents Folder README]] - document - docker/config/hermes/agents/_README.txt
-- [[Capabilities]] - document - docker/config/hermes/SOUL.md
-- [[Core Behaviors]] - document - docker/config/hermes/SOUL.md
-- [[Hermes MCP Servers Config]] - document - docker/config/hermes/mcp/servers.json
-- [[Isaiah Jefferson (Owner)]] - concept - docker/config/hermes/SOUL.md
-- [[OpenClaw_1]] - concept - docker/config/hermes/SOUL.md
-- [[OpenClawAgentShroud Bot Identity]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[Owner]] - document - docker/config/hermes/SOUL.md
-- [[PII Sanitizer_1]] - concept - docker/config/hermes/SOUL.md
-- [[Remote Hosts (SSH via gateway)]] - document - docker/config/hermes/SOUL.md
-- [[SOUL_2]] - document - docker/config/hermes/SOUL.md
-- [[Security Reviewer Agent]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[Trademark Notice]] - document - docker/config/hermes/SOUL.md
-- [[Your Role]] - document - docker/config/hermes/SOUL.md
-- [[agentshroud-gateway MCP proxy entry (disabled)]] - concept - docker/config/hermes/mcp/servers.json
-- [[agentshroud-ssh-exec.sh helper]] - concept - docker/config/hermes/SOUL.md
-- [[marvin (dev host, per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
-- [[marvin (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[raspberrypi (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[raspberrypi (per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
-- [[tirith command-safety scanner]] - concept - docker/config/hermes/SOUL.md
-- [[trillian (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[trillian (per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
+- [[Missing auth for API providers]] - document - docker/scripts/README.md
+- [[API Keys]] - document - docker/scripts/README.md
+- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Changing AI Model]] - document - docker/scripts/README.md
+- [[Common Tasks]] - document - docker/scripts/README.md
+- [[Container Management]] - document - docker/scripts/README.md
+- [[Container unhealthy]] - document - docker/scripts/README.md
+- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Debugging Issues]] - document - docker/scripts/README.md
+- [[Direct Docker Commands]] - document - docker/scripts/README.md
+- [[File Locations_1]] - document - docker/scripts/README.md
+- [[Initial Setup]] - document - docker/scripts/README.md
+- [[OpenClaw CLI]] - document - docker/scripts/README.md
+- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
+- [[Quick Reference_7]] - document - docker/scripts/README.md
+- [[Security Notes_2]] - document - docker/scripts/README.md
+- [[Telegram bot not responding]] - document - docker/scripts/README.md
+- [[Troubleshooting_21]] - document - docker/scripts/README.md
+- [[Troubleshooting_22]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
+- [[check-status.sh_1]] - document - docker/scripts/README.md
+- [[devices.sh_1]] - document - docker/scripts/README.md
+- [[dockerscriptsREADME]] - document - docker/scripts/README.md
+- [[logs.sh_1]] - document - docker/scripts/README.md
+- [[restart.sh_1]] - document - docker/scripts/README.md
+- [[set-model.sh_1]] - document - docker/scripts/README.md
+- [[telegram.sh_1]] - document - docker/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,11 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 117]]
-- 1 edge to [[_COMMUNITY_Community 566]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 745]]
+- 1 edge to [[_COMMUNITY_Community 326]]
 
 ## Top bridge nodes
-- [[SOUL_2]] - degree 15, connects to 3 communities
-- [[OpenClawAgentShroud Bot Identity]] - degree 7, connects to 1 community
+- [[Troubleshooting_22]] - degree 4, connects to 1 community

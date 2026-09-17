@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "Community 378"
+community: "Community 381"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_381
 ---
 
 # gog
 
 ## Connections
-- [[SKILL_210]] - `contains` [EXTRACTED]
+- [[gogSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_378
+#graphify/document #graphify/EXTRACTED #community/Community_381

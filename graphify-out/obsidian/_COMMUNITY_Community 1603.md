@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Delayed-starting dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_start_control_center_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
+- [[Control center launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - degree 4, connects to 3 communities
+- [[dot-test_start_control_center_script_uses_repo_relative_exec()]] - degree 2, connects to 1 community

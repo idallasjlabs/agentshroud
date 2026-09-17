@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.68
+members: 8
 ---
 
 # Community 1006
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.68 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Purpose_194]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Where Used_5]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
+- [[dockerscriptssecurity-scan.sh]] - code - docker/scripts/security-scan.sh
+- [[log()]] - code - docker/scripts/security-scan.sh
+- [[run_clamav()]] - code - docker/scripts/security-scan.sh
+- [[run_oscap()]] - code - docker/scripts/security-scan.sh
+- [[run_sbom()]] - code - docker/scripts/security-scan.sh
+- [[run_trivy()]] - code - docker/scripts/security-scan.sh
+- [[security-scan.sh script]] - code - docker/scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1006
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 230]]
-
-## Top bridge nodes
-- [[spaCy]] - degree 7, connects to 1 community

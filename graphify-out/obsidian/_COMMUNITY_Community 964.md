@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 964
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[dot-test_credential_never_in_logs()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_get_status_structure()]] - code - gateway/tests/test_credential_injector.py
+- [[Create a temp secrets directory with a test credential.]] - rationale - gateway/tests/test_credential_injector.py
+- [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - rationale - gateway/tests/test_credential_injector.py
+- [[TestStatus_1]] - code - gateway/tests/test_credential_injector.py
+- [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
+- [[injector()]] - code - gateway/tests/test_credential_injector.py
+- [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
+- [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 801]]
+- 1 edge to [[_COMMUNITY_Community 1035]]
+- 1 edge to [[_COMMUNITY_Community 1107]]
+- 1 edge to [[_COMMUNITY_Community 583]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 907]]
 
 ## Top bridge nodes
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community
+- [[test_credential_injector.py]] - degree 7, connects to 4 communities
+- [[injector()]] - degree 3, connects to 1 community

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+type: "code"
+community: "Community 108"
+location: "L317"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_108
+---
+
+# .test_get_or_create_by_transport_and_caching()
+
+## Connections
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[TestConnectionPool]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_108

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 889"
-location: "L69"
+community: "Community 782"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_889
+  - community/Community_782
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_889
+#graphify/document #graphify/EXTRACTED #community/Community_782

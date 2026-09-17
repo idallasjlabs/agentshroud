@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 755"
-location: "L75"
+community: "Prompt Guard & Context Integrity"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_755
+  - graphify/INFERRED
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_755
+#graphify/code #graphify/INFERRED #community/Prompt_Guard__Context_Integrity

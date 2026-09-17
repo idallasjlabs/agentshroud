@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1119
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
-- [[2. Principle of Least Privilege]] - document - docs/setup/DEVICE_PAIRING.md
-- [[3. Monitor Remote IPs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[4. Document Your Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[5. Rotate on Compromise]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Best Practices_3]] - document - docs/setup/DEVICE_PAIRING.md
+- [[RT-MB1 — Cross-Bot Trust Pivot]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB2 — Shared-Memory Leak Between Bots]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB3 — Group-Context Escalation (Anticipating Workstream A)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes Cron Job Injection (NEW — Hermes-specific)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 588]]
+- 1 edge to [[_COMMUNITY_Community 972]]
 
 ## Top bridge nodes
-- [[Security Best Practices_3]] - degree 6, connects to 1 community
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - degree 7, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Community 284"
+community: "Community 577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Community_577
 ---
 
 # iMessage Integration Permissions Issue
@@ -14,4 +14,4 @@ tags:
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_284
+#graphify/rationale #graphify/EXTRACTED #community/Community_577

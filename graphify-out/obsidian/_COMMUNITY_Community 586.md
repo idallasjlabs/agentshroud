@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[1Password Vault Sharing Instructions]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Current Files Status]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Current Situation]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[How to Share the Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Next Steps_10]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 1 Share Existing Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 2 Create and Share New Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 3 Use the Bot's Private Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Recommended Approach]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Testing After Sharing]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Verify vault access]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What Happens After This Works]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What the bot can currently see]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What the bot needs to see]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[✅ Authoritative Files (Active)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[❌ Removed Files (Outdated)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
+- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
+- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
+- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
+- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
+- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
+- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
+- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
+- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
+- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
+- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
+- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 585]]
-- 1 edge to [[_COMMUNITY_Community 377]]
+- 1 edge to [[_COMMUNITY_Community 77]]
 
 ## Top bridge nodes
-- [[1Password Vault Sharing Instructions]] - degree 8, connects to 1 community
-- [[Current Files Status]] - degree 4, connects to 1 community
+- [[Step-by-Step Deployment]] - degree 11, connects to 1 community

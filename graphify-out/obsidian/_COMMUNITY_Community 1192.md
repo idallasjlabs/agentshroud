@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Mnemosyne — Retention Engineer_2]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
-- [[Purpose_57]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
-- [[README_62]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
-- [[Related Skills_63]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
-- [[Usage_64]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[dot-agentsskillsi-daedalusREADME]] - document - .agents/skills/i-daedalus/README.md
+- [[Daedalus — Concept Illustrator]] - document - .agents/skills/i-daedalus/README.md
+- [[Purpose_16]] - document - .agents/skills/i-daedalus/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-daedalus/README.md
+- [[Usage_11]] - document - .agents/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)
 

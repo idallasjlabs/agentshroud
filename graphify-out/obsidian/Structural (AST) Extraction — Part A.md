@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Community 449"
+community: "Community 446"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Community_446
 ---
 
 # Structural (AST) Extraction — Part A
@@ -15,4 +15,4 @@ tags:
 - [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_449
+#graphify/concept #graphify/EXTRACTED #community/Community_446

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Memory Integrity & Lifecycle"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Clean up test environment.
 
 ## Connections
-- [[.teardown_method()_1]] - `rationale_for` [EXTRACTED]
-- [[.teardown_method()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

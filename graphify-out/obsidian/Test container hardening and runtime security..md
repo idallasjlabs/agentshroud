@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 location: "L883"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Test container hardening and runtime security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

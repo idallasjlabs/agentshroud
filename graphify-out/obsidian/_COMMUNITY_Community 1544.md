@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ServiceManager._describe_service() — reads OCI image LABEL org.opencontainers.image.version]] - code - gateway/soc/services.py
-- [[ServiceManager.list_services()]] - code - gateway/soc/services.py
+- [[Skill sdlc_1]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[hermesskillsi-sdlcSKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

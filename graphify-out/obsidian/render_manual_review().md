@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Community 246"
+community: "Community 268"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/Community_268
 ---
 
 # render_manual_review()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[Render the manual-review markdown listing every unmatched entry.]] - `rationale_for` [EXTRACTED]
-- [[main()_23]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/Community_268

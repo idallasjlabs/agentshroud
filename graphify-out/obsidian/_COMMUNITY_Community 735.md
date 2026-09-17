@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
-- [[List boards]] - document - skills/openclaw/trello/SKILL.md
-- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
-- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
-- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
-- [[Notes_8]] - document - skills/openclaw/trello/SKILL.md
-- [[SKILL_235]] - document - skills/openclaw/trello/SKILL.md
-- [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
-- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_131]] - document - skills/openclaw/trello/SKILL.md
+- [[Anti-Patterns to Flag_21]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Role_79]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Rules_23]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Test Structure_5]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[hermesskillsi-tddSKILL]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_735
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
-
-## Top bridge nodes
-- [[SKILL_235]] - degree 2, connects to 1 community

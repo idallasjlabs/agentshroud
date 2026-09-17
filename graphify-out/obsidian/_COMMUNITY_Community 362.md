@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
-- [[Dependencies_18]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
-- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Success Criteria_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Summary_5]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[graphify_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For --update and --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For graphify add and --watch_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For graphify query_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For the commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Honesty Rules_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 2 - Detect files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 5 - Label communities_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Usage_119]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[What graphify is for_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[openclawskillsgraphifySKILL]] - document - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,16 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_362
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 166]]
-- 1 edge to [[_COMMUNITY_Community 905]]
-- 1 edge to [[_COMMUNITY_Community 672]]
-- 1 edge to [[_COMMUNITY_Community 622]]
-- 1 edge to [[_COMMUNITY_Community 403]]
-- 1 edge to [[_COMMUNITY_Community 923]]
-- 1 edge to [[_COMMUNITY_Community 1000]]
-- 1 edge to [[_COMMUNITY_Community 671]]
-
-## Top bridge nodes
-- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 8 communities

@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1026
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[._create_detection_patterns()]] - code - gateway/security/output_canary.py
-- [[._create_invisible_canary()]] - code - gateway/security/output_canary.py
-- [[.generate_canary()]] - code - gateway/security/output_canary.py
-- [[Create an invisible version of the canary using various techniques.          Arg]] - rationale - gateway/security/output_canary.py
-- [[Create regex patterns to detect the canary in responses.          Args]] - rationale - gateway/security/output_canary.py
-- [[Generate and store a canary for this session.          Args             session]] - rationale - gateway/security/output_canary.py
-- [[Pattern_2]] - code - gateway/security/output_canary.py
+- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[._create_detection_patterns()]] - degree 4, connects to 1 community
-- [[.generate_canary()]] - degree 4, connects to 1 community
-- [[._create_invisible_canary()]] - degree 3, connects to 1 community
+- [[4. Risks & Gaps]] - degree 8, connects to 1 community

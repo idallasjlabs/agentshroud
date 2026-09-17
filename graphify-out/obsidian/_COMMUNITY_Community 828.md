@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.27
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 828
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[CONFIG]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[args]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[calendar.js]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[createEvent()]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[getCredentials()]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[https]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[listEvents()]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[makeRequest()]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[parseCalendarData()]] - code - .agents/skills/i-icloud/scripts/calendar.js
-- [[{ execSync }]] - code - .agents/skills/i-icloud/scripts/calendar.js
+- [[1. System Profiler (most comprehensive single source)]] - document - .agents/skills/i-mac/SKILL.md
+- [[10. Spotlight Catch-All]] - document - .agents/skills/i-mac/SKILL.md
+- [[2. Applications Folders (catch drag-and-drop installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[3. Homebrew (formulae + casks)]] - document - .agents/skills/i-mac/SKILL.md
+- [[4. Mac App Store (via `mas` CLI)]] - document - .agents/skills/i-mac/SKILL.md
+- [[5. Setapp Detection]] - document - .agents/skills/i-mac/SKILL.md
+- [[6. Package Receipts (direct .pkg installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[7. CLI Tools & Utilities (non-.app installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[8. Launch Agents & Daemons (background services)]] - document - .agents/skills/i-mac/SKILL.md
+- [[9. Browser Extensions (optional but useful)]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 1 — Raw Collection]] - document - .agents/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,9 @@ members: 10
 TABLE source_file, type FROM #community/Community_828
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1054]]
+
+## Top bridge nodes
+- [[Phase 1 — Raw Collection]] - degree 11, connects to 1 community

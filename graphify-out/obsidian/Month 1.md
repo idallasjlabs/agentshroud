@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1324"
+community: "Community 700"
 location: "L328"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1324
+  - community/Community_700
 ---
 
 # Month 1
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Marketing Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1324
+#graphify/document #graphify/EXTRACTED #community/Community_700

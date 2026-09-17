@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 56"
+community: "Voice Gateway STT & Browser Security"
 location: "L314"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_56
+  - graphify/EXTRACTED
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # test_broadcast_with_failed_client()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Exception]] - `calls` [INFERRED]
+- [[Exception_4]] - `calls` [INFERRED]
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

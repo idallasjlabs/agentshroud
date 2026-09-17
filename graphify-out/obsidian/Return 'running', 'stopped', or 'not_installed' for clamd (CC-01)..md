@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 19"
+community: "Community 68"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_68
 ---
 
 # Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).
@@ -15,4 +15,4 @@ tags:
 - [[_check_clamd()]] - `rationale_for` [EXTRACTED]
 - [[_check_openscap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_19
+#graphify/rationale #graphify/EXTRACTED #community/Community_68

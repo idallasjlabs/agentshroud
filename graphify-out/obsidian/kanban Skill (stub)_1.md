@@ -1,16 +1,16 @@
 ---
-source_file: ".agents/skills/i-kanban/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Community 1401"
+community: "Community 1473"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1401
+  - community/Community_1473
 ---
 
 # kanban Skill (stub)
 
 ## Connections
-- [[kaizen Skill (stub)_1]] - `semantically_similar_to` [INFERRED]
+- [[kaizen Skill (stub)_1]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1401
+#graphify/document #graphify/INFERRED #community/Community_1473

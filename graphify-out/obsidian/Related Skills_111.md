@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 1237"
-location: "L12"
+community: "Community 398"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1237
+  - community/Community_398
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1237
+#graphify/document #graphify/EXTRACTED #community/Community_398

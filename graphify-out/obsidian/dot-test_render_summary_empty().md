@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_multi_host_test.py"
+type: "code"
+community: "Community 497"
+location: "L181"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_497
+---
+
+# .test_render_summary_empty()
+
+## Connections
+- [[MultiHostResult]] - `calls` [EXTRACTED]
+- [[TestMultiHostResultProperties]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_497

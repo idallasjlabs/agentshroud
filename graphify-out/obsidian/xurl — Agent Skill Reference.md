@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 388"
+community: "Community 395"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/Community_395
 ---
 
 # xurl — Agent Skill Reference
@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 - [[Common Workflows_2]] - `contains` [EXTRACTED]
-- [[Error Handling_8]] - `contains` [EXTRACTED]
+- [[Error Handling_1]] - `contains` [EXTRACTED]
 - [[Global Flags]] - `contains` [EXTRACTED]
-- [[Installation_3]] - `contains` [EXTRACTED]
-- [[Notes_11]] - `contains` [EXTRACTED]
-- [[Output Format_41]] - `contains` [EXTRACTED]
-- [[Prerequisites_15]] - `contains` [EXTRACTED]
-- [[Quick Reference_10]] - `contains` [EXTRACTED]
+- [[Installation_1]] - `contains` [EXTRACTED]
+- [[Notes_5]] - `contains` [EXTRACTED]
+- [[Output Format_11]] - `contains` [EXTRACTED]
+- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Quick Reference_9]] - `contains` [EXTRACTED]
 - [[Raw API Access]] - `contains` [EXTRACTED]
-- [[SKILL_240]] - `contains` [EXTRACTED]
 - [[Streaming_1]] - `contains` [EXTRACTED]
+- [[xurlSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_388
+#graphify/document #graphify/EXTRACTED #community/Community_395

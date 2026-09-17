@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 393"
-location: "L56"
+community: "Community 448"
+location: "L608"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/Community_448
 ---
 
 # Next Steps
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[Decision Points]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Implementation Timeline]] - `contains` [EXTRACTED]
+- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_393
+#graphify/document #graphify/EXTRACTED #community/Community_448

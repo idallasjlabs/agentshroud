@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_26]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Threat Model_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Backup & Restore Runbook — AgentShroud]] - document - docs/runbooks/backup-restore.md
+- [[Backup Procedure]] - document - docs/runbooks/backup-restore.md
+- [[Backup Retention]] - document - docs/runbooks/backup-restore.md
+- [[Daily Audit Ledger Review]] - concept - docs/runbooks/daily-operations.md
+- [[Daily Automated Backup]] - document - docs/runbooks/backup-restore.md
+- [[Disaster Recovery (Full Rebuild)]] - document - docs/runbooks/backup-restore.md
+- [[Disaster Recovery Full Rebuild Procedure]] - concept - docs/runbooks/backup-restore.md
+- [[Manual Backup]] - document - docs/runbooks/backup-restore.md
+- [[Off-Site Backup]] - document - docs/runbooks/backup-restore.md
+- [[Restore Procedure]] - document - docs/runbooks/backup-restore.md
+- [[Restore from Backup]] - document - docs/runbooks/backup-restore.md
+- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[What to Back Up]] - document - docs/runbooks/backup-restore.md
+- [[backup-restore]] - document - docs/runbooks/backup-restore.md
+- [[daily-operations]] - document - docs/runbooks/daily-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 650]]
+- 1 edge to [[_COMMUNITY_Community 380]]
+- 1 edge to [[_COMMUNITY_Community 702]]
+- 1 edge to [[_COMMUNITY_Community 785]]
 
 ## Top bridge nodes
-- [[agent_isolation.py_2]] - degree 11, connects to 1 community
+- [[daily-operations]] - degree 3, connects to 1 community
+- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - degree 2, connects to 1 community
+- [[Disaster Recovery Full Rebuild Procedure]] - degree 2, connects to 1 community

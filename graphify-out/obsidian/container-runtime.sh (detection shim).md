@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "Community 1106"
+community: "Community 1162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/Community_1162
 ---
 
 # container-runtime.sh (detection shim)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test-container-runtime.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1106
+#graphify/code #graphify/EXTRACTED #community/Community_1162

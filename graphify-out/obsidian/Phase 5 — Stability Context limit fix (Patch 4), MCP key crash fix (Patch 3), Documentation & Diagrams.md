@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "Community 604"
+community: "Community 184"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/Community_184
 ---
 
 # Phase 5 — Stability: Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams
@@ -19,4 +19,4 @@ tags:
 - [[Phase 6 — Observability (planned) Tailscale config & serve, Prometheus+Grafana, Log aggregation (Loki)]] - `conceptually_related_to` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_604
+#graphify/image #graphify/EXTRACTED #community/Community_184

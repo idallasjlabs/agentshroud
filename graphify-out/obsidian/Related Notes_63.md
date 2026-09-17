@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Community 695"
-location: "L161"
+community: "Community 919"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_695
+  - community/Community_919
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_695
+#graphify/document #graphify/EXTRACTED #community/Community_919

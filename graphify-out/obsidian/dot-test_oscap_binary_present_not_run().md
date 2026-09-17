@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 488"
+location: "L686"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_488
+---
+
+# .test_oscap_binary_present_not_run()
+
+## Connections
+- [[TestComplianceAuditing]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_488

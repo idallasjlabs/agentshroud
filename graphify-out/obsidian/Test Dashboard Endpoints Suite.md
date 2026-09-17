@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 273"
+community: "Community 104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Community_104
 ---
 
 # Test Dashboard Endpoints Suite
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AlertStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/Community_104

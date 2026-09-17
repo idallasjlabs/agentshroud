@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1383
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
-- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
-- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
+- [[8. Red Team Readiness Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.1 Attack Surface Hardening]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.2 Monitoring & Detection]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.3 Resilience Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1383
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 123]]
+
+## Top bridge nodes
+- [[8. Red Team Readiness Assessment]] - degree 4, connects to 1 community

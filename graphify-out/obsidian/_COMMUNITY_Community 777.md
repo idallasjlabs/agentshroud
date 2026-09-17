@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[Competitive Intelligence Protocol_1]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am_1]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Owner_1]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Owner_2]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Responsibilities_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Role_1]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Role_2]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[hermesagentsopenclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[openclawagentsopenclaw-identity]] - document - docker/config/openclaw/agents/openclaw-identity.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[Competitive Intelligence Protocol_2]] - degree 3, connects to 1 community
+- [[Responsibilities_51]] - degree 2, connects to 1 community

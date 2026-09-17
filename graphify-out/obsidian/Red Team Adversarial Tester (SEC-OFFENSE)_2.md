@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 1239"
+community: "Community 1286"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1239
+  - community/Community_1286
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[Purpose_104]] - `contains` [EXTRACTED]
-- [[README_109]] - `contains` [EXTRACTED]
-- [[Related Skills_113]] - `contains` [EXTRACTED]
-- [[Usage_114]] - `contains` [EXTRACTED]
+- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[Related Skills_94]] - `contains` [EXTRACTED]
+- [[Usage_98]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1239
+#graphify/document #graphify/EXTRACTED #community/Community_1286

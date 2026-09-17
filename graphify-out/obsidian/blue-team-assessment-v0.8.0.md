@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Community 386"
+community: "Community 393"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_386
+  - community/Community_393
 ---
 
 # blue-team-assessment-v0.8.0.md
@@ -17,4 +17,4 @@ tags:
 - [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - `references` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_386
+#graphify/document #graphify/EXTRACTED #community/Community_393

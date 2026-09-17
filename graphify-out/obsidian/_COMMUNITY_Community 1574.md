@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
-- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[Hermes Cannot Force-Switch to Custom-Named Local Model (Gap 8)]] - rationale - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Turbo Fieldflare Local Backend]] - concept - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 40"
+community: "Community 39"
 location: "L217"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # TestMessageFingerprint
 
 ## Connections
-- [[.test_fingerprint_deterministic()]] - `method` [EXTRACTED]
-- [[.test_fingerprint_differs_for_different_payloads()]] - `method` [EXTRACTED]
+- [[dot-test_fingerprint_deterministic()]] - `method` [EXTRACTED]
+- [[dot-test_fingerprint_differs_for_different_payloads()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_40
+#graphify/code #graphify/INFERRED #community/Community_39

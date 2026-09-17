@@ -1,21 +1,22 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 188"
-location: "L979"
+community: "Community 158"
+location: "L987"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_158
 ---
 
 # triage_agent()
 
 ## Connections
-- [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - `rationale_for` [EXTRACTED]
+- [[Triage every ``under_review`` entry for agent_id (per-agent isolated). Reads…]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_158

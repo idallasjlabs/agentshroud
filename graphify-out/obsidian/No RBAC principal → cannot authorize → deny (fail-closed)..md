@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 27"
+community: "Community 41"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_41
 ---
 
 # No RBAC principal → cannot authorize → deny (fail-closed).
 
 ## Connections
-- [[.test_missing_rbac_is_denied()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_missing_rbac_is_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_27
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

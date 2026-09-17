@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 196"
-location: "L844"
+community: "Community 1333"
+location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_1333
 ---
 
 # TestScoreIncidentResponse
 
 ## Connections
-- [[.test_one_when_no_tools()]] - `method` [EXTRACTED]
-- [[.test_three_when_both_running()]] - `method` [EXTRACTED]
-- [[.test_two_when_falco_running()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_five_with_soc_correlation_and_killswitch()]] - `method` [EXTRACTED]
+- [[dot-test_four_with_soc_correlation()]] - `method` [EXTRACTED]
+- [[dot-test_one_baseline_neither_running()]] - `method` [EXTRACTED]
+- [[dot-test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/Community_1333

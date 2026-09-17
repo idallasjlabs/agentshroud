@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_output_canary.py"
+type: "code"
+community: "Community 213"
+location: "L50"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_213
+---
+
+# .test_different_sessions_get_different_canaries()
+
+## Connections
+- [[Test that different sessions get different canaries.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_213

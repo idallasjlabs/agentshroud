@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 637"
-location: "L63"
+community: "Community 601"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Community_601
 ---
 
 # generate_summary(alerts)
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_637
+#graphify/document #graphify/EXTRACTED #community/Community_601

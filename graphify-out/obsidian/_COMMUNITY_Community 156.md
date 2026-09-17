@@ -1,57 +1,57 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.06
 members: 42
 ---
 
 # Community 156
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 42 nodes
 
 ## Members
-- [[.test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_default_mode_is_enforce()_3]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
-- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[FastAPI_3]] - code - gateway/tests/test_observatory_mode.py
-- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
-- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
-- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
-- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
-- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
-- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
-- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
-- [[client()_11]] - code - gateway/tests/test_observatory_mode.py
-- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[set_mode()_1]] - code - gateway/web/api.py
-- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_already_ingested_helper_swallows_read_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_ingest_records_even_when_disk_write_fails()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skips_ingest_when_marked_done_after_wake()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skips_when_already_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_undelivered_new_advisory_retries_not_marked_ingested()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_undelivered_new_cves_retries_not_marked_checked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_zero_new_cves_marks_checked_immediately()]] - code - gateway/tests/test_daily_cve_report.py
+- [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A raised per-agent check error is ISOLATED — the ingest still completes. Per-…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After sleeping, if the day is now marked done, the loop skips ingest.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[First iteration ingests + records; second sees dedup and skips.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[If already ingested today, the loop bumps to tomorrow and never ingests.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestScheduler]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[_boom()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_all_agents()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_all_agents()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_all_agents()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_ingest()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_ingest()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_ingest()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_ingest()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_4]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_5]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_6]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep_then_cancel()]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_4]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_5]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_6]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,16 +61,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 25]]
-- 13 edges to [[_COMMUNITY_Community 29]]
-- 7 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Community 157]]
-- 1 edge to [[_COMMUNITY_Community 457]]
-- 1 edge to [[_COMMUNITY_Community 37]]
+- 11 edges to [[_COMMUNITY_Community 82]]
+- 7 edges to [[_COMMUNITY_Community 124]]
+- 3 edges to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 458]]
 
 ## Top bridge nodes
-- [[test_observatory_mode.py]] - degree 19, connects to 5 communities
-- [[TestSetMode]] - degree 14, connects to 3 communities
-- [[TestGetMode]] - degree 9, connects to 3 communities
-- [[TestAutoRevert]] - degree 8, connects to 3 communities
-- [[TestObservatoryModeAPI]] - degree 8, connects to 3 communities
+- [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - degree 8, connects to 3 communities
+- [[dot-test_ingest_records_even_when_disk_write_fails()]] - degree 9, connects to 2 communities
+- [[dot-test_skips_ingest_when_marked_done_after_wake()]] - degree 9, connects to 2 communities
+- [[dot-test_zero_new_cves_marks_checked_immediately()]] - degree 9, connects to 2 communities
+- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - degree 8, connects to 2 communities

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Community 884"
-location: "L135"
+community: "Community 433"
+location: "L28"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_884
+  - graphify/EXTRACTED
+  - community/Community_433
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Community_433

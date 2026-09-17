@@ -1,25 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 538"
-location: "L38"
+community: "Community 802"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Community_802
 ---
 
 # Function Details
 
 ## Connections
-- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Community_802

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # test_audit_chain.py
@@ -21,4 +21,4 @@ tags:
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
 - [[ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

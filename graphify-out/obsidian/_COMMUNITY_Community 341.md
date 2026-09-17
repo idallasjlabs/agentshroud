@@ -1,40 +1,41 @@
 ---
 type: community
 cohesion: 0.08
-members: 25
+members: 26
 ---
 
 # Community 341
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[Action requires approval but none granted]] - document - .agents/skills/i-browser/SKILL.md
-- [[Browser timeout]] - document - .agents/skills/i-browser/SKILL.md
-- [[CAPTCHA detected]] - document - .agents/skills/i-browser/SKILL.md
-- [[Rate limit exceeded]] - document - .agents/skills/i-browser/SKILL.md
-- [[URL not in allowlist]] - document - .agents/skills/i-browser/SKILL.md
-- [[1. GitHub MCP]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
-- [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Authentication Issues]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
-- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
-- [[Common Errors]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[First reply is slow (~5-7 s extra thinking)]] - document - firmware/voice-terminal/SETUP.md
-- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
-- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
-- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
-- [[Role_19]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[SKILL_34]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
-- [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
-- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
-- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
+- [[dot-test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_dynamic_bot_hostname_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_file_reference_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_infrastructure_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_normal_content_passes()_1]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_product_name_not_redacted()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_structural_pattern_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_user_id_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[Product name 'agentshroud' and 'agentshroud-openclaw' are public branding — must]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test cases for PromptProtection class.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of credential patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of file references.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of system prompt structural patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of targeted infrastructure details.          Generic hostnames (e]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of user ID patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that content is properly fingerprinted with hashes.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that dynamically registered bot hostnames are redacted.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that normal content passes through without redaction.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[TestPromptProtection]] - code - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,8 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 355]]
-- 1 edge to [[_COMMUNITY_Community 279]]
+- 3 edges to [[_COMMUNITY_Community 793]]
+- 1 edge to [[_COMMUNITY_Community 1323]]
+- 1 edge to [[_COMMUNITY_Community 1673]]
+- 1 edge to [[_COMMUNITY_Community 1674]]
+- 1 edge to [[_COMMUNITY_Community 1675]]
+- 1 edge to [[_COMMUNITY_Community 1676]]
 
 ## Top bridge nodes
-- [[10. Troubleshooting]] - degree 20, connects to 2 communities
+- [[TestPromptProtection]] - degree 21, connects to 6 communities

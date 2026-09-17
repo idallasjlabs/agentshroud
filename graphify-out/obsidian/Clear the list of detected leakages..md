@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 18"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Clear the list of detected leakages.
 
 ## Connections
-- [[.clear_detected_leakages()]] - `rationale_for` [EXTRACTED]
+- [[dot-clear_detected_leakages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

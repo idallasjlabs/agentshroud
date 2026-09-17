@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # LedgerConfig
 
 ## Connections
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.ledger()]] - `calls` [EXTRACTED]
-- [[.ledger()_1]] - `calls` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `uses` [INFERRED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-ledger()]] - `calls` [EXTRACTED]
+- [[dot-ledger()_1]] - `calls` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[Any_26]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
@@ -53,11 +53,11 @@ tags:
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
-- [[ledger()_2]] - `calls` [EXTRACTED]
+- [[ledger()_1]] - `calls` [EXTRACTED]
 - [[ledger.py]] - `imports` [EXTRACTED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
@@ -66,7 +66,7 @@ tags:
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `calls` [EXTRACTED]
+- [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
 - [[test_ledger()]] - `calls` [EXTRACTED]
 - [[test_ledger.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
@@ -75,4 +75,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_26
+#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer

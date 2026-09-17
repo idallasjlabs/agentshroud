@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 754"
-location: "L53"
+community: "Community 685"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Community_685
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_754
+#graphify/document #graphify/EXTRACTED #community/Community_685

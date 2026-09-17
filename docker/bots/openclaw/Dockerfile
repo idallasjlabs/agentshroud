@@ -27,9 +27,22 @@ RUN set -eux; \
     /out-docker --version || true
 
 # M8: Base image pinned to SHA256 digest for supply chain integrity
-# Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
-# digest refreshed 2026-09-06 (Sunday upgrade) to latest patched node:22-bookworm-slim.
-FROM node:22-bookworm-slim@sha256:83f487e0a63425e5b4d146fb5e5be574bcbe1b7b843d3ebafdd95eaf7767a7e5
+# Update with: docker pull node:24-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:24-bookworm-slim
+#
+# Node 24 is REQUIRED, not merely current (2026-09-15). OpenClaw refuses every
+# `openclaw config set` on Node 22 with:
+#   "Node 22.23.2: node:sqlite truncates TEXT at embedded NUL
+#    (nodejs/node#61954); use 24.16+/26.1+ or a build with the fix"
+# Once OpenClaw migrates its cron store to SQLite it depends on node:sqlite, and
+# on Node 22 that data-corruption bug makes it refuse to write at all. On the dev
+# host this presented as an OpenClaw crash-loop (exit 1, 14 restarts) with no log
+# line explaining it, because init-openclaw-config.sh discarded the stderr that
+# carried this exact message — see the _oc_config_set fix in that script.
+#
+# Do NOT drop back to node:22 to "reduce churn": it silently disables agent
+# sandbox configuration, which is a security control, and re-arms the crash-loop.
+# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-15.
+FROM node:24-bookworm-slim@sha256:2fe369e969550cde8e867afc3fe370b260140cab4a23d467074295b42163d553
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies

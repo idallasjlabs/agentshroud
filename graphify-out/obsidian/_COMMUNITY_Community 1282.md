@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreRuntimeProtection_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Purpose_99]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Quality Assurance (QA)_1]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Related Skills_90]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Usage_94]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[openclawskillsi-qaREADME]] - document - docker/config/openclaw/skills/i-qa/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1282
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 646]]
-
-## Top bridge nodes
-- [[TestScoreRuntimeProtection_1]] - degree 5, connects to 1 community

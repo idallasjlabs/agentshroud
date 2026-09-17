@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 641"
-location: "L80"
+community: "Community 340"
+location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/Community_340
 ---
 
 # Important Notes
 
 ## Connections
-- [[Security Considerations_1]] - `contains` [EXTRACTED]
+- [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_641
+#graphify/document #graphify/EXTRACTED #community/Community_340

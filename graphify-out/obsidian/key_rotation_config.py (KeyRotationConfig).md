@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "Community 226"
+community: "Community 232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/Community_232
 ---
 
 # key_rotation_config.py (KeyRotationConfig)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/Community_232

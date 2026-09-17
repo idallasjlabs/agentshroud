@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 76"
-location: "L184"
+community: "Runtime Security Comparison & Intel Report"
+location: "L848"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # get_logs()
 
 ## Connections
-- [[Get container logs for a service.]] - `rationale_for` [EXTRACTED]
-- [[get()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[Retrieve container logs with optional filtering.]] - `rationale_for` [EXTRACTED]
+- [[_bot_service_names()]] - `calls` [EXTRACTED]
+- [[_get_engine()]] - `calls` [EXTRACTED]
+- [[_validate_service_name()]] - `calls` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

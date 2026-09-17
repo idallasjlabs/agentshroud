@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 803
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Context_9]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Deliverable & branch]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[HEXSTRIKE_PROXY_PLAN]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Known integration gaps to document (not fix in this planning branch)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Out of scope (explicitly)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Policy levers to configure (per engagement)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Proposed architecture]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[The core tension (and its resolution)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[Verification (of the planning deliverable, once implementation begins)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[What already exists (no build needed)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_183]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Responsibilities_54]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

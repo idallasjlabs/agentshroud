@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Community 173"
+community: "Community 181"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/Community_181
 ---
 
 # CollaboratorGreeter
 
 ## Connections
-- [[.__init__()_19]] - `method` [EXTRACTED]
-- [[._get_client()]] - `method` [EXTRACTED]
-- [[._load_state()]] - `method` [EXTRACTED]
-- [[._load_taglines()]] - `method` [EXTRACTED]
-- [[._persist_state()]] - `method` [EXTRACTED]
-- [[.maybe_greet()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_75]] - `method` [EXTRACTED]
+- [[dot-_get_client()]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `method` [EXTRACTED]
+- [[dot-_load_taglines()]] - `method` [EXTRACTED]
+- [[dot-_persist_state()]] - `method` [EXTRACTED]
+- [[dot-maybe_greet()]] - `calls` [EXTRACTED]
 - [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - `rationale_for` [EXTRACTED]
 - [[_make_greeter()]] - `calls` [EXTRACTED]
 - [[collaborator_greeter.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[test_caption_length_clamped()]] - `calls` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `imports` [EXTRACTED]
 - [[test_get_client_creates_own_when_not_injected()]] - `calls` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_persist_state_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_173
+#graphify/code #graphify/EXTRACTED #community/Community_181

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 592"
+community: "Community 609"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Community_609
 ---
 
 # HIGH-3: Credential generation in key rotation is a placeholder
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Community_609

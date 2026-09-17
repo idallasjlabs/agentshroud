@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1470
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[i-security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
-- [[security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[ControlCenter class — TUI dashboard controller]] - code - src/interfaces/text_control_center.py
+- [[draw_dashboard() — renders main TUI dashboard screen]] - code - src/interfaces/text_control_center.py
+- [[make_api_request() — authenticated gateway API call helper]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 

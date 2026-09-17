@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 949
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Configured Hosts_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Key Class `SSHProxy`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Purpose_189]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Related Notes_64]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Responsibilities_57]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Security Notes_8]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[`execute(host str, command str, session_id str) → SSHExecResult`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[ssh_proxy.py_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[ssh_proxy.py]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

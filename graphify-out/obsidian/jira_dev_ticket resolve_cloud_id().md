@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 649"
+community: "Community 627"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_649
+  - community/Community_627
 ---
 
 # jira_dev_ticket resolve_cloud_id()
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[jira_dev_ticket build_tenant_info_url()]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket fetch_credentials()]] - `calls` [EXTRACTED]
-- [[resolve_cloud_id()_1]] - `semantically_similar_to` [INFERRED]
+- [[resolve_cloud_id()_2]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_649
+#graphify/code #graphify/EXTRACTED #community/Community_627

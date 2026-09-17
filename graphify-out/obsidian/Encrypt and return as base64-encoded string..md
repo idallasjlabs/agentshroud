@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Community 429"
+community: "Encrypted Store & Drift Detector"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Encrypt and return as base64-encoded string.
 
 ## Connections
-- [[.encrypt_b64()]] - `rationale_for` [EXTRACTED]
+- [[dot-encrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_429
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

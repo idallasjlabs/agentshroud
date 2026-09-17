@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/restore-backup.sh"
 type: "code"
-community: "Community 528"
+community: "Community 707"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Community_707
 ---
 
 # restore-backup.sh
@@ -16,4 +16,4 @@ tags:
 - [[restore-backup.sh script]] - `contains` [EXTRACTED]
 - [[restore_tar_to_volume()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_528
+#graphify/code #graphify/EXTRACTED #community/Community_707

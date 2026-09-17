@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 896
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[1. Command Injection]] - document - docs/ssh-security-review.md
-- [[2. Host Spoofing  Man-in-the-Middle]] - document - docs/ssh-security-review.md
-- [[3. Credential Theft]] - document - docs/ssh-security-review.md
-- [[4. Privilege Escalation]] - document - docs/ssh-security-review.md
-- [[6. Audit Log Tampering  PII Leakage]] - document - docs/ssh-security-review.md
-- [[D - Denial of Service]] - document - docs/security/threat-model.md
-- [[Threat Model_1]] - document - docs/ssh-security-review.md
-- [[Threat Context Window Stuffing]] - document - docs/security/threat-model.md
-- [[Threat Resource Exhaustion]] - document - docs/security/threat-model.md
+- [[1. Docker Desktop]] - document - docs/reference/PREREQUISITES.md
+- [[2. Python 3.11+]] - document - docs/reference/PREREQUISITES.md
+- [[3. Python Packages]] - document - docs/reference/PREREQUISITES.md
+- [[4. Node.js 22+ (for OpenClaw)]] - document - docs/reference/PREREQUISITES.md
+- [[5. Git]] - document - docs/reference/PREREQUISITES.md
+- [[6. Tailscale (Optional but Recommended)]] - document - docs/reference/PREREQUISITES.md
+- [[Hardware_1]] - document - docs/reference/PREREQUISITES.md
+- [[Operating System]] - document - docs/reference/PREREQUISITES.md
+- [[Required Software]] - document - docs/reference/PREREQUISITES.md
+- [[💻 System Requirements]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 913]]
-- 1 edge to [[_COMMUNITY_Community 800]]
+- 1 edge to [[_COMMUNITY_Community 338]]
 
 ## Top bridge nodes
-- [[Threat Model_1]] - degree 7, connects to 1 community
-- [[D - Denial of Service]] - degree 4, connects to 1 community
+- [[💻 System Requirements]] - degree 4, connects to 1 community

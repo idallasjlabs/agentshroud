@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Community 572"
-location: "L9"
+community: "Community 1172"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_572
+  - community/Community_1172
 ---
 
-# EXECUTIVE SUMMARY
+# Executive Summary
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_572
+#graphify/document #graphify/EXTRACTED #community/Community_1172

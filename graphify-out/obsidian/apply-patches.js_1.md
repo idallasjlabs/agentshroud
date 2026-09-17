@@ -1,17 +1,23 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Community 759"
-location: "L1"
+community: "Community 797"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_759
+  - community/Community_797
 ---
 
-# apply-patches.js.md
+# apply-patches.js
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[Behavior]] - `contains` [EXTRACTED]
+- [[Patches Applied]] - `contains` [EXTRACTED]
+- [[Purpose_181]] - `contains` [EXTRACTED]
+- [[Related Notes_51]] - `contains` [EXTRACTED]
+- [[Usage_125]] - `contains` [EXTRACTED]
+- [[Why Required]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_759
+#graphify/document #graphify/EXTRACTED #community/Community_797

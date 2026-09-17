@@ -1,17 +1,18 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 99"
-location: "L642"
+community: "Community 437"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_437
 ---
 
 # Compliance
 
 ## Connections
-- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Standards Alignment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/Community_437

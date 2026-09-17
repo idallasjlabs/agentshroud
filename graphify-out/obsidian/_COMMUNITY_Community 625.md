@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Function Details_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_133]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Related_18]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_9]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_7]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_2]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Methodology_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Output Format_23]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[hermesskillsi-sec-defenseSKILL]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

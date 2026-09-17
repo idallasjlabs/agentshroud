@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.27
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 833
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[01-architecture]] - document - docs/diagrams/01-architecture.md
-- [[1. C4 Level 0 — Context Diagram (Executive View)]] - document - docs/diagrams/01-architecture.md
-- [[2. C4 Level 1 — Container Diagram]] - document - docs/diagrams/01-architecture.md
-- [[3. Architecture Component Diagram — Gateway internals]] - document - docs/diagrams/01-architecture.md
-- [[AgentShroud — Architecture Diagrams]] - document - docs/diagrams/01-architecture.md
-- [[C4 Level 0 — System Context Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[C4 Level 1 — Container Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[Gateway Internals Component Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[Rendered C4 Context Diagram (PNG)]] - image - docs/diagrams/images/diagram-01-c4-context.png
-- [[Rendered Gateway Components Diagram (PNG)]] - image - docs/diagrams/images/diagram-03-gateway-components.png
+- [[Current Assessment SL 2 (with SL 3 capabilities in FR 2, FR 3, FR 4, FR 6)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 1 Identification and Authentication Control (IAC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 2 Use Control (UC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 3 System Integrity (SI)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 5 Restricted Data Flow (RDF)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 6 Timely Response to Events (TRE)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 7 Resource Availability (RA)]] - document - docs/compliance/iec-62443-matrix.md
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
+- [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
+- [[Overview_29]] - document - docs/compliance/iec-62443-matrix.md
+- [[Summary_21]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 442]]
+- 1 edge to [[_COMMUNITY_Community 731]]
+- 1 edge to [[_COMMUNITY_Community 44]]
 
 ## Top bridge nodes
-- [[01-architecture]] - degree 5, connects to 1 community
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - degree 11, connects to 2 communities

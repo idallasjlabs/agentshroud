@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.12
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Community 260
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[.__init__()_201]] - code - src/interfaces/text_control_center.py
-- [[.clear_screen()]] - code - src/interfaces/text_control_center.py
-- [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
-- [[.draw_box()]] - code - src/interfaces/text_control_center.py
-- [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
-- [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
-- [[.draw_log()]] - code - src/interfaces/text_control_center.py
-- [[.draw_modules()]] - code - src/interfaces/text_control_center.py
-- [[.draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
-- [[.get_auth()]] - code - src/interfaces/text_control_center.py
-- [[.get_key()_1]] - code - src/interfaces/text_control_center.py
-- [[.make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[.run()_6]] - code - src/interfaces/text_control_center.py
-- [[ANSI]] - code - src/interfaces/text_control_center.py
-- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
-- [[ControlCenter]] - code - src/interfaces/text_control_center.py
-- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
-- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
-- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
-- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
-- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
-- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_33]] - code - src/interfaces/text_control_center.py
-- [[start-control-center]] - code - scripts/start-control-center
-- [[text_control_center.py]] - code - src/interfaces/text_control_center.py
+- [[Folder Structure_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[Linking_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT_8]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[Tags_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[YAML Frontmatter_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[hermesskillsi-savSKILL]] - document - docker/config/hermes/skills/i-sav/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

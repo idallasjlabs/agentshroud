@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 164"
+community: "Community 165"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Community_165
 ---
 
 # _http_request()
 
 ## Connections
-- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i_1]] - `rationale_for` [EXTRACTED]
-- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - `rationale_for` [EXTRACTED]
+- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_164
+#graphify/code #graphify/EXTRACTED #community/Community_165

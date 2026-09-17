@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[canary-cron.sh]] - code - scripts/canary-cron.sh
-- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
+- [[_read()]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[patch_telegram_send_base_url.py]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
 
 ## Live Query (requires Dataview plugin)
 

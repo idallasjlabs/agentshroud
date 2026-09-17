@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # Filter entries by source.
 
 ## Connections
-- [[.test_query_filter_by_source()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_query_filter_by_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

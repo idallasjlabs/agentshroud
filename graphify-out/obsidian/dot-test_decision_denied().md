@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_consent_framework.py"
+type: "code"
+community: "Community 204"
+location: "L122"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_204
+---
+
+# .test_decision_denied()
+
+## Connections
+- [[ConsentDecision]] - `calls` [EXTRACTED]
+- [[TestConsentDecision]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_204

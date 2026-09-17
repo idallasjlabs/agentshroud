@@ -1,0 +1,21 @@
+---
+source_file: "gateway/security/a2a_governance.py"
+type: "code"
+community: "Community 39"
+location: "L238"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_39
+---
+
+# .process_outbound()
+
+## Connections
+- [[dot-_process()]] - `calls` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[A2AMessage]] - `references` [EXTRACTED]
+- [[Validate and govern an outbound A2A message to a remote peer.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_39

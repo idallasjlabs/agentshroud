@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "Community 185"
+community: "Community 123"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_123
 ---
 
 # Egress Filter / SSRF Protection
@@ -19,4 +19,4 @@ tags:
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 - [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_185
+#graphify/concept #graphify/EXTRACTED #community/Community_123

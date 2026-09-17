@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_session_isolation.py"
+type: "code"
+community: "Ingest Middleware & File Sandbox"
+location: "L153"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Ingest_Middleware__File_Sandbox
+---
+
+# .test_session_prompt_isolation()
+
+## Connections
+- [[Test that session prompts include isolation instructions.]] - `rationale_for` [EXTRACTED]
+- [[TestUserSessionManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

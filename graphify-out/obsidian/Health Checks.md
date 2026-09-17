@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 85"
-location: "L32"
+community: "Community 254"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_254
 ---
 
-# Health Checks
+# Health Checks.md
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
+- [[Crash Recovery]] - `references` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_254

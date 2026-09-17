@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 164"
+community: "Community 174"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Community_174
 ---
 
 # Add a comment to an existing Jira issue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[add_comment()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_164
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

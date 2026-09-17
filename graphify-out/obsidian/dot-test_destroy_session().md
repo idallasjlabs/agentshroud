@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_session_security.py"
+type: "code"
+community: "Community 535"
+location: "L140"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_535
+---
+
+# .test_destroy_session()
+
+## Connections
+- [[TestSessionCleanup]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_535

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 237"
+community: "Community 244"
 location: "L532"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/Community_244
 ---
 
 # Agent Interaction Protocol
@@ -16,4 +16,4 @@ tags:
 - [[How to Collaborate with the AWS Agent_2]] - `contains` [EXTRACTED]
 - [[How to Interact with the Human Investigator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/Community_244

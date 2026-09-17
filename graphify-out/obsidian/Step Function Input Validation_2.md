@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 709"
+community: "Community 738"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_709
+  - community/Community_738
 ---
 
 # Step Function Input Validation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_709
+#graphify/document #graphify/EXTRACTED #community/Community_738

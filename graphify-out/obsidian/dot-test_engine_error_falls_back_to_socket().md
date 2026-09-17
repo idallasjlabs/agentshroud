@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_soc_services_coverage.py"
+type: "code"
+community: "SOC Service Manager (Container Engine)"
+location: "L665"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/SOC_Service_Manager_Container_Engine
+---
+
+# .test_engine_error_falls_back_to_socket()
+
+## Connections
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[TestGetLogs]] - `method` [EXTRACTED]
+- [[_patch_exists()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

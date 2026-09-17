@@ -12,6 +12,6 @@ tags:
 # Test get_module_mode returns enforce when explicitly set.
 
 ## Connections
-- [[.test_get_module_mode_enforce_override()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_module_mode_enforce_override()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

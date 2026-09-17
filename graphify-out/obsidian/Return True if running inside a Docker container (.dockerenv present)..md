@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 60"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_60
 ---
 
 # Return True if running inside a Docker container (/.dockerenv present).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_containerized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.15
 members: 22
 ---
 
 # Community 408
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[.test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Map job name - the full '_seed_cron Name ...' call text (all lines, since…]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[SCRUM-81 weekly Jira review cron must exist in both sh and yaml, Sun 0900.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[Stamp-file gating (v1v2v3) caused job triplication on every version bump. The…]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[Validate that init-config.sh cron jobs and jobs.yaml stay in sync. Prevents…]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_seed_cron_calls_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward them as…]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[jira-weekly-review is pure script execution (near-zero free-form generation) —…]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[test_competitive_email_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_competitive_landscape_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_cron_seed_is_stampless_and_idempotent()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_hermes_cron_seed.py]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_init_config_has_expected_cron_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_not_pinned_to_a_model()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_schedule_is_sunday_9am()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jobs_yaml_has_expected_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_seed_cron_supports_optional_model_and_provider_args()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_stability_report_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,17 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 93]]
-- 9 edges to [[_COMMUNITY_Community 96]]
-- 4 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 509]]
-- 1 edge to [[_COMMUNITY_Community 591]]
+- 2 edges to [[_COMMUNITY_Community 474]]
+- 1 edge to [[_COMMUNITY_Community 637]]
 
 ## Top bridge nodes
-- [[TestMultipartOutboundPipeline]] - degree 15, connects to 3 communities
-- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
-- [[_make_multipart_body()]] - degree 12, connects to 2 communities
-- [[.test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 2 communities
-- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities
+- [[test_hermes_cron_seed.py]] - degree 18, connects to 2 communities

@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 22
 ---
 
 # Community 401
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[CLI]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Config]] - document - skills/openclaw/summarize/SKILL.md
-- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[Quick start_3]] - document - skills/openclaw/summarize/SKILL.md
-- [[SKILL_230]] - document - skills/openclaw/songsee/SKILL.md
-- [[SKILL_231]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[SKILL_232]] - document - skills/openclaw/summarize/SKILL.md
-- [[SKILL_233]] - document - skills/openclaw/things-mac/SKILL.md
-- [[SKILL_237]] - document - skills/openclaw/voice-call/SKILL.md
-- [[SKILL_238]] - document - skills/openclaw/wacli/SKILL.md
-- [[SKILL_240]] - document - skills/openclaw/xurl/SKILL.md
-- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
-- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
-- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Useful flags_1]] - document - skills/openclaw/summarize/SKILL.md
-- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
-- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
-- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
-- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
-- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
+- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
+- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current Status_8]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Next Steps_5]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,14 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 544]]
-- 1 edge to [[_COMMUNITY_Community 981]]
-- 1 edge to [[_COMMUNITY_Community 735]]
-- 1 edge to [[_COMMUNITY_Community 1050]]
-- 1 edge to [[_COMMUNITY_Community 778]]
-- 1 edge to [[_COMMUNITY_Community 388]]
+- 1 edge to [[_COMMUNITY_Community 378]]
 
 ## Top bridge nodes
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
-- [[SKILL_240]] - degree 3, connects to 1 community
+- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community

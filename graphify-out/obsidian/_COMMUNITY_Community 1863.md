@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Apache License 2.0 (skill-creator)]] - document - skills/openclaw/skill-creator/license.txt
+- [[Jira Ticket Per Dev Batch (Standing Rule)]] - rationale - docker/config/hermes/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

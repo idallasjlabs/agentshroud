@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 14"
+community: "Community 68"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_68
 ---
 
 # _new_uuid()
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_68

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 185"
-location: "L6"
+community: "Community 163"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_163
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_163

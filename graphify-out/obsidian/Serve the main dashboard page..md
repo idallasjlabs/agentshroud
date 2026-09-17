@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 174"
+community: "Community 52"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_174
+  - community/Community_52
 ---
 
 # Serve the main dashboard page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard_main()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_174
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

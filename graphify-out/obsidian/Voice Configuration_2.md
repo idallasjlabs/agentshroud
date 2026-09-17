@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 658"
+community: "Community 984"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_658
+  - community/Community_984
 ---
 
 # Voice Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_658
+#graphify/document #graphify/EXTRACTED #community/Community_984

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "concept"
-community: "Community 1397"
+community: "Community 1468"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1397
+  - community/Community_1468
 ---
 
 # goplaces CLI
 
 ## Connections
-- [[SKILL_211]] - `implements` [EXTRACTED]
+- [[goplacesSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1397
+#graphify/concept #graphify/EXTRACTED #community/Community_1468

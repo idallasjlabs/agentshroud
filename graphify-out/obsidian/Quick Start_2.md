@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 716"
-location: "L20"
+community: "Community 151"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_716
+  - community/Community_151
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
+- [[1. Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
+- [[3. Test Navigation]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_716
+#graphify/document #graphify/EXTRACTED #community/Community_151

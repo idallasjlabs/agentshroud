@@ -1,18 +1,17 @@
 ---
-source_file: "branding/README.md"
+source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 146"
-location: "L50"
+community: "Community 567"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_567
 ---
 
 # Typography
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_567

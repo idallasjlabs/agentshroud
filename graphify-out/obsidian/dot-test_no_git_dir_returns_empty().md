@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_git_guard.py"
+type: "code"
+community: "Community 48"
+location: "L70"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_48
+---
+
+# .test_no_git_dir_returns_empty()
+
+## Connections
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_48

@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Environment Variables_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Function Details_45]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Pattern Categories and Weights]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard_2]] - concept - docker/config/hermes/SOUL.md
-- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Related_52]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
+- [[Assets Needed]] - document - branding/INDEX.md
+- [[Brand Color]] - document - branding/INDEX.md
+- [[Documentation_4]] - document - branding/INDEX.md
+- [[Documentation Needed]] - document - branding/INDEX.md
+- [[Documentation Status]] - document - branding/INDEX.md
+- [[Icon Sets]] - document - branding/INDEX.md
+- [[Logo Files_1]] - document - branding/INDEX.md
+- [[Logo Formats Available]] - document - branding/INDEX.md
+- [[Social Media_1]] - document - branding/INDEX.md
+- [[🎨 Quick Access]] - document - branding/INDEX.md
+- [[💡 Usage Tips]] - document - branding/INDEX.md
+- [[📁 Directory Overview]] - document - branding/INDEX.md
+- [[📊 Asset Summary]] - document - branding/INDEX.md
+- [[📝 To-Do]] - document - branding/INDEX.md
+- [[📞 Contact]] - document - branding/INDEX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 315]]
-- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 831]]
 
 ## Top bridge nodes
-- [[PromptGuard_2]] - degree 13, connects to 2 communities
+- [[AgentShroud Branding Assets Index]] - degree 7, connects to 1 community

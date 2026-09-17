@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 245"
+community: "Community 258"
 location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_245
+  - community/Community_258
 ---
 
 # CLI UX Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLI  TUI UX]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_245
+#graphify/document #graphify/EXTRACTED #community/Community_258

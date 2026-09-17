@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 378"
+community: "Community 381"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_381
 ---
 
 # How Allow/Deny Lists Work
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_378
+#graphify/document #graphify/EXTRACTED #community/Community_381

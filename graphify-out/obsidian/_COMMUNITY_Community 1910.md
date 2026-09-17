@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_15]] - code - gateway/utils/__init__.py
+- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
 
 ## Live Query (requires Dataview plugin)
 

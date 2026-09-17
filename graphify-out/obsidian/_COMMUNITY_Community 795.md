@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.21
+members: 12
 ---
 
 # Community 795
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.21 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[AWS Credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_57]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_53]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_95]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_3]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_log()_1]] - code - docker/bots/hermes/crashwatch.sh
+- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_release_telegram_lock]] - code - docker/bots/hermes/start.sh
+- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_telegram_bot_token]] - code - docker/bots/hermes/start.sh
+- [[_telegram_get_me_ready_1]] - code - docker/bots/hermes/start.sh
+- [[_telegram_send_1]] - code - docker/bots/hermes/start.sh
+- [[_telegram_send_photo_1]] - code - docker/bots/hermes/start.sh
+- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +29,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_795
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 890]]
-- 1 edge to [[_COMMUNITY_Community 1083]]
-
-## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - degree 9, connects to 2 communities

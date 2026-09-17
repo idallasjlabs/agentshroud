@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L4126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # get_soc2_compliance_report()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[SOC 2 Trust Service Criteria compliance coverage report.      Maps active AgentS]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

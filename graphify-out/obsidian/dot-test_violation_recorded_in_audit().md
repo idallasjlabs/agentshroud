@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_privilege_separation.py"
+type: "code"
+community: "File Sandbox & Privilege Separation Tests"
+location: "L278"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/File_Sandbox__Privilege_Separation_Tests
+---
+
+# .test_violation_recorded_in_audit()
+
+## Connections
+- [[Security violations should be recorded in audit log.]] - `rationale_for` [EXTRACTED]
+- [[TestSecurityViolationLogging]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

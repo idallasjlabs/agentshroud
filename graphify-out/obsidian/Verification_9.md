@@ -1,23 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Community 459"
-location: "L65"
+community: "Community 634"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/Community_634
 ---
 
 # Verification
 
 ## Connections
-- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
-- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - `contains` [EXTRACTED]
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
-- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
-- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
-- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
-- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_459
+#graphify/document #graphify/EXTRACTED #community/Community_634

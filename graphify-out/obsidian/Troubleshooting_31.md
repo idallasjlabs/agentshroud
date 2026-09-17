@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 306"
-location: "L204"
+community: "Community 421"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_421
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_421

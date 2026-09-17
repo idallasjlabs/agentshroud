@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 269"
-location: "L183"
+community: "Community 404"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_269
+  - community/Community_404
 ---
 
 # Workflow
 
 ## Connections
-- [[Skills by Category_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_269
+#graphify/document #graphify/EXTRACTED #community/Community_404

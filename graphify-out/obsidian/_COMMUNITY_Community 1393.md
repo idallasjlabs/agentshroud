@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1393
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[FreeRTOS.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
-- [[TickType_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
-- [[xTaskGetTickCount()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[Hermes — 7 entries]] - document - scripts/cve-registry-manual-review.md
+- [[Openclaw — 168 entries]] - document - scripts/cve-registry-manual-review.md
+- [[Summary_5]] - document - scripts/cve-registry-manual-review.md
+- [[cve-registry-manual-review]] - document - scripts/cve-registry-manual-review.md
 
 ## Live Query (requires Dataview plugin)
 

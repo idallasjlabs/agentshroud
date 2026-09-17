@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 121"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_121
 ---
 
 # Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRoleProperties]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

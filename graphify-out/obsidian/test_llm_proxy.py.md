@@ -1,24 +1,23 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 83"
-location: "L1"
+community: "Community 61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/Community_61
 ---
 
 # test_llm_proxy.py
 
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
-- [[_FakeSanitizer]] - `contains` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
 - [[_FakeToolACL]] - `contains` [EXTRACTED]
 - [[_TrackingInjector]] - `contains` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `contains` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[gateway.proxy.llm_proxy]] - `imports_from` [EXTRACTED]
 - [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - `contains` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `contains` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `contains` [EXTRACTED]
@@ -36,7 +35,9 @@ tags:
 - [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - `contains` [EXTRACTED]
+- [[test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - `contains` [EXTRACTED]
+- [[test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `contains` [EXTRACTED]
 - [[test_scan_request_data_scans_messages_without_name_error()]] - `contains` [EXTRACTED]
@@ -45,4 +46,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `contains` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/Community_61

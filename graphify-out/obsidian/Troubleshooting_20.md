@@ -1,17 +1,20 @@
 ---
-source_file: "docs/reference/QUICK_REFERENCE.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 361"
-location: "L80"
+community: "Community 311"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_361
+  - community/Community_311
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Quick Reference Card]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
+- [[Connection timeout_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_361
+#graphify/document #graphify/EXTRACTED #community/Community_311

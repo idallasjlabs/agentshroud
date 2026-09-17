@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "Community 986"
+community: "Community 1034"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/Community_1034
 ---
 
 # _fuzzable_endpoints()
@@ -15,4 +15,4 @@ tags:
 - [[(method, path) for every non-destructive route declaring a requestBody.]] - `rationale_for` [EXTRACTED]
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_986
+#graphify/code #graphify/EXTRACTED #community/Community_1034

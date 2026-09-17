@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Community 100"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Community_100
 ---
 
 # test_main_endpoints.py
@@ -28,8 +28,8 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[health.py]] - `imports_from` [EXTRACTED]
 - [[hermes_dashboard_proxy()]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Community_100

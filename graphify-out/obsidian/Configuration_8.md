@@ -1,21 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 383"
-location: "L148"
+community: "Community 348"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/Community_348
 ---
 
 # Configuration
 
 ## Connections
-- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
-- [[Environment variables]] - `contains` [EXTRACTED]
-- [[Header pass-through policy]] - `contains` [EXTRACTED]
-- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Live Reload]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_383
+#graphify/document #graphify/EXTRACTED #community/Community_348

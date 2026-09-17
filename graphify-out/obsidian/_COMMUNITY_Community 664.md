@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 664
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.__init__()_20]] - code - gateway/proxy/dns_blocklist.py
-- [[._periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
-- [[.download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
-- [[.load_from_text()]] - code - gateway/proxy/dns_blocklist.py
-- [[.parse_hosts_line()]] - code - gateway/proxy/dns_blocklist.py
-- [[.start_periodic_updates()]] - code - gateway/proxy/dns_blocklist.py
-- [[.update()]] - code - gateway/proxy/dns_blocklist.py
-- [[Background loop update blocklists every UPDATE_INTERVAL_SECONDS.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Download a blocklist URL. Uses the gateway's own HTTP client.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Download all blocklists and rebuild the blocked domains set.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Path_3]] - code - gateway/proxy/dns_blocklist.py
-- [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[dot-test_five_all_sdl_configs_present()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_baseline_no_configs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_on_import_error()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_true_when_attr_set()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestAppStateHas_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSecureDevelopment_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_openscap_with_zero_fails()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[test_scorecard_scoring.py]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +34,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 142]]
+- 4 edges to [[_COMMUNITY_Community 665]]
+- 2 edges to [[_COMMUNITY_Community 1113]]
+- 2 edges to [[_COMMUNITY_Community 969]]
+- 1 edge to [[_COMMUNITY_Community 1176]]
+- 1 edge to [[_COMMUNITY_Community 1177]]
+- 1 edge to [[_COMMUNITY_Community 1333]]
+- 1 edge to [[_COMMUNITY_Community 1334]]
+- 1 edge to [[_COMMUNITY_Community 1408]]
+- 1 edge to [[_COMMUNITY_Community 1409]]
+- 1 edge to [[_COMMUNITY_Community 1410]]
+- 1 edge to [[_COMMUNITY_Community 1487]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[.update()]] - degree 6, connects to 1 community
-- [[.parse_hosts_line()]] - degree 4, connects to 1 community
-- [[._periodic_update_loop()]] - degree 4, connects to 1 community
-- [[.download_blocklist()]] - degree 3, connects to 1 community
-- [[.__init__()_20]] - degree 3, connects to 1 community
+- [[test_scorecard_scoring.py]] - degree 27, connects to 12 communities

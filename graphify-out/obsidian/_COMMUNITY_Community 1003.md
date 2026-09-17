@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1003
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Integration_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Purpose_179]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Related Notes_23]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Usage_124]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Hermes — Reference Verifier]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Input Requirements_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Output Format_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Persona_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Quality Checklist_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Role_3]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[System Prompt_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[openclawskillsi-hermesSKILL]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

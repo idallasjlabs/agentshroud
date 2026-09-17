@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1435
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_8]] - document - .agents/skills/i-bdd/SKILL.md
-- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Claude Code (PRIMARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[Codex CLI (TERTIARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[Gemini CLI (SECONDARY agent)]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

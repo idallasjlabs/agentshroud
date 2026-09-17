@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 437"
+community: "Community 445"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_437
+  - community/Community_445
 ---
 
 # Implementation Status
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
-- [[Decision_2]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
 - [[Step 1 Update Gateway to Block Credentials in Telegram]] - `contains` [EXTRACTED]
 - [[Step 2 Add Command Restrictions]] - `contains` [EXTRACTED]
 - [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_437
+#graphify/document #graphify/EXTRACTED #community/Community_445

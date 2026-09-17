@@ -90,4 +90,10 @@ regexes = [
   # 1Password item reference IDs (opaque references, not secrets)
   '''6j6ij5tzld6kobvit5tk6ufrhq''',
   '''he6wcfkfieekqkomuxdunal2xa''',
+  # GitHub Security Advisory IDs (GHSA-xxxx-xxxx-xxxx) — public, permanent
+  # identifiers assigned by GitHub's advisory database, never secret. Their
+  # fixed hyphen-segmented alphanumeric shape happens to match the
+  # generic-api-key rule's heuristic (found in prompts/sunday-upgrade.md's
+  # worked CVE-triage example, commit 5332df702, 2026-09-15).
+  '''GHSA-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}''',
 ]

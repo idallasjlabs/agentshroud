@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 961"
-location: "L26"
+community: "Community 827"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_961
+  - community/Community_827
 ---
 
 # Output Format
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
+- [[diagramsREADME_1]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_961
+#graphify/document #graphify/EXTRACTED #community/Community_827

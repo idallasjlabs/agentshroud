@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1002"
+community: "Community 1045"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1002
+  - community/Community_1045
 ---
 
 # Scenario 00 — Information Disclosure (Phase 0 finding)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-run of Prior Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1002
+#graphify/document #graphify/EXTRACTED #community/Community_1045

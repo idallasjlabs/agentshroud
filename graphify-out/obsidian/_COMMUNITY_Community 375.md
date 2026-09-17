@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[Accessibility]] - document - branding/colors/palette.md
-- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
-- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
-- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
-- [[Applications]] - document - branding/colors/palette.md
-- [[Borders]] - document - branding/colors/palette.md
-- [[Color Combinations]] - document - branding/colors/palette.md
-- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
-- [[Dark Theme]] - document - branding/colors/palette.md
-- [[Deep Navy]] - document - branding/colors/palette.md
-- [[Ice Blue]] - document - branding/colors/palette.md
-- [[Light Mode]] - document - branding/colors/palette.md
-- [[Light Theme]] - document - branding/colors/palette.md
-- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Neutral Colors]] - document - branding/colors/palette.md
-- [[Primary Colors]] - document - branding/colors/palette.md
-- [[Secondary Colors]] - document - branding/colors/palette.md
-- [[Semantic Colors]] - document - branding/colors/palette.md
-- [[Steel Blue]] - document - branding/colors/palette.md
-- [[Text]] - document - branding/colors/palette.md
-- [[Usage Guidelines_1]] - document - branding/colors/palette.md
-- [[Variations]] - document - branding/colors/palette.md
-- [[palette]] - document - branding/colors/palette.md
+- [[dot-agentsskillsi-sec-defenseSKILL]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Blue Team Security Auditor]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Critical Rules_3]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[F. Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Heat Map Legend]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Loss Categories]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Methodology]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Output Format_10]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +40,11 @@ members: 23
 TABLE source_file, type FROM #community/Community_375
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 413]]
+- 1 edge to [[_COMMUNITY_Community 540]]
+
+## Top bridge nodes
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 9, connects to 1 community
+- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community

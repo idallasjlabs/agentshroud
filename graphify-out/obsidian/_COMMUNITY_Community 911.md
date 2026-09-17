@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.24
+members: 10
 ---
 
 # Community 911
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.24 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Collaborator Testing]] - document - docs/security/security-inventory.md
-- [[Owner Testing]] - document - docs/security/security-inventory.md
-- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
-- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
-- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
-- [[Summary_19]] - document - docs/security/security-inventory.md
-- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
-- [[security-inventory]] - document - docs/security/security-inventory.md
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
+- [[dot-test_argv_shape()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_custom_user()]] - code - gateway/tests/test_multi_host_test.py
+- [[Build the ssh argv for a host. Non-interactive, fail-fast on connect.      ``Bat]] - rationale - gateway/tools/multi_host_test.py
+- [[Describe exactly what would run, without executing anything.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestBuildSshArgv]] - code - gateway/tests/test_multi_host_test.py
+- [[Turn argparse REMAINDER tokens into a command string.      Drops a leading ``--`]] - rationale - gateway/tools/multi_host_test.py
+- [[_dry_run_report()]] - code - gateway/tools/multi_host_test.py
+- [[_resolve_command()]] - code - gateway/tools/multi_host_test.py
+- [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
+- [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +29,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 772]]
+- 4 edges to [[_COMMUNITY_Community 497]]
+- 3 edges to [[_COMMUNITY_Community 1039]]
+- 3 edges to [[_COMMUNITY_Community 764]]
+- 3 edges to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 1040]]
+- 1 edge to [[_COMMUNITY_Community 1158]]
+- 1 edge to [[_COMMUNITY_Community 1300]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Community 859]]
+- 1 edge to [[_COMMUNITY_Community 860]]
 
 ## Top bridge nodes
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - degree 7, connects to 1 community
+- [[multi_host_test.py]] - degree 15, connects to 10 communities
+- [[TestBuildSshArgv]] - degree 6, connects to 3 communities
+- [[build_ssh_argv()]] - degree 6, connects to 1 community
+- [[_dry_run_report()]] - degree 4, connects to 1 community
+- [[_resolve_command()]] - degree 3, connects to 1 community

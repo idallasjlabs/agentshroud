@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
+- [[AWS API MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

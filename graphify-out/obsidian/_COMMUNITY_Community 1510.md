@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
-- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
+- [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - rationale - docs/archive/SECURITY.md
+- [[In-Container iptables Firewall (container-firewall.sh, needs privileges)]] - rationale - docs/archive/SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 

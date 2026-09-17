@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 259"
-location: "L360"
+community: "Community 1154"
+location: "L328"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_259
+  - graphify/EXTRACTED
+  - community/Community_1154
 ---
 
 # TestClient
 
 ## Connections
-- [[.client()_6]] - `references` [EXTRACTED]
-- [[.test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
-- [[.test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
-- [[.test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
+- [[dot-client()_1]] - `references` [EXTRACTED]
+- [[dot-test_reload_requires_auth()]] - `calls` [EXTRACTED]
+- [[dot-test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
+- [[dot-test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
+- [[ManifestEntry]] - `uses` [INFERRED]
+- [[PlannedAction]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_259
+#graphify/code #graphify/EXTRACTED #community/Community_1154

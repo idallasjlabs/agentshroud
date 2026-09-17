@@ -12,6 +12,6 @@ tags:
 # Test that no warnings are logged when all modules are in enforce mode.
 
 ## Connections
-- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_warnings_no_warnings_in_enforce()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

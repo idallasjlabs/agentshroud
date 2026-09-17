@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_1]] - document - docs/planning/redteam/feature-priorities.md
-- [[feature-priorities]] - document - docs/planning/redteam/feature-priorities.md
+- [[remind_proposal_review.sh]] - code - .claude/scripts/claude-hooks/remind_proposal_review.sh
+- [[remind_proposal_review.sh script]] - code - .claude/scripts/claude-hooks/remind_proposal_review.sh
 
 ## Live Query (requires Dataview plugin)
 

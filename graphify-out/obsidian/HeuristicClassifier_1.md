@@ -1,31 +1,42 @@
 ---
-source_file: "gateway/tests/test_adversarial_injection.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 52"
-location: "L228"
+community: "Community 43"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_43
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[.test_base64_payload_normalized()]] - `calls` [EXTRACTED]
-- [[.test_classic_override_detection_rate()]] - `calls` [EXTRACTED]
-- [[.test_classic_payloads_individually()]] - `calls` [EXTRACTED]
-- [[.test_classifier_flags_payloads()]] - `calls` [EXTRACTED]
-- [[.test_context_injection_detection_rate()]] - `calls` [EXTRACTED]
-- [[.test_detection_breakdown_by_category()]] - `calls` [EXTRACTED]
-- [[.test_encoding_bypass_detection_rate()]] - `calls` [EXTRACTED]
-- [[.test_multilingual_detection_rate()]] - `calls` [EXTRACTED]
-- [[.test_overall_detection_rate_meets_threshold()]] - `calls` [EXTRACTED]
-- [[.test_persona_hijack_detection_rate()]] - `calls` [EXTRACTED]
-- [[.test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_144]] - `method` [EXTRACTED]
+- [[dot-_classify_heuristic()]] - `method` [EXTRACTED]
+- [[dot-_classify_ml()]] - `method` [EXTRACTED]
+- [[dot-_compute_unicode_anomaly()]] - `method` [EXTRACTED]
+- [[dot-_score_signal()]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `method` [EXTRACTED]
+- [[dot-classify()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `calls` [EXTRACTED]
+- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[_any_detector_fires()]] - `references` [EXTRACTED]
-- [[_heuristic_detects()]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[TestClassicOverride]] - `uses` [INFERRED]
+- [[TestContextInjection]] - `uses` [INFERRED]
+- [[TestEncodingBypass]] - `uses` [INFERRED]
+- [[TestHeuristicClassifier]] - `uses` [INFERRED]
+- [[TestHeuristicClassifierDirectly]] - `uses` [INFERRED]
+- [[TestMultilingual]] - `uses` [INFERRED]
+- [[TestOverallDetectionRate]] - `uses` [INFERRED]
+- [[TestPersonaHijack]] - `uses` [INFERRED]
+- [[TestPromptExtraction]] - `uses` [INFERRED]
+- [[TestPromptGuardDirectly]] - `uses` [INFERRED]
+- [[heuristic_classifier.py]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
+- [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/Community_43

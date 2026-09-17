@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 807"
+community: "P3 Infrastructure Security Modules"
 location: "L468"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_807
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Setup resource guard with custom limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[setup_resource_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_807
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_port_manager.py"
+type: "code"
+community: "Community 83"
+location: "L67"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_83
+---
+
+# .test_skips_bound_port()
+
+## Connections
+- [[PortManager]] - `calls` [EXTRACTED]
+- [[TestFindAvailablePort]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_83

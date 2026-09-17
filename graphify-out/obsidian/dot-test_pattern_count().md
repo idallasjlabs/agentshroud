@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_guard.py"
+type: "code"
+community: "Community 286"
+location: "L164"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_286
+---
+
+# .test_pattern_count()
+
+## Connections
+- [[Regression guard — fail if patterns drop below 43.]] - `rationale_for` [EXTRACTED]
+- [[TestNewPatternsV080]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_286

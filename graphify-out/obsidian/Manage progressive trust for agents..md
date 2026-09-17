@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Progressive Trust"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # Manage progressive trust for agents.
 
 ## Connections
-- [[TrustManager_1]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

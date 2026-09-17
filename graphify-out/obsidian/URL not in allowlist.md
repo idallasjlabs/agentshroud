@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 341"
+community: "Community 111"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/Community_111
 ---
 
 # "URL not in allowlist"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_341
+#graphify/document #graphify/EXTRACTED #community/Community_111

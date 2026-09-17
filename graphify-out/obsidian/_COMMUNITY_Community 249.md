@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.09
-members: 31
+cohesion: 0.10
+members: 32
 ---
 
 # Community 249
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch one secret field from the gateway op-proxy. Returns the value._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Unauthenticated site-to-cloud-ID discovery URL._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_payload()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_op_proxy_request()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_tenant_info_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[datetime]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[fetch_op_secret()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[run()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[dot-_resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
+- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,14 +51,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 649]]
-- 1 edge to [[_COMMUNITY_Community 171]]
-- 1 edge to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 278]]
+- 3 edges to [[_COMMUNITY_Tool Result Sanitizer & XML Injection Filtering]]
+- 2 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 2 edges to [[_COMMUNITY_Community 100]]
+- 1 edge to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer & Redaction]]
+- 1 edge to [[_COMMUNITY_Collaborator Activity & Telegram Proxy]]
 
 ## Top bridge nodes
-- [[run()_1]] - degree 11, connects to 2 communities
-- [[jira_weekly_review.py]] - degree 17, connects to 1 community
-- [[resolve_cloud_id()_1]] - degree 5, connects to 1 community
-- [[build_basic_auth_header()_1]] - degree 4, connects to 1 community
-- [[build_op_proxy_request()_1]] - degree 4, connects to 1 community
+- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 3 communities
+- [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
+- [[hermes_dashboard_proxy()]] - degree 7, connects to 2 communities

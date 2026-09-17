@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1172
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer_1]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_37]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[README_42]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_40]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_42]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Adversarial Red-Team  Blue-Team Assessment]] - document - docs/testing/test-coverage-report.md
+- [[AgentShroud v1.3.0]] - document - docs/testing/test-coverage-report.md
+- [[Executive Summary]] - document - docs/testing/test-coverage-report.md
+- [[How to regenerate this report accurately]] - document - docs/testing/test-coverage-report.md
+- [[Test Coverage Report]] - document - docs/testing/test-coverage-report.md
+- [[test-coverage-report]] - document - docs/testing/test-coverage-report.md
 
 ## Live Query (requires Dataview plugin)
 

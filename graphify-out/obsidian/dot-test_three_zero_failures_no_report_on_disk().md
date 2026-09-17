@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scorecard_scoring.py"
+type: "code"
+community: "Community 1113"
+location: "L482"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1113
+---
+
+# .test_three_zero_failures_no_report_on_disk()
+
+## Connections
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
+- [[_mock_empty_dir()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1113

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Community 448"
+community: "Community 456"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_448
+  - community/Community_456
 ---
 
 # Multi-Agent Role Matrix
@@ -16,7 +16,7 @@ tags:
 - [[Authorization Matrix_1]] - `contains` [EXTRACTED]
 - [[Decision Tree for New Tasks]] - `contains` [EXTRACTED]
 - [[Escalation Path]] - `contains` [EXTRACTED]
-- [[References_2]] - `contains` [EXTRACTED]
+- [[References_4]] - `contains` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_448
+#graphify/document #graphify/EXTRACTED #community/Community_456

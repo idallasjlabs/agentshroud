@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Community 262"
-location: "L32"
+community: "Community 658"
+location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_262
+  - community/Community_658
 ---
 
 # Create a mock alert callback for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mock_alert_callback()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_262
+#graphify/rationale #graphify/EXTRACTED #community/Community_658

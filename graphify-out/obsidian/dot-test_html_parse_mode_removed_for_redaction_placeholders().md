@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1704"
+location: "L2070"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1704
+---
+
+# .test_html_parse_mode_removed_for_redaction_placeholders()
+
+## Connections
+- [[Redaction placeholder tokens should be HTML-escaped, not strip         parse_mod]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1704

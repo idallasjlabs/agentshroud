@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 864"
+community: "Voice Gateway STT & Browser Security"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_864
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Tracks cumulative resource consumption for a single subagent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceUsage_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_864
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

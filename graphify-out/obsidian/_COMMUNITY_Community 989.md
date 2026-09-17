@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.39
+cohesion: 0.25
 members: 8
 ---
 
 # Community 989
 
-**Cohesion:** 0.39 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
-- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-agentsskillsi-oracleSKILL]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Input Requirements_27]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst_5]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Output Format_42]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Persona_21]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Quality Checklist_24]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Role_109]] - document - .agents/skills/i-oracle/SKILL.md
+- [[System Prompt_21]] - document - .agents/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_989
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 380]]
-
-## Top bridge nodes
-- [[test_list_registry_ghsa_ids.py]] - degree 3, connects to 1 community

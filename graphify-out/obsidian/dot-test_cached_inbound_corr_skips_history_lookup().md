@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
+type: "code"
+community: "Slack Proxy & Main Endpoint Tests"
+location: "L111"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Slack_Proxy__Main_Endpoint_Tests
+---
+
+# .test_cached_inbound_corr_skips_history_lookup()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[Cached correlation for the channel → no Slack history call; outbound         is]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundTracking]] - `method` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests

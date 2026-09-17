@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 468"
+location: "L4147"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_468
+---
+
+# .test_greeting_hey_is_safe()
+
+## Connections
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_468

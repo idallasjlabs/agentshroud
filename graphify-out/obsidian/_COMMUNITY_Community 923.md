@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[8. Comprehensive Multilingual Prompt Injection Defense]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Architecture_8]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Configuration_6]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Deliverables_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Design Philosophy_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Risk Register]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[1. Scope of Change_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[2. What Changes and Why_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[3. Scalability Gate_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[4. Blast Radius_5]] - document - .agents/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[7. Open Questions_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)_2]] - document - .agents/skills/i-pca/SKILL.md
+- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 362]]
+- 1 edge to [[_COMMUNITY_Community 1043]]
+- 1 edge to [[_COMMUNITY_Community 1205]]
 
 ## Top bridge nodes
-- [[Risk Register]] - degree 3, connects to 1 community
+- [[Output Sections (ALL required)_2]] - degree 9, connects to 1 community
+- [[Verification Plan]] - degree 2, connects to 1 community

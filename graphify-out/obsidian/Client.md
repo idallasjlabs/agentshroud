@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[ReqwestTransport]] - `references` [EXTRACTED]
-- [[SclClient]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_36

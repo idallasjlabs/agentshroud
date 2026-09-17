@@ -1,59 +1,59 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.08
 members: 44
 ---
 
 # Community 141
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[Extract the system instruction as plain text (camelCase or snake_case key).]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Flatten a Gemini parts list to plain text (text parts only).]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Flatten an OpenAI message's content (string or content-block list) to     Gemini]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Return a reason string if this Gemini request cannot be failed over.      Return]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Translate a Gemini generateContent response to OpenAI chatcompletions     shape]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Translate an OpenAI chatcompletions request body to Gemini's     generateConten]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[_openai_content_to_parts()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[_parts_to_text()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[_system_instruction_text()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[gemini_failover_unsupported_reason()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[gemini_openai_translator.py]] - code - gateway/proxy/gemini_openai_translator.py
+- [[gemini_to_openai_request()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[gemini_to_openai_response()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[openai_to_gemini_request()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[openai_to_gemini_response (existing failover direction) and     gemini_to_openai]] - rationale - gateway/tests/test_gemini_openai_translator.py
+- [[openai_to_gemini_response()]] - code - gateway/proxy/gemini_openai_translator.py
+- [[test_gemini_basic_text_request()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_generation_config_top_p_and_stop_sequences()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_missing_role_defaults_to_user()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_missing_system_instruction_omits_system_message()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_multi_part_contents_joined()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_non_text_parts_skipped()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_openai_translator.py]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_role_mapping_model_to_assistant()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_system_instruction_snake_case_and_string()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_to_openai_response_empty_candidates_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_to_openai_response_envelope()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_to_openai_response_max_tokens_finish_reason()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_response_empty_choices_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_response_length_maps_to_max_tokens()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_response_to_gemini_candidates()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_assistant_role_becomes_model()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_basic_request()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_content_block_list_flattened()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_no_generation_config_keys_omits_block()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_no_system_message_omits_system_instruction()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_openai_to_gemini_stop_sequences_normalized_to_list()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_unsupported_reason_function_call_parts()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_unsupported_reason_none_for_plain_text()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_unsupported_reason_streaming_path()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[test_unsupported_reason_tools_in_body()]] - code - gateway/tests/test_gemini_openai_translator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,12 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 49]]
-- 9 edges to [[_COMMUNITY_Community 27]]
+- 2 edges to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 2 communities
-- [[TestUserCollabModeOverride]] - degree 9, connects to 2 communities
-- [[TeamsConfig_1]] - degree 7, connects to 2 communities
-- [[TestMembershipQueries]] - degree 7, connects to 2 communities
+- [[gemini_to_openai_request()]] - degree 14, connects to 1 community
+- [[openai_to_gemini_request()]] - degree 11, connects to 1 community
+- [[openai_to_gemini_response()]] - degree 8, connects to 1 community

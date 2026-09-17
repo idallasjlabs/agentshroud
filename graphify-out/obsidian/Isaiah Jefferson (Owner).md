@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Community 315"
+community: "Community 477"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_315
+  - community/Community_477
 ---
 
 # Isaiah Jefferson (Owner)
 
 ## Connections
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
-- [[SOUL_2]] - `references` [EXTRACTED]
+- [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_315
+#graphify/concept #graphify/EXTRACTED #community/Community_477

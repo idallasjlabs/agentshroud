@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 location: "L882"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestContainerSecurity
 
 ## Connections
-- [[.test_agent_isolation_module()]] - `method` [EXTRACTED]
-- [[.test_clamav_binary_not_found()]] - `method` [EXTRACTED]
-- [[.test_clamav_parse_clean()]] - `method` [EXTRACTED]
-- [[.test_clamav_parse_infected()]] - `method` [EXTRACTED]
-- [[.test_network_validator_init()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_clamav()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_falco()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_trivy()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_wazuh()]] - `method` [EXTRACTED]
-- [[.test_trivy_binary_not_found()]] - `method` [EXTRACTED]
+- [[dot-test_agent_isolation_module()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_binary_not_found()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_parse_clean()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_parse_infected()]] - `method` [EXTRACTED]
+- [[dot-test_network_validator_init()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_clamav()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_falco()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_trivy()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_wazuh()]] - `method` [EXTRACTED]
+- [[dot-test_trivy_binary_not_found()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -43,7 +43,7 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test container hardening and runtime security.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

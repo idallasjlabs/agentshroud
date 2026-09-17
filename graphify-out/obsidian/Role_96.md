@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 961"
-location: "L8"
+community: "Community 885"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_961
+  - community/Community_885
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_961
+#graphify/document #graphify/EXTRACTED #community/Community_885

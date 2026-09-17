@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_109]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[README_114]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Related Skills_118]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Technical Writer (TW)_2]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Usage_119]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Purpose_62]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Quality Assurance (QA)]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Related Skills_53]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Usage_57]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[hermesskillsi-qaREADME]] - document - docker/config/hermes/skills/i-qa/README.md
 
 ## Live Query (requires Dataview plugin)
 

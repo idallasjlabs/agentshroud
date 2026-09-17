@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Community 391"
+community: "Community 1191"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/Community_1191
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/Community_1191

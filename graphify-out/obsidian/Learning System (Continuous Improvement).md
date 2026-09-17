@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 232"
+community: "Community 238"
 location: "L426"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/Community_238
 ---
 
 # Learning System (Continuous Improvement)
@@ -17,4 +17,4 @@ tags:
 - [[Knowledge Base Schema]] - `contains` [EXTRACTED]
 - [[Pattern Matching for New Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_232
+#graphify/document #graphify/EXTRACTED #community/Community_238

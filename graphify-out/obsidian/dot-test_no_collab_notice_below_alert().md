@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_progressive_lockdown.py"
+type: "code"
+community: "Community 58"
+location: "L197"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_58
+---
+
+# .test_no_collab_notice_below_alert()
+
+## Connections
+- [[dot-_setup_proxy_with_capture()]] - `calls` [EXTRACTED]
+- [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_58

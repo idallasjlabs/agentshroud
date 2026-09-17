@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Community 127"
+community: "Community 126"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/Community_126
 ---
 
 # switch_model.sh local <m> twice must leave docker/.env unchanged on second run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSwitchModelIdempotent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_127
+#graphify/rationale #graphify/EXTRACTED #community/Community_126

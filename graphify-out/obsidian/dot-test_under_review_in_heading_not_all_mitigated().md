@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_generate_cve_page.py"
+type: "code"
+community: "Community 186"
+location: "L160"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_186
+---
+
+# .test_under_review_in_heading_not_all_mitigated()
+
+## Connections
+- [[dot-_call()_1]] - `calls` [EXTRACTED]
+- [[TestBuildHeading]] - `method` [EXTRACTED]
+- [[When some advisories are under_review the heading is honest, NOT 'all mitigated']] - `rationale_for` [EXTRACTED]
+- [[_make_cve()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_186

@@ -1,21 +1,21 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "Community 46"
+community: "Blue/Red Team Security Auditor Skills"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # AgentShroud Skills Library
 
 ## Connections
 - [[Custom Skills]] - `contains` [EXTRACTED]
-- [[Directory Structure_2]] - `contains` [EXTRACTED]
+- [[Directory Structure_1]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[README_131]] - `contains` [EXTRACTED]
-- [[Usage_128]] - `contains` [EXTRACTED]
+- [[Usage_116]] - `contains` [EXTRACTED]
+- [[skillsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_46
+#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

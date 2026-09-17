@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 25"
-location: "L27"
+community: "Egress Filter & HTTP Proxy"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # config()
 
 ## Connections
-- [[KillSwitchConfig]] - `calls` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

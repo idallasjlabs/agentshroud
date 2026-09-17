@@ -1,17 +1,26 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 273"
-location: "L175"
+community: "Approval Routing & Event Bus"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_273
+  - graphify/INFERRED
+  - community/Approval_Routing__Event_Bus
 ---
 
 # LogRecord
 
 ## Connections
-- [[.emit()_1]] - `references` [EXTRACTED]
+- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus

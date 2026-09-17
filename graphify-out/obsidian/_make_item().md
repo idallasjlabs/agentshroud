@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 125"
+community: "Community 536"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/Community_536
 ---
 
 # _make_item()
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 - [[test_decide_persists()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_persist_and_reload()]] - `calls` [EXTRACTED]
 - [[test_store_survives_restart()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/Community_536

@@ -12,8 +12,8 @@ tags:
 # decide_errors_on_409_conflict()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
-- [[.with()]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]
 

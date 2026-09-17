@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.27
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 856
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[.__init__()_38]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[Collaborator Setup Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Executive Summary_15]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Files intentionally not for collaborators]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Optional local tooling]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required for local model-profile persistence]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required for standard Docker runtime]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required if using 1Password-backed secret retrieval]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required if using external LLM providers]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Restore Priority After Clean Build]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Root `.env`]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Secrets Usage and Collaborator Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 476]]
-- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[telegram_gateway_relay.py]] - degree 4, connects to 2 communities
+- [[Secrets Usage and Collaborator Checklist]] - degree 6, connects to 1 community

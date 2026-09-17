@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 39"
+community: "Community 175"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/Community_175
 ---
 
 # Infer the permission level needed for a tool based on its name.          Checks
 
 ## Connections
-- [[.infer_permission_level()]] - `rationale_for` [EXTRACTED]
+- [[dot-infer_permission_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_39
+#graphify/rationale #graphify/EXTRACTED #community/Community_175

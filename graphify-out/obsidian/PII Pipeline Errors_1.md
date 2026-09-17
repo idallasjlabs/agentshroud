@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Community 230"
+community: "Community 255"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/Community_255
 ---
 
 # PII Pipeline Errors.md
@@ -18,4 +18,4 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[spacy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_230
+#graphify/document #graphify/EXTRACTED #community/Community_255

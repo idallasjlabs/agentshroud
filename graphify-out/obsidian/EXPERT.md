@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 601"
+community: "Community 506"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_601
+  - community/Community_506
 ---
 
 # EXPERT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_601
+#graphify/document #graphify/EXTRACTED #community/Community_506

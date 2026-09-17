@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Community 278"
+community: "Community 285"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_278
+  - community/Community_285
 ---
 
 # test_jira_weekly_review.py
@@ -15,7 +15,7 @@ tags:
 - [[_MockTransport_1]] - `contains` [EXTRACTED]
 - [[_get_fn_stub()]] - `contains` [EXTRACTED]
 - [[_load_module()_1]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_basic_auth_header_is_base64_email_colon_token()_1]] - `contains` [EXTRACTED]
 - [[test_basic_auth_header_rejects_empty()_1]] - `contains` [EXTRACTED]
 - [[test_comment_payload_is_valid_adf_doc()_1]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tenant_info_url_rejects_empty_domain()_1]] - `contains` [EXTRACTED]
 - [[test_tenant_info_url_targets_edge_endpoint()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_278
+#graphify/code #graphify/EXTRACTED #community/Community_285

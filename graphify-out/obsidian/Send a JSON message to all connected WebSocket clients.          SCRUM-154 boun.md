@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Community 23"
+community: "Enhanced Approval Queue"
 location: "L510"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Enhanced_Approval_Queue
 ---
 
 # Send a JSON message to all connected WebSocket clients.          SCRUM-154: boun
 
 ## Connections
-- [[.broadcast()]] - `rationale_for` [EXTRACTED]
+- [[dot-broadcast()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_23
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

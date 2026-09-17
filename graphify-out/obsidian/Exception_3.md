@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 152"
+community: "Community 154"
 location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_152
+  - graphify/EXTRACTED
+  - community/Community_154
 ---
 
 # Exception
@@ -15,4 +15,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_patch_urlopen()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_152
+#graphify/code #graphify/EXTRACTED #community/Community_154

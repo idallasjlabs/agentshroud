@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
-type: "code"
-community: "Community 147"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+type: "document"
+community: "Community 1185"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/Community_1185
 ---
 
-# proxy_status.py
+# proxy_status.py.md
 
 ## Connections
-- [[ProxyDashboard]] - `contains` [EXTRACTED]
-- [[ProxyStatusReport]] - `contains` [EXTRACTED]
-- [[api.py]] - `calls` [EXTRACTED]
-- [[health_report.py]] - `references` [EXTRACTED]
+- [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/document #graphify/EXTRACTED #community/Community_1185

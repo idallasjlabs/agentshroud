@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 118"
+community: "Community 178"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Community_178
 ---
 
 # 75 Security Modules
@@ -15,13 +15,12 @@ tags:
 - [[7-Layer Security Architecture]] - `semantically_similar_to` [INFERRED]
 - [[Agent Containment]] - `contains` [EXTRACTED]
 - [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
-- [[AgentShroud™ README]] - `references` [EXTRACTED]
-- [[Architecture]] - `shares_data_with` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Architecture_1]] - `shares_data_with` [EXTRACTED]
 - [[Content & Context Guards]] - `contains` [EXTRACTED]
 - [[Core Security Pipeline]] - `contains` [EXTRACTED]
 - [[Infrastructure & Monitoring]] - `contains` [EXTRACTED]
 - [[Proxy & Network Layer]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
 - [[Supporting Infrastructure]] - `contains` [EXTRACTED]
 - [[TABLE I Security Module Inventory (52 Modules)]] - `contains` [EXTRACTED]
 - [[V-A. PII Sanitizer]] - `contains` [EXTRACTED]
@@ -31,4 +30,4 @@ tags:
 - [[V-E. DNS-Layer Enforcement]] - `contains` [EXTRACTED]
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/Community_178

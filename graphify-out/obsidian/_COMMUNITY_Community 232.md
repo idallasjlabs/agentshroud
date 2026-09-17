@@ -1,47 +1,48 @@
 ---
 type: community
-cohesion: 0.06
-members: 32
+cohesion: 0.10
+members: 33
 ---
 
 # Community 232
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Agent Interaction Protocol]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Architecture Context]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Confidence Scoring]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Critical Rules]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D0 — Planning & Scoping]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D1 — Team & Expertise Identification]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D2 — Problem Description (Data Collection & Characterization)]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D3 — Interim Containment Assessment]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D4 — Root Cause Analysis (Correlated Event Detection)]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D5 — Permanent Corrective Action Definition]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D6 — Implementation Verification]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D7 — Systemic Prevention]] - document - .agents/skills/i-eightd/SKILL.md
-- [[D8 — Documentation & Recognition]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Device Hierarchy]] - document - .agents/skills/i-eightd/SKILL.md
-- [[How to Collaborate with the AWS Agent]] - document - .agents/skills/i-eightd/SKILL.md
-- [[How to Interact with the Human Investigator]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Input Requirements_4]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Knowledge Base Schema]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Learning System (Continuous Improvement)]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Overview]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Pattern Matching for New Incidents]] - document - .agents/skills/i-eightd/SKILL.md
-- [[SKILL_20]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Step 1 Collect the Error Event Data]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Step 2 Collect ALL Data in the Time Window]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Step 3 Collect Alarms and Events]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Step 4 Build the IS  IS NOT Matrix]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Step 5 Establish Baseline]] - document - .agents/skills/i-eightd/SKILL.md
-- [[The 8D Investigation Process]] - document - .agents/skills/i-eightd/SKILL.md
-- [[What to Extract]] - document - .agents/skills/i-eightd/SKILL.md
-- [[Why This Matters]] - document - .agents/skills/i-eightd/SKILL.md
-- [[XML Configuration File Parsing]] - document - .agents/skills/i-eightd/SKILL.md
+- [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[Base class for credential validators.]] - rationale - gateway/security/key_rotation.py
+- [[CredentialValidator]] - code - gateway/security/key_rotation.py
+- [[RotationStatus]] - code - gateway/security/key_rotation.py
+- [[Status of a credential rotation.]] - rationale - gateway/security/key_rotation.py
+- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
+- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[key_rotation.py (KeyRotationManager)]] - code - gateway/security/key_rotation.py
+- [[key_rotation_config.py (KeyRotationConfig)]] - code - gateway/security/key_rotation_config.py
+- [[manager()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[test_key_rotation_internals.py]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,3 +50,20 @@ members: 32
 TABLE source_file, type FROM #community/Community_232
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 16 edges to [[_COMMUNITY_Community 291]]
+- 11 edges to [[_COMMUNITY_Community 544]]
+- 10 edges to [[_COMMUNITY_Community 133]]
+- 5 edges to [[_COMMUNITY_Community 848]]
+- 4 edges to [[_COMMUNITY_Community 441]]
+- 3 edges to [[_COMMUNITY_Community 1322]]
+- 2 edges to [[_COMMUNITY_Community 715]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+
+## Top bridge nodes
+- [[CredentialValidator]] - degree 21, connects to 7 communities
+- [[RotationStatus]] - degree 20, connects to 7 communities
+- [[test_key_rotation_internals.py]] - degree 17, connects to 5 communities
+- [[TestRotateGuardBranches]] - degree 11, connects to 3 communities
+- [[TestReadFrom1Password]] - degree 10, connects to 3 communities

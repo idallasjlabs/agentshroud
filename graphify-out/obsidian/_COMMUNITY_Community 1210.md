@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller_3]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_75]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[README_80]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Related Skills_81]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Usage_83]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[dot-agentsskillsi-sec-offenseREADME]] - document - .agents/skills/i-sec-offense/README.md
+- [[Purpose_32]] - document - .agents/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/README.md
+- [[Related Skills_23]] - document - .agents/skills/i-sec-offense/README.md
+- [[Usage_27]] - document - .agents/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 

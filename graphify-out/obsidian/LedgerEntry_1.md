@@ -1,35 +1,22 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L139"
+community: "Gateway Config & PII Sanitizer"
+location: "L114"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - graphify/EXTRACTED
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[Any_7]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[dot-get_entry()]] - `references` [EXTRACTED]
+- [[dot-query()]] - `calls` [EXTRACTED]
+- [[dot-record()_2]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_2]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_3]] - `uses` [INFERRED]
-- [[ledger.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1317
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
-- [[Container Escape Attempt]] - document - docs/operations/incident-response.md
-- [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
-- [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
+- [[Step 1 Create Google Cloud Project]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 2 Create OAuth Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
-- [[P1 Critical Incidents]] - degree 4, connects to 1 community
+- [[🛠️ OAuth2 Setup (If Needed)]] - degree 5, connects to 1 community

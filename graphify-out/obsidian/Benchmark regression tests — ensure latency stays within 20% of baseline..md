@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Community 484"
+community: "Community 495"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_484
+  - community/Community_495
 ---
 
 # Benchmark regression tests — ensure latency stays within 20% of baseline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBenchmarkRegression]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_484
+#graphify/rationale #graphify/EXTRACTED #community/Community_495

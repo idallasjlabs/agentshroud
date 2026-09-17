@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_telegram_pipeline.py"
+type: "code"
+community: "Community 109"
+location: "L109"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_109
+---
+
+# .test_blocked_non_owner_drops_update_and_increments_stats()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestInboundPipelineBlockedNonOwner]] - `method` [EXTRACTED]
+- [[_getUpdates_response()]] - `calls` [EXTRACTED]
+- [[_make_pipeline_result()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_109

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 66"
+community: "Community 602"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/Community_602
 ---
 
 # Validate port exposure configuration.
 
 ## Connections
-- [[._validate_port_exposure()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_port_exposure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_66
+#graphify/rationale #graphify/EXTRACTED #community/Community_602

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/audit_store.py"
+type: "code"
+community: "Community 112"
+location: "L383"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_112
+---
+
+# .get_stats()
+
+## Connections
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_112

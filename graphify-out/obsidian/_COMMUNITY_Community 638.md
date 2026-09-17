@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Environment Variables_14]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Purpose_162]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[1. Install Dependencies]] - document - gateway/README.md
+- [[2. Configure]] - document - gateway/README.md
+- [[3. Run]] - document - gateway/README.md
+- [[4. Test]] - document - gateway/README.md
+- [[Approval Queue_1]] - document - gateway/README.md
+- [[Authentication_3]] - document - gateway/README.md
+- [[Data Ledger]] - document - gateway/README.md
+- [[Features_3]] - document - gateway/README.md
+- [[Gateway Layer]] - document - gateway/README.md
+- [[Implementation Status_2]] - document - gateway/README.md
+- [[Ingest API]] - document - gateway/README.md
+- [[PII Sanitizer]] - document - gateway/README.md
+- [[Setup_6]] - document - gateway/README.md
+- [[Structure_2]] - document - gateway/README.md
+- [[Tech Stack]] - document - gateway/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Community_638
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+
+## Top bridge nodes
+- [[Gateway Layer]] - degree 6, connects to 1 community

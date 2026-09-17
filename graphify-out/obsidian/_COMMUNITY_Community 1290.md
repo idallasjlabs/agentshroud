@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1290
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Deliverables]] - document - .agents/skills/i-aws/SKILL.md
-- [[Reports (`.reports`)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Script Templates]] - document - .agents/skills/i-aws/SKILL.md
-- [[Scripts (`.scripts`)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Purpose_107]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Related Skills_98]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Technical Illustrator (TI)_1]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Usage_102]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[openclawskillsi-tiREADME]] - document - docker/config/openclaw/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1290
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 515]]
-
-## Top bridge nodes
-- [[Deliverables]] - degree 4, connects to 1 community

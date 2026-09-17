@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_output_canary.py"
+type: "code"
+community: "Community 213"
+location: "L225"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_213
+---
+
+# .test_zero_width_character_detection()
+
+## Connections
+- [[Test detection of canaries with zero-width characters.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_213

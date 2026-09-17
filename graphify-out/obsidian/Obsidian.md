@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "Community 761"
+community: "Community 799"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_761
+  - community/Community_799
 ---
 
 # Obsidian
 
 ## Connections
 - [[Find the active vault(s)]] - `contains` [EXTRACTED]
-- [[SKILL_219]] - `contains` [EXTRACTED]
 - [[obsidian-cli quick start]] - `contains` [EXTRACTED]
+- [[obsidianSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_761
+#graphify/document #graphify/EXTRACTED #community/Community_799

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 522"
+community: "Community 621"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/Community_621
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_522
+#graphify/document #graphify/EXTRACTED #community/Community_621

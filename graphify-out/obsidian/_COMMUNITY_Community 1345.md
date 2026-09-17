@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Troubleshooting_26]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Documentation]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 588]]
+- 1 edge to [[_COMMUNITY_Community 448]]
 
 ## Top bridge nodes
-- [[Troubleshooting_26]] - degree 4, connects to 1 community
+- [[Resources]] - degree 4, connects to 1 community

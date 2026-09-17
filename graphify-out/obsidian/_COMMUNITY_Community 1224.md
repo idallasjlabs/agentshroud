@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Purpose_89]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[README_94]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Related Skills_95]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Usage_98]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[CICD Pipeline Advisor (CICD)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Purpose_42]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Related Skills_33]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Usage_37]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[hermesskillsi-cicdREADME]] - document - docker/config/hermes/skills/i-cicd/README.md
 
 ## Live Query (requires Dataview plugin)
 

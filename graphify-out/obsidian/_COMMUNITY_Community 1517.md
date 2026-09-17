@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[warn_dangerous_bash.sh]] - code - .claude/scripts/claude-hooks/warn_dangerous_bash.sh
+- [[warn_dangerous_bash.sh script]] - code - .claude/scripts/claude-hooks/warn_dangerous_bash.sh
 
 ## Live Query (requires Dataview plugin)
 

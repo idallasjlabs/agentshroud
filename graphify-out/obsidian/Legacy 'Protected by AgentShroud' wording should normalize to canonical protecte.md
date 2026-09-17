@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 80"
+community: "Community 1746"
 location: "L649"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_1746
 ---
 
 # Legacy 'Protected by AgentShroud' wording should normalize to canonical protecte
 
 ## Connections
-- [[.test_collaborator_legacy_protected_prefix_is_normalized_json()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_80
+#graphify/rationale #graphify/EXTRACTED #community/Community_1746

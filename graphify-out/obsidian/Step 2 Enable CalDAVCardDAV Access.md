@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 263"
+community: "Community 1318"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Community_1318
 ---
 
 # Step 2: Enable CalDAV/CardDAV Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔐 Setup Steps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Community_1318

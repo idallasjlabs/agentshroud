@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 1293"
+community: "Community 1345"
 location: "L646"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1293
+  - community/Community_1345
 ---
 
 # Community
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1293
+#graphify/document #graphify/EXTRACTED #community/Community_1345

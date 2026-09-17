@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_plain_no_reply_token_in_markdown_fence_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[NO_REPLY wrapped in markdown fence should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Daedalus Concept Illustrator README (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,11 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1638
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-
-## Top bridge nodes
-- [[.test_plain_no_reply_token_in_markdown_fence_is_rewritten()]] - degree 4, connects to 3 communities

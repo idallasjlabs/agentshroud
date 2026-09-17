@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/tools/port_manager.py"
-type: "code"
-community: "Community 94"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+type: "document"
+community: "Community 1020"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/Community_1020
 ---
 
-# port_manager.py
+# port_manager.py.md
 
 ## Connections
-- [[PortAssignment]] - `contains` [EXTRACTED]
-- [[PortManager]] - `contains` [EXTRACTED]
-- [[PortResolution]] - `contains` [EXTRACTED]
-- [[check_and_report()]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/document #graphify/EXTRACTED #community/Community_1020

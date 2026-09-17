@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1044
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Active]] - document - docs/planning/README.md
-- [[Historic  archive]] - document - docs/planning/README.md
-- [[How to add a plan]] - document - docs/planning/README.md
-- [[Layout]] - document - docs/planning/README.md
-- [[README_123]] - document - docs/planning/README.md
-- [[What does NOT live here]] - document - docs/planning/README.md
-- [[`docsplanning` — Index]] - document - docs/planning/README.md
+- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1044
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 971]]
+
+## Top bridge nodes
+- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community

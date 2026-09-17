@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1160
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_27]] - document - .agents/skills/i-sad/README.md
-- [[README_27]] - document - .agents/skills/i-sad/README.md
-- [[Related Skills_30]] - document - .agents/skills/i-sad/README.md
-- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
-- [[Usage_30]] - document - .agents/skills/i-sad/README.md
+- [[AgentShroud™ Communication Templates]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 1 — Clean & Professional]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 2 — Compact]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 3 — Full Collaborator Notice]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 4 — Documentation Footer]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Usage Rules]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,10 @@ members: 5
 TABLE source_file, type FROM #community/Community_1160
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1008]]
+- 1 edge to [[_COMMUNITY_Community 1295]]
+
+## Top bridge nodes
+- [[AgentShroud™ Communication Templates]] - degree 7, connects to 2 communities

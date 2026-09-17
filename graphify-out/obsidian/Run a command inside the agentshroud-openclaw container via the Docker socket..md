@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L2466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # Run a command inside the agentshroud-openclaw container via the Docker socket.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_docker_exec_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router

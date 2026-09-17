@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_key_rotation_internals.py"
+type: "code"
+community: "Community 232"
+location: "L135"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_232
+---
+
+# .test_unknown_credential_returns_error()
+
+## Connections
+- [[TestRotateGuardBranches]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_232

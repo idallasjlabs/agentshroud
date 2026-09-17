@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_dns_filter.py"
+type: "code"
+community: "Community 63"
+location: "L56"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_63
+---
+
+# .test_default_mode_is_enforce()
+
+## Connections
+- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
+- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_63

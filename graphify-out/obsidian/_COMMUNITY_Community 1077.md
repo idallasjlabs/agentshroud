@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1077
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[options.js]] - code - browser-extension/options.js
-- [[restore()]] - code - browser-extension/options.js
-- [[save()]] - code - browser-extension/options.js
-- [[savedEl]] - code - browser-extension/options.js
-- [[tokenEl]] - code - browser-extension/options.js
-- [[urlEl]] - code - browser-extension/options.js
+- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +24,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1077
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 653]]
-
-## Top bridge nodes
-- [[save()]] - degree 2, connects to 1 community

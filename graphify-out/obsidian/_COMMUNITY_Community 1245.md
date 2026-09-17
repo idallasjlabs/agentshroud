@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_110]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[README_115]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Related Skills_119]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Usage_120]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_4]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Purpose_63]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Related Skills_54]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Usage_58]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[hermesskillsi-sadREADME]] - document - docker/config/hermes/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Adversarial Injection Guards"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L2685"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Adversarial_Injection_Guards
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # Detect raw/embedded tool payload text in user input.
 
 ## Connections
-- [[._looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

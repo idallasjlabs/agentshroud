@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_config_validation.py"
+type: "code"
+community: "Community 1585"
+location: "L212"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1585
+---
+
+# .test_openclaw_version_pin_is_consistent_across_bot_images()
+
+## Connections
+- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION (backed…]] - `rationale_for` [EXTRACTED]
+- [[TestConfigValidation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1585

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 226"
+community: "Community 232"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_226
+  - community/Community_232
 ---
 
 # RotationStatus
 
 ## Connections
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[Status of a credential rotation.]] - `rationale_for` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_226
+#graphify/code #graphify/INFERRED #community/Community_232

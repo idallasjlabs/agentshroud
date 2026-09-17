@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 512"
+community: "Community 523"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Community_523
 ---
 
 # AgentShroud Typography Guidelines
@@ -18,7 +18,7 @@ tags:
 - [[Line Heights]] - `contains` [EXTRACTED]
 - [[Platform-Specific]] - `contains` [EXTRACTED]
 - [[Type Scale]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
-- [[typography]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_3]] - `contains` [EXTRACTED]
+- [[typography_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Community_523

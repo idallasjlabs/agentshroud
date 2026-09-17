@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/security/scanner_integration.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 771"
-location: "L862"
+community: "SOC Correlation & Router"
+location: "L2202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_771
+  - community/SOC_Correlation__Router
 ---
 
 # get_sbom()
 
 ## Connections
-- [[.test_returns_latest_sbom()]] - `calls` [EXTRACTED]
-- [[.test_returns_none_for_empty_dir()]] - `calls` [EXTRACTED]
-- [[.test_returns_none_when_no_dir()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
-- [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - `rationale_for` [EXTRACTED]
-- [[_score_supply_chain()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
-- [[scanner_integration.py]] - `contains` [EXTRACTED]
-- [[test_scanner_integration.py]] - `imports` [EXTRACTED]
+- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_771
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

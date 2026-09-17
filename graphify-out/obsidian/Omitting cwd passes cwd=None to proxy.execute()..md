@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/Approval_Queue_WebSocket
 ---
 
 # Omitting cwd passes cwd=None to proxy.execute().
 
 ## Connections
-- [[.test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_15
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket

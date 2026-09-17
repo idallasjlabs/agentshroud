@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_group_approval_routing.py"
+type: "code"
+community: "Community 95"
+location: "L251"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_95
+---
+
+# .test_extract_chat_id_returns_none_for_non_group()
+
+## Connections
+- [[GroupApprovalRouter]] - `calls` [EXTRACTED]
+- [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
+- [[extract_group_chat_id returns None for non-group agent IDs.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_95

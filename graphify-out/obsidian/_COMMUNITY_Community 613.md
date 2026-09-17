@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Audit Procedure_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Critical Rules_8]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Heat Map Legend_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Infrastructure_4]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Loss Categories_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Methodology_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Output Format_35]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 1 Code-Level Module Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 3 Integration Gap Analysis_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 4 Configuration Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[SKILL_177]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCAs)_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Environment Variables_11]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Key Endpoints]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Networks_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_41]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Security Hardening_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_18]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Volumes_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Community_613
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 224]]
+
+## Top bridge nodes
+- [[agentshroud-gateway_2]] - degree 15, connects to 1 community

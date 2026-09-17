@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # cors_middleware()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CORS middleware that uses config from app_state]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

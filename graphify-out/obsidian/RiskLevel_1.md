@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 138"
+community: "Community 132"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_132
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()_1]] - `references` [EXTRACTED]
-- [[._log_action()_1]] - `references` [EXTRACTED]
-- [[._requires_approval()_1]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
-- [[browse.py_1]] - `contains` [EXTRACTED]
+- [[dot-_classify_risk()]] - `references` [EXTRACTED]
+- [[dot-_log_action()]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/Community_132

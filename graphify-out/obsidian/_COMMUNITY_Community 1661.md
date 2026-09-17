@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[v0.8.0 Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0 Watchtower Complete Feature List Final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[test-system.sh]] - code - docker/scripts/test-system.sh
+- [[test-system.sh script]] - code - docker/scripts/test-system.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Community 628"
+community: "Community 649"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_628
+  - community/Community_649
 ---
 
 # Step 5: Add integrity checking for security-critical files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_628
+#graphify/document #graphify/EXTRACTED #community/Community_649

@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.43
-members: 7
+cohesion: 0.50
+members: 8
 ---
 
 # Community 1029
 
-**Cohesion:** 0.43 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
+- [[die (fallback)]] - code - scripts/lib/sunday-scan.sh
+- [[log (fallback)]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_ensure_trivy]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_resolve_scan_image]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_run_scan_gate]] - code - scripts/lib/sunday-scan.sh
+- [[warn (fallback)]] - code - scripts/lib/sunday-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +27,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 476]]
+- 2 edges to [[_COMMUNITY_Community 353]]
+- 2 edges to [[_COMMUNITY_Community 1030]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 832]]
 
 ## Top bridge nodes
-- [[crashwatch.sh]] - degree 7, connects to 1 community
-- [[_telegram_alert()]] - degree 3, connects to 1 community
+- [[sunday_run_scan_gate]] - degree 10, connects to 3 communities
+- [[sunday-scan.sh]] - degree 8, connects to 1 community
+- [[sunday_resolve_scan_image]] - degree 4, connects to 1 community

@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.10
 members: 21
 ---
 
 # Community 429
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[._derive_key()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_json()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_str()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.rotate()]] - code - gateway/security/encrypted_store.py
-- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
-- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
-- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
-- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
-- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
-- [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
+- [[25-Domain Prompt Injection Defense Framework_1]] - concept - docs/agentshroud-knowledge.md
+- [[34 Security Modules Pipeline (P0-P3)]] - concept - docs/claude-security-audit-prompt.md
+- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[PII Sanitizer (user-facing description)]] - concept - docs/user-guide.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
+- [[Steve Hay's External Reviewer Findings]] - concept - docs/claude-security-audit-prompt.md
+- [[egress_filter module]] - concept - docs/claude-security-audit-prompt.md
+- [[pii_sanitizer module (disabled — false positives)]] - concept - docs/claude-security-audit-prompt.md
+- [[prompt_guard module (observatory mode — too aggressive for enforce)]] - concept - docs/claude-security-audit-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,16 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 3 edges to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 65]]
-- 1 edge to [[_COMMUNITY_Community 137]]
-- 1 edge to [[_COMMUNITY_Community 519]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 217]]
+- 1 edge to [[_COMMUNITY_Community 319]]
+- 1 edge to [[_COMMUNITY_Community 564]]
 
 ## Top bridge nodes
-- [[encrypted_store.py]] - degree 6, connects to 5 communities
-- [[_secure_zero()]] - degree 9, connects to 1 community
-- [[.decrypt()]] - degree 8, connects to 1 community
-- [[.encrypt()]] - degree 6, connects to 1 community
-- [[._derive_key()]] - degree 5, connects to 1 community
+- [[34 Security Modules Pipeline (P0-P3)]] - degree 6, connects to 1 community
+- [[Collaborator Session Isolation (blocked functionsskills)]] - degree 2, connects to 1 community
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - degree 2, connects to 1 community

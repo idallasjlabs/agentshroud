@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Community 249"
+community: "Community 242"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/Community_242
 ---
 
 # Compose the human-readable weekly summary posted as the comment.      - commits:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_weekly_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_249
+#graphify/rationale #graphify/EXTRACTED #community/Community_242

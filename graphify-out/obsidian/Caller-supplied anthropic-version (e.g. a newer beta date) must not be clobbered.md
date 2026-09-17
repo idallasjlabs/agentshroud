@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Community 563"
+community: "Community 583"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_563
+  - community/Community_583
 ---
 
 # Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered
 
 ## Connections
-- [[.test_existing_anthropic_version_preserved()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_existing_anthropic_version_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_563
+#graphify/rationale #graphify/EXTRACTED #community/Community_583

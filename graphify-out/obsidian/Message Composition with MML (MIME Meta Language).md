@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Community 452"
+community: "Community 462"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/Community_462
 ---
 
 # Message Composition with MML (MIME Meta Language)
@@ -21,4 +21,4 @@ tags:
 - [[Tips_3]] - `contains` [EXTRACTED]
 - [[message-composition]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_452
+#graphify/document #graphify/EXTRACTED #community/Community_462

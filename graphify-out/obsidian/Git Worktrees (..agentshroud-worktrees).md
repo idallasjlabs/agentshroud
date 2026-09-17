@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Community 1012"
+community: "Community 1055"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_1012
+  - community/Community_1055
 ---
 
 # Git Worktrees (../agentshroud-worktrees/)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Get Shit Done (GSD) Governance Cadence]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_1012
+#graphify/image #graphify/INFERRED #community/Community_1055

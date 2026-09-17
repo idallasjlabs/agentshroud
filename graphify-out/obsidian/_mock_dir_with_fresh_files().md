@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 921"
+community: "Community 969"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Community_969
 ---
 
 # _mock_dir_with_fresh_files()
 
 ## Connections
-- [[.test_five_clean_and_fresh()]] - `calls` [EXTRACTED]
-- [[.test_five_optimal()]] - `calls` [EXTRACTED]
-- [[.test_five_scanned_and_fresh()]] - `calls` [EXTRACTED]
-- [[.test_five_zero_failures_fresh_report()]] - `calls` [EXTRACTED]
-- [[.test_max_capped_at_five()]] - `calls` [EXTRACTED]
-- [[.test_returns_true_for_fresh_file()]] - `calls` [EXTRACTED]
+- [[dot-test_five_clean_and_fresh()]] - `calls` [EXTRACTED]
+- [[dot-test_five_optimal()]] - `calls` [EXTRACTED]
+- [[dot-test_five_scanned_and_fresh()]] - `calls` [EXTRACTED]
+- [[dot-test_five_zero_failures_fresh_report()]] - `calls` [EXTRACTED]
+- [[dot-test_max_capped_at_five()]] - `calls` [EXTRACTED]
+- [[dot-test_returns_true_for_fresh_file()]] - `calls` [EXTRACTED]
 - [[Like _mock_dir_with_files but mtime is now (fresh).]] - `rationale_for` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_921
+#graphify/code #graphify/EXTRACTED #community/Community_969

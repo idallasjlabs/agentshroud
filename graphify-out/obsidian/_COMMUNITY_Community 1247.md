@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
-- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
-- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
-- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
-- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Purpose_65]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Related Skills_56]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Usage_60]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[hermesskillsi-sec-defenseREADME]] - document - docker/config/hermes/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 

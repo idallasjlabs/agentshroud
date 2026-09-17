@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 59"
+community: "Community 55"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_55
 ---
 
 # upgrade()
 
 ## Connections
-- [[.test_after_operations()]] - `calls` [EXTRACTED]
-- [[.test_after_upgrade()]] - `calls` [EXTRACTED]
-- [[.test_blocked_on_invalid_version()]] - `calls` [EXTRACTED]
-- [[.test_dry_run()]] - `calls` [EXTRACTED]
-- [[.test_no_previous_version()]] - `calls` [EXTRACTED]
-- [[.test_sequential_upgrades()]] - `calls` [EXTRACTED]
-- [[.test_successful_downgrade()]] - `calls` [EXTRACTED]
-- [[.test_successful_rollback()]] - `calls` [EXTRACTED]
-- [[.test_successful_upgrade()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[dot-test_after_operations()]] - `calls` [EXTRACTED]
+- [[dot-test_after_upgrade()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_on_invalid_version()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run()_1]] - `calls` [EXTRACTED]
+- [[dot-test_no_previous_version()]] - `calls` [EXTRACTED]
+- [[dot-test_sequential_upgrades()]] - `calls` [EXTRACTED]
+- [[dot-test_successful_downgrade()]] - `calls` [EXTRACTED]
+- [[dot-test_successful_rollback()]] - `calls` [EXTRACTED]
+- [[dot-test_successful_upgrade()]] - `calls` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[upgrade_version()]] - `calls` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/Community_55

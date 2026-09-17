@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 801"
+community: "Community 842"
 location: "L828"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Community_842
 ---
 
 # Entity Status: Small Entity (Confirmed)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 5 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Community_842

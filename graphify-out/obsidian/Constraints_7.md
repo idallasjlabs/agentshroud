@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 628"
-location: "L266"
+community: "Community 924"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_628
+  - community/Community_924
 ---
 
 # Constraints
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_628
+#graphify/document #graphify/EXTRACTED #community/Community_924

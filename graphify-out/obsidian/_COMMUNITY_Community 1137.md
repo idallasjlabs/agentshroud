@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Purpose_175]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Related Notes_15]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Responsibilities_58]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[For graphify explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For graphify path_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 1 — Traversal_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[graphify reference query, path, explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[openclawskillsgraphifyreferencesquery]] - document - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

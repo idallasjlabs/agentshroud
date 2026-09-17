@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # test_web_proxy.py
@@ -19,25 +19,25 @@ tags:
 - [[TestAllowlistMode]] - `contains` [EXTRACTED]
 - [[TestAuditChain_1]] - `contains` [EXTRACTED]
 - [[TestContentTypeFiltering]] - `contains` [EXTRACTED]
-- [[TestDataExfiltration_1]] - `contains` [EXTRACTED]
+- [[TestDataExfiltration]] - `contains` [EXTRACTED]
 - [[TestDomainDenylist]] - `contains` [EXTRACTED]
 - [[TestEncodedPayloads]] - `contains` [EXTRACTED]
 - [[TestHiddenContent]] - `contains` [EXTRACTED]
 - [[TestIsDomainAllowed]] - `contains` [EXTRACTED]
 - [[TestPIIDetection_2]] - `contains` [EXTRACTED]
-- [[TestPassthroughMode_1]] - `contains` [EXTRACTED]
+- [[TestPassthroughMode]] - `contains` [EXTRACTED]
 - [[TestPromptInjectionDetection]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_4]] - `contains` [EXTRACTED]
+- [[TestRateLimiting]] - `contains` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `contains` [EXTRACTED]
 - [[TestSSRFBlocking]] - `contains` [EXTRACTED]
 - [[TestStats_1]] - `contains` [EXTRACTED]
 - [[TestWebProxyConfig]] - `contains` [EXTRACTED]
 - [[TestZeroWidthAttacks]] - `contains` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[audit_chain()]] - `contains` [EXTRACTED]
-- [[config()_4]] - `contains` [EXTRACTED]
-- [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
-- [[proxy()_4]] - `contains` [EXTRACTED]
+- [[config()_1]] - `contains` [EXTRACTED]
+- [[passthrough_proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

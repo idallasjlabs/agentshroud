@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 332"
+community: "Community 553"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_553
 ---
 
 # 📧 Apple Mail (IMAP/SMTP)
@@ -16,4 +16,4 @@ tags:
 - [[IMAP Settings (Incoming Mail)]] - `contains` [EXTRACTED]
 - [[SMTP Settings (Outgoing Mail)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_553

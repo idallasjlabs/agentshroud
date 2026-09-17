@@ -1,21 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Community 189"
-location: "L146"
+community: "Community 644"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/Community_644
 ---
 
 # Hash Chain Structure
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
-- [[Block Structure]] - `contains` [EXTRACTED]
-- [[Chain Architecture]] - `contains` [EXTRACTED]
-- [[Genesis Block Specification]] - `contains` [EXTRACTED]
-- [[Hash Calculation Algorithm]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_189
+#graphify/document #graphify/EXTRACTED #community/Community_644

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 845"
+community: "Community 885"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/Community_885
 ---
 
 # Authentication Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_845
+#graphify/document #graphify/EXTRACTED #community/Community_885

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Community 63"
+community: "Community 57"
 location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_57
 ---
 
 # _truthy()
 
 ## Connections
-- [[.from_env()_3]] - `calls` [EXTRACTED]
+- [[dot-from_env()_3]] - `calls` [EXTRACTED]
 - [[mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_57

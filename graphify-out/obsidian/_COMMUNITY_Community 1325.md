@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1325
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[SecureBrowser browse.py — enterprise secure browser automation]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[SecureBrowser class — enterprise-controlled Playwright wrapper]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[SecureBrowser config.yaml — allowlistapprovalaudit security config]] - document - skills/custom/securebrowser/config.yaml
-- [[SecureBrowser security-policies.md — threat model and policy reference]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[dot-test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1325
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 297]]
+
+## Top bridge nodes
+- [[TestComplianceMaths]] - degree 5, connects to 1 community

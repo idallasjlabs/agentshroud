@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.12
 members: 16
 ---
 
 # Community 563
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[._make_anthropic_injector()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_adds_oauth_beta_header_when_injecting()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_anthropic_version_auto_injected_when_absent()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_existing_anthropic_version_preserved()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_inject_if_absent_skips_when_bearer_already_present()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - code - gateway/tests/test_credential_injector.py
-- [[Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered]] - rationale - gateway/tests/test_credential_injector.py
-- [[Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once.]] - rationale - gateway/tests/test_credential_injector.py
-- [[Path_27]] - code - gateway/tests/test_credential_injector.py
-- [[TestOAuthInjection]] - code - gateway/tests/test_credential_injector.py
-- [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - rationale - gateway/tests/test_credential_injector.py
-- [[anthropic-version is required on every v1messages call; the gateway adds it]] - rationale - gateway/tests/test_credential_injector.py
-- [[inject_headers does NOT overwrite an existing Authorization Bearer token,]] - rationale - gateway/tests/test_credential_injector.py
-- [[inject_headers sets anthropic-beta oauth-2025-04-20 when Bearer is injected.]] - rationale - gateway/tests/test_credential_injector.py
-- [[x-api-key is stripped; Authorization Bearer and anthropic-beta are added.]] - rationale - gateway/tests/test_credential_injector.py
+- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Authentication_2]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Related Notes_35]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Testing]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 915]]
-- 1 edge to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 266]]
 
 ## Top bridge nodes
-- [[TestOAuthInjection]] - degree 9, connects to 1 community
-- [[._make_anthropic_injector()]] - degree 9, connects to 1 community
+- [[All Dependencies_1]] - degree 5, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # test_all_modules_enforce.py
@@ -15,11 +15,11 @@ tags:
 - [[BrowserSecurityGuard]] - `imports` [EXTRACTED]
 - [[ContextGuard]] - `imports` [EXTRACTED]
 - [[DNSFilterConfig]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
 - [[FileSandbox]] - `imports` [EXTRACTED]
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[GitGuard]] - `imports` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[MultiTurnTracker]] - `imports` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityConfig_3]] - `imports` [EXTRACTED]
+- [[SecurityConfig_4]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

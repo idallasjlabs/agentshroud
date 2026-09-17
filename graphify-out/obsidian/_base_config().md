@@ -1,25 +1,29 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 71"
-location: "L38"
+community: "Community 35"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/Community_35
 ---
 
 # _base_config()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
-- [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - `rationale_for` [EXTRACTED]
+- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyConfig]] - `references` [EXTRACTED]
 - [[engine()]] - `calls` [EXTRACTED]
-- [[test_a2a_policy.py]] - `contains` [EXTRACTED]
-- [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - `calls` [EXTRACTED]
-- [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - `calls` [EXTRACTED]
-- [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - `calls` [EXTRACTED]
+- [[test_decision_records_soc_heatmap()]] - `calls` [EXTRACTED]
+- [[test_enforce_allows_allowlisted_safe_tool()]] - `calls` [EXTRACTED]
+- [[test_enforce_blocks_unknown_server()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_denied_on_rejection()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_without_queue_denies_closed()]] - `calls` [EXTRACTED]
+- [[test_mcp_policy.py]] - `contains` [EXTRACTED]
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy_blocks_policy_denied_call()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/Community_35

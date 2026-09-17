@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Community 778"
+community: "Community 819"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_778
+  - community/Community_819
 ---
 
 # Weather Skill
@@ -16,8 +16,8 @@ tags:
 - [[Location_1]] - `contains` [EXTRACTED]
 - [[Notes_10]] - `contains` [EXTRACTED]
 - [[Quick Responses]] - `contains` [EXTRACTED]
-- [[SKILL_239]] - `contains` [EXTRACTED]
 - [[When NOT to Use_3]] - `contains` [EXTRACTED]
 - [[When to Use_4]] - `contains` [EXTRACTED]
+- [[weatherSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_778
+#graphify/document #graphify/EXTRACTED #community/Community_819

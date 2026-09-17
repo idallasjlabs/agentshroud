@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Encoded exfiltration prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Plugintool auto-discovery inventory prompts should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_run()]] - code - gateway/runtime/engine.py
+- [[CompletedProcess_1]] - code - gateway/runtime/engine.py
+- [[Run a CLI command and return the result.]] - rationale - gateway/runtime/engine.py
+- [[Start a container. Returns container id.]] - rationale - gateway/runtime/engine.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 106]]
 
 ## Top bridge nodes
-- [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[dot-_run()]] - degree 4, connects to 1 community

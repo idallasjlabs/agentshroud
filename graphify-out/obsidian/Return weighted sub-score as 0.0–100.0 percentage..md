@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 201"
+community: "Community 168"
 location: "L2308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/Community_168
 ---
 
 # Return weighted sub-score as 0.0–100.0 percentage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_compute_weighted_subscore()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_201
+#graphify/rationale #graphify/EXTRACTED #community/Community_168

@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 389"
-location: "L20"
+community: "Community 375"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Community_375
 ---
 
 # Critical Rules
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
-- [[⚠️ ONLY Refactor When]] - `contains` [EXTRACTED]
-- [[❌ NEVER]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Community_375

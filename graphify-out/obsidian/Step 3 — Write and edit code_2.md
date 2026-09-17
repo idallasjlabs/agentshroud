@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 296"
+community: "Community 305"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Community_305
 ---
 
 # Step 3 — Write and edit code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Community_305

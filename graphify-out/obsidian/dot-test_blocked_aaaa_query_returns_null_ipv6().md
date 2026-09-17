@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
+type: "code"
+community: "Community 662"
+location: "L246"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_662
+---
+
+# .test_blocked_aaaa_query_returns_null_ipv6()
+
+## Connections
+- [[dot-_make_protocol()]] - `calls` [EXTRACTED]
+- [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[_BlockAll]] - `calls` [EXTRACTED]
+- [[build_dns_query()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_662

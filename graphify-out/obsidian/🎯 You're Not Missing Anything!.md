@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 328"
+community: "Community 338"
 location: "L719"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/Community_338
 ---
 
 # 🎯 You're Not Missing Anything!
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/Community_338

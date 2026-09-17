@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_group_rbac.py"
+type: "code"
+community: "Community 496"
+location: "L126"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_496
+---
+
+# .test_non_member_defaults_to_readonly()
+
+## Connections
+- [[TestGroupRoleResolver]] - `method` [EXTRACTED]
+- [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_496

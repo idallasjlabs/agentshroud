@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.11
 members: 21
 ---
 
 # Community 425
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
-- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
-- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
-- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[AgentShroud Control Layers (PromptGuard  EgressFilter  ToolACL  ApprovalQueue  AuditChain)]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[Dated Competitive Report Artifact (competitive-report-YYYY-MM-DD.md)]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Gateway op-proxy Credential Broker]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Keep Atlassian Account Non-Idle]] - rationale - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Mandatory --html Flag Rule]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[No .py Writes to tmp (workspace-only renderer scripts)]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[No execute_code  python3 -c  pip install in Cron Mode]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Prompt jira-weekly-review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[SCRUM-81 Weekly Review Ticket]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Seed Job AI Security Standards Tracker]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Agentic AI CVE and Exploit Watch]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job jira-weekly-review]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Tracked AI Governance Standards (NIST, CSA MAESTRO, OWASP ASI, EU AI Act, ISO 42001, MITRE ATLAS, MAS)]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[agentshroud-email-send.sh Gateway Email Sender]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[competitive-analysis.md 4-Section Research Spec]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[jira_weekly_review.py Pre-Committed Posting Script]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,12 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 310]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 129]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 5 edges to [[_COMMUNITY_Community 164]]
+- 1 edge to [[_COMMUNITY_Community 569]]
 
 ## Top bridge nodes
-- [[is_quota_exhausted()]] - degree 20, connects to 2 communities
-- [[llm_quota_detector.py]] - degree 7, connects to 2 communities
-- [[test_llm_quota_detector.py]] - degree 17, connects to 1 community
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 2 communities
+- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - degree 6, connects to 1 community
+- [[Prompt jira-weekly-review]] - degree 5, connects to 1 community
+- [[Seed Job Agentic AI CVE and Exploit Watch]] - degree 3, connects to 1 community

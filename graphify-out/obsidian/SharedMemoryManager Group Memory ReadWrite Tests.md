@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 1899"
+community: "Community 1952"
 location: "line 82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1899
+  - community/Community_1952
 ---
 
 # SharedMemoryManager Group Memory Read/Write Tests
 
-#graphify/code #graphify/EXTRACTED #community/Community_1899
+#graphify/code #graphify/EXTRACTED #community/Community_1952

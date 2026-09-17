@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 175"
+community: "P3 Infrastructure Security Modules"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_175
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # PKCEViolation
 
 ## Connections
-- [[.validate_request()]] - `calls` [EXTRACTED]
+- [[dot-validate_request()]] - `calls` [EXTRACTED]
 - [[OAuthError]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestClientValidation]] - `uses` [INFERRED]
 - [[TestConsentCookieBinding]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
@@ -30,8 +30,8 @@ tags:
 - [[TestRedirectURI]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestStateValidation]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_175
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

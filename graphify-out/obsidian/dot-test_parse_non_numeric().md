@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
+type: "code"
+community: "Community 94"
+location: "L173"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_94
+---
+
+# .test_parse_non_numeric()
+
+## Connections
+- [[TestVersion]] - `method` [EXTRACTED]
+- [[_t()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_94

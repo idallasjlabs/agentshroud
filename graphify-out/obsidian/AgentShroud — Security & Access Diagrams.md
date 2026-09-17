@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "Community 442"
+community: "Community 451"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/Community_451
 ---
 
 # AgentShroud — Security & Access Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[12. Credential Flow Diagram]] - `contains` [EXTRACTED]
 - [[13. Network Security Diagram — Egress Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/EXTRACTED #community/Community_451

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1336
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[3. Code Quality]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3a. IEEE Paper]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3b. Restore Script Simplification]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3c. Deleted Files]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[12. OTA Wireless Firmware Updates]] - document - firmware/voice-terminal/SETUP.md
+- [[How it works]] - document - firmware/voice-terminal/SETUP.md
+- [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
+- [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
+- [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1336
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
-
-## Top bridge nodes
-- [[3. Code Quality]] - degree 4, connects to 1 community

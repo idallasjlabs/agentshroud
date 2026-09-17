@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 location: "L4713"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # Outbound filter must redact egress banners but NOT call _send_owner_admin_notice
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

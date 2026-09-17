@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 81"
+community: "Community 131"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_131
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Community_131

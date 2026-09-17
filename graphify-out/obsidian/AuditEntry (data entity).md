@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 597"
+community: "Community 671"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_597
+  - community/Community_671
 ---
 
 # AuditEntry (data entity)
@@ -16,4 +16,4 @@ tags:
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[mcp_audit_entries SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_597
+#graphify/concept #graphify/EXTRACTED #community/Community_671

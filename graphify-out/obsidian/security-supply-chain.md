@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 428"
+community: "Community 634"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/Community_634
 ---
 
 # security-supply-chain.md
@@ -17,4 +17,4 @@ tags:
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 - [[history-purge-plan]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/Community_634

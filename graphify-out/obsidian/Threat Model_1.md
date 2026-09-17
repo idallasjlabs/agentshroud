@@ -1,23 +1,17 @@
 ---
-source_file: "docs/ssh-security-review.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 896"
-location: "L5"
+community: "Community 256"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_896
+  - community/Community_256
 ---
 
 # Threat Model
 
 ## Connections
-- [[1. Command Injection]] - `contains` [EXTRACTED]
-- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
-- [[3. Credential Theft]] - `contains` [EXTRACTED]
-- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
-- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
-- [[D - Denial of Service]] - `contains` [EXTRACTED]
-- [[SSH Security Review]] - `contains` [EXTRACTED]
+- [[TrustManager_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_896
+#graphify/document #graphify/EXTRACTED #community/Community_256

@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Community 204"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Community_204
 ---
 
 # ConsentDecision
 
 ## Connections
-- [[.test_decision_approved()]] - `calls` [EXTRACTED]
-- [[.test_decision_denied()]] - `calls` [EXTRACTED]
-- [[.test_decision_has_timestamp()]] - `calls` [EXTRACTED]
-- [[.validate_config()]] - `references` [EXTRACTED]
-- [[.validate_configs()]] - `references` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[dot-test_decision_approved()]] - `calls` [EXTRACTED]
+- [[dot-test_decision_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_decision_has_timestamp()]] - `calls` [EXTRACTED]
+- [[dot-validate_config()]] - `references` [EXTRACTED]
+- [[dot-validate_configs()]] - `references` [EXTRACTED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -39,11 +39,11 @@ tags:
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestServerConfigValidation]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Community_204

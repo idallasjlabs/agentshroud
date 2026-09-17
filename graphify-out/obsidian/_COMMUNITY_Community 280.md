@@ -1,43 +1,44 @@
 ---
 type: community
 cohesion: 0.07
-members: 28
+members: 29
 ---
 
 # Community 280
 
 **Cohesion:** 0.07 - loosely connected
-**Members:** 28 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - document - AGENTS.md
-- [[1) REPOSITORY OVERVIEW]] - document - AGENTS.md
-- [[10) MCP SERVERS (EXTERNAL INTEGRATIONS)]] - document - AGENTS.md
-- [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
-- [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
-- [[4) LANGUAGE & TOOLING STANDARDS]] - document - AGENTS.md
-- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - AGENTS.md
-- [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
-- [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
-- [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
-- [[AGENTS]] - document - AGENTS.md
-- [[B) Validation Runner (Primary Job)]] - document - AGENTS.md
-- [[C) Safe Refactor (Secondary Job)]] - document - AGENTS.md
-- [[Cross-platform requirement]] - document - CLAUDE.md
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - document - AGENTS.md
-- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - document - AGENTS.md
-- [[Next.js  UI Standards]] - document - AGENTS.md
-- [[Primary Focus_1]] - document - AGENTS.md
-- [[Provisioning philosophy]] - document - CLAUDE.md
-- [[Python]] - document - CLAUDE.md
-- [[Python Standards]] - document - AGENTS.md
-- [[Rules_8]] - document - AGENTS.md
-- [[Supporting Integrations]] - document - AGENTS.md
-- [[What You Can Own]] - document - AGENTS.md
-- [[What You Don't Have]] - document - AGENTS.md
-- [[What You Have]] - document - AGENTS.md
-- [[When to Defer to Claude Code]] - document - AGENTS.md
-- [[Your Role in the Multi-Agent System]] - document - AGENTS.md
+- [[1. Branch Creation]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Cloud & FinOps]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Related Documentation]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[openclawskillsi-referenceSKILLS_GUIDE]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +46,3 @@ members: 28
 TABLE source_file, type FROM #community/Community_280
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 340]]
-- 1 edge to [[_COMMUNITY_Community 378]]
-- 1 edge to [[_COMMUNITY_Community 344]]
-
-## Top bridge nodes
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 12, connects to 2 communities
-- [[4) LANGUAGE & TOOLING STANDARDS]] - degree 7, connects to 1 community

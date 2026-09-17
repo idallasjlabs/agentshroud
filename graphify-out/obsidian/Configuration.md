@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 297"
-location: "L125"
+community: "Community 151"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/Community_151
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/Community_151

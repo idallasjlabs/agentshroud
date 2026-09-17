@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Sandbox SKILL.md messages must include healthcheck context before rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
+- [[apply-patches.js must create per-chat group-{chatId} agents for the approval…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - degree 4, connects to 3 communities
+- [[dot-test_openclaw_patch_script_emits_per_chat_group_agents()]] - degree 2, connects to 1 community

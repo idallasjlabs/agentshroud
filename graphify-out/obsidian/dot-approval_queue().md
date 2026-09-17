@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_egress_approval.py"
+type: "code"
+community: "Community 117"
+location: "L33"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_117
+---
+
+# .approval_queue()
+
+## Connections
+- [[Create EgressApprovalQueue instance for testing.]] - `rationale_for` [EXTRACTED]
+- [[EgressApprovalQueue]] - `calls` [EXTRACTED]
+- [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_117

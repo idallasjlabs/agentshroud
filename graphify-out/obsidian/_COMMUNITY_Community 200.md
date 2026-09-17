@@ -1,51 +1,52 @@
 ---
 type: community
-cohesion: 0.10
-members: 36
+cohesion: 0.08
+members: 37
 ---
 
 # Community 200
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[._make_rbac()]] - code - gateway/tests/test_rbac.py
-- [[.add_member()]] - code - gateway/security/rbac_config.py
-- [[.create_group()]] - code - gateway/security/rbac_config.py
-- [[.delete_group()]] - code - gateway/security/rbac_config.py
-- [[.get_group()]] - code - gateway/security/rbac_config.py
-- [[.init_auto_groups()]] - code - gateway/security/rbac_config.py
-- [[.is_member()_1]] - code - gateway/security/rbac_config.py
-- [[.list_groups()]] - code - gateway/security/rbac_config.py
-- [[.remove_member()]] - code - gateway/security/rbac_config.py
-- [[.test_add_remove_member()]] - code - gateway/tests/test_rbac.py
-- [[.test_auto_groups_created()]] - code - gateway/tests/test_rbac.py
-- [[.test_cannot_create_reserved_group_id()]] - code - gateway/tests/test_rbac.py
-- [[.test_cannot_delete_auto_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_create_custom_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_delete_custom_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_everyone_group_contains_all_users()]] - code - gateway/tests/test_rbac.py
-- [[.test_is_member_unknown_group_returns_false()]] - code - gateway/tests/test_rbac.py
-- [[.test_slack_group_contains_slack_ids()]] - code - gateway/tests/test_rbac.py
-- [[.test_telegram_group_contains_numeric_ids()]] - code - gateway/tests/test_rbac.py
-- [[A named group of users.]] - rationale - gateway/security/rbac_config.py
-- [[Add a user to a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
-- [[Create or replace a custom group and persist it.]] - rationale - gateway/security/rbac_config.py
-- [[Delete a custom group. Returns True if deleted, False if not found.]] - rationale - gateway/security/rbac_config.py
-- [[Derive and reset auto-groups from current RBAC user list, then load custom group]] - rationale - gateway/security/rbac_config.py
-- [[Group]] - code - gateway/security/rbac_config.py
-- [[GroupRegistry]] - code - gateway/security/rbac_config.py
-- [[Manages user groups including auto-groups and custom groups.]] - rationale - gateway/security/rbac_config.py
-- [[Read custom groups from disk.]] - rationale - gateway/security/rbac_config.py
-- [[Remove a user from a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
-- [[Return True if user_id is in the group.]] - rationale - gateway/security/rbac_config.py
-- [[Return group by ID, or None.]] - rationale - gateway/security/rbac_config.py
-- [[TestGroupRegistry]] - code - gateway/tests/test_rbac.py
-- [[Tests for GroupRegistry auto-groups and custom group management.]] - rationale - gateway/tests/test_rbac.py
-- [[Write only custom groups to disk (auto-groups are derived at runtime).]] - rationale - gateway/security/rbac_config.py
-- [[_load_persisted_groups()]] - code - gateway/security/rbac_config.py
-- [[_persist_groups()]] - code - gateway/security/rbac_config.py
+- [[dot-test_containerized_compose_equivalents()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_compose_internal_network()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_compose_private_registry()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_fallback_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_no_cosign_no_pipeline_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_pipeline_evidence_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_public_image_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_cosign_with_runtime_verification()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_cosign_with_wired_verifier_module()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_distinct_namespaces_partial_caps()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_docker_config_auths_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_empty_auths_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_empty_sbom_scores_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_full_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_full_host_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_full_root_caps_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fully_isolated_container_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_icc_disabled_with_validator()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_icc_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_namespace_check_exception_assumes_isolated()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_config_not_containerized_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_cosign_outside_container_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_kernel_info_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_containerized_no_config_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_sbom_with_packages_trivy_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_shared_mount_namespace_returns_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_unreadable_status_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestContainerRuntimeIsolation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDockerDaemonConfig]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestImageSigningProvenance]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestNetworkSegmentation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRegistrySecurity]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSupplyChain_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,16 +56,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
-- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 2 edges to [[_COMMUNITY_Middleware & Lifespan]]
-- 2 edges to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 335]]
+- 14 edges to [[_COMMUNITY_Community 297]]
+- 8 edges to [[_COMMUNITY_Community 488]]
+- 4 edges to [[_COMMUNITY_Community 1175]]
+- 3 edges to [[_COMMUNITY_Community 1329]]
+- 3 edges to [[_COMMUNITY_Community 1331]]
+- 2 edges to [[_COMMUNITY_Community 1327]]
+- 2 edges to [[_COMMUNITY_Community 1328]]
+- 2 edges to [[_COMMUNITY_Community 1330]]
+- 2 edges to [[_COMMUNITY_Community 1404]]
+- 2 edges to [[_COMMUNITY_Community 1405]]
+- 2 edges to [[_COMMUNITY_Community 1483]]
+- 2 edges to [[_COMMUNITY_Community 1485]]
+- 2 edges to [[_COMMUNITY_Community 1486]]
+- 1 edge to [[_COMMUNITY_Community 1324]]
+- 1 edge to [[_COMMUNITY_Community 1326]]
+- 1 edge to [[_COMMUNITY_Community 1332]]
+- 1 edge to [[_COMMUNITY_Community 1403]]
+- 1 edge to [[_COMMUNITY_Community 1406]]
+- 1 edge to [[_COMMUNITY_Community 1407]]
+- 1 edge to [[_COMMUNITY_Community 1482]]
+- 1 edge to [[_COMMUNITY_Community 1484]]
 
 ## Top bridge nodes
-- [[GroupRegistry]] - degree 34, connects to 5 communities
-- [[TestGroupRegistry]] - degree 21, connects to 2 communities
-- [[Group]] - degree 9, connects to 2 communities
-- [[_persist_groups()]] - degree 8, connects to 2 communities
-- [[._make_rbac()]] - degree 12, connects to 1 community
+- [[_w()]] - degree 73, connects to 21 communities
+- [[TestContainerRuntimeIsolation]] - degree 7, connects to 1 community
+- [[TestDockerDaemonConfig]] - degree 6, connects to 1 community
+- [[TestImageSigningProvenance]] - degree 6, connects to 1 community
+- [[TestRegistrySecurity]] - degree 6, connects to 1 community

@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Community 389
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[Bad API Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
-- [[Bad Logic Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
-- [[Critical Rules_3]] - document - .github/agents/safe-refactor.agent.md
-- [[Definition of Done]] - document - .github/agents/safe-refactor.agent.md
-- [[Example Refactorings]] - document - .github/agents/safe-refactor.agent.md
-- [[Forbidden Changes]] - document - .github/agents/safe-refactor.agent.md
-- [[Good Extract Helper]] - document - .github/agents/safe-refactor.agent.md
-- [[Good Variable Renaming]] - document - .github/agents/safe-refactor.agent.md
-- [[Refactoring Workflow]] - document - .github/agents/safe-refactor.agent.md
-- [[Remember]] - document - .github/agents/safe-refactor.agent.md
-- [[Repository Context_1]] - document - .github/agents/safe-refactor.agent.md
-- [[Role Definition]] - document - .github/agents/safe-refactor.agent.md
-- [[Safe Refactor Specialist]] - document - .github/agents/safe-refactor.agent.md
-- [[Safe Refactorings]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 1 Verify Tests Pass]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 2 Make Small, Focused Change]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 3 Verify Tests Still Pass]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 4 Check Code Quality]] - document - .github/agents/safe-refactor.agent.md
-- [[What You CAN Refactor]] - document - .github/agents/safe-refactor.agent.md
-- [[When in Doubt]] - document - .github/agents/safe-refactor.agent.md
-- [[⚠️ ONLY Refactor When]] - document - .github/agents/safe-refactor.agent.md
-- [[❌ NEVER]] - document - .github/agents/safe-refactor.agent.md
+- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 578]]
+- 1 edge to [[_COMMUNITY_Community 765]]
 
 ## Top bridge nodes
-- [[Safe Refactor Specialist]] - degree 10, connects to 1 community
+- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities

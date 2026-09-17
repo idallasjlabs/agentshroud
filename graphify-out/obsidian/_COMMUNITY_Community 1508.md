@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Branding Specialist README (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Branding Specialist SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
+- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

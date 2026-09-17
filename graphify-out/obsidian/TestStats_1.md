@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L461"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # TestStats
 
 ## Connections
-- [[.test_injection_stats()]] - `method` [EXTRACTED]
-- [[.test_stats_tracked()]] - `method` [EXTRACTED]
+- [[dot-test_injection_stats()]] - `method` [EXTRACTED]
+- [[dot-test_stats_tracked()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy

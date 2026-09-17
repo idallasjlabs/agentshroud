@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "Community 860"
-location: "L18"
+community: "Community 1310"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_860
+  - community/Community_1310
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_860
+#graphify/code #graphify/EXTRACTED #community/Community_1310

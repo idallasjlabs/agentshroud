@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "Community 765"
+community: "Community 804"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/Community_804
 ---
 
 # CVE IDs with 5-digit suffix must also be excluded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cve_with_five_digit_suffix_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_765
+#graphify/rationale #graphify/EXTRACTED #community/Community_804

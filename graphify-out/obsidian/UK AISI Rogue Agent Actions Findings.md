@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "Community 281"
+community: "Community 288"
 location: "line 44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/Community_288
 ---
 
 # UK AISI Rogue Agent Actions Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_281
+#graphify/concept #graphify/EXTRACTED #community/Community_288

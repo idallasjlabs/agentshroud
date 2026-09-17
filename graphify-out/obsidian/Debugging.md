@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 343"
+community: "Community 348"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/Community_348
 ---
 
 # Debugging
@@ -18,4 +18,4 @@ tags:
 - [[Content not updating]] - `contains` [EXTRACTED]
 - [[White screen  content not loading]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_343
+#graphify/document #graphify/EXTRACTED #community/Community_348

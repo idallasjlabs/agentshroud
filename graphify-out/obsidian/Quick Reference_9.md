@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 85"
-location: "L1"
+community: "Community 395"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_395
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_395

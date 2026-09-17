@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_oauth_security.py"
+source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "Community 175"
-location: "L28"
+community: "Community 107"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Community_107
 ---
 
 # validator()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
-- [[test_oauth_security.py]] - `contains` [EXTRACTED]
+- [[TokenValidator]] - `uses` [INFERRED]
+- [[fixture_1]] - `references` [EXTRACTED]
+- [[test_token_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_175
+#graphify/code #graphify/EXTRACTED #community/Community_107

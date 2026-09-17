@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 487"
-location: "L376"
+community: "Community 244"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Community_244
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_487
+#graphify/document #graphify/EXTRACTED #community/Community_244

@@ -12,12 +12,12 @@ tags:
 # Value
 
 ## Connections
-- [[.get()]] - `references` [EXTRACTED]
-- [[.get()_1]] - `references` [EXTRACTED]
-- [[.post()]] - `references` [EXTRACTED]
-- [[.post()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
-- [[.request()_1]] - `references` [EXTRACTED]
+- [[dot-get()_2]] - `references` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[format_approvals()]] - `references` [EXTRACTED]
 - [[format_cves()]] - `references` [EXTRACTED]

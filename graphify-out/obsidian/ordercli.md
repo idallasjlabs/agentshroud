@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/ordercli/SKILL.md"
 type: "document"
-community: "Community 1511"
+community: "Community 1640"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1511
+  - community/Community_1640
 ---
 
 # ordercli
 
 ## Connections
-- [[SKILL_224]] - `contains` [EXTRACTED]
+- [[ordercliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1511
+#graphify/document #graphify/EXTRACTED #community/Community_1640

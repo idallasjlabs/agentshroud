@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 95"
+community: "Voice Gateway STT & Browser Security"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # web_proxy.py
@@ -19,18 +19,18 @@ tags:
 - [[EgressEvent]] - `imports` [EXTRACTED]
 - [[EgressMonitor]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
 - [[ProxyAction]] - `contains` [EXTRACTED]
 - [[RateLimiter_1]] - `contains` [EXTRACTED]
-- [[URLAnalyzer]] - `imports` [EXTRACTED]
+- [[URLAnalyzer_1]] - `imports` [EXTRACTED]
 - [[WebContentScanner]] - `imports` [EXTRACTED]
-- [[WebProxy_1]] - `contains` [EXTRACTED]
+- [[WebProxy]] - `contains` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[WebProxyResult]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[dns_filter.py]] - `imports_from` [EXTRACTED]
+- [[dns_filter.py_2]] - `imports_from` [EXTRACTED]
 - [[egress_monitor.py]] - `imports_from` [EXTRACTED]
 - [[http_proxy.py]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

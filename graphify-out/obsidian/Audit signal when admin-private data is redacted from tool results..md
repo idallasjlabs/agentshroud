@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 39"
+community: "Community 175"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/Community_175
 ---
 
 # Audit signal when admin-private data is redacted from tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivateRedactionEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_39
+#graphify/rationale #graphify/EXTRACTED #community/Community_175

@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 596
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
-- [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Related Notes_71]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Related Notes_72]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Security Pipeline Flow]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
-- [[Security Pipeline Layer Order]] - concept - docs/vault/09 - Diagrams/Security Pipeline Flow.md
-- [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Apple Containers vs DockerPodman]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Function Details_16]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Key Classes  Functions_18]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Purpose_143]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Related_22]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Responsibilities_20]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_596
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 741]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-
-## Top bridge nodes
-- [[Full System Flowchart]] - degree 4, connects to 1 community
-- [[Security Pipeline Flow]] - degree 3, connects to 1 community

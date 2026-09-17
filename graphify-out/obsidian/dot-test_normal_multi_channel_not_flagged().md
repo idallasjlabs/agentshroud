@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_egress_monitor.py"
+type: "code"
+community: "Community 155"
+location: "L178"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_155
+---
+
+# .test_normal_multi_channel_not_flagged()
+
+## Connections
+- [[EgressEvent]] - `calls` [EXTRACTED]
+- [[Normal usage across channels should not trigger drip detection.]] - `rationale_for` [EXTRACTED]
+- [[TestSlowDripDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_155

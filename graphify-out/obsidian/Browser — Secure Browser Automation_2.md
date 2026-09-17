@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Community 1176"
+community: "Community 1222"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1176
+  - community/Community_1222
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_41]] - `contains` [EXTRACTED]
-- [[README_46]] - `contains` [EXTRACTED]
-- [[Related Skills_44]] - `contains` [EXTRACTED]
-- [[Usage_46]] - `contains` [EXTRACTED]
+- [[Purpose_40]] - `contains` [EXTRACTED]
+- [[Related Skills_31]] - `contains` [EXTRACTED]
+- [[Usage_35]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1176
+#graphify/document #graphify/EXTRACTED #community/Community_1222

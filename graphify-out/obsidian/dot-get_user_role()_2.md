@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_soc_contributors.py"
+type: "code"
+community: "Community 226"
+location: "L28"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_226
+---
+
+# .get_user_role()
+
+## Connections
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_226

@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 504"
-location: "L43"
+community: "Community 705"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/Community_705
 ---
 
 # Function Details
 
 ## Connections
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
-- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
+- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
+- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
+- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/Community_705

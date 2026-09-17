@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 942"
-location: "L25"
+community: "Community 1069"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_942
+  - community/Community_1069
 ---
 
 # Output Format
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_942
+#graphify/document #graphify/EXTRACTED #community/Community_1069

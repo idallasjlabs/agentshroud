@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
-- [[Assets Under Protection]] - document - docs/security/threat-model.md
-- [[Executive Summary_12]] - document - docs/security/threat-model.md
-- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
-- [[System Components in Scope]] - document - docs/security/threat-model.md
-- [[Threat Feeds]] - document - docs/security/threat-model.md
-- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
-- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
-- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
-- [[threat-model]] - document - docs/security/threat-model.md
+- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_59]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Security Hardening_4]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 913]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 474]]
+- 1 edge to [[_COMMUNITY_Community 703]]
+- 1 edge to [[_COMMUNITY_Community 821]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 
 ## Top bridge nodes
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities
+- [[Dockerfile — Gateway]] - degree 12, connects to 5 communities

@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.27
+members: 10
 ---
 
 # Community 905
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
-- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
-- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[CONFIG_5]] - code - skills/custom/icloud/scripts/calendar.js
+- [[args_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[createEvent()_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[getCredentials()_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[https_5]] - code - skills/custom/icloud/scripts/calendar.js
+- [[icloudscriptscalendar.js]] - code - skills/custom/icloud/scripts/calendar.js
+- [[listEvents()_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[makeRequest()_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[parseCalendarData()_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[{ execSync }_3]] - code - skills/custom/icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_905
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 362]]
-
-## Top bridge nodes
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community

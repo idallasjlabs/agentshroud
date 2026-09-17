@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 705
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Re-injection Command (for reference)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Role_68]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Rules_12]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[SKILL_117]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Trigger_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Function Details_37]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Purpose_168]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Related_43]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_security_options(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[security.py_2]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[security.py_1]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[warn_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 
 ## Live Query (requires Dataview plugin)
 

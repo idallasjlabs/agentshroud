@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 694"
-location: "L17"
+community: "Community 917"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_694
+  - community/Community_917
 ---
 
 # Gateway Container (`agentshroud-gateway`)
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[Derived (set at runtime by `config.py`)]] - `contains` [EXTRACTED]
-- [[Optional  Runtime]] - `contains` [EXTRACTED]
-- [[Required]] - `contains` [EXTRACTED]
+- [[Container Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_694
+#graphify/document #graphify/EXTRACTED #community/Community_917

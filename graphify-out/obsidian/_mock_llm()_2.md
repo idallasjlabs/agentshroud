@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "Voice Gateway Routing Tests"
+location: "L1586"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Voice_Gateway_Routing_Tests
+---
+
+# _mock_llm()
+
+## Connections
+- [[test_ws_hermes_agent_calls_call_agent()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests

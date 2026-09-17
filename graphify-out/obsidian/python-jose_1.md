@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Community 243"
-location: "L9"
+community: "Approval Routing & Event Bus"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/Approval_Routing__Event_Bus
 ---
 
-# python-jose
+# python-jose.md
 
 ## Connections
-- [[Auth Methods]] - `contains` [EXTRACTED]
-- [[Current Usage]] - `contains` [EXTRACTED]
-- [[Key Features_1]] - `contains` [EXTRACTED]
-- [[Purpose_193]] - `contains` [EXTRACTED]
-- [[Related Notes_48]] - `contains` [EXTRACTED]
-- [[Security Note_2]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[auth.py]] - `references` [INFERRED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

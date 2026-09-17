@@ -1,20 +1,30 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 176"
-location: "L148"
+community: "Community 36"
+location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/Community_36
 ---
 
 # main()
 
 ## Connections
-- [[Path_44]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `calls` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
+- [[print_output()]] - `calls` [EXTRACTED]
+- [[resolve_token()]] - `calls` [EXTRACTED]
+- [[run_approvals_decide()]] - `calls` [EXTRACTED]
+- [[run_approvals_list()]] - `calls` [EXTRACTED]
+- [[run_cves()]] - `calls` [EXTRACTED]
+- [[run_deploy_status()]] - `calls` [EXTRACTED]
+- [[run_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_176
+#graphify/code #graphify/EXTRACTED #community/Community_36

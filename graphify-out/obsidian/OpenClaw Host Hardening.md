@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 712"
+community: "Community 749"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Community_749
 ---
 
 # OpenClaw Host Hardening
@@ -16,10 +16,10 @@ tags:
 - [[Logging and audit trail]] - `contains` [EXTRACTED]
 - [[Memory writes (conditional)]] - `contains` [EXTRACTED]
 - [[OpenClaw command accuracy]] - `contains` [EXTRACTED]
-- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Overview_25]] - `contains` [EXTRACTED]
 - [[Periodic checks]] - `contains` [EXTRACTED]
 - [[Required confirmations (always)]] - `contains` [EXTRACTED]
-- [[SKILL_212]] - `contains` [EXTRACTED]
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
+- [[healthcheckSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Community_749

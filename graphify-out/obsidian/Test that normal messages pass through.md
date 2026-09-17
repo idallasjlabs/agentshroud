@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 30"
+community: "Prompt Guard & Context Integrity"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # Test that normal messages pass through
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_benign_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

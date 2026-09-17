@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.36
+cohesion: 0.25
 members: 8
 ---
 
 # Community 981
 
-**Cohesion:** 0.36 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[SKILL_234]] - document - skills/openclaw/tmux/SKILL.md
-- [[find-sessions.sh]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[usage()_6]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[usage()_7]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Related Notes_74]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
-- 1 edge to [[_COMMUNITY_Community 547]]
+- 1 edge to [[_COMMUNITY_Community 255]]
 
 ## Top bridge nodes
-- [[SKILL_234]] - degree 4, connects to 2 communities
+- [[SSH Proxy Errors]] - degree 2, connects to 1 community

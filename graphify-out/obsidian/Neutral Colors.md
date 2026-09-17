@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 375"
+community: "Community 376"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Community_376
 ---
 
 # Neutral Colors
@@ -18,4 +18,4 @@ tags:
 - [[Light Mode]] - `contains` [EXTRACTED]
 - [[Text]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/Community_376

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Scorecard Data Integrity Tests (no stub inflation)]] - code - gateway/tests/test_scorecard_integrity.py
-- [[Scorecard Domain Scorer 0-5 Scale Tests]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
+- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
 
 ## Live Query (requires Dataview plugin)
 

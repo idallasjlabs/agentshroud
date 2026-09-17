@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_path_isolation.py"
+type: "code"
+community: "Community 659"
+location: "L320"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_659
+---
+
+# .test_basic_result()
+
+## Connections
+- [[PathRewriteResult]] - `calls` [EXTRACTED]
+- [[Test basic result creation.]] - `rationale_for` [EXTRACTED]
+- [[TestPathRewriteResult]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_659

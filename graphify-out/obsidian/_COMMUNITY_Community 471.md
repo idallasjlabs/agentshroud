@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Assigning Work_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Continuity Files_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Escalation_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Known Risks_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Project Roadmap_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[README.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Risk Management_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Role_98]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[SKILL_168]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Status Reporting_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Task Coordination_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Tracking Format_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[dot-agentsskillsi-bsSKILL]] - document - .agents/skills/i-bs/SKILL.md
+- [[Anti-Patterns to Flag_15]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand System Components]] - document - .agents/skills/i-bs/SKILL.md
+- [[Color Token Definition]] - document - .agents/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce]] - document - .agents/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules]] - document - .agents/skills/i-bs/SKILL.md
+- [[Dependencies_16]] - document - .agents/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)]] - document - .agents/skills/i-bs/SKILL.md
+- [[File & Directory Conventions]] - document - .agents/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
+- [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
+- [[Role_46]] - document - .agents/skills/i-bs/SKILL.md
+- [[Rules_17]] - document - .agents/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
+- [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md
+- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide]] - document - .agents/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

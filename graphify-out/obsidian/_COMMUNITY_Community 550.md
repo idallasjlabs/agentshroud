@@ -1,31 +1,32 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+cohesion: 0.18
+members: 17
 ---
 
 # Community 550
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
-- [[Assets Needed]] - document - branding/INDEX.md
-- [[Brand Color]] - document - branding/INDEX.md
-- [[Documentation_1]] - document - branding/INDEX.md
-- [[Documentation Needed]] - document - branding/INDEX.md
-- [[Documentation Status]] - document - branding/INDEX.md
-- [[Icon Sets]] - document - branding/INDEX.md
-- [[Logo Files]] - document - branding/INDEX.md
-- [[Logo Formats Available]] - document - branding/INDEX.md
-- [[Social Media]] - document - branding/INDEX.md
-- [[🎨 Quick Access]] - document - branding/INDEX.md
-- [[💡 Usage Tips]] - document - branding/INDEX.md
-- [[📁 Directory Overview]] - document - branding/INDEX.md
-- [[📊 Asset Summary]] - document - branding/INDEX.md
-- [[📝 To-Do]] - document - branding/INDEX.md
-- [[📞 Contact]] - document - branding/INDEX.md
+- [[dot-test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_for_missing_directory()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[Load the most recent JSON report file from a directory.      Args         direc]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration.py
+- [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
+- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 790]]
+- 7 edges to [[_COMMUNITY_Community 73]]
+- 3 edges to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 275]]
+- 1 edge to [[_COMMUNITY_Community 168]]
+- 1 edge to [[_COMMUNITY_Community 518]]
 
 ## Top bridge nodes
-- [[AgentShroud Branding Assets Index]] - degree 7, connects to 1 community
+- [[_load_latest_json()]] - degree 15, connects to 4 communities
+- [[get_openscap_summary()]] - degree 11, connects to 3 communities
+- [[TestLoadLatestJson_1]] - degree 8, connects to 1 community
+- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
+- [[dot-test_not_run_when_no_report()_1]] - degree 3, connects to 1 community

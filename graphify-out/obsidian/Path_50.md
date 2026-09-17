@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Config"
-location: "L380"
+community: "Community 583"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_583
 ---
 
 # Path
 
 ## Connections
-- [[.model_post_init()]] - `calls` [EXTRACTED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[apply-patches.js]] - `imports_from` [EXTRACTED]
-- [[browse.js_3]] - `imports_from` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_583

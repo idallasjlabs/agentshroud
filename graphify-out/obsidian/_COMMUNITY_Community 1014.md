@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.32
+members: 8
 ---
 
 # Community 1014
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.32 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Docker Compose (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets Management (deployment doc)]] - concept - docs/architecture/deployment-diagram.md
-- [[Docker Secrets Structure (runsecrets)]] - concept - docs/data/schema-documentation.md
-- [[Named Docker Volumes]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-internal network (172.20.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-isolated network (172.21.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Default governance instance in enforce mode.]] - rationale - gateway/tests/test_subagent_governance.py
+- [[Governance in monitor mode (log but don't block).]] - rationale - gateway/tests/test_subagent_governance.py
+- [[Tests for SubagentGovernance module.]] - rationale - gateway/tests/test_subagent_governance.py
+- [[disabled_gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[fixture]] - code
+- [[gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[monitor_gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[test_subagent_governance.py]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 782]]
+- 1 edge to [[_COMMUNITY_Community 1083]]
+- 1 edge to [[_COMMUNITY_Community 1084]]
+- 1 edge to [[_COMMUNITY_Community 1085]]
+- 1 edge to [[_COMMUNITY_Community 1086]]
+- 1 edge to [[_COMMUNITY_Community 1368]]
+- 1 edge to [[_COMMUNITY_Community 850]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
 
 ## Top bridge nodes
-- [[agentshroud-isolated network (172.21.0.016)]] - degree 2, connects to 1 community
+- [[test_subagent_governance.py]] - degree 11, connects to 7 communities

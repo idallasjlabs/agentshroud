@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/egress_approval.py"
+type: "code"
+community: "Community 88"
+location: "L625"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_88
+---
+
+# .get_rules_for_user()
+
+## Connections
+- [[dot-matches()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[EgressScope]] - `calls` [EXTRACTED]
+- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_88

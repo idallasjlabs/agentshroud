@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.27
+members: 10
 ---
 
 # Community 879
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Constraints]] - document - .agents/skills/i-pr/SKILL.md
-- [[Content Requirements]] - document - .agents/skills/i-pr/SKILL.md
-- [[Header]] - document - .agents/skills/i-pr/SKILL.md
-- [[Objective]] - document - .agents/skills/i-pr/SKILL.md
-- [[Role_26]] - document - .agents/skills/i-pr/SKILL.md
-- [[SKILL_42]] - document - .agents/skills/i-pr/SKILL.md
-- [[Safety]] - document - .agents/skills/i-pr/SKILL.md
-- [[Skill Pull Request (PR) Generator]] - document - .agents/skills/i-pr/SKILL.md
-- [[Technical Detail]] - document - .agents/skills/i-pr/SKILL.md
+- [[CONFIG_3]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[args_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[createEvent()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[getCredentials()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[hermesskillsi-icloudscriptscalendar.js]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[https_3]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[listEvents()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[makeRequest()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[parseCalendarData()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[{ execSync }_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 

@@ -25,15 +25,137 @@ At the start of every session, the knowledge graph for this project lives here:
 
 Do not ask where files are. Read the module index first.
 
-**`/graphify` runs in this repo must always produce a current Obsidian vault.**
-`graphify-out/obsidian/` (separate from `.obsidian-vaults/` above) is the
-graphify-generated, symbol-level knowledge vault and is a first-class
-deliverable, not optional output — run `/graphify --update --obsidian` (or
-follow up with `graphify export obsidian` if the flow used doesn't already
-include it) every time the graph is updated. Committing it: stage in
-batches of ~500 files via `git add --pathspec-from-file=<file>
---pathspec-file-nul` — a single `git add` of the full vault overflows the
-`git-secrets` pre-commit hook's argv (ARG_MAX).
+### GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT
+
+`graphify-out/` is committed to this repo on purpose (~36k files; `.gitignore`
+excludes only `graphify-out/cache/`, `graphify-out/.graphify_*`, and dated
+subdirs). It is checked in so that **any agent, on any machine, can answer
+questions about this codebase cheaply instead of burning tokens re-reading
+source.** Treat it as infrastructure, not as build output.
+
+**1. Query before you grep.** For any question about how this repo works —
+"how does X work", "what calls Y", "where does Z get enforced", "trace the
+flow through W" — run `graphify query "<question>"` FIRST. Only fall back to
+`grep`/`Read`/Explore when the graph genuinely cannot answer it (the graph is
+symbol-level; it will not know about uncommitted work or non-code assets).
+Reading twenty files to reconstruct something the graph already indexed is
+the exact waste this vault exists to prevent.
+
+**2. Check staleness before trusting it.** Compare `graphify-out/manifest.json`'s
+mtime against `git log -1 --format=%cd`. If the graph predates recent commits,
+say so when you answer from it, and refresh it.
+
+**3. Refresh on a regular cadence, and ALWAYS before a prod rebuild.**
+Run `/graphify . --update --obsidian` (incremental — re-extracts only changed
+files):
+- **Mandatory** before rebuilding or releasing prod from `main`. A prod
+  release must never ship against a stale graph.
+- After any merge to `main` that touches `gateway/`, `scripts/`, or `docker/`.
+- Otherwise weekly, alongside the Sunday upgrade.
+
+`graphify-out/obsidian/` (distinct from `.obsidian-vaults/` above) is the
+symbol-level vault and is a first-class deliverable — always pass `--obsidian`
+so it regenerates with the graph, never let the two drift apart.
+
+**4. Committing it.** Stage in batches of ~500 files via
+`git add --pathspec-from-file=<file> --pathspec-file-nul` — a single `git add`
+of the full vault overflows the `git-secrets` pre-commit hook's argv (ARG_MAX).
+Commit the refreshed graph in its own commit, separate from code changes, so
+code diffs stay reviewable.
+
+──────────────────────────────────────────────────────────────────────────────
+## 0.0) PROVE THE OUTCOME, NEVER THE STEPS (NON-NEGOTIABLE)
+──────────────────────────────────────────────────────────────────────────────
+
+This rule is written in blood. Four separate mechanisms in this repo reported
+success for work they never did, and every one of them passed its own checks:
+
+| Reported | Actually did |
+|----------|--------------|
+| `scan: PASS` | scanned zero images (pinned tag did not exist yet) |
+| "Auto-registered as under_review by the daily sync" | registered nothing; the sync never writes |
+| Sunday upgrade `PASS`, seven weeks running | upgraded nothing; the pin never moved |
+| dev→prod handoff `PASS` | a `--phase scan` run that never deployed or soaked |
+
+All four verified that *commands executed*. None verified that *state changed*.
+That is the single defect class behind all of them.
+
+**Therefore, for any automated job, gate, or report in this repo:**
+
+1. **Assert on the resulting state, not on the exit code of the step.** A build
+   that succeeds is not an upgrade. A scanner that runs is not a scan. Compare
+   before/after and fail when they are identical but should not be.
+2. **A no-op must be distinguishable from a success.** If "nothing needed doing"
+   and "nothing got done" produce the same output, the gate is broken. Give the
+   no-op its own status and exit code (see exit 25 / `NOTHING_UPGRADED`).
+3. **Never claim an action in user-facing text that the code does not perform.**
+   The CVE alert claimed auto-registration for weeks while registering nothing.
+   If the message says it happened, the code must make it happen.
+4. **Report deltas.** Every status report states `from → to` for what it changed.
+   "Passed" with no delta and no proof that no delta was needed is a failed run.
+5. **Re-read the machine's record before summarising.** Trust `versions.env`, the
+   handoff JSON, and `docker ps` over your own narrative of what you just did.
+
+When reviewing any gate, ask: *what would this print if the work silently did
+nothing?* If the answer is "PASS", fix the gate before trusting it again.
+
+──────────────────────────────────────────────────────────────────────────────
+## 0.05) WEEKLY UPGRADES — UNATTENDED, AND ON DEMAND
+──────────────────────────────────────────────────────────────────────────────
+
+Owner directive (2026-09-01, reaffirmed 2026-09-15): *"This is a security tool.
+All CVE must be resolved and all versions must be updated to latest release on
+Sunday no exceptions. If code changes are required, we need to make them."*
+
+### EVERYTHING MEANS EVERYTHING (owner directive 2026-09-15, verbatim intent)
+
+*"Update all Agents (Hermes, OpenClaw and any future agents wrapped) and all
+supporting tools: Wazuh, OpenSCAP, Falco, Fluent Bit, docker containers, etc.
+EVERYTHING. I should not have to specify. everything means everything. This is a
+security tool it needs to be secure and provide security."*
+
+The scope is **every versioned thing in this repo**, without exception and
+without waiting to be told. The list below is illustrative, NOT exhaustive —
+anything absent from it is still in scope. If you find yourself asking "is X
+included?", the answer is yes.
+
+| Category | Includes (non-exhaustive) |
+|----------|---------------------------|
+| Wrapped agents | OpenClaw, Hermes, and **any future agent AgentShroud proxies** |
+| Security sidecars | Wazuh, Falco, ClamAV, Trivy, OpenSCAP, Semgrep, Cosign, Syft |
+| Log/telemetry | Fluent Bit, and anything else in the observability path |
+| Containers | Every image in every compose file, every base image in every Dockerfile |
+| Dependencies | `pyproject.toml`, `requirements*.txt`, `uv.lock`, `package.json` + lockfiles, `go.mod`, Rust crates |
+| Gateway + app code | AgentShroud's own pinned deps, including transitive security bumps |
+| Supporting services | docker-socket-proxy, searxng, LibreChat and its datastores, voice gateway, sandbox base images |
+| Agent surface | Skills, MCP servers, plugins, agent definitions, and any config pinning a version |
+| Vendored code | Git submodules, vendored sources, patch files and their anchors |
+| Host tooling | Colima, Docker CLI, compose plugin — report always; apply when the Sunday job owns them |
+
+A component with no newer release is reported as *already latest, verified
+against \<source\> on \<date\>* — that is a valid outcome. A component simply
+absent from the report is a **failed run**: silence is not the same as current,
+and the seven-week no-op happened precisely because absence read as fine.
+
+- **Every component goes to latest stable every Sunday.** Determine "latest"
+  mechanically — `scripts/discover_upstream_versions.py` for the wrapped agents,
+  and a cited command/registry query for everything else. Never from memory,
+  never from whichever changelog happened to be open.
+- **Needing a code change is not grounds to skip a bump.** Patch re-anchoring,
+  build args, config migration — make the change, test it, ship it. The only
+  legitimate BLOCKED is an upgrade that would require loosening a security control.
+- **Two remediation arms for every CVE, not one.** The vendor's patch closes the
+  flaw in that vendor. AgentShroud must independently be able to stop the attack
+  class at the gateway, so that ANY proxied agent — including a third-party agent
+  that never received the vendor fix — is protected. A `Coverage: NONE` verdict
+  from `scripts/triage-cve-mitigations.py` is a GAP, which is tracked work, not a
+  status to record and move on from.
+- **On-demand runs are first-class.** A major advisory does not wait for Sunday:
+  `bash scripts/sunday-upgrade.sh --force --reason "<why>"`. `--force` bypasses
+  only the already-ran-today guard; every safety gate still applies.
+- Entry points: `scripts/sunday-upgrade.sh` (session wrapper, launchd) →
+  `prompts/sunday-upgrade.md` (judgement) → `scripts/sunday-upgrade-apply.sh`
+  (deterministic gates; exit code is the contract).
 
 ## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
 ──────────────────────────────────────────────────────────────────────────────

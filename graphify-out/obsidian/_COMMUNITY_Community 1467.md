@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1467
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_113]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
-- [[Skill sdlc_1]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Benchmark Regression Job]] - code - .github/workflows/ci.yml
+- [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
+- [[main()_12]] - code - scripts/check_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 

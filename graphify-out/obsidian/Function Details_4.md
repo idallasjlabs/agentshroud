@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 560"
-location: "L38"
+community: "Community 514"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_560
+  - community/Community_514
 ---
 
 # Function Details
 
 ## Connections
-- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
-- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
-- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
-- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
-- [[sanitize(content)]] - `contains` [EXTRACTED]
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
+- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
+- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
+- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
+- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_560
+#graphify/document #graphify/EXTRACTED #community/Community_514

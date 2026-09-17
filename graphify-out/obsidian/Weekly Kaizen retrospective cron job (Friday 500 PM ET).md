@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "concept"
-community: "Community 309"
+community: "Community 317"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Community_317
 ---
 
 # Weekly Kaizen retrospective cron job (Friday 5:00 PM ET)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD (Get Shit Done) cadence — adopted in place of formal ScrumSAFe sprints]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_309
+#graphify/concept #graphify/EXTRACTED #community/Community_317

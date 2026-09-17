@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 510"
+community: "Community 522"
 location: "L9574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/Community_522
 ---
 
 # full_access collaborator must receive the general-access disclosure message.
 
 ## Connections
-- [[.test_full_access_disclosure_text()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_full_access_disclosure_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_510
+#graphify/rationale #graphify/EXTRACTED #community/Community_522

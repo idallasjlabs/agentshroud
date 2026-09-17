@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.scan_tool_result()]] - code - gateway/security/prompt_guard.py
+- [[Vulcan (i-vulcan skill, script approver)]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

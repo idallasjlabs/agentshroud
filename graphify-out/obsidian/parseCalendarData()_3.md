@@ -1,18 +1,18 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "Community 866"
+community: "Community 905"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_866
+  - community/Community_905
 ---
 
 # parseCalendarData()
 
 ## Connections
-- [[calendar.js_3]] - `contains` [EXTRACTED]
+- [[icloudscriptscalendar.js]] - `contains` [EXTRACTED]
 - [[listEvents()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_866
+#graphify/code #graphify/EXTRACTED #community/Community_905

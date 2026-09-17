@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 1009"
+community: "Community 1052"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Community_1052
 ---
 
 # Deployment Matrix  (Direct to Prod)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Community_1052

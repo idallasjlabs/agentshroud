@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Troubleshooting_19]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Purpose_78]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Related Skills_69]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Usage_73]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[openclawskillsi-bsREADME]] - document - docker/config/openclaw/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1261
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 767]]
-
-## Top bridge nodes
-- [[Troubleshooting_19]] - degree 5, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 929"
-location: "L58"
+community: "Community 266"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/Community_266
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/Community_266

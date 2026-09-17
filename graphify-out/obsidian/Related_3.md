@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 615"
-location: "L107"
+community: "Community 385"
+location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_615
+  - community/Community_385
 ---
 
 # Related
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_615
+#graphify/document #graphify/EXTRACTED #community/Community_385

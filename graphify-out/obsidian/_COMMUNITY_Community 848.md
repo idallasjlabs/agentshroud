@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.24
-members: 10
+cohesion: 0.20
+members: 11
 ---
 
 # Community 848
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[CD Skill (Continuous Delivery pipeline design)]] - document - docker/config/hermes/skills/i-cd/SKILL.md
-- [[CI Skill (Continuous Integration pipeline)]] - document - docker/config/hermes/skills/i-ci/SKILL.md
-- [[CICD Pipeline Advisor (SKILL)]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[CICD Quality Gates (execution order)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Code Review (CR) (README)]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Code Review (CR) (SKILL)]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Data Validation (DATA-VAL) Skill]] - document - .agents/skills/i-data/SKILL.md
-- [[Data Validation README]] - document - .agents/skills/i-data/README.md
-- [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
-- [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - concept - .agents/skills/i-data/SKILL.md
+- [[dot-test_default_policy_values()]] - code - gateway/tests/test_key_rotation.py
+- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
+- [[Test credential rotation policy configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test default policy has reasonable values.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestCredentialRotationPolicy]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
+- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +30,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 853]]
-- 1 edge to [[_COMMUNITY_Community 1145]]
-- 1 edge to [[_COMMUNITY_Community 1018]]
+- 6 edges to [[_COMMUNITY_Community 291]]
+- 5 edges to [[_COMMUNITY_Community 232]]
+- 3 edges to [[_COMMUNITY_Community 544]]
+- 2 edges to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 441]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 715]]
 
 ## Top bridge nodes
-- [[CICD Pipeline Advisor (SKILL)]] - degree 8, connects to 3 communities
-- [[Code Review (CR) (SKILL)]] - degree 7, connects to 1 community
+- [[test_key_rotation.py]] - degree 18, connects to 7 communities
+- [[TestCredentialRotationPolicy]] - degree 9, connects to 4 communities
+- [[dot-test_default_policy_values()]] - degree 3, connects to 1 community

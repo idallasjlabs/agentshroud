@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 66"
+location: "L398"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_66
+---
+
+# .test_known_bot_returns_cve_summary()
+
+## Connections
+- [[TestAgentCvesBotId]] - `method` [EXTRACTED]
+- [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[get_agent_cves()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_66

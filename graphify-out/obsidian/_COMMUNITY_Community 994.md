@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.39
+cohesion: 0.29
 members: 8
 ---
 
 # Community 994
 
-**Cohesion:** 0.39 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_keeps_last_n_lines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_only_newlines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_shorter_than_n()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_strips_trailing_newline()_1]] - code - gateway/tests/test_multi_host_test.py
-- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestTail]] - code - gateway/tests/test_multi_host_test.py
-- [[tail()_1]] - code - gateway/tools/multi_host_test.py
+- [[06-operations]] - document - docs/diagrams/06-operations.md
+- [[18. Runbook  Decision Tree — On-Call Logic]] - document - docs/diagrams/06-operations.md
+- [[19. Incident Response Flow — Severity & Escalation]] - document - docs/diagrams/06-operations.md
+- [[20. Monitoring & Observability Map]] - document - docs/diagrams/06-operations.md
+- [[AgentShroud — Operations & Reliability Diagrams]] - document - docs/diagrams/06-operations.md
+- [[Incident Response Flow — Severity & Escalation]] - concept - docs/diagrams/06-operations.md
+- [[Monitoring & Observability Map]] - concept - docs/diagrams/06-operations.md
+- [[Runbook  Decision Tree — On-Call Logic]] - concept - docs/diagrams/06-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 898]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 813]]
+- 2 edges to [[_COMMUNITY_Community 240]]
+- 1 edge to [[_COMMUNITY_Community 451]]
 
 ## Top bridge nodes
-- [[TestTail]] - degree 9, connects to 3 communities
-- [[tail()_1]] - degree 9, connects to 3 communities
+- [[06-operations]] - degree 5, connects to 1 community
+- [[Incident Response Flow — Severity & Escalation]] - degree 3, connects to 1 community
+- [[Runbook  Decision Tree — On-Call Logic]] - degree 3, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 506"
+community: "Community 656"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_506
+  - community/Community_656
 ---
 
 # Threat Model
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_506
+#graphify/document #graphify/EXTRACTED #community/Community_656

@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 442
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[04-security]] - document - docs/diagrams/04-security.md
-- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
-- [[11. Trust Boundary Diagram]] - document - docs/diagrams/04-security.md
-- [[12. Credential Flow Diagram]] - document - docs/diagrams/04-security.md
-- [[13. Network Security Diagram — Egress Controls]] - document - docs/diagrams/04-security.md
-- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
-- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
-- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
-- [[AgentShroud — Diagram Library]] - document - docs/diagrams/README.md
-- [[AgentShroud — Security & Access Diagrams]] - document - docs/diagrams/04-security.md
-- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
-- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
-- [[Credential Flow Diagram (op-proxy)]] - concept - docs/diagrams/04-security.md
-- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
-- [[Diagrams Not Yet Implemented]] - document - docs/diagrams/README.md
-- [[Index]] - document - docs/diagrams/README.md
-- [[Network Security Diagram — Egress Controls]] - concept - docs/diagrams/04-security.md
-- [[Priority Reading Order]] - document - docs/diagrams/README.md
-- [[README_120]] - document - docs/diagrams/README.md
-- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[dot-script_content()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_creates_incident_record()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_disconnect_exports_ledger()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_freeze_pauses_containers()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_has_confirmation_prompt()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_has_usage_function()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_invalid_mode_shows_usage()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_paranoid_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_paranoid_env_kill_switch_action()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_recommended_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_script_exists()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_script_is_executable()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_sets_strict_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_disconnect_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_freeze_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_shutdown_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[Kill switch configuration in example configs.]] - rationale - gateway/tests/test_killswitch_modes.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_modes.py
+- [[TestKillSwitchScript]] - code - gateway/tests/test_killswitch_modes.py
+- [[Verify the kill switch script structure and modes.]] - rationale - gateway/tests/test_killswitch_modes.py
+- [[test_killswitch_modes.py]] - code - gateway/tests/test_killswitch_modes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,20 +38,3 @@ members: 20
 TABLE source_file, type FROM #community/Community_442
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 792]]
-- 2 edges to [[_COMMUNITY_Community 137]]
-- 1 edge to [[_COMMUNITY_Community 373]]
-- 1 edge to [[_COMMUNITY_Community 833]]
-- 1 edge to [[_COMMUNITY_Community 556]]
-- 1 edge to [[_COMMUNITY_Community 554]]
-- 1 edge to [[_COMMUNITY_Community 834]]
-- 1 edge to [[_COMMUNITY_Community 951]]
-
-## Top bridge nodes
-- [[README_120]] - degree 8, connects to 5 communities
-- [[04-security]] - degree 5, connects to 1 community
-- [[Credential Flow Diagram (op-proxy)]] - degree 2, connects to 1 community
-- [[Network Security Diagram — Egress Controls]] - degree 2, connects to 1 community
-- [[Dependency Graph — Component Deployment Order]] - degree 2, connects to 1 community

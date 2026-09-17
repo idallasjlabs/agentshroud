@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[graphify_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[For --update and --cluster-only_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[For graphify add and --watch_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[For graphify query_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[For the commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Honesty Rules_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[SKILL_64]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 2 - Detect files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 5 - Label communities_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Usage_41]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[What graphify is for_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
+- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
+- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
+- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
+- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[MCP Proxy]] - concept - docs/architecture/system-architecture.md
+- [[MCP Server Integration Guide]] - document - docs/api/integration-guide.md
+- [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
+- [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
+- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
+- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Web Proxy]] - concept - docs/architecture/system-architecture.md
+- [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
+- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
+- [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[mcp-config.yml]] - code - docs/data/schema-documentation.md
+- [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +41,18 @@ members: 24
 TABLE source_file, type FROM #community/Community_357
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 499]]
+- 1 edge to [[_COMMUNITY_Community 217]]
+- 1 edge to [[_COMMUNITY_Community 256]]
+- 1 edge to [[_COMMUNITY_Community 671]]
+
+## Top bridge nodes
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 2 communities
+- [[Proxy Layer_1]] - degree 5, connects to 1 community
+- [[MCP Proxy]] - degree 4, connects to 1 community
+- [[11. Automated Operations]] - degree 3, connects to 1 community
+- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

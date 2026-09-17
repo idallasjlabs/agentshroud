@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 203"
+community: "Community 86"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/Community_86
 ---
 
 # agentshroud.yaml.md
@@ -17,8 +17,8 @@ tags:
 - [[HTTP_PROXY]] - `references` [EXTRACTED]
 - [[LOG_LEVEL]] - `references` [EXTRACTED]
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
-- [[egress_filter.py]] - `references` [INFERRED]
+- [[egress_filter.py_1]] - `references` [INFERRED]
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[ssh-config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/document #graphify/EXTRACTED #community/Community_86

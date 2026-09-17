@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1292
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[API Documentation]] - document - docs/api/README.md
-- [[Current Status_1]] - document - docs/api/README.md
-- [[Planned Documents]] - document - docs/api/README.md
-- [[README_118]] - document - docs/api/README.md
+- [[Purpose_109]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Usage_104]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[openclawskillsi-vulcanREADME]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 

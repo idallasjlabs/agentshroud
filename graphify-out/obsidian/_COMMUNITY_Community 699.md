@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 699
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Role_32]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Rules_2]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[SKILL_54]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Trigger]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Constraints_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Evidence_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Problem_7]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Remediation_6]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Root Cause_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Severity_8]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 

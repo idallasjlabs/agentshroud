@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[AgentShroud Module Inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Original 33 Modules (v0.6.0)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Pipeline Integration Points_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[module-inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[Purpose_86]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Related Skills_77]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Usage_81]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)_2]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[openclawskillsi-icloudREADME]] - document - docker/config/openclaw/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/xml_leak_filter.py"
+type: "code"
+community: "Blue/Red Team Security Auditor Skills"
+location: "L91"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Blue/Red_Team_Security_Auditor_Skills
+---
+
+# .filter_response()
+
+## Connections
+- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
+- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

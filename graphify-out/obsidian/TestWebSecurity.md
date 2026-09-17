@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L706"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # TestWebSecurity
 
 ## Connections
-- [[.test_dashboard_has_csp_meta()]] - `method` [EXTRACTED]
-- [[.test_dashboard_html_exists()]] - `method` [EXTRACTED]
-- [[.test_dashboard_no_inline_secrets()]] - `method` [EXTRACTED]
-- [[.test_no_mixed_content()]] - `method` [EXTRACTED]
-- [[.test_xss_in_dashboard_inputs()]] - `method` [EXTRACTED]
+- [[dot-test_dashboard_has_csp_meta()]] - `method` [EXTRACTED]
+- [[dot-test_dashboard_html_exists()]] - `method` [EXTRACTED]
+- [[dot-test_dashboard_no_inline_secrets()]] - `method` [EXTRACTED]
+- [[dot-test_no_mixed_content()]] - `method` [EXTRACTED]
+- [[dot-test_xss_in_dashboard_inputs()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -33,13 +33,13 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test web dashboard and API security headers.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard

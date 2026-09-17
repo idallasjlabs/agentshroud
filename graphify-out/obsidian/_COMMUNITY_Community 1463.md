@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1463
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_91]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
-- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
+- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 

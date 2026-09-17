@@ -10,39 +10,39 @@ members: 33
 **Members:** 33 nodes
 
 ## Members
-- [[.block_credentials()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.filter_xml_blocks()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.sanitize()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
-- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
-- [[ResourceLimits]] - code - gateway/security/resource_guard.py
-- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
-- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
-- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
-- [[resource_guard.py]] - code - gateway/security/resource_guard.py
-- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
+- [[1Password Cloud]] - concept - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[1Password op-proxy (POST credentialsop-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)]] - concept - docs/diagrams/images/diagram-12-credential-flow.png
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - concept - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, googleapis.com, .github.com, .githubusercontent.com, imapsmtp.mail.me.com)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[BlockedUntrusted (LAN RFC1918, unlisted domains)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Bot Container (starts with ZERO 1Password access)]] - concept - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[Bot Environment (secrets live only in container memory as env vars; never written to disk, never logged)]] - image - docs/diagrams/images/diagram-12-credential-flow.png
+- [[Containers startup order agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Credential Flow Sequence Diagram (1Password op-proxy)]] - image - docs/diagrams/images/diagram-12-credential-flow.png
+- [[Current Status_6]] - document - docs/integrations/README.md
+- [[Docker Deployment Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Images docker-agentshroud (node22-bookworm-slim, Dockerfile.agentshroud), docker-gateway (python3.11-slim, gatewayDockerfile)]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Volumes (auto-created) agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Gateway Container (has service account)]] - concept - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[Incident Response Severity Flowchart]] - image - docs/diagrams/images/diagram-19-incident-response.png
+- [[Integrations Documentation]] - document - docs/integrations/README.md
+- [[Network Security  Egress Control Flowchart]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[POST credentialsop-proxy endpoint]] - concept - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[Planned Documents_5]] - document - docs/integrations/README.md
+- [[Runbook branch Container crash loop → docker logs → config invalid  op-proxy failed  OOM  Node.js error]] - image - docs/diagrams/images/diagram-18-runbook.png
+- [[Runbook branch Security alert → review blocked_domainHIGH threat entries → legitimate action allowlist vs kill switch]] - image - docs/diagrams/images/diagram-18-runbook.png
+- [[Severity matrix P1 Critical  P2 High  P3 Medium  P4 Low, with owners and response windows]] - image - docs/diagrams/images/diagram-19-incident-response.png
+- [[Troubleshooting Runbook Decision Tree]] - image - docs/diagrams/images/diagram-18-runbook.png
+- [[Trust Boundary Diagram]] - concept - docs/diagrams/04-security.md
+- [[Trust Zone 0 — Owner (Isaiah Jefferson approvereject, gateway admin, container restart, secret rotation)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[integrationsREADME]] - document - docs/integrations/README.md
+- [[op_proxy_read_with_retry() (cascading retries 5s,10s,15s,30s,60s)]] - concept - docs/diagrams/images/diagram-12-credential-flow.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,24 +52,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 88]]
-- 12 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 7 edges to [[_COMMUNITY_Community 807]]
-- 6 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 351]]
-- 3 edges to [[_COMMUNITY_Community 918]]
-- 2 edges to [[_COMMUNITY_Community 83]]
-- 2 edges to [[_COMMUNITY_Community 850]]
-- 1 edge to [[_COMMUNITY_Community 165]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 95]]
-- 1 edge to [[_COMMUNITY_Community 347]]
-- 1 edge to [[_COMMUNITY_Community 97]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 10 edges to [[_COMMUNITY_Community 184]]
+- 2 edges to [[_COMMUNITY_Community 1078]]
+- 1 edge to [[_COMMUNITY_Community 451]]
+- 1 edge to [[_COMMUNITY_Community 728]]
 
 ## Top bridge nodes
-- [[ResourceLimits]] - degree 49, connects to 9 communities
-- [[resource_guard.py]] - degree 10, connects to 5 communities
-- [[VRAMHeadroomError]] - degree 15, connects to 4 communities
-- [[_FakeSanitizer_1]] - degree 9, connects to 3 communities
-- [[LLMProxy_2]] - degree 5, connects to 3 communities
+- [[Trust Boundary Diagram]] - degree 8, connects to 2 communities
+- [[1Password op-proxy (POST credentialsop-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)]] - degree 11, connects to 1 community
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - degree 10, connects to 1 community
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - degree 7, connects to 1 community
+- [[Troubleshooting Runbook Decision Tree]] - degree 5, connects to 1 community

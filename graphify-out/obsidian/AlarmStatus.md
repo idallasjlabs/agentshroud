@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 19"
+community: "Voice Gateway STT & Browser Security"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # AlarmStatus
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

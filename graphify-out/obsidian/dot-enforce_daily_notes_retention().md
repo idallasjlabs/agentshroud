@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/memory_lifecycle.py"
+type: "code"
+community: "Memory Integrity & Lifecycle"
+location: "L243"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Memory_Integrity__Lifecycle
+---
+
+# .enforce_daily_notes_retention()
+
+## Connections
+- [[dot-archive_file()]] - `calls` [EXTRACTED]
+- [[dot-run_lifecycle_maintenance()]] - `calls` [EXTRACTED]
+- [[Enforce retention policy for daily notes.]] - `rationale_for` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

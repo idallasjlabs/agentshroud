@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 786
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_1]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Input Requirements_3]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Output Format_3]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Persona_2]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Quality Checklist_3]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Role_11]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[SKILL_17]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[System Prompt_2]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[architecture.puml (PlantUML)]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[diagramsREADME]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[flow.mmd (Mermaid)]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Current Status_10]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Next Steps_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Option 3 Both Services]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Security Tailscale ACLs]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Stop Tailscale Serve]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[TAILSCALE_COMMANDS]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Tailscale Remote Access (Pi)]] - concept - docs/operations/raspberry-pi.md
+- [[Tailscale Remote Access Setup]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Verify Tailscale Serve Status]] - document - docs/reference/TAILSCALE_COMMANDS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +29,12 @@ members: 11
 TABLE source_file, type FROM #community/Community_786
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 323]]
+- 1 edge to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 787]]
+
+## Top bridge nodes
+- [[TAILSCALE_COMMANDS]] - degree 4, connects to 2 communities
+- [[Tailscale Remote Access (Pi)]] - degree 2, connects to 1 community

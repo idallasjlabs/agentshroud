@@ -1,26 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Community 117"
-location: "L119"
+community: "Community 1159"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Community_1159
 ---
 
 # Security Controls
 
 ## Connections
-- [[1. Container Isolation]] - `contains` [EXTRACTED]
-- [[10. Approval Queue]] - `contains` [EXTRACTED]
-- [[2. Capability Dropping]] - `contains` [EXTRACTED]
-- [[2. Network Isolation]] - `contains` [EXTRACTED]
-- [[3. Resource Limits]] - `contains` [EXTRACTED]
-- [[5. Audit Ledger]] - `contains` [EXTRACTED]
-- [[7. Secrets Management]] - `contains` [EXTRACTED]
-- [[8. Bot Identity Separation]] - `contains` [EXTRACTED]
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[approval_queue.py]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Community_1159

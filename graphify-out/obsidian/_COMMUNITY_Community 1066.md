@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[4.1 Per-bot egress allowlist completeness]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.2 Per-bot trust seeding]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.3 Per-bot CVE triage cron health]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.4 Hermes SOUL.md information disclosure posture]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.5 Hermes dashboard TCP forwarder — binding address]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[1Password credential store]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[calendar.js — iCloud Calendar Management]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README — iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[i-icloud SKILL — iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptscontacts.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsmail.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsnotes.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1066
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 924]]
-
-## Top bridge nodes
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - degree 7, connects to 1 community

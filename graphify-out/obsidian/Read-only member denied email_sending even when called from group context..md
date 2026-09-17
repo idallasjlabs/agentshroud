@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 714"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_714
 ---
 
 # Read-only member denied email_sending even when called from group context.
 
 ## Connections
-- [[.test_readonly_denied_email_sending_in_group()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_readonly_denied_email_sending_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_714

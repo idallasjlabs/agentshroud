@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "Community 366"
+community: "Community 371"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/Community_371
 ---
 
 # agentshroud-security-overview-v0.8.0.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Overview v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/Community_371

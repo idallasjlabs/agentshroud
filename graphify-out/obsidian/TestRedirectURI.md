@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 175"
+community: "P3 Infrastructure Security Modules"
 location: "L163"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_175
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestRedirectURI
 
 ## Connections
-- [[.test_different_uri_rejected()]] - `method` [EXTRACTED]
-- [[.test_exact_match_accepted()]] - `method` [EXTRACTED]
-- [[.test_http_rejected()]] - `method` [EXTRACTED]
-- [[.test_path_traversal_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_different_uri_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_exact_match_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_http_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_path_traversal_rejected()_1]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_175
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

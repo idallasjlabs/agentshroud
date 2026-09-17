@@ -1,18 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 15"
-location: "L350"
+community: "Community 153"
+location: "L2704"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_15
+  - graphify/INFERRED
+  - community/Community_153
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()_1]] - `references` [EXTRACTED]
-- [[.disconnect()_1]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/INFERRED #community/Community_153

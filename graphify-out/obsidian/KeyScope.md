@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Community 80"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Community_80
 ---
 
 # KeyScope
 
 ## Connections
-- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Community_80

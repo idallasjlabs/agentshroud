@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 711
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Purpose_111]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[auth.py_3]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Purpose_172]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Severity Order (for ranking)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[generate_summary(report)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[parse_trivy_output(raw)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[save_report(report, log_dir)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[trivy_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[trivy_report.py]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +31,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_711
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 680]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 745]]
-
-## Top bridge nodes
-- [[auth.py_3]] - degree 11, connects to 3 communities

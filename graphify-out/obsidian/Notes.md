@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 356"
-location: "L364"
+community: "Community 1016"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Community_1016
 ---
 
 # Notes
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Community_1016

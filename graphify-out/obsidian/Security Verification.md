@@ -1,17 +1,22 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 702"
-location: "L132"
+community: "Community 340"
+location: "L914"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_702
+  - community/Community_340
 ---
 
 # Security Verification
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Audit Trail Verification]] - `contains` [EXTRACTED]
+- [[Dashboard Security Events]] - `contains` [EXTRACTED]
+- [[Health Check Verification]] - `contains` [EXTRACTED]
+- [[Production Checklist]] - `contains` [EXTRACTED]
+- [[Security Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_702
+#graphify/document #graphify/EXTRACTED #community/Community_340

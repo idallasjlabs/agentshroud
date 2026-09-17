@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Community 370"
+community: "Community 499"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/Community_499
 ---
 
 # trust_manager (trust levels)
 
 ## Connections
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
-- [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
+- [[TrustManager_4]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_370
+#graphify/image #graphify/EXTRACTED #community/Community_499

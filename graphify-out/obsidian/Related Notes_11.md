@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 903"
-location: "L65"
+community: "Community 217"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_903
+  - community/Community_217
 ---
 
 # Related Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_903
+#graphify/document #graphify/EXTRACTED #community/Community_217

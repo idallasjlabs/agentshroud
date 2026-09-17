@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 43"
+community: "Community 281"
 location: "L793"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_281
 ---
 
 # Background mtime-poll watcher: reload the config when the file changes.      Pol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[config_watcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Community_281

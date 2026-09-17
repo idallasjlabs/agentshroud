@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 1348"
+community: "Community 37"
 location: "L651"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1348
+  - community/Community_37
 ---
 
 # test_local_backend_headers_does_not_mutate_input()
 
 ## Connections
-- [[Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX)     must w]] - `rationale_for` [EXTRACTED]
+- [[dot-_local_backend_headers()]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
 - [[Returns a copy — never mutates the caller's headers dict in place.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1348
+#graphify/code #graphify/EXTRACTED #community/Community_37

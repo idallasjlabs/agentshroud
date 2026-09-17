@@ -31,7 +31,8 @@
 #                         dev additionally writes the handoff JSON that gates prod.
 #   --dry-run             Run every read-only phase and report what WOULD change.
 #                         Makes no mutation: no build, no compose up, no pin edit.
-#   --phase P             preflight|baseline|scan|apply|verify|all   (default: all)
+#   --phase P             preflight|discover|baseline|scan|apply|verify|all
+#                         (default: all)
 #   --soak-seconds N      Post-change stability soak. Default 120 (procedure
 #                         requires containers stay healthy at least 2 minutes).
 #   --max-critical N      Fail the scan gate above N CRITICAL findings.
@@ -47,6 +48,9 @@
 #   0   all requested phases passed
 #   10  preflight failed (environment not fit to run)
 #   20  scan gate failed (--max-critical exceeded)
+#   25  NOTHING WAS UPGRADED although a newer upstream release exists.
+#       The run was mechanically green but achieved nothing — see the no-op
+#       gate below. This is a job malfunction, not a healthy stack.
 #   30  apply failed (build/compose error) — rollback attempted
 #   40  verify failed (unhealthy/restart loop/errors) — rollback attempted
 #   50  rollback itself failed — STACK MAY BE DEGRADED, human required
@@ -68,7 +72,10 @@ SOAK_SECONDS=120
 MAX_CRITICAL=""
 ALLOW_DIRTY=0
 ALLOW_DIRTY_BUILD=0
-HANDOFF_DIR="/Users/Shared/agentshroud-sunday"
+# Overridable (like SUNDAY_COMPOSE_FILE/SUNDAY_CONTAINERS/SUNDAY_SCAN_IMAGES)
+# so tests can point the dev->prod gate at a scratch dir instead of writing to
+# the real shared one that prod actually reads.
+HANDOFF_DIR="${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}"
 COMPOSE_FILE="${SUNDAY_COMPOSE_FILE:-$REPO/docker/docker-compose.yml}"
 ARTIFACT_DIR="$REPO/reports/sunday/$TODAY"
 
@@ -116,6 +123,12 @@ log()  { printf '[apply %s] %s\n'        "$(_ts)" "$*"; }
 warn() { printf '[apply %s] WARN: %s\n'  "$(_ts)" "$*" >&2; }
 err()  { printf '[apply %s] ERROR: %s\n' "$(_ts)" "$*" >&2; }
 die()  { local code="$1"; shift; err "$*"; exit "$code"; }
+
+# scan-gate logic lives in a sourced lib (like container-runtime.sh below) so
+# it can be unit-tested with a controlled PATH — this script's own PATH
+# hardening above is deliberately hostile to that (see scripts/lib/sunday-scan.sh).
+# shellcheck source=scripts/lib/sunday-scan.sh
+. "$REPO/scripts/lib/sunday-scan.sh"
 
 # ── Container-runtime + compose-file resolution (mirrors scripts/asb) ────────
 # scripts/asb already solves "which compose binary, which override file, which
@@ -178,8 +191,8 @@ case "$ENVIRONMENT" in
   *) die 10 "--env must be 'dev' or 'prod' (got: '${ENVIRONMENT:-<empty>}')" ;;
 esac
 case "$PHASE" in
-  preflight|baseline|scan|apply|verify|all) ;;
-  *) die 10 "--phase must be one of preflight|baseline|scan|apply|verify|all (got: '$PHASE')" ;;
+  preflight|discover|baseline|scan|apply|verify|all) ;;
+  *) die 10 "--phase must be one of preflight|discover|baseline|scan|apply|verify|all (got: '$PHASE')" ;;
 esac
 if ! printf '%s' "$SOAK_SECONDS" | grep -Eq '^[0-9]+$'; then
   die 10 "--soak-seconds must be an integer (got: '$SOAK_SECONDS')"
@@ -367,6 +380,8 @@ phase_baseline() {
     id="$(docker inspect --format '{{.Image}}' "$c" 2>/dev/null || true)"
     [ -n "$id" ] || continue
     if _mutating; then
+      # shellcheck disable=SC2015  # safe here: a plain `var=$((...))` assignment always exits 0,
+      # so the `|| warn` branch can only be reached by `docker tag` itself failing.
       docker tag "$id" "agentshroud-rollback/${c}:${TODAY}" 2>/dev/null && tagged=$((tagged + 1)) || \
         warn "baseline: could not retag $c for rollback"
     else
@@ -393,8 +408,27 @@ phase_baseline() {
     echo "# A bare \`git checkout <sha>\` detaches HEAD and silently strips the branch"
     echo "# out from under any later commit — observed 2026-09-11, where a rollback"
     echo "# left the repo detached at the pre-run commit."
-    echo "git -C '$REPO' restore --source=$git_rev --staged --worktree -- . 2>/dev/null || \\"
-    echo "  git -C '$REPO' checkout $git_rev -- . "
+    # SCOPED to the version-pin file, deliberately. This used to restore the
+    # whole tree (`-- .`), which reverted the repo to the baseline COMMIT —
+    # silently discarding anything committed during the run. The Sunday prompt
+    # tells the session to commit as it goes ("one commit per logical
+    # component"), so a rollback would throw that work away; it did exactly
+    # that on 2026-09-15, wiping two commits made while an upgrade was in
+    # flight. Rolling back an upgrade means undoing the VERSION BUMP, not
+    # rewinding the repository.
+    echo "git -C '$REPO' restore --source=$git_rev --staged --worktree -- docker/versions.env 2>/dev/null || \\"
+    echo "  git -C '$REPO' checkout $git_rev -- docker/versions.env"
+    echo ''
+    echo '# Other files differing from the baseline are NOT reverted automatically —'
+    echo '# they may be deliberate compat fixes, or unrelated work committed during'
+    echo '# the run. Listed here so a human can decide, rather than losing them.'
+    echo "_other=\"\$(git -C '$REPO' diff --name-only $git_rev -- . ':(exclude)docker/versions.env' 2>/dev/null)\""
+    # shellcheck disable=SC2016  # literal text emitted into the generated script
+    echo 'if [ -n "$_other" ]; then'
+    echo '  echo "NOTE: these files differ from the upgrade baseline and were left untouched:"'
+    # shellcheck disable=SC2016  # literal text emitted into the generated script
+    printf '%s\n' '  printf "  %s\n" $_other'
+    echo 'fi'
     echo ''
     echo '# 2. Restore images'
     for c in $CONTAINERS; do
@@ -403,8 +437,14 @@ phase_baseline() {
     echo ''
     echo '# 3. Recreate containers from the restored images'
     echo '# hermes excluded — its container is managed by scripts/asb (run-standalone.sh),'
+    # shellcheck disable=SC2016  # backticks are literal text in the generated script's comment
     echo '# not `docker compose up`; see the matching comment in phase_apply above.'
-    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+    # The `|| true` inside the generated command substitution is load-bearing:
+    # the rollback script runs under `set -euo pipefail` (emitted above), and a
+    # `grep -v` matching nothing exits 1, which would abort the ROLLBACK — the
+    # one path that must never fail closed. Same hazard already documented on
+    # _dirty_build_files/_buildable_services/phase_apply.
+    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes' || true)"
     echo 'if docker image inspect agentshroud-rollback/agentshroud-hermes-v2:'"$TODAY"' >/dev/null 2>&1; then'
     echo "  docker tag agentshroud-rollback/agentshroud-hermes-v2:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
     echo "  [ -x '$REPO/scripts/asb' ] && '$REPO/scripts/asb' up hermes || echo 'WARN: hermes image restored but not redeployed — run scripts/asb up hermes manually'"
@@ -416,53 +456,97 @@ phase_baseline() {
 }
 
 # ═════════════════════════════════════════════════════════════════════════════
-# PHASE: scan — real Trivy counts. Absence of a scanner is a FAILED gate,
-# never a silent pass (repo rule: no fake green).
+# PHASE: discover — what is the latest upstream release, really?
+#
+# For seven weeks this pipeline reported PASS every Sunday while rebuilding the
+# SAME upstream version. OPENCLAW_VERSION was introduced as 2026.7.1 on
+# 2026-07-29 and moved exactly once since, to the downstream counter 2026.7.1-2,
+# while npm shipped 2026.8.1 through 2026.9.4. HERMES_VERSION moved once, in a
+# feature PR, never in a Sunday run.
+#
+# The cause is stated in this script's own header: "the agent proposes versions;
+# this script disposes." It builds whatever versions.env already says and never
+# asked what was actually available — that was left to an LLM session's
+# judgement, and the gates below then verified only that the rebuild worked.
+# Rebuilding an identical version passes every one of them.
+#
+# Discovery is mechanical, so it belongs here rather than in a prompt.
 # ═════════════════════════════════════════════════════════════════════════════
-phase_scan() {
-  log "scan: CRITICAL/HIGH counts for: $SCAN_IMAGES"
+DISCOVERED_OPENCLAW_VERSION=""
+DISCOVERED_HERMES_TAG=""
+UPGRADE_AVAILABLE=0
 
-  if ! command -v trivy >/dev/null 2>&1; then
-    if [ -n "$MAX_CRITICAL" ]; then
-      die 20 "trivy not installed but --max-critical=$MAX_CRITICAL was requested — cannot enforce a CVE gate without a scanner. Refusing to report a pass."
-    fi
-    warn "scan: trivy not installed — SKIPPED. No CVE claim can be made from this run."
-    printf '{"scanner": "absent", "images": {}}\n' > "$SCAN_JSON"
+phase_discover() {
+  local discover_py="$REPO/scripts/discover_upstream_versions.py"
+  if [ ! -f "$discover_py" ]; then
+    warn "discover: $discover_py not found — cannot tell whether this run upgrades anything"
     return 0
   fi
 
-  local total_crit=0 first=1
-  {
-    printf '{\n  "scanner": "trivy",\n  "images": {\n'
-    local img out crit high
-    for img in $SCAN_IMAGES; do
-      if ! docker image inspect "$img" >/dev/null 2>&1; then
-        warn "scan: image not present locally, skipping: $img"
-        continue
-      fi
-      out="$(trivy image --quiet --scanners vuln --severity CRITICAL,HIGH \
-              --format json "$img" 2>/dev/null || true)"
-      if [ -z "$out" ]; then
-        warn "scan: trivy returned nothing for $img"
-        continue
-      fi
-      crit="$(printf '%s' "$out" | grep -o '"Severity": *"CRITICAL"' | wc -l | tr -d ' ')"
-      high="$(printf '%s' "$out" | grep -o '"Severity": *"HIGH"'     | wc -l | tr -d ' ')"
-      total_crit=$((total_crit + crit))
-      [ "$first" -eq 1 ] || printf ',\n'
-      first=0
-      printf '    "%s": {"critical": %s, "high": %s}' "$img" "$crit" "$high"
-      log "scan: $img -> ${crit} CRITICAL / ${high} HIGH"
-    done
-    printf '\n  }\n}\n'
-  } > "$SCAN_JSON"
-
-  log "scan: wrote $SCAN_JSON (total CRITICAL across images: ${total_crit})"
-
-  if [ -n "$MAX_CRITICAL" ] && [ "$total_crit" -gt "$MAX_CRITICAL" ]; then
-    die 20 "CVE gate FAILED: ${total_crit} CRITICAL findings exceeds --max-critical=${MAX_CRITICAL}"
+  local out
+  if ! out="$(python3 "$discover_py" --shell 2>/dev/null)"; then
+    # Unreachable upstream is "unknown", never "already current" — the latter
+    # would silently re-introduce the exact no-op this phase exists to catch.
+    warn "discover: upstream lookup FAILED — treating latest as UNKNOWN, not as 'already current'"
+    return 0
   fi
-  log "scan: PASS"
+  eval "$out"
+
+  log "discover: openclaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
+  log "discover: hermes   pinned=${HERMES_VERSION:-<unset>} latest_tag=${DISCOVERED_HERMES_TAG:-<unknown>}"
+
+  if [ -n "$DISCOVERED_OPENCLAW_VERSION" ] \
+     && [ "$DISCOVERED_OPENCLAW_VERSION" != "${OPENCLAW_VERSION:-}" ]; then
+    UPGRADE_AVAILABLE=1
+    warn "discover: OpenClaw is BEHIND — pinned ${OPENCLAW_VERSION:-<unset>}, latest ${DISCOVERED_OPENCLAW_VERSION}"
+  fi
+}
+
+# ═════════════════════════════════════════════════════════════════════════════
+# The NO-OP GATE.
+#
+# A run that rebuilt the same versions it started with upgraded nothing. That is
+# a legitimate outcome ONLY when we are already on the latest release; it is a
+# malfunction when a newer one exists. Before this gate the two were
+# indistinguishable — both printed PASS — which is how seven weeks of "green"
+# upgrades shipped no upgrade at all.
+# ═════════════════════════════════════════════════════════════════════════════
+PINS_BEFORE=""
+_capture_pins() {
+  grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' "$REPO/docker/versions.env" 2>/dev/null | sort || true
+}
+
+check_noop_gate() {
+  local after
+  after="$(_capture_pins)"
+  if [ "$after" != "$PINS_BEFORE" ]; then
+    log "no-op gate: PASS — upstream pins changed this run"
+    UPGRADE_HAPPENED=1
+    return 0
+  fi
+
+  UPGRADE_HAPPENED=0
+  if [ "$UPGRADE_AVAILABLE" -eq 1 ]; then
+    err "no-op gate: FAILED — this run changed no upstream pin, but a newer release exists."
+    err "no-op gate:   OpenClaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
+    err "no-op gate: The stack may be healthy, but nothing was upgraded. Reporting this as"
+    err "no-op gate: a PASS is what hid seven weeks of no-op Sunday runs."
+    return 25
+  fi
+  log "no-op gate: NO-OP (honest) — already on the latest upstream release; nothing to upgrade"
+  return 0
+}
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE: scan — real Trivy counts. Absence of a scanner, or of any image to
+# point it at, is a FAILED gate, never a silent pass (repo rule: no fake
+# green) — but both are provisioning problems to solve first, not reasons to
+# skip: see scripts/lib/sunday-scan.sh (sourced above).
+# ═════════════════════════════════════════════════════════════════════════════
+phase_scan() {
+  log "scan: CRITICAL/HIGH counts for: $SCAN_IMAGES"
+  # shellcheck disable=SC2086  # word-splitting SCAN_IMAGES into args is intentional
+  sunday_run_scan_gate "$SCAN_JSON" "$MAX_CRITICAL" $SCAN_IMAGES
 }
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -538,8 +622,18 @@ phase_apply() {
   # then the rollback, down with it (exit 50: manual recovery required).
   # Exclude it explicitly and defer to asb's own working path instead.
   local up_services
-  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+  # `|| true` is load-bearing — same pipefail hazard already documented on
+  # _dirty_build_files and _buildable_services above. A `grep -v` that emits
+  # nothing exits 1, which under `set -euo pipefail` propagates out of the
+  # command substitution and kills the whole run at the assignment.
+  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes' || true)"
+  if [ -z "$up_services" ]; then
+    err "apply: compose reported no services to recreate (other than hermes)"
+    _attempt_rollback
+    exit 30
+  fi
   log "apply: recreating containers (excluding hermes — see comment above): ${up_services//$'\n'/ }"
+  # shellcheck disable=SC2086  # up_services is a newline-separated list; splitting into args is intended
   if ! $COMPOSE_CMD up -d $up_services; then
     err "apply: compose up FAILED"
     _attempt_rollback
@@ -676,6 +770,20 @@ write_handoff() {
   [ "$ENVIRONMENT" = "dev" ] || return 0
   local status="$1"
 
+  # A partial run proves nothing about the phases it never executed. Writing
+  # status=PASS after e.g. `--phase scan` published a gate asserting
+  # "preflight, scan, apply and verify all passed ... including a 120s
+  # stability soak" when only the scan ran — a false green in the one file
+  # prod's gate actually reads. Only a full-pipeline run may publish a PASS;
+  # a partial run leaves any existing handoff untouched rather than
+  # overwriting it with a weaker claim. FAIL is always allowed through: a
+  # failure in any single phase is real, and prod staying blocked is the safe
+  # direction.
+  if [ "$status" = "PASS" ] && [ "$PHASE" != "all" ]; then
+    log "handoff: --phase=${PHASE} is a partial run — NOT writing a PASS handoff (only --phase=all may publish one)"
+    return 0
+  fi
+
   if ! _mutating; then
     log "handoff: [dry-run] would write status=${status} to ${HANDOFF_DIR}/dev-result-${TODAY}.json"
     return 0
@@ -697,8 +805,14 @@ write_handoff() {
     printf '{\n'
     printf '  "date": "%s",\n' "$TODAY"
     printf '  "status": "%s",\n' "$status"
+    printf '  "phase": "%s",\n' "$PHASE"
+    # Whether this run actually moved an upstream pin. A green run that
+    # upgraded nothing is exactly what went unnoticed for seven weeks, so the
+    # handoff has to record it rather than leaving PASS to imply it.
+    printf '  "upgraded": %s,\n' "$([ "${UPGRADE_HAPPENED:-0}" -eq 1 ] && echo true || echo false)"
+    printf '  "latest_openclaw_seen": "%s",\n' "${DISCOVERED_OPENCLAW_VERSION:-unknown}"
     printf '  "versions": {\n    %s\n  },\n' "$versions"
-    printf '  "notes": "Written by sunday-upgrade-apply.sh. status=PASS means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$SOAK_SECONDS"
+    printf '  "notes": "Written by sunday-upgrade-apply.sh with --phase=%s. status=PASS is only ever published by a full --phase=all run, and means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$PHASE" "$SOAK_SECONDS"
     printf '}\n'
   } > "$out"
   chmod 644 "$out" 2>/dev/null || true
@@ -712,13 +826,28 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 
 # On any unexpected failure, record a FAIL handoff so prod stays blocked rather
 # than reading a stale PASS from a previous week.
+# shellcheck disable=SC2154  # rc is assigned by the trap body itself, immediately before use
 trap 'rc=$?; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
 
+PINS_BEFORE="$(_capture_pins)"
+
 _should_run preflight && phase_preflight
+_should_run discover  && phase_discover
 _should_run baseline  && phase_baseline
 _should_run scan      && phase_scan
 _should_run apply     && phase_apply
 _should_run verify    && phase_verify
+
+# The no-op gate only judges a FULL run. A partial --phase invocation was never
+# trying to upgrade anything, so "no pin changed" says nothing about it.
+if [ "$PHASE" = "all" ]; then
+  noop_rc=0
+  check_noop_gate || noop_rc=$?
+  if [ "$noop_rc" -ne 0 ]; then
+    write_handoff NOTHING_UPGRADED
+    exit "$noop_rc"
+  fi
+fi
 
 write_handoff PASS
 log "=== sunday-upgrade-apply COMPLETE: all requested phases passed ==="

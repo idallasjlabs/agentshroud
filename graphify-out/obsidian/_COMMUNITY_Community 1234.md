@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Purpose_99]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[README_104]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Related Skills_108]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Usage_109]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_52]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_43]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Usage_47]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[hermesskillsi-mcpm-auth-resetREADME]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)
 

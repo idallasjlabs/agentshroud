@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 297"
-location: "L142"
+community: "Community 201"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/Community_201
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/Community_201

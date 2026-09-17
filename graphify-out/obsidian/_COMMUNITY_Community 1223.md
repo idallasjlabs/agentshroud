@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_88]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[README_93]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Related Skills_94]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Usage_97]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)_2]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Purpose_41]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Related Skills_32]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Usage_36]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[hermesskillsi-bsREADME]] - document - docker/config/hermes/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)
 

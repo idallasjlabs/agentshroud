@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Community 75"
+community: "Community 72"
 location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_72
 ---
 
 # Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_lazy_rdns_miss()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

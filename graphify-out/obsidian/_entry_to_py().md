@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 120"
+community: "Community 99"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_99
 ---
 
 # _entry_to_py()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
 - [[append_to_registry()]] - `calls` [EXTRACTED]
+- [[qs()]] - `contains` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/Community_99

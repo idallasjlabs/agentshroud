@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[RateLimitGuard.check()]] - code - gateway/security/rate_limit_guard.py
+- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

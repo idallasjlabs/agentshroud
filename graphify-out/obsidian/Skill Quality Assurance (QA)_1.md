@@ -1,22 +1,22 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 443"
+community: "Community 452"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_443
+  - community/Community_452
 ---
 
 # Skill: Quality Assurance (QA)
 
 ## Connections
-- [[Objective_3]] - `contains` [EXTRACTED]
-- [[Output Format_21]] - `contains` [EXTRACTED]
+- [[Objective_1]] - `contains` [EXTRACTED]
+- [[Output Format_13]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - `contains` [EXTRACTED]
-- [[Role_66]] - `contains` [EXTRACTED]
-- [[SKILL_109]] - `contains` [EXTRACTED]
+- [[Role_44]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-qaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_443
+#graphify/document #graphify/EXTRACTED #community/Community_452

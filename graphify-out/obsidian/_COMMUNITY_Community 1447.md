@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1447
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_56]] - document - .agents/skills/i-sre/SKILL.md
-- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[graphify reference transcribe video and audio_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[hermesskillsgraphifyreferencestranscribe]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

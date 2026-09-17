@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 818
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[LOW Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[MEDIUM Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-L1 No Global Security Headers Middleware (Reopened from R2-L1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-L2 WebSocket Connection Leak in ws_logs (Reopened from R2-L2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-L3 OCI Image Version Labels Still Outdated (Reopened from R2-L3)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-L4 Dashboard WS Activity Endpoint Accepts Both Master and Scoped Tokens]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-L5 Backup Files Contain Pre-Hardening Code]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-M1 Missing `aiohttp` Dependency in requirements.txt (Reopened from R2-M1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-M2 Management WebSocket Endpoints Still Use Master Auth Token (Reopened from R2-M2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R3-M3 Stale Version String in Root Dashboard HTML]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Round 3 New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[dot-test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 345]]
+- 5 edges to [[_COMMUNITY_Egress Filter & HTTP Proxy]]
+- 1 edge to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[Round 3 New Findings]] - degree 3, connects to 1 community
+- [[TestSSRFBlocking]] - degree 18, connects to 3 communities

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Community 80"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Community_80
 ---
 
 # TestKeyRotation
 
 ## Connections
-- [[.test_old_key_in_redaction_after_rotation()]] - `method` [EXTRACTED]
-- [[.test_rotate_key()]] - `method` [EXTRACTED]
-- [[.test_rotate_nonexistent_raises()]] - `method` [EXTRACTED]
-- [[.test_rotation_logged()]] - `method` [EXTRACTED]
+- [[dot-test_old_key_in_redaction_after_rotation()]] - `method` [EXTRACTED]
+- [[dot-test_rotate_key()]] - `method` [EXTRACTED]
+- [[dot-test_rotate_nonexistent_raises()]] - `method` [EXTRACTED]
+- [[dot-test_rotation_logged()]] - `method` [EXTRACTED]
 - [[KeyInjector]] - `uses` [INFERRED]
 - [[KeyLeakDetector]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Community_80

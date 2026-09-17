@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[1. Hardware prep]] - document - firmware/voice-terminal/SETUP.md
-- [[1. Why this differs from a generic ESP32+Hermes build]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[10. Alternatives (only if needed)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[11. Open decisions (confirm before server-side coding)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2. Server-side work this branch must implement]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2.1 New `voice_gateway` service]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2.2 Close the governed-path schema gap for Hermes  ⚠️ required]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2.3 Compose + tailnet exposure]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2.4 Egress & governance — what does NOT change]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[2.5 Tests (CLAUDE.md §4, coverage gate `fail_under=84`)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[3. Tailscale changes]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[4. iPhone & iPad (just hotspots — they do NOT tunnel the box)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6. Firmware]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.1 Toolchain + board support]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.2 Roaming WiFi (join first reachable, skip captive portals)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.3 Join the tailnet (MicroLink)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.4 Connect to the Voice Gateway]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.5 Audio + display state machine]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[8. Gotchas (incl. AgentShroud-specific)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[9. hey buddy wake word — honest status]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[9. Bring-up order — one cause per failure]] - document - firmware/voice-terminal/SETUP.md
-- [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[Sources]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[esp32-s3-hermes-voice-terminal]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Core Security Principles_4]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Critical Findings_1]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 3 ToolResultInjectionScanner (12 patterns) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Threat Matrix What Gets Through]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[prompt-injection-assessment-2026-02-25]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,8 +43,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 279]]
+- 1 edge to [[_COMMUNITY_Community 437]]
+- 1 edge to [[_COMMUNITY_Community 603]]
 
 ## Top bridge nodes
-- [[1. Hardware prep]] - degree 2, connects to 1 community
-- [[9. Bring-up order — one cause per failure]] - degree 2, connects to 1 community
+- [[Core Security Principles_4]] - degree 5, connects to 1 community
+- [[🎓 Key Principles]] - degree 4, connects to 1 community

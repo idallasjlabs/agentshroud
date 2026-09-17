@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.83
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1337
 
-**Cohesion:** 0.83 - tightly connected
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_7]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[dot-agentsskillsgraphifyreferencesadd-watch]] - document - .agents/skills/graphify/references/add-watch.md
+- [[For --watch]] - document - .agents/skills/graphify/references/add-watch.md
+- [[For graphify add]] - document - .agents/skills/graphify/references/add-watch.md
+- [[graphify reference add a URL and watch a folder]] - document - .agents/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

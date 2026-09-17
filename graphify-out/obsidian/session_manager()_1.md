@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Community 27"
-location: "L66"
+community: "Ingest Middleware & File Sandbox"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_27
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

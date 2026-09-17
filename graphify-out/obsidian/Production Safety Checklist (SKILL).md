@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 516"
+community: "Community 144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/Community_144
 ---
 
 # Production Safety Checklist (SKILL)
 
 ## Connections
+- [[dot-agentsskillsi-psREADME]] - `contains` [EXTRACTED]
 - [[Incident Response (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[Purpose_25]] - `contains` [EXTRACTED]
+- [[Purpose_113]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[README_25]] - `contains` [EXTRACTED]
-- [[Related Skills_28]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_516
+#graphify/document #graphify/EXTRACTED #community/Community_144

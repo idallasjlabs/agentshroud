@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_credential_isolation.py"
+type: "code"
+community: "Community 908"
+location: "L116"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_908
+---
+
+# .test_detect_aws_key()
+
+## Connections
+- [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_908

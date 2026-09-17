@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.25
 members: 9
 ---
 
 # Community 927
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Command Details]] - document - skills/openclaw/xurl/SKILL.md
-- [[Direct Messages]] - document - skills/openclaw/xurl/SKILL.md
-- [[Engagement]] - document - skills/openclaw/xurl/SKILL.md
-- [[Media Upload]] - document - skills/openclaw/xurl/SKILL.md
-- [[Posting]] - document - skills/openclaw/xurl/SKILL.md
-- [[Reading]] - document - skills/openclaw/xurl/SKILL.md
-- [[Social Graph]] - document - skills/openclaw/xurl/SKILL.md
-- [[Timelines & Mentions]] - document - skills/openclaw/xurl/SKILL.md
-- [[User Info]] - document - skills/openclaw/xurl/SKILL.md
+- [[Apollo — Audio Systems Producer_5]] - concept - docs/architecture/agentic-os.md
+- [[Athena — Knowledge Distiller_5]] - concept - docs/architecture/agentic-os.md
+- [[Atlas — Curriculum Architect_5]] - concept - docs/architecture/agentic-os.md
+- [[Daedalus — Concept Illustrator_6]] - concept - docs/architecture/agentic-os.md
+- [[Hermes — Reference Verifier (podcast agent)]] - concept - docs/architecture/agentic-os.md
+- [[Mnemosyne — Retention Engineer_6]] - concept - docs/architecture/agentic-os.md
+- [[Oracle — Feedback Analyst_6]] - concept - docs/architecture/agentic-os.md
+- [[Socrates — Dialogue Architect_5]] - concept - docs/architecture/agentic-os.md
+- [[Vulcan — Subject Matter Auditor_6]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_927
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 388]]
-
-## Top bridge nodes
-- [[Command Details]] - degree 9, connects to 1 community

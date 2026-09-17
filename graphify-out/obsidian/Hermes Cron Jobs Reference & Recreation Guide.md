@@ -1,39 +1,44 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 282"
+community: "Community 164"
+location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/Community_164
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
 
 ## Connections
-- [[AgentShroud Daily Check-in Prompt]] - `references` [EXTRACTED]
-- [[AgentShroud Weekly Summary job]] - `references` [EXTRACTED]
-- [[Daily Component Health Digest Prompt]] - `references` [EXTRACTED]
-- [[Daily Memory Journal Prompt]] - `references` [EXTRACTED]
+- [[Cron AgentShroud Weekly Summary]] - `references` [EXTRACTED]
+- [[Cron Daily Competitive Landscape Update]] - `references` [EXTRACTED]
 - [[Hermes Bot_1]] - `references` [EXTRACTED]
-- [[Hermes Competitive Intelligence Email job]] - `references` [EXTRACTED]
-- [[Hermes Competitive Landscape Update job]] - `references` [EXTRACTED]
-- [[Hermes Seed Cron Jobs (jobs.yaml)]] - `shares_data_with` [INFERRED]
-- [[How to recreate a job]] - `contains` [EXTRACTED]
-- [[JOBS-REFERENCE]] - `contains` [EXTRACTED]
-- [[Jira Weekly Review Prompt (SCRUM-81)]] - `references` [EXTRACTED]
-- [[Job details]] - `contains` [EXTRACTED]
-- [[Job index]] - `contains` [EXTRACTED]
-- [[Monthly Chaos Engineering Drill Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Chat Front-Ends & Search Infra Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Coding-Agent CLIs Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Local Inference Engines Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Mac Clustering Prompt]] - `references` [EXTRACTED]
-- [[Newsletter MoE Streaming & SSD Offload Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Model Version Tracker Prompt]] - `references` [EXTRACTED]
-- [[Newsletter Personal AI Assistants Prompt]] - `references` [EXTRACTED]
-- [[OMLX MoE Streaming Health Check Prompt]] - `references` [EXTRACTED]
+- [[Hermes Live Cron Store (optdatacronjobs.json)]] - `references` [EXTRACTED]
+- [[PrepSend Job Split (agent prep job + no-agent email job)]] - `rationale_for` [INFERRED]
+- [[Prompt AgentShroud Daily Check-in]] - `references` [EXTRACTED]
+- [[Prompt AgentShroud Weekly Summary]] - `references` [EXTRACTED]
+- [[Prompt Daily Component Health Digest]] - `references` [EXTRACTED]
+- [[Prompt Daily Memory Journal]] - `references` [EXTRACTED]
+- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `references` [EXTRACTED]
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - `references` [EXTRACTED]
+- [[Prompt Monthly Chaos Engineering Drill]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Chat Front-Ends & Search Infra]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Coding-Agent CLIs]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Local Inference Engines]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Mac Clustering]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — MoE Streaming & SSD Offload]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Model Version Tracker]] - `references` [EXTRACTED]
+- [[Prompt Newsletter — Personal AI Assistants]] - `references` [EXTRACTED]
+- [[Prompt OMLX MoE Streaming Health Check]] - `references` [EXTRACTED]
+- [[Prompt Today in AI (12-Query Sweep)]] - `references` [EXTRACTED]
+- [[Prompt Turbo Fieldfare Fix Watch]] - `references` [EXTRACTED]
+- [[Prompt Weekly Hermes Stability Report]] - `references` [EXTRACTED]
+- [[Prompt Weekly Kaizen Review]] - `references` [EXTRACTED]
+- [[Prompt jira-weekly-review]] - `references` [EXTRACTED]
 - [[Provider-Must-Be-Custom Rule]] - `references` [EXTRACTED]
-- [[gemma-4-26b-a4b-it (Turbo Fieldfare) Model Pin]] - `references` [EXTRACTED]
+- [[Weekly job-log cleanup (cleanup-job-logs.sh)]] - `references` [EXTRACTED]
+- [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_282
+#graphify/document #graphify/EXTRACTED #community/Community_164

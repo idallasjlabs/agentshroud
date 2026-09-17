@@ -1,20 +1,18 @@
 ---
-source_file: "branding/README.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Community 146"
-location: "L54"
+community: "Community 1161"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_1161
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[Do's]] - `contains` [EXTRACTED]
-- [[Don'ts]] - `contains` [EXTRACTED]
+- [[TRADEMARK]] - `references` [EXTRACTED]
+- [[Trademark Notice_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_1161

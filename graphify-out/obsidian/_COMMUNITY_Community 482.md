@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.11
 members: 19
 ---
 
 # Community 482
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
-- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
-- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
-- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
-- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_bot_token()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_get_me_ready()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send_photo()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
+- [[1. Check MCP Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_18]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_114]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Role_53]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[openclawskillsi-mcpm-doctorSKILL]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,12 +36,3 @@ members: 19
 TABLE source_file, type FROM #community/Community_482
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 666]]
-- 1 edge to [[_COMMUNITY_Community 1016]]
-- 1 edge to [[_COMMUNITY_Community 549]]
-
-## Top bridge nodes
-- [[start-agentshroud.sh]] - degree 23, connects to 4 communities

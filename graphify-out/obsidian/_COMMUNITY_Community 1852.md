@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
+- [[dot-githubworkflowsmerge-regression-audit.yml]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

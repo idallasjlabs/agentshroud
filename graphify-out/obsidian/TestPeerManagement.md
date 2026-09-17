@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 40"
+community: "Community 39"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # TestPeerManagement
 
 ## Connections
-- [[.test_register_peer()]] - `method` [EXTRACTED]
-- [[.test_trust_clamped()]] - `method` [EXTRACTED]
-- [[.test_unregister_peer()]] - `method` [EXTRACTED]
-- [[.test_update_trust()]] - `method` [EXTRACTED]
+- [[dot-test_register_peer()]] - `method` [EXTRACTED]
+- [[dot-test_trust_clamped()]] - `method` [EXTRACTED]
+- [[dot-test_unregister_peer()]] - `method` [EXTRACTED]
+- [[dot-test_update_trust()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_40
+#graphify/code #graphify/INFERRED #community/Community_39

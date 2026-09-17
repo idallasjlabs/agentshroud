@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1427
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Elevator pitch]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Key Messaging]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[One-liner]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[What it is NOT]] - document - docker/config/openclaw/workspace/BRAND.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 173]]
 
 ## Top bridge nodes
-- [[TestIdentityAuth]] - degree 3, connects to 1 community
-- [[.test_full_stack()_1]] - degree 2, connects to 1 community
+- [[Key Messaging]] - degree 4, connects to 1 community

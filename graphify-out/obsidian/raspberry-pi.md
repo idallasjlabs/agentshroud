@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Community 284"
+community: "Community 785"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Community_785
 ---
 
 # raspberry-pi.md
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud.yaml Configuration File]] - `references` [EXTRACTED]
 - [[deployment]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/Community_785

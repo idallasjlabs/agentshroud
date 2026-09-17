@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 81"
-location: "L210"
+community: "Memory Integrity & Lifecycle"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

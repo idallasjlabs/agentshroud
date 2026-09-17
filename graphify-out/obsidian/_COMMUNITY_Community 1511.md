@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_224]] - document - skills/openclaw/ordercli/SKILL.md
-- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
+- [[Secure Multi-Stage Docker Build (builder discarded)]] - rationale - docs/archive/SECURITY.md
+- [[Zero-Trust Build (source never touches the host)]] - rationale - docs/archive/SECURITY-AUDIT.md
 
 ## Live Query (requires Dataview plugin)
 

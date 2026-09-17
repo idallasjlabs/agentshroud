@@ -1,17 +1,17 @@
 ---
-source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
+source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 1037"
+community: "Community 217"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1037
+  - community/Community_217
 ---
 
 # Telegram API
 
 ## Connections
-- [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - `calls` [EXTRACTED]
-- [[Isaiah (Telegram)]] - `calls` [EXTRACTED]
+- [[Approval Queue (human gate)]] - `calls` [EXTRACTED]
+- [[HTTP CONNECT Proxy (domain allowlist)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1037
+#graphify/concept #graphify/EXTRACTED #community/Community_217

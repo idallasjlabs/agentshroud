@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Community 391"
+community: "Community 1199"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/Community_1199
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/Community_1199

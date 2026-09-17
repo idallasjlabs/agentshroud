@@ -1,0 +1,17 @@
+---
+source_file: "gateway/dashboard/proxy_status.py"
+type: "code"
+community: "Community 145"
+location: "L119"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_145
+---
+
+# .update_canary()
+
+## Connections
+- [[ProxyDashboard]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_145

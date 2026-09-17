@@ -1,17 +1,20 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 1308"
-location: "L17"
+community: "Community 946"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1308
+  - community/Community_946
 ---
 
 # esp_err_t
 
 ## Connections
-- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
+- [[audio_init()]] - `references` [EXTRACTED]
+- [[audio_play()]] - `references` [EXTRACTED]
+- [[audio_preinit()]] - `references` [EXTRACTED]
+- [[audio_set_volume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1308
+#graphify/code #graphify/EXTRACTED #community/Community_946

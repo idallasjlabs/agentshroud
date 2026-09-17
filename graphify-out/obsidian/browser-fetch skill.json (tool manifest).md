@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Community 1380"
+community: "Community 1438"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1380
+  - community/Community_1438
 ---
 
 # browser-fetch skill.json (tool manifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[run-as-root.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1380
+#graphify/code #graphify/INFERRED #community/Community_1438

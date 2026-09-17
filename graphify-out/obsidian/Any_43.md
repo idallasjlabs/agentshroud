@@ -1,29 +1,24 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 130"
-location: "L110"
+community: "PII Sanitizer & Redaction"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/PII_Sanitizer__Redaction
 ---
 
 # Any
 
 ## Connections
-- [[._generate_new_credential()]] - `references` [EXTRACTED]
-- [[._validate_credential()]] - `references` [EXTRACTED]
-- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
-- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
-- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
-- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
-- [[.get_credential_status()]] - `references` [EXTRACTED]
-- [[.get_health_score()]] - `references` [EXTRACTED]
-- [[.register_credential()]] - `references` [EXTRACTED]
-- [[.rotate_credential()]] - `references` [EXTRACTED]
-- [[.validate()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_122]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_130
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

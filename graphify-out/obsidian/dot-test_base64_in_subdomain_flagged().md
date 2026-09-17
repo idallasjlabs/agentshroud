@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_dns_filter.py"
+type: "code"
+community: "Community 63"
+location: "L110"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_63
+---
+
+# .test_base64_in_subdomain_flagged()
+
+## Connections
+- [[TestDNSTunnelingDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_63

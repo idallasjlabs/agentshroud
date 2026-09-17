@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1069
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[For graphify explain]] - document - .agents/skills/graphify/references/query.md
-- [[For graphify path]] - document - .agents/skills/graphify/references/query.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)]] - document - .agents/skills/graphify/references/query.md
-- [[Step 1 — Traversal]] - document - .agents/skills/graphify/references/query.md
-- [[graphify reference query, path, explain]] - document - .agents/skills/graphify/references/query.md
-- [[query]] - document - .agents/skills/graphify/references/query.md
+- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Output Format_6]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Role_10]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[openclawskillsi-crSKILL]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

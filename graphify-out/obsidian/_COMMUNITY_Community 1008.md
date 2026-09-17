@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1008
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically]] - document - .agents/skills/i-aws/SKILL.md
+- [[Claude Code — Primary development agent]] - concept - docs/TEAM.md
+- [[For Agents and Bots]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Gemini CLI + Codex — Embedded QATest Engineers]] - concept - docs/TEAM.md
+- [[Gemini CLI  ChatGPT Codex (secondary agents)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Git Worktrees — parallel branch development]] - concept - docs/TEAM.md
+- [[OpenClaw Bot (agentshroud-bot)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Product Owner — Isaiah Jefferson]] - concept - docs/TEAM.md
+- [[Scrum Master  Agile Coach — AgentShroud Bot (OpenClaw)]] - concept - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 515]]
+- 1 edge to [[_COMMUNITY_Community 1160]]
 
 ## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community
+- [[For Agents and Bots]] - degree 4, connects to 1 community

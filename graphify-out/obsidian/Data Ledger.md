@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Community 617"
+community: "Community 638"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/Community_638
 ---
 
 # Data Ledger
 
 ## Connections
-- [[Features_4]] - `contains` [EXTRACTED]
+- [[Features_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/Community_638

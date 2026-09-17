@@ -104,12 +104,69 @@ keychain_get() {
 # ── 1Password non-interactive fallback ────────────────────────────────────────
 # op_get tries several field-label variants to handle the inconsistencies in
 # the "Agent Shroud Bot Credentials" vault (e.g. openai+api_key vs openai_api_key).
+# Secrets whose canonical home is a DEDICATED 1Password item rather than a
+# field on the per-host "AgentShroud - <host> [<user>]" item that op_get()
+# otherwise searches.
+#
+# Why this exists (2026-09-15): scripts/asb's setup_ephemeral_secrets() WIPES
+# ~/.agentshroud/.asb-secrets on every `asb up` and repopulates it from this
+# backend. So a value hand-written into that directory survives exactly until
+# the next upgrade, then silently disappears — which is what happened to the
+# Feedbin credentials and broke the Daily Brief podcast. Writing the files
+# directly fixes a morning; mapping them here fixes it permanently, on every
+# machine signed into 1Password, with no dependence on the local keychain
+# (and therefore none of the `security add-generic-password -A` ACL widening
+# that path requires).
+#
+# Add an entry when a credential already lives in its own 1Password item.
+# VERIFY the item and field names against `op item get <item> --vault <vault>`
+# before adding — a wrong ref fails closed and silently, which looks exactly
+# like "no credential" and costs a morning to diagnose. Do not guess.
+#
+# Override the whole mechanism with AGENTSHROUD_OP_REF_<UPPERCASE_NAME>.
+op_ref_for() {
+    local name="$1"
+    # Per-secret env override always wins: AGENTSHROUD_OP_REF_FEEDBIN_EMAIL=...
+    local override_var override
+    override_var="AGENTSHROUD_OP_REF_$(printf '%s' "$name" | tr '[:lower:]' '[:upper:]')"
+    override="${!override_var:-}"
+    if [[ -n "$override" ]]; then printf '%s' "$override"; return 0; fi
+
+    local vault="${AGENTSHROUD_OP_BOT_VAULT:-Agent Shroud Bot Credentials}"
+    case "$name" in
+        # Verified working 2026-09-15 via `op read` on the prod host.
+        feedbin_email)    printf 'op://%s/Feedbin/username' "$vault" ;;
+        feedbin_password) printf 'op://%s/Feedbin/password' "$vault" ;;
+        # Same dedicated item docker/scripts/start-agentshroud.sh already reads
+        # directly for OpenClaw's own Brave key load — reused here (not
+        # guessed) so Hermes and any other op_get() caller resolve it too,
+        # instead of falling through to the fuzzy per-host generic-item lookup
+        # below, which doesn't have this field (observed 2026-09-16: Hermes
+        # "online" notification listed brave_api_key as missing).
+        brave_api_key)    printf 'op://%s/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key' "$vault" ;;
+        # podcastindex_api_key / podcastindex_api_secret: an item exists in this
+        # vault (added 2026-09-14) but its exact item/field names are NOT yet
+        # verified from a signed-in host. Deliberately left unmapped rather than
+        # guessed — set AGENTSHROUD_OP_REF_PODCASTINDEX_API_KEY (and _SECRET),
+        # or add the refs here once confirmed.
+        *) return 1 ;;
+    esac
+}
+
 op_get() {
     local name="$1"
     command -v op &>/dev/null || return 0
     command -v op &>/dev/null && op account list &>/dev/null 2>&1 || return 0
+
+    local val ref
+    # Dedicated-item refs first — these are exact, so prefer them over the
+    # fuzzy field-name guessing below.
+    if ref="$(op_ref_for "$name")"; then
+        val=$(op read "$ref" 2>/dev/null || true)
+        [[ -n "$val" ]] && { echo "$val"; return; }
+    fi
+
     local item="${AGENTSHROUD_OP_ITEM:-AgentShroud - $(hostname -s) [$(id -un)]}"
-    local val
     # Try exact canonical name.
     val=$(op item get "$item" --vault "$OP_VAULT" --fields "$name" 2>/dev/null || true)
     [[ -n "$val" ]] && { echo "$val"; return; }
@@ -279,6 +336,18 @@ declare -a SECRET_DEFS=(
     "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"
     "hermes_api_key|Hermes OpenAI API server key (random hex)|yes|yes|hermes"
     "github_pat|GitHub Personal Access Token (for Hermes GitHub MCP)|yes|yes|hermes"
+    # These five were declared as expected/mounted secrets by
+    # docker/bots/hermes/start.sh:264 and run-standalone.sh:80-86, but had no
+    # definition here — so `setup-secrets.sh store` never prompted for them and
+    # `extract` never wrote them. They could not be populated through any
+    # supported path, which is why Hermes reported them permanently missing and
+    # the Feedbin-backed "Breaking AI News" cron failed every run with
+    # "feedbin.py: no credentials".
+    "hermes_healthchecks_url|Hermes healthchecks.io ping URL|yes|yes|hermes"
+    "feedbin_email|Feedbin account email (for the news-digest crons)|no|yes|hermes"
+    "feedbin_password|Feedbin account password|yes|yes|hermes"
+    "podcastindex_api_key|Podcast Index API key|yes|yes|hermes"
+    "podcastindex_api_secret|Podcast Index API secret|yes|yes|hermes"
 )
 
 # ── Bot filter helper ──────────────────────────────────────────────────────────
@@ -359,6 +428,26 @@ cmd_extract() {
     ok=true
     for entry in "${extract_defs[@]}"; do
         IFS='|' read -r name optional <<< "$entry"
+        # The three 1Password bootstrap credentials (email/master password/
+        # secret key for the "Agent Shroud Bot Credentials" account itself)
+        # must NEVER be auto-resolved here. op_ref_for() has no dedicated ref
+        # for them (circular: you need to already be signed in to fetch your
+        # own sign-in credentials from 1Password), so get_secret()'s Tier 3
+        # falls through to the fuzzy per-host generic-item field lookup —
+        # and that generic item's own "1password_bot_email" field was found
+        # to contain 1Password's own masked-field placeholder text instead of
+        # a real email (root-caused 2026-09-16: broke op-wrapper.sh sign-in
+        # for every container, including the Brave key load). Extracting this
+        # value silently overwrote a hand-verified-correct canonical file with
+        # that placeholder the very next time this command ran. These three
+        # can ONLY be set correctly by a human (or copied from a host where
+        # they're known-good, e.g. prod) — never by this extract loop.
+        case "$name" in
+            1password_bot_email|1password_bot_master_password|1password_bot_secret_key)
+                echo "  [preserved] $name — bootstrap credential, never auto-extracted (see comment above)"
+                continue
+                ;;
+        esac
         value="$(get_secret "$name" | normalize_secret)"
         if [[ -z "$value" ]]; then
             if [[ "$optional" == "yes" ]]; then

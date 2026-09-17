@@ -1,18 +1,17 @@
 ---
-source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
-type: "concept"
-community: "Community 1257"
+source_file: "docs/planning/README.md"
+type: "document"
+community: "Community 1095"
+location: "L24"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1257
+  - community/Community_1095
 ---
 
-# active
+# Active
 
 ## Connections
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - `calls` [EXTRACTED]
-- [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
-- [[idle (health monitor 300s interval)]] - `calls` [EXTRACTED]
+- [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1257
+#graphify/document #graphify/EXTRACTED #community/Community_1095

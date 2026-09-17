@@ -1,35 +1,52 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 58"
-location: "L232"
+community: "Community 70"
+location: "L95"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_58
+  - graphify/INFERRED
+  - community/Community_70
 ---
 
 # CompetitiveIntelReport
 
 ## Connections
-- [[._make_report()]] - `references` [EXTRACTED]
-- [[.test_content_hash_is_deterministic()]] - `calls` [EXTRACTED]
-- [[.test_different_content_different_hash()]] - `calls` [EXTRACTED]
-- [[.test_empty_report_id_rejected()]] - `calls` [EXTRACTED]
-- [[.test_empty_source_rejected()]] - `calls` [EXTRACTED]
-- [[.test_full_valid_report()]] - `calls` [EXTRACTED]
-- [[.test_minimal_valid_report()]] - `calls` [EXTRACTED]
-- [[.test_missing_required_fields_raises()]] - `calls` [EXTRACTED]
-- [[.test_report_has_content_hash()]] - `calls` [EXTRACTED]
-- [[.test_report_roundtrips_via_json()]] - `calls` [EXTRACTED]
-- [[.test_report_serialises_to_json()]] - `calls` [EXTRACTED]
-- [[.test_report_with_whitespace_only_id_rejected()]] - `calls` [EXTRACTED]
-- [[.test_report_with_whitespace_only_source_rejected()]] - `calls` [EXTRACTED]
-- [[.test_verify_integrity_fails_after_tampering()]] - `calls` [EXTRACTED]
-- [[.test_verify_integrity_passes_for_valid_report()]] - `calls` [EXTRACTED]
+- [[dot-_compute_content_hash()]] - `method` [EXTRACTED]
+- [[dot-load_all()_1]] - `references` [EXTRACTED]
+- [[dot-load_latest()]] - `references` [EXTRACTED]
+- [[dot-report_id_not_empty()]] - `method` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[dot-source_not_empty()]] - `method` [EXTRACTED]
+- [[dot-verify_integrity()]] - `method` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Citation]] - `uses` [INFERRED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[CitationVerifier.verify_report()]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
+- [[Fetcher]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[ReportIntegrityError]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `calls` [EXTRACTED]
+- [[Path_8]] - `uses` [INFERRED]
+- [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - `rationale_for` [EXTRACTED]
+- [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
+- [[TestFetchOutcome]] - `uses` [INFERRED]
+- [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]
+- [[TestIntelReportStore]] - `uses` [INFERRED]
+- [[TestMakeHttpxFetcher]] - `uses` [INFERRED]
+- [[TestVerifyEntry]] - `uses` [INFERRED]
+- [[TestVerifyReport]] - `uses` [INFERRED]
+- [[_FakeFetcher_1]] - `uses` [INFERRED]
+- [[_FakeStreamResponse]] - `uses` [INFERRED]
+- [[_compute_hash()]] - `references` [EXTRACTED]
+- [[citation_verifier.py]] - `imports` [EXTRACTED]
+- [[intel_report.py]] - `contains` [EXTRACTED]
+- [[test_citation_verifier.py]] - `imports` [EXTRACTED]
+- [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/INFERRED #community/Community_70

@@ -1,17 +1,19 @@
 ---
-source_file: "firmware/voice-terminal/main/ui_face.c"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Community 446"
-location: "L135"
+community: "Community 272"
+location: "L1130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/Community_272
 ---
 
 # face_emotion_t
 
 ## Connections
-- [[_state_to_emotion()]] - `references` [EXTRACTED]
+- [[face_get_emotion()]] - `references` [EXTRACTED]
+- [[face_set_emotion()]] - `references` [EXTRACTED]
+- [[update_emotion_parameters()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/Community_272

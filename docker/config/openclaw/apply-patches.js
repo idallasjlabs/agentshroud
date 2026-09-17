@@ -667,6 +667,31 @@ if (staleGroupBindings.length > 0) {
   changed = true;
 }
 
+// Patch 1f: channel-wide Telegram fallback — with multiple agents configured
+// (main, per-collaborator, group-project/group-{chatId}), OpenClaw requires an
+// explicit default owner for the account or it refuses to start the telegram
+// channel at all: "Multiple agents are configured, but telegram account
+// default routing has no explicit owner." (observed 2026-09-15/16, crash-loop
+// with growing backoff, never recovering). `openclaw doctor --fix` can
+// materialize this automatically only when every narrower binding names the
+// same single agent — not the case here (owner, several collaborators, and
+// group-project all point at different agents) — so it correctly declines to
+// guess and this has to be explicit. Falls through to `main` (the owner's own
+// agent) for any Telegram sender not covered by a more specific peer/group
+// binding above; per-peer bindings always take precedence over this
+// channel-wide one regardless of array order.
+const hasChannelWideFallback = config.bindings.some(
+  (b) => b.agentId === 'main' && b.match && b.match.channel === 'telegram' && b.match.accountId === '*' && !b.match.peer
+);
+if (!hasChannelWideFallback) {
+  config.bindings.push({
+    agentId: 'main',
+    match: { channel: 'telegram', accountId: '*' },
+  });
+  console.log('[init-patch] Added Telegram channel-wide fallback binding → main');
+  changed = true;
+}
+
 // Patch 2: gateway auth and cleanup
 config.gateway = config.gateway || {};
 if (Object.prototype.hasOwnProperty.call(config.gateway, 'model')) {

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 666"
+location: "L8634"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_666
+---
+
+# .test_forward_file_download_returns_raw_body_sentinel()
+
+## Connections
+- [[ri for a user not in immune set must say so.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestFileDownload]] - `method` [EXTRACTED]
+- [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_666

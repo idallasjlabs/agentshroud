@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Check if user is the owner (any platform).
 
 ## Connections
-- [[.is_operator_or_higher()]] - `rationale_for` [EXTRACTED]
-- [[.is_owner()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-is_operator_or_higher()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

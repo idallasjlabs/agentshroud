@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 347"
+community: "Community 459"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/Community_459
 ---
 
 # init_db()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Connection]] - `references` [EXTRACTED]
 - [[Initialize the SQLite database for history tracking.      Args         db_path]] - `rationale_for` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[save_to_history()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_347
+#graphify/code #graphify/EXTRACTED #community/Community_459

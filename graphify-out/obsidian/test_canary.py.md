@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # test_canary.py
@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `references` [EXTRACTED]
 - [[canary_pipeline()]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `contains` [EXTRACTED]
-- [[run_canary()]] - `imports` [EXTRACTED]
+- [[run_canary()_1]] - `imports` [EXTRACTED]
 - [[test_canary_fails_without_pipeline()]] - `contains` [EXTRACTED]
 - [[test_canary_message_contains_fake_pii()]] - `contains` [EXTRACTED]
 - [[test_canary_passes_with_pipeline()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_e2e.py]] - `semantically_similar_to` [INFERRED]
 - [[unhealthy_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

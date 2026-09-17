@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 912"
+community: "Voice Gateway STT & Browser Security"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_912
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Action to take when a governance limit is hit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GovernanceAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_912
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

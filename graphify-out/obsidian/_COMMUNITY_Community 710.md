@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 710
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Problem_1]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Root Cause_1]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Verification]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Configuration  Environment Variables_22]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Key Classes  Functions_42]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[LogSanitizer._sanitize_text(text)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[LogSanitizer.filter(record)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Pattern Taxonomy]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[get_sanitizer_stats()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[install_log_sanitizer()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[log_sanitizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[log_sanitizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +31,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_710
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 791]]
-
-## Top bridge nodes
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - degree 9, connects to 1 community

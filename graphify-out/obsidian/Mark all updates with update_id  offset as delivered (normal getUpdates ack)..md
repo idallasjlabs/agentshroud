@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "Community 148"
+community: "Community 147"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_147
 ---
 
 # Mark all updates with update_id < offset as delivered (normal getUpdates ack).
 
 ## Connections
-- [[.mark_delivered()]] - `rationale_for` [EXTRACTED]
+- [[dot-mark_delivered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_148
+#graphify/rationale #graphify/EXTRACTED #community/Community_147

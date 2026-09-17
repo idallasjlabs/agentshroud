@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L71"
+community: "Ingest API & RBAC Core"
+location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_9]] - `rationale_for` [EXTRACTED]
-- [[.setup_method()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

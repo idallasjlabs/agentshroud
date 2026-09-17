@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 27"
+community: "Community 41"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_41
 ---
 
 # A legitimate group member's write lands.
 
 ## Connections
-- [[.test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_27
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

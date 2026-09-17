@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)_2]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_93]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[README_98]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Related Skills_102]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Usage_103]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[8D Root Cause Analysis_1]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Purpose_46]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Related Skills_37]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Usage_41]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[hermesskillsi-eightdREADME]] - document - docker/config/hermes/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

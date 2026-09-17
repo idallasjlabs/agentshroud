@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Commands_4]] - document - skills/openclaw/weather/SKILL.md
-- [[Current Weather]] - document - skills/openclaw/weather/SKILL.md
-- [[Forecasts]] - document - skills/openclaw/weather/SKILL.md
-- [[Format Codes]] - document - skills/openclaw/weather/SKILL.md
-- [[Format Options]] - document - skills/openclaw/weather/SKILL.md
-- [[Location_1]] - document - skills/openclaw/weather/SKILL.md
-- [[Notes_10]] - document - skills/openclaw/weather/SKILL.md
-- [[Quick Responses]] - document - skills/openclaw/weather/SKILL.md
-- [[SKILL_239]] - document - skills/openclaw/weather/SKILL.md
-- [[Weather Skill]] - document - skills/openclaw/weather/SKILL.md
-- [[When NOT to Use_3]] - document - skills/openclaw/weather/SKILL.md
-- [[When to Use_4]] - document - skills/openclaw/weather/SKILL.md
+- [[description of what this does_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_3]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Input Requirements_15]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Output Format_31]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Persona_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Quality Checklist_12]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Role_84]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[System Prompt_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[User Prompt Template_6]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[cheatsheet_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[hermesskillsi-athenaSKILL]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[show_notes_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_778
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
-
-## Top bridge nodes
-- [[SKILL_239]] - degree 2, connects to 1 community

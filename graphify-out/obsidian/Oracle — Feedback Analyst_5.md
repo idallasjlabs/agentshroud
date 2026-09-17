@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 961"
+community: "Community 989"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_961
+  - community/Community_989
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
+- [[dot-agentsskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 - [[Input Requirements_27]] - `contains` [EXTRACTED]
-- [[Output Format_33]] - `contains` [EXTRACTED]
+- [[Output Format_42]] - `contains` [EXTRACTED]
 - [[Persona_21]] - `contains` [EXTRACTED]
 - [[Quality Checklist_24]] - `contains` [EXTRACTED]
-- [[Role_96]] - `contains` [EXTRACTED]
-- [[SKILL_166]] - `contains` [EXTRACTED]
+- [[Role_109]] - `contains` [EXTRACTED]
 - [[System Prompt_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_961
+#graphify/document #graphify/EXTRACTED #community/Community_989

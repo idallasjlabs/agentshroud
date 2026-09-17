@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.39
+members: 8
 ---
 
 # Community 1011
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - .agents/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - .agents/skills/i-mac/SKILL.md
-- [[Discovery Strategy]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation]] - document - .agents/skills/i-mac/SKILL.md
+- [[_http_event_handler()]] - code - firmware/voice-terminal/main/ota.c
+- [[_nvs_get_etag()]] - code - firmware/voice-terminal/main/ota.c
+- [[_nvs_set_etag()]] - code - firmware/voice-terminal/main/ota.c
+- [[_ws_to_https_base()]] - code - firmware/voice-terminal/main/ota.c
+- [[esp_err_t]] - code - firmware/voice-terminal/main/ota.c
+- [[esp_http_client_event_t]] - code - firmware/voice-terminal/main/ota.c
+- [[ota.c]] - code - firmware/voice-terminal/main/ota.c
+- [[ota_check()]] - code - firmware/voice-terminal/main/ota.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1011
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 390]]
-- 1 edge to [[_COMMUNITY_Community 787]]
-
-## Top bridge nodes
-- [[Discovery Strategy]] - degree 7, connects to 2 communities

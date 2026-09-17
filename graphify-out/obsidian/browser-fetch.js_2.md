@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
-type: "document"
-community: "Community 1103"
-location: "L10"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
+type: "code"
+community: "Community 991"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1103
+  - community/Community_991
 ---
 
 # browser-fetch.js
 
 ## Connections
-- [[Expected Behavior]] - `contains` [EXTRACTED]
-- [[Purpose_121]] - `contains` [EXTRACTED]
-- [[Related Notes_7]] - `contains` [EXTRACTED]
-- [[Security Controls_1]] - `contains` [EXTRACTED]
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser SKILL_2]] - `semantically_similar_to` [INFERRED]
+- [[appendLog()_3]] - `contains` [EXTRACTED]
+- [[browserFetch()_3]] - `contains` [EXTRACTED]
+- [[fs_6]] - `contains` [EXTRACTED]
+- [[path_64]] - `contains` [EXTRACTED]
+- [[{ chromium }_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1103
+#graphify/code #graphify/EXTRACTED #community/Community_991

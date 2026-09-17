@@ -1,22 +1,23 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 886"
-location: "L20"
+community: "Community 413"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_886
+  - community/Community_413
 ---
 
 # Features
 
 ## Connections
-- [[Action Feed]] - `contains` [EXTRACTED]
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
-- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `contains` [EXTRACTED]
-- [[Memory Browser]] - `contains` [EXTRACTED]
-- [[Network Inspector]] - `contains` [EXTRACTED]
+- [[1. Observatory Mode (Global Monitor-Only Switch)]] - `contains` [EXTRACTED]
+- [[2. Prompt Injection Hardening]] - `contains` [EXTRACTED]
+- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
+- [[4. ML-Based Injection Classifier (Stretch)]] - `contains` [EXTRACTED]
+- [[5. Output Canary System]] - `contains` [EXTRACTED]
+- [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_886
+#graphify/document #graphify/EXTRACTED #community/Community_413

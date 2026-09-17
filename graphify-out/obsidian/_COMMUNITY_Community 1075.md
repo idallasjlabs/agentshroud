@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1075
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[AWS Agent (Athena data retrieval layer)]] - concept - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[AWS Athena  Data Lake]] - concept - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[i-data README — Data Validation (DATA-VAL)]] - document - docker/config/hermes/skills/i-data/README.md
-- [[i-data SKILL — Data Validation (DATA-VAL)]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[i-eightd README — 8D Root Cause Analysis]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[i-eightd SKILL — 8D Root Cause Analysis]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Bot Container (agent decides reply + tool call)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Isaiah (Telegram)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[MCP inspection (injection scan NONE, PII scan NONE, sensitive op NONE)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[OpenAI API (POST v1chatcompletions)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Telegram API]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[ledger.db (INSERT INTO ledger)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.13
 members: 21
 ---
 
 # Community 423
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Advanced Integrations (Phase 19)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Browser Extension_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Collaborators]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Full Configuration System (Phase 18)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure_6]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Integration Hub (Phase 13)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Mac Mini Onboarding (Phase 14)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Host Deployment]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Platform Container Support]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Personal Infrastructure Monitor (Phase 15)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Post-v1.0.0 — Deferred]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[iOSmacOS Shortcuts]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[dot-_append_audit_event()]] - code - gateway/approval_queue/queue.py
+- [[dot-_expire_stale()]] - code - gateway/approval_queue/queue.py
+- [[dot-_persist_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[dot-broadcast()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
+- [[dot-decide()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_item()_2]] - code - gateway/approval_queue/queue.py
+- [[dot-get_pending()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-submit()_1]] - code - gateway/approval_queue/queue.py
+- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
+- [[Any_54]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem_3]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_4]] - code - gateway/approval_queue/queue.py
+- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
+- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
+- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
+- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
+- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
+- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
+- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +40,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 403]]
-- 1 edge to [[_COMMUNITY_Community 371]]
-- 1 edge to [[_COMMUNITY_Community 974]]
+- 9 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 1 edge to [[_COMMUNITY_SOC Service Manager (Container Engine)]]
 
 ## Top bridge nodes
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
+- [[dot-decide()_1]] - degree 7, connects to 2 communities
+- [[dot-submit()_1]] - degree 7, connects to 1 community
+- [[dot-_append_audit_event()]] - degree 6, connects to 1 community
+- [[dot-broadcast()_1]] - degree 6, connects to 1 community
+- [[dot-_expire_stale()]] - degree 6, connects to 1 community

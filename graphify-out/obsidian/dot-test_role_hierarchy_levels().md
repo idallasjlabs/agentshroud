@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_rbac.py"
+type: "code"
+community: "Ingest API & RBAC Core"
+location: "L329"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Ingest_API__RBAC_Core
+---
+
+# .test_role_hierarchy_levels()
+
+## Connections
+- [[Test role hierarchy levels.]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

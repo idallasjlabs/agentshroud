@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 726"
-location: "L33"
+community: "Community 626"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/Community_626
 ---
 
 # Function Details
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
-- [[generate_apple_script(services)]] - `contains` [EXTRACTED]
-- [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
+- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
+- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
+- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/Community_626

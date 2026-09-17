@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 562"
-location: "L119"
+community: "Community 107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/Community_107
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-_decode_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_562
+#graphify/code #graphify/EXTRACTED #community/Community_107

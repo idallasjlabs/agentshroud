@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Missing content-type must not bypass form draft leak filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-agentsskillsgraphifyreferencestranscribe]] - document - .agents/skills/graphify/references/transcribe.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
+- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +20,3 @@ members: 3
 TABLE source_file, type FROM #community/Community_1431
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 93]]
-- 2 edges to [[_COMMUNITY_Community 80]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-
-## Top bridge nodes
-- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - degree 4, connects to 3 communities
-- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - degree 4, connects to 3 communities

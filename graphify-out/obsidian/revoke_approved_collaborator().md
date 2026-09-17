@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "SOC Collaborators"
+community: "Community 388"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_388
 ---
 
 # revoke_approved_collaborator()
@@ -20,6 +20,6 @@ tags:
 - [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[revoke_collaborator()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/Community_388

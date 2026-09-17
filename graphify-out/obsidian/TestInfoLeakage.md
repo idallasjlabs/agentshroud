@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # TestInfoLeakage
 
 ## Connections
-- [[.test_encrypted_store_error_no_key_leak()]] - `method` [EXTRACTED]
-- [[.test_env_guard_scrubs_output()]] - `method` [EXTRACTED]
-- [[.test_git_guard_no_path_leak()]] - `method` [EXTRACTED]
-- [[.test_log_sanitizer_covers_stack_traces()]] - `method` [EXTRACTED]
-- [[.test_metadata_guard_strips_internal_headers()]] - `method` [EXTRACTED]
-- [[.test_token_error_no_secret_leak()]] - `method` [EXTRACTED]
+- [[dot-test_encrypted_store_error_no_key_leak()]] - `method` [EXTRACTED]
+- [[dot-test_env_guard_scrubs_output()]] - `method` [EXTRACTED]
+- [[dot-test_git_guard_no_path_leak()]] - `method` [EXTRACTED]
+- [[dot-test_log_sanitizer_covers_stack_traces()]] - `method` [EXTRACTED]
+- [[dot-test_metadata_guard_strips_internal_headers()]] - `method` [EXTRACTED]
+- [[dot-test_token_error_no_secret_leak()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -34,13 +34,13 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test that errors don't leak sensitive information.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 936
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Constraints_8]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Content Requirements_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Header_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Objective_4]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Role_101]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Safety_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Skill Pull Request (PR) Generator_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Technical Detail_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[hermesskillsi-prSKILL]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +26,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_936
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 230]]
-
-## Top bridge nodes
-- [[SSH Proxy Errors]] - degree 2, connects to 1 community

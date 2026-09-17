@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.47
+members: 6
 ---
 
 # Community 1162
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.47 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
-- [[Purpose_29]] - document - .agents/skills/i-sec-defense/README.md
-- [[README_29]] - document - .agents/skills/i-sec-defense/README.md
-- [[Related Skills_32]] - document - .agents/skills/i-sec-defense/README.md
-- [[Usage_32]] - document - .agents/skills/i-sec-defense/README.md
+- [[check()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 

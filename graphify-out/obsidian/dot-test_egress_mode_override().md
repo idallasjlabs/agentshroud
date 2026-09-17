@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_egress_enforce.py"
+type: "code"
+community: "Community 607"
+location: "L60"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_607
+---
+
+# .test_egress_mode_override()
+
+## Connections
+- [[Test specific egress mode environment variable.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_607

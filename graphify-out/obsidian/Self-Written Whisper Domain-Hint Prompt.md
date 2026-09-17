@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "concept"
-community: "Community 1835"
+community: "Community 1876"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1835
+  - community/Community_1876
 ---
 
 # Self-Written Whisper Domain-Hint Prompt
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1835
+#graphify/concept #graphify/EXTRACTED #community/Community_1876

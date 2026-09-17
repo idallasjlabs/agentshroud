@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 455"
+community: "Community 82"
 location: "L724"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/Community_82
 ---
 
 # A Telegram failure on the zero-report path never raises.
 
 ## Connections
-- [[.test_zero_report_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_zero_report_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/Community_82

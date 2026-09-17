@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Check if binary data contains EXIF metadata.
 
 ## Connections
-- [[.check_for_exif()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_for_exif()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1748"
+location: "L677"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1748
+---
+
+# .test_collaborator_internal_tool_output_suppressed_notice_is_normalized_json()
+
+## Connections
+- [[Legacy internal tool-output suppression string should normalize to Protect wordi]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1748

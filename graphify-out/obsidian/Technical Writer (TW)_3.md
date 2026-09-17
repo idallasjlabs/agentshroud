@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 1034"
+community: "Community 723"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1034
+  - community/Community_723
 ---
 
 # Technical Writer (TW)
@@ -15,4 +15,4 @@ tags:
 - [[Technical Writer README]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1034
+#graphify/document #graphify/EXTRACTED #community/Community_723

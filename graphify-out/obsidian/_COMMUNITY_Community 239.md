@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.06
 members: 32
 ---
 
 # Community 239
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[._resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
-- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
+- [[Access Denied_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[dot-agentsskillsi-mcpm-aws-profileSKILL]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_3]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_5]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_108]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_3]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_13]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,13 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 326]]
+- 1 edge to [[_COMMUNITY_Community 381]]
 
 ## Top bridge nodes
-- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 3 communities
-- [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
-- [[hermes_dashboard_proxy()]] - degree 7, connects to 1 community
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - degree 14, connects to 2 communities

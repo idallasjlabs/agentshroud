@@ -1,33 +1,34 @@
 ---
 type: community
 cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # Community 489
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Adversary Model_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Attack Phases_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Attack Techniques Reference_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Coverage Requirements_4]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Critical Rules_11]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Infrastructure_10]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Key Principle_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Output_6]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 2 Prompt Injection_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 3 Indirect Injection_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 4 Data Exfiltration_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 5 Exploitation Chains_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 6 Detection Validation_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[SKILL_191]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Test Structure_6]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Writing Exploit Tests_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Attachments_1]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Common Operations]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Debugging_1]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Delete an Email]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Forward an Email]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Himalaya Email CLI]] - document - skills/openclaw/himalaya/SKILL.md
+- [[List Emails]] - document - skills/openclaw/himalaya/SKILL.md
+- [[List Folders]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Manage Flags]] - document - skills/openclaw/himalaya/SKILL.md
+- [[MoveCopy Emails]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Multiple Accounts]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Output Formats]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Prerequisites_10]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Read an Email]] - document - skills/openclaw/himalaya/SKILL.md
+- [[References_5]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Reply to an Email]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Search Emails]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Tips_4]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Write a New Email]] - document - skills/openclaw/himalaya/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +36,10 @@ members: 18
 TABLE source_file, type FROM #community/Community_489
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 381]]
+- 1 edge to [[_COMMUNITY_Community 403]]
+
+## Top bridge nodes
+- [[Himalaya Email CLI]] - degree 10, connects to 2 communities

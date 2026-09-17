@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 789"
-location: "L102"
+community: "Community 358"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_789
+  - community/Community_358
 ---
 
 # Notes
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_789
+#graphify/document #graphify/EXTRACTED #community/Community_358

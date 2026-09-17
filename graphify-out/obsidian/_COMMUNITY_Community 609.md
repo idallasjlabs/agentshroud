@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 609
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Audit Procedure_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Critical Rules_5]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Heat Map Legend_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Infrastructure_2]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Loss Categories_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Methodology_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Output Format_22]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 4 Configuration Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[SKILL_114]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Critical Findings_2]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Executive Summary_13]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[HIGH-4 In-memory audit chain not persisted]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[High-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Low-Priority  Informational]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Medium-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Remediation Status (Post-v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Scorecard Are We Achieving Our Goal]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[What's Working Well_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[security-assessment-v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 

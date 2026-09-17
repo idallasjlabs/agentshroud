@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1382
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[EU AI Act & NIST Alignment Matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[Governance Proxy Positioning (deployer compliance enabler)]] - rationale - docs/compliance/eu-ai-act-nist-matrix.md
-- [[SOC 2 Type II Attestation Path (SCRUM-99)]] - document - docs/compliance/soc2-attestation-path.md
+- [[4. Configuration Security Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[4.1 Default Configuration Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[4.2 Global Mode Override Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[4.3 Module-Specific Configuration]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1382
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 123]]
+
+## Top bridge nodes
+- [[4. Configuration Security Assessment]] - degree 4, connects to 1 community

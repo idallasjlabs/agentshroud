@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1399
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Hermes Podcast Production Orchestrator README]] - document - .agents/skills/i-hermes/README.md
-- [[Hermes Reference Verifier Skill]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)_1]] - concept - .agents/skills/i-hermes/README.md
+- [[E - Elevation of Privilege]] - document - docs/security/threat-model.md
+- [[Threat Container Escape]] - document - docs/security/threat-model.md
+- [[Threat Docker Socket Access]] - document - docs/security/threat-model.md
+- [[Threat Prompt Injection Attacks]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1399
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 962]]
+
+## Top bridge nodes
+- [[E - Elevation of Privilege]] - degree 4, connects to 1 community

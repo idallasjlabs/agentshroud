@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Community 1252"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1252
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Filter log record, sanitizing sensitive content.
 
 ## Connections
-- [[.filter()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1252
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

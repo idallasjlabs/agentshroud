@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_egress_telegram_notify.py"
+type: "code"
+community: "Community 214"
+location: "L169"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_214
+---
+
+# .test_answer_callback_success()
+
+## Connections
+- [[Test answering callback query.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_214

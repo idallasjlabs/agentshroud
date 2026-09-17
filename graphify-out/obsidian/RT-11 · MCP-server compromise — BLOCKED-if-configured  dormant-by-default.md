@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 276"
+community: "Community 282"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Community_282
 ---
 
 # RT-11 · MCP-server compromise — **BLOCKED-if-configured / dormant-by-default**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/Community_282

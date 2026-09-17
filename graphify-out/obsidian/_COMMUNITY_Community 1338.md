@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Hermes — 7 entries]] - document - scripts/cve-registry-manual-review.md
-- [[Openclaw — 168 entries]] - document - scripts/cve-registry-manual-review.md
-- [[Summary_25]] - document - scripts/cve-registry-manual-review.md
-- [[cve-registry-manual-review]] - document - scripts/cve-registry-manual-review.md
+- [[dot-agentsskillsgraphifyreferenceshooks]] - document - .agents/skills/graphify/references/hooks.md
+- [[For git commit hook]] - document - .agents/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
+- [[graphify reference commit hook and native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

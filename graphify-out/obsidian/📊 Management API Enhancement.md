@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Community 724"
+community: "Community 759"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_724
+  - community/Community_759
 ---
 
 # 📊 **Management API Enhancement**
 
 ## Connections
-- [[1. Accomplishments This Phase_2]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_724
+#graphify/document #graphify/EXTRACTED #community/Community_759

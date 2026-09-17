@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L187"
+community: "Community 44"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - graphify/EXTRACTED
+  - community/Community_44
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-__init__()_147]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-get_stats()_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Community_44

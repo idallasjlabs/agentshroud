@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ui_face.c"
+source_file: ""
 type: "code"
-community: "Community 446"
-location: "L150"
+community: "Community 363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/Community_363
 ---
 
 # lv_event_t
 
 ## Connections
-- [[_touch_pressed()]] - `references` [EXTRACTED]
-- [[_touch_start_only()]] - `references` [EXTRACTED]
+- [[_touch_pressed]] - `references` [EXTRACTED]
+- [[_touch_start_only]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/Community_363

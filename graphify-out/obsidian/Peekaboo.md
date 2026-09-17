@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Community 570"
+community: "Community 589"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/Community_589
 ---
 
 # Peekaboo
@@ -18,6 +18,6 @@ tags:
 - [[Examples]] - `contains` [EXTRACTED]
 - [[Features (all CLI capabilities, excluding agentMCP)]] - `contains` [EXTRACTED]
 - [[Quickstart (happy path)]] - `contains` [EXTRACTED]
-- [[SKILL_225]] - `contains` [EXTRACTED]
+- [[peekabooSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/Community_589

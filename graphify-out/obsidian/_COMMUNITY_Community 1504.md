@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
-- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
+- [[dot-agentsskillsi-scrumSKILL]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

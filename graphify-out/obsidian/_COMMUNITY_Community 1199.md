@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_64]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[README_69]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Related Skills_70]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Usage_71]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[dot-agentsskillsi-macREADME]] - document - .agents/skills/i-mac/README.md
+- [[Purpose_22]] - document - .agents/skills/i-mac/README.md
+- [[Related Skills_13]] - document - .agents/skills/i-mac/README.md
+- [[Usage_17]] - document - .agents/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 

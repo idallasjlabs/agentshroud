@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Canary Tripwire"
 location: "L356"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Canary_Tripwire
 ---
 
 # TestE2E10FailClosed
 
 ## Connections
-- [[.test_pipeline_raises_with_only_prompt_guard()]] - `method` [EXTRACTED]
-- [[.test_pipeline_raises_without_pii_sanitizer()]] - `method` [EXTRACTED]
+- [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `method` [EXTRACTED]
+- [[dot-test_pipeline_raises_without_pii_sanitizer()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - `rationale_for` [EXTRACTED]
 - [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/INFERRED #community/Canary_Tripwire

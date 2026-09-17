@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 69"
+community: "Community 159"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_159
 ---
 
 # ws_soc_endpoint()
 
 ## Connections
-- [[.run()_5]] - `calls` [EXTRACTED]
-- [[.test_bearer_header_fallback()]] - `calls` [EXTRACTED]
-- [[.test_handler_exception_is_swallowed()]] - `calls` [EXTRACTED]
-- [[.test_invalid_token_closes_4003()]] - `calls` [EXTRACTED]
-- [[.test_raw_gateway_password_fallback()]] - `calls` [EXTRACTED]
-- [[.test_unauthorized_closes_4003()]] - `calls` [EXTRACTED]
-- [[.test_valid_ws_token_accepts()]] - `calls` [EXTRACTED]
+- [[dot-run()_1]] - `calls` [EXTRACTED]
+- [[dot-test_bearer_header_fallback()]] - `calls` [EXTRACTED]
+- [[dot-test_handler_exception_is_swallowed()]] - `calls` [EXTRACTED]
+- [[dot-test_invalid_token_closes_4003()]] - `calls` [EXTRACTED]
+- [[dot-test_raw_gateway_password_fallback()]] - `calls` [EXTRACTED]
+- [[dot-test_unauthorized_closes_4003()]] - `calls` [EXTRACTED]
+- [[dot-test_valid_ws_token_accepts()]] - `calls` [EXTRACTED]
 - [[FastAPI WebSocket route handler for wssoc.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestWSSOCEndpoint]] - `calls` [EXTRACTED]
-- [[WebSocket_7]] - `references` [EXTRACTED]
+- [[WebSocket_5]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[redeem_ws_token()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[soc_websocket()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_159

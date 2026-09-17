@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.09
-members: 37
+cohesion: 0.08
+members: 38
 ---
 
 # Community 188
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[AgentShroud's stance on one vulnerability class.]] - rationale - scripts/triage-cve-mitigations.py
-- [[Any_77]] - code - scripts/triage-cve-mitigations.py
-- [[Best-effort repo-relative path string for display (falls back to str).]] - rationale - scripts/triage-cve-mitigations.py
-- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - rationale - scripts/triage-cve-mitigations.py
-- [[ClassProfile]] - code - scripts/triage-cve-mitigations.py
-- [[Classify an advisory into its vulnerability class from title+description.      D]] - rationale - scripts/triage-cve-mitigations.py
-- [[Compute resulting-status counts and gap themes from triage results.      Args]] - rationale - scripts/triage-cve-mitigations.py
-- [[Fixed taxonomy of advisory vulnerability classes.]] - rationale - scripts/triage-cve-mitigations.py
-- [[Parse a dotted numeric version (e.g. ``2026.4.11``) to a tuple.      Returns `]] - rationale - scripts/triage-cve-mitigations.py
-- [[Path_48]] - code - scripts/triage-cve-mitigations.py
-- [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - rationale - scripts/triage-cve-mitigations.py
-- [[Read the currently pinned OpenClaw version from dockerversions.env.      Return]] - rationale - scripts/triage-cve-mitigations.py
-- [[Render a Python list-of-strings literal matching the file's style.]] - rationale - scripts/triage-cve-mitigations.py
-- [[Render the gap report markdown (development plan).      Args         agent_id]] - rationale - scripts/triage-cve-mitigations.py
-- [[Return the index just past a field value that may span multiple lines.      Trac]] - rationale - scripts/triage-cve-mitigations.py
-- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place.      For each]] - rationale - scripts/triage-cve-mitigations.py
-- [[The status that will actually be written for a result.      Unapplied verdicts f]] - rationale - scripts/triage-cve-mitigations.py
-- [[The verdict for one advisory.]] - rationale - scripts/triage-cve-mitigations.py
-- [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - rationale - scripts/triage-cve-mitigations.py
-- [[TriageResult]] - code - scripts/triage-cve-mitigations.py
-- [[True when ``fixed_in`` version is = the running image (already patched).      A]] - rationale - scripts/triage-cve-mitigations.py
-- [[VulnClass]] - code - scripts/triage-cve-mitigations.py
-- [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
-- [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
-- [[_read_running_version()]] - code - scripts/triage-cve-mitigations.py
-- [[_rel()]] - code - scripts/triage-cve-mitigations.py
-- [[classify()_1]] - code - scripts/triage-cve-mitigations.py
-- [[final_status()]] - code - scripts/triage-cve-mitigations.py
-- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
-- [[main()_25]] - code - scripts/triage-cve-mitigations.py
-- [[parse_version()]] - code - scripts/triage-cve-mitigations.py
-- [[render_gap_report()]] - code - scripts/triage-cve-mitigations.py
-- [[rewrite_registry_text()_1]] - code - scripts/triage-cve-mitigations.py
-- [[summarize()]] - code - scripts/triage-cve-mitigations.py
-- [[triage-cve-mitigations.py]] - code - scripts/triage-cve-mitigations.py
-- [[triage_agent()]] - code - scripts/triage-cve-mitigations.py
-- [[triage_entry()]] - code - scripts/triage-cve-mitigations.py
+- [[dot-__enter__()_3]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__exit__()_3]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__init__()_78]] - code - gateway/ingest_api/email_service.py
+- [[dot-__init__()_79]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-build_message()]] - code - gateway/ingest_api/email_service.py
+- [[dot-login()]] - code - gateway/ingest_api/email_service.py
+- [[dot-login()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-send()]] - code - gateway/ingest_api/email_service.py
+- [[dot-sender()]] - code - gateway/ingest_api/email_service.py
+- [[dot-sendmail()]] - code - gateway/ingest_api/email_service.py
+- [[dot-sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_send_logs_in_and_sendmails_over_injected_transport()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_send_propagates_auth_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_send_propagates_generic_smtp_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
+- [[GatewayEmailService]] - code - gateway/tests/test_gateway_email_service.py
+- [[GatewayEmailService_1]] - code - gateway/ingest_api/email_service.py
+- [[POST emailsend to the owner sends via forward._email_service — proving]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Protocol]] - code
+- [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
+- [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
+- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
+- [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
+- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
+- [[TransportFactory]] - code - gateway/ingest_api/email_service.py
+- [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
+- [[_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[email_service.py]] - code - gateway/ingest_api/email_service.py
+- [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
+- [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,9 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 380]]
+- 3 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 100]]
 
 ## Top bridge nodes
-- [[triage-cve-mitigations.py]] - degree 20, connects to 2 communities
-- [[VulnClass]] - degree 5, connects to 1 community
+- [[GatewayEmailService_1]] - degree 16, connects to 1 community
+- [[test_gateway_email_service.py]] - degree 8, connects to 1 community
+- [[email_service.py]] - degree 3, connects to 1 community

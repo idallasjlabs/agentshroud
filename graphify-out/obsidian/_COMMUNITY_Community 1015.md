@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1015
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Migration Path (SSH → Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 1 Verify Option 1 Working]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 2 Install OpenClaw on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 3 Pair Nodes]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 4 Test Basic Communication]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 5 Migrate Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 6 Deprecate SSH (Optional)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[entries]] - code - docker/config/hermes/manifest.json
+- [[entries_1]] - code - docker/config/openclaw/manifest.json
+- [[generated_at]] - code - docker/config/hermes/manifest.json
+- [[generated_at_1]] - code - docker/config/openclaw/manifest.json
+- [[hermesmanifest.json]] - code - docker/config/hermes/manifest.json
+- [[openclawmanifest.json]] - code - docker/config/openclaw/manifest.json
+- [[version]] - code - docker/config/hermes/manifest.json
+- [[version_1]] - code - docker/config/openclaw/manifest.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1015
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 439]]
-
-## Top bridge nodes
-- [[Migration Path (SSH → Distributed Node)]] - degree 7, connects to 1 community

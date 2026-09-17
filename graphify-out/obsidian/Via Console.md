@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 1305"
+community: "Community 351"
 location: "L347"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_351
 ---
 
 # Via Console
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1305
+#graphify/document #graphify/EXTRACTED #community/Community_351

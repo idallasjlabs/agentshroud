@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 926"
-location: "L42"
+community: "Community 613"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_926
+  - community/Community_613
 ---
 
 # Key Endpoints
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_926
+#graphify/document #graphify/EXTRACTED #community/Community_613

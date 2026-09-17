@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 592"
+community: "Community 609"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Community_609
 ---
 
 # CRITICAL-2: No request body size limits on API models
 
 ## Connections
-- [[Critical Findings_1]] - `contains` [EXTRACTED]
+- [[Critical Findings_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Community_609

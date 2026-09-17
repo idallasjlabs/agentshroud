@@ -10,42 +10,42 @@ members: 36
 **Members:** 36 nodes
 
 ## Members
-- [[1. Executive Summary]] - document - docs/testing/test-plan.md
-- [[10. Test Reporting]] - document - docs/testing/test-plan.md
-- [[10.1 Test Metrics Dashboard]] - document - docs/testing/test-plan.md
-- [[10.2 Release Readiness Criteria]] - document - docs/testing/test-plan.md
-- [[11. Test Environment Maintenance]] - document - docs/testing/test-plan.md
-- [[11.1 Environment Health Monitoring]] - document - docs/testing/test-plan.md
-- [[2. Test Strategy]] - document - docs/testing/test-plan.md
-- [[2.1 Testing Philosophy]] - document - docs/testing/test-plan.md
-- [[2.2 Test Levels]] - document - docs/testing/test-plan.md
-- [[3. Test Environments]] - document - docs/testing/test-plan.md
-- [[3.1 Development Environment]] - document - docs/testing/test-plan.md
-- [[3.2 Staging Environment (Pi)]] - document - docs/testing/test-plan.md
-- [[3.3 CICD Environment]] - document - docs/testing/test-plan.md
-- [[4. Test Categories]] - document - docs/testing/test-plan.md
-- [[4.1 Security Modules Testing]] - document - docs/testing/test-plan.md
-- [[4.2 Core System Testing]] - document - docs/testing/test-plan.md
-- [[4.3 Infrastructure Testing]] - document - docs/testing/test-plan.md
-- [[5. Test Execution]] - document - docs/testing/test-plan.md
-- [[5.1 Test Automation Framework]] - document - docs/testing/test-plan.md
-- [[5.2 Test Execution Schedule]] - document - docs/testing/test-plan.md
-- [[6. Test Coverage]] - document - docs/testing/test-plan.md
-- [[6.1 Coverage Targets]] - document - docs/testing/test-plan.md
-- [[6.2 Current Test Metrics (v0.9.0)]] - document - docs/testing/test-plan.md
-- [[6.3 Critical Path Coverage]] - document - docs/testing/test-plan.md
-- [[7. Security Testing]] - document - docs/testing/test-plan.md
-- [[7.1 Vulnerability Assessment]] - document - docs/testing/test-plan.md
-- [[7.2 Threat Model Validation]] - document - docs/testing/test-plan.md
-- [[8. Performance Benchmarks]] - document - docs/testing/test-plan.md
-- [[8.1 Latency Requirements]] - document - docs/testing/test-plan.md
-- [[8.2 Resource Utilization]] - document - docs/testing/test-plan.md
-- [[9. Regression Testing]] - document - docs/testing/test-plan.md
-- [[9.1 Regression Strategy]] - document - docs/testing/test-plan.md
-- [[9.2 Regression Triggers]] - document - docs/testing/test-plan.md
-- [[AgentShroud v0.9.0_1]] - document - docs/testing/test-plan.md
-- [[Test Plan]] - document - docs/testing/test-plan.md
-- [[test-plan]] - document - docs/testing/test-plan.md
+- [[Access Denied_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Current Profile_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configuration Files_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[List Available Profiles_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_4]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_16]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_9]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[View Configured Profiles_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[openclawskillsi-mcpm-aws-profileSKILL]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

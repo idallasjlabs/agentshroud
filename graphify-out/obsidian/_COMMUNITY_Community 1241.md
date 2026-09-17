@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_106]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[README_111]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Related Skills_115]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_3]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Usage_116]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Pull Request Generator (PR)_1]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Purpose_59]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Related Skills_50]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Usage_54]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[hermesskillsi-prREADME]] - document - docker/config/hermes/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 

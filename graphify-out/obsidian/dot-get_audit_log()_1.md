@@ -1,0 +1,18 @@
+---
+source_file: ".agents/skills/i-browser/scripts/browse.py"
+type: "code"
+community: "Community 132"
+location: "L421"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_132
+---
+
+# .get_audit_log()
+
+## Connections
+- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_132

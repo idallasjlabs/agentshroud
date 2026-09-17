@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 1141"
-location: "L6"
+community: "Community 1047"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1141
+  - community/Community_1047
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1141
+#graphify/document #graphify/EXTRACTED #community/Community_1047

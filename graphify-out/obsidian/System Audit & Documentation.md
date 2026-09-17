@@ -1,17 +1,18 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Community 600"
+community: "Community 616"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_600
+  - community/Community_616
 ---
 
 # System Audit & Documentation
 
 ## Connections
+- [[dot-agentsskillsi-sadSKILL]] - `contains` [EXTRACTED]
 - [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - `contains` [EXTRACTED]
 - [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - `contains` [EXTRACTED]
 - [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - `contains` [EXTRACTED]
@@ -25,6 +26,5 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
-- [[SKILL_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_600
+#graphify/document #graphify/EXTRACTED #community/Community_616

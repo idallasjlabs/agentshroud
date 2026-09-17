@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 104"
+community: "Multi-Agent Router & Chat UI"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Build a minimal mock app_state that returns a target with the given bot name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_mock_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

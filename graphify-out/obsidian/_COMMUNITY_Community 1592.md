@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_called_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form-encoded sendMessage bodies must also be scanned by the pipeline.          R]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
+- [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_called_when_available()]] - degree 4, connects to 3 communities
+- [[dot-test_lifespan_op_prewarm_guarded_against_pytest()]] - degree 2, connects to 1 community

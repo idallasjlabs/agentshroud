@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.23
 members: 21
 ---
 
 # Community 431
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.23 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
-- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
-- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
-- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[audio.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
+- [[bspesp-bsp.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[do_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[esp_err.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
+- [[esp_log.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[freertosFreeRTOS.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[freertostask.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[iot_button.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[main()_21]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_clear_allows_fresh_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_finish_ends_listening()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_finish_noop_when_idle()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_state.c]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_push_frame_suppressed_while_triggered()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_tap_in_idle_starts_listen()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_vad_timeout_fires_without_audio()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[wakeword_clear()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ended()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,15 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 223]]
-- 8 edges to [[_COMMUNITY_Community 262]]
-- 2 edges to [[_COMMUNITY_Community 46]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 169]]
+- 13 edges to [[_COMMUNITY_Community 363]]
+- 4 edges to [[_COMMUNITY_Community 352]]
+- 4 edges to [[_COMMUNITY_Community 273]]
+- 2 edges to [[_COMMUNITY_Community 246]]
 
 ## Top bridge nodes
-- [[tool_chain_analyzer.py]] - degree 12, connects to 4 communities
-- [[ChainMatch]] - degree 10, connects to 2 communities
-- [[.analyze_tool_call()]] - degree 9, connects to 1 community
-- [[._detect_chain_patterns()]] - degree 8, connects to 1 community
-- [[ChainPattern]] - degree 7, connects to 1 community
+- [[wakeword_triggered()]] - degree 16, connects to 4 communities
+- [[wakeword_clear()]] - degree 9, connects to 3 communities
+- [[wakeword_ended()]] - degree 9, connects to 2 communities
+- [[do_tap()]] - degree 8, connects to 1 community
+- [[test_clear_allows_fresh_tap()]] - degree 7, connects to 1 community

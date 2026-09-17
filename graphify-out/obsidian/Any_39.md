@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 18"
-location: "L289"
+community: "Community 231"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_18
+  - graphify/INFERRED
+  - community/Community_231
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/INFERRED #community/Community_231

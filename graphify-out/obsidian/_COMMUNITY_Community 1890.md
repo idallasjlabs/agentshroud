@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[agentshroud-knowledge]] - document - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

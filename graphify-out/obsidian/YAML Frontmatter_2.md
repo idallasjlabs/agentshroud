@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 251"
+community: "Community 263"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_263
 ---
 
 # YAML Frontmatter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_251
+#graphify/document #graphify/EXTRACTED #community/Community_263

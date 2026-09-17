@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ElevenLabs Text-to-Dialogue API]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[eleven_v3 model]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[dot-agentsskillsi-architecture-reviewSKILL]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

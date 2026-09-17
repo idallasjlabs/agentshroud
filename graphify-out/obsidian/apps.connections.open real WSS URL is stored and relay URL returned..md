@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 74"
+community: "Community 78"
 location: "L389"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_78
 ---
 
 # apps.connections.open: real WSS URL is stored and relay URL returned.
 
 ## Connections
-- [[.test_connections_open_rewrites_url()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_connections_open_rewrites_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

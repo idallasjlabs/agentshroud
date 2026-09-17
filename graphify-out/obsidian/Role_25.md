@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 463"
+community: "Community 303"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Community_303
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Community_303

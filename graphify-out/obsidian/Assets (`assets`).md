@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 773"
+community: "Community 811"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_773
+  - community/Community_811
 ---
 
 # Assets (`assets/`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Bundled Resources (optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_773
+#graphify/document #graphify/EXTRACTED #community/Community_811

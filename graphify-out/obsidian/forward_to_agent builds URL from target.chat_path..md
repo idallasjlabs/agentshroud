@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # forward_to_agent builds URL from target.chat_path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_uses_chat_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
+type: "code"
+community: "Community 159"
+location: "L814"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_159
+---
+
+# .test_bearer_header_fallback()
+
+## Connections
+- [[TestWSSOCEndpoint]] - `method` [EXTRACTED]
+- [[_make_ws()]] - `calls` [EXTRACTED]
+- [[issue_ws_token()]] - `calls` [EXTRACTED]
+- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_159

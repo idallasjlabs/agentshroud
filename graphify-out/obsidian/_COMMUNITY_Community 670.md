@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Clone the Repository_1]] - document - docs/operations/macos.md
-- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
-- [[3. Set Up Secrets_1]] - document - docs/operations/macos.md
-- [[4. Configure AgentShroud_1]] - document - docs/operations/macos.md
-- [[5. Build and Start_1]] - document - docs/operations/macos.md
-- [[6. Verify_1]] - document - docs/operations/macos.md
-- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
-- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
-- [[Fresh Install_1]] - document - docs/operations/macos.md
-- [[Prerequisites_5]] - document - docs/operations/macos.md
-- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
-- [[Updating to Latest Release_1]] - document - docs/operations/macos.md
-- [[macos]] - document - docs/operations/macos.md
+- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Architecture Overview_2]] - document - docs/api/integration-guide.md
+- [[Configuration_20]] - document - docs/api/integration-guide.md
+- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Integration Testing]] - document - docs/api/integration-guide.md
+- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
+- [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Purpose_163]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_43]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,16 @@ members: 14
 TABLE source_file, type FROM #community/Community_670
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 412]]
+- 1 edge to [[_COMMUNITY_Community 526]]
+- 1 edge to [[_COMMUNITY_Community 612]]
+- 1 edge to [[_COMMUNITY_Community 652]]
+- 1 edge to [[_COMMUNITY_Community 769]]
+
+## Top bridge nodes
+- [[Architecture Overview_2]] - degree 6, connects to 2 communities
+- [[OpenSCAP_1]] - degree 8, connects to 1 community
+- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
+- [[Integration Testing]] - degree 3, connects to 1 community

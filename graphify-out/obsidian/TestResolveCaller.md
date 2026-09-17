@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # TestResolveCaller
 
 ## Connections
-- [[.test_bearer_header_valid()]] - `method` [EXTRACTED]
-- [[.test_cookie_raw_bearer_fallback()]] - `method` [EXTRACTED]
-- [[.test_get_caller_passthrough()]] - `method` [EXTRACTED]
-- [[.test_no_credentials_raises_401()]] - `method` [EXTRACTED]
-- [[.test_session_cookie_valid()]] - `method` [EXTRACTED]
-- [[.test_wrong_bearer_raises_401()]] - `method` [EXTRACTED]
-- [[.test_x_soc_token_header_valid()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[dot-test_bearer_header_valid()]] - `method` [EXTRACTED]
+- [[dot-test_cookie_raw_bearer_fallback()]] - `method` [EXTRACTED]
+- [[dot-test_get_caller_passthrough()]] - `method` [EXTRACTED]
+- [[dot-test_no_credentials_raises_401()]] - `method` [EXTRACTED]
+- [[dot-test_session_cookie_valid()]] - `method` [EXTRACTED]
+- [[dot-test_wrong_bearer_raises_401()]] - `method` [EXTRACTED]
+- [[dot-test_x_soc_token_header_valid()]] - `method` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

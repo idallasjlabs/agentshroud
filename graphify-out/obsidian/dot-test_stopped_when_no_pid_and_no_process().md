@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_soc_services_coverage.py"
+type: "code"
+community: "SOC Service Manager (Container Engine)"
+location: "L243"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/SOC_Service_Manager_Container_Engine
+---
+
+# .test_stopped_when_no_pid_and_no_process()
+
+## Connections
+- [[TestCheckFluentBit]] - `method` [EXTRACTED]
+- [[_patch_open()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

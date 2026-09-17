@@ -1,20 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 90"
-location: "L72"
+community: "Community 273"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Community_273
 ---
 
 # vt_agent_count()
 
 ## Connections
-- [[_agent_btn_pressed()]] - `calls` [INFERRED]
-- [[_agent_btn_pressed() — BSP_BUTTON_MUTE IRQ callback]] - `calls` [EXTRACTED]
-- [[app_main.c]] - `contains` [EXTRACTED]
-- [[wakeword_next_agent()]] - `calls` [INFERRED]
+- [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/Community_273

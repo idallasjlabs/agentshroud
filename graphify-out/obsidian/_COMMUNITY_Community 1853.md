@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.scan()]] - code - gateway/security/prompt_guard.py
+- [[Raw-flag triage discipline (74-merge sweep)]] - rationale - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

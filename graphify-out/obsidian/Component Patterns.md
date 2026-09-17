@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 294"
+community: "Community 303"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Community_303
 ---
 
 # Component Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Navigation]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_294
+#graphify/document #graphify/EXTRACTED #community/Community_303

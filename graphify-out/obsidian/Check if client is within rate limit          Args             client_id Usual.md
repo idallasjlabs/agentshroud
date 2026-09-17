@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "Community 115"
+community: "Approval Routing & Event Bus"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Check if client is within rate limit          Args:             client_id: Usual
 
 ## Connections
-- [[.check()]] - `rationale_for` [EXTRACTED]
+- [[dot-check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

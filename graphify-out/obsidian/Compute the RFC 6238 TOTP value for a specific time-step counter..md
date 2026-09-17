@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "Community 63"
+community: "Community 57"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_57
 ---
 
 # Compute the RFC 6238 TOTP value for a specific time-step counter.
 
 ## Connections
-- [[._totp_for_counter()]] - `rationale_for` [EXTRACTED]
+- [[dot-_totp_for_counter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_63
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

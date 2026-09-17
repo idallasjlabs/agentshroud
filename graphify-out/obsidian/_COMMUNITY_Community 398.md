@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.11
 members: 22
 ---
 
 # Community 398
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[ASCII Art (fallback — no renderer available)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Anti-Patterns to Flag_20]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Architecture (C4  block) — System boundaries and components_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Dependencies_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Gantt — Daily pipeline schedule_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Role_107]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Rules_23]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[SKILL_184]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[State Diagram — Job or process lifecycle_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Validate syntax without exporting_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Validation Checklist_7]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[dot-agentsskillsi-mcREADME]] - document - .agents/skills/i-mc/README.md
+- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
+- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
+- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
+- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Purpose_125]] - document - .agents/skills/i-mc/README.md
+- [[Related Skills_111]] - document - .agents/skills/i-mc/README.md
+- [[Usage_120]] - document - .agents/skills/i-mc/README.md
+- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
+- [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
+- [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +39,12 @@ members: 22
 TABLE source_file, type FROM #community/Community_398
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 986]]
+- 1 edge to [[_COMMUNITY_Community 1373]]
+
+## Top bridge nodes
+- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 1 community
+- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
+- [[GIT-GUARD Skill]] - degree 5, connects to 1 community

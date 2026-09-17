@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Community 973"
+community: "Community 1022"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_973
+  - community/Community_1022
 ---
 
 # Attack Teardowns: How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks
@@ -17,4 +17,4 @@ tags:
 - [[What this document does NOT cover (explicitly out of scope here)]] - `contains` [EXTRACTED]
 - [[attack-teardowns-rovoblast-cross-turn]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_973
+#graphify/document #graphify/EXTRACTED #community/Community_1022

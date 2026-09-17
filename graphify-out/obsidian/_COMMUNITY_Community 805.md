@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 805
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[00-information-disclosure]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Add information filtering to prevent agent self-disclosure]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Constraints_6]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Evidence_6]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Option A System prompt restriction (fast, partial)]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Option B Outbound content filter (robust)]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Option C Both (recommended)]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Problem_9]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Remediation_7]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Root Cause_7]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Severity_9]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Verification_13]] - document - docs/planning/redteam/00-information-disclosure.md
 
 ## Live Query (requires Dataview plugin)
 

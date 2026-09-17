@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1726"
+location: "L308"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1726
+---
+
+# .test_long_outbound_message_quarantined()
+
+## Connections
+- [[Blocked outbound messages should be stored in outbound quarantine.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1726

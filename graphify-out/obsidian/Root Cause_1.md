@@ -1,20 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 710"
-location: "L22"
+community: "Community 542"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/Community_542
 ---
 
 # Root Cause
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
-- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
-- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_710
+#graphify/document #graphify/EXTRACTED #community/Community_542

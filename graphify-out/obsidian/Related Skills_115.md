@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Community 1241"
+community: "Community 723"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1241
+  - community/Community_723
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1241
+#graphify/document #graphify/EXTRACTED #community/Community_723

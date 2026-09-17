@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 422"
-location: "L131"
+community: "Community 1171"
+location: "L1734"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_422
+  - community/Community_1171
 ---
 
 # Slow Builds
 
 ## Connections
-- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_422
+#graphify/document #graphify/EXTRACTED #community/Community_1171

@@ -1,16 +1,16 @@
 ---
 source_file: "scripts/start-control-center"
 type: "code"
-community: "Community 260"
+community: "Community 277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_260
+  - community/Community_277
 ---
 
 # start-control-center
 
 ## Connections
-- [[text_control_center.py]] - `references` [EXTRACTED]
+- [[text_control_center.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_260
+#graphify/code #graphify/EXTRACTED #community/Community_277

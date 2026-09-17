@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_revoke_command_requires_target_user_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[revoke must persist through pause_collaborator() so the pause survives]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner revoke without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_secret_mount_args]] - code - docker/bots/hermes/run-standalone.sh
+- [[_wait_for_gateway_healthy]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_up]] - code - docker/bots/hermes/run-standalone.sh
+- [[missing-secret startup visibility check]] - code - docker/bots/hermes/start.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1370
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Community 31]]
-
-## Top bridge nodes
-- [[.test_owner_revoke_command_requires_target_user_id()]] - degree 8, connects to 2 communities
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - degree 7, connects to 2 communities

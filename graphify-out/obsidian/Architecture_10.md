@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Community 660"
-location: "L3"
+community: "Community 524"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Community_524
 ---
 
 # Architecture
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Community_524

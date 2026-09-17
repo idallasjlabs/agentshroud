@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 419"
+location: "L5181"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_419
+---
+
+# .test_multipart_sanitizer_fallback_redacts_pii()
+
+## Connections
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
+- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - `rationale_for` [EXTRACTED]
+- [[_make_multipart_body()]] - `calls` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_419

@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[1. Check MCP Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_31]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_101]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Role_91]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[SKILL_160]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_8]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Auto-Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Diagnosis]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Recovery_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Data Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Immediate Assessment]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Ledger Database]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[OOM Kill (Exit Code 137)_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 1 Simple Restart (most common fix)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 2 Full Stop and Start]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 3 Rebuild and Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 4 Volume-Safe Reset]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Pending Approvals]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Post-Recovery Verification]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_31]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +36,9 @@ members: 19
 TABLE source_file, type FROM #community/Community_470
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 254]]
+
+## Top bridge nodes
+- [[Crash Recovery_1]] - degree 9, connects to 1 community

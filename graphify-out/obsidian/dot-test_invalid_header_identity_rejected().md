@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+type: "code"
+community: "Community 386"
+location: "L188"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_386
+---
+
+# .test_invalid_header_identity_rejected()
+
+## Connections
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_386

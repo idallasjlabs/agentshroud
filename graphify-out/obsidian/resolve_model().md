@@ -1,22 +1,22 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Community 179"
+community: "Community 105"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_179
+  - community/Community_105
 ---
 
 # resolve_model()
 
 ## Connections
-- [[Resolve (model, provider) for Hermes from the container environment.      Preced]] - `rationale_for` [EXTRACTED]
+- [[Resolve (model, provider) for Hermes from the container environment.…]] - `rationale_for` [EXTRACTED]
 - [[_apply_stale_alias_correction()]] - `calls` [EXTRACTED]
 - [[_resolve_from_env()]] - `calls` [EXTRACTED]
 - [[provider_for_model()]] - `calls` [EXTRACTED]
-- [[resolve_model.py]] - `contains` [EXTRACTED]
+- [[resolve_model.py (Hermes)]] - `contains` [EXTRACTED]
 - [[strip_provider_prefix()]] - `calls` [EXTRACTED]
 - [[test_cloud_mode_falls_back_to_cloud_ref_when_main_unset()]] - `calls` [INFERRED]
 - [[test_cloud_mode_no_refs_returns_safe_default()]] - `calls` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - `calls` [INFERRED]
 - [[test_unknown_mode_treated_as_cloud()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_179
+#graphify/code #graphify/INFERRED #community/Community_105

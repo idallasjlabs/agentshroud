@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
+source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "Community 981"
-location: "L4"
+community: "Community 959"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_981
+  - community/Community_959
 ---
 
 # usage()
 
 ## Connections
-- [[wait-for-text.sh]] - `defines` [EXTRACTED]
-- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
+- [[killswitch.sh]] - `defines` [EXTRACTED]
+- [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_981
+#graphify/code #graphify/EXTRACTED #community/Community_959

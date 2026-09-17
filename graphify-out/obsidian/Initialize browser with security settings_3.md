@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Community 144"
+community: "Community 142"
 location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/Community_142
 ---
 
 # Initialize browser with security settings
 
 ## Connections
-- [[._init_browser()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-_init_browser()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_144
+#graphify/rationale #graphify/EXTRACTED #community/Community_142

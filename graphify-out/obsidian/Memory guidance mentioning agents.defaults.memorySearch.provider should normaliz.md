@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1657"
+community: "Community 85"
 location: "L930"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1657
+  - community/Community_85
 ---
 
 # Memory guidance mentioning agents.defaults.memorySearch.provider should normaliz
 
 ## Connections
-- [[.test_memory_provider_guidance_phrase_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_provider_guidance_phrase_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1657
+#graphify/rationale #graphify/EXTRACTED #community/Community_85

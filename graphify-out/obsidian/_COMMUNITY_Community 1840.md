@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Cron Monthly Chaos Engineering Drill]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

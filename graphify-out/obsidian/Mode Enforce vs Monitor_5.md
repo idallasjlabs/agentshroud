@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 503"
-location: "L97"
+community: "Community 545"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/Community_545
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/Community_545

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/static/chat.html"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # AgentShroud Secure Chat Interface (static HTML/JS)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sendMessage() JS — POST forward from browser chat UI]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

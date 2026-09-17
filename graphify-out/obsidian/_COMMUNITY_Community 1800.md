@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
+- [[Favicon 96x96 (AgentShroud logo mark)]] - image - branding/favicons/favicon-96x96.png
 
 ## Live Query (requires Dataview plugin)
 

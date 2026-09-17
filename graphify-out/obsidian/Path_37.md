@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Community 475"
-location: "L41"
+community: "Community 365"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/Community_365
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_475
+#graphify/code #graphify/EXTRACTED #community/Community_365

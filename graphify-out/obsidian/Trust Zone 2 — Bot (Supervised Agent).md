@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Community 900"
+community: "Community 941"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_900
+  - community/Community_941
 ---
 
 # Trust Zone 2 — Bot (Supervised Agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Bot (no direct credentialinternet access)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_900
+#graphify/concept #graphify/EXTRACTED #community/Community_941

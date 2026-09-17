@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/voice-call/SKILL.md"
-type: "document"
-community: "Community 401"
-location: "L19"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 36"
+location: "L32"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_36
 ---
 
-# CLI
+# Cli
 
 ## Connections
-- [[Voice Call]] - `contains` [EXTRACTED]
+- [[Commands_2]] - `references` [EXTRACTED]
+- [[OutputFormat]] - `references` [EXTRACTED]
+- [[String]] - `references` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/code #graphify/EXTRACTED #community/Community_36

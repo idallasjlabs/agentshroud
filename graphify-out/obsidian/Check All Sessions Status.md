@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 547"
+community: "Community 559"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_547
+  - community/Community_559
 ---
 
 # Check All Sessions Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Claude Code Session Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_547
+#graphify/document #graphify/EXTRACTED #community/Community_559

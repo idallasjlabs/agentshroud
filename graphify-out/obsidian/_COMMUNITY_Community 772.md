@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Audit & Compliance (4)]] - document - docs/security/security-inventory.md
-- [[Encryption & Key Management (3)]] - document - docs/security/security-inventory.md
-- [[External Integrations (4)]] - document - docs/security/security-inventory.md
-- [[Inbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Infrastructure Protection (8)]] - document - docs/security/security-inventory.md
-- [[MCPTool Security (6)]] - document - docs/security/security-inventory.md
-- [[Network & Egress (6)]] - document - docs/security/security-inventory.md
-- [[Orchestration (3)]] - document - docs/security/security-inventory.md
-- [[Outbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[PII & Data Protection (3)]] - document - docs/security/security-inventory.md
-- [[Security Modules (58)]] - document - docs/security/security-inventory.md
-- [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
+- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_50]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 911]]
-- 1 edge to [[_COMMUNITY_Community 500]]
+- 1 edge to [[_COMMUNITY_Community 254]]
 
 ## Top bridge nodes
-- [[Security Modules (58)]] - degree 13, connects to 2 communities
+- [[Health Checks_1]] - degree 10, connects to 1 community

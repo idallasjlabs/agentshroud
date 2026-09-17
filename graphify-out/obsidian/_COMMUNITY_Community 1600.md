@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_hermes_openai_api_key_wired_via_secret()]] - code - gateway/tests/test_config_validation.py
+- [[Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 509]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_block_non_owner()]] - degree 5, connects to 4 communities
+- [[dot-test_hermes_openai_api_key_wired_via_secret()]] - degree 2, connects to 1 community

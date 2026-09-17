@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 37"
+community: "Runtime Security Comparison & Intel Report"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # api.py
@@ -17,12 +17,12 @@ tags:
 - [[DraftEntry]] - `imports` [EXTRACTED]
 - [[IntelDraftEntry]] - `contains` [EXTRACTED]
 - [[IntelDraftRequest]] - `contains` [EXTRACTED]
-- [[IntelReportStore]] - `imports` [EXTRACTED]
+- [[IntelReportStore_1]] - `imports` [EXTRACTED]
 - [[KillSwitchAction]] - `contains` [EXTRACTED]
 - [[ModeRequest]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `imports` [EXTRACTED]
 - [[ServiceAction]] - `contains` [EXTRACTED]
-- [[SkillGuard]] - `imports` [EXTRACTED]
+- [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillGuardBlocked]] - `contains` [EXTRACTED]
 - [[SkillsManifest]] - `imports` [EXTRACTED]
 - [[UpdateRequest]] - `contains` [EXTRACTED]
@@ -38,45 +38,45 @@ tags:
 - [[_valid_services()]] - `contains` [EXTRACTED]
 - [[_validate_mgmt_ws_token()]] - `contains` [EXTRACTED]
 - [[_validate_service_name()]] - `contains` [EXTRACTED]
-- [[auth.py]] - `imports_from` [EXTRACTED]
 - [[check_agentshroud_updates()]] - `contains` [EXTRACTED]
 - [[check_bot_updates()]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[config.py_1]] - `imports_from` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
 - [[export_config()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
+- [[falco_monitor.py_2]] - `conceptually_related_to` [INFERRED]
 - [[get_competitive_intel()]] - `contains` [EXTRACTED]
 - [[get_competitive_intel_history()]] - `contains` [EXTRACTED]
-- [[get_config()_1]] - `contains` [EXTRACTED]
+- [[get_config()]] - `contains` [EXTRACTED]
 - [[get_engine()]] - `imports` [EXTRACTED]
-- [[get_logs()_1]] - `contains` [EXTRACTED]
+- [[get_logs()]] - `contains` [EXTRACTED]
 - [[get_mode()]] - `contains` [EXTRACTED]
 - [[get_security_comparison()]] - `imports` [EXTRACTED]
 - [[get_status()]] - `contains` [EXTRACTED]
 - [[import_config()]] - `contains` [EXTRACTED]
-- [[installer.py]] - `references` [EXTRACTED]
+- [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[installer.py_2]] - `references` [EXTRACTED]
 - [[killswitch()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[management.py]] - `imports_from` [EXTRACTED]
-- [[proxy_status.py]] - `calls` [EXTRACTED]
+- [[proxy_status.py_2]] - `calls` [EXTRACTED]
 - [[rebuild()]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `contains` [EXTRACTED]
-- [[restart_service()_2]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `contains` [EXTRACTED]
+- [[restart_service()_1]] - `contains` [EXTRACTED]
 - [[rollback_agentshroud()]] - `contains` [EXTRACTED]
 - [[rollback_bot()]] - `contains` [EXTRACTED]
 - [[rollback_openclaw()]] - `contains` [EXTRACTED]
+- [[runtimeconfig.py]] - `imports_from` [EXTRACTED]
 - [[security.py]] - `imports_from` [EXTRACTED]
 - [[security_report()]] - `contains` [EXTRACTED]
-- [[set_mode()_1]] - `contains` [EXTRACTED]
+- [[set_mode()]] - `contains` [EXTRACTED]
 - [[skills_reload()]] - `contains` [EXTRACTED]
 - [[start_service()_1]] - `contains` [EXTRACTED]
-- [[stop_service()_2]] - `contains` [EXTRACTED]
+- [[stop_service()_1]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `contains` [EXTRACTED]
 - [[update_config()]] - `contains` [EXTRACTED]
 - [[update_history()]] - `contains` [EXTRACTED]
@@ -89,4 +89,4 @@ tags:
 - [[ws_logs()]] - `contains` [EXTRACTED]
 - [[ws_updates()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

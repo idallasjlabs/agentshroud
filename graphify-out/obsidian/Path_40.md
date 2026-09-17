@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 127"
-location: "L28"
+community: "Community 42"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_127
+  - graphify/INFERRED
+  - community/Community_42
 ---
 
 # Path
 
 ## Connections
-- [[._run_and_read()_1]] - `calls` [EXTRACTED]
-- [[._run_and_read()]] - `calls` [EXTRACTED]
-- [[._run_twice()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
-- [[_read_env()]] - `references` [EXTRACTED]
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/INFERRED #community/Community_42

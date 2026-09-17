@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_env_guard_class.py"
+type: "code"
+community: "Community 215"
+location: "L104"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_215
+---
+
+# .test_named_var_with_short_value_uses_redacted_marker()
+
+## Connections
+- [[TestScrubCommandOutput]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_215

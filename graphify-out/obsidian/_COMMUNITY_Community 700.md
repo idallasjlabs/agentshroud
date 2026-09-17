@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 700
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_3]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Core Discipline Red → Green → Refactor]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
-- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Role_34]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Rules_3]] - document - .agents/skills/i-tdd/SKILL.md
-- [[SKILL_57]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Step Function Input Validation]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Test Structure_1]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Zabbix API  →  `unittest.mock`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Immediate (Day 1)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Month 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Week 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎯 Marketing Checklist]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +31,12 @@ members: 13
 TABLE source_file, type FROM #community/Community_700
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1080]]
+- 1 edge to [[_COMMUNITY_Community 1097]]
+- 1 edge to [[_COMMUNITY_Community 1307]]
+- 1 edge to [[_COMMUNITY_Community 1378]]
+
+## Top bridge nodes
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 4 communities

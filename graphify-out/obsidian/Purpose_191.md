@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Community 934"
-location: "L16"
+community: "Community 975"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_934
+  - community/Community_975
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_934
+#graphify/document #graphify/EXTRACTED #community/Community_975

@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.24
-members: 10
+cohesion: 0.25
+members: 11
 ---
 
 # Community 831
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[._export_cef()]] - code - gateway/security/audit_export.py
-- [[._export_json()]] - code - gateway/security/audit_export.py
-- [[._export_jsonld()]] - code - gateway/security/audit_export.py
-- [[.export_events()]] - code - gateway/security/audit_export.py
-- [[AuditEvent]] - code - gateway/security/audit_export.py
-- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
-- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
-- [[TextIO]] - code - gateway/security/audit_export.py
+- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
+- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
+- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
+- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
+- [[AgentShroud Primary Logo]] - image - branding/logo.png
+- [[INDEX_1]] - document - branding/INDEX.md
+- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
+- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
+- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
+- [[brandingREADME]] - document - branding/README.md
+- [[typography_2]] - document - branding/typography/typography.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,13 +30,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 208]]
-- 2 edges to [[_COMMUNITY_Community 342]]
-- 2 edges to [[_COMMUNITY_Community 258]]
+- 2 edges to [[_COMMUNITY_Community 173]]
+- 1 edge to [[_COMMUNITY_Community 377]]
+- 1 edge to [[_COMMUNITY_Community 523]]
+- 1 edge to [[_COMMUNITY_Community 566]]
+- 1 edge to [[_COMMUNITY_Community 567]]
 
 ## Top bridge nodes
-- [[AuditEvent]] - degree 6, connects to 3 communities
-- [[TextIO]] - degree 3, connects to 2 communities
-- [[.export_events()]] - degree 6, connects to 1 community
-- [[._export_cef()]] - degree 4, connects to 1 community
-- [[._export_json()]] - degree 4, connects to 1 community
+- [[INDEX_1]] - degree 5, connects to 2 communities
+- [[brandingREADME]] - degree 6, connects to 1 community
+- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
+- [[typography_2]] - degree 4, connects to 1 community

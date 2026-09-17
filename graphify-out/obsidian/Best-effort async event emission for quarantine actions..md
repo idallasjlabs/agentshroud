@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 70"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L6959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # Best-effort async event emission for quarantine actions.
 
 ## Connections
-- [[._emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
+- [[dot-_emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

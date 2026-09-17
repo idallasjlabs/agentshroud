@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 1142"
-location: "L10"
+community: "Community 1129"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1142
+  - community/Community_1129
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1142
+#graphify/document #graphify/EXTRACTED #community/Community_1129

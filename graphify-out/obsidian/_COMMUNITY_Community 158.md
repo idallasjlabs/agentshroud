@@ -1,57 +1,57 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.08
 members: 42
 ---
 
 # Community 158
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 42 nodes
 
 ## Members
-- [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-C. Transparent Proxy Architectures]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II. Related Work]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III-A. Attacker Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III. Threat Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-A. Limitations]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[AgentShroud's stance on one vulnerability class.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Any_25]] - code
+- [[Best-effort repo-relative path string for display (falls back to str).]] - rationale - scripts/triage-cve-mitigations.py
+- [[CLI entry point. Args argv Optional argv override (for tests). Returns…]] - rationale - scripts/triage-cve-mitigations.py
+- [[ClassProfile]] - code - scripts/triage-cve-mitigations.py
+- [[Classify an advisory into its vulnerability class from title+description.…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Compute resulting-status counts and gap themes from triage results. Args…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Coverage]] - code - scripts/triage-cve-mitigations.py
+- [[Enum_1]] - code
+- [[Fixed taxonomy of advisory vulnerability classes.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``) to a…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Path_14]] - code
+- [[Phase 2 — Mitigation-triage engine for upstream agent advisories. Turns…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Produce an honest mitigation verdict for a single advisory entry. Combines the…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Read the raw pinned ``OPENCLAW_VERSION`` string from dockerversions.env.…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render a Python list-of-strings literal matching the file's style.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render the gap report markdown (development plan). Args agent_id The agent id…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Return the index just past a field value that may span multiple lines. Tracks…]] - rationale - scripts/triage-cve-mitigations.py
+- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place. For each…]] - rationale - scripts/triage-cve-mitigations.py
+- [[The status that will actually be written for a result. Unapplied verdicts fall…]] - rationale - scripts/triage-cve-mitigations.py
+- [[The verdict for one advisory.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Triage every ``under_review`` entry for agent_id (per-agent isolated). Reads…]] - rationale - scripts/triage-cve-mitigations.py
+- [[TriageResult]] - code - scripts/triage-cve-mitigations.py
+- [[True when ``fixed_in`` version is = the running image (already patched). Args…]] - rationale - scripts/triage-cve-mitigations.py
+- [[VulnClass]] - code - scripts/triage-cve-mitigations.py
+- [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
+- [[_nl()]] - code - scripts/triage-cve-mitigations.py
+- [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
+- [[_read_running_version_str()]] - code - scripts/triage-cve-mitigations.py
+- [[_rel()]] - code - scripts/triage-cve-mitigations.py
+- [[classify()]] - code - scripts/triage-cve-mitigations.py
+- [[final_status()]] - code - scripts/triage-cve-mitigations.py
+- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
+- [[main()_2]] - code - scripts/triage-cve-mitigations.py
+- [[parse_version()]] - code - scripts/triage-cve-mitigations.py
+- [[render_gap_report()]] - code - scripts/triage-cve-mitigations.py
+- [[rewrite_registry_text()]] - code - scripts/triage-cve-mitigations.py
+- [[str]] - code
+- [[summarize()]] - code - scripts/triage-cve-mitigations.py
+- [[triage-cve-mitigations.py]] - code - scripts/triage-cve-mitigations.py
+- [[triage_agent()]] - code - scripts/triage-cve-mitigations.py
+- [[triage_entry()]] - code - scripts/triage-cve-mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,8 +61,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
-- 1 edge to [[_COMMUNITY_Community 166]]
+- 2 edges to [[_COMMUNITY_Community 99]]
+- 2 edges to [[_COMMUNITY_Community 195]]
+- 1 edge to [[_COMMUNITY_Community 458]]
+- 1 edge to [[_COMMUNITY_Community 94]]
 
 ## Top bridge nodes
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 13, connects to 2 communities
+- [[triage-cve-mitigations.py]] - degree 24, connects to 3 communities
+- [[triage_agent()]] - degree 6, connects to 1 community
+- [[classify()]] - degree 5, connects to 1 community

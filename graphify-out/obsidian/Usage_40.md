@@ -1,24 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "Community 186"
-location: "L274"
+community: "Community 1227"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_186
+  - community/Community_1227
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Check Status_1]] - `contains` [EXTRACTED]
-- [[Hermes  HCI]] - `contains` [EXTRACTED]
-- [[Port Reference]] - `contains` [EXTRACTED]
-- [[Start the Stack]] - `contains` [EXTRACTED]
-- [[Stop the Stack_1]] - `contains` [EXTRACTED]
-- [[Test Chat]] - `contains` [EXTRACTED]
-- [[View Logs]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_186
+#graphify/document #graphify/EXTRACTED #community/Community_1227

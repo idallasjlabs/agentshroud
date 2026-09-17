@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 373"
+community: "Community 240"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Community_240
 ---
 
 # PHASE_3A_3B_IMPLEMENTATION.md
@@ -17,7 +17,7 @@ tags:
 - [[Gateway Password Moved to Docker Secrets]] - `conceptually_related_to` [EXTRACTED]
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [EXTRACTED]
 - [[NET_RAW Capability Removal]] - `conceptually_related_to` [EXTRACTED]
-- [[Next Steps_2]] - `contains` [EXTRACTED]
+- [[Next Steps_3]] - `contains` [EXTRACTED]
 - [[Phase 3A Security Completion (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Phase 3B.1 Kill Switch (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - `conceptually_related_to` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Testing Checklist]] - `contains` [EXTRACTED]
 - [[verify-security.sh (13 Security Checks)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/Community_240

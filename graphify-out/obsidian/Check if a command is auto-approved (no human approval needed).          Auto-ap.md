@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 64"
+community: "Approval Queue (WebSocket)"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/Approval_Queue_WebSocket
 ---
 
 # Check if a command is auto-approved (no human approval needed).          Auto-ap
 
 ## Connections
-- [[.is_auto_approved()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_auto_approved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket

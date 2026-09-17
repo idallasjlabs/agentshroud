@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Step 6b - Wiki (only if --wiki flag)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference extra exports and benchmark]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[openclawskillsgraphifyreferencesexports]] - document - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_1002
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 925]]
-
-## Top bridge nodes
-- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community

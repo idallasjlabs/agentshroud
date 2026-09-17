@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1254
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[.test_parser_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_parser_hosts_and_command()]] - code - gateway/tests/test_multi_host_test.py
-- [[ArgumentParser_2]] - code - gateway/tools/multi_host_test.py
-- [[TestParserAndCommandResolution]] - code - gateway/tests/test_multi_host_test.py
-- [[build_parser()]] - code - gateway/tools/multi_host_test.py
+- [[Purpose_72]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Related Skills_63]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Usage_67]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor_1]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[hermesskillsi-vulcanREADME]] - document - docker/config/hermes/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,14 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1254
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 898]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 728]]
-
-## Top bridge nodes
-- [[TestParserAndCommandResolution]] - degree 6, connects to 3 communities
-- [[build_parser()]] - degree 6, connects to 3 communities

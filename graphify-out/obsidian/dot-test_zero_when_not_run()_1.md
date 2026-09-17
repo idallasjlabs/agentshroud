@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scorecard_scoring.py"
+type: "code"
+community: "Community 969"
+location: "L474"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_969
+---
+
+# .test_zero_when_not_run()
+
+## Connections
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_969

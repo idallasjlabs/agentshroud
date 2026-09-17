@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 232"
+community: "Community 238"
 location: "L532"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/Community_238
 ---
 
 # Agent Interaction Protocol
@@ -16,4 +16,4 @@ tags:
 - [[How to Collaborate with the AWS Agent]] - `contains` [EXTRACTED]
 - [[How to Interact with the Human Investigator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_232
+#graphify/document #graphify/EXTRACTED #community/Community_238

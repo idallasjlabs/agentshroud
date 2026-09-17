@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 423"
-location: "L388"
+community: "Community 319"
+location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/Community_319
 ---
 
 # Collaborators
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[Collaborator Session Isolation (blocked functionsskills)]] - `semantically_similar_to` [INFERRED]
+- [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_423
+#graphify/document #graphify/EXTRACTED #community/Community_319

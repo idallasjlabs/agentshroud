@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 65"
+community: "Community 329"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_329
 ---
 
 # test_forward_pii_sanitized_and_ledger_entry()
@@ -15,4 +15,4 @@ tags:
 - [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Community_329

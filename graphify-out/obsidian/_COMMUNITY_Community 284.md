@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.08
-members: 28
+cohesion: 0.11
+members: 29
 ---
 
 # Community 284
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
-- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Colima Troubleshooting Procedures]] - concept - docs/runbooks/RUNBOOK.md
-- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Configuration Reference]] - document - docs/setup/setup-guide.md
-- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
-- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - rationale - docs/runbooks/RUNBOOK.md
-- [[Glibc TLS Incompatibility (Trillian)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
-- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[RUNBOOK]] - document - docs/runbooks/RUNBOOK.md
-- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
-- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
-- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
-- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
-- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
-- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
+- [[dot-__aenter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aexit__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aiter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__anext__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_117]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_118]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-send()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_lifespan_startup_shutdown()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_relay_with_trusted_origin()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_sec_websocket_protocol_token_authenticates()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_skip_basic_auth_bypasses_gate()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_token_query_param_authenticates_ws()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_unauthorized_returns_401()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_unauthorized_ws_closed_4401()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_upstream_failure_returns_502()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_upstream_ws_exception_closes_gracefully()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Fake upstream WebSocket yields scripted messages, records sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasHTTP]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasLifespan]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasWebSocket]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeUpstreamWS]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_http_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_run_asgi()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_ws_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,19 +48,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 361]]
-- 2 edges to [[_COMMUNITY_Community 529]]
-- 2 edges to [[_COMMUNITY_Community 314]]
-- 1 edge to [[_COMMUNITY_Community 422]]
-- 1 edge to [[_COMMUNITY_Community 621]]
-- 1 edge to [[_COMMUNITY_Community 571]]
-- 1 edge to [[_COMMUNITY_Community 673]]
-- 1 edge to [[_COMMUNITY_Community 681]]
-- 1 edge to [[_COMMUNITY_Community 334]]
+- 8 edges to [[_COMMUNITY_Community 436]]
+- 6 edges to [[_COMMUNITY_Community 573]]
+- 5 edges to [[_COMMUNITY_Community 138]]
+- 3 edges to [[_COMMUNITY_Community 766]]
 
 ## Top bridge nodes
-- [[raspberry-pi]] - degree 8, connects to 4 communities
-- [[RUNBOOK]] - degree 7, connects to 4 communities
-- [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
-- [[Configuration Reference]] - degree 5, connects to 1 community
-- [[SYSTEM_STATUS]] - degree 3, connects to 1 community
+- [[_FakeUpstreamWS]] - degree 12, connects to 3 communities
+- [[_FakeWSConnect]] - degree 9, connects to 3 communities
+- [[TestCanvasWebSocket]] - degree 9, connects to 3 communities
+- [[TestCanvasHTTP]] - degree 7, connects to 3 communities
+- [[TestCanvasLifespan]] - degree 4, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 317"
+community: "Community 326"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Community_326
 ---
 
 # Step 3: Configure API Keys in OpenClaw
@@ -16,4 +16,4 @@ tags:
 - [[Option A Via Control UI (Recommended)]] - `contains` [EXTRACTED]
 - [[Option B Via Command Line]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_317
+#graphify/document #graphify/EXTRACTED #community/Community_326

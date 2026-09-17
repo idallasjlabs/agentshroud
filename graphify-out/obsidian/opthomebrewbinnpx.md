@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Module Group 241"
+community: "Community 230"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_241
+  - community/Community_230
 ---
 
 # /opt/homebrew/bin/npx
@@ -15,4 +15,4 @@ tags:
 - [[safari]] - `references` [EXTRACTED]
 - [[xmind]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_241
+#graphify/code #graphify/EXTRACTED #community/Community_230

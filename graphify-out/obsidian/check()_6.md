@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
+source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "Community 549"
-location: "L11"
+community: "Community 474"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_549
+  - community/Community_474
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_cron_html_email.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_cron_html_email.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_549
+#graphify/code #graphify/EXTRACTED #community/Community_474

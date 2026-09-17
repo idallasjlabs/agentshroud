@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_version_routes.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 458"
-location: "L28"
+community: "Approval Queue (WebSocket)"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_458
+  - community/Approval_Queue_WebSocket
 ---
 
 # client()
 
 ## Connections
-- [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_458
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

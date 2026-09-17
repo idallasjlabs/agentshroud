@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 52"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_52
 ---
 
 # Test that monitor mode allows unknown domains but logs them.
 
 ## Connections
-- [[.test_monitor_mode_allows_unknown_domains()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_unknown_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
-type: "code"
-community: "Community 410"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+type: "document"
+community: "Community 600"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/Community_600
 ---
 
-# dns_filter.py
+# dns_filter.py.md
 
 ## Connections
-- [[DNSFilter]] - `contains` [EXTRACTED]
-- [[DNSFilterConfig]] - `contains` [EXTRACTED]
-- [[DNSQuery]] - `contains` [EXTRACTED]
-- [[DNSVerdict]] - `contains` [EXTRACTED]
-- [[EntropyCalculator]] - `contains` [EXTRACTED]
-- [[TunnelingPattern]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/Community_600

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 66"
+location: "L885"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_66
+---
+
+# .test_security_events_filters_by_bot_id()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestBotSelectorFrontend]] - `method` [EXTRACTED]
+- [[_make_m6_caller()]] - `calls` [EXTRACTED]
+- [[get_security_events()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_66

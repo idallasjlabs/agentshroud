@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1165"
+community: "Community 1213"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1165
+  - community/Community_1213
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1165
+#graphify/document #graphify/EXTRACTED #community/Community_1213

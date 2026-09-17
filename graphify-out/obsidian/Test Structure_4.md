@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 496"
-location: "L280"
+community: "Community 726"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_496
+  - community/Community_726
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_496
+#graphify/document #graphify/EXTRACTED #community/Community_726

@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L28"
+community: "Community 97"
+location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - community/Community_97
 ---
 
 # RBACConfig
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[PrivacyPolicy]] - `uses` [INFERRED]
+- [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[ServicePrivacy]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Community_97

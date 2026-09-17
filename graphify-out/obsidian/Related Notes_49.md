@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Community 1006"
-location: "L45"
+community: "Community 771"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/Community_771
 ---
 
 # Related Notes
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1006
+#graphify/document #graphify/EXTRACTED #community/Community_771

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 159"
-location: "L37"
+community: "Community 110"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Community_110
 ---
 
 # client()
 
 ## Connections
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Community_110

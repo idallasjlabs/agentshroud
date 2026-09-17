@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Community 355"
-location: "L55"
+community: "Community 1187"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_355
+  - community/Community_1187
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
-- [[Fill Form]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_355
+#graphify/document #graphify/EXTRACTED #community/Community_1187

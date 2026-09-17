@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1567"
+community: "Community 44"
 location: "L461"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1567
+  - community/Community_44
 ---
 
 # Test filter statistics.
 
 ## Connections
-- [[.test_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stats()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1567
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

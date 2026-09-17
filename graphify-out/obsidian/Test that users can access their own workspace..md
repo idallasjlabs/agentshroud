@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Management"
+community: "Ingest Middleware & File Sandbox"
 location: "L450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Test that users can access their own workspace.
 
 ## Connections
-- [[.test_middleware_own_workspace_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_middleware_own_workspace_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

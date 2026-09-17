@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 85"
+community: "Community 770"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_770
 ---
 
 # Startup Sequence
@@ -15,9 +15,9 @@ tags:
 - [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
 - [[Common Startup Failures]] - `contains` [EXTRACTED]
 - [[First-Boot Notes]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
-- [[Related Notes_5]] - `contains` [EXTRACTED]
+- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Related Notes_48]] - `contains` [EXTRACTED]
 - [[Startup Indicators]] - `contains` [EXTRACTED]
 - [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_770

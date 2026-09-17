@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Adversarial Injection Guards"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L7412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Adversarial_Injection_Guards
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # Send a rate-limited activity mirror to the owner chat for collaborator messages.
 
 ## Connections
-- [[._mirror_to_owner_if_collaborator()]] - `rationale_for` [EXTRACTED]
+- [[dot-_mirror_to_owner_if_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

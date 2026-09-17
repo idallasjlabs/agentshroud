@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 429"
+community: "Encrypted Store & Drift Detector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # encrypted_store.py
@@ -19,4 +19,4 @@ tags:
 - [[canary.py]] - `references` [EXTRACTED]
 - [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_429
+#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 898"
-location: "L324"
+community: "Runtime Security Comparison & Intel Report"
+location: "L205"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_898
+  - graphify/EXTRACTED
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[dot-__init__()_128]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_898
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

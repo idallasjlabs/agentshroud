@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_web_proxy.py"
+type: "code"
+community: "Egress Filter & HTTP Proxy"
+location: "L373"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Egress_Filter__HTTP_Proxy
+---
+
+# .test_normal_content_type_not_flagged()
+
+## Connections
+- [[TestContentTypeFiltering]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

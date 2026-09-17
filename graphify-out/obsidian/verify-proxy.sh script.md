@@ -1,22 +1,22 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # verify-proxy.sh script
 
 ## Connections
 - [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
 - [[run_chain()]] - `calls` [EXTRACTED]
 - [[run_full()]] - `calls` [EXTRACTED]
 - [[run_quick()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

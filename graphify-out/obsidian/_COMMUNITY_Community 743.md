@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 743
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Advanced 1Password Access]] - document - docker/bot-capabilities.md
-- [[Available Commands]] - document - docker/bot-capabilities.md
-- [[Credential Management - 1Password Integration]] - document - docker/bot-capabilities.md
-- [[Security Decision Tree]] - document - docker/bot-capabilities.md
-- [[Security Rules (Ultra-Conservative)]] - document - docker/bot-capabilities.md
-- [[Troubleshooting_6]] - document - docker/bot-capabilities.md
-- [[Usage Examples]] - document - docker/bot-capabilities.md
-- [[Vault Access]] - document - docker/bot-capabilities.md
-- [[Why Ultra-Conservative]] - document - docker/bot-capabilities.md
-- [[🔴 Chat Interfaces (NEVER display credentials)]] - document - docker/bot-capabilities.md
-- [[🟢 Console Commands (ALWAYS display)]] - document - docker/bot-capabilities.md
-- [[🟢 Internal Use (ALWAYS allowed)]] - document - docker/bot-capabilities.md
+- [[Config Keys Read_6]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Function Details_42]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Imports From  Exports To_6]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Known Issues  Notes_7]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Purpose_174]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Related_48]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[auth.py_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1017]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 703]]
+- 1 edge to [[_COMMUNITY_Community 777]]
 
 ## Top bridge nodes
-- [[Credential Management - 1Password Integration]] - degree 9, connects to 1 community
+- [[auth.py_1]] - degree 11, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 591"
+community: "Community 608"
 location: "L5196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/Community_608
 ---
 
 # Regression tests for the JSON/form/multipart scan unification.      Each test pi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundScanUnification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_591
+#graphify/rationale #graphify/EXTRACTED #community/Community_608

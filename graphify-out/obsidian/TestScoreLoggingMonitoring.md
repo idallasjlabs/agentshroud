@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 196"
-location: "L775"
+community: "Community 1409"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_1409
 ---
 
 # TestScoreLoggingMonitoring
 
 ## Connections
-- [[.test_one_when_no_wazuh_no_fluent()]] - `method` [EXTRACTED]
-- [[.test_two_when_wazuh_running()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_five_all_pillars()]] - `method` [EXTRACTED]
+- [[dot-test_one_baseline()]] - `method` [EXTRACTED]
+- [[dot-test_two_with_wazuh()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/Community_1409

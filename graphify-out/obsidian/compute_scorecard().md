@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 201"
+community: "Community 168"
 location: "L2397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/Community_168
 ---
 
 # compute_scorecard()
 
 ## Connections
-- [[.test_all_domains_have_required_fields()]] - `calls` [EXTRACTED]
-- [[.test_clean_tools_improve_score()]] - `calls` [EXTRACTED]
-- [[.test_compliance_new_keys_present()]] - `calls` [EXTRACTED]
-- [[.test_maturity_labels_valid()]] - `calls` [EXTRACTED]
-- [[.test_network_segmentation_baseline_three()]] - `calls` [EXTRACTED]
-- [[.test_overall_maturity_present()]] - `calls` [EXTRACTED]
-- [[.test_returns_thirty_three_domains()]] - `calls` [EXTRACTED]
-- [[.test_scorecard_domain_ids_are_sequential()]] - `calls` [EXTRACTED]
-- [[.test_secrets_management_baseline_two()]] - `calls` [EXTRACTED]
-- [[.test_standard_basis_present()]] - `calls` [EXTRACTED]
-- [[.test_timestamp_present()_1]] - `calls` [EXTRACTED]
-- [[.test_totals_present()]] - `calls` [EXTRACTED]
-- [[.test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
+- [[dot-test_all_domains_have_required_fields()]] - `calls` [EXTRACTED]
+- [[dot-test_clean_tools_improve_score()]] - `calls` [EXTRACTED]
+- [[dot-test_compliance_new_keys_present()]] - `calls` [EXTRACTED]
+- [[dot-test_maturity_labels_valid()]] - `calls` [EXTRACTED]
+- [[dot-test_network_segmentation_baseline_three()]] - `calls` [EXTRACTED]
+- [[dot-test_overall_maturity_present()]] - `calls` [EXTRACTED]
+- [[dot-test_returns_thirty_three_domains()]] - `calls` [EXTRACTED]
+- [[dot-test_scorecard_domain_ids_are_sequential()]] - `calls` [EXTRACTED]
+- [[dot-test_secrets_management_baseline_two()]] - `calls` [EXTRACTED]
+- [[dot-test_standard_basis_present()]] - `calls` [EXTRACTED]
+- [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
+- [[dot-test_totals_present()]] - `calls` [EXTRACTED]
+- [[dot-test_version_is_v090()]] - `calls` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]
@@ -70,8 +70,8 @@ tags:
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_201
+#graphify/code #graphify/EXTRACTED #community/Community_168

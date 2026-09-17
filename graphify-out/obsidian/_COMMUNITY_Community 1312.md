@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1312
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
-- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
-- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
+- [[DOCKER_HOST]] - code - scripts/launch-instance.sh
+- [[PATH_11]] - code - scripts/launch-instance.sh
+- [[find_port()]] - code - scripts/launch-instance.sh
+- [[launch-instance.sh]] - code - scripts/launch-instance.sh
+- [[launch-instance.sh script]] - code - scripts/launch-instance.sh
 
 ## Live Query (requires Dataview plugin)
 

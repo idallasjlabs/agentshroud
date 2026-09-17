@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 264"
-location: "L404"
+community: "Community 77"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Community_77
 ---
 
 # Dashboard Access
 
 ## Connections
-- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Health Monitoring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Community_77

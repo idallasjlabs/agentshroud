@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 219"
+community: "Community 222"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_222
 ---
 
 # Part 6: Complete System Test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_219
+#graphify/document #graphify/EXTRACTED #community/Community_222

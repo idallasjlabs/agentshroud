@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 688"
+community: "Community 710"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_688
+  - community/Community_710
 ---
 
 # install_log_sanitizer()
 
 ## Connections
-- [[Function Details_43]] - `contains` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_688
+#graphify/document #graphify/EXTRACTED #community/Community_710

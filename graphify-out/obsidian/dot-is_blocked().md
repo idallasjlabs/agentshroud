@@ -1,0 +1,18 @@
+---
+source_file: "gateway/proxy/dns_blocklist.py"
+type: "code"
+community: "Community 138"
+location: "L95"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_138
+---
+
+# .is_blocked()
+
+## Connections
+- [[Check if a domain should be blocked.          Checks the domain and all parent d]] - `rationale_for` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_138

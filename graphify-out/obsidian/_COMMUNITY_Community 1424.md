@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1424
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[DELIVERABLE 4 — v1.0 Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 1 Foundation Hardening (v0.8.0, completed)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 2 Detection Enhancement (v0.9.3–v0.9.5, Weeks 5-10)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 3 Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 996]]
+- 1 edge to [[_COMMUNITY_Community 1043]]
 
 ## Top bridge nodes
-- [[.test_performance()]] - degree 3, connects to 1 community
-- [[._time_one_filter()]] - degree 2, connects to 1 community
+- [[DELIVERABLE 4 — v1.0 Roadmap]] - degree 4, connects to 1 community

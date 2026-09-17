@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 239"
+community: "Community 249"
 location: "L4252"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_239
+  - community/Community_249
 ---
 
 # Static response builder for collaborator conceptual queries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildCollaboratorSafeInfoResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_239
+#graphify/rationale #graphify/EXTRACTED #community/Community_249

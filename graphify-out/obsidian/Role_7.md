@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 461"
+community: "Community 1053"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/Community_1053
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_461
+#graphify/document #graphify/EXTRACTED #community/Community_1053

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "document"
-community: "Community 274"
+community: "Community 438"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/Community_438
 ---
 
 # Container Security Policy — AgentShroud
@@ -20,4 +20,4 @@ tags:
 - [[6. Incident Response (Container-Specific)]] - `contains` [EXTRACTED]
 - [[container-policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_274
+#graphify/document #graphify/EXTRACTED #community/Community_438

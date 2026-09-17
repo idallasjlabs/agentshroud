@@ -1,22 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
-type: "document"
-community: "Community 1068"
-location: "L10"
+source_file: "gateway/web/installer.py"
+type: "code"
+community: "Community 460"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1068
+  - community/Community_460
 ---
 
 # installer.py
 
 ## Connections
-- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
-- [[Key Features]] - `contains` [EXTRACTED]
-- [[Purpose_174]] - `contains` [EXTRACTED]
-- [[Related Notes_14]] - `contains` [EXTRACTED]
-- [[When Used]] - `contains` [EXTRACTED]
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[InstallConfig]] - `contains` [EXTRACTED]
+- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
+- [[api.py]] - `references` [EXTRACTED]
+- [[check_prerequisites()]] - `contains` [EXTRACTED]
+- [[detect_runtime()]] - `imports` [EXTRACTED]
+- [[get_runtimes()]] - `contains` [EXTRACTED]
+- [[get_security_comparison()]] - `imports` [EXTRACTED]
+- [[installer_page()]] - `contains` [EXTRACTED]
+- [[security.py]] - `imports_from` [EXTRACTED]
+- [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1068
+#graphify/code #graphify/EXTRACTED #community/Community_460

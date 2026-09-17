@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
-location: "L71"
+community: "Community 903"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PII_Sanitizer__E2E_Tests
+  - graphify/EXTRACTED
+  - community/Community_903
 ---
 
 # RedactionResult
 
 ## Connections
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-scan_response()_1]] - `references` [EXTRACTED]
+- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
+- [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_903

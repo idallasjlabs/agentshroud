@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1036
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[dot-setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
+- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,10 @@ members: 7
 TABLE source_file, type FROM #community/Community_1036
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 138]]
+
+## Top bridge nodes
+- [[TestLoadFromText]] - degree 9, connects to 1 community
+- [[dot-setup_method()_4]] - degree 2, connects to 1 community

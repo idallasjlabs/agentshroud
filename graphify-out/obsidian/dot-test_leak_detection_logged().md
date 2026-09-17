@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_key_vault.py"
+type: "code"
+community: "Community 80"
+location: "L160"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_80
+---
+
+# .test_leak_detection_logged()
+
+## Connections
+- [[KeyLeakDetector]] - `calls` [EXTRACTED]
+- [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_80

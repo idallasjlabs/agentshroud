@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 19"
+community: "Voice Gateway STT & Browser Security"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Threat levels for detected issues.
 
 ## Connections
-- [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_19
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

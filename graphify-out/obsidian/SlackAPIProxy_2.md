@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Community 24"
+community: "Slack Proxy & Main Endpoint Tests"
 location: "L22"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_24
+  - graphify/EXTRACTED
+  - community/Slack_Proxy__Main_Endpoint_Tests
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[SlackAPIProxy]] - `uses` [INFERRED]
-- [[_make_proxy()_3]] - `references` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[_make_proxy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests

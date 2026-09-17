@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 489"
+community: "Community 507"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_507
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Adversary Model_3]] - `contains` [EXTRACTED]
 - [[Attack Phases_3]] - `contains` [EXTRACTED]
-- [[Critical Rules_11]] - `contains` [EXTRACTED]
-- [[Infrastructure_10]] - `contains` [EXTRACTED]
-- [[Output_6]] - `contains` [EXTRACTED]
-- [[SKILL_191]] - `contains` [EXTRACTED]
+- [[Critical Rules_8]] - `contains` [EXTRACTED]
+- [[Infrastructure_4]] - `contains` [EXTRACTED]
+- [[Output_5]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/Community_507

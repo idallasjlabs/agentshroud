@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 267"
+community: "Community 287"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # test_module_model_size_invalid_env_falls_back()
@@ -15,4 +15,4 @@ tags:
 - [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_267
+#graphify/code #graphify/EXTRACTED #community/Community_287

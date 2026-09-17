@@ -1,46 +1,47 @@
 ---
 type: community
 cohesion: 0.06
-members: 31
+members: 32
 ---
 
 # Community 245
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[Alert Prioritization Display]] - document - .agents/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_7]] - document - .agents/skills/i-ux/SKILL.md
-- [[CLI  TUI UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[CLI UX Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Confirmation Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Content Organization Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Contextual Actions]] - document - .agents/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate]] - document - .agents/skills/i-ux/SKILL.md
-- [[Dashboard UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[Data Density Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Dependencies_5]] - document - .agents/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern]] - document - .agents/skills/i-ux/SKILL.md
-- [[Error Message Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Field Design Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Form UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template]] - document - .agents/skills/i-ux/SKILL.md
-- [[Information Architecture]] - document - .agents/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application]] - document - .agents/skills/i-ux/SKILL.md
-- [[Progressive Disclosure]] - document - .agents/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Role_38]] - document - .agents/skills/i-ux/SKILL.md
-- [[Rules_7]] - document - .agents/skills/i-ux/SKILL.md
-- [[SKILL_61]] - document - .agents/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow]] - document - .agents/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist]] - document - .agents/skills/i-ux/SKILL.md
-- [[User Flow Diagrams]] - document - .agents/skills/i-ux/SKILL.md
-- [[Wayfinding]] - document - .agents/skills/i-ux/SKILL.md
+- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
+- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
+- [[3. Send Test Message]] - document - docker/QUICKSTART.md
+- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
+- [[API Key Error]] - document - docker/QUICKSTART.md
+- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
+- [[Architecture Diagram_1]] - document - docker/QUICKSTART.md
+- [[Check File Permissions]] - document - docker/QUICKSTART.md
+- [[Check Status_1]] - document - docker/QUICKSTART.md
+- [[Container Won't Start_1]] - document - docker/QUICKSTART.md
+- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
+- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
+- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
+- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
+- [[Launch the Stack]] - document - docker/QUICKSTART.md
+- [[Next Steps_4]] - document - docker/QUICKSTART.md
+- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
+- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
+- [[Prerequisites_2]] - document - docker/QUICKSTART.md
+- [[QUICKSTART]] - document - docker/QUICKSTART.md
+- [[Security Validation]] - document - docker/QUICKSTART.md
+- [[Server-side setup]] - document - docker/QUICKSTART.md
+- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
+- [[Start Everything]] - document - docker/QUICKSTART.md
+- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
+- [[Stop the Stack_1]] - document - docker/QUICKSTART.md
+- [[Success Criteria]] - document - docker/QUICKSTART.md
+- [[Test the System]] - document - docker/QUICKSTART.md
+- [[Troubleshooting_14]] - document - docker/QUICKSTART.md
+- [[Verify]] - document - docker/QUICKSTART.md
+- [[Verify Isolation]] - document - docker/QUICKSTART.md
+- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 585"
+community: "Community 603"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/Community_603
 ---
 
 # Ultra-Conservative Policy Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Policy Compliance Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_585
+#graphify/document #graphify/EXTRACTED #community/Community_603

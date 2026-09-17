@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "rationale"
-community: "Community 360"
+community: "Community 367"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_367
 ---
 
 # Get API key from argument first, then environment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_api_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_360
+#graphify/rationale #graphify/EXTRACTED #community/Community_367

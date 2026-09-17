@@ -1,17 +1,23 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 573"
-location: "L215"
+community: "Community 469"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/Community_469
 ---
 
 # Verification
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
+- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
+- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
+- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_573
+#graphify/document #graphify/EXTRACTED #community/Community_469

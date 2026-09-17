@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-scheduler.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "Community 427"
-location: "L24"
+community: "Community 632"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Community_632
 ---
 
 # log()
 
 ## Connections
-- [[security-scheduler.sh]] - `defines` [EXTRACTED]
-- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_427
+#graphify/code #graphify/EXTRACTED #community/Community_632

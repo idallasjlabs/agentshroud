@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "Community 553"
+community: "Community 475"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Community_475
 ---
 
 # Create configuration from environment variables.
 
 ## Connections
-- [[.from_env()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-from_env()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_553
+#graphify/rationale #graphify/EXTRACTED #community/Community_475

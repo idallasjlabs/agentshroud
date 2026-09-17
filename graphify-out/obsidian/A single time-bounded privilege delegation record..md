@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Community 82"
+community: "Community 74"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_74
 ---
 
 # A single time-bounded privilege delegation record.
 
 ## Connections
-- [[Delegation]] - `rationale_for` [EXTRACTED]
+- [[Delegation_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

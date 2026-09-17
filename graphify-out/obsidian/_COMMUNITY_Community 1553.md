@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.setup_method()_17]] - code - gateway/tests/test_outbound_filter.py
-- [[Set up test fixtures.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[openclawskillsi-architecture-reviewSKILL]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,10 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1553
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 996]]
-
-## Top bridge nodes
-- [[.setup_method()_17]] - degree 3, connects to 2 communities

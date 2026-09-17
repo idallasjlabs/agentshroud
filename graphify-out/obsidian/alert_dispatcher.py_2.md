@@ -1,29 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
-type: "document"
-community: "Community 502"
-location: "L10"
+source_file: "gateway/security/alert_dispatcher.py"
+type: "code"
+community: "Community 56"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_56
 ---
 
 # alert_dispatcher.py
 
 ## Connections
-- [[Alert JSONL Format]] - `contains` [EXTRACTED]
-- [[Configuration_10]] - `contains` [EXTRACTED]
-- [[Environment Variables_6]] - `contains` [EXTRACTED]
-- [[Function Details_27]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_30]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
-- [[Module-Level Constants]] - `contains` [EXTRACTED]
-- [[Operational Notes]] - `contains` [EXTRACTED]
-- [[Purpose_148]] - `contains` [EXTRACTED]
-- [[Related_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_32]] - `contains` [EXTRACTED]
-- [[Threat Model_3]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
+- [[AlertDispatcher]] - `contains` [EXTRACTED]
+- [[canary.py]] - `references` [EXTRACTED]
+- [[clamav]] - `references` [INFERRED]
+- [[clamav_scanner.py_2]] - `references` [EXTRACTED]
+- [[dns_filter.py_2]] - `references` [EXTRACTED]
+- [[drift_detector.py_2]] - `references` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[falco-rules]] - `references` [INFERRED]
+- [[gateway.security.trust_manager]] - `references` [EXTRACTED]
+- [[health_report.py]] - `semantically_similar_to` [INFERRED]
+- [[test_security_toolchain.py]] - `references` [EXTRACTED]
+- [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/code #graphify/EXTRACTED #community/Community_56

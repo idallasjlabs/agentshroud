@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Community 448"
+community: "Community 456"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_448
+  - community/Community_456
 ---
 
 # Multi-Agent Role Matrix (AGENT_ROLES.md)
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Path]] - `references` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_448
+#graphify/document #graphify/EXTRACTED #community/Community_456

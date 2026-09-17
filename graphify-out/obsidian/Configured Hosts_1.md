@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Community 903"
+community: "Community 949"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_903
+  - community/Community_949
 ---
 
 # Configured Hosts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_903
+#graphify/document #graphify/EXTRACTED #community/Community_949

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Community 505"
-location: "L12"
+community: "Community 670"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_670
 ---
 
 # Purpose
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_505
+#graphify/document #graphify/EXTRACTED #community/Community_670

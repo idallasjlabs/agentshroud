@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 795"
+community: "Community 829"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_795
+  - community/Community_829
 ---
 
 # GitHub PAT
 
 ## Connections
-- [[Security Best Practices_1]] - `contains` [EXTRACTED]
+- [[Security Best Practices_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_795
+#graphify/document #graphify/EXTRACTED #community/Community_829

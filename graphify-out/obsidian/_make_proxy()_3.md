@@ -1,50 +1,34 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 24"
-location: "L22"
+community: "Community 58"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_58
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[.test_already_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
-- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - `calls` [EXTRACTED]
-- [[.test_cached_inbound_corr_skips_history_lookup()]] - `calls` [EXTRACTED]
-- [[.test_cant_kick_self_is_idempotent_true()]] - `calls` [EXTRACTED]
-- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - `calls` [EXTRACTED]
-- [[.test_history_error_records_outbound_without_correlation()]] - `calls` [EXTRACTED]
-- [[.test_malformed_json_body_forwards_with_empty_payload()]] - `calls` [EXTRACTED]
-- [[.test_missing_args_return_false()]] - `calls` [EXTRACTED]
-- [[.test_missing_args_return_false()_1]] - `calls` [EXTRACTED]
-- [[.test_missing_channel_or_text_skips_tracking()]] - `calls` [EXTRACTED]
-- [[.test_name_truncated_to_80_chars()]] - `calls` [EXTRACTED]
-- [[.test_network_error_returns_synthetic_failure()]] - `calls` [EXTRACTED]
-- [[.test_no_token_returns_false()]] - `calls` [EXTRACTED]
-- [[.test_no_token_returns_false()_1]] - `calls` [EXTRACTED]
-- [[.test_no_token_returns_none()]] - `calls` [EXTRACTED]
-- [[.test_not_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
-- [[.test_other_error_returns_false()]] - `calls` [EXTRACTED]
-- [[.test_other_error_returns_false()_1]] - `calls` [EXTRACTED]
-- [[.test_recovery_exception_is_non_fatal()]] - `calls` [EXTRACTED]
-- [[.test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
-- [[.test_slack_error_returns_none()]] - `calls` [EXTRACTED]
-- [[.test_structured_text_serialized_for_preview()]] - `calls` [EXTRACTED]
-- [[.test_success_posts_with_bearer_token()]] - `calls` [EXTRACTED]
-- [[.test_success_returns_channel_id_with_sanitized_name()]] - `calls` [EXTRACTED]
-- [[.test_success_returns_true()]] - `calls` [EXTRACTED]
-- [[.test_success_returns_true()_1]] - `calls` [EXTRACTED]
-- [[.test_system_message_not_tracked()]] - `calls` [EXTRACTED]
-- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - `calls` [EXTRACTED]
-- [[.test_tracker_exception_does_not_break_response()]] - `calls` [EXTRACTED]
-- [[.test_unknown_content_type_ignored()]] - `calls` [EXTRACTED]
-- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `references` [EXTRACTED]
-- [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-_setup_proxy_with_capture()]] - `calls` [EXTRACTED]
+- [[dot-test_locked_includes_unlock_hint()]] - `calls` [EXTRACTED]
+- [[dot-test_locked_lists_suspended_user()]] - `calls` [EXTRACTED]
+- [[dot-test_locked_no_active_lockdowns()_1]] - `calls` [EXTRACTED]
+- [[dot-test_locked_shows_all_non_normal_users()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_messages_pass_despite_collab_suspension()]] - `calls` [EXTRACTED]
+- [[dot-test_suspended_drop_notice_respects_cooldown()_1]] - `calls` [EXTRACTED]
+- [[dot-test_suspended_user_gets_drop_notice()]] - `calls` [EXTRACTED]
+- [[dot-test_unlock_clears_suspended_drop_cooldown()_1]] - `calls` [EXTRACTED]
+- [[dot-test_unlock_known_user_succeeds()]] - `calls` [EXTRACTED]
+- [[dot-test_unlock_unknown_user_reports_no_state()]] - `calls` [EXTRACTED]
+- [[dot-test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
+- [[FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline_1]] - `calls` [EXTRACTED]
+- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
+- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_58

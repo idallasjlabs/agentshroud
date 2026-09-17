@@ -1,0 +1,22 @@
+---
+source_file: "gateway/ingest_api/router.py"
+type: "code"
+community: "Multi-Agent Router & Chat UI"
+location: "L116"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Multi-Agent_Router__Chat_UI
+---
+
+# .resolve_target()
+
+## Connections
+- [[dot-forward_to_agent()]] - `conceptually_related_to` [INFERRED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[Determine which agent should receive this content          Args             req]] - `rationale_for` [EXTRACTED]
+- [[ForwardRequest]] - `references` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterError]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

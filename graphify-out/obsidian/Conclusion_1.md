@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 311"
-location: "L192"
+community: "Community 448"
+location: "L652"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/Community_448
 ---
 
 # Conclusion
 
 ## Connections
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/Community_448

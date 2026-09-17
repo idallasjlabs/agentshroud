@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Constraints_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Evidence_6]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Remediation_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Root Cause_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Severity_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Verification_8]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Atlas — Curriculum Architect_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[CPA Curriculum Frontmatter Addition_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Coverage Types_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Episode Closing_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Exam Weight Integration_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Gleim Unit Mapping_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Input Requirements_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Mandatory Acronym Expansion_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[OKE Channel — CPA Exam Context_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Output Format_21]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Persona_6]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Quality Checklist_6]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Role_59]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[System Prompt_6]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[openclawskillsi-atlasSKILL]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

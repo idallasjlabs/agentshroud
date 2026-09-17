@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 63"
-location: "L45"
+community: "Community 156"
+location: "L1442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_156
 ---
 
 # now()
 
 ## Connections
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_156

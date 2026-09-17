@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 263"
+community: "Community 466"
 location: "L407"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Community_466
 ---
 
 # Option B: Full OAuth Setup
 
 ## Connections
-- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Community_466

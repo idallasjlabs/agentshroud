@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 16"
+community: "SOC Auth & Audit Store"
 location: "L1456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/SOC_Auth__Audit_Store
 ---
 
 # test_health_healthy_and_degraded()
@@ -16,4 +16,4 @@ tags:
 - [[_make_service_manager()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store

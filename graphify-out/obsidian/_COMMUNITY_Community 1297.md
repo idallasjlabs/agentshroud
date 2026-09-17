@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1297
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
-- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
-- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[SECTION 9 IMPORTANT NOTES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[TEAS Plus vs. TEAS Standard]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[The TM Symbol]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Trademark vs. Patent]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Why Standard Character Mark First]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1297
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 684]]
+
+## Top bridge nodes
+- [[SECTION 9 IMPORTANT NOTES]] - degree 5, connects to 1 community

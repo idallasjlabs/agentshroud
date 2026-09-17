@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 359"
-location: "L46"
+community: "Community 242"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_359
+  - community/Community_242
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_359
+#graphify/code #graphify/EXTRACTED #community/Community_242

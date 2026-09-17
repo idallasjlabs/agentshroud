@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Community 611"
-location: "L7"
+community: "Community 750"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_611
+  - community/Community_750
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/EXTRACTED #community/Community_750

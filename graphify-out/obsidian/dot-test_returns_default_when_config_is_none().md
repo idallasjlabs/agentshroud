@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 66"
+location: "L129"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_66
+---
+
+# .test_returns_default_when_config_is_none()
+
+## Connections
+- [[Backward-compat config attr absent → return single OpenClaw default.]] - `rationale_for` [EXTRACTED]
+- [[TestListBots]] - `method` [EXTRACTED]
+- [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[list_bots()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_66

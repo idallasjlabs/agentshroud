@@ -58,7 +58,18 @@ _sha256() {
 
 _seed_sha="$(_sha256 "${CRON_SEED_SRC}")"
 
-if [ ! -f "${CRON_JOBS}" ]; then
+if [ ! -f "${CRON_JOBS}" ] && [ ! -f "${CRON_SEED_STAMP}" ]; then
+  # Genuinely never seeded (both jobs.json AND the seed stamp are absent) — vs.
+  # jobs.json missing because OpenClaw's own doctor/gateway-startup migration
+  # already archived it into its SQLite-backed cron store (cron/jobs.json is
+  # unconditionally treated as a legacy source there — see
+  # dist/doctor-state-migration-fs-*.mjs's archiveLegacyStateSource). The seed
+  # stamp survives that archival (only jobs.json itself gets renamed away), so
+  # its presence is the durable "already seeded once" signal. Without this
+  # distinction, every boot re-bootstrapped a "first run" jobs.json that the
+  # very next migration pass archived again — 293 accumulated
+  # jobs.json.migrated.N files (9.3MB) from one new file per restart, observed
+  # 2026-09-15.
   cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
   printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
   echo "[init] ✓ Bootstrapped cron/jobs.json from image defaults (first run)"
@@ -69,8 +80,10 @@ else
     cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
     printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
     echo "[init] ✓ Re-seeded cron/jobs.json — image default changed since last seed (stale volume copy replaced)"
-  else
+  elif [ -f "${CRON_JOBS}" ]; then
     echo "[init] ✓ cron/jobs.json matches last-seeded image default — skipping (use CLI to modify)"
+  else
+    echo "[init] ✓ cron/jobs.json already consumed by OpenClaw's cron store (image default unchanged since seed) — not recreating"
   fi
 fi
 
@@ -185,11 +198,24 @@ node -e "
   setIfChanged('api', 'ollama');
   setIfChanged('apiKey', 'OLLAMA_API_KEY');
 
+  // Each entry must be a ModelDefinitionSchema object ({id, ...}), not a bare
+  // string — OpenClaw's models.json validator requires providers.*.models[] to
+  // be objects (dist/model-registry-*.mjs: ModelDefinitionSchema requires
+  // 'id: string'). Bare strings fail schema validation with
+  // 'providers.ollama.models.0: must be object', which disables the whole
+  // custom model catalog (observed 2026-09-15/16: '[agents/model-registry]
+  // model catalog load issue' + 'remote model catalog refresh failed').
+  // Self-heal any legacy string entries already on the volume, in place.
   const existingModels = Array.isArray(cfg.providers.ollama.models) ? cfg.providers.ollama.models : [];
-  if (!existingModels.includes(modelName)) {
-    cfg.providers.ollama.models = [...existingModels, modelName];
+  const normalizedModels = existingModels.map((m) => (typeof m === 'string' ? { id: m } : m));
+  if (JSON.stringify(normalizedModels) !== JSON.stringify(existingModels)) {
     changed = true;
   }
+  if (!normalizedModels.some((m) => m && m.id === modelName)) {
+    normalizedModels.push({ id: modelName });
+    changed = true;
+  }
+  cfg.providers.ollama.models = normalizedModels;
 
   if (changed) {
     fs.writeFileSync(p, JSON.stringify(cfg, null, 2), 'utf8');
@@ -204,6 +230,34 @@ chmod 600 "${MODELS_JSON}" 2>/dev/null || true
 ROOT_MODELS_JSON="${OPENCLAW_DIR}/models.json"
 cp "${MODELS_JSON}" "${ROOT_MODELS_JSON}"
 chmod 600 "${ROOT_MODELS_JSON}" 2>/dev/null || true
+
+# ── 2c2. Normalize config after this script's own writes, before this script's
+# own CLI calls need it ────────────────────────────────────────────────────
+# apply-patches.js (step 2) and the auth-profiles/models.json seeding above
+# (2b/2c) write config in whatever shape they know about, which can be a shape
+# OpenClaw's current schema considers legacy (retired keys, credential stores
+# needing migration). The `openclaw doctor --fix` pending-migration repair in
+# start-agentshroud.sh runs BEFORE this script is even invoked, so it only
+# catches migrations already pending in a config this script hasn't touched
+# yet — it cannot catch legacy shapes THIS script just (re)introduced. Left
+# unfixed, every `openclaw config set` / `openclaw mcp *` CLI call below fails
+# with "OpenClaw config is invalid", which is exactly how the 2f sandbox step
+# was firing "SECURITY: sandbox config INCOMPLETE" on every boot (observed
+# 2026-09-15) despite the outer start-agentshroud.sh fix. This has to run here
+# — after this script's writes, before its CLI calls — and still before the
+# gateway starts (once it's up it owns the state-database-coordinator lock and
+# `doctor --fix` fails with contention; see start-agentshroud.sh's comment).
+_openclaw_bin="$(command -v openclaw || true)"
+if [ -n "${_openclaw_bin}" ]; then
+  _cfg_doctor_status="$(openclaw doctor 2>&1 || true)"
+  if printf '%s' "${_cfg_doctor_status}" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|config is invalid"; then
+    if _cfg_doctor_out="$(openclaw doctor --fix 2>&1)"; then
+      echo "[init] ✓ Normalized openclaw.json after config writes (openclaw doctor --fix)"
+    else
+      echo "[init] ⚠ openclaw doctor --fix did not complete after config writes: $(printf '%s' "${_cfg_doctor_out}" | tail -3)" >&2
+    fi
+  fi
+fi
 
 # Security: harden config and state dir permissions
 chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
@@ -346,13 +400,41 @@ if [ -n "${_openclaw_bin}" ]; then
   # every dev-host sandboxed cron job failed with "network ... not found"
   # until this was parameterized).
   _sandbox_network="${AGENTSHROUD_PROJECT:-agentshroud}_agentshroud-isolated"
-  openclaw config set agents.defaults.sandbox.mode all 2>/dev/null
-  openclaw config set agents.defaults.sandbox.backend docker 2>/dev/null
-  openclaw config set agents.defaults.sandbox.scope session 2>/dev/null
-  openclaw config set agents.defaults.sandbox.workspaceAccess rw 2>/dev/null
-  openclaw config set agents.defaults.sandbox.docker.network "${_sandbox_network}" 2>/dev/null \
-    && echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})" \
-    || echo "[init] ⚠ Could not apply sandbox config"
+
+  # These four were previously bare `openclaw config set ... 2>/dev/null` with
+  # no `|| true`. Under this script's `set -euo pipefail` (line 19) that makes
+  # ANY non-zero exit kill init instantly — and because stderr was discarded,
+  # it died with no message at all. That is exactly how the 2026-09-15 dev
+  # restart loop presented: the container exited 1 straight after the MCP line,
+  # 14 restarts deep, with nothing whatsoever in the logs to say why.
+  #
+  # A config write failing should never take the agent down, and must never be
+  # silent. Surface the real error, keep going, and let the explicit check
+  # below report the outcome.
+  _oc_config_set() {
+    local key="$1" val="$2" _err
+    if _err="$(openclaw config set "$key" "$val" 2>&1)"; then
+      return 0
+    fi
+    echo "[init] ⚠ openclaw config set ${key} failed: ${_err}" >&2
+    return 1
+  }
+
+  _sandbox_ok=1
+  _oc_config_set agents.defaults.sandbox.mode all                      || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.backend docker                || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.scope session                 || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.workspaceAccess rw            || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.docker.network "${_sandbox_network}" || _sandbox_ok=0
+
+  if [ "${_sandbox_ok}" -eq 1 ]; then
+    echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})"
+  else
+    # Loud, not fatal. Sandboxing being off is a real security regression, so
+    # it must be visible in the log and to the SOC surface — but a config-write
+    # hiccup must not crash-loop the agent.
+    echo "[init] ⚠ SECURITY: sandbox config INCOMPLETE — agent isolation may be degraded. See the errors above." >&2
+  fi
 else
   echo "[init] ⚠ openclaw CLI not on PATH — skipping sandbox config"
 fi

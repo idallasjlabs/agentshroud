@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Management"
+community: "Community 1031"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Community_1031
 ---
 
 # Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec
 
 ## Connections
-- [[.get_merged_context()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_merged_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Community_1031

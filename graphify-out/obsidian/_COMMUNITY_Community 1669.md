@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1669
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[App Icon 256x256 (AgentShroud logo mark)]] - image - branding/icons/app/icon-256x256.png
+- [[ServiceManager._describe_service() — reads OCI image LABEL org.opencontainers.image.version]] - code - gateway/soc/services.py
+- [[ServiceManager.list_services()]] - code - gateway/soc/services.py
 
 ## Live Query (requires Dataview plugin)
 

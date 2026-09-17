@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_generate_cve_page.py"
+type: "code"
+community: "Community 186"
+location: "L335"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_186
+---
+
+# .test_legacy_fallback_openclaw_only()
+
+## Connections
+- [[dot-_run_generate()]] - `calls` [EXTRACTED]
+- [[TestGenerate]] - `method` [EXTRACTED]
+- [[When list_cve_agents is not available, OpenClaw section is still generated.]] - `rationale_for` [EXTRACTED]
+- [[_make_cve()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_186

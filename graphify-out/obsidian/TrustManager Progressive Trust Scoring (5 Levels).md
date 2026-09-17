@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Community 770"
+community: "Community 788"
 location: "Module 17"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_770
+  - community/Community_788
 ---
 
 # TrustManager: Progressive Trust Scoring (5 Levels)
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_770
+#graphify/concept #graphify/EXTRACTED #community/Community_788

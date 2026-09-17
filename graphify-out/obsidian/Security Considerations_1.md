@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 641"
+community: "Community 660"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/Community_660
 ---
 
 # Security Considerations
 
 ## Connections
 - [[How Messages Flow]] - `contains` [EXTRACTED]
-- [[Important Notes_1]] - `contains` [EXTRACTED]
+- [[Important Notes_2]] - `contains` [EXTRACTED]
 - [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_641
+#graphify/document #graphify/EXTRACTED #community/Community_660

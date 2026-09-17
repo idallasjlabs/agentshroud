@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Community 1003"
-location: "L43"
+community: "Community 266"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/Community_266
 ---
 
 # Related Notes
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/Community_266

@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 69"
-location: "L29"
+community: "Community 888"
+location: "L561"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_69
+  - graphify/EXTRACTED
+  - community/Community_888
 ---
 
 # WebSocket
 
 ## Connections
-- [[.__init__()_132]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_888

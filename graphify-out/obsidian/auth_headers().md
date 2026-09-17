@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 26"
-location: "L154"
+community: "Community 104"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Community_104
 ---
 
 # auth_headers()
 
 ## Connections
-- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Community_104

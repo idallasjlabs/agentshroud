@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 354"
+community: "Community 356"
 location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/Community_356
 ---
 
 # Part C - Merge AST + semantic into final extraction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 3 - Extract entities and relationships]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/Community_356

@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[AgentTarget_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[EmailSendRequest_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[ForwardRequest_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[ForwardResponse_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Related_6]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[SSHExecRequest  SSHExecResponse]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[1Password Integration_2]] - document - docs/api/integration-guide.md
+- [[AgentShroud v1.3.0_1]] - document - docs/api/api-reference.md
+- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
+- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
+- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
+- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
+- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
+- [[Integration Guide]] - document - docs/api/integration-guide.md
+- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
+- [[MCP Server Integration_1]] - document - docs/api/integration-guide.md
+- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
+- [[Overview_18]] - document - docs/api/api-reference.md
+- [[Overview_19]] - document - docs/api/integration-guide.md
+- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
+- [[Service Account Setup]] - document - docs/api/integration-guide.md
+- [[Webhook Alerts]] - document - docs/api/integration-guide.md
+- [[integration-guide]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +34,11 @@ members: 17
 TABLE source_file, type FROM #community/Community_526
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 503]]
+- 1 edge to [[_COMMUNITY_Community 670]]
+
+## Top bridge nodes
+- [[Integration Guide]] - degree 8, connects to 1 community
+- [[AgentShroud v1.3.0_1]] - degree 4, connects to 1 community

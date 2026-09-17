@@ -1,45 +1,27 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L12"
+community: "Community 242"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_242
 ---
 
 # run()
 
 ## Connections
-- [[ApprovalHardening]] - `calls` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[AuditStore_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `calls` [EXTRACTED]
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[FileSandbox]] - `calls` [EXTRACTED]
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[GitGuard]] - `calls` [EXTRACTED]
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Path_16]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[PromptProtection]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[fail()_2]] - `calls` [EXTRACTED]
-- [[ok()]] - `calls` [EXTRACTED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - `rationale_for` [EXTRACTED]
+- [[_git_commits_last_week()]] - `calls` [EXTRACTED]
+- [[build_comment_payload()_2]] - `calls` [EXTRACTED]
+- [[build_weekly_summary()]] - `calls` [EXTRACTED]
+- [[extract_scrum_items()]] - `calls` [EXTRACTED]
+- [[fetch_op_secret()_2]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket run()]] - `semantically_similar_to` [INFERRED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[post_comment()]] - `calls` [EXTRACTED]
+- [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
+- [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_242

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # test_webhook_outbound_block_withheld()
@@ -15,7 +15,7 @@ tags:
 - [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[_PassInboundPipeline]] - `calls` [EXTRACTED]
-- [[_StubForwarder_2]] - `calls` [EXTRACTED]
+- [[_StubForwarder_1]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "concept"
-community: "Community 1396"
+community: "Community 1466"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1396
+  - community/Community_1466
 ---
 
 # gifgrep CLI
 
 ## Connections
-- [[SKILL_208]] - `implements` [EXTRACTED]
+- [[gifgrepSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1396
+#graphify/concept #graphify/EXTRACTED #community/Community_1466

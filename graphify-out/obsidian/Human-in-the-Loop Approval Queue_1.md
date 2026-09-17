@@ -1,20 +1,16 @@
 ---
-source_file: "CLAUDE.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Community 491"
-location: "## 7) Hard constraints"
+community: "Community 564"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_491
+  - community/Community_564
 ---
 
 # Human-in-the-Loop Approval Queue
 
 ## Connections
-- [[75-Module Security Pipeline]] - `conceptually_related_to` [EXTRACTED]
-- [[AgentShroud CLAUDE.md Guidance]] - `references` [EXTRACTED]
-- [[AgentShroud Changelog]] - `references` [EXTRACTED]
-- [[Cron-Mode Execution Restrictions]] - `conceptually_related_to` [INFERRED]
+- [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_491
+#graphify/concept #graphify/EXTRACTED #community/Community_564

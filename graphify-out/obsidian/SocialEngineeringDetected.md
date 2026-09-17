@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 165"
+community: "Voice Gateway STT & Browser Security"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # SocialEngineeringDetected
 
 ## Connections
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[Exception_4]] - `inherits` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 322"
+community: "Community 332"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_322
+  - community/Community_332
 ---
 
 # If not → escalate to field team via #ops-alerts
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[API  Function Reference_2]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)_2]] - `contains` [EXTRACTED]
-- [[SKILL_185]] - `contains` [EXTRACTED]
+- [[openclawskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_322
+#graphify/document #graphify/EXTRACTED #community/Community_332

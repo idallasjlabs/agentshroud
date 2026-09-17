@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # get_caller()
 
 ## Connections
-- [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
+- [[dot-test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[Public FastAPI dependency injected by SCL route handlers.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[socauth.py]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

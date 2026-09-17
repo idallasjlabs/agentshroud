@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 1179"
+community: "Community 1237"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/Community_1237
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1179
+#graphify/document #graphify/EXTRACTED #community/Community_1237

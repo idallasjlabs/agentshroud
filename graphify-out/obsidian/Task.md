@@ -12,10 +12,6 @@ tags:
 # Task
 
 ## Connections
-- [[.start()_2]] - `references` [EXTRACTED]
-- [[app_main.c]] - `imports` [EXTRACTED]
-- [[main.c]] - `imports` [EXTRACTED]
-- [[wakeword.c]] - `imports` [EXTRACTED]
-- [[wakeword.c_1]] - `imports` [EXTRACTED]
+- [[dot-start()_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_90

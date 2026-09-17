@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 830
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[IDENTITY_1]] - document - docs/architecture/IDENTITY.md
-- [[Identity Reference - AgentShroud System]] - document - docs/architecture/IDENTITY.md
-- [[Via Control UI_1]] - document - docs/architecture/IDENTITY.md
-- [[Via Telegram_1]] - document - docs/architecture/IDENTITY.md
-- [[🎯 Bot Identity Configuration]] - document - docs/architecture/IDENTITY.md
-- [[👤 You (The Real Person)]] - document - docs/architecture/IDENTITY.md
-- [[💬 Communication Flow]] - document - docs/architecture/IDENTITY.md
-- [[📱 How It Works]] - document - docs/architecture/IDENTITY.md
-- [[🔐 Security]] - document - docs/architecture/IDENTITY.md
-- [[🤖 Your AI Bot]] - document - docs/architecture/IDENTITY.md
+- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Common Commands_3]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Notes_11]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[apple-notesSKILL]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[bear-notesSKILL]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
+- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

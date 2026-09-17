@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 945
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Codex CLI (codex exec  Codex -p)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[Gemini CLI (--skip-trust)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[Hermes Dev Workflow (HDEV) Skill]] - document - .agents/skills/i-hdev/SKILL.md
-- [[LM Studio local model (Qwen3-14B)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
-- [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
-- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[scriptssmoke.sh (static startup smoke suite)]] - code - scripts/smoke.sh
+- [[Kawaii Face Basic Cycle Example Root CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt
+- [[Kawaii Face Basic Cycle Main Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt
+- [[LVGL 9.x Graphics Library Dependency]] - concept - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
+- [[LVGL Kawaii Face Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/CMakeLists.txt
+- [[LVGL Kawaii Face IDF Component Manifest (v1.0.0)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
+- [[Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)]] - code - firmware/voice-terminal/main/CMakeLists.txt
+- [[Voice Terminal Main IDF Component Manifest]] - code - firmware/voice-terminal/main/idf_component.yml
+- [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - concept - firmware/voice-terminal/main/idf_component.yml
+- [[esp-sr Speech Recognition Library (WakeNet WN9)]] - concept - firmware/voice-terminal/main/idf_component.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +26,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_945
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 391]]
-- 1 edge to [[_COMMUNITY_Community 319]]
-
-## Top bridge nodes
-- [[Hermes Dev Workflow (HDEV) Skill]] - degree 9, connects to 1 community
-- [[LM Studio local model (Qwen3-14B)]] - degree 3, connects to 1 community

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_network_validator.py"
+type: "code"
+community: "Community 417"
+location: "L191"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_417
+---
+
+# .test_validate_docker_compose_config_empty_config()
+
+## Connections
+- [[Test handling of empty configuration.]] - `rationale_for` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_417

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 993"
+community: "Community 1039"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_993
+  - community/Community_1039
 ---
 
 # HostStatus
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_33]] - `uses` [INFERRED]
+- [[Path_59]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
-- [[TestClassify]] - `uses` [INFERRED]
+- [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
-- [[TestMain]] - `uses` [INFERRED]
+- [[TestMain_1]] - `uses` [INFERRED]
 - [[TestMultiHostResultProperties]] - `uses` [INFERRED]
 - [[TestParseHosts]] - `uses` [INFERRED]
 - [[TestParserAndCommandResolution]] - `uses` [INFERRED]
@@ -26,9 +26,9 @@ tags:
 - [[TestSshRunner]] - `uses` [INFERRED]
 - [[TestTail]] - `uses` [INFERRED]
 - [[TestWrapperSubprocess]] - `uses` [INFERRED]
-- [[classify()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_993
+#graphify/code #graphify/INFERRED #community/Community_1039

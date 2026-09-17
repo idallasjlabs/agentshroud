@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[detect_runtime]] - code - gateway/runtime/__init__.py
+- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 

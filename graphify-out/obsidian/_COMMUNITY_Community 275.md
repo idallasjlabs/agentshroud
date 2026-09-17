@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.07
-members: 29
+cohesion: 0.14
+members: 30
 ---
 
 # Community 275
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[1. Ingress Controller]] - document - docs/security/security-architecture.md
-- [[10. AppArmorSELinux Policies]] - document - docs/security/security-architecture.md
-- [[11. Linux Capability Dropping]] - document - docs/security/security-architecture.md
-- [[12. User Namespace Isolation]] - document - docs/security/security-architecture.md
-- [[13. Container Runtime Security]] - document - docs/security/security-architecture.md
-- [[14. Process Monitor]] - document - docs/security/security-architecture.md
-- [[15. File System Guard]] - document - docs/security/security-architecture.md
-- [[16. Resource Guard]] - document - docs/security/security-architecture.md
-- [[17. API Key Manager]] - document - docs/security/security-architecture.md
-- [[18. Certificate Authority]] - document - docs/security/security-architecture.md
-- [[19. Session Manager]] - document - docs/security/security-architecture.md
-- [[2. DDoS Protection]] - document - docs/security/security-architecture.md
-- [[20. Role-Based Access Control (RBAC)]] - document - docs/security/security-architecture.md
-- [[21. Encryption Manager]] - document - docs/security/security-architecture.md
-- [[22. Data Loss Prevention (DLP)]] - document - docs/security/security-architecture.md
-- [[23. Backup Integrity]] - document - docs/security/security-architecture.md
-- [[24. Audit Trail Manager]] - document - docs/security/security-architecture.md
-- [[25. Prompt Guard System]] - document - docs/security/security-architecture.md
-- [[26. MCP Inspector]] - document - docs/security/security-architecture.md
-- [[3. Web Application Firewall (WAF)]] - document - docs/security/security-architecture.md
-- [[4. Geo-Blocking]] - document - docs/security/security-architecture.md
-- [[9. seccomp Profiles]] - document - docs/security/security-architecture.md
-- [[Layer 1 Perimeter Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 3 Operating System Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 4 Platform Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 5 Identity & Access Management (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 6 Data Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 7 Application Security (2 Modules)]] - document - docs/security/security-architecture.md
-- [[Security Module Inventory]] - document - docs/security/security-architecture.md
+- [[dot-test_bot_id_filter_matches_bot_image()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_bot_id_filter_unknown_bot_returns_all()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_clean_when_installed_but_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_corrupt_report_file_is_skipped()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_critical_report_status_is_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_each_entry_has_image_key()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_ignores_non_image_prefixed_files()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_infected_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_not_run_when_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_empty_list_when_dir_missing()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_empty_when_no_image_reports()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_one_entry_per_report_file()]] - code - gateway/tests/test_scanner_integration.py
+- [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Path_27]] - code - gateway/tests/test_scanner_integration.py
+- [[Return True if clamd Unix socket tmpclamd.ctl is connectable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest ClamAV scan summary from saved reports.      When ClamAV is instal]] - rationale - gateway/security/scanner_integration.py
+- [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetClamavSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[TestGetTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration.py
+- [[Unknown bot_id with no config match falls through and returns all entries.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Write a fake image report file in the expected filename format.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[_clean_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[_critical_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[_is_clamd_running()]] - code - gateway/security/scanner_integration.py
+- [[_write_image_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[bot_id + config param restricts results to that bot's image.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[get_clamav_summary()]] - code - gateway/security/scanner_integration.py
+- [[get_trivy_image_summaries()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,8 +49,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 153]]
-- 1 edge to [[_COMMUNITY_Community 274]]
+- 13 edges to [[_COMMUNITY_Community 73]]
+- 4 edges to [[_COMMUNITY_Community 292]]
+- 4 edges to [[_COMMUNITY_Community 60]]
+- 3 edges to [[_COMMUNITY_Community 518]]
+- 2 edges to [[_COMMUNITY_Community 550]]
+- 1 edge to [[_COMMUNITY_Community 168]]
 
 ## Top bridge nodes
-- [[Security Module Inventory]] - degree 8, connects to 2 communities
+- [[get_clamav_summary()]] - degree 13, connects to 5 communities
+- [[Path_27]] - degree 18, connects to 3 communities
+- [[get_trivy_image_summaries()]] - degree 14, connects to 3 communities
+- [[_write_image_report()]] - degree 11, connects to 1 community
+- [[_clean_trivy_report()]] - degree 10, connects to 1 community

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # ScanRequest
 
 ## Connections
-- [[.scan()]] - `references` [EXTRACTED]
+- [[dot-scan()]] - `references` [EXTRACTED]
 - [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[sidecar.py]] - `contains` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+type: "code"
+community: "Community 278"
+location: "L187"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_278
+---
+
+# .test_dry_run_writes_nothing()
+
+## Connections
+- [[TestSerialization]] - `method` [EXTRACTED]
+- [[_adv()]] - `calls` [EXTRACTED]
+- [[_sync()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_278

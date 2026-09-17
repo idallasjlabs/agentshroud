@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Middleware & Lifespan"
+community: "PII Sanitizer & Redaction"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/PII_Sanitizer__Redaction
 ---
 
 # Test middleware configuration setup
 
 ## Connections
-- [[.test_middleware_set_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_middleware_set_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

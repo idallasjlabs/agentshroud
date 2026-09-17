@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: ""
 type: "code"
-community: "Community 325"
-location: "L149"
+community: "Community 158"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_325
+  - graphify/EXTRACTED
+  - community/Community_158
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/Community_158

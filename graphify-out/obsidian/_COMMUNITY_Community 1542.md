@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[steve-hay-assessment_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[Skill observability_1]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[hermesskillsi-observabilitySKILL]] - document - docker/config/hermes/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

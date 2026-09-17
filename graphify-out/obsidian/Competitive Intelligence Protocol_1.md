@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/agents/openclaw-identity.md"
+source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "Community 745"
+community: "Community 777"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Community_777
 ---
 
 # Competitive Intelligence Protocol
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
 - [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
-- [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Community_777

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 956"
-location: "L8"
+community: "Community 532"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_956
+  - community/Community_532
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_956
+#graphify/document #graphify/EXTRACTED #community/Community_532

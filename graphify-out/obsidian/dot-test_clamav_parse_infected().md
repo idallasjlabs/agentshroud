@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_audit.py"
+type: "code"
+community: "Community 56"
+location: "L912"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_56
+---
+
+# .test_clamav_parse_infected()
+
+## Connections
+- [[TestContainerSecurity]] - `method` [EXTRACTED]
+- [[parse_clamscan_output()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_56

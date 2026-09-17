@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 96"
+community: "Community 1705"
 location: "L2156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_1705
 ---
 
 # Repeated NO_REPLY payloads should still return deterministic non-empty replies.
 
 ## Connections
-- [[.test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_1705

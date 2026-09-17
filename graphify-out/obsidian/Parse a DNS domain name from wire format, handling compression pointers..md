@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Community 424"
+community: "Community 436"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_424
+  - community/Community_436
 ---
 
 # Parse a DNS domain name from wire format, handling compression pointers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_domain_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_424
+#graphify/rationale #graphify/EXTRACTED #community/Community_436

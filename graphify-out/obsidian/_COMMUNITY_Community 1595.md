@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Cannot access' healthcheck SKILL.md sandbox wording should rewrite for form payl]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_startup_notifications_use_minimal_message_format()]] - code - gateway/tests/test_config_validation.py
+- [[Startupshutdown notifications should use minimal, non-identifying text.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()]] - degree 4, connects to 3 communities
+- [[dot-test_startup_notifications_use_minimal_message_format()]] - degree 2, connects to 1 community

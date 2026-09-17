@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Threat Intelligence]] - concept - docs/project/glossary.md
+- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

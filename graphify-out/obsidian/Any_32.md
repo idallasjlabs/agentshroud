@@ -1,26 +1,20 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 34"
-location: "L119"
+community: "P3 Infrastructure Security Modules"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Any
 
 ## Connections
-- [[._check_description_parameter_mismatch()]] - `references` [EXTRACTED]
-- [[._check_parameter_obfuscation()]] - `references` [EXTRACTED]
-- [[._check_repeat_request_patterns()]] - `references` [EXTRACTED]
-- [[._create_parameter_fingerprint()]] - `references` [EXTRACTED]
-- [[._format_parameters_with_highlighting()]] - `references` [EXTRACTED]
-- [[.analyze_request()]] - `references` [EXTRACTED]
-- [[.format_hardened_message()]] - `references` [EXTRACTED]
-- [[.get_stats()_13]] - `references` [EXTRACTED]
-- [[.is_request_in_cooldown()]] - `references` [EXTRACTED]
-- [[.record_denied_request()]] - `references` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()_2]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

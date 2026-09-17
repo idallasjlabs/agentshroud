@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Management"
+community: "Ingest Middleware & File Sandbox"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Test that sessions persist across manager restarts.
 
 ## Connections
-- [[.test_session_persistence()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_session_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

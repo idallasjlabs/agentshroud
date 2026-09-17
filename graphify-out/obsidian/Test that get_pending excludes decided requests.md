@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 56"
+community: "Community 38"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Community_38
 ---
 
 # Test that get_pending excludes decided requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_pending_excludes_decided()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Community_38

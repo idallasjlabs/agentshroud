@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.40
+cohesion: 0.70
 members: 5
 ---
 
 # Community 1215
 
-**Cohesion:** 0.40 - moderately connected
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[CICD Pipeline Advisor (CICD)_1]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Purpose_80]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[README_85]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Related Skills_86]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Usage_89]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[append_ignore_line()]] - code - .claude/scripts/claude_repo_setup.sh
+- [[claude_repo_setup.sh]] - code - .claude/scripts/claude_repo_setup.sh
+- [[claude_repo_setup.sh (repo config staging script)]] - code - .claude/scripts/claude_repo_setup.sh
+- [[claude_repo_setup.sh script]] - code - .claude/scripts/claude_repo_setup.sh
+- [[stage_if_exists()]] - code - .claude/scripts/claude_repo_setup.sh
 
 ## Live Query (requires Dataview plugin)
 

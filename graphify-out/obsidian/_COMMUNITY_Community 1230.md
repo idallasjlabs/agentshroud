@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Oracle — Feedback Analyst_4]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Purpose_95]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[README_100]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Related Skills_104]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Usage_105]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Purpose_48]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Related Skills_39]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Usage_43]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[hermesskillsi-hermesREADME]] - document - docker/config/hermes/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

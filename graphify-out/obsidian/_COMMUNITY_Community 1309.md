@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1309
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[i-atlas SKILL.md (Curriculum Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[i-socrates SKILL.md (Dialogue Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[i-vulcan README]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[⚠️ MEDIUM-VALUE COMPONENTS (Good Intent, Implementation Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ HIGH-VALUE SECURITY COMPONENTS (Real Protection)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ OVERALL ASSESSMENT GENUINE SECURITY FRAMEWORK]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔍 NEEDS STRENGTHENING (Risk of Security Theater)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1309
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - degree 5, connects to 1 community

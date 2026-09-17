@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 588"
-location: "L377"
+community: "Community 806"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_588
+  - community/Community_806
 ---
 
 # Integration with AgentShroud Workflow
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_588
+#graphify/document #graphify/EXTRACTED #community/Community_806

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 30"
+community: "Encrypted Store & Drift Detector"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Zero-width chars between letters should not bypass detection.
 
 ## Connections
-- [[.test_zero_width_evasion()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_zero_width_evasion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

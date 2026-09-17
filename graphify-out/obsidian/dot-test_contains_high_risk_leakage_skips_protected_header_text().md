@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 343"
+location: "L4095"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_343
+---
+
+# .test_contains_high_risk_leakage_skips_protected_header_text()
+
+## Connections
+- [[Our own protected notices must never be double-filtered.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_343

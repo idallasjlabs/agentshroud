@@ -1,23 +1,23 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Community 401"
+community: "Community 411"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_411
 ---
 
 # Summarize
 
 ## Connections
-- [[Config]] - `contains` [EXTRACTED]
+- [[Config_1]] - `contains` [EXTRACTED]
 - [[Model + keys]] - `contains` [EXTRACTED]
-- [[Quick start_3]] - `contains` [EXTRACTED]
-- [[SKILL_232]] - `contains` [EXTRACTED]
-- [[Useful flags_1]] - `contains` [EXTRACTED]
+- [[Quick start_7]] - `contains` [EXTRACTED]
+- [[Useful flags]] - `contains` [EXTRACTED]
 - [[When to use (trigger phrases)]] - `contains` [EXTRACTED]
 - [[YouTube summary vs transcript]] - `contains` [EXTRACTED]
+- [[summarizeSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/Community_411

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1330"
+location: "L239"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1330
+---
+
+# .test_security_scan_sh_read()
+
+## Connections
+- [[TestTextReaders]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1330

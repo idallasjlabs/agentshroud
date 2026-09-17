@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/workspace.sh"
+source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "Community 729"
-location: "L13"
+community: "Community 1028"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/Community_1028
 ---
 
 # usage()
 
 ## Connections
-- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
-- [[workspace.sh]] - `defines` [EXTRACTED]
-- [[workspace.sh script]] - `calls` [EXTRACTED]
+- [[wait-for-text.sh]] - `defines` [EXTRACTED]
+- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_729
+#graphify/code #graphify/EXTRACTED #community/Community_1028

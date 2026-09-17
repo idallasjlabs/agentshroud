@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Community 513"
-location: "L10"
+community: "Community 394"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_394
 ---
 
 # Architecture
 
 ## Connections
-- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Community_394

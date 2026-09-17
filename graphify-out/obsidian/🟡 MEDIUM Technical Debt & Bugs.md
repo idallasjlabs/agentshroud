@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 1109"
+community: "Community 484"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1109
+  - community/Community_484
 ---
 
 # 🟡 MEDIUM: Technical Debt & Bugs
@@ -19,4 +19,4 @@ tags:
 - [[9. Streaming Responses Bypass Outbound Filtering]] - `contains` [EXTRACTED]
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1109
+#graphify/document #graphify/EXTRACTED #community/Community_484

@@ -1,20 +1,21 @@
 ---
 type: community
 cohesion: 0.40
-members: 5
+members: 6
 ---
 
 # Community 1139
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer]] - document - .agents/skills/i-apollo/README.md
-- [[Purpose]] - document - .agents/skills/i-apollo/README.md
-- [[README]] - document - .agents/skills/i-apollo/README.md
-- [[Related Skills]] - document - .agents/skills/i-apollo/README.md
-- [[Usage_1]] - document - .agents/skills/i-apollo/README.md
+- [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
+- [[_cr_plugin_works()]] - code - scripts/lib/container-runtime.sh
+- [[container-runtime.sh]] - code - scripts/lib/container-runtime.sh
+- [[container-runtime.sh script]] - code - scripts/lib/container-runtime.sh
+- [[container_runtime_engine()]] - code - scripts/lib/container-runtime.sh
+- [[detect_container_runtime()]] - code - scripts/lib/container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 

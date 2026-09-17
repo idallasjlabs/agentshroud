@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 159"
-location: "L126"
+community: "Approval Routing & Event Bus"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Approval_Routing__Event_Bus
 ---
 
 # auth_dep()
@@ -15,9 +15,6 @@ tags:
 - [[Auth dependency that uses the app state config._2]] - `rationale_for` [EXTRACTED]
 - [[Request_5]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[forward.py]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
-- [[test_forward_stream.py]] - `imports` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

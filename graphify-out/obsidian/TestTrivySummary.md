@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 1355"
-location: "L267"
+community: "Community 220"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1355
+  - community/Community_220
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[.test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
-- [[.test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
-- [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_summary_clean()]] - `method` [EXTRACTED]
+- [[dot-test_summary_critical()]] - `method` [EXTRACTED]
+- [[dot-test_summary_error()]] - `method` [EXTRACTED]
+- [[dot-test_summary_top_cves_ids()]] - `method` [EXTRACTED]
+- [[dot-test_summary_warning_high_only()]] - `method` [EXTRACTED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1355
+#graphify/code #graphify/EXTRACTED #community/Community_220

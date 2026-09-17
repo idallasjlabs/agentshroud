@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 879"
-location: "L34"
+community: "Community 751"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_879
+  - community/Community_751
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements]] - `contains` [EXTRACTED]
+- [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_879
+#graphify/document #graphify/EXTRACTED #community/Community_751

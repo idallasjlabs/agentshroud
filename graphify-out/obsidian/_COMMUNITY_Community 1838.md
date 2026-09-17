@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[Cron Competitive Analysis Email (Afternoon)]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

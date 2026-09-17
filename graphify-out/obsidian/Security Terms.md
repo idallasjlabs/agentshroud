@@ -1,17 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Community 327"
+community: "Community 337"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/Community_337
 ---
 
 # Security Terms
 
 ## Connections
-- [[Glossary]] - `contains` [EXTRACTED]
+- [[Glossary_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/Community_337

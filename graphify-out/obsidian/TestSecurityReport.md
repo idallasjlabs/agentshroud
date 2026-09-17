@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 29"
+community: "Community 45"
 location: "L834"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Community_45
 ---
 
 # TestSecurityReport
 
 ## Connections
-- [[.test_report_with_healthy_runtime()]] - `method` [EXTRACTED]
-- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - `method` [EXTRACTED]
+- [[dot-test_report_with_healthy_runtime()]] - `method` [EXTRACTED]
+- [[dot-test_report_with_unhealthy_runtime_falls_back_to_docker()]] - `method` [EXTRACTED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/Community_45

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 422"
-location: "L3"
+community: "Community 395"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_422
+  - community/Community_395
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_422
+#graphify/document #graphify/EXTRACTED #community/Community_395

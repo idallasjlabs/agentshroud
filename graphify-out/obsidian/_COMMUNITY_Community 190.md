@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.05
-members: 37
+cohesion: 0.11
+members: 38
 ---
 
 # Community 190
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[2. What Needs to PERSIST]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[3. What's System-Level]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Configuration Status]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Workflow_1]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature Gateway (FastAPI)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature Kill Switch (Phase 3B)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature OpenSCAP Scanning (Phase 3A)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature SSH Proxy (Phase 4)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature SecureBrowser (Playwright)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature iCloudGmail Services]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[For Each New Feature, Document]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Functional Testing (Read-Only Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[If Any Test Fails]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Lockdown Procedure]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Planned Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Summary_17]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Write Paths Inventory]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[dot-__call__()_2]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__init__()_83]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__init__()_84]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
+- [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
+- [[dot-advance()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-check()_2]] - code - gateway/security/rate_limit_guard.py
+- [[dot-get_stats()_14]] - code - gateway/security/rate_limit_guard.py
+- [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
+- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
+- [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
+- [[FakeClock]] - code - gateway/tests/test_rate_limit_guard.py
+- [[No injected clock the guard falls back to time.monotonic and still works.]] - rationale - gateway/tests/test_rate_limit_guard.py
+- [[RateLimitConfig]] - code - gateway/security/rate_limit_guard.py
+- [[RateLimitDecision]] - code - gateway/security/rate_limit_guard.py
+- [[RateLimitGuard]] - code - gateway/security/rate_limit_guard.py
+- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - rationale - gateway/security/rate_limit_guard.py
+- [[Structured verdict returned by meth`RateLimitGuard.check`.]] - rationale - gateway/security/rate_limit_guard.py
+- [[_make_pipeline()_3]] - code - gateway/tests/test_rate_limit_guard.py
+- [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
+- [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
+- [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_default_clock_is_monotonic()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_disabled_never_blocks()_1]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_fail_closed_on_internal_error()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_limits_are_per_agent()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_limits_are_per_tool()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_per_tool_override()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_pipeline_disabled_guard_passthrough()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_pipeline_no_guard_is_unchanged()_1]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_rate_limit_guard.py]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_stats_counts_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_sustained_limit_blocks_on_overflow()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_under_limit_allows()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[test_window_slides_and_allows_again()]] - code - gateway/tests/test_rate_limit_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,7 +57,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 580]]
+- 4 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 4 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 2 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Community 134]]
 
 ## Top bridge nodes
-- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community
+- [[RateLimitGuard]] - degree 26, connects to 2 communities
+- [[_make_pipeline()_3]] - degree 6, connects to 2 communities
+- [[test_pipeline_no_guard_is_unchanged()_1]] - degree 4, connects to 2 communities
+- [[test_rate_limit_guard.py]] - degree 22, connects to 1 community
+- [[RateLimitConfig]] - degree 21, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "Community 199"
+community: "Canary Tripwire"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/Canary_Tripwire
 ---
 
 # test_encoding_detector.py
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[TestEncodingDetector]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_199
+#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire

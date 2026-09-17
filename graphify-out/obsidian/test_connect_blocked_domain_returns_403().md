@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 75"
+community: "Community 72"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_72
 ---
 
 # test_connect_blocked_domain_returns_403()
 
 ## Connections
-- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
-- [[WebProxy_1]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[_MockWriter]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_72

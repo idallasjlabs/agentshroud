@@ -1,0 +1,18 @@
+---
+source_file: "gateway/ingest_api/bot_config.py"
+type: "code"
+community: "Community 180"
+location: "L81"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_180
+---
+
+# .resolved_container_name()
+
+## Connections
+- [[BotConfig]] - `method` [EXTRACTED]
+- [[The real docker container name for this bot — see container_name field.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_180

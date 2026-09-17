@@ -1,72 +1,67 @@
 ---
 type: community
-cohesion: 0.08
-members: 57
+cohesion: 0.07
+members: 52
 ---
 
 # Community 99
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 57 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 52 nodes
 
 ## Members
-- [[Added]] - document - CHANGELOG.md
-- [[Added — Tranche 1 True Collaboration Architecture]] - document - CHANGELOG.md
-- [[Added — Tranche 2 Private Service Data Isolation]] - document - CHANGELOG.md
-- [[Added — Tranche 3 Security Tools (IEC 62443 Alignment)]] - document - CHANGELOG.md
-- [[Agent Routing (P0)]] - document - CHANGELOG.md
-- [[CHANGELOG]] - document - CHANGELOG.md
-- [[Changed]] - document - CHANGELOG.md
-- [[Changelog — AgentShroud™]] - document - CHANGELOG.md
-- [[Compliance]] - document - CHANGELOG.md
-- [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
-- [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
-- [[Fixed]] - document - CHANGELOG.md
-- [[Hardened]] - document - CHANGELOG.md
-- [[Known gaps (not yet closed)]] - document - CHANGELOG.md
-- [[Known issues]] - document - CHANGELOG.md
-- [[Migration Notes]] - document - CHANGELOG.md
-- [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
-- [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
-- [[Performance Baselines (arm64  macOS  Python 3.13)]] - document - CHANGELOG.md
-- [[Phase 1 Foundation]] - document - CHANGELOG.md
-- [[Phase 2 Gateway Layer]] - document - CHANGELOG.md
-- [[Phase 3A3B Security Hardening]] - document - CHANGELOG.md
-- [[Phase 4 SSH Capability]] - document - CHANGELOG.md
-- [[Phase 5 Dashboard]] - document - CHANGELOG.md
-- [[Phase 6 Tailscale & Documentation]] - document - CHANGELOG.md
-- [[Phase 7 Security Hardening]] - document - CHANGELOG.md
-- [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
-- [[Recommended Steps]] - document - CHANGELOG.md
-- [[Removed]] - document - CHANGELOG.md
-- [[Security_2]] - document - CHANGELOG.md
-- [[Summary_1]] - document - CHANGELOG.md
-- [[Tests]] - document - CHANGELOG.md
-- [[Tranche Status]] - document - CHANGELOG.md
-- [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
-- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
-- [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
-- [[0.5.0 - 2026-02-21]] - document - CHANGELOG.md
-- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
-- [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - document - CHANGELOG.md
-- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - document - CHANGELOG.md
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - document - CHANGELOG.md
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - document - CHANGELOG.md
-- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - document - CHANGELOG.md
-- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
-- [[1.5.0 A2A Governance (2026-08-14)]] - document - CHANGELOG.md
-- [[1.5.1 A2A Governance (2026-08-22)]] - document - CHANGELOG.md
-- [[1.5.2 (2026-08-23)]] - document - CHANGELOG.md
-- [[1.5.3 (2026-08-23)]] - document - CHANGELOG.md
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - document - CHANGELOG.md
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - document - CHANGELOG.md
-- [[v0.3.0 → v0.4.0]] - document - CHANGELOG.md
-- [[v0.4.0 → v0.5.0]] - document - CHANGELOG.md
+- [[Any_83]] - code
+- [[Append new_entries to AGENT_CVE_REGISTRY (OpenClaw). Returns count appended.]] - rationale - scripts/sync-cve-registry.py
+- [[Append new_entries to _HERMES_CVE_REGISTRY. Returns count appended. Inserts…]] - rationale - scripts/sync-cve-registry.py
+- [[Append under_review new_entries to agent_id's OWN registry list. Inserts…]] - rationale - scripts/sync-cve-registry.py
+- [[Diff advisories against an agent's OWN registry and build under_review…]] - rationale - scripts/sync-cve-registry.py
+- [[Extract a numeric CVSS base score from an advisory, else None. GitHub…]] - rationale - scripts/sync-cve-registry.py
+- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Namespace_1]] - code
+- [[Parse raw NVD vulnerability records into registry entry dicts.]] - rationale - scripts/sync-cve-registry.py
+- [[Path_63]] - code
+- [[Print a human-readable breakdown of new entries by severitystatus.]] - rationale - scripts/sync-cve-registry.py
+- [[Read a vendor version from dockerversions.env — the single source of truth…]] - rationale - scripts/sync-cve-registry.py
+- [[Return (status, mitigation, defense_layers).]] - rationale - scripts/sync-cve-registry.py
+- [[Return True if version a = version b.]] - rationale - scripts/sync-cve-registry.py
+- [[Return the first patched version string across the advisory's vulns, else ''.]] - rationale - scripts/sync-cve-registry.py
+- [[Return the next zero-padded ASH id number for an agent's registry list.]] - rationale - scripts/sync-cve-registry.py
+- [[Return the resolved GitHub advisory repo slug for bot_id. Honors the per-…]] - rationale - gateway/security/agent_cve_registry.py
+- [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.…]] - rationale - scripts/sync-cve-registry.py
+- [[Run the GHSA pipeline for EVERY registered agent, each on its OWN path. Returns…]] - rationale - scripts/sync-cve-registry.py
+- [[Run the legacy NVD keyword source for OpenClaw + Hermes (unchanged).]] - rationale - scripts/sync-cve-registry.py
+- [[Serialize an under_review entry to Python source matching the file schema.]] - rationale - scripts/sync-cve-registry.py
+- [[Sync per-agent CVEs into gatewaysecurityagent_cve_registry.py. Two…]] - rationale - scripts/sync-cve-registry.py
+- [[_classify()]] - code - scripts/sync-cve-registry.py
+- [[_entry_to_py()]] - code - scripts/sync-cve-registry.py
+- [[_extract_affected_max()]] - code - scripts/sync-cve-registry.py
+- [[_extract_fix_version()]] - code - scripts/sync-cve-registry.py
+- [[_get_cvss()]] - code - scripts/sync-cve-registry.py
+- [[_ghsa_cvss_score()]] - code - scripts/sync-cve-registry.py
+- [[_ghsa_entry_to_py()]] - code - scripts/sync-cve-registry.py
+- [[_ghsa_patched_version()]] - code - scripts/sync-cve-registry.py
+- [[_make_title()]] - code - scripts/sync-cve-registry.py
+- [[_next_ash_number()]] - code - scripts/sync-cve-registry.py
+- [[_parse_ver()]] - code - scripts/sync-cve-registry.py
+- [[_print_summary()]] - code - scripts/sync-cve-registry.py
+- [[_process_nvd_results()]] - code - scripts/sync-cve-registry.py
+- [[_read_pinned_version()]] - code - scripts/sync-cve-registry.py
+- [[_run_nvd_sync()]] - code - scripts/sync-cve-registry.py
+- [[_ver_gt()]] - code - scripts/sync-cve-registry.py
+- [[_ver_gte()]] - code - scripts/sync-cve-registry.py
+- [[append_ghsa_entries()]] - code - scripts/sync-cve-registry.py
+- [[append_to_hermes_registry()]] - code - scripts/sync-cve-registry.py
+- [[append_to_registry()]] - code - scripts/sync-cve-registry.py
+- [[fetch_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
+- [[fetch_nvd_cves()]] - code - scripts/sync-cve-registry.py
+- [[get_agent_ghsa_repo]] - code - gateway/security/agent_cve_registry.py
+- [[lit()]] - code - scripts/sync-cve-registry.py
+- [[main()_5]] - code - scripts/sync-cve-registry.py
+- [[process_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
+- [[qs()]] - code - scripts/sync-cve-registry.py
+- [[run_ghsa_sync()]] - code - scripts/sync-cve-registry.py
+- [[sync-cve-registry.py]] - code - scripts/sync-cve-registry.py
+- [[sync_agent_ghsa()]] - code - scripts/sync-cve-registry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,3 +69,17 @@ members: 57
 TABLE source_file, type FROM #community/Community_99
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 124]]
+- 4 edges to [[_COMMUNITY_Community 458]]
+- 2 edges to [[_COMMUNITY_Community 158]]
+- 1 edge to [[_COMMUNITY_Community 832]]
+- 1 edge to [[_COMMUNITY_Community 268]]
+
+## Top bridge nodes
+- [[sync-cve-registry.py]] - degree 31, connects to 2 communities
+- [[process_ghsa_advisories()]] - degree 9, connects to 2 communities
+- [[get_agent_ghsa_repo]] - degree 6, connects to 2 communities
+- [[sync_agent_ghsa()]] - degree 10, connects to 1 community
+- [[_classify()]] - degree 6, connects to 1 community

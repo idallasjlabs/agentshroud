@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_group_approval_routing.py"
+type: "code"
+community: "Community 95"
+location: "L296"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_95
+---
+
+# .test_router_works_without_send_fn()
+
+## Connections
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[GroupApprovalRouter]] - `calls` [EXTRACTED]
+- [[Router with no send_message_fn uses the default stub (no network calls).]] - `rationale_for` [EXTRACTED]
+- [[TestGroupApprovalRouterDefaultSend]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_95

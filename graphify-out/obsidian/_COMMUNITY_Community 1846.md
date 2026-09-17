@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
+- [[Node ID format must match AST extractor]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

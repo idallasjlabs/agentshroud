@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Redaction]] - concept - docs/project/glossary.md
+- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
 
 ## Live Query (requires Dataview plugin)
 

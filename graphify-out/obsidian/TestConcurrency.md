@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L189"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # TestConcurrency
 
 ## Connections
-- [[.test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
-- [[.test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
-- [[.test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
-- [[.test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
-- [[.test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
+- [[dot-test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
+- [[dot-test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -33,13 +33,13 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test thread safety and race conditions in security modules.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard

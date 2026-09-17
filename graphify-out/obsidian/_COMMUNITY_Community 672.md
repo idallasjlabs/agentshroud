@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[dot-agentsskillsi-atlasSKILL]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Atlas README]] - document - .agents/skills/i-atlas/README.md
+- [[Atlas — Curriculum Architect_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Gleim CPA Review (OKE Channel)]] - concept - .agents/skills/i-atlas/SKILL.md
+- [[Input Requirements_11]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Output Format_25]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Persona_8]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Quality Checklist_8]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Role_68]] - document - .agents/skills/i-atlas/SKILL.md
+- [[System Prompt_8]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template_4]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Vulcan README]] - document - .agents/skills/i-vulcan/README.md
+- [[Vulcan Subject Matter Auditor Skill]] - document - .agents/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 362]]
+- 1 edge to [[_COMMUNITY_Community 1050]]
+- 1 edge to [[_COMMUNITY_Community 1061]]
+- 1 edge to [[_COMMUNITY_Community 617]]
+- 1 edge to [[_COMMUNITY_Community 722]]
 
 ## Top bridge nodes
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community
+- [[Atlas — Curriculum Architect_6]] - degree 15, connects to 3 communities
+- [[Vulcan Subject Matter Auditor Skill]] - degree 3, connects to 1 community

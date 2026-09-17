@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "Community 667"
-location: "L159"
+community: "Community 371"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Community_371
 ---
 
 # Notes
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Community_371

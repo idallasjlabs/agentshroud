@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # conftest.py
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
-- [[auth_headers()]] - `contains` [EXTRACTED]
+- [[auth_headers()_2]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
-- [[sanitizer()]] - `contains` [EXTRACTED]
+- [[sanitizer()_3]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

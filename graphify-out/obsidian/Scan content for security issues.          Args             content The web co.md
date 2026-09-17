@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Community 48"
+community: "Voice Gateway STT & Browser Security"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Scan content for security issues.          Args:             content: The web co
 
 ## Connections
-- [[.scan()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

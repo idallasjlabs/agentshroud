@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "Community 651"
+community: "Community 672"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/Community_672
 ---
 
 # Gleim CPA Review (OKE Channel)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_651
+#graphify/concept #graphify/EXTRACTED #community/Community_672

@@ -12,14 +12,14 @@ tags:
 # run_deploy_status()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
 - [[format_deploy_status()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_36

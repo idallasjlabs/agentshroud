@@ -1,18 +1,17 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Community 360"
-location: "L32"
+community: "Community 574"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_574
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/Community_574

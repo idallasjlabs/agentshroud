@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/a2a_governance.py"
+type: "code"
+community: "Community 39"
+location: "L457"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_39
+---
+
+# .get_events()
+
+## Connections
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceEvent]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[Retrieve governance events with optional filters.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_39

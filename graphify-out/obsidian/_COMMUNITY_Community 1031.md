@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.52
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1031
 
-**Cohesion:** 0.52 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
-- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
-- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
-- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
-- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
-- [[render()]] - code - docker/bots/hermes/render_md_email.py
-- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
+- [[dot-_validate_user_id()]] - code - gateway/security/session_manager.py
+- [[dot-get_merged_context()]] - code - gateway/security/session_manager.py
+- [[dot-get_or_create_group_session()]] - code - gateway/security/session_manager.py
+- [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
+- [[GroupSession]] - code - gateway/security/session_manager.py
+- [[Represents a shared workspace + memory for a group.]] - rationale - gateway/security/session_manager.py
+- [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
+- [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1097]]
+- 4 edges to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+- 2 edges to [[_COMMUNITY_Community 383]]
 
 ## Top bridge nodes
-- [[render_md_email.py]] - degree 6, connects to 1 community
+- [[dot-get_merged_context()]] - degree 4, connects to 2 communities
+- [[dot-_validate_user_id()]] - degree 4, connects to 2 communities
+- [[dot-get_or_create_group_session()]] - degree 5, connects to 1 community
+- [[GroupSession]] - degree 3, connects to 1 community

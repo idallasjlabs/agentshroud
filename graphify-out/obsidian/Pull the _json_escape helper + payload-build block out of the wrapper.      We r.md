@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 140"
+community: "Community 149"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # Pull the _json_escape helper + payload-build block out of the wrapper.      We r
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_extract_payload_builder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

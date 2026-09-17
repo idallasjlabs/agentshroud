@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Progressive Trust"
-location: "L63"
+community: "Community 689"
+location: "L34"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Progressive_Trust
+  - graphify/EXTRACTED
+  - community/Community_689
 ---
 
 # TrustLevel
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[PromotionThreshold]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_set_state()]] - `references` [EXTRACTED]
+- [[dot-get_next_trust_level()]] - `references` [EXTRACTED]
+- [[dot-get_previous_trust_level()]] - `references` [EXTRACTED]
+- [[dot-get_trust_level_order()]] - `references` [EXTRACTED]
+- [[dot-is_tool_allowed()_1]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Trust levels from untrusted to verified.]] - `rationale_for` [EXTRACTED]
+- [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Community_689

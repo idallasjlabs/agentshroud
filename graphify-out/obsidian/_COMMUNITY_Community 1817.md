@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Unicode Bypass]] - concept - docs/project/glossary.md
+- [[AgentShroud TwitterX Header]] - image - branding/social/twitter-header-1500x500.png
 
 ## Live Query (requires Dataview plugin)
 

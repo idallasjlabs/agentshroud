@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L2322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # soc_correlation()
@@ -14,9 +14,7 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Cross-signal SOC correlation summary.]] - `rationale_for` [EXTRACTED]
-- [[auth_dep()]] - `calls` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
-- [[soc_report()]] - `conceptually_related_to` [INFERRED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1326
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[dot-test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFalcoSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 297]]
+- 1 edge to [[_COMMUNITY_Community 200]]
 
 ## Top bridge nodes
-- [[2. Steve Hay Heat Map Assessment]] - degree 4, connects to 1 community
+- [[TestFalcoSummary_1]] - degree 5, connects to 1 community
+- [[dot-test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

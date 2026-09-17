@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 206"
+community: "Community 218"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/Community_218
 ---
 
 # MCPAuditEntry
 
 ## Connections
-- [[.entries()]] - `references` [EXTRACTED]
-- [[.get_blocked_entries()]] - `references` [EXTRACTED]
-- [[.get_entries_for_agent()]] - `references` [EXTRACTED]
-- [[.get_entries_for_server()]] - `references` [EXTRACTED]
-- [[.get_entries_for_tool()]] - `references` [EXTRACTED]
-- [[.get_failed_entries()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
-- [[.log_tool_result()]] - `references` [EXTRACTED]
+- [[dot-entries()_1]] - `references` [EXTRACTED]
+- [[dot-get_blocked_entries()]] - `references` [EXTRACTED]
+- [[dot-get_entries_for_agent()]] - `references` [EXTRACTED]
+- [[dot-get_entries_for_server()]] - `references` [EXTRACTED]
+- [[dot-get_entries_for_tool()]] - `references` [EXTRACTED]
+- [[dot-get_failed_entries()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-log_tool_result()]] - `references` [EXTRACTED]
 - [[A single MCP tool call audit entry.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_206
+#graphify/code #graphify/EXTRACTED #community/Community_218

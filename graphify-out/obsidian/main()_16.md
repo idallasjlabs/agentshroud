@@ -1,21 +1,22 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 176"
-location: "L232"
+community: "Community 293"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/Community_293
 ---
 
 # main()
 
 ## Connections
-- [[Path_42]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
+- [[SkillGuard_1]] - `calls` [EXTRACTED]
+- [[SkillGuard.scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_176
+#graphify/code #graphify/EXTRACTED #community/Community_293

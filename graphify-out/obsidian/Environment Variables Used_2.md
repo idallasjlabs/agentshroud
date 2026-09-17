@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 379"
-location: "L433"
+community: "Community 534"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/Community_534
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_379
+#graphify/document #graphify/EXTRACTED #community/Community_534

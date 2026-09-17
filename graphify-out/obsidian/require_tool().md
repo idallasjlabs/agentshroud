@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Community 1052"
+community: "Community 1103"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Community_1103
 ---
 
 # require_tool()
 
 ## Connections
 - [[error()]] - `calls` [EXTRACTED]
-- [[security-scan.sh_1]] - `defines` [EXTRACTED]
+- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1052
+#graphify/code #graphify/EXTRACTED #community/Community_1103

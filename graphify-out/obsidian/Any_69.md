@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Community 850"
-location: "L62"
+community: "Community 668"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_850
+  - graphify/EXTRACTED
+  - community/Community_668
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_850
+#graphify/code #graphify/EXTRACTED #community/Community_668

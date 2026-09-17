@@ -1,51 +1,52 @@
 ---
 type: community
-cohesion: 0.08
-members: 36
+cohesion: 0.05
+members: 37
 ---
 
 # Community 198
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[._detect_hidden_instructions()]] - code - gateway/security/context_guard.py
-- [[._detect_instruction_injection()]] - code - gateway/security/context_guard.py
-- [[._detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
-- [[._detect_repetition_attacks()]] - code - gateway/security/context_guard.py
-- [[.analyze_message()]] - code - gateway/security/context_guard.py
-- [[.guard()]] - code - gateway/tests/test_context_guard.py
-- [[.should_block_message()]] - code - gateway/security/context_guard.py
-- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[.test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[.test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[.test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[Analyze a message for context poisoning attempts.          Args             ses]] - rationale - gateway/security/context_guard.py
-- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[Context tracking for a session.]] - rationale - gateway/security/context_guard.py
-- [[ContextAttack]] - code - gateway/security/context_guard.py
-- [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
-- [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
-- [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
-- [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
-- [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
-- [[Determine if a message should be blocked.          Returns             Tuple of]] - rationale - gateway/security/context_guard.py
-- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
-- [[SessionContext]] - code - gateway/security/context_guard.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[get_context_guard()]] - code - gateway/security/context_guard.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
+- [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[2. What Needs to PERSIST]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[3. What's System-Level]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Configuration Status]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Gateway (FastAPI)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Kill Switch (Phase 3B)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature OpenSCAP Scanning (Phase 3A)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SSH Proxy (Phase 4)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SecureBrowser (Playwright)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature iCloudGmail Services]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[For Each New Feature, Document]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Functional Testing (Read-Only Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[If Any Test Fails]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Lockdown Procedure]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Planned Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Summary_7]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Write Paths Inventory]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,15 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 4 edges to [[_COMMUNITY_Community 155]]
-- 2 edges to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 41]]
-- 1 edge to [[_COMMUNITY_Community 160]]
+- 2 edges to [[_COMMUNITY_Community 578]]
 
 ## Top bridge nodes
-- [[.analyze_message()]] - degree 12, connects to 3 communities
-- [[context_guard.py]] - degree 7, connects to 3 communities
-- [[TestCheckMessage]] - degree 9, connects to 2 communities
-- [[TestSourceTagging]] - degree 9, connects to 2 communities
-- [[test_context_guard.py]] - degree 5, connects to 2 communities
+- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community

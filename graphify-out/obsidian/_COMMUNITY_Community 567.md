@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
-- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
-- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
-- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
-- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
-- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
-- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
-- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
-- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
-- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
-- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
-- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
+- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
+- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
+- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
+- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
+- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
+- [[Favicon]] - document - branding/QUICK-REFERENCE.md
+- [[File Locations_2]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Files_2]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Usage Rules_1]] - document - branding/QUICK-REFERENCE.md
+- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
+- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
+- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
+- [[Typography_1]] - document - branding/QUICK-REFERENCE.md
+- [[Website Header]] - document - branding/QUICK-REFERENCE.md
+- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
+- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 831]]
 
 ## Top bridge nodes
-- [[Step-by-Step Deployment]] - degree 11, connects to 1 community
+- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community

@@ -1,43 +1,43 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.09
 members: 28
 ---
 
 # Community 288
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 28 nodes
 
 ## Members
-- [[._build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - rationale - gateway/security/a2a_policy.py
+- [[dot-__post_init__()_3]] - code - gateway/security/a2a_policy.py
+- [[dot-enforce()]] - code - gateway/security/a2a_policy.py
+- [[dot-evaluate()]] - code - gateway/security/a2a_policy.py
+- [[Accept either the enum or its string value (JSON-RPC payloads arrive     as plai]] - rationale - gateway/security/a2a_policy.py
+- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - rationale - gateway/security/a2a_policy.py
+- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
+- [[Evaluate a single A2A request. Pure — no IO, no side effects         beyond bes]] - rationale - gateway/security/a2a_policy.py
+- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          Identical f]] - rationale - gateway/security/a2a_policy.py
+- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - concept - docs/security/threat-model.md
+- [[IPv4Address]] - code - gateway/security/a2a_policy.py
+- [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - rationale - gateway/security/a2a_policy.py
+- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[_BaseAddress]] - code - gateway/security/a2a_policy.py
+- [[_address_is_public()]] - code - gateway/security/a2a_policy.py
+- [[_canonicalize_ip_literal()]] - code - gateway/security/a2a_policy.py
+- [[_int_to_ipv4()]] - code - gateway/security/a2a_policy.py
+- [[_method_of()]] - code - gateway/security/a2a_policy.py
+- [[_norm()]] - code - gateway/security/a2a_policy.py
+- [[a2a_policy.py]] - code - gateway/security/a2a_policy.py
+- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
+- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
+- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,37 +47,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 193]]
-- 4 edges to [[_COMMUNITY_Community 475]]
-- 2 edges to [[_COMMUNITY_Community 410]]
-- 2 edges to [[_COMMUNITY_Community 920]]
-- 2 edges to [[_COMMUNITY_Community 967]]
-- 1 edge to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 1425]]
-- 1 edge to [[_COMMUNITY_Community 1272]]
-- 1 edge to [[_COMMUNITY_Community 1273]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 1426]]
-- 1 edge to [[_COMMUNITY_Community 1274]]
-- 1 edge to [[_COMMUNITY_Community 1351]]
-- 1 edge to [[_COMMUNITY_Community 1275]]
-- 1 edge to [[_COMMUNITY_Community 1427]]
-- 1 edge to [[_COMMUNITY_Community 1276]]
-- 1 edge to [[_COMMUNITY_Community 1352]]
-- 1 edge to [[_COMMUNITY_Community 1428]]
-- 1 edge to [[_COMMUNITY_Community 1277]]
-- 1 edge to [[_COMMUNITY_Community 1128]]
-- 1 edge to [[_COMMUNITY_Community 1353]]
-- 1 edge to [[_COMMUNITY_Community 1429]]
-- 1 edge to [[_COMMUNITY_Community 1354]]
-- 1 edge to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 1279]]
-- 1 edge to [[_COMMUNITY_Community 1355]]
-- 1 edge to [[_COMMUNITY_Community 1280]]
+- 6 edges to [[_COMMUNITY_Community 75]]
+- 4 edges to [[_COMMUNITY_Community 131]]
+- 4 edges to [[_COMMUNITY_Community 183]]
+- 3 edges to [[_COMMUNITY_Community 289]]
+- 2 edges to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Community 101]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Community 46]]
 
 ## Top bridge nodes
-- [[test_scanner_integration_coverage.py]] - degree 50, connects to 27 communities
-- [[._build_modules()]] - degree 3, connects to 1 community
-- [[.test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community
-- [[.test_rich_environment()]] - degree 2, connects to 1 community
-- [[.test_full_stack()_2]] - degree 2, connects to 1 community
+- [[a2a_policy.py]] - degree 16, connects to 6 communities
+- [[dot-evaluate()]] - degree 8, connects to 4 communities
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
+- [[dot-enforce()]] - degree 6, connects to 2 communities
+- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - degree 3, connects to 2 communities

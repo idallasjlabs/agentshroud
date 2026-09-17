@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Encrypted Store & Drift Detector"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Extract the key_id from an encrypted blob without decrypting.
 
 ## Connections
-- [[.get_blob_key_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_blob_key_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

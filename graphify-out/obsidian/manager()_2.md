@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation_internals.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 226"
-location: "L31"
+community: "Community 53"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/Community_53
 ---
 
 # manager()
 
 ## Connections
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/Community_53

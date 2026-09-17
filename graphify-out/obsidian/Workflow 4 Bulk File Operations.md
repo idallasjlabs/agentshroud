@@ -12,6 +12,6 @@ tags:
 # Workflow 4: Bulk File Operations
 
 ## Connections
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

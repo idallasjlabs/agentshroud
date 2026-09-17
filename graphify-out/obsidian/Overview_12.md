@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 180"
-location: "L3"
+community: "Community 348"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_180
+  - community/Community_348
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_180
+#graphify/document #graphify/EXTRACTED #community/Community_348

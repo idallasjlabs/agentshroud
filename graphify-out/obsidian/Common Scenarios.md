@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 1120"
+community: "Community 206"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1120
+  - community/Community_206
 ---
 
 # Common Scenarios
@@ -19,4 +19,4 @@ tags:
 - [[Scenario 4 LostStolen Device]] - `contains` [EXTRACTED]
 - [[Scenario 5 Clear All Devices (Nuclear Option)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1120
+#graphify/document #graphify/EXTRACTED #community/Community_206

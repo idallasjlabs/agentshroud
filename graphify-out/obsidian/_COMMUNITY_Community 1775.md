@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
+- [[SRE Practices]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "image"
-community: "Community 376"
+community: "Community 184"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_184
 ---
 
 # Data Lineage Diagram (5-Layer Pipeline)
@@ -17,4 +17,4 @@ tags:
 - [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - `conceptually_related_to` [EXTRACTED]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_376
+#graphify/image #graphify/EXTRACTED #community/Community_184

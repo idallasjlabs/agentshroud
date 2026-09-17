@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 76"
-location: "L150"
+community: "SOC Correlation & Router"
+location: "L1711"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/SOC_Correlation__Router
 ---
 
 # get_health()
 
 ## Connections
-- [[Aggregate health report.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[_app_state()]] - `calls` [EXTRACTED]
+- [[list_services()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1081
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[For graphify explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[For graphify path_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 1 — Traversal_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[graphify reference query, path, explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[query_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[1. Normal Message Flow]] - document - docs/flows/sequence-diagrams.md
+- [[2. MCP Tool Call Flow]] - document - docs/flows/sequence-diagrams.md
+- [[3. Kill Switch Activation Flow]] - document - docs/flows/sequence-diagrams.md
+- [[4. SSH Command Flow]] - document - docs/flows/sequence-diagrams.md
+- [[5. Web Fetch Flow]] - document - docs/flows/sequence-diagrams.md
+- [[AgentShroud Sequence Diagrams]] - document - docs/flows/sequence-diagrams.md
+- [[sequence-diagrams]] - document - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 928"
-location: "L56"
+community: "Community 1046"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/Community_1046
 ---
 
 # Integration
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_928
+#graphify/document #graphify/EXTRACTED #community/Community_1046

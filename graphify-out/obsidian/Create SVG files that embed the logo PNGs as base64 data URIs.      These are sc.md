@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
-community: "Community 419"
+community: "Community 432"
 location: "L493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/Community_432
 ---
 
 # Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_svg_logos()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_419
+#graphify/rationale #graphify/EXTRACTED #community/Community_432

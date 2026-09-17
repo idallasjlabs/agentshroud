@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 931"
-location: "L23"
+community: "Community 485"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/Community_485
 ---
 
 # How It Works
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/document #graphify/EXTRACTED #community/Community_485

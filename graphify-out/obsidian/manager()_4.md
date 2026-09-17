@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Progressive Trust"
-location: "L27"
+community: "Community 913"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Community_913
 ---
 
 # manager()
 
 ## Connections
-- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Community_913

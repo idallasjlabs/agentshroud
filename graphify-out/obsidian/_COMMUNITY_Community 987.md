@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[.test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
+- [[dot-agentsskillsi-hermesSKILL]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Hermes — Reference Verifier_1]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Input Requirements_25]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Output Format_40]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Persona_19]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Quality Checklist_22]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Role_107]] - document - .agents/skills/i-hermes/SKILL.md
+- [[System Prompt_19]] - document - .agents/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_987
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 915]]
-- 1 edge to [[_COMMUNITY_Community 605]]
-
-## Top bridge nodes
-- [[TestLeakDetection]] - degree 8, connects to 1 community
-- [[.test_leak_detection_disabled()]] - degree 2, connects to 1 community

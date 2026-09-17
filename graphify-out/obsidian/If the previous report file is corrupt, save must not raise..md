@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "rationale"
-community: "Community 58"
+community: "Community 125"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Community_125
 ---
 
 # If the previous report file is corrupt, save must not raise.
 
 ## Connections
-- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/Community_125

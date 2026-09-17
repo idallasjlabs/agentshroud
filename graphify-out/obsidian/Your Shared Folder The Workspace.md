@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Community 212"
+community: "Community 216"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/Community_216
 ---
 
 # Your Shared Folder: The Workspace
@@ -16,4 +16,4 @@ tags:
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 - [[What You Can Do]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_212
+#graphify/document #graphify/EXTRACTED #community/Community_216

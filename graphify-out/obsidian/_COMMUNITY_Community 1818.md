@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
+- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Function Details_46]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Purpose_167]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Related_53]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.cleanup_temp_files(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.get_usage_stats(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.start_request_tracking(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[resource_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[resource_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Dialogue Adaptations_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Dialogue Techniques]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[EXPERT]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Expert Persona_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[HOST]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Input Requirements_7]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Output Format_19]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Persona_4]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Quality Checklist_4]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Role_55]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_3]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Speaker Definitions]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[System Prompt_4]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[User Prompt Template]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[hermesskillsi-socratesSKILL]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

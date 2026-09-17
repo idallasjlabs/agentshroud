@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 858"
+community: "Community 700"
 location: "L284"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_858
+  - community/Community_700
 ---
 
 # Monitor Installations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Track Success]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_858
+#graphify/document #graphify/EXTRACTED #community/Community_700

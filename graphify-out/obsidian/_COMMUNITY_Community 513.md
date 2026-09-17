@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Architecture_7]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Alert JSONL Format]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher._send_notification(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.cleanup_seen()]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.dispatch(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.get_digest(clear)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Configuration_12]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Function Details_3]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Mode Enforce vs Monitor_2]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Module-Level Constants_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Operational Notes]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Related_7]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,10 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_513
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 345]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-
-## Top bridge nodes
-- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities

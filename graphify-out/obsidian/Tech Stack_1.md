@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Community 617"
-location: "L109"
+community: "Community 931"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/Community_931
 ---
 
 # Tech Stack
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/Community_931

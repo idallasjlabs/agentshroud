@@ -1,17 +1,23 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 405"
-location: "L253"
+community: "Community 340"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/Community_340
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_2]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_405
+#graphify/document #graphify/EXTRACTED #community/Community_340

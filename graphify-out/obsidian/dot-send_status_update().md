@@ -1,0 +1,20 @@
+---
+source_file: "gateway/proxy/telegram_gateway_relay.py"
+type: "code"
+community: "Community 894"
+location: "L128"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_894
+---
+
+# .send_status_update()
+
+## Connections
+- [[dot-send_message()]] - `calls` [EXTRACTED]
+- [[Send a formatted status update via Telegram.          Formats the message with a]] - `rationale_for` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[TelegramSendResult]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_894

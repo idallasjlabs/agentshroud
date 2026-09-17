@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 295"
+community: "Community 291"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/Community_291
 ---
 
 # Test default config includes policies for common credential types.
 
 ## Connections
-- [[.test_default_config_has_common_policies()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config_has_common_policies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_295
+#graphify/rationale #graphify/EXTRACTED #community/Community_291

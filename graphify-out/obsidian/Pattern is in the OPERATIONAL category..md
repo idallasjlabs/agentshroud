@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 287"
+community: "Community 296"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/Community_296
 ---
 
 # Pattern is in the OPERATIONAL category.
 
 ## Connections
-- [[.test_category_is_operational()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_category_is_operational()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_287
+#graphify/rationale #graphify/EXTRACTED #community/Community_296

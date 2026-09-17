@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 824
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Related Notes_69]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Consequences_5]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Context_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Decision_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Mitigation_1]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Status_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 727]]
+- 1 edge to [[_COMMUNITY_Community 1057]]
 
 ## Top bridge nodes
-- [[Restart Procedure_2]] - degree 10, connects to 1 community
+- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities

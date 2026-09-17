@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.13
 members: 15
 ---
 
 # Community 616
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Gateway mcpproxy and mcpresult endpoints]] - concept - docker/scripts/mcp-proxy-wrapper.js
-- [[command, ...commandArgs]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[auditResult()]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[child]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[dashDash]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[gatewayPost()]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[http_1]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[https_4]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[inboundRl]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[inspectCall()]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[mcp-proxy-wrapper.js]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[outboundRl]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[pendingCalls]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[readline]] - code - docker/scripts/mcp-proxy-wrapper.js
-- [[{ spawn }]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[dot-agentsskillsi-sadSKILL]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG]] - document - .agents/skills/i-sad/SKILL.md
+- [[System Audit & Documentation]] - document - .agents/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_616
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 255]]
-- 1 edge to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 44]]
-- 1 edge to [[_COMMUNITY_Community 206]]
-
-## Top bridge nodes
-- [[mcp-proxy-wrapper.js]] - degree 17, connects to 3 communities
-- [[gatewayPost()]] - degree 4, connects to 1 community

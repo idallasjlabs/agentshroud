@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_urlencoded_collaborator_no_reply_gets_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborator form payloads should get protected notice, not suppression.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
+- [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_collaborator_no_reply_gets_protected_notice()]] - degree 4, connects to 3 communities
+- [[dot-test_hermes_startup_telegram_calls_use_system_header()]] - degree 2, connects to 1 community

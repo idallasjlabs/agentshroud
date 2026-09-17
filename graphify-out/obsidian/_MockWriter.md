@@ -1,37 +1,52 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 75"
-location: "L88"
+community: "Community 62"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_62
 ---
 
 # _MockWriter
 
 ## Connections
-- [[.__init__()_160]] - `method` [EXTRACTED]
-- [[.close()_13]] - `method` [EXTRACTED]
-- [[.drain()]] - `method` [EXTRACTED]
-- [[.get_extra_info()]] - `method` [EXTRACTED]
-- [[.write()]] - `method` [EXTRACTED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[HTTPConnectProxy]] - `uses` [INFERRED]
-- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - `rationale_for` [EXTRACTED]
-- [[WebProxy_1]] - `uses` [INFERRED]
+- [[dot-__init__()_169]] - `method` [EXTRACTED]
+- [[dot-close()_17]] - `method` [EXTRACTED]
+- [[dot-drain()]] - `method` [EXTRACTED]
+- [[dot-get_extra_info()]] - `method` [EXTRACTED]
+- [[dot-write()]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
+- [[Minimal StreamWriter stand-in that records written bytes.]] - `rationale_for` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
-- [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
-- [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
-- [[test_connect_system_bypass_domain_skips_policy_checks()]] - `calls` [EXTRACTED]
-- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - `calls` [EXTRACTED]
-- [[test_http_proxy.py]] - `contains` [EXTRACTED]
-- [[test_malformed_request_line_returns_400()]] - `calls` [EXTRACTED]
-- [[test_non_connect_method_returns_405()]] - `calls` [EXTRACTED]
-- [[test_ssrf_attempt_returns_403()]] - `calls` [EXTRACTED]
-- [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
-- [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
+- [[_CloseRaisesWriter]] - `inherits` [EXTRACTED]
+- [[_SocketTransportWriter]] - `inherits` [EXTRACTED]
+- [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]
+- [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `calls` [EXTRACTED]
+- [[test_empty_request_line_returns_nothing()]] - `calls` [EXTRACTED]
+- [[test_handle_client_swallows_generic_exception()]] - `calls` [EXTRACTED]
+- [[test_handle_client_swallows_timeout_and_closes_writer()]] - `calls` [EXTRACTED]
+- [[test_header_read_timeout_returns_408()]] - `calls` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
+- [[test_non_numeric_port_returns_400()]] - `calls` [EXTRACTED]
+- [[test_recent_stats_trimmed_to_100_entries()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_limit_reached_scans_once()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_plain_http_port_still_scans()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_small_download_scanned_at_eof()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `calls` [EXTRACTED]
+- [[test_relay_copies_bytes_until_eof()]] - `calls` [EXTRACTED]
+- [[test_relay_idle_timeout_closes_writer()]] - `calls` [EXTRACTED]
+- [[test_relay_swallows_read_errors()]] - `calls` [EXTRACTED]
+- [[test_request_line_timeout_returns_408()]] - `calls` [EXTRACTED]
+- [[test_target_without_port_defaults_to_443()]] - `calls` [EXTRACTED]
+- [[test_tunnel_all_attempts_fail_returns_502()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_uses_happy_eyeballs()]] - `calls` [EXTRACTED]
+- [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
+- [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_62

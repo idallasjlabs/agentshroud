@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Community 648"
+community: "Community 667"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_648
+  - community/Community_667
 ---
 
 # User Experience
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_648
+#graphify/document #graphify/EXTRACTED #community/Community_667

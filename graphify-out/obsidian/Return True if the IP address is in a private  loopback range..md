@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 63"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_63
 ---
 
 # Return True if the IP address is in a private / loopback range.
 
 ## Connections
-- [[._is_private_ip()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_private_ip()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

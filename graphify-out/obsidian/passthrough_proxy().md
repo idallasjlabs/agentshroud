@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 44"
-location: "L94"
+community: "Egress Filter & HTTP Proxy"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # passthrough_proxy()
 
 ## Connections
-- [[MCPProxy]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

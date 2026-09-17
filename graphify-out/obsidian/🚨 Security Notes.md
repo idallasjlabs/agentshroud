@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 332"
+community: "Community 1400"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_1400
 ---
 
 # 🚨 Security Notes
@@ -17,4 +17,4 @@ tags:
 - [[Credential Storage]] - `contains` [EXTRACTED]
 - [[Two-Factor Authentication]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_1400

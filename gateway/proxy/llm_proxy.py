@@ -179,6 +179,19 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
 }
 
+# Provider prefixes OpenClaw/Hermes may put on a local model ref that local
+# OpenAI-compatible backends don't understand and LOCAL_MODEL_ROUTES doesn't
+# prefix-match against — must be stripped to the bare model name before
+# routing. "openai-local/" is AgentShroud's own convention (see
+# docker/config/openclaw/apply-patches.js's LOCAL_PROVIDER_KEY and
+# docker-compose.yml's AGENTSHROUD_LOCAL_MODEL_REF default) for a local model
+# served over an OpenAI-compatible API — distinct from literal Ollama.
+# Omitting it here left every "openai-local/<model>" request falling through
+# to OLLAMA_API_BASE and 503'ing with "Ollama backend is not running on the
+# host" even when the real backend (LM Studio / Rapid-MLX / etc.) was up
+# (observed 2026-09-16: readiness never passed, "OpenClaw online" never sent).
+LOCAL_PROVIDER_PREFIXES: tuple[str, ...] = ("ollama/", "lmstudio/", "openai-local/")
+
 # Per-backend operator hints returned in the structured 503 body when a local
 # backend (mlx_lm / Ollama / LM Studio / Turbo Fieldflare) is unreachable at
 # connect time.
@@ -894,15 +907,16 @@ class LLMProxy:
         is_ollama = (
             is_ollama_native
             or any(k in model_name.lower() for k in local_keywords)
-            or model_name.startswith("ollama/")
-            or model_name.startswith("lmstudio/")
+            or model_name.lower().startswith(LOCAL_PROVIDER_PREFIXES)
         )
 
-        # Normalize provider-prefixed model references (ollama/, lmstudio/) to bare model names.
-        # OpenClaw may emit model IDs like "ollama/qwen2.5-coder:7b" or "lmstudio/qwen3.5-27b",
-        # but all local OpenAI-compatible APIs expect bare model names.
+        # Normalize provider-prefixed model references (ollama/, lmstudio/,
+        # openai-local/) to bare model names. OpenClaw may emit model IDs like
+        # "ollama/qwen2.5-coder:7b", "lmstudio/qwen3.5-27b", or
+        # "openai-local/nemotron-3.5-lightning-rapid", but all local
+        # OpenAI-compatible APIs expect bare model names.
         model_lower = model_name.lower()
-        for prefix in ("ollama/", "lmstudio/"):
+        for prefix in LOCAL_PROVIDER_PREFIXES:
             if model_lower.startswith(prefix):
                 bare = model_name.split("/", 1)[1]
                 if request_data is not None:
@@ -1166,10 +1180,8 @@ class LLMProxy:
             # in resolve_model.py — that rename alone wasn't sufficient).
             "nemotron",
         ]
-        is_ollama = (
-            any(k in model_lower for k in local_keywords)
-            or model_lower.startswith("ollama/")
-            or model_lower.startswith("lmstudio/")
+        is_ollama = any(k in model_lower for k in local_keywords) or model_lower.startswith(
+            LOCAL_PROVIDER_PREFIXES
         )
 
         # Inbound scanning (same as proxy_messages)
@@ -1179,6 +1191,24 @@ class LLMProxy:
 
         base_url = ANTHROPIC_API_BASE
         if is_ollama:
+            # Normalize provider-prefixed model references (ollama/, lmstudio/,
+            # openai-local/) to bare model names before the LOCAL_MODEL_ROUTES
+            # prefix match below — unlike proxy_messages, this streaming path
+            # never had this stripping step at all, so any provider-prefixed
+            # model (e.g. "openai-local/nemotron-3.5-lightning-rapid") fell
+            # through every LOCAL_MODEL_ROUTES entry and defaulted to
+            # OLLAMA_API_BASE regardless of which backend actually serves it
+            # (observed 2026-09-16 — OpenClaw always sends stream:true, so
+            # this function, not proxy_messages, is the one real traffic hits).
+            for prefix in LOCAL_PROVIDER_PREFIXES:
+                if model_lower.startswith(prefix):
+                    bare = model_name.split("/", 1)[1]
+                    if request_data is not None:
+                        request_data["model"] = bare
+                    model_name = bare
+                    model_lower = model_name.lower()
+                    break
+
             base_url = OLLAMA_API_BASE
             for prefix, route_url in LOCAL_MODEL_ROUTES.items():
                 if model_lower.startswith(prefix):

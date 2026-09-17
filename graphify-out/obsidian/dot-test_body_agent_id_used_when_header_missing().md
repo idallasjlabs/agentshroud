@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+type: "code"
+community: "Community 386"
+location: "L159"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_386
+---
+
+# .test_body_agent_id_used_when_header_missing()
+
+## Connections
+- [[Body agent_id is used only when trusted header is absent.]] - `rationale_for` [EXTRACTED]
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_386

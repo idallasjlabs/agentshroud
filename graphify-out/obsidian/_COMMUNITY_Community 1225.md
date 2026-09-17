@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_90]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[README_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_96]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Usage_99]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Code Review (CR)]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Purpose_43]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_34]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_38]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 
 ## Live Query (requires Dataview plugin)
 

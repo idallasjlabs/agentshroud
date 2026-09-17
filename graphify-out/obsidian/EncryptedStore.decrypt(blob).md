@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Community 504"
+community: "Community 515"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/Community_515
 ---
 
 # EncryptedStore.decrypt(blob)
 
 ## Connections
-- [[Function Details_37]] - `contains` [EXTRACTED]
+- [[Function Details_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/Community_515

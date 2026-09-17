@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1305
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Telegram]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Container Won't Start]] - document - docs/operations/deployment-procedure.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use]] - document - docs/operations/deployment-procedure.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 558]]
+- 1 edge to [[_COMMUNITY_Community 77]]
 
 ## Top bridge nodes
-- [[💬 Example Conversations]] - degree 4, connects to 1 community
+- [[Troubleshooting Common Issues]] - degree 5, connects to 1 community

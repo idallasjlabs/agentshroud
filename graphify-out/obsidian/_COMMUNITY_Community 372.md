@@ -1,38 +1,39 @@
 ---
 type: community
 cohesion: 0.09
-members: 23
+members: 24
 ---
 
 # Community 372
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
-- [[Database Schema_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details_50]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related_57]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
-- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[trust_manager.py_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[A. Steve Hay Requirements (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[A. Steve Hay Requirements — ALL Tiers (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[B. Wire ALL Modules (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[B. Wire ALL Modules Into Request Path (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[C. Bug Fixes (9 items)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[C. Bug Fixes (9) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[D. Interactive Egress Firewall (7 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[D. Interactive Egress Firewall (7) — 🔴 BROKEN]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[E. Observatory Mode (6 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[E. Observatory Mode (6) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[F. Prompt Injection Hardening (8) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[G. Pi-hole DNS Stack (9 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[G. Pi-hole DNS Stack (9)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[H. Enhanced Audit & Compliance (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[I. E2E Verification (4) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[J. Code Cleanup (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[J. Code Cleanup (5) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[K. Misc Quick Wins (11) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Summary_13]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Updated v0.8.0 Feature List with Wiring Status]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 315]]
-- 1 edge to [[_COMMUNITY_Community 937]]
-- 1 edge to [[_COMMUNITY_Community 412]]
-- 1 edge to [[_COMMUNITY_Community 370]]
-- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 443]]
+- 1 edge to [[_COMMUNITY_Community 413]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 5 communities
+- [[Updated v0.8.0 Feature List with Wiring Status]] - degree 12, connects to 2 communities

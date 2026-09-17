@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # test_router.py
 
 ## Connections
-- [[AgentTarget]] - `imports` [EXTRACTED]
+- [[AgentTarget_1]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[router()_1]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
 - [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

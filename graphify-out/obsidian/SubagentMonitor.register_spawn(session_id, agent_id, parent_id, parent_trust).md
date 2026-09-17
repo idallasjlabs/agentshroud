@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 538"
+community: "Community 549"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Community_549
 ---
 
 # SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)
 
 ## Connections
-- [[Function Details_48]] - `contains` [EXTRACTED]
+- [[Function Details_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Community_549

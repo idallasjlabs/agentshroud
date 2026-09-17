@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 43"
+community: "Community 180"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_180
 ---
 
 # test_config_defaults()
 
 ## Connections
-- [[GatewayConfig_1]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[Test that configuration has sensible defaults]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_180

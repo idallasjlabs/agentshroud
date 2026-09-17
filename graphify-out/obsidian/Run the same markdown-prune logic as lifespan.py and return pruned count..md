@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Community 17"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # Run the same markdown-prune logic as lifespan.py and return pruned count.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_prune_fixture_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

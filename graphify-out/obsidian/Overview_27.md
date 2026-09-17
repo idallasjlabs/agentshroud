@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 712"
-location: "L8"
+community: "Community 770"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Community_770
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Community_770

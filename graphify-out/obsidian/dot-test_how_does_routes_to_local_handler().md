@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 40"
+location: "L7553"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_40
+---
+
+# .test_how_does_routes_to_local_handler()
+
+## Connections
+- [[Probes containing 'how does' should be caught by _looks_like_safe_collaborator_i]] - `rationale_for` [EXTRACTED]
+- [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_40

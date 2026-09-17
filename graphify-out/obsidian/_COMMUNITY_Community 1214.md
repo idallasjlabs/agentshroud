@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Purpose_79]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[README_84]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Related Skills_85]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Usage_88]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[1. True Distributed AI]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[2. Enhanced Security]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[3. Advanced Capabilities]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[4. Better Development Workflow]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Key Benefits]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1214
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 448]]
+
+## Top bridge nodes
+- [[Key Benefits]] - degree 5, connects to 1 community

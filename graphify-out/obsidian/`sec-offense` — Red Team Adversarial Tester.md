@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 946"
+community: "Community 990"
 location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_946
+  - community/Community_990
 ---
 
 # `/sec-offense` — Red Team Adversarial Tester
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Skills in Detail]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_946
+#graphify/document #graphify/EXTRACTED #community/Community_990

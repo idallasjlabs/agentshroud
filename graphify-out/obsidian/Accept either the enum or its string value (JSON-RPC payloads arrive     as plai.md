@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 281"
+community: "Community 288"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/Community_288
 ---
 
 # Accept either the enum or its string value (JSON-RPC payloads arrive     as plai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_method_of()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_281
+#graphify/rationale #graphify/EXTRACTED #community/Community_288

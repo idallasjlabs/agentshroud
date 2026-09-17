@@ -1,17 +1,23 @@
 ---
-source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
-type: "document"
-community: "Community 780"
-location: "L8"
+source_file: "gateway/security/module_stats.py"
+type: "code"
+community: "Community 137"
+location: "L29"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_780
+  - community/Community_137
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[dot-record()]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
+- [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[module_stats.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_780
+#graphify/code #graphify/EXTRACTED #community/Community_137

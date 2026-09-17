@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Community 57"
-location: "L96"
+community: "Ingest Middleware & File Sandbox"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # manager()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - `rationale_for` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

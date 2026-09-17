@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 23"
+community: "Enhanced Approval Queue"
 location: "L479"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Enhanced_Approval_Queue
 ---
 
 # A WebSocket stand-in whose send_json never returns.      Models a real-world dea
 
 ## Connections
-- [[_HangingWebSocket_1]] - `rationale_for` [EXTRACTED]
+- [[_HangingWebSocket]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_23
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

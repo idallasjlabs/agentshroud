@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_104]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[README_109]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Related Skills_113]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Usage_114]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Oracle — Feedback Analyst_3]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Purpose_57]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Related Skills_48]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Usage_52]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[hermesskillsi-oracleREADME]] - document - docker/config/hermes/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 

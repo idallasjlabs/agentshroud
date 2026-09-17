@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 447"
+community: "Community 460"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_447
+  - community/Community_460
 ---
 
 # check_prerequisites()
@@ -15,6 +15,6 @@ tags:
 - [[Check system prerequisites for installation.]] - `rationale_for` [EXTRACTED]
 - [[PrerequisiteCheck]] - `calls` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_447
+#graphify/code #graphify/EXTRACTED #community/Community_460

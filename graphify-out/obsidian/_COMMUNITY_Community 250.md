@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.07
-members: 31
+cohesion: 0.06
+members: 32
 ---
 
 # Community 250
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[2. Atlassian MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[3. AWS API MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Authentication Reset Procedures_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[If Using SSO_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Manual Re-authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option A Default AWS Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option B Named Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_97]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_89]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_158]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 2 Update .env File_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 3 Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 4 Restart Claude Code]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_13]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_100]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When Authentication Expires_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[8. Comprehensive Multilingual Prompt Injection Defense]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Architecture_4]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Components]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Configuration_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
+- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
+- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Deliverables_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Dependencies]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Design Philosophy_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
+- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Prerequisites_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Risk Register]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Status_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Success Criteria_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Summary_10]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[v0.9.0 — Apple Messages Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,3 +49,15 @@ members: 31
 TABLE source_file, type FROM #community/Community_250
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 533]]
+- 1 edge to [[_COMMUNITY_Community 952]]
+- 1 edge to [[_COMMUNITY_Community 695]]
+- 1 edge to [[_COMMUNITY_Community 643]]
+- 1 edge to [[_COMMUNITY_Community 953]]
+- 1 edge to [[_COMMUNITY_Community 413]]
+- 1 edge to [[_COMMUNITY_Community 694]]
+
+## Top bridge nodes
+- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 7 communities

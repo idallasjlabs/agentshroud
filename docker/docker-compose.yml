@@ -516,6 +516,17 @@ services:
       - /home/node/.npm:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.local:noexec,nosuid,size=100m
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
+      # OpenClaw >= 2026.9.x falls back to ~/.cache/openclaw-<uid> for its temp
+      # dir. The rootfs is read_only (above, deliberately) and .cache ships
+      # root-owned on the image layer, so without this tmpfs OpenClaw cannot
+      # create it and BOTH `openclaw doctor --fix` and the shared state DB fail:
+      #   "shared state database is unreadable at ~/.openclaw/state/openclaw.sqlite:
+      #    Unable to create fallback OpenClaw temp dir: /home/node/.cache/openclaw-1000"
+      # Found on the 2026.7.1-2 -> 2026.9.4 upgrade (2026-09-15), where it also
+      # blocked the config migration that upgrade requires. Same shape as the
+      # .config/.local entries: keep the read-only rootfs, grant a writable
+      # tmpfs exactly where the app needs one, owned by the node uid.
+      - /home/node/.cache:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.agentshroud/agents:nosuid,size=200m,uid=1000,gid=1000  # tmpfs overlay; parent vol provides collab/ persistence
       - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000

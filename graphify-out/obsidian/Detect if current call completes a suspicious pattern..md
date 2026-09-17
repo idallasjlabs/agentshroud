@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 431"
+community: "Voice Gateway STT & Browser Security"
 location: "L399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Detect if current call completes a suspicious pattern.
 
 ## Connections
-- [[._detect_chain_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_chain_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_431
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

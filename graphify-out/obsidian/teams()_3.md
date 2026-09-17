@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Group RBAC & Tool ACL"
+community: "Community 53"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_53
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/code #graphify/EXTRACTED #community/Community_53

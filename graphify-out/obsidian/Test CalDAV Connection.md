@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Community 333"
+community: "Community 440"
 location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_333
+  - community/Community_440
 ---
 
 # Test CalDAV Connection
@@ -15,4 +15,4 @@ tags:
 - [[📅 iCloud Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📞 iCloud Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_333
+#graphify/document #graphify/EXTRACTED #community/Community_440

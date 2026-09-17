@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_proxy_security.py"
+type: "code"
+community: "Community 96"
+location: "L264"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_96
+---
+
+# .test_graceful_degradation_egress_error()
+
+## Connections
+- [[Test that egress monitoring errors don't break response processing.]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_96

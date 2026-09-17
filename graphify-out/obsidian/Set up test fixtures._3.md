@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L52"
+community: "Community 44"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_44
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_37]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_33]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

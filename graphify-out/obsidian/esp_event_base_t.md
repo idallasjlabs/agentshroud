@@ -1,17 +1,16 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: ""
 type: "code"
-community: "Community 308"
-location: "L199"
+community: "Community 246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_308
+  - community/Community_246
 ---
 
 # esp_event_base_t
 
 ## Connections
-- [[wifi_event_handler()]] - `references` [EXTRACTED]
+- [[wifi_event_handler]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_308
+#graphify/code #graphify/EXTRACTED #community/Community_246

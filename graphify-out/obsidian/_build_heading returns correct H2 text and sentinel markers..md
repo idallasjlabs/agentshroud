@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "Community 177"
+community: "Community 186"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Community_186
 ---
 
 # _build_heading returns correct H2 text and sentinel markers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildHeading]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_177
+#graphify/rationale #graphify/EXTRACTED #community/Community_186

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tools/port_manager.py"
+type: "code"
+community: "Community 83"
+location: "L74"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_83
+---
+
+# .has_conflicts()
+
+## Connections
+- [[PortResolution]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_83

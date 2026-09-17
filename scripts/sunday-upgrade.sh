@@ -42,8 +42,42 @@ if [ -n "$missing" ]; then
   exit 127
 fi
 
+# ── On-demand invocation (owner directive 2026-09-15) ────────────────────────
+# The weekly launchd firing is not the only way this must run: a major advisory
+# can land on a Tuesday. The idempotency guards below deliberately make a second
+# run on the same day a no-op, which is right for launchd retries and wrong for
+# "a CVE just dropped, run it now" — so --force is the documented escape hatch.
+#
+#   bash scripts/sunday-upgrade.sh                       # normal (launchd/weekly)
+#   bash scripts/sunday-upgrade.sh --force               # run now, ignore today's guards
+#   bash scripts/sunday-upgrade.sh --force --reason "GHSA-xxxx dropped"
+#
+# --force does NOT weaken any safety gate inside sunday-upgrade-apply.sh: the
+# preflight/scan/verify/soak/rollback and the no-op gate all still apply. It
+# only bypasses the "already ran today" short-circuit.
+FORCE=0
+RUN_REASON="scheduled weekly run"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --force)  FORCE=1; shift ;;
+    --reason) RUN_REASON="${2:-unspecified}"; shift 2 ;;
+    -h|--help)
+      sed -n '1,30p' "${BASH_SOURCE[0]}"
+      exit 0 ;;
+    *)
+      echo "[sunday-upgrade] unknown argument: $1" >&2
+      exit 2 ;;
+  esac
+done
+
 REPO=~/Development/agentshroud
-SESSION="agentshroud-upgrade-$(date +%F)"
+# A forced run must not collide with the day's scheduled session name, or the
+# tmux guard below would treat it as "already running" and silently skip.
+if [ "$FORCE" -eq 1 ]; then
+  SESSION="agentshroud-upgrade-$(date +%F-%H%M%S)"
+else
+  SESSION="agentshroud-upgrade-$(date +%F)"
+fi
 PROMPT_FILE="$REPO/prompts/sunday-upgrade.md"
 TODAY="$(date +%F)"
 LOG="$REPO/reports/upgrade-run-${TODAY}.log"
@@ -53,6 +87,53 @@ WATCH_TIMEOUT_MIN=180   # prompt's own budget is 90 min; hard stop at 3h
 
 cd "$REPO"
 mkdir -p reports
+
+# ── Branch/freshness preflight — the job must run against current main ──────
+# This script previously trusted whatever was checked out on the host, with no
+# `git pull`/`git fetch` anywhere in this file, prompts/sunday-upgrade.md, or
+# sunday-upgrade-apply.sh. A fix merged to main mid-week (e.g. 2026-09-12's
+# #439) had no way to reach an unattended run until SOME LATER session
+# happened to manually check out and pull main first — the 2026-09-06 run
+# failed with a stale composer-submission bug that had already been fixed on
+# main days earlier (see reports/upgrade-2026-09-06-prod.md, "dev is still on
+# the older send-keys version and needs to pull"), and the identical failure
+# recurred on 2026-09-13 for the same reason: nobody had happened to git pull
+# in between. A host used for interactive dev work (this one) routinely sits
+# on a feature branch with uncommitted changes between Sunday runs — exactly
+# the state as of 2026-09-16 while this fix was written — so the unattended
+# job cannot assume main is checked out either.
+#
+# Fail loudly here rather than silently run stale code or the wrong branch:
+# a launchd/cron failure that emails/logs an actionable error is recoverable;
+# a "successful" run against a week-old checkout or someone's feature branch
+# is not, and reads as a completed upgrade when nothing current was applied.
+git fetch origin main >/dev/null 2>&1 || {
+  echo "[sunday-upgrade] FATAL: git fetch origin main failed — check network/auth before the next scheduled run." >&2
+  exit 3
+}
+_current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+if [ "$_current_branch" != "main" ]; then
+  echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main." >&2
+  echo "[sunday-upgrade] The unattended upgrade must run against main. Run: git -C '$REPO' checkout main" >&2
+  exit 4
+fi
+if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+  echo "[sunday-upgrade] FATAL: main has uncommitted changes — refusing to pull/run over them." >&2
+  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' status" >&2
+  exit 4
+fi
+if ! git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
+  echo "[sunday-upgrade] FATAL: local main has diverged from origin/main — cannot fast-forward." >&2
+  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' log --oneline main..origin/main" >&2
+  exit 4
+fi
+if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+  _before_sha="$(git rev-parse --short HEAD)"
+  git merge --ff-only origin/main
+  echo "[sunday-upgrade] ✓ Fast-forwarded main ${_before_sha} → $(git rev-parse --short HEAD)"
+else
+  echo "[sunday-upgrade] ✓ main already up to date with origin/main ($(git rev-parse --short HEAD))"
+fi
 
 # Idempotency: don't stack a second session if today's already running or
 # already finished — guards against a manual re-trigger the same day, or
@@ -68,7 +149,11 @@ fi
 # the rest of that day — the failure mode was self-perpetuating. A report that
 # exists without its sentinel is an incomplete run and MUST be retryable.
 DONE_MARKER="$REPO/reports/.upgrade-${TODAY}.done"
-if [ -f "$DONE_MARKER" ]; then
+if [ "$FORCE" -eq 1 ]; then
+  echo "[sunday-upgrade] --force: on-demand run (reason: ${RUN_REASON})"
+  echo "[sunday-upgrade] --force: bypassing today's completion/report guards."
+  echo "[sunday-upgrade] --force: all safety gates in sunday-upgrade-apply.sh still apply."
+elif [ -f "$DONE_MARKER" ]; then
   echo "[sunday-upgrade] run already completed today (${DONE_MARKER}) — skipping."
   exit 0
 fi

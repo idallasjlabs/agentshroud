@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 622"
-location: "L417"
+community: "Community 613"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_622
+  - community/Community_613
 ---
 
 # Security Hardening
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_622
+#graphify/document #graphify/EXTRACTED #community/Community_613

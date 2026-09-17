@@ -1,17 +1,17 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 374"
+community: "Community 347"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Community_347
 ---
 
 # Layer 7 — Infrastructure & Supply Chain
 
 ## Connections
-- [[Security Architecture_1]] - `contains` [EXTRACTED]
+- [[Security Architecture_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_374
+#graphify/document #graphify/EXTRACTED #community/Community_347

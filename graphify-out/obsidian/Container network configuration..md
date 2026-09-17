@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 66"
+community: "Community 602"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/Community_602
 ---
 
 # Container network configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkConfiguration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_66
+#graphify/rationale #graphify/EXTRACTED #community/Community_602

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "Community 854"
+community: "Community 887"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_854
+  - community/Community_887
 ---
 
 # Approval queue (notify Isaiah via Telegram, wait up to 1 hour)
@@ -14,4 +14,4 @@ tags:
 - [[Isaiah decides (approved  rejected  timeout)]] - `calls` [EXTRACTED]
 - [[Threat level (NONELOW, MEDIUM, HIGH)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_854
+#graphify/concept #graphify/EXTRACTED #community/Community_887

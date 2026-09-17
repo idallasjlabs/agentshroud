@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.36
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 948
 
-**Cohesion:** 0.36 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_explicit_args_win()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_gateway_password_fallback()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_missing_token_raises_value_error()]] - code - gateway/tests/test_cli_coverage.py
-- [[Build SCLClient from args or environment variables.]] - rationale - gateway/cli/client.py
-- [[TestClientFromEnv]] - code - gateway/tests/test_cli_coverage.py
-- [[client.py]] - code - gateway/cli/client.py
-- [[client_from_env()]] - code - gateway/cli/client.py
+- [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 152]]
-- 2 edges to [[_COMMUNITY_Community 464]]
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 1 edge to [[_COMMUNITY_Community 134]]
 
 ## Top bridge nodes
-- [[client_from_env()]] - degree 9, connects to 2 communities
-- [[TestClientFromEnv]] - degree 6, connects to 2 communities
-- [[client.py]] - degree 3, connects to 2 communities
+- [[TestCVE2026_9367TerminalToolDenied]] - degree 9, connects to 1 community

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[System promptinstruction leakage probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[i-atlas SKILL.md (Curriculum Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[i-socrates SKILL.md (Dialogue Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[i-vulcan README]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1369
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Community 31]]
-
-## Top bridge nodes
-- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

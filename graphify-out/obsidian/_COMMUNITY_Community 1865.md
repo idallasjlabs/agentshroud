@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CodexBar Model Cost Usage CLI Summarizer]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[i-scrum SKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

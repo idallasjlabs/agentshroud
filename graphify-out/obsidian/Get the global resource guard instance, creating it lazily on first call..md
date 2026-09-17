@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 225"
+community: "P3 Infrastructure Security Modules"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Get the global resource guard instance, creating it lazily on first call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_resource_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_225
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

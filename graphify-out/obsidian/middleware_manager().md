@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Middleware & Lifespan"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # middleware_manager()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

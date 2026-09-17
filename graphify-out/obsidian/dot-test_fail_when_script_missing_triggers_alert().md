@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+type: "code"
+community: "Community 54"
+location: "L72"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_54
+---
+
+# .test_fail_when_script_missing_triggers_alert()
+
+## Connections
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[TestVerifyKillswitch]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_54

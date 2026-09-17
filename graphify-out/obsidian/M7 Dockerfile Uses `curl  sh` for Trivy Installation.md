@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 337"
+community: "Community 344"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Community_344
 ---
 
 # M7: Dockerfile Uses `curl | sh` for Trivy Installation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MEDIUM — Fix Soon]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/Community_344

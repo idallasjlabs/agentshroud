@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 853"
+community: "Community 325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/Community_325
 ---
 
 # Branding Specialist (BS) (SKILL)
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 - [[WCAG AA Contrast Standard]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/Community_325

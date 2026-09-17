@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.29
+members: 10
 ---
 
 # Community 899
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Accessibility_1]] - document - branding/guidelines/brand-guidelines.md
-- [[Animation Guidelines]] - document - branding/guidelines/brand-guidelines.md
-- [[CSS Reference]] - document - branding/guidelines/brand-guidelines.md
-- [[Color Usage]] - document - branding/guidelines/brand-guidelines.md
-- [[Logo Animation Constraints]] - document - branding/guidelines/brand-guidelines.md
-- [[Motion Principles]] - document - branding/guidelines/brand-guidelines.md
-- [[Primary Color Application]] - document - branding/guidelines/brand-guidelines.md
-- [[Status & Feedback Animations]] - document - branding/guidelines/brand-guidelines.md
-- [[Timing & Easing]] - document - branding/guidelines/brand-guidelines.md
+- [[check()_9]] - code - scripts/preflight-check.sh
+- [[fail()_6]] - code - scripts/tailscale-check.sh
+- [[infra-check.sh]] - code - scripts/infra-check.sh
+- [[infra-check.sh script]] - code - scripts/infra-check.sh
+- [[ok()_1]] - code - scripts/tailscale-check.sh
+- [[preflight-check.sh]] - code - scripts/preflight-check.sh
+- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
+- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
+- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
+- [[warn()_5]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Proxy Sidecar & Forwarder]]
 
 ## Top bridge nodes
-- [[Animation Guidelines]] - degree 7, connects to 1 community
-- [[Color Usage]] - degree 3, connects to 1 community
+- [[preflight-check.sh]] - degree 4, connects to 1 community

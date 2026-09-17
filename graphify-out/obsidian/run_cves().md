@@ -12,12 +12,12 @@ tags:
 # run_cves()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[cves_counts_array_when_no_total()]] - `calls` [EXTRACTED]
 - [[cves_formats_summary()]] - `calls` [EXTRACTED]
 - [[cves_reads_nested_summary()]] - `calls` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
 - [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_36

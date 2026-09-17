@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 797
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[5. Setapp Detection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Additional Patches]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Behavior]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 1 Main Agent as Default]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Purpose_181]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Related Notes_51]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Usage_125]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +29,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_797
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1023]]
-
-## Top bridge nodes
-- [[Phase 1 — Raw Collection_2]] - degree 11, connects to 1 community

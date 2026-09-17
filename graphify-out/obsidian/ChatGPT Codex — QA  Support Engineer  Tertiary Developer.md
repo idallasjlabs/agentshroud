@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "Community 901"
+community: "Community 943"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_901
+  - community/Community_943
 ---
 
 # ChatGPT Codex — QA / Support Engineer / Tertiary Developer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_901
+#graphify/concept #graphify/EXTRACTED #community/Community_943

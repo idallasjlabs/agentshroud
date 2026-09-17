@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 58"
+community: "Community 70"
 location: "L142"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_58
+  - community/Community_70
 ---
 
 # Citation
 
 ## Connections
-- [[._verify_url()]] - `references` [EXTRACTED]
+- [[dot-_verify_url()]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitorEntry]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_58
+#graphify/code #graphify/INFERRED #community/Community_70

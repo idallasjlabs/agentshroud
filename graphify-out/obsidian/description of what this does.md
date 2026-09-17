@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 697"
+community: "Community 722"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_697
+  - community/Community_722
 ---
 
 # <description of what this does>
 
 ## Connections
-- [[Quality Checklist_1]] - `contains` [EXTRACTED]
-- [[SKILL_5]] - `contains` [EXTRACTED]
-- [[System Prompt]] - `contains` [EXTRACTED]
-- [[User Prompt Template]] - `contains` [EXTRACTED]
-- [[cheatsheet]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-athenaSKILL]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[System Prompt_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template_5]] - `contains` [EXTRACTED]
+- [[cheatsheet_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_697
+#graphify/document #graphify/EXTRACTED #community/Community_722

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 location: "L4527"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # B1: one-shot 400-retry for unbalanced HTML parse errors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegram400Retry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

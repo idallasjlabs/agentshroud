@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "Community 209"
+community: "Community 214"
 location: "L13"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/Community_214
 ---
 
 # Test Telegram egress notification system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTelegramNotify]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_209
+#graphify/rationale #graphify/EXTRACTED #community/Community_214

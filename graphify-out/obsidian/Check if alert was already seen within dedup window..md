@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Community 527"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_527
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Check if alert was already seen within dedup window.
 
 ## Connections
-- [[._is_duplicate()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_duplicate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_527
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

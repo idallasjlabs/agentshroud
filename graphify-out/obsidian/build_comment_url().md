@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 171"
+community: "Community 165"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Community_165
 ---
 
 # build_comment_url()
@@ -15,6 +15,6 @@ tags:
 - [[REST v3 add-comment URL for an arbitrary issue key.]] - `rationale_for` [EXTRACTED]
 - [[_cloud_base_url()]] - `calls` [EXTRACTED]
 - [[add_comment()]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_171
+#graphify/code #graphify/EXTRACTED #community/Community_165

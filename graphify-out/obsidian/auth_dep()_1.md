@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Approval Routing & Event Bus"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Approval_Routing__Event_Bus
 ---
 
 # auth_dep()
@@ -17,4 +17,4 @@ tags:
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

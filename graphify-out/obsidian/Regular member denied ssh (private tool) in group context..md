@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 812"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_812
 ---
 
 # Regular member denied ssh (private tool) in group context.
 
 ## Connections
-- [[.test_member_denied_ssh_private_tool_in_group()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_member_denied_ssh_private_tool_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_812

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1011"
+community: "Community 1054"
 location: "L186"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/Community_1054
 ---
 
 # Phase 2 — Deduplication & Normalization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1011
+#graphify/document #graphify/EXTRACTED #community/Community_1054

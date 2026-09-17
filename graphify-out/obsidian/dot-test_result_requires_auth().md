@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
+type: "code"
+community: "Community 519"
+location: "L114"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_519
+---
+
+# .test_result_requires_auth()
+
+## Connections
+- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
+- [[Unauthenticated request is rejected.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_519

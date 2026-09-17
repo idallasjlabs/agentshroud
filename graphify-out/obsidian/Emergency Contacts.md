@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 523"
+community: "Community 280"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/Community_280
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_523
+#graphify/document #graphify/EXTRACTED #community/Community_280

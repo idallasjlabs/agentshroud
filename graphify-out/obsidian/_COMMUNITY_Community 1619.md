@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[SlackAPIProxy Socket Mode Relay (apps.connections.open) Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackSocketClient events_api Envelope Processing Tests]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,11 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1619
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-
-## Top bridge nodes
-- [[.test_long_outbound_message_quarantined()]] - degree 4, connects to 3 communities

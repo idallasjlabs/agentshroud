@@ -1,27 +1,27 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 398"
+community: "Community 406"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/Community_406
 ---
 
 # Skill: Technical Illustrator (TI)
 
 ## Connections
-- [[Anti-Patterns to Flag_20]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_14]] - `contains` [EXTRACTED]
 - [[Brand Theme Block (Mermaid)_2]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Diagram → Validate → Export_2]] - `contains` [EXTRACTED]
-- [[Dependencies_14]] - `contains` [EXTRACTED]
+- [[Dependencies_15]] - `contains` [EXTRACTED]
 - [[Diagram Types and Data Lakehouse Examples_2]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions_2]] - `contains` [EXTRACTED]
 - [[Rendering and Export_2]] - `contains` [EXTRACTED]
-- [[Role_107]] - `contains` [EXTRACTED]
-- [[Rules_23]] - `contains` [EXTRACTED]
-- [[SKILL_184]] - `contains` [EXTRACTED]
-- [[Validation Checklist_7]] - `contains` [EXTRACTED]
+- [[Role_39]] - `contains` [EXTRACTED]
+- [[Rules_16]] - `contains` [EXTRACTED]
+- [[Validation Checklist_8]] - `contains` [EXTRACTED]
+- [[openclawskillsi-tiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/Community_406

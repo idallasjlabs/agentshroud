@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1293
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Documentation_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
+- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
+- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
+- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
+- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1293
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 439]]
-
-## Top bridge nodes
-- [[Resources]] - degree 4, connects to 1 community

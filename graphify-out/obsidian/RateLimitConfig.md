@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Community 182"
+community: "Community 190"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Community_190
 ---
 
 # RateLimitConfig
 
 ## Connections
-- [[.__init__()_111]] - `references` [EXTRACTED]
+- [[dot-__init__()_83]] - `references` [EXTRACTED]
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/Community_190

@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[graphify_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For --update and --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify add and --watch_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify query_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For the commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Honesty Rules_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[SKILL_127]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2 - Detect files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 5 - Label communities_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Usage_81]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What graphify is for_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Core Identity (from IDENTITY.md, SOUL.md, USER.md)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Critical Constraint]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[DEFERRED TO PHASE 4+ (Advanced Features)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Deferred Security Controls (Phase 5+)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Files to Mount in Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[MUST HAVE (Phase 3 - Minimum Viable Chat)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Notes_3]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[PHASE3_REQUIREMENTS]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 1 Isaiah's Persona Package]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 2 Phase 3 Feature Scope]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 3 Security Requirements for Base Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 4 Implementation Checklist]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[References_3]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 4 Integration Testing (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 5 Documentation (Day 3)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Success Criteria_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Timeline]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 
 ## Live Query (requires Dataview plugin)
 

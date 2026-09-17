@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 43"
+community: "Approval Routing & Event Bus"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Configuration for compliance audit export functionality.
 
 ## Connections
-- [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
+- [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

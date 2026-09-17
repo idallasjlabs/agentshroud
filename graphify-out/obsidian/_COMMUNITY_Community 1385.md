@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1385
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[github-and-merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1385
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[2. Security Value Audit]] - degree 4, connects to 1 community

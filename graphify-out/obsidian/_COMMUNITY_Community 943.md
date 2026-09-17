@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.39
+members: 9
 ---
 
 # Community 943
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_7]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Oracle — Feedback Analyst_1]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Output Format_7]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Persona_5]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Quality Checklist_6]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Role_23]] - document - .agents/skills/i-oracle/SKILL.md
-- [[SKILL_39]] - document - .agents/skills/i-oracle/SKILL.md
-- [[System Prompt_5]] - document - .agents/skills/i-oracle/SKILL.md
+- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
+- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
+- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
 
 ## Live Query (requires Dataview plugin)
 

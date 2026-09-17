@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "Community 765"
+community: "Community 804"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/Community_804
 ---
 
 # Real SSNs (not preceded by uppercase) must still be detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_real_ssn_still_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_765
+#graphify/rationale #graphify/EXTRACTED #community/Community_804

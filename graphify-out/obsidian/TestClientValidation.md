@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 175"
+community: "P3 Infrastructure Security Modules"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_175
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestClientValidation
 
 ## Connections
-- [[.test_empty_client_id_rejected()]] - `method` [EXTRACTED]
-- [[.test_static_shared_client_id_rejected()]] - `method` [EXTRACTED]
-- [[.test_unique_client_id_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_empty_client_id_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_static_shared_client_id_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_unique_client_id_accepted()]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_175
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

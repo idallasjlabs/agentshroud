@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.15
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 597
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[ADR-005-sha256-hash-chain-audit-integrity]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - concept - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Context_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Decision_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Hash Chain Structure]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Status_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[audit_entries SQLite table]] - code - docs/data/schema-documentation.md
-- [[ledger.py (audit trail, SHA-256 hashing)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[mcp_audit_entries SQLite table]] - code - docs/data/schema-documentation.md
+- [[Configuration  Environment Variables_8]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Function Details_17]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Purpose_144]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Related_23]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,12 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_597
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 412]]
-- 1 edge to [[_COMMUNITY_Community 414]]
-- 1 edge to [[_COMMUNITY_Community 514]]
-
-## Top bridge nodes
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities
-- [[Ledger DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

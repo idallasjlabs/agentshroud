@@ -1,29 +1,28 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "Community 605"
-location: "L209"
+community: "Community 290"
+location: "98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_605
+  - community/Community_290
 ---
 
 # CredentialInjector
 
 ## Connections
-- [[.__init__()_14]] - `calls` [INFERRED]
-- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
-- [[.injector()]] - `calls` [INFERRED]
-- [[.injector()_1]] - `calls` [INFERRED]
-- [[.injector_with_secrets()]] - `calls` [INFERRED]
-- [[.test_anthropic_default_strips_x_api_key()]] - `calls` [EXTRACTED]
-- [[.test_get_all_loaded_values_method()]] - `calls` [EXTRACTED]
-- [[.test_injection_disabled()]] - `calls` [EXTRACTED]
-- [[.test_leak_detection_disabled()]] - `calls` [EXTRACTED]
-- [[.test_leak_detection_disabled()_1]] - `calls` [INFERRED]
-- [[.test_no_injection_when_disabled()]] - `calls` [INFERRED]
-- [[.test_strip_headers_removes_conflicting_header()]] - `calls` [EXTRACTED]
-- [[injector()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_2]] - `method` [EXTRACTED]
+- [[dot-_load_credentials()]] - `method` [EXTRACTED]
+- [[dot-_load_default_mappings()]] - `method` [EXTRACTED]
+- [[dot-get_all_loaded_values()]] - `method` [EXTRACTED]
+- [[dot-get_status()]] - `method` [EXTRACTED]
+- [[dot-has_credential()]] - `method` [EXTRACTED]
+- [[dot-inject_headers()]] - `method` [EXTRACTED]
+- [[dot-scan_for_credential_leak()]] - `method` [EXTRACTED]
+- [[Injects credentials into outbound requests based on destination domain. The…]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy]] - `shares_data_with` [INFERRED]
+- [[Red Team Finding 05 credential isolation (05-credential-isolation.md)]] - `rationale_for` [EXTRACTED]
+- [[credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_605
+#graphify/code #graphify/EXTRACTED #community/Community_290

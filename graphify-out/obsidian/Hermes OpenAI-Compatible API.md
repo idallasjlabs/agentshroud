@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 405"
+community: "Community 416"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/Community_416
 ---
 
 # Hermes OpenAI-Compatible API
@@ -18,4 +18,4 @@ tags:
 - [[Network Access]] - `contains` [EXTRACTED]
 - [[Tailscale Serve Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_405
+#graphify/document #graphify/EXTRACTED #community/Community_416

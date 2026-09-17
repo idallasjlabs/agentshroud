@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Purpose_83]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[README_88]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Related Skills_89]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Usage_92]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Apollo — Audio Systems Producer_1]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Purpose_36]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Related Skills_27]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Usage_31]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[hermesskillsi-apolloREADME]] - document - docker/config/hermes/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)
 

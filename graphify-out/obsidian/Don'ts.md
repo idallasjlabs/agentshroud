@@ -1,17 +1,17 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # Don'ts
 
 ## Connections
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

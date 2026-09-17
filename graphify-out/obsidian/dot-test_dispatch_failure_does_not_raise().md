@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_cron_state_monitor.py"
+type: "code"
+community: "Community 90"
+location: "L153"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_90
+---
+
+# .test_dispatch_failure_does_not_raise()
+
+## Connections
+- [[CronStateMonitor]] - `calls` [EXTRACTED]
+- [[TestTransitions]] - `method` [EXTRACTED]
+- [[_oc_job()]] - `calls` [EXTRACTED]
+- [[_openclaw_store()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_90

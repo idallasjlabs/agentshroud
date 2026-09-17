@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Community 220"
+community: "Community 223"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/Community_223
 ---
 
 # _load_compose()
 
 ## Connections
-- [[.compose()_2]] - `calls` [EXTRACTED]
-- [[.compose()]] - `calls` [EXTRACTED]
-- [[.compose()_1]] - `calls` [EXTRACTED]
+- [[dot-compose()]] - `calls` [EXTRACTED]
+- [[dot-compose()_1]] - `calls` [EXTRACTED]
+- [[dot-compose()_2]] - `calls` [EXTRACTED]
 - [[Load a docker-compose YAML file.]] - `rationale_for` [EXTRACTED]
 - [[test_docker_compose.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/Community_223

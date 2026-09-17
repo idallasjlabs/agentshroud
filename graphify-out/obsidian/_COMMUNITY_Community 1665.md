@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Release Workflow]] - code - .github/workflows/release.yml
-- [[TagVersion Sync Verification]] - rationale - .github/workflows/release.yml
+- [[agentshroud-blueteamreferencessteve-hay-assessment]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[feature-priorities_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
 
 ## Live Query (requires Dataview plugin)
 

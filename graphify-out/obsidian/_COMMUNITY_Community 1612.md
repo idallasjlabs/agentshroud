@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_approval_strips_trailing_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Trailing punctuation in leaked URL should be normalized before approval check.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_hermes_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
+- [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_approval_strips_trailing_punctuation()]] - degree 4, connects to 3 communities
+- [[dot-test_hermes_soul_has_no_refuse_directive()]] - degree 2, connects to 1 community

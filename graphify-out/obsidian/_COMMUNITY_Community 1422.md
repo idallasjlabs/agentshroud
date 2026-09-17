@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1422
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_owner_revoke_command_persists_pause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_revoke_command_requires_target_user_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[revoke must persist through pause_collaborator() so the pause survives]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner revoke without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 209]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 2 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
 
 ## Top bridge nodes
-- [[.test_handle_callback_approve_1h()]] - degree 2, connects to 1 community
-- [[.test_handle_callback_approve_4h()]] - degree 2, connects to 1 community
+- [[dot-test_owner_revoke_command_requires_target_user_id()]] - degree 8, connects to 2 communities
+- [[dot-test_owner_revoke_command_persists_pause_to_disk()]] - degree 7, connects to 2 communities

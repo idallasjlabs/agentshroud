@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 77"
+community: "SOC Service Manager (Container Engine)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/SOC_Service_Manager_Container_Engine
 ---
 
 # gateway/soc/services.py (ServiceManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_soc_services_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_77
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 905"
+community: "Community 953"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_905
+  - community/Community_953
 ---
 
 # 🔴 P0 — Security Fixes (17 items)
@@ -17,4 +17,4 @@ tags:
 - [[Prompt Injection Hardening]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_905
+#graphify/document #graphify/EXTRACTED #community/Community_953

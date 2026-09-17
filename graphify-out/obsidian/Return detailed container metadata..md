@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 204"
+community: "Community 106"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/Community_106
 ---
 
 # Return detailed container metadata.
 
 ## Connections
-- [[.inspect()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-inspect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_204
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

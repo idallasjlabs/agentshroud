@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 651"
-location: "L154"
+community: "Community 508"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/Community_508
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_651
+#graphify/document #graphify/EXTRACTED #community/Community_508

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Community 366"
+community: "Community 371"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/Community_371
 ---
 
 # Awesome-List PR Templates
@@ -17,4 +17,4 @@ tags:
 - [[awesome-llm-apps  awesome-llm]] - `contains` [EXTRACTED]
 - [[awesome-security  defensive security list]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/Community_371

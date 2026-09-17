@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.19
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 663
 
-**Cohesion:** 0.19 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
-- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
-- [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
-- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
-- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-client()_6]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_export_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_report()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_status()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_update_history()]] - code - gateway/tests/test_runtime_engines.py
+- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,10 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 2 edges to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 106]]
+- 1 edge to [[_COMMUNITY_Community 231]]
+- 1 edge to [[_COMMUNITY_Community 359]]
+- 1 edge to [[_COMMUNITY_Community 364]]
 
 ## Top bridge nodes
-- [[StatusResponse]] - degree 10, connects to 3 communities
-- [[health_check_detail()]] - degree 4, connects to 1 community
+- [[TestWebAPI]] - degree 20, connects to 5 communities

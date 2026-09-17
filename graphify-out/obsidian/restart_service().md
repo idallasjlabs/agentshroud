@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 76"
-location: "L208"
+community: "SOC Correlation & Router"
+location: "L655"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/SOC_Correlation__Router
 ---
 
 # restart_service()
 
 ## Connections
-- [[Restart a service container.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[get()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[JSONResponse]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[ServiceActionRequest]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[_confirmation_required()]] - `calls` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Community 131"
+community: "Community 213"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_213
 ---
 
 # Test handling of partial canary matches.
 
 ## Connections
-- [[.test_partial_canary_match_handling()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_partial_canary_match_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_131
+#graphify/rationale #graphify/EXTRACTED #community/Community_213

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/post-deploy-check.sh"
+source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "Community 528"
-location: "L42"
+community: "Community 1162"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Community_1162
 ---
 
 # check()
 
 ## Connections
-- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
-- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
+- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
+- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_528
+#graphify/code #graphify/EXTRACTED #community/Community_1162

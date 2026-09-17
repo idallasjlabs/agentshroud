@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 906
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
-- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
-- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[dot-store()_2]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
+- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
+- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 673]]
-- 1 edge to [[_COMMUNITY_Community 717]]
+- 5 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 387]]
 
 ## Top bridge nodes
-- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 2 communities
+- [[TestAuditStoreBotId]] - degree 13, connects to 3 communities
+- [[dot-test_migration_adds_bot_id_column()]] - degree 3, connects to 1 community
+- [[dot-store()_2]] - degree 2, connects to 1 community

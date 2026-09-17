@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "rationale"
+community: "Community 47"
+location: "L558"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Community_47
+---
+
+# Build a mock httpx.Response usable as the yield value of a mocked…
+
+## Connections
+- [[_mock_llm_stream_resp()]] - `rationale_for` [EXTRACTED]
+- [[_mock_stream_resp()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

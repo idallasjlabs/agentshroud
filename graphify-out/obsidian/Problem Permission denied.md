@@ -12,6 +12,6 @@ tags:
 # Problem: "Permission denied"
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

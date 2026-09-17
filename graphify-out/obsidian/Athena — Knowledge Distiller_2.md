@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Community 746"
-location: "L6"
+community: "Community 1257"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_746
+  - community/Community_1257
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_11]] - `contains` [EXTRACTED]
-- [[Output Format_13]] - `contains` [EXTRACTED]
-- [[Persona_8]] - `contains` [EXTRACTED]
-- [[Role_42]] - `contains` [EXTRACTED]
-- [[SKILL_69]] - `contains` [EXTRACTED]
+- [[Purpose_74]] - `contains` [EXTRACTED]
+- [[Related Skills_65]] - `contains` [EXTRACTED]
+- [[Usage_69]] - `contains` [EXTRACTED]
+- [[openclawskillsi-athenaREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_746
+#graphify/document #graphify/EXTRACTED #community/Community_1257

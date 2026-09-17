@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 105"
+community: "Community 125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_125
 ---
 
 # intel_report module (CompetitiveIntelReport, IntelReportStore)
@@ -14,4 +14,4 @@ tags:
 - [[test_citation_verifier.py]] - `references` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_125

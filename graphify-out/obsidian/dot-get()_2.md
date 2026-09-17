@@ -1,0 +1,22 @@
+---
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 36"
+location: "L350"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_36
+---
+
+# .get()
+
+## Connections
+- [[dot-request()]] - `calls` [EXTRACTED]
+- [[GatewayClientT]] - `method` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[Value]] - `references` [EXTRACTED]
+- [[build_url()]] - `calls` [EXTRACTED]
+- [[map_http_error()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_36

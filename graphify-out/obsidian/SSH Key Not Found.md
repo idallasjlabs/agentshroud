@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Community 936"
+community: "Community 981"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_936
+  - community/Community_981
 ---
 
 # SSH Key Not Found
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_936
+#graphify/document #graphify/EXTRACTED #community/Community_981

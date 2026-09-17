@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # Store configuration          Actual database connection created in initialize().
 
 ## Connections
-- [[.__init__()_13]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_69]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

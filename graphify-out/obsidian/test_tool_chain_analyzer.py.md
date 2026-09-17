@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Community 262"
+community: "Voice Gateway STT & Browser Security"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_262
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # test_tool_chain_analyzer.py
@@ -16,13 +16,13 @@ tags:
 - [[ChainMatch]] - `imports` [EXTRACTED]
 - [[ParamScanResult]] - `imports` [EXTRACTED]
 - [[ReversibilityScore]] - `imports` [EXTRACTED]
-- [[RiskLevel_4]] - `imports` [EXTRACTED]
+- [[RiskLevel_5]] - `imports` [EXTRACTED]
 - [[TestParamSanitization]] - `contains` [EXTRACTED]
 - [[TestReversibilityScoring]] - `contains` [EXTRACTED]
 - [[TestShellBleedPatterns]] - `contains` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `contains` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
-- [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
+- [[mock_alert_callback()]] - `contains` [EXTRACTED]
 - [[tool_chain_analyzer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_262
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

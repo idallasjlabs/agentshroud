@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1157"
+community: "Community 1197"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1157
+  - community/Community_1197
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1157
+#graphify/document #graphify/EXTRACTED #community/Community_1197

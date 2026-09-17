@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Community 934"
-location: "L23"
+community: "Community 728"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_934
+  - community/Community_728
 ---
 
 # Architecture
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_934
+#graphify/document #graphify/EXTRACTED #community/Community_728

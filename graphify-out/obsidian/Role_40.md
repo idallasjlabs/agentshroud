@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 606"
+community: "Community 422"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/Community_422
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/Community_422

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 75"
+community: "Community 72"
 location: "L110"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_75
+  - graphify/EXTRACTED
+  - community/Community_72
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[.close()_14]] - `method` [EXTRACTED]
-- [[.drain()_1]] - `method` [EXTRACTED]
-- [[.write()_1]] - `method` [EXTRACTED]
+- [[dot-close()_18]] - `method` [EXTRACTED]
+- [[dot-drain()_1]] - `method` [EXTRACTED]
+- [[dot-write()_1]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[HTTPConnectProxy]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
+- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_72

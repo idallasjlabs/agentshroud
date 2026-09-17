@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Adversarial Injection Guards"
+community: "Collaborator Activity & Telegram Proxy"
 location: "line 125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Adversarial_Injection_Guards
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # CollaboratorActivityTracker.record_activity
 
 ## Connections
-- [[TelegramAPIProxy]] - `calls` [INFERRED]
+- [[TelegramAPIProxy_2]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Adversarial_Injection_Guards
+#graphify/code #graphify/INFERRED #community/Collaborator_Activity__Telegram_Proxy

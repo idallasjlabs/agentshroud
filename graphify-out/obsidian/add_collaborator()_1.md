@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "SOC Collaborators"
-location: "L889"
+community: "Community 84"
+location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_84
 ---
 
 # add_collaborator()
 
 ## Connections
-- [[AddCollaboratorRequest]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[persist_approved_collaborator()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[Add a collaborator by Telegram user ID.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/Community_84

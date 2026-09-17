@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "Community 427"
-location: "L20"
+community: "Community 1313"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Community_1313
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
+- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_427
+#graphify/code #graphify/EXTRACTED #community/Community_1313

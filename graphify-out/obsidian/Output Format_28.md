@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 1022"
-location: "L36"
+community: "Community 724"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1022
+  - community/Community_724
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1022
+#graphify/document #graphify/EXTRACTED #community/Community_724

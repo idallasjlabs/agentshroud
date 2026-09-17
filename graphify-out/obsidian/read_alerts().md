@@ -1,26 +1,25 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 112"
-location: "L67"
+community: "Community 292"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_292
 ---
 
 # read_alerts()
 
 ## Connections
-- [[.test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
-- [[Path_11]] - `references` [EXTRACTED]
-- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
+- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
 - [[datetime_3]] - `references` [EXTRACTED]
-- [[falco_monitor.py]] - `contains` [EXTRACTED]
-- [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
+- [[get_falco_summary()]] - `calls` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/Community_292

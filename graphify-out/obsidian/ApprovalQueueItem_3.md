@@ -1,46 +1,20 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 125"
-location: "L181"
+community: "Community 423"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_125
+  - graphify/EXTRACTED
+  - community/Community_423
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[.test_store_expires_old_items()]] - `calls` [EXTRACTED]
-- [[.test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
-- [[.test_store_save_and_load()]] - `calls` [EXTRACTED]
-- [[.test_store_update_status()]] - `calls` [EXTRACTED]
-- [[A pending approval request in the queue]] - `rationale_for` [EXTRACTED]
-- [[Any]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[MFAGuard]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
-- [[TestApprovalStorePersistence]] - `uses` [INFERRED]
-- [[TestApprovalTimeout]] - `uses` [INFERRED]
-- [[TestAutoExpire]] - `uses` [INFERRED]
-- [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
-- [[_make_item()]] - `calls` [EXTRACTED]
-- [[approval.py]] - `imports` [EXTRACTED]
-- [[enhanced_queue.py]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
-- [[queue.py]] - `imports` [EXTRACTED]
-- [[store.py]] - `imports` [EXTRACTED]
-- [[test_approval_store.py]] - `imports` [EXTRACTED]
-- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[dot-decide()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_2]] - `references` [EXTRACTED]
+- [[dot-get_pending()_1]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/Community_423

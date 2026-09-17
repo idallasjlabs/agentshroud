@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_key_rotation.py"
+type: "code"
+community: "Community 715"
+location: "L196"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_715
+---
+
+# .test_get_credential_status()
+
+## Connections
+- [[Test credential status reporting.]] - `rationale_for` [EXTRACTED]
+- [[TestKeyRotationManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_715

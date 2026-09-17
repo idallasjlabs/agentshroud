@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 14"
+community: "Community 153"
 location: "L248"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Community_153
 ---
 
 # SCLConfirmationRequired
 
 ## Connections
-- [[.test_confirmation_required()]] - `calls` [EXTRACTED]
-- [[.test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
+- [[dot-test_confirmation_required()]] - `calls` [EXTRACTED]
+- [[dot-test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
@@ -30,9 +30,9 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
@@ -41,11 +41,11 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Community_153

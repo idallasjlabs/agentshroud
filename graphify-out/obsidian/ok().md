@@ -1,18 +1,18 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # ok()
 
 ## Connections
 - [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

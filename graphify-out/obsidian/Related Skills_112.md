@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 1238"
-location: "L14"
+community: "Community 472"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1238
+  - community/Community_472
 ---
 
 # Related Skills
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1238
+#graphify/document #graphify/EXTRACTED #community/Community_472

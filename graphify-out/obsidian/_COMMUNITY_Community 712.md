@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.17
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 712
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Conditional memory writes (memoryYYYY-MM-DD.md, MEMORY.md)]] - concept - skills/openclaw/healthcheck/SKILL.md
-- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Overview_27]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[SKILL_212]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Stable-named cron scheduling for periodic audits]] - concept - skills/openclaw/healthcheck/SKILL.md
-- [[openclaw security audit command family]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[After Pairing]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Alternative Auto-Pairing URL]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Cannot save token]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Get Token Again]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[OpenClaw Control UI Pairing Instructions]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Security Note_2]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Step 1 Open the Control UI]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Step 2 Open Settings]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Step 3 Enter the Gateway Token]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Step 4 Verify Connection]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Still shows pairing required]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Token field not visible]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Troubleshooting_36]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[✅ Step-by-Step Pairing Process]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 851]]
-- 1 edge to [[_COMMUNITY_Community 1027]]
+- 1 edge to [[_COMMUNITY_Community 378]]
 
 ## Top bridge nodes
-- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community
-- [[Stable-named cron scheduling for periodic audits]] - degree 3, connects to 1 community
+- [[OpenClaw Control UI Pairing Instructions]] - degree 7, connects to 1 community

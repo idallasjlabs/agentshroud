@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Community 30"
+community: "Prompt Guard & Context Integrity"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # TestReanchorDelimiters
 
 ## Connections
-- [[.guard()_4]] - `method` [EXTRACTED]
-- [[.test_preserves_legitimate_markdown()]] - `method` [EXTRACTED]
-- [[.test_strips_fake_system_tags()]] - `method` [EXTRACTED]
-- [[.test_strips_separator_overrides()]] - `method` [EXTRACTED]
+- [[dot-guard()_4]] - `method` [EXTRACTED]
+- [[dot-test_preserves_legitimate_markdown()]] - `method` [EXTRACTED]
+- [[dot-test_strips_fake_system_tags()]] - `method` [EXTRACTED]
+- [[dot-test_strips_separator_overrides()]] - `method` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

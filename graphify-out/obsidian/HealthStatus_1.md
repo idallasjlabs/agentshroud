@@ -1,20 +1,28 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 19"
-location: "L204"
+community: "Community 68"
+location: "L50"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_19
+  - graphify/EXTRACTED
+  - community/Community_68
 ---
 
 # HealthStatus
 
 ## Connections
+- [[Any_71]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus]] - `uses` [INFERRED]
-- [[_engine_health_to_health()]] - `references` [EXTRACTED]
+- [[services.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_services.py]] - `imports` [EXTRACTED]
+- [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_68

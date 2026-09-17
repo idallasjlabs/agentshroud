@@ -1,59 +1,58 @@
 ---
 type: community
-cohesion: 0.08
-members: 44
+cohesion: 0.07
+members: 43
 ---
 
 # Community 145
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 44 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 43 nodes
 
 ## Members
-- [[._n()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_agent_reply_from_log()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_angle_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_blockquote_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bold_double_star_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bold_double_underscore_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bullet_list_marker_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_code_fence_delimiter_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_credential_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_credential_var_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_email_address_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_heading_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_horizontal_rule_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_image_link_reduced_to_alt()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_inline_code_backtick_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_internal_host_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_internal_url_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_italic_star_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_lock_emoji_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_lowercase_bracket_not_matched()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_markdown_link_reduced_to_text()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_model_info_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_numbered_list_marker_stripped()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_person_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_phone_number_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_plain_prose_unchanged()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_port_inline_colon()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_port_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_raw_secret_value_not_present_after_normalise()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_secret_path_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_security_module_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_tool_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_unknown_angle_token_fallback()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_unknown_bracket_token_fallback()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_us_ssn_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_user_id_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_user_id_spoken()]] - code - gateway/tests/test_voice_gateway.py
-- [[If a secret somehow reaches normalise (shouldn't — pipeline redacted it),]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Reproduces the 2026-06-27 1238 agent reply that triggered SCRUM-46.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Reproduces the exact log pattern httpgatewayPORT]] - rationale - gateway/tests/test_voice_gateway.py
-- [[TestNormalizeForSpeech]] - code - gateway/tests/test_voice_gateway.py
-- [[Unit tests for voice_gateway.tts.normalize_for_speech.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[1, possible, note — not uppercase-only, must not be touched.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[🔒 REDACTED Credentials cannot be displayed via Telegram]] - rationale - gateway/tests/test_voice_gateway.py
+- [[dot-__init__()_63]] - code - gateway/dashboard/proxy_status.py
+- [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-record_pii_redaction()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-set_mode()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-to_display()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_audit_status()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_canary()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_direct_access()]] - code - gateway/dashboard/proxy_status.py
+- [[Collects status from all security components and generates reports.]] - rationale - gateway/dashboard/proxy_status.py
+- [[Complete proxy status report for the dashboard.]] - rationale - gateway/dashboard/proxy_status.py
+- [[Dashboard display should include all required fields.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should count PII redactions.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should default to unprotected mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should reflect proxy mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should reflect sidecar mode with warning.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show audit chain status.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show broken audit chain.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show failed canary.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track canary results.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track direct access status.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track proxied messages.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track uptime.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[ProxyDashboard]] - code - gateway/dashboard/proxy_status.py
+- [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
+- [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
+- [[proxy_status.py_2]] - code - gateway/dashboard/proxy_status.py
+- [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_canary_status()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_default_unprotected()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_direct_access()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_display_all_fields()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_message_tracking()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_pii_counting()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_set_proxy_mode()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_set_sidecar_mode()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,9 +62,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 511]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Proxy Sidecar & Forwarder]]
+- 1 edge to [[_COMMUNITY_Runtime Security Comparison & Intel Report]]
+- 1 edge to [[_COMMUNITY_Community 459]]
 
 ## Top bridge nodes
-- [[TestNormalizeForSpeech]] - degree 39, connects to 1 community
-- [[._n()]] - degree 38, connects to 1 community
+- [[ProxyDashboard]] - degree 27, connects to 2 communities
+- [[proxy_status.py_2]] - degree 4, connects to 2 communities

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_clean_when_installed_not_running()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_89]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_80]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Usage_84]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[openclawskillsi-mcpm-auth-resetREADME]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1272
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 193]]
-
-## Top bridge nodes
-- [[TestClamavSummary]] - degree 5, connects to 1 community
-- [[.test_running_report_mtime_timestamp()]] - degree 2, connects to 1 community

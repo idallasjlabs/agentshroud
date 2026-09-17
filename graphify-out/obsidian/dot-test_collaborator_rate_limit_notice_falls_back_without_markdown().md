@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 119"
+location: "L3849"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_119
+---
+
+# .test_collaborator_rate_limit_notice_falls_back_without_markdown()
+
+## Connections
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_119

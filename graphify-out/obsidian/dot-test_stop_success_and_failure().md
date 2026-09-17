@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_soc_services_coverage.py"
+type: "code"
+community: "SOC Service Manager (Container Engine)"
+location: "L609"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/SOC_Service_Manager_Container_Engine
+---
+
+# .test_stop_success_and_failure()
+
+## Connections
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[TestLifecycleActions]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

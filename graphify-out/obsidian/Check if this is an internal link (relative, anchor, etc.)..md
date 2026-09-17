@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 64"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_64
 ---
 
 # Check if this is an internal link (relative, anchor, etc.).
 
 ## Connections
-- [[._is_internal_link()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_internal_link()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

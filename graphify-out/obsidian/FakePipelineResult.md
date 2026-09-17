@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 60"
-location: "L43"
+community: "Community 521"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_60
+  - graphify/EXTRACTED
+  - community/Community_521
 ---
 
 # FakePipelineResult
 
 ## Connections
-- [[.process_inbound()_7]] - `references` [EXTRACTED]
-- [[LockdownLevel]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
-- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
+- [[dot-process_inbound()_7]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_8]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/Community_521

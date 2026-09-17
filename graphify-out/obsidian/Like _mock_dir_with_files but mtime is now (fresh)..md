@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "rationale"
-community: "Community 921"
+community: "Community 969"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Community_969
 ---
 
 # Like _mock_dir_with_files but mtime is now (fresh).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_dir_with_fresh_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_921
+#graphify/rationale #graphify/EXTRACTED #community/Community_969

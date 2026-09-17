@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_multi_host_test.py"
+type: "code"
+community: "Community 859"
+location: "L147"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_859
+---
+
+# .test_on_host_callback_invoked_per_host()
+
+## Connections
+- [[TestRunMultiHost]] - `method` [EXTRACTED]
+- [[_fake_runner()]] - `calls` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_859

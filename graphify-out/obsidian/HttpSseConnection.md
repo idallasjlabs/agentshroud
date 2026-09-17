@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 154"
+community: "Community 108"
 location: "L158"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_154
+  - community/Community_108
 ---
 
 # HttpSseConnection
 
 ## Connections
-- [[.__init__()_29]] - `method` [EXTRACTED]
-- [[.get_or_create()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `method` [EXTRACTED]
-- [[.stop()_3]] - `method` [EXTRACTED]
-- [[.test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[.test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `uses` [INFERRED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
+- [[dot-get_or_create()]] - `references` [EXTRACTED]
+- [[dot-send_request()_2]] - `method` [EXTRACTED]
+- [[dot-stop()_1]] - `method` [EXTRACTED]
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Manages an HTTPSSE connection to an MCP server.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_154
+#graphify/code #graphify/INFERRED #community/Community_108

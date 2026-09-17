@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Community 367"
+community: "Community 372"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/Community_372
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
@@ -24,7 +24,7 @@ tags:
 - [[J. Code Cleanup (5 features)]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11 features)]] - `contains` [EXTRACTED]
 - [[Moved to v0.9.0 Sentinel]] - `contains` [EXTRACTED]
-- [[Summary_15]] - `contains` [EXTRACTED]
+- [[Summary_13]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/Community_372

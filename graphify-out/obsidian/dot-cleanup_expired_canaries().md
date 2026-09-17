@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/output_canary.py"
+type: "code"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L350"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Alert_Dispatcher__RBAC_Reliability
+---
+
+# .cleanup_expired_canaries()
+
+## Connections
+- [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

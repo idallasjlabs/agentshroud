@@ -1,21 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Community 388"
-location: "L37"
+community: "Community 612"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/Community_612
 ---
 
 # Installation
 
 ## Connections
-- [[Go]] - `contains` [EXTRACTED]
-- [[Homebrew (macOS)]] - `contains` [EXTRACTED]
-- [[Shell script]] - `contains` [EXTRACTED]
-- [[npm]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_388
+#graphify/document #graphify/EXTRACTED #community/Community_612

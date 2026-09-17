@@ -10,38 +10,38 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
-- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
-- [[3. Send Test Message]] - document - docker/QUICKSTART.md
-- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
-- [[API Key Error]] - document - docker/QUICKSTART.md
-- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
-- [[Architecture Diagram]] - document - docker/QUICKSTART.md
-- [[Check File Permissions]] - document - docker/QUICKSTART.md
-- [[Check Status]] - document - docker/QUICKSTART.md
-- [[Container Won't Start]] - document - docker/QUICKSTART.md
-- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
-- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
-- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
-- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
-- [[Launch the Stack]] - document - docker/QUICKSTART.md
-- [[Next Steps]] - document - docker/QUICKSTART.md
-- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
-- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
-- [[Prerequisites_1]] - document - docker/QUICKSTART.md
-- [[QUICKSTART]] - document - docker/QUICKSTART.md
-- [[Security Validation]] - document - docker/QUICKSTART.md
-- [[Server-side setup]] - document - docker/QUICKSTART.md
-- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
-- [[Start Everything]] - document - docker/QUICKSTART.md
-- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
-- [[Stop the Stack]] - document - docker/QUICKSTART.md
-- [[Success Criteria]] - document - docker/QUICKSTART.md
-- [[Test the System]] - document - docker/QUICKSTART.md
-- [[Troubleshooting_4]] - document - docker/QUICKSTART.md
-- [[Verify]] - document - docker/QUICKSTART.md
-- [[Verify Isolation]] - document - docker/QUICKSTART.md
-- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
+- [[dot-agentsskillsi-eightdSKILL]] - document - .agents/skills/i-eightd/SKILL.md
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Architecture Context]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Confidence Scoring]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Critical Rules]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention]] - document - .agents/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Device Hierarchy]] - document - .agents/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent]] - document - .agents/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Input Requirements_4]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Overview_4]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline]] - document - .agents/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process]] - document - .agents/skills/i-eightd/SKILL.md
+- [[What to Extract]] - document - .agents/skills/i-eightd/SKILL.md
+- [[Why This Matters]] - document - .agents/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing]] - document - .agents/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_53]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[README_58]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_56]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Usage_59]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[dot-agentsskillsi-atlasREADME]] - document - .agents/skills/i-atlas/README.md
+- [[Atlas — Curriculum Architect]] - document - .agents/skills/i-atlas/README.md
+- [[Purpose_12]] - document - .agents/skills/i-atlas/README.md
+- [[Related Skills_3]] - document - .agents/skills/i-atlas/README.md
+- [[Usage_7]] - document - .agents/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 

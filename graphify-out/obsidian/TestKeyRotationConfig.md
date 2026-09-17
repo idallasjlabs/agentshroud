@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 295"
+community: "Community 291"
 location: "L61"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_295
+  - graphify/EXTRACTED
+  - community/Community_291
 ---
 
 # TestKeyRotationConfig
 
 ## Connections
-- [[.test_add_custom_policy()]] - `method` [EXTRACTED]
-- [[.test_default_config_has_common_policies()]] - `method` [EXTRACTED]
-- [[.test_get_op_reference_builds_correctly()]] - `method` [EXTRACTED]
-- [[.test_get_policy_returns_default_for_unknown_type()]] - `method` [EXTRACTED]
+- [[dot-test_add_custom_policy()]] - `method` [EXTRACTED]
+- [[dot-test_default_config_has_common_policies()]] - `method` [EXTRACTED]
+- [[dot-test_get_op_reference_builds_correctly()]] - `method` [EXTRACTED]
+- [[dot-test_get_policy_returns_default_for_unknown_type()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[Test key rotation configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_295
+#graphify/code #graphify/EXTRACTED #community/Community_291

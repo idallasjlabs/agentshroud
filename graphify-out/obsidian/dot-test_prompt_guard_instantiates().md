@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_all_modules_enforce.py"
+type: "code"
+community: "Prompt Guard & Context Integrity"
+location: "L150"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Prompt_Guard__Context_Integrity
+---
+
+# .test_prompt_guard_instantiates()
+
+## Connections
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

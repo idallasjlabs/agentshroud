@@ -1,20 +1,29 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 1213"
-location: "L1"
+community: "Community 269"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1213
+  - community/Community_269
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_78]] - `contains` [EXTRACTED]
-- [[README_83]] - `contains` [EXTRACTED]
-- [[Related Skills_84]] - `contains` [EXTRACTED]
-- [[Usage_86]] - `contains` [EXTRACTED]
+- [[Approval Integration_2]] - `contains` [EXTRACTED]
+- [[Audit Logging_2]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
+- [[Core Security Principles_2]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Limitations_3]] - `contains` [EXTRACTED]
+- [[Risk Levels_2]] - `contains` [EXTRACTED]
+- [[Security Architecture_2]] - `contains` [EXTRACTED]
+- [[Security Configuration_2]] - `contains` [EXTRACTED]
+- [[Security Guarantees_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Usage_113]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1213
+#graphify/document #graphify/EXTRACTED #community/Community_269

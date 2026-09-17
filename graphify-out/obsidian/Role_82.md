@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 1022"
+community: "Community 738"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1022
+  - community/Community_738
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1022
+#graphify/document #graphify/EXTRACTED #community/Community_738

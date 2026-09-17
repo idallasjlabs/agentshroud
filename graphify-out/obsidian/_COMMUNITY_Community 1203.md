@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[README_73]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Related Skills_74]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Usage_75]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[dot-agentsskillsi-mnemosyneREADME]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Mnemosyne — Retention Engineer_1]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Purpose_26]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Related Skills_17]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Usage_21]] - document - .agents/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 

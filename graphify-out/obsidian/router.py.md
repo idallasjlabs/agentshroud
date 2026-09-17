@@ -1,30 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
-type: "code"
-community: "Community 32"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+type: "document"
+community: "Community 685"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_685
 ---
 
-# router.py
+# router.py.md
 
 ## Connections
-- [[AgentTarget]] - `imports` [EXTRACTED]
-- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[ForwardError]] - `contains` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[MultiAgentRouter]] - `contains` [EXTRACTED]
-- [[README_128]] - `references` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[RouterError]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `references` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/document #graphify/EXTRACTED #community/Community_685

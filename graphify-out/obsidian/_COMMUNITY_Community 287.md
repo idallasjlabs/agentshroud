@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.10
-members: 28
+cohesion: 0.07
+members: 29
 ---
 
 # Community 287
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[._has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
-- [[.setup_method()_18]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_case_insensitive()_1]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
-- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
-- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,9 +48,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 137]]
-- 2 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 1 edge to [[_COMMUNITY_Community 717]]
 
 ## Top bridge nodes
-- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
-- [[.setup_method()_18]] - degree 2, connects to 1 community
+- [[test_voice_stt_model_ab.py]] - degree 15, connects to 1 community

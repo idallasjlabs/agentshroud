@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1641"
+community: "Community 1743"
 location: "L604"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1641
+  - community/Community_1743
 ---
 
 # Form payload agent-failed prefix should normalize to protected unavailable notic
 
 ## Connections
-- [[.test_collaborator_agent_failed_prefix_is_normalized_form()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_agent_failed_prefix_is_normalized_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1641
+#graphify/rationale #graphify/EXTRACTED #community/Community_1743

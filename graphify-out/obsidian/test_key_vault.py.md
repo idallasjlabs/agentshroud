@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Community 80"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Community_80
 ---
 
 # test_key_vault.py
@@ -17,13 +17,13 @@ tags:
 - [[KeyVault]] - `imports` [EXTRACTED]
 - [[KeyVaultConfig]] - `imports` [EXTRACTED]
 - [[TestKeyInjection]] - `contains` [EXTRACTED]
-- [[TestKeyLeakDetection]] - `contains` [EXTRACTED]
+- [[TestKeyLeakDetection_1]] - `contains` [EXTRACTED]
 - [[TestKeyRedaction]] - `contains` [EXTRACTED]
 - [[TestKeyRotation]] - `contains` [EXTRACTED]
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()]] - `contains` [EXTRACTED]
+- [[config()_3]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Community_80

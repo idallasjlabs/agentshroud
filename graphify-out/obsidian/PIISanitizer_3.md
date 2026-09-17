@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # PIISanitizer
 
 ## Connections
 - [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance

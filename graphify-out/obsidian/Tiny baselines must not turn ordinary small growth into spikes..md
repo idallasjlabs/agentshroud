@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "rationale"
-community: "Community 181"
+community: "Community 189"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_189
 ---
 
 # Tiny baselines must not turn ordinary small growth into spikes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_181
+#graphify/rationale #graphify/EXTRACTED #community/Community_189

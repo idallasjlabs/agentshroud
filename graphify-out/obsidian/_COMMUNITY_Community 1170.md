@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.60
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1170
 
-**Cohesion:** 0.60 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Secret Backend Cascade (macOS Keychain → 1Password CLI → homedir file)]] - concept - docker/tests/test-op-auth.sh
-- [[fail()_1]] - code - docker/tests/test-op-auth.sh
-- [[pass()_1]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh script]] - code - docker/tests/test-op-auth.sh
+- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1170
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 494]]
+
+## Top bridge nodes
+- [[Performance Considerations]] - degree 6, connects to 1 community

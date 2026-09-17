@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
+source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "Community 839"
-location: "L7"
+community: "Community 636"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_839
+  - community/Community_636
 ---
 
 # https
 
 ## Connections
-- [[calendar.js_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_839
+#graphify/code #graphify/EXTRACTED #community/Community_636

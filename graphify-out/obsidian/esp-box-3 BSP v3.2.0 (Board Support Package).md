@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/idf_component.yml"
 type: "concept"
-community: "Community 902"
+community: "Community 945"
 location: "espressif/esp-box-3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_902
+  - community/Community_945
 ---
 
 # esp-box-3 BSP v3.2.0 (Board Support Package)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Terminal Main IDF Component Manifest]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_902
+#graphify/concept #graphify/EXTRACTED #community/Community_945

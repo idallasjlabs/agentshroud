@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.70
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1264
 
-**Cohesion:** 0.70 - tightly connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
-- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
-- [[api_call()]] - code - scripts/agentshroud-manage.sh
-- [[usage()_3]] - code - scripts/agentshroud-manage.sh
-- [[validate_input()]] - code - scripts/agentshroud-manage.sh
+- [[Daedalus — Concept Illustrator_2]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Purpose_81]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Related Skills_72]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Usage_76]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[openclawskillsi-daedalusREADME]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)
 

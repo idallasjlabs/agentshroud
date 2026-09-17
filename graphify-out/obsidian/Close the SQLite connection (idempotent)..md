@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "Community 148"
+community: "Community 147"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_147
 ---
 
 # Close the SQLite connection (idempotent).
 
 ## Connections
-- [[.close()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_148
+#graphify/rationale #graphify/EXTRACTED #community/Community_147

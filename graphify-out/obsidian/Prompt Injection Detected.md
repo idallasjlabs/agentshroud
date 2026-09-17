@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 970"
+community: "Community 1019"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_970
+  - community/Community_1019
 ---
 
 # Prompt Injection Detected
@@ -16,4 +16,4 @@ tags:
 - [[Multi-Layer Detection Strategy]] - `contains` [EXTRACTED]
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_970
+#graphify/document #graphify/EXTRACTED #community/Community_1019

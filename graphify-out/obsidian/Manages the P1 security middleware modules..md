@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Middleware & Lifespan"
+community: "Ingest Middleware & File Sandbox"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Manages the P1 security middleware modules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

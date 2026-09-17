@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+type: "code"
+community: "Cross-Bot Trust & A2A Governance"
+location: "L563"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Cross-Bot_Trust__A2A_Governance
+---
+
+# .test_incident_on_one_bot_propagates_to_all_mesh_peers()
+
+## Connections
+- [[dot-_shared_tm()]] - `calls` [EXTRACTED]
+- [[End-to-end a real incident on bot A decays trust on bots B and C         in a 3]] - `rationale_for` [EXTRACTED]
+- [[TestBuildFullMesh]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

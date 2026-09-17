@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[graphify explain command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[Cron AI Security Standards Watch]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

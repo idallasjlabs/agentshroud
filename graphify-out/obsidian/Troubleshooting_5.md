@@ -1,17 +1,22 @@
 ---
-source_file: "docker/README.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 186"
-location: "L370"
+community: "Community 151"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_186
+  - community/Community_151
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_186
+#graphify/document #graphify/EXTRACTED #community/Community_151

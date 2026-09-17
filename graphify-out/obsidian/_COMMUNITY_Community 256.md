@@ -1,45 +1,46 @@
 ---
 type: community
 cohesion: 0.07
-members: 30
+members: 31
 ---
 
 # Community 256
 
 **Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[Action requires approval but none granted_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Browser timeout_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[CAPTCHA detected_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Rate limit exceeded_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[URL not in allowlist_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[1. Always Specify Risk Level_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Best Practices_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Fill Form_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Limitations_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Navigate to URL_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[SKILL_73]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Architecture_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Troubleshooting_7]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_47]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[ADR-008 Progressive Trust Level System]] - concept - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Approval DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
+- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[ApprovalRequest (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
+- [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
+- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
+- [[Purpose_118]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[RateLimitBucket (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Related]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustLevel (data entity)]] - concept - docs/data/data-dictionary.md
+- [[TrustManager_4]] - concept - docker/config/hermes/SOUL.md
+- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[agent_trust SQLite table]] - code - docs/data/schema-documentation.md
+- [[agentshroud.yaml (main config schema)]] - code - docs/data/schema-documentation.md
+- [[approval_requests SQLite table]] - code - docs/data/schema-documentation.md
+- [[trust_manager.py]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,3 +48,14 @@ members: 30
 TABLE source_file, type FROM #community/Community_256
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 217]]
+- 1 edge to [[_COMMUNITY_Community 357]]
+- 1 edge to [[_COMMUNITY_Community 499]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+
+## Top bridge nodes
+- [[TrustManager_4]] - degree 18, connects to 4 communities
+- [[Approval DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

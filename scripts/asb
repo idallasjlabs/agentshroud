@@ -115,7 +115,9 @@ setup_ephemeral_secrets() {
               slack_bot_token slack_signing_secret slack_app_token \
               hermes_telegram_bot_token hermes_telegram_bot_token_marvin hermes_api_key \
               slack_bot_token_hermes slack_app_token_hermes \
-              brave_api_key github_pat; do
+              brave_api_key github_pat \
+              hermes_healthchecks_url feedbin_email feedbin_password \
+              podcastindex_api_key podcastindex_api_secret; do
     touch "$tmpdir/${name}.txt"
   done
 
@@ -141,6 +143,29 @@ setup_ephemeral_secrets() {
       > "$tmpdir/gateway_password.txt" 2>/dev/null; then
     openssl rand -hex 32 > "$tmpdir/gateway_password.txt"
   fi
+
+  # Same class of bug as gateway_password above, for the 1Password bootstrap
+  # credentials themselves (email/master password/secret key for the "Agent
+  # Shroud Bot Credentials" account). Unlike gateway_password these can never
+  # be regenerated — there is no fallback derivation, and Step 3's extract
+  # below cannot fetch them FROM 1Password since you need to already be signed
+  # in to do that. Left to Step 1's empty placeholder, this silently zeroes
+  # out any working bootstrap credential on every single `asb` run, breaking
+  # op-wrapper.sh (and anything else that signs in via op-auth-common.sh)
+  # inside the container even when docker/secrets/ has verified-working values
+  # (observed 2026-09-16: OpenClaw's Brave key load failed with "1Password
+  # credentials not found in /run/secrets" right after these files had just
+  # been fixed and verified working via the container's static compose
+  # secrets mount — asb's ephemeral override silently reintroduced the empty
+  # files on the next `asb up`).
+  for _bot_cred in 1password_bot_email 1password_bot_master_password 1password_bot_secret_key; do
+    local _canonical="$REPO_DIR/docker/secrets/${_bot_cred}.txt"
+    if [ -s "$_canonical" ]; then
+      cp "$_canonical" "$tmpdir/${_bot_cred}.txt"
+    else
+      echo "  NOTE: canonical $_canonical is empty/missing — op-wrapper.sh sign-in will fail in containers using this ephemeral secrets dir"
+    fi
+  done
 
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.

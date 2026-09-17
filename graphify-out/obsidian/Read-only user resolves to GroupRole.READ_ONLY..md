@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 496"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_496
 ---
 
 # Read-only user resolves to GroupRole.READ_ONLY.
 
 ## Connections
-- [[.test_readonly_user_resolves_to_readonly_role()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_readonly_user_resolves_to_readonly_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_496

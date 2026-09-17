@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 153"
+community: "Community 146"
 location: "L462"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Community_146
 ---
 
 # Limitations & Residual Risks
@@ -16,4 +16,4 @@ tags:
 - [[Known Issues (Accepted Risks)]] - `contains` [EXTRACTED]
 - [[What AgentShroud DOES NOT Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/Community_146

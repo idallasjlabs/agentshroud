@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Community 91"
+community: "Community 180"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/Community_180
 ---
 
 # No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/Community_180

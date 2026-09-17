@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Community 861"
+community: "Community 899"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/Community_899
 ---
 
 # preflight-check.sh script
 
 ## Connections
-- [[check()_1]] - `calls` [EXTRACTED]
+- [[check()_9]] - `calls` [EXTRACTED]
 - [[preflight-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_861
+#graphify/code #graphify/EXTRACTED #community/Community_899

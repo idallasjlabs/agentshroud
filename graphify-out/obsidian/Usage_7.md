@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Community 1144"
+community: "Community 1188"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1144
+  - community/Community_1188
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1144
+#graphify/document #graphify/EXTRACTED #community/Community_1188

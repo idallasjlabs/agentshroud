@@ -1,17 +1,17 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "document"
-community: "Community 374"
+community: "Community 347"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_374
+  - graphify/EXTRACTED
+  - community/Community_347
 ---
 
 # Security Scan Workflow
 
 ## Connections
 - [[CI Security Scanning Toolchain]] - `references` [EXTRACTED]
-- [[daily_cve_report.py]] - `semantically_similar_to` [INFERRED]
+- [[gateway.security.daily_cve_report]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_374
+#graphify/document #graphify/EXTRACTED #community/Community_347

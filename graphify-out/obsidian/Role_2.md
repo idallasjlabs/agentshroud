@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "RBAC & SOC Realtime"
-location: "L141"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+type: "document"
+community: "Community 1000"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Community_1000
 ---
 
 # Role
 
 ## Connections
-- [[.__init__()_129]] - `references` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/document #graphify/EXTRACTED #community/Community_1000

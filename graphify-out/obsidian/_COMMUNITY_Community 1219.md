@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[8D Root Cause Analysis_2]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Purpose_84]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[README_89]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Related Skills_90]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Usage_93]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Purpose_37]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Related Skills_28]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Usage_32]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[hermesskillsi-athenaREADME]] - document - docker/config/hermes/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

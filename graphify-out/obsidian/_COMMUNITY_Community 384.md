@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Configuration  Environment Variables]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Function Details_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_124]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_5]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,10 +40,3 @@ members: 23
 TABLE source_file, type FROM #community/Community_384
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 580]]
-- 1 edge to [[_COMMUNITY_Community 731]]
-
-## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities

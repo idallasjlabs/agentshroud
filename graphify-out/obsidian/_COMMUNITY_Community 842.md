@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 842
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[author_2]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[description_4]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[keywords_2]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[license_3]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[main_2]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[name_4]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[package.json_3]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[scripts_3]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[test_3]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[version_6]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[AgentShroud -- USPTO Provisional Patent Application]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Combined Filing Costs (Patent + Trademark)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Employment IP Considerations]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Entity Status Small Entity (Confirmed)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Filing Reference_1]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 5 IMPORTANT NOTES]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 6 ESTIMATED COSTS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[What is NOT in this application (by design)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[What you MUST file within 12 months]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,13 @@ members: 10
 TABLE source_file, type FROM #community/Community_842
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1009]]
+- 1 edge to [[_COMMUNITY_Community 1010]]
+- 1 edge to [[_COMMUNITY_Community 1363]]
+- 1 edge to [[_COMMUNITY_Community 843]]
+
+## Top bridge nodes
+- [[AgentShroud -- USPTO Provisional Patent Application]] - degree 8, connects to 3 communities
+- [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - degree 2, connects to 1 community

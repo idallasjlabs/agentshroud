@@ -1,0 +1,21 @@
+---
+source_file: "gateway/skills/manifest.py"
+type: "code"
+community: "Community 475"
+location: "L90"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_475
+---
+
+# .from_source()
+
+## Connections
+- [[dot-from_file()]] - `calls` [EXTRACTED]
+- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - `rationale_for` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
+- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[cls]] - `calls` [INFERRED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_475

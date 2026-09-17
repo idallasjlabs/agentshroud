@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.14
 members: 14
 ---
 
 # Community 685
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[._patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - rationale - gateway/security/daily_cve_report.py
-- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
-- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
+- [[Config Keys Read_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Environment Variables Used_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Function Details_34]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Imports From  Exports To_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Key Classes  Functions_36]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Known Issues  Notes_6]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Purpose_164]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Related_40]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Responsibilities_38]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[health_check(target)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[resolve_target(request)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py_1]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_685
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 100]]
-- 3 edges to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 380]]
-
-## Top bridge nodes
-- [[check_upstream_cves()]] - degree 13, connects to 3 communities
-- [[TestCheckUpstreamCves]] - degree 9, connects to 1 community
-- [[_make_github_advisory()]] - degree 6, connects to 1 community

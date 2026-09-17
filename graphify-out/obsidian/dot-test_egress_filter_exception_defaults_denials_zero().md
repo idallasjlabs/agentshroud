@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 415"
+location: "L782"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_415
+---
+
+# .test_egress_filter_exception_defaults_denials_zero()
+
+## Connections
+- [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - `rationale_for` [EXTRACTED]
+- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[_make_app_state()]] - `calls` [EXTRACTED]
+- [[_make_bot_config()]] - `calls` [EXTRACTED]
+- [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_415

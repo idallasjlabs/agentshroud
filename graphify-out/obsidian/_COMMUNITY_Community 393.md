@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Community 393
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
-- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status_8]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Next Steps_6]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - concept - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H1 Telegram Proxy middleware_manager Never Initialized]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H3 Gateway Password Still in auth.token]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[HIGH — Should Fix]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L1 State Dir is a Symlink]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L2 Browser Control Enabled]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L3 Memory Index Not Built]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[LOW — Informational_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M1 No Rate Limiting on Security Endpoints]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M2 subprocess Calls Use Lists (Good) but No Resource Limits]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Summary_14]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +42,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 377]]
+- 1 edge to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 349]]
+- 1 edge to [[_COMMUNITY_Community 371]]
 
 ## Top bridge nodes
-- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community
+- [[blue-team-assessment-v0.8.0]] - degree 4, connects to 2 communities
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - degree 3, connects to 1 community

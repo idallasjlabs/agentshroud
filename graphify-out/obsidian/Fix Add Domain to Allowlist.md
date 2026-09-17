@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Community 874"
+community: "Community 919"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/Community_919
 ---
 
 # Fix: Add Domain to Allowlist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/Community_919

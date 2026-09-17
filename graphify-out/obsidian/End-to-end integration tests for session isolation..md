@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Management"
+community: "Ingest Middleware & File Sandbox"
 location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # End-to-end integration tests for session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionIsolationEndToEnd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

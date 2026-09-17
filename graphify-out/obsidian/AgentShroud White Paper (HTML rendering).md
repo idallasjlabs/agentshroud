@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.html"
 type: "paper"
-community: "Community 185"
+community: "Community 123"
 tags:
   - graphify/paper
   - graphify/INFERRED
-  - community/Community_185
+  - community/Community_123
 ---
 
 # AgentShroud White Paper (HTML rendering)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/paper #graphify/INFERRED #community/Community_185
+#graphify/paper #graphify/INFERRED #community/Community_123

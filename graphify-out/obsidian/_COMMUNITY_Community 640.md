@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.21
+cohesion: 0.14
 members: 15
 ---
 
 # Community 640
 
-**Cohesion:** 0.21 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_run_binary_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_empty_stdout_is_error_not_clean()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_image_scan_type()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_nonzero_exit_code_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_parse_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_success()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_timeout()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_whitespace_only_stdout_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
-- [[TestTrivyRun]] - code - gateway/tests/test_security_toolchain.py
-- [[returncode 0 = clean, 1 = vulns found (both expected); anything         else mea]] - rationale - gateway/tests/test_security_toolchain.py
-- [[run_trivy_scan()_1]] - code - gateway/security/trivy_report.py
-- [[scan_type='image' is passed correctly to the trivy binary.]] - rationale - gateway/tests/test_security_toolchain.py
+- [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_role()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
+- [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
+- [[Authorize a tool call, refusing owner elevation over an unverified origin. WHY…]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke the named tool. Returns (allowed bool,…]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke tool_name when acting inside a group…]] - rationale - gateway/security/tool_acl.py
+- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…]] - rationale - gateway/security/tool_acl.py
+- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
+- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,16 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 215]]
-- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 2 edges to [[_COMMUNITY_Community 112]]
-- 1 edge to [[_COMMUNITY_Community 100]]
-- 1 edge to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 410]]
+- 8 edges to [[_COMMUNITY_Community 134]]
 
 ## Top bridge nodes
-- [[run_trivy_scan()_1]] - degree 17, connects to 6 communities
-- [[TestTrivyRun]] - degree 10, connects to 2 communities
-- [[.test_run_empty_stdout_is_error_not_clean()]] - degree 4, connects to 1 community
-- [[.test_run_nonzero_exit_code_is_error()]] - degree 4, connects to 1 community
-- [[.test_trivy_binary_not_found()]] - degree 2, connects to 1 community
+- [[dot-can_use_tool()_1]] - degree 5, connects to 1 community
+- [[dot-_can_use_tool_impl()]] - degree 5, connects to 1 community
+- [[dot-get_allowed_tools()]] - degree 4, connects to 1 community
+- [[dot-_get_group_tool_allowlist()]] - degree 4, connects to 1 community
+- [[dot-_get_role()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 311"
+community: "Community 321"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/Community_321
 ---
 
 # Design Concerns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/Community_321

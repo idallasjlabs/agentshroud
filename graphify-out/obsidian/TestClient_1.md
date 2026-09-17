@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/tests/test_skills_manifest_sync.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 73"
-location: "L328"
+community: "Community 294"
+location: "L360"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_73
+  - graphify/INFERRED
+  - community/Community_294
 ---
 
 # TestClient
 
 ## Connections
-- [[.client()_7]] - `references` [EXTRACTED]
-- [[.test_reload_requires_auth()]] - `calls` [EXTRACTED]
-- [[.test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
-- [[.test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
-- [[ManifestEntry]] - `uses` [INFERRED]
-- [[PlannedAction]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
+- [[dot-client()_2]] - `references` [EXTRACTED]
+- [[dot-test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/INFERRED #community/Community_294

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1309"
+community: "Community 1369"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1309
+  - community/Community_1369
 ---
 
 # i-vulcan README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1309
+#graphify/document #graphify/EXTRACTED #community/Community_1369

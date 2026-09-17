@@ -1,0 +1,18 @@
+---
+source_file: "gateway/proxy/mcp_permissions.py"
+type: "code"
+community: "Community 129"
+location: "L370"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_129
+---
+
+# .set_trust_level()
+
+## Connections
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[Set trust level for an agent.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_129

@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Community 1179"
+community: "Community 1225"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/Community_1225
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[README_49]] - `contains` [EXTRACTED]
-- [[Related Skills_47]] - `contains` [EXTRACTED]
-- [[Usage_50]] - `contains` [EXTRACTED]
+- [[Purpose_43]] - `contains` [EXTRACTED]
+- [[Related Skills_34]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1179
+#graphify/document #graphify/EXTRACTED #community/Community_1225

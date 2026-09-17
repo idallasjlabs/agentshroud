@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Multi-Agent Router & Chat UI"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # test_resolve_target_default()
 
 ## Connections
-- [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[Test routing to default target]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

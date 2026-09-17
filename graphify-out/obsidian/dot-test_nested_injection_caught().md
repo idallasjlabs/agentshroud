@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_mcp_proxy.py"
+type: "code"
+community: "Community 966"
+location: "L158"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_966
+---
+
+# .test_nested_injection_caught()
+
+## Connections
+- [[TestInjectionDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_966

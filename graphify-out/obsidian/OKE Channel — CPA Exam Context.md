@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 1007"
+community: "Community 1050"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/Community_1050
 ---
 
 # OKE Channel — CPA Exam Context
@@ -20,4 +20,4 @@ tags:
 - [[Gleim Unit Mapping]] - `contains` [EXTRACTED]
 - [[Mandatory Acronym Expansion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/document #graphify/EXTRACTED #community/Community_1050

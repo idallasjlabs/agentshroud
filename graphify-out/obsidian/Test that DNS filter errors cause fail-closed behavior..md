@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 121"
+community: "Community 96"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_96
 ---
 
 # Test that DNS filter errors cause fail-closed behavior.
 
 ## Connections
-- [[.test_graceful_degradation_dns_error()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_graceful_degradation_dns_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_121
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

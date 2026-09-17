@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Community 722"
+community: "Community 758"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_722
+  - community/Community_758
 ---
 
 # AgentShroud Security Proxy
 
 ## Connections
-- [[Overview_11]] - `contains` [EXTRACTED]
-- [[Use Cases_2]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
+- [[Use Cases_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_722
+#graphify/document #graphify/EXTRACTED #community/Community_758

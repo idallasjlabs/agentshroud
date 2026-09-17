@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_protection.py"
+type: "code"
+community: "Community 1675"
+location: "L42"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1675
+---
+
+# .test_initialization()
+
+## Connections
+- [[Test proper initialization of PromptProtection.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1675

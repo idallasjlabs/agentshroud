@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 40"
+location: "L7024"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_40
+---
+
+# .test_looks_like_obfuscated_command_probe_detects_decode_and_execute()
+
+## Connections
+- [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_40

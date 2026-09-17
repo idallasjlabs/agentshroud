@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 800
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
-- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
-- [[3. Key Rotation]] - document - docs/ssh-security-review.md
-- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
-- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
-- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
-- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
-- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
-- [[Risk Summary]] - document - docs/ssh-security-review.md
-- [[SSH Security Review]] - document - docs/ssh-security-review.md
-- [[ssh-security-review]] - document - docs/ssh-security-review.md
+- [[AGENTS]] - document - docker/config/openclaw/AGENTS.md
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
+- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
+- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
+- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
+- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
+- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
+- [[bash]] - document - docker/config/openclaw/AGENTS.md
+- [[file_read]] - document - docker/config/openclaw/AGENTS.md
+- [[file_write]] - document - docker/config/openclaw/AGENTS.md
+- [[send_message]] - document - docker/config/openclaw/AGENTS.md
+- [[web_search]] - document - docker/config/openclaw/AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 896]]
+- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 637]]
 
 ## Top bridge nodes
-- [[SSH Security Review]] - degree 5, connects to 1 community
+- [[AGENTS]] - degree 3, connects to 2 communities

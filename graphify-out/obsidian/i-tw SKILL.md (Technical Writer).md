@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 1030"
+community: "Community 1089"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1030
+  - community/Community_1089
 ---
 
 # i-tw SKILL.md (Technical Writer)
@@ -15,4 +15,4 @@ tags:
 - [[i-tw README]] - `references` [EXTRACTED]
 - [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1030
+#graphify/document #graphify/EXTRACTED #community/Community_1089

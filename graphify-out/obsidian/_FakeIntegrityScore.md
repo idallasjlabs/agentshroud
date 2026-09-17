@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # _FakeIntegrityScore
 
 ## Connections
 - [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
@@ -23,11 +23,11 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline

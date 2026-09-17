@@ -1,0 +1,18 @@
+---
+source_file: "src/interfaces/text_control_center.py"
+type: "code"
+community: "Community 277"
+location: "L124"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_277
+---
+
+# .draw_box()
+
+## Connections
+- [[ControlCenter]] - `method` [EXTRACTED]
+- [[Draw a box with title]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_277

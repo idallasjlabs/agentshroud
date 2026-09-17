@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_agentshroud_manager.py"
+type: "code"
+community: "Community 55"
+location: "L151"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_55
+---
+
+# .test_dry_run()
+
+## Connections
+- [[TestDowngrade]] - `method` [EXTRACTED]
+- [[downgrade()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_55

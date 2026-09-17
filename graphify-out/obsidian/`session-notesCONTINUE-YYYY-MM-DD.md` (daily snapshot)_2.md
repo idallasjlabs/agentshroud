@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 471"
+community: "Community 483"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Community_483
 ---
 
 # `session-notes/CONTINUE-YYYY-MM-DD.md` (daily snapshot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Community_483

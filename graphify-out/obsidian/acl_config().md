@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Group RBAC & Tool ACL"
+community: "Community 746"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_746
 ---
 
 # acl_config()
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/code #graphify/EXTRACTED #community/Community_746

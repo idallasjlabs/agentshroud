@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 1503"
+community: "Approval Routing & Event Bus"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1503
+  - community/Approval_Routing__Event_Bus
 ---
 
 # ForwardResponse
@@ -15,6 +15,6 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Response after content is ingested, sanitized, and logged]] - `rationale_for` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1503
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

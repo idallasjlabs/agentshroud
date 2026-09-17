@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Community 619"
+community: "Community 623"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_619
+  - community/Community_623
 ---
 
 # Status: ready to use, with 4 known gaps (see below)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_619
+#graphify/document #graphify/EXTRACTED #community/Community_623

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 982"
+community: "Voice Gateway STT & Browser Security"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_982
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # OutputScore
 
 ## Connections
-- [[.acceptable()]] - `method` [EXTRACTED]
-- [[.score_output()]] - `references` [EXTRACTED]
+- [[dot-acceptable()]] - `method` [EXTRACTED]
+- [[dot-score_output()]] - `references` [EXTRACTED]
 - [[Result of scoring a subagent's output.]] - `rationale_for` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_982
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

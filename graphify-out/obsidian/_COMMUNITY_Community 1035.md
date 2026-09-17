@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1035
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[1Password credential store]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[calendar.js — iCloud Calendar Management]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
-- [[i-icloud README — iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[i-icloud SKILL — iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptscontacts.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptsmail.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptsnotes.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[dot-test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,11 @@ members: 7
 TABLE source_file, type FROM #community/Community_1035
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 964]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+
+## Top bridge nodes
+- [[TestLeakDetection]] - degree 8, connects to 1 community
+- [[dot-test_leak_detection_disabled()]] - degree 2, connects to 1 community

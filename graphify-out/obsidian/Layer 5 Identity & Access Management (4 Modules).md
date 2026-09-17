@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 275"
+community: "Community 283"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_275
+  - community/Community_283
 ---
 
 # Layer 5: Identity & Access Management (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[20. Role-Based Access Control (RBAC)]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_275
+#graphify/document #graphify/EXTRACTED #community/Community_283

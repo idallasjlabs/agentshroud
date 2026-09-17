@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 944"
+community: "Community 985"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/Community_985
 ---
 
 # Technical Writing (i-tw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_944
+#graphify/document #graphify/EXTRACTED #community/Community_985

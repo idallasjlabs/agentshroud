@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 1124"
+community: "Slack Proxy & Main Endpoint Tests"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Slack_Proxy__Main_Endpoint_Tests
 ---
 
 # Test making approval decisions.
 
 ## Connections
-- [[.test_approval_decision()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_approval_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1124
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests

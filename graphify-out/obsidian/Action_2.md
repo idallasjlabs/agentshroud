@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 14"
+community: "Community 153"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_153
 ---
 
 # Action
 
 ## Connections
-- [[.require()]] - `references` [EXTRACTED]
+- [[dot-require()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_153

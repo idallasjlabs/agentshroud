@@ -1,22 +1,22 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Community 962"
+community: "Community 1006"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_962
+  - community/Community_1006
 ---
 
 # security-scan.sh script
 
 ## Connections
-- [[log()_4]] - `calls` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `contains` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[run_clamav()]] - `calls` [EXTRACTED]
 - [[run_oscap()]] - `calls` [EXTRACTED]
 - [[run_sbom()]] - `calls` [EXTRACTED]
 - [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_962
+#graphify/code #graphify/EXTRACTED #community/Community_1006

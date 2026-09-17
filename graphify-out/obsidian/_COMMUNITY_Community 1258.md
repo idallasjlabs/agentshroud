@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[COMMUNICATION-TEMPLATES]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 1 — Clean & Professional Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 2 — Compact Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 3 — Full Collaborator Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 4 — Documentation Footer Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Atlas — Curriculum Architect_2]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Purpose_75]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Related Skills_66]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Usage_70]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[openclawskillsi-atlasREADME]] - document - docker/config/openclaw/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1258
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1104]]
-- 1 edge to [[_COMMUNITY_Community 1105]]
-
-## Top bridge nodes
-- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 2 communities

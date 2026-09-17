@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.43
+members: 7
 ---
 
 # Community 1094
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.43 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[Agent Trust Levels (UNTRUSTED, BASIC, STANDARD, TRUSTED, ADMIN)]] - concept - docs/flows/state-diagrams.md
-- [[AgentShroud State Diagrams (doc)]] - document - docs/flows/state-diagrams.md
-- [[Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)]] - concept - docs/flows/state-diagrams.md
-- [[Diagram 16 State — Approval Queue]] - image - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - concept - docs/flows/state-diagrams.md
-- [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - concept - docs/flows/state-diagrams.md
+- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[i-mcpm README (MCP Tools Usage)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[i-mcpm-auth-reset README]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[i-mcpm-aws-profile README]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

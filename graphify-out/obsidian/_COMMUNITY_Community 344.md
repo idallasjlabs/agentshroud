@@ -1,40 +1,41 @@
 ---
 type: community
 cohesion: 0.08
-members: 25
+members: 26
 ---
 
 # Community 344
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
-- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
-- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
-- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
-- [[3) SDLC — HOW TO WORK IN THIS REPO]] - document - CLAUDE.md
-- [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - document - CLAUDE.md
-- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - CLAUDE.md
-- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
-- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
-- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
-- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
-- [[Avoid]] - document - CLAUDE.md
-- [[Development commands]] - document - CLAUDE.md
-- [[Hard constraints]] - document - CLAUDE.md
-- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
-- [[Key source directories]] - document - CLAUDE.md
-- [[MCP tools available]] - document - CLAUDE.md
-- [[Preferred workflow]] - document - CLAUDE.md
-- [[Red → Green → Refactor]] - document - CLAUDE.md
-- [[Session start checklist]] - document - CLAUDE.md
-- [[Test quality rules]] - document - CLAUDE.md
-- [[When to act]] - document - CLAUDE.md
-- [[When to clarify]] - document - CLAUDE.md
-- [[When to defer]] - document - CLAUDE.md
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_11]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Test Results]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 280]]
-- 1 edge to [[_COMMUNITY_Community 441]]
-- 1 edge to [[_COMMUNITY_Community 1079]]
+- 1 edge to [[_COMMUNITY_Community 393]]
 
 ## Top bridge nodes
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 14, connects to 3 communities
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - degree 5, connects to 1 community

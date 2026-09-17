@@ -1,24 +1,23 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Community 159"
+community: "Approval Routing & Event Bus"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Approval_Routing__Event_Bus
 ---
 
 # test_email_owner_bypasses_pii.py
 
 ## Connections
-- [[FastAPI app instance]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[TestOwnerEmailBypassesPii]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_3]] - `imports` [EXTRACTED]
+- [[auth_dep()_2]] - `imports` [EXTRACTED]
 - [[bypass_auth()_1]] - `contains` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[client()_4]] - `contains` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

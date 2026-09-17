@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "Community 673"
+community: "Community 696"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/Community_696
 ---
 
 # 🔴 CRITICAL: System Blockers
@@ -18,4 +18,4 @@ tags:
 - [[4. SSH Key Regeneration on Restart]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/Community_696

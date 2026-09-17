@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Community 85"
-location: "L123"
+community: "Community 718"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_718
 ---
 
 # Bot Container (`agentshroud-bot`)
 
 ## Connections
-- [[Container Architecture_2]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Loaded at Startup via 1Password op-proxy]] - `contains` [EXTRACTED]
+- [[Required Secrets (as Docker secret files)]] - `contains` [EXTRACTED]
+- [[Set in `docker-compose.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_718

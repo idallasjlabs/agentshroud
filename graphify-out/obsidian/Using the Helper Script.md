@@ -12,6 +12,6 @@ tags:
 # Using the Helper Script
 
 ## Connections
-- [[Quick Reference_4]] - `contains` [EXTRACTED]
+- [[Quick Reference_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

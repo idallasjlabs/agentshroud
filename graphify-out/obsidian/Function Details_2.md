@@ -1,21 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Community 615"
-location: "L39"
+community: "Community 439"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_615
+  - community/Community_439
 ---
 
 # Function Details
 
 ## Connections
-- [[enforce_retention()]] - `contains` [EXTRACTED]
-- [[initialize()]] - `contains` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
+- [[check_command(cmd)]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[scrub_output(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_615
+#graphify/document #graphify/EXTRACTED #community/Community_439

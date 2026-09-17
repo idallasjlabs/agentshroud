@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
+source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 958"
+community: "Community 997"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/Community_997
 ---
 
 # Step 6b - Wiki (only if --wiki flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_958
+#graphify/document #graphify/EXTRACTED #community/Community_997

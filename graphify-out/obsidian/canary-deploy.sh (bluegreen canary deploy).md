@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "Community 683"
+community: "Community 706"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_683
+  - community/Community_706
 ---
 
 # canary-deploy.sh (blue/green canary deploy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_canary_deploy.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_683
+#graphify/code #graphify/EXTRACTED #community/Community_706

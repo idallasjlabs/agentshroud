@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_group_config.py"
+type: "code"
+community: "Teams/Group Collaborator Responses"
+location: "L231"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Teams/Group_Collaborator_Responses
+---
+
+# .test_persist_user_collab_mode()
+
+## Connections
+- [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
+- [[persist_user_collab_mode writes under __user_overrides__ key.]] - `rationale_for` [EXTRACTED]
+- [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

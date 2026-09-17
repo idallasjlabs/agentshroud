@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_65]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[README_70]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Related Skills_71]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[System Audit Vault_1]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Usage_72]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[dot-agentsskillsi-mcpm-auth-resetREADME]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_23]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_14]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Usage_18]] - document - .agents/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)
 

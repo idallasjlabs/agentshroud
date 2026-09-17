@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 103"
+community: "Community 143"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_143
 ---
 
 # test_mcp_proxy_coverage.py
@@ -17,17 +17,17 @@ tags:
 - [[FakeConn]] - `contains` [EXTRACTED]
 - [[FakeProcess]] - `contains` [EXTRACTED]
 - [[HttpSseConnection]] - `imports` [EXTRACTED]
-- [[MCPAuditTrail]] - `imports` [EXTRACTED]
-- [[MCPInspector]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
+- [[MCPInspector_1]] - `imports` [EXTRACTED]
 - [[MCPPermissionManager]] - `imports` [EXTRACTED]
-- [[MCPProxy]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig]] - `imports` [EXTRACTED]
-- [[MCPServerConfig]] - `imports` [EXTRACTED]
-- [[MCPToolCall]] - `imports` [EXTRACTED]
+- [[MCPProxy_1]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
+- [[MCPServerConfig_2]] - `imports` [EXTRACTED]
+- [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
-- [[PermissionLevel]] - `imports` [EXTRACTED]
+- [[PermissionLevel_1]] - `imports` [EXTRACTED]
 - [[StdioConnection]] - `imports` [EXTRACTED]
 - [[TestApprovalQueue]] - `contains` [EXTRACTED]
 - [[TestConnectionPool]] - `contains` [EXTRACTED]
@@ -43,8 +43,8 @@ tags:
 - [[TestStdioConnection]] - `contains` [EXTRACTED]
 - [[make_call()]] - `contains` [EXTRACTED]
 - [[make_config()]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `contains` [EXTRACTED]
+- [[make_proxy()]] - `contains` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/Community_143

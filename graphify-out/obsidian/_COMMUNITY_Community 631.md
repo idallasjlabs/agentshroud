@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.13
 members: 15
 ---
 
 # Community 631
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._cve()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_states_auto_registered_under_review()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_titled_for_agent_label()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_cve_id()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_severity_icon()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_total_count()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_handles_missing_optional_fields()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_more_indicator_when_under_item_limit()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_plural_header_for_multiple_cves()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_singular_header_for_one_cve()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_summary_under_telegram_limit_for_100_cves()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatUpstreamCveAlert]] - code - gateway/tests/test_daily_cve_report.py
-- [[The alert says CVEs are auto-registered under_review (honest, not 'add manually']] - rationale - gateway/tests/test_daily_cve_report.py
-- [[format_upstream_cve_alert()]] - code - gateway/security/daily_cve_report.py
+- [[AgentShroud Blue Team Security Auditor_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_10]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_8]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_3]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Methodology_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Output Format_24]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[openclawskillsi-sec-defenseSKILL]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_631
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 100]]
-- 2 edges to [[_COMMUNITY_Community 122]]
-
-## Top bridge nodes
-- [[format_upstream_cve_alert()]] - degree 15, connects to 2 communities
-- [[TestFormatUpstreamCveAlert]] - degree 12, connects to 1 community

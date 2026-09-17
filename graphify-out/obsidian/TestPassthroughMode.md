@@ -1,32 +1,26 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 44"
-location: "L645"
+community: "Egress Filter & HTTP Proxy"
+location: "L407"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_44
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # TestPassthroughMode
 
 ## Connections
-- [[.test_passthrough_allows_everything()]] - `method` [EXTRACTED]
-- [[.test_passthrough_still_audits()]] - `method` [EXTRACTED]
-- [[FindingType]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_passthrough_adds_header()]] - `method` [EXTRACTED]
+- [[dot-test_passthrough_allows_everything()]] - `method` [EXTRACTED]
+- [[dot-test_passthrough_skips_content_scan()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 256"
+community: "Community 269"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_269
 ---
 
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_47]] - `contains` [EXTRACTED]
+- [[Usage_113]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_269

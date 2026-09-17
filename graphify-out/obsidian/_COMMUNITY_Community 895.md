@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.40
+members: 10
 ---
 
 # Community 895
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 10 nodes
 
 ## Members
-- [[Input Requirements_29]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Output Format_38]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Persona_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Quality Checklist_26]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Role_111]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[SKILL_189]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[System Prompt_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[User Prompt Template_11]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Vulcan — Subject Matter Auditor_5]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
+- [[Path_58]] - code - scripts/export-email-reports.py
+- [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
+- [[_list_report_files()]] - code - scripts/export-email-reports.py
+- [[_parse_since()_1]] - code - scripts/export-email-reports.py
+- [[_report_date()]] - code - scripts/export-email-reports.py
+- [[datetime_6]] - code - scripts/export-email-reports.py
+- [[export-email-reports.py]] - code - scripts/export-email-reports.py
+- [[export_bot()]] - code - scripts/export-email-reports.py
+- [[main()_33]] - code - scripts/export-email-reports.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,10 @@ members: 9
 TABLE source_file, type FROM #community/Community_895
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 756]]
+- 1 edge to [[_COMMUNITY_Community 957]]
+
+## Top bridge nodes
+- [[_parse_since()_1]] - degree 6, connects to 2 communities

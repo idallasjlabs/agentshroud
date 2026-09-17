@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 574"
-location: "L228"
+community: "Community 542"
+location: "L357"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/Community_542
 ---
 
 # Verification
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_574
+#graphify/document #graphify/EXTRACTED #community/Community_542

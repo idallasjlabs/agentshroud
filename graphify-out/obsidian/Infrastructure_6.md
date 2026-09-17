@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 423"
-location: "L395"
+community: "Community 590"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/Community_590
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[✅ What's WORKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_423
+#graphify/document #graphify/EXTRACTED #community/Community_590

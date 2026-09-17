@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_context_integrity.py"
+type: "code"
+community: "Prompt Guard & Context Integrity"
+location: "L39"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Prompt_Guard__Context_Integrity
+---
+
+# .test_pristine_context_scores_high()
+
+## Connections
+- [[A well-formed context with valid HMAC should score close to 1.0.]] - `rationale_for` [EXTRACTED]
+- [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[_make_segment()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

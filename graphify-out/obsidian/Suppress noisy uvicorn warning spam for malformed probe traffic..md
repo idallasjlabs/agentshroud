@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Approval Routing & Event Bus"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Suppress noisy uvicorn warning spam for malformed probe traffic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DropInvalidHTTPRequestFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

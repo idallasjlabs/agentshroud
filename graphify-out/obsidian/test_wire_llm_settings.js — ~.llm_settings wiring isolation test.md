@@ -1,14 +1,14 @@
 ---
 source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Community 1882"
+community: "Community 2040"
 location: "L1-336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1882
+  - community/Community_2040
 ---
 
 # test_wire_llm_settings.js — ~/.llm_settings wiring isolation test
 
-#graphify/code #graphify/EXTRACTED #community/Community_1882
+#graphify/code #graphify/EXTRACTED #community/Community_2040

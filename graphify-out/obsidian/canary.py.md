@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # canary.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `contains` [EXTRACTED]
 - [[CanaryResult]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
 - [[encrypted_store.py]] - `references` [EXTRACTED]
-- [[run_canary()]] - `contains` [EXTRACTED]
-- [[trust_manager.py]] - `references` [AMBIGUOUS]
+- [[gateway.security.trust_manager]] - `references` [AMBIGUOUS]
+- [[run_canary()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

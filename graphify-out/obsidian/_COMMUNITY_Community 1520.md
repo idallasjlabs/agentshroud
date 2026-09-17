@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
-- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
+- [[dot-gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
+- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
 
 ## Live Query (requires Dataview plugin)
 

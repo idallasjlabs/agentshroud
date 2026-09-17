@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Community 419"
-location: "L55"
+community: "Community 487"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/Community_487
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_419
+#graphify/code #graphify/EXTRACTED #community/Community_487

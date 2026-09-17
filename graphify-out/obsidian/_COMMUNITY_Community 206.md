@@ -1,50 +1,51 @@
 ---
 type: community
-cohesion: 0.09
-members: 35
+cohesion: 0.06
+members: 36
 ---
 
 # Community 206
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 35 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[.__len__()]] - code - gateway/proxy/mcp_audit.py
-- [[._compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
-- [[.entries()]] - code - gateway/proxy/mcp_audit.py
-- [[.generate_report()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_blocked_entries()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_agent()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_server()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_tool()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_failed_entries()]] - code - gateway/proxy/mcp_audit.py
-- [[.last_hash()]] - code - gateway/proxy/mcp_audit.py
-- [[.log_tool_call()]] - code - gateway/proxy/mcp_audit.py
-- [[.log_tool_result()]] - code - gateway/proxy/mcp_audit.py
-- [[.start_call()]] - code - gateway/proxy/mcp_audit.py
-- [[.test_default_window_is_10k()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_report_total_reflects_all_appended()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tamper_in_retained_window_detected()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_verify_chain_valid_after_wrap()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_window_capped_at_max_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.total_appended()]] - code - gateway/proxy/mcp_audit.py
-- [[.verify_chain()]] - code - gateway/proxy/mcp_audit.py
-- [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_15]] - code - gateway/proxy/mcp_audit.py
-- [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
-- [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
-- [[In-memory MCP audit window must be bounded (mirrors AuditChain).]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Log an incoming MCP tool result.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Log an outgoing MCP tool call.]] - rationale - gateway/proxy/mcp_audit.py
-- [[MCPAuditEntry]] - code - gateway/proxy/mcp_audit.py
-- [[MCPAuditTrail]] - code - gateway/proxy/mcp_audit.py
-- [[MCPProxy.process_tool_call]] - code - gateway/proxy/mcp_proxy.py
-- [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
-- [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
-- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
-- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
+- [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
+- [[2. Principle of Least Privilege]] - document - docs/setup/DEVICE_PAIRING.md
+- [[3. Monitor Remote IPs]] - document - docs/setup/DEVICE_PAIRING.md
+- [[4. Document Your Devices]] - document - docs/setup/DEVICE_PAIRING.md
+- [[5. Rotate on Compromise]] - document - docs/setup/DEVICE_PAIRING.md
+- [[AgentShroud Device Pairing Management]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Approve All Pending Requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Approving Device Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Common Scenarios]] - document - docs/setup/DEVICE_PAIRING.md
+- [[File Locations]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Finding Pending Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[How Device Pairing Works]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Integration with AgentShroud Workflow]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Listing Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Method 1 Via CLI (Recommended)]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Method 2 View Raw Pending File]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Method 3 Check Container Logs]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Overview_3]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Quick Approval (Single Device)]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Rejecting Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Revoking Device Access]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 1 New BrowserComputer]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 2 Safari Private Window]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 3 Multiple Computers]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 4 LostStolen Device]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 5 Clear All Devices (Nuclear Option)]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Security Notes]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Troubleshooting_11]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Verify Approval]] - document - docs/setup/DEVICE_PAIRING.md
+- [[View All Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
+- [[View Detailed Device Information]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Why Device Pairing Matters]] - document - docs/setup/DEVICE_PAIRING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,24 +55,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_Community 44]]
-- 14 edges to [[_COMMUNITY_Community 103]]
-- 10 edges to [[_COMMUNITY_Community 39]]
-- 7 edges to [[_COMMUNITY_Community 154]]
-- 6 edges to [[_COMMUNITY_Community 261]]
-- 5 edges to [[_COMMUNITY_Community 324]]
-- 5 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 616]]
-- 1 edge to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_Community 473]]
-- 1 edge to [[_COMMUNITY_Community 41]]
-- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 992]]
+- 1 edge to [[_COMMUNITY_Community 578]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail]] - degree 91, connects to 13 communities
-- [[TestAuditTrailBounded]] - degree 20, connects to 4 communities
-- [[MCPProxy.process_tool_call]] - degree 4, connects to 3 communities
-- [[MCPAuditEntry]] - degree 11, connects to 1 community
-- [[audit()]] - degree 2, connects to 1 community
+- [[AgentShroud Device Pairing Management]] - degree 16, connects to 2 communities

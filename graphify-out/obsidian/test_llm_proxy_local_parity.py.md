@@ -1,28 +1,26 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 54"
-location: "L1"
+community: "Community 49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_49
 ---
 
 # test_llm_proxy_local_parity.py
 
 ## Connections
-- [[LLMProxy]] - `tests` [EXTRACTED]
-- [[ResourceGuard]] - `tests` [EXTRACTED]
-- [[ResourceLimits]] - `imports` [EXTRACTED]
-- [[VRAMHeadroomError]] - `imports` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
+- [[LLMProxy]] - `imports` [EXTRACTED]
+- [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - `rationale_for` [EXTRACTED]
+- [[_FakeSanitizer]] - `contains` [EXTRACTED]
 - [[_anthropic_ok()]] - `contains` [EXTRACTED]
 - [[_anthropic_tool_use_ok()]] - `contains` [EXTRACTED]
 - [[_make_proxy()]] - `contains` [EXTRACTED]
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[gateway.proxy.llm_proxy]] - `imports_from` [EXTRACTED]
+- [[resource_guard.py]] - `references` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `contains` [EXTRACTED]
@@ -66,7 +64,6 @@ tags:
 - [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `contains` [EXTRACTED]
-- [[test_resource_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `contains` [EXTRACTED]
 - [[test_resource_guard_vram_headroom_check_allows_small_context()]] - `contains` [EXTRACTED]
 - [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - `contains` [EXTRACTED]
@@ -74,4 +71,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_49

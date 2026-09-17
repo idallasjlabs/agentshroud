@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "Community 77"
+community: "SOC Service Manager (Container Engine)"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/SOC_Service_Manager_Container_Engine
 ---
 
 # Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_http_connection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_77
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

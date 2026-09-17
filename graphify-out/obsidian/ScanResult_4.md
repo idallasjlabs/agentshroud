@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 102"
-location: "L50"
+community: "Voice Gateway STT & Browser Security"
+location: "L45"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_102
+  - graphify/EXTRACTED
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # ScanResult
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_finding_categories()]] - `references` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `references` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `references` [EXTRACTED]
+- [[dot-_scan_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `references` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `references` [EXTRACTED]
+- [[dot-finding_summary()]] - `method` [EXTRACTED]
+- [[dot-flagged()]] - `method` [EXTRACTED]
+- [[dot-scan()_3]] - `references` [EXTRACTED]
+- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
+- [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

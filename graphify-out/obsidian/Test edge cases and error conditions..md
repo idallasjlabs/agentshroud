@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 19"
-location: "L431"
+community: "Community 1674"
+location: "L275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_1674
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[.test_edge_cases()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_19
+#graphify/rationale #graphify/EXTRACTED #community/Community_1674

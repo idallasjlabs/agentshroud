@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[build_url()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]

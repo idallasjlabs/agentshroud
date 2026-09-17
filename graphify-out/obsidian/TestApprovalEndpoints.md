@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 1124"
+community: "Community 100"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Community_100
 ---
 
 # TestApprovalEndpoints
 
 ## Connections
-- [[.test_approval_decision()]] - `method` [EXTRACTED]
-- [[.test_approval_queue_list()]] - `method` [EXTRACTED]
+- [[dot-test_approval_decision()]] - `method` [EXTRACTED]
+- [[dot-test_approval_queue_list()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Test approval queue endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1124
+#graphify/code #graphify/EXTRACTED #community/Community_100

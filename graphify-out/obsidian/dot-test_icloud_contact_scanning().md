@@ -1,0 +1,24 @@
+---
+source_file: "gateway/tests/test_tool_result_pii.py"
+type: "code"
+community: "PII Sanitizer & Redaction"
+location: "L444"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/PII_Sanitizer__Redaction
+---
+
+# .test_icloud_contact_scanning()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[RedactionDetail]] - `calls` [EXTRACTED]
+- [[RedactionResult_2]] - `calls` [EXTRACTED]
+- [[Test scanning iCloud contact data for PII]] - `rationale_for` [EXTRACTED]
+- [[TestRealWorldScenarios]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

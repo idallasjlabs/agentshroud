@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.38
 members: 7
 ---
 
 # Community 1062
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.38 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS tagging standard (CostCenter, FOD, DataRetentionTier…)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FY26 40% cost reduction initiative]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +26,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 507]]
-- 2 edges to [[_COMMUNITY_Community 639]]
-- 1 edge to [[_COMMUNITY_Community 912]]
-- 1 edge to [[_COMMUNITY_Community 982]]
-- 1 edge to [[_COMMUNITY_Community 483]]
+- 2 edges to [[_COMMUNITY_Community 299]]
+- 1 edge to [[_COMMUNITY_Community 404]]
+- 1 edge to [[_COMMUNITY_Community 721]]
+- 1 edge to [[_COMMUNITY_Community 498]]
+- 1 edge to [[_COMMUNITY_Community 325]]
 
 ## Top bridge nodes
-- [[TestToolAuthorization]] - degree 14, connects to 5 communities
+- [[FODL — Fluence Operational Data Lakehouse]] - degree 8, connects to 3 communities
+- [[CDAS — Central Data Acquisition Systems]] - degree 4, connects to 1 community
+- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community
+- [[AWS tagging standard (CostCenter, FOD, DataRetentionTier…)]] - degree 2, connects to 1 community

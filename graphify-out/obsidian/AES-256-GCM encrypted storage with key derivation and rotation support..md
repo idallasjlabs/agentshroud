@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Encrypted Store & Drift Detector"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # AES-256-GCM encrypted storage with key derivation and rotation support.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EncryptedStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

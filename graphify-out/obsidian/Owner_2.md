@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/agents/hermes-soul.md"
+source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 957"
-location: "L14"
+community: "Community 1371"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_957
+  - community/Community_1371
 ---
 
 # Owner
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[Application Fields]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_957
+#graphify/document #graphify/EXTRACTED #community/Community_1371

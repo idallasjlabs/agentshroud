@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 383"
+community: "Community 385"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/Community_385
 ---
 
 # Streaming
@@ -15,6 +15,6 @@ tags:
 - [[Buffered streaming filter (`_filter_outbound_streaming`)]] - `contains` [EXTRACTED]
 - [[True-streaming path (`proxy_messages_streaming`)]] - `contains` [EXTRACTED]
 - [[`think` tag stripping]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_383
+#graphify/document #graphify/EXTRACTED #community/Community_385

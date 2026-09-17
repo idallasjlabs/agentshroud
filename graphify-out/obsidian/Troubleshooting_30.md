@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 690"
-location: "L53"
+community: "Community 416"
+location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_690
+  - community/Community_416
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Cannot save token]] - `contains` [EXTRACTED]
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
-- [[Still shows pairing required]] - `contains` [EXTRACTED]
-- [[Token field not visible]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_690
+#graphify/document #graphify/EXTRACTED #community/Community_416

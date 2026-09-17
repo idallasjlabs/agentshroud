@@ -1,31 +1,44 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 259"
-location: "L54"
+community: "Community 276"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_259
+  - community/Community_276
 ---
 
 # _write_tree()
 
 ## Connections
-- [[.test_cli_allows_clean_tree_zero()]] - `calls` [EXTRACTED]
-- [[.test_cli_blocks_dangerous_tree_nonzero()]] - `calls` [EXTRACTED]
-- [[.test_cli_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
-- [[.test_main_clean_tree_returns_ok()]] - `calls` [EXTRACTED]
-- [[.test_main_dangerous_tree_returns_blocked()]] - `calls` [EXTRACTED]
-- [[.test_main_flag_only_tree_returns_ok()]] - `calls` [EXTRACTED]
-- [[.test_main_unreadable_file_fails_closed()]] - `calls` [EXTRACTED]
-- [[.test_reload_allows_clean_skill()]] - `calls` [EXTRACTED]
-- [[.test_reload_blocks_dangerous_skill()]] - `calls` [EXTRACTED]
-- [[.test_reload_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
-- [[.test_sync_aborts_on_dangerous_tree()]] - `calls` [EXTRACTED]
-- [[.test_sync_allows_clean_tree()]] - `calls` [EXTRACTED]
-- [[.test_sync_dry_run_does_not_write_but_still_scans()]] - `calls` [EXTRACTED]
-- [[Path_38]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_build_excludes_manifest_json_itself()]] - `calls` [EXTRACTED]
+- [[dot-test_build_includes_all_files()]] - `calls` [EXTRACTED]
+- [[dot-test_build_is_sorted_deterministically()]] - `calls` [EXTRACTED]
+- [[dot-test_by_name_lookup()]] - `calls` [EXTRACTED]
+- [[dot-test_deploy_copies_files_to_dest()]] - `calls` [EXTRACTED]
+- [[dot-test_deploy_is_idempotent()]] - `calls` [EXTRACTED]
+- [[dot-test_deploy_overwrites_changed_content()]] - `calls` [EXTRACTED]
+- [[dot-test_deploy_to_multiple_destinations()]] - `calls` [EXTRACTED]
+- [[dot-test_deploy_writes_manifest_json()]] - `calls` [EXTRACTED]
+- [[dot-test_drift_detected_on_hash_mismatch()]] - `calls` [EXTRACTED]
+- [[dot-test_drift_detected_on_missing_file()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_does_not_mutate_existing_dest()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_writes_nothing_to_empty_dest()]] - `calls` [EXTRACTED]
+- [[dot-test_manifest_json_in_source_is_excluded()]] - `calls` [EXTRACTED]
+- [[dot-test_no_drift_returns_empty_list()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_classifies_create_when_dest_absent()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_classifies_skip_when_hash_matches()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_classifies_update_when_content_differs()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_is_deterministic()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_is_pure_writes_nothing()]] - `calls` [EXTRACTED]
+- [[dot-test_plan_maps_canonical_to_each_bot_destination()]] - `calls` [EXTRACTED]
+- [[dot-test_real_deploy_returns_actions_too()]] - `calls` [EXTRACTED]
+- [[dot-test_reload_returns_200_with_skills_list()]] - `calls` [EXTRACTED]
+- [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
+- [[dot-test_serialise_contains_version_and_timestamp()]] - `calls` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
+- [[Write {relative_path content} under root.]] - `rationale_for` [EXTRACTED]
+- [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_259
+#graphify/code #graphify/EXTRACTED #community/Community_276

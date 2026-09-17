@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 82"
+community: "Community 74"
 location: "L88"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_82
+  - graphify/EXTRACTED
+  - community/Community_74
 ---
 
 # TestRevoke
 
 ## Connections
-- [[.test_revoke_all_for_user()]] - `method` [EXTRACTED]
-- [[.test_revoke_removes_delegation()]] - `method` [EXTRACTED]
-- [[.test_revoke_returns_false_when_nothing_to_revoke()]] - `method` [EXTRACTED]
-- [[Delegation]] - `uses` [INFERRED]
+- [[dot-test_revoke_all_for_user()]] - `method` [EXTRACTED]
+- [[dot-test_revoke_removes_delegation()]] - `method` [EXTRACTED]
+- [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - `method` [EXTRACTED]
+- [[Delegation_1]] - `uses` [INFERRED]
 - [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager]] - `uses` [INFERRED]
+- [[DelegationManager_1]] - `uses` [INFERRED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/Community_74

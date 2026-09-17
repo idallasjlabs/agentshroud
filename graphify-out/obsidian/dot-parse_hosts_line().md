@@ -1,0 +1,20 @@
+---
+source_file: "gateway/proxy/dns_blocklist.py"
+type: "code"
+community: "Community 687"
+location: "L133"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_687
+---
+
+# .parse_hosts_line()
+
+## Connections
+- [[dot-load_from_text()]] - `calls` [EXTRACTED]
+- [[dot-update()]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_687

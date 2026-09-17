@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 1167"
-location: "L693"
+community: "Community 485"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1167
+  - community/Community_485
 ---
 
 # Container Architecture
 
 ## Connections
-- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
+- [[Development Environment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1167
+#graphify/document #graphify/EXTRACTED #community/Community_485

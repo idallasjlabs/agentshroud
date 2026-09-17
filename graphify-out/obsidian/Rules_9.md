@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "AGENTS.md"
 type: "document"
-community: "Community 1017"
-location: "L24"
+community: "Community 324"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1017
+  - community/Community_324
 ---
 
 # Rules
 
 ## Connections
-- [[Trademark Statements]] - `contains` [EXTRACTED]
+- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1017
+#graphify/document #graphify/EXTRACTED #community/Community_324

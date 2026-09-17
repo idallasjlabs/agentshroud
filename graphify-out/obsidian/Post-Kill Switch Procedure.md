@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Community 696"
+community: "Community 720"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_696
+  - community/Community_720
 ---
 
 # Post-Kill Switch Procedure
@@ -17,4 +17,4 @@ tags:
 - [[After Shutdown]] - `contains` [EXTRACTED]
 - [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/Community_720

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # test_collaborator_responses.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `references` [EXTRACTED]
+- [[TeamsConfig_2]] - `references` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `contains` [EXTRACTED]
 - [[TestConstantMessages]] - `contains` [EXTRACTED]
 - [[TestErrorFormatters]] - `contains` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[project()]] - `contains` [EXTRACTED]
 - [[teams()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Community 131"
+community: "Community 213"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_213
 ---
 
 # Test that detection patterns are created correctly.
 
 ## Connections
-- [[.test_detection_patterns_creation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_detection_patterns_creation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_131
+#graphify/rationale #graphify/EXTRACTED #community/Community_213

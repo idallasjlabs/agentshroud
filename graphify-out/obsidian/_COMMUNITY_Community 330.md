@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.11
 members: 26
 ---
 
 # Community 330
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_make_pipeline()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
-- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_clean()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_infected()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[dot-__aenter__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aexit__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aiter__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__anext__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__call__()_7]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_132]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_133]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-send()_2]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_is_tty_and_default_format_for_tty()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_missing_websockets_package()]] - code - gateway/tests/test_cli_coverage.py
+- [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
+- [[Async-iterable WebSocket double.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[TestTailWS]] - code - gateway/tests/test_cli_coverage.py
+- [[_FakeConnect]] - code - gateway/tests/test_cli_coverage.py
+- [[_FakeWS]] - code - gateway/tests/test_cli_coverage.py
+- [[_default_format()]] - code - gateway/cli/main.py
+- [[_install_fake_websockets()]] - code - gateway/tests/test_cli_coverage.py
+- [[_is_tty()]] - code - gateway/cli/main.py
+- [[_tail_ws()]] - code - gateway/cli/main.py
+- [[cli()]] - code - gateway/cli/main.py
+- [[main()_17]] - code - gateway/cli/main.py
+- [[test_cli_coverage.py]] - code - gateway/tests/test_cli_coverage.py
+- [[test_main_entrypoint_runs_cli_group()]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,18 +45,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 410]]
-- 1 edge to [[_COMMUNITY_Community 112]]
-- 1 edge to [[_COMMUNITY_Community 579]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 13 edges to [[_COMMUNITY_Community 84]]
+- 8 edges to [[_COMMUNITY_Community 154]]
+- 7 edges to [[_COMMUNITY_Community 236]]
+- 2 edges to [[_COMMUNITY_Community 992]]
+- 1 edge to [[_COMMUNITY_Community 1173]]
 
 ## Top bridge nodes
-- [[scan_bytes()]] - degree 11, connects to 4 communities
-- [[test_clamav_pipeline.py]] - degree 18, connects to 3 communities
-- [[_make_pipeline()]] - degree 8, connects to 1 community
-- [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
-- [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community
+- [[test_cli_coverage.py]] - degree 26, connects to 5 communities
+- [[cli()]] - degree 7, connects to 2 communities
+- [[_FakeWS]] - degree 8, connects to 1 community
+- [[_tail_ws()]] - degree 7, connects to 1 community
+- [[_FakeConnect]] - degree 7, connects to 1 community

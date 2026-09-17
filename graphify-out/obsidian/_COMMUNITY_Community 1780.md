@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_run_hermes_api_forwarder() — TCP tunnel gateway8642-hermes]] - code - gateway/ingest_api/lifespan.py
+- [[EnhancedApprovalQueue._notify_telegram]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

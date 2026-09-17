@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Community 380"
+community: "Community 458"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/Community_458
 ---
 
 # _resolve_registries()
@@ -15,7 +15,7 @@ tags:
 - [[Return a mapping of bot_id → CVE list, using the new API when available.      Fa]] - `rationale_for` [EXTRACTED]
 - [[generate()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
-- [[get_agent_cve_summary()]] - `calls` [EXTRACTED]
-- [[list_cve_agents()]] - `calls` [EXTRACTED]
+- [[get_agent_cve_summary]] - `calls` [EXTRACTED]
+- [[list_cve_agents]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/Community_458

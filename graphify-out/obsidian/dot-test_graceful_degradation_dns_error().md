@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_web_proxy_security.py"
+type: "code"
+community: "Community 96"
+location: "L235"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_96
+---
+
+# .test_graceful_degradation_dns_error()
+
+## Connections
+- [[MockURLResult]] - `calls` [EXTRACTED]
+- [[Test that DNS filter errors cause fail-closed behavior.]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_96

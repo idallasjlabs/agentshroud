@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L52"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # RouterConfig
 
 ## Connections
-- [[.__init__()_15]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[dot-__init__()_32]] - `references` [EXTRACTED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Multi-Agent_Router__Chat_UI

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_observatory_mode.py"
+type: "code"
+community: "Community 467"
+location: "L354"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_467
+---
+
+# .test_security_pipeline_set_global_mode()
+
+## Connections
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[Test SecurityPipeline.set_global_mode method.]] - `rationale_for` [EXTRACTED]
+- [[TestObservatoryMode]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_467

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 71"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_71
 ---
 
 # test_shortcut_source_accepted()
 
 ## Connections
-- [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_71

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Community 33"
+community: "Community 35"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_35
 ---
 
 # Decides allow / deny / require-approval for MCP tool calls.      Usage::
 
 ## Connections
-- [[MCPPolicyEngine]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_33
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

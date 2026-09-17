@@ -1,44 +1,25 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 44"
-location: "L66"
+community: "Voice Gateway STT & Browser Security"
+location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_44
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[.highest_threat()]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestAllowDenyList]] - `uses` [INFERRED]
-- [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuditTrailBounded]] - `uses` [INFERRED]
-- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
-- [[TestConfigParsing]] - `uses` [INFERRED]
-- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
-- [[TestHashChainIntegration]] - `uses` [INFERRED]
-- [[TestInjectionDetection]] - `uses` [INFERRED]
-- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
-- [[TestProcessingTime]] - `uses` [INFERRED]
-- [[TestProxyInterception]] - `uses` [INFERRED]
-- [[TestProxyPermissions]] - `uses` [INFERRED]
-- [[TestProxyRateLimiting]] - `uses` [INFERRED]
-- [[TestProxyResultProcessing]] - `uses` [INFERRED]
-- [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestSensitiveOps]] - `uses` [INFERRED]
-- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[dot-check_url_reputation()]] - `references` [EXTRACTED]
+- [[IntEnum]] - `inherits` [EXTRACTED]
+- [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
+- [[TestCredentialProtection]] - `uses` [INFERRED]
+- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
+- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
+- [[TestURLReputation]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
+- [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/INFERRED #community/Voice_Gateway_STT__Browser_Security

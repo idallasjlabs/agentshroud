@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/USPTO-APPLICATION.md"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Community 969"
-location: "L102"
+community: "Community 265"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_969
+  - community/Community_265
 ---
 
 # Notes
 
 ## Connections
-- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_969
+#graphify/document #graphify/EXTRACTED #community/Community_265

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "Community 393"
+community: "Community 401"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/Community_401
 ---
 
 # BlueBubbles (native macOS iMessage relay)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[IMESSAGE_STATUS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_393
+#graphify/concept #graphify/EXTRACTED #community/Community_401

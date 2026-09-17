@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Purpose_56]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[README_61]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Related Skills_62]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Usage_63]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[dot-agentsskillsi-bsREADME]] - document - .agents/skills/i-bs/README.md
+- [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_15]] - document - .agents/skills/i-bs/README.md
+- [[Related Skills_6]] - document - .agents/skills/i-bs/README.md
+- [[Usage_10]] - document - .agents/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)
 

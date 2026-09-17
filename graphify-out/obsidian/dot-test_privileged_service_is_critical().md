@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_network_validator_gate.py"
+type: "code"
+community: "Community 487"
+location: "L84"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_487
+---
+
+# .test_privileged_service_is_critical()
+
+## Connections
+- [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - `rationale_for` [EXTRACTED]
+- [[TestGateScope]] - `method` [EXTRACTED]
+- [[tmp_compose()]] - `calls` [EXTRACTED]
+- [[validate_network_security()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_487

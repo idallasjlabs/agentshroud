@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
+- [[API Documentation (planned, under development)]] - document - docs/api/README.md
 
 ## Live Query (requires Dataview plugin)
 

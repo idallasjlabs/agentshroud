@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 59"
+community: "Community 55"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_59
+  - graphify/EXTRACTED
+  - community/Community_55
 ---
 
 # agentshroud_manager (version manager)
@@ -14,4 +14,4 @@ tags:
 - [[VersionRequest]] - `shares_data_with` [INFERRED]
 - [[get_version_history()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/Community_55

@@ -1,17 +1,17 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Community 340"
+community: "Community 346"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/Community_346
 ---
 
 # When Validation Fails
 
 ## Connections
-- [[Error Handling_2]] - `contains` [EXTRACTED]
+- [[Error Handling]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/Community_346

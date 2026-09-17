@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 66"
+location: "L350"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_66
+---
+
+# .test_bot_id_augments_result_with_image_scan()
+
+## Connections
+- [[TestScannersBotId]] - `method` [EXTRACTED]
+- [[_make_app_state()]] - `calls` [EXTRACTED]
+- [[_make_bot_config()]] - `calls` [EXTRACTED]
+- [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[get_scanner_results()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_66

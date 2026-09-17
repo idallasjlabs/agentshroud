@@ -1,11 +1,11 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "concept"
-community: "Community 791"
+community: "Community 834"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_791
+  - community/Community_834
 ---
 
 # gVisor Networking Mode (Docker Desktop, problematic)
@@ -14,4 +14,4 @@ tags:
 - [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
 - [[VPNKit Userspace Networking Mode (fix)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_791
+#graphify/concept #graphify/EXTRACTED #community/Community_834

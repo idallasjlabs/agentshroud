@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 1305"
-location: "L304"
+community: "Community 163"
+location: "L316"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_163
 ---
 
 # Via Telegram
 
 ## Connections
-- [[💬 Example Conversations]] - `contains` [EXTRACTED]
+- [[Integration with Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1305
+#graphify/document #graphify/EXTRACTED #community/Community_163

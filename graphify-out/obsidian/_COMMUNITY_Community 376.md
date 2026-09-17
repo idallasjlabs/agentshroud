@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.09
 members: 23
 ---
 
 # Community 376
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[Agent Decision Logic Flowchart]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[Agent routing (bindings config; e.g. Telegram ID 8096968754 → main agent)]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Approval Queue (human-in-the-loop)_1]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Approval Queue State Diagram (pending → approvedrejectedexpired)]] - image - docs/diagrams/images/diagram-16-state-approval-queue.png
-- [[Approval queue data (in-memory, backed by SQLite)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Current Status_3]] - document - docs/flows/README.md
-- [[Data Lineage Diagram (5-Layer Pipeline)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[EphemeralTransient data (never persisted raw)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[Flows Documentation]] - document - docs/flows/README.md
-- [[Layer 1 — Source (TelegramiMessageCron)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 4 — Processing (Bot LLM API call, MCP-inspected tool call)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 5 — Consumption (auto-delete at expires_at, audit query, user response)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.png
-- [[MCP inspection result (in-memory only, logged to gateway stdout)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[PII redaction result (hash only in ledger, never persisted raw)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Peer binding Telegram 8096968754 → agentmain]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[Planned Documents_2]] - document - docs/flows/README.md
-- [[README_121]] - document - docs/flows/README.md
-- [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Telegram Message Sequence Diagram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
+- [[Accessibility_1]] - document - branding/colors/palette.md
+- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
+- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
+- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
+- [[Applications]] - document - branding/colors/palette.md
+- [[Borders]] - document - branding/colors/palette.md
+- [[Color Combinations]] - document - branding/colors/palette.md
+- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
+- [[Dark Theme]] - document - branding/colors/palette.md
+- [[Deep Navy]] - document - branding/colors/palette.md
+- [[Ice Blue]] - document - branding/colors/palette.md
+- [[Light Mode]] - document - branding/colors/palette.md
+- [[Light Theme]] - document - branding/colors/palette.md
+- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Neutral Colors]] - document - branding/colors/palette.md
+- [[Primary Colors]] - document - branding/colors/palette.md
+- [[Secondary Colors]] - document - branding/colors/palette.md
+- [[Semantic Colors]] - document - branding/colors/palette.md
+- [[Steel Blue]] - document - branding/colors/palette.md
+- [[Text]] - document - branding/colors/palette.md
+- [[Usage Guidelines_2]] - document - branding/colors/palette.md
+- [[Variations]] - document - branding/colors/palette.md
+- [[palette]] - document - branding/colors/palette.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,17 +40,3 @@ members: 23
 TABLE source_file, type FROM #community/Community_376
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 604]]
-- 3 edges to [[_COMMUNITY_Community 492]]
-- 2 edges to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 1099]]
-- 1 edge to [[_COMMUNITY_Community 554]]
-
-## Top bridge nodes
-- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 3 communities
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 2 communities
-- [[Telegram Message Sequence Diagram]] - degree 7, connects to 2 communities
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - degree 8, connects to 1 community
-- [[EphemeralTransient data (never persisted raw)]] - degree 5, connects to 1 community

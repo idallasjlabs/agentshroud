@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 559"
+community: "Community 579"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_559
+  - community/Community_579
 ---
 
 # FileSandbox Configuration (hardcoded in __init__)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_559
+#graphify/document #graphify/EXTRACTED #community/Community_579

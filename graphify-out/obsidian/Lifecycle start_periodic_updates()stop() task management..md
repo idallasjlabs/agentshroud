@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Community 142"
+community: "Community 138"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_138
 ---
 
 # Lifecycle: start_periodic_updates()/stop() task management.
 
 ## Connections
-- [[TestLifecycle]] - `rationale_for` [EXTRACTED]
+- [[TestLifecycle_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_142
+#graphify/rationale #graphify/EXTRACTED #community/Community_138

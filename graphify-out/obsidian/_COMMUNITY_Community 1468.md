@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1468
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_119]] - document - docker/config/hermes/skills/i-sre/SKILL.md
-- [[Skill sre_1]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
+- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
+- [[goplacesSKILL]] - document - skills/openclaw/goplaces/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Community 423"
-location: "L406"
+community: "Community 130"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/Community_130
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_423
+#graphify/document #graphify/EXTRACTED #community/Community_130

@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 826
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[author]] - code - .agents/skills/i-browser/package.json
-- [[description]] - code - .agents/skills/i-browser/package.json
-- [[keywords]] - code - .agents/skills/i-browser/package.json
-- [[license]] - code - .agents/skills/i-browser/package.json
-- [[main]] - code - .agents/skills/i-browser/package.json
-- [[name]] - code - .agents/skills/i-browser/package.json
-- [[package.json]] - code - .agents/skills/i-browser/package.json
-- [[scripts]] - code - .agents/skills/i-browser/package.json
-- [[test]] - code - .agents/skills/i-browser/package.json
-- [[version]] - code - .agents/skills/i-browser/package.json
+- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Context_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Decision_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Mitigation_3]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Status_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -188,6 +188,87 @@ async def test_proxy_messages_strips_ollama_prefix_for_openai_compat(monkeypatch
 
 
 @pytest.mark.asyncio
+async def test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend(monkeypatch):
+    """Regression 2026-09-16: "openai-local/" is AgentShroud's own local-model
+    provider convention (docker/config/openclaw/apply-patches.js's
+    LOCAL_PROVIDER_KEY, docker-compose.yml's AGENTSHROUD_LOCAL_MODEL_REF
+    default), but the prefix-strip loop here only knew "ollama/" and
+    "lmstudio/". Every "openai-local/<model>" request fell through every
+    LOCAL_MODEL_ROUTES prefix (none of which match a string starting with
+    "openai-local/") and defaulted to OLLAMA_API_BASE, 503'ing with "Ollama
+    backend is not running" even though the real backend was up — this broke
+    OpenClaw's own startup readiness check (_model_runtime_ready never passed,
+    "OpenClaw online" notification never sent) on the default local-model
+    config."""
+    sanitizer = _FakeSanitizer()
+    proxy = LLMProxy(sanitizer=sanitizer)
+
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+
+    captured = {}
+
+    async def _fake_forward(url, body, headers):
+        captured["url"] = url
+        captured["body"] = json.loads(body.decode("utf-8"))
+        captured["headers"] = headers
+        return 200, {"content-type": "application/json"}, b'{"choices":[]}'
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+
+    payload = {
+        "model": "openai-local/nemotron-3.5-lightning-rapid",
+        "messages": [{"role": "user", "content": "hello"}],
+    }
+
+    status, _, _ = await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps(payload).encode("utf-8"),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+
+    assert status == 200
+    # nemotron-3.5-lightning-rapid routes to Rapid-MLX, NOT Ollama.
+    assert captured["url"].startswith(llm_proxy_module.RAPID_MLX_API_BASE)
+    # Rapid-MLX only recognizes its weights by full local path.
+    assert captured["body"]["model"] == llm_proxy_module.RAPID_MLX_MODEL_ID
+
+
+@pytest.mark.asyncio
+async def test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend():
+    """Same regression as test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend,
+    but for proxy_messages_streaming — the path OpenClaw's real traffic
+    actually hits, since it always sends stream:true. Unlike proxy_messages,
+    this function had NO provider-prefix stripping at all before this fix, so
+    it always defaulted to OLLAMA_API_BASE for any provider-prefixed local
+    model. No backend is actually reachable in the test sandbox, so this
+    asserts on the resulting structured error hint (which backend it tried to
+    reach), the same way the existing connect-failure tests do."""
+    proxy = LLMProxy()
+
+    payload = json.dumps(
+        {
+            "model": "openai-local/nemotron-3.5-lightning-rapid",
+            "messages": [{"role": "user", "content": "hello"}],
+            "stream": True,
+        }
+    ).encode()
+
+    stream = await proxy.proxy_messages_streaming(
+        "/v1/chat/completions", payload, {"content-type": "application/json"}, user_id="u1"
+    )
+
+    chunks = [chunk async for chunk in stream]
+    combined = b"".join(chunks).decode("utf-8", errors="replace")
+
+    assert "backend_unavailable" in combined
+    # Must resolve to Rapid-MLX's hint, not Ollama's — the bug routed every
+    # provider-prefixed local model to Ollama regardless of actual backend.
+    assert "Rapid-MLX" in combined
+    assert "ollama serve" not in combined
+
+
+@pytest.mark.asyncio
 async def test_proxy_messages_plain_openai_model_substitutes_real_key(monkeypatch):
     """Regression 2026-08-07: a plain (non-Claude, non-Gemini, non-local)
     OpenAI-model request — e.g. voice_gateway's "use ChatGPT" direct path —

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 317"
+community: "Community 326"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Community_326
 ---
 
 # Step 7: Test the Bot
@@ -16,4 +16,4 @@ tags:
 - [[Test via Control UI]] - `contains` [EXTRACTED]
 - [[Test via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_317
+#graphify/document #graphify/EXTRACTED #community/Community_326

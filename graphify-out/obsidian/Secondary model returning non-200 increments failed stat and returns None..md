@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 54"
+community: "Community 49"
 location: "L875"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_49
 ---
 
 # Secondary model returning non-200 increments failed stat and returns None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

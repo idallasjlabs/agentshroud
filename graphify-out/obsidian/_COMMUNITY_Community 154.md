@@ -1,57 +1,57 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.10
 members: 42
 ---
 
 # Community 154
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 42 nodes
 
 ## Members
-- [[.__init__()_29]] - code - gateway/proxy/mcp_proxy.py
-- [[.__init__()_28]] - code - gateway/proxy/mcp_proxy.py
-- [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
-- [[.is_running()]] - code - gateway/proxy/mcp_proxy.py
-- [[.kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
-- [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
-- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
-- [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
-- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
-- [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_67]] - code - gateway/cli/client.py
+- [[dot-_request()]] - code - gateway/cli/client.py
+- [[dot-add_collaborator()]] - code - gateway/cli/client.py
+- [[dot-add_group_member()]] - code - gateway/cli/client.py
+- [[dot-approve_egress()]] - code - gateway/cli/client.py
+- [[dot-block_egress()]] - code - gateway/cli/client.py
+- [[dot-delete()]] - code - gateway/cli/client.py
+- [[dot-deny_egress()]] - code - gateway/cli/client.py
+- [[dot-freeze()]] - code - gateway/cli/client.py
+- [[dot-get()]] - code - gateway/cli/client.py
+- [[dot-get_correlation()]] - code - gateway/cli/client.py
+- [[dot-get_egress_pending()]] - code - gateway/cli/client.py
+- [[dot-get_events()_1]] - code - gateway/cli/client.py
+- [[dot-get_groups()]] - code - gateway/cli/client.py
+- [[dot-get_health()_1]] - code - gateway/cli/client.py
+- [[dot-get_logs()]] - code - gateway/cli/client.py
+- [[dot-get_risk()]] - code - gateway/cli/client.py
+- [[dot-get_services()]] - code - gateway/cli/client.py
+- [[dot-get_users()]] - code - gateway/cli/client.py
+- [[dot-post()]] - code - gateway/cli/client.py
+- [[dot-put()]] - code - gateway/cli/client.py
+- [[dot-restart_service()]] - code - gateway/cli/client.py
+- [[dot-run_scan()]] - code - gateway/cli/client.py
+- [[dot-set_group_mode()]] - code - gateway/cli/client.py
+- [[dot-stop_service()]] - code - gateway/cli/client.py
+- [[dot-test_empty_response_body_returns_empty_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_get_builds_url_headers_and_parses_json()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_get_with_params_encodes_query_string()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_http_error_with_json_body_returns_parsed_payload()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_http_error_with_non_json_body_returns_error_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
+- [[Any_24]] - code - gateway/cli/client.py
+- [[Exception_3]] - code - gateway/tests/test_cli_coverage.py
+- [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
+- [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[SCLClient]] - code - gateway/cli/client.py
+- [[TestSCLClientRequest]] - code - gateway/tests/test_cli_coverage.py
+- [[_patch_urlopen()]] - code - gateway/tests/test_cli_coverage.py
+- [[agentshroud-soc CLI Group]] - code - gateway/cli/main.py
+- [[test_convenience_methods_hit_expected_endpoints()]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,19 +61,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_Community 103]]
-- 31 edges to [[_COMMUNITY_Community 44]]
-- 25 edges to [[_COMMUNITY_Community 39]]
-- 8 edges to [[_COMMUNITY_Community 261]]
-- 7 edges to [[_COMMUNITY_Community 206]]
-- 7 edges to [[_COMMUNITY_Community 109]]
-- 3 edges to [[_COMMUNITY_Community 324]]
-- 3 edges to [[_COMMUNITY_Community 473]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 8 edges to [[_COMMUNITY_Community 330]]
+- 4 edges to [[_COMMUNITY_Community 84]]
+- 4 edges to [[_COMMUNITY_Community 992]]
+- 4 edges to [[_COMMUNITY_Community 236]]
+- 1 edge to [[_COMMUNITY_Community 1173]]
 
 ## Top bridge nodes
-- [[HttpSseConnection]] - degree 35, connects to 8 communities
-- [[StdioConnection]] - degree 38, connects to 7 communities
-- [[FakeProcess]] - degree 23, connects to 7 communities
-- [[TestExtractEgressTargets]] - degree 21, connects to 6 communities
-- [[TestHttpSseConnection]] - degree 18, connects to 6 communities
+- [[SCLClient]] - degree 55, connects to 5 communities
+- [[dot-get()]] - degree 13, connects to 1 community
+- [[_patch_urlopen()]] - degree 11, connects to 1 community
+- [[TestSCLClientRequest]] - degree 10, connects to 1 community
+- [[test_convenience_methods_hit_expected_endpoints()]] - degree 3, connects to 1 community

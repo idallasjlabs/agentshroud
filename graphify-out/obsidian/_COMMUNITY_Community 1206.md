@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_71]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[README_76]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Related Skills_77]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Usage_78]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[dot-agentsskillsi-prREADME]] - document - .agents/skills/i-pr/README.md
+- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_28]] - document - .agents/skills/i-pr/README.md
+- [[Related Skills_19]] - document - .agents/skills/i-pr/README.md
+- [[Usage_23]] - document - .agents/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 

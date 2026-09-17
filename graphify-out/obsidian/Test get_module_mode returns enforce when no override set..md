@@ -12,6 +12,6 @@ tags:
 # Test get_module_mode returns enforce when no override set.
 
 ## Connections
-- [[.test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

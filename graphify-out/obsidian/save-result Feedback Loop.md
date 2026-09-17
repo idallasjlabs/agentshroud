@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "concept"
-community: "Community 1518"
+community: "Community 1525"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1518
+  - community/Community_1525
 ---
 
 # save-result Feedback Loop
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Constrained query-vocabulary expansion]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1518
+#graphify/concept #graphify/EXTRACTED #community/Community_1525

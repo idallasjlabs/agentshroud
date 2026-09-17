@@ -1,19 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 719"
-location: "L32"
+community: "Community 546"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/Community_546
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[calculate_overall_score(summaries)]] - `contains` [EXTRACTED]
+- [[calculate_tool_score(summary)]] - `contains` [EXTRACTED]
+- [[format_report(report)]] - `contains` [EXTRACTED]
+- [[generate_report(summaries, db_path, save_history)]] - `contains` [EXTRACTED]
+- [[get_trend(days, db_path)]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[init_db(db_path)]] - `contains` [EXTRACTED]
+- [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
+- [[score_to_grade(score)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/Community_546

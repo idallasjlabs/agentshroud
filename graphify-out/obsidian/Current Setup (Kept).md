@@ -12,6 +12,6 @@ tags:
 # Current Setup (Kept)
 
 ## Connections
-- [[Configuration_4]] - `contains` [EXTRACTED]
+- [[Configuration_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # persist_user_collab_mode()
 
 ## Connections
-- [[.test_persist_user_collab_mode()]] - `calls` [EXTRACTED]
-- [[.test_persist_user_collab_mode_update()]] - `calls` [EXTRACTED]
+- [[dot-test_persist_user_collab_mode()]] - `calls` [EXTRACTED]
+- [[dot-test_persist_user_collab_mode_update()]] - `calls` [EXTRACTED]
 - [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

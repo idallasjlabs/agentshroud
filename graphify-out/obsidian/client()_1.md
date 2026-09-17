@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_api_contract_fuzz.py"
+source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "Community 986"
-location: "L144"
+community: "Community 1096"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/Community_1096
 ---
 
 # client()
 
 ## Connections
-- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
+- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_986
+#graphify/code #graphify/EXTRACTED #community/Community_1096

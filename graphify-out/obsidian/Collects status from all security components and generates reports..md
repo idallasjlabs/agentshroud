@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "Community 147"
+community: "Community 145"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/Community_145
 ---
 
 # Collects status from all security components and generates reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_147
+#graphify/rationale #graphify/EXTRACTED #community/Community_145

@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.19
+cohesion: 0.18
 members: 20
 ---
 
 # Community 459
 
-**Cohesion:** 0.19 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Changes]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Context_10]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Execution Order & Parallelism]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[FINAL Network Lockdown Activation]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Files to Modify]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[GitHub Workflow Rules]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P2 Credential Isolation (op-proxy)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P3 Channel Ownership — Telegram + Email]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P4 Wire MCP Proxy]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P5 Wire SecurityPipeline to forward]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Pre-Flight Checklist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Tests_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Verification_9]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Any_56]] - code - gateway/security/health_report.py
+- [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
+- [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
+- [[Connection]] - code - gateway/security/health_report.py
+- [[Convert score to letter grade.      Args         score Numeric score (0-100).]] - rationale - gateway/security/health_report.py
+- [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
+- [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
+- [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
+- [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
+- [[Path_42]] - code - gateway/security/health_report.py
+- [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
+- [[calculate_overall_score()]] - code - gateway/security/health_report.py
+- [[calculate_tool_score()]] - code - gateway/security/health_report.py
+- [[format_report()]] - code - gateway/security/health_report.py
+- [[generate_report()]] - code - gateway/security/health_report.py
+- [[get_trend()]] - code - gateway/security/health_report.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[init_db()]] - code - gateway/security/health_report.py
+- [[save_to_history()]] - code - gateway/security/health_report.py
+- [[score_to_grade()]] - code - gateway/security/health_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +37,17 @@ members: 20
 TABLE source_file, type FROM #community/Community_459
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 2 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 2 edges to [[_COMMUNITY_Community 292]]
+- 2 edges to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 145]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 731]]
+
+## Top bridge nodes
+- [[health_report.py]] - degree 21, connects to 9 communities

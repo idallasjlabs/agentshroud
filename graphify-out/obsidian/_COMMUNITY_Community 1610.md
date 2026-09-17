@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Cooldown cache should prune expired entries when size exceeds threshold.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
+- [[Init config should seed auth profiles for cloud providers and Ollama in local…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries()]] - degree 4, connects to 3 communities
+- [[dot-test_init_config_skips_anthropic_auth_seed_for_local_model()]] - degree 2, connects to 1 community

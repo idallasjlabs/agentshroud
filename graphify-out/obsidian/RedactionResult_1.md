@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
-location: "L171"
+community: "PII Sanitizer & Redaction"
+location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/PII_Sanitizer__Redaction
 ---
 
 # RedactionResult
 
 ## Connections
-- [[._sanitize_presidio()]] - `references` [EXTRACTED]
-- [[._sanitize_regex()]] - `references` [EXTRACTED]
-- [[.sanitize()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Redaction

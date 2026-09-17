@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "document"
-community: "Community 1396"
+community: "Community 1466"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1396
+  - community/Community_1466
 ---
 
 # gifgrep
 
 ## Connections
-- [[SKILL_208]] - `contains` [EXTRACTED]
+- [[gifgrepSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1396
+#graphify/document #graphify/EXTRACTED #community/Community_1466

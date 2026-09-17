@@ -1,28 +1,38 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 81"
-location: "L26"
+community: "Proxy Sidecar & Forwarder"
+location: "L409"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_81
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[.forward()_3]] - `method` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
-- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `calls` [EXTRACTED]
-- [[test_proxy_without_trust_manager_does_not_raise()]] - `calls` [EXTRACTED]
-- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
-- [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-forward()_2]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[EgressPolicy]] - `uses` [INFERRED]
+- [[Forwarder stub returning a canned bot response body.]] - `rationale_for` [EXTRACTED]
+- [[ForwarderConfig]] - `uses` [INFERRED]
+- [[HTTPForwarder]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[ScanRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SidecarScanner]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[WebhookReceiver]] - `uses` [INFERRED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_81
+#graphify/code #graphify/INFERRED #community/Proxy_Sidecar__Forwarder

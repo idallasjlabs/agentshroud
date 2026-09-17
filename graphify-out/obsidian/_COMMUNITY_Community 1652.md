@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_outbound_pipeline_called_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[When pipeline is set, process_outbound must be called on outbound messages.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
+- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,11 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1652
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-
-## Top bridge nodes
-- [[.test_outbound_pipeline_called_when_available()]] - degree 4, connects to 3 communities

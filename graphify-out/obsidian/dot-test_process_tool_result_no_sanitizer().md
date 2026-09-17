@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_tool_result_pii.py"
+type: "code"
+community: "PII Sanitizer & Redaction"
+location: "L385"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/PII_Sanitizer__Redaction
+---
+
+# .test_process_tool_result_no_sanitizer()
+
+## Connections
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[Test tool result processing when sanitizer not configured]] - `rationale_for` [EXTRACTED]
+- [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

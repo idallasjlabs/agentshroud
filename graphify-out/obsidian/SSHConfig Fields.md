@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Community 754"
+community: "Community 790"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Community_790
 ---
 
 # SSHConfig Fields
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_754
+#graphify/document #graphify/EXTRACTED #community/Community_790

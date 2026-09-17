@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1145
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Purpose_6]] - document - .agents/skills/i-cicd/README.md
-- [[README_6]] - document - .agents/skills/i-cicd/README.md
-- [[Related Skills_6]] - document - .agents/skills/i-cicd/README.md
-- [[Usage_8]] - document - .agents/skills/i-cicd/README.md
+- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1145
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 848]]
-
-## Top bridge nodes
-- [[CICD Pipeline Advisor (README)]] - degree 5, connects to 1 community

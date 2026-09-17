@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "docker/tests/test-get-credential.sh"
 type: "code"
-community: "Community 980"
-location: "L43"
+community: "Community 1359"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_980
+  - community/Community_1359
 ---
 
 # pass()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[test-get-credential.sh]] - `defines` [EXTRACTED]
+- [[test-get-credential.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_980
+#graphify/code #graphify/EXTRACTED #community/Community_1359

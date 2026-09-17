@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 296"
+community: "Community 305"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Community_305
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Community_305

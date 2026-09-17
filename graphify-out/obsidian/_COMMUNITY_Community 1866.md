@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Skill Package Symlink Security Tests]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[i-sdlc SKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

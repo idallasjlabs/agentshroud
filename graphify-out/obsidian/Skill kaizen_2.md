@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 1481"
+community: "Community 1562"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1481
+  - community/Community_1562
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[SKILL_154]] - `contains` [EXTRACTED]
+- [[openclawskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1481
+#graphify/document #graphify/EXTRACTED #community/Community_1562

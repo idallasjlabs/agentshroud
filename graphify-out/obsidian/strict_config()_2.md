@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 97"
-location: "L24"
+community: "Cross-Bot Trust & A2A Governance"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # strict_config()
 
 ## Connections
-- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

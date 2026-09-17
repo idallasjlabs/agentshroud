@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[app.json]] - code - docs/vault/.obsidian/app.json
+- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

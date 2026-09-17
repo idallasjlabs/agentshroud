@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/Approval_Queue_WebSocket
 ---
 
 # test_ssh_endpoints.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
-- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy]] - `imports` [EXTRACTED]
+- [[SSHProxy_1]] - `imports` [EXTRACTED]
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `contains` [EXTRACTED]
 - [[TestSSHExec]] - `contains` [EXTRACTED]
@@ -32,8 +32,8 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `contains` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `contains` [EXTRACTED]
 - [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
+- [[client()_19]] - `contains` [EXTRACTED]
 - [[ssh_config()]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

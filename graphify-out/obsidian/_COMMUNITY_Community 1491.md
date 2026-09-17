@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-tdd README]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[dot-agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
+- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

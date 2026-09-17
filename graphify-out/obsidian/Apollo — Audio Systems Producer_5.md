@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 882"
+community: "Community 927"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_882
+  - community/Community_927
 ---
 
 # Apollo — Audio Systems Producer
@@ -15,4 +15,4 @@ tags:
 - [[Mnemosyne — Retention Engineer_6]] - `shares_data_with` [EXTRACTED]
 - [[Vulcan — Subject Matter Auditor_6]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_882
+#graphify/concept #graphify/EXTRACTED #community/Community_927

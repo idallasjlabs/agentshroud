@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_init() — micspeaker codec init]] - code - firmware/voice-terminal/main/audio.c
+- [[Atlassian MCP Server (Jira + Confluence, concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

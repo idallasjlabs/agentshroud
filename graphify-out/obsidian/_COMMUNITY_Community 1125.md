@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[.test_404_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_method_not_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test 404 handling for non-existent endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test 405 handling for wrong HTTP methods.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test error handling across endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestErrorHandling]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-__init__()_40]] - code - gateway/approval_queue/queue.py
+- [[dot-_load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueConfig]] - code - gateway/approval_queue/queue.py
+- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[MFAGuard]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 2 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
 
 ## Top bridge nodes
-- [[TestErrorHandling]] - degree 5, connects to 2 communities
+- [[dot-__init__()_40]] - degree 5, connects to 1 community
+- [[dot-_load_pending_store()]] - degree 3, connects to 1 community

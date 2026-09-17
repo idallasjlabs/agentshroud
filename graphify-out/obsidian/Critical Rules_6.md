@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 494"
+community: "Community 502"
 location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_494
+  - community/Community_502
 ---
 
 # Critical Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_494
+#graphify/document #graphify/EXTRACTED #community/Community_502

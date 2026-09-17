@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Community 760"
+community: "Community 798"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_760
+  - community/Community_798
 ---
 
 # Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_760
+#graphify/document #graphify/EXTRACTED #community/Community_798

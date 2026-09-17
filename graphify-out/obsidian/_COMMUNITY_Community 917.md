@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[.test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
+- [[Architecture Overview_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Container Architecture_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Network Topology_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Related Notes_61]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Summary_23]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 44]]
-- 3 edges to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 206]]
-- 1 edge to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 261]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
-- [[TestInjectionDetection]] - degree 22, connects to 5 communities
+- [[Architecture Overview_3]] - degree 7, connects to 1 community

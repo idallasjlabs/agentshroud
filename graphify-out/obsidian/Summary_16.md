@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 500"
-location: "L383"
+community: "Community 540"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_500
+  - community/Community_540
 ---
 
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_500
+#graphify/document #graphify/EXTRACTED #community/Community_540

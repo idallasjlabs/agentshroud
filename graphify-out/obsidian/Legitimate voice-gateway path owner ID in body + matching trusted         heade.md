@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 104"
+community: "Multi-Agent Router & Chat UI"
 location: "L282"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Legitimate voice-gateway path: owner ID in body + matching trusted         heade
 
 ## Connections
-- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

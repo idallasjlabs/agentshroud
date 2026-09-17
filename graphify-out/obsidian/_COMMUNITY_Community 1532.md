@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
-- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
+- [[Skill ci_1]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[hermesskillsi-ciSKILL]] - document - docker/config/hermes/skills/i-ci/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

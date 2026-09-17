@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1725"
+location: "L3066"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1725
+---
+
+# .test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()
+
+## Connections
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[Trailing quote punctuation in leaked URL should still normalize and queue approv]] - `rationale_for` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1725

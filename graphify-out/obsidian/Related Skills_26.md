@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1159"
+community: "Community 1213"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1159
+  - community/Community_1213
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1159
+#graphify/document #graphify/EXTRACTED #community/Community_1213

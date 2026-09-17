@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Community 712"
+community: "Community 749"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Community_749
 ---
 
 # Stable-named cron scheduling for periodic audits
 
 ## Connections
-- [[SKILL_212]] - `implements` [EXTRACTED]
 - [[gh-issues Cursor File (cron sequential tracking)]] - `semantically_similar_to` [INFERRED]
+- [[healthcheckSKILL]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_712
+#graphify/concept #graphify/EXTRACTED #community/Community_749

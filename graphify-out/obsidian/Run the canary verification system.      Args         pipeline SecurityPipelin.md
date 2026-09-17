@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Run the canary verification system.      Args:         pipeline: SecurityPipelin
 
 ## Connections
-- [[run_canary()]] - `rationale_for` [EXTRACTED]
+- [[run_canary()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

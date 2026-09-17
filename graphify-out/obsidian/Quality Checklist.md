@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 939"
-location: "L137"
+community: "Community 1000"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_939
+  - community/Community_1000
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_939
+#graphify/document #graphify/EXTRACTED #community/Community_1000

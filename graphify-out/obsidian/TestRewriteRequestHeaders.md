@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Community 756"
+community: "Community 776"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_756
+  - community/Community_776
 ---
 
 # TestRewriteRequestHeaders
 
 ## Connections
-- [[.test_adds_connection_close_when_absent()]] - `method` [EXTRACTED]
-- [[.test_forces_connection_close_on_plain_request()]] - `method` [EXTRACTED]
-- [[.test_host_header_match_is_case_insensitive()]] - `method` [EXTRACTED]
-- [[.test_preserves_other_headers_and_order()]] - `method` [EXTRACTED]
-- [[.test_rewrites_host_header_to_target()]] - `method` [EXTRACTED]
-- [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - `method` [EXTRACTED]
+- [[dot-test_adds_connection_close_when_absent()]] - `method` [EXTRACTED]
+- [[dot-test_forces_connection_close_on_plain_request()]] - `method` [EXTRACTED]
+- [[dot-test_host_header_match_is_case_insensitive()]] - `method` [EXTRACTED]
+- [[dot-test_preserves_other_headers_and_order()]] - `method` [EXTRACTED]
+- [[dot-test_rewrites_host_header_to_target()]] - `method` [EXTRACTED]
+- [[dot-test_websocket_upgrade_keeps_connection_header_untouched()]] - `method` [EXTRACTED]
 - [[test_hermes_dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_756
+#graphify/code #graphify/EXTRACTED #community/Community_776

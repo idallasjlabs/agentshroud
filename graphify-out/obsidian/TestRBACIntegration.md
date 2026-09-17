@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L338"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - graphify/EXTRACTED
+  - community/Ingest_API__RBAC_Core
 ---
 
 # TestRBACIntegration
 
 ## Connections
-- [[.setup_method()_21]] - `method` [EXTRACTED]
-- [[.teardown_method()_4]] - `method` [EXTRACTED]
-- [[.test_rbac_allows_authorized_access()]] - `method` [EXTRACTED]
-- [[.test_rbac_blocks_unauthorized_access()]] - `method` [EXTRACTED]
-- [[.test_rbac_handles_missing_user_id()]] - `method` [EXTRACTED]
-- [[.test_rbac_initialization_in_middleware()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[dot-setup_method()]] - `method` [EXTRACTED]
+- [[dot-teardown_method()]] - `method` [EXTRACTED]
+- [[dot-test_rbac_allows_authorized_access()]] - `method` [EXTRACTED]
+- [[dot-test_rbac_blocks_unauthorized_access()]] - `method` [EXTRACTED]
+- [[dot-test_rbac_handles_missing_user_id()]] - `method` [EXTRACTED]
+- [[dot-test_rbac_initialization_in_middleware()]] - `method` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test RBAC integration with middleware.]] - `rationale_for` [EXTRACTED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 782"
-location: "L46"
+community: "Community 237"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_782
+  - community/Community_237
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Consequences]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_782
+#graphify/document #graphify/EXTRACTED #community/Community_237

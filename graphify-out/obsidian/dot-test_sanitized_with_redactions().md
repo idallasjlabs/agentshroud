@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_middleware_coverage.py"
+type: "code"
+community: "Slack Proxy & Main Endpoint Tests"
+location: "L951"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Slack_Proxy__Main_Endpoint_Tests
+---
+
+# .test_sanitized_with_redactions()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestProcessToolResult]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests

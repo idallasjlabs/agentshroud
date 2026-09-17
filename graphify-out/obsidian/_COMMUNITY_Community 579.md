@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.12
 members: 16
 ---
 
 # Community 579
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[.test_clamav_parse_clean()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
-- [[.test_parse_clean_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_infected_files_details()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_infected_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_signatures()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_clean()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
-- [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
-- [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
-- [[TestClamAVSummary]] - code - gateway/tests/test_security_toolchain.py
-- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
+- [[Config Keys Read_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Imports From  Exports To_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Purpose_140]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 5 edges to [[_COMMUNITY_Community 112]]
-- 1 edge to [[_COMMUNITY_Community 410]]
-- 1 edge to [[_COMMUNITY_Community 330]]
+- 1 edge to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
 
 ## Top bridge nodes
-- [[parse_clamscan_output()]] - degree 18, connects to 4 communities
-- [[TestClamAVParser]] - degree 9, connects to 2 communities
-- [[TestClamAVSummary]] - degree 5, connects to 2 communities
-- [[.test_clamav_parse_clean()]] - degree 2, connects to 1 community
-- [[.test_clamav_parse_infected()]] - degree 2, connects to 1 community
+- [[middleware.py_2]] - degree 12, connects to 1 community

@@ -1,17 +1,17 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 1298"
+community: "Community 36"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1298
+  - community/Community_36
 ---
 
 # Formatter
 
 ## Connections
-- [[.fmt()]] - `references` [EXTRACTED]
+- [[dot-fmt()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1298
+#graphify/code #graphify/EXTRACTED #community/Community_36

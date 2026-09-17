@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1185
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_50]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[README_55]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Related Skills_53]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Usage_56]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Purpose_9]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Related Notes_9]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Responsibilities]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
 
 ## Live Query (requires Dataview plugin)
 

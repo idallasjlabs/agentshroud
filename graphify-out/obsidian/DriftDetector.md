@@ -1,49 +1,49 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # DriftDetector
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_73]] - `method` [EXTRACTED]
-- [[._init_db()_1]] - `method` [EXTRACTED]
-- [[.acknowledge_alert()]] - `method` [EXTRACTED]
-- [[.check_drift()]] - `method` [EXTRACTED]
-- [[.close()_10]] - `method` [EXTRACTED]
-- [[.get_alerts()]] - `method` [EXTRACTED]
-- [[.get_baseline()]] - `method` [EXTRACTED]
-- [[.set_baseline()]] - `method` [EXTRACTED]
-- [[.setup_method()_30]] - `calls` [EXTRACTED]
-- [[.test_drift_detector_baseline()]] - `calls` [EXTRACTED]
-- [[.test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
-- [[.test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
-- [[.test_drift_no_false_positive()]] - `calls` [EXTRACTED]
-- [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-__init__()_16]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `method` [EXTRACTED]
+- [[dot-acknowledge_alert()]] - `method` [EXTRACTED]
+- [[dot-check_drift()]] - `method` [EXTRACTED]
+- [[dot-close()_2]] - `method` [EXTRACTED]
+- [[dot-get_alerts()]] - `method` [EXTRACTED]
+- [[dot-get_baseline()]] - `method` [EXTRACTED]
+- [[dot-set_baseline()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[dot-test_drift_detector_baseline()]] - `calls` [EXTRACTED]
+- [[dot-test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
+- [[dot-test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
+- [[dot-test_drift_no_false_positive()]] - `calls` [EXTRACTED]
+- [[dot-test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `shares_data_with` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `semantically_similar_to` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -66,14 +66,14 @@ tags:
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[drift_detector.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `calls` [EXTRACTED]
@@ -81,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

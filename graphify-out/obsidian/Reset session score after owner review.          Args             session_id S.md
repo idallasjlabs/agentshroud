@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 160"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Reset session score after owner review.          Args:             session_id: S
 
 ## Connections
-- [[.reset_session()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-reset_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_160
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

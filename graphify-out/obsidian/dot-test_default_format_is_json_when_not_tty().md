@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_cli_coverage.py"
+type: "code"
+community: "Community 236"
+location: "L422"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_236
+---
+
+# .test_default_format_is_json_when_not_tty()
+
+## Connections
+- [[TestGetCommands]] - `method` [EXTRACTED]
+- [[_stub_client()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_236

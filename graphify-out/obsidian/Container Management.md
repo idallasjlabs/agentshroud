@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 753"
-location: "L5"
+community: "Community 315"
+location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_753
+  - community/Community_315
 ---
 
-# Container management
+# Container Management
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[Direct Docker Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_753
+#graphify/document #graphify/EXTRACTED #community/Community_315

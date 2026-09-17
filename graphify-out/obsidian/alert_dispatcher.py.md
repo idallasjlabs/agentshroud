@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
-type: "code"
-community: "Community 410"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+type: "document"
+community: "Community 513"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/Community_513
 ---
 
-# alert_dispatcher.py
+# alert_dispatcher.py.md
 
 ## Connections
-- [[AlertDispatcher]] - `contains` [EXTRACTED]
-- [[canary.py]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
-- [[clamav_scanner.py]] - `references` [EXTRACTED]
-- [[dns_filter.py]] - `references` [EXTRACTED]
-- [[drift_detector.py]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[falco-rules]] - `references` [INFERRED]
-- [[trust_manager.py]] - `references` [EXTRACTED]
-- [[wazuh-ossec]] - `references` [INFERRED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/Community_513

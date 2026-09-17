@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1465
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_101]] - document - docker/config/hermes/skills/i-observability/SKILL.md
-- [[Skill observability_1]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
+- [[buildSummary()]] - code - gateway/web/templates/installer.html
+- [[startInstall()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

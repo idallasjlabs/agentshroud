@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "Community 833"
+community: "Community 874"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/Community_874
 ---
 
 # AgentShroud — Architecture Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[2. C4 Level 1 — Container Diagram]] - `contains` [EXTRACTED]
 - [[3. Architecture Component Diagram — Gateway internals]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/Community_874

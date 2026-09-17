@@ -1,17 +1,21 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 743"
-location: "L58"
+community: "Community 151"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_743
+  - community/Community_151
 ---
 
 # Usage Examples
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[Example 1 Simple Navigation]] - `contains` [EXTRACTED]
+- [[Example 2 Fill Form (Non-Sensitive)]] - `contains` [EXTRACTED]
+- [[Example 3 Fill Password (Sensitive)]] - `contains` [EXTRACTED]
+- [[Example 4 Handle CAPTCHA]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_743
+#graphify/document #graphify/EXTRACTED #community/Community_151

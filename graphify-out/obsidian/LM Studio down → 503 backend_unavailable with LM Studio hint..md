@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Community 83"
-location: "L592"
+community: "Community 61"
+location: "L673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/Community_61
 ---
 
 # LM Studio down → 503 backend_unavailable with LM Studio hint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lmstudio_connect_failure_returns_structured_503()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

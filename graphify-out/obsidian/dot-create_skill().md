@@ -1,0 +1,21 @@
+---
+source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
+type: "code"
+community: "Community 543"
+location: "L31"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_543
+---
+
+# .create_skill()
+
+## Connections
+- [[dot-test_allows_nested_regular_files()]] - `calls` [EXTRACTED]
+- [[dot-test_packages_normal_files()]] - `calls` [EXTRACTED]
+- [[dot-test_rejects_symlink_directory()]] - `calls` [EXTRACTED]
+- [[dot-test_rejects_symlink_to_external_file()]] - `calls` [EXTRACTED]
+- [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_543

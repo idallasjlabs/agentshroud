@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Approval Routing & Event Bus"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Attach BufferHandler to the root agentshroud logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install_log_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L716"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_upgrade_success_with_tests_and_security_review()
+
+## Connections
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[TestAgentshroudUpdates]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+- [[_gitless_run()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

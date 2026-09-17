@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # Agent cannot modify Dockerfile.
 
 ## Connections
-- [[.test_dockerfile_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dockerfile_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

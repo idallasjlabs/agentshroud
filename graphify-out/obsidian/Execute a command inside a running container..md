@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 204"
+community: "Community 106"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/Community_106
 ---
 
 # Execute a command inside a running container.
 
 ## Connections
-- [[.exec()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_204
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

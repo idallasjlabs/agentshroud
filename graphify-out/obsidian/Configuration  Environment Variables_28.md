@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 537"
-location: "L78"
+community: "Community 802"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/Community_802
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_537
+#graphify/document #graphify/EXTRACTED #community/Community_802

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1289
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Cost Optimization Priority]] - document - .agents/skills/i-aws/SKILL.md
-- [[Decision Framework]] - document - .agents/skills/i-aws/SKILL.md
-- [[EBS Performance Analysis (Critical Pattern)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rightsizing Logic]] - document - .agents/skills/i-aws/SKILL.md
+- [[Purpose_106]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Related Skills_97]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Test-Driven Development (TDD)_1]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Usage_101]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[openclawskillsi-tddREADME]] - document - docker/config/openclaw/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1289
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 515]]
-
-## Top bridge nodes
-- [[Decision Framework]] - degree 4, connects to 1 community

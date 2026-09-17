@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 681"
+community: "Community 704"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_681
+  - community/Community_704
 ---
 
 # Architecture Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_681
+#graphify/document #graphify/EXTRACTED #community/Community_704

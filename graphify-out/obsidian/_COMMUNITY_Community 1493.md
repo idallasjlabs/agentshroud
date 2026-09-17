@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[curriculum.md (input requirement)]] - concept - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[curriculum.md output]] - concept - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[dot-agentsskillsi-bddSKILL]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

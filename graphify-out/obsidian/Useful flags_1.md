@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
+source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "Community 401"
-location: "L67"
+community: "Community 752"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_752
 ---
 
 # Useful flags
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/Community_752

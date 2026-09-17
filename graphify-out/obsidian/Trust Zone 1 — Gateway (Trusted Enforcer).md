@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Community 900"
+community: "Community 941"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_900
+  - community/Community_941
 ---
 
 # Trust Zone 1 — Gateway (Trusted Enforcer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Gateway (holds 1Password service account)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_900
+#graphify/concept #graphify/EXTRACTED #community/Community_941

@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+cohesion: 0.14
+members: 19
 ---
 
 # Community 495
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Dialogue Adaptations_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[EXPERT_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Expert Persona_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[HOST_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Input Requirements_18]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Output Format_24]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Persona_14]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Quality Checklist_16]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Role_69]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[SKILL_118]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_2]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Speaker Definitions_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[System Prompt_14]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[User Prompt Template_6]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_35]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_single_inbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_single_outbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Assert measured value is within THRESHOLD of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline file must exist and contain expected keys.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline values should be positive and within expected ranges.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single inbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single outbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[TestBenchmarkRegression]] - code - gateway/tests/test_benchmark_regression.py
+- [[Time a function over N iterations, return mean ms.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
+- [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py
+- [[test_benchmark_regression.py]] - code - gateway/tests/test_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +36,9 @@ members: 18
 TABLE source_file, type FROM #community/Community_495
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 72]]
+
+## Top bridge nodes
+- [[TestBenchmarkRegression]] - degree 10, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 267"
+community: "Community 287"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # test_record_transcription_latency_rounds_duration()
@@ -15,4 +15,4 @@ tags:
 - [[Duration is rounded for stable, log-friendly records.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_267
+#graphify/code #graphify/EXTRACTED #community/Community_287

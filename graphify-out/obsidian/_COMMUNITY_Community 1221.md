@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Purpose_86]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[README_91]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Related Skills_92]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Usage_95]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[AWS Cloud Management & FinOps_1]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Purpose_39]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Related Skills_30]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Usage_34]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)
 

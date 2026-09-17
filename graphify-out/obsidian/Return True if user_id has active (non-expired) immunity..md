@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Adversarial Injection Guards"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L603"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Adversarial_Injection_Guards
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # Return True if user_id has active (non-expired) immunity.
 
 ## Connections
-- [[._is_immune()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_immune()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

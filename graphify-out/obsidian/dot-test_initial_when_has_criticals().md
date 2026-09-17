@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 191"
+location: "L652"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_191
+---
+
+# .test_initial_when_has_criticals()
+
+## Connections
+- [[TestScoreVulnerabilityManagement_1]] - `method` [EXTRACTED]
+- [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
+- [[_trivy_critical()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_191

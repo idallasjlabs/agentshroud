@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 648"
-location: "L59"
+community: "Community 448"
+location: "L527"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_648
+  - community/Community_448
 ---
 
 # Use Cases
 
 ## Connections
-- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
+- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Not Ideal For]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_648
+#graphify/document #graphify/EXTRACTED #community/Community_448

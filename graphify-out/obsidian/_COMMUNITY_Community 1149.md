@@ -1,20 +1,21 @@
 ---
 type: community
 cohesion: 0.40
-members: 5
+members: 6
 ---
 
 # Community 1149
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
-- [[Purpose_11]] - document - .agents/skills/i-gg/README.md
-- [[README_11]] - document - .agents/skills/i-gg/README.md
-- [[Related Skills_11]] - document - .agents/skills/i-gg/README.md
-- [[Usage_13]] - document - .agents/skills/i-gg/README.md
+- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[test_wakeword_statestubsiot_button.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 

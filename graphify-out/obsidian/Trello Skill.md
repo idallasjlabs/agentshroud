@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Community 735"
+community: "Community 768"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_735
+  - community/Community_768
 ---
 
 # Trello Skill
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Examples_1]] - `contains` [EXTRACTED]
 - [[Notes_8]] - `contains` [EXTRACTED]
-- [[SKILL_235]] - `contains` [EXTRACTED]
 - [[Setup_8]] - `contains` [EXTRACTED]
-- [[Usage_131]] - `contains` [EXTRACTED]
+- [[Usage_124]] - `contains` [EXTRACTED]
+- [[trelloSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_735
+#graphify/document #graphify/EXTRACTED #community/Community_768

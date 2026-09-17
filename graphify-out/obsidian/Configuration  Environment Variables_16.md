@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 630"
-location: "L64"
+community: "Community 654"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_630
+  - community/Community_654
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_630
+#graphify/document #graphify/EXTRACTED #community/Community_654

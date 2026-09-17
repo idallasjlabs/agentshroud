@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 703
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[1. Gateway (FastAPI)]] - document - docs/architecture/system-architecture.md
-- [[10. Dashboard (WebSocket)]] - document - docs/architecture/system-architecture.md
-- [[11. Trust Manager]] - document - docs/architecture/system-architecture.md
-- [[12. Egress Monitor]] - document - docs/architecture/system-architecture.md
-- [[2. PII Sanitizer (Presidio + Regex)]] - document - docs/architecture/system-architecture.md
-- [[3. Audit Ledger (SHA-256 Hash Chain)]] - document - docs/architecture/system-architecture.md
-- [[4. Approval Queue (SQLite)]] - document - docs/architecture/system-architecture.md
-- [[5. Kill Switch (3 Modes)]] - document - docs/architecture/system-architecture.md
-- [[6. SSH Proxy]] - document - docs/architecture/system-architecture.md
-- [[7. MCP Proxy (Model Context Protocol)]] - document - docs/architecture/system-architecture.md
-- [[8. Web Proxy]] - document - docs/architecture/system-architecture.md
-- [[9. DNS Filter]] - document - docs/architecture/system-architecture.md
-- [[Core Components]] - document - docs/architecture/system-architecture.md
+- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
+- [[2. Run Tests]] - document - docs/runbooks/deployment.md
+- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
+- [[4. Build Containers]] - document - docs/runbooks/deployment.md
+- [[5. Deploy]] - document - docs/runbooks/deployment.md
+- [[6. Verify_3]] - document - docs/runbooks/deployment.md
+- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
+- [[Environment Variables_16]] - document - docs/runbooks/deployment.md
+- [[First-Time Setup]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_13]] - document - docs/runbooks/deployment.md
+- [[Quick Summary]] - document - docs/runbooks/deployment.md
+- [[Rolling Back]] - document - docs/runbooks/deployment.md
+- [[Standard Deployment]] - document - docs/runbooks/deployment.md
+- [[Version Tagging]] - document - docs/runbooks/deployment.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 701]]
+- 1 edge to [[_COMMUNITY_Community 538]]
+- 1 edge to [[_COMMUNITY_Community 865]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 
 ## Top bridge nodes
-- [[Core Components]] - degree 13, connects to 1 community
+- [[Environment Variables_16]] - degree 4, connects to 3 communities
+- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

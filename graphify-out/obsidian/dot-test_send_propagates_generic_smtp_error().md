@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_gateway_email_service.py"
+type: "code"
+community: "Community 188"
+location: "L109"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_188
+---
+
+# .test_send_propagates_generic_smtp_error()
+
+## Connections
+- [[TestSend]] - `method` [EXTRACTED]
+- [[_service()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_188

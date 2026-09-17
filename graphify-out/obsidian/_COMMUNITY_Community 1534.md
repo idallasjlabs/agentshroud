@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[test-system.sh]] - code - docker/scripts/test-system.sh
-- [[test-system.sh script]] - code - docker/scripts/test-system.sh
+- [[Skill devsecops_1]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[hermesskillsi-devsecopsSKILL]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "Community 762"
+community: "Community 800"
 location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_762
+  - community/Community_800
 ---
 
 # Failover Behaviour (Local Mode)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_762
+#graphify/document #graphify/EXTRACTED #community/Community_800

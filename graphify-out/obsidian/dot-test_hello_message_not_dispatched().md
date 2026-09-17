@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_slack_socket_client.py"
+type: "code"
+community: "Community 162"
+location: "L203"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_162
+---
+
+# .test_hello_message_not_dispatched()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestSlackSocketClient]] - `method` [EXTRACTED]
+- [[_make_client()]] - `calls` [EXTRACTED]
+- [[hello messages are silently consumed without calling handle_event.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_162

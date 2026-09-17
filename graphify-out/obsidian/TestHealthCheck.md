@@ -1,20 +1,20 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "Community 86"
+community: "Community 76"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_76
 ---
 
 # TestHealthCheck
 
 ## Connections
-- [[.test_health_degraded_without_client()]] - `method` [EXTRACTED]
-- [[.test_health_healthy_with_client()]] - `method` [EXTRACTED]
-- [[health_check()]] - `calls` [EXTRACTED]
+- [[dot-test_health_degraded_without_client()]] - `method` [EXTRACTED]
+- [[dot-test_health_healthy_with_client()]] - `method` [EXTRACTED]
+- [[health_check()_1]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/Community_76

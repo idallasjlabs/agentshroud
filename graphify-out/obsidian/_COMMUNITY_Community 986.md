@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.29
 members: 8
 ---
 
 # Community 986
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[Codex CLI (codex exec  Codex -p)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Gemini CLI (--skip-trust)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Hermes Dev Workflow (HDEV) Skill]] - document - .agents/skills/i-hdev/SKILL.md
+- [[LM Studio local model (Qwen3-14B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[scriptssmoke.sh (static startup smoke suite)]] - code - scripts/smoke.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 159]]
+- 2 edges to [[_COMMUNITY_Community 398]]
+- 1 edge to [[_COMMUNITY_Community 327]]
 
 ## Top bridge nodes
-- [[test_api_contract_fuzz.py]] - degree 7, connects to 1 community
+- [[Hermes Dev Workflow (HDEV) Skill]] - degree 9, connects to 1 community
+- [[LM Studio local model (Qwen3-14B)]] - degree 3, connects to 1 community

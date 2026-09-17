@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 354"
-location: "L10"
+community: "Community 1046"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/Community_1046
 ---
 
 # Usage
 
 ## Connections
-- [[graphify]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/Community_1046

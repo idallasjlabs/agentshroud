@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 472"
+community: "Community 485"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_472
+  - community/Community_485
 ---
 
 # QA / Test Engineers — Embedded, Not a Separate Gate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Team]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_472
+#graphify/document #graphify/EXTRACTED #community/Community_485

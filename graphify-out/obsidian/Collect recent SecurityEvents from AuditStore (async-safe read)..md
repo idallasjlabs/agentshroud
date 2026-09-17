@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "Community 334"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_334
 ---
 
 # Collect recent SecurityEvents from AuditStore (async-safe read).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[collect_recent_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/Community_334

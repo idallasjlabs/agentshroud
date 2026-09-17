@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 163"
-location: "L92"
+community: "Community 240"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/Community_240
 ---
 
 # Next Steps
 
 ## Connections
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/Community_240

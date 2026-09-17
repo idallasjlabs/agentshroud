@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 841
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[competitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
+- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
+- [[3. Key Rotation]] - document - docs/ssh-security-review.md
+- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
+- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
+- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
+- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
+- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
+- [[Risk Summary]] - document - docs/ssh-security-review.md
+- [[SSH Security Review]] - document - docs/ssh-security-review.md
+- [[ssh-security-review]] - document - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,9 @@ members: 10
 TABLE source_file, type FROM #community/Community_841
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 944]]
+
+## Top bridge nodes
+- [[SSH Security Review]] - degree 5, connects to 1 community

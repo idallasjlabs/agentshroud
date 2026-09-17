@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # test_instruction_envelope.py
@@ -17,4 +17,4 @@ tags:
 - [[TestEnvelopeSigner]] - `contains` [EXTRACTED]
 - [[signer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline

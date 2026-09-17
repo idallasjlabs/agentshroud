@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_group_config.py"
+type: "code"
+community: "Teams/Group Collaborator Responses"
+location: "L242"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Teams/Group_Collaborator_Responses
+---
+
+# .test_persist_user_collab_mode_update()
+
+## Connections
+- [[Calling persist_user_collab_mode twice updates the stored value.]] - `rationale_for` [EXTRACTED]
+- [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
+- [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

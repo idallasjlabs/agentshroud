@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "Community 755"
+community: "Community 637"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_755
+  - community/Community_637
 ---
 
 # Synchronous version of retry_request for non-async contexts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[retry_request_sync()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_755
+#graphify/rationale #graphify/EXTRACTED #community/Community_637

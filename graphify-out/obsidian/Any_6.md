@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 21"
-location: "L35"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Any
 
 ## Connections
-- [[.get_recent()]] - `references` [EXTRACTED]
-- [[.get_stats()]] - `references` [EXTRACTED]
-- [[.to_dict()]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

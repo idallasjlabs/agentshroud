@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Function Details_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Purpose_132]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Related_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Critical Rules_11]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Infrastructure_9]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Output Format_26]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 14
 TABLE source_file, type FROM #community/Community_674
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+
+## Top bridge nodes
+- [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community

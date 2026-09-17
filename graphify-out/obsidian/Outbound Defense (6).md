@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 772"
+community: "Community 810"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_772
+  - community/Community_810
 ---
 
 # Outbound Defense (6)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_772
+#graphify/document #graphify/EXTRACTED #community/Community_810

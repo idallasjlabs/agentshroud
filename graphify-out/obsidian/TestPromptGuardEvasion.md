@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 30"
+community: "Encrypted Store & Drift Detector"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # TestPromptGuardEvasion
 
 ## Connections
-- [[.setup_method()_32]] - `method` [EXTRACTED]
-- [[.test_double_base64_injection()]] - `method` [EXTRACTED]
-- [[.test_fullwidth_detection()]] - `method` [EXTRACTED]
-- [[.test_homoglyph_detection()]] - `method` [EXTRACTED]
-- [[.test_mixed_case_still_caught()]] - `method` [EXTRACTED]
-- [[.test_rtl_override_detection()]] - `method` [EXTRACTED]
-- [[.test_zero_width_evasion()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_12]] - `method` [EXTRACTED]
+- [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
+- [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
+- [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]
+- [[dot-test_mixed_case_still_caught()]] - `method` [EXTRACTED]
+- [[dot-test_rtl_override_detection()]] - `method` [EXTRACTED]
+- [[dot-test_zero_width_evasion()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -35,8 +35,8 @@ tags:
 - [[Tests for prompt guard evasion techniques.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector

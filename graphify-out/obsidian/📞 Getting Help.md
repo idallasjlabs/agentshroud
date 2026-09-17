@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 221"
+community: "Community 229"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_229
 ---
 
 # 📞 Getting Help
@@ -17,4 +17,4 @@ tags:
 - [[Service Status]] - `contains` [EXTRACTED]
 - [[System Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_221
+#graphify/document #graphify/EXTRACTED #community/Community_229

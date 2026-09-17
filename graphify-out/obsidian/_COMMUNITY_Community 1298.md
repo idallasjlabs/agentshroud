@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.60
+members: 5
 ---
 
 # Community 1298
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.60 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.fmt()]] - code - cli/src/main.rs
-- [[CollabMode]] - code - cli/src/main.rs
-- [[Display]] - code - cli/src/main.rs
-- [[Formatter]] - code - cli/src/main.rs
+- [[AgentShroud Egress Control Configuration]] - document - examples/egress-config.yml
+- [[AgentShroud MCP Proxy Configuration]] - document - examples/mcp-config.yml
+- [[Default Monitor-Mode Egress Rationale]] - rationale - examples/egress-config.yml
+- [[Default-Allow Web Proxy Design Rationale]] - rationale - examples/web-proxy-config.yml
+- [[MCP Proxy Default-Allow Philosophy]] - rationale - examples/mcp-config.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1298
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 36]]
-
-## Top bridge nodes
-- [[CollabMode]] - degree 3, connects to 1 community
-- [[.fmt()]] - degree 3, connects to 1 community

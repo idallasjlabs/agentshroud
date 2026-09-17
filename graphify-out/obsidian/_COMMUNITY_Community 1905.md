@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
+- [[Unicode Bypass]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

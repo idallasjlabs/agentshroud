@@ -1,17 +1,21 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Community 667"
-location: "L56"
+community: "Community 638"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Community_638
 ---
 
 # Setup
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[1. Install Dependencies]] - `contains` [EXTRACTED]
+- [[2. Configure]] - `contains` [EXTRACTED]
+- [[3. Run]] - `contains` [EXTRACTED]
+- [[4. Test]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Community_638

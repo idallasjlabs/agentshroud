@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1042
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
-- [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
-- [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
-- [[GitHub Repository Evidence]] - document - docs/project/legal/PRIOR-USE.md
-- [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
-- [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
-- [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
+- [[dot-test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1041]]
+- 5 edges to [[_COMMUNITY_Egress Filter & HTTP Proxy]]
+- 1 edge to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[AgentShroud™ — Trademark Prior Use Record]] - degree 7, connects to 1 community
+- [[TestPromptInjectionDetection]] - degree 14, connects to 3 communities

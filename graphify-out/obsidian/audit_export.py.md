@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 258"
+community: "Community 112"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Community_112
 ---
 
 # audit_export.py
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[AuditEvent_1]] - `imports` [EXTRACTED]
-- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
+- [[AuditEvent]] - `imports` [EXTRACTED]
+- [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[AuditExporter]] - `contains` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
-- [[SKILL_190]] - `references` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[audit_store.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_258
+#graphify/code #graphify/EXTRACTED #community/Community_112

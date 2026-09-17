@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 27"
-location: "L74"
+community: "Community 746"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_746
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_27
+#graphify/code #graphify/EXTRACTED #community/Community_746

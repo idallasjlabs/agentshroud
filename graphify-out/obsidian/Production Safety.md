@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 748"
+community: "Community 280"
 location: "L188"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/Community_280
 ---
 
 # Production Safety
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skills by Category]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_748
+#graphify/document #graphify/EXTRACTED #community/Community_280

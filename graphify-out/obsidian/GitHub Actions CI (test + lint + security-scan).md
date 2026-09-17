@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Community 1012"
+community: "Community 1055"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1012
+  - community/Community_1055
 ---
 
 # GitHub Actions CI (test + lint + security-scan)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1012
+#graphify/image #graphify/EXTRACTED #community/Community_1055

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 853"
+community: "Community 325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/Community_325
 ---
 
 # AWS Cloud Management & FinOps Agent (SKILL)
@@ -17,4 +17,4 @@ tags:
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 - [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/Community_325

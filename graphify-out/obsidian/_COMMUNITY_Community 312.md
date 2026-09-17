@@ -1,42 +1,42 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.07
 members: 27
 ---
 
 # Community 312
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[PATH_1]] - code - docker/scripts/colima-health-check.sh
-- [[cmd_buildkit()]] - code - docker/scripts/docker-cleanup.sh
-- [[cmd_diagnose()]] - code - docker/scripts/docker-cleanup.sh
-- [[cmd_nuclear()]] - code - docker/scripts/docker-cleanup.sh
-- [[cmd_restart()]] - code - docker/scripts/docker-cleanup.sh
-- [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
-- [[colima-firewall.sh]] - code - docker/scripts/colima-firewall.sh
-- [[colima-firewall.sh script]] - code - docker/scripts/colima-firewall.sh
-- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
-- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
-- [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
-- [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
-- [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
-- [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
-- [[fail()]] - code - docker/scripts/container-net-diag.sh
-- [[has()]] - code - docker/scripts/container-net-diag.sh
-- [[header()]] - code - docker/scripts/container-net-diag.sh
-- [[http_test()]] - code - docker/scripts/container-net-diag.sh
-- [[info()]] - code - docker/scripts/container-net-diag.sh
-- [[log()]] - code - docker/scripts/colima-health-check.sh
-- [[notify()_1]] - code - docker/scripts/colima-health-check.sh
-- [[pass()]] - code - docker/scripts/container-net-diag.sh
-- [[read_state()]] - code - docker/scripts/colima-health-check.sh
-- [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
-- [[usage()]] - code - docker/scripts/docker-cleanup.sh
-- [[warn()]] - code - docker/scripts/container-net-diag.sh
-- [[write_state()]] - code - docker/scripts/colima-health-check.sh
+- [[Anti-Patterns to Flag_7]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Decision Tree Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Dependencies_8]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Role_31]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Rules_7]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Validation Checklist_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[openclawskillsi-mmSKILL]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

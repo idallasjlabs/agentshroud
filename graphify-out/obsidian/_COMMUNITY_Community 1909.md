@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_14]] - code - gateway/tools/__init__.py
+- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
 
 ## Live Query (requires Dataview plugin)
 

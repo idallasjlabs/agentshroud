@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Community 264
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[Auto-Detection]] - document - docs/setup/setup-guide.md
-- [[Dashboard Access_1]] - document - docs/setup/setup-guide.md
-- [[Default Configuration]] - document - docs/setup/setup-guide.md
-- [[Development (local testing)]] - document - docs/setup/setup-guide.md
-- [[Environment Variables_1]] - document - docs/setup/setup-guide.md
-- [[Health Check]] - document - docs/setup/setup-guide.md
-- [[Mac Studio Example]] - document - docs/setup/setup-guide.md
-- [[Multi-Instance Setup]] - document - docs/setup/setup-guide.md
-- [[Option A Docker (Most Common)]] - document - docs/setup/setup-guide.md
-- [[Option A macOS Keychain (Default — no software required)]] - document - docs/setup/setup-guide.md
-- [[Option B Linux (secret-tool  GNOME Keyring — Default on Linux)]] - document - docs/setup/setup-guide.md
-- [[Option B Podman (Red HatEnterprise)]] - document - docs/setup/setup-guide.md
-- [[Option C 1Password Service Account (Optional — Teams  Shared Credentials)]] - document - docs/setup/setup-guide.md
-- [[Option C Apple Containers (macOS 26+)]] - document - docs/setup/setup-guide.md
-- [[Option D Docker Secrets (Swarm Mode)]] - document - docs/setup/setup-guide.md
-- [[Option E Environment Variables (Development Only)]] - document - docs/setup/setup-guide.md
-- [[Port Auto-Detection]] - document - docs/setup/setup-guide.md
-- [[Production (background daemon)]] - document - docs/setup/setup-guide.md
-- [[Production with Restart Policy]] - document - docs/setup/setup-guide.md
-- [[Proxy Mode (Default)]] - document - docs/setup/setup-guide.md
-- [[Sidecar Mode]] - document - docs/setup/setup-guide.md
-- [[Step 1 Clone the Repository]] - document - docs/setup/setup-guide.md
-- [[Step 2 Choose Your Container Runtime]] - document - docs/setup/setup-guide.md
-- [[Step 3 Configure Secrets Management]] - document - docs/setup/setup-guide.md
-- [[Step 4 Choose Security Mode]] - document - docs/setup/setup-guide.md
-- [[Step 5 Configure Ports]] - document - docs/setup/setup-guide.md
-- [[Step 6 Deploy AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Step 7 Verify Installation]] - document - docs/setup/setup-guide.md
-- [[Step-by-Step Installation]] - document - docs/setup/setup-guide.md
-- [[Test a Message]] - document - docs/setup/setup-guide.md
+- [[Alert Prioritization Display_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Anti-Patterns to Flag_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[CLI  TUI UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[CLI UX Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Confirmation Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Content Organization Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Contextual Actions_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Core Discipline Discover → Define → Design → Validate_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Dashboard UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Data Density Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Dependencies_3]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Drill-Down Pattern_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Error Message Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Feedback Loops (response time standards)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Field Design Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Form UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Generic Task Flow Template_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Information Architecture_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Interaction Design Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Navigation Hierarchy Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Role_21]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Usability Audit Checklist_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[User Flow Diagrams_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Wayfinding_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[openclawskillsi-uxSKILL]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,10 +48,3 @@ members: 30
 TABLE source_file, type FROM #community/Community_264
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 334]]
-
-## Top bridge nodes
-- [[Step-by-Step Installation]] - degree 8, connects to 1 community
-- [[Multi-Instance Setup]] - degree 5, connects to 1 community

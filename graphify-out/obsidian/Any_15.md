@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 206"
-location: "L93"
+community: "Multi-Agent Router & Chat UI"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_1]] - `references` [EXTRACTED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_206
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

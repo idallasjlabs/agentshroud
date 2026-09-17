@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 375"
+community: "Community 376"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Community_376
 ---
 
 # AgentShroud Color Palette
@@ -18,7 +18,7 @@ tags:
 - [[Primary Colors]] - `contains` [EXTRACTED]
 - [[Secondary Colors]] - `contains` [EXTRACTED]
 - [[Semantic Colors]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
 - [[palette]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/Community_376

@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.11
 members: 19
 ---
 
 # Community 485
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[.all_ok()]] - code - gateway/tools/multi_host_test.py
-- [[.exit_code()]] - code - gateway/tools/multi_host_test.py
-- [[.failed()]] - code - gateway/tools/multi_host_test.py
-- [[.ok()_2]] - code - gateway/tools/multi_host_test.py
-- [[.passed()]] - code - gateway/tools/multi_host_test.py
-- [[.test_ok_only_when_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_all_pass_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_contains_hosts_and_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[.unreachable()]] - code - gateway/tools/multi_host_test.py
-- [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[Aggregated outcome across all hosts.]] - rationale - gateway/tools/multi_host_test.py
-- [[HostResult]] - code - gateway/tools/multi_host_test.py
-- [[MultiHostResult]] - code - gateway/tools/multi_host_test.py
-- [[Result of running the command on a single host.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestHostResult]] - code - gateway/tests/test_multi_host_test.py
-- [[TestMultiHostResultProperties]] - code - gateway/tests/test_multi_host_test.py
-- [[True only if every host passed (none failed or unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[True only when the host ran the command and it exited 0.]] - rationale - gateway/tools/multi_host_test.py
+- [[AgentShroud Development Team — Agile Structure]] - document - docs/TEAM.md
+- [[Collaborators (Advisory — Read-Only)]] - document - docs/TEAM.md
+- [[Communication & Tooling]] - document - docs/TEAM.md
+- [[Container Architecture_1]] - document - docs/TEAM.md
+- [[Data Engineers  Analysts]] - document - docs/TEAM.md
+- [[DevOps  Platform Engineer — CICD, Infrastructure, Reliability]] - document - docs/TEAM.md
+- [[Development Environment_1]] - document - docs/TEAM.md
+- [[Development Team]] - document - docs/TEAM.md
+- [[Development Workflow_1]] - document - docs/TEAM.md
+- [[Engineers (Backend, Frontend, Full-Stack)]] - document - docs/TEAM.md
+- [[Hardware]] - document - docs/TEAM.md
+- [[How It Works_2]] - document - docs/TEAM.md
+- [[Key Principles]] - document - docs/TEAM.md
+- [[Product Owner]] - document - docs/TEAM.md
+- [[QA  Test Engineers — Embedded, Not a Separate Gate]] - document - docs/TEAM.md
+- [[Scrum Master  Agile Coach]] - document - docs/TEAM.md
+- [[Sprint Cadence]] - document - docs/TEAM.md
+- [[TEAM]] - document - docs/TEAM.md
+- [[UX  Design — One Sprint Ahead]] - document - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,20 +36,3 @@ members: 19
 TABLE source_file, type FROM #community/Community_485
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 898]]
-- 4 edges to [[_COMMUNITY_Community 993]]
-- 4 edges to [[_COMMUNITY_Community 813]]
-- 4 edges to [[_COMMUNITY_Community 869]]
-- 3 edges to [[_COMMUNITY_Community 728]]
-- 2 edges to [[_COMMUNITY_Community 814]]
-- 2 edges to [[_COMMUNITY_Community 994]]
-- 2 edges to [[_COMMUNITY_Community 1098]]
-- 2 edges to [[_COMMUNITY_Community 1254]]
-
-## Top bridge nodes
-- [[MultiHostResult]] - degree 25, connects to 9 communities
-- [[HostResult]] - degree 23, connects to 9 communities
-- [[TestMultiHostResultProperties]] - degree 7, connects to 2 communities
-- [[TestHostResult]] - degree 5, connects to 2 communities

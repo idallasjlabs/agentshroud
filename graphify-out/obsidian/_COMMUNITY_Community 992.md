@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.36
 members: 8
 ---
 
 # Community 992
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_credit_card_detected()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_credit_card_redacted()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPIIDetection]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_explicit_args_win()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_gateway_password_fallback()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_missing_token_raises_value_error()]] - code - gateway/tests/test_cli_coverage.py
+- [[Build SCLClient from args or environment variables.]] - rationale - gateway/cli/client.py
+- [[TestClientFromEnv]] - code - gateway/tests/test_cli_coverage.py
+- [[client.py]] - code - gateway/cli/client.py
+- [[client_from_env()]] - code - gateway/cli/client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 44]]
-- 3 edges to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 206]]
-- 1 edge to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 261]]
+- 4 edges to [[_COMMUNITY_Community 154]]
+- 2 edges to [[_COMMUNITY_Community 330]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 
 ## Top bridge nodes
-- [[TestPIIDetection]] - degree 21, connects to 5 communities
+- [[client_from_env()]] - degree 9, connects to 2 communities
+- [[TestClientFromEnv]] - degree 6, connects to 2 communities
+- [[client.py]] - degree 3, connects to 2 communities

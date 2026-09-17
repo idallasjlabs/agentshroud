@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Community 113"
+community: "Community 110"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/Community_110
 ---
 
 # Production fetcher: stream the URL and hash the body as proof-of-source.      SE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[make_httpx_fetcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_113
+#graphify/rationale #graphify/EXTRACTED #community/Community_110

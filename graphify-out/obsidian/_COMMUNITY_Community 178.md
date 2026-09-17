@@ -1,53 +1,54 @@
 ---
 type: community
-cohesion: 0.08
-members: 38
+cohesion: 0.05
+members: 39
 ---
 
 # Community 178
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[.__enter__()_2]] - code - gateway/tests/test_gateway_email_service.py
-- [[.__exit__()_2]] - code - gateway/tests/test_gateway_email_service.py
-- [[.__init__()_11]] - code - gateway/ingest_api/email_service.py
-- [[.__init__()_159]] - code - gateway/tests/test_gateway_email_service.py
-- [[.build_message()]] - code - gateway/ingest_api/email_service.py
-- [[.login()]] - code - gateway/ingest_api/email_service.py
-- [[.login()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[.send()]] - code - gateway/ingest_api/email_service.py
-- [[.sender()]] - code - gateway/ingest_api/email_service.py
-- [[.sendmail()]] - code - gateway/ingest_api/email_service.py
-- [[.sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_send_logs_in_and_sendmails_over_injected_transport()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_send_propagates_auth_error()]] - code - gateway/tests/test_gateway_email_service.py
-- [[.test_send_propagates_generic_smtp_error()]] - code - gateway/tests/test_gateway_email_service.py
-- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
-- [[GatewayEmailService_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[GatewayEmailService]] - code - gateway/ingest_api/email_service.py
-- [[POST emailsend to the owner sends via forward._email_service — proving]] - rationale - gateway/tests/test_gateway_email_service.py
-- [[Protocol]] - code
-- [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
-- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
-- [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
-- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
-- [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
-- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
-- [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
-- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
-- [[TransportFactory]] - code - gateway/ingest_api/email_service.py
-- [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
-- [[_service()]] - code - gateway/tests/test_gateway_email_service.py
-- [[email_service.py]] - code - gateway/ingest_api/email_service.py
-- [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
-- [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
+- [[75 Security Modules]] - document - README.md
+- [[Acknowledgments_1]] - document - README.md
+- [[Agent Containment]] - document - README.md
+- [[AgentShroud vs Unprotected Agent]] - document - README.md
+- [[AgentShroud™ README]] - document - README.md
+- [[Architecture_1]] - document - README.md
+- [[Content & Context Guards]] - document - README.md
+- [[Control Centers]] - document - README.md
+- [[Core Objectives]] - document - README.md
+- [[Core Security Pipeline]] - document - README.md
+- [[Development]] - document - README.md
+- [[Development Resources]] - document - README.md
+- [[Documentation_1]] - document - README.md
+- [[Example Configurations]] - document - README.md
+- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
+- [[Infrastructure & Monitoring]] - document - README.md
+- [[Media]] - document - README.md
+- [[OpenClaw Bot]] - concept - README.md
+- [[Proxy & Network Layer]] - document - README.md
+- [[Quick Start_3]] - document - README.md
+- [[Supporting Infrastructure]] - document - README.md
+- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Technical Documentation]] - document - README.md
+- [[Terminal Control Center]] - document - README.md
+- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Web Control Center]] - document - README.md
+- [[What's New — v1.2.2 (June 2026)]] - document - README.md
+- [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
+- [[Who It's For]] - document - README.md
+- [[Why AgentShroud]] - document - README.md
+- [[v1.0.0 Fortress foundations (March 2026)]] - document - README.md
+- [[v1.1.x Hermes (May–June 2026)]] - document - README.md
+- [[v1.2.0 Voice (June 2026)]] - document - README.md
+- [[v1.2.1 (2026-06-27) — Quality sweep]] - document - README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,10 +58,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 159]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 3 edges to [[_COMMUNITY_Community 347]]
+- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 234]]
+- 1 edge to [[_COMMUNITY_Community 929]]
+- 1 edge to [[_COMMUNITY_Community 449]]
 
 ## Top bridge nodes
-- [[GatewayEmailService]] - degree 16, connects to 1 community
-- [[test_gateway_email_service.py]] - degree 8, connects to 1 community
-- [[email_service.py]] - degree 3, connects to 1 community
+- [[AgentShroud™ README]] - degree 19, connects to 4 communities
+- [[75 Security Modules]] - degree 17, connects to 2 communities

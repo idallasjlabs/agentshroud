@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[AgentShroud Typography Guidelines]] - document - branding/typography/typography.md
-- [[Body Text]] - document - branding/typography/typography.md
-- [[CodeMonospace]] - document - branding/typography/typography.md
-- [[Do's_1]] - document - branding/typography/typography.md
-- [[Don'ts_1]] - document - branding/typography/typography.md
-- [[Font Families]] - document - branding/typography/typography.md
-- [[Font Weights]] - document - branding/typography/typography.md
-- [[Headings]] - document - branding/typography/typography.md
-- [[Letter Spacing]] - document - branding/typography/typography.md
-- [[Line Heights]] - document - branding/typography/typography.md
-- [[Mobile]] - document - branding/typography/typography.md
-- [[Monospace (CodeTechnical)]] - document - branding/typography/typography.md
-- [[Platform-Specific]] - document - branding/typography/typography.md
-- [[Primary Typeface]] - document - branding/typography/typography.md
-- [[Print]] - document - branding/typography/typography.md
-- [[Type Scale]] - document - branding/typography/typography.md
-- [[Usage Guidelines_2]] - document - branding/typography/typography.md
-- [[Web]] - document - branding/typography/typography.md
+- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
+- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
+- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
+- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
+- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
+- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
+- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
+- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
+- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 790]]
+- 2 edges to [[_COMMUNITY_Community 323]]
 
 ## Top bridge nodes
-- [[AgentShroud Typography Guidelines]] - degree 8, connects to 1 community
+- [[Known Log Messages]] - degree 19, connects to 1 community

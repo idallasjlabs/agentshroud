@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.25
 members: 9
 ---
 
 # Community 922
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[.test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_base64_in_query_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestDataExfiltration]] - code - gateway/tests/test_url_analyzer.py
+- [[2. Atlassian MCP Authentication Reset_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 48]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 829]]
+- 1 edge to [[_COMMUNITY_Community 921]]
 
 ## Top bridge nodes
-- [[TestDataExfiltration]] - degree 11, connects to 3 communities
+- [[Authentication Reset Procedures_1]] - degree 4, connects to 2 communities

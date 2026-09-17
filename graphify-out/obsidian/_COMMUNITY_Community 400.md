@@ -10,28 +10,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[1. Generate the voice gateway token]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[2. Create `wifi_credentials.h`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Adding a future agent_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Architecture_5]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Installation_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Prerequisites_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Troubleshooting_17]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Usage_121]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Wake word]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[voice-terminal-esp32-s3]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[dot-agentsskillsi-tiSKILL]] - document - .agents/skills/i-ti/SKILL.md
+- [[ASCII Art (fallback — no renderer available)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_12]] - document - .agents/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components]] - document - .agents/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms]] - document - .agents/skills/i-ti/SKILL.md
+- [[Dependencies_13]] - document - .agents/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples]] - document - .agents/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema]] - document - .agents/skills/i-ti/SKILL.md
+- [[File and Directory Conventions]] - document - .agents/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule]] - document - .agents/skills/i-ti/SKILL.md
+- [[Online renderer]] - document - .agents/skills/i-ti/SKILL.md
+- [[Render locally with mmdc]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rendering and Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Role_37]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rules_14]] - document - .agents/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems]] - document - .agents/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)]] - document - .agents/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validation Checklist_6]] - document - .agents/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 443"
+community: "Community 452"
 location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_443
+  - community/Community_452
 ---
 
 # H. Service Control for Production Testing
@@ -18,4 +18,4 @@ tags:
 - [[H.4 Cleanup Verification Checklist_1]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_443
+#graphify/document #graphify/EXTRACTED #community/Community_452

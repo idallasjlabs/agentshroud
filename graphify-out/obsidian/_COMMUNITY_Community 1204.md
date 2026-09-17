@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[README_74]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Related Skills_75]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_1]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Usage_76]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[dot-agentsskillsi-oracleREADME]] - document - .agents/skills/i-oracle/README.md
+- [[Oracle — Feedback Analyst_2]] - document - .agents/skills/i-oracle/README.md
+- [[Purpose_27]] - document - .agents/skills/i-oracle/README.md
+- [[Related Skills_18]] - document - .agents/skills/i-oracle/README.md
+- [[Usage_22]] - document - .agents/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 

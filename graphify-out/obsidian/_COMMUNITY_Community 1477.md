@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1477
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_140]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
-- [[Skill ci_2]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[check()_1]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 
 ## Live Query (requires Dataview plugin)
 

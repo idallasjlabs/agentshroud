@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_soc_websocket.py"
+type: "code"
+community: "Community 187"
+location: "L66"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_187
+---
+
+# .test_legacy_inbound_blocked()
+
+## Connections
+- [[TestCoerceToWSEvent]] - `method` [EXTRACTED]
+- [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_187

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
-location: "L49"
+community: "Proxy Sidecar & Forwarder"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # sanitizer()
 
 ## Connections
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

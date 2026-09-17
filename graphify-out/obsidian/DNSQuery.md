@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
-type: "code"
-community: "Community 410"
-location: "L52"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "Community 403"
+location: "L110"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/Community_403
 ---
 
 # DNSQuery
 
 ## Connections
-- [[.check()_4]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_3]] - `references` [EXTRACTED]
-- [[.get_flagged_queries()]] - `references` [EXTRACTED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/Community_403

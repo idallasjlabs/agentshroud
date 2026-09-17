@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[dot-githubworkflowsmerge-regression-audit.yml_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

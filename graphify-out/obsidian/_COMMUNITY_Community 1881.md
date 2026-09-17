@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_hermes_mcp_reconciliation.sh — Hermes MCP stale-disable regression test]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[Obsidian Vault Export (opt-in --obsidian)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

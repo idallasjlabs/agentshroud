@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 1716"
 location: "L2692"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_1716
 ---
 
 # Cooldown dedupe must not suppress approvals when scheme/port risk changes.
 
 ## Connections
-- [[.test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_1716

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Ingest API & Approval Routes"
+community: "Community 71"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Community_71
 ---
 
 # Test rate limiter tracks clients separately
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_separate_clients()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

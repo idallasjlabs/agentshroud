@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 793"
-location: "L78"
+community: "Community 778"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/Community_778
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[description of what this does_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_793
+#graphify/document #graphify/EXTRACTED #community/Community_778

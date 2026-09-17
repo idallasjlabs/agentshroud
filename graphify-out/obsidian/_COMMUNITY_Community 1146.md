@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1146
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator]] - document - .agents/skills/i-daedalus/README.md
-- [[Purpose_8]] - document - .agents/skills/i-daedalus/README.md
-- [[README_8]] - document - .agents/skills/i-daedalus/README.md
-- [[Related Skills_8]] - document - .agents/skills/i-daedalus/README.md
-- [[Usage_10]] - document - .agents/skills/i-daedalus/README.md
+- [[2.1 Mark Type]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.2 The Mark]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.3 Mark Literal Element]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.4 Translation  Transliteration]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.5 Mark Description (for standard character mark)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 2 MARK INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1146
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 684]]
+
+## Top bridge nodes
+- [[SECTION 2 MARK INFORMATION]] - degree 6, connects to 1 community

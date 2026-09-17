@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 223"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Add a callback function for chain detection alerts.
 
 ## Connections
-- [[.add_alert_callback()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-add_alert_callback()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_223
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

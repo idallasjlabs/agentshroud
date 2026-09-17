@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_key_rotation.py"
+type: "code"
+community: "Community 544"
+location: "L124"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_544
+---
+
+# .test_should_rotate()
+
+## Connections
+- [[CredentialInfo]] - `calls` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `calls` [EXTRACTED]
+- [[Test rotation requirement calculation.]] - `rationale_for` [EXTRACTED]
+- [[TestCredentialInfo]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_544

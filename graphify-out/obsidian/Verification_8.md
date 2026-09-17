@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 531"
-location: "L357"
+community: "Community 594"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_594
 ---
 
 # Verification
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/Community_594

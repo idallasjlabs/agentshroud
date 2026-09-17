@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Community 243"
+community: "Community 266"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/Community_266
 ---
 
 # pytest.ini.md
@@ -16,4 +16,4 @@ tags:
 - [[ci-workflows]] - `references` [EXTRACTED]
 - [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/Community_266

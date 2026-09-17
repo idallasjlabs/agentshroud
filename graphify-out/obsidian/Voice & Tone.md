@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 318"
-location: "L201"
+community: "Community 173"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_318
+  - community/Community_173
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_318
+#graphify/document #graphify/EXTRACTED #community/Community_173

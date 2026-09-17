@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 540"
-location: "L116"
+community: "Community 221"
+location: "L435"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/Community_221
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[Security Notes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/Community_221

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Community 367"
+community: "Community 372"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/Community_372
 ---
 
 # Updated v0.8.0 Feature List with Wiring Status
@@ -25,4 +25,4 @@ tags:
 - [[J. Code Cleanup (5) — ALL ✅]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11) — ALL ✅]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/Community_372

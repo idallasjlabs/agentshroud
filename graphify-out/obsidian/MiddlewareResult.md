@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # MiddlewareResult
 
 ## Connections
-- [[._check_cross_session_access()]] - `references` [EXTRACTED]
-- [[._check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[._enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[.process_request()]] - `references` [EXTRACTED]
-- [[.test_defaults()]] - `calls` [EXTRACTED]
-- [[.test_denied_with_reason()]] - `calls` [EXTRACTED]
-- [[.test_forward_middleware_blocking()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
+- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
+- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
+- [[dot-process_request()]] - `references` [EXTRACTED]
+- [[dot-test_defaults()_1]] - `calls` [EXTRACTED]
+- [[dot-test_denied_with_reason()]] - `calls` [EXTRACTED]
+- [[dot-test_forward_middleware_blocking()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -36,8 +36,8 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FakePipelineResult_1]] - `uses` [INFERRED]
-- [[FakeRBAC_1]] - `uses` [INFERRED]
+- [[FakePipelineResult]] - `uses` [INFERRED]
+- [[FakeRBAC]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
@@ -53,19 +53,19 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PassthroughPipeline_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[Result from middleware processing.]] - `rationale_for` [EXTRACTED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestAlertsLocalhostEnforcement]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestApprovalEndpoints]] - `uses` [INFERRED]
@@ -75,7 +75,7 @@ tags:
 - [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]
 - [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
 - [[TestCommandTokenNormalization]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCriticalGuardInitFailClosed]] - `uses` [INFERRED]
 - [[TestCrossSessionAccess]] - `uses` [INFERRED]
 - [[TestEnvGuard]] - `uses` [INFERRED]
@@ -88,7 +88,7 @@ tags:
 - [[TestFilterOutboundResponse]] - `uses` [INFERRED]
 - [[TestForwardEndpoint]] - `uses` [INFERRED]
 - [[TestFullAccessMiddlewareBypass]] - `uses` [INFERRED]
-- [[TestGitGuard_1]] - `uses` [INFERRED]
+- [[TestGitGuard]] - `uses` [INFERRED]
 - [[TestGoogleAPIProxy]] - `uses` [INFERRED]
 - [[TestGroupMentionFilter]] - `uses` [INFERRED]
 - [[TestGroupPresenceProbe]] - `uses` [INFERRED]
@@ -104,7 +104,7 @@ tags:
 - [[TestMemoryIntegrityRegistration]] - `uses` [INFERRED]
 - [[TestMetadataGuard_1]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
-- [[TestMultiTurnTracker]] - `uses` [INFERRED]
+- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
 - [[TestPathIsolationStep]] - `uses` [INFERRED]
@@ -123,13 +123,13 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[middleware.py]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
@@ -137,4 +137,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

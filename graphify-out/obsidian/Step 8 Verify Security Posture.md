@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Community 739"
+community: "Community 822"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/Community_822
 ---
 
 # Step 8: Verify Security Posture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/Community_822

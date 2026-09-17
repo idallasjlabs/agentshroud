@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.15
 members: 16
 ---
 
 # Community 578
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Function Details_24]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Purpose_145]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Related_31]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Approval Queue Control]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Approval Queue — Core Security Value]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[DEVICE_PAIRING]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - rationale - docs/setup/DEVICE_PAIRING.md
+- [[IEC 62443 Compliance Matrix]] - concept - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[MVP Recommendation (Option A)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Multi-UserMulti-Tenant Threat Model (Reversal Driver)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Phase A Development Mode (Current)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Phase B Compatibility Testing]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Phase C Production Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Read-Only Filesystem (Planned)]] - concept - docs/security/container-policy.md
+- [[SECURITY-POLICY-FINAL]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[SECURITY_VALUE_PROPOSITION]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Three-Phase Approach]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Ultra-Conservative Credential Display Policy]] - rationale - docs/security/SECURITY-POLICY-FINAL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,22 @@ members: 16
 TABLE source_file, type FROM #community/Community_578
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 198]]
+- 2 edges to [[_COMMUNITY_Community 350]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 206]]
+- 1 edge to [[_COMMUNITY_Community 318]]
+- 1 edge to [[_COMMUNITY_Community 389]]
+- 1 edge to [[_COMMUNITY_Community 465]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 552]]
+- 1 edge to [[_COMMUNITY_Community 634]]
+
+## Top bridge nodes
+- [[SECURITY_VALUE_PROPOSITION]] - degree 10, connects to 3 communities
+- [[SECURITY-POLICY-FINAL]] - degree 4, connects to 3 communities
+- [[Three-Phase Approach]] - degree 5, connects to 1 community
+- [[Approval Queue Control]] - degree 4, connects to 1 community
+- [[Ultra-Conservative Credential Display Policy]] - degree 4, connects to 1 community

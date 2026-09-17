@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/scan.sh"
-type: "code"
-community: "Community 427"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Community 350"
+location: "L46"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/Community_427
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_350
 ---
 
 # scan.sh
 
 ## Connections
-- [[scan.sh script]] - `contains` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `semantically_similar_to` [INFERRED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_427
+#graphify/document #graphify/EXTRACTED #community/Community_350

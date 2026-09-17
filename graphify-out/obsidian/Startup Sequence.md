@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 85"
+community: "Community 253"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_253
 ---
 
 # Startup Sequence.md
 
 ## Connections
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
+- [[Architecture Overview_1]] - `references` [EXTRACTED]
 - [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `references` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery]] - `references` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_253

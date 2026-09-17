@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Purpose_59]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[README_64]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_65]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Usage_66]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[dot-agentsskillsi-eightdREADME]] - document - .agents/skills/i-eightd/README.md
+- [[8D Root Cause Analysis]] - document - .agents/skills/i-eightd/README.md
+- [[Purpose_18]] - document - .agents/skills/i-eightd/README.md
+- [[Related Skills_9]] - document - .agents/skills/i-eightd/README.md
+- [[Usage_13]] - document - .agents/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 81"
+community: "Community 289"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_289
 ---
 
 # Declarative A2A security policy.      Loaded from the ``a2a_policy:`` section of
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2APolicyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

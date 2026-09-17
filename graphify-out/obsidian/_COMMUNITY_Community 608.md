@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 608
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SKILL_110]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[dot-test_fail_closed_replaces_caption_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_owner_id_redaction_continues_to_pipeline_scan()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_unknown_tool_call_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_caption_pipeline_block_replaces_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_caption_sanitized_in_place()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_multipart_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Fail-closed substitution must target the resolved text field.          Regressio]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Markdown exfil links are stripped from form bodies (parity with JSON).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Markdown exfil links are stripped from multipart captions (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner-ID-redacted form text must still reach the pipeline scan.          Regress]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-blocked caption payloads must have the caption replaced.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-sanitized sendPhoto captions must replace the caption itself.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Regression tests for the JSONformmultipart scan unification.      Each test pi]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOutboundScanUnification]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unknown raw tool-call JSON in form bodies is quarantined for audit.          Tig]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +33,19 @@ members: 15
 TABLE source_file, type FROM #community/Community_608
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 7 edges to [[_COMMUNITY_Community 93]]
+- 7 edges to [[_COMMUNITY_Community 85]]
+- 3 edges to [[_COMMUNITY_Tool Result Sanitizer & XML Injection Filtering]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer & Redaction]]
+- 1 edge to [[_COMMUNITY_Community 419]]
+- 1 edge to [[_COMMUNITY_Community 521]]
+- 1 edge to [[_COMMUNITY_Collaborator Activity & Telegram Proxy]]
+
+## Top bridge nodes
+- [[TestOutboundScanUnification]] - degree 13, connects to 3 communities
+- [[dot-test_json_caption_pipeline_block_replaces_caption()]] - degree 5, connects to 3 communities
+- [[dot-test_multipart_markdown_exfil_link_scrubbed()]] - degree 5, connects to 3 communities
+- [[dot-test_fail_closed_replaces_caption_payload()]] - degree 4, connects to 2 communities
+- [[dot-test_form_markdown_exfil_link_scrubbed()]] - degree 4, connects to 2 communities

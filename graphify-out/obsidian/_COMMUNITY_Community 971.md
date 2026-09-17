@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 971
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Default Ports]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Environment Variables_3]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Key Class `PortManager`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Purpose_124]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Related Notes_10]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[port_manager.py_2]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[port_manager.py_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Method_1]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Previously FIXED findings — verification]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Previously OPEN findings — current status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§1 — Re-audit of v0.8.0 Prior Findings]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§2 — New v1.2.0 Findings (OpenClaw-specific)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§6 — SAST (Semgrep) Status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§7 — Summary Table]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§8 — Regression Tests]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,12 @@ members: 8
 TABLE source_file, type FROM #community/Community_971
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1044]]
+- 1 edge to [[_COMMUNITY_Community 1118]]
+- 1 edge to [[_COMMUNITY_Community 1425]]
+- 1 edge to [[_COMMUNITY_Community 972]]
+
+## Top bridge nodes
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - degree 10, connects to 4 communities

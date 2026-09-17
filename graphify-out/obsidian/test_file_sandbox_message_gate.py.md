@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Community 286"
+community: "Ingest Middleware & File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_286
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # test_file_sandbox_message_gate.py
@@ -21,8 +21,8 @@ tags:
 - [[_plain_msg()]] - `contains` [EXTRACTED]
 - [[_tool_call_msg()]] - `contains` [EXTRACTED]
 - [[_tool_result_msg()]] - `contains` [EXTRACTED]
-- [[manager()]] - `contains` [EXTRACTED]
-- [[session_manager()]] - `contains` [EXTRACTED]
+- [[manager()_1]] - `contains` [EXTRACTED]
+- [[session_manager()_1]] - `contains` [EXTRACTED]
 - [[temp_workspace()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_286
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 617"
-location: "L64"
+community: "Community 336"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/Community_336
 ---
 
 # Setup
 
 ## Connections
-- [[1. Install Dependencies]] - `contains` [EXTRACTED]
-- [[2. Configure]] - `contains` [EXTRACTED]
-- [[3. Run]] - `contains` [EXTRACTED]
-- [[4. Test]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/Community_336

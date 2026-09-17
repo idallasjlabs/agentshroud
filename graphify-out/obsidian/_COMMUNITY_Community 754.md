@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 754
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Config Keys Read_7]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Environment Variables Used_7]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Key Classes  Functions_7]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Purpose_118]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Related_9]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Responsibilities_7]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[SSHConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[SSHHostConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[ssh_config.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[ssh_config.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Configuration  Environment Variables_24]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Function Details_44]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Key Classes  Functions_46]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPProxyConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Purpose_176]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Related_50]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Responsibilities_47]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[mcp_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

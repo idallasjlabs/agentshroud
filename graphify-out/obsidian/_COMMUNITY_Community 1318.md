@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1318
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[4. Handling Alerts]] - document - docs/operations/runbook.md
-- [[Alert Severity Levels]] - document - docs/operations/runbook.md
-- [[Critical Alert Response]] - document - docs/operations/runbook.md
-- [[High Alert Response]] - document - docs/operations/runbook.md
+- [[Step 1 Enable App Password (Gmail)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 2 Enable CalDAVCardDAV Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 3 Test Calendar Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 4 Test Contacts Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🔐 Setup Steps]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
-- [[4. Handling Alerts]] - degree 4, connects to 1 community
+- [[🔐 Setup Steps]] - degree 5, connects to 1 community

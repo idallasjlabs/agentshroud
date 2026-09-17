@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 238"
+community: "Community 245"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/Community_245
 ---
 
 # Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)
@@ -17,4 +17,4 @@ tags:
 - [[Server-side setup]] - `contains` [EXTRACTED]
 - [[Verify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_238
+#graphify/document #graphify/EXTRACTED #community/Community_245

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Community 710"
+community: "Community 740"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/Community_740
 ---
 
 # Secondary: Python IPv6 fallback (misleading error)
 
 ## Connections
-- [[Root Cause_1]] - `contains` [EXTRACTED]
+- [[Root Cause_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_710
+#graphify/document #graphify/EXTRACTED #community/Community_740

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "Progressive Trust"
+community: "Community 115"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Community_115
 ---
 
 # First-ever unit tests for the config object itself.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProgressiveTrustConfigUnit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/rationale #graphify/EXTRACTED #community/Community_115

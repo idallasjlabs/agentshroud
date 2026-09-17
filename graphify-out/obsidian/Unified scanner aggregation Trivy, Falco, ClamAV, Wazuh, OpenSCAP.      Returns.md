@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 42"
+community: "Community 66"
 location: "L2097"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/Community_66
 ---
 
 # Unified scanner aggregation: Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_scanner_results()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

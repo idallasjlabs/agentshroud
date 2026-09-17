@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_87]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[README_92]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[Related Skills_93]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[Usage_96]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)_2]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Browser — Secure Browser Automation_2]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_40]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Related Skills_31]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Usage_35]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

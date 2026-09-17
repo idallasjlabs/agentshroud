@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1471
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[extraction-spec_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdfSKILL]] - document - skills/openclaw/nano-pdf/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

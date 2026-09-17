@@ -1,17 +1,19 @@
 ---
-source_file: "docs/project/README.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 976"
-location: "L14"
+community: "Community 193"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_976
+  - community/Community_193
 ---
 
 # Current Status
 
 ## Connections
-- [[Project Documentation]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_976
+#graphify/document #graphify/EXTRACTED #community/Community_193

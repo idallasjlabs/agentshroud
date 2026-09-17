@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "Community 113"
+community: "Community 110"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/Community_110
 ---
 
 # Patch httpx.stream; return a list that records the call kwargs.
 
 ## Connections
-- [[._patch_stream()]] - `rationale_for` [EXTRACTED]
+- [[dot-_patch_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_113
+#graphify/rationale #graphify/EXTRACTED #community/Community_110

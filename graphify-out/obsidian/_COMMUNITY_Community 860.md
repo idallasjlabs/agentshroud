@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.33
-members: 10
+cohesion: 0.31
+members: 11
 ---
 
 # Community 860
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[asb (AgentShroud bot helper)]] - code - scripts/asb
-- [[ensure_local_model_available()]] - code - scripts/switch_model.sh
-- [[normalize_cloud_ref()]] - code - scripts/switch_model.sh
-- [[preflight_local()]] - code - scripts/switch_model.sh
-- [[switch_model.sh]] - code - scripts/switch_model.sh
-- [[switch_model.sh script]] - code - scripts/switch_model.sh
-- [[upsert_env_value()]] - code - scripts/switch_model.sh
-- [[usage()_4]] - code - scripts/switch_model.sh
-- [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
-- [[wait_for_local_model()]] - code - scripts/switch_model.sh
+- [[dot-test_comma_separated()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_custom_default()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_dedup_preserves_first_order()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_empty_string_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_mixed_separators_and_stripping()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_none_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_only_separators_falls_back_to_default()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_whitespace_separated()]] - code - gateway/tests/test_multi_host_test.py
+- [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - rationale - gateway/tools/multi_host_test.py
+- [[TestParseHosts]] - code - gateway/tests/test_multi_host_test.py
+- [[parse_hosts()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +30,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 852]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 179]]
+- 2 edges to [[_COMMUNITY_Community 497]]
+- 2 edges to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 1039]]
+- 1 edge to [[_COMMUNITY_Community 764]]
+- 1 edge to [[_COMMUNITY_Community 911]]
 
 ## Top bridge nodes
-- [[switch_model.sh]] - degree 12, connects to 3 communities
+- [[TestParseHosts]] - degree 12, connects to 3 communities
+- [[parse_hosts()]] - degree 12, connects to 3 communities

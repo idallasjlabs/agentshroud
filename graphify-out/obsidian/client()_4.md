@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Community 884"
-location: "L32"
+community: "Approval Routing & Event Bus"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_884
+  - graphify/EXTRACTED
+  - community/Approval_Routing__Event_Bus
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

@@ -1,19 +1,19 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 899"
+community: "Community 179"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/Community_179
 ---
 
 # Color Usage
 
 ## Connections
-- [[Accessibility_1]] - `contains` [EXTRACTED]
+- [[Accessibility]] - `contains` [EXTRACTED]
 - [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[Primary Color Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_899
+#graphify/document #graphify/EXTRACTED #community/Community_179

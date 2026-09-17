@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 150"
+community: "Community 151"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/Community_151
 ---
 
 # Example 4: Handle CAPTCHA
 
 ## Connections
-- [[Usage Examples_2]] - `contains` [EXTRACTED]
+- [[Usage Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_150
+#graphify/document #graphify/EXTRACTED #community/Community_151

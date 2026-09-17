@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
+type: "code"
+community: "Community 94"
+location: "L196"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_94
+---
+
+# .test_running_version_matches_pinned_openclaw_version()
+
+## Connections
+- [[Regression guard for the 2026-07-29 staleness incident. RUNNING_VERSION was…]] - `rationale_for` [EXTRACTED]
+- [[TestVersion]] - `method` [EXTRACTED]
+- [[_t()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_94

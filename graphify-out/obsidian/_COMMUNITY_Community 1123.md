@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
-- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
+- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 829]]
 
 ## Top bridge nodes
-- [[TestDNSFilterConfig]] - degree 8, connects to 2 communities
+- [[Troubleshooting]] - degree 6, connects to 1 community

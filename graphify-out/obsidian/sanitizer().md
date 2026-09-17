@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_block_credentials.py"
 type: "code"
-community: "Community 26"
-location: "L173"
+community: "Community 196"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Community_196
 ---
 
 # sanitizer()
 
 ## Connections
-- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `references` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[fixture_4]] - `references` [EXTRACTED]
+- [[test_block_credentials.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Community_196

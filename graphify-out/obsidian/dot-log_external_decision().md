@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/egress_approval.py"
+type: "code"
+community: "Community 88"
+location: "L655"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_88
+---
+
+# .log_external_decision()
+
+## Connections
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Log an automatic allowdeny from EgressFilter.check() (non-interactive).]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_88

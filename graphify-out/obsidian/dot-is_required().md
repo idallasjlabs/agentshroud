@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/mfa_guard.py"
+type: "code"
+community: "Community 57"
+location: "L186"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_57
+---
+
+# .is_required()
+
+## Connections
+- [[dot-verify()_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[Return True if ``action_type`` requires a second factor right now.          Two]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_57

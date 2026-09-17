@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 225"
+community: "P3 Infrastructure Security Modules"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_225
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # VRAMHeadroomError
 
 ## Connections
-- [[.check_vram_headroom()]] - `calls` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
-- [[LLMProxy_2]] - `uses` [INFERRED]
+- [[dot-check_vram_headroom()]] - `calls` [EXTRACTED]
+- [[Exception_4]] - `inherits` [EXTRACTED]
 - [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - `rationale_for` [EXTRACTED]
 - [[TestCpuMemoryDiskLimits]] - `uses` [INFERRED]
 - [[TestExpiredUsageCleanup]] - `uses` [INFERRED]
@@ -22,10 +21,7 @@ tags:
 - [[TestTempFiles]] - `uses` [INFERRED]
 - [[TestUsageStatsAndTracking]] - `uses` [INFERRED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `uses` [INFERRED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
-- [[test_vram_headroom_error_is_not_resource_warning()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_225
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

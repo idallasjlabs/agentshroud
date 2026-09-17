@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Community 1140"
+community: "Community 1187"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1140
+  - community/Community_1187
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_1]] - `contains` [EXTRACTED]
-- [[README_1]] - `contains` [EXTRACTED]
-- [[Related Skills_1]] - `contains` [EXTRACTED]
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-athenaREADME]] - `contains` [EXTRACTED]
+- [[Purpose_11]] - `contains` [EXTRACTED]
+- [[Related Skills_2]] - `contains` [EXTRACTED]
+- [[Usage_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1140
+#graphify/document #graphify/EXTRACTED #community/Community_1187

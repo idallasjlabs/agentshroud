@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/cron_state_monitor.py"
+type: "code"
+community: "Community 90"
+location: "L291"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_90
+---
+
+# .start()
+
+## Connections
+- [[dot-_run()_1]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[Start the poll loop as an asyncio task (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[Task]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_90

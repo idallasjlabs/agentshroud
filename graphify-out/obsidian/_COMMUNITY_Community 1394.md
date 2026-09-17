@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1394
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[TickType_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[task.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[vTaskDelay()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[devices.sh]] - code - docker/scripts/devices.sh
+- [[devices.sh script]] - code - docker/scripts/devices.sh
+- [[telegram.sh]] - code - docker/scripts/telegram.sh
+- [[telegram.sh script]] - code - docker/scripts/telegram.sh
 
 ## Live Query (requires Dataview plugin)
 

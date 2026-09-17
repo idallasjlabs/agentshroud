@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
-- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
-- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
-- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Related Skills_57]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Usage_61]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[hermesskillsi-sec-offenseREADME]] - document - docker/config/hermes/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1248
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 780]]
-
-## Top bridge nodes
-- [[Trust-Differentiated Processing (RBAC tiers)]] - degree 2, connects to 1 community

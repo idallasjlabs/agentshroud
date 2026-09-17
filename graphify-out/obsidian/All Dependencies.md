@@ -1,30 +1,30 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 243"
+community: "Community 266"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/Community_266
 ---
 
 # All Dependencies.md
 
 ## Connections
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
+- [[aiosqlite_1]] - `references` [EXTRACTED]
 - [[ci-workflows]] - `references` [EXTRACTED]
 - [[clamav]] - `references` [EXTRACTED]
-- [[fastapi]] - `references` [EXTRACTED]
+- [[fastapi_2]] - `references` [EXTRACTED]
 - [[httpx]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[playwright_1]] - `references` [EXTRACTED]
+- [[playwright]] - `references` [EXTRACTED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[pydantic]] - `references` [EXTRACTED]
+- [[pydantic_1]] - `references` [EXTRACTED]
 - [[pytest.ini]] - `references` [EXTRACTED]
-- [[python-jose]] - `references` [EXTRACTED]
+- [[python-jose_1]] - `references` [EXTRACTED]
 - [[spacy]] - `references` [EXTRACTED]
 - [[trivy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/Community_266

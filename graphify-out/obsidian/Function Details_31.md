@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Community 687"
-location: "L38"
+community: "Community 655"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_687
+  - community/Community_655
 ---
 
 # Function Details
 
 ## Connections
-- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
-- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_687
+#graphify/document #graphify/EXTRACTED #community/Community_655

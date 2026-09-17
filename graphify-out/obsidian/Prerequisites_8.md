@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 680"
-location: "L5"
+community: "Community 416"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_680
+  - community/Community_416
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_680
+#graphify/document #graphify/EXTRACTED #community/Community_416

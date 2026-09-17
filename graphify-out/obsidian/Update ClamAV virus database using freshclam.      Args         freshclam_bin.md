@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Community 112"
+community: "Community 56"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_56
 ---
 
 # Update ClamAV virus database using freshclam.      Args:         freshclam_bin:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_virus_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

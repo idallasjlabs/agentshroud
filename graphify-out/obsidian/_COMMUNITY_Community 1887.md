@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_13]] - code - gateway/tests/__init__.py
+- [[GSDE&G Skills Reference Guide]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

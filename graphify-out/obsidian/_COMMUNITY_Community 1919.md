@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewaystt.py — faster-whisper Speech-to-Text]] - code - voice_gateway/stt.py
+- [[OTA API Header]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

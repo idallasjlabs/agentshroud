@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 905"
+community: "Community 953"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_905
+  - community/Community_953
 ---
 
 # 📊 Exit Criteria (5 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_905
+#graphify/document #graphify/EXTRACTED #community/Community_953

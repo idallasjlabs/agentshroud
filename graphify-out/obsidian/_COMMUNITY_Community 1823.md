@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

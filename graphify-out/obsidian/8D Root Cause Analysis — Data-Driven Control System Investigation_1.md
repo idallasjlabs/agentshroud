@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 235"
+community: "Community 241"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/Community_241
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[Agent Interaction Protocol_1]] - `contains` [EXTRACTED]
 - [[Architecture Context_1]] - `contains` [EXTRACTED]
-- [[Critical Rules_4]] - `contains` [EXTRACTED]
-- [[Input Requirements_14]] - `contains` [EXTRACTED]
+- [[Critical Rules_1]] - `contains` [EXTRACTED]
+- [[Input Requirements_5]] - `contains` [EXTRACTED]
 - [[Learning System (Continuous Improvement)_1]] - `contains` [EXTRACTED]
-- [[Overview_2]] - `contains` [EXTRACTED]
-- [[SKILL_84]] - `contains` [EXTRACTED]
+- [[Overview_5]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
 - [[XML Configuration File Parsing_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-eightdSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_235
+#graphify/document #graphify/EXTRACTED #community/Community_241

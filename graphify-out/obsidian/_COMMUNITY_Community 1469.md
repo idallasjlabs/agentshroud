@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1469
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_125]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping_1]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[_log()]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
 
 ## Live Query (requires Dataview plugin)
 

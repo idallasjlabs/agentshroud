@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 548
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Authentication_2]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Related Notes_38]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Testing]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Function Details_11]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_137]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Related_16]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +34,3 @@ members: 16
 TABLE source_file, type FROM #community/Community_548
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 243]]
-
-## Top bridge nodes
-- [[All Dependencies_1]] - degree 5, connects to 1 community

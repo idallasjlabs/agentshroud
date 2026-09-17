@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_guard.py"
+type: "code"
+community: "Prompt Guard & Context Integrity"
+location: "L231"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Prompt_Guard__Context_Integrity
+---
+
+# .test_preserves_legitimate_markdown()
+
+## Connections
+- [[Normal markdown headers ( Title) should not be stripped.]] - `rationale_for` [EXTRACTED]
+- [[TestReanchorDelimiters]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

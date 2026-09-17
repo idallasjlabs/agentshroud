@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 782
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Context_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Decision_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Mitigation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Negative Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Positive Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Status_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
+- [[Emergency Hotfix_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Quick Commands_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Skill Index_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[openclawskillsi-mcSKILL]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +29,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_782
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 701]]
-- 1 edge to [[_COMMUNITY_Community 1014]]
-
-## Top bridge nodes
-- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities

@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 713
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
-- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
-- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
-- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
-- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
-- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
-- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
-- [[Guardrails_5]] - document - .agents/skills/i-release/SKILL.md
-- [[Invocation_3]] - document - .agents/skills/i-release/SKILL.md
-- [[Role_30]] - document - .agents/skills/i-release/SKILL.md
-- [[SKILL_46]] - document - .agents/skills/i-release/SKILL.md
-- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
-- [[Steps]] - document - .agents/skills/i-release/SKILL.md
+- [[dot-setup_method()_37]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_adblock_format()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_adblock_format_invalid_chars()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_blank_whitespace()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_comment_line()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_domain_only()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_empty_line()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_hosts_format_localhost()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_hosts_format_localhost_skip()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_hosts_format_zero()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_inline_comment_stripped()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_invalid_no_dot()]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestParseHostsLine]] - code - gateway/tests/test_dns_blocklist.py
+- [[parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.]] - rationale - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +31,10 @@ members: 13
 TABLE source_file, type FROM #community/Community_713
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 138]]
+
+## Top bridge nodes
+- [[TestParseHostsLine]] - degree 15, connects to 1 community
+- [[dot-setup_method()_37]] - degree 2, connects to 1 community

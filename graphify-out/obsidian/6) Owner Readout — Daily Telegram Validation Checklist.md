@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "Community 352"
+community: "Community 355"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_352
+  - community/Community_355
 ---
 
 # 6) Owner Readout — Daily Telegram Validation Checklist
@@ -21,4 +21,4 @@ tags:
 - [[F. Rate-limit UX]] - `contains` [EXTRACTED]
 - [[G. Daily evidence capture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_352
+#graphify/document #graphify/EXTRACTED #community/Community_355

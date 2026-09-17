@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.29
+members: 10
 ---
 
 # Community 900
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[1Password (trusted for secrets, gateway-only access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[AgentShroud Bot (no direct credentialinternet access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[AgentShroud Gateway (holds 1Password service account)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Isaiah Jefferson (full control)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Trust Zone 0 — Owner (Highest Trust)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Trust Zone 1 — Gateway (Trusted Enforcer)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Trust Zone 2 — Bot (Supervised Agent)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Trust Zone 3 — External Services (Conditional)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Trust Zone 4 — Infrastructure Nodes (SSH-gated)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[dot-test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
+- [[main()_34]] - code - scripts/list_registry_ghsa_ids.py
+- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_900
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 458]]
+
+## Top bridge nodes
+- [[list_registry_ghsa_ids.py]] - degree 3, connects to 1 community

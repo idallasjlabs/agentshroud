@@ -1,22 +1,100 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 86"
-location: "L126"
+community: "Approval Routing & Event Bus"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Approval_Routing__Event_Bus
 ---
 
 # lifespan()
 
 ## Connections
+- [[dot-_path()]] - `calls` [INFERRED]
+- [[AgentRegistry]] - `calls` [EXTRACTED]
+- [[AlertDispatcher]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner]] - `calls` [EXTRACTED]
+- [[EventBus]] - `calls` [EXTRACTED]
 - [[FastAPI_1]] - `references` [EXTRACTED]
-- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - `rationale_for` [EXTRACTED]
-- [[TestLifespan]] - `calls` [EXTRACTED]
-- [[_get_auth_token()]] - `calls` [EXTRACTED]
-- [[load_persona_files()]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
+- [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
+- [[GroupRegistry]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
+- [[IsolationVerifier]] - `calls` [EXTRACTED]
+- [[KeyLeakDetector]] - `calls` [EXTRACTED]
+- [[KeyVault]] - `calls` [EXTRACTED]
+- [[KeyVaultConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
+- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RateLimitConfig]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `calls` [EXTRACTED]
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
+- [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
+- [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
+- [[config_watcher()]] - `calls` [EXTRACTED]
+- [[get_module_mode()]] - `calls` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[install_log_handler()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `calls` [EXTRACTED]
+- [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
+- [[setup_resource_guard()]] - `calls` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

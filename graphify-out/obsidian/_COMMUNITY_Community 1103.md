@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.52
+members: 7
 ---
 
 # Community 1103
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.52 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Purpose_121]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Related Notes_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Security Controls_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js_2]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[error()]] - code - scripts/security-scan.sh
+- [[info()]] - code - scripts/security-scan.sh
+- [[require_tool()]] - code - scripts/security-scan.sh
+- [[scriptssecurity-scan.sh]] - code - scripts/security-scan.sh
+- [[security-scan.sh script_1]] - code - scripts/security-scan.sh
+- [[success()]] - code - scripts/security-scan.sh
+- [[warn()]] - code - scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 

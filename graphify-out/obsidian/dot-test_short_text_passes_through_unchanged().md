@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 846"
+location: "L493"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_846
+---
+
+# .test_short_text_passes_through_unchanged()
+
+## Connections
+- [[TestSendTelegramTruncation]] - `method` [EXTRACTED]
+- [[__enter__()]] - `contains` [EXTRACTED]
+- [[__exit__()]] - `contains` [EXTRACTED]
+- [[_fake_urlopen()]] - `contains` [EXTRACTED]
+- [[_fake_urlopen()_1]] - `indirect_call` [INFERRED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[read()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_846

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 237"
+community: "Community 244"
 location: "L483"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/Community_244
 ---
 
 # Confidence Scoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Learning System (Continuous Improvement)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/Community_244

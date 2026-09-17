@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 606
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Check A — Substantive change on the losing side_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Check B — Tied to a real ticket_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Check C — Still broken at HEAD (not self-healed)_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Guardrails_6]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Invocation Forms_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Jira  PR Comment Format_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Role_40]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[SKILL_65]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 1 — Verify the script exists_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 2 — Determine the target_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 3 — Run the audit script_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 4 — Triage each finding_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 5 — Classify findings_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 6 — Output the report_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Canonical request (copy-paste `curl` to validate before building Shortcuts)]] - document - shortcuts/README.md
+- [[Content-type quick reference]] - document - shortcuts/README.md
+- [[Contract verification (automated)]] - document - shortcuts/README.md
+- [[One-time setup (do this first)]] - document - shortcuts/README.md
+- [[Recipe A — Share Sheet text  URL]] - document - shortcuts/README.md
+- [[Recipe B — Siri voice capture (Hey Siri, send to AgentShroud)]] - document - shortcuts/README.md
+- [[Recipe C — Screenshot relay (OCR text)]] - document - shortcuts/README.md
+- [[Recipe D — Clipboard relay (macOS menu bar  iOS)]] - document - shortcuts/README.md
+- [[Recipe E — Share Sheet photo relay]] - document - shortcuts/README.md
+- [[Request body — `ForwardRequest`]] - document - shortcuts/README.md
+- [[Response body — `ForwardResponse`]] - document - shortcuts/README.md
+- [[Status_4]] - document - shortcuts/README.md
+- [[The `forward` contract (authoritative)]] - document - shortcuts/README.md
+- [[Troubleshooting_33]] - document - shortcuts/README.md
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - document - shortcuts/README.md
+- [[shortcutsREADME]] - document - shortcuts/README.md
 
 ## Live Query (requires Dataview plugin)
 

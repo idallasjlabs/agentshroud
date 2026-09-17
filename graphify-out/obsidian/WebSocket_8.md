@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 37"
-location: "L882"
+community: "Approval Queue (WebSocket)"
+location: "L350"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_37
+  - graphify/EXTRACTED
+  - community/Approval_Queue_WebSocket
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[dot-connect()_2]] - `references` [EXTRACTED]
+- [[dot-disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

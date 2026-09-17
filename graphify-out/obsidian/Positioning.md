@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "document"
-community: "Community 949"
+community: "Community 993"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_949
+  - community/Community_993
 ---
 
 # Positioning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_949
+#graphify/document #graphify/EXTRACTED #community/Community_993

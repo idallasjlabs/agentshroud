@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1440
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_22]] - document - .agents/skills/i-gitops/SKILL.md
-- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
+- [[PATTERNS]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
+- [[block_credential_write.sh]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
+- [[block_credential_write.sh script]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 76"
-location: "L286"
+community: "SOC Correlation & Router"
+location: "L1286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/SOC_Correlation__Router
 ---
 
 # add_group_member()
 
 ## Connections
-- [[Add a user to a group.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AddGroupMemberRequest]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[_app_state()]] - `calls` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[persist_group_member_add()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

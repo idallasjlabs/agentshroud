@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1331
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Container Health]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Live System Status]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Unit Test Suite]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[5. Test Results]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[dot-test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 3 edges to [[_COMMUNITY_Community 200]]
+- 1 edge to [[_COMMUNITY_Community 297]]
 
 ## Top bridge nodes
-- [[5. Test Results]] - degree 4, connects to 1 community
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[dot-test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community
+- [[dot-test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[dot-test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community

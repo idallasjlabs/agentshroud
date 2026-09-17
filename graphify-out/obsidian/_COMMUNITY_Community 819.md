@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 819
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. Owner & Governance Context]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[2. Project]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[3. Prime Directive]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[4. Development Rules (TDD)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[5. Language & Tooling Standards]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[6. Runtime Environment (CRITICAL)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[7. SSH Development Workflow]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[8. Agent Orchestration]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[9. Repository Guardrails]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[9. Skill Lookup]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[DEVELOPER.md — Development Context for AgentShroud]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[Commands_4]] - document - skills/openclaw/weather/SKILL.md
+- [[Current Weather]] - document - skills/openclaw/weather/SKILL.md
+- [[Forecasts]] - document - skills/openclaw/weather/SKILL.md
+- [[Format Codes]] - document - skills/openclaw/weather/SKILL.md
+- [[Format Options]] - document - skills/openclaw/weather/SKILL.md
+- [[Location_1]] - document - skills/openclaw/weather/SKILL.md
+- [[Notes_10]] - document - skills/openclaw/weather/SKILL.md
+- [[Quick Responses]] - document - skills/openclaw/weather/SKILL.md
+- [[Weather Skill]] - document - skills/openclaw/weather/SKILL.md
+- [[When NOT to Use_3]] - document - skills/openclaw/weather/SKILL.md
+- [[When to Use_4]] - document - skills/openclaw/weather/SKILL.md
+- [[weatherSKILL]] - document - skills/openclaw/weather/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 666]]
+- 1 edge to [[_COMMUNITY_Community 411]]
 
 ## Top bridge nodes
-- [[DEVELOPER.md — Development Context for AgentShroud]] - degree 11, connects to 1 community
+- [[weatherSKILL]] - degree 2, connects to 1 community

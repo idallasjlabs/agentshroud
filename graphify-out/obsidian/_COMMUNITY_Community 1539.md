@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[PRIVATE_TOOLS (owner-only tool set)]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[hermesskillsi-kaizenSKILL]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

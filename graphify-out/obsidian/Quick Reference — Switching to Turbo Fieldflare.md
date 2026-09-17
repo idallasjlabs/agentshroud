@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Community 736"
+community: "Community 769"
 location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_769
 ---
 
 # Quick Reference — Switching to Turbo Fieldflare
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Quick Reference — Switching to Local Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_736
+#graphify/document #graphify/EXTRACTED #community/Community_769

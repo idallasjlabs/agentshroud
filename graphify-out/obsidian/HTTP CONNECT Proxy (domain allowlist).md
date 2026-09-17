@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 414"
+community: "Community 217"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Community_217
 ---
 
 # HTTP CONNECT Proxy (domain allowlist)
@@ -17,6 +17,6 @@ tags:
 - [[LLM Inference (OpenAI  Anthropic)]] - `calls` [EXTRACTED]
 - [[MCP Inspector]] - `calls` [EXTRACTED]
 - [[OpenAI API]] - `calls` [EXTRACTED]
-- [[Telegram API]] - `calls` [EXTRACTED]
+- [[Telegram API_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_414
+#graphify/concept #graphify/EXTRACTED #community/Community_217

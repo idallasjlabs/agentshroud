@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOUL.md Freshness Check Job]] - code - .github/workflows/ci.yml
+- [[test_playback_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

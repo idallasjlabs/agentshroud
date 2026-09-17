@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 276"
+community: "Community 282"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Community_282
 ---
 
 # Part 2 — Red-Team Attack Run (SCRUM-73)
@@ -27,4 +27,4 @@ tags:
 - [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - `contains` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/Community_282

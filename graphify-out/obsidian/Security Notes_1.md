@@ -1,17 +1,19 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 588"
-location: "L443"
+community: "Community 221"
+location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_588
+  - community/Community_221
 ---
 
 # Security Notes
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Current Security Posture]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_588
+#graphify/document #graphify/EXTRACTED #community/Community_221

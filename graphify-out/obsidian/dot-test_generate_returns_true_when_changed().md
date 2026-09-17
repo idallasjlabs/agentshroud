@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_generate_cve_page.py"
+type: "code"
+community: "Community 186"
+location: "L347"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_186
+---
+
+# .test_generate_returns_true_when_changed()
+
+## Connections
+- [[TestGenerate]] - `method` [EXTRACTED]
+- [[_get_mod()]] - `calls` [EXTRACTED]
+- [[_make_cve()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_186

@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.31
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 910
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[confirm()]] - code - docker/scripts/killswitch.sh
-- [[killswitch.sh]] - code - docker/scripts/killswitch.sh
-- [[killswitch.sh script]] - code - docker/scripts/killswitch.sh
-- [[op-auth-common.sh]] - code - docker/scripts/op-auth-common.sh
-- [[op-auth-common.sh script]] - code - docker/scripts/op-auth-common.sh
-- [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
-- [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
-- [[op_authenticate()]] - code - docker/scripts/op-auth-common.sh
-- [[usage()_1]] - code - docker/scripts/killswitch.sh
+- [[dot-test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditTrail_2]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,15 @@ members: 9
 TABLE source_file, type FROM #community/Community_910
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 175]]
+- 2 edges to [[_COMMUNITY_Community 211]]
+- 2 edges to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 129]]
+- 1 edge to [[_COMMUNITY_Community 218]]
+- 1 edge to [[_COMMUNITY_Community 366]]
+
+## Top bridge nodes
+- [[TestAuditTrail_2]] - degree 23, connects to 7 communities

@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 41"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L506"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # TestBuildFullMesh
 
 ## Connections
-- [[._shared_tm()]] - `method` [EXTRACTED]
-- [[.test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - `method` [EXTRACTED]
-- [[.test_empty_bot_list_does_not_raise()]] - `method` [EXTRACTED]
-- [[.test_every_bot_shares_the_same_trust_manager()]] - `method` [EXTRACTED]
-- [[.test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - `method` [EXTRACTED]
-- [[.test_single_bot_has_no_peers_and_does_not_raise()]] - `method` [EXTRACTED]
-- [[.test_three_bots_form_a_full_mesh()]] - `method` [EXTRACTED]
-- [[.test_two_bots_are_mutual_peers()]] - `method` [EXTRACTED]
+- [[dot-_shared_tm()]] - `method` [EXTRACTED]
+- [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - `method` [EXTRACTED]
+- [[dot-test_empty_bot_list_does_not_raise()]] - `method` [EXTRACTED]
+- [[dot-test_every_bot_shares_the_same_trust_manager()]] - `method` [EXTRACTED]
+- [[dot-test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - `method` [EXTRACTED]
+- [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - `method` [EXTRACTED]
+- [[dot-test_three_bots_form_a_full_mesh()]] - `method` [EXTRACTED]
+- [[dot-test_two_bots_are_mutual_peers()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - `rationale_for` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

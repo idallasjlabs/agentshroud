@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Community 1145"
+community: "Community 1191"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1145
+  - community/Community_1191
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1145
+#graphify/document #graphify/EXTRACTED #community/Community_1191

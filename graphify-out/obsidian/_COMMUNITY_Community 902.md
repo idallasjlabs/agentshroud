@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 902
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Kawaii Face Basic Cycle Example Root CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt
-- [[Kawaii Face Basic Cycle Main Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt
-- [[LVGL 9.x Graphics Library Dependency]] - concept - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[LVGL Kawaii Face Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/CMakeLists.txt
-- [[LVGL Kawaii Face IDF Component Manifest (v1.0.0)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)]] - code - firmware/voice-terminal/main/CMakeLists.txt
-- [[Voice Terminal Main IDF Component Manifest]] - code - firmware/voice-terminal/main/idf_component.yml
-- [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - concept - firmware/voice-terminal/main/idf_component.yml
-- [[esp-sr Speech Recognition Library (WakeNet WN9)]] - concept - firmware/voice-terminal/main/idf_component.yml
+- [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
+- [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
+- [[dot-filter_response()_2]] - code - gateway/security/privacy_policy.py
+- [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
+- [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
+- [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
+- [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
+- [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
+- [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
+- [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,13 @@ members: 9
 TABLE source_file, type FROM #community/Community_902
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_Community 97]]
+
+## Top bridge nodes
+- [[dot-_get_role_value()]] - degree 4, connects to 1 community
+- [[dot-is_service_allowed()]] - degree 4, connects to 1 community
+- [[dot-should_alert()]] - degree 4, connects to 1 community
+- [[dot-filter_response()_2]] - degree 3, connects to 1 community
+- [[dot-should_audit()]] - degree 3, connects to 1 community

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Management"
+community: "Community 383"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Community_383
 ---
 
 # Return the system prompt with a re-anchoring preamble prepended.          Called
 
 ## Connections
-- [[.reanchor_system_prompt()]] - `rationale_for` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Community_383

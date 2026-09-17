@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 923"
-location: "L267"
+community: "Community 336"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_923
+  - community/Community_336
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_923
+#graphify/document #graphify/EXTRACTED #community/Community_336

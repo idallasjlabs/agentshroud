@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[._sanitize_text()]] - code - gateway/security/log_sanitizer.py
-- [[.filter()_1]] - code - gateway/security/log_sanitizer.py
-- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
-- [[LogRecord_1]] - code - gateway/security/log_sanitizer.py
-- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
+- [[Purpose_70]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Related Skills_61]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Usage_65]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1252
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-
-## Top bridge nodes
-- [[.filter()_1]] - degree 4, connects to 1 community
-- [[._sanitize_text()]] - degree 3, connects to 1 community

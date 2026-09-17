@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Telegram Proxy Inbound Tests"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Telegram_Proxy_Inbound_Tests
 ---
 
 # Verify that _filter_inbound_updates() calls pipeline.process_inbound().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInboundPipelineOnGetUpdates]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

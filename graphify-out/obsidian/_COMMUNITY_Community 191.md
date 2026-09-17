@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.05
-members: 37
+cohesion: 0.09
+members: 38
 ---
 
 # Community 191
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[1. Add Public Key to Target Host]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[2. Add Host Configuration (Optional but Recommended)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[3. Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Adding Additional Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Backup SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Backup and Recovery]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Configured Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Next Steps_8]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Connection timeout]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Host key verification failed]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Quick Reference_7]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Configuration Details]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Key Generated]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Security Considerations]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Setup Instructions]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 1 Add Public Key to Raspberry Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_29]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Usage Examples_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Verification Checklist_3]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[🔐 Credentials in 1Password]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[dot-test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
+- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[TestScoreMalwareDefense_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
+- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,7 +57,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 92]]
+- 11 edges to [[_COMMUNITY_Community 73]]
+- 4 edges to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 168]]
 
 ## Top bridge nodes
-- [[OpenClaw Bot SSH Configuration]] - degree 12, connects to 1 community
+- [[_score_vulnerability_management()]] - degree 17, connects to 3 communities
+- [[_score_malware_defense()]] - degree 15, connects to 3 communities
+- [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community
+- [[TestScoreMalwareDefense_1]] - degree 5, connects to 1 community
+- [[dot-test_initial_when_infected()]] - degree 3, connects to 1 community

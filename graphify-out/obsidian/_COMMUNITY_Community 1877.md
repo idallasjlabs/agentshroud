@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.validate_command()]] - code - gateway/ssh_proxy/proxy.py
+- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

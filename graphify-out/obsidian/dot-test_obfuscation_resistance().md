@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_multilingual_injection.py"
+type: "code"
+community: "Community 208"
+location: "L224"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_208
+---
+
+# .test_obfuscation_resistance()
+
+## Connections
+- [[Test resistance to basic obfuscation attempts.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_208

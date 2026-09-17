@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 444"
-location: "L27"
+community: "Community 836"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Community_836
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
+- [[diagramsREADME_2]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_444
+#graphify/document #graphify/EXTRACTED #community/Community_836

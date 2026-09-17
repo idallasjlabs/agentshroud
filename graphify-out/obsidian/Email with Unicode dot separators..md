@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "Community 45"
+community: "Community 46"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_46
 ---
 
 # Email with Unicode dot separators.
 
 ## Connections
-- [[.test_dotted_email_caught_in_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dotted_email_caught_in_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_45
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

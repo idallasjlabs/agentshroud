@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 905"
+community: "Community 953"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_905
+  - community/Community_953
 ---
 
 # Prompt Injection Hardening
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 P0 — Security Fixes (17 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_905
+#graphify/document #graphify/EXTRACTED #community/Community_953

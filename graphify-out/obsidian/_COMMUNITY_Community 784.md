@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.20
+members: 12
 ---
 
 # Community 784
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Context_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Decision_9]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Mitigation_4]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Status_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
 
 ## Live Query (requires Dataview plugin)
 

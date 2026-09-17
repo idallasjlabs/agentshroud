@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ToolACLEnforcer._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
-- [[TrustManager.is_tool_allowed()]] - code - gateway/security/trust_manager.py
+- [[Skill incident-response_1]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[hermesskillsi-incident-responseSKILL]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

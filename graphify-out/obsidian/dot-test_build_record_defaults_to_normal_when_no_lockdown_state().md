@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_contributors.py"
+type: "code"
+community: "Community 226"
+location: "L59"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_226
+---
+
+# .test_build_record_defaults_to_normal_when_no_lockdown_state()
+
+## Connections
+- [[ContributorManager]] - `calls` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[TestLockdownLevelWiring]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_226

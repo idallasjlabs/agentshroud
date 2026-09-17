@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 117"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_117
 ---
 
 # Risk assessment levels for egress requests.
 
 ## Connections
-- [[RiskLevel_3]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_117

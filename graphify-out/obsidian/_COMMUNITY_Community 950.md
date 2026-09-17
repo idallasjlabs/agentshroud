@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 950
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary_11]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 234]]
 
 ## Top bridge nodes
-- [[AgentShroud Session Issue Register — 2026-03-14]] - degree 8, connects to 1 community
-- [[XMLFunction-Call Leak Filter]] - degree 4, connects to 1 community
+- [[VIII. Evaluation]] - degree 9, connects to 1 community

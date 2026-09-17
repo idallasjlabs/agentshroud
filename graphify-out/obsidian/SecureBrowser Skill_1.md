@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "concept"
-community: "Community 1045"
+community: "Community 1080"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_1045
+  - graphify/EXTRACTED
+  - community/Community_1080
 ---
 
 # SecureBrowser Skill
@@ -14,4 +14,4 @@ tags:
 - [[BROWSER_FETCH_SKILL]] - `semantically_similar_to` [INFERRED]
 - [[PUBLISH-TO-CLAWHUB]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1045
+#graphify/concept #graphify/EXTRACTED #community/Community_1080

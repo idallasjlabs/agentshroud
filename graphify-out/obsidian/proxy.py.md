@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/Approval_Queue_WebSocket
 ---
 
 # proxy.py
 
 ## Connections
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[SSHConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
+- [[SSHProxy_1]] - `contains` [EXTRACTED]
 - [[SSHResult]] - `contains` [EXTRACTED]
 - [[SSHWriteResult]] - `contains` [EXTRACTED]
-- [[__init__.py_12]] - `re_exports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[ssh_proxy__init__.py]] - `re_exports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

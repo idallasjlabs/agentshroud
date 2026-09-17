@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.14
 members: 15
 ---
 
 # Community 612
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SKILL_173]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[ClamAV_1]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Installation_3]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_147]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_148]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Trivy_1]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[clamav]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[trivy]] - document - docs/vault/05 - Dependencies/trivy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,14 @@ members: 15
 TABLE source_file, type FROM #community/Community_612
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 266]]
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 224]]
+- 1 edge to [[_COMMUNITY_Community 670]]
+
+## Top bridge nodes
+- [[clamav]] - degree 6, connects to 2 communities
+- [[openscap]] - degree 4, connects to 2 communities
+- [[trivy]] - degree 4, connects to 1 community

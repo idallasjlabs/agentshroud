@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Community 179"
+community: "Community 105"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Community_105
 ---
 
 # local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_uses_hermes_main_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_179
+#graphify/rationale #graphify/EXTRACTED #community/Community_105

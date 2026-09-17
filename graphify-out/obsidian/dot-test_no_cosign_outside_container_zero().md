@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 200"
+location: "L779"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_200
+---
+
+# .test_no_cosign_outside_container_zero()
+
+## Connections
+- [[TestImageSigningProvenance]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_200

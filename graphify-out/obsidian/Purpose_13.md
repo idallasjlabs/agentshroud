@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Community 1151"
+community: "Community 1189"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1151
+  - community/Community_1189
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1151
+#graphify/document #graphify/EXTRACTED #community/Community_1189

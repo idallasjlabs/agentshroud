@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 52"
+community: "Community 43"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_43
 ---
 
 # test_adversarial_injection.py
 
 ## Connections
-- [[HeuristicClassifier]] - `imports` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestClassicOverride]] - `contains` [EXTRACTED]
 - [[TestContextInjection]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[_prompt_guard_detects()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/Community_43

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1456
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_72]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
-- [[Skill bdd_1]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[TickType_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[test_playback_statestubsfreertosFreeRTOS.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[xTaskGetTickCount()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
 
 ## Live Query (requires Dataview plugin)
 

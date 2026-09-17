@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 92"
+community: "Community 271"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_271
 ---
 
 # Sidecar Mode
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[setup-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_92
+#graphify/concept #graphify/EXTRACTED #community/Community_271

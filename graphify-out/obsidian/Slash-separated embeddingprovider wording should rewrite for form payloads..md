@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 1689"
 location: "L1502"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_1689
 ---
 
 # Slash-separated embedding/provider wording should rewrite for form payloads.
 
 ## Connections
-- [[.test_memory_provider_error_slash_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_provider_error_slash_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_1689

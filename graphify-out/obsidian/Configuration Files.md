@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 172"
+community: "Community 177"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/Community_177
 ---
 
 # Configuration Files
@@ -16,4 +16,4 @@ tags:
 - [[MCP Servers]] - `contains` [EXTRACTED]
 - [[User-Level Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_172
+#graphify/document #graphify/EXTRACTED #community/Community_177

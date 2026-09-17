@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "image"
-community: "Community 897"
+community: "Community 942"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_897
+  - community/Community_942
 ---
 
 # Diagram 13: Network Security Egress
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams (doc)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_897
+#graphify/image #graphify/INFERRED #community/Community_942

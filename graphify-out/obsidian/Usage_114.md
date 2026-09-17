@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 1239"
-location: "L10"
+community: "Community 270"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1239
+  - community/Community_270
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Click Element_3]] - `contains` [EXTRACTED]
+- [[Extract Data_3]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
+- [[Fill Form_2]] - `contains` [EXTRACTED]
+- [[Navigate to URL_3]] - `contains` [EXTRACTED]
+- [[Take Screenshot_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1239
+#graphify/document #graphify/EXTRACTED #community/Community_270

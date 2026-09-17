@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Community 379"
-location: "L13"
+community: "Community 556"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/Community_556
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_379
+#graphify/document #graphify/EXTRACTED #community/Community_556

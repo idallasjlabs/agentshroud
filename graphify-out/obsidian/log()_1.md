@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "Community 427"
-location: "L18"
+community: "Community 1100"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Community_1100
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_427
+#graphify/code #graphify/EXTRACTED #community/Community_1100

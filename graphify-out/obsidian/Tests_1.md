@@ -1,17 +1,18 @@
 ---
-source_file: "CHEATSHEET.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 440"
-location: "L375"
+community: "Community 469"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_440
+  - community/Community_469
 ---
 
 # Tests
 
 ## Connections
-- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
+- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_440
+#graphify/document #graphify/EXTRACTED #community/Community_469

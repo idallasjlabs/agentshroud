@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Community 1065"
+community: "Community 1117"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1065
+  - community/Community_1117
 ---
 
 # Apple Platform Integration
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Post-v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 - [[Apple Watch Support]] - `contains` [EXTRACTED]
 - [[Control Center Widget (iPhone + macOS)]] - `contains` [EXTRACTED]
-- [[Implementation Notes_1]] - `contains` [EXTRACTED]
+- [[Implementation Notes]] - `contains` [EXTRACTED]
 - [[Push Notifications (iPhone + Mac + Apple Watch)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1065
+#graphify/document #graphify/EXTRACTED #community/Community_1117

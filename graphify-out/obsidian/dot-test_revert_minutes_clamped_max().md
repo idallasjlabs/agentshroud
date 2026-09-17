@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_observatory_mode.py"
+type: "code"
+community: "Community 813"
+location: "L147"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_813
+---
+
+# .test_revert_minutes_clamped_max()
+
+## Connections
+- [[TestSetMode]] - `method` [EXTRACTED]
+- [[revert_after_minutes above 480 is clamped to 480.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_813

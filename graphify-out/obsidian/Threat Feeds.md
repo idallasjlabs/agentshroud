@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 865"
+community: "Community 904"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_865
+  - community/Community_904
 ---
 
 # Threat Feeds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Intelligence Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_865
+#graphify/document #graphify/EXTRACTED #community/Community_904

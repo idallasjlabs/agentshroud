@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "Community 1521"
+community: "Community 1647"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1521
+  - community/Community_1647
 ---
 
 # canary-cron.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[canary-cron.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1521
+#graphify/code #graphify/EXTRACTED #community/Community_1647

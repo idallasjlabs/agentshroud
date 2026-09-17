@@ -1,21 +1,22 @@
 ---
 type: community
 cohesion: 0.33
-members: 6
+members: 7
 ---
 
 # Community 1101
 
 **Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Notes_1]] - document - skills/openclaw/video-frames/SKILL.md
+- [[Quick start]] - document - skills/openclaw/video-frames/SKILL.md
+- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
+- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[usage()_3]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[video-framesSKILL]] - document - skills/openclaw/video-frames/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1101
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 411]]
+
+## Top bridge nodes
+- [[video-framesSKILL]] - degree 3, connects to 1 community

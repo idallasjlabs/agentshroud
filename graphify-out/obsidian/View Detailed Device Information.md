@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 588"
+community: "Community 206"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_588
+  - community/Community_206
 ---
 
 # View Detailed Device Information
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Listing Paired Devices]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_588
+#graphify/document #graphify/EXTRACTED #community/Community_206

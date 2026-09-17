@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1091
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_handle_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[AgentShroud Hermes — System Identity_1]] - document - docker/config/hermes/SOUL.md
+- [[Capabilities_1]] - document - docker/config/hermes/SOUL.md
+- [[Core Behaviors_1]] - document - docker/config/hermes/SOUL.md
+- [[Owner_1]] - document - docker/config/hermes/SOUL.md
+- [[Remote Hosts (SSH via gateway)_1]] - document - docker/config/hermes/SOUL.md
+- [[Trademark Notice_1]] - document - docker/config/hermes/SOUL.md
+- [[Your Role_1]] - document - docker/config/hermes/SOUL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1091
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 477]]
+
+## Top bridge nodes
+- [[AgentShroud Hermes — System Identity_1]] - degree 7, connects to 1 community

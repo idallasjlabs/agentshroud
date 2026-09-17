@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_pipeline.py"
+type: "code"
+community: "Community 109"
+location: "L249"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_109
+---
+
+# .test_outbound_blocked_replaces_text()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestOutboundPipelineBlocked]] - `method` [EXTRACTED]
+- [[_make_pipeline_result()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_109

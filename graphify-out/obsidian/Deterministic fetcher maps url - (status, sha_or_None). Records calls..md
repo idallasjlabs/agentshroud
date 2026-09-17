@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "Community 105"
+community: "Community 70"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_70
 ---
 
 # Deterministic fetcher: maps url -> (status, sha_or_None). Records calls.
 
 ## Connections
-- [[_FakeFetcher]] - `rationale_for` [EXTRACTED]
+- [[_FakeFetcher_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_105
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

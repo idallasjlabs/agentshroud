@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # RouterError
 
 ## Connections
-- [[.resolve_target()]] - `calls` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[Exception]] - `inherits` [EXTRACTED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[dot-resolve_target()]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
+- [[Exception_4]] - `inherits` [EXTRACTED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Raised when no valid routing target found]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[router.py]] - `contains` [EXTRACTED]
+- [[ingest_apirouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

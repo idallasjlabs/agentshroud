@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "concept"
-community: "Community 975"
+community: "Community 1007"
 location: "Phase 1, Section 1.4"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_975
+  - community/Community_1007
 ---
 
 # XML Function-Call Block Filter (filter_xml_blocks) — Response Sanitization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recovery Plan v0.4.0 — Systematic Stabilization]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_975
+#graphify/concept #graphify/EXTRACTED #community/Community_1007

@@ -1,0 +1,19 @@
+---
+source_file: "chatbot/test_main.py"
+type: "code"
+community: "Community 76"
+location: "L166"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_76
+---
+
+# .test_openai_auth_error_returns_503()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[OpenAI AuthenticationError returns 503 without leaking the key.]] - `rationale_for` [EXTRACTED]
+- [[TestErrorSanitization]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_76

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # format_addtogroup_success()
 
 ## Connections
-- [[._handle_addtogroup_command()]] - `calls` [EXTRACTED]
-- [[.test_addtogroup_success()]] - `calls` [EXTRACTED]
+- [[dot-_handle_addtogroup_command()]] - `calls` [EXTRACTED]
+- [[dot-test_addtogroup_success()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

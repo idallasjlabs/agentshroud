@@ -1,21 +1,19 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/updating.md"
 type: "document"
-community: "Community 529"
-location: "L724"
+community: "Community 538"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_529
+  - community/Community_538
 ---
 
-# Updating
+# updating.md
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Manual Update Process]] - `contains` [EXTRACTED]
-- [[Rollback If Needed]] - `contains` [EXTRACTED]
+- [[Database Migrations]] - `references` [EXTRACTED]
+- [[Rollback Procedure]] - `references` [EXTRACTED]
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
-- [[Update OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_529
+#graphify/document #graphify/EXTRACTED #community/Community_538

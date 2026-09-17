@@ -1,17 +1,17 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 518"
+community: "Community 526"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Community_526
 ---
 
 # Service Account Setup
 
 ## Connections
-- [[1Password Integration]] - `contains` [EXTRACTED]
+- [[1Password Integration_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Community_526

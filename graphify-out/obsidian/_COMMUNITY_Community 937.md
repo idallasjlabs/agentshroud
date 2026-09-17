@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 937
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[ADR-008 Progressive Trust Level System]] - concept - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Approval DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[ApprovalRequest (data entity)]] - concept - docs/data/data-dictionary.md
-- [[RateLimitBucket (data entity)]] - concept - docs/data/data-dictionary.md
-- [[TrustLevel (data entity)]] - concept - docs/data/data-dictionary.md
-- [[agent_trust SQLite table]] - code - docs/data/schema-documentation.md
-- [[agentshroud.yaml (main config schema)]] - code - docs/data/schema-documentation.md
-- [[approval_requests SQLite table]] - code - docs/data/schema-documentation.md
+- [[Input Requirements_22]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[Output Format_38]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[Persona_17]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[Quality Checklist_19]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[Role_102]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[System Prompt_17]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[User Prompt Template_10]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[Vulcan — Subject Matter Auditor_4]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[hermesskillsi-vulcanSKILL]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +26,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_937
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 514]]
-
-## Top bridge nodes
-- [[ADR-008 Progressive Trust Level System]] - degree 3, connects to 1 community
-- [[Approval DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

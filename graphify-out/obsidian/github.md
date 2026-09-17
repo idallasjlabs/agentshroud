@@ -1,18 +1,18 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 222"
+community: "Community 230"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_222
+  - community/Community_230
 ---
 
 # github
 
 ## Connections
-- [[.llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
-- [[.mcp.json]] - `contains` [EXTRACTED]
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
+- [[dot-mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_222
+#graphify/code #graphify/EXTRACTED #community/Community_230

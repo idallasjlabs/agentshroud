@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.15
-members: 19
+cohesion: 0.13
+members: 20
 ---
 
 # Community 464
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[.__aenter__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__aexit__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__aiter__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__anext__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__call__()_3]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_145]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_144]] - code - gateway/tests/test_cli_coverage.py
-- [[.send()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_missing_websockets_package()]] - code - gateway/tests/test_cli_coverage.py
-- [[Async-iterable WebSocket double.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[TestTailWS]] - code - gateway/tests/test_cli_coverage.py
-- [[_FakeConnect]] - code - gateway/tests/test_cli_coverage.py
-- [[_FakeWS]] - code - gateway/tests/test_cli_coverage.py
-- [[_install_fake_websockets()]] - code - gateway/tests/test_cli_coverage.py
-- [[_tail_ws()]] - code - gateway/cli/main.py
-- [[test_cli_coverage.py]] - code - gateway/tests/test_cli_coverage.py
-- [[test_main_entrypoint_runs_cli_group()]] - code - gateway/tests/test_cli_coverage.py
+- [[check_1]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[check_2]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[check_3]] - code - tests/startup_smoke/test_setup_secrets.sh
+- [[check()_4]] - code - scripts/post-deploy-check.sh
+- [[extract_default]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[has]] - code - tests/startup_smoke/test_setup_secrets.sh
+- [[has_in_section]] - code - tests/startup_smoke/test_setup_secrets.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
+- [[run_test()]] - code - scripts/smoke.sh
+- [[smoke.sh]] - code - scripts/smoke.sh
+- [[smoke.sh script]] - code - scripts/smoke.sh
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[test_openclaw_model_provider_consistency.sh script]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[test_openclaw_readiness_retry.sh]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[test_openclaw_readiness_retry.sh script]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[test_setup_secrets.sh]] - code - tests/startup_smoke/test_setup_secrets.sh
+- [[test_setup_secrets.sh script]] - code - tests/startup_smoke/test_setup_secrets.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,15 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 76]]
-- 7 edges to [[_COMMUNITY_Community 152]]
-- 7 edges to [[_COMMUNITY_Community 229]]
-- 2 edges to [[_COMMUNITY_Community 948]]
-- 1 edge to [[_COMMUNITY_Community 1122]]
+- 3 edges to [[_COMMUNITY_Community 474]]
+- 1 edge to [[_COMMUNITY_Community 1030]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 
 ## Top bridge nodes
-- [[test_cli_coverage.py]] - degree 26, connects to 5 communities
-- [[_FakeWS]] - degree 8, connects to 1 community
-- [[_tail_ws()]] - degree 7, connects to 1 community
-- [[_FakeConnect]] - degree 7, connects to 1 community
-- [[TestTailWS]] - degree 5, connects to 1 community
+- [[run_test()]] - degree 8, connects to 1 community
+- [[smoke.sh]] - degree 5, connects to 1 community
+- [[post-deploy-check.sh]] - degree 4, connects to 1 community

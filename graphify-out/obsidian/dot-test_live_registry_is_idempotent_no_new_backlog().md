@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+type: "code"
+community: "Community 278"
+location: "L311"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_278
+---
+
+# .test_live_registry_is_idempotent_no_new_backlog()
+
+## Connections
+- [[Re-running against the LIVE registry adds nothing (backlog already synced).]] - `rationale_for` [EXTRACTED]
+- [[TestSnapshotSmoke]] - `method` [EXTRACTED]
+- [[_sync()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_278

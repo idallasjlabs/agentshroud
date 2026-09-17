@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 326"
+community: "Community 336"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_326
+  - community/Community_336
 ---
 
 # Delete Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_326
+#graphify/document #graphify/EXTRACTED #community/Community_336

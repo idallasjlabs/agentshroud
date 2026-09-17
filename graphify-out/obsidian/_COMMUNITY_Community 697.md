@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 697
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[description of what this does]] - document - .agents/skills/i-athena/SKILL.md
-- [[Athena README]] - document - .agents/skills/i-athena/README.md
-- [[Athena — Knowledge Distiller_6]] - document - .agents/skills/i-athena/SKILL.md
-- [[Input Requirements_1]] - document - .agents/skills/i-athena/SKILL.md
-- [[Output Format]] - document - .agents/skills/i-athena/SKILL.md
-- [[Persona]] - document - .agents/skills/i-athena/SKILL.md
-- [[Quality Checklist_1]] - document - .agents/skills/i-athena/SKILL.md
-- [[Role_5]] - document - .agents/skills/i-athena/SKILL.md
-- [[SKILL_5]] - document - .agents/skills/i-athena/SKILL.md
-- [[System Prompt]] - document - .agents/skills/i-athena/SKILL.md
-- [[User Prompt Template]] - document - .agents/skills/i-athena/SKILL.md
-- [[cheatsheet]] - document - .agents/skills/i-athena/SKILL.md
-- [[show_notes]] - document - .agents/skills/i-athena/SKILL.md
+- [[Configuration  Environment Variables_19]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Function Details_35]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Key Classes  Functions_37]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Purpose_166]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Related_41]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,10 +31,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_697
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 939]]
-- 1 edge to [[_COMMUNITY_Community 651]]
-
-## Top bridge nodes
-- [[Athena — Knowledge Distiller_6]] - degree 8, connects to 2 communities

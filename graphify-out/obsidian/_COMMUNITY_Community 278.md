@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.07
-members: 29
+cohesion: 0.14
+members: 30
 ---
 
 # Community 278
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[.__call__()_8]] - code - gateway/tests/test_jira_weekly_review.py
-- [[.__init__()_168]] - code - gateway/tests/test_jira_weekly_review.py
-- [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - rationale - gateway/tests/test_jira_weekly_review.py
-- [[_MockTransport_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[_get_fn_stub()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[_load_module()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_basic_auth_header_is_base64_email_colon_token()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_basic_auth_header_rejects_empty()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_payload_is_valid_adf_doc()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_payload_never_empty()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_url_rejects_empty_cloud_id()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_url_targets_scrum_81_rest_v3()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_extract_scrum_items_from_commits()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_jira_weekly_review.py]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_op_proxy_request_has_bearer_and_system_header()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_op_refs_target_the_atlassian_item()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_parses_response()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_raises_on_non_200()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_raises_when_field_missing()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_aborts_without_gateway_token()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_posts_comment_with_basic_auth()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_returns_1_on_jira_rejection()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_returns_1_when_op_proxy_denies()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_old_activity_flags_stale_even_with_commits()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_with_commits_flags_active()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_with_no_commits_flags_stale()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_accepts_full_https_domain()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_rejects_empty_domain()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_targets_edge_endpoint()_1]] - code - gateway/tests/test_jira_weekly_review.py
+- [[dot-test_append_targets_correct_agent_marker()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_cvss_none_when_absent()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_dedup_by_cve_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_dedup_by_ghsa_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_dry_run_writes_nothing()_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_duplicate_within_same_feed_page_registered_once()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_entry_to_py_handles_none_cvss()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_entry_to_py_roundtrips()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_fetch_paginates_via_link_cursor()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_hermes_snapshot_zero_new()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_id_numbering_continues_from_max()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_idempotent_on_rerun()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_live_registry_is_idempotent_no_new_backlog()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_never_fabricates_ids_skips_advisory_without_ghsa()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_new_advisory_becomes_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_openclaw_snapshot_registers_backlog_as_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_per_agent_prefix_applied()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Re-running against the LIVE registry adds nothing (backlog already synced).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestFetch]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestProcessGhsaAdvisories]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSerialization]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSnapshotSmoke]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[The committed snapshot yields a real backlog, all honest under_review.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_adv()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[scriptssync-cve-registry.py (GHSA auto-register)]] - code - scripts/sync-cve-registry.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,9 +47,3 @@ members: 29
 TABLE source_file, type FROM #community/Community_278
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 249]]
-
-## Top bridge nodes
-- [[test_jira_weekly_review.py]] - degree 26, connects to 1 community

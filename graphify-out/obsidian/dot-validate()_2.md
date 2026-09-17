@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/output_schema.py"
+type: "code"
+community: "Community 248"
+location: "L89"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_248
+---
+
+# .validate()
+
+## Connections
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[SchemaValidationResult]] - `references` [EXTRACTED]
+- [[Validate output against the named schema.          Args             output The]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_248

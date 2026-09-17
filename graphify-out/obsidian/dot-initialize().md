@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/audit_store.py"
+type: "code"
+community: "Community 112"
+location: "L129"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_112
+---
+
+# .initialize()
+
+## Connections
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_112

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_67]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[README_72]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_73]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_74]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[dot-agentsskillsi-mcpmREADME]] - document - .agents/skills/i-mcpm/README.md
+- [[MCP Tools Usage (MCPM)]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_25]] - document - .agents/skills/i-mcpm/README.md
+- [[Related Skills_16]] - document - .agents/skills/i-mcpm/README.md
+- [[Usage_20]] - document - .agents/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 

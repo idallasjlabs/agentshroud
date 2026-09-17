@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 140"
+community: "Community 149"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # The documented agent-facing RECIPE (fenced code) must be scanner-clean.      Thi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_agent_facing_invocation_has_no_plain_http_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

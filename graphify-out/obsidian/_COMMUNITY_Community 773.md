@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Anatomy of a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Assets (`assets`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Bundled Resources (optional)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Concise is Key]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Core Principles]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Design Principle]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[References (`references`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[SKILL.md (required)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Scripts (`scripts`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Set Appropriate Degrees of Freedom]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[What to Not Include in a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[AGENTS.md — Codex CLI Guidance]] - document - AGENTS.md
+- [[Claude Code — Primary Developer]] - concept - AGENTS.md
+- [[Codex Configuration (.codexconfig.toml)]] - document - AGENTS.md
+- [[Codex Prime Directive Not Primary Developer]] - rationale - AGENTS.md
+- [[Codex Safe Refactor Role]] - concept - AGENTS.md
+- [[Codex Test Augmenter Role]] - concept - AGENTS.md
+- [[Codex Validation Runner Role]] - concept - AGENTS.md
+- [[Data Lakehouse Platform (GSDL)]] - concept - AGENTS.md
+- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - document - AGENTS.md
+- [[safe-refactor.agent]] - document - .github/agents/safe-refactor.agent.md
+- [[test-augmenter.agent]] - document - .github/agents/test-augmenter.agent.md
+- [[validation-runner.agent]] - document - .github/agents/validation-runner.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 543]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 346]]
+- 1 edge to [[_COMMUNITY_Community 397]]
+- 1 edge to [[_COMMUNITY_Community 501]]
 
 ## Top bridge nodes
-- [[Core Principles]] - degree 5, connects to 1 community
+- [[AGENTS.md — Codex CLI Guidance]] - degree 8, connects to 1 community
+- [[safe-refactor.agent]] - degree 2, connects to 1 community
+- [[test-augmenter.agent]] - degree 2, connects to 1 community
+- [[validation-runner.agent]] - degree 2, connects to 1 community

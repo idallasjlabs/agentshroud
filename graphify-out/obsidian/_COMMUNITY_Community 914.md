@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 914
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
-- [[assert()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[fs_5]] - code - tests/startup_smoke/test_apply_patches.js
-- [[os]] - code - tests/startup_smoke/test_apply_patches.js
-- [[path_5]] - code - tests/startup_smoke/test_apply_patches.js
-- [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
-- [[{ spawnSync }]] - code - tests/startup_smoke/test_apply_patches.js
+- [[dot-manager()_2]] - code - gateway/tests/test_session_security.py
+- [[dot-test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_nonce_first_use_passes()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_nonce_generation_unique()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_nonce_replay_blocked()]] - code - gateway/tests/test_session_security.py
+- [[A freshly generated nonce validates on first use.]] - rationale - gateway/tests/test_session_security.py
+- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[Each call generates a distinct nonce.]] - rationale - gateway/tests/test_session_security.py
+- [[Replaying the same nonce is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[TestInstructionNonce]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,12 @@ members: 9
 TABLE source_file, type FROM #community/Community_914
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 535]]
+- 3 edges to [[_COMMUNITY_Community 539]]
+- 1 edge to [[_COMMUNITY_Community 913]]
+
+## Top bridge nodes
+- [[TestInstructionNonce]] - degree 12, connects to 3 communities
+- [[dot-manager()_2]] - degree 2, connects to 1 community

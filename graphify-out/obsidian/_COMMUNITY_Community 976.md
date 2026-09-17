@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Current Status_5]] - document - docs/project/README.md
-- [[Current Status_7]] - document - docs/requirements/README.md
-- [[Planned Documents_4]] - document - docs/project/README.md
-- [[Planned Documents_5]] - document - docs/requirements/README.md
-- [[Project Documentation]] - document - docs/project/README.md
-- [[README_124]] - document - docs/project/README.md
-- [[README_125]] - document - docs/requirements/README.md
-- [[Requirements Documentation]] - document - docs/requirements/README.md
+- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Description_15]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Related Notes_67]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Usage_131]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Values_4]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +25,9 @@ members: 8
 TABLE source_file, type FROM #community/Community_976
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 86]]
+
+## Top bridge nodes
+- [[AGENTSHROUD_MODE_1]] - degree 8, connects to 1 community

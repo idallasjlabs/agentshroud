@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Constraints_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Problem_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Root Cause_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Verification_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Check A — Substantive change on the losing side_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Guardrails_13]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Invocation Forms_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Role_66]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[openclawskillsi-abSKILL]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

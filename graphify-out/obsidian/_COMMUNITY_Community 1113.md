@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1113
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎛️ Production-Ready Control Centers]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Complete Security Module Pipeline — 3333 Modules Active]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🏗️ Robust Infrastructure & Architecture]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 Enhanced PII Detection & Compliance]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🧪 Enhanced Testing Infrastructure — 1547 Tests + 125 Security Audits]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[dot-test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestIsFresh]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 664]]
+- 2 edges to [[_COMMUNITY_Community 665]]
+- 2 edges to [[_COMMUNITY_Community 969]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - degree 6, connects to 1 community
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[_mock_empty_dir()]] - degree 3, connects to 1 community
+- [[dot-test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
+- [[dot-test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
+- [[dot-test_returns_true_for_fresh_file()]] - degree 2, connects to 1 community

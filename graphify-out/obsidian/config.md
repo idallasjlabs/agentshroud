@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
-type: "document"
-community: "Community 401"
-location: "L76"
+source_file: "docker/config/openclaw/apply-patches.js"
+type: "code"
+community: "Community 227"
+location: "L17"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_227
 ---
 
-# Config
+# config
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[apply-patches.js (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/code #graphify/EXTRACTED #community/Community_227

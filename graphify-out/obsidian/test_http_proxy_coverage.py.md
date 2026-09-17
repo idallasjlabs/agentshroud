@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 67"
+community: "Community 62"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/Community_62
 ---
 
 # test_http_proxy_coverage.py
 
 ## Connections
-- [[HTTPConnectProxy]] - `imports` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[_CloseRaisesTargetWriter]] - `contains` [EXTRACTED]
 - [[_CloseRaisesWriter]] - `contains` [EXTRACTED]
 - [[_DummyTargetWriter_1]] - `contains` [EXTRACTED]
 - [[_HeaderTimeoutReader]] - `contains` [EXTRACTED]
-- [[_MockWriter_1]] - `contains` [EXTRACTED]
+- [[_MockWriter]] - `contains` [EXTRACTED]
 - [[_SocketTransportWriter]] - `contains` [EXTRACTED]
 - [[_TimeoutReader]] - `contains` [EXTRACTED]
 - [[_allowlist_proxy()]] - `contains` [EXTRACTED]
 - [[_capture_scans()]] - `contains` [EXTRACTED]
 - [[_eof_target_connection()]] - `contains` [EXTRACTED]
-- [[_make_stream()_1]] - `contains` [EXTRACTED]
+- [[_make_stream()]] - `contains` [EXTRACTED]
 - [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `contains` [EXTRACTED]
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `contains` [EXTRACTED]
@@ -66,4 +66,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `contains` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/Community_62

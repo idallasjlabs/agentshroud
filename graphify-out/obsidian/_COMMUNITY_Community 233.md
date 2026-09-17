@@ -1,47 +1,48 @@
 ---
 type: community
-cohesion: 0.06
-members: 32
+cohesion: 0.13
+members: 33
 ---
 
 # Community 233
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[Access Denied]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_19]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_32]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[A healthy 200 message body must NOT be failed over.]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_default_still_retries_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_interactive_header_skips_retries()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_llm_proxy_failover.py]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_per_request_opt_out_header_skips_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_overloaded_529()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_overloaded_http200()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_flag_off_returns_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_ollama_down_no_false_notice()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_streaming_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_tools_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_openai_quota_dropin()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_normal_200_passthrough_untouched()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_post_retry_429_now_failovers()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - rationale - gateway/tests/test_llm_proxy_failover.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,8 +52,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 317]]
-- 1 edge to [[_COMMUNITY_Community 378]]
+- 3 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Multi-Agent Router & Chat UI]]
 
 ## Top bridge nodes
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - degree 14, connects to 2 communities
+- [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
+- [[make_proxy()_1]] - degree 24, connects to 1 community
+- [[LLMProxy_1]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # test_approval_hardening.py
@@ -21,4 +21,4 @@ tags:
 - [[TestDeceptionDetection]] - `contains` [EXTRACTED]
 - [[TestDeniedRequest]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

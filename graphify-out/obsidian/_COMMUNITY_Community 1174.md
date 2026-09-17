@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.53
+members: 6
 ---
 
 # Community 1174
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.53 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_1]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_39]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[README_44]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_42]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_44]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[dot-_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_findings_and_denials_penalised()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_heavy_findings_clamp_to_red_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stats_exception_defaults_to_zero_denials()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_unknown_bot_clean_score()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeBotScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1174
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 297]]
+
+## Top bridge nodes
+- [[TestComputeBotScorecard]] - degree 6, connects to 1 community

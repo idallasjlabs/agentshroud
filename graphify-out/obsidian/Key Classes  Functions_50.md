@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Community 537"
-location: "L28"
+community: "Community 790"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/Community_790
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_537
+#graphify/document #graphify/EXTRACTED #community/Community_790

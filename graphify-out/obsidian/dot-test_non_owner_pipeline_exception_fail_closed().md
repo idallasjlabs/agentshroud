@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_slack_proxy.py"
+type: "code"
+community: "Community 78"
+location: "L298"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_78
+---
+
+# .test_non_owner_pipeline_exception_fail_closed()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - `rationale_for` [EXTRACTED]
+- [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_78

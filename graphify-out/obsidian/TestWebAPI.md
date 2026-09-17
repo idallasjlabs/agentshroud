@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Community 645"
+community: "Community 663"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_645
+  - community/Community_663
 ---
 
 # TestWebAPI
 
 ## Connections
-- [[.client()_2]] - `method` [EXTRACTED]
-- [[.test_check_agentshroud_updates()]] - `method` [EXTRACTED]
-- [[.test_check_openclaw_updates()]] - `method` [EXTRACTED]
-- [[.test_export_config()]] - `method` [EXTRACTED]
-- [[.test_get_config()]] - `method` [EXTRACTED]
-- [[.test_get_logs()]] - `method` [EXTRACTED]
-- [[.test_killswitch_freeze()]] - `method` [EXTRACTED]
-- [[.test_killswitch_invalid_mode()]] - `method` [EXTRACTED]
-- [[.test_killswitch_no_confirm()]] - `method` [EXTRACTED]
-- [[.test_security_report()]] - `method` [EXTRACTED]
-- [[.test_status()]] - `method` [EXTRACTED]
-- [[.test_stop_service()]] - `method` [EXTRACTED]
-- [[.test_update_history()]] - `method` [EXTRACTED]
+- [[dot-client()_6]] - `method` [EXTRACTED]
+- [[dot-test_check_agentshroud_updates()]] - `method` [EXTRACTED]
+- [[dot-test_check_openclaw_updates()]] - `method` [EXTRACTED]
+- [[dot-test_export_config()]] - `method` [EXTRACTED]
+- [[dot-test_get_config()]] - `method` [EXTRACTED]
+- [[dot-test_get_logs()]] - `method` [EXTRACTED]
+- [[dot-test_killswitch_freeze()]] - `method` [EXTRACTED]
+- [[dot-test_killswitch_invalid_mode()]] - `method` [EXTRACTED]
+- [[dot-test_killswitch_no_confirm()]] - `method` [EXTRACTED]
+- [[dot-test_security_report()]] - `method` [EXTRACTED]
+- [[dot-test_status()]] - `method` [EXTRACTED]
+- [[dot-test_stop_service()]] - `method` [EXTRACTED]
+- [[dot-test_update_history()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[Test the management API endpoints with mocked runtime.]] - `rationale_for` [EXTRACTED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_645
+#graphify/code #graphify/EXTRACTED #community/Community_663

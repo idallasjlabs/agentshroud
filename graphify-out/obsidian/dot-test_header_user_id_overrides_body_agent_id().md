@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+type: "code"
+community: "Community 386"
+location: "L128"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_386
+---
+
+# .test_header_user_id_overrides_body_agent_id()
+
+## Connections
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[x-agentshroud-user-id header must override spoofable body agent_id.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_386

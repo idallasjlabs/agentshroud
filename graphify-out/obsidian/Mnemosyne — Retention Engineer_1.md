@@ -1,23 +1,20 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 942"
-location: "L6"
+community: "Community 1203"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_942
+  - community/Community_1203
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Input Requirements_6]] - `contains` [EXTRACTED]
-- [[Output Format_6]] - `contains` [EXTRACTED]
-- [[Persona_4]] - `contains` [EXTRACTED]
-- [[Quality Checklist_5]] - `contains` [EXTRACTED]
-- [[Role_21]] - `contains` [EXTRACTED]
-- [[SKILL_36]] - `contains` [EXTRACTED]
-- [[System Prompt_4]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
+- [[Purpose_26]] - `contains` [EXTRACTED]
+- [[Related Skills_17]] - `contains` [EXTRACTED]
+- [[Usage_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_942
+#graphify/document #graphify/EXTRACTED #community/Community_1203

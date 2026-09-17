@@ -1,16 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.h"
 type: "code"
-community: "Community 271"
+community: "Community 1923"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_1923
 ---
 
 # wakeword.h (PTT/WakeNet public API)
 
-## Connections
-- [[wakeword.c (PTT + WakeNet trigger)]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_271
+#graphify/code #graphify/EXTRACTED #community/Community_1923

@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.43
+cohesion: 0.25
 members: 8
 ---
 
 # Community 985
 
-**Cohesion:** 0.43 - moderately connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
-- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
+- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Purpose_195]] - document - .agents/skills/i-ti/README.md
+- [[Related Skills_119]] - document - .agents/skills/i-ti/README.md
+- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Usage_132]] - document - .agents/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_985
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-
-## Top bridge nodes
-- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community

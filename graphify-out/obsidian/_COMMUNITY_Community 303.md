@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_17]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Brainstorming Session Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Core Discipline Frame → Structure → Generate → Validate_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Curriculum Design (with `i-atlas`)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Decision Tree Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Dependencies_13]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Example FODL Pipeline Overview_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Export and Sharing Conventions_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Hierarchy Design — Outline First_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Knowledge Map (PKE  OKE integration)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool markmap-mcp-server_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool xmind-generator-mcp_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markdown-to-Mindmap Conversion_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_93]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Rules_20]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[SKILL_162]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Validation Checklist_6]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[When to Use Mindmaps vs Other Formats_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[XMind Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[dot-agentsskillsi-uiSKILL]] - document - .agents/skills/i-ui/SKILL.md
+- [[Accessibility Requirements]] - document - .agents/skills/i-ui/SKILL.md
+- [[Anti-Patterns to Flag_4]] - document - .agents/skills/i-ui/SKILL.md
+- [[BEM (Block Element Modifier)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Breakpoints (mobile-first)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Button]] - document - .agents/skills/i-ui/SKILL.md
+- [[CSS Architecture Recommendations]] - document - .agents/skills/i-ui/SKILL.md
+- [[CSS Modules (React  Next.js)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component Patterns]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component contract rules]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component file structure]] - document - .agents/skills/i-ui/SKILL.md
+- [[Container Query Pattern (preferred over breakpoints for components)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Core Discipline Structure → Component → Layout → Validate]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dark  Light Theme Implementation]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dashboard Grid]] - document - .agents/skills/i-ui/SKILL.md
+- [[Data Table]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dependencies_5]] - document - .agents/skills/i-ui/SKILL.md
+- [[Form Field]] - document - .agents/skills/i-ui/SKILL.md
+- [[Modal  Dialog]] - document - .agents/skills/i-ui/SKILL.md
+- [[Navigation]] - document - .agents/skills/i-ui/SKILL.md
+- [[React  Next.js Component Architecture]] - document - .agents/skills/i-ui/SKILL.md
+- [[Responsive Layout System]] - document - .agents/skills/i-ui/SKILL.md
+- [[Role_25]] - document - .agents/skills/i-ui/SKILL.md
+- [[Rules_4]] - document - .agents/skills/i-ui/SKILL.md
+- [[Skill UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
+- [[UI Validation Checklist]] - document - .agents/skills/i-ui/SKILL.md
+- [[Utility-First (Tailwind  custom utilities)]] - document - .agents/skills/i-ui/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "rationale"
-community: "Community 113"
+community: "Community 110"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/Community_110
 ---
 
 # Point the endpoint's verifier at a deterministic fake fetcher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_inject_fetcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_113
+#graphify/rationale #graphify/EXTRACTED #community/Community_110

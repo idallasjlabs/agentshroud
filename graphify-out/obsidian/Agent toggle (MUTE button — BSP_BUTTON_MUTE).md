@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 400"
+community: "Community 410"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_400
+  - community/Community_410
 ---
 
 # Agent toggle (MUTE button — BSP_BUTTON_MUTE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage_121]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_400
+#graphify/document #graphify/EXTRACTED #community/Community_410

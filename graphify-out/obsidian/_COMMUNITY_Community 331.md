@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - document - docs/security/cve-mitigation-matrix.md
-- [[AgentShroud™ CVE Mitigation Matrix]] - document - docs/security/cve-mitigation-matrix.md
-- [[Application CVEs (OpenClaw  Hermes)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CRITICAL (CVSS 9.0+)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-30741 — CVSS 9.8 CRITICAL — RCE via Request-Side Prompt Injection]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-34425 — CVSS 5.4 MEDIUM — Preflight Validation Bypass (Shell-Bleed)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-3690 — CVSS 7.4 HIGH — Canvas Authentication Bypass]] - document - docs/security/cve-mitigation-matrix.md
-- [[CWE Coverage]] - document - docs/security/cve-mitigation-matrix.md
-- [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Executive Summary_11]] - document - docs/security/cve-mitigation-matrix.md
-- [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
-- [[HIGH (CVSS 7.0–8.9)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Hermes Agent (7 tracked)]] - document - docs/security/cve-mitigation-matrix.md
-- [[MEDIUM (CVSS 4.0–6.9)]] - document - docs/security/cve-mitigation-matrix.md
-- [[OWASP Agentic AI (ASI) Coverage]] - document - docs/security/cve-mitigation-matrix.md
-- [[OpenClaw (816 tracked)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Previously Partial — Now Fully Mitigated]] - document - docs/security/cve-mitigation-matrix.md
-- [[Representative Examples]] - document - docs/security/cve-mitigation-matrix.md
-- [[Three-status taxonomy (SCRUM-101, 2026-07-14)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Verification_11]] - document - docs/security/cve-mitigation-matrix.md
-- [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
-- [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
-- [[v1.3.0 fresh-DB verification (2026-07-15) — authoritative numbers]] - document - docs/security/cve-mitigation-matrix.md
-- [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
+- [[API  Function Reference_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Anti-Patterns to Flag_10]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Architecture Decision Record (ADR)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Changelog Entry_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Dependencies_11]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document Structure_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document-Type Patterns_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected output_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected ok_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected INFO Re-queued 3 jobs_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Formatting_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[If not → escalate to field team via ops-alerts_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Query the control DB_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_35]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Rules_11]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Runbook — Operational Decision Tree_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Validation Checklist_4]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Voice & Tone_4]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[INFO Extracted 1,204 records → s3my-bucketlanding..._1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[hermesskillsi-twSKILL]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_331
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 92]]
-
-## Top bridge nodes
-- [[AgentShroud™ CVE Mitigation Matrix]] - degree 10, connects to 1 community

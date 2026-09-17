@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Community 377"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_377
+  - community/Community_378
 ---
 
 # TAILSCALE_SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[PAIRING_INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_377
+#graphify/document #graphify/EXTRACTED #community/Community_378

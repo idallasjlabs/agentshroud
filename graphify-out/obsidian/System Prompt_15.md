@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 892"
-location: "L87"
+community: "Community 876"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_892
+  - community/Community_876
 ---
 
 # System Prompt
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_892
+#graphify/document #graphify/EXTRACTED #community/Community_876

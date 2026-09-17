@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "rationale"
-community: "Community 373"
+community: "Community 240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Community_240
 ---
 
 # Re-enable Seccomp Profiles (ARM64 syscalls)
@@ -14,4 +14,4 @@ tags:
 - [[FR3 System Integrity]] - `conceptually_related_to` [INFERRED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_373
+#graphify/rationale #graphify/EXTRACTED #community/Community_240

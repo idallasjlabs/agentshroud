@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 1306"
+community: "Community 1363"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1306
+  - community/Community_1363
 ---
 
 # SECTION 7: FILING CHECKLIST
@@ -18,4 +18,4 @@ tags:
 - [[Post-Filing]] - `contains` [EXTRACTED]
 - [[Pre-Filing Preparation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1306
+#graphify/document #graphify/EXTRACTED #community/Community_1363

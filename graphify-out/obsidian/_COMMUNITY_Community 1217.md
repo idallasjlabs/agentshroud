@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.40
+cohesion: 0.60
 members: 5
 ---
 
 # Community 1217
 
-**Cohesion:** 0.40 - moderately connected
+**Cohesion:** 0.60 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_4]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Purpose_82]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[README_87]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Related Skills_88]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Usage_91]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Secret Backend Cascade (macOS Keychain → 1Password CLI → homedir file)]] - concept - docker/tests/test-op-auth.sh
+- [[fail()]] - code - docker/tests/test-op-auth.sh
+- [[pass()]] - code - docker/tests/test-op-auth.sh
+- [[test-op-auth.sh]] - code - docker/tests/test-op-auth.sh
+- [[test-op-auth.sh script]] - code - docker/tests/test-op-auth.sh
 
 ## Live Query (requires Dataview plugin)
 

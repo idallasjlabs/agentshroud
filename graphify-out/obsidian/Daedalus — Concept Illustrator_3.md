@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 793"
+community: "Community 827"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/Community_827
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_13]] - `contains` [EXTRACTED]
-- [[Output Format_16]] - `contains` [EXTRACTED]
-- [[Persona_10]] - `contains` [EXTRACTED]
-- [[Quality Checklist_12]] - `contains` [EXTRACTED]
-- [[Role_48]] - `contains` [EXTRACTED]
-- [[SKILL_81]] - `contains` [EXTRACTED]
-- [[System Prompt_10]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_17]] - `contains` [EXTRACTED]
+- [[Output Format_33]] - `contains` [EXTRACTED]
+- [[Persona_12]] - `contains` [EXTRACTED]
+- [[Quality Checklist_14]] - `contains` [EXTRACTED]
+- [[Role_86]] - `contains` [EXTRACTED]
+- [[System Prompt_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_793
+#graphify/document #graphify/EXTRACTED #community/Community_827

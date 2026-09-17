@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 68"
-location: "L17126"
+community: "Community 194"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/Community_194
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[dot-__call__()_3]] - `references` [EXTRACTED]
+- [[dot-__init__()_85]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/Community_194

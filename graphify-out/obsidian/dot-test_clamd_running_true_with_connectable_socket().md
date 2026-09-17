@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1406"
+location: "L183"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1406
+---
+
+# .test_clamd_running_true_with_connectable_socket()
+
+## Connections
+- [[TestSocketAndPidProbes]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1406

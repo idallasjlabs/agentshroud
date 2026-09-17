@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Encrypted Store & Drift Detector"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Verify drift is detected even with rapid changes.
 
 ## Connections
-- [[.test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

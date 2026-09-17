@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
-- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
+- [[dot-agentsskillsi-sdlcSKILL]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Skill sdlc]] - document - .agents/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

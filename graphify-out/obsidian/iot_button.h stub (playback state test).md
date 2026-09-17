@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h"
 type: "code"
-community: "Community 1512"
+community: "Community 1641"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1512
+  - community/Community_1641
 ---
 
 # iot_button.h stub (playback state test)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[bspesp-bsp.h stub (playback state test)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1512
+#graphify/code #graphify/EXTRACTED #community/Community_1641

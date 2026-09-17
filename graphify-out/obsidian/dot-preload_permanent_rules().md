@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/egress_approval.py"
+type: "code"
+community: "Community 88"
+location: "L204"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_88
+---
+
+# .preload_permanent_rules()
+
+## Connections
+- [[dot-_check_existing_rule()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[EgressRule]] - `calls` [EXTRACTED]
+- [[Pre-approve known service domains at startup without interactive prompts.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_88

@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[.test_five_clean_and_fresh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_five_zero_failures_fresh_report()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_zero_failures_stale_report()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_max_capped_at_five()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[Like _mock_dir_with_files but mtime is now (fresh).]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreComplianceAuditing_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_dir_with_fresh_files()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[1. GitHub MCP Authentication Reset_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 647]]
-- 2 edges to [[_COMMUNITY_Community 646]]
-- 2 edges to [[_COMMUNITY_Community 1061]]
-- 1 edge to [[_COMMUNITY_Community 1129]]
-- 1 edge to [[_COMMUNITY_Community 1130]]
+- 1 edge to [[_COMMUNITY_Community 922]]
+- 1 edge to [[_COMMUNITY_Community 935]]
 
 ## Top bridge nodes
-- [[_mock_dir_with_fresh_files()]] - degree 8, connects to 4 communities
-- [[TestScoreComplianceAuditing_1]] - degree 6, connects to 2 communities
-- [[.test_four_zero_failures_stale_report()]] - degree 2, connects to 1 community
-- [[.test_max_capped_at_five()]] - degree 2, connects to 1 community
-- [[.test_five_clean_and_fresh()]] - degree 2, connects to 1 community
+- [[1. GitHub MCP Authentication Reset_1]] - degree 5, connects to 1 community
+- [[1. GitHub MCP Authentication Reset_2]] - degree 5, connects to 1 community

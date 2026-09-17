@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 979"
+community: "Community 1026"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/Community_1026
 ---
 
 # High
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/Community_1026

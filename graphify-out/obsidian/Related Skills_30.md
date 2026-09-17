@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Community 1160"
-location: "L12"
+community: "Community 1221"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1160
+  - community/Community_1221
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1160
+#graphify/document #graphify/EXTRACTED #community/Community_1221

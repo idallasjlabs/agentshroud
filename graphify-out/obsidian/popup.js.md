@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/popup.js"
 type: "code"
-community: "Community 653"
+community: "Community 676"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_653
+  - community/Community_676
 ---
 
 # popup.js
@@ -18,4 +18,4 @@ tags:
 - [[setStatus()]] - `contains` [EXTRACTED]
 - [[statusEl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_653
+#graphify/code #graphify/EXTRACTED #community/Community_676

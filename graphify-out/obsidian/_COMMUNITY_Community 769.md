@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.30
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 769
 
-**Cohesion:** 0.30 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
-- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
-- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
-- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
-- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
-- [[now()]] - code - gateway/tests/test_audit_archive.py
-- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
-- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
+- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 359]]
+- 1 edge to [[_COMMUNITY_Community 670]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 
 ## Top bridge nodes
-- [[purge_low_value_events()]] - degree 10, connects to 1 community
-- [[test_audit_archive.py]] - degree 8, connects to 1 community
+- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities

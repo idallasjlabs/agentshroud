@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_audit_archive.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 769"
-location: "L50"
+community: "Community 156"
+location: "L1554"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_769
+  - community/Community_156
 ---
 
 # now()
 
 ## Connections
-- [[test_audit_archive.py]] - `contains` [EXTRACTED]
+- [[dot-test_ingest_records_even_when_disk_write_fails()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_769
+#graphify/code #graphify/EXTRACTED #community/Community_156

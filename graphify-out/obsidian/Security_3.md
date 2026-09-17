@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 297"
-location: "L135"
+community: "Community 239"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/Community_239
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Best Practices_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/Community_239

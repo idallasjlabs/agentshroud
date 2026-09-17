@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 600
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW]] - document - .agents/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG]] - document - .agents/skills/i-sad/SKILL.md
-- [[SKILL_47]] - document - .agents/skills/i-sad/SKILL.md
-- [[System Audit & Documentation]] - document - .agents/skills/i-sad/SKILL.md
+- [[Allowlist Behavior]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Audit Log]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Configuration (DNSFilterConfig)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter._detect_tunneling(domain)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter.check(domain, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[EntropyCalculator.shannon_entropy(s)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Environment Variables_10]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Function Details_18]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_145]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Related_24]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 

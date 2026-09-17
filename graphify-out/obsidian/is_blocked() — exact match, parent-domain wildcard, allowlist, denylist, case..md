@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Community 142"
+community: "Community 138"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_138
 ---
 
 # is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsBlocked]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_142
+#graphify/rationale #graphify/EXTRACTED #community/Community_138

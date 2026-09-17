@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreContainerHardening_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[For git commit hook_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[graphify reference commit hook and native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[openclawskillsgraphifyreferenceshooks]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1356
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 646]]
-
-## Top bridge nodes
-- [[TestScoreContainerHardening_1]] - degree 4, connects to 1 community

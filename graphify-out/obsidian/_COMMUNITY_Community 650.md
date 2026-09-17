@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 650
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Architecture Overview]] - document - docs/api/integration-guide.md
-- [[Configuration_2]] - document - docs/api/integration-guide.md
-- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Integration Testing]] - document - docs/api/integration-guide.md
-- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
-- [[OpenSCAP]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Purpose_189]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_44]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[3. Round 2 Findings]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I1 Missing trailing newlines in route files]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I2 Duplicated constants between `main.py` and `routesforward.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I3 `managednsblocklist` reads pihole password inline]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I4 `AppState` class missing dynamically-set attributes]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I5 Inline import on hot path in LLM proxy]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🔴 ERRORS (must fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟢 INFO (nice to have)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 518]]
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 736]]
-- 1 edge to [[_COMMUNITY_Community 633]]
-- 1 edge to [[_COMMUNITY_Community 594]]
+- 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[Architecture Overview]] - degree 6, connects to 2 communities
-- [[OpenSCAP]] - degree 8, connects to 1 community
-- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
-- [[Integration Testing]] - degree 3, connects to 1 community
+- [[3. Round 2 Findings]] - degree 4, connects to 1 community

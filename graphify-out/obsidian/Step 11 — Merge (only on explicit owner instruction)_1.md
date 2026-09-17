@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 293"
+community: "Community 302"
 location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/Community_302
 ---
 
 # Step 11 — Merge (only on explicit owner instruction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_293
+#graphify/document #graphify/EXTRACTED #community/Community_302

@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 559
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Purpose_114]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Related_5]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
+- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
+- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
+- [[Common Commands]] - document - skills/openclaw/tmux/SKILL.md
+- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[Notes_6]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
+- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
+- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
+- [[When NOT to Use]] - document - skills/openclaw/tmux/SKILL.md
+- [[When to Use]] - document - skills/openclaw/tmux/SKILL.md
+- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
+- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 1028]]
 
 ## Top bridge nodes
-- [[middleware.py_2]] - degree 12, connects to 1 community
+- [[tmux Session Control]] - degree 8, connects to 1 community

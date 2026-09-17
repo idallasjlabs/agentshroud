@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_soc_egress.py"
+type: "code"
+community: "Community 68"
+location: "L65"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_68
+---
+
+# .test_destructive_requires_confirmation()
+
+## Connections
+- [[SCLConfirmationRequired]] - `calls` [EXTRACTED]
+- [[TestConfirmationModel]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_68

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Community 43"
+community: "Approval Routing & Event Bus"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Approval_Routing__Event_Bus
 ---
 
 # mcp_proxy_data is populated from the mcp_proxy YAML section.
 
 ## Connections
-- [[.test_mcp_proxy_data_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_mcp_proxy_data_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

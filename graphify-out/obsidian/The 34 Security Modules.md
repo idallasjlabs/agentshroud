@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 445"
+community: "Community 455"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/Community_455
 ---
 
 # The 34 Security Modules
@@ -15,4 +15,4 @@ tags:
 - [[Additional Security Components]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/Community_455

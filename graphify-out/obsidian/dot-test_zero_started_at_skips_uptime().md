@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_soc_services_coverage.py"
+type: "code"
+community: "SOC Service Manager (Container Engine)"
+location: "L432"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/SOC_Service_Manager_Container_Engine
+---
+
+# .test_zero_started_at_skips_uptime()
+
+## Connections
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[TestDescribeService]] - `method` [EXTRACTED]
+- [[_full_inspect_info()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

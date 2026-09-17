@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_54]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[README_59]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_58]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Usage_61]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[dot-agentsskillsi-awsREADME]] - document - .agents/skills/i-aws/README.md
+- [[AWS Cloud Management & FinOps]] - document - .agents/skills/i-aws/README.md
+- [[Purpose_13]] - document - .agents/skills/i-aws/README.md
+- [[Related Skills_4]] - document - .agents/skills/i-aws/README.md
+- [[Usage_8]] - document - .agents/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)
 

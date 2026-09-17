@@ -1,42 +1,43 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+cohesion: 0.11
+members: 28
 ---
 
 # Community 291
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[Guardrails_3]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Invocation_1]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Jira ticket — every development batch gets one]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Mode A — Single task]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Mode B — Comprehensive review sweep]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Reviewers and fixer available to you]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Role_14]] - document - .agents/skills/i-hdev/SKILL.md
-- [[SKILL_23]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Skill Hermes Dev Workflow (HDEV)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2 — Work through directories one at a time]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Tools you have for this workflow]] - document - .agents/skills/i-hdev/SKILL.md
+- [[dot-__init__()_124]] - code - gateway/security/key_rotation.py
+- [[dot-add_custom_policy()]] - code - gateway/security/key_rotation_config.py
+- [[dot-get_op_reference()]] - code - gateway/security/key_rotation_config.py
+- [[dot-get_policy()_1]] - code - gateway/security/key_rotation_config.py
+- [[dot-is_emergency_trigger_enabled()]] - code - gateway/security/key_rotation_config.py
+- [[dot-test_add_custom_policy()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_default_config_has_common_policies()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_op_reference_builds_correctly()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_policy_returns_default_for_unknown_type()]] - code - gateway/tests/test_key_rotation.py
+- [[Add or update a rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
+- [[Build a complete op reference for a credential.]] - rationale - gateway/security/key_rotation_config.py
+- [[Check if a specific emergency trigger is enabled.]] - rationale - gateway/security/key_rotation_config.py
+- [[Configuration for key rotation policies and schedules.]] - rationale - gateway/security/key_rotation_config.py
+- [[CredentialRotationPolicy_1]] - code - gateway/security/key_rotation_config.py
+- [[Get rotation policy for a credential type, falling back to api_key default.]] - rationale - gateway/security/key_rotation_config.py
+- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
+- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
+- [[KeyRotationConfig_1]] - code - gateway/security/key_rotation_config.py
+- [[Rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
+- [[Test adding custom policy for new credential type.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test default config includes policies for common credential types.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test get_policy falls back to api_key for unknown types.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test op reference building.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationConfig]] - code - gateway/tests/test_key_rotation.py
+- [[datetime_2]] - code - gateway/security/key_rotation.py
+- [[key_rotation.py]] - code - gateway/security/key_rotation.py
+- [[key_rotation_config.py]] - code - gateway/security/key_rotation_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,3 +45,24 @@ members: 27
 TABLE source_file, type FROM #community/Community_291
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 16 edges to [[_COMMUNITY_Community 232]]
+- 13 edges to [[_COMMUNITY_Community 133]]
+- 8 edges to [[_COMMUNITY_Community 544]]
+- 6 edges to [[_COMMUNITY_Community 848]]
+- 6 edges to [[_COMMUNITY_Community 441]]
+- 3 edges to [[_COMMUNITY_Community 715]]
+- 3 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+- 1 edge to [[_COMMUNITY_Community 1322]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_File Sandbox & Privilege Separation Tests]]
+- 1 edge to [[_COMMUNITY_Community 86]]
+
+## Top bridge nodes
+- [[KeyRotationConfig_1]] - degree 44, connects to 8 communities
+- [[key_rotation.py]] - degree 13, connects to 7 communities
+- [[CredentialRotationPolicy_1]] - degree 24, connects to 6 communities
+- [[TestKeyRotationConfig]] - degree 12, connects to 4 communities
+- [[datetime_2]] - degree 4, connects to 1 community

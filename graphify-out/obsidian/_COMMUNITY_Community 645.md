@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[.client()_2]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_export_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_report()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_status()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_update_history()]] - code - gateway/tests/test_runtime_engines.py
-- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Function Details_23]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_152]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_645
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 329]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 348]]
-- 1 edge to [[_COMMUNITY_Community 207]]
-
-## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities

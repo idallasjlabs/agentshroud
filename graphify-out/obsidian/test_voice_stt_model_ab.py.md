@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 267"
+community: "Community 287"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # test_voice_stt_model_ab.py
@@ -27,6 +27,5 @@ tags:
 - [[test_select_model_size_is_case_and_whitespace_insensitive()]] - `contains` [EXTRACTED]
 - [[test_transcribe_emits_latency_record()]] - `contains` [EXTRACTED]
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
-- [[voice_gatewaystt.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_267
+#graphify/code #graphify/EXTRACTED #community/Community_287

@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
-- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[dot-agentsskillsi-mnemosyneSKILL]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Input Requirements_26]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Mnemosyne — Retention Engineer_4]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Output Format_41]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Persona_20]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Quality Checklist_23]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Role_108]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[System Prompt_20]] - document - .agents/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_988
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 142]]
-
-## Top bridge nodes
-- [[TestLoadFromText]] - degree 9, connects to 1 community
-- [[.setup_method()_4]] - degree 2, connects to 1 community

@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.06
-members: 31
+cohesion: 0.08
+members: 32
 ---
 
 # Community 248
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[Alert Prioritization Display_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_15]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[CLI  TUI UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[CLI UX Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Confirmation Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Content Organization Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Contextual Actions_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Dashboard UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Data Density Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Dependencies_11]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Error Message Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Field Design Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Form UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Information Architecture_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Progressive Disclosure_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Role_74]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Rules_17]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[SKILL_124]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[User Flow Diagrams_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Wayfinding_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[dot-__init__()_106]] - code - gateway/security/output_schema.py
+- [[dot-_register_default_schema()]] - code - gateway/security/output_schema.py
+- [[dot-register_schema()]] - code - gateway/security/output_schema.py
+- [[dot-test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_default_schema_used_when_unknown()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_large_base64_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_output_exceeding_max_length_trimmed()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[dot-test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
+- [[dot-validate()_2]] - code - gateway/security/output_schema.py
+- [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
+- [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Definition for a named output schema.]] - rationale - gateway/security/output_schema.py
+- [[JSON tool call payloads should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Normal short text should pass without violations.]] - rationale - gateway/tests/test_output_schema.py
+- [[Output Schema Enforcer Tests (C25)]] - code - gateway/tests/test_output_schema.py
+- [[Output longer than 100 000 chars should be trimmed.]] - rationale - gateway/tests/test_output_schema.py
+- [[OutputSchemaEnforcer]] - code - gateway/security/output_schema.py
+- [[Register or replace a named schema.]] - rationale - gateway/security/output_schema.py
+- [[Register the built-in default schema.]] - rationale - gateway/security/output_schema.py
+- [[Result of validating output against a schema.]] - rationale - gateway/security/output_schema.py
+- [[SchemaRule]] - code - gateway/security/output_schema.py
+- [[SchemaValidationResult]] - code - gateway/security/output_schema.py
+- [[TestOutputSchemaEnforcer]] - code - gateway/tests/test_output_schema.py
+- [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
+- [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
+- [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
+- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
+- [[output_schema.py]] - code - gateway/security/output_schema.py
+- [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,3 +49,9 @@ members: 31
 TABLE source_file, type FROM #community/Community_248
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+
+## Top bridge nodes
+- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

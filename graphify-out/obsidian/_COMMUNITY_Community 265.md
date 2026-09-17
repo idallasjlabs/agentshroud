@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.12
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Community 265
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[.setup_method()_35]] - code - gateway/tests/test_soc_auth.py
-- [[.setup_method()_34]] - code - gateway/tests/test_soc_auth.py
-- [[.test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_single_use()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
-- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
-- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
-- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
-- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
-- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
-- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
-- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
-- [[_verify_session_token()]] - code - gateway/soc/auth.py
-- [[issue_session_token()]] - code - gateway/soc/auth.py
-- [[issue_ws_token()]] - code - gateway/soc/auth.py
-- [[redeem_ws_token()]] - code - gateway/soc/auth.py
-- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
+- [[CodexBar CLI quick ref (usage + cost)]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[Commands]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[Common Queries]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Cost JSON fields]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[Count messages and tokens in a session]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Current model logic]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Daily cost summary]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Extract user messages from a session]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Fast text-only hint (low noise)]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Find sessions from a specific day]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Get total cost for a session]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Inputs]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Install]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[List all sessions by date and size]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Location]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Notes_2]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[Output]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Overview_7]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Quick start_6]] - document - skills/openclaw/model-usage/SKILL.md
+- [[References_2]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Search for keyword in assistant responses]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Structure]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Tips]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Tool usage breakdown]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Trigger]] - document - skills/openclaw/session-logs/SKILL.md
+- [[codexbar-cli]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[model-usageSKILL]] - document - skills/openclaw/model-usage/SKILL.md
+- [[session-logs]] - document - skills/openclaw/session-logs/SKILL.md
+- [[session-logsSKILL]] - document - skills/openclaw/session-logs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,16 +48,3 @@ members: 30
 TABLE source_file, type FROM #community/Community_265
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 13 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
-- 5 edges to [[_COMMUNITY_Community 69]]
-- 3 edges to [[_COMMUNITY_SOC Collaborators]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-
-## Top bridge nodes
-- [[issue_ws_token()]] - degree 15, connects to 3 communities
-- [[issue_session_token()]] - degree 14, connects to 3 communities
-- [[redeem_ws_token()]] - degree 14, connects to 2 communities
-- [[_verify_session_token()]] - degree 10, connects to 1 community
-- [[.test_issue_session_token_prunes_expired()]] - degree 3, connects to 1 community

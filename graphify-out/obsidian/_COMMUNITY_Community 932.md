@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 932
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Description_3]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Related Notes_31]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Security_8]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Set In_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Value_2]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Common Actions (Examples)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord (Via `message`)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord Components v2 preferred over legacy embeds]] - rationale - skills/openclaw/discord/SKILL.md
+- [[Guidelines]] - document - skills/openclaw/discord/SKILL.md
+- [[Musts]] - document - skills/openclaw/discord/SKILL.md
+- [[Targets_1]] - document - skills/openclaw/discord/SKILL.md
+- [[Writing Style (Discord)]] - document - skills/openclaw/discord/SKILL.md
+- [[discordSKILL]] - document - skills/openclaw/discord/SKILL.md
+- [[message tool (channel=discord)]] - concept - skills/openclaw/discord/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "rationale"
-community: "Community 197"
+community: "Community 1096"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/Community_1096
 ---
 
 # TestClient with a stubbed proxy IP that passes the network allowlist.
 
 ## Connections
-- [[client()_18]] - `rationale_for` [EXTRACTED]
+- [[client()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_197
+#graphify/rationale #graphify/EXTRACTED #community/Community_1096

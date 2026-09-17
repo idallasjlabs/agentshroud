@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Community 848"
+community: "Community 325"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_848
+  - community/Community_325
 ---
 
 # Data Validation README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL) Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_848
+#graphify/document #graphify/INFERRED #community/Community_325

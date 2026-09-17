@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "Community 1123"
-location: "L57"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1123
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[.test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1123
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

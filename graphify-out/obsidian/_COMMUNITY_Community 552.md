@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 552
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[1. URL Forwarder]] - document - browser-extension/README.md
-- [[2. Page Clipper]] - document - browser-extension/README.md
-- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
-- [[4. Tab Session Exporter]] - document - browser-extension/README.md
-- [[5. Reading List Queue]] - document - browser-extension/README.md
-- [[Browser Extension]] - document - browser-extension/README.md
-- [[Browser Support]] - document - browser-extension/README.md
-- [[Features]] - document - browser-extension/README.md
-- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
-- [[Gateway wiring]] - document - browser-extension/README.md
-- [[Privacy Features]] - document - browser-extension/README.md
-- [[README_39]] - document - browser-extension/README.md
-- [[Safari]] - document - browser-extension/README.md
-- [[Structure]] - document - browser-extension/README.md
-- [[Tests_2]] - document - browser-extension/README.md
-- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
+- [[AgentShroud Security Value Proposition - REVISED]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +36,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 653]]
-- 1 edge to [[_COMMUNITY_Community 437]]
+- 1 edge to [[_COMMUNITY_Community 578]]
+- 1 edge to [[_COMMUNITY_Community 857]]
 
 ## Top bridge nodes
-- [[Browser Extension]] - degree 6, connects to 1 community
-- [[README_39]] - degree 4, connects to 1 community
+- [[AgentShroud Security Value Proposition - REVISED]] - degree 8, connects to 2 communities

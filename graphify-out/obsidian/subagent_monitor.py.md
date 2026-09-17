@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 97"
+community: "Blue/Red Team Security Auditor Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # subagent_monitor.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]
@@ -20,9 +20,9 @@ tags:
 - [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[ToolCheckResult]] - `contains` [EXTRACTED]
 - [[egress_config.py]] - `references` [EXTRACTED]
-- [[falco_monitor.py]] - `references` [EXTRACTED]
+- [[falco_monitor.py_2]] - `references` [EXTRACTED]
+- [[gateway.security.trust_manager]] - `semantically_similar_to` [INFERRED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
-- [[trust_manager.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

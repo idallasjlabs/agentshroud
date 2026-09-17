@@ -1,19 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 176"
-location: "L96"
+community: "Community 475"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/Community_475
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_176
+#graphify/code #graphify/EXTRACTED #community/Community_475

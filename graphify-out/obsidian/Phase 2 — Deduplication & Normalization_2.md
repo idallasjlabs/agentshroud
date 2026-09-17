@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1023"
+community: "Community 1070"
 location: "L186"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1023
+  - community/Community_1070
 ---
 
 # Phase 2 — Deduplication & Normalization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1023
+#graphify/document #graphify/EXTRACTED #community/Community_1070

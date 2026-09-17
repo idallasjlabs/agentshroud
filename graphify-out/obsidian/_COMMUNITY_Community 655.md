@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 655
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[auditLogging]] - code - skills/custom/browser-fetch/skill.json
-- [[author_4]] - code - skills/custom/browser-fetch/skill.json
-- [[dependencies]] - code - skills/custom/browser-fetch/skill.json
-- [[description_6]] - code - skills/custom/browser-fetch/skill.json
-- [[filesystemAccess]] - code - skills/custom/browser-fetch/skill.json
-- [[keywords_4]] - code - skills/custom/browser-fetch/skill.json
-- [[name_6]] - code - skills/custom/browser-fetch/skill.json
-- [[networkAccess]] - code - skills/custom/browser-fetch/skill.json
-- [[playwright]] - code - skills/custom/browser-fetch/skill.json
-- [[requiresApproval]] - code - skills/custom/browser-fetch/skill.json
-- [[security]] - code - skills/custom/browser-fetch/skill.json
-- [[skill.json]] - code - skills/custom/browser-fetch/skill.json
-- [[tools]] - code - skills/custom/browser-fetch/skill.json
-- [[version_8]] - code - skills/custom/browser-fetch/skill.json
+- [[Alert Actions]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Configuration  Environment Variables_17]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Default Thresholds]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.check_anomalies(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Purpose_160]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 

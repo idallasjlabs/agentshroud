@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 1422"
+location: "L676"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1422
+---
+
+# .test_owner_revoke_command_persists_pause_to_disk()
+
+## Connections
+- [[revoke must persist through pause_collaborator() so the pause survives]] - `rationale_for` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1422

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1442
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_27]] - document - .agents/skills/i-kaizen/SKILL.md
-- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[EU AI Act & NIST Alignment Matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Governance Proxy Positioning (deployer compliance enabler)]] - rationale - docs/compliance/eu-ai-act-nist-matrix.md
+- [[SOC 2 Type II Attestation Path (SCRUM-99)]] - document - docs/compliance/soc2-attestation-path.md
 
 ## Live Query (requires Dataview plugin)
 

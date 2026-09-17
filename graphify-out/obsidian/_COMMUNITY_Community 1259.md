@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
-- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
-- [[Prerequisites_3]] - document - docs/operations/deployment-procedure.md
-- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
-- [[System Requirements]] - document - docs/operations/deployment-procedure.md
+- [[AWS Cloud Management & FinOps_2]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Purpose_76]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Related Skills_67]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Usage_71]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[openclawskillsi-awsREADME]] - document - docker/config/openclaw/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1259
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
-
-## Top bridge nodes
-- [[Prerequisites_3]] - degree 5, connects to 1 community

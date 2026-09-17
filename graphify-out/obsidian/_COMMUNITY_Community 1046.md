@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Step 1 Install ClawHub CLI]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 2 Create ClawHub Account]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 3 Verify Skill Ready]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 4 Publish to ClawHub]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 5 Verify Publication]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 6 Test Installation (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📋 Detailed Step-by-Step]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Integration]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Purpose_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Related Notes_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Usage]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1046
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 858]]
-
-## Top bridge nodes
-- [[📋 Detailed Step-by-Step]] - degree 7, connects to 1 community

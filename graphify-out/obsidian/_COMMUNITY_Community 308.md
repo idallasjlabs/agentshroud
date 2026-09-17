@@ -1,42 +1,42 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.07
 members: 27
 ---
 
 # Community 308
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[_build_ws_url()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_tts_pcm()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_vg_state()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_ws_ctrl()]] - code - firmware/voice-terminal/main/app_main.c
-- [[app_main()]] - code - firmware/voice-terminal/main/app_main.c
-- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
-- [[audio.c]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_capture_frame()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_get_saved_volume()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_init()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_play()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_preinit()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_set_volume() — spoken volume command target]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_2]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_event_base_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[lv_display_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[remote_log.h]] - code - firmware/voice-terminal/main/remote_log.h
-- [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_state_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_vg_state_t_2]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_vg_state_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[Guardrails_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Invocation_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Mode A — Single task_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Mode B — Comprehensive review sweep_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Role_28]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 2 — Work through directories one at a time_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_3]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[hermesskillsi-odevSKILL]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,18 +44,3 @@ members: 27
 TABLE source_file, type FROM #community/Community_308
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 90]]
-- 6 edges to [[_COMMUNITY_Community 446]]
-- 4 edges to [[_COMMUNITY_Community 418]]
-- 2 edges to [[_COMMUNITY_Community 271]]
-- 2 edges to [[_COMMUNITY_Community 36]]
-- 1 edge to [[_COMMUNITY_Community 966]]
-
-## Top bridge nodes
-- [[app_main.c]] - degree 21, connects to 4 communities
-- [[app_main()]] - degree 13, connects to 4 communities
-- [[_on_vg_state()]] - degree 7, connects to 3 communities
-- [[remote_log.h]] - degree 4, connects to 3 communities
-- [[_on_ws_ctrl()]] - degree 5, connects to 2 communities

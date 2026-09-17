@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
+source_file: ".agents/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 844"
+community: "Community 870"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/Community_870
 ---
 
 # CONFIG
 
 ## Connections
-- [[calendar.js_2]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_844
+#graphify/code #graphify/EXTRACTED #community/Community_870

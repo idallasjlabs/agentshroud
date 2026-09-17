@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 54"
+community: "Community 37"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_37
 ---
 
 # test_normalize_local_model_mlxlm_keeps_colon()
 
 ## Connections
+- [[dot-_normalize_local_model()]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
 - [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_37

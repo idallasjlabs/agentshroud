@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_network_validator.py"
+type: "code"
+community: "Community 855"
+location: "L205"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_855
+---
+
+# .test_network_security_finding_structure()
+
+## Connections
+- [[NetworkSecurityFinding]] - `calls` [EXTRACTED]
+- [[Test NetworkSecurityFinding dataclass structure.]] - `rationale_for` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_855
