@@ -205,8 +205,27 @@ echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SE
 # sat unsubmitted for 40+ min on two separate occasions despite a 3-attempt
 # retry). Passing it as an argument at launch removes the race entirely —
 # same pattern local-llms/scripts/sunday-maintenance.sh already uses.
+#
+# The `--` before the mission text is load-bearing, not stylistic. claude's
+# `--allowedTools, --allowed-tools <tools...>` is a VARIADIC option (commander.js
+# `<tools...>` — confirmed via `claude --help`): with no terminator, it greedily
+# consumes every remaining positional argument as more tool names — including
+# the entire mission prompt — then further splits each captured token on
+# whitespace/comma (its own documented behavior: "Comma or space-separated
+# list"). That is exactly what shattered the mission text into hundreds of
+# fragments each logged as "Ignoring --allowedTools rule '...'" and left the
+# composer completely EMPTY. Confirmed live 2026-09-17 by bisecting the actual
+# bug with isolated tmux probes: (1) proved bash/tmux argv-passing itself was
+# already 100% correct — the mission arrived as one intact argument either
+# way; (2) proved even a two-word prompt failed identically, with or without
+# --remote-control, ruling out prompt size/markdown entirely; (3) `claude
+# --help` named the real cause; (4) a live `-- '<prompt>'` probe fixed it,
+# confirmed again with --remote-control included. Every prior run of this job
+# had this defect when SUNDAY_UPGRADE_AUTON=1 set --allowedTools — none of
+# them ever actually submitted a mission; they sat open until the 180-minute
+# watch timeout believing they were unattended.
 tmux new-session -d -s "$SESSION" -c "$REPO" \
-  "claude --remote-control --name '$SESSION' $EXTRA \"\$(cat '$PROMPT_FILE')\""
+  "claude --remote-control --name '$SESSION' $EXTRA -- \"\$(cat '$PROMPT_FILE')\""
 tmux pipe-pane -t "$SESSION" -o "cat >> '$LOG'"
 
 # give it time to boot and register with claude.ai
