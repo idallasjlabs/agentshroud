@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Community 391"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # Phase 3A/3B Implementation Verification Results
@@ -23,4 +23,4 @@ tags:
 - [[Testing Recommendations]] - `contains` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

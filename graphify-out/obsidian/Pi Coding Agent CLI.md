@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "concept"
-community: "Community 327"
+community: "Coding Agent (bash-first)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/Coding_Agent_bash-first
 ---
 
 # Pi Coding Agent CLI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[coding-agentSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_327
+#graphify/concept #graphify/EXTRACTED #community/Coding_Agent_bash-first

@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
-location: "L205"
+community: "GitGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/GitGuard
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_128]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[.__init__()_151]] - `calls` [EXTRACTED]
+- [[._analyze_file_content()]] - `references` [EXTRACTED]
+- [[._analyze_script_file()]] - `references` [EXTRACTED]
+- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
+- [[._scan_git_hooks()]] - `references` [EXTRACTED]
+- [[._scan_package_json()]] - `references` [EXTRACTED]
+- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[._scan_setup_py()]] - `references` [EXTRACTED]
+- [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/GitGuard

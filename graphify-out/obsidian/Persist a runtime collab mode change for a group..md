@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Teams/Group Collaborator Responses"
+community: "group_config.py"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/group_configpy
 ---
 
 # Persist a runtime collab mode change for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_group_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/group_configpy

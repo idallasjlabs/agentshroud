@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Community 186"
-location: "L249"
+community: "migrate-cve-registry-ghsa.py"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_186
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_generate()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_186
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

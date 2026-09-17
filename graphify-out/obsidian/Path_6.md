@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Community 642"
-location: "L35"
+community: "SecureBrowser - Enterprise Secure Browser Automa"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_642
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
 ---
 
 # path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_642
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa

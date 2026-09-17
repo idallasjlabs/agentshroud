@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 89"
+community: "PermissionLevel"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_89
+  - community/PermissionLevel
 ---
 
 # PermissionLevel
 
 ## Connections
-- [[dot-__ge__()]] - `method` [EXTRACTED]
-- [[dot-__gt__()]] - `method` [EXTRACTED]
-- [[dot-__le__()]] - `method` [EXTRACTED]
-- [[dot-__lt__()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[dot-level_value()]] - `method` [EXTRACTED]
+- [[.__ge__()]] - `method` [EXTRACTED]
+- [[.__gt__()]] - `method` [EXTRACTED]
+- [[.__le__()]] - `method` [EXTRACTED]
+- [[.__lt__()]] - `method` [EXTRACTED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
+- [[.level_value()]] - `method` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
@@ -25,8 +25,8 @@ tags:
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
@@ -84,4 +84,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_89
+#graphify/code #graphify/INFERRED #community/PermissionLevel

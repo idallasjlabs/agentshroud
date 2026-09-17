@@ -1,16 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 166"
+community: "ApprovalRequest"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/ApprovalRequest
 ---
 
 # Path
 
 ## Connections
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[.__init__()_105]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_166
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

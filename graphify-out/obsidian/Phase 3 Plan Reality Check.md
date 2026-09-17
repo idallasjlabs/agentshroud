@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 389"
+community: "AgentShroud Security Value Proposition"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # Phase 3 Plan Reality Check
@@ -19,4 +19,4 @@ tags:
 - [[MEDIUM VALUE]] - `contains` [EXTRACTED]
 - [[SKIP (Over-Engineering)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

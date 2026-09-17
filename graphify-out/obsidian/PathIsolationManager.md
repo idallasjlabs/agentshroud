@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # PathIsolationManager
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
-- [[dot-_apply_path_rewriting()]] - `method` [EXTRACTED]
-- [[dot-_check_cross_user_access()]] - `method` [EXTRACTED]
-- [[dot-_cleanup_user_directory()]] - `method` [EXTRACTED]
-- [[dot-_ensure_base_directory()]] - `method` [EXTRACTED]
-- [[dot-_ensure_user_directory()]] - `method` [EXTRACTED]
-- [[dot-_get_user_temp_dir()]] - `method` [EXTRACTED]
-- [[dot-_is_base_directory_access()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_user_id()]] - `method` [EXTRACTED]
-- [[dot-cleanup_abandoned_directories()]] - `method` [EXTRACTED]
-- [[dot-end_user_session()]] - `method` [EXTRACTED]
-- [[dot-get_active_users()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_3]] - `method` [EXTRACTED]
-- [[dot-get_user_temp_path()]] - `method` [EXTRACTED]
-- [[dot-manager()]] - `calls` [EXTRACTED]
-- [[dot-register_user_session()]] - `method` [EXTRACTED]
-- [[dot-rewrite_path()]] - `method` [EXTRACTED]
-- [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_20]] - `method` [EXTRACTED]
+- [[._apply_path_rewriting()]] - `method` [EXTRACTED]
+- [[._check_cross_user_access()]] - `method` [EXTRACTED]
+- [[._cleanup_user_directory()]] - `method` [EXTRACTED]
+- [[._ensure_base_directory()]] - `method` [EXTRACTED]
+- [[._ensure_user_directory()]] - `method` [EXTRACTED]
+- [[._get_user_temp_dir()]] - `method` [EXTRACTED]
+- [[._is_base_directory_access()]] - `method` [EXTRACTED]
+- [[._sanitize_user_id()]] - `method` [EXTRACTED]
+- [[.cleanup_abandoned_directories()]] - `method` [EXTRACTED]
+- [[.end_user_session()]] - `method` [EXTRACTED]
+- [[.get_active_users()]] - `method` [EXTRACTED]
+- [[.get_stats()_3]] - `method` [EXTRACTED]
+- [[.get_user_temp_path()]] - `method` [EXTRACTED]
+- [[.manager()]] - `calls` [EXTRACTED]
+- [[.register_user_session()]] - `method` [EXTRACTED]
+- [[.rewrite_path()]] - `method` [EXTRACTED]
+- [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

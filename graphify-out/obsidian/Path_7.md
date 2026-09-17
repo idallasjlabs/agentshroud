@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
-location: "L43"
+community: "container-net-diag.sh"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/container-net-diagsh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[colima-health-check.sh_1]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/container-net-diagsh

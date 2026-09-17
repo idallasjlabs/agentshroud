@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 48"
-location: "L219"
+community: ".from_dict()"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/from_dict
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_151]] - `calls` [EXTRACTED]
-- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
-- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
-- [[dot-_quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
-- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
-- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
-- [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
+- [[.__init__()_179]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/from_dict

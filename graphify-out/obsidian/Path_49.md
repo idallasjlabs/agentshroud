@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 56"
-location: "L145"
+community: "falco_monitor.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/falco_monitorpy
 ---
 
 # Path
 
 ## Connections
-- [[save_report()]] - `references` [EXTRACTED]
+- [[.__init__()_203]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

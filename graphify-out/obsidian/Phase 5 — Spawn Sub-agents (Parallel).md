@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 510"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # Phase 5 — Spawn Sub-agents (Parallel)
@@ -17,4 +17,4 @@ tags:
 - [[Timeout Handling]] - `contains` [EXTRACTED]
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # Populate routing targets from the bots registry.          Iterates all BotConfig
 
 ## Connections
-- [[dot-register_bots()]] - `rationale_for` [EXTRACTED]
+- [[.register_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

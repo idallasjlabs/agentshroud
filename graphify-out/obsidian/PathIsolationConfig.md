@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # PathIsolationConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_20]] - `references` [EXTRACTED]
-- [[dot-config()_4]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_6]] - `calls` [EXTRACTED]
-- [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_20]] - `references` [EXTRACTED]
+- [[.config()_4]] - `calls` [EXTRACTED]
+- [[.test_custom_config()_3]] - `calls` [EXTRACTED]
+- [[.test_default_config()_6]] - `calls` [EXTRACTED]
+- [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 358"
+community: "Phase 3 Requirements: Working Chat Container"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_358
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Part 4: Implementation Checklist
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Integration Testing (Day 2)]] - `contains` [EXTRACTED]
 - [[Step 5 Documentation (Day 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_358
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

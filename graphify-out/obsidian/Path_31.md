@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 293"
-location: "L42"
+community: "health_report.py"
+location: "L116"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_293
+  - graphify/EXTRACTED
+  - community/health_reportpy
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_293
+#graphify/code #graphify/EXTRACTED #community/health_reportpy

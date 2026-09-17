@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 109"
+community: "PipelineAction"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_109
+  - community/PipelineAction
 ---
 
 # PipelineResult
 
 ## Connections
-- [[dot-_maybe_record_trust_violation()]] - `references` [EXTRACTED]
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_1]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `method` [EXTRACTED]
+- [[._maybe_record_trust_violation()]] - `references` [EXTRACTED]
+- [[._process_inbound_core()]] - `references` [EXTRACTED]
+- [[._process_outbound_core()]] - `references` [EXTRACTED]
+- [[.process_inbound()_1]] - `references` [EXTRACTED]
+- [[.process_outbound()_1]] - `references` [EXTRACTED]
+- [[.to_dict()_2]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[pipeline.py]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_109
+#graphify/code #graphify/INFERRED #community/PipelineAction

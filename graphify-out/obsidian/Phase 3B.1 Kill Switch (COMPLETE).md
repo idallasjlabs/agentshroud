@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 240"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # Phase 3B.1: Kill Switch (COMPLETE)
@@ -15,4 +15,4 @@ tags:
 - [[3B.1 Create killswitch.sh ✅]] - `contains` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

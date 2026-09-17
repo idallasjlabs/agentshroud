@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Config Validation & Router"
-location: "L17"
+community: "archive_old_events()"
+location: "L46"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Config_Validation__Router
+  - graphify/EXTRACTED
+  - community/archive_old_events
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

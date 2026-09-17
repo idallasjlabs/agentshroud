@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1067"
+community: "Discovery Strategy"
 location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1067
+  - community/Discovery_Strategy
 ---
 
 # Phase 4 — Enrichment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1067
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

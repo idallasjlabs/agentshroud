@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 422"
+community: "Pre-Deployment Checklist"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_422
+  - community/Pre-Deployment_Checklist
 ---
 
 # Post-Deployment Verification
@@ -17,4 +17,4 @@ tags:
 - [[Sign-Off]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_422
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

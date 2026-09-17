@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 171"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # Performance Benchmarks
@@ -17,4 +17,4 @@ tags:
 - [[Security Module Performance]] - `contains` [EXTRACTED]
 - [[Throughput Improvements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

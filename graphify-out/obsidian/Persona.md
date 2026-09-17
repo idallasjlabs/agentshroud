@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1000"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Persona
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1000
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

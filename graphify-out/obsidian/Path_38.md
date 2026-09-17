@@ -1,19 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 367"
-location: "L22"
+community: "EncryptedStore"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/EncryptedStore
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_367
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

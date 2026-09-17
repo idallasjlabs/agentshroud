@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 536"
-location: "L38"
+community: "test_multi_host_test.py"
+location: "L324"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_536
+  - graphify/INFERRED
+  - community/test_multi_host_testpy
 ---
 
 # Path
 
 ## Connections
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[store()_1]] - `references` [EXTRACTED]
-- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_decide_persists()]] - `references` [EXTRACTED]
-- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `references` [EXTRACTED]
-- [[test_persist_and_reload()]] - `references` [EXTRACTED]
-- [[test_store_survives_restart()]] - `references` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_536
+#graphify/code #graphify/INFERRED #community/test_multi_host_testpy

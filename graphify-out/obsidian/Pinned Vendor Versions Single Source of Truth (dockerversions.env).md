@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "rationale"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Security_Policy
 ---
 
 # Pinned Vendor Versions Single Source of Truth (docker/versions.env)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_347
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Policy

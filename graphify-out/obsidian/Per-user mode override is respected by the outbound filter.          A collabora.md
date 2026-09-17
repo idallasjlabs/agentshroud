@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 522"
+community: "TestFullAccessMiddlewareBypass"
 location: "L9628"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # Per-user mode override is respected by the outbound filter.          A collabora
 
 ## Connections
-- [[dot-test_per_user_mode_override_controls_outbound_filter()]] - `rationale_for` [EXTRACTED]
+- [[.test_per_user_mode_override_controls_outbound_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_522
+#graphify/rationale #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
