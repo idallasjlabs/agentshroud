@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 153"
+community: "BaseModel"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_153
+  - community/BaseModel
 ---
 
 # SCLCaller
 
 ## Connections
-- [[dot-__init__()_66]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()]] - `method` [EXTRACTED]
-- [[dot-is_owner()_2]] - `method` [EXTRACTED]
-- [[dot-require()]] - `method` [EXTRACTED]
-- [[dot-test_get_caller_passthrough()]] - `calls` [EXTRACTED]
-- [[dot-test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
-- [[dot-test_is_group_admin_without_teams_config()]] - `calls` [EXTRACTED]
-- [[dot-test_is_owner_delegates_to_config()]] - `calls` [EXTRACTED]
-- [[dot-test_require_allowed_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_require_denied_raises_403_with_reason()]] - `calls` [EXTRACTED]
-- [[dot-test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
+- [[.__init__()_66]] - `method` [EXTRACTED]
+- [[.is_group_admin()]] - `method` [EXTRACTED]
+- [[.is_owner()_2]] - `method` [EXTRACTED]
+- [[.require()]] - `method` [EXTRACTED]
+- [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
+- [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
+- [[.test_is_group_admin_without_teams_config()]] - `calls` [EXTRACTED]
+- [[.test_is_owner_delegates_to_config()]] - `calls` [EXTRACTED]
+- [[.test_require_allowed_does_not_raise()]] - `calls` [EXTRACTED]
+- [[.test_require_denied_raises_403_with_reason()]] - `calls` [EXTRACTED]
+- [[.test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_22]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/INFERRED #community/BaseModel

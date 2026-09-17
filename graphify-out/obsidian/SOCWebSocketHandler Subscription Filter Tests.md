@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Community 1620"
+community: "SOC Auth WS Token Issuance/Redemption Tests"
 location: "line 12"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1620
+  - community/SOC_Auth_WS_Token_Issuance/Redemption_Tests
 ---
 
 # SOCWebSocketHandler Subscription Filter Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOC Auth WS Token IssuanceRedemption Tests]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1620
+#graphify/code #graphify/INFERRED #community/SOC_Auth_WS_Token_Issuance/Redemption_Tests

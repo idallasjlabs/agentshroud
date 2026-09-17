@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # Risk policy configuration for a tool tier
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRiskPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

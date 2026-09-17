@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
-community: "SOC Auth & Audit Store"
+community: "test_soc_router_coverage.py"
 location: "L1823"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/test_soc_router_coveragepy
 ---
 
 # SOC /agent-cves surfaces auto-registered under_review advisories honestly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_cves_reports_under_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

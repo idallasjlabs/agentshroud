@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "Community 225"
+community: "1Password op-proxy (POST /credentials/op-proxy; "
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/1Password_op-proxy_POST_/credentials/op-proxy_
 ---
 
 # Runbook branch: Security alert → review blocked_domain/HIGH threat entries → legitimate action? allowlist vs kill switch
@@ -15,4 +15,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `references` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_225
+#graphify/image #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_

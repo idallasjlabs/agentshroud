@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # Routes content to appropriate agent containers      Routing priority:     1. Exp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # RouterError
 
 ## Connections
-- [[dot-resolve_target()]] - `calls` [EXTRACTED]
+- [[.resolve_target()]] - `calls` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
 - [[Exception_4]] - `inherits` [EXTRACTED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

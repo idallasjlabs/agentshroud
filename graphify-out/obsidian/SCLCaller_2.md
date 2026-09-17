@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # SCLCaller
@@ -100,4 +100,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 153"
+community: "BaseModel"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_153
+  - community/BaseModel
 ---
 
 # SCLInterface
@@ -21,4 +21,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/INFERRED #community/BaseModel

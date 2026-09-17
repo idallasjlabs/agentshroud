@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "Community 1775"
+community: "SRE Practices"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1775
+  - community/SRE_Practices
 ---
 
 # SRE Practices
 
-#graphify/document #graphify/EXTRACTED #community/Community_1775
+#graphify/document #graphify/EXTRACTED #community/SRE_Practices

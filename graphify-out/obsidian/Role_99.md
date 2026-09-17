@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 925"
+community: "Vulcan — Subject Matter Auditor"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_925
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_925
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

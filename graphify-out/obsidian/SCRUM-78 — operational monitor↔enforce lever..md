@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "Community 115"
+community: "_make_tm()"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/_make_tm
 ---
 
 # SCRUM-78 — operational monitor↔enforce lever.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforcementMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/_make_tm

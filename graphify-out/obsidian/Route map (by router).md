@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 503"
+community: "Route map (by router)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/Route_map_by_router
 ---
 
 # Route map (by router)
@@ -24,4 +24,4 @@ tags:
 - [[Scanning]] - `contains` [EXTRACTED]
 - [[Web control center (`gatewaywebapi.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

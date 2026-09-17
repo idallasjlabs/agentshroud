@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Community 616"
+community: "System Audit & Documentation"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_616
+  - community/System_Audit__Documentation
 ---
 
 # SECTION 4 — ALL EXTERNAL DEPENDENCIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_616
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "SOCWebSocketHandler"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/SOCWebSocketHandler
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_134]] - `method` [EXTRACTED]
-- [[dot-_event_fan_out()]] - `method` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
-- [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()_1]] - `method` [EXTRACTED]
+- [[.__init__()_134]] - `method` [EXTRACTED]
+- [[._event_fan_out()]] - `method` [EXTRACTED]
+- [[._keepalive_loop()]] - `method` [EXTRACTED]
+- [[._send_event()]] - `method` [EXTRACTED]
+- [[.run()_1]] - `method` [EXTRACTED]
 - [[Any_1]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

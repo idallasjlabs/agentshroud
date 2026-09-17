@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Activity & Telegram Proxy"
+community: "TelegramAPIProxy"
 location: "L3911"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/TelegramAPIProxy
 ---
 
 # Rewrite raw model/runtime error texts to actionable user-facing messages.
 
 ## Connections
-- [[dot-_apply_outbound_model_error_rewrites()]] - `rationale_for` [EXTRACTED]
+- [[._apply_outbound_model_error_rewrites()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

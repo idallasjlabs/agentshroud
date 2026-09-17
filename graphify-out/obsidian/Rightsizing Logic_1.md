@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 299"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Rightsizing Logic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

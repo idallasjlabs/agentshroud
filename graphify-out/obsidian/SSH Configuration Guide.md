@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 381"
+community: "ssh-configuration.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/ssh-configurationmd
 ---
 
 # SSH Configuration Guide
@@ -20,4 +20,4 @@ tags:
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_381
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

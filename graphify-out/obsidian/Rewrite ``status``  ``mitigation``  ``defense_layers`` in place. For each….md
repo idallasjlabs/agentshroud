@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 158"
+community: "triage-cve-mitigations.py"
 location: "L874"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/triage-cve-mitigationspy
 ---
 
 # Rewrite ``status`` / ``mitigation`` / ``defense_layers`` in place. For each…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rewrite_registry_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_158
+#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

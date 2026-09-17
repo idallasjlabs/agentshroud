@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # SECURITY_SCRIPTS_REFERENCE.md
@@ -17,4 +17,4 @@ tags:
 - [[scan.sh]] - `references` [EXTRACTED]
 - [[verify-security.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

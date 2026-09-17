@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Community 577"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_577
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # SMTP Port Block Email Failure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_577
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

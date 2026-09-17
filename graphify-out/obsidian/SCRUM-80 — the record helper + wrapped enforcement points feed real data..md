@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "rationale"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # SCRUM-80 — the record helper + wrapped enforcement points feed real data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforcementWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_137
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

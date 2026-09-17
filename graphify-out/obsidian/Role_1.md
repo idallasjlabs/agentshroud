@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Role
 
 ## Connections
-- [[dot-get_user_role()]] - `references` [EXTRACTED]
-- [[dot-get_users_by_role()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()]] - `references` [EXTRACTED]
+- [[.get_user_role()]] - `references` [EXTRACTED]
+- [[.get_users_by_role()]] - `references` [EXTRACTED]
+- [[.set_user_role()]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Any_1]] - `uses` [INFERRED]
@@ -30,8 +30,8 @@ tags:
 - [[OpProxyRequest]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Request]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
@@ -113,4 +113,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

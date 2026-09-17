@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 683"
+community: "SSH Capability Architecture Document"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_683
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # SSH Capability Architecture Document
@@ -18,4 +18,4 @@ tags:
 - [[SSHProxy Controlled Remote Command Execution via Gateway API]] - `references` [EXTRACTED]
 - [[Security Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_683
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

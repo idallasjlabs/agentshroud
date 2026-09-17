@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 881"
+community: "REPORT STRUCTURE"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_881
+  - community/REPORT_STRUCTURE
 ---
 
 # SECTION 2: COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_881
+#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE

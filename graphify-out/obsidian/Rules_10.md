@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 328"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 885"
+community: "Available MCP Servers"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_885
+  - community/Available_MCP_Servers
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_885
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
