@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 291"
+community: "KeyRotationConfig"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/KeyRotationConfig
 ---
 
 # Test op:// reference building.
 
 ## Connections
-- [[dot-test_get_op_reference_builds_correctly()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_op_reference_builds_correctly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_291
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

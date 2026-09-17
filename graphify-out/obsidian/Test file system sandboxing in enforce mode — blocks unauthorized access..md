@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TestFileSandbox"
 location: "L483"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TestFileSandbox
 ---
 
 # Test file system sandboxing in enforce mode — blocks unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

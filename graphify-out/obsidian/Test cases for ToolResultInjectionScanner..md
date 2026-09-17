@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Community 101"
+community: "InjectionSeverity"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionSeverity
 ---
 
 # Test cases for ToolResultInjectionScanner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_101
+#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Community 208"
+community: "TestMultilingualInjection"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/TestMultilingualInjection
 ---
 
 # Test resistance to basic obfuscation attempts.
 
 ## Connections
-- [[dot-test_obfuscation_resistance()]] - `rationale_for` [EXTRACTED]
+- [[.test_obfuscation_resistance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

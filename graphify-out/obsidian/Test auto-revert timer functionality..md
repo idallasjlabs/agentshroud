@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 467"
+community: "TestObservatoryMode"
 location: "L423"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_467
+  - community/TestObservatoryMode
 ---
 
 # Test auto-revert timer functionality.
 
 ## Connections
-- [[dot-test_auto_revert_timer_logic()]] - `rationale_for` [EXTRACTED]
+- [[.test_auto_revert_timer_logic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_467
+#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode

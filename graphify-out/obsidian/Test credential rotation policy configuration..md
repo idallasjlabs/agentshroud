@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 848"
+community: "test_key_rotation.py"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_848
+  - community/test_key_rotationpy
 ---
 
 # Test credential rotation policy configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialRotationPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_848
+#graphify/rationale #graphify/EXTRACTED #community/test_key_rotationpy

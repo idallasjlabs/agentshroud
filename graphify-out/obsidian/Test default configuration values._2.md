@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 42"
+community: "KillSwitchMonitor"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/KillSwitchMonitor
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

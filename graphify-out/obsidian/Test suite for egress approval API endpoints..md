@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 558"
+community: "TestEgressApprovalQueue"
 location: "L396"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/TestEgressApprovalQueue
 ---
 
 # Test suite for egress approval API endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressApprovalAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_558
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

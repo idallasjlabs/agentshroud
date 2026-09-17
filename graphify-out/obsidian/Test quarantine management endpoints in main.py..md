@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 100"
+community: "TestQuarantineEndpoints"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/TestQuarantineEndpoints
 ---
 
 # Test quarantine management endpoints in main.py.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestQuarantineEndpoints]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_100
+#graphify/rationale #graphify/EXTRACTED #community/TestQuarantineEndpoints

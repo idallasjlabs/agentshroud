@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "Community 317"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # Test Strategy
@@ -19,4 +19,4 @@ tags:
 - [[Test-Type Decision Matrix]] - `contains` [EXTRACTED]
 - [[When to Add a Smoke Assertion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_317
+#graphify/document #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev

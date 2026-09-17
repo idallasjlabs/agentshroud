@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 607"
+community: "EgressFilterConfig"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/EgressFilterConfig
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_607
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

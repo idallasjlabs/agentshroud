@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Community 686"
+community: "StatusResponse"
 location: "L8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_686
+  - community/StatusResponse
 ---
 
 # Test that StatusResponse model accepts new fields.
 
 ## Connections
-- [[dot-test_status_response_model()]] - `rationale_for` [EXTRACTED]
+- [[.test_status_response_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_686
+#graphify/rationale #graphify/EXTRACTED #community/StatusResponse
