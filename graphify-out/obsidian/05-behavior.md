@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "Community 875"
+community: "05-behavior.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_875
+  - community/05-behaviormd
 ---
 
 # 05-behavior.md
@@ -19,4 +19,4 @@ tags:
 - [[State Machine — Bot Session  Context Lifecycle]] - `conceptually_related_to` [EXTRACTED]
 - [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_875
+#graphify/document #graphify/EXTRACTED #community/05-behaviormd
