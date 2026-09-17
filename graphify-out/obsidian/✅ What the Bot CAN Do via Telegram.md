@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 318"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_318
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # ✅ What the Bot CAN Do via Telegram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_318
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

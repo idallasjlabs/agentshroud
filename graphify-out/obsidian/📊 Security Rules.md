@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 351"
+community: "System Instructions: Credential Security (Ultra-"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/System_Instructions_Credential_Security_Ultra-
 ---
 
 # 📊 Security Rules
@@ -17,4 +17,4 @@ tags:
 - [[Rule 3 Always Use Internally]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_351
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-

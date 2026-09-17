@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Community 98"
+community: "falco_monitor.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_98
+  - community/falco_monitorpy
 ---
 
 # wazuh-ossec.md
@@ -19,4 +19,4 @@ tags:
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_98
+#graphify/document #graphify/INFERRED #community/falco_monitorpy

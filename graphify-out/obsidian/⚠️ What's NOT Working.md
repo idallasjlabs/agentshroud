@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 590"
+community: "AgentShroud System Status Report"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_590
+  - community/AgentShroud_System_Status_Report
 ---
 
 # ⚠️ What's NOT Working
@@ -16,4 +16,4 @@ tags:
 - [[Critical Issues]] - `contains` [EXTRACTED]
 - [[iMessage Fix Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_590
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

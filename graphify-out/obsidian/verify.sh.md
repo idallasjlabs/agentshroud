@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/ToolResultSanitizer
 ---
 
 # verify.sh
@@ -17,4 +17,4 @@ tags:
 - [[sanitizer.py]] - `references` [EXTRACTED]
 - [[verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

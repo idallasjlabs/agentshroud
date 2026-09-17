@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Community 1319"
+community: "iCloud Services Setup - Complete Guide"
 location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1319
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # 🔍 Troubleshooting
@@ -18,4 +18,4 @@ tags:
 - [[Notes folder not found]] - `contains` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1319
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

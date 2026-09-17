@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 553"
+community: "Apple Services Setup Guide"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Apple_Services_Setup_Guide
 ---
 
 # 📝 Notes
@@ -15,4 +15,4 @@ tags:
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 - [[Notes Access Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_553
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "Community 741"
+community: "workspace.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_741
+  - community/workspacesh
 ---
 
 # workspace.sh
@@ -24,4 +24,4 @@ tags:
 - [[usage()_5]] - `defines` [EXTRACTED]
 - [[workspace.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_741
+#graphify/code #graphify/EXTRACTED #community/workspacesh

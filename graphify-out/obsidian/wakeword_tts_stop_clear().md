@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 273"
+community: "test_playback_state.c"
 location: "L515"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_273
+  - community/test_playback_statec
 ---
 
 # wakeword_tts_stop_clear()
@@ -18,4 +18,4 @@ tags:
 - [[tts_task]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_273
+#graphify/code #graphify/INFERRED #community/test_playback_statec

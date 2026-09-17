@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 955"
+community: "📱 Required Accounts & Services"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_955
+  - community/_Required_Accounts__Services
 ---
 
 # 📱 Required Accounts & Services
@@ -20,4 +20,4 @@ tags:
 - [[6. Anthropic Account (Claude API)]] - `contains` [EXTRACTED]
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_955
+#graphify/document #graphify/EXTRACTED #community/_Required_Accounts__Services

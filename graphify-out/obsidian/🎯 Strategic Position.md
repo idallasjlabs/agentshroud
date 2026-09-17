@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Community 1390"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1390
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # 🎯 **Strategic Position**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1390
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

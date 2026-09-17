@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # vt_remote_log
@@ -27,4 +27,4 @@ tags:
 - [[wakeword_tick]] - `calls` [INFERRED]
 - [[wifi_event_handler]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_363
+#graphify/code #graphify/INFERRED #community/wakewordc

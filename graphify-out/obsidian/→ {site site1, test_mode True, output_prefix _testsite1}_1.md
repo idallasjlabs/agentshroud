@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 331"
+community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_331
+  - community/_site_site1_test_mode_True_output_p
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
@@ -16,6 +16,6 @@ tags:
 - [[Dependencies_11]] - `contains` [EXTRACTED]
 - [[Validation Checklist_4]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_331
+#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p

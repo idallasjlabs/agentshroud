@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 700"
+community: "Publish SecureBrowser to ClawHub - Step-by-Step "
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_700
+  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_
 ---
 
 # 📊 Track Success
@@ -16,4 +16,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[View Skill Stats]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_700
+#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_

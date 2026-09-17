@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/TrustManager
 ---
 
 # verify-proxy.sh
@@ -23,4 +23,4 @@ tags:
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/TrustManager

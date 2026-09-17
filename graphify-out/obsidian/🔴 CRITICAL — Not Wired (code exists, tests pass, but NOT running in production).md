@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Community 443"
+community: "🔴 CRITICAL — Not Wired (code exists, tests pass,"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_443
+  - community/_CRITICAL__Not_Wired_code_exists_tests_pass
 ---
 
 # 🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)
@@ -19,4 +19,4 @@ tags:
 - [[5. LLMProxy — Never Instantiated]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_443
+#graphify/document #graphify/EXTRACTED #community/_CRITICAL__Not_Wired_code_exists_tests_pass

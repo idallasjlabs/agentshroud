@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Community 554"
+community: "Google Calendar & Contacts - Quick Setup"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/Google_Calendar__Contacts_-_Quick_Setup
 ---
 
 # 🚀 Option A: Simple Setup (5 minutes)
@@ -17,4 +17,4 @@ tags:
 - [[Install Node CalDAV Client]] - `contains` [EXTRACTED]
 - [[Run Test]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup

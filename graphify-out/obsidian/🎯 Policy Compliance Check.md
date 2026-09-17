@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 603"
+community: "Security Implementation Verification"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_603
+  - community/Security_Implementation_Verification
 ---
 
 # 🎯 Policy Compliance Check
@@ -15,4 +15,4 @@ tags:
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 - [[Ultra-Conservative Policy Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_603
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

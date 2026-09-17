@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "SOCWebSocketHandler"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/SOCWebSocketHandler
 ---
 
 # websocket.py
@@ -24,4 +24,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

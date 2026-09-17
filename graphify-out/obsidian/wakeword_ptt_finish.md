@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 location: "448"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # wakeword_ptt_finish
@@ -21,4 +21,4 @@ tags:
 - [[vt_remote_log_1]] - `calls` [EXTRACTED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_363
+#graphify/code #graphify/INFERRED #community/wakewordc

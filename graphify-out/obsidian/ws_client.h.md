@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.h"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # ws_client.h
@@ -16,4 +16,4 @@ tags:
 - [[ui_face.c]] - `imports` [EXTRACTED]
 - [[ws_client.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 42"
+community: "TestKillSwitchVerification"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/TestKillSwitchVerification
 ---
 
 # verify_killswitch() must write a log entry for auditability.
 
 ## Connections
-- [[dot-test_verification_log_written()]] - `rationale_for` [EXTRACTED]
+- [[.test_verification_log_written()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/TestKillSwitchVerification

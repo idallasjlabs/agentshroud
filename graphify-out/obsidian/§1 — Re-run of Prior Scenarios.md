@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1045"
+community: "§1 — Re-run of Prior Scenarios"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/1__Re-run_of_Prior_Scenarios
 ---
 
 # §1 — Re-run of Prior Scenarios
@@ -21,4 +21,4 @@ tags:
 - [[Scenario 05 — Credential Isolation]] - `contains` [EXTRACTED]
 - [[Scenario 06 — Outbound Information Filter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1045
+#graphify/document #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios

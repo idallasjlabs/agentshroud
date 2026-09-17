@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 1385"
+community: "2. Security Value Audit"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1385
+  - community/2_Security_Value_Audit
 ---
 
 # ⚠️ Partial Value / Needs Hardening
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1385
+#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit

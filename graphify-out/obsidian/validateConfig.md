@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/lib/forwarder.js"
 type: "code"
-community: "Community 928"
+community: "forwarder.test.js test suite"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/forwardertestjs_test_suite
 ---
 
 # validateConfig
@@ -16,4 +16,4 @@ tags:
 - [[normalizeGatewayUrl]] - `calls` [EXTRACTED]
 - [[postForward]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_928
+#graphify/code #graphify/EXTRACTED #community/forwardertestjs_test_suite
