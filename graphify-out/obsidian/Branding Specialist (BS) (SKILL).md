@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Branding Specialist (BS) (SKILL)
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 - [[WCAG AA Contrast Standard]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_325
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

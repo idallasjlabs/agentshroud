@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 129"
-location: "L311"
+community: ".proxy_messages()"
+location: "L324"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/proxy_messages
 ---
 
 # Attempt a local→local-secondary failover when the primary local model hits OOM.
 
 ## Connections
 - [[._local_secondary_failover_request()]] - `rationale_for` [EXTRACTED]
+- [[._local_secondary_failover_request()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_129
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

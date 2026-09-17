@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Community 444"
+community: "Seccomp Profiles"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Seccomp_Profiles
 ---
 
 # Blocked Syscalls (Notable)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_444
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

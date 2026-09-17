@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 111"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[dot-agentsskillsi-browserSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Approval Integration]] - `contains` [EXTRACTED]
 - [[Audit Logging]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[Security Guarantees]] - `contains` [EXTRACTED]
 - [[Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_111
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

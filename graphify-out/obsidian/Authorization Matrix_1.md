@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Community 456"
+community: "Multi-Agent Role Matrix"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Authorization Matrix
@@ -15,4 +15,4 @@ tags:
 - [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

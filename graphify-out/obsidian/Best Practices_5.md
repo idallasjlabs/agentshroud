@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 269"
+community: "Browser — Secure Browser Automation"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_269
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Best Practices
@@ -19,4 +19,4 @@ tags:
 - [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
 - [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_269
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

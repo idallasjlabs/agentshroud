@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Community 653"
+community: "browser_security.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_653
+  - community/browser_securitypy
 ---
 
 # BrowserSecurityGuard.analyze_content(content)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_653
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 489"
+community: "Himalaya Email CLI"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Himalaya_Email_CLI
 ---
 
 # Attachments
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

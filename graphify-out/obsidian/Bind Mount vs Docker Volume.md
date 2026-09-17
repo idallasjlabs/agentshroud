@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Community 216"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Bind Mount vs Docker Volume
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Bind Mount (Alternative - More Accessible)]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_216
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "Community 162"
+community: "SlackSocketClient"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/SlackSocketClient
 ---
 
 # Backoff never exceeds the cap, even for huge attempt counts.
 
 ## Connections
-- [[dot-test_capped_at_cap_for_large_attempts()]] - `rationale_for` [EXTRACTED]
+- [[.test_capped_at_cap_for_large_attempts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_162
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 502"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains_1]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L360"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # Attempting to create a pipeline with no PII sanitizer raises RuntimeError.
 
 ## Connections
-- [[dot-test_pipeline_raises_without_pii_sanitizer()]] - `rationale_for` [EXTRACTED]
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

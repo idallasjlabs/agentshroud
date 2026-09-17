@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "rationale"
-community: "Community 1886"
+community: "Audit-log-every-fetch design rationale"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1886
+  - community/Audit-log-every-fetch_design_rationale
 ---
 
 # Audit-log-every-fetch design rationale
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1886
+#graphify/rationale #graphify/EXTRACTED #community/Audit-log-every-fetch_design_rationale

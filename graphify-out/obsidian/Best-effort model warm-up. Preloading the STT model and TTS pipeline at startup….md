@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Community 122"
+community: "server.py"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/serverpy
 ---
 
 # Best-effort model warm-up. Preloading the STT model and TTS pipeline at startup…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_warm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

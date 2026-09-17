@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Encrypted Store & Drift Detector"
+community: "EncryptedStore"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EncryptedStore
 ---
 
 # Best-effort zeroing of key material using ctypes.memset.      Works on bytearray
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_secure_zero()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

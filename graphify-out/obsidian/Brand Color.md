@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 566"
+community: "AgentShroud Branding Assets Index"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Brand Color
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

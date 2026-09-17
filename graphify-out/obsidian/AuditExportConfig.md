@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "AuditExportConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/AuditExportConfig
 ---
 
 # AuditExportConfig
 
 ## Connections
-- [[dot-__init__()_38]] - `references` [EXTRACTED]
-- [[dot-__init__()_8]] - `method` [EXTRACTED]
-- [[dot-_default_jsonld_context()]] - `method` [EXTRACTED]
-- [[dot-export_config()]] - `calls` [EXTRACTED]
+- [[.__init__()_8]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `references` [EXTRACTED]
+- [[._default_jsonld_context()]] - `method` [EXTRACTED]
+- [[.export_config()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/AuditExportConfig

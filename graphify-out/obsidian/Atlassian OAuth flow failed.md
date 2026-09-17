@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1123"
+community: "10. Troubleshooting"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1123
+  - community/10_Troubleshooting
 ---
 
 # Atlassian: "OAuth flow failed"
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1123
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

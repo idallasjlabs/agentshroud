@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Community 423"
+community: ".decide()"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/decide
 ---
 
 # Best-effort JSONL persistence for queue lifecycle events.
 
 ## Connections
-- [[dot-_append_audit_event()]] - `rationale_for` [EXTRACTED]
+- [[._append_audit_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_423
+#graphify/rationale #graphify/EXTRACTED #community/decide

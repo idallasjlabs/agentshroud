@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # Automation Examples
@@ -17,4 +17,4 @@ tags:
 - [[Daily Security Check (cron)]] - `contains` [EXTRACTED]
 - [[Weekly Compliance Scan (cron)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

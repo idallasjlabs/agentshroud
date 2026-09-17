@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "Community 330"
+community: "test_cli_coverage.py"
 location: "L611"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/test_cli_coveragepy
 ---
 
 # Async-iterable WebSocket double.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWS]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_330
+#graphify/rationale #graphify/EXTRACTED #community/test_cli_coveragepy

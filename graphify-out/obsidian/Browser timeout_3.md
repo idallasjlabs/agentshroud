@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 269"
+community: "Browser — Secure Browser Automation"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_269
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_269
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

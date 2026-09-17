@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Community 329"
+community: "test_e2e.py"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_329
+  - community/test_e2epy
 ---
 
 # AsyncClient
 
 ## Connections
-- [[dot-__init__()_75]] - `references` [EXTRACTED]
-- [[dot-_get_client()]] - `references` [EXTRACTED]
+- [[.__init__()_75]] - `references` [EXTRACTED]
+- [[._get_client()]] - `references` [EXTRACTED]
 - [[client()_5]] - `calls` [INFERRED]
 - [[client()_6]] - `calls` [INFERRED]
 - [[client()_7]] - `calls` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[client()_11]] - `calls` [INFERRED]
 - [[client()_12]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_329
+#graphify/code #graphify/INFERRED #community/test_e2epy

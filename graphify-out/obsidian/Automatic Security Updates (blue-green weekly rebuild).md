@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Community 160"
+community: "OpenClaw Live Cron Job Index (11 jobs)"
 location: "L218-L243"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_160
+  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
 ---
 
 # Automatic Security Updates (blue-green weekly rebuild)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CVE Triage 3-Job Pipeline]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_160
+#graphify/concept #graphify/INFERRED #community/OpenClaw_Live_Cron_Job_Index_11_jobs

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 106"
+community: "ContainerEngine"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/ContainerEngine
 ---
 
 # Bring up services from a compose file.
 
 ## Connections
-- [[dot-compose_up()]] - `rationale_for` [EXTRACTED]
+- [[.compose_up()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_106
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 270"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
@@ -22,8 +22,8 @@ tags:
 - [[Security Architecture_3]] - `contains` [EXTRACTED]
 - [[Security Configuration_3]] - `contains` [EXTRACTED]
 - [[Security Guarantees_4]] - `contains` [EXTRACTED]
-- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 - [[Usage_114]] - `contains` [EXTRACTED]
-- [[openclawskillsi-browserSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_270
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

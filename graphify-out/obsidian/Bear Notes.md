@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Community 830"
+community: "Bear Notes"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Bear_Notes
 ---
 
 # Bear Notes
@@ -19,4 +19,4 @@ tags:
 - [[Options]] - `contains` [EXTRACTED]
 - [[bear-notesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes
