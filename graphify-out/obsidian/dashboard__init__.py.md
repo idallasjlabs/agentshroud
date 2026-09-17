@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/dashboard/__init__.py"
 type: "code"
-community: "Community 1827"
+community: "dashboard/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1827
+  - community/dashboard/__init__py
 ---
 
 # dashboard/__init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1827
+#graphify/code #graphify/EXTRACTED #community/dashboard/__init__py

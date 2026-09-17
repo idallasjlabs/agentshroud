@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Community 105"
+community: "test_hermes_model_resolver.py"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/test_hermes_model_resolverpy
 ---
 
 # cloud mode with a Claude HERMES_MAIN_MODEL → that model + anthropic provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cloud_mode_uses_hermes_main_model_when_claude()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_105
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy

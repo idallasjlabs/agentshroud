@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 834"
+community: "DOCKER-VPN-NETWORKING.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # dashboard/README.md
@@ -19,4 +19,4 @@ tags:
 - [[MemoryViewer Component (MEMORY.md Browser)]] - `references` [EXTRACTED]
 - [[NetworkInspector Component (Outbound Request Monitor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 656"
+community: "falco_monitor.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/falco_monitorpy
 ---
 
 # falco_monitor.py
@@ -18,8 +18,8 @@ tags:
 - [[Priority Mapping]] - `contains` [EXTRACTED]
 - [[Purpose_161]] - `contains` [EXTRACTED]
 - [[Related_38]] - `contains` [EXTRACTED]
-- [[Responsibilities_36]] - `contains` [EXTRACTED]
+- [[Responsibilities_35]] - `contains` [EXTRACTED]
 - [[Threat Model_22]] - `contains` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

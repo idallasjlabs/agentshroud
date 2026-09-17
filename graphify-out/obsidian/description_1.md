@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
-type: "document"
-community: "Community 353"
-location: "L11"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "browser-extension/package.json"
+location: "L5"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/browser-extension/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_353
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

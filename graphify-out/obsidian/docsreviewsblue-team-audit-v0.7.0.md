@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/blue-team-audit-v0.7.0.md"
 type: "concept"
-community: "Blue/Red Team Security Auditor Skills"
+community: "test_redteam_probes.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/test_redteam_probespy
 ---
 
 # docs/reviews/blue-team-audit-v0.7.0.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/concept #graphify/EXTRACTED #community/test_redteam_probespy

@@ -1,16 +1,17 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 1060"
+community: "OpenClaw Management Scripts"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1060
+  - community/OpenClaw_Management_Scripts
 ---
 
 # docker/scripts README.md
 
 ## Connections
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[drift-detector.sh (planned)]] - `references` [EXTRACTED]
 - [[memory-scrubber.py (planned)]] - `references` [EXTRACTED]
 - [[security-audit.sh (planned)]] - `references` [EXTRACTED]
@@ -19,4 +20,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1060
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

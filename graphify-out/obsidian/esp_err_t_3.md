@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # esp_err_t
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[wakeword_init]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

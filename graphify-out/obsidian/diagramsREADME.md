@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Community 451"
+community: "diagrams/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/diagrams/READMEmd
 ---
 
 # diagrams/README.md
@@ -21,4 +21,4 @@ tags:
 - [[07-team-planning]] - `references` [EXTRACTED]
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_451
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

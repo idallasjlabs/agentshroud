@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 203"
+community: "AgentShroud Docker Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # docker/README.md
@@ -19,4 +19,4 @@ tags:
 - [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - `references` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 86"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/EgressFilterConfig
 ---
 
 # egress_filter.py
@@ -26,6 +26,7 @@ tags:
 - [[Rule agentshroud-ssrf-requests]] - `references` [EXTRACTED]
 - [[agentshroud.yaml]] - `references` [INFERRED]
 - [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `conceptually_related_to` [EXTRACTED]
 - [[dns_filter.py_2]] - `references` [EXTRACTED]
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
@@ -40,4 +41,4 @@ tags:
 - [[record_decision]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

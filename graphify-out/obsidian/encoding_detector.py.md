@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/TrustManager
 ---
 
 # encoding_detector.py
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[differential_pii_detector.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/TrustManager

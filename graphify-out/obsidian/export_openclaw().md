@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 756"
+community: "export-bot-conversations.py"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_756
+  - community/export-bot-conversationspy
 ---
 
 # export_openclaw()
 
 ## Connections
-- [[Path_57]] - `references` [EXTRACTED]
+- [[Path_45]] - `references` [EXTRACTED]
 - [[_docker_read_file()]] - `calls` [EXTRACTED]
 - [[_extract_text()]] - `calls` [EXTRACTED]
 - [[agentshroud-openclaw bot container]] - `references` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
 - [[main()_29]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_756
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

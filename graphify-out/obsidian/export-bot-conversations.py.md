@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 756"
+community: "export-bot-conversations.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_756
+  - community/export-bot-conversationspy
 ---
 
 # export-bot-conversations.py
@@ -20,4 +20,4 @@ tags:
 - [[export_openclaw()]] - `contains` [EXTRACTED]
 - [[main()_29]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_756
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

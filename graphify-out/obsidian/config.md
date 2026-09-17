@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
+source_file: ".agents/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 227"
-location: "L17"
+community: ".agents/skills/i-icloud/scripts/calendar.js"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/agents/skills/i-icloud/scripts/calendarjs
 ---
 
-# config
+# CONFIG
 
 ## Connections
-- [[apply-patches.js (OpenClaw)]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-icloud/scripts/calendarjs

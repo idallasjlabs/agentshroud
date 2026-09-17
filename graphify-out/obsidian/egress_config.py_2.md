@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 654"
+community: "egress_config.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_654
+  - community/egress_configpy
 ---
 
 # egress_config.py
@@ -19,8 +19,8 @@ tags:
 - [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
 - [[Purpose_159]] - `contains` [EXTRACTED]
 - [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
+- [[Responsibilities_33]] - `contains` [EXTRACTED]
 - [[Threat Model_20]] - `contains` [EXTRACTED]
 - [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_654
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

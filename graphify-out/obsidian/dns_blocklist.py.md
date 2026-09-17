@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Community 573"
+community: "DNSForwarderProtocol"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/DNSForwarderProtocol
 ---
 
 # dns_blocklist.py
@@ -16,4 +16,4 @@ tags:
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

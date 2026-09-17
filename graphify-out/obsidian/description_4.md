@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
-type: "document"
-community: "Community 822"
-location: "L11"
+source_file: "skills/custom/browser-fetch/package.json"
+type: "code"
+community: "browser-fetch/package.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_822
+  - community/browser-fetch/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[browser-fetchpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_822
+#graphify/code #graphify/EXTRACTED #community/browser-fetch/packagejson

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Community 329"
+community: "test_e2e.py"
 location: "L21"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_329
+  - graphify/INFERRED
+  - community/test_e2epy
 ---
 
 # client()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncClient]] - `calls` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_329
+#graphify/code #graphify/INFERRED #community/test_e2epy

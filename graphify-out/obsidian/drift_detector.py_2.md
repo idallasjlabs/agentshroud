@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 56"
+community: "EncryptedStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/EncryptedStore
 ---
 
 # drift_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
 - [[clamav_scanner.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

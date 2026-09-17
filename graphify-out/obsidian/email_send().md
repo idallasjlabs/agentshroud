@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "forward.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/forwardpy
 ---
 
 # email_send()
@@ -26,4 +26,4 @@ tags:
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/forwardpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
-type: "document"
-community: "Community 931"
-location: "L11"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/skilljson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/code #graphify/EXTRACTED #community/skilljson

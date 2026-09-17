@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 location: "L46"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_134
+  - graphify/INFERRED
+  - community/ToolACLEnforcer
 ---
 
 # enforcer()
@@ -17,4 +17,4 @@ tags:
 - [[fixture_2]] - `references` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/INFERRED #community/ToolACLEnforcer
