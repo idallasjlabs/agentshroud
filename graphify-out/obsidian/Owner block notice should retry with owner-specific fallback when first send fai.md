@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound Tests"
+community: "TelegramAPIProxy"
 location: "L6907"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/TelegramAPIProxy
 ---
 
 # Owner block notice should retry with owner-specific fallback when first send fai
 
 ## Connections
-- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - `rationale_for` [EXTRACTED]
+- [[.test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

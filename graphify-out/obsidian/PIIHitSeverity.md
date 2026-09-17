@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # PIIHitSeverity
 
 ## Connections
-- [[dot-from_confidence()]] - `method` [EXTRACTED]
+- [[.from_confidence()]] - `method` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_46
+#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector

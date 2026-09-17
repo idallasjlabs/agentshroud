@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "test_security_audit.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/test_security_auditpy
 ---
 
 # PKCEViolation
 
 ## Connections
-- [[dot-validate_request()]] - `calls` [EXTRACTED]
+- [[.validate_request()]] - `calls` [EXTRACTED]
 - [[OAuthError]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

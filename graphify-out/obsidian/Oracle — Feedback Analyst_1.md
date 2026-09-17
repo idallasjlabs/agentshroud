@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1005"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1005
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
@@ -20,4 +20,4 @@ tags:
 - [[System Prompt_3]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1005
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

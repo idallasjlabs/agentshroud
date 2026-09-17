@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Community 805"
+community: "Add information filtering to prevent agent self-"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # Option A: System prompt restriction (fast, partial)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

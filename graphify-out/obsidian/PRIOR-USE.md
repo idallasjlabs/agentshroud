@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Community 1079"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1079
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # PRIOR-USE.md
@@ -18,4 +18,4 @@ tags:
 - [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1079
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

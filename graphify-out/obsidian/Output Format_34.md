@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 836"
-location: "L25"
+community: "Vulcan — Subject Matter Auditor"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_836
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
-- [[diagramsREADME_2]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_836
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

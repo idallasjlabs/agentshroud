@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "Community 43"
-location: "L380"
+community: "openclaw/skills/i-browser/browse.js"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.model_post_init()]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # Paginated queries return correct subsets.
 
 ## Connections
-- [[dot-test_query_pagination()]] - `rationale_for` [EXTRACTED]
+- [[.test_query_pagination()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

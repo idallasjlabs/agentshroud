@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "rationale"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "line 130"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # PII Sanitizer Mitigation (Presidio + custom regex)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DifferentialPIIDetector_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_46
+#graphify/rationale #graphify/INFERRED #community/DifferentialPIIDetector

@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "TrustManager"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Redaction
+  - community/TrustManager
 ---
 
 # PIIConfig
 
 ## Connections
-- [[dot-default_config()]] - `calls` [EXTRACTED]
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-mock_config()]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-sanitizer()]] - `calls` [EXTRACTED]
-- [[dot-set_config()]] - `calls` [EXTRACTED]
-- [[dot-test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
-- [[dot-test_default_pii_config_meets_floor()]] - `calls` [EXTRACTED]
-- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_middleware_set_config_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_middleware_set_config_missing()]] - `calls` [EXTRACTED]
-- [[dot-test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
-- [[dot-test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
-- [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[dot-test_tool_specific_config()]] - `calls` [EXTRACTED]
+- [[.default_config()]] - `calls` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.mock_config()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.pipeline()]] - `calls` [EXTRACTED]
+- [[.pipeline()_1]] - `calls` [EXTRACTED]
+- [[.sanitizer()]] - `calls` [EXTRACTED]
+- [[.set_config()]] - `calls` [EXTRACTED]
+- [[.test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
+- [[.test_default_pii_config_meets_floor()]] - `calls` [EXTRACTED]
+- [[.test_email_content_scanning()]] - `calls` [EXTRACTED]
+- [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[.test_middleware_set_config_disabled()]] - `calls` [EXTRACTED]
+- [[.test_middleware_set_config_missing()]] - `calls` [EXTRACTED]
+- [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
+- [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
+- [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
+- [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
-- [[Any_43]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -44,17 +44,17 @@ tags:
 - [[PII detection and redaction configuration]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 - [[RedactionResult_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -189,4 +189,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/INFERRED #community/TrustManager

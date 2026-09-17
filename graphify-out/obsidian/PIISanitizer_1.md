@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # PIISanitizer
@@ -21,4 +21,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[sanitizer()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/SSHProxy

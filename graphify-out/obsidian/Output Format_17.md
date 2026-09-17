@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 479"
-location: "L154"
+community: "Socrates — Dialogue Architect"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_479
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

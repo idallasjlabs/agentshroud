@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Community 248"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/OutputSchemaEnforcer
 ---
 
 # Output Schema Enforcer Tests (C25)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OutputSchemaEnforcer]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_248
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "document"
-community: "Community 853"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # PHASE 2: NEXT SESSION (v0.5.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Recovery Plan v0.4.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

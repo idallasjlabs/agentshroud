@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "PII Sanitizer & Redaction"
+community: "TrustManager"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/TrustManager
 ---
 
 # PII detection and redaction configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIIConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

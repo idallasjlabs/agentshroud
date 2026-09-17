@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 746"
+community: "GroupRoleResolver"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_746
+  - community/GroupRoleResolver
 ---
 
 # Owner group-context check must match standard can_use_tool result.
 
 ## Connections
-- [[dot-test_owner_unrestricted_matches_dm_behavior()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_unrestricted_matches_dm_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_746
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 447"
-location: "L27"
+community: "AgentShroud v0.8.0 — Full Security & Functionali"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_447
+  - community/AgentShroud_v080__Full_Security__Functionali
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_447
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali

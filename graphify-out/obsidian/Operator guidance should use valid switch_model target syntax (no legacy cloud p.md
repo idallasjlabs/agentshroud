@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation & Router"
-location: "L572"
+community: "TestConfigValidation"
+location: "L584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/TestConfigValidation
 ---
 
 # Operator guidance should use valid switch_model target syntax (no legacy cloud p
 
 ## Connections
-- [[.test_switch_model_script_uses_current_target_syntax()]] - `rationale_for` [EXTRACTED]
+- [[.test_switch_model_script_uses_current_target_syntax()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

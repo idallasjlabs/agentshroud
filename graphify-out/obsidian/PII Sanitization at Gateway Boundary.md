@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "Community 146"
+community: "AgentShroud Security Architecture"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/AgentShroud_Security_Architecture
 ---
 
 # PII Sanitization at Gateway Boundary
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_146
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 455"
-location: "L266"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_455
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

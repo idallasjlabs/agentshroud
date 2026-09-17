@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 604"
+community: "1Password Vault Sharing Instructions"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/1Password_Vault_Sharing_Instructions
 ---
 
 # Option 2: Create and Share New Vault
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Share the Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_604
+#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions

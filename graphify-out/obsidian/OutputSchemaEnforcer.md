@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Community 248"
+community: "OutputSchemaEnforcer"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/OutputSchemaEnforcer
 ---
 
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_106]] - `method` [EXTRACTED]
-- [[dot-_register_default_schema()]] - `method` [EXTRACTED]
-- [[dot-register_schema()]] - `method` [EXTRACTED]
-- [[dot-validate()_2]] - `method` [EXTRACTED]
+- [[.__init__()_106]] - `method` [EXTRACTED]
+- [[._register_default_schema()]] - `method` [EXTRACTED]
+- [[.register_schema()]] - `method` [EXTRACTED]
+- [[.validate()_2]] - `method` [EXTRACTED]
 - [[Output Schema Enforcer Tests (C25)]] - `references` [EXTRACTED]
 - [[SchemaRule]] - `references` [EXTRACTED]
 - [[SchemaValidationResult]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_248
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

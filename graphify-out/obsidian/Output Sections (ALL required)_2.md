@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 923"
+community: "Output Sections (ALL required)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_923
+  - community/Output_Sections_ALL_required
 ---
 
 # Output Sections (ALL required)
@@ -22,4 +22,4 @@ tags:
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 - [[Verification Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_923
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

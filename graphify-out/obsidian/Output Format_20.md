@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 508"
-location: "L40"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_508
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_508
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 240"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # PHASE_3A_3B_IMPLEMENTATION.md
@@ -27,4 +27,4 @@ tags:
 - [[Testing Checklist]] - `contains` [EXTRACTED]
 - [[verify-security.sh (13 Security Checks)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

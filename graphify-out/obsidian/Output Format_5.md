@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 462"
-location: "L154"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

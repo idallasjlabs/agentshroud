@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 390"
+community: "UserSession"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/UserSession
 ---
 
 # Original system prompt content is always preserved in the output.
 
 ## Connections
-- [[dot-test_reanchor_preserves_original_content()]] - `rationale_for` [EXTRACTED]
+- [[.test_reanchor_preserves_original_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_390
+#graphify/rationale #graphify/EXTRACTED #community/UserSession

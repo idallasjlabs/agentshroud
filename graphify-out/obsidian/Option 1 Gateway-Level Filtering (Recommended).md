@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 509"
+community: "Implementation Status"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Implementation_Status
 ---
 
 # Option 1: Gateway-Level Filtering (Recommended)
 
 ## Connections
-- [[Implementation Strategy]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_509
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

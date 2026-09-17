@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 940"
+community: "Oracle — Feedback Analyst"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_940
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_940
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_44]] - `references` [EXTRACTED]
+- [[.__init__()_44]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/lifespanpy

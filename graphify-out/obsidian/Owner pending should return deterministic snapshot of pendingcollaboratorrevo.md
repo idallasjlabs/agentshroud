@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound Tests"
+community: "TelegramAPIProxy"
 location: "L1097"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/TelegramAPIProxy
 ---
 
 # Owner /pending should return deterministic snapshot of pending/collaborator/revo
 
 ## Connections
-- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

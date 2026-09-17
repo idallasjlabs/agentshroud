@@ -1,17 +1,17 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 526"
+community: "API Reference"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_526
+  - community/API_Reference
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_526
+#graphify/document #graphify/EXTRACTED #community/API_Reference

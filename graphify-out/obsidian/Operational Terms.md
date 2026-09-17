@@ -1,17 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Community 337"
+community: "AgentShroud Project Terminology"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/AgentShroud_Project_Terminology
 ---
 
 # Operational Terms
 
 ## Connections
-- [[Glossary_1]] - `contains` [EXTRACTED]
+- [[Glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

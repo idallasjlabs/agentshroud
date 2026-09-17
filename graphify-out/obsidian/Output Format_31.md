@@ -1,18 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 778"
-location: "L26"
+community: "Daedalus — Concept Illustrator"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_778
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
-- [[show_notes_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
+- [[diagramsREADME_2]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_778
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

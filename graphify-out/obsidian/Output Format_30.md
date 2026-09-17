@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 736"
-location: "L81"
+community: "Daedalus — Concept Illustrator"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
+- [[diagramsREADME_1]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_736
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

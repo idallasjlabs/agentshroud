@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "TrustManager"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TrustManager
 ---
 
 # PII detection and redaction engine      Attempts to use Microsoft Presidio with
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

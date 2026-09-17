@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 722"
-location: "L26"
+community: "Skill: Security Review (SEC)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_722
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
-- [[show_notes]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_722
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

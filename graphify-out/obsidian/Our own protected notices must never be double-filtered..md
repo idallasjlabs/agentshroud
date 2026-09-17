@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 343"
+community: "TestOutboundClassifierHelpers"
 location: "L4096"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Our own protected notices must never be double-filtered.
 
 ## Connections
-- [[dot-test_contains_high_risk_leakage_skips_protected_header_text()]] - `rationale_for` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_skips_protected_header_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_343
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

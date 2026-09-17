@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "rationale"
-community: "Community 316"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Owner Policy — Fix Prompts, Never Switch to Cloud Models
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Local-Model Job Quality Matrix]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_316
+#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

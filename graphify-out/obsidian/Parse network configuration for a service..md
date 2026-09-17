@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 602"
+community: ".validate_docker_compose_config()"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/validate_docker_compose_config
 ---
 
 # Parse network configuration for a service.
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `rationale_for` [EXTRACTED]
+- [[._parse_service_network_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_602
+#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config

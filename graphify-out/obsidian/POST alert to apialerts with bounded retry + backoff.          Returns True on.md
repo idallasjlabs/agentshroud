@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: ".dispatch()"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/dispatch
 ---
 
 # POST alert to /api/alerts with bounded retry + backoff.          Returns True on
 
 ## Connections
-- [[dot-_send_notification()]] - `rationale_for` [EXTRACTED]
+- [[._send_notification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/dispatch
