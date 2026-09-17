@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 161"
+community: "BotConfig"
 location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_161
+  - community/BotConfig
 ---
 
 # When body() raises ClientDisconnect the handler returns 499 without crashing.
 
 ## Connections
-- [[dot-test_client_disconnect_returns_499()]] - `rationale_for` [EXTRACTED]
+- [[.test_client_disconnect_returns_499()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_161
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "Community 274"
+community: "plan_remediation()"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/plan_remediation
 ---
 
 # Work out the minimum version bump that remediates the most advisories. Only…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_remediation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_274
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

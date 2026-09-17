@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_169]] - `method` [EXTRACTED]
-- [[dot-close()_17]] - `method` [EXTRACTED]
-- [[dot-drain()]] - `method` [EXTRACTED]
-- [[dot-get_extra_info()]] - `method` [EXTRACTED]
-- [[dot-write()]] - `method` [EXTRACTED]
+- [[.__init__()_169]] - `method` [EXTRACTED]
+- [[.close()_17]] - `method` [EXTRACTED]
+- [[.drain()]] - `method` [EXTRACTED]
+- [[.get_extra_info()]] - `method` [EXTRACTED]
+- [[.write()]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal StreamWriter stand-in that records written bytes.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

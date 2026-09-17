@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 288"
+community: "A2AMethod"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/A2AMethod
 ---
 
 # _address_is_public()
@@ -15,4 +15,4 @@ tags:
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_288
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

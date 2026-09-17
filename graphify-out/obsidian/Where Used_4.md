@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Community 266"
+community: "All Dependencies.md"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_266
+  - community/All_Dependenciesmd
 ---
 
 # Where Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_266
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

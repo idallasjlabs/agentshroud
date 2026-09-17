@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 271"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/system-requirementsmd
 ---
 
 # Zero-Config Deployment
@@ -14,4 +14,4 @@ tags:
 - [[setup-guide]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_271
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

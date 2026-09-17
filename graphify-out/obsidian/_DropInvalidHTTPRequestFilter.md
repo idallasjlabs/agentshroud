@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # _DropInvalidHTTPRequestFilter
 
 ## Connections
-- [[dot-filter()_1]] - `method` [EXTRACTED]
+- [[.filter()_1]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
@@ -25,5 +25,6 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
+- [[test_config_validation.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/INFERRED #community/lifespanpy

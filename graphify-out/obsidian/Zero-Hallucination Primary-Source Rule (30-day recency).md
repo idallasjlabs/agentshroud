@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "rationale"
-community: "Community 569"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Zero-Hallucination Primary-Source Rule (30-day recency)
@@ -14,4 +14,4 @@ tags:
 - [[Silence-Over-Hallucination Principle]] - `semantically_similar_to` [INFERRED]
 - [[Strict Sequential 4-Query Search Protocol]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_569
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

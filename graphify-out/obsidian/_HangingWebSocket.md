@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L478"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # _HangingWebSocket
 
 ## Connections
-- [[dot-send_json()]] - `method` [EXTRACTED]
+- [[.send_json()]] - `method` [EXTRACTED]
 - [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_2]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

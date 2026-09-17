@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 103"
+community: "test_a2a_proxy.py"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_103
+  - community/test_a2a_proxypy
 ---
 
 # _StubAuditStore
 
 ## Connections
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
-- [[dot-log_event()_1]] - `method` [EXTRACTED]
+- [[.__init__()_24]] - `method` [EXTRACTED]
+- [[.log_event()_1]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_103
+#graphify/code #graphify/INFERRED #community/test_a2a_proxypy

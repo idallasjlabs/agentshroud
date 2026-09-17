@@ -1,27 +1,48 @@
 ---
 type: community
-members: 14
+cohesion: 0.07
+members: 33
 ---
 
 # .mcp.json
 
-**Members:** 14 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[1. Clone the Repository_1]] - document - docs/operations/macos.md
-- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
-- [[3. Set Up Secrets_1]] - document - docs/operations/macos.md
-- [[4. Configure AgentShroud_1]] - document - docs/operations/macos.md
-- [[5. Build and Start_1]] - document - docs/operations/macos.md
-- [[6. Verify_1]] - document - docs/operations/macos.md
-- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
-- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
-- [[Fresh Install_1]] - document - docs/operations/macos.md
-- [[Prerequisites_5]] - document - docs/operations/macos.md
-- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
-- [[Updating to Latest Release_1]] - document - docs/operations/macos.md
-- [[macos]] - document - docs/operations/macos.md
+- [[.llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversatlassianfluencemcp-atlassian.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversdevonthinkmcp-devonthink.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversgithubfluencegithub-mcp-wrapper.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh]] - code - .mcp.json
+- [[.llm_settingsmcp-servershome-assistantmcp-ha.sh]] - code - .mcp.json
+- [[.mcp.json]] - code - .mcp.json
+- [[opthomebrewbinnpx]] - code - .mcp.json
+- [[opthomebrewbinuvx]] - code - .mcp.json
+- [[AWS_PROFILE]] - code - .mcp.json
+- [[AWS_REGION]] - code - .mcp.json
+- [[FASTMCP_LOG_LEVEL]] - code - .mcp.json
+- [[FASTMCP_NO_BANNER]] - code - .mcp.json
+- [[PATH_5]] - code - .mcp.json
+- [[atlassian-agentshroud]] - code - .mcp.json
+- [[atlassian-fluence]] - code - .mcp.json
+- [[atlassian-idallasj]] - code - .mcp.json
+- [[autoOpenFile]] - code - .mcp.json
+- [[awslabs.aws-api-mcp-server]] - code - .mcp.json
+- [[devonthink]] - code - .mcp.json
+- [[github]] - code - .mcp.json
+- [[github-agentshroud]] - code - .mcp.json
+- [[github-fluence]] - code - .mcp.json
+- [[github-idallasj]] - code - .mcp.json
+- [[home-assistant]] - code - .mcp.json
+- [[outputPath]] - code - .mcp.json
+- [[safari]] - code - .mcp.json
+- [[safari-mcp]] - code - .mcp.json
+- [[xmind]] - code - .mcp.json
+- [[xmind-generator-mcp]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

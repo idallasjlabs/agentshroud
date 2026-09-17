@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Community 1088"
+community: "Sprint Cadence Decision"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1088
+  - community/Sprint_Cadence_Decision
 ---
 
 # What We Do Instead
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1088
+#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision

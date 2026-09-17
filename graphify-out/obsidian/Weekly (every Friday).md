@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Community 456"
+community: "Multi-Agent Role Matrix"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Weekly (every Friday)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

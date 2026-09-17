@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "Community 373"
+community: "AgentShroud v1.2.0 Master Plan"
 location: "Workstream C"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # Workstream C: Full Local-Model Parity (Both Bots)
@@ -19,4 +19,4 @@ tags:
 - [[Surface to extend]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_373
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

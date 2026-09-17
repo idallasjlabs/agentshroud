@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 49"
+community: "test_llm_proxy_local_parity.py"
 location: "L4"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # Workstream C — Full local-model parity for both bots. Tests that every cloud-…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_llm_proxy_local_parity.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

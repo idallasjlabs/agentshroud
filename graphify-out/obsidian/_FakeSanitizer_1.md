@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 61"
+community: "test_llm_proxy.py"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/test_llm_proxypy
 ---
 
 # _FakeSanitizer
 
 ## Connections
-- [[dot-block_credentials()_1]] - `method` [EXTRACTED]
-- [[dot-filter_xml_blocks()_1]] - `method` [EXTRACTED]
-- [[dot-sanitize()_1]] - `method` [EXTRACTED]
+- [[.block_credentials()_1]] - `method` [EXTRACTED]
+- [[.filter_xml_blocks()_1]] - `method` [EXTRACTED]
+- [[.sanitize()_1]] - `method` [EXTRACTED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - `calls` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

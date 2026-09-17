@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TestFileSandbox"
 location: "L563"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TestFileSandbox
 ---
 
 # Writing outside allowed paths must be blocked.
 
 ## Connections
-- [[dot-test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

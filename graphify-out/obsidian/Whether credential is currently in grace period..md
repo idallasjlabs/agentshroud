@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 544"
+community: "CredentialInfo"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/CredentialInfo
 ---
 
 # Whether credential is currently in grace period.
 
 ## Connections
-- [[dot-is_in_grace_period()]] - `rationale_for` [EXTRACTED]
+- [[.is_in_grace_period()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_544
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo

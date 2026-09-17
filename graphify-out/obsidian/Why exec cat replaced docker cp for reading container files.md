@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "rationale"
-community: "Community 756"
+community: "export-bot-conversations.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_756
+  - community/export-bot-conversationspy
 ---
 
 # Why exec cat replaced docker cp for reading container files
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_docker_read_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_756
+#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy

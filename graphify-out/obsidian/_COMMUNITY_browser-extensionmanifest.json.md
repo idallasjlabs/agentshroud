@@ -1,36 +1,36 @@
 ---
 type: community
-members: 23
+cohesion: 0.10
+members: 21
 ---
 
 # browser-extension/manifest.json
 
-**Members:** 23 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Architecture_6]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Endpoints]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Injection vectors explicitly covered]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Key points the Cisco finding implies]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Module Status Summary]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P0 Fix Pre-Existing Test Failures ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P2 Credential Isolation via op-proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P3 Channel Ownership — Telegram + Email ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P4 Wire MCP Proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P5 Wire SecurityPipeline to forward ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[PII Detection]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Roadmap_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[SECURITY_PLAN]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[What Security Experts Will See]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Why This Matters_2]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[128]] - code - browser-extension/manifest.json
+- [[48]] - code - browser-extension/manifest.json
+- [[action]] - code - browser-extension/manifest.json
+- [[background]] - code - browser-extension/manifest.json
+- [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
+- [[browser_specific_settings]] - code - browser-extension/manifest.json
+- [[default_popup]] - code - browser-extension/manifest.json
+- [[default_title]] - code - browser-extension/manifest.json
+- [[description]] - code - browser-extension/manifest.json
+- [[gecko]] - code - browser-extension/manifest.json
+- [[host_permissions]] - code - browser-extension/manifest.json
+- [[icons]] - code - browser-extension/manifest.json
+- [[id]] - code - browser-extension/manifest.json
+- [[manifest_version]] - code - browser-extension/manifest.json
+- [[name]] - code - browser-extension/manifest.json
+- [[open_in_tab]] - code - browser-extension/manifest.json
+- [[options_ui]] - code - browser-extension/manifest.json
+- [[page]] - code - browser-extension/manifest.json
+- [[permissions]] - code - browser-extension/manifest.json
+- [[service_worker]] - code - browser-extension/manifest.json
+- [[version_2]] - code - browser-extension/manifest.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +38,9 @@ members: 23
 TABLE source_file, type FROM #community/browser-extension/manifestjson
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_background.js]]
+
+## Top bridge nodes
+- [[browser-extensionmanifest.json]] - degree 12, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Group Config Tests"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # Writes in group-A must not be readable from group-B.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryNamespaceIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 163"
+community: "OpenClaw Workspace Usage Guide"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Workspace Organization Tips
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 - [[Recommended Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

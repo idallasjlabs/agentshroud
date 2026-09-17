@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "rationale"
-community: "Community 276"
+community: "Path"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Path
 ---
 
 # Write {relative_path: content} under *root*.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_write_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_276
+#graphify/rationale #graphify/EXTRACTED #community/Path

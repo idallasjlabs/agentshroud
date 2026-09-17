@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "rationale"
-community: "Community 895"
+community: "export-bot-conversations.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_895
+  - community/export-bot-conversationspy
 ---
 
 # Why report .md source files stand in for a missing sent-mail ledger
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[export_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_895
+#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy
