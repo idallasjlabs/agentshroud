@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Community 593"
+community: "Implement per-user session isolation using Teleg"
 location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/Implement_per-user_session_isolation_using_Teleg
 ---
 
 # Step 5: Isolate memory persistence
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 222"
+community: "Telegram & Gmail Integration Guide"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_222
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Step 3: Add Gmail to OpenClaw
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_222
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

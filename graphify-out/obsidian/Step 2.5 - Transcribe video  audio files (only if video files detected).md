@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Community 1431"
+community: "graphify reference: transcribe video and audio"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1431
+  - community/graphify_reference_transcribe_video_and_audio
 ---
 
 # Step 2.5 - Transcribe video / audio files (only if video files detected)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference transcribe video and audio]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1431
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_transcribe_video_and_audio

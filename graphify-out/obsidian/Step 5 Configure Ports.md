@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 1106"
+community: "Step-by-Step Installation"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/Step-by-Step_Installation
 ---
 
 # Step 5: Configure Ports
@@ -17,4 +17,4 @@ tags:
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1106
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

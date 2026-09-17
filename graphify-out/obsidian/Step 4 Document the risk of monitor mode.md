@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Community 699"
+community: "Flip core security modules from monitor to enfor"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_699
+  - community/Flip_core_security_modules_from_monitor_to_enfor
 ---
 
 # Step 4: Document the risk of monitor mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_699
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor

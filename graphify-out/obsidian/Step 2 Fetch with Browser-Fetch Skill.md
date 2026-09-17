@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1377"
+community: "Manual Usage (Current Method)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1377
+  - community/Manual_Usage_Current_Method
 ---
 
 # Step 2: Fetch with Browser-Fetch Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Manual Usage (Current Method)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1377
+#graphify/document #graphify/EXTRACTED #community/Manual_Usage_Current_Method

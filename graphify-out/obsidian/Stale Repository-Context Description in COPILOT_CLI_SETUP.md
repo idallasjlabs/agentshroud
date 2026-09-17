@@ -1,11 +1,11 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "rationale"
-community: "Community 450"
+community: "postmortem.md"
 tags:
   - graphify/rationale
   - graphify/AMBIGUOUS
-  - community/Community_450
+  - community/postmortemmd
 ---
 
 # Stale Repository-Context Description in COPILOT_CLI_SETUP.md
@@ -14,4 +14,4 @@ tags:
 - [[CLAUDE]] - `conceptually_related_to` [AMBIGUOUS]
 - [[COPILOT_CLI_SETUP]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/AMBIGUOUS #community/Community_450
+#graphify/rationale #graphify/AMBIGUOUS #community/postmortemmd
