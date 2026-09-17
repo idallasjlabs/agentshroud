@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Privacy policy for a single service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServicePolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_97
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

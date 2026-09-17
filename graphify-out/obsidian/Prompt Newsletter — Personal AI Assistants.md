@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt"
 type: "document"
-community: "Community 164"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: Newsletter — Personal AI Assistants
@@ -15,4 +15,4 @@ tags:
 - [[Strict Sequential 4-Query Search Protocol]] - `implements` [EXTRACTED]
 - [[Tracked Personal Agent Platforms (OpenClaw, IronClaw, Hermes, Grok Bot)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

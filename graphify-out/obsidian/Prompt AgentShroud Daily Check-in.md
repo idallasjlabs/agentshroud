@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "document"
-community: "Community 571"
+community: "AgentShroud Changelog"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_571
+  - community/AgentShroud_Changelog
 ---
 
 # Prompt: AgentShroud Daily Check-in
@@ -16,4 +16,4 @@ tags:
 - [[Seed Job AgentShroud Daily Check-in]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_571
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog

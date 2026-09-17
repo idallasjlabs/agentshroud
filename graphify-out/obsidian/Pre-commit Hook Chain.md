@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 128"
+community: "AgentShroud Agentic OS"
 location: "L548"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_128
+  - community/AgentShroud_Agentic_OS
 ---
 
 # Pre-commit Hook Chain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. CICD Quality Gates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_128
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

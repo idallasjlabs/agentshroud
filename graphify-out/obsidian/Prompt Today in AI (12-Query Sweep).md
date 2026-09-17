@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/today-in-ai.txt"
 type: "document"
-community: "Community 164"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: Today in AI (12-Query Sweep)
 
 ## Connections
-- [[dot-finding-scratch.md Overwrite-Per-Query Protocol]] - `implements` [EXTRACTED]
+- [[.finding-scratch.md Overwrite-Per-Query Protocol]] - `implements` [EXTRACTED]
 - [[Apple Silicon Local-LLM Stack (oMLX, MLX-LM, MLX-VLM, vLLM-MLX, Ollama, Turbo Fieldfare)]] - `references` [EXTRACTED]
 - [[Dated Job-Log Snapshot Copy (optdataworkspacejob-logs)]] - `references` [EXTRACTED]
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - `conceptually_related_to` [INFERRED]
 - [[append_finding.py Finding-Append Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

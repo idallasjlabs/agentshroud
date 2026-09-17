@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 185"
+community: "EgressPolicy"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EgressPolicy
 ---
 
 # Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).
 
 ## Connections
-- [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - `rationale_for` [EXTRACTED]
+- [[.test_private_ip_allowed_if_in_policy_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_185
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

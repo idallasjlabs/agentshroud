@@ -1,21 +1,20 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 1304"
-location: "L5"
+community: "Quick Reference Commands"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1304
+  - community/Quick_Reference_Commands
 ---
 
-# Prerequisites
+# PREREQUISITES.md
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
+- [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
+- [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1304
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

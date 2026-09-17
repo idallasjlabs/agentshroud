@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Community 689"
+community: "Enum"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Enum
 ---
 
 # Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)
@@ -14,4 +14,4 @@ tags:
 - [[gateway.security.trust_manager]] - `rationale_for` [EXTRACTED]
 - [[progressive_trust_config.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_689
+#graphify/rationale #graphify/EXTRACTED #community/Enum

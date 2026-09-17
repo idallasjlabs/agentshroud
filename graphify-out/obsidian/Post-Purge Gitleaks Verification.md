@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secret-scan-results.md"
 type: "concept"
-community: "Community 430"
+community: "Pre-Purge Secret Rotation Checklist"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # Post-Purge Gitleaks Verification
@@ -14,4 +14,4 @@ tags:
 - [[Git History Expungement via filter-repo]] - `conceptually_related_to` [INFERRED]
 - [[Pre-Purge Secret Rotation Checklist]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_430
+#graphify/concept #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist

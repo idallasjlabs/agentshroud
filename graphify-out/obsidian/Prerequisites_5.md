@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 340"
+community: "AgentShroud Setup Guide"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Prerequisites
@@ -17,4 +17,4 @@ tags:
 - [[Supported Platforms]] - `contains` [EXTRACTED]
 - [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

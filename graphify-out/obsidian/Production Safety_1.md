@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 780"
+community: "Skills by Category"
 location: "L188"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_780
+  - community/Skills_by_Category
 ---
 
 # Production Safety
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_780
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

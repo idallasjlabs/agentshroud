@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "document"
-community: "Community 86"
+community: "AgentShroud Semgrep SAST Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # Pre-commit Hooks Configuration
@@ -17,4 +17,4 @@ tags:
 - [[gitleaks (secret scanner)]] - `references` [EXTRACTED]
 - [[ruff (Python linter)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_86
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

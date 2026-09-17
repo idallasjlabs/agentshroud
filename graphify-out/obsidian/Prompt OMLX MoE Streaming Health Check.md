@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
 type: "document"
-community: "Community 164"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: OMLX MoE Streaming Health Check
@@ -17,4 +17,4 @@ tags:
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 - [[oMLX Chat Completions Endpoint (host.docker.internal8000v1)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

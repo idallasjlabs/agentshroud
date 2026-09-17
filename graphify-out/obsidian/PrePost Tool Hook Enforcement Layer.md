@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 1055"
+community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1055
+  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
 ---
 
 # Pre/Post Tool Hook Enforcement Layer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1055
+#graphify/concept #graphify/EXTRACTED #community/CI/CD_Quality_Gates_14_jobs_6_workflows

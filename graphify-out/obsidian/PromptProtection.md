@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 793"
+community: "PromptProtection"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/PromptProtection
 ---
 
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
-- [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
-- [[dot-_compile_detection_patterns()_1]] - `method` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `method` [EXTRACTED]
-- [[dot-_redact_fuzzy_match()]] - `method` [EXTRACTED]
-- [[dot-_redact_match()]] - `method` [EXTRACTED]
-- [[dot-add_protected_content()]] - `method` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `method` [EXTRACTED]
-- [[dot-register_bot_hostnames()]] - `method` [EXTRACTED]
-- [[dot-scan_response()_1]] - `method` [EXTRACTED]
-- [[dot-test_disabled_protection()]] - `calls` [EXTRACTED]
-- [[dot-test_protected_content_loading()]] - `calls` [EXTRACTED]
+- [[.__init__()_188]] - `method` [EXTRACTED]
+- [[._calculate_similarity()]] - `method` [EXTRACTED]
+- [[._compile_detection_patterns()_1]] - `method` [EXTRACTED]
+- [[._load_protected_content()]] - `method` [EXTRACTED]
+- [[._redact_fuzzy_match()]] - `method` [EXTRACTED]
+- [[._redact_match()]] - `method` [EXTRACTED]
+- [[.add_protected_content()]] - `method` [EXTRACTED]
+- [[.get_protection_stats()]] - `method` [EXTRACTED]
+- [[.register_bot_hostnames()]] - `method` [EXTRACTED]
+- [[.scan_response()_1]] - `method` [EXTRACTED]
+- [[.test_disabled_protection()]] - `calls` [EXTRACTED]
+- [[.test_protected_content_loading()]] - `calls` [EXTRACTED]
 - [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - `rationale_for` [EXTRACTED]
 - [[Outbound Information Filter Tests]] - `semantically_similar_to` [INFERRED]
 - [[System Prompt Protection Tests]] - `references` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[run()_4]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_793
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

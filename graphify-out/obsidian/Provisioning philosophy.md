@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 324"
+community: "DEVELOPER.md — Development Context for AgentShro"
 location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_324
+  - community/DEVELOPERmd__Development_Context_for_AgentShro
 ---
 
 # Provisioning philosophy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_324
+#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Privacy Policy Enforcement Tests
@@ -14,4 +14,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `references` [EXTRACTED]
 - [[RBACConfig_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

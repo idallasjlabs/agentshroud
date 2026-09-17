@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Community 832"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_832
+  - community/sunday-upgrade-applysh
 ---
 
 # Prove the Outcome, Never the Steps
@@ -17,4 +17,4 @@ tags:
 - [[sunday_run_scan_gate]] - `rationale_for` [EXTRACTED]
 - [[write_handoff()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_832
+#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh

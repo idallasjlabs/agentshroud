@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 199"
+community: "OpenClaw Bot SSH Configuration"
 location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Problem: "Permission denied (publickey)"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

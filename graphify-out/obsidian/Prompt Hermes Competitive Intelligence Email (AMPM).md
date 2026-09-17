@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "document"
-community: "Community 425"
+community: "Prompt: Hermes Competitive Intelligence Email (A"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_425
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_A
 ---
 
 # Prompt: Hermes Competitive Intelligence Email (AM/PM)
@@ -18,4 +18,4 @@ tags:
 - [[agentshroud-email-send.sh Gateway Email Sender]] - `references` [EXTRACTED]
 - [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_425
+#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_A
