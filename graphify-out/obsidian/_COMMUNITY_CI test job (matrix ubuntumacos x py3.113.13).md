@@ -1,0 +1,30 @@
+---
+type: community
+cohesion: 0.40
+members: 5
+---
+
+# CI test job (matrix ubuntu/macos x py3.11/3.13)
+
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
+
+## Members
+- [[CI Workflow]] - code - .github/workflows/ci.yml
+- [[CI test job (matrix ubuntumacos x py3.113.13)]] - code - .github/workflows/ci.yml
+- [[Coverage gate --cov-fail-under=84]] - rationale - .github/workflows/ci.yml
+- [[Leak Gate Scoped to ubuntu+3.11]] - rationale - .github/workflows/ci.yml
+- [[Per-platform independent reporting (fail-fast false)]] - rationale - .github/workflows/ci.yml
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/CI_test_job_matrix_ubuntu/macos_x_py311/313
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+
+## Top bridge nodes
+- [[CI test job (matrix ubuntumacos x py3.113.13)]] - degree 4, connects to 1 community
