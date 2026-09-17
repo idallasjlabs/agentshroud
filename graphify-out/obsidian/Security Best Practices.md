@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 206"
+community: "AgentShroud Device Pairing Management"
 location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Security Best Practices
@@ -19,4 +19,4 @@ tags:
 - [[5. Rotate on Compromise]] - `contains` [EXTRACTED]
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_206
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

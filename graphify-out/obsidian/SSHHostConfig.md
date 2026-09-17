@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # SSHHostConfig
 
 ## Connections
-- [[dot-expand_key_path()]] - `method` [EXTRACTED]
-- [[dot-expand_known_hosts()]] - `method` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
+- [[.expand_key_path()]] - `method` [EXTRACTED]
+- [[.expand_known_hosts()]] - `method` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
+- [[.test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Configuration for a single SSH host]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "concept"
-community: "Community 457"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_457
+  - community/system-requirementsmd
 ---
 
 # STPA-Sec (Systems-Theoretic Process Analysis for Security)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_457
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

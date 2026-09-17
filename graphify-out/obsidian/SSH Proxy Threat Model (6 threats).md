@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "Community 429"
+community: "SSH Proxy Threat Model (6 threats)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/SSH_Proxy_Threat_Model_6_threats
 ---
 
 # SSH Proxy Threat Model (6 threats)
@@ -17,4 +17,4 @@ tags:
 - [[Option 1 Direct SSH (current approach)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_429
+#graphify/concept #graphify/EXTRACTED #community/SSH_Proxy_Threat_Model_6_threats

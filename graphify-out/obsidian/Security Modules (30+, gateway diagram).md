@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Community 499"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_499
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Security Modules (30+, gateway diagram)
@@ -15,4 +15,4 @@ tags:
 - [[prompt_guard (prompt injection)]] - `shares_data_with` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_499
+#graphify/image #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

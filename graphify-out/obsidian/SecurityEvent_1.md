@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 334"
+community: "SecurityEvent"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/SecurityEvent
 ---
 
 # SecurityEvent
 
 ## Connections
-- [[dot-test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
-- [[dot-test_filters_events_by_exact_bot_id()]] - `calls` [EXTRACTED]
-- [[dot-test_minimal_construction()]] - `calls` [EXTRACTED]
-- [[dot-test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
-- [[dot-test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[.test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
+- [[.test_filters_events_by_exact_bot_id()]] - `calls` [EXTRACTED]
+- [[.test_minimal_construction()]] - `calls` [EXTRACTED]
+- [[.test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
+- [[.test_optional_fields_default_none()]] - `calls` [EXTRACTED]
+- [[Any_45]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/SecurityEvent

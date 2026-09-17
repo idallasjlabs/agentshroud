@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L261"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[dot-path_not_empty()]] - `method` [EXTRACTED]
-- [[dot-validate_base64()]] - `method` [EXTRACTED]
+- [[.path_not_empty()]] - `method` [EXTRACTED]
+- [[.validate_base64()]] - `method` [EXTRACTED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

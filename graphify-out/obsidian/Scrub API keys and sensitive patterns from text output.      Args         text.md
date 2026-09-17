@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 414"
+community: "check_command()"
 location: "L461"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/check_command
 ---
 
 # Scrub API keys and sensitive patterns from text output.      Args:         text:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scrub_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_414
+#graphify/rationale #graphify/EXTRACTED #community/check_command

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 326"
+community: "API Keys Setup Guide"
 location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_326
+  - community/API_Keys_Setup_Guide
 ---
 
 # Security Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_326
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

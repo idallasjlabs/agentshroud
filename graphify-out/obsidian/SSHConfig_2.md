@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # SSHConfig
 
 ## Connections
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
+- [[.test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[Path_13]] - `uses` [INFERRED]
+- [[Path_6]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
@@ -73,4 +73,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

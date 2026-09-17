@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 673"
+community: "AgentShroud Security Verification (13-check driv"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/AgentShroud_Security_Verification_13-check_driv
 ---
 
 # SecureClaw Security Review (SEC)
@@ -15,4 +15,4 @@ tags:
 - [[Security Review (SEC) README]] - `references` [EXTRACTED]
 - [[verify-security.sh_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv

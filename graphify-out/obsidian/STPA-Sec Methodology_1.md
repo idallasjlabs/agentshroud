@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "Blue/Red Team Security Auditor Skills"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # STPA-Sec Methodology
@@ -15,4 +15,4 @@ tags:
 - [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

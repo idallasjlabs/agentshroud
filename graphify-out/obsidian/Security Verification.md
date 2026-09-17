@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 340"
+community: "AgentShroud Setup Guide"
 location: "L914"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Security Verification
@@ -19,4 +19,4 @@ tags:
 - [[Production Checklist]] - `contains` [EXTRACTED]
 - [[Security Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

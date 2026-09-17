@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 73"
+community: "test_scanner_integration.py"
 location: "L1155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/test_scanner_integrationpy
 ---
 
 # Score domain 9: Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_logging_monitoring()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_73
+#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 437"
+community: "SecureBrowser Security Policies"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_437
+  - community/SecureBrowser_Security_Policies
 ---
 
 # SecureBrowser Security Policies
@@ -23,4 +23,4 @@ tags:
 - [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[security-policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_437
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

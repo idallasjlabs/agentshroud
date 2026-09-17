@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "rationale"
-community: "Community 290"
+community: "CredentialInjector"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/CredentialInjector
 ---
 
 # Scan outbound content for credential patterns. Returns description of detected…
 
 ## Connections
-- [[dot-scan_for_credential_leak()]] - `rationale_for` [EXTRACTED]
+- [[.scan_for_credential_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_290
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector
