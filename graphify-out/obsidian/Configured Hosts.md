@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 199"
+community: "OpenClaw Bot SSH Configuration"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Configured Hosts
@@ -15,4 +15,4 @@ tags:
 - [[Raspberry Pi (pi-dev)]] - `contains` [EXTRACTED]
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

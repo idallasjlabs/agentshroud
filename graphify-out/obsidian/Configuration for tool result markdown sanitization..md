@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "ToolResultSanitizer"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/ToolResultSanitizer
 ---
 
 # Configuration for tool result markdown sanitization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

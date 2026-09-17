@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L198"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # ConnectionPool
 
 ## Connections
-- [[dot-__init__()_96]] - `calls` [EXTRACTED]
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
-- [[dot-get_or_create()]] - `method` [EXTRACTED]
-- [[dot-remove()]] - `method` [EXTRACTED]
-- [[dot-stop_all()]] - `method` [EXTRACTED]
-- [[dot-test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
+- [[.__init__()_28]] - `method` [EXTRACTED]
+- [[.__init__()_96]] - `calls` [EXTRACTED]
+- [[.get_or_create()]] - `method` [EXTRACTED]
+- [[.remove()]] - `method` [EXTRACTED]
+- [[.stop_all()]] - `method` [EXTRACTED]
+- [[.test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
+- [[.test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/StdioConnection

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 77"
+community: "6. System Updates"
 location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/6_System_Updates
 ---
 
 # Configuration Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/6_System_Updates

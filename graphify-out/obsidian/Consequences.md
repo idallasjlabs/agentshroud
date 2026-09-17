@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 237"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L194"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative]] - `contains` [EXTRACTED]
 - [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

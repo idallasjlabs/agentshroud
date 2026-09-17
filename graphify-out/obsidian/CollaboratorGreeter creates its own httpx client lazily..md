@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "Community 181"
+community: "CollaboratorGreeter"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/CollaboratorGreeter
 ---
 
 # CollaboratorGreeter creates its own httpx client lazily.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_client_creates_own_when_not_injected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_181
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorGreeter

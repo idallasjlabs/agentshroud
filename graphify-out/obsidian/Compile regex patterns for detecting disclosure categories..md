@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Blue/Red Team Security Auditor Skills"
+community: ".__init__()"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/__init__
 ---
 
 # Compile regex patterns for detecting disclosure categories.
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/rationale #graphify/EXTRACTED #community/__init__

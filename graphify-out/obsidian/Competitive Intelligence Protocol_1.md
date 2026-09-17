@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "Community 777"
+community: "auth.py"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/authpy
 ---
 
 # Competitive Intelligence Protocol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_777
+#graphify/document #graphify/EXTRACTED #community/authpy

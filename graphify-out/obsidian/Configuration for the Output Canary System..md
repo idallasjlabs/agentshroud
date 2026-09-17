@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Community 213"
+community: "TestOutputCanary"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/TestOutputCanary
 ---
 
 # Configuration for the Output Canary System.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_213
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

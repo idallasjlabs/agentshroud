@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "SlackAPIProxy"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/SlackAPIProxy
 ---
 
 # Connection failure → {'ok': False, 'error': <exc>} (no exception leaks).
 
 ## Connections
-- [[dot-test_network_error_returns_synthetic_failure()]] - `rationale_for` [EXTRACTED]
+- [[.test_network_error_returns_synthetic_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

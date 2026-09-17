@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Community 856"
+community: "Collaborator Setup Checklist"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_856
+  - community/Collaborator_Setup_Checklist
 ---
 
 # Collaborator Setup Checklist
@@ -19,4 +19,4 @@ tags:
 - [[Required if using external LLM providers]] - `contains` [EXTRACTED]
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_856
+#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist

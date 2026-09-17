@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "Community 773"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_773
+  - graphify/INFERRED
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Codex Test Augmenter Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[test-augmenter.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_773
+#graphify/concept #graphify/INFERRED #community/AGENTSmd__Codex_CLI_Guidance

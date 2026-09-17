@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 219"
+community: "ConfigIntegrityMonitor"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/ConfigIntegrityMonitor
 ---
 
 # ConfigIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_98]] - `method` [EXTRACTED]
-- [[dot-_hash_file()]] - `method` [EXTRACTED]
-- [[dot-_load_baseline()]] - `method` [EXTRACTED]
-- [[dot-_save_baseline()]] - `method` [EXTRACTED]
-- [[dot-check()_3]] - `method` [EXTRACTED]
-- [[dot-format_alert_text()]] - `method` [EXTRACTED]
-- [[dot-reset_baseline()]] - `method` [EXTRACTED]
+- [[.__init__()_98]] - `method` [EXTRACTED]
+- [[._hash_file()]] - `method` [EXTRACTED]
+- [[._load_baseline()]] - `method` [EXTRACTED]
+- [[._save_baseline()]] - `method` [EXTRACTED]
+- [[.check()_3]] - `method` [EXTRACTED]
+- [[.format_alert_text()]] - `method` [EXTRACTED]
+- [[.reset_baseline()]] - `method` [EXTRACTED]
 - [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - `rationale_for` [EXTRACTED]
 - [[config_integrity.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - `calls` [EXTRACTED]
 - [[test_unchanged_second_run_reports_no_changes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

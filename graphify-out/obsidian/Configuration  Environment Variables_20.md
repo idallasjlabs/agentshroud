@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Community 698"
+community: "url_analyzer.py"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_698
+  - community/url_analyzerpy
 ---
 
 # Configuration / Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_698
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

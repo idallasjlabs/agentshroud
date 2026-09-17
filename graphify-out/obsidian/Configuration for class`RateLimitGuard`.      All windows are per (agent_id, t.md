@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "Community 190"
+community: "RateLimitGuard"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/RateLimitGuard
 ---
 
 # Configuration for :class:`RateLimitGuard`.      All windows are per (agent_id, t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_190
+#graphify/rationale #graphify/EXTRACTED #community/RateLimitGuard

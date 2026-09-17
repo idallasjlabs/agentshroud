@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Community 727"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Component Architecture
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 - [[Core Components]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

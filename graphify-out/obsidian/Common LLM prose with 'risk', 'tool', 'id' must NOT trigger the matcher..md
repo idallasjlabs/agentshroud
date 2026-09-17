@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "TestInternalBannerMatcher"
 location: "L4681"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TestInternalBannerMatcher
 ---
 
 # Common LLM prose with 'risk:', 'tool:', 'id:' must NOT trigger the matcher.
 
 ## Connections
-- [[dot-test_no_false_positive_on_generic_llm_response()]] - `rationale_for` [EXTRACTED]
+- [[.test_no_false_positive_on_generic_llm_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/TestInternalBannerMatcher
