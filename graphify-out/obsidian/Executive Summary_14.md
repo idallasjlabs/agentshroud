@@ -1,17 +1,17 @@
 ---
-source_file: "docs/testing/test-coverage-report.md"
+source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 1121"
-location: "L4"
+community: "AgentShroud Threat Model (STRIDE Analysis)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1121
+  - community/AgentShroud_Threat_Model_STRIDE_Analysis
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1121
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis

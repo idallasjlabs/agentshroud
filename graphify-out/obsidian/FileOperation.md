@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # FileOperation
 
 ## Connections
-- [[dot-_check()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_7]] - `references` [EXTRACTED]
-- [[dot-get_security_violations()]] - `references` [EXTRACTED]
+- [[._check()]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_7]] - `references` [EXTRACTED]
+- [[.get_security_violations()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

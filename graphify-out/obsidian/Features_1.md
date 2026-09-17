@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 413"
+community: "v0.8.0 — \"Watchtower\" (Complete Security + Every"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_413
+  - community/v080__Watchtower_Complete_Security__Every
 ---
 
 # Features
@@ -20,4 +20,4 @@ tags:
 - [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_413
+#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Every

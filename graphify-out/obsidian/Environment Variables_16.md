@@ -1,20 +1,17 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 703"
-location: "L101"
+community: "canary.py"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_703
+  - community/canarypy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_703
+#graphify/document #graphify/EXTRACTED #community/canarypy

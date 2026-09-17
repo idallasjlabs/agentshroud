@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Exception
 
 ## Connections
-- [[dot-test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
+- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[ApprovalRequest_2]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

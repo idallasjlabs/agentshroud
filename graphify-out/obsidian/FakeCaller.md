@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Auth & Audit Store"
+community: "test_soc_router_coverage.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/test_soc_router_coveragepy
 ---
 
 # FakeCaller
 
 ## Connections
-- [[dot-__init__()_90]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()_2]] - `method` [EXTRACTED]
-- [[dot-is_owner()_3]] - `method` [EXTRACTED]
-- [[dot-require()_1]] - `method` [EXTRACTED]
+- [[.__init__()_90]] - `method` [EXTRACTED]
+- [[.is_group_admin()_2]] - `method` [EXTRACTED]
+- [[.is_owner()_3]] - `method` [EXTRACTED]
+- [[.require()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - `rationale_for` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

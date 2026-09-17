@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Community 667"
+community: "Feature: Global Monitor-Only Mode (\"Observatory "
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_
 ---
 
 # Estimated Effort
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_

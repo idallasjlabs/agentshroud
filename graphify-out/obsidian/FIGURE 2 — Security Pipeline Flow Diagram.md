@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 1010"
+community: "SECTION 3: DRAWINGS"
 location: "L337"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1010
+  - community/SECTION_3_DRAWINGS
 ---
 
 # FIGURE 2 — Security Pipeline Flow Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 3 DRAWINGS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1010
+#graphify/document #graphify/EXTRACTED #community/SECTION_3_DRAWINGS

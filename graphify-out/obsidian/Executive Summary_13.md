@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
+source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Community 609"
-location: "L10"
+community: "Collaborator Setup Checklist"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/Collaborator_Setup_Checklist
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
+- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist

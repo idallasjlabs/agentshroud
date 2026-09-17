@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 568"
+community: "Browser Extension"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/Browser_Extension
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[5. Reading List Queue]] - `contains` [EXTRACTED]
 - [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

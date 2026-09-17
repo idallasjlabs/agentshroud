@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 1401"
+community: "soc/router.py"
 location: "L2736"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1401
+  - community/soc/routerpy
 ---
 
 # Fallback minimal dashboard when template file is missing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_minimal_dashboard_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1401
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 288"
+community: "A2AMethod"
 location: "L567"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/A2AMethod
 ---
 
 # Evaluate and resolve the decision to a terminal ALLOW/DENY.          Identical f
 
 ## Connections
-- [[dot-enforce()]] - `rationale_for` [EXTRACTED]
+- [[.enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_288
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

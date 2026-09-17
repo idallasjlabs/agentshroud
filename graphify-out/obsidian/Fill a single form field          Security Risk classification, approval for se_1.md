@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 135"
+community: "SecureBrowser"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/SecureBrowser
 ---
 
 # Fill a single form field          Security: Risk classification, approval for se
 
 ## Connections
-- [[dot-fill_field()_1]] - `rationale_for` [EXTRACTED]
+- [[.fill_field()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_135
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 64"
+community: "ToolResultSanitizer"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/ToolResultSanitizer
 ---
 
 # Extract code blocks to preserve them during sanitization.
 
 ## Connections
-- [[dot-_extract_code_blocks()]] - `rationale_for` [EXTRACTED]
+- [[._extract_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 600"
-location: "L84"
+community: "agentshroud-gateway"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_600
+  - community/agentshroud-gateway
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_600
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

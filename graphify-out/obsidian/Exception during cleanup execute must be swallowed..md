@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "rationale"
-community: "Community 147"
+community: "test_telegram_replay.py"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/test_telegram_replaypy
 ---
 
 # Exception during cleanup execute must be swallowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cleanup_execute_exception_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_147
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy

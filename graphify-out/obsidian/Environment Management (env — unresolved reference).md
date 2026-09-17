@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-env/SKILL.md"
 type: "concept"
-community: "Community 144"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Community_144
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Environment Management (env — unresolved reference)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Community_144
+#graphify/concept #graphify/AMBIGUOUS #community/Production_Safety_Checklist_SKILL

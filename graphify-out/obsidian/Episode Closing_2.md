@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 933"
+community: "OKE Channel — CPA Exam Context"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # Episode Closing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_933
+#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

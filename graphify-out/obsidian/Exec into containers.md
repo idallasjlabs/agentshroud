@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Community 789"
+community: "Docker Commands Reference"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_789
+  - community/Docker_Commands_Reference
 ---
 
 # Exec into containers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_789
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_183]] - `references` [EXTRACTED]
-- [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
-- [[dot-sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_7]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
-- [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
-- [[dot-test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_183]] - `references` [EXTRACTED]
+- [[.monitor_sandbox()]] - `calls` [EXTRACTED]
+- [[.sandbox()]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_7]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
+- [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
+- [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/INFERRED #community/FileSandbox

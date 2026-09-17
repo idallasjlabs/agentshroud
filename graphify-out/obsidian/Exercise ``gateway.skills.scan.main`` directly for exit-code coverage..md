@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "rationale"
-community: "Community 294"
+community: "test_skill_guard.py"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/test_skill_guardpy
 ---
 
 # Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanEntrypointInProcess]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_294
+#graphify/rationale #graphify/EXTRACTED #community/test_skill_guardpy

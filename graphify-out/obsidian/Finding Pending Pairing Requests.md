@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 206"
+community: "AgentShroud Device Pairing Management"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Finding Pending Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Method 2 View Raw Pending File]] - `contains` [EXTRACTED]
 - [[Method 3 Check Container Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_206
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

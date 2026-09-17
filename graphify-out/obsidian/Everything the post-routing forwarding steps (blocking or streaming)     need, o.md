@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "_process_inbound()"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/_process_inbound
 ---
 
 # Everything the post-routing forwarding steps (blocking or streaming)     need, o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_InboundResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/_process_inbound

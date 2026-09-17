@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "Community 694"
+community: "4. Compliance & Standards Alignment"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_694
+  - community/4_Compliance__Standards_Alignment
 ---
 
 # Features
@@ -18,4 +18,4 @@ tags:
 - [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_694
+#graphify/document #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment

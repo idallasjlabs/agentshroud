@@ -1,27 +1,21 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
-type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L107"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "All Dependencies.md"
+location: "L9"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/All_Dependenciesmd
 ---
 
 # FastAPI
 
 ## Connections
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_120]] - `contains` [EXTRACTED]
+- [[Related Notes_22]] - `contains` [EXTRACTED]
+- [[Where Used_3]] - `contains` [EXTRACTED]
+- [[fastapi]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

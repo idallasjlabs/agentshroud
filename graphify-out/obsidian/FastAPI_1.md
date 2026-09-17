@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # FastAPI
@@ -24,4 +24,4 @@ tags:
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/INFERRED #community/lifespanpy

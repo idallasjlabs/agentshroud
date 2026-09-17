@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 320"
+community: "AgentShroud User Guide"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_320
+  - community/AgentShroud_User_Guide
 ---
 
 # FAQ
@@ -21,4 +21,4 @@ tags:
 - [[Q What happens if I accidentally send a password]] - `contains` [EXTRACTED]
 - [[Q What's the kill switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_320
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

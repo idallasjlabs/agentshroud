@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 288"
+community: "A2AMethod"
 location: "L415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/A2AMethod
 ---
 
 # Evaluate a single A2A request. Pure — no I/O, no side effects         beyond bes
 
 ## Connections
-- [[dot-evaluate()]] - `rationale_for` [EXTRACTED]
+- [[.evaluate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_288
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 301"
+community: "Skill: Mindmap Architect (MM)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_301
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Example: FODL Pipeline Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hierarchy Design — Outline First]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_301
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
