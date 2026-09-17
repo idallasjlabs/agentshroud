@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1224"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1224
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Purpose_42]] - `contains` [EXTRACTED]
-- [[Related Skills_33]] - `contains` [EXTRACTED]
-- [[Usage_37]] - `contains` [EXTRACTED]
-- [[hermesskillsi-cicdREADME]] - `contains` [EXTRACTED]
+- [[Purpose_79]] - `contains` [EXTRACTED]
+- [[Related Skills_70]] - `contains` [EXTRACTED]
+- [[Usage_74]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1224
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

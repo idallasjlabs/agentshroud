@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/clawhub/SKILL.md"
 type: "concept"
-community: "Community 1450"
+community: "clawhub/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1450
+  - community/clawhub/SKILLmd
 ---
 
 # clawhub CLI
 
 ## Connections
-- [[SKILL_202]] - `implements` [EXTRACTED]
+- [[clawhubSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1450
+#graphify/concept #graphify/EXTRACTED #community/clawhub/SKILLmd

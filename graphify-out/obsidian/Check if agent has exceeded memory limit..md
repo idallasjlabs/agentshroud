@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # Check if agent has exceeded memory limit.
 
 ## Connections
-- [[dot-check_memory_limit()]] - `rationale_for` [EXTRACTED]
+- [[.check_memory_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

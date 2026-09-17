@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Community 1062"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "Infrastructure the Agent Understands"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1062
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # CDAS — Central Data Acquisition Systems
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
 - [[FODL — Fluence Operational Data Lakehouse]] - `shares_data_with` [EXTRACTED]
-- [[FY26 40% cost reduction initiative]] - `references` [EXTRACTED]
+- [[FY26 40% Cost Reduction Target]] - `references` [EXTRACTED]
 - [[FY26 Cost Reduction Plan (40% target)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1062
+#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

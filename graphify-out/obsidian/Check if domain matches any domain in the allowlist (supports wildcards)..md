@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 167"
+community: "EgressFilter"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/EgressFilter
 ---
 
 # Check if domain matches any domain in the allowlist (supports wildcards).
 
 ## Connections
-- [[dot-_matches_allowlist_domain()]] - `rationale_for` [EXTRACTED]
+- [[._matches_allowlist_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_167
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

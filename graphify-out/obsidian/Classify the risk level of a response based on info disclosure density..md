@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L462"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # Classify the risk level of a response based on info disclosure density.
 
 ## Connections
-- [[dot-_classify_response_risk()]] - `rationale_for` [EXTRACTED]
+- [[._classify_response_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

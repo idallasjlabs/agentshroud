@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Community 1024"
+community: "forward_query()"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1024
+  - community/forward_query
 ---
 
 # Build a fake `socket` module namespace driving forward_query without I/O.      E
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[make_fake_socket_module()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1024
+#graphify/rationale #graphify/EXTRACTED #community/forward_query

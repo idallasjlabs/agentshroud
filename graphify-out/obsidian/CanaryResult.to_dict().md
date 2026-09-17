@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 708"
+community: "canary.py"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_708
+  - community/canarypy
 ---
 
 # CanaryResult.to_dict()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_708
+#graphify/document #graphify/EXTRACTED #community/canarypy

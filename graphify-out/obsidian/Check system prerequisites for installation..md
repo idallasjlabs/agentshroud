@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Community 460"
+community: "detect_runtime()"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/detect_runtime
 ---
 
 # Check system prerequisites for installation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_prerequisites()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_460
+#graphify/rationale #graphify/EXTRACTED #community/detect_runtime

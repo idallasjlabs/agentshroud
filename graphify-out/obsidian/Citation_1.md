@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 70"
+community: "IntelReportStore"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_70
+  - community/IntelReportStore
 ---
 
 # Citation
@@ -24,4 +24,4 @@ tags:
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_70
+#graphify/code #graphify/INFERRED #community/IntelReportStore

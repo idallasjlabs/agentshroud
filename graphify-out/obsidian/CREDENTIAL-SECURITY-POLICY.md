@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 509"
+community: "Implementation Status"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Implementation_Status
 ---
 
 # CREDENTIAL-SECURITY-POLICY.md
@@ -22,4 +22,4 @@ tags:
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_509
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

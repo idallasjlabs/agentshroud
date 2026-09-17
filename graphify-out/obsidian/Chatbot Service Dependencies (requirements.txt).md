@@ -1,13 +1,13 @@
 ---
 source_file: "chatbot/requirements.txt"
 type: "code"
-community: "Community 1823"
+community: "Chatbot Service Dependencies (requirements.txt)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1823
+  - community/Chatbot_Service_Dependencies_requirementstxt
 ---
 
 # Chatbot Service Dependencies (requirements.txt)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1823
+#graphify/code #graphify/EXTRACTED #community/Chatbot_Service_Dependencies_requirementstxt

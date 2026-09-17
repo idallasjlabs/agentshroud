@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Community 43"
+community: "_any_detector_fires()"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/_any_detector_fires
 ---
 
 # Classic instruction-override payloads — should have near-100% detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestClassicOverride]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/_any_detector_fires

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 658"
+community: "Enum"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_658
+  - community/Enum
 ---
 
 # Categories of information that contribute to disclosure scoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DisclosureCategory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_658
+#graphify/rationale #graphify/EXTRACTED #community/Enum

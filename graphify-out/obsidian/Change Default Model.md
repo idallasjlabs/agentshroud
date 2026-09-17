@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 326"
+community: "Quick Reference"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_326
+  - community/Quick_Reference
 ---
 
 # Change Default Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_326
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

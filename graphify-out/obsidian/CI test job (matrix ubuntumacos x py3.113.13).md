@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Community 1303"
+community: "CI test job (matrix ubuntu/macos x py3.11/3.13)"
 location: "L16-80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1303
+  - community/CI_test_job_matrix_ubuntu/macos_x_py311/313
 ---
 
 # CI test job (matrix ubuntu/macos x py3.11/3.13)
@@ -17,4 +17,4 @@ tags:
 - [[Leak Gate Scoped to ubuntu+3.11]] - `implements` [EXTRACTED]
 - [[Per-platform independent reporting (fail-fast false)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1303
+#graphify/code #graphify/EXTRACTED #community/CI_test_job_matrix_ubuntu/macos_x_py311/313

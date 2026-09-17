@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Community 839"
-location: "L10"
+community: "apply-patches.js"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_839
+  - community/apply-patchesjs
 ---
 
-# CONFIG
+# config
 
 ## Connections
-- [[calendar.js_1]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_839
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

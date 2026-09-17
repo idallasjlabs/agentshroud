@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 location: "L488"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # Check if a Trivy report was already sent today (disk-based, secondary to…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_already_sent_today]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

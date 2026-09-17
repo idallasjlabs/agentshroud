@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 450"
+community: "postmortem.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/postmortemmd
 ---
 
 # CLAUDE.md
@@ -20,4 +20,4 @@ tags:
 - [[gsd]] - `shares_data_with` [INFERRED]
 - [[postmortem]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

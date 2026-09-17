@@ -1,17 +1,17 @@
 ---
-source_file: "CHEATSHEET.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 449"
-location: "L1"
+community: "<description of what this does>"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/description_of_what_this_does
 ---
 
-# CHEATSHEET.md
+# cheatsheet.md
 
 ## Connections
-- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/description_of_what_this_does

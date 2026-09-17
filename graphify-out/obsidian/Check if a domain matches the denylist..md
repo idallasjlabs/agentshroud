@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Community 52"
+community: "EgressFilterConfig"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # Check if a domain matches the denylist.
 
 ## Connections
-- [[dot-is_denylisted()]] - `rationale_for` [EXTRACTED]
+- [[.is_denylisted()]] - `rationale_for` [EXTRACTED]
+- [[.is_denylisted()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

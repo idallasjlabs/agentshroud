@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "Community 101"
+community: "InjectionSeverity"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionSeverity
 ---
 
 # Check for base64 or hex encoded injection attempts.
 
 ## Connections
-- [[dot-_detect_encoded_injection()]] - `rationale_for` [EXTRACTED]
+- [[._detect_encoded_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_101
+#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity

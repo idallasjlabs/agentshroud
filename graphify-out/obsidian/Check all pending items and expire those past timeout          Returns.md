@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Community 423"
+community: ".decide()"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/decide
 ---
 
 # Check all pending items and expire those past timeout          Returns:
 
 ## Connections
-- [[dot-_expire_stale()]] - `rationale_for` [EXTRACTED]
+- [[._expire_stale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_423
+#graphify/rationale #graphify/EXTRACTED #community/decide

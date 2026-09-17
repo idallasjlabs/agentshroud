@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_93]] - `references` [EXTRACTED]
-- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
-- [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
-- [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
+- [[.__init__()_93]] - `references` [EXTRACTED]
+- [[.test_custom_config()_1]] - `calls` [EXTRACTED]
+- [[.test_no_canaries()]] - `calls` [EXTRACTED]
+- [[.test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/TrustManager

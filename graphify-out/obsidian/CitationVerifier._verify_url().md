@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 1933"
+community: "CitationVerifier._verify_url()"
 location: "line:142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1933
+  - community/CitationVerifier_verify_url
 ---
 
 # CitationVerifier._verify_url()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1933
+#graphify/code #graphify/EXTRACTED #community/CitationVerifier_verify_url

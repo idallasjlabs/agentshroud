@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "Community 66"
+community: "test_soc_bots.py"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/test_soc_botspy
 ---
 
 # Build an SCLCaller with OWNER role — no FastAPI dependency resolution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_owner_caller()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_66
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
