@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Community 402"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_402
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # Tier 1: Must-Have (Deployment Blockers) — v0.7.0 Scope
@@ -20,4 +20,4 @@ tags:
 - [[Sprint 5 Separation of Privilege (R-06, R-07)]] - `contains` [EXTRACTED]
 - [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_402
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

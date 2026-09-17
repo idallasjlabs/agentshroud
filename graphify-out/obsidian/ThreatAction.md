@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # ThreatAction
@@ -46,4 +46,4 @@ tags:
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

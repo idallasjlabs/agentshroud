@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Encrypted Store & Drift Detector"
+community: "AgentRegistry"
 location: "L767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/AgentRegistry
 ---
 
 # Tests for key material zeroing (C2 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecureZero]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

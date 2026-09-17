@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionManager"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_535
+  - community/SessionManager
 ---
 
 # TestSessionCleanup
 
 ## Connections
-- [[dot-test_cleanup_expired()]] - `method` [EXTRACTED]
-- [[dot-test_destroy_session()]] - `method` [EXTRACTED]
+- [[.test_cleanup_expired()]] - `method` [EXTRACTED]
+- [[.test_destroy_session()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_535
+#graphify/code #graphify/INFERRED #community/SessionManager

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ConsentFramework"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ConsentFramework
 ---
 
 # ThreatAssessment
 
 ## Connections
-- [[dot-analyze_content()]] - `references` [EXTRACTED]
-- [[dot-analyze_screenshot()]] - `references` [EXTRACTED]
-- [[dot-test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
-- [[dot-test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
+- [[.analyze_content()]] - `references` [EXTRACTED]
+- [[.analyze_screenshot()]] - `references` [EXTRACTED]
+- [[.test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
+- [[.test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[browser_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/ConsentFramework

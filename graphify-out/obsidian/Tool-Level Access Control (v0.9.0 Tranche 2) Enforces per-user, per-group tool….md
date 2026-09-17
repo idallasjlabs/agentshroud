@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 134"
+community: "ToolACLEnforcer"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # Tool-Level Access Control (v0.9.0 Tranche 2) Enforces per-user, per-group tool…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gateway.security.tool_acl]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

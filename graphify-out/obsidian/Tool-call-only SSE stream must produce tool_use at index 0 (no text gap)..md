@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "rationale"
-community: "Community 79"
+community: "test_anthropic_openai_translator.py"
 location: "L324"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Tool-call-only SSE stream must produce tool_use at index 0 (no text gap).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_sse_translator_tool_call_only_starts_at_index_0()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

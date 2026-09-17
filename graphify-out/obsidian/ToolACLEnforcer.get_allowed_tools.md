@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 1937"
+community: "ToolACLEnforcer.get_allowed_tools"
 location: "558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1937
+  - community/ToolACLEnforcerget_allowed_tools
 ---
 
 # ToolACLEnforcer.get_allowed_tools
 
-#graphify/code #graphify/EXTRACTED #community/Community_1937
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcerget_allowed_tools

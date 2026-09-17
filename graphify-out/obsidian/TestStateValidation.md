@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "test_security_audit.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/test_security_auditpy
 ---
 
 # TestStateValidation
 
 ## Connections
-- [[dot-test_empty_state_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_short_state_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_state_replay_detected()]] - `method` [EXTRACTED]
-- [[dot-test_valid_state_accepted()]] - `method` [EXTRACTED]
+- [[.test_empty_state_rejected()]] - `method` [EXTRACTED]
+- [[.test_short_state_rejected()]] - `method` [EXTRACTED]
+- [[.test_state_replay_detected()]] - `method` [EXTRACTED]
+- [[.test_valid_state_accepted()]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

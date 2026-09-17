@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 205"
+community: "GroupRegistry"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/GroupRegistry
 ---
 
 # Tests for GroupRegistry auto-groups and custom group management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_205
+#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry

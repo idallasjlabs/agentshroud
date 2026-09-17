@@ -1,12 +1,12 @@
 ---
 source_file: "examples/agentshroud-with-tool-risk.yaml"
 type: "concept"
-community: "Community 1444"
+community: "AgentShroud Config with Tool Risk Tiers (example"
 location: "lines 15-79"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1444
+  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
 ---
 
 # Tool Risk Tier Policy (critical/high/medium/low)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Config with Tool Risk Tiers (example)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1444
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example

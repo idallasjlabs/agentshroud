@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "rationale"
-community: "Community 1014"
+community: "test_subagent_governance.py"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1014
+  - community/test_subagent_governancepy
 ---
 
 # Tests for SubagentGovernance module.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_subagent_governance.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1014
+#graphify/rationale #graphify/EXTRACTED #community/test_subagent_governancepy

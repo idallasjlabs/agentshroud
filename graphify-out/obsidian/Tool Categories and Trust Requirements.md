@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 295"
+community: "AgentShroud Access Control Matrix"
 location: "L240"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Tool Categories and Trust Requirements
@@ -19,4 +19,4 @@ tags:
 - [[Category E Critical Operations (L4 + Manual Approval)]] - `contains` [EXTRACTED]
 - [[MCP Proxy Tool Authorization]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_295
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

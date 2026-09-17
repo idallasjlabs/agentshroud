@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "ConsentFramework"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/ConsentFramework
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-check_url_reputation()]] - `references` [EXTRACTED]
+- [[.check_url_reputation()]] - `references` [EXTRACTED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/ConsentFramework

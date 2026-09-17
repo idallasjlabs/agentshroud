@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 1936"
+community: "ToolACLEnforcer.check_tool_rate_limit"
 location: "594"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1936
+  - community/ToolACLEnforcercheck_tool_rate_limit
 ---
 
 # ToolACLEnforcer.check_tool_rate_limit
 
-#graphify/code #graphify/EXTRACTED #community/Community_1936
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcercheck_tool_rate_limit

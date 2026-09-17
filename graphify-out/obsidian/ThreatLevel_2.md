@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-highest_threat()]] - `references` [EXTRACTED]
+- [[.highest_threat()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

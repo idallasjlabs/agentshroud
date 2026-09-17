@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L498"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - graphify/INFERRED
+  - community/WebProxyConfig
 ---
 
 # TestWebProxyConfig
 
 ## Connections
-- [[dot-test_domain_denied()]] - `method` [EXTRACTED]
-- [[dot-test_get_domain_settings_custom()]] - `method` [EXTRACTED]
-- [[dot-test_get_domain_settings_default()]] - `method` [EXTRACTED]
-- [[dot-test_passthrough_mode_default_off()]] - `method` [EXTRACTED]
-- [[dot-test_wildcard_domain_settings()]] - `method` [EXTRACTED]
+- [[.test_domain_denied()]] - `method` [EXTRACTED]
+- [[.test_get_domain_settings_custom()]] - `method` [EXTRACTED]
+- [[.test_get_domain_settings_default()]] - `method` [EXTRACTED]
+- [[.test_passthrough_mode_default_off()]] - `method` [EXTRACTED]
+- [[.test_wildcard_domain_settings()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

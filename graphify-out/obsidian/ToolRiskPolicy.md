@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # ToolRiskPolicy
 
 ## Connections
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_1]] - `uses` [INFERRED]
 - [[ApprovalRequest_1]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

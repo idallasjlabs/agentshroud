@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L551"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # TestShellBleedPatterns
 
 ## Connections
-- [[dot-analyzer()_2]] - `method` [EXTRACTED]
-- [[dot-test_legitimate_file_path_passes()]] - `method` [EXTRACTED]
-- [[dot-test_shell_bleed_bypass_blocked()]] - `method` [EXTRACTED]
+- [[.analyzer()_2]] - `method` [EXTRACTED]
+- [[.test_legitimate_file_path_passes()]] - `method` [EXTRACTED]
+- [[.test_shell_bleed_bypass_blocked()]] - `method` [EXTRACTED]
 - [[ChainAction]] - `uses` [INFERRED]
 - [[ChainMatch]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - `rationale_for` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/Enum

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "lifespan.py"
 location: "L1094"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/lifespanpy
 ---
 
 # TestSupplyChain
 
 ## Connections
-- [[dot-test_all_modules_have_copyright()]] - `method` [EXTRACTED]
-- [[dot-test_all_security_modules_importable()]] - `method` [EXTRACTED]
-- [[dot-test_dockerfile_exists()]] - `method` [EXTRACTED]
-- [[dot-test_no_eval_or_exec_in_security()]] - `method` [EXTRACTED]
-- [[dot-test_no_hardcoded_secrets_in_source()]] - `method` [EXTRACTED]
+- [[.test_all_modules_have_copyright()]] - `method` [EXTRACTED]
+- [[.test_all_security_modules_importable()]] - `method` [EXTRACTED]
+- [[.test_dockerfile_exists()]] - `method` [EXTRACTED]
+- [[.test_no_eval_or_exec_in_security()]] - `method` [EXTRACTED]
+- [[.test_no_hardcoded_secrets_in_source()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/lifespanpy

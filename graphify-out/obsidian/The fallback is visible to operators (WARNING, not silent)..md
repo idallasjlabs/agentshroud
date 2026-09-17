@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 287"
+community: "test_voice_stt_model_ab.py"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/test_voice_stt_model_abpy
 ---
 
 # The fallback is visible to operators (WARNING, not silent).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_select_model_size_invalid_logs_warning()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_287
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy

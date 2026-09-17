@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Lockdown & Collaborator UX Tests"
+community: "_wrap_response()"
 location: "L8004"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Lockdown__Collaborator_UX_Tests
+  - community/_wrap_response
 ---
 
 # Tests for lockdown UX: /unlock fix, collaborator notifications, /locked, immunit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProgressiveLockdownUX]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

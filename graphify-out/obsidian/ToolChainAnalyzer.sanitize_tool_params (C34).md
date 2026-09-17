@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 1938"
+community: "ToolChainAnalyzer.sanitize_tool_params (C34)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1938
+  - community/ToolChainAnalyzersanitize_tool_params_C34
 ---
 
 # ToolChainAnalyzer.sanitize_tool_params (C34)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1938
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzersanitize_tool_params_C34

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 200"
+community: "_w()"
 location: "L602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_200
+  - community/_w
 ---
 
 # TestSupplyChain
 
 ## Connections
-- [[dot-test_empty_sbom_scores_two()]] - `method` [EXTRACTED]
-- [[dot-test_sbom_with_packages_trivy_branches()]] - `method` [EXTRACTED]
+- [[.test_empty_sbom_scores_two()]] - `method` [EXTRACTED]
+- [[.test_sbom_with_packages_trivy_branches()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_200
+#graphify/code #graphify/EXTRACTED #community/_w

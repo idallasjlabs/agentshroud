@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 118"
+community: "MiddlewareManager"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/MiddlewareManager
 ---
 
 # The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a
 
 ## Connections
-- [[dot-test_manage_modules_endpoint_uses_the_same_registry()]] - `rationale_for` [EXTRACTED]
+- [[.test_manage_modules_endpoint_uses_the_same_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_118
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

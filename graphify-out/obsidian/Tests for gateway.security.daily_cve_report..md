@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 82"
+community: "asyncio"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/asyncio
 ---
 
 # Tests for gateway.security.daily_cve_report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_daily_cve_report.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

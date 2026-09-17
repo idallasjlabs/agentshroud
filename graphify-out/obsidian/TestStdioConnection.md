@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 108"
+community: "FakeProcess"
 location: "L164"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/FakeProcess
 ---
 
 # TestStdioConnection
 
 ## Connections
-- [[dot-test_start_send_and_stop()]] - `method` [EXTRACTED]
-- [[dot-test_start_without_env_passes_none()]] - `method` [EXTRACTED]
-- [[dot-test_stop_kills_on_wait_timeout()]] - `method` [EXTRACTED]
+- [[.test_start_send_and_stop()]] - `method` [EXTRACTED]
+- [[.test_start_without_env_passes_none()]] - `method` [EXTRACTED]
+- [[.test_stop_kills_on_wait_timeout()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/FakeProcess

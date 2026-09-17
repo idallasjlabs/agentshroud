@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 1399"
+community: "E - Elevation of Privilege"
 location: "L230"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1399
+  - community/E_-_Elevation_of_Privilege
 ---
 
 # Threat: Docker Socket Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[E - Elevation of Privilege]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1399
+#graphify/document #graphify/EXTRACTED #community/E_-_Elevation_of_Privilege

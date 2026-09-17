@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L104"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # TestToolRiskClassification
 
 ## Connections
-- [[dot-test_enforce_mode_disabled()]] - `method` [EXTRACTED]
-- [[dot-test_get_tool_risk_tier()]] - `method` [EXTRACTED]
-- [[dot-test_requires_approval()]] - `method` [EXTRACTED]
+- [[.test_enforce_mode_disabled()]] - `method` [EXTRACTED]
+- [[.test_get_tool_risk_tier()]] - `method` [EXTRACTED]
+- [[.test_requires_approval()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

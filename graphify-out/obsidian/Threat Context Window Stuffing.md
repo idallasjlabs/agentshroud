@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 944"
+community: "Threat Model"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/Threat_Model
 ---
 
 # Threat: Context Window Stuffing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_944
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

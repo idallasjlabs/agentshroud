@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Community 944"
+community: "Threat Model"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/Threat_Model
 ---
 
 # Threat Model
@@ -20,4 +20,4 @@ tags:
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_944
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[dot-__init__()_123]] - `method` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `method` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `method` [EXTRACTED]
-- [[dot-_get_sanitizer_for_tool()]] - `method` [EXTRACTED]
-- [[dot-_log_redaction_audit()]] - `method` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `method` [EXTRACTED]
-- [[dot-get_supported_tools()]] - `method` [EXTRACTED]
-- [[dot-get_tool_config()]] - `method` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_2]] - `calls` [EXTRACTED]
-- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_initialization()_4]] - `calls` [EXTRACTED]
-- [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]
+- [[.__init__()_123]] - `method` [EXTRACTED]
+- [[._extract_dict_content()]] - `method` [EXTRACTED]
+- [[._extract_scannable_content()]] - `method` [EXTRACTED]
+- [[._get_sanitizer_for_tool()]] - `method` [EXTRACTED]
+- [[._log_redaction_audit()]] - `method` [EXTRACTED]
+- [[._reconstruct_result()]] - `method` [EXTRACTED]
+- [[.get_supported_tools()]] - `method` [EXTRACTED]
+- [[.get_tool_config()]] - `method` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `method` [EXTRACTED]
+- [[.sanitizer()_2]] - `calls` [EXTRACTED]
+- [[.test_email_content_scanning()]] - `calls` [EXTRACTED]
+- [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[.test_initialization()_4]] - `calls` [EXTRACTED]
+- [[.test_sanitize_disabled()]] - `calls` [EXTRACTED]
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `conceptually_related_to` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
