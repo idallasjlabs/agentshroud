@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 483"
+community: "Skill: Project Management (PM)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_483
+  - community/Skill_Project_Management_PM
 ---
 
 # Skill: Project Management (PM)
@@ -18,6 +18,6 @@ tags:
 - [[Role_54]] - `contains` [EXTRACTED]
 - [[Status Reporting_2]] - `contains` [EXTRACTED]
 - [[Task Coordination_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-pmSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_483
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

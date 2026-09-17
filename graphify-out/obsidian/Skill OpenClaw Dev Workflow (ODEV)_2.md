@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 313"
+community: "Skill: OpenClaw Dev Workflow (ODEV)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
@@ -20,6 +20,6 @@ tags:
 - [[Reviewers and fixer available to you_5]] - `contains` [EXTRACTED]
 - [[Role_32]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_5]] - `contains` [EXTRACTED]
-- [[openclawskillsi-odevSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV

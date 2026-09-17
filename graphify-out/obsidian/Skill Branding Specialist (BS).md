@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 471"
+community: "Skill: Branding Specialist (BS)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Skill: Branding Specialist (BS)
 
 ## Connections
-- [[dot-agentsskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag_15]] - `contains` [EXTRACTED]
 - [[Brand System Components]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Role_46]] - `contains` [EXTRACTED]
 - [[Rules_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

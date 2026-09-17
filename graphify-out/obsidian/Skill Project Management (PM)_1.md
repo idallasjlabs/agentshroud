@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 480"
+community: "Skill: Project Management (PM)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_480
+  - community/Skill_Project_Management_PM
 ---
 
 # Skill: Project Management (PM)
@@ -18,6 +18,6 @@ tags:
 - [[Role_51]] - `contains` [EXTRACTED]
 - [[Status Reporting_1]] - `contains` [EXTRACTED]
 - [[Task Coordination_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-pmSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_480
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

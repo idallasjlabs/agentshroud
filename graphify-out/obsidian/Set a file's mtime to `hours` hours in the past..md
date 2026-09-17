@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "Community 488"
+community: "_age()"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/_age
 ---
 
 # Set a file's mtime to `hours` hours in the past.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_age()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_488
+#graphify/rationale #graphify/EXTRACTED #community/_age

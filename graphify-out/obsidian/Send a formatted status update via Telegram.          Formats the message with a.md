@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "rationale"
-community: "Community 894"
+community: "TelegramGatewayRelay"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/TelegramGatewayRelay
 ---
 
 # Send a formatted status update via Telegram.          Formats the message with a
 
 ## Connections
-- [[dot-send_status_update()]] - `rationale_for` [EXTRACTED]
+- [[.send_status_update()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_894
+#graphify/rationale #graphify/EXTRACTED #community/TelegramGatewayRelay

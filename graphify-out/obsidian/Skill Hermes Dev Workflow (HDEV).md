@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 300"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
 
 ## Connections
-- [[dot-agentsskillsi-hdevSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 - [[Guardrails_2]] - `contains` [EXTRACTED]
 - [[Invocation]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[Role_22]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_300
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

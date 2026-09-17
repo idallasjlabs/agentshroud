@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 478"
+community: "Skill: Branding Specialist (BS)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_478
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Skill: Branding Specialist (BS)
@@ -18,6 +18,6 @@ tags:
 - [[Patterns by Output Type_1]] - `contains` [EXTRACTED]
 - [[Role_49]] - `contains` [EXTRACTED]
 - [[Rules_18]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_478
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

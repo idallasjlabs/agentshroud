@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "Community 878"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_878
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Skill: Data Validation (DATA-VAL)
@@ -16,6 +16,6 @@ tags:
 - [[Role_93]] - `contains` [EXTRACTED]
 - [[Test Data Validation Pattern_1]] - `contains` [EXTRACTED]
 - [[Validation Layers_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-dataSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_878
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

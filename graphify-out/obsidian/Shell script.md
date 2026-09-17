@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 395"
+community: "xurl — Agent Skill Reference"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Shell script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Installation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

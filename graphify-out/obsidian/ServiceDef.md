@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Community 333"
+community: "test_runtime_engines.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_333
+  - community/test_runtime_enginespy
 ---
 
 # ServiceDef
 
 ## Connections
-- [[dot-test_apple_script_custom_services()]] - `calls` [EXTRACTED]
-- [[dot-test_generate_custom_services()]] - `calls` [EXTRACTED]
+- [[.test_apple_script_custom_services()]] - `calls` [EXTRACTED]
+- [[.test_generate_custom_services()]] - `calls` [EXTRACTED]
 - [[Definition of a single service for compose generation.]] - `rationale_for` [EXTRACTED]
 - [[TestAppleContainerEngine]] - `uses` [INFERRED]
 - [[TestComposeGenerator]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_333
+#graphify/code #graphify/INFERRED #community/test_runtime_enginespy

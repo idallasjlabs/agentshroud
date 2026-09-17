@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 293"
+community: "SkillGuard"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_293
+  - community/SkillGuard
 ---
 
 # SkillGuard
 
 ## Connections
-- [[dot-__init__()_189]] - `method` [EXTRACTED]
-- [[dot-_line_at()]] - `method` [EXTRACTED]
-- [[dot-_scan_opaque_blobs()]] - `method` [EXTRACTED]
-- [[dot-scan_file()_1]] - `method` [EXTRACTED]
-- [[dot-scan_skill_tree()]] - `method` [EXTRACTED]
+- [[.__init__()_189]] - `method` [EXTRACTED]
+- [[._line_at()]] - `method` [EXTRACTED]
+- [[._scan_opaque_blobs()]] - `method` [EXTRACTED]
+- [[.scan_file()_1]] - `method` [EXTRACTED]
+- [[.scan_skill_tree()]] - `method` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_21]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
 - [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_2]] - `uses` [INFERRED]
 - [[ScanResult]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillsManifest]] - `shares_data_with` [EXTRACTED]
 - [[TestAggregation]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_293
+#graphify/code #graphify/INFERRED #community/SkillGuard

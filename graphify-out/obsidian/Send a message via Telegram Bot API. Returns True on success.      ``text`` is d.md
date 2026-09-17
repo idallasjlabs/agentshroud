@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 100"
-location: "L300"
+community: "test_daily_cve_report.py"
+location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/test_daily_cve_reportpy
 ---
 
 # Send a message via Telegram Bot API. Returns True on success.      ``text`` is d
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_send_telegram()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_100
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

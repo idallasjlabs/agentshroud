@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 1830"
+community: "SessionState (data entity)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1830
+  - community/SessionState_data_entity
 ---
 
 # SessionState (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1830
+#graphify/concept #graphify/EXTRACTED #community/SessionState_data_entity

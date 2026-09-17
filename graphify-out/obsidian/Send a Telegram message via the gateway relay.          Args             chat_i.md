@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "rationale"
-community: "Community 894"
+community: "TelegramGatewayRelay"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/TelegramGatewayRelay
 ---
 
 # Send a Telegram message via the gateway relay.          Args:             chat_i
 
 ## Connections
-- [[dot-send_message()]] - `rationale_for` [EXTRACTED]
+- [[.send_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_894
+#graphify/rationale #graphify/EXTRACTED #community/TelegramGatewayRelay

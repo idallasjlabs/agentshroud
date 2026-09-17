@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 301"
+community: "Skill: Mindmap Architect (MM)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_301
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Skill: Mindmap Architect (MM)
 
 ## Connections
-- [[dot-agentsskillsi-mmSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag_3]] - `contains` [EXTRACTED]
 - [[Core Discipline Frame → Structure → Generate → Validate]] - `contains` [EXTRACTED]
 - [[Dependencies_4]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[When to Use Mindmaps vs Other Formats]] - `contains` [EXTRACTED]
 - [[XMind Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_301
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 738"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_738
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Skill: Test-Driven Development (TDD)
@@ -18,6 +18,6 @@ tags:
 - [[Rules_25]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
 - [[Test Structure_6]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tddSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_738
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

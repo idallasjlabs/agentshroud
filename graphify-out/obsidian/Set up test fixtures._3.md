@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_33]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_33]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

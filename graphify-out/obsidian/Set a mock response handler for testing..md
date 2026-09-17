@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Proxy Sidecar & Forwarder"
+community: "test_e2e_proxy.py"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/test_e2e_proxypy
 ---
 
 # Set a mock response handler for testing.
 
 ## Connections
-- [[dot-set_response_handler()]] - `rationale_for` [EXTRACTED]
+- [[.set_response_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

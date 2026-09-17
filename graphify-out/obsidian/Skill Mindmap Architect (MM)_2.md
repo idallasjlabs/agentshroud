@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 312"
+community: "Skill: Mindmap Architect (MM)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Skill: Mindmap Architect (MM)
@@ -25,6 +25,6 @@ tags:
 - [[Validation Checklist_2]] - `contains` [EXTRACTED]
 - [[When to Use Mindmaps vs Other Formats_2]] - `contains` [EXTRACTED]
 - [[XMind Generation via MCP_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mmSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_312
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

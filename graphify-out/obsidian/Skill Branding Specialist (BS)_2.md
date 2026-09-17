@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 481"
+community: "Skill: Branding Specialist (BS)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Skill: Branding Specialist (BS)
@@ -18,6 +18,6 @@ tags:
 - [[Patterns by Output Type_2]] - `contains` [EXTRACTED]
 - [[Role_52]] - `contains` [EXTRACTED]
 - [[Rules_19]] - `contains` [EXTRACTED]
-- [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_481
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

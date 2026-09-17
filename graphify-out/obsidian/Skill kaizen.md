@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 1500"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1500
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[dot-agentsskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1500
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

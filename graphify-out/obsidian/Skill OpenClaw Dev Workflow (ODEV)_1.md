@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 308"
+community: "Mode A — Single task"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_308
+  - community/Mode_A__Single_task
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
@@ -22,4 +22,4 @@ tags:
 - [[Tools you have for this workflow_3]] - `contains` [EXTRACTED]
 - [[hermesskillsi-odevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_308
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

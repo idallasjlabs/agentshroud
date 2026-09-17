@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "RBACConfig"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/RBACConfig
 ---
 
 # Set role for a user ID (owner-only operation).
 
 ## Connections
-- [[dot-set_user_role()]] - `rationale_for` [EXTRACTED]
+- [[.set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

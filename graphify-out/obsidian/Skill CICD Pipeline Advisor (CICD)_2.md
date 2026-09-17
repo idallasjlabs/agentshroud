@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 1135"
+community: "CI/CD Pipeline Advisor (README)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1135
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
@@ -17,6 +17,6 @@ tags:
 - [[Quality Gates  (execution order)_2]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)_2]] - `contains` [EXTRACTED]
 - [[Role_12]] - `contains` [EXTRACTED]
-- [[hermesskillsi-cicdSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1135
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

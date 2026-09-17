@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Community 1553"
+community: "openclaw/skills/i-architecture-review/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1553
+  - community/openclaw/skills/i-architecture-review/SKILLmd
 ---
 
 # Skill: architecture-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclawskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1553
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-architecture-review/SKILLmd

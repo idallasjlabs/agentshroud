@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 621"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_621
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
@@ -22,6 +22,6 @@ tags:
 - [[Step 4 — Triage each finding_1]] - `contains` [EXTRACTED]
 - [[Step 5 — Classify findings_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-abSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_621
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 42"
+community: "test_observatory_mode.py"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_observatory_modepy
 ---
 
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy

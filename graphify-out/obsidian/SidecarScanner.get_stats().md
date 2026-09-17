@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 852"
+community: "sidecar.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_852
+  - community/sidecarpy
 ---
 
 # SidecarScanner.get_stats()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_852
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

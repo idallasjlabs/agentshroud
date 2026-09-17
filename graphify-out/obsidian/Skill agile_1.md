@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1526"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1526
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: agile
 
 ## Connections
-- [[hermesskillsi-agileSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1526
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

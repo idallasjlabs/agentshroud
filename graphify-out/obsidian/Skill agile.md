@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1491"
+community: ".agents/skills/i-agile/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1491
+  - community/agents/skills/i-agile/SKILLmd
 ---
 
 # Skill: agile
 
 ## Connections
-- [[dot-agentsskillsi-agileSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-agileSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1491
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-agile/SKILLmd

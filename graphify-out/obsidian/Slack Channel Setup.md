@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 319"
+community: "Slack Channel Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Slack_Channel_Setup
 ---
 
 # Slack Channel Setup
@@ -25,7 +25,7 @@ tags:
 - [[Step 7 Find Your Slack User ID]] - `contains` [EXTRACTED]
 - [[Step 8 Configure Environment]] - `contains` [EXTRACTED]
 - [[Step 9 Rebuild and Start]] - `contains` [EXTRACTED]
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[Troubleshooting_22]] - `contains` [EXTRACTED]
 - [[setup-slack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # Session
 
 ## Connections
-- [[dot-create_session()]] - `references` [EXTRACTED]
-- [[dot-rotate_session()]] - `references` [EXTRACTED]
-- [[dot-test_session_binding()]] - `calls` [EXTRACTED]
-- [[dot-test_session_cannot_impersonate()]] - `calls` [INFERRED]
-- [[dot-test_session_different_fingerprints()]] - `calls` [EXTRACTED]
-- [[dot-test_session_rate_limit()]] - `calls` [EXTRACTED]
+- [[.create_session()]] - `references` [EXTRACTED]
+- [[.rotate_session()]] - `references` [EXTRACTED]
+- [[.test_session_binding()]] - `calls` [EXTRACTED]
+- [[.test_session_cannot_impersonate()]] - `calls` [INFERRED]
+- [[.test_session_different_fingerprints()]] - `calls` [EXTRACTED]
+- [[.test_session_rate_limit()]] - `calls` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[session_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/lifespanpy

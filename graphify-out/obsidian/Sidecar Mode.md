@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 392"
+community: "Step-by-Step Installation"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Step-by-Step_Installation
 ---
 
 # Sidecar Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Choose Security Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

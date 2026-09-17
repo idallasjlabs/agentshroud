@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Community 423"
+community: ".decide()"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/decide
 ---
 
 # Send a JSON message to all connected WebSocket clients          Silently removes
 
 ## Connections
-- [[dot-broadcast()_1]] - `rationale_for` [EXTRACTED]
+- [[.broadcast()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_423
+#graphify/rationale #graphify/EXTRACTED #community/decide

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 261"
+community: "Skill: UX Expert (UX)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Skill_UX_Expert_UX
 ---
 
 # Skill: UX Expert (UX)
@@ -25,6 +25,6 @@ tags:
 - [[Rules_1]] - `contains` [EXTRACTED]
 - [[Usability Audit Checklist_1]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-uxSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_261
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

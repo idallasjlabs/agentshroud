@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 532"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -18,4 +18,4 @@ tags:
 - [[Severity Matrix_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-productionSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_532
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
