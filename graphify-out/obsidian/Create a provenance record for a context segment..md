@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: ".record_segment()"
 location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/record_segment
 ---
 
 # Create a provenance record for a context segment.
 
 ## Connections
-- [[dot-tag_segment()]] - `rationale_for` [EXTRACTED]
+- [[.tag_segment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/record_segment

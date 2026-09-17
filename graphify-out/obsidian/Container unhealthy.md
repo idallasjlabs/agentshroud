@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 315"
-location: "L281"
+community: "AgentShroud Setup Guide"
+location: "L830"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_315
+  - community/AgentShroud_Setup_Guide
 ---
 
-# Container unhealthy
+# Container Unhealthy
 
 ## Connections
-- [[Troubleshooting_21]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_315
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

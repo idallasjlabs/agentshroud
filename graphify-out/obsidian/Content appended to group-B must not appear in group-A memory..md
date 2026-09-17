@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Group Config Tests"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # Content appended to group-B must not appear in group-A memory.
 
 ## Connections
-- [[dot-test_group_b_write_invisible_from_group_a()]] - `rationale_for` [EXTRACTED]
+- [[.test_group_b_write_invisible_from_group_a()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 250"
+community: "🛡️ AgentShroud Release Plan"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Current Execution Tracker (2026-03-14)
@@ -17,4 +17,4 @@ tags:
 - [[Live tracker files]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

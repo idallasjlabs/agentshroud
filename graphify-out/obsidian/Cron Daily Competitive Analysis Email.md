@@ -1,16 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Community 395"
+community: "Cron: Daily Competitive Analysis Email"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/Cron_Daily_Competitive_Analysis_Email
 ---
 
 # Cron: Daily Competitive Analysis Email
 
-## Connections
-- [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/Cron_Daily_Competitive_Analysis_Email

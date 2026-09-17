@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Community 889"
+community: "get_engine()"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_889
+  - community/get_engine
 ---
 
 # ContainerEngine
@@ -18,4 +18,4 @@ tags:
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[get_engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_889
+#graphify/code #graphify/INFERRED #community/get_engine

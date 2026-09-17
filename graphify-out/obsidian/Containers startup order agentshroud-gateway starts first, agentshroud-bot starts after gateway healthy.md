@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "Community 225"
+community: "Containers startup order: agentshroud-gateway st"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/Containers_startup_order_agentshroud-gateway_st
 ---
 
 # Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy
@@ -17,4 +17,4 @@ tags:
 - [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - `shares_data_with` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_225
+#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st

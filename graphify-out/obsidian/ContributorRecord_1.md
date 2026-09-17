@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # ContributorRecord
 
 ## Connections
-- [[dot-test_construction()]] - `calls` [EXTRACTED]
+- [[.test_construction()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ContributorRecord]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

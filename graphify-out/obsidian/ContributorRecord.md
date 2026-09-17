@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 226"
+community: "BaseModel"
 location: "L53"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_226
+  - graphify/INFERRED
+  - community/BaseModel
 ---
 
 # ContributorRecord
 
 ## Connections
-- [[dot-_build_record()]] - `references` [EXTRACTED]
-- [[dot-get_contributor()]] - `references` [EXTRACTED]
-- [[dot-list_contributors()]] - `references` [EXTRACTED]
+- [[._build_record()]] - `references` [EXTRACTED]
+- [[.get_contributor()]] - `references` [EXTRACTED]
+- [[.list_contributors()]] - `references` [EXTRACTED]
 - [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/INFERRED #community/BaseModel

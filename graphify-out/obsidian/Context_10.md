@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Community 826"
+community: "Plan: Proxying HexStrike AI MCP Agents via Agent"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
 ---
 
 # Context
 
 ## Connections
-- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
+- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_826
+#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent

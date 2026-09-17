@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "rationale"
-community: "Community 1139"
+community: "container-runtime.sh"
 location: "docker/README.md:30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1139
+  - community/container-runtimesh
 ---
 
 # Container runtime auto-detection contract (SCRUM-92)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[detect_container_runtime()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1139
+#graphify/rationale #graphify/EXTRACTED #community/container-runtimesh

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 250"
+community: "🛡️ AgentShroud Release Plan"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Current hard gate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Execution Tracker (2026-03-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 153"
+community: "BaseModel"
 location: "L1188"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_153
+  - community/BaseModel
 ---
 
 # CreateGroupRequest
@@ -23,4 +23,4 @@ tags:
 - [[create_group()]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/INFERRED #community/BaseModel

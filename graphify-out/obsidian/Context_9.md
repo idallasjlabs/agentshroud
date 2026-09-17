@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 825"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_825
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Context
 
 ## Connections
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_825
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

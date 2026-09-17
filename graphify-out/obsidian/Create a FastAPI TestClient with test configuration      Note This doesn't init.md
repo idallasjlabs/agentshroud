@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # Create a FastAPI TestClient with test configuration      Note: This doesn't init
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

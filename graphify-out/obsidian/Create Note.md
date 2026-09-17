@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 306"
+community: "iCloud Services"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/iCloud_Services
 ---
 
 # Create Note
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Notes Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

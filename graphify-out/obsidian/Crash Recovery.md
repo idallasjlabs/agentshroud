@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 254"
+community: "Restart Procedure"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Restart_Procedure
 ---
 
 # Crash Recovery.md
@@ -19,4 +19,4 @@ tags:
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_254
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

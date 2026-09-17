@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # ContainerConfig
 
 ## Connections
-- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
-- [[dot-get()_1]] - `references` [EXTRACTED]
-- [[dot-register()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
-- [[dot-test_container_config_defaults()]] - `calls` [EXTRACTED]
-- [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
-- [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
-- [[dot-test_network_isolation_violation()]] - `calls` [EXTRACTED]
-- [[dot-test_register_group_agent_identity()]] - `calls` [EXTRACTED]
-- [[dot-test_register_group_agent_with_chat_type_supergroup()]] - `calls` [EXTRACTED]
-- [[dot-test_shared_nothing_security_issue()]] - `calls` [EXTRACTED]
-- [[dot-test_volume_isolation_violation()]] - `calls` [EXTRACTED]
-- [[dot-unregister()]] - `references` [EXTRACTED]
+- [[.from_dict()_3]] - `calls` [EXTRACTED]
+- [[.get()_1]] - `references` [EXTRACTED]
+- [[.register()]] - `references` [EXTRACTED]
+- [[.setup_method()_28]] - `calls` [EXTRACTED]
+- [[.test_container_config_defaults()]] - `calls` [EXTRACTED]
+- [[.test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
+- [[.test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
+- [[.test_network_isolation_violation()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_identity()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_with_chat_type_supergroup()]] - `calls` [EXTRACTED]
+- [[.test_shared_nothing_security_issue()]] - `calls` [EXTRACTED]
+- [[.test_volume_isolation_violation()]] - `calls` [EXTRACTED]
+- [[.unregister()]] - `references` [EXTRACTED]
 - [[ContainerConfig]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

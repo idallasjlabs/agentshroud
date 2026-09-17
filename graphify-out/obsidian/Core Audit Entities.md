@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 403"
+community: "AgentShroud Data Dictionary"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Core Audit Entities
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[AuditEntry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

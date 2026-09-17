@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "Community 854"
+community: "init_skill.py"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_854
+  - community/init_skillpy
 ---
 
 # Convert hyphenated skill name to Title Case for display.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[title_case_skill_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_854
+#graphify/rationale #graphify/EXTRACTED #community/init_skillpy

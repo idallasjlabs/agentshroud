@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Community 671"
-location: "L6"
+community: "ADR-002: Default-Allow Security Philosophy"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_671
+  - community/ADR-002_Default-Allow_Security_Philosophy
 ---
 
 # Context
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Evaluation Criteria]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_671
+#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy

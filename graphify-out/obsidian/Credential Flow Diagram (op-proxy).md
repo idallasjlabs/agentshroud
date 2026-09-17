@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "Community 451"
+community: "diagrams/README.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/diagrams/READMEmd
 ---
 
 # Credential Flow Diagram (op-proxy)
@@ -14,4 +14,4 @@ tags:
 - [[04-security]] - `conceptually_related_to` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_451
+#graphify/concept #graphify/EXTRACTED #community/diagrams/READMEmd

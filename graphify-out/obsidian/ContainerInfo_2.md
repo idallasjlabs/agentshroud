@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 106"
+community: "ContainerInfo"
 location: "L127"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_106
+  - community/ContainerInfo
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[dot-ps()_3]] - `references` [EXTRACTED]
+- [[.ps()_3]] - `references` [EXTRACTED]
 - [[ContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_106
+#graphify/code #graphify/INFERRED #community/ContainerInfo

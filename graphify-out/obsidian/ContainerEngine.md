@@ -1,40 +1,40 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 106"
+community: "ContainerEngine"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/ContainerEngine
 ---
 
 # ContainerEngine
 
 ## Connections
-- [[dot-_run()]] - `method` [EXTRACTED]
-- [[dot-build()]] - `method` [EXTRACTED]
-- [[dot-compose_down()]] - `method` [EXTRACTED]
-- [[dot-compose_up()]] - `method` [EXTRACTED]
-- [[dot-exec()]] - `method` [EXTRACTED]
-- [[dot-health_check()]] - `method` [EXTRACTED]
-- [[dot-inspect()]] - `method` [EXTRACTED]
-- [[dot-logs()]] - `method` [EXTRACTED]
-- [[dot-network_create()]] - `method` [EXTRACTED]
-- [[dot-network_rm()]] - `method` [EXTRACTED]
-- [[dot-pause()]] - `method` [EXTRACTED]
-- [[dot-ps()_2]] - `method` [EXTRACTED]
-- [[dot-pull()]] - `method` [EXTRACTED]
-- [[dot-push()_1]] - `method` [EXTRACTED]
-- [[dot-rm()]] - `method` [EXTRACTED]
-- [[dot-stop()]] - `method` [EXTRACTED]
-- [[dot-unpause()]] - `method` [EXTRACTED]
-- [[dot-volume_create()]] - `method` [EXTRACTED]
-- [[dot-volume_rm()]] - `method` [EXTRACTED]
+- [[._run()]] - `method` [EXTRACTED]
+- [[.build()]] - `method` [EXTRACTED]
+- [[.compose_down()]] - `method` [EXTRACTED]
+- [[.compose_up()]] - `method` [EXTRACTED]
+- [[.exec()]] - `method` [EXTRACTED]
+- [[.health_check()]] - `method` [EXTRACTED]
+- [[.inspect()]] - `method` [EXTRACTED]
+- [[.logs()]] - `method` [EXTRACTED]
+- [[.network_create()]] - `method` [EXTRACTED]
+- [[.network_rm()]] - `method` [EXTRACTED]
+- [[.pause()]] - `method` [EXTRACTED]
+- [[.ps()_2]] - `method` [EXTRACTED]
+- [[.pull()]] - `method` [EXTRACTED]
+- [[.push()_1]] - `method` [EXTRACTED]
+- [[.rm()]] - `method` [EXTRACTED]
+- [[.stop()]] - `method` [EXTRACTED]
+- [[.unpause()]] - `method` [EXTRACTED]
+- [[.volume_create()]] - `method` [EXTRACTED]
+- [[.volume_rm()]] - `method` [EXTRACTED]
 - [[ABC]] - `inherits` [EXTRACTED]
-- [[Any_49]] - `uses` [INFERRED]
 - [[Any_48]] - `uses` [INFERRED]
-- [[Any_39]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_38]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerEngine_2]] - `uses` [INFERRED]
 - [[ContainerInfo]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[podman_engine.py]] - `imports` [EXTRACTED]
 - [[runtime__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine
