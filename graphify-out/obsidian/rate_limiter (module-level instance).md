@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # rate_limiter (module-level instance)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[auth.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

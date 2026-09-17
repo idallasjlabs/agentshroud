@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # os.path.exists override for specific paths only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 156"
+community: "_sleep()"
 location: "L1442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/_sleep
 ---
 
 # now()
 
 ## Connections
-- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `contains` [EXTRACTED]
+- [[.test_per_agent_check_error_is_isolated_not_fatal()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_156
+#graphify/code #graphify/EXTRACTED #community/_sleep

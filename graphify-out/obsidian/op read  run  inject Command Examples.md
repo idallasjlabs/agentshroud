@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/references/cli-examples.md"
 type: "document"
-community: "Community 430"
+community: "Pre-Purge Secret Rotation Checklist"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # op read / run / inject Command Examples
@@ -14,4 +14,4 @@ tags:
 - [[1Password CLI Skill]] - `cites` [EXTRACTED]
 - [[op Secret-Handling Guardrails]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_430
+#graphify/document #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist

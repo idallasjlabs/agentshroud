@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # middleware.py.md
@@ -17,4 +17,4 @@ tags:
 - [[main.py]] - `references` [EXTRACTED]
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

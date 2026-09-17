@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh"
 type: "code"
-community: "Community 1548"
+community: "prefetch-ghsa-registry.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1548
+  - community/prefetch-ghsa-registrysh
 ---
 
 # prefetch-ghsa-registry.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prefetch-ghsa-registry.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1548
+#graphify/code #graphify/EXTRACTED #community/prefetch-ghsa-registrysh

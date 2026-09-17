@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
 type: "rationale"
-community: "Community 91"
+community: "mcp_oauth_preflight.py"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/mcp_oauth_preflightpy
 ---
 
 # mcp_oauth_preflight.py Enterprise-safe OAuth + MCP connectivity preflight.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_oauth_preflight.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

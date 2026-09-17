@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "Community 273"
+community: "test_playback_state.c"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_273
+  - community/test_playback_statec
 ---
 
 # playback_gate_should_open()
@@ -20,4 +20,4 @@ tags:
 - [[test_gate_opens_on_reply_complete()]] - `calls` [INFERRED]
 - [[test_gate_stays_closed_before_any_cap()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_273
+#graphify/code #graphify/INFERRED #community/test_playback_statec

@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Community 963"
+community: "test_apply_patches.js"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_963
+  - community/test_apply_patchesjs
 ---
 
 # os
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_963
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Community 1073"
+community: "colima-health-check.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1073
+  - community/colima-health-checksh
 ---
 
 # read_state
@@ -14,4 +14,4 @@ tags:
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1073
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

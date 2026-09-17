@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/security/quick-setup.sh"
 type: "code"
-community: "Community 1018"
+community: "quick-setup.sh script"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1018
+  - community/quick-setupsh_script
 ---
 
 # quick-setup.sh script
@@ -17,4 +17,4 @@ tags:
 - [[setup-direnv.sh script]] - `calls` [EXTRACTED]
 - [[setup-pgpass.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1018
+#graphify/code #graphify/EXTRACTED #community/quick-setupsh_script

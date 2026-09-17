@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # rbac.py
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[Action]] - `contains` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
+- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - `references` [EXTRACTED]
+- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - `references` [EXTRACTED]
 - [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[PermissionResult]] - `contains` [EXTRACTED]
@@ -27,4 +29,4 @@ tags:
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

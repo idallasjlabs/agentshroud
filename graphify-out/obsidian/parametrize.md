@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 105"
+community: "test_hermes_model_resolver.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/test_hermes_model_resolverpy
 ---
 
 # parametrize
@@ -14,4 +14,4 @@ tags:
 - [[test_provider_for_model()]] - `references` [EXTRACTED]
 - [[test_strip_provider_prefix()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

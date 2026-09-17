@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 646"
+community: "Function Details"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_646
+  - community/Function_Details
 ---
 
 # mcp_proxy.py
@@ -17,7 +17,7 @@ tags:
 - [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
 - [[Purpose_153]] - `contains` [EXTRACTED]
 - [[Related_30]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[Responsibilities_27]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_646
+#graphify/document #graphify/EXTRACTED #community/Function_Details

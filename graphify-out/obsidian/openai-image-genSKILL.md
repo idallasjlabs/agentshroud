@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 367"
+community: "gen.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/genpy
 ---
 
 # openai-image-gen/SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[gen.py]] - `references` [EXTRACTED]
 - [[nano-banana-proSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/genpy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/pre-commit-hook.sh"
 type: "code"
-community: "Community 1658"
+community: "pre-commit-hook.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1658
+  - community/pre-commit-hooksh
 ---
 
 # pre-commit-hook.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pre-commit-hook.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1658
+#graphify/code #graphify/EXTRACTED #community/pre-commit-hooksh

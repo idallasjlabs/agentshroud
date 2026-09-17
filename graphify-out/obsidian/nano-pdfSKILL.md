@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-pdf/SKILL.md"
 type: "document"
-community: "Community 1471"
+community: "nano-pdf"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1471
+  - community/nano-pdf
 ---
 
 # nano-pdf/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[nano-pdf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1471
+#graphify/document #graphify/EXTRACTED #community/nano-pdf

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/EgressFilterConfig
 ---
 
 # prompt_guard.py
@@ -31,4 +31,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

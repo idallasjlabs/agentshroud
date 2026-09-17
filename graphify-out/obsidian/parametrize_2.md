@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 49"
+community: "test_llm_proxy_local_parity.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # parametrize
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_model_ref_round_trip()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Community 899"
+community: "tailscale-check.sh"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_899
+  - graphify/INFERRED
+  - community/tailscale-checksh
 ---
 
 # preflight-check.sh
@@ -17,4 +17,4 @@ tags:
 - [[preflight-check.sh script]] - `contains` [EXTRACTED]
 - [[verify-proxy.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_899
+#graphify/code #graphify/INFERRED #community/tailscale-checksh

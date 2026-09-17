@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 47"
+community: "patch"
 location: "L643"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/patch
 ---
 
 # mock_stream()
@@ -16,4 +16,4 @@ tags:
 - [[_openai_delta_lines()]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/patch

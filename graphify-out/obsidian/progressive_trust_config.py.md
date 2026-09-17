@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 689"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Enum
 ---
 
 # progressive_trust_config.py
@@ -22,4 +22,4 @@ tags:
 - [[subagent_governance.py]] - `semantically_similar_to` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_689
+#graphify/code #graphify/EXTRACTED #community/Enum

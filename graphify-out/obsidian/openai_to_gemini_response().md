@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Community 141"
+community: "test_gemini_openai_translator.py"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/test_gemini_openai_translatorpy
 ---
 
 # openai_to_gemini_response()
 
 ## Connections
+- [[LLMProxy._failover_request]] - `calls` [EXTRACTED]
 - [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - `rationale_for` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[openai_to_anthropic_response()]] - `semantically_similar_to` [INFERRED]
@@ -21,4 +22,4 @@ tags:
 - [[test_openai_response_length_maps_to_max_tokens()]] - `calls` [EXTRACTED]
 - [[test_openai_response_to_gemini_candidates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_141
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "concept"
-community: "Community 932"
+community: "Discord (Via `message`)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_932
+  - community/Discord_Via_message
 ---
 
 # message tool (channel=discord)
@@ -14,4 +14,4 @@ tags:
 - [[Discord Components v2 preferred over legacy embeds]] - `rationale_for` [EXTRACTED]
 - [[discordSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_932
+#graphify/concept #graphify/EXTRACTED #community/Discord_Via_message

@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 884"
+community: "openclaw/skills/i-icloud/scripts/calendar.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_884
+  - community/openclaw/skills/i-icloud/scripts/calendarjs
 ---
 
 # openclaw/skills/i-icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_4]] - `contains` [EXTRACTED]
+- [[CONFIG_2]] - `contains` [EXTRACTED]
 - [[args_2]] - `contains` [EXTRACTED]
 - [[createEvent()_2]] - `contains` [EXTRACTED]
 - [[getCredentials()_2]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[parseCalendarData()_2]] - `contains` [EXTRACTED]
 - [[{ execSync }_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-icloud/scripts/calendarjs

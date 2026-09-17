@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Community 1048"
+community: "RateLimiter"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1048
+  - community/RateLimiter
 ---
 
 # python-jose
@@ -20,4 +20,4 @@ tags:
 - [[Security Note]] - `contains` [EXTRACTED]
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1048
+#graphify/document #graphify/EXTRACTED #community/RateLimiter

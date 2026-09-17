@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Community 975"
+community: "pytest.ini"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_975
+  - community/pytestini
 ---
 
 # pytest.ini
@@ -21,4 +21,4 @@ tags:
 - [[Why `tmppytest_cache`]] - `contains` [EXTRACTED]
 - [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_975
+#graphify/document #graphify/EXTRACTED #community/pytestini

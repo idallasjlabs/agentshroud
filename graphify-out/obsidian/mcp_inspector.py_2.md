@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Community 645"
+community: "mcp_inspector.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_645
+  - community/mcp_inspectorpy
 ---
 
 # mcp_inspector.py
@@ -18,7 +18,7 @@ tags:
 - [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
 - [[Purpose_152]] - `contains` [EXTRACTED]
 - [[Related_29]] - `contains` [EXTRACTED]
-- [[Responsibilities_27]] - `contains` [EXTRACTED]
+- [[Responsibilities_26]] - `contains` [EXTRACTED]
 - [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_645
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
