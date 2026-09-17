@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "image"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Layer 5 — Consumption (auto-delete at expires_at, audit query, user response)
@@ -15,4 +15,4 @@ tags:
 - [[Layer 4 — Processing (Bot LLM API call, MCP-inspected tool call)]] - `shares_data_with` [EXTRACTED]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_184
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

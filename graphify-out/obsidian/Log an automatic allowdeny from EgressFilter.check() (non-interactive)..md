@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L658"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # Log an automatic allow/deny from EgressFilter.check() (non-interactive).
 
 ## Connections
-- [[dot-log_external_decision()]] - `rationale_for` [EXTRACTED]
+- [[.log_external_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_88
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

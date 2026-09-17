@@ -1,44 +1,44 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 37"
+community: "LLMProxy"
 location: "229"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_37
+  - community/LLMProxy
 ---
 
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_3]] - `method` [EXTRACTED]
-- [[dot-_apply_filters()]] - `method` [EXTRACTED]
-- [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
-- [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
-- [[dot-_enforce_tool_acl()]] - `method` [EXTRACTED]
-- [[dot-_failover_request()]] - `method` [EXTRACTED]
-- [[dot-_filter_outbound()]] - `method` [EXTRACTED]
-- [[dot-_filter_outbound_streaming()]] - `method` [EXTRACTED]
-- [[dot-_filter_streaming_event()]] - `method` [EXTRACTED]
-- [[dot-_forward_request()]] - `method` [EXTRACTED]
-- [[dot-_get_local_model()]] - `method` [EXTRACTED]
-- [[dot-_get_local_secondary_model()]] - `method` [EXTRACTED]
-- [[dot-_is_connect_error()]] - `method` [EXTRACTED]
-- [[dot-_is_local_oom()]] - `method` [EXTRACTED]
-- [[dot-_local_backend_headers()]] - `method` [EXTRACTED]
-- [[dot-_local_backend_unavailable_response()]] - `method` [EXTRACTED]
-- [[dot-_local_failover_base()]] - `method` [EXTRACTED]
-- [[dot-_local_secondary_failover_request()]] - `method` [EXTRACTED]
-- [[dot-_normalize_local_model()]] - `method` [EXTRACTED]
-- [[dot-_record_failover_event()]] - `method` [EXTRACTED]
-- [[dot-_scan_inbound()]] - `method` [EXTRACTED]
-- [[dot-_scan_request_data()]] - `method` [EXTRACTED]
-- [[dot-_suppress_qwen3_thinking()]] - `method` [EXTRACTED]
-- [[dot-_widen_optional_tool_param_types()]] - `method` [EXTRACTED]
-- [[dot-get_stats()]] - `method` [EXTRACTED]
-- [[dot-proxy_messages()]] - `method` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `method` [EXTRACTED]
+- [[.__init__()_3]] - `method` [EXTRACTED]
+- [[._apply_filters()]] - `method` [EXTRACTED]
+- [[._build_timeout_fallback_response()]] - `method` [EXTRACTED]
+- [[._emit_failover_notice()]] - `method` [EXTRACTED]
+- [[._enforce_tool_acl()]] - `method` [EXTRACTED]
+- [[._failover_request()]] - `method` [EXTRACTED]
+- [[._filter_outbound()]] - `method` [EXTRACTED]
+- [[._filter_outbound_streaming()]] - `method` [EXTRACTED]
+- [[._filter_streaming_event()]] - `method` [EXTRACTED]
+- [[._forward_request()]] - `method` [EXTRACTED]
+- [[._get_local_model()]] - `method` [EXTRACTED]
+- [[._get_local_secondary_model()]] - `method` [EXTRACTED]
+- [[._is_connect_error()]] - `method` [EXTRACTED]
+- [[._is_local_oom()]] - `method` [EXTRACTED]
+- [[._local_backend_headers()]] - `method` [EXTRACTED]
+- [[._local_backend_unavailable_response()]] - `method` [EXTRACTED]
+- [[._local_failover_base()]] - `method` [EXTRACTED]
+- [[._local_secondary_failover_request()]] - `method` [EXTRACTED]
+- [[._normalize_local_model()]] - `method` [EXTRACTED]
+- [[._record_failover_event()]] - `method` [EXTRACTED]
+- [[._scan_inbound()]] - `method` [EXTRACTED]
+- [[._scan_request_data()]] - `method` [EXTRACTED]
+- [[._suppress_qwen3_thinking()]] - `method` [EXTRACTED]
+- [[._widen_optional_tool_param_types()]] - `method` [EXTRACTED]
+- [[.get_stats()]] - `method` [EXTRACTED]
+- [[.proxy_messages()]] - `method` [EXTRACTED]
+- [[.proxy_messages_streaming()]] - `method` [EXTRACTED]
 - [[CredentialInjector]] - `shares_data_with` [INFERRED]
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_1]] - `uses` [INFERRED]
@@ -110,4 +110,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `uses` [INFERRED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_37
+#graphify/code #graphify/INFERRED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Community 393"
+community: "Findings"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/Findings
 ---
 
 # L2: Browser Control Enabled
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOW — Informational_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_393
+#graphify/document #graphify/EXTRACTED #community/Findings

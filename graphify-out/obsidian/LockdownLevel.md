@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # LockdownLevel
@@ -27,4 +27,4 @@ tags:
 - [[str_2]] - `inherits` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_58
+#graphify/code #graphify/INFERRED #community/ProgressiveLockdown

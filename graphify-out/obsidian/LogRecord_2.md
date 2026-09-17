@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "GroupRegistry"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Routing__Event_Bus
+  - community/GroupRegistry
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[.filter()_1]] - `references` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/INFERRED #community/GroupRegistry

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L139"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[Any_26]] - `uses` [INFERRED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 - [[ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

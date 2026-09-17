@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 80"
+community: "KeyVault"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/KeyVault
 ---
 
 # KeyInjector
 
 ## Connections
-- [[dot-__init__()_184]] - `method` [EXTRACTED]
-- [[dot-inject_for_request()]] - `method` [EXTRACTED]
-- [[dot-test_inject_auth_header()]] - `calls` [EXTRACTED]
-- [[dot-test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
-- [[dot-test_inject_preserves_existing_headers()]] - `calls` [EXTRACTED]
+- [[.__init__()_184]] - `method` [EXTRACTED]
+- [[.inject_for_request()]] - `method` [EXTRACTED]
+- [[.test_inject_auth_header()]] - `calls` [EXTRACTED]
+- [[.test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
+- [[.test_inject_preserves_existing_headers()]] - `calls` [EXTRACTED]
 - [[TestKeyInjection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestKeyRedaction]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[key_vault.py_2]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/KeyVault

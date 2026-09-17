@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 733"
+community: "Skill: Security Review (SEC)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_733
+  - community/Skill_Security_Review_SEC
 ---
 
 # Layer 2: Container Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_733
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

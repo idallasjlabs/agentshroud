@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "load_config()"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/load_config
 ---
 
 # Load and validate configuration from agentshroud.yaml      Search order:     1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/load_config

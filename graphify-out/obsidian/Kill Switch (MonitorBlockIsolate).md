@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 256"
+community: "TrustManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_256
+#graphify/concept #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Community 769"
+community: "Local LLM Support — Implementation Review"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_769
+  - community/Local_LLM_Support__Implementation_Review
 ---
 
 # Local LLM Support — Implementation Review
@@ -25,4 +25,4 @@ tags:
 - [[Architecture Overview_2]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_769
+#graphify/document #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review

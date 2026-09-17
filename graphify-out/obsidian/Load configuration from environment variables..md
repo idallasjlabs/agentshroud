@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Community 475"
+community: "cls"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/cls
 ---
 
 # Load configuration from environment variables.
 
 ## Connections
-- [[dot-from_env()]] - `rationale_for` [EXTRACTED]
+- [[.from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_475
+#graphify/rationale #graphify/EXTRACTED #community/cls

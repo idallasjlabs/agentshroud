@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 610"
+community: "Shutdown & Recovery"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/Shutdown__Recovery
 ---
 
 # Kill Switch (Emergency Stop)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

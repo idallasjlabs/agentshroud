@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # KillSwitchAction
 
 ## Connections
-- [[dot-test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
+- [[.test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/INFERRED #community/ModeRequest

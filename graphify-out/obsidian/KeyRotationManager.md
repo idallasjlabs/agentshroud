@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 133"
+community: "KeyRotationManager"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/KeyRotationManager
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_124]] - `method` [EXTRACTED]
-- [[dot-_generate_new_credential()]] - `method` [EXTRACTED]
-- [[dot-_read_credential_from_1password()]] - `method` [EXTRACTED]
-- [[dot-_retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
-- [[dot-_store_credential_in_1password()]] - `method` [EXTRACTED]
-- [[dot-_validate_credential()]] - `method` [EXTRACTED]
-- [[dot-check_and_rotate_due_credentials()]] - `method` [EXTRACTED]
-- [[dot-cleanup_retired_credentials()]] - `method` [EXTRACTED]
-- [[dot-emergency_rotate_credential()]] - `method` [EXTRACTED]
-- [[dot-get_all_credentials_status()]] - `method` [EXTRACTED]
-- [[dot-get_credential_status()]] - `method` [EXTRACTED]
-- [[dot-get_health_score()]] - `method` [EXTRACTED]
-- [[dot-manager()_1]] - `calls` [EXTRACTED]
-- [[dot-register_credential()]] - `method` [EXTRACTED]
-- [[dot-register_validator()]] - `method` [EXTRACTED]
-- [[dot-rotate_credential()]] - `method` [EXTRACTED]
-- [[dot-setup_manager_with_credential()]] - `calls` [EXTRACTED]
-- [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[._generate_new_credential()]] - `method` [EXTRACTED]
+- [[._read_credential_from_1password()]] - `method` [EXTRACTED]
+- [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
+- [[._store_credential_in_1password()]] - `method` [EXTRACTED]
+- [[._validate_credential()]] - `method` [EXTRACTED]
+- [[.check_and_rotate_due_credentials()]] - `method` [EXTRACTED]
+- [[.cleanup_retired_credentials()]] - `method` [EXTRACTED]
+- [[.emergency_rotate_credential()]] - `method` [EXTRACTED]
+- [[.get_all_credentials_status()]] - `method` [EXTRACTED]
+- [[.get_credential_status()]] - `method` [EXTRACTED]
+- [[.get_health_score()]] - `method` [EXTRACTED]
+- [[.manager()_1]] - `calls` [EXTRACTED]
+- [[.register_credential()]] - `method` [EXTRACTED]
+- [[.register_validator()]] - `method` [EXTRACTED]
+- [[.rotate_credential()]] - `method` [EXTRACTED]
+- [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
+- [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
@@ -68,4 +68,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

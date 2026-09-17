@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "ingest_api/main.py"
 location: "L114"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - graphify/INFERRED
+  - community/ingest_api/mainpy
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[dot-get_entry()]] - `references` [EXTRACTED]
-- [[dot-query()]] - `calls` [EXTRACTED]
-- [[dot-record()_2]] - `references` [EXTRACTED]
+- [[.get_entry()]] - `references` [EXTRACTED]
+- [[.query()]] - `calls` [EXTRACTED]
+- [[.record()_2]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
