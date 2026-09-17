@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "concept"
-community: "Community 446"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/graphify_Skill
 ---
 
 # --watch Background Watcher
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[--update Incremental Re-extraction Flow]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_446
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
