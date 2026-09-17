@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 192"
+community: "TestPathIsolationManager"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/TestPathIsolationManager
 ---
 
 # Test user session registration.
 
 ## Connections
-- [[dot-test_register_user_session()]] - `rationale_for` [EXTRACTED]
+- [[.test_register_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_192
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

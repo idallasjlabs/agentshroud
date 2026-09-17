@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # TestCheckFluentBit
 
 ## Connections
-- [[dot-test_not_installed()_2]] - `method` [EXTRACTED]
-- [[dot-test_running_via_pid_file()]] - `method` [EXTRACTED]
-- [[dot-test_running_via_proc_scan()_1]] - `method` [EXTRACTED]
-- [[dot-test_stopped_when_no_pid_and_no_process()]] - `method` [EXTRACTED]
+- [[.test_not_installed()_2]] - `method` [EXTRACTED]
+- [[.test_running_via_pid_file()]] - `method` [EXTRACTED]
+- [[.test_running_via_proc_scan()_1]] - `method` [EXTRACTED]
+- [[.test_stopped_when_no_pid_and_no_process()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

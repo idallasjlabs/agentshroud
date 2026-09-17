@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "TestAuth"
 location: "L377"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/TestAuth
 ---
 
 # TestAuth
 
 ## Connections
-- [[dot-test_agent_registry_module()]] - `method` [EXTRACTED]
-- [[dot-test_consent_framework_loads()]] - `method` [EXTRACTED]
-- [[dot-test_oauth_confused_deputy()]] - `method` [EXTRACTED]
-- [[dot-test_oauth_pkce_violation()]] - `method` [EXTRACTED]
-- [[dot-test_reject_empty_token()]] - `method` [EXTRACTED]
-- [[dot-test_reject_garbage_token()]] - `method` [EXTRACTED]
-- [[dot-test_reject_malformed_jwt()]] - `method` [EXTRACTED]
-- [[dot-test_reject_none_algorithm()]] - `method` [EXTRACTED]
-- [[dot-test_session_binding()]] - `method` [EXTRACTED]
-- [[dot-test_session_different_fingerprints()]] - `method` [EXTRACTED]
-- [[dot-test_trust_level_enforcement()]] - `method` [EXTRACTED]
-- [[dot-test_trust_recovery()]] - `method` [EXTRACTED]
-- [[dot-token_validator()]] - `method` [EXTRACTED]
+- [[.test_agent_registry_module()]] - `method` [EXTRACTED]
+- [[.test_consent_framework_loads()]] - `method` [EXTRACTED]
+- [[.test_oauth_confused_deputy()]] - `method` [EXTRACTED]
+- [[.test_oauth_pkce_violation()]] - `method` [EXTRACTED]
+- [[.test_reject_empty_token()]] - `method` [EXTRACTED]
+- [[.test_reject_garbage_token()]] - `method` [EXTRACTED]
+- [[.test_reject_malformed_jwt()]] - `method` [EXTRACTED]
+- [[.test_reject_none_algorithm()]] - `method` [EXTRACTED]
+- [[.test_session_binding()]] - `method` [EXTRACTED]
+- [[.test_session_different_fingerprints()]] - `method` [EXTRACTED]
+- [[.test_trust_level_enforcement()]] - `method` [EXTRACTED]
+- [[.test_trust_recovery()]] - `method` [EXTRACTED]
+- [[.token_validator()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/TestAuth

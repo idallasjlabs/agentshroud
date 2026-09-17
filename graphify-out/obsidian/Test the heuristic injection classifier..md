@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "rationale"
-community: "Community 212"
+community: "TestHeuristicClassifier"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/TestHeuristicClassifier
 ---
 
 # Test the heuristic injection classifier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_212
+#graphify/rationale #graphify/EXTRACTED #community/TestHeuristicClassifier

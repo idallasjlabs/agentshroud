@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "ResourceGuard"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/ResourceGuard
 ---
 
 # TestFileSandboxDefaultEnforce
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_7]] - `method` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_7]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/INFERRED #community/ResourceGuard

@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "test_security_audit.py"
 location: "L308"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/test_security_auditpy
 ---
 
 # TestContextGuard
 
 ## Connections
-- [[dot-guard()_1]] - `method` [EXTRACTED]
-- [[dot-test_clean_conversation()]] - `method` [EXTRACTED]
-- [[dot-test_context_window_stuffing()]] - `method` [EXTRACTED]
-- [[dot-test_conversation_history_manipulation()]] - `method` [EXTRACTED]
-- [[dot-test_fake_system_message()]] - `method` [EXTRACTED]
-- [[dot-test_json_injection()]] - `method` [EXTRACTED]
-- [[dot-test_markdown_heading_injection()]] - `method` [EXTRACTED]
-- [[dot-test_rapid_fire_messages()]] - `method` [EXTRACTED]
-- [[dot-test_role_switching()]] - `method` [EXTRACTED]
-- [[dot-test_session_isolation()]] - `method` [EXTRACTED]
-- [[dot-test_xml_tag_injection()]] - `method` [EXTRACTED]
+- [[.guard()_1]] - `method` [EXTRACTED]
+- [[.test_clean_conversation()]] - `method` [EXTRACTED]
+- [[.test_context_window_stuffing()]] - `method` [EXTRACTED]
+- [[.test_conversation_history_manipulation()]] - `method` [EXTRACTED]
+- [[.test_fake_system_message()]] - `method` [EXTRACTED]
+- [[.test_json_injection()]] - `method` [EXTRACTED]
+- [[.test_markdown_heading_injection()]] - `method` [EXTRACTED]
+- [[.test_rapid_fire_messages()]] - `method` [EXTRACTED]
+- [[.test_role_switching()]] - `method` [EXTRACTED]
+- [[.test_session_isolation()]] - `method` [EXTRACTED]
+- [[.test_xml_tag_injection()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

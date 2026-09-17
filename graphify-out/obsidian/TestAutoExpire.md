@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L240"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # TestAutoExpire
 
 ## Connections
-- [[dot-test_double_decide_raises()]] - `method` [EXTRACTED]
+- [[.test_double_decide_raises()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_2]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[Auto-expire old requests.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_38
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

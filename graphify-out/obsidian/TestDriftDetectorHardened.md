@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "EgressAction"
 location: "L919"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EgressAction
 ---
 
 # TestDriftDetectorHardened
 
 ## Connections
-- [[dot-test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
+- [[.test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/INFERRED #community/EgressAction

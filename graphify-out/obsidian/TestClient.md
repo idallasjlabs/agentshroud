@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 1154"
+community: "Path"
 location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1154
+  - community/Path
 ---
 
 # TestClient
 
 ## Connections
-- [[dot-client()_1]] - `references` [EXTRACTED]
-- [[dot-test_reload_requires_auth()]] - `calls` [EXTRACTED]
-- [[dot-test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
-- [[dot-test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
+- [[.client()_1]] - `references` [EXTRACTED]
+- [[.test_reload_requires_auth()]] - `calls` [EXTRACTED]
+- [[.test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
+- [[.test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
 - [[ManifestEntry]] - `uses` [INFERRED]
 - [[PlannedAction]] - `uses` [INFERRED]
 - [[SkillsManifest]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1154
+#graphify/code #graphify/EXTRACTED #community/Path

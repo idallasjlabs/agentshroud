@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L227"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E06EncodingBypassDetection
 
 ## Connections
-- [[dot-test_base64_content_decoded()]] - `method` [EXTRACTED]
-- [[dot-test_encoding_detector_is_wired()]] - `method` [EXTRACTED]
+- [[.test_base64_content_decoded()]] - `method` [EXTRACTED]
+- [[.test_encoding_detector_is_wired()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 42"
+community: "KillSwitchMonitor"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/KillSwitchMonitor
 ---
 
 # Test verification when kill switch script does not exist.
 
 ## Connections
-- [[dot-test_verify_killswitch_script_not_exists()]] - `rationale_for` [EXTRACTED]
+- [[.test_verify_killswitch_script_not_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

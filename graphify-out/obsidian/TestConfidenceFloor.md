@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L582"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # TestConfidenceFloor
 
 ## Connections
-- [[dot-test_all_production_tool_overrides_meet_floor()]] - `method` [EXTRACTED]
-- [[dot-test_default_pii_config_meets_floor()]] - `method` [EXTRACTED]
-- [[dot-test_tool_result_config_default_meets_floor()]] - `method` [EXTRACTED]
+- [[.test_all_production_tool_overrides_meet_floor()]] - `method` [EXTRACTED]
+- [[.test_default_pii_config_meets_floor()]] - `method` [EXTRACTED]
+- [[.test_tool_result_config_default_meets_floor()]] - `method` [EXTRACTED]
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `rationale_for` [EXTRACTED]
 - [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

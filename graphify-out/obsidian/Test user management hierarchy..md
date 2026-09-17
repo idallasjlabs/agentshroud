@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Test user management hierarchy.
 
 ## Connections
-- [[dot-test_user_management_hierarchy()]] - `rationale_for` [EXTRACTED]
+- [[.test_user_management_hierarchy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

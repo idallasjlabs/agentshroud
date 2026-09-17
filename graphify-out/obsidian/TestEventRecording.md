@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 155"
+community: "lifespan.py"
 location: "L46"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_155
+  - graphify/INFERRED
+  - community/lifespanpy
 ---
 
 # TestEventRecording
 
 ## Connections
-- [[dot-test_record_dns_event()]] - `method` [EXTRACTED]
-- [[dot-test_record_file_event()]] - `method` [EXTRACTED]
-- [[dot-test_record_http_event()]] - `method` [EXTRACTED]
-- [[dot-test_record_mcp_event()]] - `method` [EXTRACTED]
+- [[.test_record_dns_event()]] - `method` [EXTRACTED]
+- [[.test_record_file_event()]] - `method` [EXTRACTED]
+- [[.test_record_http_event()]] - `method` [EXTRACTED]
+- [[.test_record_mcp_event()]] - `method` [EXTRACTED]
 - [[AlertSeverity]] - `uses` [INFERRED]
 - [[EgressChannel]] - `uses` [INFERRED]
 - [[EgressEvent]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/INFERRED #community/lifespanpy

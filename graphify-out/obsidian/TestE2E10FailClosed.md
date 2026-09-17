@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L356"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E10FailClosed
 
 ## Connections
-- [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `method` [EXTRACTED]
-- [[dot-test_pipeline_raises_without_pii_sanitizer()]] - `method` [EXTRACTED]
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - `method` [EXTRACTED]
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager

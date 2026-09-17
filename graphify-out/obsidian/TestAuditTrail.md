@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L759"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[dot-test_alert_dedup()]] - `method` [EXTRACTED]
-- [[dot-test_alert_dispatcher_init()]] - `method` [EXTRACTED]
-- [[dot-test_alert_dispatcher_write()]] - `method` [EXTRACTED]
-- [[dot-test_canary_system_importable()]] - `method` [EXTRACTED]
-- [[dot-test_drift_detector_baseline()]] - `method` [EXTRACTED]
-- [[dot-test_drift_detector_detects_change()]] - `method` [EXTRACTED]
-- [[dot-test_drift_no_false_positive()]] - `method` [EXTRACTED]
-- [[dot-test_health_report_importable()]] - `method` [EXTRACTED]
+- [[.test_alert_dedup()]] - `method` [EXTRACTED]
+- [[.test_alert_dispatcher_init()]] - `method` [EXTRACTED]
+- [[.test_alert_dispatcher_write()]] - `method` [EXTRACTED]
+- [[.test_canary_system_importable()]] - `method` [EXTRACTED]
+- [[.test_drift_detector_baseline()]] - `method` [EXTRACTED]
+- [[.test_drift_detector_detects_change()]] - `method` [EXTRACTED]
+- [[.test_drift_no_false_positive()]] - `method` [EXTRACTED]
+- [[.test_health_report_importable()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -56,4 +56,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

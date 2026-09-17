@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # TestApprovalStorePersistence
 
 ## Connections
-- [[dot-test_store_expires_old_items()]] - `method` [EXTRACTED]
-- [[dot-test_store_persists_across_reopen()]] - `method` [EXTRACTED]
-- [[dot-test_store_save_and_load()]] - `method` [EXTRACTED]
-- [[dot-test_store_update_status()]] - `method` [EXTRACTED]
+- [[.test_store_expires_old_items()]] - `method` [EXTRACTED]
+- [[.test_store_persists_across_reopen()]] - `method` [EXTRACTED]
+- [[.test_store_save_and_load()]] - `method` [EXTRACTED]
+- [[.test_store_update_status()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_2]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[Queue persistence across restart.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

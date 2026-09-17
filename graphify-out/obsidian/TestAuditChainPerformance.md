@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L118"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # TestAuditChainPerformance
 
 ## Connections
-- [[dot-ledger()]] - `method` [EXTRACTED]
-- [[dot-test_1000_entries_under_5s()]] - `method` [EXTRACTED]
-- [[dot-test_query_after_1000_entries()]] - `method` [EXTRACTED]
+- [[.ledger()]] - `method` [EXTRACTED]
+- [[.test_1000_entries_under_5s()]] - `method` [EXTRACTED]
+- [[.test_query_after_1000_entries()]] - `method` [EXTRACTED]
 - [[Audit chain 1000 entries in  5s.]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/TrustManager

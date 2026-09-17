@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L151"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E03OutboundPIIRedaction
 
 ## Connections
-- [[dot-test_clean_response_passes_unchanged()_1]] - `method` [EXTRACTED]
-- [[dot-test_credit_card_stripped_from_response()]] - `method` [EXTRACTED]
+- [[.test_clean_response_passes_unchanged()_1]] - `method` [EXTRACTED]
+- [[.test_credit_card_stripped_from_response()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager
