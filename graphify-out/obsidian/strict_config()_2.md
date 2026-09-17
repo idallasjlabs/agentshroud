@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "test_trust_manager.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/test_trust_managerpy
 ---
 
 # strict_config()
@@ -16,4 +16,4 @@ tags:
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/test_trust_managerpy

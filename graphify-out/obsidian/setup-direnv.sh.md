@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/security/setup-direnv.sh"
 type: "code"
-community: "Community 1018"
+community: "quick-setup.sh script"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1018
+  - community/quick-setupsh_script
 ---
 
 # setup-direnv.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[setup-direnv.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1018
+#graphify/code #graphify/EXTRACTED #community/quick-setupsh_script

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 60"
+community: "scanner_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/scanner_integrationpy
 ---
 
 # scanner_integration.py
@@ -65,9 +65,9 @@ tags:
 - [[compute_bot_scorecard()]] - `contains` [EXTRACTED]
 - [[compute_scorecard()]] - `contains` [EXTRACTED]
 - [[generate_summary]] - `imports` [EXTRACTED]
+- [[generate_summary()]] - `imports` [EXTRACTED]
 - [[generate_summary()_1]] - `imports` [EXTRACTED]
 - [[generate_summary()_2]] - `imports` [EXTRACTED]
-- [[generate_summary()]] - `imports` [EXTRACTED]
 - [[get_clamav_summary()]] - `contains` [EXTRACTED]
 - [[get_falco_summary()]] - `contains` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `contains` [EXTRACTED]
@@ -76,8 +76,8 @@ tags:
 - [[get_trivy_image_summaries()]] - `contains` [EXTRACTED]
 - [[get_trivy_summary()]] - `contains` [EXTRACTED]
 - [[get_wazuh_summary()]] - `contains` [EXTRACTED]
-- [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[read_alerts()]] - `imports` [EXTRACTED]
+- [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

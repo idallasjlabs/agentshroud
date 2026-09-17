@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "concept"
-community: "Community 618"
+community: "Apple Reminders CLI (remindctl)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # remindctl CLI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[apple-remindersSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_618
+#graphify/concept #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

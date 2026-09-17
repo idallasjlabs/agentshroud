@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Community 464"
+community: "run_test()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/run_test
 ---
 
 # smoke.sh script
@@ -15,4 +15,4 @@ tags:
 - [[run_test()]] - `calls` [EXTRACTED]
 - [[smoke.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/run_test

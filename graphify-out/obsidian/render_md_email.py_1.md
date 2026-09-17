@@ -1,16 +1,16 @@
 ---
-source_file: "docker/config/hermes/cron/jobs.yaml"
-type: "concept"
-community: "Community 282"
+source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
+type: "code"
+community: "competitive-report-*.md dated reports"
 tags:
-  - graphify/concept
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/competitive-report-md_dated_reports
 ---
 
 # render_md_email.py
 
 ## Connections
-- [[Hermes Competitive Intelligence Email job]] - `references` [EXTRACTED]
+- [[Hermes Competitive Intelligence Email (AMPM)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_282
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

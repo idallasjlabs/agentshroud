@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "Community 102"
+community: "CollaboratorActivityTracker"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/CollaboratorActivityTracker
 ---
 
 # record_activity without bot_id stores bot_id=None in the entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_activity_stores_bot_id_none_when_omitted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_102
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker

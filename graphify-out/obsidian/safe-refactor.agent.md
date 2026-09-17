@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 773"
+community: "AGENTS.md — Codex CLI Guidance"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_773
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # safe-refactor.agent.md
@@ -15,4 +15,4 @@ tags:
 - [[Codex Safe Refactor Role]] - `semantically_similar_to` [INFERRED]
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_773
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

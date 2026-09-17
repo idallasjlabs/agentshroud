@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "Community 1465"
+community: "startInstall()"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1465
+  - graphify/INFERRED
+  - community/startInstall
 ---
 
 # startInstall()
@@ -14,4 +14,4 @@ tags:
 - [[installapiinstall endpoint]] - `references` [EXTRACTED]
 - [[buildSummary()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1465
+#graphify/code #graphify/INFERRED #community/startInstall

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "Community 1128"
+community: "background.js"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/backgroundjs
 ---
 
 # save()
@@ -15,4 +15,4 @@ tags:
 - [[loadConfig()]] - `semantically_similar_to` [INFERRED]
 - [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1128
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

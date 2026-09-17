@@ -1,18 +1,21 @@
 ---
-source_file: "SECURITY.md"
-type: "document"
-community: "Community 111"
-location: "L1"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L34"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/skilljson
 ---
 
-# SECURITY.md
+# security
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[auditLogging]] - `contains` [EXTRACTED]
+- [[filesystemAccess]] - `contains` [EXTRACTED]
+- [[networkAccess]] - `contains` [EXTRACTED]
+- [[requiresApproval]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/skilljson

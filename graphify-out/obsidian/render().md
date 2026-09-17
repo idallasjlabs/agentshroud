@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Community 1090"
+community: "render_md_email.py"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1090
+  - community/render_md_emailpy
 ---
 
 # render()
@@ -17,4 +17,4 @@ tags:
 - [[main()_6]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1090
+#graphify/code #graphify/EXTRACTED #community/render_md_emailpy

@@ -1,13 +1,13 @@
 ---
 source_file: ".llm_settings/scripts/security/setup-pgpass.sh"
 type: "code"
-community: "Community 1990"
+community: "setup-pgpass.sh (PostgreSQL pgpass setup)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1990
+  - community/setup-pgpasssh_PostgreSQL_pgpass_setup
 ---
 
 # setup-pgpass.sh (PostgreSQL pgpass setup)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1990
+#graphify/code #graphify/EXTRACTED #community/setup-pgpasssh_PostgreSQL_pgpass_setup

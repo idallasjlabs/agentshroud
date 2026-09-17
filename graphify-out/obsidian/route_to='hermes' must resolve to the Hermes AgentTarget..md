@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # route_to='hermes' must resolve to the Hermes AgentTarget.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolves_hermes_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

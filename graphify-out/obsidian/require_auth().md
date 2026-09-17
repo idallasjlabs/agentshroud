@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # require_auth()
 
 ## Connections
-- [[dot-test_invalid_token_raises_401()]] - `calls` [EXTRACTED]
-- [[dot-test_valid_token_authenticates()]] - `calls` [EXTRACTED]
+- [[.test_invalid_token_raises_401()]] - `calls` [EXTRACTED]
+- [[.test_valid_token_authenticates()]] - `calls` [EXTRACTED]
 - [[HTTPAuthorizationCredentials]] - `references` [EXTRACTED]
 - [[Require valid Bearer token for all management endpoints.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

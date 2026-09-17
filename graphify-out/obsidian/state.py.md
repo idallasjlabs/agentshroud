@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "SSHProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/SSHProxy
 ---
 
 # state.py
@@ -50,4 +50,4 @@ tags:
 - [[test_telegram_proxy_inbound.py]] - `imports_from` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 454"
+community: "start-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_454
+  - community/start-agentshroudsh
 ---
 
 # start-agentshroud.sh script
@@ -28,4 +28,4 @@ tags:
 - [[op_proxy_read_with_retry]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_454
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

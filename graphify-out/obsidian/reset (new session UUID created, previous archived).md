@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "Community 1294"
+community: "active"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1294
+  - community/active
 ---
 
 # reset (new session UUID created, previous archived)
@@ -14,4 +14,4 @@ tags:
 - [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - `calls` [EXTRACTED]
 - [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1294
+#graphify/concept #graphify/EXTRACTED #community/active

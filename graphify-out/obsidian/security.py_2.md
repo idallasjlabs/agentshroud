@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 705"
+community: "security.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_705
+  - community/securitypy
 ---
 
 # security.py
@@ -17,8 +17,8 @@ tags:
 - [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
 - [[Purpose_168]] - `contains` [EXTRACTED]
 - [[Related_43]] - `contains` [EXTRACTED]
-- [[Responsibilities_41]] - `contains` [EXTRACTED]
+- [[Responsibilities_40]] - `contains` [EXTRACTED]
 - [[Security Feature Registry]] - `contains` [EXTRACTED]
 - [[security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_705
+#graphify/document #graphify/EXTRACTED #community/securitypy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 142"
+community: "SecureBrowser"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/SecureBrowser
 ---
 
 # securebrowser/scripts/browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError_3]] - `contains` [EXTRACTED]
 - [[main()_11]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

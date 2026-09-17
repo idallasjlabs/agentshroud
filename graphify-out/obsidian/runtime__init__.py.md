@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Community 106"
+community: "RuntimeConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/RuntimeConfig
 ---
 
 # runtime/__init__.py
@@ -23,4 +23,4 @@ tags:
 - [[get_engine()]] - `contains` [EXTRACTED]
 - [[podman_engine.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
