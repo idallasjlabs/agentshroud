@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1274"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1274
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
@@ -15,6 +15,6 @@ tags:
 - [[Purpose_91]] - `contains` [EXTRACTED]
 - [[Related Skills_82]] - `contains` [EXTRACTED]
 - [[Usage_86]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1274
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

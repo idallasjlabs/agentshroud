@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 89"
+community: "PermissionLevel"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_89
+  - community/PermissionLevel
 ---
 
 # MCPToolConfig
 
 ## Connections
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
@@ -63,8 +63,8 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels_1]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[config()_4]] - `calls` [EXTRACTED]
 - [[config()]] - `calls` [EXTRACTED]
+- [[config()_4]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
@@ -72,4 +72,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_89
+#graphify/code #graphify/INFERRED #community/PermissionLevel

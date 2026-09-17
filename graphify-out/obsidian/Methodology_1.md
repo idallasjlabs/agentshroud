@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 625"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_625
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories_2]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_625
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

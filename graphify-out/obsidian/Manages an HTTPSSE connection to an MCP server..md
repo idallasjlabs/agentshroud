@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 108"
+community: "StdioConnection"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # Manages an HTTP/SSE connection to an MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HttpSseConnection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_108
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

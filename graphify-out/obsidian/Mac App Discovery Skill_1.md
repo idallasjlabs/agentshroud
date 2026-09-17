@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 399"
+community: "Mac App Discovery Skill"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_399
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Mac App Discovery Skill
 
 ## Connections
-- [[dot-agentsskillsi-macSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
@@ -28,11 +28,11 @@ tags:
 - [[When to Use This Skill]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_1]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_2]] - `contains` [EXTRACTED]
-- [[hermesskillsi-macSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[i-mac README (macOS System Administrator)]] - `references` [EXTRACTED]
 - [[macOS System Administrator (MAC) README]] - `references` [AMBIGUOUS]
 - [[mac_app_catalog.json output artifact]] - `references` [EXTRACTED]
 - [[mac_app_catalog.md output artifact]] - `references` [EXTRACTED]
-- [[openclawskillsi-macSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_399
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

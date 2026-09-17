@@ -1,16 +1,17 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/security/token_validation.py"
 type: "paper"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "_make_token()"
+location: "12"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/_make_token
 ---
 
-# Maloyan & Namiot 2026 — MCP security analysis (arXiv:2601.17548)
+# Maloyan & Namiot 2026 — MCP Security Analysis (arXiv:2601.17548)
 
 ## Connections
-- [[ConsentFramework]] - `cites` [EXTRACTED]
+- [[TokenValidator]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/paper #graphify/EXTRACTED #community/_make_token

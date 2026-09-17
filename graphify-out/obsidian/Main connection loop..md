@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Community 187"
+community: "SOCWebSocketHandler"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/SOCWebSocketHandler
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[dot-run()_1]] - `rationale_for` [EXTRACTED]
+- [[.run()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_187
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

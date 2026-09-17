@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 144"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_144
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Mnemosyne Retention Engineer (SKILL)
@@ -14,4 +14,4 @@ tags:
 - [[Mnemosyne Retention Engineer (README)]] - `conceptually_related_to` [INFERRED]
 - [[Oracle Feedback Analyst (SKILL)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_144
+#graphify/document #graphify/INFERRED #community/Production_Safety_Checklist_SKILL

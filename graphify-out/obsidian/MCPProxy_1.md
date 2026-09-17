@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # MCPProxy
 
 ## Connections
-- [[dot-__init__()_96]] - `method` [EXTRACTED]
-- [[dot-_emit_privacy_event()]] - `method` [EXTRACTED]
-- [[dot-_execute_tool_call()]] - `method` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `method` [EXTRACTED]
-- [[dot-check_approval_required()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_15]] - `method` [EXTRACTED]
-- [[dot-mcp_proxy_with_approval()]] - `calls` [EXTRACTED]
-- [[dot-process_tool_call()]] - `method` [EXTRACTED]
-- [[dot-process_tool_result()_1]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()_1]] - `method` [EXTRACTED]
-- [[dot-shutdown()]] - `method` [EXTRACTED]
-- [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.__init__()_96]] - `method` [EXTRACTED]
+- [[._emit_privacy_event()]] - `method` [EXTRACTED]
+- [[._execute_tool_call()]] - `method` [EXTRACTED]
+- [[._extract_egress_targets()]] - `method` [EXTRACTED]
+- [[._sanitize_admin_private_data()]] - `method` [EXTRACTED]
+- [[.check_approval_required()]] - `method` [EXTRACTED]
+- [[.get_stats()_15]] - `method` [EXTRACTED]
+- [[.mcp_proxy_with_approval()]] - `calls` [EXTRACTED]
+- [[.process_tool_call()]] - `method` [EXTRACTED]
+- [[.process_tool_result()_1]] - `method` [EXTRACTED]
+- [[.set_event_bus()_1]] - `method` [EXTRACTED]
+- [[.shutdown()]] - `method` [EXTRACTED]
+- [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
+- [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -102,4 +102,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

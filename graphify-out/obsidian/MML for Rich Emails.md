@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Community 462"
+community: "Message Composition with MML (MIME Meta Language"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # MML for Rich Emails
@@ -18,4 +18,4 @@ tags:
 - [[Mixed Content (Text + Attachments)]] - `contains` [EXTRACTED]
 - [[Multipart Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

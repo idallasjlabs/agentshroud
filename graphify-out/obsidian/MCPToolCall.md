@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 366"
+community: "MCPToolResult"
 location: "L81"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_366
+  - community/MCPToolResult
 ---
 
 # MCPToolCall
 
 ## Connections
-- [[dot-test_tool_call_generates_id_and_timestamp()]] - `calls` [EXTRACTED]
+- [[.test_tool_call_generates_id_and_timestamp()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[make_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_366
+#graphify/code #graphify/INFERRED #community/MCPToolResult

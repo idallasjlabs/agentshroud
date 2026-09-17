@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Community 57"
+community: "test_mfa_guard.py"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/test_mfa_guardpy
 ---
 
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_165]] - `method` [EXTRACTED]
-- [[dot-_decode_secret()]] - `method` [EXTRACTED]
-- [[dot-_prune_used()]] - `method` [EXTRACTED]
-- [[dot-_totp_for_counter()]] - `method` [EXTRACTED]
-- [[dot-from_env()_3]] - `method` [EXTRACTED]
-- [[dot-is_required()]] - `method` [EXTRACTED]
-- [[dot-verify()_1]] - `method` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
+- [[.__init__()_165]] - `method` [EXTRACTED]
+- [[._decode_secret()]] - `method` [EXTRACTED]
+- [[._prune_used()]] - `method` [EXTRACTED]
+- [[._totp_for_counter()]] - `method` [EXTRACTED]
+- [[.from_env()_3]] - `method` [EXTRACTED]
+- [[.is_required()]] - `method` [EXTRACTED]
+- [[.verify()_1]] - `method` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_1]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `calls` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

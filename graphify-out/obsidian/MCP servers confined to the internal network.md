@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "rationale"
-community: "Community 575"
+community: "gateway service (prod, sole egress point, 75-mod"
 location: "L127-151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/gateway_service_prod_sole_egress_point_75-mod
 ---
 
 # MCP servers confined to the internal network
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-internal network (no external access)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_575
+#graphify/rationale #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod

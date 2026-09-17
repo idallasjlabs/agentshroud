@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 201"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Method 3: Configure in .mcp.json
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Switch AWS Profile for MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_201
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

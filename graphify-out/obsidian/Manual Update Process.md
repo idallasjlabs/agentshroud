@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 538"
+community: "Update AgentShroud"
 location: "L756"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Update_AgentShroud
 ---
 
 # Manual Update Process
 
 ## Connections
-- [[Updating_1]] - `contains` [EXTRACTED]
+- [[Updating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

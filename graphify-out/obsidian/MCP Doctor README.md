@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 871"
+community: "MCP AWS Profile Configuration README"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_871
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # MCP Doctor README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Doctor Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_871
+#graphify/document #graphify/INFERRED #community/MCP_AWS_Profile_Configuration_README

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 77"
+community: "AgentShroud Incident Response Plan"
 location: "L632"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Maintenance Procedures
@@ -16,4 +16,4 @@ tags:
 - [[Regular Maintenance Tasks]] - `contains` [EXTRACTED]
 - [[Update Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

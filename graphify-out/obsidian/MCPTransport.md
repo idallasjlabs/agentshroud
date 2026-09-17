@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 211"
+community: "MCPServerConfig"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_211
+  - community/MCPServerConfig
 ---
 
 # MCPTransport
 
 ## Connections
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
@@ -27,8 +27,8 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
@@ -76,4 +76,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_211
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

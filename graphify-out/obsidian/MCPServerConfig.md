@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "MCPServerConfig"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/MCPServerConfig
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[dot-__init__()_29]] - `references` [EXTRACTED]
-- [[dot-__init__()_30]] - `references` [EXTRACTED]
-- [[dot-get_or_create()]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `references` [EXTRACTED]
+- [[.__init__()_30]] - `references` [EXTRACTED]
+- [[.get_or_create()]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

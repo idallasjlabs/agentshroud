@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "rationale"
-community: "Community 290"
+community: "CredentialInjector"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/CredentialInjector
 ---
 
 # Maps a destination domain to its credential injection config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialMapping]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_290
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector

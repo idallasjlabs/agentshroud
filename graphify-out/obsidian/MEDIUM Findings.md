@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Community 349"
+community: "Blue Team Security Assessment — AgentShroud v0.8"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_349
+  - community/Blue_Team_Security_Assessment__AgentShroud_v08
 ---
 
 # MEDIUM Findings
@@ -17,4 +17,4 @@ tags:
 - [[R2-M2 WebSocket Endpoints in `webapi.py` Use Full Auth Token (Not Scoped)]] - `contains` [EXTRACTED]
 - [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_349
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v08

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 302"
+community: "Mode B — Comprehensive review sweep"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/Mode_B__Comprehensive_review_sweep
 ---
 
 # Mode B — Comprehensive review sweep
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 — Work through directories one at a time_1]] - `contains` [EXTRACTED]
 - [[Step 3 — After the last directory (or a natural stopping point)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_302
+#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep

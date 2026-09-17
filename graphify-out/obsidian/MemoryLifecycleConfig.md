@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "MemoryIntegrityMonitor"
 location: "L75"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - graphify/INFERRED
+  - community/MemoryIntegrityMonitor
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-__init__()_82]] - `references` [EXTRACTED]
+- [[.__init__()_82]] - `references` [EXTRACTED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

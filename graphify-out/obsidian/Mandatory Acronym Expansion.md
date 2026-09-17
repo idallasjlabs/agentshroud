@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 1050"
+community: "OKE Channel — CPA Exam Context"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1050
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # Mandatory Acronym Expansion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1050
+#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

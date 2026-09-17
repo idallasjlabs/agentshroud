@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

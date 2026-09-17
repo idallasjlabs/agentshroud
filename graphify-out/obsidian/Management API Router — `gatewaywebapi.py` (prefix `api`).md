@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 382"
+community: "main.py"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/mainpy
 ---
 
 # Management API Router — `gateway/web/api.py` (prefix `/api`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/mainpy

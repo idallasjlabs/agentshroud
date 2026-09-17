@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 534"
+community: "models.py"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_534
+  - community/modelspy
 ---
 
 # Model Details
@@ -20,4 +20,4 @@ tags:
 - [[SSHExecRequest  SSHExecResponse]] - `contains` [EXTRACTED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_534
+#graphify/document #graphify/EXTRACTED #community/modelspy

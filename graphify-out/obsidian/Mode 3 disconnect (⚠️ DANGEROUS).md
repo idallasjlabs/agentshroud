@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # Mode 3: disconnect (⚠️ DANGEROUS)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Kill Switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 793"
+community: "PromptProtection"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/PromptProtection
 ---
 
 # Main system prompt protection engine.      Maintains fingerprints of sensitive c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_793
+#graphify/rationale #graphify/EXTRACTED #community/PromptProtection

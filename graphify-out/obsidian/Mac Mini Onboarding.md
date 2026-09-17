@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 643"
+community: "v1.3.0 — Platform Expansion (53 items)"
 location: "L402"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_643
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # Mac Mini Onboarding
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_643
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

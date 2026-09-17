@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config()"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_135]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
-- [[dot-from_dict()_4]] - `method` [EXTRACTED]
+- [[.__init__()_135]] - `references` [EXTRACTED]
+- [[.__post_init__()_4]] - `method` [EXTRACTED]
+- [[.from_dict()_4]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

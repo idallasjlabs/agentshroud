@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "_process_inbound()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/_process_inbound
 ---
 
 # MiddlewareManager.process_request()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/_process_inbound

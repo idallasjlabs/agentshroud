@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 366"
+community: "MCPToolResult"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_366
+  - community/MCPToolResult
 ---
 
 # MCPToolResult
 
 ## Connections
-- [[dot-__post_init__()_5]] - `method` [EXTRACTED]
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
-- [[dot-test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_admin_private_data_redacted_for_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_clean_result_passes()]] - `calls` [EXTRACTED]
-- [[dot-test_error_result_logged()]] - `calls` [EXTRACTED]
-- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_memory_markers_redacted_for_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
-- [[dot-test_pii_redacted_in_result()]] - `calls` [EXTRACTED]
-- [[dot-test_private_redaction_emits_privacy_event()]] - `calls` [EXTRACTED]
-- [[dot-test_process_tool_result_handles_none_content()]] - `calls` [EXTRACTED]
-- [[dot-test_process_tool_result_redacts_private_data()]] - `calls` [EXTRACTED]
-- [[dot-test_result_audit_logged()]] - `calls` [EXTRACTED]
-- [[dot-test_result_processing_time()]] - `calls` [EXTRACTED]
-- [[dot-test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
+- [[.__post_init__()_5]] - `method` [EXTRACTED]
+- [[._execute_tool_call()]] - `references` [EXTRACTED]
+- [[.process_tool_result()_1]] - `references` [EXTRACTED]
+- [[.test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]
+- [[.test_admin_private_data_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_clean_result_passes()]] - `calls` [EXTRACTED]
+- [[.test_error_result_logged()]] - `calls` [EXTRACTED]
+- [[.test_gateway_contributor_paths_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_memory_markers_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
+- [[.test_pii_redacted_in_result()]] - `calls` [EXTRACTED]
+- [[.test_private_redaction_emits_privacy_event()]] - `calls` [EXTRACTED]
+- [[.test_process_tool_result_handles_none_content()]] - `calls` [EXTRACTED]
+- [[.test_process_tool_result_redacts_private_data()]] - `calls` [EXTRACTED]
+- [[.test_result_audit_logged()]] - `calls` [EXTRACTED]
+- [[.test_result_processing_time()]] - `calls` [EXTRACTED]
+- [[.test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -92,4 +92,4 @@ tags:
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_366
+#graphify/code #graphify/INFERRED #community/MCPToolResult

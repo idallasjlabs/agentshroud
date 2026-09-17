@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "brand-guidelines.md"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/brand-guidelinesmd
 ---
 
 # Minimum Size
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Logo Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/brand-guidelinesmd

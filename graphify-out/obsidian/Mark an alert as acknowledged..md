@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Mark an alert as acknowledged.
 
 ## Connections
-- [[dot-acknowledge_alert()]] - `rationale_for` [EXTRACTED]
+- [[.acknowledge_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

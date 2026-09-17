@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 250"
+community: "🛡️ AgentShroud Release Plan"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Milestones
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

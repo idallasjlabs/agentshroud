@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # MCP file writes should go through sandbox.
 
 ## Connections
-- [[dot-test_file_sandbox_mcp_write()]] - `rationale_for` [EXTRACTED]
+- [[.test_file_sandbox_mcp_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 399"
+community: "Mac App Discovery Skill"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_399
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Mac App Discovery Skill
@@ -17,6 +17,6 @@ tags:
 - [[Future Extensions (for collaborative sharing)_2]] - `contains` [EXTRACTED]
 - [[Performance Notes_2]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-macSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_399
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

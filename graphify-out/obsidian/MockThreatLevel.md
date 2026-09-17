@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 96"
+community: "WebProxy"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_96
+  - community/WebProxy
 ---
 
 # MockThreatLevel
@@ -19,4 +19,4 @@ tags:
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_96
+#graphify/code #graphify/INFERRED #community/WebProxy

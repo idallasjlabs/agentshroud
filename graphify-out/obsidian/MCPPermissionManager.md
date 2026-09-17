@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 129"
+community: "MCPPermissionManager"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_129
+  - community/MCPPermissionManager
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[dot-__init__()_47]] - `method` [EXTRACTED]
-- [[dot-_load_privacy_policy()]] - `method` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `method` [EXTRACTED]
-- [[dot-_record_private_access_attempt()]] - `method` [EXTRACTED]
-- [[dot-check_agent_server_access()]] - `method` [EXTRACTED]
-- [[dot-check_all()]] - `method` [EXTRACTED]
-- [[dot-check_rate_limit()]] - `method` [EXTRACTED]
-- [[dot-check_tool_parameters()]] - `method` [EXTRACTED]
-- [[dot-check_tool_permission()_1]] - `method` [EXTRACTED]
-- [[dot-get_privacy_policy_status()]] - `method` [EXTRACTED]
-- [[dot-get_private_access_events()]] - `method` [EXTRACTED]
-- [[dot-get_private_access_summary()]] - `method` [EXTRACTED]
-- [[dot-get_private_data_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_private_redaction_events()]] - `method` [EXTRACTED]
-- [[dot-get_private_redaction_summary()]] - `method` [EXTRACTED]
-- [[dot-get_trust_level()]] - `method` [EXTRACTED]
-- [[dot-infer_permission_level()]] - `method` [EXTRACTED]
-- [[dot-record_private_data_redaction()]] - `method` [EXTRACTED]
-- [[dot-set_trust_level()]] - `method` [EXTRACTED]
-- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_privacy_policy_overrides_patterns()]] - `calls` [EXTRACTED]
-- [[dot-test_privacy_policy_status_when_missing_file()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.__init__()_47]] - `method` [EXTRACTED]
+- [[._load_privacy_policy()]] - `method` [EXTRACTED]
+- [[._recompile_private_data_patterns()]] - `method` [EXTRACTED]
+- [[._record_private_access_attempt()]] - `method` [EXTRACTED]
+- [[.check_agent_server_access()]] - `method` [EXTRACTED]
+- [[.check_all()]] - `method` [EXTRACTED]
+- [[.check_rate_limit()]] - `method` [EXTRACTED]
+- [[.check_tool_parameters()]] - `method` [EXTRACTED]
+- [[.check_tool_permission()_1]] - `method` [EXTRACTED]
+- [[.get_privacy_policy_status()]] - `method` [EXTRACTED]
+- [[.get_private_access_events()]] - `method` [EXTRACTED]
+- [[.get_private_access_summary()]] - `method` [EXTRACTED]
+- [[.get_private_data_patterns()]] - `method` [EXTRACTED]
+- [[.get_private_redaction_events()]] - `method` [EXTRACTED]
+- [[.get_private_redaction_summary()]] - `method` [EXTRACTED]
+- [[.get_trust_level()]] - `method` [EXTRACTED]
+- [[.infer_permission_level()]] - `method` [EXTRACTED]
+- [[.record_private_data_redaction()]] - `method` [EXTRACTED]
+- [[.set_trust_level()]] - `method` [EXTRACTED]
+- [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_privacy_policy_overrides_patterns()]] - `calls` [EXTRACTED]
+- [[.test_privacy_policy_status_when_missing_file()]] - `calls` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
@@ -49,8 +49,8 @@ tags:
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
@@ -114,4 +114,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_129
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

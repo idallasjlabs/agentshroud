@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Community 864"
+community: "LOW Findings"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_864
+  - community/LOW_Findings
 ---
 
 # MEDIUM Findings
@@ -17,4 +17,4 @@ tags:
 - [[R3-M3 Stale Version String in Root Dashboard HTML]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_864
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings
