@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Community 981"
+community: "SSH Proxy Errors"
 location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_981
+  - community/SSH_Proxy_Errors
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_981
+#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors

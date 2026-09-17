@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Community 1199"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1199
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1199
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

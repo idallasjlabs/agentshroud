@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 119"
+community: "RateLimiter"
 location: "L3760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/RateLimiter
 ---
 
 # Repeated rate-limited messages should each receive a deterministic notice.
 
 ## Connections
-- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_119
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Community 1049"
+community: "Dependency Graph"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1049
+  - community/Dependency_Graph
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1049
+#graphify/document #graphify/EXTRACTED #community/Dependency_Graph

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 793"
+community: "PromptProtection"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/PromptProtection
 ---
 
 # Replace a regex match with a redaction placeholder.
 
 ## Connections
-- [[dot-_redact_match()]] - `rationale_for` [EXTRACTED]
+- [[._redact_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_793
+#graphify/rationale #graphify/EXTRACTED #community/PromptProtection

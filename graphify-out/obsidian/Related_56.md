@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 803"
+community: "web_config.py"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/web_configpy
 ---
 
 # Related
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/web_configpy

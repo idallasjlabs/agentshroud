@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "Community 1287"
+community: "Security Review (SEC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1287
+  - community/Security_Review_SEC
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1287
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

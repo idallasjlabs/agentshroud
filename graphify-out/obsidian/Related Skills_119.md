@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Community 985"
+community: "Technical Illustrator (i-ti)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_985
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_985
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

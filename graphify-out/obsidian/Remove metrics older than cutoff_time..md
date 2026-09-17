@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Community 54"
+community: "KillSwitchMonitor"
 location: "L484"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/KillSwitchMonitor
 ---
 
 # Remove metrics older than cutoff_time.
 
 ## Connections
-- [[dot-_clean_old_metrics()]] - `rationale_for` [EXTRACTED]
+- [[._clean_old_metrics()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

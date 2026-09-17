@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 685"
+community: "router.py"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_685
+  - community/routerpy
 ---
 
 # Related
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_685
+#graphify/document #graphify/EXTRACTED #community/routerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Community 1278"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1278
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

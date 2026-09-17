@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Community 1120"
+community: "installer.py"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1120
+  - community/installerpy
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1120
+#graphify/document #graphify/EXTRACTED #community/installerpy

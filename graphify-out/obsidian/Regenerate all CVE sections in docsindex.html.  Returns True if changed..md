@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Community 458"
+community: "gateway.security.agent_cve_registry"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_458
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # Regenerate all CVE sections in docs/index.html.  Returns True if changed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_458
+#graphify/rationale #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

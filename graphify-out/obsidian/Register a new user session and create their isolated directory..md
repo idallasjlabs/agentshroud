@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestPathIsolationManager"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestPathIsolationManager
 ---
 
 # Register a new user session and create their isolated directory.
 
 ## Connections
-- [[dot-register_user_session()]] - `rationale_for` [EXTRACTED]
+- [[.register_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

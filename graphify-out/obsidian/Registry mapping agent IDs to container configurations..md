@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # Registry mapping agent IDs to container configurations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

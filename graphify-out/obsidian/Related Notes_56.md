@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Community 86"
+community: "AGENTSHROUD_CONFIG"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/AGENTSHROUD_CONFIG
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_86
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG

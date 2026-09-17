@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 205"
+community: "rbac_config.py"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/rbac_configpy
 ---
 
 # Remove a user from a group (auto-groups are updated in-memory only).
 
 ## Connections
-- [[dot-remove_member()]] - `rationale_for` [EXTRACTED]
+- [[.remove_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_205
+#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy

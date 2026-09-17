@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.png"
 type: "image"
-community: "Community 835"
+community: "02-infrastructure.md"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/02-infrastructuremd
 ---
 
 # Rendered Network Topology Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Network Topology Diagram]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_835
+#graphify/image #graphify/EXTRACTED #community/02-infrastructuremd

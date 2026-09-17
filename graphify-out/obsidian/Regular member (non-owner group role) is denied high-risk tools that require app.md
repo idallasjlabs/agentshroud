@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 812"
+community: "GroupRoleResolver"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_812
+  - community/GroupRoleResolver
 ---
 
 # Regular member (non-owner group role) is denied high-risk tools that require app
 
 ## Connections
-- [[dot-test_member_denied_high_risk_tools_in_group()]] - `rationale_for` [EXTRACTED]
+- [[.test_member_denied_high_risk_tools_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_812
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Community 224"
+community: "OpenClaw"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_224
+  - community/OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_224
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

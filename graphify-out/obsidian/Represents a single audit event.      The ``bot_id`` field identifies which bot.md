@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 387"
+community: "AuditStore"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/AuditStore
 ---
 
 # Represents a single audit event.      The ``bot_id`` field identifies which bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_387
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

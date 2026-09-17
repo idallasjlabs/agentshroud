@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 89"
-location: "L2422"
+community: "test_voice_gateway.py"
+location: "L2432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/test_voice_gatewaypy
 ---
 
 # Remote-diag {"log":...} frames arriving DURING the TTS send phase must be     lo
 
 ## Connections
-- [[test_ws_device_log_during_speaking_still_recorded()]] - `rationale_for` [EXTRACTED]
+- [[test_ws_device_log_during_speaking_still_recorded()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
