@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # _build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

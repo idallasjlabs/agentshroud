@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # _is_imessage_recipient_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

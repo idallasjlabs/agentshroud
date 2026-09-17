@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L1791"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # _failing_transcribe()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_Test_Fixtures
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

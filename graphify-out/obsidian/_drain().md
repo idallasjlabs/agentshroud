@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 47"
+community: "patch"
 location: "L754"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/patch
 ---
 
 # _drain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_owner_user_id_propagated_as_header()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/patch

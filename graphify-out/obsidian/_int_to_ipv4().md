@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 288"
+community: "A2AMethod"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/A2AMethod
 ---
 
 # _int_to_ipv4()
@@ -16,4 +16,4 @@ tags:
 - [[_canonicalize_ip_literal()]] - `calls` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_288
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

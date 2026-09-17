@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # _new_uuid()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[socmodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

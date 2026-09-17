@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 1156"
+community: "test_listen_offset_resumes_partial_upload()"
 location: "L2224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1156
+  - community/test_listen_offset_resumes_partial_upload
 ---
 
 # _capture_transcribe()
@@ -15,4 +15,4 @@ tags:
 - [[test_listen_offset_resumes_partial_upload()]] - `indirect_call` [INFERRED]
 - [[test_pcm_buffer_bounded()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1156
+#graphify/code #graphify/INFERRED #community/test_listen_offset_resumes_partial_upload

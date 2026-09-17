@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Community 79"
+community: "test_anthropic_openai_translator.py"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # _collect_sse()
@@ -21,4 +21,4 @@ tags:
 - [[test_sse_translator_tool_call_only_starts_at_index_0()]] - `calls` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # _install_uvicorn_warning_filter()
@@ -17,4 +17,4 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

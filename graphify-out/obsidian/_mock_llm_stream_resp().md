@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 47"
+community: "patch"
 location: "L557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/patch
 ---
 
 # _mock_llm_stream_resp()
@@ -22,4 +22,4 @@ tags:
 - [[mock_stream()_14]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/patch

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # _build_ws_url
@@ -15,4 +15,4 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[voice_task]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 149"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_149
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # _fenced_code_blocks()
@@ -16,4 +16,4 @@ tags:
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 - [[test_wrapper_agent_facing_invocation_has_no_plain_http_url()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_149
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

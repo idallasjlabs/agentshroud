@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L1790"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # _module_stats_snapshot()
@@ -18,4 +18,4 @@ tags:
 - [[get_modules_heatmap()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

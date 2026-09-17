@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # _check_injection_patterns()
 
 ## Connections
-- [[dot-score_output()]] - `calls` [EXTRACTED]
+- [[.score_output()]] - `calls` [EXTRACTED]
 - [[Check text for prompt injection patterns.]] - `rationale_for` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
+- [[test_subagent_governance.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

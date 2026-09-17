@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 242"
+community: "jira_weekly_review.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/jira_weekly_reviewpy
 ---
 
 # _git_commits_last_week()
@@ -16,4 +16,4 @@ tags:
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_242
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

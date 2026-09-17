@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 1155"
+community: "test_voice_gateway.py"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1155
+  - community/test_voice_gatewaypy
 ---
 
 # _boom()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_kokoro_pipeline_load_failure_raises()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1155
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

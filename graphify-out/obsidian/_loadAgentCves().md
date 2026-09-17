@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 67"
+community: "soc.js"
 location: "L1895"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/socjs
 ---
 
 # _loadAgentCves()
@@ -18,4 +18,4 @@ tags:
 - [[_renderTrivyCveTable()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/socjs

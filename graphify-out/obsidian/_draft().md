@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 110"
+community: "FetchOutcome"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/FetchOutcome
 ---
 
 # _draft()
 
 ## Connections
-- [[dot-test_all_unverified_yields_empty_report()]] - `calls` [EXTRACTED]
-- [[dot-test_keeps_verified_drops_unverified()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_required_field_returns_422()]] - `calls` [EXTRACTED]
-- [[dot-test_persisted_report_is_retrievable_and_chain_valid()]] - `calls` [EXTRACTED]
-- [[dot-test_requires_auth()]] - `calls` [EXTRACTED]
-- [[dot-test_too_many_candidate_urls_rejected()]] - `calls` [EXTRACTED]
-- [[dot-test_too_many_entries_rejected()]] - `calls` [EXTRACTED]
+- [[.test_all_unverified_yields_empty_report()]] - `calls` [EXTRACTED]
+- [[.test_keeps_verified_drops_unverified()]] - `calls` [EXTRACTED]
+- [[.test_missing_required_field_returns_422()]] - `calls` [EXTRACTED]
+- [[.test_persisted_report_is_retrievable_and_chain_valid()]] - `calls` [EXTRACTED]
+- [[.test_requires_auth()]] - `calls` [EXTRACTED]
+- [[.test_too_many_candidate_urls_rejected()]] - `calls` [EXTRACTED]
+- [[.test_too_many_entries_rejected()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

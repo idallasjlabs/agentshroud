@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Community 228"
+community: "agentshroud-ssh-exec.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/agentshroud-ssh-execsh
 ---
 
 # _json_escape (ssh-exec)
@@ -14,4 +14,4 @@ tags:
 - [[_json_escape (ssh-write-file)]] - `conceptually_related_to` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_228
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

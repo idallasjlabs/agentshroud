@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 122"
+community: "server.py"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/serverpy
 ---
 
 # _effective_voice_model()
@@ -17,4 +17,4 @@ tags:
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/serverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 190"
+community: "RateLimitGuard"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/RateLimitGuard
 ---
 
 # _make_pipeline()
@@ -19,4 +19,4 @@ tags:
 - [[test_pipeline_disabled_guard_passthrough()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
