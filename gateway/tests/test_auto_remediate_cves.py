@@ -128,9 +128,7 @@ class TestPlanRemediation:
             _entry("GHSA-a", "2026.8.1"),
             _entry("GHSA-c", "2026.9.3"),
         ]
-        plan = plan_remediation(
-            registry, current_version="2026.7.1-2", max_target="2026.8.1"
-        )
+        plan = plan_remediation(registry, current_version="2026.7.1-2", max_target="2026.8.1")
         assert plan.target_version == "2026.8.1"
         assert {e["ghsa_id"] for e in plan.cleared} == {"GHSA-a"}
         # The one beyond the cap is honestly reported as still outstanding.
@@ -166,9 +164,7 @@ class TestVersionPinIO:
 
     def test_write_pin_replaces_only_the_target_line(self, tmp_path):
         env = tmp_path / "versions.env"
-        env.write_text(
-            "# header\nOPENCLAW_VERSION=2026.7.1-2\nHERMES_VERSION=0.20.1\n"
-        )
+        env.write_text("# header\nOPENCLAW_VERSION=2026.7.1-2\nHERMES_VERSION=0.20.1\n")
         write_pin(env, "OPENCLAW_VERSION", "2026.9.3")
         text = env.read_text()
         assert "OPENCLAW_VERSION=2026.9.3\n" in text
@@ -214,13 +210,11 @@ class TestPlanAgainstRealRegistry:
         from gateway.security.agent_cve_registry import _OPENCLAW_CVE_REGISTRY
 
         plan = plan_remediation(
-            _OPENCLAW_CVE_REGISTRY, current_version=read_pin(
-                _REPO_ROOT / "docker" / "versions.env", "OPENCLAW_VERSION"
-            ) or "2026.7.1-2",
+            _OPENCLAW_CVE_REGISTRY,
+            current_version=read_pin(_REPO_ROOT / "docker" / "versions.env", "OPENCLAW_VERSION")
+            or "2026.7.1-2",
         )
-        under_review = [
-            c for c in _OPENCLAW_CVE_REGISTRY if c.get("status") == "under_review"
-        ]
+        under_review = [c for c in _OPENCLAW_CVE_REGISTRY if c.get("status") == "under_review"]
         # Every under_review advisory lands in exactly one bucket.
         total = len(plan.cleared) + len(plan.remaining) + len(plan.already_fixed)
         assert total == len(under_review)
