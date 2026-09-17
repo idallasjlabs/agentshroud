@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 193"
+community: "AgentShroud™ — Project Knowledge Base"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_193
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # How to Contribute
@@ -17,4 +17,4 @@ tags:
 - [[Documentation & Ideas]] - `contains` [EXTRACTED]
 - [[Red Team Testing (Most Valuable!)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_193
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

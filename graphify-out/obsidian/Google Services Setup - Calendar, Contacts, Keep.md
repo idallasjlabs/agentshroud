@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 466"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_466
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # Google Services Setup - Calendar, Contacts, Keep
@@ -24,4 +24,4 @@ tags:
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 - [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_466
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

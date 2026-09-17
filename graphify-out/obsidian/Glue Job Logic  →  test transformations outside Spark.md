@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 726"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Glue Job Logic  →  test transformations outside Spark
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Community 688"
+community: "._process_connect()"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_688
+  - community/_process_connect
 ---
 
 # Handle a single incoming client connection.
 
 ## Connections
-- [[dot-_handle_client()]] - `rationale_for` [EXTRACTED]
+- [[._handle_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_688
+#graphify/rationale #graphify/EXTRACTED #community/_process_connect

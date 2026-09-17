@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "Community 212"
+community: "HeuristicClassifier"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/HeuristicClassifier
 ---
 
 # Heuristic-based classification using multi-signal analysis.
 
 ## Connections
-- [[dot-_classify_heuristic()]] - `rationale_for` [EXTRACTED]
+- [[._classify_heuristic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_212
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

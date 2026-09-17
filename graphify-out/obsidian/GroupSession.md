@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1031"
+community: ".get_or_create_group_session()"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1031
+  - community/get_or_create_group_session
 ---
 
 # GroupSession
 
 ## Connections
-- [[dot-get_or_create_group_session()]] - `references` [EXTRACTED]
+- [[.get_or_create_group_session()]] - `references` [EXTRACTED]
 - [[Represents a shared workspace + memory for a group.]] - `rationale_for` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1031
+#graphify/code #graphify/EXTRACTED #community/get_or_create_group_session

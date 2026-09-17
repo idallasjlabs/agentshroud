@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 1052"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # GitHub Actions Best Practices
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1052
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

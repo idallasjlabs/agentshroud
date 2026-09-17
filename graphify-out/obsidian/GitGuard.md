@@ -1,45 +1,45 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 48"
+community: "GitGuard"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_48
+  - community/GitGuard
 ---
 
 # GitGuard
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_151]] - `method` [EXTRACTED]
-- [[dot-_analyze_file_content()]] - `method` [EXTRACTED]
-- [[dot-_analyze_script_content()]] - `method` [EXTRACTED]
-- [[dot-_analyze_script_file()]] - `method` [EXTRACTED]
-- [[dot-_quarantine_suspicious_files()]] - `method` [EXTRACTED]
-- [[dot-_scan_git_hooks()]] - `method` [EXTRACTED]
-- [[dot-_scan_package_json()]] - `method` [EXTRACTED]
-- [[dot-_scan_pyproject_toml()]] - `method` [EXTRACTED]
-- [[dot-_scan_setup_py()]] - `method` [EXTRACTED]
-- [[dot-export_findings_report()]] - `method` [EXTRACTED]
-- [[dot-get_findings_summary()]] - `method` [EXTRACTED]
-- [[dot-monitor_git_operations()]] - `method` [EXTRACTED]
-- [[dot-scan_content()]] - `method` [EXTRACTED]
-- [[dot-scan_git_repository()]] - `method` [EXTRACTED]
-- [[dot-test_clean_hook_passes()]] - `calls` [EXTRACTED]
-- [[dot-test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
-- [[dot-test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
-- [[dot-test_finding_has_file_path()]] - `calls` [EXTRACTED]
-- [[dot-test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
-- [[dot-test_git_guard_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_git_guard_no_path_leak()]] - `calls` [INFERRED]
-- [[dot-test_git_guard_scan_repo()]] - `calls` [EXTRACTED]
-- [[dot-test_nc_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_no_git_dir_returns_empty()]] - `calls` [EXTRACTED]
-- [[dot-test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_wget_flagged()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_151]] - `method` [EXTRACTED]
+- [[._analyze_file_content()]] - `method` [EXTRACTED]
+- [[._analyze_script_content()]] - `method` [EXTRACTED]
+- [[._analyze_script_file()]] - `method` [EXTRACTED]
+- [[._quarantine_suspicious_files()]] - `method` [EXTRACTED]
+- [[._scan_git_hooks()]] - `method` [EXTRACTED]
+- [[._scan_package_json()]] - `method` [EXTRACTED]
+- [[._scan_pyproject_toml()]] - `method` [EXTRACTED]
+- [[._scan_setup_py()]] - `method` [EXTRACTED]
+- [[.export_findings_report()]] - `method` [EXTRACTED]
+- [[.get_findings_summary()]] - `method` [EXTRACTED]
+- [[.monitor_git_operations()]] - `method` [EXTRACTED]
+- [[.scan_content()]] - `method` [EXTRACTED]
+- [[.scan_git_repository()]] - `method` [EXTRACTED]
+- [[.test_clean_hook_passes()]] - `calls` [EXTRACTED]
+- [[.test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
+- [[.test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
+- [[.test_finding_has_file_path()]] - `calls` [EXTRACTED]
+- [[.test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
+- [[.test_git_guard_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_git_guard_no_path_leak()]] - `calls` [INFERRED]
+- [[.test_git_guard_scan_repo()]] - `calls` [EXTRACTED]
+- [[.test_nc_flagged()]] - `calls` [EXTRACTED]
+- [[.test_no_git_dir_returns_empty()]] - `calls` [EXTRACTED]
+- [[.test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
+- [[.test_wget_flagged()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
@@ -98,4 +98,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_48
+#graphify/code #graphify/INFERRED #community/GitGuard

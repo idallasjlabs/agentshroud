@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 927"
+community: "Socrates — Dialogue Architect"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_927
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Hermes — Reference Verifier (podcast agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Socrates — Dialogue Architect_5]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_927
+#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

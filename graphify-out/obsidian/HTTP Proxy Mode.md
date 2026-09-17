@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 526"
+community: "Integration Guide"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_526
+  - community/Integration_Guide
 ---
 
 # HTTP Proxy Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Generic AI Agent Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_526
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "Community 75"
+community: "test_a2a_policy.py"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/test_a2a_policypy
 ---
 
 # Hostname resolution is mocked — this test asserts the validator's own     logic,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_callback_url_legitimate_public_urls_are_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

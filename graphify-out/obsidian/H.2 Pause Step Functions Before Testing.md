@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 447"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_447
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # H.2 Pause Step Functions Before Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_447
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

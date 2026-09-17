@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # Get settings for a specific domain, falling back to defaults.
 
 ## Connections
-- [[dot-get_domain_settings()]] - `rationale_for` [EXTRACTED]
+- [[.get_domain_settings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

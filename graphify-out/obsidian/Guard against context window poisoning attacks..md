@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # Guard against context window poisoning attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

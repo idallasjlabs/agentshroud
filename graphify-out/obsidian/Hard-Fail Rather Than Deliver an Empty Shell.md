@@ -1,16 +1,16 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "rationale"
-community: "Community 316"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Hard-Fail Rather Than Deliver an Empty Shell
 
 ## Connections
-- [[Failure Class 1 — Search Backend Unreachable]] - `rationale_for` [EXTRACTED]
+- [[Failure Class Search Backend Unreachable]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_316
+#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 1472"
+community: "i-hermes README (Podcast Production Orchestrator"
 tags:
   - graphify/document
-  - graphify/AMBIGUOUS
-  - community/Community_1472
+  - graphify/EXTRACTED
+  - community/i-hermes_README_Podcast_Production_Orchestrator
 ---
 
 # Hermes — Reference Verifier Skill
@@ -14,4 +14,4 @@ tags:
 - [[Podcast Production Pipeline (multi-agent)_1]] - `conceptually_related_to` [EXTRACTED]
 - [[i-hermes README (Podcast Production Orchestrator)]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_1472
+#graphify/document #graphify/EXTRACTED #community/i-hermes_README_Podcast_Production_Orchestrator

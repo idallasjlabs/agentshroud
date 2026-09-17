@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Community 430"
+community: "Pre-Purge Secret Rotation Checklist"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # GitHub 90-Day Unreferenced-Commit Cache Warning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Git History Expungement via filter-repo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_430
+#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 197"
+community: "AgentShroud Audit Specification"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Hash Chain Structure
@@ -18,4 +18,4 @@ tags:
 - [[Genesis Block Specification]] - `contains` [EXTRACTED]
 - [[Hash Calculation Algorithm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_197
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

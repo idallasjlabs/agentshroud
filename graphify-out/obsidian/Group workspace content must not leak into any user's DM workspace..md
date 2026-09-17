@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 909"
+community: "TestGroupMemoryInvisibleFromDM"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_909
+  - community/TestGroupMemoryInvisibleFromDM
 ---
 
 # Group workspace content must not leak into any user's DM workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryInvisibleFromDM]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_909
+#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryInvisibleFromDM

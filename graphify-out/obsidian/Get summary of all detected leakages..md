@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Get summary of all detected leakages.
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `rationale_for` [EXTRACTED]
+- [[.get_leakage_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

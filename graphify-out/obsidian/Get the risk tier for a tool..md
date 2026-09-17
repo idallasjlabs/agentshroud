@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # Get the risk tier for a tool.
 
 ## Connections
-- [[dot-get_tool_risk_tier()]] - `rationale_for` [EXTRACTED]
+- [[.get_tool_risk_tier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

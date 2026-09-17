@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Community 430"
+community: "Pre-Purge Secret Rotation Checklist"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # Git History Expungement via filter-repo
@@ -15,4 +15,4 @@ tags:
 - [[Post-Purge Gitleaks Verification]] - `conceptually_related_to` [INFERRED]
 - [[Real Credentials Present in Git History]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_430
+#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist

@@ -1,17 +1,17 @@
 ---
 source_file: ".gitguardian.yaml"
 type: "concept"
-community: "Community 1520"
+community: "GitGuardian ignored-paths + ignored-matches for "
 location: "line 13"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1520
+  - community/GitGuardian_ignored-paths__ignored-matches_for_
 ---
 
 # GitGuardian ignored-paths + ignored-matches for synthetic test fixtures
 
 ## Connections
-- [[dot-gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - `implements` [EXTRACTED]
+- [[.gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1520
+#graphify/concept #graphify/EXTRACTED #community/GitGuardian_ignored-paths__ignored-matches_for_

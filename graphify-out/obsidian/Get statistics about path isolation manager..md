@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Get statistics about path isolation manager.
 
 ## Connections
-- [[dot-get_stats()_3]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

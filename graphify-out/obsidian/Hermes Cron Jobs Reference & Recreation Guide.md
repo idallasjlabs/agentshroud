@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 164"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
@@ -18,7 +18,6 @@ tags:
 - [[Hermes Live Cron Store (optdatacronjobs.json)]] - `references` [EXTRACTED]
 - [[PrepSend Job Split (agent prep job + no-agent email job)]] - `rationale_for` [INFERRED]
 - [[Prompt AgentShroud Daily Check-in]] - `references` [EXTRACTED]
-- [[Prompt AgentShroud Weekly Summary]] - `references` [EXTRACTED]
 - [[Prompt Daily Component Health Digest]] - `references` [EXTRACTED]
 - [[Prompt Daily Memory Journal]] - `references` [EXTRACTED]
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `references` [EXTRACTED]
@@ -41,4 +40,4 @@ tags:
 - [[Weekly job-log cleanup (cleanup-job-logs.sh)]] - `references` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Community 383"
+community: ".get_or_create_session()"
 location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/get_or_create_session
 ---
 
 # Get session-specific prompt addition for the agent.
 
 ## Connections
-- [[dot-get_session_prompt_addition()]] - `rationale_for` [EXTRACTED]
+- [[.get_session_prompt_addition()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_383
+#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 43"
+community: "HeuristicClassifier"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/HeuristicClassifier
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[dot-__init__()_144]] - `method` [EXTRACTED]
-- [[dot-_classify_heuristic()]] - `method` [EXTRACTED]
-- [[dot-_classify_ml()]] - `method` [EXTRACTED]
-- [[dot-_compute_unicode_anomaly()]] - `method` [EXTRACTED]
-- [[dot-_score_signal()]] - `method` [EXTRACTED]
-- [[dot-_try_load_model()]] - `method` [EXTRACTED]
-- [[dot-classify()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_23]] - `calls` [EXTRACTED]
+- [[.__init__()_144]] - `method` [EXTRACTED]
+- [[._classify_heuristic()]] - `method` [EXTRACTED]
+- [[._classify_ml()]] - `method` [EXTRACTED]
+- [[._compute_unicode_anomaly()]] - `method` [EXTRACTED]
+- [[._score_signal()]] - `method` [EXTRACTED]
+- [[._try_load_model()]] - `method` [EXTRACTED]
+- [[.classify()]] - `method` [EXTRACTED]
+- [[.setup_method()_23]] - `calls` [EXTRACTED]
 - [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

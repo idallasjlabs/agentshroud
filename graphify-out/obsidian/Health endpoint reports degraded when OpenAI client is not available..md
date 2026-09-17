@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "Community 76"
+community: "chatbot/main.py"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/chatbot/mainpy
 ---
 
 # Health endpoint reports degraded when OpenAI client is not available.
 
 ## Connections
-- [[dot-test_health_degraded_without_client()]] - `rationale_for` [EXTRACTED]
+- [[.test_health_degraded_without_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_76
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

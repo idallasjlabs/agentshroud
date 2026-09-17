@@ -1,17 +1,19 @@
 ---
-source_file: "docs/TEAM.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 472"
-location: "L68"
+community: "Canvas Skill"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_472
+  - community/Canvas_Skill
 ---
 
 # How It Works
 
 ## Connections
-- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
+- [[Architecture_6]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_472
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

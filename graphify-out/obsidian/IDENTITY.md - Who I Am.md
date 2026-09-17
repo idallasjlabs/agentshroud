@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Community 228"
+community: "proxy_status.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/proxy_statuspy
 ---
 
 # IDENTITY.md - Who I Am
@@ -18,4 +18,4 @@ tags:
 - [[My Role]] - `contains` [EXTRACTED]
 - [[workspaceIDENTITY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_228
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

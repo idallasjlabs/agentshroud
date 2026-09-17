@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # HealthStatus
 
 ## Connections
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_70]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

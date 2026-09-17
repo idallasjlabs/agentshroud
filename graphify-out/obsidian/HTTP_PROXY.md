@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Community 86"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_86
+  - graphify/INFERRED
+  - community/EgressFilterConfig
 ---
 
 # HTTP_PROXY.md
@@ -17,4 +17,4 @@ tags:
 - [[egress_filter.py_1]] - `references` [INFERRED]
 - [[http_proxy.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_86
+#graphify/document #graphify/INFERRED #community/EgressFilterConfig
