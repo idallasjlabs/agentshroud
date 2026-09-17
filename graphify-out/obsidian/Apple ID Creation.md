@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 1316"
+community: "Apple Services Setup Guide"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1316
+  - community/Apple_Services_Setup_Guide
 ---
 
 # Apple ID Creation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1316
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

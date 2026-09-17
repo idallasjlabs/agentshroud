@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 95"
-location: "L49"
+community: "URLAnalyzer"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_95
+  - graphify/INFERRED
+  - community/URLAnalyzer
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_197]] - `references` [EXTRACTED]
-- [[dot-_default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[._audit()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_19]] - `references` [EXTRACTED]
+- [[.to_dict()_17]] - `references` [EXTRACTED]
+- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/INFERRED #community/URLAnalyzer

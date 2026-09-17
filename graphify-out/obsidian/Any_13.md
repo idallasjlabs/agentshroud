@@ -1,19 +1,30 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 1082"
-location: "L124"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/PipelineAction
 ---
 
 # Any
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
-- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
-- [[dot-get_security_report()]] - `references` [EXTRACTED]
+- [[._process_inbound_core()]] - `references` [EXTRACTED]
+- [[._process_outbound_core()]] - `references` [EXTRACTED]
+- [[.append()_1]] - `references` [EXTRACTED]
+- [[.append_block()]] - `references` [EXTRACTED]
+- [[.append_owner_bypass()]] - `references` [EXTRACTED]
+- [[.get_stats()_9]] - `references` [EXTRACTED]
+- [[.process_inbound()_1]] - `references` [EXTRACTED]
+- [[.process_outbound()_1]] - `references` [EXTRACTED]
+- [[.to_dict()_2]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1082
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

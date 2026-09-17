@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # All API responses should include basic security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGlobalSecurityHeaders]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

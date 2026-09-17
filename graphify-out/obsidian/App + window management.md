@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Community 589"
+community: "Examples"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_589
+  - community/Examples
 ---
 
 # App + window management
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_589
+#graphify/document #graphify/EXTRACTED #community/Examples

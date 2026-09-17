@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Community 267"
+community: "One Shroud Over Every Wire (founding mantra)"
 location: "L27-L98"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Apple Shortcuts Integration (iOS/macOS forwarding)
@@ -17,4 +17,4 @@ tags:
 - [[Information Valve (user-controlled manual forwarding)]] - `implements` [INFERRED]
 - [[One Shroud Over Every Wire (founding mantra)]] - `cites` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_267
+#graphify/concept #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

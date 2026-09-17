@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Community 637"
-location: "L75"
+community: "tts.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_637
+#graphify/code #graphify/EXTRACTED #community/ttspy

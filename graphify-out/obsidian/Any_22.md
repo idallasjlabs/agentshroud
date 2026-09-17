@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L35"
+community: "BaseModel"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - graphify/INFERRED
+  - community/BaseModel
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_10]] - `references` [EXTRACTED]
-- [[dot-to_dict()_4]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/INFERRED #community/BaseModel

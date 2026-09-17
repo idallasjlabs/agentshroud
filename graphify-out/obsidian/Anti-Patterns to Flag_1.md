@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 261"
+community: "Skill: UX Expert (UX)"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_261
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

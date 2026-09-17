@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Community 383"
-location: "L62"
+community: "WebhookReceiver"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/WebhookReceiver
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_7]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_10]] - `references` [EXTRACTED]
+- [[._extract_message()]] - `references` [EXTRACTED]
+- [[._extract_user_id()_1]] - `references` [EXTRACTED]
+- [[._extract_username()]] - `references` [EXTRACTED]
+- [[._prepare_session_payload()]] - `references` [EXTRACTED]
+- [[._replace_message()]] - `references` [EXTRACTED]
+- [[.get_stats()_7]] - `references` [EXTRACTED]
+- [[.process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_383
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

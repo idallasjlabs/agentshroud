@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 44"
-location: "L73"
+community: "health_report.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/health_reportpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_147]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/health_reportpy

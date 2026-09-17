@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
-location: "L347"
+community: "A2AProxyResult"
+location: "L148"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - graphify/EXTRACTED
+  - community/A2AProxyResult
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_11]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[.__init__()_76]] - `references` [EXTRACTED]
+- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

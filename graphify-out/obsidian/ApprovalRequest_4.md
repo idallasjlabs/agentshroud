@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 423"
+community: ".decide()"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/decide
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[.submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_423
+#graphify/code #graphify/EXTRACTED #community/decide

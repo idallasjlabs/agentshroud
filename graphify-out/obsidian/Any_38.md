@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
-location: "L64"
+community: "PodmanEngine"
+location: "L159"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Prompt_Guard__Context_Integrity
+  - community/PodmanEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_102]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[.inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/INFERRED #community/PodmanEngine

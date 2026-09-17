@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 42"
-location: "L100"
+community: ".decide()"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/decide
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_12]] - `references` [EXTRACTED]
+- [[._append_audit_event()]] - `references` [EXTRACTED]
+- [[.broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/decide

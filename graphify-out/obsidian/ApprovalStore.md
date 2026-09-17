@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_105]] - `method` [EXTRACTED]
-- [[dot-close()_12]] - `method` [EXTRACTED]
-- [[dot-initialize()_3]] - `method` [EXTRACTED]
-- [[dot-load_all()]] - `method` [EXTRACTED]
-- [[dot-load_pending()]] - `method` [EXTRACTED]
-- [[dot-save()]] - `method` [EXTRACTED]
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
-- [[dot-update_status()]] - `method` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
+- [[.__init__()_105]] - `method` [EXTRACTED]
+- [[.close()_12]] - `method` [EXTRACTED]
+- [[.initialize()_3]] - `method` [EXTRACTED]
+- [[.load_all()]] - `method` [EXTRACTED]
+- [[.load_pending()]] - `method` [EXTRACTED]
+- [[.save()]] - `method` [EXTRACTED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
+- [[.test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
+- [[.update_status()]] - `method` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_1]] - `uses` [INFERRED]
@@ -35,7 +35,7 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MFAGuard_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_47]] - `uses` [INFERRED]
+- [[Path_36]] - `uses` [INFERRED]
 - [[SQLite-backed persistence for approval queue items.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -73,4 +73,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

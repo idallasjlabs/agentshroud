@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
-location: "L465"
+community: "TestAggregateResults"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

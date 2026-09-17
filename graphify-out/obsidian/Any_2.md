@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L496"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
-- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()]] - `references` [EXTRACTED]
-- [[dot-_is_tool_call_request()]] - `references` [EXTRACTED]
-- [[dot-process_request()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()]] - `references` [EXTRACTED]
+- [[._analyze_request_for_rbac()]] - `references` [EXTRACTED]
+- [[._check_cross_session_access()]] - `references` [EXTRACTED]
+- [[._check_rbac_permissions()]] - `references` [EXTRACTED]
+- [[._enforce_session_isolation()]] - `references` [EXTRACTED]
+- [[._extract_user_id()]] - `references` [EXTRACTED]
+- [[._is_tool_call_request()]] - `references` [EXTRACTED]
+- [[.process_request()]] - `references` [EXTRACTED]
+- [[.process_tool_result()]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
@@ -61,11 +61,11 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

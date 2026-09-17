@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # AgentTarget defaults chat_path and health_path correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_target_default_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L37"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - graphify/INFERRED
+  - community/lifespanpy
 ---
 
 # ApprovalHardeningConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_13]] - `references` [EXTRACTED]
-- [[dot-config()_3]] - `calls` [EXTRACTED]
-- [[dot-test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()]] - `calls` [EXTRACTED]
-- [[dot-test_deception_detection_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `references` [EXTRACTED]
+- [[.config()_3]] - `calls` [EXTRACTED]
+- [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
+- [[.test_custom_config()]] - `calls` [EXTRACTED]
+- [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
+- [[.test_default_config()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[run()_4]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

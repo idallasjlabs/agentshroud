@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
-location: "L62"
+community: "MCPInspector"
+location: "L140"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - graphify/EXTRACTED
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[._redact_pii()]] - `references` [EXTRACTED]
+- [[._scan_value()]] - `references` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L4279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Alias for hermes v0.16.0+'s OpenAI client.      Hermes upgraded to v0.16.0 on 20
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_openai_chat_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

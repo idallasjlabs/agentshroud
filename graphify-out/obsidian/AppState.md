@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "SSHProxy"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Routing__Event_Bus
+  - community/SSHProxy
 ---
 
 # AppState
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/INFERRED #community/SSHProxy

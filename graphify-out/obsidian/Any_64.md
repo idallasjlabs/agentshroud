@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Community 56"
-location: "L25"
+community: "canvas_proxy_app()"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/canvas_proxy_app
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

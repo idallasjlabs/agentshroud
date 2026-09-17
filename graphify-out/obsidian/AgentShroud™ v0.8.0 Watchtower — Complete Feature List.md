@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Community 372"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/AgentShroud_v080_Watchtower__Complete_Feat
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
@@ -27,4 +27,4 @@ tags:
 - [[Summary_13]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat

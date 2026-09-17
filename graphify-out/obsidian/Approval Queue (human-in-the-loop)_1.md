@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Approval Queue (human-in-the-loop)
@@ -22,4 +22,4 @@ tags:
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_184
+#graphify/concept #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

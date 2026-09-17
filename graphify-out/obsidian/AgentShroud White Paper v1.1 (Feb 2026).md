@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "paper"
-community: "Community 123"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # AgentShroud White Paper v1.1 (Feb 2026)
@@ -16,7 +16,7 @@ tags:
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
 - [[MCP Proxy Layer (tool-call interception)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - `references` [EXTRACTED]
 - [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - `conceptually_related_to` [INFERRED]
 
-#graphify/paper #graphify/EXTRACTED #community/Community_123
+#graphify/paper #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

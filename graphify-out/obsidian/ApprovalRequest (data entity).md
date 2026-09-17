@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 256"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_256
+  - community/AgentShroud_system_C4_context
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_256
+#graphify/concept #graphify/INFERRED #community/AgentShroud_system_C4_context

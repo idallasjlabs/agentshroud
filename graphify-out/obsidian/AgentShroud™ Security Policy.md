@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Security_Policy
 ---
 
 # AgentShroud™ Security Policy
@@ -20,11 +20,11 @@ tags:
 - [[Kill Switch Operations]] - `conceptually_related_to` [INFERRED]
 - [[Monitor Mode Warning]] - `references` [EXTRACTED]
 - [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
-- [[SECURITY_7]] - `contains` [EXTRACTED]
+- [[SECURITY]] - `contains` [EXTRACTED]
 - [[Security Architecture_4]] - `contains` [EXTRACTED]
 - [[Security Scanning]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]
-- [[Trademark_2]] - `references` [INFERRED]
+- [[Trademark_1]] - `references` [INFERRED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

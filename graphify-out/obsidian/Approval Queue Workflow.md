@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 146"
+community: "AgentShroud Security Architecture"
 location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Approval Queue Workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Authentication and Authorization Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

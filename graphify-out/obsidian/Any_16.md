@@ -1,21 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Community 124"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves]] - `references` [EXTRACTED]
-- [[format_cve_report]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents]] - `references` [EXTRACTED]
+- [[.get_stats()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

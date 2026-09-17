@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 71"
+community: "AgentTarget"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/AgentTarget
 ---
 
 # An empty share-sheet payload is rejected before it reaches the pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shortcut_empty_content_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

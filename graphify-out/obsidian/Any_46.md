@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 334"
-location: "L23"
+community: "load_config()"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/load_config
 ---
 
 # Any
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_4]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/load_config

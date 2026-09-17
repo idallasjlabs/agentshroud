@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/telegram-avatar-512x512.png"
 type: "image"
-community: "Community 1816"
+community: "AgentShroud Telegram Avatar"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1816
+  - community/AgentShroud_Telegram_Avatar
 ---
 
 # AgentShroud Telegram Avatar
 
-#graphify/image #graphify/EXTRACTED #community/Community_1816
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Telegram_Avatar

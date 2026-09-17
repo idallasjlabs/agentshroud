@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_163]] - `method` [EXTRACTED]
-- [[dot-_format_alert_message()]] - `method` [EXTRACTED]
-- [[dot-_is_duplicate()]] - `method` [EXTRACTED]
-- [[dot-_is_rate_limited()]] - `method` [EXTRACTED]
-- [[dot-_log_alert()]] - `method` [EXTRACTED]
-- [[dot-_send_notification()]] - `method` [EXTRACTED]
-- [[dot-cleanup_seen()]] - `method` [EXTRACTED]
-- [[dot-dispatch()]] - `method` [EXTRACTED]
-- [[dot-get_digest()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_1]] - `method` [EXTRACTED]
-- [[dot-test_alert_dedup()]] - `calls` [EXTRACTED]
-- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
-- [[dot-test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
-- [[dot-test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_163]] - `method` [EXTRACTED]
+- [[._format_alert_message()]] - `method` [EXTRACTED]
+- [[._is_duplicate()]] - `method` [EXTRACTED]
+- [[._is_rate_limited()]] - `method` [EXTRACTED]
+- [[._log_alert()]] - `method` [EXTRACTED]
+- [[._send_notification()]] - `method` [EXTRACTED]
+- [[.cleanup_seen()]] - `method` [EXTRACTED]
+- [[.dispatch()]] - `method` [EXTRACTED]
+- [[.get_digest()]] - `method` [EXTRACTED]
+- [[.get_stats()_1]] - `method` [EXTRACTED]
+- [[.test_alert_dedup()]] - `calls` [EXTRACTED]
+- [[.test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
+- [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
+- [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
@@ -71,4 +71,4 @@ tags:
 - [[test_alert_dispatcher_retry.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

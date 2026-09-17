@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 147"
-location: "L82"
+community: "make_event()"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/make_event
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[.get_recent()]] - `references` [EXTRACTED]
+- [[.get_stats()_10]] - `references` [EXTRACTED]
+- [[.to_dict()_4]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/make_event

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 84"
-location: "L39"
+community: "PromptProtection"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/PromptProtection
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[.__init__()_188]] - `references` [EXTRACTED]
+- [[.get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

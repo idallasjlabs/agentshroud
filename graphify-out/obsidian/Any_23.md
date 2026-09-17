@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 153"
-location: "L58"
+community: "SCLClient"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_153
+  - graphify/EXTRACTED
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[._request()]] - `references` [EXTRACTED]
+- [[.delete()]] - `references` [EXTRACTED]
+- [[.get()]] - `references` [EXTRACTED]
+- [[.post()]] - `references` [EXTRACTED]
+- [[.put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/EXTRACTED #community/SCLClient

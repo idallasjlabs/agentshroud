@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: ""
 type: "code"
-community: "Community 98"
-location: "L67"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
-location: "L28"
+community: "wazuh_client.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/wazuh_clientpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_122]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

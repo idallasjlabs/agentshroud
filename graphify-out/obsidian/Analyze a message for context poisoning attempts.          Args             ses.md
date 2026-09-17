@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: ".analyze_message()"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/analyze_message
 ---
 
 # Analyze a message for context poisoning attempts.          Args:             ses
 
 ## Connections
-- [[dot-analyze_message()]] - `rationale_for` [EXTRACTED]
+- [[.analyze_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/analyze_message

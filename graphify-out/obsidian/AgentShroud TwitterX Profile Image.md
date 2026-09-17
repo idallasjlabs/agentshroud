@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-profile-400x400.png"
 type: "image"
-community: "Community 1818"
+community: "AgentShroud Twitter/X Profile Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1818
+  - community/AgentShroud_Twitter/X_Profile_Image
 ---
 
 # AgentShroud Twitter/X Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/Community_1818
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Twitter/X_Profile_Image

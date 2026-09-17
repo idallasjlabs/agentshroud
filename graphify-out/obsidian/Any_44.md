@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 292"
-location: "L66"
+community: ".__init__()"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_292
+  - community/__init__
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[.__init__()_130]] - `references` [EXTRACTED]
+- [[.get_global_stats()]] - `references` [EXTRACTED]
+- [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_292
+#graphify/code #graphify/EXTRACTED #community/__init__

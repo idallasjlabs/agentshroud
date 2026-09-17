@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 917"
+community: "Architecture Overview"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_917
+  - community/Architecture_Overview
 ---
 
 # Architecture Overview
@@ -20,4 +20,4 @@ tags:
 - [[Related Notes_61]] - `contains` [EXTRACTED]
 - [[Summary_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_917
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_104]] - `references` [EXTRACTED]
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
-- [[dot-test_restore_pending_items()]] - `calls` [INFERRED]
+- [[.__init__()_104]] - `references` [EXTRACTED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
+- [[.test_restore_pending_items()]] - `calls` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_2]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [INFERRED]
 - [[test_websocket_notifications()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

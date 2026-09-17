@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Memory Integrity & Lifecycle"
+community: "MemoryIntegrityMonitor"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/MemoryIntegrityMonitor
 ---
 
 # Archive a file to the archive directory.
 
 ## Connections
-- [[dot-archive_file()]] - `rationale_for` [EXTRACTED]
+- [[.archive_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

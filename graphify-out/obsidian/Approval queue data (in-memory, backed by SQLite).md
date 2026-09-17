@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
-  - graphify/EXTRACTED
-  - community/Community_184
+  - graphify/INFERRED
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Approval queue data (in-memory, backed by SQLite)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human-in-the-loop)_1]] - `semantically_similar_to` [INFERRED]
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_184
+#graphify/image #graphify/INFERRED #community/Approval_Queue_human-in-the-loop

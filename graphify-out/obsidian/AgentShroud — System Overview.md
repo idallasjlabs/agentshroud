@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 253"
+community: "Quick Reference — AgentShroud"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Quick_Reference__AgentShroud
 ---
 
 # AgentShroud — System Overview
@@ -21,4 +21,4 @@ tags:
 - [[Who Depends On It]] - `contains` [EXTRACTED]
 - [[Why It Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

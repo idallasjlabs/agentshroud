@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
-location: "L121"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[dot-_extract_message()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
-- [[dot-_extract_username()]] - `references` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
-- [[dot-_replace_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_7]] - `references` [EXTRACTED]
-- [[dot-process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

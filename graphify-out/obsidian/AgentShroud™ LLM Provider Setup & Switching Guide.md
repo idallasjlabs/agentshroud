@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "Community 378"
+community: "OpenClaw Bot Container"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/OpenClaw_Bot_Container
 ---
 
 # AgentShroud™ LLM Provider Setup & Switching Guide
@@ -19,4 +19,4 @@ tags:
 - [[5. Verification & Troubleshooting]] - `contains` [EXTRACTED]
 - [[LLM_PROVIDER_SETUP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_378
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

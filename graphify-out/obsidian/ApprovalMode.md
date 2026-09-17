@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # ApprovalMode
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[dot-add_rule()]] - `references` [EXTRACTED]
-- [[dot-approve()]] - `references` [EXTRACTED]
-- [[dot-deny()]] - `references` [EXTRACTED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[._load_rules()]] - `calls` [EXTRACTED]
+- [[.add_rule()]] - `references` [EXTRACTED]
+- [[.approve()]] - `references` [EXTRACTED]
+- [[.deny()]] - `references` [EXTRACTED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

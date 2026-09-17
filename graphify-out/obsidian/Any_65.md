@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 582"
-location: "L119"
+community: "check_upstream_cves()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/check_upstream_cves
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_582
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

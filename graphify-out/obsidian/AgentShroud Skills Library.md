@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "Blue/Red Team Security Auditor Skills"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Skills Library
@@ -18,4 +18,4 @@ tags:
 - [[Usage_116]] - `contains` [EXTRACTED]
 - [[skillsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

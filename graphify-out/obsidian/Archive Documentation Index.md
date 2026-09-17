@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/README.md"
 type: "document"
-community: "Community 267"
+community: "One Shroud Over Every Wire (founding mantra)"
 location: "L1-L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Archive Documentation Index
@@ -18,4 +18,4 @@ tags:
 - [[One Shroud Over Every Wire (founding mantra)]] - `references` [EXTRACTED]
 - [[Threat Model & Attack Surface (post-RCE blast radius)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_267
+#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

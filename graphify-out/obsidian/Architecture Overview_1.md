@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 253"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/MiddlewareManager
 ---
 
 # Architecture Overview.md
@@ -19,4 +19,4 @@ tags:
 - [[System Overview]] - `references` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
