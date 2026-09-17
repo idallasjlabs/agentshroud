@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # test_tool_acl.py
@@ -33,4 +33,4 @@ tags:
 - [[rbac()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Community 226"
+community: "BaseModel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/BaseModel
 ---
 
 # test_soc_contributors.py
@@ -19,4 +19,4 @@ tags:
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
 - [[_FakeRBAC_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/BaseModel

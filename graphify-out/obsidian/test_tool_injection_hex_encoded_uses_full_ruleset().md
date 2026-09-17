@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 152"
+community: "TrustManager"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/TrustManager
 ---
 
 # test_tool_injection_hex_encoded_uses_full_ruleset()
@@ -16,4 +16,4 @@ tags:
 - [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/code #graphify/EXTRACTED #community/TrustManager

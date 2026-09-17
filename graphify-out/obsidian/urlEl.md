@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "Community 1128"
+community: "background.js"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/backgroundjs
 ---
 
 # urlEl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[options.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1128
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

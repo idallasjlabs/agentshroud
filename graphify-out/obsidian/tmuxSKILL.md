@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 1028"
+community: "find-sessions.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1028
+  - community/find-sessionssh
 ---
 
 # tmux/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[tmux Session Control]] - `contains` [EXTRACTED]
 - [[wait-for-text.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1028
+#graphify/document #graphify/INFERRED #community/find-sessionssh

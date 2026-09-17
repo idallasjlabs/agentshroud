@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Community 126"
+community: "._run_and_read()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/_run_and_read
 ---
 
 # test_switch_model_idempotent.py
@@ -19,4 +19,4 @@ tags:
 - [[_read_env()]] - `contains` [EXTRACTED]
 - [[_run_switch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

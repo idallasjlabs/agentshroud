@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Lockdown & Collaborator UX Tests"
+community: "_wrap_response()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Lockdown__Collaborator_UX_Tests
+  - community/_wrap_response
 ---
 
 # test_telegram_proxy_inbound.py
@@ -41,4 +41,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

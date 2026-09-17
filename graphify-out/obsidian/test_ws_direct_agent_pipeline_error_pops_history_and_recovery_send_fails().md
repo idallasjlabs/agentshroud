@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L1843"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()
@@ -17,4 +17,4 @@ tags:
 - [[_receive_side_effect()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

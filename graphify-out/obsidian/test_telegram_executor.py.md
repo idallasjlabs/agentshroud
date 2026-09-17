@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "Community 1115"
+community: "test_telegram_executor.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1115
+  - community/test_telegram_executorpy
 ---
 
 # test_telegram_executor.py
@@ -17,4 +17,4 @@ tags:
 - [[test_lifespan_hermes_forwarder_has_http_peek()]] - `contains` [EXTRACTED]
 - [[test_lifespan_installs_64_worker_executor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1115
+#graphify/code #graphify/EXTRACTED #community/test_telegram_executorpy

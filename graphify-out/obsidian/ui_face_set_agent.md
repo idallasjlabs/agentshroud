@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # ui_face_set_agent
@@ -16,4 +16,4 @@ tags:
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[voice_task]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

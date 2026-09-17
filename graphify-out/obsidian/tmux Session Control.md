@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 559"
+community: "tmux Session Control"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_559
+  - community/tmux_Session_Control
 ---
 
 # tmux Session Control
@@ -21,4 +21,4 @@ tags:
 - [[When to Use]] - `contains` [EXTRACTED]
 - [[tmuxSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_559
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

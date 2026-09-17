@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Community 277"
+community: "ControlCenter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/ControlCenter
 ---
 
 # text_control_center.py
@@ -17,4 +17,4 @@ tags:
 - [[main()_15]] - `contains` [EXTRACTED]
 - [[start-control-center]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_277
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

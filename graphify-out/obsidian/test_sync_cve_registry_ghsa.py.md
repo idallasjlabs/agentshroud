@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 278"
+community: "_sync()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_278
+  - community/_sync
 ---
 
 # test_sync_cve_registry_ghsa.py
@@ -21,4 +21,4 @@ tags:
 - [[_sync()]] - `contains` [EXTRACTED]
 - [[scriptssync-cve-registry.py (GHSA auto-register)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_278
+#graphify/code #graphify/EXTRACTED #community/_sync

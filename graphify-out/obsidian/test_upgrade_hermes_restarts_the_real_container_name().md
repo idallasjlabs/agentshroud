@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Auth & Audit Store"
+community: "test_soc_router_coverage.py"
 location: "L2090"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/test_soc_router_coveragepy
 ---
 
 # test_upgrade_hermes_restarts_the_real_container_name()
@@ -15,4 +15,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[update_service() must be called with the real container name     (agentshroud-he]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

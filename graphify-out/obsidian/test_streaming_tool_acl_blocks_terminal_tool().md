@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 61"
+community: "test_llm_proxy.py"
 location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/test_llm_proxypy
 ---
 
 # test_streaming_tool_acl_blocks_terminal_tool()
@@ -19,4 +19,4 @@ tags:
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

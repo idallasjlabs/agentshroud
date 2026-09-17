@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Community 71"
+community: "AgentTarget"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/AgentTarget
 ---
 
 # test_unicode_content()
@@ -15,4 +15,4 @@ tags:
 - [[Test content with Unicode characters]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

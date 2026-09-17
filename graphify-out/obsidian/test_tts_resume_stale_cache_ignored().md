@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Routing Tests"
+community: "test_voice_gateway.py"
 location: "L3509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Routing_Tests
+  - community/test_voice_gatewaypy
 ---
 
 # test_tts_resume_stale_cache_ignored()
@@ -17,4 +17,4 @@ tags:
 - [[asyncio_1]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

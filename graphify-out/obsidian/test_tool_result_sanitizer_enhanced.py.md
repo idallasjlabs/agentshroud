@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 64"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/ToolResultSanitizer
 ---
 
 # test_tool_result_sanitizer_enhanced.py
@@ -19,4 +19,4 @@ tags:
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[sanitize_tool_result()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

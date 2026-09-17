@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Community 109"
+community: "PipelineAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/PipelineAction
 ---
 
 # test_telegram_pipeline.py
@@ -28,4 +28,4 @@ tags:
 - [[_make_proxy()_1]] - `contains` [EXTRACTED]
 - [[_make_update()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_109
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

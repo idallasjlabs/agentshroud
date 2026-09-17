@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 149"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_149
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # test_wrapper_never_sends_empty_bearer()
@@ -15,4 +15,4 @@ tags:
 - [[Belt-and-suspenders the wrapper must not contain a literal empty Bearer.      T]] - `rationale_for` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_149
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

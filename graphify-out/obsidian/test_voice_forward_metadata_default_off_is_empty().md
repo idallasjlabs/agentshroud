@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "Community 176"
+community: "_call_agent_stream()"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/_call_agent_stream
 ---
 
 # test_voice_forward_metadata_default_off_is_empty()
@@ -16,4 +16,4 @@ tags:
 - [[_voice_forward_metadata()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_176
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream
