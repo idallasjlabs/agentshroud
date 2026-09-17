@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 74"
+community: "DelegationManager"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/DelegationManager
 ---
 
 # Delegation
 
 ## Connections
-- [[dot-delegate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_6]] - `method` [EXTRACTED]
-- [[dot-get_active_delegations()]] - `references` [EXTRACTED]
-- [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
-- [[dot-is_active()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[.delegate()]] - `references` [EXTRACTED]
+- [[.from_dict()_6]] - `method` [EXTRACTED]
+- [[.get_active_delegations()]] - `references` [EXTRACTED]
+- [[.get_delegations_for_user()]] - `references` [EXTRACTED]
+- [[.is_active()]] - `method` [EXTRACTED]
+- [[.to_dict()_15]] - `method` [EXTRACTED]
 - [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

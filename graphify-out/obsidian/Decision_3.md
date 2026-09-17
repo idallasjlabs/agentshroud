@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Community 445"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Decision
@@ -15,4 +15,4 @@ tags:
 - [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
 - [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

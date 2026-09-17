@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "concept"
-community: "Community 835"
+community: "02-infrastructure.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/02-infrastructuremd
 ---
 
 # Deployment Diagram — What Runs Where
@@ -15,4 +15,4 @@ tags:
 - [[Dependency Graph — Component Deployment Order]] - `references` [INFERRED]
 - [[Rendered CICD Deployment Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_835
+#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd

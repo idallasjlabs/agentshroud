@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # DecodedLayer
 
 ## Connections
-- [[dot-analyze()]] - `calls` [EXTRACTED]
-- [[dot-decode_rot13()]] - `calls` [EXTRACTED]
+- [[.analyze()]] - `calls` [EXTRACTED]
+- [[.decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/TrustManager

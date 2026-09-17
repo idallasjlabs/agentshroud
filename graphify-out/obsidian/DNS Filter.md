@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 357"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # DNS Filter
@@ -14,4 +14,4 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [INFERRED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_357
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

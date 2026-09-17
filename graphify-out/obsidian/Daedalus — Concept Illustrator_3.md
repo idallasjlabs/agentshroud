@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 827"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_827
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[dot-agentsskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Input Requirements_17]] - `contains` [EXTRACTED]
-- [[Output Format_33]] - `contains` [EXTRACTED]
+- [[Output Format_30]] - `contains` [EXTRACTED]
 - [[Persona_12]] - `contains` [EXTRACTED]
 - [[Quality Checklist_14]] - `contains` [EXTRACTED]
 - [[Role_86]] - `contains` [EXTRACTED]
 - [[System Prompt_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_827
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

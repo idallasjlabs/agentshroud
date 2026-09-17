@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 600"
+community: "dns_filter.py"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_600
+  - community/dns_filterpy
 ---
 
 # DNSFilter.check(domain, agent_id)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_600
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

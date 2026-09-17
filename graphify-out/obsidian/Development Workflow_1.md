@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 485"
+community: "AgentShroud Development Team — Agile Structure"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_485
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Development Workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Environment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_485
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

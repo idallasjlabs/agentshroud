@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Data Validation (DATA-VAL) Skill
@@ -16,4 +16,4 @@ tags:
 - [[Data Validation README]] - `conceptually_related_to` [INFERRED]
 - [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_325
+#graphify/document #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_README

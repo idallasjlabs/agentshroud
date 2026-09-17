@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "document"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Security_Policy
 ---
 
 # Daily CVE Sync + Page Update Workflow
@@ -14,4 +14,4 @@ tags:
 - [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - `references` [EXTRACTED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

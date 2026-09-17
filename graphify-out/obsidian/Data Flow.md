@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 253"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/MiddlewareManager
 ---
 
 # Data Flow.md
@@ -24,4 +24,4 @@ tags:
 - [[ledger.py_1]] - `references` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

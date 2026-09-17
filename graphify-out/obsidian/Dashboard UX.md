@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 258"
+community: "Skill: UX Expert (UX)"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dashboard UX
@@ -17,4 +17,4 @@ tags:
 - [[Drill-Down Pattern]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

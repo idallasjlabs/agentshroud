@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "Community 155"
+community: "lifespan.py"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/lifespanpy
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_2]] - `rationale_for` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_155
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

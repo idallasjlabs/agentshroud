@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
-type: "document"
-community: "Community 203"
-location: "L11"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
+type: "code"
+community: "openclaw/skills/i-browser/package.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

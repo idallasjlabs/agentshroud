@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 404"
+community: "Deliverables"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/Deliverables
 ---
 
 # Deliverables
@@ -17,4 +17,4 @@ tags:
 - [[Script Templates_2]] - `contains` [EXTRACTED]
 - [[Scripts (`.scripts`)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_404
+#graphify/document #graphify/EXTRACTED #community/Deliverables

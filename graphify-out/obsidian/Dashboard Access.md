@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 392"
+community: "Step-by-Step Installation"
 location: "L404"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Step-by-Step_Installation
 ---
 
 # Dashboard Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

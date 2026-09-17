@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Community 189"
+community: "DataExfilVolumeGuard"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/DataExfilVolumeGuard
 ---
 
 # DataExfilVolumeConfig
 
 ## Connections
-- [[dot-__init__()_80]] - `references` [EXTRACTED]
+- [[.__init__()_80]] - `references` [EXTRACTED]
 - [[Configuration for class`DataExfilVolumeGuard`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_189
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/daily-memory-journal.txt"
 type: "document"
-community: "Community 160"
+community: "OpenClaw Live Cron Job Index (11 jobs)"
 location: "L1-L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
 ---
 
 # Daily Memory Journal Job (nightly memory consolidation)
@@ -17,4 +17,4 @@ tags:
 - [[Zero Hallucinations On Errors Policy]] - `implements` [EXTRACTED]
 - [[memorycontext.md Continuity File (50 lines)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_160
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs

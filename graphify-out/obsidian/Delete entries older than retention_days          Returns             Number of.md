@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: ".enforce_retention()"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/enforce_retention
 ---
 
 # Delete entries older than retention_days          Returns:             Number of
 
 ## Connections
-- [[dot-enforce_retention()]] - `rationale_for` [EXTRACTED]
+- [[.enforce_retention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/enforce_retention

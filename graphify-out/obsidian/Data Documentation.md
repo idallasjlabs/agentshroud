@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/README.md"
 type: "document"
-community: "Community 572"
+community: "03-data.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_572
+  - community/03-datamd
 ---
 
 # Data Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_6]] - `contains` [EXTRACTED]
 - [[dataREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_572
+#graphify/document #graphify/EXTRACTED #community/03-datamd

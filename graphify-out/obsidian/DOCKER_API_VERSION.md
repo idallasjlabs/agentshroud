@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 739"
+community: "asb"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/asb
 ---
 
 # DOCKER_API_VERSION
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[asb]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_739
+#graphify/code #graphify/EXTRACTED #community/asb
