@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # SubagentMonitorConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_21]] - `references` [EXTRACTED]
-- [[dot-test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_21]] - `references` [EXTRACTED]
+- [[.test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

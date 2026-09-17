@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Community 574"
+community: "_handle()"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/_handle
 ---
 
 # StreamReader
@@ -15,4 +15,4 @@ tags:
 - [[_handle()_1]] - `references` [EXTRACTED]
 - [[_pump()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_574
+#graphify/code #graphify/EXTRACTED #community/_handle

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 786"
+community: "Quick Reference Commands"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_786
+  - community/Quick_Reference_Commands
 ---
 
 # TAILSCALE_COMMANDS.md
@@ -15,6 +15,6 @@ tags:
 - [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access (Pi)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
-- [[troubleshooting_25]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_786
+#graphify/document #graphify/INFERRED #community/Quick_Reference_Commands

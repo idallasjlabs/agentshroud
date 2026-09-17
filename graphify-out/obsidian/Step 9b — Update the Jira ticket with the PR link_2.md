@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 305"
+community: "Mode A — Single task"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/Mode_A__Single_task
 ---
 
 # Step 9b — Update the Jira ticket with the PR link
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_305
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

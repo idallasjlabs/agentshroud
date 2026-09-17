@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

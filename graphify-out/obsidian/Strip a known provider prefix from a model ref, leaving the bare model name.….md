@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "Community 105"
+community: "test_hermes_model_resolver.py"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/test_hermes_model_resolverpy
 ---
 
 # Strip a known provider prefix from a model ref, leaving the bare model name.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strip_provider_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_105
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy

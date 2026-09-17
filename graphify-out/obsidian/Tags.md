@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 257"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # Tags
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_257
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

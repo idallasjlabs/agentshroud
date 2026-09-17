@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.png"
 type: "image"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Telegram Message Sequence Diagram
@@ -19,4 +19,4 @@ tags:
 - [[flowsREADME]] - `conceptually_related_to` [AMBIGUOUS]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_184
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

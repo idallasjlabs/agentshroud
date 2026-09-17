@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TestFileSandbox"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TestFileSandbox
 ---
 
 # Symlink-based escape attempt blocked.
 
 ## Connections
-- [[dot-test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

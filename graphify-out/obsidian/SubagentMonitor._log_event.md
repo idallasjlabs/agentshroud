@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 1152"
+community: "SubagentMonitor._log_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1152
+  - community/SubagentMonitor_log_event
 ---
 
 # SubagentMonitor._log_event
@@ -17,4 +17,4 @@ tags:
 - [[SubagentMonitor.kill_all]] - `calls` [EXTRACTED]
 - [[SubagentMonitor.register_spawn]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1152
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor_log_event

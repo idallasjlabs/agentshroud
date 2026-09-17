@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "Community 786"
+community: "Quick Reference Commands"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/Quick_Reference_Commands
 ---
 
 # Tailscale Remote Access (Pi)
@@ -14,4 +14,4 @@ tags:
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_786
+#graphify/concept #graphify/EXTRACTED #community/Quick_Reference_Commands

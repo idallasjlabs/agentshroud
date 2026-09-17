@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 250"
+community: "🛡️ AgentShroud Release Plan"
 location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Summary
@@ -16,4 +16,4 @@ tags:
 - [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

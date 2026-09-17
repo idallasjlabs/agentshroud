@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Community 1945"
+community: "Test Data Ledger"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1945
+  - community/Test_Data_Ledger
 ---
 
 # Test Data Ledger
 
-#graphify/code #graphify/EXTRACTED #community/Community_1945
+#graphify/code #graphify/EXTRACTED #community/Test_Data_Ledger

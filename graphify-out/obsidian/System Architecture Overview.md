@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 77"
+community: "AgentShroud Incident Response Plan"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # System Architecture Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

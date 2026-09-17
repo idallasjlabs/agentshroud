@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 144"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # System Audit Vault (i-sav)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[System Audit Documentation (README)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_144
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

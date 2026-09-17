@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "TeamsConfig"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TeamsConfig
 ---
 
 # TeamsConfig
 
 ## Connections
-- [[dot-get_active_project_for_user()]] - `method` [EXTRACTED]
-- [[dot-get_all_member_ids()]] - `method` [EXTRACTED]
-- [[dot-get_group_admin_ids()]] - `method` [EXTRACTED]
-- [[dot-get_group_safe_response_prefix()]] - `method` [EXTRACTED]
-- [[dot-get_user_collab_mode()]] - `method` [EXTRACTED]
-- [[dot-get_user_groups()]] - `method` [EXTRACTED]
-- [[dot-get_user_projects()]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
-- [[dot-model_post_init()_1]] - `method` [EXTRACTED]
-- [[dot-test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
+- [[.get_active_project_for_user()]] - `method` [EXTRACTED]
+- [[.get_all_member_ids()]] - `method` [EXTRACTED]
+- [[.get_group_admin_ids()]] - `method` [EXTRACTED]
+- [[.get_group_safe_response_prefix()]] - `method` [EXTRACTED]
+- [[.get_user_collab_mode()]] - `method` [EXTRACTED]
+- [[.get_user_groups()]] - `method` [EXTRACTED]
+- [[.get_user_projects()]] - `method` [EXTRACTED]
+- [[.is_group_admin()_1]] - `method` [EXTRACTED]
+- [[.model_post_init()_1]] - `method` [EXTRACTED]
+- [[.test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Group]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminChecks]] - `uses` [INFERRED]
@@ -99,4 +99,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/INFERRED #community/TeamsConfig

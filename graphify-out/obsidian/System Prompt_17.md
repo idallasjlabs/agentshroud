@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 937"
+community: "Vulcan — Subject Matter Auditor"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_937
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # System Prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_937
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

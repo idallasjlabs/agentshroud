@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 660"
+community: "Telegram Bot Setup for OpenClaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Telegram Bot Setup for OpenClaw
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[Advanced Telegram Commands]] - `contains` [EXTRACTED]
 - [[Multi-Device Access]] - `contains` [EXTRACTED]
-- [[Next Steps_10]] - `contains` [EXTRACTED]
+- [[Next Steps_9]] - `contains` [EXTRACTED]
 - [[Optional Restrict Bot Access]] - `contains` [EXTRACTED]
 - [[Security Considerations_1]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 2 Configure OpenClaw to Use Telegram]] - `contains` [EXTRACTED]
 - [[Step 3 Start Chatting]] - `contains` [EXTRACTED]
 - [[TELEGRAM_SETUP]] - `contains` [EXTRACTED]
-- [[Troubleshooting_34]] - `contains` [EXTRACTED]
+- [[Troubleshooting_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

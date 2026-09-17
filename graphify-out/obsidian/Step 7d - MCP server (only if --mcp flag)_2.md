@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 997"
+community: "graphify reference: extra exports and benchmark"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_997
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Step 7d - MCP server (only if --mcp flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_997
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

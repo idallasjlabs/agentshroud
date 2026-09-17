@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestAuth"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestAuth
 ---
 
 # SubagentMonitor
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_21]] - `method` [EXTRACTED]
-- [[dot-_log_event()]] - `method` [EXTRACTED]
-- [[dot-check_tool_usage()]] - `method` [EXTRACTED]
-- [[dot-deregister()]] - `method` [EXTRACTED]
-- [[dot-get_active()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_5]] - `method` [EXTRACTED]
-- [[dot-get_flagged_events()]] - `method` [EXTRACTED]
-- [[dot-kill_agent()]] - `method` [EXTRACTED]
-- [[dot-kill_all()]] - `method` [EXTRACTED]
-- [[dot-register_spawn()]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_21]] - `method` [EXTRACTED]
+- [[._log_event()]] - `method` [EXTRACTED]
+- [[.check_tool_usage()]] - `method` [EXTRACTED]
+- [[.deregister()]] - `method` [EXTRACTED]
+- [[.get_active()]] - `method` [EXTRACTED]
+- [[.get_audit_log()_5]] - `method` [EXTRACTED]
+- [[.get_flagged_events()]] - `method` [EXTRACTED]
+- [[.kill_agent()]] - `method` [EXTRACTED]
+- [[.kill_all()]] - `method` [EXTRACTED]
+- [[.register_spawn()]] - `method` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `semantically_similar_to` [INFERRED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/TestAuth

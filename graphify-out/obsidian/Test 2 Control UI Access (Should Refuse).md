@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 603"
+community: "Security Implementation Verification"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_603
+  - community/Security_Implementation_Verification
 ---
 
 # Test 2: Control UI Access (Should Refuse)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Verification Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_603
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

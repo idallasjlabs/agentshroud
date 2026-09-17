@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "TestAuth"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/TestAuth
 ---
 
 # SubagentEvent
 
 ## Connections
-- [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_5]] - `references` [EXTRACTED]
-- [[dot-get_flagged_events()]] - `references` [EXTRACTED]
+- [[._log_event()]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_5]] - `references` [EXTRACTED]
+- [[.get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/TestAuth

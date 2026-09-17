@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Community 1342"
+community: "System Audit Documentation (SAD)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1342
+  - community/System_Audit_Documentation_SAD
 ---
 
 # System Audit Vault README
@@ -14,4 +14,4 @@ tags:
 - [[System Audit Documentation (SAD)]] - `references` [EXTRACTED]
 - [[System Audit Vault (SAV)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1342
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation_SAD

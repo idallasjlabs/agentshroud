@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Community 72"
+community: "HTTPConnectProxy"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/HTTPConnectProxy
 ---
 
 # Stop the CONNECT proxy server.
 
 ## Connections
-- [[dot-stop()_10]] - `rationale_for` [EXTRACTED]
+- [[.stop()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

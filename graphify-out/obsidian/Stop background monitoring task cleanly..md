@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # Stop background monitoring task cleanly.
 
 ## Connections
-- [[dot-stop()_6]] - `rationale_for` [EXTRACTED]
+- [[.stop()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

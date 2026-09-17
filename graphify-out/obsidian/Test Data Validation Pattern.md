@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Community 869"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_869
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Test Data Validation Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_869
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

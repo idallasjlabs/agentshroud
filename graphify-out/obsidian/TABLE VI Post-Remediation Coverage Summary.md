@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 950"
+community: "VIII. Evaluation"
 location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_950
+  - community/VIII_Evaluation
 ---
 
 # TABLE VI: Post-Remediation Coverage Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_950
+#graphify/document #graphify/EXTRACTED #community/VIII_Evaluation

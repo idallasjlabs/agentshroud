@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L604"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Test DNS filtering, SSRF prevention, and egress control.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNetworkSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
