@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 35"
+community: "load_config()"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # A risk tier declared with a bare tool name applies on any allowlisted     server
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/load_config

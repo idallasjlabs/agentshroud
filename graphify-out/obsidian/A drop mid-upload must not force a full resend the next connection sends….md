@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 1156"
+community: "test_listen_offset_resumes_partial_upload()"
 location: "L3342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1156
+  - community/test_listen_offset_resumes_partial_upload
 ---
 
 # A drop mid-upload must not force a full resend: the next connection sends…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_listen_offset_resumes_partial_upload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1156
+#graphify/rationale #graphify/EXTRACTED #community/test_listen_offset_resumes_partial_upload

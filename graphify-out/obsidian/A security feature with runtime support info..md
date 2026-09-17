@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "Community 463"
+community: "TestSecurityFeatures"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/TestSecurityFeatures
 ---
 
 # A security feature with runtime support info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityFeature]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_463
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures

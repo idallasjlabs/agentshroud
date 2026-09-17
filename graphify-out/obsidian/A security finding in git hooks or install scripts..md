@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 48"
+community: "GitGuard"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/GitGuard
 ---
 
 # A security finding in git hooks or install scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityFinding_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

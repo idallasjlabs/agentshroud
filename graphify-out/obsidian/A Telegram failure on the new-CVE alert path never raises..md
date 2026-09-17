@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 82"
+community: "TestPerAgentUpstreamChecks"
 location: "L748"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # A Telegram failure on the new-CVE alert path never raises.
 
 ## Connections
-- [[dot-test_alert_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_alert_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_alert_send_failure_is_swallowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

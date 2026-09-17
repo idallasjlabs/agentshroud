@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 892"
+community: "Workflow (follow in order)"
 location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_892
+  - community/Workflow_follow_in_order
 ---
 
 # 6) Offer execution options
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_892
+#graphify/document #graphify/EXTRACTED #community/Workflow_follow_in_order

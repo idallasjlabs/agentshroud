@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 990"
+community: "Key Skills in Detail"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Key_Skills_in_Detail
 ---
 
 # 59 Skills by Category
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Skill System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_990
+#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
