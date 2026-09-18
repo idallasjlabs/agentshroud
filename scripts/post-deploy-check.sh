@@ -223,6 +223,25 @@ print(json.dumps(report))
     fi
 fi
 
+# ── P6: Sandbox image present ─────────────────────────────────────────────
+# Real functional check, not a boot-time smoke test: every check above passes
+# on a container that booted fine but whose sandboxed cron jobs will fail the
+# moment they actually run, because OpenClaw does not build
+# openclaw-sandbox:bookworm-slim itself and does not silently substitute a
+# plain debian image when it's missing (fails fast with "Sandbox image not
+# found" instead). asb up/rebuild now calls _ensure_sandbox_image before this
+# script runs, so this should always pass — it exists as a second, independent
+# assertion in case someone runs docker-compose directly and skips asb.
+if [[ -n "$BOT_CONTAINER" ]]; then
+    sandbox_image_ok=false
+    if docker image inspect openclaw-sandbox:bookworm-slim >/dev/null 2>&1; then
+        sandbox_image_ok=true
+    fi
+    check "Sandbox image openclaw-sandbox:bookworm-slim present" \
+        "$([[ "$sandbox_image_ok" == "true" ]] && echo true || echo false)" \
+        "run: bash scripts/asb up  (auto-builds it), or scripts/asb's _ensure_sandbox_image directly"
+fi
+
 # ── Summary ───────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
