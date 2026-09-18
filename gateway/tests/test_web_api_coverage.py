@@ -212,7 +212,7 @@ class TestStatus:
         eng.health_check.return_value = True
         eng.ps.return_value = [
             _container("agentshroud-gateway", "Up 2 hours"),
-            _container("agentshroud-dev-openclaw", "Exited (0) 5 minutes ago"),
+            _container("agentshroud-openclaw", "Exited (0) 5 minutes ago"),
         ]
         with (
             patch("gateway.web.api.get_engine", return_value=eng),
@@ -226,7 +226,7 @@ class TestStatus:
         services = data["services"]
         assert services["agentshroud-gateway"]["status"] == "running"
         assert services["agentshroud-gateway"]["id"] == "abcdef123456"
-        assert services["agentshroud-dev-openclaw"]["status"] == "stopped"
+        assert services["agentshroud-openclaw"]["status"] == "stopped"
         assert services["falco"] == {"status": "not_found"}
         assert set(data["system"]) == {"disk_total_gb", "disk_free_gb", "disk_used_pct"}
         assert "comparison" in data["security"]
@@ -541,20 +541,12 @@ class TestResolveBotContainer:
     def test_resolves_hermes_to_the_real_renamed_container(self):
         from gateway.web.api import _resolve_bot_container
 
-        # This host's agentshroud.yaml sets an explicit override
-        # (agentshroud-dev-hermes-v2, 2026-09-18) — see docker/bots/hermes/
-        # run-standalone.sh for why dev's Hermes container is named
-        # differently from prod's (agentshroud-hermes-v2).
-        assert _resolve_bot_container("hermes") == "agentshroud-dev-hermes-v2"
+        assert _resolve_bot_container("hermes") == "agentshroud-hermes-v2"
 
     def test_resolves_openclaw_to_the_convention_default(self):
         from gateway.web.api import _resolve_bot_container
 
-        # This host's agentshroud.yaml also gives openclaw an explicit
-        # override now (agentshroud-dev-openclaw, 2026-09-18) — no longer
-        # exercises the bare convention-default path for a real bot; that
-        # path is still covered by test_unknown_bot_id_falls_back_to_the_naive_guess.
-        assert _resolve_bot_container("openclaw") == "agentshroud-dev-openclaw"
+        assert _resolve_bot_container("openclaw") == "agentshroud-openclaw"
 
     def test_unknown_bot_id_falls_back_to_the_naive_guess(self):
         from gateway.web.api import _resolve_bot_container
@@ -579,7 +571,7 @@ class TestBotUpdates:
             "latest": "2.0.0",
             "update_available": True,
         }
-        eng.exec.assert_called_once_with("agentshroud-dev-hermes-v2", ["hermes", "--version"])
+        eng.exec.assert_called_once_with("agentshroud-hermes-v2", ["hermes", "--version"])
 
     def test_check_bot_updates_npm_failure_and_exec_failure(self, client):
         eng = _engine()
@@ -616,7 +608,7 @@ class TestBotUpdates:
         assert data["version"] == "2.1.0"
         assert [s["status"] for s in data["steps"]] == ["done", "done"]
         eng.exec.assert_called_once_with(
-            "agentshroud-dev-hermes-v2", ["npm", "install", "-g", "hermes@2.1.0"]
+            "agentshroud-hermes-v2", ["npm", "install", "-g", "hermes@2.1.0"]
         )
 
     def test_upgrade_bot_failure_reports_error_step(self, client):

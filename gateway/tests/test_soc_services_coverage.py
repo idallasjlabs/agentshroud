@@ -505,8 +505,8 @@ class TestKnownServices:
     def test_uses_resolved_container_name_from_real_config(self):
         names = services._known_services()
         assert "agentshroud-gateway" in names
-        assert "agentshroud-dev-openclaw" in names
-        assert "agentshroud-dev-hermes-v2" in names
+        assert "agentshroud-openclaw" in names
+        assert "agentshroud-hermes-v2" in names
         assert "agentshroud-hermes" not in names
 
     def test_falls_back_to_openclaw_only_on_config_load_failure(self, monkeypatch):
