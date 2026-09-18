@@ -164,6 +164,16 @@ COPY docker/bots/hermes/patch_telegram_send_base_url.py /tmp/patch_telegram_send
 RUN /opt/hermes/.venv/bin/python3 /tmp/patch_telegram_send_base_url.py \
     && rm /tmp/patch_telegram_send_base_url.py
 
+# slack_sdk's AsyncSocketModeClient reuses one aiohttp.ClientSession across
+# every reconnect; close() (called on some non-final disconnects) permanently
+# closes it, and every connect() retry after that raises "RuntimeError:
+# Session is closed" forever -- see patch script header for the full trace
+# (upstream slackapi/python-slack-sdk#1913). This patch is a partial
+# mitigation, not a complete fix for the underlying race -- see the header.
+COPY docker/bots/hermes/patch_slack_session_recreate.py /tmp/patch_slack_session_recreate.py
+RUN /opt/hermes/.venv/bin/python3 /tmp/patch_slack_session_recreate.py \
+    && rm /tmp/patch_slack_session_recreate.py
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.

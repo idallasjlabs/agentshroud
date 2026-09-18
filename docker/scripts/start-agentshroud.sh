@@ -282,7 +282,21 @@ if command -v openclaw >/dev/null 2>&1; then
     _cleanup_tick=1800   # 30 min -- independent of the sandbox reaper's cadence
     while true; do
         sleep "${_cleanup_tick}"
-        _out="$(openclaw sessions cleanup --all-agents --fix-missing --enforce 2>&1)"
+        # NODE_OPTIONS unset for this invocation only: the global setup-https-proxy.js
+        # shim (loaded via NODE_OPTIONS=--require for the main gateway process, which
+        # genuinely needs it to route external Slack/Telegram/LLM egress through
+        # HTTPS_PROXY) also patches undici's global dispatcher with ZERO NO_PROXY/
+        # bypass logic -- unlike its own https.Agent and ws patches, which both check
+        # shouldBypass() first. This CLI subcommand's own local calls back to the
+        # gateway get unconditionally CONNECT-tunneled and TLS-wrapped by that global
+        # dispatcher even though they should bypass entirely, and the plaintext target
+        # replies to a TLS ClientHello it never asked for: "SSL routines:
+        # tls_validate_record_header: wrong version number". Confirmed live 2026-09-18
+        # -- this exact command fails identically every single tick with NODE_OPTIONS
+        # set, and succeeds immediately (real maintenance output, no error) with it
+        # unset. Scoped to just this subshell so the actual gateway process (the one
+        # `openclaw` invocation that needs the proxy) is untouched.
+        _out="$(NODE_OPTIONS= openclaw sessions cleanup --all-agents --fix-missing --enforce 2>&1)"
         echo "[session-cleanup] ${_out}" | tr '\n' ' '
         echo ""
     done
