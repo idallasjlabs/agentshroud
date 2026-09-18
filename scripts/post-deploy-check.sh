@@ -242,6 +242,38 @@ if [[ -n "$BOT_CONTAINER" ]]; then
         "run: bash scripts/asb up  (auto-builds it), or scripts/asb's _ensure_sandbox_image directly"
 fi
 
+# ── P7: Configured local model actually registered in models.json ────────
+# Real functional check: a container whose configured AGENTSHROUD_LOCAL_MODEL_REF
+# (e.g. openai-local/nemotron-3.5-lightning-rapid) has no matching
+# providers.<key>.models[] entry in OpenClaw's own models.json boots green and
+# passes every check above, then fails the FIRST TIME any job actually calls
+# that model with "Unknown model: <ref>" -- this is exactly the class of bug
+# that shipped to prod on 2026-09-18 (models.json registration was hardcoded
+# to providers.ollama regardless of the ref's actual provider prefix).
+if [[ -n "$BOT_CONTAINER" ]]; then
+    _local_ref=$(docker exec "$BOT_CONTAINER" sh -c 'printf "%s" "${AGENTSHROUD_LOCAL_MODEL_REF:-}"' 2>/dev/null || echo "")
+    if [[ -n "$_local_ref" && "$_local_ref" == */* ]]; then
+        _provider_key="${_local_ref%%/*}"
+        _model_id="${_local_ref#*/}"
+        model_registered=$(docker exec "$BOT_CONTAINER" sh -c '
+            node -e "
+              const fs = require(\"fs\");
+              try {
+                const cfg = JSON.parse(fs.readFileSync(\"/home/node/.openclaw/models.json\", \"utf8\"));
+                const models = (cfg.providers && cfg.providers[\"'"${_provider_key}"'\"] && cfg.providers[\"'"${_provider_key}"'\"].models) || [];
+                const found = models.some(m => (typeof m === \"string\" ? m : m.id) === \"'"${_model_id}"'\");
+                process.stdout.write(found ? \"true\" : \"false\");
+              } catch (e) {
+                process.stdout.write(\"false\");
+              }
+            "
+        ' 2>/dev/null || echo "false")
+        check "Configured local model ${_local_ref} registered in models.json" \
+            "$([[ "$model_registered" == "true" ]] && echo true || echo false)" \
+            "providers.${_provider_key}.models[] has no entry for ${_model_id}"
+    fi
+fi
+
 # ── Summary ───────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
