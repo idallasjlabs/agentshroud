@@ -36,10 +36,15 @@ class TestIsOpReferenceAllowed:
             is True
         )
 
-    def test_allowed_path_without_space_variant(self):
+    def test_brave_api_key_reference_allowed(self):
+        """The vault has no item literally titled "Brave Search API Key" —
+        the real item is addressed by ID. This is the exact op:// path
+        docker/scripts/start-agentshroud.sh and docker/setup-secrets.sh's
+        op_ref_for() both already use; the allowlist must match it or every
+        op-proxy call for brave_api_key 403s (observed 2026-09-18)."""
         assert (
             _is_op_reference_allowed(
-                "op://Agent Shroud Bot Credentials/Brave Search API Key/credential"
+                "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key"
             )
             is True
         )
