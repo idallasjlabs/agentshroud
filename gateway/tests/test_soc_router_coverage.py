@@ -2068,7 +2068,7 @@ async def test_upgrade_hermes_paths(client, holder, monkeypatch):
     # Regression guard: the container was renamed to agentshroud-hermes-v2
     # (2026-07-18) — the confirmation message must name the real container,
     # not the stale 'agentshroud-hermes' guess.
-    assert "agentshroud-hermes-v2" in resp.text
+    assert "agentshroud-dev-hermes-v2" in resp.text
     assert "agentshroud-hermes " not in resp.text
 
     monkeypatch.setattr(
@@ -2106,7 +2106,7 @@ async def test_upgrade_hermes_restarts_the_real_container_name(client, holder, m
     monkeypatch.setattr("gateway.soc.services.ServiceManager", _RecordingMgr)
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.json()["ok"] is True
-    assert calls == ["agentshroud-hermes-v2"]
+    assert calls == ["agentshroud-dev-hermes-v2"]
 
 
 async def test_rollback_gateway_paths(client, holder, monkeypatch):

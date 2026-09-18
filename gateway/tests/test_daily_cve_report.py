@@ -984,7 +984,7 @@ class TestBuildImageTargets:
         targets = _build_image_targets()
         assert targets == [
             "agentshroud-gateway:latest",
-            "agentshroud-openclaw:latest",
+            "agentshroud-dev-openclaw:latest",
             "agentshroud/hermes:latest",
         ]
 
@@ -998,7 +998,10 @@ class TestBuildImageTargets:
 
         monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
         targets = _build_image_targets()
-        assert "agentshroud-openclaw:latest" in targets
+        # This host's agentshroud.yaml overrides openclaw's container_name to
+        # agentshroud-dev-openclaw (2026-09-18) — image target follows the
+        # real resolved container name, not the bare 'agentshroud-{id}' guess.
+        assert "agentshroud-dev-openclaw:latest" in targets
         assert "agentshroud/hermes:latest" in targets
 
     def test_deduplication(self, monkeypatch):
@@ -1034,17 +1037,21 @@ class TestRunningImageResolution:
         17-day-old image that wasn't running. The RUNNING image must win."""
         from gateway.security import daily_cve_report as _mod
 
+        # Keyed by agentshroud-dev-openclaw, not agentshroud-openclaw — this
+        # host's agentshroud.yaml overrides openclaw's container_name
+        # (2026-09-18), and _running_image() is looked up by the real
+        # resolved container name.
         running = {
             "agentshroud-gateway": "agentshroud-gateway:1.6.0",
-            "agentshroud-openclaw": "agentshroud-openclaw:1.6.0",
+            "agentshroud-dev-openclaw": "agentshroud-dev-openclaw:1.6.0",
         }
         monkeypatch.setattr(_mod, "_running_image", lambda name: running.get(name))
         monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
         targets = _mod._build_image_targets()
         assert "agentshroud-gateway:1.6.0" in targets
         assert "agentshroud-gateway:latest" not in targets
-        assert "agentshroud-openclaw:1.6.0" in targets
-        assert "agentshroud-openclaw:latest" not in targets
+        assert "agentshroud-dev-openclaw:1.6.0" in targets
+        assert "agentshroud-dev-openclaw:latest" not in targets
 
     def test_running_image_parses_docker_inspect_stdout(self, monkeypatch):
         from gateway.security import daily_cve_report as _mod

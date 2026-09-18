@@ -138,7 +138,7 @@ fi
 # run-standalone.sh hardcodes the same name regardless of $USER/account.
 HERMES_CONTAINER=$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)
 if [[ -z "$HERMES_CONTAINER" ]]; then
-    HERMES_CONTAINER=$(docker ps --format '{{.Names}}' 2>/dev/null | grep '^agentshroud-hermes' | head -1)
+    HERMES_CONTAINER=$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)
 fi
 
 if [[ -n "$HERMES_CONTAINER" ]]; then

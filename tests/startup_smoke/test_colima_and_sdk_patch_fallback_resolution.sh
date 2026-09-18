@@ -45,9 +45,9 @@ check "no longer treats a missing route as unfixable-in-cron" \
     "docker/scripts/colima-health-check.sh" \
     "sudo ip route add default"
 
-check "container names are env-overridable and default to the real marvin names" \
+check "container names are env-overridable and default to the real dev names" \
     "docker/scripts/colima-health-check.sh" \
-    'GATEWAY_CONTAINER="\$\{AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-marvin-gateway\}"'
+    'GATEWAY_CONTAINER="\$\{AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-dev-gateway\}"'
 
 check "does not still claim the old false premise" \
     "docker/scripts/colima-health-check.sh" \

@@ -44,11 +44,12 @@ DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
 # AGENTSHROUD_GATEWAY_CONTAINER convention, commit 154262fc6) — the literal
 # defaults here were wrong for this host for an unknown period: this account's
 # compose override (docker/docker-compose.agentshroud-bot.marvin.yml) names
-# them agentshroud-marvin-openclaw / agentshroud-marvin-gateway, not the
-# unprefixed names below, so every check against these was silently checking
-# containers that don't exist on this host.
-BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-marvin-openclaw}"
-GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-marvin-gateway}"
+# them agentshroud-dev-openclaw / agentshroud-dev-gateway (renamed from the
+# agentshroud-marvin-* scheme 2026-09-18 for dev/prod distinguishability), not
+# the unprefixed names below, so every check against these was silently
+# checking containers that don't exist on this host.
+BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-dev-openclaw}"
+GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-dev-gateway}"
 
 # ── Prevent overlapping runs ─────────────────────────────────────────────────
 # container-net-diag can take >5 min; skip if a previous run is still active.

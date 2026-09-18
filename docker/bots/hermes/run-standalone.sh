@@ -51,7 +51,15 @@ if [ -z "${AGENTSHROUD_ENV:-}" ]; then
 fi
 IMAGE="agentshroud/hermes:${VERSION}"
 
-CONTAINER="agentshroud-hermes-v2"
+# 2026-09-18 owner directive: dev containers must be distinguishable from prod
+# by name alone — pasted logs/status dumps had no way to tell which
+# environment they came from. Prod keeps the original name (unchanged,
+# nothing here affects it); dev gets an agentshroud-dev-* prefix.
+if [ "$AGENTSHROUD_ENV" = "dev" ]; then
+  CONTAINER="agentshroud-dev-hermes-v2"
+else
+  CONTAINER="agentshroud-hermes-v2"
+fi
 NETWORK="${PROJECT}_agentshroud-isolated"
 GATEWAY_DATA_VOL="${PROJECT}_gateway-data"
 SECURITY_REPORTS_VOL="${PROJECT}_security-reports"

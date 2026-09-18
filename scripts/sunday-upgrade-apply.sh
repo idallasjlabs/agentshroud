@@ -95,17 +95,13 @@ else
   exit 10
 fi
 
-# Containers that must be healthy for the stack to be considered good.
-# Overridable so dev/prod or a future service list can differ without a code edit.
-# This default matches PROD (ijefferson.admin) container_name values as-is.
-# Each agentshroud-bot dev host renames gateway/openclaw via its own compose
-# override (docker/docker-compose.agentshroud-bot.<host>.yml), and the suffix
-# is NOT always the bare hostname (raspberrypi -> "rpi", confirmed 2026-09-14)
-# — so this cannot be derived automatically. On a bot account, always pass
-# SUNDAY_CONTAINERS explicitly, e.g. on marvin:
-#   SUNDAY_CONTAINERS="agentshroud-marvin-gateway agentshroud-marvin-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
-DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
-CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
+# Containers that must be healthy for the stack to be considered good. See the
+# per-host default resolved below (after account/host detection) for why this
+# can't be a single static default — the container_name suffix a compose
+# override picks is NOT always the bare hostname (raspberrypi -> "rpi",
+# confirmed 2026-09-14), so only the hosts explicitly handled below get a
+# correct auto-default; any other bot account/host must pass SUNDAY_CONTAINERS
+# explicitly or this script silently checks containers that don't exist.
 
 # Images scanned by the CVE gate. Tagged by AGENTSHROUD_VERSION (from
 # docker/versions.env, sourced above), not `:latest` — images are built and
@@ -160,6 +156,18 @@ else
   PROJECT="agentshroud"
   COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
 fi
+
+# Renamed 2026-09-18 (owner directive: dev containers must be distinguishable
+# from prod by name alone) — agentshroud-dev-* is marvin's actual dev naming
+# now (docker/docker-compose.agentshroud-bot.marvin.yml,
+# docker/bots/hermes/run-standalone.sh). Only marvin is handled automatically;
+# any other bot host/account still needs SUNDAY_CONTAINERS passed explicitly.
+if [ "$USER" = "agentshroud-bot" ] && [ "$HOST_SHORT" = "marvin" ]; then
+  DEFAULT_CONTAINERS="agentshroud-dev-gateway agentshroud-dev-openclaw agentshroud-dev-hermes-v2 agentshroud-dev-voice-gateway agentshroud-dev-docker-socket-proxy"
+else
+  DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
+fi
+CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
 # hermes-v2 and voice-gateway are gated behind compose profiles ("hermes"/
 # "voice", both members of "full" — docker/docker-compose.yml:572,728) and are
 # invisible to `config`/`build`/`up` without an explicit --profile flag,

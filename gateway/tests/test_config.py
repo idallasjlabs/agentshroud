@@ -116,8 +116,8 @@ def test_bot_service_names_uses_resolved_container_name():
     from gateway.web.api import _bot_service_names
 
     names = _bot_service_names()
-    assert "agentshroud-openclaw" in names
-    assert "agentshroud-hermes-v2" in names
+    assert "agentshroud-dev-openclaw" in names
+    assert "agentshroud-dev-hermes-v2" in names
     assert "agentshroud-hermes" not in names
 
 
@@ -152,8 +152,10 @@ def test_load_config_registers_hermes():
     assert hermes.port == 8642, "Hermes gateway API port must be 8642"
     assert hermes.default is False, "Hermes must NOT be the default bot (OpenClaw is)"
     # Renamed 2026-07-18 (see docker-compose.yml) — was "agentshroud-hermes".
-    assert hermes.hostname == "agentshroud-hermes-v2"
-    assert hermes.resolved_container_name == "agentshroud-hermes-v2"
+    # This host's agentshroud.yaml further overrides to agentshroud-dev-hermes-v2
+    # (2026-09-18) — see docker/bots/hermes/run-standalone.sh.
+    assert hermes.hostname == "agentshroud-dev-hermes-v2"
+    assert hermes.resolved_container_name == "agentshroud-dev-hermes-v2"
     assert hermes.chat_path == "/v1/chat/completions"
     assert hermes.telegram_token_secret == "hermes_telegram_bot_token"
     assert "api.telegram.org" in hermes.egress_domains
