@@ -179,23 +179,39 @@ node -e "
   let cfg = {};
   try { cfg = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) {}
   cfg.providers = cfg.providers || {};
-  cfg.providers.ollama = cfg.providers.ollama || {};
 
   const modelRef = String(process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen3:14b');
   const modelName = String(process.env.AGENTSHROUD_LOCAL_MODEL || modelRef.split('/').slice(-1)[0] || 'qwen3:14b');
   const rawBaseUrl = String(process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1').replace(/\/+$/, '');
   const baseUrl = /\/v1$/i.test(rawBaseUrl) ? rawBaseUrl : rawBaseUrl + '/v1';
 
+  // Register under whichever provider key the actual configured model ref
+  // uses (e.g. 'ollama' for AGENTSHROUD_MODEL_MODE=local, 'openai-local' for
+  // local-multi — see apply-patches.js's LOCAL_PROVIDER_KEY), not a hardcoded
+  // 'ollama'. Previously this always wrote to providers.ollama regardless of
+  // modelRef's own prefix, so an openai-local/<model> ref (local-multi mode,
+  // AgentShroud's own convention) never got a models[] entry under
+  // providers['openai-local'] at all — every cron job using that model failed
+  // every run with 'Unknown model: openai-local/... Found
+  // agents.defaults.models[...], but no matching
+  // models.providers[\"openai-local\"].models[] entry' (observed 2026-09-17/18
+  // on both dev and prod — AGENTSHROUD_MODEL_MODE=local-multi on prod,
+  // =local-but-openai-local-ref on dev, same gap either way since the
+  // provider key was never derived from the ref itself).
+  const providerKey = modelRef.includes('/') ? modelRef.split('/')[0] : 'ollama';
+  cfg.providers[providerKey] = cfg.providers[providerKey] || {};
+  const provider = cfg.providers[providerKey];
+
   let changed = false;
   const setIfChanged = (k, v) => {
-    if (cfg.providers.ollama[k] !== v) {
-      cfg.providers.ollama[k] = v;
+    if (provider[k] !== v) {
+      provider[k] = v;
       changed = true;
     }
   };
 
   setIfChanged('baseUrl', baseUrl);
-  setIfChanged('api', 'ollama');
+  setIfChanged('api', providerKey === 'ollama' ? 'ollama' : 'openai');
   setIfChanged('apiKey', 'OLLAMA_API_KEY');
 
   // Each entry must be a ModelDefinitionSchema object ({id, ...}), not a bare
@@ -206,7 +222,7 @@ node -e "
   // custom model catalog (observed 2026-09-15/16: '[agents/model-registry]
   // model catalog load issue' + 'remote model catalog refresh failed').
   // Self-heal any legacy string entries already on the volume, in place.
-  const existingModels = Array.isArray(cfg.providers.ollama.models) ? cfg.providers.ollama.models : [];
+  const existingModels = Array.isArray(provider.models) ? provider.models : [];
   const normalizedModels = existingModels.map((m) => (typeof m === 'string' ? { id: m } : m));
   if (JSON.stringify(normalizedModels) !== JSON.stringify(existingModels)) {
     changed = true;
@@ -215,11 +231,11 @@ node -e "
     normalizedModels.push({ id: modelName });
     changed = true;
   }
-  cfg.providers.ollama.models = normalizedModels;
+  provider.models = normalizedModels;
 
   if (changed) {
     fs.writeFileSync(p, JSON.stringify(cfg, null, 2), 'utf8');
-    console.log('[init] ✓ Registered Ollama provider/models in models.json');
+    console.log('[init] ✓ Registered ' + providerKey + ' provider/models in models.json');
   } else {
     console.log('[init] ✓ models.json already up-to-date');
   }
