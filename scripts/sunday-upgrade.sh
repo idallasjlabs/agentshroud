@@ -117,22 +117,48 @@ if [ "$_current_branch" != "main" ]; then
   echo "[sunday-upgrade] The unattended upgrade must run against main. Run: git -C '$REPO' checkout main" >&2
   exit 4
 fi
-if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
-  echo "[sunday-upgrade] FATAL: main has uncommitted changes — refusing to pull/run over them." >&2
-  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' status" >&2
-  exit 4
+# A blanket FATAL-on-any-dirty-file here contradicts this job's own mission
+# (prompts/sunday-upgrade.md, "Preflight" ground rules): graphify-out/** NEVER
+# counts as dirty (repo hooks regenerate it every branch switch), and other
+# pre-existing uncommitted files should be listed and PROCEEDED past, not
+# treated as fatal — this script never commits or builds from the working
+# tree itself, so unrelated WIP elsewhere in the repo is not its concern. This
+# host is explicitly documented above as "routinely" carrying uncommitted
+# state between Sunday runs, so an unconditional FATAL here reliably blocked
+# every unattended run before the mission ever got a chance to start —
+# confirmed live 2026-09-17 (this script's own prior bugfix commit was still
+# unstaged when this check fired). The real, safety-critical dirty-build gate
+# already lives downstream in sunday-upgrade-apply.sh's `_dirty_build_files`
+# (only the actual Docker build context, hard-refuses without
+# --allow-dirty-build) — this launcher-level check only needs to catch a
+# genuinely broken checkout, not routine dev-host state.
+# Unanchored `grep -v` (not `^.. graphify-out/`) is deliberate: git quotes
+# porcelain paths containing spaces/special chars, so an anchored pattern
+# misses those lines — same defect already fixed in sunday-upgrade-apply.sh's
+# _dirty_build_files (see its comment for the 17999-vs-68 miscount).
+_dirty="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' || true)"
+if [ -n "$_dirty" ]; then
+  _n="$(printf '%s\n' "$_dirty" | wc -l | tr -d ' ')"
+  echo "[sunday-upgrade] NOTE: ${_n} uncommitted change(s) present outside graphify-out/ — proceeding (this script does not build or commit from the working tree):" >&2
+  printf '%s\n' "$_dirty" | sed 's/^/[sunday-upgrade]   /' >&2
 fi
-if ! git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
-  echo "[sunday-upgrade] FATAL: local main has diverged from origin/main — cannot fast-forward." >&2
-  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' log --oneline main..origin/main" >&2
-  exit 4
-fi
-if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+# `is-ancestor HEAD origin/main` alone only detects "local is behind or equal".
+# When local has unpushed commits ahead of origin/main (e.g. a same-session
+# graphify-refresh commit sweep) that check is FALSE too, indistinguishable
+# from true divergence — a real run on 2026-09-17 hit this exact case (68
+# local-only commits, 0 behind) and FATAL'd on "diverged" when there was
+# nothing to fast-forward and nothing wrong. Only neither-is-ancestor is a
+# genuine divergence that `--ff-only` cannot resolve.
+if git merge-base --is-ancestor origin/main HEAD 2>/dev/null; then
+  echo "[sunday-upgrade] ✓ main is at or ahead of origin/main ($(git rev-parse --short HEAD)) — nothing to fast-forward"
+elif git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
   _before_sha="$(git rev-parse --short HEAD)"
   git merge --ff-only origin/main
   echo "[sunday-upgrade] ✓ Fast-forwarded main ${_before_sha} → $(git rev-parse --short HEAD)"
 else
-  echo "[sunday-upgrade] ✓ main already up to date with origin/main ($(git rev-parse --short HEAD))"
+  echo "[sunday-upgrade] FATAL: local main has diverged from origin/main — cannot fast-forward." >&2
+  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' log --oneline main..origin/main" >&2
+  exit 4
 fi
 
 # Idempotency: don't stack a second session if today's already running or
@@ -179,8 +205,27 @@ echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SE
 # sat unsubmitted for 40+ min on two separate occasions despite a 3-attempt
 # retry). Passing it as an argument at launch removes the race entirely —
 # same pattern local-llms/scripts/sunday-maintenance.sh already uses.
+#
+# The `--` before the mission text is load-bearing, not stylistic. claude's
+# `--allowedTools, --allowed-tools <tools...>` is a VARIADIC option (commander.js
+# `<tools...>` — confirmed via `claude --help`): with no terminator, it greedily
+# consumes every remaining positional argument as more tool names — including
+# the entire mission prompt — then further splits each captured token on
+# whitespace/comma (its own documented behavior: "Comma or space-separated
+# list"). That is exactly what shattered the mission text into hundreds of
+# fragments each logged as "Ignoring --allowedTools rule '...'" and left the
+# composer completely EMPTY. Confirmed live 2026-09-17 by bisecting the actual
+# bug with isolated tmux probes: (1) proved bash/tmux argv-passing itself was
+# already 100% correct — the mission arrived as one intact argument either
+# way; (2) proved even a two-word prompt failed identically, with or without
+# --remote-control, ruling out prompt size/markdown entirely; (3) `claude
+# --help` named the real cause; (4) a live `-- '<prompt>'` probe fixed it,
+# confirmed again with --remote-control included. Every prior run of this job
+# had this defect when SUNDAY_UPGRADE_AUTON=1 set --allowedTools — none of
+# them ever actually submitted a mission; they sat open until the 180-minute
+# watch timeout believing they were unattended.
 tmux new-session -d -s "$SESSION" -c "$REPO" \
-  "claude --remote-control --name '$SESSION' $EXTRA \"\$(cat '$PROMPT_FILE')\""
+  "claude --remote-control --name '$SESSION' $EXTRA -- \"\$(cat '$PROMPT_FILE')\""
 tmux pipe-pane -t "$SESSION" -o "cat >> '$LOG'"
 
 # give it time to boot and register with claude.ai
