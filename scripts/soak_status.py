@@ -28,9 +28,7 @@ def classify(
     actively-failing job since redeploy blocks soak regardless of how many
     other jobs succeeded.
     """
-    since_boot = [
-        j for j in jobs if (j.get("state") or {}).get("lastRunAtMs", 0) > started_at_ms
-    ]
+    since_boot = [j for j in jobs if (j.get("state") or {}).get("lastRunAtMs", 0) > started_at_ms]
 
     errored = [j for j in since_boot if j.get("status") != "ok"]
     succeeded = [j for j in since_boot if j.get("status") == "ok"]
@@ -63,7 +61,10 @@ def main() -> int:
     for j in jobs:
         last_run = (j.get("state") or {}).get("lastRunAtMs", 0)
         if last_run > started_at_ms:
-            print(f"  [soak-status] since-boot run: {j.get('name')} status={j.get('status')}", file=sys.stderr)
+            print(
+                f"  [soak-status] since-boot run: {j.get('name')} status={j.get('status')}",
+                file=sys.stderr,
+            )
 
     soaked, message = classify(jobs, started_at_ms, min_successes)
     print(message)

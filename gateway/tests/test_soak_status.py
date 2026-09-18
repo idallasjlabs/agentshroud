@@ -69,7 +69,9 @@ class TestClassify:
     def test_skipped_status_counts_as_not_ok(self):
         """The 2026-09-18 heartbeat regression showed status='skipped', not
         'error' — must not be misclassified as a success."""
-        jobs = [_job("heartbeat-main", "skipped", last_run_at_ms=300, last_error="empty-heartbeat-file")]
+        jobs = [
+            _job("heartbeat-main", "skipped", last_run_at_ms=300, last_error="empty-heartbeat-file")
+        ]
         soaked, message = classify(jobs, started_at_ms=200, min_successes=1)
         assert soaked is False
         assert "skipped" in message
