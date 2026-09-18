@@ -117,6 +117,12 @@ _ALLOWED_OP_PATHS: list[str] = [
     "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/*",
     "op://Agent Shroud Bot Credentials/Gateway Password/*",
     "op://Agent Shroud Bot Credentials/AgentShroud - Google/*",
+    # docker/setup-secrets.sh's op_ref_for() has dedicated feedbin_email/
+    # feedbin_password refs (Feedbin/username, Feedbin/password) but this
+    # allowlist never covered them — found 2026-09-18 by the op-ref coverage
+    # test (test_op_proxy.py), not by any prior live failure. Adding
+    # preemptively before this becomes another silent 403.
+    "op://Agent Shroud Bot Credentials/Feedbin/*",
     # SCRUM-81: Atlassian API token for Hermes' weekly Jira review cron
     # (jira_weekly_review.py fetches token/email/domain to keep the account non-idle).
     "op://Agent Shroud Bot Credentials/AgentShroud -Atlassian API Token/*",
