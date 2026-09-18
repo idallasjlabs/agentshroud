@@ -138,7 +138,7 @@ fi
 # run-standalone.sh hardcodes the same name regardless of $USER/account.
 HERMES_CONTAINER=$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)
 if [[ -z "$HERMES_CONTAINER" ]]; then
-    HERMES_CONTAINER=$(docker ps --format '{{.Names}}' 2>/dev/null | grep '^agentshroud-hermes' | head -1)
+    HERMES_CONTAINER=$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)
 fi
 
 if [[ -n "$HERMES_CONTAINER" ]]; then
@@ -220,6 +220,57 @@ print(json.dumps(report))
         'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("medium",0))' 2>/dev/null || echo "0")
     if [[ "$high_count" != "0" || "$medium_count" != "0" ]]; then
         echo "  [post-deploy-check] INFO: network validator: high=$high_count medium=$medium_count (non-fatal)"
+    fi
+fi
+
+# ── P6: Sandbox image present ─────────────────────────────────────────────
+# Real functional check, not a boot-time smoke test: every check above passes
+# on a container that booted fine but whose sandboxed cron jobs will fail the
+# moment they actually run, because OpenClaw does not build
+# openclaw-sandbox:bookworm-slim itself and does not silently substitute a
+# plain debian image when it's missing (fails fast with "Sandbox image not
+# found" instead). asb up/rebuild now calls _ensure_sandbox_image before this
+# script runs, so this should always pass — it exists as a second, independent
+# assertion in case someone runs docker-compose directly and skips asb.
+if [[ -n "$BOT_CONTAINER" ]]; then
+    sandbox_image_ok=false
+    if docker image inspect openclaw-sandbox:bookworm-slim >/dev/null 2>&1; then
+        sandbox_image_ok=true
+    fi
+    check "Sandbox image openclaw-sandbox:bookworm-slim present" \
+        "$([[ "$sandbox_image_ok" == "true" ]] && echo true || echo false)" \
+        "run: bash scripts/asb up  (auto-builds it), or scripts/asb's _ensure_sandbox_image directly"
+fi
+
+# ── P7: Configured local model actually registered in models.json ────────
+# Real functional check: a container whose configured AGENTSHROUD_LOCAL_MODEL_REF
+# (e.g. openai-local/nemotron-3.5-lightning-rapid) has no matching
+# providers.<key>.models[] entry in OpenClaw's own models.json boots green and
+# passes every check above, then fails the FIRST TIME any job actually calls
+# that model with "Unknown model: <ref>" -- this is exactly the class of bug
+# that shipped to prod on 2026-09-18 (models.json registration was hardcoded
+# to providers.ollama regardless of the ref's actual provider prefix).
+if [[ -n "$BOT_CONTAINER" ]]; then
+    _local_ref=$(docker exec "$BOT_CONTAINER" sh -c 'printf "%s" "${AGENTSHROUD_LOCAL_MODEL_REF:-}"' 2>/dev/null || echo "")
+    if [[ -n "$_local_ref" && "$_local_ref" == */* ]]; then
+        _provider_key="${_local_ref%%/*}"
+        _model_id="${_local_ref#*/}"
+        model_registered=$(docker exec "$BOT_CONTAINER" sh -c '
+            node -e "
+              const fs = require(\"fs\");
+              try {
+                const cfg = JSON.parse(fs.readFileSync(\"/home/node/.openclaw/models.json\", \"utf8\"));
+                const models = (cfg.providers && cfg.providers[\"'"${_provider_key}"'\"] && cfg.providers[\"'"${_provider_key}"'\"].models) || [];
+                const found = models.some(m => (typeof m === \"string\" ? m : m.id) === \"'"${_model_id}"'\");
+                process.stdout.write(found ? \"true\" : \"false\");
+              } catch (e) {
+                process.stdout.write(\"false\");
+              }
+            "
+        ' 2>/dev/null || echo "false")
+        check "Configured local model ${_local_ref} registered in models.json" \
+            "$([[ "$model_registered" == "true" ]] && echo true || echo false)" \
+            "providers.${_provider_key}.models[] has no entry for ${_model_id}"
     fi
 fi
 

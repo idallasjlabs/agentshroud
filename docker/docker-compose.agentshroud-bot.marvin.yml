@@ -12,7 +12,7 @@
 #   (allows Colima's virtiofs to mount /Users/agentshroud-bot so ./secrets/ is visible to Docker)
 services:
   gateway:
-    container_name: agentshroud-marvin-gateway
+    container_name: agentshroud-dev-gateway
     ports: !override
       - "127.0.0.1:9080:8080"
     environment:
@@ -22,10 +22,19 @@ services:
       # daily CVE scan must be told where to look — otherwise it inspects
       # "agentshroud-gateway", misses, and scans a nonexistent :latest tag
       # while the running gateway goes unscanned (2026-09-02).
-      - AGENTSHROUD_GATEWAY_CONTAINER=agentshroud-marvin-gateway
+      - AGENTSHROUD_GATEWAY_CONTAINER=agentshroud-dev-gateway
+      # gateway/ingest_api/lifespan.py's Hermes dashboard/API Tailscale
+      # forwarders default to the PROD hostname (agentshroud-hermes-v2), which
+      # this host's Hermes no longer answers to since run-standalone.sh renames
+      # it to agentshroud-dev-hermes-v2 (2026-09-18). Without this, both
+      # forwarders silently fail to connect — found live during the rename,
+      # not by any existing check (post-deploy-check.sh's own Hermes dashboard/
+      # API checks bypass this proxy entirely, so they didn't catch it either).
+      - HERMES_DASHBOARD_HOST_UPSTREAM=agentshroud-dev-hermes-v2
+      - HERMES_API_HOST_UPSTREAM=agentshroud-dev-hermes-v2
 
   openclaw:
-    container_name: agentshroud-marvin-openclaw
+    container_name: agentshroud-dev-openclaw
     ports: !override
       - "127.0.0.1:18790:18789"
     environment:
@@ -34,15 +43,24 @@ services:
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
       - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18790,https://localhost:18790,http://127.0.0.1:18790,https://127.0.0.1:18790,https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790}
 
-  hermes:
-    container_name: agentshroud-marvin-hermes
-    ports: !override
-      # Expose Hermes dashboard locally for dev inspection
-      - "127.0.0.1:9119:9119"
-    environment:
-      - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
+  # NOTE: hermes is NOT deployed via this compose file at all — see
+  # docker/bots/hermes/run-standalone.sh's header comment (a 2026-07-18
+  # restart-storm bug reproduced only under docker-compose's lifecycle, so
+  # Hermes launches via `docker run` instead; scripts/asb's _hermes_up calls
+  # run-standalone.sh directly). Its dev container name
+  # (agentshroud-dev-hermes-v2) is set in run-standalone.sh itself, gated on
+  # AGENTSHROUD_ENV=dev — not here. There used to be a `hermes:` block in
+  # this file with a container_name override that was NEVER applied for
+  # exactly this reason; removed rather than left as dead, misleading config.
+
+  docker-socket-proxy:
+    container_name: agentshroud-dev-docker-socket-proxy
+
+  wazuh-agent:
+    container_name: agentshroud-dev-wazuh-agent
 
   voice-gateway:
+    container_name: agentshroud-dev-voice-gateway
     ports: !override
       # 8766, not the base file's 8765: prod (ijefferson.admin) publishes
       # 127.0.0.1:8765 on this same host, and the two accounts' Colima VMs

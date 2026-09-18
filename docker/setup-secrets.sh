@@ -475,6 +475,28 @@ cmd_extract() {
     fi
 }
 
+cmd_dump_op_refs() {
+    # Prints "name=op://..." for every secret with a DEDICATED op_ref_for()
+    # entry (the exact, non-fuzzy references gateway/ingest_api/main.py's
+    # op-proxy allowlist must cover). Pure string construction -- no `op`
+    # binary, no 1Password session, no network -- so this is safe to run in
+    # CI on every PR, not just a live host. Exists so a test can assert every
+    # printed ref passes _is_op_reference_allowed(); without this, a
+    # dedicated ref and the gateway's allowlist can drift silently (observed
+    # 2026-09-18: brave_api_key's ref never matched any allowlist pattern,
+    # and nothing caught it until a live 403 in prod).
+    declare -a names=("gateway_password")
+    for def in "${SECRET_DEFS[@]}"; do
+        IFS='|' read -r name _ _ _ _ <<< "$def"
+        names+=("$name")
+    done
+    for name in "${names[@]}"; do
+        if ref="$(op_ref_for "$name" 2>/dev/null)"; then
+            printf '%s=%s\n' "$name" "$ref"
+        fi
+    done
+}
+
 cmd_interactive() {
     # Backwards-compat: original behaviour — prompt and write secret files directly.
     echo "╔═══════════════════════════════════════════╗"
@@ -665,6 +687,7 @@ if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
         store)   cmd_store ;;
         extract) cmd_extract ;;
         migrate) cmd_migrate ;;
+        dump-op-refs) cmd_dump_op_refs ;;
         help|--help|-h) cmd_help ;;
         "")      cmd_interactive ;;
         *)

@@ -667,7 +667,11 @@ class TestConfigValidation:
         assert "rawBaseUrl" in script
         assert "ROOT_AUTH_PROFILES" in script
         assert "ROOT_MODELS_JSON" in script
-        assert "Registered Ollama provider/models in models.json" in script
+        # Provider key is derived from modelRef's own prefix (ollama/openai-local/
+        # etc.), not hardcoded to 'ollama' -- see providerKey/2026-09-18 fix. The
+        # log message is built dynamically, so assert on the surrounding literal
+        # text rather than a specific provider name.
+        assert "'[init] ✓ Registered ' + providerKey + ' provider/models in models.json'" in script
 
     def test_hermes_soul_documents_ssh_hosts(self):
         """Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recipe.

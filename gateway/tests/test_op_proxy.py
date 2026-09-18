@@ -6,6 +6,8 @@
 
 from __future__ import annotations
 
+import subprocess
+from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -14,6 +16,44 @@ from fastapi.testclient import TestClient
 from gateway.ingest_api.main import _is_op_reference_allowed
 from gateway.ingest_api.main import app as gateway_app
 from gateway.ingest_api.main import auth_dep
+
+_REPO_ROOT = Path(__file__).parent.parent.parent
+_SETUP_SECRETS = _REPO_ROOT / "docker" / "setup-secrets.sh"
+
+
+class TestOpRefAllowlistCoverage:
+    """Real functional check, not a boot-time smoke test: every op:// reference
+    docker/setup-secrets.sh's op_ref_for() can actually produce must pass the
+    gateway's own allowlist, or every real op-proxy call for that secret 403s
+    at runtime with no earlier signal. This is exactly the class of bug that
+    shipped to prod on 2026-09-18 (brave_api_key's dedicated ref never matched
+    any allowlist pattern) — post-deploy-check.sh only checks that the stack
+    booted, which this bug did not affect at all. Runs offline: dump-op-refs
+    is pure string construction, no `op` binary or 1Password session needed,
+    so this runs in CI on every PR — the earliest possible point to catch it."""
+
+    def test_every_dedicated_op_ref_is_allowlisted(self):
+        result = subprocess.run(
+            ["bash", str(_SETUP_SECRETS), "dump-op-refs"],
+            capture_output=True,
+            text=True,
+            timeout=10,
+            check=True,
+        )
+        lines = [line for line in result.stdout.splitlines() if line.strip()]
+        assert lines, "dump-op-refs produced no output — op_ref_for() may have regressed"
+
+        unmatched = []
+        for line in lines:
+            name, _, ref = line.partition("=")
+            if not _is_op_reference_allowed(ref):
+                unmatched.append((name, ref))
+
+        assert not unmatched, (
+            "op_ref_for() produced references with no matching gateway allowlist "
+            f"entry — every real op-proxy call for these will 403: {unmatched}"
+        )
+
 
 # ============================================================
 # Unit tests for reference validation helpers
@@ -36,10 +76,15 @@ class TestIsOpReferenceAllowed:
             is True
         )
 
-    def test_allowed_path_without_space_variant(self):
+    def test_brave_api_key_reference_allowed(self):
+        """The vault has no item literally titled "Brave Search API Key" —
+        the real item is addressed by ID. This is the exact op:// path
+        docker/scripts/start-agentshroud.sh and docker/setup-secrets.sh's
+        op_ref_for() both already use; the allowlist must match it or every
+        op-proxy call for brave_api_key 403s (observed 2026-09-18)."""
         assert (
             _is_op_reference_allowed(
-                "op://Agent Shroud Bot Credentials/Brave Search API Key/credential"
+                "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key"
             )
             is True
         )

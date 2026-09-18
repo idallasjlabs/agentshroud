@@ -35,6 +35,16 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── Hermes Agent (NousResearch) ──
     "nousresearch.com",
     "*.nousresearch.com",
+    # ── OpenClaw Agent (vendor telemetry) — routine first-party traffic from
+    # the wrapped OpenClaw binary itself, not agent-initiated browsing. Was
+    # missing from this list entirely, so every single ping generated its own
+    # egress approval request — observed live on prod 2026-09-18: dozens of
+    # repeated "🌐 Egress Request: telemetry.openclaw.ai:443" notifications in
+    # under an hour, all auto-denied per the risk dashboard's top-denied-
+    # destination count, none ever reaching a human decision to make
+    # permanent. Analogous to the Hermes/NousResearch entry above — the
+    # wrapped vendor's own home telemetry endpoint, not third-party content.
+    "telemetry.openclaw.ai",
     # ── Google Services ──
     "oauth2.googleapis.com",
     "www.googleapis.com",
