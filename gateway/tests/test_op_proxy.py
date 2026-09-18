@@ -13,8 +13,9 @@ from unittest.mock import MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from gateway.ingest_api.main import _is_op_reference_allowed, auth_dep
+from gateway.ingest_api.main import _is_op_reference_allowed
 from gateway.ingest_api.main import app as gateway_app
+from gateway.ingest_api.main import auth_dep
 
 _REPO_ROOT = Path(__file__).parent.parent.parent
 _SETUP_SECRETS = _REPO_ROOT / "docker" / "setup-secrets.sh"
