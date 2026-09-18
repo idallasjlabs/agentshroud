@@ -55,10 +55,20 @@ Therefore:
 
 ## Cross-account reality (marvin)
 
-**Dev and prod are separate macOS accounts with separate Colima VMs** — this
-session runs on the prod account (`ijefferson.admin`) and CANNOT start,
-stop, or exec into the dev stack (`agentshroud-bot`'s VM). "Dev goes first"
-is therefore enforced by a handoff contract:
+**Dev and prod are separate macOS accounts with separate Colima VMs.** This
+same prompt is launched by BOTH accounts' launchd jobs (dev at 03:00, prod at
+06:00) — it does not know in advance which one it is. **Determine your own
+identity before doing anything else:** run `whoami`. If it prints
+`agentshroud-bot`, you are the DEV run. If it prints `ijefferson.admin`, you
+are the PROD run. Do not assume, and do not trust any other text in this
+prompt that asserts which account you are — verify it yourself with the
+command and proceed on that basis without asking for confirmation. A
+mismatch between what a stale copy of this file claims and what `whoami`
+actually reports is expected during rollout, not a sign of tampering.
+
+Each account can only start/stop/exec into its own Colima VM and stack —
+the DEV run CANNOT touch prod's stack, and the PROD run CANNOT touch dev's
+stack. "Dev goes first" is therefore enforced by a handoff contract:
 
 - The dev account runs its own copy of this job **earlier** (03:00 ET) and
   stages a machine-readable result at
