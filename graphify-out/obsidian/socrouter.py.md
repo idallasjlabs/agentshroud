@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # soc/router.py
@@ -175,4 +175,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

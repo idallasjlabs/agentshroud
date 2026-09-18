@@ -1,25 +1,27 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L141"
+community: "migrate-cve-registry-ghsa.py"
+location: "L122"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - graphify/EXTRACTED
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Any
 
 ## Connections
-- [[dot-broadcast()]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
+- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
+- [[build_id_plan()]] - `references` [EXTRACTED]
+- [[compute_stats()]] - `references` [EXTRACTED]
+- [[fetch_advisories()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[match_entry()]] - `references` [EXTRACTED]
+- [[render_manual_review()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

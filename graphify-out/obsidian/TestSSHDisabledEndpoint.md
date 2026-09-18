@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L308"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # TestSSHDisabledEndpoint
 
 ## Connections
-- [[dot-disabled_client()]] - `method` [EXTRACTED]
-- [[dot-test_ssh_exec_disabled_returns_503()]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `method` [EXTRACTED]
+- [[.test_ssh_exec_disabled_returns_503()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[Test that SSH disabled returns 503 (Finding 12)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

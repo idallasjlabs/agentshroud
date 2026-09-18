@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 775"
+community: "Credential Management - 1Password Integration"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Security Rules (Ultra-Conservative)
@@ -17,4 +17,4 @@ tags:
 - [[🟢 Console Commands (ALWAYS display)]] - `contains` [EXTRACTED]
 - [[🟢 Internal Use (ALWAYS allowed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

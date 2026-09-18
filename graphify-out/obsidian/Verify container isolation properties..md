@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # Verify container isolation properties.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IsolationVerifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

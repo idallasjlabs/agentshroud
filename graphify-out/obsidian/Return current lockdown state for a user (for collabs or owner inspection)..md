@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # Return current lockdown state for a user (for /collabs or owner inspection).
 
 ## Connections
-- [[dot-get_status()_2]] - `rationale_for` [EXTRACTED]
+- [[.get_status()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

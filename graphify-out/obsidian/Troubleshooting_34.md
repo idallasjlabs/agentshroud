@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 660"
-location: "L115"
+community: "OpenClaw Control UI Pairing Instructions"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Bot doesn't respond]] - `contains` [EXTRACTED]
-- [[Cannot find bot]] - `contains` [EXTRACTED]
-- [[Messages delayed]] - `contains` [EXTRACTED]
-- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
+- [[Cannot save token]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[Still shows pairing required]] - `contains` [EXTRACTED]
+- [[Token field not visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

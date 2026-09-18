@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.png"
 type: "image"
-community: "Community 943"
+community: "Claude Code (claude-sonnet-4-6) — Lead Engineer "
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
 ---
 
 # Team/Agent Role Structure Diagram
@@ -17,4 +17,4 @@ tags:
 - [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - `conceptually_related_to` [EXTRACTED]
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_943
+#graphify/image #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_

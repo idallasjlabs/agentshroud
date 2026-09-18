@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # FileSandbox must NOT block plain chat messages that mention file-like words.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandboxSkippedForPlainMessages]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Community 1672"
+community: "TestMultiTurnTracker"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1672
+  - community/TestMultiTurnTracker
 ---
 
 # Test proper initialization of MultiTurnTracker.
 
 ## Connections
-- [[dot-test_initialization()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_initialization()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1672
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Community 1351"
+community: "graphify reference: extra exports and benchmark"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1351
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # For /graphify add
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference add a URL and watch a folder_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1351
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

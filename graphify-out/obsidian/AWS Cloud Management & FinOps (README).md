@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # AWS Cloud Management & FinOps (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_325
+#graphify/document #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_README

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1638"
+community: "Daedalus Concept Illustrator README (OpenClaw)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1638
+  - community/Daedalus_Concept_Illustrator_README_OpenClaw
 ---
 
 # Daedalus Concept Illustrator README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1638
+#graphify/document #graphify/EXTRACTED #community/Daedalus_Concept_Illustrator_README_OpenClaw

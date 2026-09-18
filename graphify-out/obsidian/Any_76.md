@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Community 844"
-location: "L56"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/ReportStore
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_188]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[.get()_4]] - `references` [EXTRACTED]
+- [[.list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_844
+#graphify/code #graphify/EXTRACTED #community/ReportStore

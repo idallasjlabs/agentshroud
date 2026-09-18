@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 132"
+community: "SecureBrowser"
 location: "L350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/SecureBrowser
 ---
 
 # Extract data from page          Security: No credential extraction allowed
 
 ## Connections
-- [[dot-extract()]] - `rationale_for` [EXTRACTED]
+- [[.extract()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_132
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

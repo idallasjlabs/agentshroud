@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # Pipeline-compatible bridge: scan response text and return TripwireResponse.
 
 ## Connections
-- [[dot-scan_response()]] - `rationale_for` [EXTRACTED]
+- [[.scan_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

@@ -1,18 +1,23 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # TeamsConfig
 
 ## Connections
-- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
-- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[.test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[.test_group_allowlist_grants_extra_tool()_1]] - `calls` [EXTRACTED]
+- [[.test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[.test_project_allowed_tools_grant_access()_1]] - `calls` [EXTRACTED]
+- [[ToolACLConfig_1]] - `uses` [INFERRED]
+- [[ToolACLEnforcer_1]] - `uses` [INFERRED]
 - [[_make_rbac()]] - `references` [EXTRACTED]
+- [[_make_rbac()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

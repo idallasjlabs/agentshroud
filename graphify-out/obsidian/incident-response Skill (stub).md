@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 1434"
+community: "kaizen Skill (stub)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1434
+  - community/kaizen_Skill_stub
 ---
 
 # incident-response Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[kaizen Skill (stub)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1434
+#graphify/document #graphify/INFERRED #community/kaizen_Skill_stub

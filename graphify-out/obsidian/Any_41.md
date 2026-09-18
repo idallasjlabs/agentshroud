@@ -1,27 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 268"
-location: "L122"
+community: "A2AMethod"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_268
+  - community/A2AMethod
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_268
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # MiddlewareResult
 
 ## Connections
-- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
-- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[dot-process_request()]] - `references` [EXTRACTED]
-- [[dot-test_defaults()_1]] - `calls` [EXTRACTED]
-- [[dot-test_denied_with_reason()]] - `calls` [EXTRACTED]
-- [[dot-test_forward_middleware_blocking()]] - `calls` [EXTRACTED]
+- [[._check_cross_session_access()]] - `references` [EXTRACTED]
+- [[._check_rbac_permissions()]] - `references` [EXTRACTED]
+- [[._enforce_session_isolation()]] - `references` [EXTRACTED]
+- [[.process_request()]] - `references` [EXTRACTED]
+- [[.test_defaults()_1]] - `calls` [EXTRACTED]
+- [[.test_denied_with_reason()]] - `calls` [EXTRACTED]
+- [[.test_forward_middleware_blocking()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
@@ -123,8 +123,8 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
@@ -137,4 +137,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

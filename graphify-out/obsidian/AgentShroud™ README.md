@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 178"
+community: "AgentShroud™ README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/AgentShroud_README
 ---
 
 # AgentShroud™ README
@@ -23,12 +23,12 @@ tags:
 - [[Hermes Bot]] - `references` [EXTRACTED]
 - [[Media]] - `contains` [EXTRACTED]
 - [[OpenClaw Bot]] - `references` [EXTRACTED]
-- [[Quickstart_1]] - `contains` [EXTRACTED]
-- [[Trademark_2]] - `references` [INFERRED]
+- [[Quickstart]] - `contains` [EXTRACTED]
+- [[Trademark_1]] - `references` [INFERRED]
 - [[What's New — v1.2.2 (June 2026)]] - `contains` [EXTRACTED]
 - [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
 - [[Who It's For]] - `contains` [EXTRACTED]
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

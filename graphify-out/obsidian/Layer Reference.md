@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Community 298"
+community: "Layer-by-Layer Breakdown"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Layer Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_298
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

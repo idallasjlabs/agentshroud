@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # get_extra_info raising must not break the established tunnel.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_keepalive_socket_lookup_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

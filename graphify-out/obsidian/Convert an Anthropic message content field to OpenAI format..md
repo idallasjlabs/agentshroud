@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "rationale"
-community: "Community 79"
+community: "test_claude_via_openai_path.py"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/test_claude_via_openai_pathpy
 ---
 
 # Convert an Anthropic message content field to OpenAI format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_anthropic_content_to_openai()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

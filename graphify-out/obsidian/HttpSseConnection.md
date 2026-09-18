@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L158"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # HttpSseConnection
 
 ## Connections
-- [[dot-__init__()_29]] - `method` [EXTRACTED]
-- [[dot-get_or_create()]] - `references` [EXTRACTED]
-- [[dot-send_request()_2]] - `method` [EXTRACTED]
-- [[dot-stop()_1]] - `method` [EXTRACTED]
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[.__init__()_29]] - `method` [EXTRACTED]
+- [[.get_or_create()]] - `references` [EXTRACTED]
+- [[.send_request()_2]] - `method` [EXTRACTED]
+- [[.stop()_1]] - `method` [EXTRACTED]
+- [[.test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
+- [[.test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/StdioConnection

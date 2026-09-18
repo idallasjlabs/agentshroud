@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 173"
+community: "AgentShroud™ Brand Guidelines"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -23,23 +23,23 @@ tags:
 - [[Communication Templates_1]] - `contains` [EXTRACTED]
 - [[Directory Structure]] - `contains` [EXTRACTED]
 - [[File Formats]] - `contains` [EXTRACTED]
-- [[Key Messaging_1]] - `contains` [EXTRACTED]
 - [[Key Messaging]] - `contains` [EXTRACTED]
+- [[Key Messaging_1]] - `contains` [EXTRACTED]
 - [[License_1]] - `contains` [EXTRACTED]
 - [[License_2]] - `contains` [EXTRACTED]
-- [[Logo Usage_2]] - `contains` [EXTRACTED]
 - [[Logo Usage]] - `references` [EXTRACTED]
+- [[Logo Usage_2]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
 - [[Social Handles]] - `contains` [EXTRACTED]
 - [[Social Handles_1]] - `contains` [EXTRACTED]
-- [[Trademark_1]] - `contains` [EXTRACTED]
-- [[Trademark_2]] - `references` [EXTRACTED]
+- [[Trademark_1]] - `references` [EXTRACTED]
+- [[Trademark]] - `contains` [EXTRACTED]
 - [[Typography]] - `contains` [EXTRACTED]
 - [[Usage Guidelines_1]] - `contains` [EXTRACTED]
-- [[Voice & Tone_1]] - `contains` [EXTRACTED]
 - [[Voice & Tone]] - `references` [EXTRACTED]
+- [[Voice & Tone_1]] - `contains` [EXTRACTED]
 - [[brandingREADME]] - `contains` [EXTRACTED]
 - [[workspaceBRAND]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

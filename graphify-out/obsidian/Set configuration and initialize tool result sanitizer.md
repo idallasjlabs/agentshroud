@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "PII Sanitizer & Redaction"
+community: "MiddlewareManager"
 location: "L1358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/MiddlewareManager
 ---
 
 # Set configuration and initialize tool result sanitizer
 
 ## Connections
-- [[dot-set_config()]] - `rationale_for` [EXTRACTED]
+- [[.set_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 378"
+community: "OpenClaw Bot Container"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/OpenClaw_Bot_Container
 ---
 
 # PAIRING_INSTRUCTIONS.md
@@ -17,4 +17,4 @@ tags:
 - [[TAILSCALE_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_378
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

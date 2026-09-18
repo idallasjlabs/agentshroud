@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config()"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
-- [[dot-_decide()_1]] - `method` [EXTRACTED]
-- [[dot-_tier_for()_1]] - `method` [EXTRACTED]
-- [[dot-enforce()_1]] - `method` [EXTRACTED]
-- [[dot-evaluate()_1]] - `method` [EXTRACTED]
-- [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
-- [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
+- [[.__init__()_135]] - `method` [EXTRACTED]
+- [[._decide()_1]] - `method` [EXTRACTED]
+- [[._tier_for()_1]] - `method` [EXTRACTED]
+- [[.enforce()_1]] - `method` [EXTRACTED]
+- [[.evaluate()_1]] - `method` [EXTRACTED]
+- [[.test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
+- [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
 - [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - `rationale_for` [EXTRACTED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

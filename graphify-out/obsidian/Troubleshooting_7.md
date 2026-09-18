@@ -1,21 +1,21 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 199"
-location: "L242"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
-- [[Problem Connection timeout]] - `contains` [EXTRACTED]
-- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
-- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

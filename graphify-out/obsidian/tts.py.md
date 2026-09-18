@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Community 668"
+community: "tts.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/ttspy
 ---
 
 # tts.py
@@ -19,5 +19,6 @@ tags:
 - [[split_for_speech()]] - `contains` [EXTRACTED]
 - [[synthesize()]] - `contains` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports_from` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_668
+#graphify/code #graphify/EXTRACTED #community/ttspy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "Community 541"
+community: "AgentShroud Web Control Center - Implementation "
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/AgentShroud_Web_Control_Center_-_Implementation_
 ---
 
 # 📱 Device Compatibility
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Web Control Center - Implementation Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_541
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_

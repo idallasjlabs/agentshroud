@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Community 805"
+community: "Add information filtering to prevent agent self-"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # Add information filtering to prevent agent self-disclosure
@@ -21,4 +21,4 @@ tags:
 - [[Severity_9]] - `contains` [EXTRACTED]
 - [[Verification_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

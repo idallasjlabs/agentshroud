@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Activity & Telegram Proxy"
+community: "TelegramAPIProxy"
 location: "L1988"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts requesting plugin/tool auto-discovery inventory.
 
 ## Connections
-- [[dot-_looks_like_plugin_discovery_request()]] - `rationale_for` [EXTRACTED]
+- [[._looks_like_plugin_discovery_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

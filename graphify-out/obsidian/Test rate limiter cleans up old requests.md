@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Community 71"
+community: "RateLimiter"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/RateLimiter
 ---
 
 # Test rate limiter cleans up old requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_window_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

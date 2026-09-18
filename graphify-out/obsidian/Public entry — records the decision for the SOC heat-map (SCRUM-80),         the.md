@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 167"
+community: "EgressFilter"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/EgressFilter
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[dot-check()_1]] - `rationale_for` [EXTRACTED]
+- [[.check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_167
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

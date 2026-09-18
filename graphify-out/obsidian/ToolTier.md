@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # ToolTier
 
 ## Connections
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `references` [EXTRACTED]
+- [[._build_tool_permissions()]] - `references` [EXTRACTED]
+- [[.check_tool_permission()]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[ToolTier_2]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

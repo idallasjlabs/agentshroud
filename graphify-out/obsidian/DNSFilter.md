@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # DNSFilter
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_171]] - `method` [EXTRACTED]
-- [[dot-_cleanup_rate_window()]] - `method` [EXTRACTED]
-- [[dot-_detect_tunneling()]] - `method` [EXTRACTED]
-- [[dot-_domain_in_allowlist()]] - `method` [EXTRACTED]
-- [[dot-_is_private_ip()_2]] - `method` [EXTRACTED]
-- [[dot-check()_4]] - `method` [EXTRACTED]
-- [[dot-check_rebinding()]] - `method` [EXTRACTED]
-- [[dot-dns_filter()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
-- [[dot-get_flagged_queries()]] - `method` [EXTRACTED]
-- [[dot-resolve_and_cache()]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.__init__()_171]] - `method` [EXTRACTED]
+- [[._cleanup_rate_window()]] - `method` [EXTRACTED]
+- [[._detect_tunneling()]] - `method` [EXTRACTED]
+- [[._domain_in_allowlist()]] - `method` [EXTRACTED]
+- [[._is_private_ip()_2]] - `method` [EXTRACTED]
+- [[.check()_4]] - `method` [EXTRACTED]
+- [[.check_rebinding()]] - `method` [EXTRACTED]
+- [[.dns_filter()]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_6]] - `method` [EXTRACTED]
+- [[.get_flagged_queries()]] - `method` [EXTRACTED]
+- [[.resolve_and_cache()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

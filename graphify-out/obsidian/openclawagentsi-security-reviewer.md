@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
 type: "document"
-community: "Community 1547"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1547
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # openclaw/agents/i-security-reviewer.md
 
 ## Connections
-- [[security-reviewer]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1547
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # A2APolicyEngine
 
 ## Connections
-- [[dot-__init__()_120]] - `method` [EXTRACTED]
-- [[dot-_decide()]] - `method` [EXTRACTED]
-- [[dot-_tier_for()]] - `method` [EXTRACTED]
-- [[dot-enforce()]] - `method` [EXTRACTED]
-- [[dot-evaluate()]] - `method` [EXTRACTED]
-- [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
-- [[dot-test_configured_allowlist_still_works_alongside_fail_closed_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_from_dict_empty_dict_is_fail_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_from_dict_none_is_fail_closed()]] - `calls` [EXTRACTED]
+- [[.__init__()_120]] - `method` [EXTRACTED]
+- [[._decide()]] - `method` [EXTRACTED]
+- [[._tier_for()]] - `method` [EXTRACTED]
+- [[.enforce()]] - `method` [EXTRACTED]
+- [[.evaluate()]] - `method` [EXTRACTED]
+- [[.test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
+- [[.test_configured_allowlist_still_works_alongside_fail_closed_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - `calls` [EXTRACTED]
+- [[.test_from_dict_empty_dict_is_fail_closed()]] - `calls` [EXTRACTED]
+- [[.test_from_dict_none_is_fail_closed()]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_27]] - `uses` [INFERRED]
+- [[Any_26]] - `uses` [INFERRED]
 - [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - `rationale_for` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
@@ -71,4 +71,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

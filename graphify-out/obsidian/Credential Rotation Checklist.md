@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "concept"
-community: "Community 430"
+community: "Pre-Purge Secret Rotation Checklist"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_430
+  - graphify/INFERRED
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # Credential Rotation Checklist
@@ -14,4 +14,4 @@ tags:
 - [[Pre-Purge Secret Rotation Checklist]] - `shares_data_with` [INFERRED]
 - [[Real Credentials Present in Git History]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_430
+#graphify/concept #graphify/INFERRED #community/Pre-Purge_Secret_Rotation_Checklist

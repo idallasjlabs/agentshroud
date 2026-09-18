@@ -1,43 +1,43 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Community 364"
+community: "AppleContainerEngine"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_364
+  - community/AppleContainerEngine
 ---
 
 # AppleContainerEngine
 
 ## Connections
-- [[dot-__init__()_138]] - `method` [EXTRACTED]
-- [[dot-_cmd()_2]] - `method` [EXTRACTED]
-- [[dot-build()_3]] - `method` [EXTRACTED]
-- [[dot-compose_down()_3]] - `method` [EXTRACTED]
-- [[dot-compose_up()_3]] - `method` [EXTRACTED]
-- [[dot-exec()_3]] - `method` [EXTRACTED]
-- [[dot-health_check()_5]] - `method` [EXTRACTED]
-- [[dot-inspect()_3]] - `method` [EXTRACTED]
-- [[dot-logs()_3]] - `method` [EXTRACTED]
-- [[dot-network_create()_3]] - `method` [EXTRACTED]
-- [[dot-network_rm()_3]] - `method` [EXTRACTED]
-- [[dot-pause()_3]] - `method` [EXTRACTED]
-- [[dot-ps()]] - `method` [EXTRACTED]
-- [[dot-pull()_3]] - `method` [EXTRACTED]
-- [[dot-push()_4]] - `method` [EXTRACTED]
-- [[dot-rm()_3]] - `method` [EXTRACTED]
-- [[dot-run()_5]] - `method` [EXTRACTED]
-- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
-- [[dot-stop()_9]] - `method` [EXTRACTED]
-- [[dot-unpause()_3]] - `method` [EXTRACTED]
-- [[dot-volume_create()_3]] - `method` [EXTRACTED]
-- [[dot-volume_rm()_3]] - `method` [EXTRACTED]
+- [[.__init__()_138]] - `method` [EXTRACTED]
+- [[._cmd()_2]] - `method` [EXTRACTED]
+- [[.build()_3]] - `method` [EXTRACTED]
+- [[.compose_down()_3]] - `method` [EXTRACTED]
+- [[.compose_up()_3]] - `method` [EXTRACTED]
+- [[.exec()_3]] - `method` [EXTRACTED]
+- [[.health_check()_5]] - `method` [EXTRACTED]
+- [[.inspect()_3]] - `method` [EXTRACTED]
+- [[.logs()_3]] - `method` [EXTRACTED]
+- [[.network_create()_3]] - `method` [EXTRACTED]
+- [[.network_rm()_3]] - `method` [EXTRACTED]
+- [[.pause()_3]] - `method` [EXTRACTED]
+- [[.ps()]] - `method` [EXTRACTED]
+- [[.pull()_3]] - `method` [EXTRACTED]
+- [[.push()_4]] - `method` [EXTRACTED]
+- [[.rm()_3]] - `method` [EXTRACTED]
+- [[.run()_5]] - `method` [EXTRACTED]
+- [[.setup_method()_38]] - `calls` [EXTRACTED]
+- [[.stop()_9]] - `method` [EXTRACTED]
+- [[.unpause()_3]] - `method` [EXTRACTED]
+- [[.volume_create()_3]] - `method` [EXTRACTED]
+- [[.volume_rm()_3]] - `method` [EXTRACTED]
 - [[Container engine backed by Apple's `container` CLI.]] - `rationale_for` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
 - [[ContainerEngine_1]] - `inherits` [EXTRACTED]
 - [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[TestAppleContainerEngine]] - `uses` [INFERRED]
 - [[TestComposeGenerator]] - `uses` [INFERRED]
@@ -58,4 +58,4 @@ tags:
 - [[runtime__init__.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_364
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

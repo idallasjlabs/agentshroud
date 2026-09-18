@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # Proxy a bot Slack Web API call through the security pipeline.          For messa
 
 ## Connections
-- [[dot-proxy_outbound()]] - `rationale_for` [EXTRACTED]
+- [[.proxy_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_139
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

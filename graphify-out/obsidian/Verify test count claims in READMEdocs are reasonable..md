@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 118"
+community: "MiddlewareManager"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/MiddlewareManager
 ---
 
 # Verify test count claims in README/docs are reasonable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTestCountAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_118
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

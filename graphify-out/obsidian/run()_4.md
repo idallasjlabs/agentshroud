@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TrustManager"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TrustManager
 ---
 
 # run()
@@ -25,7 +25,7 @@ tags:
 - [[GitGuard]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Path_18]] - `calls` [EXTRACTED]
+- [[Path_11]] - `calls` [EXTRACTED]
 - [[PathIsolationConfig]] - `calls` [EXTRACTED]
 - [[PathIsolationManager]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[ok()]] - `calls` [EXTRACTED]
 - [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/TrustManager

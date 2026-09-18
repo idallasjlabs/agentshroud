@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 112"
+community: "AuditStore"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/AuditStore
 ---
 
 # Get audit store statistics.
 
 ## Connections
-- [[dot-get_stats()_4]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

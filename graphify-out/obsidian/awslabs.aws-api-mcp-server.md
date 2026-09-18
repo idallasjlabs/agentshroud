@@ -1,23 +1,23 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 230"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/mcpjson
 ---
 
 # awslabs.aws-api-mcp-server
 
 ## Connections
-- [[dot-mcp.json]] - `contains` [EXTRACTED]
+- [[.mcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinuvx]] - `references` [EXTRACTED]
 - [[AWS_PROFILE]] - `requires_env` [EXTRACTED]
 - [[AWS_REGION]] - `requires_env` [EXTRACTED]
 - [[FASTMCP_LOG_LEVEL]] - `requires_env` [EXTRACTED]
 - [[FASTMCP_NO_BANNER]] - `requires_env` [EXTRACTED]
-- [[PATH_24]] - `requires_env` [EXTRACTED]
+- [[PATH_5]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/EXTRACTED #community/mcpjson

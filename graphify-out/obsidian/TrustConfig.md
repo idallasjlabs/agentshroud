@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_7]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()]] - `method` [EXTRACTED]
-- [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
-- [[dot-_shared_tm()]] - `calls` [EXTRACTED]
-- [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_7]] - `calls` [EXTRACTED]
-- [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
-- [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
-- [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_thresholds_populated()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_escalation_attack()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_level_progression()]] - `calls` [EXTRACTED]
+- [[.__init__()_7]] - `calls` [EXTRACTED]
+- [[.__post_init__()]] - `method` [EXTRACTED]
+- [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
+- [[._shared_tm()]] - `calls` [EXTRACTED]
+- [[.test_custom_points()]] - `calls` [EXTRACTED]
+- [[.test_default_config()_7]] - `calls` [EXTRACTED]
+- [[.test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
+- [[.test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
+- [[.test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
+- [[.test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
+- [[.test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
+- [[.test_thresholds_populated()]] - `calls` [EXTRACTED]
+- [[.test_trust_escalation_attack()]] - `calls` [EXTRACTED]
+- [[.test_trust_level_progression()]] - `calls` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
@@ -99,4 +99,4 @@ tags:
 - [[trust_manager()_2]] - `calls` [EXTRACTED]
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustConfig

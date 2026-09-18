@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "Community 1299"
+community: "AgentShroud Data Flow Diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1299
+  - community/AgentShroud_Data_Flow_Diagrams
 ---
 
 # data-flow-diagram.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1299
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams

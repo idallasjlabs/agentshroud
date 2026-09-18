@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 336"
+community: "iCloud Services"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/iCloud_Services
 ---
 
 # iCloud Services
@@ -18,8 +18,8 @@ tags:
 - [[Mail Operations_2]] - `contains` [EXTRACTED]
 - [[Notes Operations_2]] - `contains` [EXTRACTED]
 - [[Security_6]] - `contains` [EXTRACTED]
-- [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Setup_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 - [[icloudSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

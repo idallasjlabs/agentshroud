@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "concept"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # CI/CD Quality Gates (execution order)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_325
+#graphify/concept #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

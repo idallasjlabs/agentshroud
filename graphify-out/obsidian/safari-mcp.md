@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 230"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/mcpjson
 ---
 
 # safari-mcp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[safari]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/EXTRACTED #community/mcpjson

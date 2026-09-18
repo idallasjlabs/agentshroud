@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 403"
+community: "AgentShroud Data Dictionary"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Runtime State Entities
@@ -16,4 +16,4 @@ tags:
 - [[RateLimitBucket]] - `contains` [EXTRACTED]
 - [[SessionState]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

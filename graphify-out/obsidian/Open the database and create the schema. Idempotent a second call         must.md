@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # Open the database and create the schema. Idempotent: a second call         must
 
 ## Connections
-- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
+- [[.initialize()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

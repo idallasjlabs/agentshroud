@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Community 721"
+community: "Claude Code skill catalog (59 skills)"
 location: "Tool Comparison Matrix"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Tool comparison matrix (config format / agents / skills / hooks)
@@ -16,4 +16,4 @@ tags:
 - [[Configure each tool natively (no config copying)]] - `rationale_for` [EXTRACTED]
 - [[Four-tool role hierarchy summary]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_721
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

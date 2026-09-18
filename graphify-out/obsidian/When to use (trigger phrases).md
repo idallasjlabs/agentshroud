@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Community 411"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_411
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # When to use (trigger phrases)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_411
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

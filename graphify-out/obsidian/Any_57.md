@@ -1,25 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 476"
-location: "L23"
+community: "GitGuard"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_476
+  - community/GitGuard
 ---
 
 # Any
 
 ## Connections
-- [[aggregate_costs()]] - `references` [EXTRACTED]
-- [[build_json_all()]] - `references` [EXTRACTED]
-- [[build_json_current()]] - `references` [EXTRACTED]
-- [[filter_by_days()]] - `references` [EXTRACTED]
-- [[latest_day_cost()]] - `references` [EXTRACTED]
-- [[load_payload()]] - `references` [EXTRACTED]
-- [[parse_daily_entries()]] - `references` [EXTRACTED]
-- [[pick_current_model()]] - `references` [EXTRACTED]
-- [[run_codexbar_cost()]] - `references` [EXTRACTED]
+- [[.get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_476
+#graphify/code #graphify/EXTRACTED #community/GitGuard

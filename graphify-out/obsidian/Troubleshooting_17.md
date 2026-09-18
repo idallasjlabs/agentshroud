@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 269"
+community: "Browser — Secure Browser Automation"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_269
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
+- [[Browser timeout_4]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_269
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

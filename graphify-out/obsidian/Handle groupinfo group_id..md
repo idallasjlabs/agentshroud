@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Teams/Group Collaborator Responses"
+community: "TelegramAPIProxy"
 location: "L7865"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TelegramAPIProxy
 ---
 
 # Handle /groupinfo <group_id>.
 
 ## Connections
-- [[dot-_handle_groupinfo_command()]] - `rationale_for` [EXTRACTED]
+- [[._handle_groupinfo_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

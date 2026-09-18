@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 117"
+community: "TestEgressApprovalQueue"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/TestEgressApprovalQueue
 ---
 
 # Test that session rules are not persisted to disk.
 
 ## Connections
-- [[dot-test_session_rules_not_persisted()]] - `rationale_for` [EXTRACTED]
+- [[.test_session_rules_not_persisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_117
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "Community 253"
+community: "AgentShroud Security Perimeter"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_253
+  - graphify/INFERRED
+  - community/AgentShroud_Security_Perimeter
 ---
 
 # Audit ledger (hash-verifiable chain)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 - [[ledger.py_1]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_253
+#graphify/rationale #graphify/INFERRED #community/AgentShroud_Security_Perimeter

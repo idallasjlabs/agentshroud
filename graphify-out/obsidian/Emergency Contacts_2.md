@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 77"
+community: "Contact Information"
 location: "L572"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Contact_Information
 ---
 
 # Emergency Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Contact_Information

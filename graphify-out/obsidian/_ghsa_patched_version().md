@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 99"
+community: "sync-cve-registry.py"
 location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # _ghsa_patched_version()
 
 ## Connections
-- [[Any_83]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Return the first patched version string across the advisory's vulns, else ''.]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

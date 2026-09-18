@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Community 208"
+community: "TestMultilingualInjection"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/TestMultilingualInjection
 ---
 
 # Set up PromptGuard with standard thresholds.
 
 ## Connections
-- [[dot-setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_20]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

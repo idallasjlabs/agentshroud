@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 229"
+community: "AgentShroud Documentation"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AgentShroud_Documentation
 ---
 
 # 📋 Current Status
@@ -21,4 +21,4 @@ tags:
 - [[📋 Phase 5 Live Action Dashboard (Planned)]] - `contains` [EXTRACTED]
 - [[📋 Phase 6 Tailscale + Documentation (Planned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_229
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

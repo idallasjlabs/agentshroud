@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 534"
+community: "models.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_534
+  - community/modelspy
 ---
 
 # models.py
@@ -20,7 +20,7 @@ tags:
 - [[Model Details]] - `contains` [EXTRACTED]
 - [[Purpose_133]] - `contains` [EXTRACTED]
 - [[Related_12]] - `contains` [EXTRACTED]
-- [[Responsibilities_10]] - `contains` [EXTRACTED]
+- [[Responsibilities_9]] - `contains` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_534
+#graphify/document #graphify/EXTRACTED #community/modelspy

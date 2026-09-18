@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 607"
+community: "EgressFilterConfig"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/EgressFilterConfig
 ---
 
 # Test specific egress mode environment variable.
 
 ## Connections
-- [[dot-test_egress_mode_override()]] - `rationale_for` [EXTRACTED]
+- [[.test_egress_mode_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_607
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.svg"
 type: "image"
-community: "Community 1899"
+community: "Diagram 22: Dependency Graph"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1899
+  - community/Diagram_22_Dependency_Graph
 ---
 
 # Diagram 22: Dependency Graph
 
-#graphify/image #graphify/EXTRACTED #community/Community_1899
+#graphify/image #graphify/EXTRACTED #community/Diagram_22_Dependency_Graph

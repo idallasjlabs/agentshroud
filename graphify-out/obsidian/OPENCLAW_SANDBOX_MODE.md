@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Community 611"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_611
+  - graphify/INFERRED
+  - community/EgressFilterConfig
 ---
 
 # OPENCLAW_SANDBOX_MODE.md
@@ -17,4 +17,4 @@ tags:
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/INFERRED #community/EgressFilterConfig

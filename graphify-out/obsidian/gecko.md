@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 424"
+community: "browser-extension/manifest.json"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_424
+  - community/browser-extension/manifestjson
 ---
 
 # gecko
@@ -15,4 +15,4 @@ tags:
 - [[browser_specific_settings]] - `contains` [EXTRACTED]
 - [[id]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_424
+#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

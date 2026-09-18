@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_31]] - `method` [EXTRACTED]
-- [[dot-send_request()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_3]] - `method` [EXTRACTED]
-- [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
-- [[dot-test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
-- [[dot-test_generic_exception()]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_with_execute()]] - `calls` [EXTRACTED]
-- [[dot-test_sanitized_params_preferred_over_originals()]] - `calls` [EXTRACTED]
-- [[dot-test_server_error_response()]] - `calls` [EXTRACTED]
-- [[dot-test_server_error_response_without_message()]] - `calls` [EXTRACTED]
-- [[dot-test_shutdown_stops_all_connections()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
-- [[dot-test_successful_execution_with_result_inspection()]] - `calls` [EXTRACTED]
-- [[dot-test_timeout_error()]] - `calls` [EXTRACTED]
+- [[.__init__()_31]] - `method` [EXTRACTED]
+- [[.send_request()_1]] - `method` [EXTRACTED]
+- [[.stop()_3]] - `method` [EXTRACTED]
+- [[.test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
+- [[.test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
+- [[.test_generic_exception()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_with_execute()]] - `calls` [EXTRACTED]
+- [[.test_sanitized_params_preferred_over_originals()]] - `calls` [EXTRACTED]
+- [[.test_server_error_response()]] - `calls` [EXTRACTED]
+- [[.test_server_error_response_without_message()]] - `calls` [EXTRACTED]
+- [[.test_shutdown_stops_all_connections()]] - `calls` [EXTRACTED]
+- [[.test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
+- [[.test_successful_execution_with_result_inspection()]] - `calls` [EXTRACTED]
+- [[.test_timeout_error()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "Community 271"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/system-requirementsmd
 ---
 
 # system-requirements.md
@@ -29,4 +29,4 @@ tags:
 - [[setup-guide]] - `conceptually_related_to` [INFERRED]
 - [[use-cases]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_271
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

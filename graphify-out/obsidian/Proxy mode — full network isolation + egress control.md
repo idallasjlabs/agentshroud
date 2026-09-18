@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "concept"
-community: "Community 575"
+community: "gateway service (prod, sole egress point, 75-mod"
 location: "L1-21"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/gateway_service_prod_sole_egress_point_75-mod
 ---
 
 # Proxy mode — full network isolation + egress control
@@ -15,4 +15,4 @@ tags:
 - [[Sidecar mode — optional security scanning]] - `references` [EXTRACTED]
 - [[agentshroud-gateway service (proxy mode)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_575
+#graphify/concept #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod

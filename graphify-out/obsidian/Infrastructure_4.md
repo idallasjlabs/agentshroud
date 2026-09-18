@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 507"
-location: "L367"
+community: "AgentShroud — Master Feature List (Everything Ev"
+location: "L395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_507
+  - community/AgentShroud__Master_Feature_List_Everything_Ev
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_507
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev

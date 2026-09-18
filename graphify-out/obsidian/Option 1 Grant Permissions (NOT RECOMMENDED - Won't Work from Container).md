@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Community 401"
+community: "iMessage Integration Status"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/iMessage_Integration_Status
 ---
 
 # Option 1: Grant Permissions (NOT RECOMMENDED - Won't Work from Container)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Solutions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

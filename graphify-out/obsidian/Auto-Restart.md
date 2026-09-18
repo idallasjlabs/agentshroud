@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 470"
+community: "Crash Recovery"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/Crash_Recovery
 ---
 
 # Auto-Restart
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Crash Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 153"
+community: "BaseModel"
 location: "L882"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_153
+  - community/BaseModel
 ---
 
 # AddCollaboratorRequest
@@ -23,4 +23,4 @@ tags:
 - [[add_collaborator()]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/INFERRED #community/BaseModel

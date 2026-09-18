@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # Platform
@@ -21,4 +21,4 @@ tags:
 - [[str_2]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

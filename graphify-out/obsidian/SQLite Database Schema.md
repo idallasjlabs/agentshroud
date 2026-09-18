@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Community 504"
+community: "AgentShroud Schema Documentation"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # SQLite Database Schema
@@ -16,4 +16,4 @@ tags:
 - [[Approval Queue Schema]] - `contains` [EXTRACTED]
 - [[Database Connection Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

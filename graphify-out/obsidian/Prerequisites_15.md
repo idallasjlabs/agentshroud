@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "README.md"
 type: "document"
-community: "Community 822"
-location: "L11"
+community: "AgentShroud Operations Cheat Sheet"
+location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_822
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Quickstart]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_822
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

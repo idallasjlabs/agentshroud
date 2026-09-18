@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteFileRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

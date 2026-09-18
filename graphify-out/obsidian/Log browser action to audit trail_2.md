@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 136"
+community: "SecureBrowser"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/SecureBrowser
 ---
 
 # Log browser action to audit trail
 
 ## Connections
-- [[dot-_log_action()_2]] - `rationale_for` [EXTRACTED]
+- [[._log_action()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_136
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

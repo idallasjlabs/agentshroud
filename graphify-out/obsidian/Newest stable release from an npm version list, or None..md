@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Community 641"
+community: "pick_latest_stable()"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/pick_latest_stable
 ---
 
 # Newest stable release from an npm version list, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pick_latest_stable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_641
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

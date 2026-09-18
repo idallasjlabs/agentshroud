@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Community 900"
+community: "_script()"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_900
+  - community/_script
 ---
 
 # main()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_900
+#graphify/code #graphify/EXTRACTED #community/_script

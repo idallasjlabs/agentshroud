@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 188"
+community: ".send()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/send
 ---
 
 # Protocol
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SmtpLike]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/send

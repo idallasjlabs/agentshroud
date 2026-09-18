@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 309"
+community: "Skill: UI Expert (UI)"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Skill_UI_Expert_UI
 ---
 
 # CSS Architecture Recommendations
@@ -17,4 +17,4 @@ tags:
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 - [[Utility-First (Tailwind  custom utilities)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_309
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

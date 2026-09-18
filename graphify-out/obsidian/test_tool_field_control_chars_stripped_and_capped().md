@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 194"
+community: "AlertTelegramRelay"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/AlertTelegramRelay
 ---
 
 # test_tool_field_control_chars_stripped_and_capped()
@@ -17,4 +17,4 @@ tags:
 - [[_alert_event()]] - `calls` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

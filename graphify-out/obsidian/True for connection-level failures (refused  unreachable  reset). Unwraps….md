@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 37"
+community: "LLMProxy"
 location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/LLMProxy
 ---
 
 # True for connection-level failures (refused / unreachable / reset). Unwraps…
 
 ## Connections
-- [[dot-_is_connect_error()]] - `rationale_for` [EXTRACTED]
+- [[._is_connect_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

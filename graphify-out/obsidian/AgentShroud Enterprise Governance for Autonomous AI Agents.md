@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Community 412"
+community: "AgentShroud: Enterprise Governance for Autonomou"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_412
+  - community/AgentShroud_Enterprise_Governance_for_Autonomou
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
@@ -28,4 +28,4 @@ tags:
 - [[Executive Summary_10]] - `contains` [EXTRACTED]
 - [[agentshroud-whitepaper]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_412
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomou

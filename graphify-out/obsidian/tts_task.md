@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # tts_task
@@ -18,4 +18,4 @@ tags:
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_246
+#graphify/code #graphify/INFERRED #community/app_mainc

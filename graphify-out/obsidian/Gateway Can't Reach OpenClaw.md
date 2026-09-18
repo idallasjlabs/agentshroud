@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 221"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Gateway Can't Reach OpenClaw
 
 ## Connections
-- [[Troubleshooting_12]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_221
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

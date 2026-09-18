@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Community 867"
+community: "ADR-004: API Keys Never in Agent Container"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_867
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # ADR-004: API Keys Never in Agent Container
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ADR-004-api-keys-never-in-agent-container]] - `contains` [EXTRACTED]
 - [[Consequences_8]] - `contains` [EXTRACTED]
-- [[Context_12]] - `contains` [EXTRACTED]
+- [[Context_11]] - `contains` [EXTRACTED]
 - [[Decision_11]] - `contains` [EXTRACTED]
 - [[Status_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_867
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

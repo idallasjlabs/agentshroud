@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 location: "L766"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # Run the upstream CVE check for EVERY registered agent, independently. Iterates…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_upstream_cve_check_all_agents]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

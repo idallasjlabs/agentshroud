@@ -1,17 +1,23 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 77"
+community: "TELEGRAM_ISSUES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/TELEGRAM_ISSUESmd
 ---
 
-# runbook.md
+# RUNBOOK.md
 
 ## Connections
-- [[AgentShroud Operations Runbook]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima Troubleshooting Procedures]] - `references` [EXTRACTED]
+- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - `references` [EXTRACTED]
+- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - `references` [EXTRACTED]
+- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
+- [[deployment]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # StagingPattern
 
 ## Connections
-- [[dot-detect_staging_patterns()]] - `references` [EXTRACTED]
+- [[.detect_staging_patterns()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

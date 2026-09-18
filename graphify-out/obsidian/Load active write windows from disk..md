@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Memory Integrity & Lifecycle"
+community: "MemoryIntegrityMonitor"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/MemoryIntegrityMonitor
 ---
 
 # Load active write windows from disk.
 
 ## Connections
-- [[dot-_load_write_windows()]] - `rationale_for` [EXTRACTED]
+- [[._load_write_windows()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

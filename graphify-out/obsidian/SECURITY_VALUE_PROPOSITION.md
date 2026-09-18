@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 578"
+community: "SECURITY_VALUE_PROPOSITION.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
@@ -23,4 +23,4 @@ tags:
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

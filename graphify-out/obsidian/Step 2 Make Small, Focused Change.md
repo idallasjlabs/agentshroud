@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 397"
+community: "Safe Refactor Specialist"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_397
+  - community/Safe_Refactor_Specialist
 ---
 
 # Step 2: Make Small, Focused Change
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Refactoring Workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_397
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist

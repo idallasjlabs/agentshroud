@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 148"
+community: "asyncio"
 location: "L1275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/asyncio
 ---
 
 # _fake_trivy_scan()
 
 ## Connections
-- [[dot-test_critical_image_finding_uses_red_icon()]] - `contains` [EXTRACTED]
+- [[.test_critical_image_finding_uses_red_icon()]] - `contains` [EXTRACTED]
 - [[_make_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/asyncio

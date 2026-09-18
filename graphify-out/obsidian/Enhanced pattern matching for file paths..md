@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # Enhanced pattern matching for file paths.
 
 ## Connections
-- [[dot-_match_pattern()]] - `rationale_for` [EXTRACTED]
+- [[._match_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

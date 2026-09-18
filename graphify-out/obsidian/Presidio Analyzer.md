@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Community 978"
+community: "Presidio Analyzer"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Presidio_Analyzer
 ---
 
 # Presidio Analyzer
@@ -21,4 +21,4 @@ tags:
 - [[Where Used_5]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_978
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer

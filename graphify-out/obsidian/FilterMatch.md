@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # FilterMatch
 
 ## Connections
-- [[dot-_classify_response_risk()]] - `references` [EXTRACTED]
-- [[dot-filter_response()_1]] - `calls` [EXTRACTED]
+- [[._classify_response_risk()]] - `references` [EXTRACTED]
+- [[.filter_response()_1]] - `calls` [EXTRACTED]
 - [[A single match found by the outbound filter.]] - `rationale_for` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

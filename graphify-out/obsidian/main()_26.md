@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 573"
+community: "DNSForwarderProtocol"
 location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/DNSForwarderProtocol
 ---
 
 # main()
@@ -15,4 +15,4 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

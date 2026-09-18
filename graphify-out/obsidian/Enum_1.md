@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 158"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/triage-cve-mitigationspy
 ---
 
 # Enum
@@ -15,4 +15,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

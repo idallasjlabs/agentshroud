@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 151"
+community: "SecureBrowser Skill"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/SecureBrowser_Skill
 ---
 
 # Usage Examples
@@ -18,4 +18,4 @@ tags:
 - [[Example 4 Handle CAPTCHA]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

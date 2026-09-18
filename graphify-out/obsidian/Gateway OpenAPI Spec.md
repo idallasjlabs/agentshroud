@@ -1,19 +1,16 @@
 ---
 source_file: "gateway/openapi.json"
 type: "document"
-community: "Community 100"
+community: "agentshroud-gateway pyproject config"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_100
+  - graphify/INFERRED
+  - community/agentshroud-gateway_pyproject_config
 ---
 
 # Gateway OpenAPI Spec
 
 ## Connections
-- [[OpenAPI dashboard endpoint group]] - `conceptually_related_to` [EXTRACTED]
-- [[OpenAPI management endpoint group]] - `conceptually_related_to` [EXTRACTED]
-- [[OpenAPI soc endpoint group]] - `conceptually_related_to` [EXTRACTED]
-- [[OpenAPI versions endpoint group]] - `conceptually_related_to` [EXTRACTED]
+- [[agentshroud-gateway pyproject config]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_100
+#graphify/document #graphify/INFERRED #community/agentshroud-gateway_pyproject_config

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
+type: "code"
+community: "_t()"
+location: "L310"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/_t
+---
+
+# TestDefenseLayerVocabulary
+
+## Connections
+- [[.test_all_mapped_layers_exist_in_registry()_1]] - `method` [EXTRACTED]
+- [[test_triage_cve_mitigations.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/_t

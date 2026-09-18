@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 515"
-location: "L103"
+community: "clamav_scanner.py"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_515
+  - community/clamav_scannerpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_515
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

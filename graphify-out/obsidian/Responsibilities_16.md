@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 576"
-location: "L18"
+community: "middleware.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/middlewarepy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

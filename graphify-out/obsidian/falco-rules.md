@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 98"
+community: "falco_monitor.py"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_98
+  - graphify/INFERRED
+  - community/falco_monitorpy
 ---
 
 # falco-rules.md
@@ -17,4 +17,4 @@ tags:
 - [[falco_monitor.py_2]] - `references` [INFERRED]
 - [[wazuh-ossec]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_98
+#graphify/document #graphify/INFERRED #community/falco_monitorpy

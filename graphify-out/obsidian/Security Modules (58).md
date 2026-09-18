@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 810"
+community: "Security Modules (58)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_810
+  - community/Security_Modules_58
 ---
 
 # Security Modules (58)
@@ -26,4 +26,4 @@ tags:
 - [[Supply Chain & Browser (2)]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_810
+#graphify/document #graphify/EXTRACTED #community/Security_Modules_58

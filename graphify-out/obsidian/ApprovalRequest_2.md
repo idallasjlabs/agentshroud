@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-test_both_owner_dm_and_group_notified()]] - `calls` [EXTRACTED]
-- [[dot-test_concurrent_submit_and_decide()]] - `calls` [EXTRACTED]
-- [[dot-test_dm_approval_no_group_side_effect()]] - `calls` [EXTRACTED]
-- [[dot-test_dm_approval_routes_only_to_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_double_decide_raises()]] - `calls` [EXTRACTED]
-- [[dot-test_expired_request_cannot_be_decided()]] - `calls` [EXTRACTED]
-- [[dot-test_get_pending_expires_stale()]] - `calls` [EXTRACTED]
-- [[dot-test_group_chat_receives_thread_reply()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_dm_contains_action_type()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_dm_references_group_chat_id()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_receives_dm_for_group_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_route_approval_auto_detects_group_context()]] - `calls` [EXTRACTED]
-- [[dot-test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
-- [[dot-test_timeout_auto_deny()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[.test_both_owner_dm_and_group_notified()]] - `calls` [EXTRACTED]
+- [[.test_concurrent_submit_and_decide()]] - `calls` [EXTRACTED]
+- [[.test_dm_approval_no_group_side_effect()]] - `calls` [EXTRACTED]
+- [[.test_dm_approval_routes_only_to_owner()]] - `calls` [EXTRACTED]
+- [[.test_double_decide_raises()]] - `calls` [EXTRACTED]
+- [[.test_expired_request_cannot_be_decided()]] - `calls` [EXTRACTED]
+- [[.test_get_pending_expires_stale()]] - `calls` [EXTRACTED]
+- [[.test_group_chat_receives_thread_reply()]] - `calls` [EXTRACTED]
+- [[.test_owner_dm_contains_action_type()]] - `calls` [EXTRACTED]
+- [[.test_owner_dm_references_group_chat_id()]] - `calls` [EXTRACTED]
+- [[.test_owner_receives_dm_for_group_approval()]] - `calls` [EXTRACTED]
+- [[.test_route_approval_auto_detects_group_context()]] - `calls` [EXTRACTED]
+- [[.test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
+- [[.test_timeout_auto_deny()]] - `calls` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
+- [[Any_79]] - `uses` [INFERRED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_1]] - `uses` [INFERRED]
@@ -36,8 +36,8 @@ tags:
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
@@ -62,10 +62,10 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_submit_enhanced_high_risk()]] - `calls` [EXTRACTED]
 - [[_submit_high_risk()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
@@ -104,4 +104,4 @@ tags:
 - [[test_submit_approval_request()]] - `calls` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

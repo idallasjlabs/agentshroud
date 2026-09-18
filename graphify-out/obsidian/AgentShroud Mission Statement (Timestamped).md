@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "rationale"
-community: "Community 1079"
+community: "AgentShroud™ — Trademark Prior Use Record"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1079
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # AgentShroud Mission Statement (Timestamped)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1079
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # vt_remote_log
@@ -18,4 +18,4 @@ tags:
 - [[wakeword_push_frame]] - `calls` [EXTRACTED]
 - [[wakeword_tick]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/wakewordc

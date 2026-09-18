@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 971"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_971
+  - community/AgentShroud_v120__Blue_Team_Security_Assessme
 ---
 
 # §1 — Re-audit of v0.8.0 Prior Findings
@@ -16,4 +16,4 @@ tags:
 - [[Previously FIXED findings — verification]] - `contains` [EXTRACTED]
 - [[Previously OPEN findings — current status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_971
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme

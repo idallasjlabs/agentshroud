@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Community 431"
+community: "test_ptt_state.c"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_431
+  - community/test_ptt_statec
 ---
 
 # test_vad_timeout_fires_without_audio()
@@ -20,4 +20,4 @@ tags:
 - [[wakeword_tick]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_431
+#graphify/code #graphify/INFERRED #community/test_ptt_statec

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 125"
+community: "IntelReportStore"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/IntelReportStore
 ---
 
 # A single competitor record in a competitive intel report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitorEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_125
+#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore

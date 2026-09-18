@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Community 275"
+community: "Path"
 location: "L1110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_275
+  - community/Path
 ---
 
 # Files named trivy-*.json (fs scans) are not included.
 
 ## Connections
-- [[dot-test_ignores_non_image_prefixed_files()]] - `rationale_for` [EXTRACTED]
+- [[.test_ignores_non_image_prefixed_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_275
+#graphify/rationale #graphify/EXTRACTED #community/Path

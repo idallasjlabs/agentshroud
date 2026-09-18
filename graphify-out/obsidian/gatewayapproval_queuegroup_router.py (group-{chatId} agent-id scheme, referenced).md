@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Community 95"
+community: "GroupApprovalRouter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/GroupApprovalRouter
 ---
 
 # gateway/approval_queue/group_router.py (group-{chatId} agent-id scheme, referenced)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_approval_routing.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

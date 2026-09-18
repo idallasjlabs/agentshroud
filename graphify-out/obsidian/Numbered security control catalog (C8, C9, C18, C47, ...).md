@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "concept"
-community: "Community 598"
+community: "SessionManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/SessionManager
 ---
 
 # Numbered security control catalog (C8, C9, C18, C47, ...)
@@ -15,4 +15,4 @@ tags:
 - [[test_prompt_guard.py]] - `conceptually_related_to` [EXTRACTED]
 - [[test_session_security.py]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_598
+#graphify/concept #graphify/EXTRACTED #community/SessionManager

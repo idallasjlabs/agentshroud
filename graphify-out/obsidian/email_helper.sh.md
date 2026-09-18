@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/email_helper.sh"
 type: "code"
-community: "Community 474"
+community: "run_test()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_474
+  - community/run_test
 ---
 
 # email_helper.sh
@@ -15,4 +15,4 @@ tags:
 - [[email_helper.sh script]] - `contains` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_474
+#graphify/code #graphify/EXTRACTED #community/run_test

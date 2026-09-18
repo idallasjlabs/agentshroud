@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 82"
+community: "asyncio"
 location: "L1603"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/asyncio
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - `contains` [EXTRACTED]
+- [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/asyncio

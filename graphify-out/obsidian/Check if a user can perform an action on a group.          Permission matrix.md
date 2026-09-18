@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Check if a user can perform an action on a group.          Permission matrix:
 
 ## Connections
-- [[dot-check_group_permission()]] - `rationale_for` [EXTRACTED]
+- [[.check_group_permission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

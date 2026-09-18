@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
-type: "document"
-community: "Community 761"
-location: "L47"
+source_file: "docker/docker-compose.yml"
+type: "code"
+community: "Marvin Dev Overlay (port and subnet offsets from"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_761
+  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
 ---
 
-# gateway service
+# Gateway Service
 
 ## Connections
-- [[Default Service Configuration]] - `contains` [EXTRACTED]
+- [[Marvin Dev Overlay (port and subnet offsets from prod)]] - `references` [EXTRACTED]
+- [[container macro (always-true placeholder inside the gateway)]] - `references` [EXTRACTED]
+- [[gateway-start.sh entrypoint]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_761
+#graphify/code #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from

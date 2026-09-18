@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "Any"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/Any
 ---
 
 # Create a fingerprint for request parameters.
 
 ## Connections
-- [[dot-_create_parameter_fingerprint()]] - `rationale_for` [EXTRACTED]
+- [[._create_parameter_fingerprint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/Any

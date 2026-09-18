@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
+community: "RBACConfig"
 location: "L1297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/RBACConfig
 ---
 
 # _score_access_control_authorization() (domain 14, FR2)
@@ -15,4 +15,4 @@ tags:
 - [[RBACConfig_2]] - `references` [EXTRACTED]
 - [[UserSessionManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

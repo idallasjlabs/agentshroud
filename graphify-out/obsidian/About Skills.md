@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 555"
+community: "Skill Creation Process"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/Skill_Creation_Process
 ---
 
 # About Skills
@@ -15,4 +15,4 @@ tags:
 - [[Skill Creator]] - `contains` [EXTRACTED]
 - [[What Skills Provide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_555
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

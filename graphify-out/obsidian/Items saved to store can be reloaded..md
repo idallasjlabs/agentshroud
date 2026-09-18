@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # Items saved to store can be reloaded.
 
 ## Connections
-- [[dot-test_store_save_and_load()]] - `rationale_for` [EXTRACTED]
+- [[.test_store_save_and_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_38
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

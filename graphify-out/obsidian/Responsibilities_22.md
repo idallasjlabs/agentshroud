@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 600"
+community: "wazuh_client.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_600
+  - community/wazuh_clientpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_600
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

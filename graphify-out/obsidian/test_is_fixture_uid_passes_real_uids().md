@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "CollaboratorActivityTracker"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/CollaboratorActivityTracker
 ---
 
 # test_is_fixture_uid_passes_real_uids()
@@ -15,4 +15,4 @@ tags:
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

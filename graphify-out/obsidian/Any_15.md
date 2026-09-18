@@ -1,23 +1,27 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: ""
 type: "code"
-community: "Multi-Agent Router & Chat UI"
-location: "L152"
+community: "gateway.security.daily_cve_report"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_1]] - `references` [EXTRACTED]
-- [[AgentTarget_1]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[check_upstream_cves]] - `references` [EXTRACTED]
+- [[check_upstream_cves()]] - `references` [EXTRACTED]
+- [[format_cve_report]] - `references` [EXTRACTED]
+- [[format_cve_report()]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

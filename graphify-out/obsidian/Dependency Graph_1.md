@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Community 1049"
+community: "Dependency Graph"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1049
+  - community/Dependency_Graph
 ---
 
 # Dependency Graph
@@ -18,4 +18,4 @@ tags:
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
 - [[Related Notes_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1049
+#graphify/document #graphify/EXTRACTED #community/Dependency_Graph

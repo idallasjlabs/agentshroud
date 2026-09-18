@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # Injection attempts should be detected even under load.
 
 ## Connections
-- [[dot-test_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
+- [[.test_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

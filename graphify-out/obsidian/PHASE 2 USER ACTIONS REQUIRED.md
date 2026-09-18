@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "Community 591"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # PHASE 2: USER ACTIONS REQUIRED
@@ -17,4 +17,4 @@ tags:
 - [[2.3 Verify Both Working]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_591
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

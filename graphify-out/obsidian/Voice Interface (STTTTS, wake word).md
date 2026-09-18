@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Community 1346"
+community: "Voice Gateway Service"
 location: "L377-L397"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1346
+  - community/Voice_Gateway_Service
 ---
 
 # Voice Interface (STT/TTS, wake word)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Gateway Service]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1346
+#graphify/concept #graphify/INFERRED #community/Voice_Gateway_Service

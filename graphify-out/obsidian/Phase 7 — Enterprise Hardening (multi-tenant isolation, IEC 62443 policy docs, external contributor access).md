@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.svg"
 type: "concept"
-community: "Community 1077"
+community: "Phase 2 — Security Core (HMAC Auth + PII Sanitiz"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1077
+  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
 ---
 
 # Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1077
+#graphify/concept #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 74"
+community: "DelegationManager"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_74
+  - community/DelegationManager
 ---
 
 # DelegationError
 
 ## Connections
-- [[dot-_require_owner()]] - `calls` [EXTRACTED]
-- [[dot-delegate()]] - `calls` [EXTRACTED]
+- [[._require_owner()]] - `calls` [EXTRACTED]
+- [[.delegate()]] - `calls` [EXTRACTED]
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[Raised when a delegation operation is invalid.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_74
+#graphify/code #graphify/INFERRED #community/DelegationManager

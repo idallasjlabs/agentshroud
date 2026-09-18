@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Community 570"
+community: "_seed_cron"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/_seed_cron
 ---
 
 # start.sh (Hermes s6 main program)
@@ -14,4 +14,4 @@ tags:
 - [[init-config.sh main body]] - `calls` [EXTRACTED]
 - [[main (resolve_model.py CLI)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_570
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

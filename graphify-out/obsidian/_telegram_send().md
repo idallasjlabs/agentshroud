@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Community 732"
+community: "start.sh"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_732
+  - community/startsh
 ---
 
 # _telegram_send()
@@ -16,4 +16,4 @@ tags:
 - [[start.sh]] - `defines` [EXTRACTED]
 - [[start.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_732
+#graphify/code #graphify/EXTRACTED #community/startsh

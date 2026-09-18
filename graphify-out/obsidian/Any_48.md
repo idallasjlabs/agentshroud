@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L49"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - graphify/INFERRED
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[.inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

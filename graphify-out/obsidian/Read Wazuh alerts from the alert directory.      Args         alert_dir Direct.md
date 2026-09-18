@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "Community 292"
+community: "wazuh_client.py"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_292
+  - community/wazuh_clientpy
 ---
 
 # Read Wazuh alerts from the alert directory.      Args:         alert_dir: Direct
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[read_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_292
+#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy

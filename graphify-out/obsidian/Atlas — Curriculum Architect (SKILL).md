@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 1061"
+community: "Atlas — Curriculum Architect (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1061
+  - community/Atlas__Curriculum_Architect_SKILL
 ---
 
 # Atlas — Curriculum Architect (SKILL)
@@ -17,4 +17,4 @@ tags:
 - [[OKE Channel — CPA Exam Context_2]] - `references` [EXTRACTED]
 - [[curriculum.md Output Template]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1061
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL

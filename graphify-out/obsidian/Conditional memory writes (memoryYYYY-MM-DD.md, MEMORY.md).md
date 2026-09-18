@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Community 749"
+community: "OpenClaw Host Hardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/OpenClaw_Host_Hardening
 ---
 
 # Conditional memory writes (memory/YYYY-MM-DD.md, MEMORY.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[healthcheckSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_749
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

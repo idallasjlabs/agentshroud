@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "Community 1144"
+community: "Assess severity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1144
+  - community/Assess_severity
 ---
 
 # Incident detected
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Assess severity]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1144
+#graphify/concept #graphify/EXTRACTED #community/Assess_severity

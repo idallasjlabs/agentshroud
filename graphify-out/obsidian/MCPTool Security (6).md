@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 810"
+community: "Security Modules (58)"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_810
+  - community/Security_Modules_58
 ---
 
 # MCP/Tool Security (6)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_810
+#graphify/document #graphify/EXTRACTED #community/Security_Modules_58

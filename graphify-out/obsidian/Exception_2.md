@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # Exception
 
 ## Connections
-- [[dot-__init__()_31]] - `references` [EXTRACTED]
+- [[.__init__()_31]] - `references` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/StdioConnection

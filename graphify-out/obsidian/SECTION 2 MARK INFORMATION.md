@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 1146"
+community: "SECTION 2: MARK INFORMATION"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1146
+  - community/SECTION_2_MARK_INFORMATION
 ---
 
 # SECTION 2: MARK INFORMATION
@@ -19,4 +19,4 @@ tags:
 - [[2.5 Mark Description (for standard character mark)]] - `contains` [EXTRACTED]
 - [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1146
+#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION

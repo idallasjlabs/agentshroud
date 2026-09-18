@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 617"
+community: "Socrates — Dialogue Architect"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Speaker Definitions
@@ -16,4 +16,4 @@ tags:
 - [[HOST_2]] - `contains` [EXTRACTED]
 - [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

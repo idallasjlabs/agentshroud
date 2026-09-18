@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "concept"
-community: "Community 1871"
+community: "Neo4j Export / Push"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1871
+  - community/Neo4j_Export_/_Push
 ---
 
 # Neo4j Export / Push
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1871
+#graphify/concept #graphify/EXTRACTED #community/Neo4j_Export_/_Push

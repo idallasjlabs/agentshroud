@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Community 667"
+community: "Feature: Global Monitor-Only Mode (\"Observatory "
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_
 ---
 
 # Feature: Global Monitor-Only Mode ("Observatory Mode")
@@ -21,4 +21,4 @@ tags:
 - [[Use Cases_2]] - `contains` [EXTRACTED]
 - [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_

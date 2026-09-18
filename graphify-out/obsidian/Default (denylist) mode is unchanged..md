@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # Default (denylist) mode is unchanged.
 
 ## Connections
-- [[dot-test_denylist_mode_still_works()]] - `rationale_for` [EXTRACTED]
+- [[.test_denylist_mode_still_works()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

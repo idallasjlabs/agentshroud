@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 785"
+community: "TELEGRAM_ISSUES.md"
 location: "L500"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Configuration Reference
@@ -18,4 +18,4 @@ tags:
 - [[egress-config.yml - Egress Filtering]] - `contains` [EXTRACTED]
 - [[mcp-config.yml - MCP Server Registry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

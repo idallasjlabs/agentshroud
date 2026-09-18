@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "DeceptionDetection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/DeceptionDetection
 ---
 
 # approval_hardening.py
@@ -19,4 +19,4 @@ tags:
 - [[DeniedRequest]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/DeceptionDetection

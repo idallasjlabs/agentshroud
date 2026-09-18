@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

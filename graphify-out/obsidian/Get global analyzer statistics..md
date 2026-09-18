@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Voice Gateway STT & Browser Security"
+community: ".analyze_tool_call()"
 location: "L560"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/analyze_tool_call
 ---
 
 # Get global analyzer statistics.
 
 ## Connections
-- [[dot-get_global_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.get_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/rationale #graphify/EXTRACTED #community/analyze_tool_call

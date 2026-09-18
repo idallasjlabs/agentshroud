@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Community 321"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_321
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # 🔴 **HIGH RISK — Immediate Attention Required**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps — Critical Security Concerns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_321
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

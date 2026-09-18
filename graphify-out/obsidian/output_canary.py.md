@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 890"
+community: "TestOutputCanary"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/TestOutputCanary
 ---
 
 # output_canary.py
@@ -16,4 +16,4 @@ tags:
 - [[CanaryResult_2]] - `contains` [EXTRACTED]
 - [[OutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

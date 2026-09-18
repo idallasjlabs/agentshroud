@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 89"
-location: "L98"
+community: "TestOutputCanary"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/TestOutputCanary
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_9]] - `references` [EXTRACTED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.get_status()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

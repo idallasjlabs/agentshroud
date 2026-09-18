@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L187"
+community: "lifespan.py"
+location: "L286"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - graphify/EXTRACTED
+  - community/lifespanpy
 ---
 
-# Any
+# any
 
 ## Connections
-- [[dot-check_permission()]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[.get_stats()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

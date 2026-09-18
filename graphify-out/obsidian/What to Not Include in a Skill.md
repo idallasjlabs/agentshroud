@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 811"
+community: "Core Principles"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_811
+  - community/Core_Principles
 ---
 
 # What to Not Include in a Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Anatomy of a Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_811
+#graphify/document #graphify/EXTRACTED #community/Core_Principles

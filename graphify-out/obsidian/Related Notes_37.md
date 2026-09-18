@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Community 611"
+community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_611
+  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM

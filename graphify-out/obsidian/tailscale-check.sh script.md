@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Community 899"
+community: "tailscale-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/tailscale-checksh
 ---
 
 # tailscale-check.sh script
@@ -17,4 +17,4 @@ tags:
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
 - [[warn()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_899
+#graphify/code #graphify/EXTRACTED #community/tailscale-checksh

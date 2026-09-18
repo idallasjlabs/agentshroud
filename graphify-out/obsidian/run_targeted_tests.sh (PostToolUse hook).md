@@ -1,16 +1,16 @@
 ---
 source_file: ".claude/scripts/claude-hooks/run_targeted_tests.sh"
 type: "code"
-community: "Community 304"
+community: ".claude/settings.json (hook + permission wiring)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_304
+  - community/claude/settingsjson_hook__permission_wiring
 ---
 
 # run_targeted_tests.sh (PostToolUse hook)
 
 ## Connections
-- [[dot-claudesettings.json (hook + permission wiring)]] - `references` [EXTRACTED]
+- [[.claudesettings.json (hook + permission wiring)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_304
+#graphify/code #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring

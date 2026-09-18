@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 839"
+community: "Daedalus — Concept Illustrator"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_839
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # architecture.puml (PlantUML)
 
 ## Connections
-- [[Output Format_35]] - `contains` [EXTRACTED]
+- [[Output Format_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_839
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

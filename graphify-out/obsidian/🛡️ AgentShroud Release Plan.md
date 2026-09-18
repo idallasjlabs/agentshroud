@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 250"
+community: "🛡️ AgentShroud Release Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/_AgentShroud_Release_Plan
 ---
 
 # 🛡️ AgentShroud Release Plan
@@ -31,4 +31,4 @@ tags:
 - [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - `contains` [EXTRACTED]
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

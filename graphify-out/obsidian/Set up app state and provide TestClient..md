@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # Set up app state and provide TestClient.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[client()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

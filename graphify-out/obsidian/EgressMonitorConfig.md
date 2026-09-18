@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # EgressMonitorConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_68]] - `references` [EXTRACTED]
-- [[dot-test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.__init__()_68]] - `references` [EXTRACTED]
+- [[.test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

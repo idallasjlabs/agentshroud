@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 815"
+community: "TestDashboardCookieAuth"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_815
+  - community/TestDashboardCookieAuth
 ---
 
 # Dashboard should set httpOnly cookie and redirect to clean URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDashboardCookieAuth]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_815
+#graphify/rationale #graphify/EXTRACTED #community/TestDashboardCookieAuth

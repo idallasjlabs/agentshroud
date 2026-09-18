@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L10"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # TestResourceGuardFailClosed
 
 ## Connections
-- [[dot-test_check_cpu_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
-- [[dot-test_check_disk_write_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
-- [[dot-test_check_memory_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
+- [[.test_check_cpu_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
+- [[.test_check_disk_write_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
+- [[.test_check_memory_limit_returns_false_on_exception()]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[Verify resource check methods return False (deny) on exception.]] - `rationale_for` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/ResourceGuard

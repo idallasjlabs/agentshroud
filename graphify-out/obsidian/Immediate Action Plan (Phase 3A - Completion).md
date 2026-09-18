@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 857"
+community: "AgentShroud Security Value Proposition - REVISED"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_857
+  - community/AgentShroud_Security_Value_Proposition_-_REVISED
 ---
 
 # Immediate Action Plan (Phase 3A - Completion)
@@ -18,4 +18,4 @@ tags:
 - [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - `contains` [EXTRACTED]
 - [[Priority 4 Create Security Verification Script (HIGH)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_857
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED

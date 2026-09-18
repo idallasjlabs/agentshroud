@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # EBS Performance Analysis Pattern
 
 ## Connections
-- [[dot-scripts Numbered Script Library Convention]] - `references` [EXTRACTED]
+- [[.scripts Numbered Script Library Convention]] - `references` [EXTRACTED]
 - [[AWS Cloud Management & FinOps Agent (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_325
+#graphify/concept #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L1155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # TestAllowDenyList
 
 ## Connections
-- [[dot-test_disabled_server_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_unknown_server_default_allow()]] - `method` [EXTRACTED]
+- [[.test_disabled_server_blocked()]] - `method` [EXTRACTED]
+- [[.test_unknown_server_default_allow()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[ThreatLevel_2]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

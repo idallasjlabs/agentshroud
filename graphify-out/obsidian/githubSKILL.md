@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 1087"
+community: "gh-issues/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1087
+  - community/gh-issues/SKILLmd
 ---
 
 # github/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[gh CLI (GitHub)]] - `implements` [EXTRACTED]
 - [[gh-issuesSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1087
+#graphify/document #graphify/EXTRACTED #community/gh-issues/SKILLmd

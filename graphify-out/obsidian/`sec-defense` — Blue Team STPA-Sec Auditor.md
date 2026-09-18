@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 990"
+community: "Key Skills in Detail"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Key_Skills_in_Detail
 ---
 
 # `/sec-defense` — Blue Team STPA-Sec Auditor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Skills in Detail]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_990
+#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail

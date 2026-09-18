@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "tool_result_injection.py"
 location: "L569"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/tool_result_injectionpy
 ---
 
 # Get the global context guard instance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_context_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/tool_result_injectionpy

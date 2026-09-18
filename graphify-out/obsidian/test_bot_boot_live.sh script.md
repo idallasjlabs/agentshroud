@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "Community 1477"
+community: "test_bot_boot_live.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1477
+  - community/test_bot_boot_livesh
 ---
 
 # test_bot_boot_live.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()_1]] - `calls` [EXTRACTED]
 - [[test_bot_boot_live.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1477
+#graphify/code #graphify/EXTRACTED #community/test_bot_boot_livesh

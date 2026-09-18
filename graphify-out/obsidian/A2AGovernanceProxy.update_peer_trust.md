@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustManager"
 location: "213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustManager
 ---
 
 # A2AGovernanceProxy.update_peer_trust
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustManager

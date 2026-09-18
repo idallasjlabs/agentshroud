@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).
@@ -15,4 +15,4 @@ tags:
 - [[_check_fluent_bit()]] - `rationale_for` [EXTRACTED]
 - [[_check_wazuh_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_68
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

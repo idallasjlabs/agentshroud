@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "rationale"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # Read one bot's cron store; tolerate absence/corruption.
 
 ## Connections
-- [[dot-parse_store()]] - `rationale_for` [EXTRACTED]
+- [[.parse_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_90
+#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

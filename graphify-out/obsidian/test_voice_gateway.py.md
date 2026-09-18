@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # test_voice_gateway.py
@@ -125,4 +125,4 @@ tags:
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `contains` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,17 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Community 178"
-location: "L409"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[Documentation_1]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

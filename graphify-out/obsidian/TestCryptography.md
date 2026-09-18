@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "EncryptedStore"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/P3_Infrastructure_Security_Modules
+  - community/EncryptedStore
 ---
 
 # TestCryptography
 
 ## Connections
-- [[dot-store()_1]] - `method` [EXTRACTED]
-- [[dot-test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
-- [[dot-test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
-- [[dot-test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
-- [[dot-test_encrypt_json()]] - `method` [EXTRACTED]
-- [[dot-test_key_rotation()_1]] - `method` [EXTRACTED]
-- [[dot-test_key_vault_init()]] - `method` [EXTRACTED]
-- [[dot-test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
+- [[.store()_1]] - `method` [EXTRACTED]
+- [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
+- [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
+- [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
+- [[.test_encrypt_json()]] - `method` [EXTRACTED]
+- [[.test_key_rotation()_1]] - `method` [EXTRACTED]
+- [[.test_key_vault_init()]] - `method` [EXTRACTED]
+- [[.test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
+- [[.test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/INFERRED #community/EncryptedStore

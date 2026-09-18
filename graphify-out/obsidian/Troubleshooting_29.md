@@ -1,17 +1,20 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 410"
-location: "L295"
+community: "iCloud Services"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/iCloud_Services
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

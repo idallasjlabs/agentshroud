@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-get_next_trust_level()]] - `method` [EXTRACTED]
-- [[dot-get_previous_trust_level()]] - `method` [EXTRACTED]
-- [[dot-get_trust_level_order()]] - `method` [EXTRACTED]
-- [[dot-is_tool_allowed()_1]] - `method` [EXTRACTED]
+- [[.get_next_trust_level()]] - `method` [EXTRACTED]
+- [[.get_previous_trust_level()]] - `method` [EXTRACTED]
+- [[.get_trust_level_order()]] - `method` [EXTRACTED]
+- [[.is_tool_allowed()_1]] - `method` [EXTRACTED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
 - [[Request_2]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[trust_manager()]] - `calls` [EXTRACTED]
 - [[trust_manager()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

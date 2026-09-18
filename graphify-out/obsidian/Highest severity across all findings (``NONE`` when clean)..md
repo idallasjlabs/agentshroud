@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 293"
+community: "SkillGuard"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/SkillGuard
 ---
 
 # Highest severity across all findings (``NONE`` when clean).
 
 ## Connections
-- [[dot-severity()]] - `rationale_for` [EXTRACTED]
+- [[.severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_293
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

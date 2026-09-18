@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "Community 225"
+community: "Containers startup order: agentshroud-gateway st"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/Containers_startup_order_agentshroud-gateway_st
 ---
 
 # Docker Deployment Dependency Graph
@@ -17,4 +17,4 @@ tags:
 - [[Docker Volumes (auto-created) agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data]] - `conceptually_related_to` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_225
+#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st

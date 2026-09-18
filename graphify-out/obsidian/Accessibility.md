@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "Animation Guidelines"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Animation_Guidelines
 ---
 
 # Accessibility
@@ -15,4 +15,4 @@ tags:
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 - [[Color Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines

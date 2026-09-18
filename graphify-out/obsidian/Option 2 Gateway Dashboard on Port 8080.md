@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 786"
+community: "Quick Reference Commands"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/Quick_Reference_Commands
 ---
 
 # Option 2: Gateway Dashboard on Port 8080
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Access OpenClaw Dashboard Remotely]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

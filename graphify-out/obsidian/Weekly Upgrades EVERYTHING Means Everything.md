@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Community 832"
+community: "8. Governance Model"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_832
+  - graphify/INFERRED
+  - community/8_Governance_Model
 ---
 
 # Weekly Upgrades: EVERYTHING Means Everything
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud CLAUDE.md operating rules]] - `references` [EXTRACTED]
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_832
+#graphify/rationale #graphify/INFERRED #community/8_Governance_Model

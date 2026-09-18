@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 886"
+community: "REPORT STRUCTURE"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_886
+  - community/REPORT_STRUCTURE
 ---
 
 # REPORT STRUCTURE
@@ -18,4 +18,4 @@ tags:
 - [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE_1]] - `contains` [EXTRACTED]
 - [[SECTION 4 NEXT STEPS TO STAY AHEAD_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_886
+#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE

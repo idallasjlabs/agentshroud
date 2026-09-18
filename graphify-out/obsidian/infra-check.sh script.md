@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "Community 899"
+community: "tailscale-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/tailscale-checksh
 ---
 
 # infra-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[infra-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_899
+#graphify/code #graphify/EXTRACTED #community/tailscale-checksh

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logo.png"
 type: "image"
-community: "Community 831"
+community: "branding/README.md"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_831
+  - community/branding/READMEmd
 ---
 
 # AgentShroud Primary Logo
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud MerchandiseStationery Mockup]] - `conceptually_related_to` [INFERRED]
 - [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Community_831
+#graphify/image #graphify/INFERRED #community/branding/READMEmd

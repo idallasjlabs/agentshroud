@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # E2E-03: PII in agent responses is stripped before delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E03OutboundPIIRedaction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

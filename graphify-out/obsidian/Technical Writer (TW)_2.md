@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Community 1291"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1291
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Technical Writer (TW)
@@ -15,6 +15,6 @@ tags:
 - [[Purpose_108]] - `contains` [EXTRACTED]
 - [[Related Skills_99]] - `contains` [EXTRACTED]
 - [[Usage_103]] - `contains` [EXTRACTED]
-- [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1291
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

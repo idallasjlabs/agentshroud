@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 82"
+community: "asyncio"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/asyncio
 ---
 
 # test_daily_cve_report.py
@@ -46,4 +46,4 @@ tags:
 - [[list_cve_agents]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Community 79"
+community: "test_anthropic_openai_translator.py"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # test_translator_qwen_target_injects_no_think()
@@ -16,4 +16,4 @@ tags:
 - [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

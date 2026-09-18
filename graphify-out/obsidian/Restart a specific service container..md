@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Runtime Security Comparison & Intel Report"
+community: "api.py"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/apipy
 ---
 
 # Restart a specific service container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[restart_service()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 242"
+community: "jira_weekly_review.py"
 location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/jira_weekly_reviewpy
 ---
 
 # run()
@@ -24,4 +24,4 @@ tags:
 - [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
 - [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_242
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

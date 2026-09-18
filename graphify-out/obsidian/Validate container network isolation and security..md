@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 487"
+community: "lifespan.py"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/lifespanpy
 ---
 
 # Validate container network isolation and security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_487
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 273"
+community: "test_playback_state.c"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/test_playback_statec
 ---
 
 # test_gate_opens_on_reply_complete()
@@ -16,4 +16,4 @@ tags:
 - [[playback_gate_should_open()]] - `calls` [INFERRED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

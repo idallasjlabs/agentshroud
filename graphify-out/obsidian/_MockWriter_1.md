@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 72"
+community: "test_http_proxy.py"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/test_http_proxypy
 ---
 
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_177]] - `method` [EXTRACTED]
-- [[dot-close()_19]] - `method` [EXTRACTED]
-- [[dot-drain()_2]] - `method` [EXTRACTED]
-- [[dot-get_extra_info()_1]] - `method` [EXTRACTED]
-- [[dot-write()_2]] - `method` [EXTRACTED]
+- [[.__init__()_177]] - `method` [EXTRACTED]
+- [[.close()_19]] - `method` [EXTRACTED]
+- [[.drain()_2]] - `method` [EXTRACTED]
+- [[.get_extra_info()_1]] - `method` [EXTRACTED]
+- [[.write()_2]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - `rationale_for` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/test_http_proxypy

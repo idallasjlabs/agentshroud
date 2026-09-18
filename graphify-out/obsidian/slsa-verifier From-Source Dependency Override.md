@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "Community 407"
+community: "Currently Unmitigable Residual Class"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # slsa-verifier From-Source Dependency Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Container-Image CVE Domain (our own images)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_407
+#graphify/concept #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class

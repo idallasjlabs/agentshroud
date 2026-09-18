@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 336"
+community: "iCloud Services"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/iCloud_Services
 ---
 
 # Add Contact
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Operations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

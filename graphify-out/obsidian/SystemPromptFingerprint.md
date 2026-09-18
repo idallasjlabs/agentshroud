@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "ContextSegment"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Prompt_Guard__Context_Integrity
+  - community/ContextSegment
 ---
 
 # SystemPromptFingerprint
 
 ## Connections
-- [[dot-register_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-verify_system_prompt()]] - `references` [EXTRACTED]
-- [[Any_38]] - `uses` [INFERRED]
+- [[.register_system_prompt()]] - `references` [EXTRACTED]
+- [[.verify_system_prompt()]] - `references` [EXTRACTED]
+- [[Any_37]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[HMAC-SHA256 fingerprint for a registered system prompt.]] - `rationale_for` [EXTRACTED]
 - [[IntegrityScore]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/INFERRED #community/ContextSegment

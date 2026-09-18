@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 233"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_233
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

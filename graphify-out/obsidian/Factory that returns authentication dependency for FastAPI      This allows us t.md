@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # Factory that returns authentication dependency for FastAPI      This allows us t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_auth_dependency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

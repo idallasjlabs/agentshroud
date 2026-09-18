@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 946"
+community: "audio.c"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_946
+  - community/audioc
 ---
 
 # audio_preinit()
@@ -15,4 +15,4 @@ tags:
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[esp_err_t_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_946
+#graphify/code #graphify/EXTRACTED #community/audioc

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 459"
-location: "L116"
+community: "test_dashboard.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/test_dashboardpy
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `calls` [EXTRACTED]
+- [[serve_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_459
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

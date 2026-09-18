@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 77"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # AgentShroud Deployment Procedure
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Incident Response Plan]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Operations Runbook]] - `conceptually_related_to` [INFERRED]
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
 - [[Maintenance Procedures]] - `contains` [EXTRACTED]
 - [[Monitoring Setup]] - `contains` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 - [[deployment-procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

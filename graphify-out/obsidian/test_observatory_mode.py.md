@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 42"
+community: "test_observatory_mode.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_observatory_modepy
 ---
 
 # test_observatory_mode.py
 
 ## Connections
-- [[FastAPI_4]] - `imports_from` [EXTRACTED]
+- [[FastAPI_3]] - `imports_from` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

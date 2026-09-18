@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Community 1225"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1225
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_43]] - `contains` [EXTRACTED]
-- [[Related Skills_34]] - `contains` [EXTRACTED]
-- [[Usage_38]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crREADME]] - `contains` [EXTRACTED]
+- [[Purpose_80]] - `contains` [EXTRACTED]
+- [[Related Skills_71]] - `contains` [EXTRACTED]
+- [[Usage_75]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1225
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

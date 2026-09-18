@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L834"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustViolationRecording]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

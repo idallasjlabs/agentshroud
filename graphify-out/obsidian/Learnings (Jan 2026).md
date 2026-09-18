@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 327"
+community: "Coding Agent (bash-first)"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/Coding_Agent_bash-first
 ---
 
 # Learnings (Jan 2026)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

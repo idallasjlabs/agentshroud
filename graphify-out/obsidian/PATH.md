@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Community 23"
-location: "L43"
+community: "hermes/skills/i-browser/browse.js"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/hermes/skills/i-browser/browsejs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.__init__()_6]] - `references` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_23
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

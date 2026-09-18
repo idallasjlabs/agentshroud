@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "concept"
-community: "Community 113"
+community: "test_forward_stream.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/test_forward_streampy
 ---
 
 # Sliding-window sentinel-joined security filter for streaming voice pipeline
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_filtered_sentence_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_113
+#graphify/concept #graphify/EXTRACTED #community/test_forward_streampy

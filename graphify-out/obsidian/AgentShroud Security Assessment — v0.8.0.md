@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 609"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # AgentShroud Security Assessment — v0.8.0
 
 ## Connections
-- [[Critical Findings_2]] - `contains` [EXTRACTED]
-- [[Executive Summary_13]] - `contains` [EXTRACTED]
+- [[Critical Findings_1]] - `contains` [EXTRACTED]
+- [[Executive Summary_12]] - `contains` [EXTRACTED]
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 - [[Low-Priority  Informational]] - `contains` [EXTRACTED]
 - [[Medium-Priority Gaps]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[What's Working Well_1]] - `contains` [EXTRACTED]
 - [[security-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

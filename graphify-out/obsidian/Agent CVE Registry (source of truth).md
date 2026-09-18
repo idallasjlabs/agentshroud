@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "Community 210"
+community: "AgentShroud™ CVE Mitigation Matrix"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_210
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Agent CVE Registry (source of truth)
@@ -14,4 +14,4 @@ tags:
 - [[Application CVE Domain (OpenClaw  Hermes)]] - `references` [EXTRACTED]
 - [[Daily GHSA  NVD Registry Sync]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_210
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

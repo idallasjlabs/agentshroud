@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
-type: "document"
-community: "Community 461"
-location: "L297"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L40"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/skilljson
 ---
 
-# Dependencies
+# dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
+- [[playwright_1]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_461
+#graphify/code #graphify/EXTRACTED #community/skilljson

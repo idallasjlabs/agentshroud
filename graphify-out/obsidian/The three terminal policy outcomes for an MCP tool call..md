@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Community 289"
+community: "A2AMethod"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/A2AMethod
 ---
 
 # The three terminal policy outcomes for an MCP tool call.
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyAction]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_289
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

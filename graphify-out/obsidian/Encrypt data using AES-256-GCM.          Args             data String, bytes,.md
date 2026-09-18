@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Encrypted Store & Drift Detector"
+community: "EncryptedStore"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EncryptedStore
 ---
 
 # Encrypt data using AES-256-GCM.          Args:             data: String, bytes,
 
 ## Connections
-- [[dot-encrypt()]] - `rationale_for` [EXTRACTED]
+- [[.encrypt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

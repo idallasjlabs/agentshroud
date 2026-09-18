@@ -1,22 +1,25 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 195"
+community: "plan_remediation()"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/plan_remediation
 ---
 
 # RemediationPlan
 
 ## Connections
-- [[dot-to_dict()]] - `method` [EXTRACTED]
+- [[.to_dict()]] - `method` [EXTRACTED]
+- [[TestPlanAgainstRealRegistry_1]] - `uses` [INFERRED]
+- [[TestPlanRemediation_1]] - `uses` [INFERRED]
+- [[TestVersionPinIO_1]] - `uses` [INFERRED]
 - [[What a version bump would and would not remediate. Every ``under_review``…]] - `rationale_for` [EXTRACTED]
 - [[_print_plan()]] - `references` [EXTRACTED]
 - [[apply_remediation()]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_195
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

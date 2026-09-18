@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 439"
+community: "alert_dispatcher.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_439
+  - community/alert_dispatcherpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_439
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

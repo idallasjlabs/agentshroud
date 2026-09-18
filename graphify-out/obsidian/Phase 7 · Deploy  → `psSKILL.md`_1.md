@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 779"
+community: "GSDE&G Development Master Checklist"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Phase 7 · Deploy  → `ps/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_779
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

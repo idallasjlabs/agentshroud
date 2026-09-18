@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Memory Integrity & Lifecycle"
+community: "MemoryIntegrityMonitor"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/MemoryIntegrityMonitor
 ---
 
 # Scan a single file for integrity changes.
 
 ## Connections
-- [[dot-scan_file()]] - `rationale_for` [EXTRACTED]
+- [[.scan_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

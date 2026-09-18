@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 512"
+community: "Known Log Messages"
 location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Known_Log_Messages
 ---
 
 # `[WARN] bolt-app http request failed connect ECONNREFUSED 10.254.110.2:8181`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

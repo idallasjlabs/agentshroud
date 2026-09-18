@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 53"
+community: "RBACConfig"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/RBACConfig
 ---
 
 # session_manager()
@@ -15,4 +15,4 @@ tags:
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

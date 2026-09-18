@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 256"
+community: "TrustManager"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # Threat Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustManager_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/TrustManager

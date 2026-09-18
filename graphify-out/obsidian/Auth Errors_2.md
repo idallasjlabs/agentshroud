@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Community 918"
+community: "HTTP 401 — Unauthorized"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/HTTP_401__Unauthorized
 ---
 
 # Auth Errors
@@ -17,4 +17,4 @@ tags:
 - [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
 - [[Related Notes_62]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_918
+#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized

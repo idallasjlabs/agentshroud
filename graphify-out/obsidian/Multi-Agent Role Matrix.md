@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Community 456"
+community: "Multi-Agent Role Matrix"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Multi-Agent Role Matrix
@@ -19,4 +19,4 @@ tags:
 - [[References_4]] - `contains` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

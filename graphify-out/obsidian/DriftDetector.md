@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # DriftDetector
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_16]] - `method` [EXTRACTED]
-- [[dot-_init_db()_1]] - `method` [EXTRACTED]
-- [[dot-acknowledge_alert()]] - `method` [EXTRACTED]
-- [[dot-check_drift()]] - `method` [EXTRACTED]
-- [[dot-close()_2]] - `method` [EXTRACTED]
-- [[dot-get_alerts()]] - `method` [EXTRACTED]
-- [[dot-get_baseline()]] - `method` [EXTRACTED]
-- [[dot-set_baseline()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
-- [[dot-test_drift_detector_baseline()]] - `calls` [EXTRACTED]
-- [[dot-test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
-- [[dot-test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
-- [[dot-test_drift_no_false_positive()]] - `calls` [EXTRACTED]
-- [[dot-test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_16]] - `method` [EXTRACTED]
+- [[._init_db()_1]] - `method` [EXTRACTED]
+- [[.acknowledge_alert()]] - `method` [EXTRACTED]
+- [[.check_drift()]] - `method` [EXTRACTED]
+- [[.close()_2]] - `method` [EXTRACTED]
+- [[.get_alerts()]] - `method` [EXTRACTED]
+- [[.get_baseline()]] - `method` [EXTRACTED]
+- [[.set_baseline()]] - `method` [EXTRACTED]
+- [[.setup_method()_10]] - `calls` [EXTRACTED]
+- [[.test_drift_detector_baseline()]] - `calls` [EXTRACTED]
+- [[.test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
+- [[.test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
+- [[.test_drift_no_false_positive()]] - `calls` [EXTRACTED]
+- [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
@@ -81,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

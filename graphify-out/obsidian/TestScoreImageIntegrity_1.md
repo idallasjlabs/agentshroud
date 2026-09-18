@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 73"
+community: "test_scanner_integration.py"
 location: "L622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/test_scanner_integrationpy
 ---
 
 # TestScoreImageIntegrity
 
 ## Connections
-- [[dot-test_capped_at_five()]] - `method` [EXTRACTED]
-- [[dot-test_four_when_sbom_and_clean_trivy()]] - `method` [EXTRACTED]
-- [[dot-test_one_when_sbom_exists()]] - `method` [EXTRACTED]
-- [[dot-test_zero_when_no_sbom_no_trivy()]] - `method` [EXTRACTED]
+- [[.test_capped_at_five()]] - `method` [EXTRACTED]
+- [[.test_four_when_sbom_and_clean_trivy()]] - `method` [EXTRACTED]
+- [[.test_one_when_sbom_exists()]] - `method` [EXTRACTED]
+- [[.test_zero_when_no_sbom_no_trivy()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

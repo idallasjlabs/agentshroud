@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # Test that security violations are properly logged and tracked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityViolationLogging]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

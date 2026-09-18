@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 253"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/MiddlewareManager
 ---
 
 # main.py.md
@@ -25,10 +25,10 @@ tags:
 - [[TrustManager]] - `references` [EXTRACTED]
 - [[auth.py]] - `references` [EXTRACTED]
 - [[event_bus.py_1]] - `references` [EXTRACTED]
-- [[fastapi_2]] - `references` [INFERRED]
+- [[fastapi]] - `references` [INFERRED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

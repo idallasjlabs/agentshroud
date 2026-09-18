@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 217"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Persistence
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_217
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

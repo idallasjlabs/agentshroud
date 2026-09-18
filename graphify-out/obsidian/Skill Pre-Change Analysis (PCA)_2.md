@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 682"
+community: "Output Sections (ALL required)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_682
+  - community/Output_Sections_ALL_required
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -16,6 +16,6 @@ tags:
 - [[Output Format Rules_2]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_1]] - `contains` [EXTRACTED]
 - [[Role_72]] - `contains` [EXTRACTED]
-- [[openclawskillsi-pcaSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_682
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 323"
+community: "troubleshooting.md"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_323
+  - community/troubleshootingmd
 ---
 
 # Bot Not Responding to Telegram Messages
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_323
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

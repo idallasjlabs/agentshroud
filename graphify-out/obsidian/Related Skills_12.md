@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1197"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1197
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1197
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

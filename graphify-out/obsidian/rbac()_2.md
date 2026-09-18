@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 41"
+community: "RBACConfig"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/RBACConfig
 ---
 
 # rbac()
@@ -16,4 +16,4 @@ tags:
 - [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Community 346"
+community: "Validation Runner Specialist"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/Validation_Runner_Specialist
 ---
 
 # Validation Runner Specialist
@@ -25,4 +25,4 @@ tags:
 - [[Your Responsibilities]] - `contains` [EXTRACTED]
 - [[validation-runner.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

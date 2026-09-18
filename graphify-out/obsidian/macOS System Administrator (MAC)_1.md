@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "Community 1232"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1232
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # macOS System Administrator (MAC)
@@ -15,6 +15,6 @@ tags:
 - [[Purpose_50]] - `contains` [EXTRACTED]
 - [[Related Skills_41]] - `contains` [EXTRACTED]
 - [[Usage_45]] - `contains` [EXTRACTED]
-- [[hermesskillsi-macREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1232
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

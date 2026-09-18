@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Community 329"
+community: "test_e2e.py"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_329
+  - community/test_e2epy
 ---
 
 # Fully initialized async client with lifespan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[client()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_329
+#graphify/rationale #graphify/EXTRACTED #community/test_e2epy

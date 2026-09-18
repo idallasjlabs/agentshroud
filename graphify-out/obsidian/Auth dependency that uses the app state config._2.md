@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

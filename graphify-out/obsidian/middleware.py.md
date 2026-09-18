@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # middleware.py
@@ -56,8 +56,8 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[ToolTier_2]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
@@ -69,4 +69,4 @@ tags:
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "document"
-community: "Community 634"
+community: "iMessage Integration Fix - Using imsg + imessage"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_634
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # container-policy.md
@@ -19,4 +19,4 @@ tags:
 - [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - `references` [EXTRACTED]
 - [[security-supply-chain]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_634
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage

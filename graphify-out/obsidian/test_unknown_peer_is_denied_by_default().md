@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 75"
+community: "test_a2a_policy.py"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/test_a2a_policypy
 ---
 
 # test_unknown_peer_is_denied_by_default()
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyEngine_3]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 59"
+community: "test_agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/test_agent_cve_registrypy
 ---
 
 # test_agent_cve_registry.py
@@ -74,4 +74,4 @@ tags:
 - [[test_unknown_bot_id_raises_key_error()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

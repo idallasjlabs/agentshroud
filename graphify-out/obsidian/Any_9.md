@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 1013"
-location: "L516"
+community: "test_dashboard_endpoints.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1013
+  - community/test_dashboard_endpointspy
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[.recent()]] - `references` [EXTRACTED]
+- [[.tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1013
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

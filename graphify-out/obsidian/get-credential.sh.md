@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/get-credential.sh"
 type: "code"
-community: "Community 1570"
+community: "get-credential.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1570
+  - community/get-credentialsh
 ---
 
 # get-credential.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get-credential.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1570
+#graphify/code #graphify/EXTRACTED #community/get-credentialsh

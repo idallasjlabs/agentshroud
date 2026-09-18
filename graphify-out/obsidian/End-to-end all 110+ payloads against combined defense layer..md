@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Community 43"
+community: "TestOverallDetectionRate"
 location: "L388"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/TestOverallDetectionRate
 ---
 
 # End-to-end: all 110+ payloads against combined defense layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOverallDetectionRate]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/TestOverallDetectionRate

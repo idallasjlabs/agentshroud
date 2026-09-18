@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/scripts/claude-hooks/warn_dangerous_bash.sh"
 type: "code"
-community: "Community 1517"
+community: "warn_dangerous_bash.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1517
+  - community/warn_dangerous_bashsh
 ---
 
 # warn_dangerous_bash.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[warn_dangerous_bash.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1517
+#graphify/code #graphify/EXTRACTED #community/warn_dangerous_bashsh

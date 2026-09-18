@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 421"
-location: "L10"
+community: "Apple Reminders CLI (remindctl)"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_421
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_421
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

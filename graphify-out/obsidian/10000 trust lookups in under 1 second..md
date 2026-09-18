@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # 10000 trust lookups in under 1 second.
 
 ## Connections
-- [[dot-test_10000_lookups_under_1s()]] - `rationale_for` [EXTRACTED]
+- [[.test_10000_lookups_under_1s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

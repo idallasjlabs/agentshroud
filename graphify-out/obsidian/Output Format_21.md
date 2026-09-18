@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 531"
-location: "L26"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

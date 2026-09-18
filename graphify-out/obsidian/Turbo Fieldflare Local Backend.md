@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "concept"
-community: "Community 1574"
+community: "Hermes Cannot Force-Switch to Custom-Named Local"
 location: "section 6"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1574
+  - community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local
 ---
 
 # Turbo Fieldflare Local Backend
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes Cannot Force-Switch to Custom-Named Local Model (Gap 8)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1574
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local

@@ -1,61 +1,61 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "TrustManager"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/TrustManager
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[dot-__init__()_59]] - `method` [EXTRACTED]
-- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[dot-_maybe_record_trust_violation()]] - `method` [EXTRACTED]
-- [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
-- [[dot-_process_inbound_core()]] - `method` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_9]] - `method` [EXTRACTED]
-- [[dot-pipeline()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_1]] - `method` [EXTRACTED]
-- [[dot-set_global_mode()]] - `method` [EXTRACTED]
-- [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_inbound_query_still_redacted()]] - `calls` [EXTRACTED]
-- [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass_audited_at_every_guard()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `calls` [EXTRACTED]
-- [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-test_pipeline_raises_without_pii_sanitizer()]] - `calls` [EXTRACTED]
-- [[dot-test_security_pipeline_set_global_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_security_pipeline_set_global_mode_missing_components()]] - `calls` [EXTRACTED]
-- [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_untrusted_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
-- [[dot-verify_audit_chain()]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `method` [EXTRACTED]
+- [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[._maybe_record_trust_violation()]] - `method` [EXTRACTED]
+- [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
+- [[._process_inbound_core()]] - `method` [EXTRACTED]
+- [[._process_outbound_core()]] - `method` [EXTRACTED]
+- [[.get_stats()_9]] - `method` [EXTRACTED]
+- [[.pipeline()]] - `calls` [EXTRACTED]
+- [[.pipeline()_1]] - `calls` [EXTRACTED]
+- [[.process_inbound()_1]] - `method` [EXTRACTED]
+- [[.process_outbound()_1]] - `method` [EXTRACTED]
+- [[.set_global_mode()]] - `method` [EXTRACTED]
+- [[.test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
+- [[.test_non_owner_inbound_query_still_redacted()]] - `calls` [EXTRACTED]
+- [[.test_outbound_filter_still_escalates_fabricated_notice()]] - `calls` [EXTRACTED]
+- [[.test_owner_bypass_audited_at_every_guard()]] - `calls` [EXTRACTED]
+- [[.test_owner_inbound_query_not_pii_redacted()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - `calls` [EXTRACTED]
+- [[.test_security_pipeline_set_global_mode()]] - `calls` [EXTRACTED]
+- [[.test_security_pipeline_set_global_mode_missing_components()]] - `calls` [EXTRACTED]
+- [[.test_standard_trust_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
+- [[.test_untrusted_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
+- [[.verify_audit_chain()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `shares_data_with` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
-- [[FastAPI_4]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `semantically_similar_to` [INFERRED]
 - [[HTTPForwarder]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `references` [EXTRACTED]
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `conceptually_related_to` [AMBIGUOUS]
-- [[Path_40]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[Path_29]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
@@ -156,4 +156,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/TrustManager

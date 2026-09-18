@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 988"
+community: "Mnemosyne — Retention Engineer"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_988
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Input Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_988
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

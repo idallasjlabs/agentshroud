@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "Community 1023"
+community: "Project Documentation"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1023
+  - community/Project_Documentation
 ---
 
 # Planned Documents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1023
+#graphify/document #graphify/EXTRACTED #community/Project_Documentation

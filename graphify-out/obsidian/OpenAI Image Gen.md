@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 367"
+community: "gen.py"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/genpy
 ---
 
 # OpenAI Image Gen
@@ -17,4 +17,4 @@ tags:
 - [[Run]] - `contains` [EXTRACTED]
 - [[openai-image-genSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/genpy

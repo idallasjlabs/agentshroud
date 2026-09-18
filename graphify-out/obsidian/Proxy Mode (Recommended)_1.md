@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 77"
+community: "Deployment Modes"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Deployment_Modes
 ---
 
 # Proxy Mode (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Deployment_Modes

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 77"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # AgentShroud Operations Runbook
@@ -22,9 +22,9 @@ tags:
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 - [[AgentShroud Deployment Procedure]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Incident Response Plan]] - `references` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
 - [[System Architecture Overview]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_openclaw_model_provider_consistency.sh"
 type: "code"
-community: "Community 464"
+community: "run_test()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/run_test
 ---
 
 # test_openclaw_model_provider_consistency.sh
@@ -15,4 +15,4 @@ tags:
 - [[extract_default]] - `defines` [EXTRACTED]
 - [[test_openclaw_model_provider_consistency.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/run_test

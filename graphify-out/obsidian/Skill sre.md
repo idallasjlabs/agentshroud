@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "Community 1506"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1506
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Skill: sre
 
 ## Connections
-- [[dot-agentsskillsi-sreSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1506
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

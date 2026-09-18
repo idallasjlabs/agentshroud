@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/scripts/claude-hooks/remind_proposal_review.sh"
 type: "code"
-community: "Community 1515"
+community: "remind_proposal_review.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1515
+  - community/remind_proposal_reviewsh
 ---
 
 # remind_proposal_review.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[remind_proposal_review.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1515
+#graphify/code #graphify/EXTRACTED #community/remind_proposal_reviewsh

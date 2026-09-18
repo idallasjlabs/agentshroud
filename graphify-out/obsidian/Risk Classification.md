@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 151"
+community: "SecureBrowser Skill"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/SecureBrowser_Skill
 ---
 
 # Risk Classification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

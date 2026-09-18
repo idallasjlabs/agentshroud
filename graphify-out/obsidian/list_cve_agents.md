@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 458"
+community: "gateway.security.agent_cve_registry"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_458
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # list_cve_agents
 
 ## Connections
-- [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - `calls` [EXTRACTED]
+- [[.test_runs_ingest_records_then_skips_next_iteration()]] - `calls` [EXTRACTED]
 - [[Return the list of registered agent bot IDs with CVE coverage. Returns List of…]] - `rationale_for` [EXTRACTED]
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[gateway.security.agent_cve_registry]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_list_cve_agents_returns_wrapped_agents_and_security_tools]] - `calls` [EXTRACTED]
 - [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_458
+#graphify/code #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

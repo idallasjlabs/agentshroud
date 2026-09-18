@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Community 431"
+community: "test_ptt_state.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/test_ptt_statec
 ---
 
 # test_ptt_state.c
@@ -30,4 +30,4 @@ tags:
 - [[vt_agent_count()_1]] - `contains` [EXTRACTED]
 - [[vt_remote_log()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/EXTRACTED #community/test_ptt_statec

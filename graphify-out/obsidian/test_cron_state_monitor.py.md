@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # test_cron_state_monitor.py
@@ -24,4 +24,4 @@ tags:
 - [[_openclaw_store()]] - `contains` [EXTRACTED]
 - [[test_poll_loop_runs_and_stops()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

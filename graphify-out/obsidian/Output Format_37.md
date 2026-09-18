@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 925"
+community: "Hermes — Reference Verifier"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_925
+  - community/Hermes__Reference_Verifier
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_925
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

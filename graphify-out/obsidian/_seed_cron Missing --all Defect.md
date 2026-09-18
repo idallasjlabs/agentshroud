@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md"
 type: "rationale"
-community: "Community 783"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # _seed_cron Missing --all Defect
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [EXTRACTED]
 - [[ProdDev Env-Split Keep-List Defect]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_783
+#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

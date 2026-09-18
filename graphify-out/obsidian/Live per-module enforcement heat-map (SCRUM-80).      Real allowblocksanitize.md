@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L1803"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # Live per-module enforcement heat-map (SCRUM-80).      Real allow/block/sanitize
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_modules_heatmap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

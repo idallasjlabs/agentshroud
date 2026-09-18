@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/falco.yaml"
 type: "document"
-community: "Community 172"
+community: "AgentShroud Falco Detection Rules"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/AgentShroud_Falco_Detection_Rules
 ---
 
 # Falco Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Falco Detection Rules]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_172
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Falco_Detection_Rules

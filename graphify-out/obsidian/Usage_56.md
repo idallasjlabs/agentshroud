@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "Community 1243"
+community: "Production Safety Checklist (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1243
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1243
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

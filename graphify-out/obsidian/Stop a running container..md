@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 106"
+community: "ContainerEngine"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/ContainerEngine
 ---
 
 # Stop a running container.
 
 ## Connections
-- [[dot-stop()]] - `rationale_for` [EXTRACTED]
+- [[.stop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_106
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

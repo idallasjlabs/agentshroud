@@ -1,49 +1,49 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 52"
+community: "EgressFilterConfig"
 location: "172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # EgressFilterConfig
 
 ## Connections
-- [[dot-_matches_any_pattern()]] - `method` [EXTRACTED]
-- [[dot-from_environment()]] - `method` [EXTRACTED]
-- [[dot-get_effective_allowlist()]] - `method` [EXTRACTED]
-- [[dot-is_denylisted()]] - `method` [EXTRACTED]
-- [[dot-matches_allowlist()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
-- [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
-- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
-- [[dot-test_config_roundtrip()]] - `calls` [EXTRACTED]
-- [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
-- [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `calls` [EXTRACTED]
-- [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
-- [[dot-test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
-- [[dot-test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
-- [[dot-test_denylist_wildcards()]] - `calls` [EXTRACTED]
-- [[dot-test_domains_in_default_allowlist()]] - `calls` [EXTRACTED]
-- [[dot-test_domains_not_denylisted()]] - `calls` [EXTRACTED]
-- [[dot-test_effective_allowlist_basic()]] - `calls` [EXTRACTED]
-- [[dot-test_effective_allowlist_with_denylist()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_filter_allows_in_enforce_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
-- [[dot-test_invalid_mode_handling()]] - `calls` [EXTRACTED]
-- [[dot-test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_monitor_mode_allows_unknown_domains()]] - `calls` [EXTRACTED]
-- [[dot-test_non_email_port_still_denied_for_unlisted_domain()]] - `calls` [EXTRACTED]
-- [[dot-test_per_agent_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_port_filtering()]] - `calls` [EXTRACTED]
-- [[dot-test_private_ip_blocking()]] - `calls` [EXTRACTED]
-- [[dot-test_url_parsing()_1]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
+- [[._matches_any_pattern()]] - `method` [EXTRACTED]
+- [[.from_environment()]] - `method` [EXTRACTED]
+- [[.get_effective_allowlist()]] - `method` [EXTRACTED]
+- [[.is_denylisted()]] - `method` [EXTRACTED]
+- [[.matches_allowlist()]] - `method` [EXTRACTED]
+- [[.setup_method()_14]] - `calls` [EXTRACTED]
+- [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
+- [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
+- [[.test_config_roundtrip()]] - `calls` [EXTRACTED]
+- [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
+- [[.test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
+- [[.test_default_config()_4]] - `calls` [EXTRACTED]
+- [[.test_deny_all_false()]] - `calls` [EXTRACTED]
+- [[.test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
+- [[.test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
+- [[.test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
+- [[.test_denylist_wildcards()]] - `calls` [EXTRACTED]
+- [[.test_domains_in_default_allowlist()]] - `calls` [EXTRACTED]
+- [[.test_domains_not_denylisted()]] - `calls` [EXTRACTED]
+- [[.test_effective_allowlist_basic()]] - `calls` [EXTRACTED]
+- [[.test_effective_allowlist_with_denylist()]] - `calls` [EXTRACTED]
+- [[.test_egress_filter_allows_in_enforce_mode()]] - `calls` [EXTRACTED]
+- [[.test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
+- [[.test_invalid_mode_handling()]] - `calls` [EXTRACTED]
+- [[.test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
+- [[.test_monitor_mode_allows_unknown_domains()]] - `calls` [EXTRACTED]
+- [[.test_non_email_port_still_denied_for_unlisted_domain()]] - `calls` [EXTRACTED]
+- [[.test_per_agent_policy()]] - `calls` [EXTRACTED]
+- [[.test_port_filtering()]] - `calls` [EXTRACTED]
+- [[.test_private_ip_blocking()]] - `calls` [EXTRACTED]
+- [[.test_url_parsing()_1]] - `calls` [EXTRACTED]
+- [[.test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[Configuration for egress filtering enforcement.]] - `rationale_for` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
@@ -115,4 +115,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

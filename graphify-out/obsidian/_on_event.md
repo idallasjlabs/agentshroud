@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 location: "32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # _on_event
@@ -18,4 +18,4 @@ tags:
 - [[ws_client.c]] - `contains` [EXTRACTED]
 - [[ws_ctrl_cb_t (server control frame callback type)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/wakewordc

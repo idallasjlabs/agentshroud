@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "Community 51"
+community: "URLAnalyzer"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/URLAnalyzer
 ---
 
 # analyzer()
@@ -15,4 +15,4 @@ tags:
 - [[URLAnalyzer_1]] - `calls` [EXTRACTED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

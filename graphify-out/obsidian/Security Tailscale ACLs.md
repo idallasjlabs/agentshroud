@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 786"
+community: "Quick Reference Commands"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/Quick_Reference_Commands
 ---
 
 # Security: Tailscale ACLs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

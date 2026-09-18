@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Community 189"
+community: "DataExfilVolumeGuard"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/DataExfilVolumeGuard
 ---
 
 # DataExfilVolumeGuard
 
 ## Connections
-- [[dot-__init__()_80]] - `method` [EXTRACTED]
-- [[dot-_size()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_13]] - `method` [EXTRACTED]
-- [[dot-observe()]] - `method` [EXTRACTED]
-- [[dot-reset_session()_1]] - `method` [EXTRACTED]
+- [[.__init__()_80]] - `method` [EXTRACTED]
+- [[._size()]] - `method` [EXTRACTED]
+- [[.get_stats()_13]] - `method` [EXTRACTED]
+- [[.observe()]] - `method` [EXTRACTED]
+- [[.reset_session()_1]] - `method` [EXTRACTED]
 - [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `conceptually_related_to` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_189
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 654"
+community: "egress_config.py"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_654
+  - community/egress_configpy
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
 - [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_654
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

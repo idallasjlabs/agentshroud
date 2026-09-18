@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "concept"
-community: "Community 86"
+community: "AgentShroud Semgrep SAST Configuration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # ruff (Python linter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Pre-commit Hooks Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_86
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

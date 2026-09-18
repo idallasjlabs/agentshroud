@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L317"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E09SessionIsolation
 
 ## Connections
-- [[dot-test_agents_process_independently()]] - `method` [EXTRACTED]
-- [[dot-test_pii_from_agent_a_not_in_agent_b_audit()]] - `method` [EXTRACTED]
+- [[.test_agents_process_independently()]] - `method` [EXTRACTED]
+- [[.test_pii_from_agent_a_not_in_agent_b_audit()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "concept"
-community: "Community 317"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # GSD (Get Shit Done) cadence — adopted in place of formal Scrum/SAFe sprints
@@ -17,4 +17,4 @@ tags:
 - [[Sprint Cadence Decision (docsgovernanceSPRINT_CADENCE.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Weekly Kaizen retrospective cron job (Friday 500 PM ET)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_317
+#graphify/concept #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev

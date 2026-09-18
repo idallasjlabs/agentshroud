@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Blue/Red Team Security Auditor Skills"
+community: "SessionContext"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/SessionContext
 ---
 
 # Score agent response for potential leaks.
 
 ## Connections
-- [[dot-_score_response_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._score_response_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/rationale #graphify/EXTRACTED #community/SessionContext

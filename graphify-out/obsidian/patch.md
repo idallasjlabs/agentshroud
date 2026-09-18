@@ -1,26 +1,26 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 47"
+community: "patch"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_47
+  - community/patch
 ---
 
 # patch
 
 ## Connections
-- [[dot-test_run_binary_not_found()]] - `references` [EXTRACTED]
-- [[dot-test_run_empty_stdout_is_error_not_clean()]] - `references` [EXTRACTED]
-- [[dot-test_run_image_scan_type()]] - `references` [EXTRACTED]
-- [[dot-test_run_nonzero_exit_code_is_error()]] - `references` [EXTRACTED]
-- [[dot-test_run_not_found()]] - `references` [EXTRACTED]
-- [[dot-test_run_parse_error()]] - `references` [EXTRACTED]
-- [[dot-test_run_success()]] - `references` [EXTRACTED]
-- [[dot-test_run_timeout()]] - `references` [EXTRACTED]
-- [[dot-test_run_whitespace_only_stdout_is_error()]] - `references` [EXTRACTED]
-- [[dot-test_update_db_not_found()]] - `references` [EXTRACTED]
+- [[.test_run_binary_not_found()]] - `references` [EXTRACTED]
+- [[.test_run_empty_stdout_is_error_not_clean()]] - `references` [EXTRACTED]
+- [[.test_run_image_scan_type()]] - `references` [EXTRACTED]
+- [[.test_run_nonzero_exit_code_is_error()]] - `references` [EXTRACTED]
+- [[.test_run_not_found()]] - `references` [EXTRACTED]
+- [[.test_run_parse_error()]] - `references` [EXTRACTED]
+- [[.test_run_success()]] - `references` [EXTRACTED]
+- [[.test_run_timeout()]] - `references` [EXTRACTED]
+- [[.test_run_whitespace_only_stdout_is_error()]] - `references` [EXTRACTED]
+- [[.test_update_db_not_found()]] - `references` [EXTRACTED]
 - [[test_call_agent_read_timeout_returns_fallback()]] - `calls` [INFERRED]
 - [[test_call_agent_stream_empty_stream_yields_nothing()]] - `calls` [INFERRED]
 - [[test_call_agent_stream_generic_http_error_falls_back()]] - `calls` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[test_ws_one_sentence_reply_unchanged()]] - `calls` [INFERRED]
 - [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_47
+#graphify/code #graphify/INFERRED #community/patch

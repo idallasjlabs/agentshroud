@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # PermissionResult
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-check_group_permission()]] - `references` [EXTRACTED]
-- [[dot-check_permission()]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `references` [EXTRACTED]
-- [[dot-list_users_and_roles()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `references` [EXTRACTED]
+- [[.__init__()_11]] - `calls` [EXTRACTED]
+- [[.check_group_permission()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.check_tool_permission()]] - `references` [EXTRACTED]
+- [[.list_users_and_roles()]] - `references` [EXTRACTED]
+- [[.set_user_role()_1]] - `references` [EXTRACTED]
 - [[Any_1]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

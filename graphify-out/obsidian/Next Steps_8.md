@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Community 604"
-location: "L204"
+community: "iMessage Integration Fix - Using imsg + imessage"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # Next Steps
 
 ## Connections
-- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_604
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage

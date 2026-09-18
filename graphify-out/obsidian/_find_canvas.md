@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # _find_canvas
@@ -15,4 +15,4 @@ tags:
 - [[lv_obj_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

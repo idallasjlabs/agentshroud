@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # flows/README.md
@@ -17,4 +17,4 @@ tags:
 - [[Flows Documentation]] - `contains` [EXTRACTED]
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_184
+#graphify/document #graphify/AMBIGUOUS #community/Approval_Queue_human-in-the-loop

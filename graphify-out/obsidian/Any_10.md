@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 104"
-location: "L67"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[.inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

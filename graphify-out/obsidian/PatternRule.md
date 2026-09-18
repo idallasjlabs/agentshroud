@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "EgressAction"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EgressAction
 ---
 
 # PatternRule
 
 ## Connections
-- [[dot-__init__()_74]] - `references` [EXTRACTED]
-- [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
+- [[.__init__()_74]] - `references` [EXTRACTED]
+- [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/INFERRED #community/EgressAction

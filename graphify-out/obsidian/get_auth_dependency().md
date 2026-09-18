@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # get_auth_dependency()
 
 ## Connections
-- [[dot-check()]] - `calls` [EXTRACTED]
+- [[.check()]] - `calls` [EXTRACTED]
 - [[Factory that returns authentication dependency for FastAPI      This allows us t]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig]] - `references` [EXTRACTED]
 - [[GatewayConfig_4]] - `shares_data_with` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[ingest_apiauth.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

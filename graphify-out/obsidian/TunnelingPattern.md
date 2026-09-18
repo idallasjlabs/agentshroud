@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # TunnelingPattern
 
 ## Connections
-- [[dot-_detect_tunneling()]] - `references` [EXTRACTED]
+- [[._detect_tunneling()]] - `references` [EXTRACTED]
 - [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustManager"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustManager
 ---
 
 # PIISanitizer
@@ -26,4 +26,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustManager

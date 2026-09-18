@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # Query performance after 1000 entries.
 
 ## Connections
-- [[dot-test_query_after_1000_entries()]] - `rationale_for` [EXTRACTED]
+- [[.test_query_after_1000_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

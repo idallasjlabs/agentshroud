@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Community 416"
-location: "L253"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_416
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Container Won't Start_2]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
+- [[Slow Builds_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_416
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 166"
+community: "_parse_env_file()"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/_parse_env_file
 ---
 
 # Parse a .env file into a dict (ignoring comments and blanks).
 
 ## Connections
 - [[_parse_env_file()]] - `rationale_for` [EXTRACTED]
+- [[_parse_env_file()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_166
+#graphify/rationale #graphify/EXTRACTED #community/_parse_env_file

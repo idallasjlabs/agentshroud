@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 999"
+community: "Mnemosyne — Retention Engineer"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_999
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_999
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

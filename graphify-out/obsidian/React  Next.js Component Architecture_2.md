@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 314"
+community: "Skill: UI Expert (UI)"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_UI_Expert_UI
 ---
 
 # React / Next.js Component Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Component file structure_2]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

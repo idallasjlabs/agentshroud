@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/omlx-keepwarm.sh"
 type: "code"
-community: "Community 47"
+community: "server.py"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_47
+  - graphify/INFERRED
+  - community/serverpy
 ---
 
 # omlx-keepwarm.sh
@@ -15,4 +15,4 @@ tags:
 - [[_call_llm_stream()]] - `semantically_similar_to` [INFERRED]
 - [[omlx-keepwarm.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/INFERRED #community/serverpy

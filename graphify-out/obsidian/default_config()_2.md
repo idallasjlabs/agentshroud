@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # default_config()
@@ -15,4 +15,4 @@ tags:
 - [[DifferentialPIIConfig]] - `references` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

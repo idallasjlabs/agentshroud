@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "TrustManager"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TrustManager
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[dot-__init__()_44]] - `method` [EXTRACTED]
-- [[dot-_init_presidio()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_presidio()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_regex()]] - `method` [EXTRACTED]
-- [[dot-block_credentials()_2]] - `method` [EXTRACTED]
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-filter_xml_blocks()_2]] - `method` [EXTRACTED]
-- [[dot-get_mode()]] - `method` [EXTRACTED]
-- [[dot-get_supported_entities()]] - `method` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-sanitize()_3]] - `method` [EXTRACTED]
-- [[dot-sanitizer()]] - `calls` [EXTRACTED]
-- [[dot-sanitizer()_1]] - `calls` [EXTRACTED]
-- [[dot-test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
-- [[dot-test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
-- [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `uses` [INFERRED]
+- [[.__init__()_44]] - `method` [EXTRACTED]
+- [[._init_presidio()]] - `method` [EXTRACTED]
+- [[._sanitize_presidio()]] - `method` [EXTRACTED]
+- [[._sanitize_regex()]] - `method` [EXTRACTED]
+- [[.block_credentials()_2]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.filter_xml_blocks()_2]] - `method` [EXTRACTED]
+- [[.get_mode()]] - `method` [EXTRACTED]
+- [[.get_supported_entities()]] - `method` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.pipeline()]] - `calls` [EXTRACTED]
+- [[.pipeline()_1]] - `calls` [EXTRACTED]
+- [[.sanitize()_3]] - `method` [EXTRACTED]
+- [[.sanitizer()]] - `calls` [EXTRACTED]
+- [[.sanitizer()_1]] - `calls` [EXTRACTED]
+- [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
+- [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
+- [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[GatewayConfig_1]] - `uses` [INFERRED]
@@ -170,4 +170,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/INFERRED #community/TrustManager

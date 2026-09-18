@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Community 42"
+community: "KillSwitchMonitor"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/KillSwitchMonitor
 ---
 
 # TestKillSwitchConfig
 
 ## Connections
-- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
+- [[.test_default_config()_3]] - `method` [EXTRACTED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[Test kill switch configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

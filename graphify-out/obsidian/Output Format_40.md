@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 987"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_987
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_987
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

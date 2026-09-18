@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Teams/Group Collaborator Responses"
+community: "TelegramAPIProxy"
 location: "L7711"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TelegramAPIProxy
 ---
 
 # Send deterministic owner admin notice without model invocation.
 
 ## Connections
-- [[dot-_send_owner_admin_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_owner_admin_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

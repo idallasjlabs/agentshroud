@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "Community 492"
+community: "AgentShroud v0.9.0"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/AgentShroud_v090
 ---
 
 # System Requirements Specification (SRS)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
 - [[system-requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_492
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

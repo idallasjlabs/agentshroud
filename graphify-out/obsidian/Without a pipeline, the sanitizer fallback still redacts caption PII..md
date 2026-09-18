@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 419"
+community: "TestMultipartOutboundPipeline"
 location: "L5182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/TestMultipartOutboundPipeline
 ---
 
 # Without a pipeline, the sanitizer fallback still redacts caption PII.
 
 ## Connections
-- [[dot-test_multipart_sanitizer_fallback_redacts_pii()]] - `rationale_for` [EXTRACTED]
+- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_419
+#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

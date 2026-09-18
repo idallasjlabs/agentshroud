@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Routing Tests"
+community: "asyncio"
 location: "L2139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Routing_Tests
+  - community/asyncio
 ---
 
 # test_listen_without_end_times_out()
@@ -16,4 +16,4 @@ tags:
 - [[asyncio_1]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests
+#graphify/code #graphify/EXTRACTED #community/asyncio

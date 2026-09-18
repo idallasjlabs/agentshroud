@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "Community 1579"
+community: "LLMProxy.proxy_messages"
 location: "174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1579
+  - community/LLMProxyproxy_messages
 ---
 
 # CredentialInjector.inject_headers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1579
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages

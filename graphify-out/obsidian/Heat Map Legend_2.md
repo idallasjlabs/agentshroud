@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 631"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_631
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Heat Map Legend
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_631
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

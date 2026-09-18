@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # ChainMatch
 
 ## Connections
-- [[dot-_detect_chain_patterns()]] - `references` [EXTRACTED]
-- [[dot-_trigger_alert()_1]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[._detect_chain_patterns()]] - `references` [EXTRACTED]
+- [[._trigger_alert()_1]] - `references` [EXTRACTED]
+- [[.analyze_tool_call()]] - `references` [EXTRACTED]
 - [[A detected suspicious chain.]] - `rationale_for` [EXTRACTED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
 - [[TestReversibilityScoring]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

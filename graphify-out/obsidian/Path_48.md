@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 54"
-location: "L38"
+community: "export-bot-conversations.py"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/export-bot-conversationspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_163]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_35]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/ingest_api/mainpy
 ---
 
 # test_config_validation.py
@@ -24,4 +24,4 @@ tags:
 - [[lifespan.py]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

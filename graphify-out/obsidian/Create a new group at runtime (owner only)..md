@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L1201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # Create a new group at runtime (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

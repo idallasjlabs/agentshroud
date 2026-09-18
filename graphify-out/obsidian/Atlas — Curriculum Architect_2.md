@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "Community 1258"
+community: "Atlas — Curriculum Architect"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1258
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Atlas — Curriculum Architect
@@ -15,6 +15,6 @@ tags:
 - [[Purpose_75]] - `contains` [EXTRACTED]
 - [[Related Skills_66]] - `contains` [EXTRACTED]
 - [[Usage_70]] - `contains` [EXTRACTED]
-- [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1258
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

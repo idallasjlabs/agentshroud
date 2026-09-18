@@ -1,17 +1,18 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Community 153"
-location: "L515"
+community: "Contributing to AgentShroud™"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Contributing_to_AgentShroud
 ---
 
-# Contributing
+# CONTRIBUTING.md
 
 ## Connections
-- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
+- [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
+- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

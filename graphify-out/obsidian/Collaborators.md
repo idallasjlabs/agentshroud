@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 319"
+community: "Telegram Channel Setup"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Telegram_Channel_Setup
 ---
 
 # Collaborators
@@ -16,4 +16,4 @@ tags:
 - [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup

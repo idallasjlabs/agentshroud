@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-32x32.png"
 type: "image"
-community: "Community 377"
+community: "brand-guidelines.md"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_377
+  - community/brand-guidelinesmd
 ---
 
 # App Icon 32x32 (AgentShroud logo mark)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Premium Email Signature Template]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_377
+#graphify/image #graphify/EXTRACTED #community/brand-guidelinesmd

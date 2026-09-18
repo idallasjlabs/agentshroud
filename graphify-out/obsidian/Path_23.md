@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Security Audit & Drift Detection"
-location: "L27"
+community: "IntelReportStore"
+location: "L205"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - graphify/EXTRACTED
+  - community/IntelReportStore
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[.__init__()_128]] - `references` [EXTRACTED]
+- [[._load_latest_file()]] - `references` [EXTRACTED]
+- [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

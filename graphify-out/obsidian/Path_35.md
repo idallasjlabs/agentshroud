@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 35"
-location: "L73"
+community: "_age()"
+location: "L41"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_35
+  - graphify/EXTRACTED
+  - community/_age
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/_age

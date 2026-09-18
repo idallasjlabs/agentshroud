@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 244"
+community: "The 8D Investigation Process"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_244
+  - community/The_8D_Investigation_Process
 ---
 
 # Step 3: Collect Alarms and Events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_244
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

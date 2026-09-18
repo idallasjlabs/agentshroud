@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "TestEgressTargetExtraction"
 location: "L3846"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TestEgressTargetExtraction
 ---
 
 # Unit tests for outbound target extraction helper used by egress preflight.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTargetExtraction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressTargetExtraction

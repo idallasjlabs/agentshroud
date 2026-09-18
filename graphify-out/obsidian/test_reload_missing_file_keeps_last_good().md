@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 281"
+community: "test_config_hot_reload.py"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/test_config_hot_reloadpy
 ---
 
 # test_reload_missing_file_keeps_last_good()
@@ -17,4 +17,4 @@ tags:
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_281
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # Configuration for the web traffic proxy.      Default-allow: all URLs pass unles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

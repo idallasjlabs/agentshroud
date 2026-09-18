@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # test_a2a_integration.py
@@ -30,4 +30,4 @@ tags:
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `contains` [EXTRACTED]
 - [[trust_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Community 70"
+community: "DraftEntry"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/DraftEntry
 ---
 
 # An unverified competitor claim submitted for citation checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/DraftEntry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Routing Tests"
+community: "asyncio"
 location: "L710"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_Routing_Tests
+  - community/asyncio
 ---
 
 # _capture_synth()
@@ -25,4 +25,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `indirect_call` [INFERRED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_Routing_Tests
+#graphify/code #graphify/INFERRED #community/asyncio

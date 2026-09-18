@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Community 1056"
+community: "ApprovalRequest"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1056
+  - community/ApprovalRequest
 ---
 
 # Load all pending (non-expired, non-decided) items.          Items whose expires_
 
 ## Connections
-- [[dot-load_pending()]] - `rationale_for` [EXTRACTED]
+- [[.load_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1056
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

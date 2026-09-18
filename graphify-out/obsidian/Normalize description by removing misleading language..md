@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "Any"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/Any
 ---
 
 # Normalize description by removing misleading language.
 
 ## Connections
-- [[dot-_normalize_description()]] - `rationale_for` [EXTRACTED]
+- [[._normalize_description()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/Any

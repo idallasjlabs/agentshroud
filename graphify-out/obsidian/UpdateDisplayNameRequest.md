@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 153"
+community: "BaseModel"
 location: "L853"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_153
+  - community/BaseModel
 ---
 
 # UpdateDisplayNameRequest
@@ -23,4 +23,4 @@ tags:
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[update_display_name()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_153
+#graphify/code #graphify/INFERRED #community/BaseModel

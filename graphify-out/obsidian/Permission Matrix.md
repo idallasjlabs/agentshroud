@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 295"
+community: "AgentShroud Access Control Matrix"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Permission Matrix
@@ -18,4 +18,4 @@ tags:
 - [[Monitoring and Audit]] - `contains` [EXTRACTED]
 - [[System Administration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_295
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

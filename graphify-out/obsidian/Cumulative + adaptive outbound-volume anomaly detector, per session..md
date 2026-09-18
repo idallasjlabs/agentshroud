@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "Community 189"
+community: "DataExfilVolumeGuard"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/DataExfilVolumeGuard
 ---
 
 # Cumulative + adaptive outbound-volume anomaly detector, per session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataExfilVolumeGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_189
+#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard

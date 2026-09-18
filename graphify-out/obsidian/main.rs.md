@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # main.rs
@@ -27,7 +27,7 @@ tags:
 - [[RefCell]] - `imports_from` [EXTRACTED]
 - [[ReqwestTransport]] - `contains` [EXTRACTED]
 - [[Result]] - `imports_from` [EXTRACTED]
-- [[SclClient_1]] - `contains` [EXTRACTED]
+- [[SclClient]] - `contains` [EXTRACTED]
 - [[ServiceTarget]] - `contains` [EXTRACTED]
 - [[SetTarget]] - `contains` [EXTRACTED]
 - [[approvals_list_empty()]] - `contains` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[status_hits_correct_path()]] - `contains` [EXTRACTED]
 - [[status_parses_and_formats()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

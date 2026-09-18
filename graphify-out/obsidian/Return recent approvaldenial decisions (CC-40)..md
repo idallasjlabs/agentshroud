@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L687"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # Return recent approval/denial decisions (CC-40).
 
 ## Connections
-- [[dot-get_decision_log()]] - `rationale_for` [EXTRACTED]
+- [[.get_decision_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_88
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

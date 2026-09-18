@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "rationale"
-community: "Community 577"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_577
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # iMessage Automation Permission Blocker
@@ -14,4 +14,4 @@ tags:
 - [[SYSTEM_STATUS]] - `references` [EXTRACTED]
 - [[iMessage Integration Permissions Issue]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_577
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

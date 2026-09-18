@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 2061"
+community: "What you're building"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2061
+  - community/What_youre_building
 ---
 
 # What you're building
 
-#graphify/document #graphify/EXTRACTED #community/Community_2061
+#graphify/document #graphify/EXTRACTED #community/What_youre_building

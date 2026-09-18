@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TeamsConfig
 ---
 
 # telegram_proxy.py
@@ -49,4 +49,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

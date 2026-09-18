@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config()"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # MCPPolicyDecision
 
 ## Connections
-- [[dot-_decide()_1]] - `references` [EXTRACTED]
-- [[dot-allowed()]] - `method` [EXTRACTED]
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[._decide()_1]] - `references` [EXTRACTED]
+- [[.allowed()]] - `method` [EXTRACTED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

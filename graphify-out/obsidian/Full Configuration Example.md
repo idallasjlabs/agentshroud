@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 151"
+community: "SSH Config"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/SSH_Config
 ---
 
 # Full Configuration Example
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

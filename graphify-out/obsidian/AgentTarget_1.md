@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # AgentTarget
 
 ## Connections
-- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
-- [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
-- [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
-- [[dot-test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
+- [[.test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
+- [[.test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
+- [[.test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_14]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Downstream agent target]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
@@ -71,4 +71,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `calls` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

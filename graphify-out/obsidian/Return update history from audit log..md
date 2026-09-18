@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Runtime Security Comparison & Intel Report"
+community: "api.py"
 location: "L811"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/apipy
 ---
 
 # Return update history from audit log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 427"
+community: "Pre-Deployment Checklist"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Pre-Deployment_Checklist
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_427
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Community 707"
+community: "post-deploy-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/post-deploy-checksh
 ---
 
 # update-agentshroud.sh
@@ -17,4 +17,4 @@ tags:
 - [[post-deploy-check.sh]] - `references` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh

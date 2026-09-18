@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Community 623"
+community: "Starting a Development Task via Hermes / OpenCla"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
 ---
 
 # hermes-openclaw-dev-workflow.md
@@ -16,4 +16,4 @@ tags:
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 - [[update-bot-agents.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_623
+#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla

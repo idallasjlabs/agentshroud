@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 904"
+community: "AgentShroud Threat Model (STRIDE Analysis)"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_904
+  - community/AgentShroud_Threat_Model_STRIDE_Analysis
 ---
 
 # Threat Feeds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Intelligence Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_904
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis

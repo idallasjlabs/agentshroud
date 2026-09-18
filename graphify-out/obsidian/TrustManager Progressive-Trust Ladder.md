@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "Community 569"
+community: "AgentShroud Changelog"
 location: "## [1.5.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/AgentShroud_Changelog
 ---
 
 # TrustManager Progressive-Trust Ladder
@@ -15,4 +15,4 @@ tags:
 - [[A2A Governance (A2APolicyEngine  A2AProxy)]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_569
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog

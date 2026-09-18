@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L518"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # TestEgressFilterPaths
 
 ## Connections
-- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - `method` [EXTRACTED]
-- [[dot-test_egress_filter_allow_passes_through()]] - `method` [EXTRACTED]
-- [[dot-test_sync_egress_filter_deny_blocks()]] - `method` [EXTRACTED]
+- [[.test_async_egress_filter_deny_uses_rule_as_reason()]] - `method` [EXTRACTED]
+- [[.test_egress_filter_allow_passes_through()]] - `method` [EXTRACTED]
+- [[.test_sync_egress_filter_deny_blocks()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_143
+#graphify/code #graphify/INFERRED #community/StdioConnection

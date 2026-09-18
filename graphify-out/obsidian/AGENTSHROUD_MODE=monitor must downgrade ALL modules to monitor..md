@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.
 
 ## Connections
-- [[dot-test_global_monitor_override_downgrades_all()]] - `rationale_for` [EXTRACTED]
+- [[.test_global_monitor_override_downgrades_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

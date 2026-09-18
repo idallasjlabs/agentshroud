@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 716"
+community: "TestAtomicRegistryWrites"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_716
+  - community/TestAtomicRegistryWrites
 ---
 
 # A successful save leaves only the final registry file, no *.tmp.
 
 ## Connections
-- [[dot-test_no_temp_files_left_behind()]] - `rationale_for` [EXTRACTED]
+- [[.test_no_temp_files_left_behind()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_716
+#graphify/rationale #graphify/EXTRACTED #community/TestAtomicRegistryWrites

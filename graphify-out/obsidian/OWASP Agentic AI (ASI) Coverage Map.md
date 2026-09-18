@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "Community 316"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # OWASP Agentic AI (ASI) Coverage Map
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `references` [EXTRACTED]
 - [[ToolResultSanitizer Link Stripping (delivery defect)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_316
+#graphify/concept #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

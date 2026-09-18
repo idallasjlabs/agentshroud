@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 478"
+community: "Skill: Branding Specialist (BS)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_478
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Patterns by Output Type
@@ -15,4 +15,4 @@ tags:
 - [[Color Token Definition_1]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_478
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

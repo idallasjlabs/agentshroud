@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Community 862"
+community: "test_trust_manager.py"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_862
+  - community/test_trust_managerpy
 ---
 
 # Test earning and losing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_862
+#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy

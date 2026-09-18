@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns "
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_enforcement_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

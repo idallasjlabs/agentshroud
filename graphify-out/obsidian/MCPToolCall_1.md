@@ -1,49 +1,49 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # MCPToolCall
 
 ## Connections
-- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-process_tool_call()]] - `references` [EXTRACTED]
-- [[dot-test_audit_entry_created()]] - `calls` [EXTRACTED]
-- [[dot-test_chain_includes_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_chain_valid_after_calls()]] - `calls` [EXTRACTED]
-- [[dot-test_clean_call_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_elevated_agent_can_execute()]] - `calls` [EXTRACTED]
-- [[dot-test_execute_none_content_result_does_not_unbind()]] - `calls` [EXTRACTED]
-- [[dot-test_execute_with_content_still_inspects()]] - `calls` [EXTRACTED]
-- [[dot-test_gateway_data_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_injection_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_low_risk_tool_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_allows_everything()_1]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_still_audits()]] - `calls` [EXTRACTED]
-- [[dot-test_pii_redacted_in_params()]] - `calls` [EXTRACTED]
-- [[dot-test_private_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_private_tool_violation_emits_event()]] - `calls` [EXTRACTED]
-- [[dot-test_processing_time_recorded()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_enforced()]] - `calls` [EXTRACTED]
-- [[dot-test_read_only_agent_can_read()]] - `calls` [EXTRACTED]
-- [[dot-test_read_only_agent_denied_execute()]] - `calls` [EXTRACTED]
-- [[dot-test_session_store_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_stats_blocked_counted()]] - `calls` [EXTRACTED]
-- [[dot-test_stats_tracking()]] - `calls` [EXTRACTED]
-- [[dot-test_unknown_server_default_allow()]] - `calls` [EXTRACTED]
-- [[dot-test_workspace_contributor_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
+- [[.__post_init__()_8]] - `method` [EXTRACTED]
+- [[._execute_tool_call()]] - `references` [EXTRACTED]
+- [[.process_tool_call()]] - `references` [EXTRACTED]
+- [[.test_audit_entry_created()]] - `calls` [EXTRACTED]
+- [[.test_chain_includes_blocked()]] - `calls` [EXTRACTED]
+- [[.test_chain_valid_after_calls()]] - `calls` [EXTRACTED]
+- [[.test_clean_call_allowed()]] - `calls` [EXTRACTED]
+- [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
+- [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_elevated_agent_can_execute()]] - `calls` [EXTRACTED]
+- [[.test_execute_none_content_result_does_not_unbind()]] - `calls` [EXTRACTED]
+- [[.test_execute_with_content_still_inspects()]] - `calls` [EXTRACTED]
+- [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_injection_blocked()]] - `calls` [EXTRACTED]
+- [[.test_low_risk_tool_allowed()]] - `calls` [EXTRACTED]
+- [[.test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
+- [[.test_owner_bypass()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_allows_everything()_1]] - `calls` [EXTRACTED]
+- [[.test_passthrough_still_audits()]] - `calls` [EXTRACTED]
+- [[.test_pii_redacted_in_params()]] - `calls` [EXTRACTED]
+- [[.test_private_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_private_tool_violation_emits_event()]] - `calls` [EXTRACTED]
+- [[.test_processing_time_recorded()]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_enforced()]] - `calls` [EXTRACTED]
+- [[.test_read_only_agent_can_read()]] - `calls` [EXTRACTED]
+- [[.test_read_only_agent_denied_execute()]] - `calls` [EXTRACTED]
+- [[.test_session_store_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_stats_blocked_counted()]] - `calls` [EXTRACTED]
+- [[.test_stats_tracking()]] - `calls` [EXTRACTED]
+- [[.test_unknown_server_default_allow()]] - `calls` [EXTRACTED]
+- [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -115,4 +115,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

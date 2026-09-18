@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "Community 569"
+community: "AgentShroud Changelog"
 location: "## [1.1.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/AgentShroud_Changelog
 ---
 
 # OpenClaw Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_569
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog

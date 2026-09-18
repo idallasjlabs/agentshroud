@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Community 157"
+community: "SecurityConfig"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_157
+  - community/SecurityConfig
 ---
 
 # Test get_module_mode returns enforce when no override set.
 
 ## Connections
-- [[dot-test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_157
+#graphify/rationale #graphify/EXTRACTED #community/SecurityConfig

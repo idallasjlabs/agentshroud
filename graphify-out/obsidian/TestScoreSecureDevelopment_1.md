@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 664"
+community: "test_scorecard_scoring.py"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_664
+  - community/test_scorecard_scoringpy
 ---
 
 # TestScoreSecureDevelopment
 
 ## Connections
-- [[dot-test_five_all_sdl_configs_present()]] - `method` [EXTRACTED]
-- [[dot-test_one_baseline_no_configs()]] - `method` [EXTRACTED]
+- [[.test_five_all_sdl_configs_present()]] - `method` [EXTRACTED]
+- [[.test_one_baseline_no_configs()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_664
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

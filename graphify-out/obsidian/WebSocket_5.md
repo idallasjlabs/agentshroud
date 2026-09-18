@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 334"
+community: "SOCWebSocketHandler"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_334
+  - community/SOCWebSocketHandler
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-__init__()_134]] - `references` [EXTRACTED]
+- [[.__init__()_134]] - `references` [EXTRACTED]
 - [[Severity_2]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_334
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

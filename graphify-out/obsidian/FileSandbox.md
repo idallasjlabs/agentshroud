@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # FileSandbox
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_183]] - `method` [EXTRACTED]
-- [[dot-_check()]] - `method` [EXTRACTED]
-- [[dot-_detect_raw_traversal()]] - `method` [EXTRACTED]
-- [[dot-_is_immutable_file()]] - `method` [EXTRACTED]
-- [[dot-_match_pattern()]] - `method` [EXTRACTED]
-- [[dot-_matches_allowed_paths()]] - `method` [EXTRACTED]
-- [[dot-_matches_blocked()]] - `method` [EXTRACTED]
-- [[dot-check_read()]] - `method` [EXTRACTED]
-- [[dot-check_write()]] - `method` [EXTRACTED]
-- [[dot-detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_7]] - `method` [EXTRACTED]
-- [[dot-get_security_violations()]] - `method` [EXTRACTED]
-- [[dot-get_temp_files()]] - `method` [EXTRACTED]
-- [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
-- [[dot-record_network_activity()]] - `method` [EXTRACTED]
-- [[dot-sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
-- [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
-- [[dot-test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
+- [[._check()]] - `method` [EXTRACTED]
+- [[._detect_raw_traversal()]] - `method` [EXTRACTED]
+- [[._is_immutable_file()]] - `method` [EXTRACTED]
+- [[._match_pattern()]] - `method` [EXTRACTED]
+- [[._matches_allowed_paths()]] - `method` [EXTRACTED]
+- [[._matches_blocked()]] - `method` [EXTRACTED]
+- [[.check_read()]] - `method` [EXTRACTED]
+- [[.check_write()]] - `method` [EXTRACTED]
+- [[.detect_staging_patterns()]] - `method` [EXTRACTED]
+- [[.get_audit_log()_7]] - `method` [EXTRACTED]
+- [[.get_security_violations()]] - `method` [EXTRACTED]
+- [[.get_temp_files()]] - `method` [EXTRACTED]
+- [[.monitor_sandbox()]] - `calls` [EXTRACTED]
+- [[.record_network_activity()]] - `method` [EXTRACTED]
+- [[.sandbox()]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
+- [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
+- [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -99,4 +99,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/INFERRED #community/FileSandbox

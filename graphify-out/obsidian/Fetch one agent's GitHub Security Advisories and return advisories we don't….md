@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 124"
+community: "check_upstream_cves"
 location: "L515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/check_upstream_cves
 ---
 
 # Fetch one agent's GitHub Security Advisories and return advisories we don't…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_upstream_cves]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/check_upstream_cves

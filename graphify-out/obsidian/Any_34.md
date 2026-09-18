@@ -1,20 +1,29 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 211"
-location: "L140"
+community: "MCPServerConfig"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_211
+  - graphify/INFERRED
+  - community/MCPServerConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[._execute_tool_call()]] - `references` [EXTRACTED]
+- [[._extract_egress_targets()]] - `references` [EXTRACTED]
+- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[.get_stats()_15]] - `references` [EXTRACTED]
+- [[.send_request()]] - `references` [EXTRACTED]
+- [[.send_request()_2]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_211
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Community 112"
-location: "L125"
+community: "apply-patches.js (OpenClaw)"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/apply-patchesjs_OpenClaw
 ---
 
-# Path
+# path
 
 ## Connections
-- [[dot-__init__()_39]] - `references` [EXTRACTED]
+- [[apply-patches.js (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

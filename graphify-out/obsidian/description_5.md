@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
-type: "document"
-community: "Community 203"
-location: "L11"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
+type: "code"
+community: "hermes/skills/i-browser/package.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/hermes/skills/i-browser/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/packagejson

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "DNSFilterConfig"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/DNSFilterConfig
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_171]] - `references` [EXTRACTED]
-- [[dot-dns_filter()]] - `calls` [EXTRACTED]
-- [[dot-test_dns_filter_config()]] - `calls` [EXTRACTED]
-- [[dot-test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.__init__()_171]] - `references` [EXTRACTED]
+- [[.dns_filter()]] - `calls` [EXTRACTED]
+- [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
+- [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/DNSFilterConfig

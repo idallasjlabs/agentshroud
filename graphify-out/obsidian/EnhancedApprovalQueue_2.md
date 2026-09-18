@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 57"
+community: "ApprovalRequest"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_57
+  - community/ApprovalRequest
 ---
 
 # EnhancedApprovalQueue
@@ -24,4 +24,4 @@ tags:
 - [[_submit_tool_call()]] - `references` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_57
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

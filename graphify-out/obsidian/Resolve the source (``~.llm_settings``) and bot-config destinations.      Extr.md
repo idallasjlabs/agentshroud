@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Runtime Security Comparison & Intel Report"
+community: "api.py"
 location: "L947"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/apipy
 ---
 
 # Resolve the source (``~/.llm_settings/``) and bot-config destinations.      Extr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_skills_reload_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/rationale #graphify/EXTRACTED #community/apipy

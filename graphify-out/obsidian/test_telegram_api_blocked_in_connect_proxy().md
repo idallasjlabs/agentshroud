@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "test_http_proxy.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/test_http_proxypy
 ---
 
 # test_telegram_api_blocked_in_connect_proxy()
@@ -17,4 +17,4 @@ tags:
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/test_http_proxypy

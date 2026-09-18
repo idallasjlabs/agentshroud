@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 512"
+community: "Known Log Messages"
 location: "L496"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Known_Log_Messages
 ---
 
 # Gateway: `GET /status -> 200 (0.000s)` every 30 seconds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

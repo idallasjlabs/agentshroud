@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Community 593"
+community: "Implement per-user session isolation using Teleg"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/Implement_per-user_session_isolation_using_Teleg
 ---
 
 # Remediation
@@ -21,4 +21,4 @@ tags:
 - [[Step 6 Add cross-session access controls to sessions_send]] - `contains` [EXTRACTED]
 - [[Step 7 Add session listing protections]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg

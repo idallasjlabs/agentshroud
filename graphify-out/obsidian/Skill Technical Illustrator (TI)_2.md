@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 406"
+community: "Skill: Technical Illustrator (TI)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_406
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -22,6 +22,6 @@ tags:
 - [[Role_39]] - `contains` [EXTRACTED]
 - [[Rules_16]] - `contains` [EXTRACTED]
 - [[Validation Checklist_8]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tiSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_406
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1419"
+community: ".test_collaborator_hidden_channel_exfil_request_"
 location: "L4143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1419
+  - community/test_collaborator_hidden_channel_exfil_request_
 ---
 
 # Hidden-channel exfil prompts should be blocked and quarantined.
 
 ## Connections
-- [[dot-test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1419
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_hidden_channel_exfil_request_

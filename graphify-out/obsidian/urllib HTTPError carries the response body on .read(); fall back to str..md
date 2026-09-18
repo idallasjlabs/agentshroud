@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Community 1151"
+community: "_is_stale_callback_error()"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1151
+  - community/_is_stale_callback_error
 ---
 
 # urllib HTTPError carries the response body on .read(); fall back to str.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_err_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1151
+#graphify/rationale #graphify/EXTRACTED #community/_is_stale_callback_error

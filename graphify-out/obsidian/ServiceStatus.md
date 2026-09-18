@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # ServiceStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus_1]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_68
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

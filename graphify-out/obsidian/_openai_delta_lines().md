@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 47"
+community: "patch"
 location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/patch
 ---
 
 # _openai_delta_lines()
@@ -21,4 +21,4 @@ tags:
 - [[test_call_llm_stream_yields_sentences()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/patch

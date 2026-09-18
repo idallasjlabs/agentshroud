@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "Community 248"
+community: "OutputSchemaEnforcer"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/OutputSchemaEnforcer
 ---
 
 # Register the built-in default schema.
 
 ## Connections
-- [[dot-_register_default_schema()]] - `rationale_for` [EXTRACTED]
+- [[._register_default_schema()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_248
+#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer

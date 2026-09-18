@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 855"
+community: "NetworkSecurityFinding"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/NetworkSecurityFinding
 ---
 
 # A network security finding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkSecurityFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_855
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

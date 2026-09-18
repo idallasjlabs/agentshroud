@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 503"
+community: "Route map (by router)"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/Route_map_by_router
 ---
 
 # Audit / ledger
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Route map (by router)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

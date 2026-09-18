@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 49"
+community: "test_llm_proxy_local_parity.py"
 location: "L481"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 503"
+community: "API Reference"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/API_Reference
 ---
 
 # Example: `GET /manage/health`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/API_Reference

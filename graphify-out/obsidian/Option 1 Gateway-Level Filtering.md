@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "rationale"
-community: "Community 509"
+community: "Implementation Status"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Implementation_Status
 ---
 
 # Option 1: Gateway-Level Filtering
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_509
+#graphify/rationale #graphify/EXTRACTED #community/Implementation_Status

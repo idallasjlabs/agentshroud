@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/README.md"
 type: "document"
-community: "Community 1344"
+community: "API Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1344
+  - community/API_Documentation
 ---
 
 # API Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_2]] - `contains` [EXTRACTED]
 - [[apiREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1344
+#graphify/document #graphify/EXTRACTED #community/API_Documentation

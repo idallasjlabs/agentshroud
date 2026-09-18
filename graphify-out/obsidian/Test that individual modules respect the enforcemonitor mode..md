@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Community 157"
+community: "TrustManager"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_157
+  - community/TrustManager
 ---
 
 # Test that individual modules respect the enforce/monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModuleEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_157
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

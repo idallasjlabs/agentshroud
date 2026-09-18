@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 222"
+community: "Telegram & Gmail Integration Guide"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_222
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # If Bot Doesn't Respond
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_222
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

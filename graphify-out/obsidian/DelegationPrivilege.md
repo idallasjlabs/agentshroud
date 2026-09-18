@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 74"
+community: "DelegationManager"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/DelegationManager
 ---
 
 # DelegationPrivilege
 
 ## Connections
-- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
-- [[dot-_revoke_by_user_privilege()]] - `references` [EXTRACTED]
-- [[dot-delegate()]] - `references` [EXTRACTED]
-- [[dot-is_delegated()]] - `references` [EXTRACTED]
-- [[dot-revoke()]] - `references` [EXTRACTED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[._revoke_by_user_privilege()]] - `references` [EXTRACTED]
+- [[.delegate()]] - `references` [EXTRACTED]
+- [[.is_delegated()]] - `references` [EXTRACTED]
+- [[.revoke()]] - `references` [EXTRACTED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

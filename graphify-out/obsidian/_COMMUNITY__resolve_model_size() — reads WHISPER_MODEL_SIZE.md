@@ -1,0 +1,21 @@
+---
+type: community
+cohesion: 1.00
+members: 2
+---
+
+# _resolve_model_size() — reads WHISPER_MODEL_SIZE
+
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
+
+## Members
+- [[_resolve_model_size() — reads WHISPER_MODEL_SIZE env and validates]] - code - voice_gateway/stt.py
+- [[select_model_size() — pure AB model-size resolver]] - code - voice_gateway/stt.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/_resolve_model_size__reads_WHISPER_MODEL_SIZE
+SORT file.name ASC
+```

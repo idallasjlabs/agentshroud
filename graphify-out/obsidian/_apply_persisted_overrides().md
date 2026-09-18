@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "TeamsConfig"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TeamsConfig
 ---
 
 # _apply_persisted_overrides()
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
+- [[.model_post_init()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

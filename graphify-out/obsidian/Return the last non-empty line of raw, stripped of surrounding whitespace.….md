@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/utils/secrets.py"
 type: "rationale"
-community: "Community 91"
+community: "mcp_oauth_preflight.py"
 location: "L15"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/mcp_oauth_preflightpy
 ---
 
 # Return the last non-empty line of *raw*, stripped of surrounding whitespace.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_normalize_secret()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

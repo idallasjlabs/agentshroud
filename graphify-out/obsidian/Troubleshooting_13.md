@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 239"
-location: "L246"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_239
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_2]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start_1]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_239
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

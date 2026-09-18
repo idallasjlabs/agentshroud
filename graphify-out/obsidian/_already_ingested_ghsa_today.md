@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 location: "947"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # _already_ingested_ghsa_today
@@ -17,4 +17,4 @@ tags:
 - [[gateway.security.daily_cve_report]] - `contains` [EXTRACTED]
 - [[ghsa_ingest_scheduler]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

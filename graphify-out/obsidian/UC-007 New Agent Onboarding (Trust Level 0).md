@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Community 758"
+community: "Use Cases"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_758
+  - community/Use_Cases
 ---
 
 # UC-007: New Agent Onboarding (Trust Level 0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_758
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

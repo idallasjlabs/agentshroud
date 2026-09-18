@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Community 749"
+community: "OpenClaw Host Hardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/OpenClaw_Host_Hardening
 ---
 
 # openclaw security audit command family
@@ -14,4 +14,4 @@ tags:
 - [[Stable-named cron scheduling for periodic audits]] - `shares_data_with` [EXTRACTED]
 - [[healthcheckSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_749
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

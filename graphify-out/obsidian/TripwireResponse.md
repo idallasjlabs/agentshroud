@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TripwireResponse
 
 ## Connections
-- [[dot-scan_response()]] - `references` [EXTRACTED]
+- [[.scan_response()]] - `references` [EXTRACTED]
 - [[Bridge result returned by scan_response() for pipeline compatibility.]] - `rationale_for` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 512"
+community: "Known Log Messages"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Known_Log_Messages
 ---
 
 # Known Log Messages
@@ -30,6 +30,6 @@ tags:
 - [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - `contains` [EXTRACTED]
 - [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - `contains` [EXTRACTED]
 - [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - `contains` [EXTRACTED]
-- [[troubleshooting_25]] - `references` [EXTRACTED]
+- [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Blue/Red Team Security Auditor Skills"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)
@@ -17,4 +17,4 @@ tags:
 - [[Unsafe Control Actions (UCA-1 through UCA-17)]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

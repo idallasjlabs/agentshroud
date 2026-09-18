@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 583"
+community: "TestOAuthInjection"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/TestOAuthInjection
 ---
 
 # TestOAuthInjection
 
 ## Connections
-- [[dot-_make_anthropic_injector()]] - `method` [EXTRACTED]
-- [[dot-test_adds_oauth_beta_header_when_injecting()]] - `method` [EXTRACTED]
-- [[dot-test_anthropic_version_auto_injected_when_absent()]] - `method` [EXTRACTED]
-- [[dot-test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate()]] - `method` [EXTRACTED]
-- [[dot-test_existing_anthropic_version_preserved()]] - `method` [EXTRACTED]
-- [[dot-test_inject_if_absent_skips_when_bearer_already_present()]] - `method` [EXTRACTED]
-- [[dot-test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `method` [EXTRACTED]
+- [[._make_anthropic_injector()]] - `method` [EXTRACTED]
+- [[.test_adds_oauth_beta_header_when_injecting()]] - `method` [EXTRACTED]
+- [[.test_anthropic_version_auto_injected_when_absent()]] - `method` [EXTRACTED]
+- [[.test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate()]] - `method` [EXTRACTED]
+- [[.test_existing_anthropic_version_preserved()]] - `method` [EXTRACTED]
+- [[.test_inject_if_absent_skips_when_bearer_already_present()]] - `method` [EXTRACTED]
+- [[.test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `method` [EXTRACTED]
 - [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - `rationale_for` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_583
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

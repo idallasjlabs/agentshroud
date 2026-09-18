@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 792"
+community: "._is_local_oom()"
 location: "L793"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/_is_local_oom
 ---
 
 # _is_local_oom returns True for backend_unavailable 503 bodies.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_is_local_oom_detects_backend_unavailable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_792
+#graphify/rationale #graphify/EXTRACTED #community/_is_local_oom

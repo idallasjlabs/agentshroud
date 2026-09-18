@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # module_stats.py
@@ -19,4 +19,4 @@ tags:
 - [[record_decision]] - `contains` [EXTRACTED]
 - [[test_module_stats.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Community 595"
+community: "Himalaya Configuration Reference"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_595
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Downloads directory
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Additional Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_595
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

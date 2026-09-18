@@ -1,16 +1,16 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Community 395"
+community: "Cron: AgentShroud Daily Check-in"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_395
+  - graphify/INFERRED
+  - community/Cron_AgentShroud_Daily_Check-in
 ---
 
 # Cron: AgentShroud Daily Check-in
 
 ## Connections
-- [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
+- [[daily-checkin.sh (marvinpi status check)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/INFERRED #community/Cron_AgentShroud_Daily_Check-in

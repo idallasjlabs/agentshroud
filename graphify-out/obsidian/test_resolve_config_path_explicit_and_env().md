@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 281"
+community: "test_config_hot_reload.py"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/test_config_hot_reloadpy
 ---
 
 # test_resolve_config_path_explicit_and_env()
@@ -16,4 +16,4 @@ tags:
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_281
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Teams/Group Collaborator Responses"
+community: "TeamsConfig"
 location: "L168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TeamsConfig
 ---
 
 # Return the effective collab_mode for a user.          Resolution order:
 
 ## Connections
-- [[dot-get_user_collab_mode()]] - `rationale_for` [EXTRACTED]
+- [[.get_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # Export chain and re-verify.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestChainExportAndVerification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

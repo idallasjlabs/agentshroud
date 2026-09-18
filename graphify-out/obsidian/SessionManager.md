@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 539"
+community: "SessionManager"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/SessionManager
 ---
 
 # SessionManager
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_160]] - `method` [EXTRACTED]
-- [[dot-_fingerprint()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_1]] - `method` [EXTRACTED]
-- [[dot-create_session()]] - `method` [EXTRACTED]
-- [[dot-destroy_session()]] - `method` [EXTRACTED]
-- [[dot-generate_instruction_nonce()]] - `method` [EXTRACTED]
-- [[dot-manager()_2]] - `calls` [EXTRACTED]
-- [[dot-register_event_source()]] - `method` [EXTRACTED]
-- [[dot-rotate_session()]] - `method` [EXTRACTED]
-- [[dot-test_cleanup_expired()]] - `calls` [EXTRACTED]
-- [[dot-test_different_ips_not_rate_limited()]] - `calls` [EXTRACTED]
-- [[dot-test_expired_session_rejected()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
-- [[dot-validate_event()]] - `method` [EXTRACTED]
-- [[dot-validate_nonce()]] - `method` [EXTRACTED]
-- [[dot-validate_session()]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_160]] - `method` [EXTRACTED]
+- [[._fingerprint()]] - `method` [EXTRACTED]
+- [[.cleanup_expired()_1]] - `method` [EXTRACTED]
+- [[.create_session()]] - `method` [EXTRACTED]
+- [[.destroy_session()]] - `method` [EXTRACTED]
+- [[.generate_instruction_nonce()]] - `method` [EXTRACTED]
+- [[.manager()_2]] - `calls` [EXTRACTED]
+- [[.register_event_source()]] - `method` [EXTRACTED]
+- [[.rotate_session()]] - `method` [EXTRACTED]
+- [[.test_cleanup_expired()]] - `calls` [EXTRACTED]
+- [[.test_different_ips_not_rate_limited()]] - `calls` [EXTRACTED]
+- [[.test_expired_session_rejected()]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
+- [[.validate_event()]] - `method` [EXTRACTED]
+- [[.validate_nonce()]] - `method` [EXTRACTED]
+- [[.validate_session()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_539
+#graphify/code #graphify/EXTRACTED #community/SessionManager

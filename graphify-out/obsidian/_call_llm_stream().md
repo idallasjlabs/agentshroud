@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 47"
+community: "server.py"
 location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/serverpy
 ---
 
 # _call_llm_stream()
@@ -17,11 +17,17 @@ tags:
 - [[omlx-keepwarm.sh]] - `semantically_similar_to` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 - [[test_call_llm_stream_flushes_trailing_fragment()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_flushes_trailing_fragment()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_sends_correct_model_and_max_tokens()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_sends_full_history()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_sends_full_history()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_skips_malformed_chunks()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_skips_malformed_chunks()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_yields_sentences()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_yields_sentences()_1]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `references` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/serverpy

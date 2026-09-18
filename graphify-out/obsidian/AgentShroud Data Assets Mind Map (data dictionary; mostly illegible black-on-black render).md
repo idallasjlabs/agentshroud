@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_184
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/IDENTITY.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 1138"
-location: "L1"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1138
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
-# IDENTITY.md
+# Identity
 
 ## Connections
-- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
-- [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
-- [[init-openclaw-config.sh]] - `references` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1138
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

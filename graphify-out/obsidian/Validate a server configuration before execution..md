@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "rationale"
-community: "Community 204"
+community: "ConsentFramework"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/ConsentFramework
 ---
 
 # Validate a server configuration before execution.
 
 ## Connections
-- [[dot-validate_config()]] - `rationale_for` [EXTRACTED]
+- [[.validate_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_204
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

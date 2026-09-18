@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "Community 1295"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1295
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -19,4 +19,4 @@ tags:
 - [[Option 4 — Documentation Footer Trademark Notice]] - `references` [EXTRACTED]
 - [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1295
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

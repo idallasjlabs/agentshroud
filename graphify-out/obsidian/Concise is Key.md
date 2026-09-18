@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 811"
+community: "Core Principles"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_811
+  - community/Core_Principles
 ---
 
 # Concise is Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Core Principles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_811
+#graphify/document #graphify/EXTRACTED #community/Core_Principles

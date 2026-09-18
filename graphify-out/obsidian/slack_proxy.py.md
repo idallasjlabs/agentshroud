@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/TeamsConfig
 ---
 
 # slack_proxy.py
@@ -17,4 +17,4 @@ tags:
 - [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Community 570"
+community: "_seed_cron"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/_seed_cron
 ---
 
 # provider_for_model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_model]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_570
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

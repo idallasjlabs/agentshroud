@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 428"
+community: "Pre-Deployment Checklist"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/Pre-Deployment_Checklist
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -17,6 +17,6 @@ tags:
 - [[Post-Deployment Verification_2]] - `contains` [EXTRACTED]
 - [[Pre-Deployment Checklist_2]] - `contains` [EXTRACTED]
 - [[Role_42]] - `contains` [EXTRACTED]
-- [[openclawskillsi-psSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

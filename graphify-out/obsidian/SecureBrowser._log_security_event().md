@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 209"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "browse.py:194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # SecureBrowser._log_security_event()
@@ -17,4 +17,4 @@ tags:
 - [[SecureBrowser.extract()]] - `calls` [EXTRACTED]
 - [[SecureBrowser.fill_field()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_209
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

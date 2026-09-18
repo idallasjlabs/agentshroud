@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 617"
-location: "L40"
+community: "Atlas — Curriculum Architect"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

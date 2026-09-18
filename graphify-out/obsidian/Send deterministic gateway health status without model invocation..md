@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Activity & Telegram Proxy"
+community: "TelegramAPIProxy"
 location: "L7278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/TelegramAPIProxy
 ---
 
 # Send deterministic gateway health status without model invocation.
 
 ## Connections
-- [[dot-_send_local_healthcheck_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_local_healthcheck_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

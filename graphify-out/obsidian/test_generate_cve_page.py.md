@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Community 186"
+community: "_make_cve()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_186
+  - community/_make_cve
 ---
 
 # test_generate_cve_page.py
@@ -20,4 +20,4 @@ tags:
 - [[gateway.security.agent_cve_registry]] - `references` [EXTRACTED]
 - [[generate-cve-page.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_186
+#graphify/code #graphify/EXTRACTED #community/_make_cve

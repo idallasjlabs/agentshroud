@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L569"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # TestProxyPermissions
 
 ## Connections
-- [[dot-test_elevated_agent_can_execute()]] - `method` [EXTRACTED]
-- [[dot-test_read_only_agent_can_read()]] - `method` [EXTRACTED]
-- [[dot-test_read_only_agent_denied_execute()]] - `method` [EXTRACTED]
+- [[.test_elevated_agent_can_execute()]] - `method` [EXTRACTED]
+- [[.test_read_only_agent_can_read()]] - `method` [EXTRACTED]
+- [[.test_read_only_agent_denied_execute()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[ThreatLevel_2]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

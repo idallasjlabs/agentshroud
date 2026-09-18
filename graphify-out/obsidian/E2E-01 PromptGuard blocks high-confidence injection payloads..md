@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # E2E-01: PromptGuard blocks high-confidence injection payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E01PromptGuardBlocking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

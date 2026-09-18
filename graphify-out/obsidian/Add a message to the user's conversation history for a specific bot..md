@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Community 383"
+community: ".get_or_create_session()"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/get_or_create_session
 ---
 
 # Add a message to the user's conversation history for a specific bot.
 
 ## Connections
-- [[dot-add_conversation_message()]] - `rationale_for` [EXTRACTED]
+- [[.add_conversation_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_383
+#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session

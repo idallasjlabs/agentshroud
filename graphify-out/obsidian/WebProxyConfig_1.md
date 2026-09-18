@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "URLAnalyzer"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/URLAnalyzer
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_154]] - `references` [EXTRACTED]
+- [[.__init__()_154]] - `references` [EXTRACTED]
 - [[URLAnalyzer_1]] - `uses` [INFERRED]
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/URLAnalyzer

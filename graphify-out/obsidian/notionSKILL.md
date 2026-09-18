@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 799"
+community: "notion"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/notion
 ---
 
 # notion/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[notion]] - `contains` [EXTRACTED]
 - [[obsidianSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_799
+#graphify/document #graphify/EXTRACTED #community/notion

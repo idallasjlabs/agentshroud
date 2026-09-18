@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionManager"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/SessionManager
 ---
 
 # SessionError
 
 ## Connections
-- [[dot-register_event_source()]] - `calls` [EXTRACTED]
-- [[dot-validate_event()]] - `calls` [EXTRACTED]
-- [[dot-validate_session()]] - `calls` [EXTRACTED]
+- [[.register_event_source()]] - `calls` [EXTRACTED]
+- [[.validate_event()]] - `calls` [EXTRACTED]
+- [[.validate_session()]] - `calls` [EXTRACTED]
 - [[EventInjectionError]] - `inherits` [EXTRACTED]
 - [[Exception_4]] - `inherits` [EXTRACTED]
 - [[RateLimitExceeded]] - `inherits` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/SessionManager

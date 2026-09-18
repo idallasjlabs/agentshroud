@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Community 524"
+community: "Findings & Mitigations"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/Findings__Mitigations
 ---
 
 # Container Security Audit — AgentShroud v0.8.0
@@ -22,4 +22,4 @@ tags:
 - [[Items Pending Image Rebuild]] - `contains` [EXTRACTED]
 - [[container-security-audit-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations

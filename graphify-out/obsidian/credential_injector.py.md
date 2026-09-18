@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "Community 290"
+community: "CredentialInjector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/CredentialInjector
 ---
 
 # credential_injector.py
@@ -18,4 +18,4 @@ tags:
 - [[CredentialMapping]] - `contains` [EXTRACTED]
 - [[load_all_secret_file_values]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

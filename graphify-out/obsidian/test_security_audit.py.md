@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "test_security_audit.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/test_security_auditpy
 ---
 
 # test_security_audit.py
@@ -76,4 +76,4 @@ tags:
 - [[test_security_audit_advanced.py]] - `conceptually_related_to` [INFERRED]
 - [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

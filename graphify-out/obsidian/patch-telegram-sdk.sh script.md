@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-telegram-sdk.sh"
 type: "code"
-community: "Community 562"
+community: "TELEGRAM_API_BASE_URL"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # patch-telegram-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-telegram-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_562
+#graphify/code #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

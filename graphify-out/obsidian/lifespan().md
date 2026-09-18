@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # lifespan()
 
 ## Connections
-- [[dot-_path()]] - `calls` [INFERRED]
+- [[._path()]] - `calls` [INFERRED]
 - [[AgentRegistry]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `calls` [EXTRACTED]
@@ -97,4 +97,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "Community 1296"
+community: "iMessage Integration Fix - Using imsg + imessage"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_1296
+  - graphify/INFERRED
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # Bot Identity Separation (Separate Accounts)
@@ -14,4 +14,4 @@ tags:
 - [[APPLE-SERVICES-SETUP]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1296
+#graphify/rationale #graphify/INFERRED #community/iMessage_Integration_Fix_-_Using_imsg__imessage

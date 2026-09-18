@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # DataLedger
 
 ## Connections
-- [[dot-__init__()_69]] - `method` [EXTRACTED]
-- [[dot-_hash_content()]] - `method` [EXTRACTED]
-- [[dot-close()_10]] - `method` [EXTRACTED]
-- [[dot-delete_entry()]] - `method` [EXTRACTED]
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-enforce_retention()]] - `method` [EXTRACTED]
-- [[dot-get_entry()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_11]] - `method` [EXTRACTED]
-- [[dot-initialize()_1]] - `method` [EXTRACTED]
-- [[dot-ledger()]] - `calls` [EXTRACTED]
-- [[dot-ledger()_1]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-query()]] - `method` [EXTRACTED]
-- [[dot-record()_2]] - `method` [EXTRACTED]
+- [[.__init__()_69]] - `method` [EXTRACTED]
+- [[._hash_content()]] - `method` [EXTRACTED]
+- [[.close()_10]] - `method` [EXTRACTED]
+- [[.delete_entry()]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.enforce_retention()]] - `method` [EXTRACTED]
+- [[.get_entry()]] - `method` [EXTRACTED]
+- [[.get_stats()_11]] - `method` [EXTRACTED]
+- [[.initialize()_1]] - `method` [EXTRACTED]
+- [[.ledger()]] - `calls` [EXTRACTED]
+- [[.ledger()_1]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.query()]] - `method` [EXTRACTED]
+- [[.record()_2]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 503"
+community: "Route map (by router)"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/Route_map_by_router
 ---
 
 # Agent-facing proxy endpoints (not control-plane)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Route map (by router)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "rationale"
-community: "Community 889"
+community: "get_engine()"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_889
+  - community/get_engine
 ---
 
 # Return an appropriate container engine instance.      Args:         preference:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_engine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_889
+#graphify/rationale #graphify/EXTRACTED #community/get_engine

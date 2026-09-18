@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "document"
-community: "Community 739"
+community: "asb"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/asb
 ---
 
 # docker-compose.yml
@@ -14,4 +14,4 @@ tags:
 - [[asb]] - `references` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/asb

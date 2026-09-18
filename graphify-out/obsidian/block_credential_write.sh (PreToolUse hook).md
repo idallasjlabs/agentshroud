@@ -1,18 +1,18 @@
 ---
 source_file: ".claude/scripts/claude-hooks/block_credential_write.sh"
 type: "code"
-community: "Community 304"
+community: ".claude/settings.json (hook + permission wiring)"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_304
+  - community/claude/settingsjson_hook__permission_wiring
 ---
 
 # block_credential_write.sh (PreToolUse hook)
 
 ## Connections
-- [[dot-claudesettings.json (hook + permission wiring)]] - `references` [EXTRACTED]
+- [[.claudesettings.json (hook + permission wiring)]] - `references` [EXTRACTED]
 - [[pre-commit (gitleaks + git-secrets gate)]] - `semantically_similar_to` [INFERRED]
 - [[security-audit.sh (gitleaksgit-secrets audit)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_304
+#graphify/code #graphify/INFERRED #community/claude/settingsjson_hook__permission_wiring

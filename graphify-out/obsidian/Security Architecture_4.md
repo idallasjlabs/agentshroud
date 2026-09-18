@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Security_Policy
 ---
 
 # Security Architecture
@@ -21,4 +21,4 @@ tags:
 - [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
 - [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

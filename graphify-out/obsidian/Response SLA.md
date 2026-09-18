@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Community 528"
+community: "Contributing to AgentShroud™"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Contributing_to_AgentShroud
 ---
 
 # Response SLA
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_528
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

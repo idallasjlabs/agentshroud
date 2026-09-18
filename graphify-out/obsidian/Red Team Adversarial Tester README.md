@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "Blue/Red Team Security Auditor Skills"
+community: "test_redteam_probes.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/test_redteam_probespy
 ---
 
 # Red Team Adversarial Tester README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/document #graphify/EXTRACTED #community/test_redteam_probespy

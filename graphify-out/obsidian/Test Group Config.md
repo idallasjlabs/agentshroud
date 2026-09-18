@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "RBACConfig"
 location: "1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/RBACConfig
 ---
 
 # Test Group Config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/INFERRED #community/RBACConfig

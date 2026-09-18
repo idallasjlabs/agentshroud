@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 293"
+community: "SkillGuard"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_293
+  - community/SkillGuard
 ---
 
 # ScanResult
 
 ## Connections
-- [[dot-_scan_opaque_blobs()]] - `references` [EXTRACTED]
-- [[dot-blocked()]] - `method` [EXTRACTED]
-- [[dot-extend()]] - `method` [EXTRACTED]
-- [[dot-recommendation()]] - `method` [EXTRACTED]
-- [[dot-scan_file()_1]] - `references` [EXTRACTED]
-- [[dot-scan_skill_tree()]] - `references` [EXTRACTED]
-- [[dot-severity()]] - `method` [EXTRACTED]
+- [[._scan_opaque_blobs()]] - `references` [EXTRACTED]
+- [[.blocked()]] - `method` [EXTRACTED]
+- [[.extend()]] - `method` [EXTRACTED]
+- [[.recommendation()]] - `method` [EXTRACTED]
+- [[.scan_file()_1]] - `references` [EXTRACTED]
+- [[.scan_skill_tree()]] - `references` [EXTRACTED]
+- [[.severity()]] - `method` [EXTRACTED]
 - [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Path_21]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
 - [[ScanResult]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
@@ -45,4 +45,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_293
+#graphify/code #graphify/INFERRED #community/SkillGuard

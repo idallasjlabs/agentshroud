@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 175"
+community: "MCPServerConfig"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_175
+  - community/MCPServerConfig
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
+- [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
+- [[.test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
+- [[.test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
+- [[.test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[.test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
+- [[.test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[Configuration for an MCP server.]] - `rationale_for` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
@@ -31,15 +31,15 @@ tags:
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_175
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

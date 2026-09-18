@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # OutputCanary that always crashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenOutputCanary]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

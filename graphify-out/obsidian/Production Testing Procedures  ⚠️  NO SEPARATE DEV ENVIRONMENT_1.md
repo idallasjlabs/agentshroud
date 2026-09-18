@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 452"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT
@@ -23,4 +23,4 @@ tags:
 - [[H. Service Control for Production Testing_1]] - `contains` [EXTRACTED]
 - [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_452
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

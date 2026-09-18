@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestAuth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestAuth
 ---
 
 # test_subagent_monitor.py
@@ -28,4 +28,4 @@ tags:
 - [[strict_config()]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TestAuth

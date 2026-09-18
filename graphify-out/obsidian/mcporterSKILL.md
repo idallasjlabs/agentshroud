@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "Community 751"
+community: "oracle — best use"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/oracle__best_use
 ---
 
 # mcporter/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[mcporter]] - `contains` [EXTRACTED]
 - [[oracleSKILL]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_751
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

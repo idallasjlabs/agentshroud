@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 197"
+community: "AgentShroud Audit Specification"
 location: "L489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/AgentShroud_Audit_Specification
 ---
 
 # SOX Compliance (Section 404)
@@ -15,4 +15,4 @@ tags:
 - [[Compliance Mapping]] - `contains` [EXTRACTED]
 - [[Internal Controls Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_197
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

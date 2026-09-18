@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 158"
-location: "L9"
+community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FO"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
 ---
 
-# Abstract
+# ABSTRACT
 
 ## Connections
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_158
+#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO

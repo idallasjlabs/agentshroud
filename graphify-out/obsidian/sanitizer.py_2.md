@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Community 580"
+community: "sanitizer.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/sanitizerpy
 ---
 
 # sanitizer.py
@@ -20,7 +20,7 @@ tags:
 - [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
 - [[Purpose_141]] - `contains` [EXTRACTED]
 - [[Related_20]] - `contains` [EXTRACTED]
-- [[Responsibilities_18]] - `contains` [EXTRACTED]
+- [[Responsibilities_17]] - `contains` [EXTRACTED]
 - [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

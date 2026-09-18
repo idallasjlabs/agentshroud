@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # Stats reflect actual data.
 
 ## Connections
-- [[dot-test_stats_correct()]] - `rationale_for` [EXTRACTED]
+- [[.test_stats_correct()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

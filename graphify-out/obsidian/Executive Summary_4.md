@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 210"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_210
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Executive Summary
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 - [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_210
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

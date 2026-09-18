@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # dashboard.py
@@ -36,4 +36,4 @@ tags:
 - [[test_dashboard.py]] - `calls` [EXTRACTED]
 - [[test_e2e.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

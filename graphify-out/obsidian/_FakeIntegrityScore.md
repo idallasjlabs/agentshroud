@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # _FakeIntegrityScore
@@ -30,4 +30,4 @@ tags:
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

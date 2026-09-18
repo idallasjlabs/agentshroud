@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 1019"
+community: "P2 High Priority Incidents"
 location: "L315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1019
+  - community/P2_High_Priority_Incidents
 ---
 
 # PII Leak Incident
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1019
+#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents

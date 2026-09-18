@@ -1,11 +1,11 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 123"
+community: "AgentShroud Incident Response Plan"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Voice Terminal — ESP32-S3-BOX-3 Integration Guide
@@ -15,4 +15,4 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[voice-gateway service (ESP32 voice terminal backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_123
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

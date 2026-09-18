@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 103"
+community: "test_a2a_proxy.py"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/test_a2a_proxypy
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_25]] - `method` [EXTRACTED]
-- [[dot-forward()]] - `method` [EXTRACTED]
+- [[.__init__()_25]] - `method` [EXTRACTED]
+- [[.forward()]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

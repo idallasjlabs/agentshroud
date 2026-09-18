@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/agentshroud-secrets.sh"
 type: "code"
-community: "Community 1445"
+community: "agentshroud-secrets.sh"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1445
+  - community/agentshroud-secretssh
 ---
 
 # inject()
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-secrets.sh]] - `defines` [EXTRACTED]
 - [[agentshroud-secrets.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1445
+#graphify/code #graphify/EXTRACTED #community/agentshroud-secretssh

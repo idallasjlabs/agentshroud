@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "Community 211"
+community: "MCPInspector"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/MCPInspector
 ---
 
 # Recursively redact HIGH-severity PII from a value.
 
 ## Connections
-- [[dot-_redact_pii()]] - `rationale_for` [EXTRACTED]
+- [[._redact_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_211
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

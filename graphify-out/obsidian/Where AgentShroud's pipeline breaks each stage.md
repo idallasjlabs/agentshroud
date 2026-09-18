@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Community 1022"
+community: "Attack Teardowns: How AgentShroud Stops RovoBlas"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1022
+  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
 ---
 
 # Where AgentShroud's pipeline breaks each stage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1022
+#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas

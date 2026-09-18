@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Community 574"
+community: "_handle()"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/_handle
 ---
 
 # StreamWriter
@@ -15,4 +15,4 @@ tags:
 - [[_handle()]] - `references` [EXTRACTED]
 - [[_pipe()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_574
+#graphify/code #graphify/EXTRACTED #community/_handle

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 49"
+community: "test_llm_proxy_local_parity.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_llm_proxy_local_parity.py
@@ -71,4 +71,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "BotConfig"
 location: "L368"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/BotConfig
 ---
 
 # _entity_type_mapping()
@@ -18,4 +18,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_entity_type_mapping()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/BotConfig

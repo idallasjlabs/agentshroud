@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 876"
+community: "Vulcan — Subject Matter Auditor"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

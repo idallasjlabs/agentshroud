@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 70"
+community: "IntelReportStore"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/IntelReportStore
 ---
 
 # A verified source backing a competitor claim.      A Citation is only created by
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Citation_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore

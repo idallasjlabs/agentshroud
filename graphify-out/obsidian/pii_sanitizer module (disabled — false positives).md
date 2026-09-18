@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Community 429"
+community: "34 Security Modules Pipeline (P0-P3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/34_Security_Modules_Pipeline_P0-P3
 ---
 
 # pii_sanitizer module (disabled — false positives)
@@ -15,4 +15,4 @@ tags:
 - [[PII Sanitizer (user-facing description)]] - `semantically_similar_to` [INFERRED]
 - [[Steve Hay's External Reviewer Findings]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_429
+#graphify/concept #graphify/EXTRACTED #community/34_Security_Modules_Pipeline_P0-P3

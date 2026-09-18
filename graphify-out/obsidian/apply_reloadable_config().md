@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 281"
+community: "test_config_hot_reload.py"
 location: "L727"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/test_config_hot_reloadpy
 ---
 
 # apply_reloadable_config()
@@ -19,4 +19,4 @@ tags:
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_281
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

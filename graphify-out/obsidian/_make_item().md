@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 536"
+community: "ApprovalRequest"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/ApprovalRequest
 ---
 
 # _make_item()
@@ -20,4 +20,4 @@ tags:
 - [[test_persist_and_reload()]] - `calls` [EXTRACTED]
 - [[test_store_survives_restart()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_536
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L277"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # TestSSHHosts
 
 ## Connections
-- [[dot-test_ssh_hosts_list()]] - `method` [EXTRACTED]
+- [[.test_ssh_hosts_list()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/SSHProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 183"
+community: "A2AProxyResult"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/A2AProxyResult
 ---
 
 # test_proxy_result_defaults_are_safe()
@@ -16,4 +16,4 @@ tags:
 - [[A2AProxyResult]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

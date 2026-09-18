@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 711"
+community: "trivy_report.py"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_711
+  - community/trivy_reportpy
 ---
 
 # Configuration / Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_711
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

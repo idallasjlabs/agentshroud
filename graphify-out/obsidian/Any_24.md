@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: ""
 type: "code"
-community: "Community 154"
-location: "L23"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/triage-cve-mitigationspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()]] - `references` [EXTRACTED]
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

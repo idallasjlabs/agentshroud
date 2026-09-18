@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "PII Sanitizer & Redaction"
+community: "SSHProxy"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/SSHProxy
 ---
 
 # Test that configuration includes tool result PII settings
 
 ## Connections
-- [[dot-test_config_with_tool_result_pii()]] - `rationale_for` [EXTRACTED]
+- [[.test_config_with_tool_result_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

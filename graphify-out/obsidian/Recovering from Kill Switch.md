@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 599"
+community: "Incident Response Playbook — AgentShroud"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_599
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Recovering from Kill Switch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Kill Switch Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_599
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

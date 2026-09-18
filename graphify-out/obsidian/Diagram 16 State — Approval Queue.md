@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.svg"
 type: "image"
-community: "Community 1143"
+community: "AgentShroud State Diagrams (doc)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1143
+  - community/AgentShroud_State_Diagrams_doc
 ---
 
 # Diagram 16: State — Approval Queue
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1143
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc

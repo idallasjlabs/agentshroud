@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "Community 157"
+community: "TrustManager"
 location: "L121"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_157
+  - graphify/INFERRED
+  - community/TrustManager
 ---
 
 # TestModuleEnforcement
 
 ## Connections
-- [[dot-test_pii_sanitizer_default_enforcement()]] - `method` [EXTRACTED]
-- [[dot-test_pii_sanitizer_mode_param()]] - `method` [EXTRACTED]
+- [[.test_pii_sanitizer_default_enforcement()]] - `method` [EXTRACTED]
+- [[.test_pii_sanitizer_mode_param()]] - `method` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[SecurityConfig_4]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[Test that individual modules respect the enforcemonitor mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_157
+#graphify/code #graphify/INFERRED #community/TrustManager

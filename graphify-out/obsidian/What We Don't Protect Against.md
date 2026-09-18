@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 437"
+community: "SecureBrowser Security Policies"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_437
+  - community/SecureBrowser_Security_Policies
 ---
 
 # What We Don't Protect Against
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Model_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_437
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_block_credentials.py"
 type: "rationale"
-community: "Community 196"
+community: "test_block_credentials.py"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/test_block_credentialspy
 ---
 
 # Blocked responses should contain helpful guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_blocked_message_contains_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/test_block_credentialspy

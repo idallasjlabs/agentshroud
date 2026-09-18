@@ -1,16 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Community 395"
+community: "Cron: Competitive Landscape Update (Afternoon)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/Cron_Competitive_Landscape_Update_Afternoon
 ---
 
 # Cron: Competitive Landscape Update (Afternoon)
 
-## Connections
-- [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/Cron_Competitive_Landscape_Update_Afternoon

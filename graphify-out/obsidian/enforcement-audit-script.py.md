@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TrustManager
 ---
 
 # enforcement-audit-script.py
@@ -47,4 +47,4 @@ tags:
 - [[run()_4]] - `contains` [EXTRACTED]
 - [[warn()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/TrustManager

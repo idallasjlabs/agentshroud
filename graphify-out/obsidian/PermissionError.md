@@ -1,21 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # PermissionError
 
 ## Connections
-- [[dot-decide()]] - `calls` [INFERRED]
-- [[dot-decide()_1]] - `calls` [INFERRED]
-- [[dot-test_running_via_proc_scan()]] - `calls` [INFERRED]
-- [[dot-test_running_via_proc_scan()_1]] - `calls` [INFERRED]
-- [[dot-test_running_via_proc_scan()_2]] - `calls` [INFERRED]
+- [[.decide()]] - `calls` [INFERRED]
+- [[.decide()_1]] - `calls` [INFERRED]
+- [[.test_running_via_proc_scan()]] - `calls` [INFERRED]
+- [[.test_running_via_proc_scan()_1]] - `calls` [INFERRED]
+- [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/INFERRED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 1026"
+community: "4. Risks & Gaps"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1026
+  - community/4_Risks__Gaps
 ---
 
 # Medium
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1026
+#graphify/document #graphify/EXTRACTED #community/4_Risks__Gaps

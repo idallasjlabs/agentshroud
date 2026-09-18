@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 1058"
+community: "Migration Path (SSH → Distributed Node)"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1058
+  - community/Migration_Path_SSH__Distributed_Node
 ---
 
 # Migration Path (SSH → Distributed Node)
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Migrate Workflows]] - `contains` [EXTRACTED]
 - [[Step 6 Deprecate SSH (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1058
+#graphify/document #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node

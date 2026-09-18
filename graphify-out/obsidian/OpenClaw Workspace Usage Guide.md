@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 163"
+community: "OpenClaw Workspace Usage Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # OpenClaw Workspace Usage Guide
@@ -19,11 +19,11 @@ tags:
 - [[Integration with Bot]] - `contains` [EXTRACTED]
 - [[Quick Reference_1]] - `contains` [EXTRACTED]
 - [[Summary_6]] - `contains` [EXTRACTED]
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 - [[WORKSPACE_USAGE]] - `contains` [EXTRACTED]
 - [[What is the Workspace]] - `contains` [EXTRACTED]
 - [[Why Docker Volume vs Bind Mount]] - `contains` [EXTRACTED]
 - [[Workspace Organization Tips]] - `contains` [EXTRACTED]
 - [[Workspace Size]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

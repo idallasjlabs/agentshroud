@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 334"
+community: "SecurityEvent"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/SecurityEvent
 ---
 
 # collect_recent_events()
 
 ## Connections
-- [[Any_46]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[get_security_events()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/SecurityEvent

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 264"
+community: "Skill: UX Expert (UX)"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Skill_UX_Expert_UX
 ---
 
 # Interaction Design Patterns
@@ -18,4 +18,4 @@ tags:
 - [[Progressive Disclosure_2]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

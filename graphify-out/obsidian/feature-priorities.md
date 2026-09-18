@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "Community 1643"
+community: "feature-priorities.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1643
+  - community/feature-prioritiesmd
 ---
 
 # feature-priorities.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1643
+#graphify/document #graphify/EXTRACTED #community/feature-prioritiesmd

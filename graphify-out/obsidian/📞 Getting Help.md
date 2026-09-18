@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 229"
+community: "AgentShroud Documentation"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AgentShroud_Documentation
 ---
 
 # 📞 Getting Help
@@ -17,4 +17,4 @@ tags:
 - [[Service Status]] - `contains` [EXTRACTED]
 - [[System Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_229
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

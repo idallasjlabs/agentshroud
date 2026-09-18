@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # TestIsDomainAllowed
 
 ## Connections
-- [[dot-test_case_insensitive()_1]] - `method` [EXTRACTED]
-- [[dot-test_empty_allowlist_blocks_everything()]] - `method` [EXTRACTED]
-- [[dot-test_exact_match()_1]] - `method` [EXTRACTED]
-- [[dot-test_wildcard_does_not_match_other_root()]] - `method` [EXTRACTED]
-- [[dot-test_wildcard_matches_root_domain()]] - `method` [EXTRACTED]
-- [[dot-test_wildcard_matches_subdomain()]] - `method` [EXTRACTED]
+- [[.test_case_insensitive()_1]] - `method` [EXTRACTED]
+- [[.test_empty_allowlist_blocks_everything()]] - `method` [EXTRACTED]
+- [[.test_exact_match()_1]] - `method` [EXTRACTED]
+- [[.test_wildcard_does_not_match_other_root()]] - `method` [EXTRACTED]
+- [[.test_wildcard_matches_root_domain()]] - `method` [EXTRACTED]
+- [[.test_wildcard_matches_subdomain()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

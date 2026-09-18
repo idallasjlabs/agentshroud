@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 801"
+community: "Post-v1.0.0 — Deferred"
 location: "L335"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Post-v100__Deferred
 ---
 
 # Mac Mini Onboarding (Phase 14)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

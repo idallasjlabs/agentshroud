@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 637"
+community: "gateway.proxy.llm_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/gatewayproxyllm_proxy
 ---
 
 # gateway.proxy.llm_proxy
@@ -20,6 +20,7 @@ tags:
 - [[telegram_proxy.py]] - `references` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_llm_proxy.py_1]] - `imports_from` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_637
+#graphify/code #graphify/EXTRACTED #community/gatewayproxyllm_proxy

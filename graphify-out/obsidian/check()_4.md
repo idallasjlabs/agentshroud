@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "Community 464"
+community: "post-deploy-check.sh"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/post-deploy-checksh
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[post-deploy-check.sh]] - `defines` [EXTRACTED]
 - [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh

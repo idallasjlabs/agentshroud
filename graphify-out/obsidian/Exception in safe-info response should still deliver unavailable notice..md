@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 40"
+community: "TestCollaboratorPromptClassifiers"
 location: "L7589"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Exception in safe-info response should still deliver unavailable notice.
 
 ## Connections
-- [[dot-test_safe_info_response_exception_sends_unavailable_fallback()]] - `rationale_for` [EXTRACTED]
+- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_40
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Community 112"
+community: "AuditExporter"
 location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/AuditExporter
 ---
 
 # Test export with filters.
 
 ## Connections
-- [[dot-test_export_filtering()]] - `rationale_for` [EXTRACTED]
+- [[.test_export_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/AuditExporter

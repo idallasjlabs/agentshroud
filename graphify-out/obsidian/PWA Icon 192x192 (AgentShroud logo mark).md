@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/icon-192x192.png"
 type: "image"
-community: "Community 1801"
+community: "PWA Icon 192x192 (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1801
+  - community/PWA_Icon_192x192_AgentShroud_logo_mark
 ---
 
 # PWA Icon 192x192 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Community_1801
+#graphify/image #graphify/EXTRACTED #community/PWA_Icon_192x192_AgentShroud_logo_mark

@@ -1,45 +1,45 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "TrustManager"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Prompt_Guard__Context_Integrity
+  - community/TrustManager
 ---
 
 # PromptGuard
 
 ## Connections
-- [[dot-__init__()_74]] - `method` [EXTRACTED]
-- [[dot-_check_encoded_content()]] - `method` [EXTRACTED]
-- [[dot-_check_unicode_tricks()]] - `method` [EXTRACTED]
-- [[dot-_get_hmac_key()]] - `method` [EXTRACTED]
-- [[dot-guard()_3]] - `calls` [EXTRACTED]
-- [[dot-guard()_4]] - `calls` [EXTRACTED]
-- [[dot-guard()_5]] - `calls` [EXTRACTED]
-- [[dot-guard()_2]] - `calls` [EXTRACTED]
-- [[dot-pg()]] - `calls` [EXTRACTED]
-- [[dot-pg()_1]] - `calls` [EXTRACTED]
-- [[dot-pipeline()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-reanchor_delimiters()]] - `method` [EXTRACTED]
-- [[dot-register_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan()_2]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_20]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_25]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
-- [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
-- [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-test_prompt_guard_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_prompt_guard_large_input()]] - `calls` [EXTRACTED]
-- [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[dot-test_warn_threshold()]] - `calls` [EXTRACTED]
-- [[dot-test_write_baseline_json()]] - `calls` [EXTRACTED]
-- [[dot-verify_system_prompt()]] - `method` [EXTRACTED]
-- [[Any_38]] - `uses` [INFERRED]
+- [[.__init__()_74]] - `method` [EXTRACTED]
+- [[._check_encoded_content()]] - `method` [EXTRACTED]
+- [[._check_unicode_tricks()]] - `method` [EXTRACTED]
+- [[._get_hmac_key()]] - `method` [EXTRACTED]
+- [[.guard()_2]] - `calls` [EXTRACTED]
+- [[.guard()_3]] - `calls` [EXTRACTED]
+- [[.guard()_4]] - `calls` [EXTRACTED]
+- [[.guard()_5]] - `calls` [EXTRACTED]
+- [[.pg()]] - `calls` [EXTRACTED]
+- [[.pg()_1]] - `calls` [EXTRACTED]
+- [[.pipeline()]] - `calls` [EXTRACTED]
+- [[.pipeline()_1]] - `calls` [EXTRACTED]
+- [[.reanchor_delimiters()]] - `method` [EXTRACTED]
+- [[.register_system_prompt()]] - `method` [EXTRACTED]
+- [[.scan()_2]] - `method` [EXTRACTED]
+- [[.scan_tool_result()]] - `method` [EXTRACTED]
+- [[.setup_method()_12]] - `calls` [EXTRACTED]
+- [[.setup_method()_20]] - `calls` [EXTRACTED]
+- [[.setup_method()_25]] - `calls` [EXTRACTED]
+- [[.test_custom_pattern()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
+- [[.test_prompt_guard_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_prompt_guard_large_input()]] - `calls` [EXTRACTED]
+- [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
+- [[.test_warn_threshold()]] - `calls` [EXTRACTED]
+- [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
+- [[.verify_system_prompt()]] - `method` [EXTRACTED]
+- [[Any_37]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
@@ -47,8 +47,8 @@ tags:
 - [[IntegrityScore]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -164,4 +164,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/INFERRED #community/TrustManager

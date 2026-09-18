@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L1397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # Process tool result through PII sanitization before it reaches agent          Ar
 
 ## Connections
-- [[dot-process_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[.process_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

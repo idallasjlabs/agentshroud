@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "CollaboratorActivityTracker"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/CollaboratorActivityTracker
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[dot-__init__()_45]] - `method` [EXTRACTED]
-- [[dot-_append_contributor_log()]] - `method` [EXTRACTED]
-- [[dot-_coerce_timestamp()]] - `method` [EXTRACTED]
-- [[dot-_normalize_preview()]] - `method` [EXTRACTED]
-- [[dot-_normalize_username()]] - `method` [EXTRACTED]
-- [[dot-get_activity()]] - `method` [EXTRACTED]
-- [[dot-get_activity_summary()]] - `method` [EXTRACTED]
-- [[dot-get_health()]] - `method` [EXTRACTED]
-- [[dot-record_activity()]] - `method` [EXTRACTED]
-- [[dot-test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
-- [[dot-test_initial_state_healthy()]] - `calls` [EXTRACTED]
+- [[.__init__()_45]] - `method` [EXTRACTED]
+- [[._append_contributor_log()]] - `method` [EXTRACTED]
+- [[._coerce_timestamp()]] - `method` [EXTRACTED]
+- [[._normalize_preview()]] - `method` [EXTRACTED]
+- [[._normalize_username()]] - `method` [EXTRACTED]
+- [[.get_activity()]] - `method` [EXTRACTED]
+- [[.get_activity_summary()]] - `method` [EXTRACTED]
+- [[.get_health()]] - `method` [EXTRACTED]
+- [[.record_activity()]] - `method` [EXTRACTED]
+- [[.test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
+- [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[Path_7]] - `uses` [INFERRED]
+- [[Path_3]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
@@ -65,4 +65,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

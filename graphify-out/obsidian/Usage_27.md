@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 1210"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

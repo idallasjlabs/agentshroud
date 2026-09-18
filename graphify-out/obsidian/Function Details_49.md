@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 803"
+community: "web_config.py"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/web_configpy
 ---
 
 # Function Details
@@ -17,4 +17,4 @@ tags:
 - [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
 - [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/web_configpy

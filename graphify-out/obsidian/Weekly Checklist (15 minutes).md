@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "Community 702"
+community: "Morning Checklist (5 minutes)"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_702
+  - community/Morning_Checklist_5_minutes
 ---
 
 # Weekly Checklist (15 minutes)
@@ -18,4 +18,4 @@ tags:
 - [[4. Test Suite]] - `contains` [EXTRACTED]
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_702
+#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

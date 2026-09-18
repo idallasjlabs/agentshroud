@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_17]] - `method` [EXTRACTED]
-- [[dot-_contains_env_access_patterns()]] - `method` [EXTRACTED]
-- [[dot-_looks_like_credential()]] - `method` [EXTRACTED]
-- [[dot-_record_leakage()]] - `method` [EXTRACTED]
-- [[dot-check_command_execution()]] - `method` [EXTRACTED]
-- [[dot-check_file_access()]] - `method` [EXTRACTED]
-- [[dot-clear_detected_leakages()]] - `method` [EXTRACTED]
-- [[dot-export_leakage_report()]] - `method` [EXTRACTED]
-- [[dot-get_leakage_summary()]] - `method` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `method` [EXTRACTED]
-- [[dot-scrub_command_output()]] - `method` [EXTRACTED]
-- [[dot-test_env_guard_command_check()]] - `calls` [EXTRACTED]
-- [[dot-test_env_guard_detects_data_access()]] - `calls` [INFERRED]
-- [[dot-test_env_guard_monitoring()]] - `calls` [EXTRACTED]
-- [[dot-test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
-- [[dot-test_env_guard_scrubs_output()]] - `calls` [INFERRED]
-- [[dot-test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_17]] - `method` [EXTRACTED]
+- [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
+- [[._looks_like_credential()]] - `method` [EXTRACTED]
+- [[._record_leakage()]] - `method` [EXTRACTED]
+- [[.check_command_execution()]] - `method` [EXTRACTED]
+- [[.check_file_access()]] - `method` [EXTRACTED]
+- [[.clear_detected_leakages()]] - `method` [EXTRACTED]
+- [[.export_leakage_report()]] - `method` [EXTRACTED]
+- [[.get_leakage_summary()]] - `method` [EXTRACTED]
+- [[.monitor_environment_access()]] - `method` [EXTRACTED]
+- [[.scrub_command_output()]] - `method` [EXTRACTED]
+- [[.test_env_guard_command_check()]] - `calls` [EXTRACTED]
+- [[.test_env_guard_detects_data_access()]] - `calls` [INFERRED]
+- [[.test_env_guard_monitoring()]] - `calls` [EXTRACTED]
+- [[.test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
+- [[.test_env_guard_scrubs_output()]] - `calls` [INFERRED]
+- [[.test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
+- [[.test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

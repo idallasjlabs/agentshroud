@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 1040"
+community: "TestTail"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/TestTail
 ---
 
 # TestTail
 
 ## Connections
-- [[dot-test_empty()]] - `method` [EXTRACTED]
-- [[dot-test_keeps_last_n_lines()]] - `method` [EXTRACTED]
-- [[dot-test_only_newlines()]] - `method` [EXTRACTED]
-- [[dot-test_shorter_than_n()]] - `method` [EXTRACTED]
-- [[dot-test_strips_trailing_newline()]] - `method` [EXTRACTED]
+- [[.test_empty()]] - `method` [EXTRACTED]
+- [[.test_keeps_last_n_lines()]] - `method` [EXTRACTED]
+- [[.test_only_newlines()]] - `method` [EXTRACTED]
+- [[.test_shorter_than_n()]] - `method` [EXTRACTED]
+- [[.test_strips_trailing_newline()]] - `method` [EXTRACTED]
 - [[HostResult]] - `uses` [INFERRED]
 - [[HostStatus]] - `uses` [INFERRED]
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1040
+#graphify/code #graphify/EXTRACTED #community/TestTail

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Community 83"
+community: "PortManager"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # Find next available port starting from base.          Args:             base: St
 
 ## Connections
-- [[dot-find_available_port()]] - `rationale_for` [EXTRACTED]
+- [[.find_available_port()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

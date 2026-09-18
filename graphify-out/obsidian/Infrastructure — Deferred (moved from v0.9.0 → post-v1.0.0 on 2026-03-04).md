@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 801"
+community: "Post-v1.0.0 — Deferred"
 location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Post-v100__Deferred
 ---
 
 # Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

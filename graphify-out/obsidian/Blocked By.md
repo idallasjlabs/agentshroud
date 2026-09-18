@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 250"
+community: "v0.9.0 — Apple Messages Integration"
 location: "L386"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/v090__Apple_Messages_Integration
 ---
 
 # Blocked By
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_250
+#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration

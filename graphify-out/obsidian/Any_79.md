@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Community 890"
-location: "L231"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_3]] - `references` [EXTRACTED]
+- [[.__init__()_197]] - `references` [EXTRACTED]
+- [[._default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

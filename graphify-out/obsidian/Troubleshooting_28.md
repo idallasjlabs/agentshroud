@@ -1,20 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 350"
-location: "L277"
+community: "Hermes Agent — Connection Setup"
+location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

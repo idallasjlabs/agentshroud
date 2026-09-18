@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "Animation Guidelines"
 location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Animation_Guidelines
 ---
 
 # Logo Animation Constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines

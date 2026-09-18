@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 238"
+community: "The 8D Investigation Process"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_238
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 568"
+community: "Browser Extension"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/Browser_Extension
 ---
 
 # Structure
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 - [[Gateway wiring]] - `contains` [EXTRACTED]
-- [[Safari_1]] - `contains` [EXTRACTED]
+- [[Safari]] - `contains` [EXTRACTED]
 - [[Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

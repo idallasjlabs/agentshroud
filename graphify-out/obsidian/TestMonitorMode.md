@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # TestMonitorMode
 
 ## Connections
-- [[dot-test_allowed_domain_still_allowed_in_monitor()]] - `method` [EXTRACTED]
-- [[dot-test_unlisted_domain_allowed_in_monitor()]] - `method` [EXTRACTED]
+- [[.test_allowed_domain_still_allowed_in_monitor()]] - `method` [EXTRACTED]
+- [[.test_unlisted_domain_allowed_in_monitor()]] - `method` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_81
+#graphify/code #graphify/INFERRED #community/EgressPolicy

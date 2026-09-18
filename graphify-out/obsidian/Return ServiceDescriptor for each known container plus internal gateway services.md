@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # Return ServiceDescriptor for each known container plus internal gateway services
 
 ## Connections
-- [[dot-list_services()]] - `rationale_for` [EXTRACTED]
+- [[.list_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_68
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

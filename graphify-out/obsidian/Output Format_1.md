@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 1003"
-location: "L26"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

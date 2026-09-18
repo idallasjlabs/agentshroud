@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1425"
+community: "§5 — Trivy Container Scan Results"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1425
+  - community/5__Trivy_Container_Scan_Results
 ---
 
 # OpenClaw container (17 CRITICAL CVEs)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§5 — Trivy Container Scan Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1425
+#graphify/document #graphify/EXTRACTED #community/5__Trivy_Container_Scan_Results

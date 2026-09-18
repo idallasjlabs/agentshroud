@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Community 556"
+community: "Actions"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/Actions
 ---
 
 # Edit a message
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Actions_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/Actions

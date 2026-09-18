@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 324"
+community: "Goal: Codex is a secondary/tertiary agent used f"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_324
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
 ---
 
 # Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.
@@ -25,4 +25,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_324
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f

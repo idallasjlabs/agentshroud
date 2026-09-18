@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 157"
+community: "SecurityConfig"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_157
+  - community/SecurityConfig
 ---
 
 # SecurityModuleConfig
 
 ## Connections
-- [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
+- [[.test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
+- [[.test_security_module_config_defaults()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_157
+#graphify/code #graphify/INFERRED #community/SecurityConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 70"
+community: "IntelReportStore"
 location: "line:212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/IntelReportStore
 ---
 
 # CitationVerifier.verify_report()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitiveIntelReport_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

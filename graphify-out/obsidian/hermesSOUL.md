@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "Community 477"
+community: "hermes/SOUL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/hermes/SOULmd
 ---
 
 # hermes/SOUL.md
@@ -17,7 +17,7 @@ tags:
 - [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
 - [[Isaiah Jefferson (Owner)]] - `references` [EXTRACTED]
-- [[OpenClaw_3]] - `references` [EXTRACTED]
+- [[OpenClaw_2]] - `references` [EXTRACTED]
 - [[PII Sanitizer_2]] - `references` [EXTRACTED]
 - [[PromptGuard_2]] - `references` [EXTRACTED]
 - [[TrustManager_4]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[tirith command-safety scanner]] - `references` [EXTRACTED]
 - [[trillian (lab host)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_477
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

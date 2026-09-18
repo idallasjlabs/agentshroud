@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Community 56"
+community: "EncryptedStore"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/EncryptedStore
 ---
 
 # Parse clamscan output into structured results.      Args:         output: Raw st
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_clamscan_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

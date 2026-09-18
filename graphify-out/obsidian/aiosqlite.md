@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Community 1121"
+community: "aiosqlite"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1121
+  - community/aiosqlite
 ---
 
 # aiosqlite
@@ -19,4 +19,4 @@ tags:
 - [[Where Used_1]] - `contains` [EXTRACTED]
 - [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1121
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

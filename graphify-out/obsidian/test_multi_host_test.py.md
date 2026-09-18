@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 947"
+community: "test_multi_host_test.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/test_multi_host_testpy
 ---
 
 # test_multi_host_test.py
@@ -39,4 +39,4 @@ tags:
 - [[ssh_runner()]] - `imports` [EXTRACTED]
 - [[tail()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_947
+#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 404"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Required Tags (All Resources)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tagging Standard_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_404
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

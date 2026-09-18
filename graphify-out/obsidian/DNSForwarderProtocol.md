@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 573"
+community: "DNSForwarderProtocol"
 location: "L160"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_573
+  - community/DNSForwarderProtocol
 ---
 
 # DNSForwarderProtocol
 
 ## Connections
-- [[dot-__init__()_166]] - `method` [EXTRACTED]
-- [[dot-_handle_query()]] - `method` [EXTRACTED]
-- [[dot-_make_protocol()]] - `calls` [EXTRACTED]
-- [[dot-connection_made()]] - `method` [EXTRACTED]
-- [[dot-datagram_received()]] - `method` [EXTRACTED]
-- [[dot-error_received()]] - `method` [EXTRACTED]
-- [[dot-test_error_received_logs()]] - `calls` [EXTRACTED]
+- [[.__init__()_166]] - `method` [EXTRACTED]
+- [[._handle_query()]] - `method` [EXTRACTED]
+- [[._make_protocol()]] - `calls` [EXTRACTED]
+- [[.connection_made()]] - `method` [EXTRACTED]
+- [[.datagram_received()]] - `method` [EXTRACTED]
+- [[.error_received()]] - `method` [EXTRACTED]
+- [[.test_error_received_logs()]] - `calls` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[TestBlocklistDownload]] - `uses` [INFERRED]
 - [[TestBlocklistUpdate]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_573
+#graphify/code #graphify/INFERRED #community/DNSForwarderProtocol

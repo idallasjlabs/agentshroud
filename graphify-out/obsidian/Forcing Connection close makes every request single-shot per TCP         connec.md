@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "rationale"
-community: "Community 776"
+community: "TestRewriteRequestHeaders"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_776
+  - community/TestRewriteRequestHeaders
 ---
 
 # Forcing Connection: close makes every request single-shot per TCP         connec
 
 ## Connections
-- [[dot-test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
+- [[.test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_776
+#graphify/rationale #graphify/EXTRACTED #community/TestRewriteRequestHeaders

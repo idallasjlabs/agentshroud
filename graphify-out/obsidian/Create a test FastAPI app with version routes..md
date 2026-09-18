@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_version_routes.py"
 type: "rationale"
-community: "Community 433"
+community: "TestVersionRoutes"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_433
+  - community/TestVersionRoutes
 ---
 
 # Create a test FastAPI app with version routes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_433
+#graphify/rationale #graphify/EXTRACTED #community/TestVersionRoutes

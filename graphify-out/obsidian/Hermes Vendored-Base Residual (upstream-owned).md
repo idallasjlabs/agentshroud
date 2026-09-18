@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Community 407"
+community: "Currently Unmitigable Residual Class"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # Hermes Vendored-Base Residual (upstream-owned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Currently Unmitigable Residual Class]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_407
+#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class

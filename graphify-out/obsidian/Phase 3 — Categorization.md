@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1054"
+community: "Discovery Strategy"
 location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1054
+  - community/Discovery_Strategy
 ---
 
 # Phase 3 — Categorization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1054
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

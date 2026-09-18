@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 42"
+community: "test_observatory_mode.py"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_observatory_modepy
 ---
 
 # Second PUT cancels the first revert task.
 
 ## Connections
-- [[dot-test_second_put_cancels_previous_task()]] - `rationale_for` [EXTRACTED]
+- [[.test_second_put_cancels_previous_task()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy

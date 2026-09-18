@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 670"
+community: "OpenSCAP"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_670
+  - community/OpenSCAP
 ---
 
 # OpenClaw Integration (Primary Target)
@@ -17,4 +17,4 @@ tags:
 - [[Integration Guide]] - `contains` [EXTRACTED]
 - [[Integration Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_670
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

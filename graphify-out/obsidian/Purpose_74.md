@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Community 1257"
+community: "Athena — Knowledge Distiller"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1257
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1257
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

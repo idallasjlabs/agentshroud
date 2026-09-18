@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # STANDBY = binary installed but cannot run in this environment; should be healthy
 
 ## Connections
-- [[dot-test_standby_service()]] - `rationale_for` [EXTRACTED]
+- [[.test_standby_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_68
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

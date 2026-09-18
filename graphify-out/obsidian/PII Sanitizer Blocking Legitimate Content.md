@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 323"
+community: "troubleshooting.md"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_323
+  - community/troubleshootingmd
 ---
 
 # PII Sanitizer Blocking Legitimate Content
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Common Issues]] - `contains` [EXTRACTED]
 - [[ContextGuard False Positive Collaborator Block]] - `semantically_similar_to` [INFERRED]
-- [[troubleshooting_25]] - `references` [EXTRACTED]
+- [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_323
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

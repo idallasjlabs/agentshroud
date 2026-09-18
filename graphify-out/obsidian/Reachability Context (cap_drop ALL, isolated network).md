@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Community 407"
+community: "Currently Unmitigable Residual Class"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_407
+  - graphify/INFERRED
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # Reachability Context (cap_drop ALL, isolated network)
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_407
+#graphify/rationale #graphify/INFERRED #community/Currently_Unmitigable_Residual_Class

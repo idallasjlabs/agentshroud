@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 99"
+community: "sync-cve-registry.py"
 location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # _process_nvd_results()
@@ -21,4 +21,4 @@ tags:
 - [[_run_nvd_sync()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

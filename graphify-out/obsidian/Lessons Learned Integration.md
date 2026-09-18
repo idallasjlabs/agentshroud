@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 77"
+community: "Post-Incident Activities"
 location: "L526"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Post-Incident_Activities
 ---
 
 # Lessons Learned Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Post-Incident_Activities

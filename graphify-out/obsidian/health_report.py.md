@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 459"
+community: "health_report.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/health_reportpy
 ---
 
 # health_report.py
@@ -20,8 +20,8 @@ tags:
 - [[gateway.security.trivy_report]] - `references` [EXTRACTED]
 - [[generate_report()]] - `contains` [EXTRACTED]
 - [[generate_summary]] - `shares_data_with` [EXTRACTED]
-- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
 - [[generate_summary()]] - `shares_data_with` [EXTRACTED]
+- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
 - [[get_trend()]] - `contains` [EXTRACTED]
 - [[init_db()]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[wazuh-ossec]] - `references` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_459
+#graphify/code #graphify/EXTRACTED #community/health_reportpy

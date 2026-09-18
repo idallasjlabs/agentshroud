@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 708"
-location: "L66"
+community: "config.py"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_708
+  - community/configpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_708
+#graphify/document #graphify/EXTRACTED #community/configpy

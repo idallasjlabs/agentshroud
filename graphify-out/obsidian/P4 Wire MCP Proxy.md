@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 469"
+community: "Plan: AgentShroud Security Hardening — Real Agen"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agen
 ---
 
 # P4: Wire MCP Proxy
@@ -18,4 +18,4 @@ tags:
 - [[Verification_4]] - `contains` [EXTRACTED]
 - [[What Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agen

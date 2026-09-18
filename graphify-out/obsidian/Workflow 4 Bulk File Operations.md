@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 163"
+community: "OpenClaw Workspace Usage Guide"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Workflow 4: Bulk File Operations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

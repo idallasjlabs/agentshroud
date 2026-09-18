@@ -1,22 +1,19 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "docker/docker-compose.yml"
-location: "docker/docker-compose.yml:664"
+community: "gateway service (prod, sole egress point, 75-mod"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/docker-composeyml
+  - community/gateway_service_prod_sole_egress_point_75-mod
 ---
 
 # agentshroud-isolated network (DMZ tier, internal:true)
 
 ## Connections
-- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - `references` [EXTRACTED]
-- [[docker-compose.agentshroud-bot.marvin.yml (dev host override)]] - `references` [EXTRACTED]
-- [[gateway service (docker-compose.yml)]] - `shares_data_with` [EXTRACTED]
-- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `shares_data_with` [EXTRACTED]
-- [[openclaw service (docker-compose.yml)]] - `shares_data_with` [EXTRACTED]
-- [[voice-gateway service (ESP32-S3-BOX-3 STTTTS bridge)]] - `shares_data_with` [EXTRACTED]
+- [[gateway service (prod, sole egress point, 75-module pipeline)]] - `shares_data_with` [EXTRACTED]
+- [[hermes service (prod, profiles hermesfull — service block is dead code, see run-standalone.sh)]] - `shares_data_with` [EXTRACTED]
+- [[openclaw service (prod, isolated network only)]] - `shares_data_with` [EXTRACTED]
+- [[wazuh-agent service (standalone sidecar, split from gateway 2026-09-06)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/docker-composeyml
+#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod

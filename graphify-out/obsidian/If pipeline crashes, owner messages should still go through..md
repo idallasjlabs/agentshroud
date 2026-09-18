@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 93"
+community: "TelegramAPIProxy"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/TelegramAPIProxy
 ---
 
 # If pipeline crashes, owner messages should still go through.
 
 ## Connections
-- [[dot-test_outbound_owner_exempt_from_fail_closed()]] - `rationale_for` [EXTRACTED]
+- [[.test_outbound_owner_exempt_from_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

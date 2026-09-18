@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # test_security_audit_advanced.py
@@ -26,4 +26,4 @@ tags:
 - [[test_security_audit.py]] - `conceptually_related_to` [INFERRED]
 - [[webapi.py (POST apiintelreports)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

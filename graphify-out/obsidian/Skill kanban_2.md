@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Community 1563"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1563
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[openclawskillsi-kanbanSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1563
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

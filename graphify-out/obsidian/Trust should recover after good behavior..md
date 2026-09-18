@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TestAuth"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TestAuth
 ---
 
 # Trust should recover after good behavior.
 
 ## Connections
-- [[dot-test_trust_recovery()]] - `rationale_for` [EXTRACTED]
+- [[.test_trust_recovery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/rationale #graphify/EXTRACTED #community/TestAuth

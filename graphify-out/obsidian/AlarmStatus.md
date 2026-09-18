@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # AlarmStatus
@@ -16,4 +16,4 @@ tags:
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[str_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

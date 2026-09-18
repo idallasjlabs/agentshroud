@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 946"
+community: "audio.c"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_946
+  - community/audioc
 ---
 
 # audio_capture_frame()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[audio.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_946
+#graphify/code #graphify/EXTRACTED #community/audioc

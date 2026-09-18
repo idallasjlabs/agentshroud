@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 669"
+community: "Layer-by-Layer Breakdown"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Layer-by-Layer Breakdown
@@ -26,4 +26,4 @@ tags:
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

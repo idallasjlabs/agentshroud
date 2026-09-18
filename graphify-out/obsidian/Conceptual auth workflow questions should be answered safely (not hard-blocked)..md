@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound Tests"
+community: "TelegramAPIProxy"
 location: "L3245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/TelegramAPIProxy
 ---
 
 # Conceptual auth workflow questions should be answered safely (not hard-blocked).
 
 ## Connections
-- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

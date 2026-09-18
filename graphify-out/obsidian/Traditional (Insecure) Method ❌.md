@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 806"
+community: "Browser-Fetch Skill for 1Password Share Links"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_806
+  - community/Browser-Fetch_Skill_for_1Password_Share_Links
 ---
 
 # Traditional (Insecure) Method ❌
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Secure Credential Sharing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_806
+#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links

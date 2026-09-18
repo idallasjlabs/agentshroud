@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L299"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_46
+  - graphify/INFERRED
+  - community/DifferentialPIIDetector
 ---
 
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_149]] - `method` [EXTRACTED]
-- [[dot-_deduplicate()]] - `method` [EXTRACTED]
-- [[dot-_detect_pii()]] - `method` [EXTRACTED]
-- [[dot-_detect_presidio()]] - `method` [EXTRACTED]
-- [[dot-_detect_regex()]] - `method` [EXTRACTED]
-- [[dot-_init_presidio()_1]] - `method` [EXTRACTED]
-- [[dot-_redact()]] - `method` [EXTRACTED]
-- [[dot-_scan()]] - `method` [EXTRACTED]
-- [[dot-scan_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
+- [[.__init__()_149]] - `method` [EXTRACTED]
+- [[._deduplicate()]] - `method` [EXTRACTED]
+- [[._detect_pii()]] - `method` [EXTRACTED]
+- [[._detect_presidio()]] - `method` [EXTRACTED]
+- [[._detect_regex()]] - `method` [EXTRACTED]
+- [[._init_presidio()_1]] - `method` [EXTRACTED]
+- [[._redact()]] - `method` [EXTRACTED]
+- [[._scan()]] - `method` [EXTRACTED]
+- [[.scan_prompt()]] - `method` [EXTRACTED]
+- [[.scan_tool_result()_3]] - `method` [EXTRACTED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - `rationale_for` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector

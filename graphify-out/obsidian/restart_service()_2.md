@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 84"
+community: "cli/main.py"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/cli/mainpy
 ---
 
 # restart_service()
@@ -17,4 +17,4 @@ tags:
 - [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

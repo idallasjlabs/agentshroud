@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 625"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_625
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # AgentShroud Blue Team Security Auditor
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Audit Procedure_1]] - `contains` [EXTRACTED]
 - [[Critical Rules_9]] - `contains` [EXTRACTED]
-- [[Infrastructure_7]] - `contains` [EXTRACTED]
+- [[Infrastructure_6]] - `contains` [EXTRACTED]
 - [[Methodology_1]] - `contains` [EXTRACTED]
-- [[Output Format_23]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sec-defenseSKILL]] - `contains` [EXTRACTED]
+- [[Output Format_20]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_625
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

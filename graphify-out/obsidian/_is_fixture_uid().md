@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "CollaboratorActivityTracker"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/CollaboratorActivityTracker
 ---
 
 # _is_fixture_uid()
 
 ## Connections
-- [[dot-record_activity()]] - `calls` [EXTRACTED]
+- [[.record_activity()]] - `calls` [EXTRACTED]
 - [[Return True when uid looks like a test fixture that should be silently dropped.]] - `rationale_for` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[collaborator_tracker.py]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[test_is_fixture_uid_passes_real_uids()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

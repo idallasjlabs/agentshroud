@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[dot-__init__()_104]] - `method` [EXTRACTED]
-- [[dot-_notify_telegram()]] - `method` [EXTRACTED]
-- [[dot-_schedule_timeout()]] - `method` [EXTRACTED]
-- [[dot-_timeout_request()]] - `method` [EXTRACTED]
-- [[dot-broadcast()]] - `method` [EXTRACTED]
-- [[dot-close()_11]] - `method` [EXTRACTED]
-- [[dot-connect()]] - `method` [EXTRACTED]
-- [[dot-decide()]] - `method` [EXTRACTED]
-- [[dot-disconnect()]] - `method` [EXTRACTED]
-- [[dot-get_item()_1]] - `method` [EXTRACTED]
-- [[dot-get_pending()]] - `method` [EXTRACTED]
-- [[dot-get_policy_for_tier()]] - `method` [EXTRACTED]
-- [[dot-get_tool_risk_tier()]] - `method` [EXTRACTED]
-- [[dot-initialize()_2]] - `method` [EXTRACTED]
-- [[dot-requires_approval()]] - `method` [EXTRACTED]
-- [[dot-submit()]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_1]] - `method` [EXTRACTED]
-- [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[dot-wait_for_decision()_1]] - `method` [EXTRACTED]
+- [[.__init__()_104]] - `method` [EXTRACTED]
+- [[._notify_telegram()]] - `method` [EXTRACTED]
+- [[._schedule_timeout()]] - `method` [EXTRACTED]
+- [[._timeout_request()]] - `method` [EXTRACTED]
+- [[.broadcast()]] - `method` [EXTRACTED]
+- [[.close()_11]] - `method` [EXTRACTED]
+- [[.connect()]] - `method` [EXTRACTED]
+- [[.decide()]] - `method` [EXTRACTED]
+- [[.disconnect()]] - `method` [EXTRACTED]
+- [[.get_item()_1]] - `method` [EXTRACTED]
+- [[.get_pending()]] - `method` [EXTRACTED]
+- [[.get_policy_for_tier()]] - `method` [EXTRACTED]
+- [[.get_tool_risk_tier()]] - `method` [EXTRACTED]
+- [[.initialize()_2]] - `method` [EXTRACTED]
+- [[.requires_approval()]] - `method` [EXTRACTED]
+- [[.submit()]] - `method` [EXTRACTED]
+- [[.submit_tool_request()_1]] - `method` [EXTRACTED]
+- [[.test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
+- [[.wait_for_decision()_1]] - `method` [EXTRACTED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_2]] - `uses` [INFERRED]
@@ -72,4 +72,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

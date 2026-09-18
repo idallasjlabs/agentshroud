@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
-type: "document"
-community: "Community 1004"
-location: "L1"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L41"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1004
+  - community/skilljson
 ---
 
-# playwright.md
+# playwright
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[Playwright]] - `contains` [EXTRACTED]
-- [[volumes]] - `references` [EXTRACTED]
+- [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1004
+#graphify/code #graphify/EXTRACTED #community/skilljson

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 173"
+community: "AgentShroud™ Brand Guidelines"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Brand Colors
@@ -17,4 +17,4 @@ tags:
 - [[Color Palette]] - `contains` [EXTRACTED]
 - [[Primary Color]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

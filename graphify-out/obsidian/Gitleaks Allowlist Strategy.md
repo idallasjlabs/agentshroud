@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "concept"
-community: "Community 210"
+community: "AgentShroud™ CVE Mitigation Matrix"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_210
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Gitleaks Allowlist Strategy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test-Fixture Gitleaks False Positives]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_210
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

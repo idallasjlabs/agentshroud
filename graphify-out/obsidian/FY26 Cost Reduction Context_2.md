@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 299"
+community: "FY26 Cost Reduction Context"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # FY26 Cost Reduction Context
@@ -19,4 +19,4 @@ tags:
 - [[Savings Levers (Ranked by Impact)_2]] - `contains` [EXTRACTED]
 - [[Target 40% Full-Year Reduction on Global Services Resources_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

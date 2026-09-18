@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 827"
-location: "L25"
+community: "Atlas — Curriculum Architect"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_827
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
-- [[diagramsREADME_1]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_827
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

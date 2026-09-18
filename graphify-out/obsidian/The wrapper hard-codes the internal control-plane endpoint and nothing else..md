@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 149"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_149
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # The wrapper hard-codes the internal control-plane endpoint and nothing else.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_149
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

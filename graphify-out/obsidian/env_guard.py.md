@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "EncryptedStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/EncryptedStore
 ---
 
 # env_guard.py
@@ -23,4 +23,4 @@ tags:
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 - [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

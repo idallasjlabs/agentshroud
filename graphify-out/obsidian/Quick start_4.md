@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "Community 1050"
-location: "L29"
+community: "openai-whisper-api/SKILL.md"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1050
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Quick start
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1050
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

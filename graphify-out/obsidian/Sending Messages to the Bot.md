@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 319"
+community: "Slack Channel Setup"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Slack_Channel_Setup
 ---
 
 # Sending Messages to the Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

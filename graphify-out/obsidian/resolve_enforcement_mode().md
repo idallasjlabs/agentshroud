@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # resolve_enforcement_mode()
@@ -17,4 +17,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

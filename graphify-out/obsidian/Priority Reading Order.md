@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Community 451"
+community: "diagrams/README.md"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/diagrams/READMEmd
 ---
 
 # Priority Reading Order
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_451
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

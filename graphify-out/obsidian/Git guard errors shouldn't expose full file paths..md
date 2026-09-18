@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "GitGuard"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/GitGuard
 ---
 
 # Git guard errors shouldn't expose full file paths.
 
 ## Connections
-- [[dot-test_git_guard_no_path_leak()]] - `rationale_for` [EXTRACTED]
+- [[.test_git_guard_no_path_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

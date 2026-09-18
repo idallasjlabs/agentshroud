@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # sign() + verify() should return True for unmodified content.
 
 ## Connections
-- [[dot-test_sign_and_verify_roundtrip()]] - `rationale_for` [EXTRACTED]
+- [[.test_sign_and_verify_roundtrip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

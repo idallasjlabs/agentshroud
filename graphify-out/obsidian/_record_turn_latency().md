@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 176"
+community: "_call_agent_stream()"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/_call_agent_stream
 ---
 
 # _record_turn_latency()
@@ -23,4 +23,4 @@ tags:
 - [[test_record_turn_latency_over_threshold_is_outlier()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_176
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

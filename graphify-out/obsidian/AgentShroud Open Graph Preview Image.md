@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/open-graph-1200x630.png"
 type: "image"
-community: "Community 1815"
+community: "AgentShroud Open Graph Preview Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1815
+  - community/AgentShroud_Open_Graph_Preview_Image
 ---
 
 # AgentShroud Open Graph Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/Community_1815
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Open_Graph_Preview_Image

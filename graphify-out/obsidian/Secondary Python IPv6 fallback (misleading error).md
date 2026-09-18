@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Community 740"
+community: "Docker Desktop Network Settings — Cisco AnyConne"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 ---
 
 # Secondary: Python IPv6 fallback (misleading error)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Root Cause_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_740
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne

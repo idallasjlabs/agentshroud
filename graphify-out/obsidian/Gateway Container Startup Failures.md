@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Community 719"
+community: "Gateway Container Startup Failures"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/Gateway_Container_Startup_Failures
 ---
 
 # Gateway Container Startup Failures
@@ -19,4 +19,4 @@ tags:
 - [[`ValueError Invalid YAML structure`]] - `contains` [EXTRACTED]
 - [[spaCy Model Not Loading]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures

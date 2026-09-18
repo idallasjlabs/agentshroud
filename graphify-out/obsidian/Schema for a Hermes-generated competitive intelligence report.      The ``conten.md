@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 70"
+community: "IntelReportStore"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/IntelReportStore
 ---
 
 # Schema for a Hermes-generated competitive intelligence report.      The ``conten
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitiveIntelReport_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 274"
+community: "plan_remediation()"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/plan_remediation
 ---
 
 # test_auto_remediate_cves.py (CVE remediation planner tests)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_remediation()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_274
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

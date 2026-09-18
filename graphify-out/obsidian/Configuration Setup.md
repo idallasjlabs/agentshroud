@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 403"
+community: "Himalaya Email CLI"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/Himalaya_Email_CLI
 ---
 
 # Configuration Setup
@@ -15,4 +15,4 @@ tags:
 - [[Configuration Entities]] - `contains` [EXTRACTED]
 - [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

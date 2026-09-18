@@ -1,18 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 763"
+community: "cli/main.py"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_763
+  - graphify/INFERRED
+  - community/cli/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_763
+#graphify/code #graphify/INFERRED #community/cli/mainpy

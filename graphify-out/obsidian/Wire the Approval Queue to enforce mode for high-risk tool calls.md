@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Community 592"
+community: "Remediation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Remediation
 ---
 
 # Wire the Approval Queue to enforce mode for high-risk tool calls
@@ -21,4 +21,4 @@ tags:
 - [[Severity_4]] - `contains` [EXTRACTED]
 - [[Verification_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Remediation

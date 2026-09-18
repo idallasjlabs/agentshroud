@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # remote_log.h (WS-mirrored diagnostic log declaration)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[vt_remote_log]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/wakewordc

@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 303"
+community: "Skill: UI Expert (UI)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_303
+  - community/Skill_UI_Expert_UI
 ---
 
 # Skill: UI Expert (UI)
 
 ## Connections
-- [[dot-agentsskillsi-uiSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Accessibility Requirements]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag_4]] - `contains` [EXTRACTED]
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[Rules_4]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_303
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

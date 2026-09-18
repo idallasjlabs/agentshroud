@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 381"
+community: "ssh-configuration.md"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/ssh-configurationmd
 ---
 
 # How Auto-Approve Works
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_381
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

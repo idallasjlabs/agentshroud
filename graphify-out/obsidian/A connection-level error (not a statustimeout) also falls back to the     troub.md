@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 107"
-location: "L1296"
+community: "_call_agent_stream()"
+location: "L1306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/_call_agent_stream
 ---
 
 # A connection-level error (not a status/timeout) also falls back to the     troub
 
 ## Connections
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - `rationale_for` [EXTRACTED]
+- [[test_call_agent_stream_generic_http_error_falls_back()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_107
+#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream

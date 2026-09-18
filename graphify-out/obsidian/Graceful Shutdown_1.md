@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 610"
+community: "Shutdown & Recovery"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/Shutdown__Recovery
 ---
 
 # Graceful Shutdown
@@ -16,4 +16,4 @@ tags:
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 - [[Shutdown Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

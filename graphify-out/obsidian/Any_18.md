@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L93"
+community: "EncryptedStore"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/EncryptedStore
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_6]] - `references` [EXTRACTED]
+- [[.to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 388"
+community: "rbac_config.py"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/rbac_configpy
 ---
 
 # persist_approved_collaborator()
 
 ## Connections
-- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - `rationale_for` [EXTRACTED]
 - [[POST userscollaborator endpoint]] - `calls` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_388
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

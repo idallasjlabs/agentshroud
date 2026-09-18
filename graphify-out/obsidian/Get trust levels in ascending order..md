@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Community 689"
+community: "A2APolicyEngine"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/A2APolicyEngine
 ---
 
 # Get trust levels in ascending order.
 
 ## Connections
-- [[dot-get_trust_level_order()]] - `rationale_for` [EXTRACTED]
+- [[.get_trust_level_order()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_689
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

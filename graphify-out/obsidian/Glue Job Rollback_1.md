@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 529"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_529
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Glue Job Rollback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_529
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

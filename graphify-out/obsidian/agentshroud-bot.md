@@ -1,21 +1,21 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 224"
+community: "Playwright"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_224
+  - community/Playwright
 ---
 
 # agentshroud-bot.md
 
 ## Connections
+- [[AgentShroud Gateway Package]] - `references` [EXTRACTED]
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
-- [[agentshroud-gateway_1]] - `references` [EXTRACTED]
 - [[networks]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[volumes_1]] - `references` [EXTRACTED]
+- [[volumes]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_224
+#graphify/document #graphify/EXTRACTED #community/Playwright

@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Community 277"
+community: "ControlCenter"
 location: "L359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/ControlCenter
 ---
 
 # Main control center loop
 
 ## Connections
-- [[dot-run()_3]] - `rationale_for` [EXTRACTED]
+- [[.run()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_277
+#graphify/rationale #graphify/EXTRACTED #community/ControlCenter

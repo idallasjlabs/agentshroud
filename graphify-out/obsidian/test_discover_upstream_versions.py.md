@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 847"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_847
+  - community/discover_upstream_versionspy
 ---
 
 # test_discover_upstream_versions.py
@@ -17,4 +17,4 @@ tags:
 - [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.…]] - `rationale_for` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_847
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

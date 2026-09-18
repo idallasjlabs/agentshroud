@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Community 690"
+community: "sync-llm-settings.sh"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_690
+  - community/sync-llm-settingssh
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[test-skills-sync.sh]] - `defines` [EXTRACTED]
 - [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_690
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

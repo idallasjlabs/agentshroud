@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "test_e2e_proxy.py"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/test_e2e_proxypy
 ---
 
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_48]] - `method` [EXTRACTED]
-- [[dot-forward()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_5]] - `method` [EXTRACTED]
-- [[dot-health_check()_2]] - `method` [EXTRACTED]
-- [[dot-is_healthy()]] - `method` [EXTRACTED]
-- [[dot-last_forward_time()]] - `method` [EXTRACTED]
-- [[dot-set_response_handler()]] - `method` [EXTRACTED]
+- [[.__init__()_48]] - `method` [EXTRACTED]
+- [[.forward()_1]] - `method` [EXTRACTED]
+- [[.get_stats()_5]] - `method` [EXTRACTED]
+- [[.health_check()_2]] - `method` [EXTRACTED]
+- [[.is_healthy()]] - `method` [EXTRACTED]
+- [[.last_forward_time()]] - `method` [EXTRACTED]
+- [[.set_response_handler()]] - `method` [EXTRACTED]
 - [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [INFERRED]
 - [[MultiAgentRouter]] - `semantically_similar_to` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

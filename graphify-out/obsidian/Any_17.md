@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L160"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[.get_stats()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

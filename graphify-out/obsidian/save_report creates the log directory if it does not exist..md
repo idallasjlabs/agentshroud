@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Community 220"
+community: "test_security_toolchain.py"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_security_toolchainpy
 ---
 
 # save_report creates the log directory if it does not exist.
 
 ## Connections
-- [[dot-test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
+- [[.test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_220
+#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

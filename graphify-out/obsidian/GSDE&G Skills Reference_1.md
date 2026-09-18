@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 530"
+community: "Skills by Category"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/Skills_by_Category
 ---
 
 # GSDE&G Skills Reference
@@ -23,4 +23,4 @@ tags:
 - [[hermesskillsi-referenceSKILLS_GUIDE]] - `contains` [EXTRACTED]
 - [[📚 Created Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

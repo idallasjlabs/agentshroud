@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 398"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_398
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # GIT-GUARD Skill
@@ -17,4 +17,4 @@ tags:
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
 - [[gitops Skill (stub)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_398
+#graphify/document #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill

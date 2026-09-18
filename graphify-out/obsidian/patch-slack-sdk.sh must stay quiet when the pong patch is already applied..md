@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation & Router"
-location: "L514"
+community: "TestConfigValidation"
+location: "L526"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/TestConfigValidation
 ---
 
 # patch-slack-sdk.sh must stay quiet when the pong patch is already applied.
 
 ## Connections
-- [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - `rationale_for` [EXTRACTED]
+- [[.test_patch_slack_sdk_pong_patch_is_idempotent()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

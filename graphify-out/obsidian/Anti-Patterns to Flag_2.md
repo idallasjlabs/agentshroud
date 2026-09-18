@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 264"
+community: "Skill: UX Expert (UX)"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

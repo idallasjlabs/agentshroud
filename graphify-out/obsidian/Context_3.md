@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 445"
-location: "L6"
+community: "Plan: AgentShroud Security Hardening — Real Agen"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agen
 ---
 
 # Context
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Key Considerations]] - `contains` [EXTRACTED]
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agen

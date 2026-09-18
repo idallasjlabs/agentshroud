@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 785"
+community: "TELEGRAM_ISSUES.md"
 location: "L617"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Example Configurations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

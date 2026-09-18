@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Community 323"
+community: "troubleshooting.md"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_323
+  - community/troubleshootingmd
 ---
 
 # Approval Queue Issues
 
 ## Connections
-- [[troubleshooting_25]] - `contains` [EXTRACTED]
+- [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_323
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Community 1161"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1161
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Usage Guidelines
@@ -15,4 +15,4 @@ tags:
 - [[TRADEMARK]] - `references` [EXTRACTED]
 - [[Trademark Notice_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1161
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

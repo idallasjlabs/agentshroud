@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 347"
-location: "L116"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[.__init__()_98]] - `references` [EXTRACTED]
+- [[._hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_347
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

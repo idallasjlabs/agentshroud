@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Community 1767"
+community: "BDD Skill (stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1767
+  - community/BDD_Skill_stub
 ---
 
 # BDD Skill (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1767
+#graphify/document #graphify/EXTRACTED #community/BDD_Skill_stub

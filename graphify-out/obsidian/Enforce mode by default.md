@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "Community 253"
+community: "AgentShroud Security Perimeter"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/AgentShroud_Security_Perimeter
 ---
 
 # Enforce mode by default
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_253
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Perimeter

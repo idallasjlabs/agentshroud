@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L253"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E07TrustEnforcement
 
 ## Connections
-- [[dot-test_low_trust_cannot_delete_file()]] - `method` [EXTRACTED]
-- [[dot-test_trusted_agent_can_send_message()]] - `method` [EXTRACTED]
+- [[.test_low_trust_cannot_delete_file()]] - `method` [EXTRACTED]
+- [[.test_trusted_agent_can_send_message()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager

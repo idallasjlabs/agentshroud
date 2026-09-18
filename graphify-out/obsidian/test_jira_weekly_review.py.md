@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Community 285"
+community: "test_jira_weekly_review.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/test_jira_weekly_reviewpy
 ---
 
 # test_jira_weekly_review.py
@@ -39,4 +39,4 @@ tags:
 - [[test_tenant_info_url_rejects_empty_domain()_1]] - `contains` [EXTRACTED]
 - [[test_tenant_info_url_targets_edge_endpoint()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_285
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

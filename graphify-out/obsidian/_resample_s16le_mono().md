@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Community 668"
+community: "tts.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/ttspy
 ---
 
 # _resample_s16le_mono()
@@ -16,4 +16,4 @@ tags:
 - [[synthesize()]] - `calls` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_668
+#graphify/code #graphify/EXTRACTED #community/ttspy

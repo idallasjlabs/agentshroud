@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 185"
+community: "EgressPolicy"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EgressPolicy
 ---
 
 # Unit tests for EgressPolicy matching methods.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_185
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

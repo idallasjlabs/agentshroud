@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L627"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # TestDependencySecurity
 
 ## Connections
-- [[dot-test_no_pickle_in_security_modules()]] - `method` [EXTRACTED]
-- [[dot-test_no_shell_true_in_subprocess()]] - `method` [EXTRACTED]
-- [[dot-test_no_yaml_unsafe_load()]] - `method` [EXTRACTED]
-- [[dot-test_requirements_pinned()]] - `method` [EXTRACTED]
+- [[.test_no_pickle_in_security_modules()]] - `method` [EXTRACTED]
+- [[.test_no_shell_true_in_subprocess()]] - `method` [EXTRACTED]
+- [[.test_no_yaml_unsafe_load()]] - `method` [EXTRACTED]
+- [[.test_requirements_pinned()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/lifespanpy

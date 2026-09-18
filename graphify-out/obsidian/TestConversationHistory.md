@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 390"
+community: "UserSession"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/UserSession
 ---
 
 # TestConversationHistory
 
 ## Connections
-- [[dot-test_add_message()]] - `method` [EXTRACTED]
-- [[dot-test_conversation_history_limit()]] - `method` [EXTRACTED]
+- [[.test_add_message()]] - `method` [EXTRACTED]
+- [[.test_conversation_history_limit()]] - `method` [EXTRACTED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_390
+#graphify/code #graphify/EXTRACTED #community/UserSession

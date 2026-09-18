@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 209"
+community: "Browser — Secure Browser Automation (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Browser — Secure Browser Automation SKILL (OpenClaw)
@@ -16,4 +16,4 @@ tags:
 - [[SecureBrowser class]] - `conceptually_related_to` [INFERRED]
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_209
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

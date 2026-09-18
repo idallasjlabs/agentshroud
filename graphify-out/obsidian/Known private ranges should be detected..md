@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # Known private ranges should be detected.
 
 ## Connections
-- [[dot-test_private_ip_detection()]] - `rationale_for` [EXTRACTED]
+- [[.test_private_ip_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_63
+#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig

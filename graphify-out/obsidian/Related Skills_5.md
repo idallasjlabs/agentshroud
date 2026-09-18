@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Community 1190"
+community: "Browser — Secure Browser Automation"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1190
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1190
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

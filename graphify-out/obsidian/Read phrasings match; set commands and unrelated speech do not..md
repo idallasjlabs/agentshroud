@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L2659"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # Read phrasings match; set commands and unrelated speech do not.
 
 ## Connections
 - [[test_is_volume_query_forms()]] - `rationale_for` [EXTRACTED]
+- [[test_is_volume_query_forms()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # gateway.security.tool_acl
@@ -19,5 +19,6 @@ tags:
 - [[ToolRateLimit]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `references` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports_from` [EXTRACTED]
+- [[test_tool_acl.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 568"
+community: "Browser Extension"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/Browser_Extension
 ---
 
 # browser-extension/README.md
@@ -17,4 +17,4 @@ tags:
 - [[background.js]] - `references` [EXTRACTED]
 - [[browser-extension package.json (Jest test harness)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

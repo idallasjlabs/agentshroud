@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
-type: "document"
-community: "Community 761"
-location: "L58"
+source_file: "docker/docker-compose.yml"
+type: "code"
+community: "TELEGRAM_API_BASE_URL"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_761
+  - graphify/code
+  - graphify/INFERRED
+  - community/TELEGRAM_API_BASE_URL
 ---
 
-# openclaw service
+# OpenClaw Service
 
 ## Connections
-- [[Default Service Configuration]] - `contains` [EXTRACTED]
+- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - `conceptually_related_to` [INFERRED]
+- [[start-agentshroud.sh (OpenClaw entrypoint)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_761
+#graphify/code #graphify/INFERRED #community/TELEGRAM_API_BASE_URL

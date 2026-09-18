@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Community 122"
+community: "server.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_122
+  - community/serverpy
 ---
 
 # switch_model.sh main flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_parse_model_switch_command()]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_122
+#graphify/code #graphify/INFERRED #community/serverpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "concept"
-community: "Community 256"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/AgentShroud_system_C4_context
 ---
 
 # ADR-008: Progressive Trust Level System
@@ -15,4 +15,4 @@ tags:
 - [[TrustManager_4]] - `conceptually_related_to` [EXTRACTED]
 - [[agent_trust SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_256
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context

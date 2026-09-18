@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L1226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # Mix of allowed, blocked, and result entries all in one chain.
 
 ## Connections
-- [[dot-test_mixed_allowed_blocked_chain()]] - `rationale_for` [EXTRACTED]
+- [[.test_mixed_allowed_blocked_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

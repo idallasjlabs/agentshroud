@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "Community 173"
+community: "AgentShroud™ Brand Guidelines"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # What it is NOT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

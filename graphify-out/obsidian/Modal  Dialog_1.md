@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 309"
+community: "Skill: UI Expert (UI)"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Skill_UI_Expert_UI
 ---
 
 # Modal / Dialog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Component Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_309
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

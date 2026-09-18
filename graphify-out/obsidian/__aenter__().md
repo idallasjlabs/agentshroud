@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 47"
+community: "patch"
 location: "L1484"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/patch
 ---
 
 # __aenter__()
@@ -16,4 +16,4 @@ tags:
 - [[_sse_body()]] - `calls` [EXTRACTED]
 - [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/patch

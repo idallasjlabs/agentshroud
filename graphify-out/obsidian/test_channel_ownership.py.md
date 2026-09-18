@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "forward.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/forwardpy
 ---
 
 # test_channel_ownership.py
@@ -20,4 +20,4 @@ tags:
 - [[client()_3]] - `contains` [EXTRACTED]
 - [[forward.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/forwardpy

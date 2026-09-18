@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 497"
+community: "MultiHostResult"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/MultiHostResult
 ---
 
 # MultiHostResult
 
 ## Connections
-- [[dot-all_ok()]] - `method` [EXTRACTED]
-- [[dot-exit_code()]] - `method` [EXTRACTED]
-- [[dot-failed()]] - `method` [EXTRACTED]
-- [[dot-passed()]] - `method` [EXTRACTED]
-- [[dot-render_summary()]] - `method` [EXTRACTED]
-- [[dot-test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
-- [[dot-test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
-- [[dot-test_render_summary_empty()]] - `calls` [EXTRACTED]
-- [[dot-unreachable()]] - `method` [EXTRACTED]
+- [[.all_ok()]] - `method` [EXTRACTED]
+- [[.exit_code()]] - `method` [EXTRACTED]
+- [[.failed()]] - `method` [EXTRACTED]
+- [[.passed()]] - `method` [EXTRACTED]
+- [[.render_summary()]] - `method` [EXTRACTED]
+- [[.test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
+- [[.test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
+- [[.test_render_summary_empty()]] - `calls` [EXTRACTED]
+- [[.unreachable()]] - `method` [EXTRACTED]
 - [[Aggregated outcome across all hosts.]] - `rationale_for` [EXTRACTED]
-- [[Path_59]] - `uses` [INFERRED]
+- [[Path_47]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_497
+#graphify/code #graphify/EXTRACTED #community/MultiHostResult

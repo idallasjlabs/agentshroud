@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "concept"
-community: "Community 396"
+community: "AgentShroud Deployment Architecture"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # ADR-007: Zero-Config Security
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Zero-Configuration Deployment]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_396
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

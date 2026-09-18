@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 397"
+community: "Safe Refactor Specialist"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_397
+  - community/Safe_Refactor_Specialist
 ---
 
 # ⚠️ ONLY Refactor When:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Critical Rules_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_397
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist

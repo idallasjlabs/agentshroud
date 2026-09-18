@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 178"
+community: "75 Security Modules"
 location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/75_Security_Modules
 ---
 
 # Supporting Infrastructure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/75_Security_Modules

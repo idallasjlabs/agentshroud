@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "TestAuth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/TestAuth
 ---
 
 # subagent_monitor.py
@@ -25,4 +25,4 @@ tags:
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/TestAuth

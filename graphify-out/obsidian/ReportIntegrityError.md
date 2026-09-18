@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 125"
+community: "IntelReportStore"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_125
+  - community/IntelReportStore
 ---
 
 # ReportIntegrityError
 
 ## Connections
-- [[dot-load_latest()]] - `calls` [EXTRACTED]
+- [[.load_latest()]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]
 - [[Exception_4]] - `inherits` [EXTRACTED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_8]] - `uses` [INFERRED]
+- [[Path_4]] - `uses` [INFERRED]
 - [[Raised when a loaded report fails its hash integrity check.]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[intel_report.py]] - `contains` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_125
+#graphify/code #graphify/INFERRED #community/IntelReportStore

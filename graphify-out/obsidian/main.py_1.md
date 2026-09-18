@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 382"
+community: "main.py"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/mainpy
 ---
 
 # main.py
@@ -26,4 +26,4 @@ tags:
 - [[WebSocket Endpoints]] - `contains` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/mainpy

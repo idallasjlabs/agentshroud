@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 420"
+community: "ADR-001: Transparent Proxy Decision"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/ADR-001_Transparent_Proxy_Decision
 ---
 
 # Gateway (FastAPI)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII Sanitizer (Presidio + Regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_420
+#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision

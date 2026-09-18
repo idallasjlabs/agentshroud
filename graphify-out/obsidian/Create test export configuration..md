@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Community 112"
+community: "AuditExportConfig"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/AuditExportConfig
 ---
 
 # Create test export configuration.
 
 ## Connections
-- [[dot-export_config()]] - `rationale_for` [EXTRACTED]
+- [[.export_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig

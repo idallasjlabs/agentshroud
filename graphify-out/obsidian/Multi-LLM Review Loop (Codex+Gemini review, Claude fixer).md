@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Community 623"
+community: "Starting a Development Task via Hermes / OpenCla"
 location: "Step 5 / Mode B Step 2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
 ---
 
 # Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_623
+#graphify/concept #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla

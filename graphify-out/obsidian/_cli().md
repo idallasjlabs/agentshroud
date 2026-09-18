@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Community 365"
+community: "archive_old_events()"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_365
+  - community/archive_old_events
 ---
 
 # _cli()
@@ -16,4 +16,4 @@ tags:
 - [[audit_archive.py]] - `contains` [EXTRACTED]
 - [[purge_low_value_events()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_365
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

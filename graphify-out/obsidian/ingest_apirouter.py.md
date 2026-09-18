@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # ingest_api/router.py
@@ -27,4 +27,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

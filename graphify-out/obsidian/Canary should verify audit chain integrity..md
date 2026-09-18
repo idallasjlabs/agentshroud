@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Proxy Sidecar & Forwarder"
+community: "TrustManager"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/TrustManager
 ---
 
 # Canary should verify audit chain integrity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_verifies_audit_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

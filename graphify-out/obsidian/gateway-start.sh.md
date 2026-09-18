@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/gateway-start.sh"
 type: "code"
-community: "Community 1569"
+community: "gateway-start.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/gateway-startsh
 ---
 
 # gateway-start.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gateway-start.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1569
+#graphify/code #graphify/EXTRACTED #community/gateway-startsh

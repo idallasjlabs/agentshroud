@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "document"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_347
+  - graphify/INFERRED
+  - community/AgentShroud_Security_Policy
 ---
 
 # Security Scan Workflow
@@ -14,4 +14,4 @@ tags:
 - [[CI Security Scanning Toolchain]] - `references` [EXTRACTED]
 - [[gateway.security.daily_cve_report]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/INFERRED #community/AgentShroud_Security_Policy

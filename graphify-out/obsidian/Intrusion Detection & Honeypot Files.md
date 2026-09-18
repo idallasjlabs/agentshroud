@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Community 172"
+community: "AgentShroud Falco Detection Rules"
 location: "L244-L268"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_172
+  - community/AgentShroud_Falco_Detection_Rules
 ---
 
 # Intrusion Detection & Honeypot Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rule Secret File Access]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_172
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Falco_Detection_Rules

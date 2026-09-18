@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L520"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # A domain with an active timed approval should be allowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_grant_timed_approval_allows_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

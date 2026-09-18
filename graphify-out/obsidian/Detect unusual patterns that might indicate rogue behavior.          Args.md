@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Community 54"
+community: "KillSwitchMonitor"
 location: "L210"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/KillSwitchMonitor
 ---
 
 # Detect unusual patterns that might indicate rogue behavior.          Args:
 
 ## Connections
-- [[dot-anomaly_detection()]] - `rationale_for` [EXTRACTED]
+- [[.anomaly_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/scripts/claude-hooks/block_credential_read.sh"
 type: "code"
-community: "Community 1513"
+community: "block_credential_read.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/block_credential_readsh
 ---
 
 # block_credential_read.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[block_credential_read.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/block_credential_readsh

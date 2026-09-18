@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 523"
+community: "AgentShroud Typography Guidelines"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Don'ts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage Guidelines_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_523
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

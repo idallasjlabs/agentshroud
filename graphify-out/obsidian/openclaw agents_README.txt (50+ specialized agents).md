@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/agents/_README.txt"
 type: "document"
-community: "Community 1996"
+community: "openclaw agents/_README.txt (50+ specialized age"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1996
+  - community/openclaw_agents/_READMEtxt_50_specialized_age
 ---
 
 # openclaw agents/_README.txt (50+ specialized agents)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1996
+#graphify/document #graphify/EXTRACTED #community/openclaw_agents/_READMEtxt_50_specialized_age

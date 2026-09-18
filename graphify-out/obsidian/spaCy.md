@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 1006"
+community: "Error Index.md"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/Error_Indexmd
 ---
 
 # spaCy
@@ -15,9 +15,9 @@ tags:
 - [[Fallback Behavior]] - `contains` [EXTRACTED]
 - [[First-Boot Performance]] - `contains` [EXTRACTED]
 - [[Model]] - `contains` [EXTRACTED]
-- [[Purpose_194]] - `contains` [EXTRACTED]
-- [[Related Notes_49]] - `contains` [EXTRACTED]
-- [[Where Used_5]] - `contains` [EXTRACTED]
+- [[Purpose_117]] - `contains` [EXTRACTED]
+- [[Related Notes_18]] - `contains` [EXTRACTED]
+- [[Where Used_2]] - `contains` [EXTRACTED]
 - [[spacy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1006
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 265"
+community: "Common Queries"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_265
+  - graphify/AMBIGUOUS
+  - community/Common_Queries
 ---
 
 # session-logs/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[model-usageSKILL]] - `conceptually_related_to` [AMBIGUOUS]
 - [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_265
+#graphify/document #graphify/AMBIGUOUS #community/Common_Queries

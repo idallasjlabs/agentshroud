@@ -1,18 +1,18 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 144"
+community: "Production Safety Checklist (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # operations/incident-response.md
 
 ## Connections
-- [[dot-agentsskillsi-productionREADME]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
 - [[Incident Response (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Purpose_112]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 - [[Usage_107]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_144
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 53"
+community: "RBACConfig"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/RBACConfig
 ---
 
 # Canonical workspace id for a direct-message context: ``dm-{user_id}``.
 
 ## Connections
-- [[dot-dm_workspace_id()]] - `rationale_for` [EXTRACTED]
+- [[.dm_workspace_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

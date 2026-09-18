@@ -1,17 +1,20 @@
 ---
-source_file: ""
-type: "code"
-community: "Community 122"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "All Dependencies.md"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/All_Dependenciesmd
 ---
 
-# FastAPI
+# fastapi.md
 
 ## Connections
-- [[_lifespan()]] - `references` [EXTRACTED]
-- [[server.py]] - `imports_from` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
+- [[main.py]] - `references` [INFERRED]
+- [[pydantic]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

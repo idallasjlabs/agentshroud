@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
+source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Community 368"
-location: "L53"
+community: "Multi-Agent Role Matrix"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Multi-Agent_Role_Matrix
 ---
 
-# Out of scope
+# Out of Scope
 
 ## Connections
-- [[Workstream A Groups and Teamwork in OpenClaw]] - `contains` [EXTRACTED]
+- [[GSD Cadence — Get Shit Done Governance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_368
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

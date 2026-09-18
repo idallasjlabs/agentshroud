@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # test_dashboard_xss_prevention()
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard HTML uses data attributes instead of onclick for approvals]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Routing Tests"
+community: "asyncio"
 location: "L2326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Routing_Tests
+  - community/asyncio
 ---
 
 # A device 'STOP' text frame during the TTS send phase must abort the remaining…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_stop_during_speaking_aborts_tts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

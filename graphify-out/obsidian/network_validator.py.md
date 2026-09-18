@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 487"
+community: "validate_network_security()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/validate_network_security
 ---
 
 # network_validator.py
@@ -19,4 +19,4 @@ tags:
 - [[validate_network_security()]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_487
+#graphify/code #graphify/EXTRACTED #community/validate_network_security

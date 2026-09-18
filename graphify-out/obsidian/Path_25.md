@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L43"
+community: "load_config()"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - graphify/INFERRED
+  - community/load_config
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_105]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/load_config

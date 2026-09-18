@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 146"
+community: "AgentShroud Security Architecture"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/AgentShroud_Security_Architecture
 ---
 
 # DNS Filtering
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_146
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

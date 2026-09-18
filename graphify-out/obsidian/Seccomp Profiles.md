@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Community 444"
+community: "Seccomp Profiles"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Seccomp_Profiles
 ---
 
 # Seccomp Profiles
@@ -22,4 +22,4 @@ tags:
 - [[Related Notes_30]] - `contains` [EXTRACTED]
 - [[seccomp-profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_444
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

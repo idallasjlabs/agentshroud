@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "concept"
-community: "Community 240"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 tags:
   - graphify/concept
-  - graphify/AMBIGUOUS
-  - community/Community_240
+  - graphify/EXTRACTED
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # DM Policy Allowlist Configuration
@@ -14,4 +14,4 @@ tags:
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `conceptually_related_to` [EXTRACTED]
 - [[Runbook  Decision Tree — On-Call Logic]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Community_240
+#graphify/concept #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

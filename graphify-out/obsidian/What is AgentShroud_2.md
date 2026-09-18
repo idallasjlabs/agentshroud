@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 320"
+community: "AgentShroud Setup Guide"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_320
+  - community/AgentShroud_Setup_Guide
 ---
 
 # What is AgentShroud?
 
 ## Connections
-- [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_320
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

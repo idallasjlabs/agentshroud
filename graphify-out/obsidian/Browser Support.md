@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 568"
+community: "Browser Extension"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/Browser_Extension
 ---
 
 # Browser Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

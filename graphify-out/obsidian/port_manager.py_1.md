@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "Community 1020"
+community: "port_manager.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1020
+  - community/port_managerpy
 ---
 
 # port_manager.py
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes]] - `contains` [EXTRACTED]
 - [[port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1020
+#graphify/document #graphify/EXTRACTED #community/port_managerpy

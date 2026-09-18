@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 204"
+community: "lifespan.py"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_204
+  - community/lifespanpy
 ---
 
 # ConsentDecision
 
 ## Connections
-- [[dot-test_decision_approved()]] - `calls` [EXTRACTED]
-- [[dot-test_decision_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_decision_has_timestamp()]] - `calls` [EXTRACTED]
-- [[dot-validate_config()]] - `references` [EXTRACTED]
-- [[dot-validate_configs()]] - `references` [EXTRACTED]
+- [[.test_decision_approved()]] - `calls` [EXTRACTED]
+- [[.test_decision_denied()]] - `calls` [EXTRACTED]
+- [[.test_decision_has_timestamp()]] - `calls` [EXTRACTED]
+- [[.validate_config()]] - `references` [EXTRACTED]
+- [[.validate_configs()]] - `references` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_204
+#graphify/code #graphify/INFERRED #community/lifespanpy

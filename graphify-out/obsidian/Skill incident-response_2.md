@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 1561"
+community: "openclaw/skills/i-incident-response/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1561
+  - community/openclaw/skills/i-incident-response/SKILLmd
 ---
 
 # Skill: incident-response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclawskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1561
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-incident-response/SKILLmd

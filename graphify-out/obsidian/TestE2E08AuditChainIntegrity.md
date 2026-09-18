@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "TrustManager"
 location: "L280"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # TestE2E08AuditChainIntegrity
 
 ## Connections
-- [[dot-test_audit_chain_hash_chained()]] - `method` [EXTRACTED]
-- [[dot-test_blocked_message_has_audit_entry()]] - `method` [EXTRACTED]
-- [[dot-test_forwarded_message_has_audit_entry()]] - `method` [EXTRACTED]
+- [[.test_audit_chain_hash_chained()]] - `method` [EXTRACTED]
+- [[.test_blocked_message_has_audit_entry()]] - `method` [EXTRACTED]
+- [[.test_forwarded_message_has_audit_entry()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Canary_Tripwire
+#graphify/code #graphify/INFERRED #community/TrustManager

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # RouterConfig
 
 ## Connections
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-validate_default_url()]] - `method` [EXTRACTED]
-- [[dot-validate_targets()]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.validate_default_url()]] - `method` [EXTRACTED]
+- [[.validate_targets()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_14]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
@@ -54,6 +54,7 @@ tags:
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
+- [[test_config_validation.py_1]] - `references` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
@@ -68,4 +69,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

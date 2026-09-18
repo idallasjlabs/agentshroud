@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 542"
+community: "Implement gateway-level outbound information fil"
 location: "L256"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_542
+  - community/Implement_gateway-level_outbound_information_fil
 ---
 
 # Step 4: Configure per-trust-level disclosure rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_542
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil

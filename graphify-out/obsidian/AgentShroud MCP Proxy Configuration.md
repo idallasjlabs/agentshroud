@@ -1,11 +1,11 @@
 ---
 source_file: "examples/mcp-config.yml"
 type: "document"
-community: "Community 1298"
+community: "Default Monitor-Mode Egress Rationale"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1298
+  - community/Default_Monitor-Mode_Egress_Rationale
 ---
 
 # AgentShroud MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 - [[Default-Allow Web Proxy Design Rationale]] - `rationale_for` [EXTRACTED]
 - [[MCP Proxy Default-Allow Philosophy]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1298
+#graphify/document #graphify/EXTRACTED #community/Default_Monitor-Mode_Egress_Rationale

@@ -1,18 +1,21 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
+source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Community 345"
-location: "L27"
+community: "Core Security Principles"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_345
+  - community/Core_Security_Principles
 ---
 
-# CRITICAL Findings
+# Critical Findings
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[R2-C1 RBAC Management Endpoints Missing Authentication]] - `contains` [EXTRACTED]
+- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - `contains` [EXTRACTED]
+- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - `contains` [EXTRACTED]
+- [[3. No Cross-Turn Analysis (Severity HIGH)]] - `contains` [EXTRACTED]
+- [[4. No Semantic Understanding (Severity MEDIUM)]] - `contains` [EXTRACTED]
+- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_345
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

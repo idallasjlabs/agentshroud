@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # Resolve contributor log directories (ordered, de-duplicated).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_collaborator_log_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L189"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # TestConcurrency
 
 ## Connections
-- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
-- [[dot-test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
-- [[dot-test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
-- [[dot-test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
+- [[.test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
+- [[.test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
+- [[.test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
+- [[.test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
+- [[.test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/lifespanpy

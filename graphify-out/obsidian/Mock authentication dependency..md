@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 558"
+community: "TestEgressApprovalQueue"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/TestEgressApprovalQueue
 ---
 
 # Mock authentication dependency.
 
 ## Connections
-- [[dot-mock_auth()]] - `rationale_for` [EXTRACTED]
+- [[.mock_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_558
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

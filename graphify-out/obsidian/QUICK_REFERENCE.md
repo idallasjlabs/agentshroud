@@ -1,20 +1,20 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 787"
+community: "Quick Reference Commands"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_787
+  - community/Quick_Reference_Commands
 ---
 
 # QUICK_REFERENCE.md
 
 ## Connections
-- [[PREREQUISITES_14]] - `conceptually_related_to` [INFERRED]
-- [[Quick Reference Card]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
+- [[PREREQUISITES]] - `conceptually_related_to` [INFERRED]
+- [[Quick Reference Commands]] - `contains` [EXTRACTED]
+- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_787
+#graphify/document #graphify/INFERRED #community/Quick_Reference_Commands

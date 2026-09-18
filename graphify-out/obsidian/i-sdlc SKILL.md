@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Community 1866"
+community: "i-sdlc SKILL"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1866
+  - community/i-sdlc_SKILL
 ---
 
 # i-sdlc SKILL
 
-#graphify/document #graphify/EXTRACTED #community/Community_1866
+#graphify/document #graphify/EXTRACTED #community/i-sdlc_SKILL

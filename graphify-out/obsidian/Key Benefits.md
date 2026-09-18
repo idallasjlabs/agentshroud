@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 1214"
+community: "Key Benefits"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1214
+  - community/Key_Benefits
 ---
 
 # Key Benefits
@@ -18,4 +18,4 @@ tags:
 - [[4. Better Development Workflow]] - `contains` [EXTRACTED]
 - [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1214
+#graphify/document #graphify/EXTRACTED #community/Key_Benefits

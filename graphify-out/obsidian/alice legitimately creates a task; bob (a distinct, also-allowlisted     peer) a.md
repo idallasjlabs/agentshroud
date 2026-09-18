@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "rationale"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_131
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

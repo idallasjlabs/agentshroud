@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-analysis-reports-archive.md"
 type: "document"
-community: "Community 271"
+community: "system-requirements.md"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/system-requirementsmd
 ---
 
 # Reports
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Analysis Reports Archive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_271
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

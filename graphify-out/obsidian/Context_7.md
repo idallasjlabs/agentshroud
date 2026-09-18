@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Community 823"
-location: "L8"
+community: "ADR-003: Two-Network Container Isolation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # Context
 
 ## Connections
-- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
-- [[Evaluation Criteria]] - `contains` [EXTRACTED]
+- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_823
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

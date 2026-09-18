@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 196"
+community: "test_block_credentials.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/test_block_credentialspy
 ---
 
 # asyncio
@@ -28,4 +28,4 @@ tags:
 - [[test_telegram_blocks_password()]] - `references` [EXTRACTED]
 - [[test_telegram_blocks_ssh_private_key()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/test_block_credentialspy

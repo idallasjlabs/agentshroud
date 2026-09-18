@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 171"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # What's New in v0.9.0
@@ -18,4 +18,4 @@ tags:
 - [[📚 Comprehensive Documentation Suite]] - `contains` [EXTRACTED]
 - [[🔒 Deep Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

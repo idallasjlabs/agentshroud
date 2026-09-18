@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # InfoCategory
 
 ## Connections
-- [[dot-__init__()_147]] - `calls` [EXTRACTED]
-- [[dot-_is_allowed_for_trust()]] - `references` [EXTRACTED]
+- [[.__init__()_147]] - `calls` [EXTRACTED]
+- [[._is_allowed_for_trust()]] - `references` [EXTRACTED]
 - [[Categories of information that may need filtering.]] - `rationale_for` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 328"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Skill: Technical Writer (TW)
 
 ## Connections
-- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag_9]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Structure → Write → Validate]] - `contains` [EXTRACTED]
 - [[Document Structure]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Role_34]] - `contains` [EXTRACTED]
 - [[Rules_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

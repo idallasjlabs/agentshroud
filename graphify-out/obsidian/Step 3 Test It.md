@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Community 401"
+community: "iMessage Integration Status"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/iMessage_Integration_Status
 ---
 
 # Step 3: Test It
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Fix (5 Minutes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

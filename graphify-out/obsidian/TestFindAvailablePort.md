@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "Community 83"
+community: "PortManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # TestFindAvailablePort
 
 ## Connections
-- [[dot-test_finds_base_when_free()]] - `method` [EXTRACTED]
-- [[dot-test_raises_if_no_port_found()]] - `method` [EXTRACTED]
-- [[dot-test_skips_bound_port()]] - `method` [EXTRACTED]
-- [[dot-test_skips_excluded_ports()]] - `method` [EXTRACTED]
+- [[.test_finds_base_when_free()]] - `method` [EXTRACTED]
+- [[.test_raises_if_no_port_found()]] - `method` [EXTRACTED]
+- [[.test_skips_bound_port()]] - `method` [EXTRACTED]
+- [[.test_skips_excluded_ports()]] - `method` [EXTRACTED]
 - [[PortAssignment]] - `uses` [INFERRED]
 - [[PortManager]] - `uses` [INFERRED]
 - [[PortResolution]] - `uses` [INFERRED]
 - [[Test auto-port discovery.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/PortManager

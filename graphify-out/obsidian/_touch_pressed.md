@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # _touch_pressed
@@ -21,4 +21,4 @@ tags:
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_363
+#graphify/code #graphify/INFERRED #community/wakewordc

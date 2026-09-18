@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 287"
+community: "test_voice_stt_model_ab.py"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/test_voice_stt_model_abpy
 ---
 
 # Duration is rounded for stable, log-friendly records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_transcription_latency_rounds_duration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_287
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy

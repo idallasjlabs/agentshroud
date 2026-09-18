@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 386"
+community: "MCPServerConfig"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_386
+  - community/MCPServerConfig
 ---
 
 # ProxyResult
 
 ## Connections
-- [[dot-process_tool_call()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
+- [[.process_tool_call()]] - `references` [EXTRACTED]
+- [[.process_tool_result()_1]] - `references` [EXTRACTED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_386
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

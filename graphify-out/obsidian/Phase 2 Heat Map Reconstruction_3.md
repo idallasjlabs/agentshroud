@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Community 674"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Phase 2: Heat Map Reconstruction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

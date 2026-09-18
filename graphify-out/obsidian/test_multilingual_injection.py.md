@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "TestMultilingualInjection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/TestMultilingualInjection
 ---
 
 # test_multilingual_injection.py
@@ -16,4 +16,4 @@ tags:
 - [[TestMultilingualInjection]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

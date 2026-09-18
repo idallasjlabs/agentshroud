@@ -1,51 +1,51 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # AgentRegistry
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_127]] - `references` [EXTRACTED]
-- [[dot-__init__()_126]] - `method` [EXTRACTED]
-- [[dot-from_dict()_3]] - `method` [EXTRACTED]
-- [[dot-get()_1]] - `method` [EXTRACTED]
-- [[dot-list_agents()]] - `method` [EXTRACTED]
-- [[dot-register()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
-- [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
-- [[dot-test_compose_networks_are_internal()]] - `calls` [EXTRACTED]
-- [[dot-test_compose_security_opts()]] - `calls` [EXTRACTED]
-- [[dot-test_fully_isolated_agents_pass()]] - `calls` [EXTRACTED]
-- [[dot-test_get_missing_returns_none()]] - `calls` [EXTRACTED]
-- [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
-- [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
-- [[dot-test_list_agents()]] - `calls` [EXTRACTED]
-- [[dot-test_new_privileges_allowed_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_register_and_get()]] - `calls` [EXTRACTED]
-- [[dot-test_register_group_agent_identity()]] - `calls` [EXTRACTED]
-- [[dot-test_register_group_agent_with_chat_type_supergroup()]] - `calls` [EXTRACTED]
-- [[dot-test_separate_networks_pass()]] - `calls` [EXTRACTED]
-- [[dot-test_separate_volumes_pass()]] - `calls` [EXTRACTED]
-- [[dot-test_serialization_roundtrip()]] - `calls` [EXTRACTED]
-- [[dot-test_shared_network_detected()]] - `calls` [EXTRACTED]
-- [[dot-test_shared_network_flagged_in_full_check()]] - `calls` [EXTRACTED]
-- [[dot-test_shared_volume_detected()]] - `calls` [EXTRACTED]
-- [[dot-test_shared_volume_flagged_in_full_check()]] - `calls` [EXTRACTED]
-- [[dot-test_single_agent_fully_secure()]] - `calls` [EXTRACTED]
-- [[dot-test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
-- [[dot-test_unregister_removes_agent()]] - `calls` [EXTRACTED]
-- [[dot-test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_9]] - `method` [EXTRACTED]
-- [[dot-unregister()]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_126]] - `method` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[.from_dict()_3]] - `method` [EXTRACTED]
+- [[.get()_1]] - `method` [EXTRACTED]
+- [[.list_agents()]] - `method` [EXTRACTED]
+- [[.register()]] - `method` [EXTRACTED]
+- [[.setup_method()_28]] - `calls` [EXTRACTED]
+- [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
+- [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
+- [[.test_compose_networks_are_internal()]] - `calls` [EXTRACTED]
+- [[.test_compose_security_opts()]] - `calls` [EXTRACTED]
+- [[.test_fully_isolated_agents_pass()]] - `calls` [EXTRACTED]
+- [[.test_get_missing_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
+- [[.test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
+- [[.test_list_agents()]] - `calls` [EXTRACTED]
+- [[.test_new_privileges_allowed_flagged()]] - `calls` [EXTRACTED]
+- [[.test_register_and_get()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_identity()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_with_chat_type_supergroup()]] - `calls` [EXTRACTED]
+- [[.test_separate_networks_pass()]] - `calls` [EXTRACTED]
+- [[.test_separate_volumes_pass()]] - `calls` [EXTRACTED]
+- [[.test_serialization_roundtrip()]] - `calls` [EXTRACTED]
+- [[.test_shared_network_detected()]] - `calls` [EXTRACTED]
+- [[.test_shared_network_flagged_in_full_check()]] - `calls` [EXTRACTED]
+- [[.test_shared_volume_detected()]] - `calls` [EXTRACTED]
+- [[.test_shared_volume_flagged_in_full_check()]] - `calls` [EXTRACTED]
+- [[.test_single_agent_fully_secure()]] - `calls` [EXTRACTED]
+- [[.test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_unregister_removes_agent()]] - `calls` [EXTRACTED]
+- [[.test_writable_root_flagged()]] - `calls` [EXTRACTED]
+- [[.to_dict()_9]] - `method` [EXTRACTED]
+- [[.unregister()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[ContainerConfig]] - `uses` [INFERRED]
@@ -84,4 +84,4 @@ tags:
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

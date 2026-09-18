@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "rationale"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # One poll pass over all stores.  Never raises.
 
 ## Connections
-- [[dot-check()_5]] - `rationale_for` [EXTRACTED]
+- [[.check()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_90
+#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L623"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # Check text for data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_exfil_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/rationale #graphify/EXTRACTED #community/Enum

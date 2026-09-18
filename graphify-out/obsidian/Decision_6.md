@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Community 671"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_671
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Decision
@@ -15,4 +15,4 @@ tags:
 - [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
 - [[Hash Chain Structure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_671
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

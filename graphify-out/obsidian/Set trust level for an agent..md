@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 129"
+community: "MCPPermissionManager"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/MCPPermissionManager
 ---
 
 # Set trust level for an agent.
 
 ## Connections
-- [[dot-set_trust_level()]] - `rationale_for` [EXTRACTED]
+- [[.set_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_129
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

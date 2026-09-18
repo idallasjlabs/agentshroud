@@ -1,20 +1,20 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 435"
-location: "L123"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Container Won't Start_2]] - `contains` [EXTRACTED]
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
-- [[Slow Builds_1]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_435
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Community 407"
+community: "Currently Unmitigable Residual Class"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # Currently Unmitigable Residual Class
@@ -19,4 +19,4 @@ tags:
 - [[Two-Terminal-State Finding Taxonomy]] - `rationale_for` [EXTRACTED]
 - [[python-jose Removal (CVE-2024-3366333664)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_407
+#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class

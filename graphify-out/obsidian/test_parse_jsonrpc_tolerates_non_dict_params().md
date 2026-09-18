@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 103"
+community: "test_a2a_proxy.py"
 location: "L413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/test_a2a_proxypy
 ---
 
 # test_parse_jsonrpc_tolerates_non_dict_params()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

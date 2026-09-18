@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 794"
+community: "TestSplitForSpeech"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/TestSplitForSpeech
 ---
 
 # Unit tests for voice_gateway.tts.split_for_speech (pure function, no I/O).
 
 ## Connections
 - [[TestSplitForSpeech]] - `rationale_for` [EXTRACTED]
+- [[TestSplitForSpeech_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_794
+#graphify/rationale #graphify/EXTRACTED #community/TestSplitForSpeech

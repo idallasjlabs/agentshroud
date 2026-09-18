@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Community 1461"
+community: "MemoryIntegrityMonitor Tamper Detection"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1461
+  - community/MemoryIntegrityMonitor_Tamper_Detection
 ---
 
 # Test Memory Lifecycle and Integrity
@@ -15,4 +15,4 @@ tags:
 - [[MemoryIntegrityMonitor Tamper Detection]] - `references` [EXTRACTED]
 - [[MemoryLifecycleManager PII Scan and Retention]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1461
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor_Tamper_Detection

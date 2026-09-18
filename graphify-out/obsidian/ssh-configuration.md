@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 381"
+community: "ssh-configuration.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/ssh-configurationmd
 ---
 
 # ssh-configuration.md
@@ -20,4 +20,4 @@ tags:
 - [[himalayaSKILL]] - `references` [EXTRACTED]
 - [[icloudSKILL]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_381
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

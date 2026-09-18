@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 920"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_920
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # REFUSE These
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_920
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

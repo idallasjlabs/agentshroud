@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 295"
+community: "AgentShroud Access Control Matrix"
 location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Automatic Progression Criteria
@@ -18,4 +18,4 @@ tags:
 - [[Level 3 → Level 4]] - `contains` [EXTRACTED]
 - [[Trust Level Progression Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_295
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

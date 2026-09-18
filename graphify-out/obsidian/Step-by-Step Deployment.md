@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 586"
+community: "Step-by-Step Deployment"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Step-by-Step_Deployment
 ---
 
 # Step-by-Step Deployment
@@ -24,4 +24,4 @@ tags:
 - [[Step 8 Service Startup]] - `contains` [EXTRACTED]
 - [[Step 9 Health Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

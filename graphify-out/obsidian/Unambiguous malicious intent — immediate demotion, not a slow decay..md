@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "rationale"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # Unambiguous malicious intent — immediate demotion, not a slow decay.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_131
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

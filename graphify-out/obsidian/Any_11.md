@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: ""
 type: "code"
-community: "Community 106"
-location: "L123"
+community: "_make_token()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/_make_token
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
+- [[._decode_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/_make_token

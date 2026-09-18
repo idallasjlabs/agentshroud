@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "FileSandbox"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/FileSandbox
 ---
 
 # Multiple violations should all be tracked.
 
 ## Connections
-- [[dot-test_multiple_violations_tracked()]] - `rationale_for` [EXTRACTED]
+- [[.test_multiple_violations_tracked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

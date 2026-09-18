@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 89"
-location: "L2591"
+community: "test_voice_gateway.py"
+location: "L2601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/test_voice_gatewaypy
 ---
 
 # Set volume 80. What time is it?' must apply the volume AND route the     remaini
 
 ## Connections
-- [[test_ws_volume_command_with_chained_question()]] - `rationale_for` [EXTRACTED]
+- [[test_ws_volume_command_with_chained_question()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

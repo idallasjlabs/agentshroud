@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 347"
+community: "AgentShroud™ Security Policy"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Security_Policy
 ---
 
 # Compliance Alignment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

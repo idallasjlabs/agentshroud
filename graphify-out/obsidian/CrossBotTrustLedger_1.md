@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # CrossBotTrustLedger
 
 ## Connections
-- [[dot-__init__()_174]] - `method` [EXTRACTED]
-- [[dot-_propagate()]] - `method` [EXTRACTED]
-- [[dot-build_full_mesh()]] - `method` [EXTRACTED]
-- [[dot-get_incidents()]] - `method` [EXTRACTED]
-- [[dot-incident_count()]] - `method` [EXTRACTED]
-- [[dot-peers_of()]] - `method` [EXTRACTED]
-- [[dot-record_incident()]] - `method` [EXTRACTED]
-- [[dot-register_peer()_1]] - `method` [EXTRACTED]
-- [[dot-register_trust_manager()]] - `method` [EXTRACTED]
+- [[.__init__()_174]] - `method` [EXTRACTED]
+- [[._propagate()]] - `method` [EXTRACTED]
+- [[.build_full_mesh()]] - `method` [EXTRACTED]
+- [[.get_incidents()]] - `method` [EXTRACTED]
+- [[.incident_count()]] - `method` [EXTRACTED]
+- [[.peers_of()]] - `method` [EXTRACTED]
+- [[.record_incident()]] - `method` [EXTRACTED]
+- [[.register_peer()_1]] - `method` [EXTRACTED]
+- [[.register_trust_manager()]] - `method` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
@@ -41,8 +41,8 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustConfig

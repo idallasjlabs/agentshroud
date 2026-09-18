@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "concept"
-community: "Community 1080"
+community: "BROWSER_FETCH_SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1080
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Browser-Fetch Approval Queue Integration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[BROWSER_FETCH_SKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1080
+#graphify/concept #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

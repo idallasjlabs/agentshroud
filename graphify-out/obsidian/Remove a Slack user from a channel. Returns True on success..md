@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L489"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # Remove a Slack user from a channel. Returns True on success.
 
 ## Connections
-- [[dot-kick_channel_member()]] - `rationale_for` [EXTRACTED]
+- [[.kick_channel_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_139
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

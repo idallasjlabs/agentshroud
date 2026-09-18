@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "rationale"
-community: "Community 52"
+community: "EgressFilterConfig"
 location: "L3"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feed_hosts.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

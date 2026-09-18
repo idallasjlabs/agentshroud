@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/TrustManager
 ---
 
 # canary-cron.sh embedded Python main()
@@ -18,4 +18,4 @@ tags:
 - [[TrustManager]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/TrustManager

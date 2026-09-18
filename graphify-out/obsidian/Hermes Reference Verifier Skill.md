@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 1432"
+community: "Hermes Podcast Production Orchestrator README"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1432
+  - community/Hermes_Podcast_Production_Orchestrator_README
 ---
 
 # Hermes Reference Verifier Skill
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Podcast Production Orchestrator README]] - `references` [AMBIGUOUS]
 - [[Podcast Production Pipeline (multi-agent)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1432
+#graphify/document #graphify/INFERRED #community/Hermes_Podcast_Production_Orchestrator_README

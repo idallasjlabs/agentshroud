@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 509"
+community: "Implementation Status"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Implementation_Status
 ---
 
 # Recommended Configuration (All 4 Options Combined)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_509
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

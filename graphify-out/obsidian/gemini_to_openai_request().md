@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Community 141"
+community: "test_gemini_openai_translator.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/test_gemini_openai_translatorpy
 ---
 
 # gemini_to_openai_request()
 
 ## Connections
+- [[LLMProxy._failover_request]] - `calls` [EXTRACTED]
 - [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - `rationale_for` [EXTRACTED]
 - [[_parts_to_text()]] - `calls` [EXTRACTED]
 - [[_system_instruction_text()]] - `calls` [EXTRACTED]
@@ -27,4 +28,4 @@ tags:
 - [[test_gemini_role_mapping_model_to_assistant()]] - `calls` [EXTRACTED]
 - [[test_gemini_system_instruction_snake_case_and_string()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_141
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

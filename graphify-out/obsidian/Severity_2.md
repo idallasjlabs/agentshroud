@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 334"
+community: "SOCWebSocketHandler"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/SOCWebSocketHandler
 ---
 
 # Severity
 
 ## Connections
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_45]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SecurityEvent]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Prompt Guard & Context Integrity"
+community: "TrustManager"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/TrustManager
 ---
 
 # Explicit ignore-instructions payload embedded in a tool result.
 
 ## Connections
-- [[dot-test_direct_injection_in_tool_result_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_direct_injection_in_tool_result_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

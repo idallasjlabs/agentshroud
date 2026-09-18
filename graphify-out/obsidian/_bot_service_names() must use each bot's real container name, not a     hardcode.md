@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Community 180"
+community: "BotConfig"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_180
+  - community/BotConfig
 ---
 
 # _bot_service_names() must use each bot's real container name, not a     hardcode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_service_names_uses_resolved_container_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_180
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

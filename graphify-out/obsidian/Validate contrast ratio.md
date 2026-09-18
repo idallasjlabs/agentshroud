@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 471"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[dot-agentsskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

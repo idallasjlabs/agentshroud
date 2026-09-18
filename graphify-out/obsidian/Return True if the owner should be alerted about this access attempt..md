@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Community 902"
+community: "PrivacyPolicyEnforcer"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_902
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Return True if the owner should be alerted about this access attempt.
 
 ## Connections
-- [[dot-should_alert()]] - `rationale_for` [EXTRACTED]
+- [[.should_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_902
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

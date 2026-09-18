@@ -1,13 +1,13 @@
 ---
 source_file: ".github/FUNDING.yml"
 type: "document"
-community: "Community 1964"
+community: "GitHub FUNDING Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1964
+  - community/GitHub_FUNDING_Configuration
 ---
 
 # GitHub FUNDING Configuration
 
-#graphify/document #graphify/EXTRACTED #community/Community_1964
+#graphify/document #graphify/EXTRACTED #community/GitHub_FUNDING_Configuration

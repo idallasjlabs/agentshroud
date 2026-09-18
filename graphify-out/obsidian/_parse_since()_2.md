@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 957"
+community: "export-bot-conversations.py"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_957
+  - community/export-bot-conversationspy
 ---
 
 # _parse_since()
@@ -19,4 +19,4 @@ tags:
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
 - [[main()_35]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_957
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

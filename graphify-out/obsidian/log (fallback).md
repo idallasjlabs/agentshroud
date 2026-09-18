@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 1029"
+community: "sunday_run_scan_gate"
 location: "50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1029
+  - community/sunday_run_scan_gate
 ---
 
 # log (fallback)
@@ -15,4 +15,4 @@ tags:
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
 - [[sunday_run_scan_gate]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1029
+#graphify/code #graphify/EXTRACTED #community/sunday_run_scan_gate

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 712"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # After Pairing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

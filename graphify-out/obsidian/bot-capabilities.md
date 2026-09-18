@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 360"
+community: "Credential Management - 1Password Integration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # bot-capabilities.md
@@ -17,4 +17,4 @@ tags:
 - [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - `references` [EXTRACTED]
 - [[SYSTEM-INSTRUCTIONS-SECURITY]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

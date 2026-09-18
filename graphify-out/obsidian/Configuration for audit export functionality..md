@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "AuditExportConfig"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/AuditExportConfig
 ---
 
 # Configuration for audit export functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig

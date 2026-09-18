@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 640"
+community: "._can_use_tool_impl()"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/_can_use_tool_impl
 ---
 
 # Return tools explicitly denied for this user.
 
 ## Connections
-- [[dot-get_denied_tools()]] - `rationale_for` [EXTRACTED]
+- [[.get_denied_tools()]] - `rationale_for` [EXTRACTED]
+- [[.get_denied_tools()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_640
+#graphify/rationale #graphify/EXTRACTED #community/_can_use_tool_impl

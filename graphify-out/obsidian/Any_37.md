@@ -1,19 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 220"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_220
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary]] - `references` [EXTRACTED]
-- [[parse_trivy_output]] - `references` [EXTRACTED]
-- [[run_trivy_scan]] - `references` [EXTRACTED]
-- [[save_report]] - `references` [EXTRACTED]
+- [[.__init__()_102]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/INFERRED #community/ContextSegment

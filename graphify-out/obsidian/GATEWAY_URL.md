@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Community 561"
+community: "ANTHROPIC_BASE_URL"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_561
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # GATEWAY_URL.md
@@ -15,4 +15,4 @@ tags:
 - [[ANTHROPIC_BASE_URL]] - `references` [EXTRACTED]
 - [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_561
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

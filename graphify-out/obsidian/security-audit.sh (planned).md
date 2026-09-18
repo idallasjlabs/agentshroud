@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "Community 1060"
+community: "OpenClaw Management Scripts"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1060
+  - community/OpenClaw_Management_Scripts
 ---
 
 # security-audit.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1060
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

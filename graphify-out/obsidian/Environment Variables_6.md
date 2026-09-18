@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Community 514"
-location: "L100"
+community: "encrypted_store.py"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_514
+  - community/encrypted_storepy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_514
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

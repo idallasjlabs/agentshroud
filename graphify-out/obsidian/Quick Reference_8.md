@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 326"
+community: "Quick Reference"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_326
+  - community/Quick_Reference
 ---
 
 # Quick Reference
@@ -18,4 +18,4 @@ tags:
 - [[List Available Models]] - `contains` [EXTRACTED]
 - [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_326
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

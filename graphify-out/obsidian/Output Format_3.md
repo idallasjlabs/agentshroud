@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 786"
-location: "L25"
+community: "Oracle — Feedback Analyst"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
-- [[diagramsREADME]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

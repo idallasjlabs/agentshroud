@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Community 460"
+community: "detect_runtime()"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/detect_runtime
 ---
 
 # Serve the installer wizard HTML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[installer_page()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_460
+#graphify/rationale #graphify/EXTRACTED #community/detect_runtime

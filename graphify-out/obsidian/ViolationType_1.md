@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustLevel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustLevel
 ---
 
 # ViolationType
 
 ## Connections
-- [[dot-record_violation()]] - `references` [EXTRACTED]
+- [[.record_violation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 256"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/AgentShroud_system_C4_context
 ---
 
 # RateLimitBucket (data entity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_256
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context

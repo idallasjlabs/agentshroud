@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "Community 39"
+community: "A2AMessage"
 location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/A2AMessage
 ---
 
 # Check per-peer rate limit.
 
 ## Connections
-- [[dot-_check_rate_limit()]] - `rationale_for` [EXTRACTED]
+- [[._check_rate_limit()]] - `rationale_for` [EXTRACTED]
+- [[._check_rate_limit()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_39
+#graphify/rationale #graphify/EXTRACTED #community/A2AMessage

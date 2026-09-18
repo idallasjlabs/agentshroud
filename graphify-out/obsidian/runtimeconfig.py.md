@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "Community 808"
+community: "RuntimeConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_808
+  - community/RuntimeConfig
 ---
 
 # runtime/config.py
@@ -16,4 +16,4 @@ tags:
 - [[api.py]] - `imports_from` [EXTRACTED]
 - [[engine.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_808
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

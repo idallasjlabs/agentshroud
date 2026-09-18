@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # python-jose.md
@@ -16,4 +16,4 @@ tags:
 - [[auth.py]] - `references` [INFERRED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/document #graphify/EXTRACTED #community/RateLimiter

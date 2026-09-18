@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L1278"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # TestThreatLevelCalc
 
 ## Connections
-- [[dot-test_highest_threat_high()]] - `method` [EXTRACTED]
-- [[dot-test_highest_threat_none()]] - `method` [EXTRACTED]
-- [[dot-test_inspection_result_threat_level()]] - `method` [EXTRACTED]
+- [[.test_highest_threat_high()]] - `method` [EXTRACTED]
+- [[.test_highest_threat_none()]] - `method` [EXTRACTED]
+- [[.test_inspection_result_threat_level()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[ThreatLevel_2]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/MCPToolCall

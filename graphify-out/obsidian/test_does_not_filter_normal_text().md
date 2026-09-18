@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 127"
+community: "test_filter_xml_blocks.py"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/test_filter_xml_blockspy
 ---
 
 # test_does_not_filter_normal_text()
@@ -15,4 +15,4 @@ tags:
 - [[Normal text without XML blocks is returned unchanged.]] - `rationale_for` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy

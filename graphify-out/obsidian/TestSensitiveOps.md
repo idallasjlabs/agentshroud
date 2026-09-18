@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 1111"
+community: "MCPToolCall"
 location: "L233"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1111
+  - community/MCPToolCall
 ---
 
 # TestSensitiveOps
 
 ## Connections
-- [[dot-test_network_request_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_sensitive_blocked_strict_with_injection()]] - `method` [EXTRACTED]
-- [[dot-test_sensitive_not_blocked_default()]] - `method` [EXTRACTED]
-- [[dot-test_shell_command_flagged()]] - `method` [EXTRACTED]
+- [[.test_network_request_flagged()]] - `method` [EXTRACTED]
+- [[.test_sensitive_blocked_strict_with_injection()]] - `method` [EXTRACTED]
+- [[.test_sensitive_not_blocked_default()]] - `method` [EXTRACTED]
+- [[.test_shell_command_flagged()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[ThreatLevel_2]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1111
+#graphify/code #graphify/INFERRED #community/MCPToolCall

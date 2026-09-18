@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 712"
-location: "L53"
+community: "Quick Reference Commands"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Quick_Reference_Commands
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Cannot save token]] - `contains` [EXTRACTED]
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
-- [[Still shows pairing required]] - `contains` [EXTRACTED]
-- [[Token field not visible]] - `contains` [EXTRACTED]
+- [[Quick Reference Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

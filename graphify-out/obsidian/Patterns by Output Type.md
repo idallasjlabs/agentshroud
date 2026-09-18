@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 471"
+community: "Skill: Branding Specialist (BS)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Patterns by Output Type
@@ -15,4 +15,4 @@ tags:
 - [[Color Token Definition]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

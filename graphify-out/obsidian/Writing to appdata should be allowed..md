@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TestFileSandbox"
 location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TestFileSandbox
 ---
 
 # Writing to /app/data should be allowed.
 
 ## Connections
-- [[dot-test_write_to_app_data_allowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_write_to_app_data_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

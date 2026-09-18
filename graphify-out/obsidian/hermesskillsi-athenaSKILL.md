@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 778"
+community: "Athena — Knowledge Distiller"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_778
+  - community/Athena__Knowledge_Distiller
 ---
 
 # hermes/skills/i-athena/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[description of what this does_1]] - `contains` [EXTRACTED]
 - [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_778
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

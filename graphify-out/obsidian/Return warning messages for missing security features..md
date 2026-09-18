@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "Runtime Security Comparison & Intel Report"
+community: "TestSecurityFeatures"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/TestSecurityFeatures
 ---
 
 # Return warning messages for missing security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[warn_missing_features()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures

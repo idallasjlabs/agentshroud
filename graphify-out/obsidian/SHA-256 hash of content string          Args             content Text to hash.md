@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: ".record()"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/record
 ---
 
 # SHA-256 hash of content string          Args:             content: Text to hash
 
 ## Connections
-- [[dot-_hash_content()]] - `rationale_for` [EXTRACTED]
+- [[._hash_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/record

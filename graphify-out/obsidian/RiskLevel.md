@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 117"
+community: "TestEgressApprovalQueue"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/TestEgressApprovalQueue
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_assess_risk()]] - `references` [EXTRACTED]
+- [[._assess_risk()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_117
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

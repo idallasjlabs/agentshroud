@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 500"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_500
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_500
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

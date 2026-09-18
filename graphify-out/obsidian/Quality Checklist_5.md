@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 508"
+community: "Socrates — Dialogue Architect"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_508
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Quality Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_508
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

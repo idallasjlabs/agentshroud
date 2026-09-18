@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # trust_manager()
@@ -16,4 +16,4 @@ tags:
 - [[TrustManager]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

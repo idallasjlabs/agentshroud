@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 94"
+community: "_t()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/_t
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_representative_titles()]] - `references` [EXTRACTED]
+- [[.test_representative_titles()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/code #graphify/EXTRACTED #community/_t

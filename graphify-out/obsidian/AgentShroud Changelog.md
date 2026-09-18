@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 569"
+community: "AgentShroud Changelog"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/AgentShroud_Changelog
 ---
 
 # AgentShroud Changelog
@@ -21,4 +21,4 @@ tags:
 - [[Voice Gateway]] - `references` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog

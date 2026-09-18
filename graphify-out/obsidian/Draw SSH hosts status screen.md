@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Community 277"
+community: "ControlCenter"
 location: "L324"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/ControlCenter
 ---
 
 # Draw SSH hosts status screen
 
 ## Connections
-- [[dot-draw_ssh_hosts()]] - `rationale_for` [EXTRACTED]
+- [[.draw_ssh_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_277
+#graphify/rationale #graphify/EXTRACTED #community/ControlCenter

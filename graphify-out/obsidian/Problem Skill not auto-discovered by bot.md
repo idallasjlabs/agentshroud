@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1306"
+community: "Troubleshooting"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1306
+  - community/Troubleshooting
 ---
 
 # Problem: Skill not auto-discovered by bot
 
 ## Connections
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1306
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 77"
+community: "Incident Classification System"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Incident_Classification_System
 ---
 
 # Incident Classification System
@@ -16,4 +16,4 @@ tags:
 - [[Priority Levels]] - `contains` [EXTRACTED]
 - [[Severity Assessment Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Incident_Classification_System

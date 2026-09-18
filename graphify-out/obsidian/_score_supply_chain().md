@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 518"
+community: "get_trivy_summary()"
 location: "L1000"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # _score_supply_chain()
 
 ## Connections
-- [[dot-test_two_when_sbom_present()]] - `calls` [EXTRACTED]
-- [[dot-test_zero_when_empty_sbom_dir()]] - `calls` [EXTRACTED]
-- [[dot-test_zero_when_no_sbom_dir()]] - `calls` [EXTRACTED]
+- [[.test_two_when_sbom_present()]] - `calls` [EXTRACTED]
+- [[.test_zero_when_empty_sbom_dir()]] - `calls` [EXTRACTED]
+- [[.test_zero_when_no_sbom_dir()]] - `calls` [EXTRACTED]
 - [[Score domain 3 Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[get_sbom()_1]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_518
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

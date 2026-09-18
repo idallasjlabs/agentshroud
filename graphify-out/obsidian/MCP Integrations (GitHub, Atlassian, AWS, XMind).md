@@ -1,13 +1,13 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 1786"
+community: "MCP Integrations (GitHub, Atlassian, AWS, XMind)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1786
+  - community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
 ---
 
 # MCP Integrations (GitHub, Atlassian, AWS, XMind)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1786
+#graphify/concept #graphify/EXTRACTED #community/MCP_Integrations_GitHub_Atlassian_AWS_XMind

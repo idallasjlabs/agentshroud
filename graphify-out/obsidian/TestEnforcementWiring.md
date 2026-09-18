@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # TestEnforcementWiring
 
 ## Connections
-- [[dot-setup_method()_6]] - `method` [EXTRACTED]
-- [[dot-test_record_decision_helper()]] - `method` [EXTRACTED]
-- [[dot-test_record_decision_never_raises()]] - `method` [EXTRACTED]
-- [[dot-test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
+- [[.setup_method()_6]] - `method` [EXTRACTED]
+- [[.test_record_decision_helper()]] - `method` [EXTRACTED]
+- [[.test_record_decision_never_raises()]] - `method` [EXTRACTED]
+- [[.test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
 - [[Decision_1]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressFilter]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

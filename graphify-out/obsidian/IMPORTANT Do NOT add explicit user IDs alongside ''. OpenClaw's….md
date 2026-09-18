@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "rationale"
-community: "Community 227"
+community: "apply-patches.js (OpenClaw)"
 location: "L919"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # IMPORTANT: Do NOT add explicit user IDs alongside '*'. OpenClaw's…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js (OpenClaw)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_227
+#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

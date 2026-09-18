@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Community 1582"
+community: "LogSanitizer PII-Scrubbing Log Filter"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1582
+  - community/LogSanitizer_PII-Scrubbing_Log_Filter
 ---
 
 # Test Log Sanitizer PII Scrubbing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LogSanitizer PII-Scrubbing Log Filter]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1582
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer_PII-Scrubbing_Log_Filter

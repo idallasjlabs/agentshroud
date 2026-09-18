@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[dot-__init__()_186]] - `references` [EXTRACTED]
-- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
-- [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
+- [[.__init__()_186]] - `references` [EXTRACTED]
+- [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
+- [[.test_key_vault_init()]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
@@ -55,4 +55,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

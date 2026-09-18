@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Community 475"
-location: "L62"
+community: ".update()"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/update
 ---
 
 # Path
 
 ## Connections
-- [[dot-from_file()]] - `references` [EXTRACTED]
-- [[dot-from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[.__init__()_173]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_475
+#graphify/code #graphify/EXTRACTED #community/update

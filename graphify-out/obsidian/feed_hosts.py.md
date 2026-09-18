@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "code"
-community: "Community 52"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # feed_hosts.py
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…]] - `rationale_for` [EXTRACTED]
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_3]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

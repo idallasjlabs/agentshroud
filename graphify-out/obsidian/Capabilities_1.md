@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "Community 1091"
+community: "hermes/SOUL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1091
+  - community/hermes/SOULmd
 ---
 
 # Capabilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1091
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

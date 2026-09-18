@@ -1,17 +1,16 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
-type: "rationale"
-community: "Community 85"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+type: "concept"
+community: "Enterprise Governance Proxy System (invention)"
 tags:
-  - graphify/rationale
-  - graphify/INFERRED
-  - community/Community_85
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
-# Human-in-the-loop approval queue
+# Human-in-the-Loop Approval Queue
 
 ## Connections
-- [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `conceptually_related_to` [INFERRED]
+- [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_85
+#graphify/concept #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

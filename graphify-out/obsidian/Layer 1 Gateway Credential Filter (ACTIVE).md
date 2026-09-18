@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 318"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_318
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Layer 1: Gateway Credential Filter (ACTIVE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ Protection Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_318
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

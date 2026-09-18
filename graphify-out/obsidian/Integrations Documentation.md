@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "Community 225"
+community: "1Password op-proxy (POST /credentials/op-proxy; "
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/1Password_op-proxy_POST_/credentials/op-proxy_
 ---
 
 # Integrations Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_5]] - `contains` [EXTRACTED]
 - [[integrationsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_

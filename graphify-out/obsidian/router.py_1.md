@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 685"
+community: "router.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_685
+  - community/routerpy
 ---
 
 # router.py
@@ -20,7 +20,7 @@ tags:
 - [[Known Issues  Notes_6]] - `contains` [EXTRACTED]
 - [[Purpose_164]] - `contains` [EXTRACTED]
 - [[Related_40]] - `contains` [EXTRACTED]
-- [[Responsibilities_38]] - `contains` [EXTRACTED]
+- [[Responsibilities_37]] - `contains` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_685
+#graphify/document #graphify/EXTRACTED #community/routerpy

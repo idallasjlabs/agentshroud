@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 1069"
+community: "Skill: Code Review (CR)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1069
+  - community/Skill_Code_Review_CR
 ---
 
 # Output Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1069
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

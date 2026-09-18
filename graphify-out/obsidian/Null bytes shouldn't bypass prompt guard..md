@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # Null bytes shouldn't bypass prompt guard.
 
 ## Connections
-- [[dot-test_null_byte_in_prompt()]] - `rationale_for` [EXTRACTED]
+- [[.test_null_byte_in_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

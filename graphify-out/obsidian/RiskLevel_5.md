@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[._load_custom_patterns()]] - `calls` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

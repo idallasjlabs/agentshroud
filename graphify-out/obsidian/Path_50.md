@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: ""
 type: "code"
-community: "Community 583"
-location: "L209"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/sync-cve-registrypy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_583
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

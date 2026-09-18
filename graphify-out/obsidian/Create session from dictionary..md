@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Community 747"
+community: ".from_dict()"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/from_dict
 ---
 
 # Create session from dictionary.
 
 ## Connections
-- [[dot-from_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_747
+#graphify/rationale #graphify/EXTRACTED #community/from_dict

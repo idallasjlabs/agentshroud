@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # TestDNSRebinding
 
 ## Connections
-- [[dot-dns_filter()]] - `method` [EXTRACTED]
-- [[dot-test_private_ip_detection()]] - `method` [EXTRACTED]
-- [[dot-test_public_ip_not_private()]] - `method` [EXTRACTED]
-- [[dot-test_resolve_and_cache_empty_domain_graceful()]] - `method` [EXTRACTED]
-- [[dot-test_stable_resolution_passes()]] - `method` [EXTRACTED]
+- [[.dns_filter()]] - `method` [EXTRACTED]
+- [[.test_private_ip_detection()]] - `method` [EXTRACTED]
+- [[.test_public_ip_not_private()]] - `method` [EXTRACTED]
+- [[.test_resolve_and_cache_empty_domain_graceful()]] - `method` [EXTRACTED]
+- [[.test_stable_resolution_passes()]] - `method` [EXTRACTED]
 - [[DNSFilter]] - `uses` [INFERRED]
 - [[DNSFilterConfig]] - `uses` [INFERRED]
 - [[EntropyCalculator]] - `uses` [INFERRED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

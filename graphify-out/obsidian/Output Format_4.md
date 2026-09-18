@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 941"
-location: "L26"
+community: "Skill: Code Review (CR)"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_941
+  - community/Skill_Code_Review_CR
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_941
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

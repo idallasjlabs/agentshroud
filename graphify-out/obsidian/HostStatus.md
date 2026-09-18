@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 1039"
+community: "HostStatus"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1039
+  - community/HostStatus
 ---
 
 # HostStatus
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_59]] - `uses` [INFERRED]
+- [[Path_47]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[str_2]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1039
+#graphify/code #graphify/INFERRED #community/HostStatus

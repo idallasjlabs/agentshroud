@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 502"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -15,9 +15,9 @@ tags:
 - [[Adversary Model_1]] - `contains` [EXTRACTED]
 - [[Attack Phases_1]] - `contains` [EXTRACTED]
 - [[Critical Rules_6]] - `contains` [EXTRACTED]
-- [[Infrastructure_2]] - `contains` [EXTRACTED]
+- [[Infrastructure_1]] - `contains` [EXTRACTED]
 - [[Output_3]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
 - [[agentshroud-redteamSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

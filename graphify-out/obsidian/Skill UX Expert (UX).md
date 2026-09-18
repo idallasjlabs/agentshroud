@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 258"
+community: "Skill: UX Expert (UX)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Skill_UX_Expert_UX
 ---
 
 # Skill: UX Expert (UX)
 
 ## Connections
-- [[dot-agentsskillsi-uxSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag]] - `contains` [EXTRACTED]
 - [[CLI  TUI UX]] - `contains` [EXTRACTED]
 - [[Core Discipline Discover → Define → Design → Validate]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Usability Audit Checklist]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

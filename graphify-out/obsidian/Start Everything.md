@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 245"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_245
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Start Everything
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_245
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

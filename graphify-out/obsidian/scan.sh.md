@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # scan.sh
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

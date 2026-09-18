@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "concept"
-community: "Community 172"
+community: "AgentShroud Falco Detection Rules"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_172
+  - graphify/INFERRED
+  - community/AgentShroud_Falco_Detection_Rules
 ---
 
 # Falco Rule: Unexpected Outbound Connection from AgentShroud
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Falco Detection Rules]] - `references` [EXTRACTED]
 - [[setup-https-proxy.js]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_172
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Falco_Detection_Rules

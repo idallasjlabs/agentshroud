@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 577"
+community: "TELEGRAM_ISSUES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_577
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # SYSTEM_STATUS.md
@@ -16,4 +16,4 @@ tags:
 - [[Anthropic API Credits Exhausted Blocker]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_577
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

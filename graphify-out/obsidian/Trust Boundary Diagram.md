@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "Community 225"
+community: "AgentShroud Gateway (Trust Zone 1): holds 1Passw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
 ---
 
 # Trust Boundary Diagram
@@ -20,4 +20,4 @@ tags:
 - [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_225
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw

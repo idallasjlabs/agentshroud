@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 486"
+community: "_build_image_targets"
 location: "L978"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/_build_image_targets
 ---
 
 # Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond gateway + the real…
 
 ## Connections
-- [[dot-test_env_var_empty_string_ignored()]] - `rationale_for` [EXTRACTED]
+- [[.test_env_var_empty_string_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_486
+#graphify/rationale #graphify/EXTRACTED #community/_build_image_targets

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "rationale"
-community: "Community 83"
+community: "PortManager"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # Test auto-port discovery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFindAvailablePort]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

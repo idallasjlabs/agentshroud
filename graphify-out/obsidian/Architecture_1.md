@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 178"
+community: "AgentShroud™ README"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/AgentShroud_README
 ---
 
 # Architecture
@@ -15,4 +15,4 @@ tags:
 - [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

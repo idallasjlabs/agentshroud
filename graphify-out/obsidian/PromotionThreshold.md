@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 689"
+community: "Enum"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Enum
 ---
 
 # PromotionThreshold
@@ -15,4 +15,4 @@ tags:
 - [[Threshold for promoting to a trust level.]] - `rationale_for` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_689
+#graphify/code #graphify/EXTRACTED #community/Enum

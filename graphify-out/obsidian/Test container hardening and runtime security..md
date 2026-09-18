@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "P3 Infrastructure Security Modules"
+community: "EncryptedStore"
 location: "L883"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/EncryptedStore
 ---
 
 # Test container hardening and runtime security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

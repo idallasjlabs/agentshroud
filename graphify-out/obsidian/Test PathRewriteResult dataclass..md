@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 659"
+community: "TestPathIsolationManager"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/TestPathIsolationManager
 ---
 
 # Test PathRewriteResult dataclass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPathRewriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_659
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

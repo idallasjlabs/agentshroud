@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "Community 130"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # **💡 Design Gaps**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_130
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

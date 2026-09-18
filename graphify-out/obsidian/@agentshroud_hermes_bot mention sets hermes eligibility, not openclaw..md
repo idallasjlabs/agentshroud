@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Lockdown & Collaborator UX Tests"
+community: "_wrap_response()"
 location: "L9039"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Lockdown__Collaborator_UX_Tests
+  - community/_wrap_response
 ---
 
 # @agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.
 
 ## Connections
-- [[dot-test_hermes_mention_sets_hermes_eligibility()]] - `rationale_for` [EXTRACTED]
+- [[.test_hermes_mention_sets_hermes_eligibility()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

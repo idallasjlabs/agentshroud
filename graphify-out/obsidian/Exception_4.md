@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "ConsentFramework"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/ConsentFramework
 ---
 
 # Exception
@@ -30,4 +30,4 @@ tags:
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 - [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

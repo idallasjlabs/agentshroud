@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 43"
+community: "_any_detector_fires()"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/_any_detector_fires
 ---
 
 # TestClassicOverride
 
 ## Connections
-- [[dot-test_classic_override_detection_rate()]] - `method` [EXTRACTED]
-- [[dot-test_classic_payloads_individually()]] - `method` [EXTRACTED]
+- [[.test_classic_override_detection_rate()]] - `method` [EXTRACTED]
+- [[.test_classic_payloads_individually()]] - `method` [EXTRACTED]
 - [[Classic instruction-override payloads — should have near-100% detection.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/_any_detector_fires

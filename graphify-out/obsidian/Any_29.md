@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L379"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[.__call__()_3]] - `references` [EXTRACTED]
+- [[.__init__()_85]] - `references` [EXTRACTED]
+- [[._clean_tool()]] - `references` [EXTRACTED]
+- [[._coerce()]] - `references` [EXTRACTED]
+- [[._handle()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # test_stt_transcribe_mocked_model()
@@ -16,4 +16,4 @@ tags:
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 - [[transcribe() calls the model and returns joined segment text.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

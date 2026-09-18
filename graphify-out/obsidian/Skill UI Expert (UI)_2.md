@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 314"
+community: "Skill: UI Expert (UI)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_UI_Expert_UI
 ---
 
 # Skill: UI Expert (UI)
@@ -24,6 +24,6 @@ tags:
 - [[Role_33]] - `contains` [EXTRACTED]
 - [[Rules_8]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-uiSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

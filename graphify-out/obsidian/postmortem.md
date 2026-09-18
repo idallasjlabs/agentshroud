@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "Community 450"
+community: "postmortem.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/postmortemmd
 ---
 
 # postmortem.md
@@ -21,4 +21,4 @@ tags:
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
 - [[Timeline_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

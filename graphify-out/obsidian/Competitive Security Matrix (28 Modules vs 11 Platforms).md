@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "document"
-community: "Community 788"
+community: "Red Team Assessment v1.2.0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Red_Team_Assessment_v120
 ---
 
 # Competitive Security Matrix (28 Modules vs 11 Platforms)
@@ -16,4 +16,4 @@ tags:
 - [[Security Module 28 Differential PII Detector on Tool Results 0.7-floor (v1.2.0)]] - `references` [EXTRACTED]
 - [[Workstream B Security Features from Competitive Intel]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120

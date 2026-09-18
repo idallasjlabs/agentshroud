@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Community 1095"
+community: "`docs/planning/` — Index"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1095
+  - community/docs/planning/__Index
 ---
 
 # Layout
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1095
+#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index

@@ -1,19 +1,19 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "AgentShroud™ Brand Guidelines"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Brand Personality
 
 ## Connections
-- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[Voice & Tone_2]] - `contains` [EXTRACTED]
 - [[Writing Style]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

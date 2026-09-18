@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # get_egress_log()
 
 ## Connections
-- [[dot-test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
+- [[.test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
 - [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

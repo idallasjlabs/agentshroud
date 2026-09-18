@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 114"
+community: "test_skill_guard.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_114
+  - community/test_skill_guardpy
 ---
 
 # Severity
 
 ## Connections
-- [[dot-severity()]] - `references` [EXTRACTED]
+- [[.severity()]] - `references` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
 - [[ScanResult]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_114
+#graphify/code #graphify/INFERRED #community/test_skill_guardpy

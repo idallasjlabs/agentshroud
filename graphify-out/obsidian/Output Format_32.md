@@ -1,18 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 781"
-location: "L26"
+community: "Daedalus — Concept Illustrator"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_781
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
-- [[show_notes_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_2]] - `contains` [EXTRACTED]
+- [[diagramsREADME_3]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_781
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

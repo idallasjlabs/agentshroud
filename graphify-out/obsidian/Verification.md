@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "Community 1157"
+community: "GitHub Branch Protection — `main`"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1157
+  - community/GitHub_Branch_Protection__main
 ---
 
 # Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1157
+#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main

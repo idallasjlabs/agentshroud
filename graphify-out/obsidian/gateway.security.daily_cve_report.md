@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # gateway.security.daily_cve_report
@@ -38,6 +38,7 @@ tags:
 - [[run_upstream_cve_check_all_agents]] - `contains` [EXTRACTED]
 - [[save_report]] - `imports` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[test_daily_cve_report.py_1]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

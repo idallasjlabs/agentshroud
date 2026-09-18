@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Community 84"
+community: "cli/main.py"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/cli/mainpy
 ---
 
 # Get container logs for a service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_logs()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

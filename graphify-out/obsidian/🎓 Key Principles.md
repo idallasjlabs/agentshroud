@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 369"
+community: "Core Security Principles"
 location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_369
+  - community/Core_Security_Principles
 ---
 
 # 🎓 Key Principles
@@ -17,4 +17,4 @@ tags:
 - [[3. Bot's Superior Reasoning]] - `contains` [EXTRACTED]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_369
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

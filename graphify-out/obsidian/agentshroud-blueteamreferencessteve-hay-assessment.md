@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Community 1665"
+community: "agentshroud-blueteam/references/steve-hay-assess"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1665
+  - community/agentshroud-blueteam/references/steve-hay-assess
 ---
 
 # agentshroud-blueteam/references/steve-hay-assessment.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1665
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-assess

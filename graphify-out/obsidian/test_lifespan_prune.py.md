@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "CollaboratorActivityTracker"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/CollaboratorActivityTracker
 ---
 
 # test_lifespan_prune.py
@@ -23,4 +23,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `contains` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

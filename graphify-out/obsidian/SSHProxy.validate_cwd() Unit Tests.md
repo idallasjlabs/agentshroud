@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 1617"
+community: "MiddlewareManager Session Enforcement Tests"
 location: "line 241"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1617
+  - community/MiddlewareManager_Session_Enforcement_Tests
 ---
 
 # SSHProxy.validate_cwd() Unit Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MiddlewareManager Session Enforcement Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1617
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_Session_Enforcement_Tests

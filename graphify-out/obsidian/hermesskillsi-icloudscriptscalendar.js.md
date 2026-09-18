@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 879"
+community: "hermes/skills/i-icloud/scripts/calendar.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_879
+  - community/hermes/skills/i-icloud/scripts/calendarjs
 ---
 
 # hermes/skills/i-icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_3]] - `contains` [EXTRACTED]
+- [[CONFIG_1]] - `contains` [EXTRACTED]
 - [[args_1]] - `contains` [EXTRACTED]
 - [[createEvent()_1]] - `contains` [EXTRACTED]
 - [[getCredentials()_1]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[parseCalendarData()_1]] - `contains` [EXTRACTED]
 - [[{ execSync }_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_879
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs

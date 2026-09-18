@@ -1,20 +1,20 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 336"
-location: "L142"
+community: "Kill Switch"
+location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/Kill_Switch
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
-- [[Connection timeout_3]] - `contains` [EXTRACTED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
+- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
+- [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

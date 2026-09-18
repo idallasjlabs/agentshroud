@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Community 291"
+community: "KeyRotationConfig"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/KeyRotationConfig
 ---
 
 # Configuration for key rotation policies and schedules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KeyRotationConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_291
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

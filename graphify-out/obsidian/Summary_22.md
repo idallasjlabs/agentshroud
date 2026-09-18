@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "Community 86"
+community: "AgentShroud Semgrep SAST Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_86
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

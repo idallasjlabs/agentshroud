@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 711"
+community: "trivy_report.py"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_711
+  - community/trivy_reportpy
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
 - [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_711
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

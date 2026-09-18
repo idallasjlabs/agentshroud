@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "Community 59"
+community: "test_agent_cve_registry.py"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/test_agent_cve_registrypy
 ---
 
 # 7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a real…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_summary_count_is_fourteen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_59
+#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy

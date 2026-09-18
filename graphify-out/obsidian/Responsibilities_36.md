@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Community 656"
+community: "input_normalizer.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/input_normalizerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

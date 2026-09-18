@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/git-hooks/install.sh"
 type: "code"
-community: "Community 1629"
+community: "install.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1629
+  - community/installsh
 ---
 
 # install.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1629
+#graphify/code #graphify/EXTRACTED #community/installsh

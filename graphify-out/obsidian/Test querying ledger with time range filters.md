@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "test_ledger.py"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/test_ledgerpy
 ---
 
 # Test querying ledger with time range filters
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_query_with_time_filters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/test_ledgerpy

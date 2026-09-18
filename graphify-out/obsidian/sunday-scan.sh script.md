@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 1029"
+community: "sunday_run_scan_gate"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1029
+  - community/sunday_run_scan_gate
 ---
 
 # sunday-scan.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1029
+#graphify/code #graphify/EXTRACTED #community/sunday_run_scan_gate

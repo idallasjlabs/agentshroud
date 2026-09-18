@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 38"
+community: "test_approval_queue.py"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/test_approval_queuepy
 ---
 
 # Test getting a specific item by ID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_item()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_38
+#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 388"
+community: "rbac_config.py"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/rbac_configpy
 ---
 
 # revoke_approved_collaborator()
@@ -22,4 +22,4 @@ tags:
 - [[revoke_collaborator()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_388
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

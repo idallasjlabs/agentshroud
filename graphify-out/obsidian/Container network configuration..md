@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 602"
+community: ".validate_docker_compose_config()"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/validate_docker_compose_config
 ---
 
 # Container network configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkConfiguration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_602
+#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config

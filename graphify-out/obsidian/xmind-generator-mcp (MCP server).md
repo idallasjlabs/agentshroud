@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "concept"
-community: "Community 2067"
+community: "xmind-generator-mcp (MCP server)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_2067
+  - community/xmind-generator-mcp_MCP_server
 ---
 
 # xmind-generator-mcp (MCP server)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_2067
+#graphify/concept #graphify/EXTRACTED #community/xmind-generator-mcp_MCP_server

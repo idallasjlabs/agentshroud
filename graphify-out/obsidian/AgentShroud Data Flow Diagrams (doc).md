@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "Community 942"
+community: "AgentShroud Data Flow Diagrams (doc)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_942
+  - community/AgentShroud_Data_Flow_Diagrams_doc
 ---
 
 # AgentShroud Data Flow Diagrams (doc)
@@ -18,4 +18,4 @@ tags:
 - [[PII Sanitizer (Level 1 security component)]] - `references` [EXTRACTED]
 - [[Trust Manager (Level 1 security component)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_942
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams_doc

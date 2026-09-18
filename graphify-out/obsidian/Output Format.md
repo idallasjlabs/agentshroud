@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 1000"
-location: "L26"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1000
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

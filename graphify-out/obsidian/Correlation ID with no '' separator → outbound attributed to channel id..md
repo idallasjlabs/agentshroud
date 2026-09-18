@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "SlackAPIProxy"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/SlackAPIProxy
 ---
 
 # Correlation ID with no ':' separator → outbound attributed to channel id.
 
 ## Connections
-- [[dot-test_cached_corr_without_colon_falls_back_to_channel()]] - `rationale_for` [EXTRACTED]
+- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

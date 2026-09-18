@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 1053"
+community: "Skill: Code Review (CR)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1053
+  - community/Skill_Code_Review_CR
 ---
 
 # Review Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1053
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "Community 464"
+community: "post-deploy-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/post-deploy-checksh
 ---
 
 # post-deploy-check.sh
@@ -17,4 +17,4 @@ tags:
 - [[run_test()]] - `semantically_similar_to` [INFERRED]
 - [[update-agentshroud.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh

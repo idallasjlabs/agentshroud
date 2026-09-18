@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Community 369"
+community: "Core Security Principles"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_369
+  - community/Core_Security_Principles
 ---
 
 # Threat Matrix: What Gets Through
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Assessment — AgentShroud v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_369
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

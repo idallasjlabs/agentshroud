@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 590"
+community: "AgentShroud System Status Report"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_590
+  - community/AgentShroud_System_Status_Report
 ---
 
 # ✅ What's WORKING
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud System Status Report]] - `contains` [EXTRACTED]
 - [[Features Confirmed Working]] - `contains` [EXTRACTED]
-- [[Infrastructure_6]] - `contains` [EXTRACTED]
+- [[Infrastructure_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_590
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

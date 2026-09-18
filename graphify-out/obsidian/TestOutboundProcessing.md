@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 39"
+community: "A2AGovernanceProxy"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_39
+  - community/A2AGovernanceProxy
 ---
 
 # TestOutboundProcessing
 
 ## Connections
-- [[dot-test_outbound_to_trusted_peer()]] - `method` [EXTRACTED]
-- [[dot-test_outbound_to_unknown_quarantined()]] - `method` [EXTRACTED]
+- [[.test_outbound_to_trusted_peer()]] - `method` [EXTRACTED]
+- [[.test_outbound_to_unknown_quarantined()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_39
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

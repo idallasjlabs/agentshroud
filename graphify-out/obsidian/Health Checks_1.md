@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 772"
+community: "Health Checks"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_772
+  - community/Health_Checks
 ---
 
 # Health Checks
@@ -23,4 +23,4 @@ tags:
 - [[Related Notes_50]] - `contains` [EXTRACTED]
 - [[Security Health Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_772
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

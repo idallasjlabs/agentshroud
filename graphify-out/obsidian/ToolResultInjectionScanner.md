@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 101"
+community: "lifespan.py"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/lifespanpy
 ---
 
 # ToolResultInjectionScanner
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_23]] - `method` [EXTRACTED]
-- [[dot-_detect_encoded_injection()]] - `method` [EXTRACTED]
-- [[dot-_detect_unicode_obfuscation()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
-- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_23]] - `method` [EXTRACTED]
+- [[._detect_encoded_injection()]] - `method` [EXTRACTED]
+- [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
+- [[.scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[.setup_method()_3]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

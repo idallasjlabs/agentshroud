@@ -1,19 +1,19 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Community 789"
+community: "Docker Commands Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_789
+  - community/Docker_Commands_Reference
 ---
 
 # Docker Commands Reference
 
 ## Connections
-- [[Container management_2]] - `contains` [EXTRACTED]
-- [[Container status_1]] - `contains` [EXTRACTED]
+- [[Container management]] - `contains` [EXTRACTED]
+- [[Container status]] - `contains` [EXTRACTED]
 - [[Debugging read-only filesystem errors]] - `contains` [EXTRACTED]
 - [[Exec into containers]] - `contains` [EXTRACTED]
 - [[Logs_3]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Writing files to containers]] - `contains` [EXTRACTED]
 - [[docker-commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_789
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

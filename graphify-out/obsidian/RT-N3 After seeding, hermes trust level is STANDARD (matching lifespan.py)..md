@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Cross-Bot Trust & A2A Governance"
+community: "MiddlewareManager"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/MiddlewareManager
 ---
 
 # RT-N3: After seeding, hermes trust level is STANDARD (matching lifespan.py).
 
 ## Connections
-- [[dot-test_hermes_registered_with_standard_trust()]] - `rationale_for` [EXTRACTED]
+- [[.test_hermes_registered_with_standard_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 72"
+community: "HTTPConnectProxy"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/HTTPConnectProxy
 ---
 
 # HTTPConnectProxy
 
 ## Connections
-- [[dot-__init__()_114]] - `method` [EXTRACTED]
-- [[dot-_agent_id_for_peer()]] - `method` [EXTRACTED]
-- [[dot-_clamav_scan_bytes()]] - `method` [EXTRACTED]
-- [[dot-_handle_client()]] - `method` [EXTRACTED]
-- [[dot-_process_connect()]] - `method` [EXTRACTED]
-- [[dot-_relay()]] - `method` [EXTRACTED]
-- [[dot-_relay_and_scan()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
-- [[dot-start()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_10]] - `method` [EXTRACTED]
+- [[.__init__()_114]] - `method` [EXTRACTED]
+- [[._agent_id_for_peer()]] - `method` [EXTRACTED]
+- [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
+- [[._handle_client()]] - `method` [EXTRACTED]
+- [[._process_connect()]] - `method` [EXTRACTED]
+- [[._relay()]] - `method` [EXTRACTED]
+- [[._relay_and_scan()]] - `method` [EXTRACTED]
+- [[.get_stats()_18]] - `method` [EXTRACTED]
+- [[.start()_1]] - `method` [EXTRACTED]
+- [[.stop()_10]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `conceptually_related_to` [INFERRED]
@@ -106,4 +106,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

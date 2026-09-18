@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/git-hooks/pre-commit"
 type: "code"
-community: "Community 1630"
+community: "pre-commit"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1630
+  - community/pre-commit
 ---
 
 # pre-commit script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pre-commit]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1630
+#graphify/code #graphify/EXTRACTED #community/pre-commit

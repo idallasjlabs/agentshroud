@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[dot-__init__()_32]] - `method` [EXTRACTED]
-- [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `method` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `method` [EXTRACTED]
-- [[dot-health_check()_1]] - `method` [EXTRACTED]
-- [[dot-list_targets()]] - `method` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-register_bots()]] - `method` [EXTRACTED]
-- [[dot-resolve_target()]] - `method` [EXTRACTED]
+- [[.__init__()_32]] - `method` [EXTRACTED]
+- [[._build_forward_payload()]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.forward_to_agent()]] - `method` [EXTRACTED]
+- [[.forward_to_agent_stream()]] - `method` [EXTRACTED]
+- [[.health_check()_1]] - `method` [EXTRACTED]
+- [[.list_targets()]] - `method` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.register_bots()]] - `method` [EXTRACTED]
+- [[.resolve_target()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

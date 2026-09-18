@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 39"
+community: "A2AMessage"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/A2AMessage
 ---
 
 # Enum
@@ -15,4 +15,4 @@ tags:
 - [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[a2a_governance.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/A2AMessage

@@ -1,17 +1,16 @@
 ---
-source_file: "docker/config/hermes/cron/jobs.yaml"
-type: "concept"
-community: "Community 395"
+source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
+type: "code"
+community: "Jira Weekly Review"
 tags:
-  - graphify/concept
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/Jira_Weekly_Review
 ---
 
 # jira_weekly_review.py
 
 ## Connections
-- [[SCRUM-81 (Jira ticket)]] - `references` [EXTRACTED]
-- [[jira-weekly-review job]] - `references` [EXTRACTED]
+- [[Jira Weekly Review]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_395
+#graphify/code #graphify/EXTRACTED #community/Jira_Weekly_Review

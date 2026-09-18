@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 404"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # AWS Cloud Management & FinOps Agent
@@ -27,6 +27,6 @@ tags:
 - [[Resource Inventory CSV Schema_2]] - `contains` [EXTRACTED]
 - [[Tagging Standard_2]] - `contains` [EXTRACTED]
 - [[Workflow_4]] - `contains` [EXTRACTED]
-- [[hermesskillsi-awsSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_404
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

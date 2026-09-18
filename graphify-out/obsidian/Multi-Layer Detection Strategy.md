@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 1019"
+community: "P2 High Priority Incidents"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1019
+  - community/P2_High_Priority_Incidents
 ---
 
 # Multi-Layer Detection Strategy
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1019
+#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents

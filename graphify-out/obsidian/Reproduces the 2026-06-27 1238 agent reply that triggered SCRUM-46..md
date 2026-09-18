@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 140"
+community: ".test_agent_reply_from_log()"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/test_agent_reply_from_log
 ---
 
 # Reproduces the 2026-06-27 12:38 agent reply that triggered SCRUM-46.
 
 ## Connections
-- [[dot-test_agent_reply_from_log()]] - `rationale_for` [EXTRACTED]
+- [[.test_agent_reply_from_log()]] - `rationale_for` [EXTRACTED]
+- [[.test_agent_reply_from_log()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/test_agent_reply_from_log

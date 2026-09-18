@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L603"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # TestNetworkSecurity
 
 ## Connections
-- [[dot-test_browser_security_loaded()]] - `method` [EXTRACTED]
-- [[dot-test_dns_entropy_calculator()]] - `method` [EXTRACTED]
-- [[dot-test_dns_filter_config()]] - `method` [EXTRACTED]
-- [[dot-test_dns_low_entropy_legit()]] - `method` [EXTRACTED]
-- [[dot-test_egress_filter_loaded()]] - `method` [EXTRACTED]
-- [[dot-test_egress_monitor_loaded()]] - `method` [EXTRACTED]
-- [[dot-test_metadata_oversized_headers()]] - `method` [EXTRACTED]
-- [[dot-test_metadata_path_traversal_stripped()]] - `method` [EXTRACTED]
-- [[dot-test_metadata_sanitize_filename()]] - `method` [EXTRACTED]
-- [[dot-test_network_validator_importable()]] - `method` [EXTRACTED]
-- [[dot-test_oauth_redirect_mismatch()]] - `method` [EXTRACTED]
+- [[.test_browser_security_loaded()]] - `method` [EXTRACTED]
+- [[.test_dns_entropy_calculator()]] - `method` [EXTRACTED]
+- [[.test_dns_filter_config()]] - `method` [EXTRACTED]
+- [[.test_dns_low_entropy_legit()]] - `method` [EXTRACTED]
+- [[.test_egress_filter_loaded()]] - `method` [EXTRACTED]
+- [[.test_egress_monitor_loaded()]] - `method` [EXTRACTED]
+- [[.test_metadata_oversized_headers()]] - `method` [EXTRACTED]
+- [[.test_metadata_path_traversal_stripped()]] - `method` [EXTRACTED]
+- [[.test_metadata_sanitize_filename()]] - `method` [EXTRACTED]
+- [[.test_network_validator_importable()]] - `method` [EXTRACTED]
+- [[.test_oauth_redirect_mismatch()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

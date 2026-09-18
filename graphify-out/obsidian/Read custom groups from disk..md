@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 205"
+community: "rbac_config.py"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/rbac_configpy
 ---
 
 # Read custom groups from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_persisted_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_205
+#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy

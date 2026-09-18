@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Community 339"
-location: "L1"
+community: "Seccomp Profiles"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/Seccomp_Profiles
 ---
 
-# networks.md
+# Networks
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
-- [[agentshroud-bot]] - `references` [EXTRACTED]
-- [[agentshroud-gateway]] - `references` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_339
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 253"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/MiddlewareManager
 ---
 
 # System Overview.md
@@ -19,4 +19,4 @@ tags:
 - [[Home]] - `references` [EXTRACTED]
 - [[Quick Reference_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

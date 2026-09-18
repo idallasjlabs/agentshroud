@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "Community 451"
+community: "diagrams/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/diagrams/READMEmd
 ---
 
 # 04-security.md
@@ -18,4 +18,4 @@ tags:
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_451
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

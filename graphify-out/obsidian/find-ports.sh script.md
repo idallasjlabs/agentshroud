@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/find-ports.sh"
 type: "code"
-community: "Community 83"
+community: "PortManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # find-ports.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[find-ports.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/PortManager

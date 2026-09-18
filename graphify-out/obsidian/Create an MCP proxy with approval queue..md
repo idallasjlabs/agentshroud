@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "MCPToolCall"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/MCPToolCall
 ---
 
 # Create an MCP proxy with approval queue.
 
 ## Connections
-- [[dot-mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
+- [[.mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

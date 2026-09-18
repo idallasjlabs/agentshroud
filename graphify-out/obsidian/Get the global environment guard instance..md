@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "EncryptedStore"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/EncryptedStore
 ---
 
 # Get the global environment guard instance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_env_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

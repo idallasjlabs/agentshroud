@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "Community 834"
+community: "DOCKER-VPN-NETWORKING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # ActionFeed Component (Live Action Stream)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboardREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_834
+#graphify/concept #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

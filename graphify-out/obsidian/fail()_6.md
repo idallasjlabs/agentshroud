@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Community 899"
+community: "tailscale-check.sh"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/tailscale-checksh
 ---
 
 # fail()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-check.sh]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_899
+#graphify/code #graphify/EXTRACTED #community/tailscale-checksh

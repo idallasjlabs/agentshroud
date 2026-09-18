@@ -1,21 +1,21 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1301"
-location: "L381"
+community: "Troubleshooting"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1301
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Agent Not Found]] - `contains` [EXTRACTED]
-- [[Authentication Issues_1]] - `contains` [EXTRACTED]
-- [[Configuration Not Loading]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Path Permission Denied]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
+- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
+- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1301
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

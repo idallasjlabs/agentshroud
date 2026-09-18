@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-header-1500x500.png"
 type: "image"
-community: "Community 1817"
+community: "AgentShroud Twitter/X Header"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1817
+  - community/AgentShroud_Twitter/X_Header
 ---
 
 # AgentShroud Twitter/X Header
 
-#graphify/image #graphify/EXTRACTED #community/Community_1817
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Twitter/X_Header

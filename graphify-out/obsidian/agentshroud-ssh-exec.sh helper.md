@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Community 477"
+community: "hermes/SOUL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/hermes/SOULmd
 ---
 
 # agentshroud-ssh-exec.sh helper
@@ -16,4 +16,4 @@ tags:
 - [[hermesSOUL]] - `references` [EXTRACTED]
 - [[tirith command-safety scanner]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_477
+#graphify/concept #graphify/EXTRACTED #community/hermes/SOULmd

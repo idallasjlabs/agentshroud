@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # BrowserSecurityGuard
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_14]] - `method` [EXTRACTED]
-- [[dot-analyze_content()]] - `method` [EXTRACTED]
-- [[dot-analyze_screenshot()]] - `method` [EXTRACTED]
-- [[dot-can_enter_credentials()]] - `method` [EXTRACTED]
-- [[dot-check_url_reputation()]] - `method` [EXTRACTED]
-- [[dot-register_screenshot_hook()]] - `method` [EXTRACTED]
-- [[dot-test_browser_security_guard_instantiates()]] - `calls` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.__init__()_14]] - `method` [EXTRACTED]
+- [[.analyze_content()]] - `method` [EXTRACTED]
+- [[.analyze_screenshot()]] - `method` [EXTRACTED]
+- [[.can_enter_credentials()]] - `method` [EXTRACTED]
+- [[.check_url_reputation()]] - `method` [EXTRACTED]
+- [[.register_screenshot_hook()]] - `method` [EXTRACTED]
+- [[.test_browser_security_guard_instantiates()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_browser_security.py]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

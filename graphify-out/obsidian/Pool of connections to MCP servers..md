@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 108"
+community: "StdioConnection"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # Pool of connections to MCP servers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConnectionPool]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_108
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

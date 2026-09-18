@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 67"
-location: "L44"
+community: "SOCWebSocketHandler"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/SOCWebSocketHandler
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_14]] - `references` [EXTRACTED]
+- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

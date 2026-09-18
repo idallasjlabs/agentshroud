@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Community 495"
+community: "TestBenchmarkRegression"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/TestBenchmarkRegression
 ---
 
 # Baseline file must exist and contain expected keys.
 
 ## Connections
-- [[dot-test_baseline_file_exists()]] - `rationale_for` [EXTRACTED]
+- [[.test_baseline_file_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_495
+#graphify/rationale #graphify/EXTRACTED #community/TestBenchmarkRegression

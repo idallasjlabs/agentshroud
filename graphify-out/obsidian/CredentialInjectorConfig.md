@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "Community 290"
+community: "CredentialInjector"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/CredentialInjector
 ---
 
 # CredentialInjectorConfig
 
 ## Connections
-- [[dot-__init__()_2]] - `calls` [EXTRACTED]
+- [[.__init__()_2]] - `calls` [EXTRACTED]
 - [[Configuration for the credential injector.]] - `rationale_for` [EXTRACTED]
 - [[credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

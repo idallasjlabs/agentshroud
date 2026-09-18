@@ -1,17 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 195"
+community: "test_config_hot_reload.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/test_config_hot_reloadpy
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_195
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

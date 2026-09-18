@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # TestRealWorldScenarios
 
 ## Connections
-- [[dot-test_email_content_scanning()]] - `method` [EXTRACTED]
-- [[dot-test_icloud_contact_scanning()]] - `method` [EXTRACTED]
+- [[.test_email_content_scanning()]] - `method` [EXTRACTED]
+- [[.test_icloud_contact_scanning()]] - `method` [EXTRACTED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

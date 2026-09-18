@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Community 1350"
+community: "Fail-Closed Outbound: pipeline exception blocks "
 location: "line 213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1350
+  - community/Fail-Closed_Outbound_pipeline_exception_blocks_
 ---
 
 # SlackAPIProxy Owner vs Collaborator Channel Filtering Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1350
+#graphify/code #graphify/EXTRACTED #community/Fail-Closed_Outbound_pipeline_exception_blocks_

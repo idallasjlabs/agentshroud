@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # format_deploy_status()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[.get()_3]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[Value]] - `references` [EXTRACTED]
 - [[deploy_status_formats_version_and_services()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_deploy_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,18 +1,17 @@
 ---
-source_file: "BRAND.md"
-type: "document"
-community: "Community 146"
-location: "L77"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "browser-extension/package.json"
+location: "L6"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/browser-extension/packagejson
 ---
 
-# License
+# license
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

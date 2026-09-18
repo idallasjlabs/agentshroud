@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 305"
+community: "Mode A — Single task"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/Mode_A__Single_task
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
@@ -22,4 +22,4 @@ tags:
 - [[Tools you have for this workflow_2]] - `contains` [EXTRACTED]
 - [[hermesskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_305
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

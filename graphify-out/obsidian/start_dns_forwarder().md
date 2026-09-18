@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 573"
+community: "DNSForwarderProtocol"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/DNSForwarderProtocol
 ---
 
 # start_dns_forwarder()
 
 ## Connections
-- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
+- [[.test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
 - [[DNSForwarderProtocol]] - `calls` [EXTRACTED]
 - [[DatagramTransport]] - `references` [EXTRACTED]
 - [[Start the DNS forwarding server with optional blocklist.      Returns the transp]] - `rationale_for` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[main()_26]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

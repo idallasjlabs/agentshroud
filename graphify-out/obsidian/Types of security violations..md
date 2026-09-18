@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Community 183"
+community: "PipelineAction"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/PipelineAction
 ---
 
 # Types of security violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ViolationType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_183
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

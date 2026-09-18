@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 66"
+community: "test_soc_bots.py"
 location: "L810"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/test_soc_botspy
 ---
 
 # _make_m6_bot_config()
 
 ## Connections
-- [[dot-test_bots_returns_correct_structure()]] - `calls` [EXTRACTED]
-- [[dot-test_bots_returns_default_true_on_default_bot()]] - `calls` [EXTRACTED]
-- [[dot-test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
+- [[.test_bots_returns_correct_structure()]] - `calls` [EXTRACTED]
+- [[.test_bots_returns_default_true_on_default_bot()]] - `calls` [EXTRACTED]
+- [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "Community 51"
+community: "TestSSRFDetection"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/TestSSRFDetection
 ---
 
 # SSRF blocking — the one hard block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSRFDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_51
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

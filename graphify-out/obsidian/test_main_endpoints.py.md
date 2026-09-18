@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/ingest_api/mainpy
 ---
 
 # test_main_endpoints.py
@@ -32,4 +32,4 @@ tags:
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

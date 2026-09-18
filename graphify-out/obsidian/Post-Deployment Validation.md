@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 77"
+community: "Post-Deployment Validation"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Post-Deployment_Validation
 ---
 
 # Post-Deployment Validation
@@ -16,4 +16,4 @@ tags:
 - [[Functional Testing]] - `contains` [EXTRACTED]
 - [[Security Validation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Post-Deployment_Validation

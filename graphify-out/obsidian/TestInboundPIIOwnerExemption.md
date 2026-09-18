@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L724"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # TestInboundPIIOwnerExemption
 
 ## Connections
-- [[dot-_redacting_pii()]] - `method` [EXTRACTED]
-- [[dot-test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
-- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
+- [[._redacting_pii()]] - `method` [EXTRACTED]
+- [[.test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
+- [[.test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

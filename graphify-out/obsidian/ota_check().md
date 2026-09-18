@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Community 1011"
+community: "ota.c"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/otac
 ---
 
 # ota_check()
@@ -18,4 +18,4 @@ tags:
 - [[esp_err_t]] - `references` [EXTRACTED]
 - [[ota.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1011
+#graphify/code #graphify/EXTRACTED #community/otac

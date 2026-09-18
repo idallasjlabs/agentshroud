@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 300"
+community: "Mode A — Single task"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/Mode_A__Single_task
 ---
 
 # Step 3 — Write and edit code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_300
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # Both bots must be reachable via the same router without conflict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_and_openclaw_coexist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

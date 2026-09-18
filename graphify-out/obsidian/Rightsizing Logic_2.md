@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 404"
+community: "Decision Framework"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/Decision_Framework
 ---
 
 # Rightsizing Logic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_404
+#graphify/document #graphify/EXTRACTED #community/Decision_Framework

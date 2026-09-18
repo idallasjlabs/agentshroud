@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "code"
-community: "Community 1625"
+community: "Release Workflow"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1625
+  - community/Release_Workflow
 ---
 
 # Release Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TagVersion Sync Verification]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1625
+#graphify/code #graphify/EXTRACTED #community/Release_Workflow

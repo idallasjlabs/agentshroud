@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "RBACConfig"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/RBACConfig
 ---
 
 # UserSessionManager.get_merged_context()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RBACConfig_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

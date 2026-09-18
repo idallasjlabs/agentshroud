@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 500"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_500
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Test Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_500
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

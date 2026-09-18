@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Community 864"
+community: "LOW Findings"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_864
+  - community/LOW_Findings
 ---
 
 # R3-L1: No Global Security Headers Middleware (Reopened from R2-L1)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOW Findings_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_864
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings

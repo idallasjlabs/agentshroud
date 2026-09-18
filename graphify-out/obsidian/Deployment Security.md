@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 146"
+community: "AgentShroud Security Architecture"
 location: "L424"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Deployment Security
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[Recommended Production Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

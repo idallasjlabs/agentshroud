@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 74"
+community: "DelegationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/DelegationManager
 ---
 
 # ValueError
@@ -14,4 +14,4 @@ tags:
 - [[DelegationError]] - `inherits` [EXTRACTED]
 - [[SkillScanError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

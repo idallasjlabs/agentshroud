@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 454"
+community: "start-agentshroud.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_454
+  - community/start-agentshroudsh
 ---
 
 # start-agentshroud.sh
@@ -35,4 +35,4 @@ tags:
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_454
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

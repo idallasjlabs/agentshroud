@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # ContainerConfig
@@ -18,4 +18,4 @@ tags:
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[_make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/INFERRED #community/AgentRegistry

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 710"
+community: "log_sanitizer.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/log_sanitizerpy
 ---
 
 # log_sanitizer.py
@@ -18,8 +18,8 @@ tags:
 - [[Pattern Taxonomy]] - `contains` [EXTRACTED]
 - [[Purpose_171]] - `contains` [EXTRACTED]
 - [[Related_46]] - `contains` [EXTRACTED]
-- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Responsibilities_43]] - `contains` [EXTRACTED]
 - [[Threat Model_26]] - `contains` [EXTRACTED]
 - [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_710
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 398"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # GSDE&G Development Master Checklist Skill
 
 ## Connections
-- [[dot-agentsskillsi-mcREADME]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor SKILL (OpenClaw)]] - `references` [EXTRACTED]
 - [[Code Review (CR) SKILL (OpenClaw)]] - `references` [EXTRACTED]
 - [[GIT-GUARD Skill]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

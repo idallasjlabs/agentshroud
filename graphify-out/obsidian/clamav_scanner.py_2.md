@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 56"
+community: "EncryptedStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/EncryptedStore
 ---
 
 # clamav_scanner.py
@@ -27,4 +27,4 @@ tags:
 - [[update_virus_db()]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

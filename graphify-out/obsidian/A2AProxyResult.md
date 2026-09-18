@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 183"
+community: "A2AProxyResult"
 location: "L83"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_183
+  - community/A2AProxyResult
 ---
 
 # A2AProxyResult
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-process_agent_card_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
+- [[._audit()]] - `references` [EXTRACTED]
+- [[.process_agent_card_request()]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `references` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_proxy_result_defaults_are_safe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_183
+#graphify/code #graphify/INFERRED #community/A2AProxyResult

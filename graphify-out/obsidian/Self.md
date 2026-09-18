@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # Self
 
 ## Connections
-- [[dot-new()]] - `references` [EXTRACTED]
-- [[dot-new()_1]] - `references` [EXTRACTED]
-- [[dot-new()_2]] - `references` [EXTRACTED]
-- [[dot-ok()_1]] - `references` [EXTRACTED]
-- [[dot-with()]] - `references` [EXTRACTED]
+- [[.new()]] - `references` [EXTRACTED]
+- [[.new()_1]] - `references` [EXTRACTED]
+- [[.new()_2]] - `references` [EXTRACTED]
+- [[.ok()_1]] - `references` [EXTRACTED]
+- [[.with()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "Community 791"
+community: "record_decision"
 location: "229"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_791
+  - community/record_decision
 ---
 
 # CredentialInjector.scan_for_credential_leak
@@ -15,4 +15,4 @@ tags:
 - [[A2AGovernanceProxy._sanitize_message]] - `semantically_similar_to` [INFERRED]
 - [[PIISanitizer.block_credentials]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_791
+#graphify/code #graphify/INFERRED #community/record_decision

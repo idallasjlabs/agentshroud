@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 178"
+community: "AgentShroud™ README"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/AgentShroud_README
 ---
 
 # Web Control Center
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Control Centers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

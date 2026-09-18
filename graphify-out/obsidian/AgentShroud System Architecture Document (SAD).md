@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Community 727"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # AgentShroud System Architecture Document (SAD)
@@ -20,4 +20,4 @@ tags:
 - [[Two-Network Docker Architecture]] - `contains` [EXTRACTED]
 - [[system-architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

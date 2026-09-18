@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # LedgerConfig
 
 ## Connections
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-ledger()]] - `calls` [EXTRACTED]
-- [[dot-ledger()_1]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[Any_26]] - `uses` [INFERRED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.ledger()]] - `calls` [EXTRACTED]
+- [[.ledger()_1]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]
@@ -75,4 +75,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/SSHProxy

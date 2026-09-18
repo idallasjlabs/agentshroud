@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-16x16.png"
 type: "image"
-community: "Community 377"
+community: "brand-guidelines.md"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_377
+  - community/brand-guidelinesmd
 ---
 
 # App Icon 16x16 (AgentShroud logo mark)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Logo Usage Rules]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_377
+#graphify/image #graphify/INFERRED #community/brand-guidelinesmd

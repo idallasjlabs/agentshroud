@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
+community: "DraftEntry"
 location: "L1129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/DraftEntry
 ---
 
 # _intel_verifier()
@@ -18,4 +18,4 @@ tags:
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

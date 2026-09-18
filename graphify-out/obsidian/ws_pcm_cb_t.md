@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 352"
+community: "voice_task"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_352
+  - community/voice_task
 ---
 
 # ws_pcm_cb_t
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ws_client_create]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_352
+#graphify/code #graphify/EXTRACTED #community/voice_task

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 704"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_704
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Docker says "Cannot connect to Docker daemon"
 
 ## Connections
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[Troubleshooting_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_704
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "approval.py"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/approvalpy
 ---
 
 # list_pending_approvals()
@@ -17,4 +17,4 @@ tags:
 - [[Request_3]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/approvalpy

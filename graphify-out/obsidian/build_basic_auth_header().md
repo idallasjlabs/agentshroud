@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 165"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # build_basic_auth_header()
@@ -16,4 +16,4 @@ tags:
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

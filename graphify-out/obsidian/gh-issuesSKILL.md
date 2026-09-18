@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 1087"
+community: "gh-issues/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1087
+  - community/gh-issues/SKILLmd
 ---
 
 # gh-issues/SKILL.md
@@ -20,4 +20,4 @@ tags:
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 - [[githubSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1087
+#graphify/document #graphify/EXTRACTED #community/gh-issues/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 173"
+community: "Incident Response Playbook — AgentShroud"
 location: "L216"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Internal Alert (Telegram)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 618"
+community: "Apple Reminders CLI (remindctl)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # View Reminders
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Commands_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_618
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

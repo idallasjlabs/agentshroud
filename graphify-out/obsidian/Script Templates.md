@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 1340"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1340
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Script Templates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1340
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

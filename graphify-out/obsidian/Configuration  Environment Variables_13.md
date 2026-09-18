@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "Community 647"
+community: "telegram_proxy.py"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/telegram_proxypy
 ---
 
 # Configuration / Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_647
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

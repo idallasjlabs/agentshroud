@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Community 578"
+community: "SECURITY_VALUE_PROPOSITION.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # SECURITY-POLICY-FINAL.md
@@ -17,4 +17,4 @@ tags:
 - [[CREDENTIAL-SECURITY-POLICY]] - `cites` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Community 109"
+community: "PipelineAction"
 location: "L513"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/PipelineAction
 ---
 
 # Process an inbound message through the full security pipeline.
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `rationale_for` [EXTRACTED]
+- [[._process_inbound_core()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_109
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

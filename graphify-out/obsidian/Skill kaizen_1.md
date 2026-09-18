@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 1539"
+community: "hermes/skills/i-kaizen/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1539
+  - community/hermes/skills/i-kaizen/SKILLmd
 ---
 
 # Skill: kaizen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermesskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1539
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kaizen/SKILLmd

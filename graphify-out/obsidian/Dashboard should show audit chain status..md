@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "Community 145"
+community: "ProxyDashboard"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_145
+  - community/ProxyDashboard
 ---
 
 # Dashboard should show audit chain status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_audit_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_145
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

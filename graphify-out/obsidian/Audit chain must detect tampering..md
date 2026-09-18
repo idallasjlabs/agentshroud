@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Community 92"
+community: "test_redteam_probes.py"
 location: "L339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/test_redteam_probespy
 ---
 
 # Audit chain must detect tampering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_tamper_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy

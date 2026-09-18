@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 1363"
+community: "SECTION 7: FILING CHECKLIST"
 location: "L794"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1363
+  - community/SECTION_7_FILING_CHECKLIST
 ---
 
 # Post-Filing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1363
+#graphify/document #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST

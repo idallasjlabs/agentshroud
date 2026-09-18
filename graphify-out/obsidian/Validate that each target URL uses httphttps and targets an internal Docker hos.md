@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Multi-Agent Router & Chat UI"
+community: "SSHProxy"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/SSHProxy
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
 
 ## Connections
-- [[dot-validate_targets()]] - `rationale_for` [EXTRACTED]
+- [[.validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

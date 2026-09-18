@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 487"
-location: "L33"
+community: "export-bot-conversations.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/export-bot-conversationspy
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_487
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

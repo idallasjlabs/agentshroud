@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L310"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # Email regex should not be vulnerable to ReDoS.
 
 ## Connections
-- [[dot-test_regex_redos_email()]] - `rationale_for` [EXTRACTED]
+- [[.test_regex_redos_email()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

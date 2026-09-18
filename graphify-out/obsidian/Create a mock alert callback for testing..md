@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # Create a mock alert callback for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mock_alert_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/rationale #graphify/EXTRACTED #community/Enum

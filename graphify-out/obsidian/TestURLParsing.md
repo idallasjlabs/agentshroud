@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # TestURLParsing
 
 ## Connections
-- [[dot-test_bare_hostname()]] - `method` [EXTRACTED]
-- [[dot-test_full_url()]] - `method` [EXTRACTED]
-- [[dot-test_host_port_format()]] - `method` [EXTRACTED]
+- [[.test_bare_hostname()]] - `method` [EXTRACTED]
+- [[.test_full_url()]] - `method` [EXTRACTED]
+- [[.test_host_port_format()]] - `method` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_81
+#graphify/code #graphify/INFERRED #community/EgressPolicy

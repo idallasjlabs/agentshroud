@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 452"
-location: "L27"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_452
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

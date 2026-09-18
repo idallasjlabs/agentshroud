@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/security/security-audit.sh"
 type: "code"
-community: "Community 1018"
+community: "quick-setup.sh script"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1018
+  - community/quick-setupsh_script
 ---
 
 # security-audit.sh script
@@ -15,4 +15,4 @@ tags:
 - [[quick-setup.sh script]] - `calls` [EXTRACTED]
 - [[security-audit.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1018
+#graphify/code #graphify/EXTRACTED #community/quick-setupsh_script

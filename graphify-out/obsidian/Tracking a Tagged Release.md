@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Community 538"
+community: "Update AgentShroud"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Update_AgentShroud
 ---
 
 # Tracking a Tagged Release
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Update from Git]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

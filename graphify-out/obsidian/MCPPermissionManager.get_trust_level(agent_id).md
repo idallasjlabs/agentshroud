@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 697"
+community: "mcp_permissions.py"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_697
+  - community/mcp_permissionspy
 ---
 
 # MCPPermissionManager.get_trust_level(agent_id)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_697
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

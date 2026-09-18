@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 37"
+community: ".proxy_messages()"
 location: "L755"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/proxy_messages
 ---
 
 # Build a structured 503 for an unreachable local backend. Logs one WARNING per…
 
 ## Connections
-- [[dot-_local_backend_unavailable_response()]] - `rationale_for` [EXTRACTED]
+- [[._local_backend_unavailable_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

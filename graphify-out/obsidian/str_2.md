@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # str
 
 ## Connections
+- [[A2ADecision_1]] - `inherits` [EXTRACTED]
+- [[A2AMessageType_1]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action]] - `inherits` [EXTRACTED]
@@ -18,6 +20,7 @@ tags:
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[AuditResult_1]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
 - [[Decision_1]] - `inherits` [EXTRACTED]
 - [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 - [[DisclosureCategory]] - `inherits` [EXTRACTED]
@@ -54,6 +57,7 @@ tags:
 - [[ToolTier_1]] - `inherits` [EXTRACTED]
 - [[URLVerdict]] - `inherits` [EXTRACTED]
 - [[UserRole]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

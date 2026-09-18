@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 552"
+community: "AgentShroud Security Value Proposition - REVISED"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_552
+  - community/AgentShroud_Security_Value_Proposition_-_REVISED
 ---
 
 # Scenario 1: Multi-User Bot Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Revised Threat Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_552
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED

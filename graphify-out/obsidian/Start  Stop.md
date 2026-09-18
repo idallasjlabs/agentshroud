@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 820"
+community: "Quick Reference — AgentShroud"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Start / Stop
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

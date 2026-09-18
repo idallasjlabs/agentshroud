@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # Verify resource check methods return False (deny) on exception.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardFailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

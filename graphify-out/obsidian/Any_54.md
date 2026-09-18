@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 423"
-location: "L369"
+community: "OutboundInfoFilter"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/OutboundInfoFilter
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[.__init__()_147]] - `references` [EXTRACTED]
+- [[._compile_patterns()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_423
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

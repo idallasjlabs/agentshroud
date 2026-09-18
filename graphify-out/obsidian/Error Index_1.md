@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Community 255"
+community: "Error Index"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_255
+  - community/Error_Index
 ---
 
 # Error Index
@@ -23,4 +23,4 @@ tags:
 - [[Related Notes_19]] - `contains` [EXTRACTED]
 - [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_255
+#graphify/document #graphify/EXTRACTED #community/Error_Index

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 111"
+community: "10. Troubleshooting"
 location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/10_Troubleshooting
 ---
 
 # "Action requires approval but none granted"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_111
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

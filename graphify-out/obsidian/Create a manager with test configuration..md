@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 715"
+community: "TestKeyRotationManager"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_715
+  - community/TestKeyRotationManager
 ---
 
 # Create a manager with test configuration.
 
 ## Connections
-- [[dot-manager()_1]] - `rationale_for` [EXTRACTED]
+- [[.manager()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_715
+#graphify/rationale #graphify/EXTRACTED #community/TestKeyRotationManager

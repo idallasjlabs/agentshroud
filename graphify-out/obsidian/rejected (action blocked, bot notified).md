@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.svg"
 type: "concept"
-community: "Community 1360"
+community: "pending (bot submits action requiring approval)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/pending_bot_submits_action_requiring_approval
 ---
 
 # rejected (action blocked, bot notified)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[pending (bot submits action requiring approval)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1360
+#graphify/concept #graphify/EXTRACTED #community/pending_bot_submits_action_requiring_approval

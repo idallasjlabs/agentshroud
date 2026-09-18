@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
 type: "document"
-community: "Community 283"
-location: "L254"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_283
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
-# OMLX MoE Streaming Health Check
+# oMLX MoE Streaming Health Check
 
 ## Connections
-- [[Job details]] - `contains` [EXTRACTED]
+- [[MoE (Mixture-of-Experts) Streaming Inference]] - `references` [EXTRACTED]
+- [[oMLX (local model backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_283
+#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

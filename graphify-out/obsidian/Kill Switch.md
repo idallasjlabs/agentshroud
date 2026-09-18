@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # Kill Switch
@@ -22,4 +22,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

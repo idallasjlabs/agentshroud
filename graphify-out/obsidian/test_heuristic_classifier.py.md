@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "Community 212"
+community: "TestHeuristicClassifier"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/TestHeuristicClassifier
 ---
 
 # test_heuristic_classifier.py
@@ -17,4 +17,4 @@ tags:
 - [[TestHeuristicClassifier]] - `contains` [EXTRACTED]
 - [[heuristic_classifier.py (HeuristicClassifier)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_212
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

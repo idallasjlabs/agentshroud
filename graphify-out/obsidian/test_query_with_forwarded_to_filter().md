@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "test_ledger.py"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/test_ledgerpy
 ---
 
 # test_query_with_forwarded_to_filter()
@@ -15,4 +15,4 @@ tags:
 - [[Test querying ledger with forwarded_to filter]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/test_ledgerpy

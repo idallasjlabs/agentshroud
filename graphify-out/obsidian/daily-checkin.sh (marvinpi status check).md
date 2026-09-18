@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "Community 1523"
+community: "Cron: AgentShroud Daily Check-in"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1523
+  - community/Cron_AgentShroud_Daily_Check-in
 ---
 
 # daily-checkin.sh (marvin/pi status check)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Cron AgentShroud Daily Check-in]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1523
+#graphify/code #graphify/INFERRED #community/Cron_AgentShroud_Daily_Check-in

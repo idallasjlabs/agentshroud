@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/deploy.sh"
 type: "code"
-community: "Community 1474"
+community: "deploy.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1474
+  - community/deploysh
 ---
 
 # deploy.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deploy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1474
+#graphify/code #graphify/EXTRACTED #community/deploysh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 521"
+community: "BlockingPipeline"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_521
+  - community/BlockingPipeline
 ---
 
 # Pipeline that detects base64-encoded injections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EncodingDetectingPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_521
+#graphify/rationale #graphify/EXTRACTED #community/BlockingPipeline

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/pyproject.toml"
 type: "code"
-community: "Community 2000"
+community: "agentshroud-gateway"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2000
+  - community/agentshroud-gateway
 ---
 
 # agentshroud-gateway
 
-#graphify/code #graphify/EXTRACTED #community/Community_2000
+#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway

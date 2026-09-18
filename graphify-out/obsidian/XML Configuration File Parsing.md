@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 238"
+community: "The 8D Investigation Process"
 location: "L497"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/The_8D_Investigation_Process
 ---
 
 # XML Configuration File Parsing
@@ -17,4 +17,4 @@ tags:
 - [[What to Extract]] - `contains` [EXTRACTED]
 - [[Why This Matters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_238
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

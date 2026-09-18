@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "Community 107"
+community: "_make_token()"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/_make_token
 ---
 
 # TestAudienceValidation
 
 ## Connections
-- [[dot-test_array_audience_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_correct_audience_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_missing_audience_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_audience_rejected()]] - `method` [EXTRACTED]
+- [[.test_array_audience_accepted()]] - `method` [EXTRACTED]
+- [[.test_correct_audience_accepted()]] - `method` [EXTRACTED]
+- [[.test_missing_audience_rejected()]] - `method` [EXTRACTED]
+- [[.test_wrong_audience_rejected()]] - `method` [EXTRACTED]
 - [[AudienceMismatch]] - `uses` [INFERRED]
 - [[test_token_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_107
+#graphify/code #graphify/EXTRACTED #community/_make_token

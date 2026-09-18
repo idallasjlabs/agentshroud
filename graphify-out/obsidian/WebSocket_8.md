@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: ".connect()"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/connect
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()_2]] - `references` [EXTRACTED]
-- [[dot-disconnect()_1]] - `references` [EXTRACTED]
+- [[.connect()_2]] - `references` [EXTRACTED]
+- [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/connect

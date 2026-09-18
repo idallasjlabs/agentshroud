@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 165"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Move an issue to the named status (matched against available transitions).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[transition_issue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_165
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

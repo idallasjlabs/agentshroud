@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 381"
+community: "ssh-configuration.md"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/ssh-configurationmd
 ---
 
 # Step 3: Set up SSH keys
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_381
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

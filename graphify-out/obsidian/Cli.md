@@ -1,20 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "Community 36"
-location: "L32"
+source_file: "skills/openclaw/voice-call/SKILL.md"
+type: "document"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+location: "L19"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
-# Cli
+# CLI
 
 ## Connections
-- [[Commands_2]] - `references` [EXTRACTED]
-- [[OutputFormat]] - `references` [EXTRACTED]
-- [[String]] - `references` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[Voice Call]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

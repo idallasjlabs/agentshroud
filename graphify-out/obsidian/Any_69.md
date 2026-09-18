@@ -1,17 +1,17 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Community 668"
-location: "L39"
+community: "soc.js"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/socjs
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[.to_dict()_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_668
+#graphify/code #graphify/EXTRACTED #community/socjs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 77"
+community: "4. Handling Alerts"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/4_Handling_Alerts
 ---
 
 # Alert Severity Levels
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Handling Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/4_Handling_Alerts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "SOCWebSocketHandler"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/SOCWebSocketHandler
 ---
 
 # Manages a single /ws/soc client connection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOCWebSocketHandler_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

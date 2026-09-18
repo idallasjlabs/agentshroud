@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 664"
+community: "test_scorecard_scoring.py"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_664
+  - community/test_scorecard_scoringpy
 ---
 
 # not_run_trivy()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_664
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

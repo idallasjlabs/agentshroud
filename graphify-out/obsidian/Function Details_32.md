@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 656"
+community: "falco_monitor.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/falco_monitorpy
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
 - [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

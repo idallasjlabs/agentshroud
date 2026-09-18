@@ -1,17 +1,20 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Community 79"
+community: "test_anthropic_openai_translator.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # anthropic_to_openai_request()
 
 ## Connections
+- [[LLMProxy._failover_request]] - `calls` [EXTRACTED]
+- [[LLMProxy._local_secondary_failover_request]] - `calls` [EXTRACTED]
+- [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - `rationale_for` [EXTRACTED]
 - [[_anthropic_content_to_openai()]] - `calls` [EXTRACTED]
 - [[_anthropic_system_to_openai()]] - `calls` [EXTRACTED]
@@ -29,4 +32,4 @@ tags:
 - [[test_translator_tool_result_becomes_tool_role_message()]] - `calls` [EXTRACTED]
 - [[test_translator_tool_use_blocks()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

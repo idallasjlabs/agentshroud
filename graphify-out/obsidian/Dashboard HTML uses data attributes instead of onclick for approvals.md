@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # Dashboard HTML uses data attributes instead of onclick for approvals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_xss_prevention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

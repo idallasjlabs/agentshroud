@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 1136"
-location: "L160"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8G"
+location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1136
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Docker Permission Denied]] - `contains` [EXTRACTED]
+- [[High Temperature]] - `contains` [EXTRACTED]
+- [[Out of Memory]] - `contains` [EXTRACTED]
+- [[SSH Connection Refused]] - `contains` [EXTRACTED]
+- [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1136
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L419"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # TestEmitPrivacyEvent
 
 ## Connections
-- [[dot-test_emit_swallows_bus_errors()]] - `method` [EXTRACTED]
-- [[dot-test_emits_event_to_bus()]] - `method` [EXTRACTED]
+- [[.test_emit_swallows_bus_errors()]] - `method` [EXTRACTED]
+- [[.test_emits_event_to_bus()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_143
+#graphify/code #graphify/INFERRED #community/StdioConnection

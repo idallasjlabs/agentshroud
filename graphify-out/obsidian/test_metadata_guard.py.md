@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Community 598"
+community: "SessionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/SessionManager
 ---
 
 # test_metadata_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[TestDocumentTagging]] - `contains` [EXTRACTED]
 - [[TestMetadataGuard]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_598
+#graphify/code #graphify/EXTRACTED #community/SessionManager

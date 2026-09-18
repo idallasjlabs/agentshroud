@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 309"
+community: "Skill: UI Expert (UI)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Skill_UI_Expert_UI
 ---
 
 # Skill: UI Expert (UI)
@@ -24,6 +24,6 @@ tags:
 - [[Role_29]] - `contains` [EXTRACTED]
 - [[Rules_6]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-uiSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_309
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

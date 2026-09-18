@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "SOCWebSocketHandler"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/SOCWebSocketHandler
 ---
 
 # TestHandlerRun
 
 ## Connections
-- [[dot-_handler()]] - `method` [EXTRACTED]
-- [[dot-test_command_invalid_json_ignored()]] - `method` [EXTRACTED]
-- [[dot-test_command_message_updates_subscription()]] - `method` [EXTRACTED]
-- [[dot-test_initial_invalid_json_ignored()]] - `method` [EXTRACTED]
-- [[dot-test_initial_subscribe_message_sets_filter()]] - `method` [EXTRACTED]
-- [[dot-test_initial_timeout_subscribes_to_all()]] - `method` [EXTRACTED]
-- [[dot-test_inner_timeout_continues_loop()]] - `method` [EXTRACTED]
+- [[._handler()]] - `method` [EXTRACTED]
+- [[.test_command_invalid_json_ignored()]] - `method` [EXTRACTED]
+- [[.test_command_message_updates_subscription()]] - `method` [EXTRACTED]
+- [[.test_initial_invalid_json_ignored()]] - `method` [EXTRACTED]
+- [[.test_initial_subscribe_message_sets_filter()]] - `method` [EXTRACTED]
+- [[.test_initial_timeout_subscribes_to_all()]] - `method` [EXTRACTED]
+- [[.test_inner_timeout_continues_loop()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

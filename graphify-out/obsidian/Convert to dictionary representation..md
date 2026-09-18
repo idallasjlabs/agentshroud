@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 387"
+community: "AuditStore"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/AuditStore
 ---
 
 # Convert to dictionary representation.
 
 ## Connections
-- [[dot-to_dict()_11]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_387
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

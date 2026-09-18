@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: "Community 451"
+community: "02-infrastructure.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/02-infrastructuremd
 ---
 
 # Dependency Graph — Component Deployment Order
@@ -14,4 +14,4 @@ tags:
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 - [[Deployment Diagram — What Runs Where]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_451
+#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "Community 1142"
+community: "AgentShroud Sequence Diagrams (doc)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1142
+  - community/AgentShroud_Sequence_Diagrams_doc
 ---
 
 # Web Fetch Flow (URL analysis, SSRF protection, content scanning)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1142
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc

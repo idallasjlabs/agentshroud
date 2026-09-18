@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "rationale"
-community: "Community 785"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # ARM64 Seccomp Profile Requirement
@@ -14,4 +14,4 @@ tags:
 - [[Seccomp Profile Conflict (x86_64)]] - `conceptually_related_to` [INFERRED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_785
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

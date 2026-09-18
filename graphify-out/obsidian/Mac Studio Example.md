@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 1106"
+community: "Step-by-Step Installation"
 location: "L675"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/Step-by-Step_Installation
 ---
 
 # Mac Studio Example
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1106
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

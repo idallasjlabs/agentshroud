@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "Community 1059"
+community: "Trivy action immutable SHA pin (CI supply chain)"
 location: "L200-204"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_1059
+  - community/Trivy_action_immutable_SHA_pin_CI_supply_chain
 ---
 
 # Trivy action immutable SHA pin (CI supply chain)
@@ -16,4 +16,4 @@ tags:
 - [[Upstream-advisory watch cron jobs (8 toolchain components)]] - `conceptually_related_to` [INFERRED]
 - [[v1.5.1 — A2A Governance patch release]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_1059
+#graphify/rationale #graphify/INFERRED #community/Trivy_action_immutable_SHA_pin_CI_supply_chain

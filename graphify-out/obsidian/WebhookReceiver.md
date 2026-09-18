@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "WebhookReceiver"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/WebhookReceiver
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_141]] - `method` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `method` [EXTRACTED]
-- [[dot-_extract_message()]] - `method` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
-- [[dot-_extract_username()]] - `method` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `method` [EXTRACTED]
-- [[dot-_replace_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_7]] - `method` [EXTRACTED]
-- [[dot-process_webhook()]] - `method` [EXTRACTED]
-- [[dot-test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
-- [[dot-test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
-- [[dot-test_webhook_user_id_extraction()]] - `calls` [EXTRACTED]
-- [[dot-validate_signature()]] - `method` [EXTRACTED]
+- [[.__init__()_141]] - `method` [EXTRACTED]
+- [[._can_create_directory()]] - `method` [EXTRACTED]
+- [[._extract_message()]] - `method` [EXTRACTED]
+- [[._extract_user_id()_1]] - `method` [EXTRACTED]
+- [[._extract_username()]] - `method` [EXTRACTED]
+- [[._prepare_session_payload()]] - `method` [EXTRACTED]
+- [[._replace_message()]] - `method` [EXTRACTED]
+- [[.get_stats()_7]] - `method` [EXTRACTED]
+- [[.process_webhook()]] - `method` [EXTRACTED]
+- [[.test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
+- [[.test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
+- [[.test_webhook_user_id_extraction()]] - `calls` [EXTRACTED]
+- [[.validate_signature()]] - `method` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Community 504"
+community: "AgentShroud Schema Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # schema-documentation.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Schema Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 183"
+community: "PipelineAction"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_183
+  - community/PipelineAction
 ---
 
 # ViolationType
@@ -15,8 +15,8 @@ tags:
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_27]] - `uses` [INFERRED]
-- [[Any_14]] - `uses` [INFERRED]
+- [[Any_13]] - `uses` [INFERRED]
+- [[Any_26]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_183
+#graphify/code #graphify/INFERRED #community/PipelineAction

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Blue/Red Team Security Auditor Skills"
+community: "SessionContext"
 location: "L316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/SessionContext
 ---
 
 # Add a disclosure event to the session.
 
 ## Connections
-- [[dot-_add_disclosure_event()]] - `rationale_for` [EXTRACTED]
+- [[._add_disclosure_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/rationale #graphify/EXTRACTED #community/SessionContext

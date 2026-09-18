@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 211"
+community: "MCPInspector"
 location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_211
+  - community/MCPInspector
 ---
 
 # MCPInspector
 
 ## Connections
-- [[dot-__init__()_95]] - `method` [EXTRACTED]
-- [[dot-_redact_pii()]] - `method` [EXTRACTED]
-- [[dot-_scan_text()]] - `method` [EXTRACTED]
-- [[dot-_scan_value()]] - `method` [EXTRACTED]
-- [[dot-_should_block()]] - `method` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `method` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `method` [EXTRACTED]
-- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.__init__()_95]] - `method` [EXTRACTED]
+- [[._redact_pii()]] - `method` [EXTRACTED]
+- [[._scan_text()]] - `method` [EXTRACTED]
+- [[._scan_value()]] - `method` [EXTRACTED]
+- [[._should_block()]] - `method` [EXTRACTED]
+- [[.inspect_tool_call()]] - `method` [EXTRACTED]
+- [[.inspect_tool_result()]] - `method` [EXTRACTED]
+- [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
@@ -37,9 +37,9 @@ tags:
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
 - [[MCPProxy.process_tool_result]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `shares_data_with` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
@@ -90,4 +90,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_211
+#graphify/code #graphify/INFERRED #community/MCPInspector

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1136"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1136
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Atlassian: "OAuth flow failed"
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1136
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

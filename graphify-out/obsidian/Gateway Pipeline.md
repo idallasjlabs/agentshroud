@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 953"
+community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wi"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_953
+  - community/v080_Watchtower__Security_Fixes__Module_Wi
 ---
 
 # Gateway Pipeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 P0 — Security Fixes (17 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_953
+#graphify/document #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wi

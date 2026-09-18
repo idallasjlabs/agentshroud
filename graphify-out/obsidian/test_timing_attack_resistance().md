@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Community 71"
+community: "RateLimiter"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/RateLimiter
 ---
 
 # test_timing_attack_resistance()
@@ -16,4 +16,4 @@ tags:
 - [[test_security.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

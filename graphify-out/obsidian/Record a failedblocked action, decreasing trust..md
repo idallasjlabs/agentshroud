@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustLevel"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustLevel
 ---
 
 # Record a failed/blocked action, decreasing trust.
 
 ## Connections
-- [[dot-record_failure()]] - `rationale_for` [EXTRACTED]
+- [[.record_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/rationale #graphify/EXTRACTED #community/TrustLevel

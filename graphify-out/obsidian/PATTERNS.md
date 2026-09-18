@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/scripts/claude-hooks/block_credential_write.sh"
 type: "code"
-community: "Community 1440"
+community: "block_credential_write.sh"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1440
+  - community/block_credential_writesh
 ---
 
 # PATTERNS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[block_credential_write.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1440
+#graphify/code #graphify/EXTRACTED #community/block_credential_writesh

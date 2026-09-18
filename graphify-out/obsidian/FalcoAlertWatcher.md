@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 98"
+community: "falco_monitor.py"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/falco_monitorpy
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_203]] - `method` [EXTRACTED]
-- [[dot-_handle_critical()]] - `method` [EXTRACTED]
-- [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
-- [[dot-run()_6]] - `method` [EXTRACTED]
-- [[dot-stop()_12]] - `method` [EXTRACTED]
+- [[.__init__()_203]] - `method` [EXTRACTED]
+- [[._handle_critical()]] - `method` [EXTRACTED]
+- [[._process_new_alerts()]] - `method` [EXTRACTED]
+- [[.run()_6]] - `method` [EXTRACTED]
+- [[.stop()_12]] - `method` [EXTRACTED]
 - [[SecurityPipeline_1]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[Test Falco Watcher Module]] - `references` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

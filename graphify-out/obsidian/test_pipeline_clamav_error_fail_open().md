@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Community 339"
+community: "test_clamav_pipeline.py"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/test_clamav_pipelinepy
 ---
 
 # test_pipeline_clamav_error_fail_open()
@@ -18,4 +18,4 @@ tags:
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_339
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

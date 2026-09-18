@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 226"
+community: "rbac_config.py"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/rbac_configpy
 ---
 
 # Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_paused_collaborator_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_226
+#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy

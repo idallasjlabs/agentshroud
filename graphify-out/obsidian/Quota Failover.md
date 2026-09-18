@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 385"
+community: "llm_proxy.py"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_385
+  - community/llm_proxypy
 ---
 
 # Quota Failover
@@ -18,4 +18,4 @@ tags:
 - [[Stats tracked]] - `contains` [EXTRACTED]
 - [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_385
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

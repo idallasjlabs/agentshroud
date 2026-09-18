@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # BotIncidentSeverity
 
 ## Connections
-- [[dot-_missing_()]] - `method` [EXTRACTED]
-- [[dot-record_incident()]] - `references` [EXTRACTED]
-- [[dot-test_from_string()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `uses` [INFERRED]
+- [[._missing_()]] - `method` [EXTRACTED]
+- [[.record_incident()]] - `references` [EXTRACTED]
+- [[.test_from_string()]] - `calls` [EXTRACTED]
+- [[Any_13]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
@@ -32,10 +32,10 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustConfig

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: ""
 type: "code"
-community: "Community 364"
-location: "L149"
+community: "._filter_streaming_event()"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_364
+  - graphify/EXTRACTED
+  - community/_filter_streaming_event
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[._filter_streaming_event()]] - `references` [EXTRACTED]
+- [[._filter_streaming_event()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_364
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 392"
+community: "Step-by-Step Installation"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Step-by-Step_Installation
 ---
 
 # Step-by-Step Installation
@@ -21,4 +21,4 @@ tags:
 - [[Step 6 Deploy AgentShroud]] - `contains` [EXTRACTED]
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

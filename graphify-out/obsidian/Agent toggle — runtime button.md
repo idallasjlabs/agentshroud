@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 1426"
+community: "11. Current status (v1.2.0)"
 location: "L472"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1426
+  - community/11_Current_status_v120
 ---
 
 # Agent toggle — runtime button
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1426
+#graphify/document #graphify/EXTRACTED #community/11_Current_status_v120

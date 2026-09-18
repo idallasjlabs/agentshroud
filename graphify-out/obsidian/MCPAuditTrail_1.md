@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 218"
+community: "MCPAuditTrail"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_218
+  - community/MCPAuditTrail
 ---
 
 # MCPAuditTrail
 
 ## Connections
-- [[dot-__init__()_161]] - `method` [EXTRACTED]
-- [[dot-__len__()_1]] - `method` [EXTRACTED]
-- [[dot-_compute_chain_hash()]] - `method` [EXTRACTED]
-- [[dot-entries()_1]] - `method` [EXTRACTED]
-- [[dot-generate_report()]] - `method` [EXTRACTED]
-- [[dot-get_blocked_entries()]] - `method` [EXTRACTED]
-- [[dot-get_entries_for_agent()]] - `method` [EXTRACTED]
-- [[dot-get_entries_for_server()]] - `method` [EXTRACTED]
-- [[dot-get_entries_for_tool()]] - `method` [EXTRACTED]
-- [[dot-get_failed_entries()]] - `method` [EXTRACTED]
-- [[dot-last_hash()_1]] - `method` [EXTRACTED]
-- [[dot-log_tool_call()]] - `method` [EXTRACTED]
-- [[dot-log_tool_result()]] - `method` [EXTRACTED]
-- [[dot-start_call()]] - `method` [EXTRACTED]
-- [[dot-test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
-- [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-test_report_total_reflects_all_appended()]] - `calls` [EXTRACTED]
-- [[dot-test_tamper_in_retained_window_detected()_1]] - `calls` [EXTRACTED]
-- [[dot-test_verify_chain_valid_after_wrap()_1]] - `calls` [EXTRACTED]
-- [[dot-test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
-- [[dot-total_appended()_1]] - `method` [EXTRACTED]
-- [[dot-verify_chain()_1]] - `method` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.__init__()_161]] - `method` [EXTRACTED]
+- [[.__len__()_1]] - `method` [EXTRACTED]
+- [[._compute_chain_hash()]] - `method` [EXTRACTED]
+- [[.entries()_1]] - `method` [EXTRACTED]
+- [[.generate_report()]] - `method` [EXTRACTED]
+- [[.get_blocked_entries()]] - `method` [EXTRACTED]
+- [[.get_entries_for_agent()]] - `method` [EXTRACTED]
+- [[.get_entries_for_server()]] - `method` [EXTRACTED]
+- [[.get_entries_for_tool()]] - `method` [EXTRACTED]
+- [[.get_failed_entries()]] - `method` [EXTRACTED]
+- [[.last_hash()_1]] - `method` [EXTRACTED]
+- [[.log_tool_call()]] - `method` [EXTRACTED]
+- [[.log_tool_result()]] - `method` [EXTRACTED]
+- [[.start_call()]] - `method` [EXTRACTED]
+- [[.test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
+- [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
+- [[.test_report_total_reflects_all_appended()]] - `calls` [EXTRACTED]
+- [[.test_tamper_in_retained_window_detected()_1]] - `calls` [EXTRACTED]
+- [[.test_verify_chain_valid_after_wrap()_1]] - `calls` [EXTRACTED]
+- [[.test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
+- [[.total_appended()_1]] - `method` [EXTRACTED]
+- [[.verify_chain()_1]] - `method` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `semantically_similar_to` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
@@ -51,9 +51,9 @@ tags:
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `shares_data_with` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_218
+#graphify/code #graphify/INFERRED #community/MCPAuditTrail

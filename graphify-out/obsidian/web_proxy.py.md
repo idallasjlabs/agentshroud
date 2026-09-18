@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/lifespanpy
 ---
 
 # web_proxy.py
@@ -40,4 +40,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

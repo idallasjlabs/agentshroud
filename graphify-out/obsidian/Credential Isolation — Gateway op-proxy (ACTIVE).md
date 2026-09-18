@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 360"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # Credential Isolation — Gateway op-proxy (ACTIVE)
@@ -20,4 +20,4 @@ tags:
 - [[Known working credentials]] - `contains` [EXTRACTED]
 - [[What NEVER to do]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

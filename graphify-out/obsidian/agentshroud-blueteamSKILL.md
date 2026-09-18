@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Blue/Red Team Security Auditor Skills"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # agentshroud-blueteam/SKILL.md
@@ -43,4 +43,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

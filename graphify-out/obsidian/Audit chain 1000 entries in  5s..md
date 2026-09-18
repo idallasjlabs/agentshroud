@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # Audit chain: 1000 entries in < 5s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

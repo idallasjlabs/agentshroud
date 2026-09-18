@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 642"
+community: "TestOriginAwareAuthorization"
 location: "L337"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_642
+  - community/TestOriginAwareAuthorization
 ---
 
 # AgentShroud-side mitigation for the 'channel skips the check' CVE class.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOriginAwareAuthorization]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_642
+#graphify/rationale #graphify/EXTRACTED #community/TestOriginAwareAuthorization

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # UpdateRequest
 
 ## Connections
-- [[dot-test_update_request_defaults()]] - `calls` [EXTRACTED]
+- [[.test_update_request_defaults()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[upgrade_bot()_1]] - `references` [EXTRACTED]
 - [[upgrade_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/INFERRED #community/ModeRequest

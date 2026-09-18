@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Community 365"
+community: "archive_old_events()"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_365
+  - community/archive_old_events
 ---
 
 # datetime
@@ -15,4 +15,4 @@ tags:
 - [[archive_old_events()]] - `references` [EXTRACTED]
 - [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_365
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

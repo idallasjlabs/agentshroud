@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # Origin-Aware Authorization (refuse owner elevation over unverified origin)
@@ -15,4 +15,4 @@ tags:
 - [[gateway.security.tool_acl]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

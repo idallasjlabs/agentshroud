@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 35"
+community: "load_config()"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # The engine wired into MCPProxy blocks a denied call before dispatch —     the fa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_proxy_blocks_policy_denied_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/load_config

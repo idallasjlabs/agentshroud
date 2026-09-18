@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "ConsistencyScore"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/ConsistencyScore
 ---
 
 # ConsistencyScore
 
 ## Connections
-- [[dot-score_response_consistency()]] - `calls` [EXTRACTED]
+- [[.score_response_consistency()]] - `calls` [EXTRACTED]
 - [[Heuristic consistency score between a query and its response.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/ConsistencyScore

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 99"
+community: "sync-cve-registry.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # Sync per-agent CVEs into gateway/security/agent_cve_registry.py. Two…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync-cve-registry.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

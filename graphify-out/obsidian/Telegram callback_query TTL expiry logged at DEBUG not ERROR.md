@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_egress_callback_stale.py"
 type: "rationale"
-community: "Community 368"
+community: "EgressTelegramNotifier"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/EgressTelegramNotifier
 ---
 
 # Telegram callback_query TTL expiry logged at DEBUG not ERROR
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EgressTelegramNotifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_368
+#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier

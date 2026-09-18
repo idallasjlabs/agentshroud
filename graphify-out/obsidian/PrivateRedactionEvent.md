@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 175"
+community: "MCPServerConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_175
+  - community/MCPServerConfig
 ---
 
 # PrivateRedactionEvent
 
 ## Connections
-- [[dot-record_private_data_redaction()]] - `calls` [EXTRACTED]
+- [[.record_private_data_redaction()]] - `calls` [EXTRACTED]
 - [[Audit signal when admin-private data is redacted from tool results.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_175
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

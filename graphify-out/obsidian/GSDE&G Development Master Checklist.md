@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 774"
+community: "GSDE&G Development Master Checklist"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_774
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # GSDE&G Development Master Checklist
 
 ## Connections
-- [[dot-agentsskillsi-mcSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Emergency Hotfix]] - `contains` [EXTRACTED]
 - [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 2 · TDD  → `tddSKILL.md`]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Quick Commands]] - `contains` [EXTRACTED]
 - [[Skill Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_774
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

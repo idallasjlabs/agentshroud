@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # TestPIISanitizerPerformance
 
 ## Connections
-- [[dot-sanitizer()]] - `method` [EXTRACTED]
-- [[dot-test_1000_messages_under_10s()]] - `method` [EXTRACTED]
-- [[dot-test_pii_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
+- [[.sanitizer()]] - `method` [EXTRACTED]
+- [[.test_1000_messages_under_10s()]] - `method` [EXTRACTED]
+- [[.test_pii_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PII sanitizer 1000 messages in  10s.]] - `rationale_for` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/INFERRED #community/TrustManager

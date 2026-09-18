@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Community 95"
+community: "ApprovalRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/ApprovalRequest
 ---
 
 # group_router.py
@@ -16,4 +16,4 @@ tags:
 - [[GroupApprovalRouter]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "rationale"
-community: "Community 163"
+community: "OpenClaw Workspace Usage Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Docker Volume Chosen Over Bind Mount
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_DECISION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_163
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

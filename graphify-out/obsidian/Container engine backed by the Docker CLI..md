@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "rationale"
-community: "Community 359"
+community: "DockerEngine"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_359
+  - community/DockerEngine
 ---
 
 # Container engine backed by the Docker CLI.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DockerEngine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_359
+#graphify/rationale #graphify/EXTRACTED #community/DockerEngine

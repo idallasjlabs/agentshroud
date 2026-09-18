@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Community 501"
+community: "Test Augmentation Specialist"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/Test_Augmentation_Specialist
 ---
 
 # What You CANNOT Do
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_501
+#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist

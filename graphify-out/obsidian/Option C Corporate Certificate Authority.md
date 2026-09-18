@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 586"
+community: "Step-by-Step Deployment"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Step-by-Step_Deployment
 ---
 
 # Option C: Corporate Certificate Authority
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 SSL Certificate Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

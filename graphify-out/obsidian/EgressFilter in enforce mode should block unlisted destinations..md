@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # EgressFilter in enforce mode should block unlisted destinations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforceMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

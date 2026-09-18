@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # StdioConnection
 
 ## Connections
-- [[dot-__init__()_30]] - `method` [EXTRACTED]
-- [[dot-get_or_create()]] - `references` [EXTRACTED]
-- [[dot-is_running()]] - `method` [EXTRACTED]
-- [[dot-send_request()]] - `method` [EXTRACTED]
-- [[dot-start()]] - `method` [EXTRACTED]
-- [[dot-stop()_2]] - `method` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[.__init__()_30]] - `method` [EXTRACTED]
+- [[.get_or_create()]] - `references` [EXTRACTED]
+- [[.is_running()]] - `method` [EXTRACTED]
+- [[.send_request()]] - `method` [EXTRACTED]
+- [[.start()]] - `method` [EXTRACTED]
+- [[.stop()_2]] - `method` [EXTRACTED]
+- [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[.test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
+- [[.test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/StdioConnection

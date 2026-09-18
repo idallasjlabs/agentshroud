@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 175"
+community: "MCPServerConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/MCPServerConfig
 ---
 
 # mcp_proxy.py
@@ -40,4 +40,4 @@ tags:
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_175
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

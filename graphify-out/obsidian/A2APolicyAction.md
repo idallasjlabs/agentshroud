@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 289"
+community: "A2AMethod"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/A2AMethod
 ---
 
 # A2APolicyAction
 
 ## Connections
-- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
+- [[.from_dict()_2]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_289
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

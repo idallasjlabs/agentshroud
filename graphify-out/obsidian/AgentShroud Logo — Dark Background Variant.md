@@ -1,11 +1,11 @@
 ---
 source_file: "branding/agentshroud-logo-dark-bg.png"
 type: "image"
-community: "Community 831"
+community: "branding/README.md"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_831
+  - community/branding/READMEmd
 ---
 
 # AgentShroud Logo — Dark Background Variant
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_831
+#graphify/image #graphify/INFERRED #community/branding/READMEmd

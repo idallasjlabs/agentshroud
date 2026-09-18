@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 382"
+community: "main.py"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/mainpy
 ---
 
 # Endpoints
@@ -24,4 +24,4 @@ tags:
 - [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - `contains` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/mainpy

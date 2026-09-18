@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Community 157"
+community: "SecurityConfig"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_157
+  - community/SecurityConfig
 ---
 
 # Test that monitor mode warnings contain required information.
 
 ## Connections
-- [[dot-test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
+- [[.test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_157
+#graphify/rationale #graphify/EXTRACTED #community/SecurityConfig

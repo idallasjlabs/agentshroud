@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 849"
+community: "test_skill_guard.py"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_849
+  - community/test_skill_guardpy
 ---
 
 # SkillScanError
 
 ## Connections
-- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[.scan_file()_1]] - `calls` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
 - [[Raised when SkillGuard is handed content it cannot scan.]] - `rationale_for` [EXTRACTED]
 - [[ScanResult]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_849
+#graphify/code #graphify/INFERRED #community/test_skill_guardpy

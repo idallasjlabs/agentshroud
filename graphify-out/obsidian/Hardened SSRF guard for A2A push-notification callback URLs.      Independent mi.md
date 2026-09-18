@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 75"
+community: "test_a2a_policy.py"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/test_a2a_policypy
 ---
 
 # Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_safe_a2a_callback_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

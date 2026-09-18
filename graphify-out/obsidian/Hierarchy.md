@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "brand-guidelines.md"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/brand-guidelinesmd
 ---
 
 # Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/brand-guidelinesmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # dns_filter.py
@@ -19,7 +19,8 @@ tags:
 - [[EntropyCalculator]] - `contains` [EXTRACTED]
 - [[TunnelingPattern]] - `contains` [EXTRACTED]
 - [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

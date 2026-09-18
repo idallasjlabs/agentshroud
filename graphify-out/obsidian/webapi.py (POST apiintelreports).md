@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 45"
+community: "FetchOutcome"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/FetchOutcome
 ---
 
 # web/api.py (POST /api/intel/reports)
@@ -17,4 +17,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "Community 298"
+community: "Network Topology"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/Network_Topology
 ---
 
 # Full System Flowchart
@@ -17,4 +17,4 @@ tags:
 - [[Legend]] - `contains` [EXTRACTED]
 - [[Related Notes_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_298
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 486"
+community: "_build_image_targets"
 location: "L940"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/_build_image_targets
 ---
 
 # Deployments that rename the gateway container (dev runs agentshroud-marvin-…
 
 ## Connections
-- [[dot-test_gateway_container_name_is_env_overridable()]] - `rationale_for` [EXTRACTED]
+- [[.test_gateway_container_name_is_env_overridable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_486
+#graphify/rationale #graphify/EXTRACTED #community/_build_image_targets

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 768"
+community: "notion"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_768
+  - community/notion
 ---
 
 # Setup
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_768
+#graphify/document #graphify/EXTRACTED #community/notion

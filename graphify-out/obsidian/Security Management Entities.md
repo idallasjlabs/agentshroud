@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 403"
+community: "AgentShroud Data Dictionary"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Security Management Entities
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalRequest_3]] - `contains` [EXTRACTED]
 - [[TrustLevel_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

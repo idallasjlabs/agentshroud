@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Community 1337"
+community: "graphify reference: extra exports and benchmark"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1337
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # For --watch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference add a URL and watch a folder]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1337
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 99"
+community: "sync-cve-registry.py"
 location: "L549"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # Return the first patched version string across the advisory's vulns, else ''.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ghsa_patched_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

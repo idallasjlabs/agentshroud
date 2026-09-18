@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 183"
+community: "A2AMethod"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_183
+  - community/A2AMethod
 ---
 
 # A2AMethod
 
 ## Connections
-- [[dot-_decide()]] - `references` [EXTRACTED]
-- [[dot-_tier_for()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `calls` [EXTRACTED]
+- [[._decide()]] - `references` [EXTRACTED]
+- [[._tier_for()]] - `references` [EXTRACTED]
+- [[.parse_jsonrpc_request()]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_27]] - `uses` [INFERRED]
+- [[Any_26]] - `uses` [INFERRED]
 - [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_183
+#graphify/code #graphify/INFERRED #community/A2AMethod

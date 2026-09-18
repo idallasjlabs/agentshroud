@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustManager
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-__init__()_7]] - `references` [EXTRACTED]
+- [[.__init__()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 57"
+community: "test_mfa_guard.py"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/test_mfa_guardpy
 ---
 
 # test_from_env_bad_window_defaults_to_one()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

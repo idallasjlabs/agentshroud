@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-12-credential-flow.svg"
 type: "image"
-community: "Community 1896"
+community: "Diagram 12: Credential Flow"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1896
+  - community/Diagram_12_Credential_Flow
 ---
 
 # Diagram 12: Credential Flow
 
-#graphify/image #graphify/EXTRACTED #community/Community_1896
+#graphify/image #graphify/EXTRACTED #community/Diagram_12_Credential_Flow

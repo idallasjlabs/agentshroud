@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 395"
+community: "xurl — Agent Skill Reference"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # xurl — Agent Skill Reference
@@ -18,11 +18,11 @@ tags:
 - [[Global Flags]] - `contains` [EXTRACTED]
 - [[Installation_1]] - `contains` [EXTRACTED]
 - [[Notes_5]] - `contains` [EXTRACTED]
-- [[Output Format_11]] - `contains` [EXTRACTED]
+- [[Output Format_8]] - `contains` [EXTRACTED]
 - [[Prerequisites_6]] - `contains` [EXTRACTED]
 - [[Quick Reference_9]] - `contains` [EXTRACTED]
 - [[Raw API Access]] - `contains` [EXTRACTED]
 - [[Streaming_1]] - `contains` [EXTRACTED]
 - [[xurlSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

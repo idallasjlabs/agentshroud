@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/templates/.pre-commit-config.yaml"
 type: "code"
-community: "Community 1017"
+community: "Pre-commit hook strategy (framework vs manual)"
 location: "L13-27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1017
+  - community/Pre-commit_hook_strategy_framework_vs_manual
 ---
 
 # Built-in pre-commit hooks (private key, AWS creds, large files)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pre-commit hook strategy (framework vs manual)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1017
+#graphify/code #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual

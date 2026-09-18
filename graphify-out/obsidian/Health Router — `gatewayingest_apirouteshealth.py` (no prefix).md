@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 382"
+community: "main.py"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/mainpy
 ---
 
 # Health Router — `gateway/ingest_api/routes/health.py` (no prefix)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/mainpy

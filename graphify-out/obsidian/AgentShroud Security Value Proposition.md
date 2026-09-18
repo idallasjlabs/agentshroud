@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 389"
+community: "AgentShroud Security Value Proposition"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # AgentShroud Security Value Proposition
@@ -24,4 +24,4 @@ tags:
 - [[What Should You Do Next]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 324"
+community: "Goal: Codex is a secondary/tertiary agent used f"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_324
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
 ---
 
 # What You Have
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8) CODEX CLI CONFIGURATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_324
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f

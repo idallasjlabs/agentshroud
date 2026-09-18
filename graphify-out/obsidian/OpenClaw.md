@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Community 933"
+community: "OpenClaw"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/OpenClaw
 ---
 
 # OpenClaw
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Config Location]] - `contains` [EXTRACTED]
 - [[Key Intercepted Paths]] - `contains` [EXTRACTED]
-- [[Purpose_188]] - `contains` [EXTRACTED]
-- [[Related Notes_43]] - `contains` [EXTRACTED]
+- [[Purpose_116]] - `contains` [EXTRACTED]
+- [[Related Notes_12]] - `contains` [EXTRACTED]
 - [[Role in AgentShroud]] - `contains` [EXTRACTED]
 - [[Version Note]] - `contains` [EXTRACTED]
 - [[openclaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_933
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

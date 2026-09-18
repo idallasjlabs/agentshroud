@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Community 742"
+community: "Git History Purge Plan"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Git_History_Purge_Plan
 ---
 
 # Trillian (when back online)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Purge — Other Instances]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_742
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

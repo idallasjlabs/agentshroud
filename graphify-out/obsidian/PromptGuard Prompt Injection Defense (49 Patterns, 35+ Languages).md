@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Community 788"
+community: "Red Team Assessment v1.2.0"
 location: "Module 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Red_Team_Assessment_v120
 ---
 
 # PromptGuard: Prompt Injection Defense (49 Patterns, 35+ Languages)
@@ -18,4 +18,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - `calls` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_788
+#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120

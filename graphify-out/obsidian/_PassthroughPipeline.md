@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 113"
+community: "test_forward_stream.py"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/test_forward_streampy
 ---
 
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_41]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_6]] - `method` [EXTRACTED]
+- [[.__init__()_41]] - `method` [EXTRACTED]
+- [[.process_inbound()_5]] - `method` [EXTRACTED]
+- [[.process_outbound()_6]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

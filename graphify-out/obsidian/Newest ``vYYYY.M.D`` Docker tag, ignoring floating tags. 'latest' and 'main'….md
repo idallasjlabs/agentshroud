@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Community 891"
+community: "pick_latest_hermes_tag()"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/pick_latest_hermes_tag
 ---
 
 # Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags. 'latest' and 'main'…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pick_latest_hermes_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_891
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_hermes_tag

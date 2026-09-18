@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 590"
+community: "AgentShroud System Status Report"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_590
+  - community/AgentShroud_System_Status_Report
 ---
 
 # 📋 Next Steps for User
@@ -16,4 +16,4 @@ tags:
 - [[Immediate (Required for Bot to Work)]] - `contains` [EXTRACTED]
 - [[When Ready to Continue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_590
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "test_voice_gateway.py"
 location: "L1003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/test_voice_gatewaypy
 ---
 
 # test_ws_empty_transcript_goes_idle()
@@ -18,4 +18,4 @@ tags:
 - [[patch]] - `calls` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405 makes a…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_supports_head()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

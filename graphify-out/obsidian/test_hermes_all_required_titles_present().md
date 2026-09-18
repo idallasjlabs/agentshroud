@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 59"
+community: "test_agent_cve_registry.py"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/test_agent_cve_registrypy
 ---
 
 # test_hermes_all_required_titles_present()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

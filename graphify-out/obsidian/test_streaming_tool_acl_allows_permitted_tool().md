@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 61"
+community: "test_llm_proxy.py"
 location: "L571"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/test_llm_proxypy
 ---
 
 # test_streaming_tool_acl_allows_permitted_tool()
@@ -19,4 +19,4 @@ tags:
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

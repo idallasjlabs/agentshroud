@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 537"
+community: "TestStartupScannerKeying"
 location: "L322"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_537
+  - community/TestStartupScannerKeying
 ---
 
 # _store_result()
 
 ## Connections
-- [[dot-_make_store_result_fn()]] - `indirect_call` [INFERRED]
+- [[._make_store_result_fn()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_537
+#graphify/code #graphify/INFERRED #community/TestStartupScannerKeying

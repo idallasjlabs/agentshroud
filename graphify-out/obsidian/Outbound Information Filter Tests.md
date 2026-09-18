@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "OutboundInfoFilter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/OutboundInfoFilter
 ---
 
 # Outbound Information Filter Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutboundInfoFilter]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Community 674"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories_4]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

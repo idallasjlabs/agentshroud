@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 86"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/EgressFilterConfig
 ---
 
 # agentshroud.yaml.md
@@ -21,4 +21,4 @@ tags:
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[ssh-config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_86
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig

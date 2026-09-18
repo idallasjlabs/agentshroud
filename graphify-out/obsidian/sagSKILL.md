@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "Community 752"
+community: "openai-whisper-api/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_752
+  - graphify/INFERRED
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # sag/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[openai-whisper-apiSKILL]] - `semantically_similar_to` [INFERRED]
 - [[sag]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_752
+#graphify/document #graphify/INFERRED #community/openai-whisper-api/SKILLmd

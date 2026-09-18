@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "Community 1065"
+community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1065
+  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # i-gg README — Git Workflow Guardian (GIT-GUARD)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1065
+#graphify/document #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD

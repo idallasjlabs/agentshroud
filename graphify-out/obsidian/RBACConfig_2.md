@@ -1,48 +1,48 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "RBACConfig"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/RBACConfig
 ---
 
 # RBACConfig
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_47]] - `calls` [EXTRACTED]
-- [[dot-__init__()_59]] - `calls` [EXTRACTED]
-- [[dot-__init__()_99]] - `calls` [EXTRACTED]
-- [[dot-__init__()_141]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()_4]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()_6]] - `method` [EXTRACTED]
-- [[dot-_ensure_rbac()]] - `calls` [EXTRACTED]
-- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
-- [[dot-_is_owner()]] - `calls` [EXTRACTED]
-- [[dot-get_user_groups_by_id()]] - `method` [EXTRACTED]
-- [[dot-get_user_role()]] - `method` [EXTRACTED]
-- [[dot-get_users_by_role()]] - `method` [EXTRACTED]
-- [[dot-is_admin_or_higher()]] - `method` [EXTRACTED]
-- [[dot-is_collaborator_or_higher()]] - `method` [EXTRACTED]
-- [[dot-is_operator_or_higher()]] - `method` [EXTRACTED]
-- [[dot-is_owner()]] - `method` [EXTRACTED]
-- [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `method` [EXTRACTED]
-- [[dot-test_bearer_header_valid()]] - `calls` [EXTRACTED]
-- [[dot-wire_teams_config()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_47]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_99]] - `calls` [EXTRACTED]
+- [[.__init__()_141]] - `calls` [EXTRACTED]
+- [[.__post_init__()_4]] - `calls` [EXTRACTED]
+- [[.__post_init__()_6]] - `method` [EXTRACTED]
+- [[._ensure_rbac()]] - `calls` [EXTRACTED]
+- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[._is_owner()]] - `calls` [EXTRACTED]
+- [[.get_user_groups_by_id()]] - `method` [EXTRACTED]
+- [[.get_user_role()]] - `method` [EXTRACTED]
+- [[.get_users_by_role()]] - `method` [EXTRACTED]
+- [[.is_admin_or_higher()]] - `method` [EXTRACTED]
+- [[.is_collaborator_or_higher()]] - `method` [EXTRACTED]
+- [[.is_operator_or_higher()]] - `method` [EXTRACTED]
+- [[.is_owner()]] - `method` [EXTRACTED]
+- [[.process_request()]] - `calls` [EXTRACTED]
+- [[.set_user_role()]] - `method` [EXTRACTED]
+- [[.test_bearer_header_valid()]] - `calls` [EXTRACTED]
+- [[.wire_teams_config()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[AgentTarget_2]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Any_14]] - `uses` [INFERRED]
-- [[Any_67]] - `uses` [INFERRED]
-- [[Any_52]] - `uses` [INFERRED]
-- [[Any_47]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Any_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Any_13]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
+- [[Any_51]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[AuthRequired_2]] - `uses` [INFERRED]
@@ -70,7 +70,7 @@ tags:
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[OwnerEmailRequest]] - `uses` [INFERRED]
 - [[PUT users{user_id}role endpoint]] - `calls` [EXTRACTED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
@@ -82,8 +82,8 @@ tags:
 - [[PrivateAccessAttempt]] - `uses` [INFERRED]
 - [[PrivateRedactionEvent]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[RateLimitEntry]] - `uses` [INFERRED]
@@ -166,8 +166,8 @@ tags:
 - [[TestVerifyBearer]] - `uses` [INFERRED]
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
 - [[TestWriteFailurePath]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[UserSessionManager.get_merged_context()]] - `calls` [EXTRACTED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[WorkspaceContext]] - `uses` [INFERRED]
@@ -223,4 +223,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/RBACConfig

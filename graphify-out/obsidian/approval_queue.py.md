@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 217"
+community: "Audit Ledger (SHA-256 hash only)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # approval_queue.py.md
@@ -20,4 +20,4 @@ tags:
 - [[Security Controls_2]] - `contains` [EXTRACTED]
 - [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_217
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

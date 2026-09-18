@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "code"
-community: "Community 926"
+community: "Management Dashboard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_926
+  - community/Management_Dashboard
 ---
 
 # Management Dashboard
@@ -20,4 +20,4 @@ tags:
 - [[apistatus]] - `calls` [EXTRACTED]
 - [[apiupdatesbotopenclaw]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_926
+#graphify/code #graphify/EXTRACTED #community/Management_Dashboard

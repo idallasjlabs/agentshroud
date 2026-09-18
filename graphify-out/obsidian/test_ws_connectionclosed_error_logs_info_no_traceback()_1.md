@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "test_voice_gateway.py"
+location: "L1727"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_voice_gatewaypy
+---
+
+# test_ws_connectionclosed_error_logs_info_no_traceback()
+
+## Connections
+- [[ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device]] - `rationale_for` [EXTRACTED]
+- [[_run_disconnect_test()_1]] - `calls` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_telegram_proxy_outbound.py
@@ -43,4 +43,4 @@ tags:
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

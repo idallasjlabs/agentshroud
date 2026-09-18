@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 151"
+community: "SecureBrowser Skill"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/SecureBrowser_Skill
 ---
 
 # Example 1: Simple Navigation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

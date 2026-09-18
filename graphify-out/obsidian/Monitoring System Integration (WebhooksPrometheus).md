@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 256"
+community: "TrustManager"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # Monitoring System Integration (Webhooks/Prometheus)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dashboard (WebSocket)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_256
+#graphify/document #graphify/INFERRED #community/TrustManager

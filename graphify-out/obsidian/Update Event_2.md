@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 311"
+community: "iCloud Services"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/iCloud_Services
 ---
 
 # Update Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

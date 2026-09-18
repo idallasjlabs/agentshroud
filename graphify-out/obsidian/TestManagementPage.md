@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Community 333"
+community: "test_runtime_engines.py"
 location: "L835"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_333
+  - community/test_runtime_enginespy
 ---
 
 # TestManagementPage
 
 ## Connections
-- [[dot-client()_4]] - `method` [EXTRACTED]
-- [[dot-test_dashboard_page()]] - `method` [EXTRACTED]
+- [[.client()_4]] - `method` [EXTRACTED]
+- [[.test_dashboard_page()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_333
+#graphify/code #graphify/INFERRED #community/test_runtime_enginespy

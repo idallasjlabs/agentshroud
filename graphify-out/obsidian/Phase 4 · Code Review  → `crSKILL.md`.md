@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 774"
+community: "GSDE&G Development Master Checklist"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_774
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Phase 4 · Code Review  → `cr/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_774
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

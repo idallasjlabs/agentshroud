@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "make_event()"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/make_event
 ---
 
 # Unsubscribe from events
 
 ## Connections
-- [[dot-unsubscribe()_1]] - `rationale_for` [EXTRACTED]
+- [[.unsubscribe()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/make_event

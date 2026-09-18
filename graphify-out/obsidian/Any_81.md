@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 96"
-location: "L75"
+community: "falco_monitor.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/falco_monitorpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_19]] - `references` [EXTRACTED]
-- [[dot-to_dict()_17]] - `references` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 601"
+community: "wazuh_client.py"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_601
+  - community/wazuh_clientpy
 ---
 
 # get_fim_events(alerts) / get_rootkit_events(alerts)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_601
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

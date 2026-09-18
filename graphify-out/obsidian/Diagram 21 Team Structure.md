@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "image"
-community: "Community 456"
+community: "Multi-Agent Role Matrix"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Diagram 21: Team Structure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_456
+#graphify/image #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

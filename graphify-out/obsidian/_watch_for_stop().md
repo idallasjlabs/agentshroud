@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 122"
+community: "server.py"
 location: "L1342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/serverpy
 ---
 
 # _watch_for_stop()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/serverpy

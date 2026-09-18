@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 751"
+community: "oracle — best use"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/oracle__best_use
 ---
 
 # Main use case (browser, GPT‑5.2 Pro)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_751
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

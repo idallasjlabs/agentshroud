@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 53"
+community: "RBACConfig"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/RBACConfig
 ---
 
 # Return True if user_id is the system owner (oversight override).
 
 ## Connections
-- [[dot-_is_owner()_1]] - `rationale_for` [EXTRACTED]
+- [[._is_owner()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

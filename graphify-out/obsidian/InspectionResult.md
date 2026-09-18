@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 211"
+community: "MCPServerConfig"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_211
+  - community/MCPServerConfig
 ---
 
 # InspectionResult
 
 ## Connections
-- [[dot-has_findings()]] - `method` [EXTRACTED]
-- [[dot-highest_threat()]] - `method` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[.has_findings()]] - `method` [EXTRACTED]
+- [[.highest_threat()]] - `method` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_211
+#graphify/code #graphify/INFERRED #community/MCPServerConfig

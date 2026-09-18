@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/nano-pdf/SKILL.md"
+source_file: "README.md"
 type: "document"
-community: "Community 1406"
-location: "L29"
+community: "AgentShroud™ README"
+location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1406
+  - community/AgentShroud_README
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[nano-pdf]] - `contains` [EXTRACTED]
+- [[Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1406
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

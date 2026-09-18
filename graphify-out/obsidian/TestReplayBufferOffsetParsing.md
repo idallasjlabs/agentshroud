@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "TestReplayBufferOffsetParsing"
 location: "L4609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # TestReplayBufferOffsetParsing
 
 ## Connections
-- [[dot-_fake_get_updates_urlopen()]] - `method` [EXTRACTED]
-- [[dot-_make_proxy_with_mock_buffer()]] - `method` [EXTRACTED]
-- [[dot-test_json_body_still_calls_mark_delivered()]] - `method` [EXTRACTED]
-- [[dot-test_url_encoded_body_calls_mark_delivered()]] - `method` [EXTRACTED]
+- [[._fake_get_updates_urlopen()]] - `method` [EXTRACTED]
+- [[._make_proxy_with_mock_buffer()]] - `method` [EXTRACTED]
+- [[.test_json_body_still_calls_mark_delivered()]] - `method` [EXTRACTED]
+- [[.test_url_encoded_body_calls_mark_delivered()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

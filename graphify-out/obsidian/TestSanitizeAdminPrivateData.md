@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "PermissionLevel"
 location: "L379"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_143
+  - community/PermissionLevel
 ---
 
 # TestSanitizeAdminPrivateData
 
 ## Connections
-- [[dot-test_no_patterns_returns_unchanged()]] - `method` [EXTRACTED]
-- [[dot-test_owner_bypasses_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_redacts_nested_dict_list_tuple()]] - `method` [EXTRACTED]
+- [[.test_no_patterns_returns_unchanged()]] - `method` [EXTRACTED]
+- [[.test_owner_bypasses_redaction()]] - `method` [EXTRACTED]
+- [[.test_redacts_nested_dict_list_tuple()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_143
+#graphify/code #graphify/INFERRED #community/PermissionLevel

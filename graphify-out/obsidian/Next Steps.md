@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "Community 163"
-location: "L92"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L507"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
-# Next Steps
+# NEXT STEPS
 
 ## Connections
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

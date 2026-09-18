@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/README.md"
 type: "rationale"
-community: "Community 267"
+community: "One Shroud Over Every Wire (founding mantra)"
 location: "L156-L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Five Isolation Layers (network, identity, staging, hardening, depth)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[One Shroud Over Every Wire (founding mantra)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

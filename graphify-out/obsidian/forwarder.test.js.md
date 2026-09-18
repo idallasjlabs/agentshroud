@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/lib/forwarder.test.js"
 type: "code"
-community: "Community 730"
+community: "forwarder.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/forwarderjs
 ---
 
 # forwarder.test.js
@@ -17,4 +17,4 @@ tags:
 - [[forwarder.js]] - `imports_from` [EXTRACTED]
 - [[mockFetchOk()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_730
+#graphify/code #graphify/EXTRACTED #community/forwarderjs

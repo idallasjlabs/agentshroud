@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 637"
+community: "test_hermes_model_resolver.py"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_637
+  - graphify/INFERRED
+  - community/test_hermes_model_resolverpy
 ---
 
 # LOCAL_MODEL_ROUTES First-Prefix-Match-Wins Ordering Bug Class
@@ -14,4 +14,4 @@ tags:
 - [[gateway.proxy.llm_proxy]] - `rationale_for` [EXTRACTED]
 - [[resolve_model.py (Hermes)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_637
+#graphify/rationale #graphify/INFERRED #community/test_hermes_model_resolverpy

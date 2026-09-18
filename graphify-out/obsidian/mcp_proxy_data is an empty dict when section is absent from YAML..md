@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "SSHProxy"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/SSHProxy
 ---
 
 # mcp_proxy_data is an empty dict when section is absent from YAML.
 
 ## Connections
-- [[dot-test_mcp_proxy_data_defaults_to_empty_when_absent()]] - `rationale_for` [EXTRACTED]
+- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

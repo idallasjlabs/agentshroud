@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L68"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # MCPProxy
 
 ## Connections
-- [[dot-test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_with_execute()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_with_execute()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/StdioConnection

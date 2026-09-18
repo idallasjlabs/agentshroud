@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "rbac_config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/rbac_configpy
 ---
 
 # rbac_config.py
@@ -39,4 +39,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

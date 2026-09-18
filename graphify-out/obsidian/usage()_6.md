@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "Community 752"
+community: "openai-whisper-api/SKILL.md"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_752
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # usage()
@@ -15,4 +15,4 @@ tags:
 - [[transcribe.sh]] - `defines` [EXTRACTED]
 - [[transcribe.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_752
+#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

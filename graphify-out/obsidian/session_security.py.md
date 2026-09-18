@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/SessionManager
 ---
 
 # session_security.py
@@ -27,4 +27,4 @@ tags:
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/SessionManager

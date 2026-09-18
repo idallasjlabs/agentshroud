@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Community 106"
+community: "RuntimeConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/RuntimeConfig
 ---
 
 # compose_generator.py
@@ -20,4 +20,4 @@ tags:
 - [[podman_engine.py]] - `references` [EXTRACTED]
 - [[security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

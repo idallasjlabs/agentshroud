@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 1248"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1248
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
@@ -15,6 +15,6 @@ tags:
 - [[Purpose_66]] - `contains` [EXTRACTED]
 - [[Related Skills_57]] - `contains` [EXTRACTED]
 - [[Usage_61]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1248
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

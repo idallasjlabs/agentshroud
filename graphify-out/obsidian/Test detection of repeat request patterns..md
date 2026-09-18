@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestApprovalHardening"
 location: "L203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestApprovalHardening
 ---
 
 # Test detection of repeat request patterns.
 
 ## Connections
-- [[dot-test_repeat_request_pattern_detection()]] - `rationale_for` [EXTRACTED]
+- [[.test_repeat_request_pattern_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening

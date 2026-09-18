@@ -1,17 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 122"
+community: "server.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/serverpy
 ---
 
 # server.py
 
 ## Connections
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Voice Gateway — FastAPI app exposing GET health and WebSocket voice. Per-…]] - `rationale_for` [EXTRACTED]
@@ -39,9 +40,10 @@ tags:
 - [[health()]] - `contains` [EXTRACTED]
 - [[stt.py]] - `imports_from` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports_from` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `imports_from` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports_from` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
 - [[voice_gateway__init__.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/serverpy

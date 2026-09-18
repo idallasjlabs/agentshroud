@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Community 504"
+community: "AgentShroud Schema Documentation"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # Configuration File Schemas
@@ -17,4 +17,4 @@ tags:
 - [[MCP Configuration (mcp-config.yml)]] - `contains` [EXTRACTED]
 - [[Main Configuration (agentshroud.yaml)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

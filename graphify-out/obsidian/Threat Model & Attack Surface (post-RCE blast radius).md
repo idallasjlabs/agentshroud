@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY-ANALYSIS.md"
 type: "rationale"
-community: "Community 267"
+community: "One Shroud Over Every Wire (founding mantra)"
 location: "L268-L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Threat Model & Attack Surface (post-RCE blast radius)
@@ -18,4 +18,4 @@ tags:
 - [[February 14, 2026 Documentation Session Log]] - `cites` [EXTRACTED]
 - [[The Lethal Trifecta (private data + untrusted content + egress with memory)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

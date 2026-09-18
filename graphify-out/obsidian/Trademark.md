@@ -1,21 +1,17 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 1105"
-location: "L1"
+community: "AgentShroud™ Brand Guidelines"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1105
+  - community/AgentShroud_Brand_Guidelines
 ---
 
-# TRADEMARK.md
+# Trademark
 
 ## Connections
-- [[COMMUNICATION-TEMPLATES]] - `conceptually_related_to` [INFERRED]
-- [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
-- [[USPTO-APPLICATION]] - `references` [EXTRACTED]
-- [[Usage Guidelines_3]] - `references` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1105
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

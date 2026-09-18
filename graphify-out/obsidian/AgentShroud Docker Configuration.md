@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 203"
+community: "AgentShroud Docker Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # AgentShroud Docker Configuration
@@ -22,13 +22,13 @@ tags:
 - [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - `contains` [EXTRACTED]
 - [[Next Steps (Phase 4+)]] - `contains` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `contains` [EXTRACTED]
-- [[Quick Start_4]] - `contains` [EXTRACTED]
+- [[Quick Start_2]] - `contains` [EXTRACTED]
 - [[Reference]] - `contains` [EXTRACTED]
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
 - [[Usage_110]] - `contains` [EXTRACTED]
 - [[dockerREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

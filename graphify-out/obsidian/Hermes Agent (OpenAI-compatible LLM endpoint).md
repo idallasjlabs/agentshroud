@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "concept"
-community: "Community 271"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/system-requirementsmd
 ---
 
 # Hermes Agent (OpenAI-compatible LLM endpoint)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[HERMES_SETUP]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_271
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

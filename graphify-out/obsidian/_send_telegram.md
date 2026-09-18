@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 location: "355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # _send_telegram
@@ -17,4 +17,4 @@ tags:
 - [[run_and_send_cve_report]] - `calls` [EXTRACTED]
 - [[run_upstream_cve_check]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

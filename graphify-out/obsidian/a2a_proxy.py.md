@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 183"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/A2APolicyEngine
 ---
 
 # a2a_proxy.py
@@ -23,4 +23,4 @@ tags:
 - [[_redact_message_text()]] - `contains` [EXTRACTED]
 - [[record_decision]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

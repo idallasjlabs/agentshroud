@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 77"
+community: "3. Viewing Audit Logs"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/3_Viewing_Audit_Logs
 ---
 
 # Command-Line Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Viewing Audit Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/3_Viewing_Audit_Logs

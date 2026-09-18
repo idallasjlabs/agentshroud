@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "concept"
-community: "Community 131"
+community: "A2APolicyEngine"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # Upstream A2A Gap #78298 — SSRF Push-Notification Callback URL Bypass
@@ -16,4 +16,4 @@ tags:
 - [[test_a2a_policy.py]] - `references` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_131
+#graphify/concept #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # ModuleStatsCollector
 
 ## Connections
-- [[dot-__init__()_57]] - `method` [EXTRACTED]
-- [[dot-record()]] - `method` [EXTRACTED]
-- [[dot-reset()]] - `method` [EXTRACTED]
-- [[dot-snapshot()]] - `method` [EXTRACTED]
+- [[.__init__()_57]] - `method` [EXTRACTED]
+- [[.record()]] - `method` [EXTRACTED]
+- [[.reset()]] - `method` [EXTRACTED]
+- [[.snapshot()]] - `method` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]
 - [[Thread-safe per-module allowblocksanitize counters.]] - `rationale_for` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `calls` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

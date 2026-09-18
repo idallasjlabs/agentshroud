@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
+community: "api.py"
 location: "L137"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/apipy
 ---
 
 # ServiceAction
@@ -18,4 +18,4 @@ tags:
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/INFERRED #community/apipy

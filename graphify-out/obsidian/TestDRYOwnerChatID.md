@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 48"
+community: "ResourceGuard"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_48
+  - community/ResourceGuard
 ---
 
 # TestDRYOwnerChatID
 
 ## Connections
-- [[dot-test_no_hardcoded_owner_id_in_lifespan()]] - `method` [EXTRACTED]
+- [[.test_no_hardcoded_owner_id_in_lifespan()]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_48
+#graphify/code #graphify/INFERRED #community/ResourceGuard

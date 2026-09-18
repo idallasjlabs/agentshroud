@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/setup-mcp-user.sh"
 type: "code"
-community: "Community 1635"
+community: "setup-mcp-user.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1635
+  - community/setup-mcp-usersh
 ---
 
 # setup-mcp-user.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[setup-mcp-user.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1635
+#graphify/code #graphify/EXTRACTED #community/setup-mcp-usersh

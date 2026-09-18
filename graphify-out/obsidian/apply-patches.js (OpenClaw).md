@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Community 227"
+community: "apply-patches.js (OpenClaw)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # apply-patches.js (OpenClaw)
@@ -41,10 +41,10 @@ tags:
 - [[hasOwnerBinding]] - `contains` [EXTRACTED]
 - [[missingOrigins]] - `contains` [EXTRACTED]
 - [[missingProxies]] - `contains` [EXTRACTED]
-- [[path_23]] - `contains` [EXTRACTED]
+- [[path_3]] - `contains` [EXTRACTED]
 - [[providerModels]] - `contains` [EXTRACTED]
 - [[staleGroupBindings]] - `contains` [EXTRACTED]
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

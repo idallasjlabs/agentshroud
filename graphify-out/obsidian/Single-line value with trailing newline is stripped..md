@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_utils_secrets.py"
 type: "rationale"
-community: "Community 91"
+community: "mcp_oauth_preflight.py"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/mcp_oauth_preflightpy
 ---
 
 # Single-line value with trailing newline is stripped.
 
 ## Connections
-- [[dot-test_trailing_newline_stripped()]] - `rationale_for` [EXTRACTED]
+- [[.test_trailing_newline_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

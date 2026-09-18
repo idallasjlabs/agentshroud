@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 101"
+community: "InjectionSeverity"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionSeverity
 ---
 
 # scanner()
@@ -15,4 +15,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

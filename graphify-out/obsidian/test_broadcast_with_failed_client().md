@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "test_approval_queue.py"
 location: "L314"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - graphify/INFERRED
+  - community/test_approval_queuepy
 ---
 
 # test_broadcast_with_failed_client()
@@ -17,4 +17,4 @@ tags:
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/test_approval_queuepy

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # String
@@ -16,7 +16,7 @@ tags:
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `references` [EXTRACTED]
+- [[SclClient]] - `references` [EXTRACTED]
 - [[build_url()]] - `references` [EXTRACTED]
 - [[encode_path_component()]] - `references` [EXTRACTED]
 - [[format_approvals()]] - `references` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

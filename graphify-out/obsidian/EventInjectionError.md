@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionManager"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_535
+  - community/SessionManager
 ---
 
 # EventInjectionError
 
 ## Connections
-- [[dot-validate_event()]] - `calls` [EXTRACTED]
+- [[.validate_event()]] - `calls` [EXTRACTED]
 - [[SessionError]] - `inherits` [EXTRACTED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_535
+#graphify/code #graphify/INFERRED #community/SessionManager

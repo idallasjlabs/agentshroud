@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 845"
+community: "TestConfigValidation"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/TestConfigValidation
 ---
 
 # GatewayConfig validation behavior.
 
 ## Connections
 - [[TestConfigValidation]] - `rationale_for` [EXTRACTED]
+- [[TestConfigValidation_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_845
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

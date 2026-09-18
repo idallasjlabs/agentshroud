@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Community 184"
+community: "Approval Queue (human-in-the-loop)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Flows Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_4]] - `contains` [EXTRACTED]
 - [[flowsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_184
+#graphify/document #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

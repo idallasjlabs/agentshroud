@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 137"
+community: "record_decision"
 location: "469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/record_decision
 ---
 
 # Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)
@@ -19,4 +19,4 @@ tags:
 - [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - `cites` [EXTRACTED]
 - [[ToolACLEnforcer.can_use_tool_from_origin]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_137
+#graphify/rationale #graphify/EXTRACTED #community/record_decision

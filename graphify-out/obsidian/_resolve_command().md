@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 911"
+community: "multi_host_test.py"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_911
+  - community/multi_host_testpy
 ---
 
 # _resolve_command()
@@ -16,4 +16,4 @@ tags:
 - [[main()_30]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_911
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

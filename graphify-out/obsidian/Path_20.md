@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 216"
+community: "wazuh_client.py"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/wazuh_clientpy
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_216
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

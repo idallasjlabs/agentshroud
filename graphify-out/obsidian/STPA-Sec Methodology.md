@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "Blue/Red Team Security Auditor Skills"
+community: "test_redteam_probes.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/test_redteam_probespy
 ---
 
 # STPA-Sec Methodology
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/concept #graphify/EXTRACTED #community/test_redteam_probespy

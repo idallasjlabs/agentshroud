@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "AgentTarget"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/AgentTarget
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[dot-content_not_empty()]] - `method` [EXTRACTED]
-- [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
-- [[dot-validate_source()]] - `method` [EXTRACTED]
+- [[.content_not_empty()]] - `method` [EXTRACTED]
+- [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
+- [[.validate_source()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_14]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
@@ -38,6 +38,7 @@ tags:
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports` [EXTRACTED]
+- [[test_config_validation.py_1]] - `references` [EXTRACTED]
 - [[test_empty_content_rejection()]] - `calls` [EXTRACTED]
 - [[test_forward_request_valid()]] - `calls` [EXTRACTED]
 - [[test_forward_request_validation_empty_content()]] - `calls` [EXTRACTED]
@@ -60,4 +61,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

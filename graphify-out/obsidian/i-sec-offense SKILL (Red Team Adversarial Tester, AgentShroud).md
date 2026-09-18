@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 426"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)
@@ -17,4 +17,4 @@ tags:
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-sec-offense README (Red Team Adversarial Tester)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

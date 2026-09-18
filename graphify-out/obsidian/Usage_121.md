@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 410"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Voice volume]] - `contains` [EXTRACTED]
 - [[Wake word]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

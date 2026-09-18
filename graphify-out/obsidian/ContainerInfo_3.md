@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 106"
+community: "ContainerInfo"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_106
+  - community/ContainerInfo
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[dot-ps()_2]] - `references` [EXTRACTED]
-- [[dot-test_defaults()]] - `calls` [EXTRACTED]
-- [[dot-test_with_data()]] - `calls` [EXTRACTED]
-- [[Any_49]] - `uses` [INFERRED]
+- [[.ps()_2]] - `references` [EXTRACTED]
+- [[.test_defaults()]] - `calls` [EXTRACTED]
+- [[.test_with_data()]] - `calls` [EXTRACTED]
 - [[Any_48]] - `uses` [INFERRED]
-- [[Any_39]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_38]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo]] - `uses` [INFERRED]
 - [[ContainerInfo_1]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[podman_engine.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_106
+#graphify/code #graphify/INFERRED #community/ContainerInfo

@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "Community 449"
+community: "AgentShroud Operations Cheat Sheet"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # SOC API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_449
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

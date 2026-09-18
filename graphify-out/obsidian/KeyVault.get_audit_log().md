@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Community 516"
+community: "Function Details"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/Function_Details
 ---
 
 # KeyVault.get_audit_log()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_516
+#graphify/document #graphify/EXTRACTED #community/Function_Details

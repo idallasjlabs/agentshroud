@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 722"
+community: "<description of what this does>"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_722
+  - community/description_of_what_this_does
 ---
 
 # System Prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_722
+#graphify/document #graphify/EXTRACTED #community/description_of_what_this_does

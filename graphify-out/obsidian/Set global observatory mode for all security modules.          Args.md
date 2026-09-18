@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "TrustManager"
 location: "L1669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/TrustManager
 ---
 
 # Set global observatory mode for all security modules.          Args:
 
 ## Connections
-- [[dot-set_global_mode()]] - `rationale_for` [EXTRACTED]
+- [[.set_global_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

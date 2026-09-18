@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 321"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_321
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # ❌ NOT READY FOR MERGE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Merge Readiness Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_321
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

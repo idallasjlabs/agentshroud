@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 744"
+community: "event_bus.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/event_buspy
 ---
 
 # event_bus.py
@@ -21,7 +21,7 @@ tags:
 - [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
 - [[Purpose_175]] - `contains` [EXTRACTED]
 - [[Related_49]] - `contains` [EXTRACTED]
-- [[Responsibilities_46]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/event_buspy

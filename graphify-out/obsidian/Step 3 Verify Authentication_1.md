@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 921"
+community: "1. GitHub MCP Authentication Reset"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Step 3: Verify Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. GitHub MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_921
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_5]] - `rationale_for` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_63
+#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig

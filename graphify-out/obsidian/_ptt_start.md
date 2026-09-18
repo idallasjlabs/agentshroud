@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 363"
+community: "wakeword.c"
 location: "76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/wakewordc
 ---
 
 # _ptt_start
@@ -18,4 +18,4 @@ tags:
 - [[wakeword.c]] - `contains` [EXTRACTED]
 - [[wakeword_ptt_press]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/wakewordc

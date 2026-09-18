@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Community 76"
+community: "chatbot/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/chatbot/mainpy
 ---
 
 # chatbot/main.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ChatRequest]] - `contains` [EXTRACTED]
 - [[ChatResponse]] - `contains` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
+- [[FastAPI_4]] - `imports_from` [EXTRACTED]
 - [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
 - [[_check_rate_limit()]] - `contains` [EXTRACTED]
 - [[_get_auth_token()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[load_persona_files()]] - `contains` [EXTRACTED]
 - [[require_auth()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/entrypoint-agentshroud.sh"
 type: "code"
-community: "Community 1071"
+community: "init-openclaw-config.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/Community_1071
+  - community/init-openclaw-configsh
 ---
 
 # entrypoint-agentshroud.sh
@@ -16,4 +16,4 @@ tags:
 - [[init-openclaw-config.sh]] - `calls` [AMBIGUOUS]
 - [[start-agentshroud.sh]] - `calls` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/Community_1071
+#graphify/code #graphify/AMBIGUOUS #community/init-openclaw-configsh

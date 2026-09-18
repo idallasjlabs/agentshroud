@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Community 411"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_411
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # wacli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wacliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_411
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

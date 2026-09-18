@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 1942"
+community: "test_alert_telegram_relay.py — AlertTelegramRela"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1942
+  - community/test_alert_telegram_relaypy__AlertTelegramRela
 ---
 
 # test_alert_telegram_relay.py — AlertTelegramRelay tests
 
-#graphify/code #graphify/EXTRACTED #community/Community_1942
+#graphify/code #graphify/EXTRACTED #community/test_alert_telegram_relaypy__AlertTelegramRela

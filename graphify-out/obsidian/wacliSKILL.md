@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Community 411"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_411
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # wacli/SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[wacli]] - `contains` [EXTRACTED]
 - [[xurlSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_411
+#graphify/document #graphify/INFERRED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

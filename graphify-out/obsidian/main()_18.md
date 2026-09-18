@@ -1,23 +1,23 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
-- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[.get()_3]] - `calls` [EXTRACTED]
+- [[.new()_2]] - `calls` [EXTRACTED]
+- [[.ok()_1]] - `calls` [EXTRACTED]
+- [[.post()_2]] - `calls` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
+- [[SclClient]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[print_output()]] - `calls` [EXTRACTED]
 - [[resolve_token()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[run_deploy_status()]] - `calls` [EXTRACTED]
 - [[run_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

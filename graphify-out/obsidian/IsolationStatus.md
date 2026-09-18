@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "EncryptedStore"
 location: "L20"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/EncryptedStore
 ---
 
 # IsolationStatus
@@ -48,4 +48,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/INFERRED #community/EncryptedStore

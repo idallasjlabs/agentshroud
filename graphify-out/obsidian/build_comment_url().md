@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 165"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # build_comment_url()
@@ -17,4 +17,4 @@ tags:
 - [[add_comment()]] - `calls` [EXTRACTED]
 - [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

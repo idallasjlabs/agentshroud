@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L26"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_131
+  - graphify/INFERRED
+  - community/A2APolicyEngine
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[.forward()_3]] - `method` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

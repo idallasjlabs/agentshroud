@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 1147"
+community: "AGENTSHROUD standard character mark"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1147
+  - community/AGENTSHROUD_standard_character_mark
 ---
 
 # Class 9 — Computer Software
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 3 GOODS AND SERVICES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1147
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_standard_character_mark

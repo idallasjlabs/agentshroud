@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # RBACConfig
 
 ## Connections
+- [[ToolACLConfig_1]] - `uses` [INFERRED]
+- [[ToolACLEnforcer_1]] - `uses` [INFERRED]
 - [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

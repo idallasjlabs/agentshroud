@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Community 1364"
+community: "bsp_iot_button_create()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1364
+  - community/bsp_iot_button_create
 ---
 
 # test_playback_state/stubs/bsp/esp-bsp.h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bsp_iot_button_create()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1364
+#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create

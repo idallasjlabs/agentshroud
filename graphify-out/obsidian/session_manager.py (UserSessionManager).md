@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/RBACConfig
 ---
 
 # session_manager.py (UserSessionManager)
@@ -18,4 +18,4 @@ tags:
 - [[test_session_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

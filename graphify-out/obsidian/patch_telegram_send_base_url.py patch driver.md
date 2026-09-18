@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_send_base_url.py"
 type: "code"
-community: "Community 1522"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disab"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1522
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab
 ---
 
 # patch_telegram_send_base_url.py patch driver
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_read]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1522
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab

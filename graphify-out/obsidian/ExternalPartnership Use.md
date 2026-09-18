@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 377"
+community: "brand-guidelines.md"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_377
+  - community/brand-guidelinesmd
 ---
 
 # External/Partnership Use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Approval Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_377
+#graphify/document #graphify/EXTRACTED #community/brand-guidelinesmd

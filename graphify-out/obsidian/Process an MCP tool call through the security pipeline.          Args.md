@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 50"
+community: ".process_tool_call()"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/process_tool_call
 ---
 
 # Process an MCP tool call through the security pipeline.          Args:
 
 ## Connections
-- [[dot-process_tool_call()]] - `rationale_for` [EXTRACTED]
+- [[.process_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/process_tool_call

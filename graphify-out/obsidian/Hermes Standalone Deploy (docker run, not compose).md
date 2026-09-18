@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "rationale"
-community: "Community 739"
+community: "asb"
 location: "scripts/asb:358"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_739
+  - graphify/INFERRED
+  - community/asb
 ---
 
 # Hermes Standalone Deploy (docker run, not compose)
@@ -15,4 +15,4 @@ tags:
 - [[_hermes_down()]] - `rationale_for` [INFERRED]
 - [[_hermes_up()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_739
+#graphify/rationale #graphify/INFERRED #community/asb

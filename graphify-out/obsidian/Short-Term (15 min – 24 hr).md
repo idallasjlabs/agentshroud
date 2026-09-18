@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 422"
+community: "Pre-Deployment Checklist"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_422
+  - community/Pre-Deployment_Checklist
 ---
 
 # Short-Term (15 min – 24 hr)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_422
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

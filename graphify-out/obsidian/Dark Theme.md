@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 376"
+community: "AgentShroud Color Palette"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/AgentShroud_Color_Palette
 ---
 
 # Dark Theme
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Color Combinations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_376
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

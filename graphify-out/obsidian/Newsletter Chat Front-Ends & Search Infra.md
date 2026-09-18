@@ -1,17 +1,13 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt"
 type: "document"
-community: "Community 283"
-location: "L198"
+community: "Newsletter: Chat Front-ends & Search Infra"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_283
+  - community/Newsletter_Chat_Front-ends__Search_Infra
 ---
 
-# Newsletter: Chat Front-Ends & Search Infra
+# Newsletter: Chat Front-ends & Search Infra
 
-## Connections
-- [[Job details]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_283
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Chat_Front-ends__Search_Infra

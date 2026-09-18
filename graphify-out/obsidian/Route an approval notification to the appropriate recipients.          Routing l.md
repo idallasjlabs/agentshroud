@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "rationale"
-community: "Community 95"
+community: "GroupApprovalRouter"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/GroupApprovalRouter
 ---
 
 # Route an approval notification to the appropriate recipients.          Routing l
 
 ## Connections
-- [[dot-route_approval()]] - `rationale_for` [EXTRACTED]
+- [[.route_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_95
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Community 1544"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1544
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[hermesskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1544
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

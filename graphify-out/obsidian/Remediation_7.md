@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Community 805"
+community: "Add information filtering to prevent agent self-"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # Remediation
@@ -17,4 +17,4 @@ tags:
 - [[Option B Outbound content filter (robust)]] - `contains` [EXTRACTED]
 - [[Option C Both (recommended)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 282"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway "
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
@@ -31,4 +31,4 @@ tags:
 - [[securityincident-response]] - `conceptually_related_to` [INFERRED]
 - [[ws-e-audit-v1.2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_282
+#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway_

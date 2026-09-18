@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 400"
+community: "Skill: Technical Illustrator (TI)"
 location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_400
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Dependencies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_400
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

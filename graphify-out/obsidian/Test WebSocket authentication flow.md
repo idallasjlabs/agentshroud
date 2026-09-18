@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "rationale"
-community: "Community 858"
+community: "test_integration.py"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_858
+  - community/test_integrationpy
 ---
 
 # Test WebSocket authentication flow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_websocket_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_858
+#graphify/rationale #graphify/EXTRACTED #community/test_integrationpy

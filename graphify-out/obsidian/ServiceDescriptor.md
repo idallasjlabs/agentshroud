@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L232"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_68
+  - graphify/INFERRED
+  - community/SOCWebSocketHandler
 ---
 
 # ServiceDescriptor
 
 ## Connections
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-get_service()]] - `references` [EXTRACTED]
-- [[dot-list_services()]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[.get_service()]] - `references` [EXTRACTED]
+- [[.list_services()]] - `references` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
 - [[ServiceStatus_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

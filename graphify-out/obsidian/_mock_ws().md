@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Routing Tests"
+community: "asyncio"
 location: "L2264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Routing_Tests
+  - community/asyncio
 ---
 
 # _mock_ws()
@@ -38,4 +38,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests
+#graphify/code #graphify/EXTRACTED #community/asyncio

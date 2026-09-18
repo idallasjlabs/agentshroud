@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[dot-__init__()_58]] - `method` [EXTRACTED]
-- [[dot-_call_slack_api()]] - `method` [EXTRACTED]
-- [[dot-_intercept_connections_open()]] - `method` [EXTRACTED]
-- [[dot-_is_owner_channel()]] - `method` [EXTRACTED]
-- [[dot-consume_relay_token()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_8]] - `method` [EXTRACTED]
-- [[dot-handle_event()]] - `method` [EXTRACTED]
-- [[dot-invite_channel_member()]] - `method` [EXTRACTED]
-- [[dot-kick_channel_member()]] - `method` [EXTRACTED]
-- [[dot-provision_group_channel()]] - `method` [EXTRACTED]
-- [[dot-proxy_outbound()]] - `method` [EXTRACTED]
+- [[.__init__()_58]] - `method` [EXTRACTED]
+- [[._call_slack_api()]] - `method` [EXTRACTED]
+- [[._intercept_connections_open()]] - `method` [EXTRACTED]
+- [[._is_owner_channel()]] - `method` [EXTRACTED]
+- [[.consume_relay_token()]] - `method` [EXTRACTED]
+- [[.get_stats()_8]] - `method` [EXTRACTED]
+- [[.handle_event()]] - `method` [EXTRACTED]
+- [[.invite_channel_member()]] - `method` [EXTRACTED]
+- [[.kick_channel_member()]] - `method` [EXTRACTED]
+- [[.provision_group_channel()]] - `method` [EXTRACTED]
+- [[.proxy_outbound()]] - `method` [EXTRACTED]
 - [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackSocketClient]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestBodyParsing]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

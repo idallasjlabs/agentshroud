@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 1076"
-location: "L725"
+community: ".proxy_messages()"
+location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1076
+  - community/proxy_messages
 ---
 
 # True for connection-level failures (refused / unreachable / reset).          Unw
 
 ## Connections
-- [[._is_connect_error()]] - `rationale_for` [EXTRACTED]
+- [[._is_connect_error()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1076
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

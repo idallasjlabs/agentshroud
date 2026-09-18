@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 52"
+community: "EgressFilterConfig"
 location: "L927"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # Request model for updating egress allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressAllowlistUpdate]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

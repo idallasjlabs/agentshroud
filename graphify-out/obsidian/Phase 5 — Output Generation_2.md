@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1070"
+community: "Discovery Strategy"
 location: "L287"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1070
+  - community/Discovery_Strategy
 ---
 
 # Phase 5 — Output Generation
@@ -16,4 +16,4 @@ tags:
 - [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1070
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

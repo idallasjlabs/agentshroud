@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "MiddlewareManager"
 location: "L1267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/MiddlewareManager
 ---
 
 # _score_identity_authentication() (domain 13, FR1)
@@ -15,4 +15,4 @@ tags:
 - [[TrustManager]] - `references` [EXTRACTED]
 - [[UserSessionManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

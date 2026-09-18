@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Community 495"
+community: "TestBenchmarkRegression"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/TestBenchmarkRegression
 ---
 
 # 100 sequential inbound requests should stay within baseline.          Baseline k
 
 ## Connections
-- [[dot-test_100_inbound_requests()]] - `rationale_for` [EXTRACTED]
+- [[.test_100_inbound_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_495
+#graphify/rationale #graphify/EXTRACTED #community/TestBenchmarkRegression

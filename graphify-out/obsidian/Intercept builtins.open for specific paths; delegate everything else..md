@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # Intercept builtins.open for specific paths; delegate everything else.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

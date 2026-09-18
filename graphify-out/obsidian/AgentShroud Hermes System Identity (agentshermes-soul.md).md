@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "Community 477"
+community: "hermes/SOUL.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_477
+  - community/hermes/SOULmd
 ---
 
 # AgentShroud Hermes System Identity (agents/hermes-soul.md)
@@ -14,4 +14,4 @@ tags:
 - [[Agents Folder README]] - `references` [INFERRED]
 - [[hermesSOUL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_477
+#graphify/document #graphify/INFERRED #community/hermes/SOULmd

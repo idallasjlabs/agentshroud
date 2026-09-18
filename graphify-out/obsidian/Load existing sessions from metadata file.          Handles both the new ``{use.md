@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Community 747"
+community: ".from_dict()"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/from_dict
 ---
 
 # Load existing sessions from metadata file.          Handles both the new ``"{use
 
 ## Connections
-- [[dot-_load_sessions()]] - `rationale_for` [EXTRACTED]
+- [[._load_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_747
+#graphify/rationale #graphify/EXTRACTED #community/from_dict

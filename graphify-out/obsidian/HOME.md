@@ -1,24 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Home.md"
-type: "document"
-community: "Community 85"
-location: "L1"
+source_file: "docker/bots/hermes/start.sh"
+type: "code"
+community: "start.sh"
+location: "L21"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/startsh
 ---
 
-# Home.md
+# HOME
 
 ## Connections
-- [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Quick Reference_9]] - `references` [EXTRACTED]
-- [[Shutdown & Recovery]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
+- [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/startsh

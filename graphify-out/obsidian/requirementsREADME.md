@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "Community 1023"
+community: "Project Documentation"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_1023
+  - graphify/INFERRED
+  - community/Project_Documentation
 ---
 
 # requirements/README.md
@@ -15,4 +15,4 @@ tags:
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 - [[projectREADME]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1023
+#graphify/document #graphify/INFERRED #community/Project_Documentation

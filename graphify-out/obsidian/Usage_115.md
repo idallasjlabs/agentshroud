@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Community 325"
+community: "CI/CD Pipeline Advisor (README)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_325
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

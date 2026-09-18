@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 545"
+community: "clamav_scanner.py"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_545
+  - community/clamav_scannerpy
 ---
 
 # Mode: Enforce vs Monitor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_545
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

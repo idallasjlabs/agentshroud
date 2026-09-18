@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Community 1250"
+community: "Socrates — Dialogue Architect"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1250
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Socrates — Dialogue Architect
@@ -17,4 +17,4 @@ tags:
 - [[Usage_63]] - `contains` [EXTRACTED]
 - [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1250
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

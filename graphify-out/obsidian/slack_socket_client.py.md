@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "Community 162"
+community: "SlackSocketClient"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/SlackSocketClient
 ---
 
 # slack_socket_client.py
@@ -16,4 +16,4 @@ tags:
 - [[SlackSocketClient]] - `contains` [EXTRACTED]
 - [[compute_backoff()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

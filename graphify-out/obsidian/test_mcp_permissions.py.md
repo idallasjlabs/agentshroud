@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 89"
+community: "PermissionLevel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/PermissionLevel
 ---
 
 # test_mcp_permissions.py
@@ -30,4 +30,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

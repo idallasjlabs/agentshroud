@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 175"
+community: "MCPServerConfig"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/MCPServerConfig
 ---
 
 # Track rate limit state for a tool+agent combo.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_175
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

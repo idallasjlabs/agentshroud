@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Community 1151"
+community: "_is_stale_callback_error()"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1151
+  - community/_is_stale_callback_error
 ---
 
 # BaseException
@@ -16,4 +16,4 @@ tags:
 - [[_is_stale_callback_error()]] - `references` [EXTRACTED]
 - [[_is_stale_edit_error()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1151
+#graphify/code #graphify/EXTRACTED #community/_is_stale_callback_error

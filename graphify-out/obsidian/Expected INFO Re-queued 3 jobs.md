@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 328"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Expected: [INFO] Re-queued 3 jobs
 
 ## Connections
-- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

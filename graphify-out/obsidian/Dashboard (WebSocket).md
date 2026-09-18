@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 256"
+community: "TrustManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_256
+#graphify/concept #graphify/EXTRACTED #community/TrustManager

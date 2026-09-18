@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Community 638"
+community: "Features"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_638
+  - community/Features
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[Ingest API]] - `contains` [EXTRACTED]
 - [[PII Sanitizer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_638
+#graphify/document #graphify/EXTRACTED #community/Features

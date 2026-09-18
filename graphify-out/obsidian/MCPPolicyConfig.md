@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config()"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/load_config
 ---
 
 # MCPPolicyConfig
@@ -27,4 +27,4 @@ tags:
 - [[_base_config()]] - `references` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/load_config

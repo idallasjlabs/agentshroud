@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 77"
+community: "Incident Response Team Structure"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/Incident_Response_Team_Structure
 ---
 
 # Incident Response Team Structure
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Chain]] - `contains` [EXTRACTED]
 - [[Primary Roles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Team_Structure

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 338"
+community: "AgentShroud Prerequisites"
 location: "L529"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_338
+  - community/AgentShroud_Prerequisites
 ---
 
 # ✅ Setup Checklist
@@ -18,4 +18,4 @@ tags:
 - [[Software]] - `contains` [EXTRACTED]
 - [[Verification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_338
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

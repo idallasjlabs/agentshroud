@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 601"
+community: "wazuh_client.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_601
+  - community/wazuh_clientpy
 ---
 
 # wazuh_client.py
@@ -18,9 +18,9 @@ tags:
 - [[Key Rule ID Sets]] - `contains` [EXTRACTED]
 - [[Purpose_146]] - `contains` [EXTRACTED]
 - [[Related_25]] - `contains` [EXTRACTED]
-- [[Responsibilities_23]] - `contains` [EXTRACTED]
+- [[Responsibilities_22]] - `contains` [EXTRACTED]
 - [[Threat Model_16]] - `contains` [EXTRACTED]
 - [[Wazuh Level to Severity Mapping]] - `contains` [EXTRACTED]
 - [[wazuh_client.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_601
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

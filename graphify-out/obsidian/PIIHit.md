@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # PIIHit
 
 ## Connections
-- [[dot-_deduplicate()]] - `references` [EXTRACTED]
-- [[dot-_detect_pii()]] - `references` [EXTRACTED]
-- [[dot-_detect_presidio()]] - `references` [EXTRACTED]
-- [[dot-_detect_regex()]] - `references` [EXTRACTED]
-- [[dot-_redact()]] - `references` [EXTRACTED]
+- [[._deduplicate()]] - `references` [EXTRACTED]
+- [[._detect_pii()]] - `references` [EXTRACTED]
+- [[._detect_presidio()]] - `references` [EXTRACTED]
+- [[._detect_regex()]] - `references` [EXTRACTED]
+- [[._redact()]] - `references` [EXTRACTED]
 - [[A single PII detection result.]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_46
+#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector

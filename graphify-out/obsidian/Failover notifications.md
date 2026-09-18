@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 385"
+community: "llm_proxy.py"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_385
+  - community/llm_proxypy
 ---
 
 # Failover notifications
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quota Failover]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_385
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

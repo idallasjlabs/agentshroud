@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 66"
+community: "test_soc_bots.py"
 location: "L828"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/test_soc_botspy
 ---
 
 # TestBotSelectorFrontend
 
 ## Connections
-- [[dot-test_bots_backward_compat_no_bots_config()]] - `method` [EXTRACTED]
-- [[dot-test_bots_no_config_returns_synthetic_entry()]] - `method` [EXTRACTED]
-- [[dot-test_bots_returns_correct_structure()]] - `method` [EXTRACTED]
-- [[dot-test_bots_returns_default_true_on_default_bot()]] - `method` [EXTRACTED]
-- [[dot-test_security_events_filters_by_bot_id()]] - `method` [EXTRACTED]
-- [[dot-test_security_events_nonexistent_bot_returns_empty_not_404()]] - `method` [EXTRACTED]
-- [[dot-test_single_bot_returns_list_of_one()]] - `method` [EXTRACTED]
+- [[.test_bots_backward_compat_no_bots_config()]] - `method` [EXTRACTED]
+- [[.test_bots_no_config_returns_synthetic_entry()]] - `method` [EXTRACTED]
+- [[.test_bots_returns_correct_structure()]] - `method` [EXTRACTED]
+- [[.test_bots_returns_default_true_on_default_bot()]] - `method` [EXTRACTED]
+- [[.test_security_events_filters_by_bot_id()]] - `method` [EXTRACTED]
+- [[.test_security_events_nonexistent_bot_returns_empty_not_404()]] - `method` [EXTRACTED]
+- [[.test_single_bot_returns_list_of_one()]] - `method` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - `rationale_for` [EXTRACTED]
 - [[get_security_events()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

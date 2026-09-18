@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 50"
+community: ".process_tool_call()"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/process_tool_call
 ---
 
 # Redact admin-private data from tool results for non-owner agents.
 
 ## Connections
-- [[dot-_sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
+- [[._sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/process_tool_call

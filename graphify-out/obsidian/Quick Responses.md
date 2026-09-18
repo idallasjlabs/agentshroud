@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Community 819"
+community: "Weather Skill"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_819
+  - community/Weather_Skill
 ---
 
 # Quick Responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_819
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

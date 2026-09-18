@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 751"
+community: "oracle — best use"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/oracle__best_use
 ---
 
 # Safety
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_751
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Auth & Audit Store"
+community: "test_soc_router_coverage.py"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/test_soc_router_coveragepy
 ---
 
 # FakeAuditStore
 
 ## Connections
-- [[dot-__init__()_89]] - `method` [EXTRACTED]
-- [[dot-get_recent_entries()_1]] - `method` [EXTRACTED]
+- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.get_recent_entries()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_egress_log_filters_egress_events()]] - `calls` [EXTRACTED]
 - [[test_security_events_with_filters()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

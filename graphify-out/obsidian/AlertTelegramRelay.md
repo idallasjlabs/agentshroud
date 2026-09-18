@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 194"
+community: "AlertTelegramRelay"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/AlertTelegramRelay
 ---
 
 # AlertTelegramRelay
 
 ## Connections
-- [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_85]] - `method` [EXTRACTED]
-- [[dot-_clean_tool()]] - `method` [EXTRACTED]
-- [[dot-_coerce()]] - `method` [EXTRACTED]
-- [[dot-_dedup_key()]] - `method` [EXTRACTED]
-- [[dot-_handle()_1]] - `method` [EXTRACTED]
-- [[dot-_spawn_send()]] - `method` [EXTRACTED]
-- [[dot-flush()]] - `method` [EXTRACTED]
+- [[.__call__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_85]] - `method` [EXTRACTED]
+- [[._clean_tool()]] - `method` [EXTRACTED]
+- [[._coerce()]] - `method` [EXTRACTED]
+- [[._dedup_key()]] - `method` [EXTRACTED]
+- [[._handle()_1]] - `method` [EXTRACTED]
+- [[._spawn_send()]] - `method` [EXTRACTED]
+- [[.flush()]] - `method` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[LogRecord_2]] - `uses` [INFERRED]
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - `rationale_for` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

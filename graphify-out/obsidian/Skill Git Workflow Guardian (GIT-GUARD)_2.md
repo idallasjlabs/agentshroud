@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 938"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_938
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -19,6 +19,6 @@ tags:
 - [[Protected Branch_2]] - `contains` [EXTRACTED]
 - [[REFUSE These_2]] - `contains` [EXTRACTED]
 - [[Role_103]] - `contains` [EXTRACTED]
-- [[openclawskillsi-ggSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_938
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

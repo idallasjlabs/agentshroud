@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "Community 1372"
+community: "MCP OAuth preflight checker (mcp_oauth_preflight"
 location: "Section 2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1372
+  - community/MCP_OAuth_preflight_checker_mcp_oauth_preflight
 ---
 
 # Atlassian OAuth 2.0 (3LO) config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP OAuth preflight checker (mcp_oauth_preflight.py)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1372
+#graphify/concept #graphify/EXTRACTED #community/MCP_OAuth_preflight_checker_mcp_oauth_preflight

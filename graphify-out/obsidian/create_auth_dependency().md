@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "RateLimiter"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RateLimiter
 ---
 
 # create_auth_dependency()
@@ -33,4 +33,4 @@ tags:
 - [[test_auth_dependency_missing_header()]] - `calls` [EXTRACTED]
 - [[test_auth_dependency_valid_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

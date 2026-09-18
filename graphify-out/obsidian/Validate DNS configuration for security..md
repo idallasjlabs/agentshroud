@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 602"
+community: ".validate_docker_compose_config()"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/validate_docker_compose_config
 ---
 
 # Validate DNS configuration for security.
 
 ## Connections
-- [[dot-_validate_dns_configuration()]] - `rationale_for` [EXTRACTED]
+- [[._validate_dns_configuration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_602
+#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config

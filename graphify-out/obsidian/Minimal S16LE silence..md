@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Routing Tests"
+community: "asyncio"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Routing_Tests
+  - community/asyncio
 ---
 
 # Minimal S16LE silence.
 
 ## Connections
 - [[_pcm_bytes()]] - `rationale_for` [EXTRACTED]
+- [[_pcm_bytes()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

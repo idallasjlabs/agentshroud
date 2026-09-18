@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "Community 1141"
+community: "AgentShroud Data Assets (root)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1141
+  - community/AgentShroud_Data_Assets_root
 ---
 
 # ledger table (indexed on timestamp, source, forwarded_to)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SQLite DBs (Backed by SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1141
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root

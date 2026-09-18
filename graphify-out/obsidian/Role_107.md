@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 987"
+community: "Hermes — Reference Verifier"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_987
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_987
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

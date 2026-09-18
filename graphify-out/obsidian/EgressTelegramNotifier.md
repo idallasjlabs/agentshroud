@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Community 368"
+community: "EgressTelegramNotifier"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/EgressTelegramNotifier
 ---
 
 # EgressTelegramNotifier
 
 ## Connections
-- [[dot-__init__()_139]] - `method` [EXTRACTED]
-- [[dot-_api_url()]] - `method` [EXTRACTED]
-- [[dot-_async_send()]] - `method` [EXTRACTED]
-- [[dot-_send_request()]] - `method` [EXTRACTED]
-- [[dot-_token_for()]] - `method` [EXTRACTED]
-- [[dot-answer_callback()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()]] - `method` [EXTRACTED]
-- [[dot-edit_decision_message()]] - `method` [EXTRACTED]
-- [[dot-get_pending_count()]] - `method` [EXTRACTED]
-- [[dot-handle_callback()]] - `method` [EXTRACTED]
-- [[dot-notifier()]] - `calls` [EXTRACTED]
-- [[dot-notify_pending()]] - `method` [EXTRACTED]
-- [[dot-send_text()]] - `method` [EXTRACTED]
+- [[.__init__()_139]] - `method` [EXTRACTED]
+- [[._api_url()]] - `method` [EXTRACTED]
+- [[._async_send()]] - `method` [EXTRACTED]
+- [[._send_request()]] - `method` [EXTRACTED]
+- [[._token_for()]] - `method` [EXTRACTED]
+- [[.answer_callback()]] - `method` [EXTRACTED]
+- [[.cleanup_expired()]] - `method` [EXTRACTED]
+- [[.edit_decision_message()]] - `method` [EXTRACTED]
+- [[.get_pending_count()]] - `method` [EXTRACTED]
+- [[.handle_callback()]] - `method` [EXTRACTED]
+- [[.notifier()]] - `calls` [EXTRACTED]
+- [[.notify_pending()]] - `method` [EXTRACTED]
+- [[.send_text()]] - `method` [EXTRACTED]
 - [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - `rationale_for` [EXTRACTED]
 - [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

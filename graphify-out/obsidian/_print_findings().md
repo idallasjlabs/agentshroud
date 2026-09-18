@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 293"
+community: "SkillGuard"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/SkillGuard
 ---
 
 # _print_findings()
@@ -16,4 +16,4 @@ tags:
 - [[main()_16]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_293
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

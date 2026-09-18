@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
+community: "DraftEntry"
 location: "L938"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/DraftEntry
 ---
 
 # SkillGuardBlocked
 
 ## Connections
-- [[dot-__init__()_129]] - `method` [EXTRACTED]
+- [[.__init__()_129]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[Exception_4]] - `inherits` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

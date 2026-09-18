@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "Community 528"
+community: "Contributing to AgentShroud™"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Contributing_to_AgentShroud
 ---
 
 # scripts/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_528
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

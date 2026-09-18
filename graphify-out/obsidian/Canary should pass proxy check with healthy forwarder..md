@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Proxy Sidecar & Forwarder"
+community: "TrustManager"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/TrustManager
 ---
 
 # Canary should pass proxy check with healthy forwarder.
@@ -15,4 +15,4 @@ tags:
 - [[test_canary_with_healthy_forwarder()]] - `rationale_for` [EXTRACTED]
 - [[test_canary_with_unhealthy_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

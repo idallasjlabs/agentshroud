@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Community 409"
+community: "_is_op_reference_allowed()"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_409
+  - community/_is_op_reference_allowed
 ---
 
 # TestIsOpReferenceAllowed
 
 ## Connections
-- [[dot-test_allowed_path_different_item()]] - `method` [EXTRACTED]
-- [[dot-test_allowed_path_passes()]] - `method` [EXTRACTED]
-- [[dot-test_allowed_path_without_space_variant()]] - `method` [EXTRACTED]
-- [[dot-test_atlassian_token_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_disallowed_vault_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_empty_reference_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_missing_op_prefix_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()]] - `method` [EXTRACTED]
+- [[.test_allowed_path_different_item()]] - `method` [EXTRACTED]
+- [[.test_allowed_path_passes()]] - `method` [EXTRACTED]
+- [[.test_allowed_path_without_space_variant()]] - `method` [EXTRACTED]
+- [[.test_atlassian_token_allowed()]] - `method` [EXTRACTED]
+- [[.test_disallowed_vault_blocked()]] - `method` [EXTRACTED]
+- [[.test_empty_reference_blocked()]] - `method` [EXTRACTED]
+- [[.test_missing_op_prefix_blocked()]] - `method` [EXTRACTED]
+- [[.test_path_traversal_blocked()]] - `method` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_409
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

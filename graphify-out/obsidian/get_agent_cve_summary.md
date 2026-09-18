@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 59"
+community: "test_agent_cve_registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/test_agent_cve_registrypy
 ---
 
 # get_agent_cve_summary
 
 ## Connections
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Return a summary of the advisory registry for the specified agent. Counts are…]] - `rationale_for` [EXTRACTED]
 - [[_HERMES_CVE_REGISTRY]] - `shares_data_with` [INFERRED]
 - [[_OPENCLAW_CVE_REGISTRY]] - `shares_data_with` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_unknown_bot_id_raises_key_error]] - `calls` [EXTRACTED]
 - [[test_unknown_bot_id_raises_key_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

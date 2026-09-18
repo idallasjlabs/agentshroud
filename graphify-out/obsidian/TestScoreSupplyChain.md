@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 518"
+community: "get_trivy_summary()"
 location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # TestScoreSupplyChain
 
 ## Connections
-- [[dot-test_two_when_sbom_present()]] - `method` [EXTRACTED]
-- [[dot-test_zero_when_empty_sbom_dir()]] - `method` [EXTRACTED]
-- [[dot-test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
+- [[.test_two_when_sbom_present()]] - `method` [EXTRACTED]
+- [[.test_zero_when_empty_sbom_dir()]] - `method` [EXTRACTED]
+- [[.test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_518
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Community 949"
+community: "ssh_proxy.py"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_949
+  - community/ssh_proxypy
 ---
 
 # `execute(host: str, command: str, session_id: str) → SSHExecResult`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Class `SSHProxy`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_949
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "check_upstream_cves()"
+location: "L242"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/check_upstream_cves
+---
+
+# _make_github_advisory()
+
+## Connections
+- [[.test_returns_new_advisory_not_in_registry()_1]] - `calls` [EXTRACTED]
+- [[.test_skips_advisory_whose_cve_is_already_tracked()_1]] - `calls` [EXTRACTED]
+- [[.test_skips_advisory_without_ghsa_id()_1]] - `calls` [EXTRACTED]
+- [[.test_skips_ghsa_already_in_registry()_1]] - `calls` [EXTRACTED]
+- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - `rationale_for` [EXTRACTED]
+- [[test_daily_cve_report.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

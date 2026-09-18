@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 158"
+community: "triage-cve-mitigations.py"
 location: "L1132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/triage-cve-mitigationspy
 ---
 
 # main()
@@ -20,4 +20,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

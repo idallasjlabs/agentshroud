@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # AuthRequired
@@ -15,4 +15,4 @@ tags:
 - [[dashboard_stats()]] - `references` [EXTRACTED]
 - [[get_collaborators()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

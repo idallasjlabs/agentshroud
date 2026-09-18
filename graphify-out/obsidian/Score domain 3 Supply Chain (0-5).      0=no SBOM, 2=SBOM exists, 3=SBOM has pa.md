@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 518"
+community: "get_trivy_summary()"
 location: "L1001"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # Score domain 3: Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_supply_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_518
+#graphify/rationale #graphify/EXTRACTED #community/get_trivy_summary

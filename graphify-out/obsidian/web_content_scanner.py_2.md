@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 648"
+community: "web_content_scanner.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_648
+  - community/web_content_scannerpy
 ---
 
 # web_content_scanner.py
@@ -18,7 +18,7 @@ tags:
 - [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
 - [[Purpose_155]] - `contains` [EXTRACTED]
 - [[Related_32]] - `contains` [EXTRACTED]
-- [[Responsibilities_30]] - `contains` [EXTRACTED]
+- [[Responsibilities_29]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_648
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1305"
+community: "Troubleshooting Common Issues"
 location: "L598"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Troubleshooting_Common_Issues
 ---
 
 # Container Won't Start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1305
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 71"
+community: "AgentTarget"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/AgentTarget
 ---
 
 # Test that common false positives are handled
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_false_positive_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

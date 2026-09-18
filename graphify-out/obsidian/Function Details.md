@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 256"
+community: "TrustManager"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
 - [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/TrustManager

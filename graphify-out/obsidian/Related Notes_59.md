@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 865"
+community: "Dockerfile — Gateway"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_865
+  - community/Dockerfile__Gateway
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_865
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

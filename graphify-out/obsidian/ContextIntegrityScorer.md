@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "ContextSegment"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/ContextSegment
 ---
 
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_102]] - `method` [EXTRACTED]
-- [[dot-score_context()]] - `method` [EXTRACTED]
+- [[.__init__()_102]] - `method` [EXTRACTED]
+- [[.score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[scorer()]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

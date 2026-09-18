@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Community 495"
+community: "TestBenchmarkRegression"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/TestBenchmarkRegression
 ---
 
 # Baseline values should be positive and within expected ranges.
 
 ## Connections
-- [[dot-test_baseline_values_are_reasonable()]] - `rationale_for` [EXTRACTED]
+- [[.test_baseline_values_are_reasonable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_495
+#graphify/rationale #graphify/EXTRACTED #community/TestBenchmarkRegression

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "group_config.py"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/group_configpy
 ---
 
 # persist_group_collab_mode()
 
 ## Connections
-- [[dot-_handle_setmode_command()]] - `calls` [EXTRACTED]
+- [[._handle_setmode_command()]] - `calls` [EXTRACTED]
 - [[Persist a runtime collab mode change for a group.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/group_configpy

@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Community 868"
+community: ".agents/skills/i-browser/package.json"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_868
+  - community/agents/skills/i-browser/packagejson
 ---
 
 # scripts
 
 ## Connections
-- [[dot-agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 - [[test_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_868
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson

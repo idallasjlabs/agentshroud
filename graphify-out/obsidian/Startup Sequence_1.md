@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 770"
+community: "Startup Sequence"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_770
+  - community/Startup_Sequence
 ---
 
 # Startup Sequence
@@ -20,4 +20,4 @@ tags:
 - [[Startup Indicators]] - `contains` [EXTRACTED]
 - [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_770
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

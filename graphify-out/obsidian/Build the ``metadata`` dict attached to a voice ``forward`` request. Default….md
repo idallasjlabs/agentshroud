@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Community 176"
+community: "_call_agent_stream()"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/_call_agent_stream
 ---
 
 # Build the ``metadata`` dict attached to a voice ``/forward`` request. Default…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_voice_forward_metadata()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_176
+#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream

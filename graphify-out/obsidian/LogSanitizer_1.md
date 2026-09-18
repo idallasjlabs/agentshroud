@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[dot-__init__()_18]] - `method` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_text()]] - `method` [EXTRACTED]
-- [[dot-filter()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[.__init__()_18]] - `method` [EXTRACTED]
+- [[._compile_patterns()]] - `method` [EXTRACTED]
+- [[._sanitize_text()]] - `method` [EXTRACTED]
+- [[.filter()]] - `method` [EXTRACTED]
+- [[.sanitizer()_3]] - `calls` [EXTRACTED]
+- [[.setup_method()_34]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy

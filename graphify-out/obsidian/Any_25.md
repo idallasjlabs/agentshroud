@@ -1,17 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Community 158"
+community: "ingest_api/main.py"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_158
+  - graphify/INFERRED
+  - community/ingest_api/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[.get_stats()_11]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

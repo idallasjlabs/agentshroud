@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Community 728"
+community: "Per-Agent Container Isolation Architecture"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_728
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Docker Compose Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_728
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 155"
+community: "lifespan.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_155
+  - community/lifespanpy
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_68]] - `method` [EXTRACTED]
-- [[dot-check_anomalies()]] - `method` [EXTRACTED]
-- [[dot-daily_summary()]] - `method` [EXTRACTED]
-- [[dot-get_events()_2]] - `method` [EXTRACTED]
-- [[dot-record()_1]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.check_anomalies()]] - `method` [EXTRACTED]
+- [[.daily_summary()]] - `method` [EXTRACTED]
+- [[.get_events()_2]] - `method` [EXTRACTED]
+- [[.record()_1]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_155
+#graphify/code #graphify/INFERRED #community/lifespanpy

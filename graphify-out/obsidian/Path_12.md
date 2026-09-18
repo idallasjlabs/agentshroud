@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: ""
 type: "code"
-community: "Community 18"
-location: "L219"
+community: "auto_remediate_cves.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/auto_remediate_cvespy
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_82]] - `calls` [EXTRACTED]
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/auto_remediate_cvespy

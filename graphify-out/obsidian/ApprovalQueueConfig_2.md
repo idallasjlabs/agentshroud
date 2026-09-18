@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalRequest"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalRequest
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
 - [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
@@ -93,4 +93,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

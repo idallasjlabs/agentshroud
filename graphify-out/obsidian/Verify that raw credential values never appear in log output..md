@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Community 964"
+community: "test_credential_injector.py"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_964
+  - community/test_credential_injectorpy
 ---
 
 # Verify that raw credential values never appear in log output.
 
 ## Connections
-- [[dot-test_credential_never_in_logs()]] - `rationale_for` [EXTRACTED]
+- [[.test_credential_never_in_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_964
+#graphify/rationale #graphify/EXTRACTED #community/test_credential_injectorpy

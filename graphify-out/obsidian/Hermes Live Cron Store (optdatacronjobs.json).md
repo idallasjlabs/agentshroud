@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "concept"
-community: "Community 164"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L4-L7"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Hermes Live Cron Store (/opt/data/cron/jobs.json)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_164
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

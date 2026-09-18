@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 373"
+community: "AgentShroud v1.2.0 Master Plan"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # Workstream D — Sync agents/skills/MCP from `~/.llm_settings` into both bots
@@ -19,4 +19,4 @@ tags:
 - [[Surface to extend]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

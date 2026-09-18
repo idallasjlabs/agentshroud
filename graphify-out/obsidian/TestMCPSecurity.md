@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L458"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # TestMCPSecurity
 
 ## Connections
-- [[dot-test_context_guard_tool_manipulation()]] - `method` [EXTRACTED]
-- [[dot-test_egress_filter_blocks_mcp_exfil()]] - `method` [EXTRACTED]
-- [[dot-test_file_sandbox_mcp_write()]] - `method` [EXTRACTED]
-- [[dot-test_mcp_proxy_module_exists()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_guard_catches_tool_injection()]] - `method` [EXTRACTED]
+- [[.test_context_guard_tool_manipulation()]] - `method` [EXTRACTED]
+- [[.test_egress_filter_blocks_mcp_exfil()]] - `method` [EXTRACTED]
+- [[.test_file_sandbox_mcp_write()]] - `method` [EXTRACTED]
+- [[.test_mcp_proxy_module_exists()]] - `method` [EXTRACTED]
+- [[.test_prompt_guard_catches_tool_injection()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/lifespanpy

@@ -1,14 +1,14 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Community 1971"
+community: "SOUL.md Freshness Check Job"
 location: "lines 140-188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1971
+  - community/SOULmd_Freshness_Check_Job
 ---
 
 # SOUL.md Freshness Check Job
 
-#graphify/code #graphify/EXTRACTED #community/Community_1971
+#graphify/code #graphify/EXTRACTED #community/SOULmd_Freshness_Check_Job

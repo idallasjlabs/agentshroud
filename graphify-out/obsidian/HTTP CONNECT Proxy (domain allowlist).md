@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 217"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # HTTP CONNECT Proxy (domain allowlist)
@@ -19,4 +19,4 @@ tags:
 - [[OpenAI API]] - `calls` [EXTRACTED]
 - [[Telegram API_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_217
+#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

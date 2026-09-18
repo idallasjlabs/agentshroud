@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 98"
+community: "falco_monitor.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/falco_monitorpy
 ---
 
 # falco_monitor.py
@@ -31,4 +31,4 @@ tags:
 - [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

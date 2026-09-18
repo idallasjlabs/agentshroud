@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 266"
+community: "Playwright"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_266
+  - community/Playwright
 ---
 
 # Security Controls
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Playwright]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_266
+#graphify/document #graphify/EXTRACTED #community/Playwright

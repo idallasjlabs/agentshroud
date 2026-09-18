@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 581"
+community: "version_routes.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/version_routespy
 ---
 
 # version_routes.py
@@ -20,8 +20,8 @@ tags:
 - [[Known Issues  Notes_4]] - `contains` [EXTRACTED]
 - [[Purpose_142]] - `contains` [EXTRACTED]
 - [[Related_21]] - `contains` [EXTRACTED]
-- [[Responsibilities_19]] - `contains` [EXTRACTED]
+- [[Responsibilities_18]] - `contains` [EXTRACTED]
 - [[VersionRequest Fields]] - `contains` [EXTRACTED]
 - [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/version_routespy

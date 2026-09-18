@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "rationale"
-community: "Community 131"
+community: "A2APolicyEngine"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/A2APolicyEngine
 ---
 
 # A plain default-deny (unknown/unlisted peer) is a routing decision, not     evid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_131
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Community 459"
+community: "health_report.py"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/health_reportpy
 ---
 
 # Initialize the SQLite database for history tracking.      Args:         db_path:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_459
+#graphify/rationale #graphify/EXTRACTED #community/health_reportpy

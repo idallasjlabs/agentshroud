@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Community 172"
+community: "setup-https-proxy.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/setup-https-proxyjs
 ---
 
 # setup-https-proxy.js
@@ -23,4 +23,4 @@ tags:
 - [[shouldBypass()]] - `contains` [EXTRACTED]
 - [[tls]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_172
+#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs

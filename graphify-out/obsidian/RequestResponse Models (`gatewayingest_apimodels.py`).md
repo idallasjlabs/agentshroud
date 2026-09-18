@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 683"
+community: "SSH Capability Architecture Document"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_683
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Request/Response Models (`gateway/ingest_api/models.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Components_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_683
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

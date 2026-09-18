@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 579"
-location: "L512"
+community: "TestClamavSummary"
+location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_579
+  - community/TestClamavSummary
 ---
 
-# TestClamAVSummary
+# TestClamavSummary
 
 ## Connections
-- [[.test_summary_clean()_1]] - `method` [EXTRACTED]
-- [[.test_summary_error()_1]] - `method` [EXTRACTED]
-- [[.test_summary_infected()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[.test_clean_when_installed_not_running()]] - `method` [EXTRACTED]
+- [[.test_not_run_when_not_installed()]] - `method` [EXTRACTED]
+- [[.test_running_report_mtime_timestamp()]] - `method` [EXTRACTED]
+- [[.test_running_without_report()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_579
+#graphify/code #graphify/EXTRACTED #community/TestClamavSummary

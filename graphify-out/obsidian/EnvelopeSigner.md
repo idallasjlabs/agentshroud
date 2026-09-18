@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_60]] - `method` [EXTRACTED]
-- [[dot-_compute_signature()]] - `method` [EXTRACTED]
-- [[dot-sign()]] - `method` [EXTRACTED]
-- [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
-- [[dot-test_different_signers_same_key_verify()]] - `calls` [EXTRACTED]
-- [[dot-test_outbound_response_is_signed_and_verifiable()]] - `calls` [EXTRACTED]
-- [[dot-verify()]] - `method` [EXTRACTED]
-- [[dot-wrap_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-wrap_tool_result()]] - `method` [EXTRACTED]
+- [[.__init__()_60]] - `method` [EXTRACTED]
+- [[._compute_signature()]] - `method` [EXTRACTED]
+- [[.sign()]] - `method` [EXTRACTED]
+- [[.test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
+- [[.test_different_signers_same_key_verify()]] - `calls` [EXTRACTED]
+- [[.test_outbound_response_is_signed_and_verifiable()]] - `calls` [EXTRACTED]
+- [[.verify()]] - `method` [EXTRACTED]
+- [[.wrap_system_prompt()]] - `method` [EXTRACTED]
+- [[.wrap_tool_result()]] - `method` [EXTRACTED]
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - `rationale_for` [EXTRACTED]
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

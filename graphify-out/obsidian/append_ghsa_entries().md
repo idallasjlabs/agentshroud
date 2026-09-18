@@ -1,21 +1,21 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 99"
+community: "sync-cve-registry.py"
 location: "L666"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # append_ghsa_entries()
 
 ## Connections
-- [[Any_83]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Append under_review new_entries to agent_id's OWN registry list. Inserts…]] - `rationale_for` [EXTRACTED]
 - [[_ghsa_entry_to_py()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

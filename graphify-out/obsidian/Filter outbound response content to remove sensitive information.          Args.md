@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "Blue/Red Team Security Auditor Skills"
+community: "test_redteam_probes.py"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/test_redteam_probespy
 ---
 
 # Filter outbound response content to remove sensitive information.          Args:
 
 ## Connections
-- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
+- [[.filter_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy

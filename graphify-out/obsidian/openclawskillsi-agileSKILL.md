@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1552"
+community: "openclaw/skills/i-agile/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/openclaw/skills/i-agile/SKILLmd
 ---
 
 # openclaw/skills/i-agile/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill agile_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1552
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-agile/SKILLmd

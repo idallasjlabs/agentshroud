@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 842"
+community: "AgentShroud -- USPTO Provisional Patent Applicat"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_842
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
 ---
 
 # AgentShroud -- USPTO Provisional Patent Application
@@ -21,4 +21,4 @@ tags:
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_842
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat

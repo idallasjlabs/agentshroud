@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 334"
+community: "SecurityEvent"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/SecurityEvent
 ---
 
 # _map_severity()
 
 ## Connections
-- [[Any_46]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - `rationale_for` [EXTRACTED]
 - [[Severity_1]] - `references` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[from_audit_chain_entry()]] - `calls` [EXTRACTED]
 - [[from_dict()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/SecurityEvent

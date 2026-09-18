@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "Community 498"
+community: "awslabs.aws-api-mcp-server configuration (--read"
 location: "Prerequisites"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_498
+  - community/awslabsaws-api-mcp-server_configuration_--read
 ---
 
 # UV/uvx package manager prerequisite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_498
+#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read

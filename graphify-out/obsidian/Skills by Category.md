@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 280"
+community: "Skills by Category"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Skills_by_Category
 ---
 
 # Skills by Category
@@ -25,4 +25,4 @@ tags:
 - [[System Utilities]] - `contains` [EXTRACTED]
 - [[Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_280
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

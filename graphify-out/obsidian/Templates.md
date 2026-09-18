@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 691"
+community: "GitHub Skill"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_691
+  - community/GitHub_Skill
 ---
 
 # Templates
@@ -16,4 +16,4 @@ tags:
 - [[Issue Triage]] - `contains` [EXTRACTED]
 - [[PR Review Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_691
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

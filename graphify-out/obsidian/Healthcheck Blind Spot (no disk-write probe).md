@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "rationale"
-community: "Community 316"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Healthcheck Blind Spot (no disk-write probe)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Docker Storage Exhaustion (silent Hermes failure)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_316
+#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
