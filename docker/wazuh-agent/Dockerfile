@@ -50,9 +50,16 @@ RUN usermod -u 1000 wazuh && groupmod -g 1000 wazuh \
 # scan reports — see docker-compose.yml's wazuh-agent service for the exact
 # shared mounts this expects).
 COPY docker/wazuh/ossec.conf /var/ossec/etc/ossec.conf
-# Pre-register agent key so wazuh-agentd starts without needing a live manager
-RUN echo "001 agentshroud-gateway any c0000000000000000000000000000001" \
-        > /var/ossec/etc/client.keys && \
+# client.keys deliberately left EMPTY, not pre-registered. A real
+# wazuh-manager exists now (2026-09-18) and this agent's ossec.conf has a
+# real <enrollment> block pointed at it — wazuh-agentd's own built-in
+# auto-enrollment (no separate agent-auth call needed) negotiates a real key
+# on first connect. The previous placeholder key
+# ("001 agentshroud-gateway any c00...001") only ever existed so the process
+# wouldn't crash with no manager to talk to at all; a fake key here now would
+# just make the agent think it's already registered and skip enrollment,
+# permanently failing against a manager that has no matching entry for it.
+RUN touch /var/ossec/etc/client.keys && \
     chmod 640 /var/ossec/etc/client.keys && \
     chown wazuh:wazuh /var/ossec/etc/client.keys
 

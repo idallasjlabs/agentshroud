@@ -258,6 +258,64 @@ services:
       - agentshroud-isolated
 
   # ── Wazuh HIDS agent (standalone sidecar) ───────────────────────────────────
+  # Wazuh manager — added 2026-09-18 so wazuh-agent has a real server to
+  # report to. Previously the agent ran with no manager at all (deliberate
+  # original design, see the removed "no live manager" comments below);
+  # that meant every remote-reporting/enrollment path was permanently
+  # unreachable and the agent's healthcheck (a bare `pgrep`) reported
+  # "healthy" the entire time regardless.
+  #
+  # Internal-only by design: this network (agentshroud-isolated) has
+  # `internal: true` — no route to the internet exists at all, and no port
+  # here is published to the host. Enrollment (1515) is therefore left OPEN
+  # (no shared password) rather than adding a secret for a service nothing
+  # outside this single Docker network can ever reach; the network boundary
+  # is the real control here, not an app-level password. Only wazuh-agent is
+  # on this network, so there is exactly one thing that can ever enroll.
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.14.7
+    container_name: agentshroud-wazuh-manager
+    hostname: wazuh-manager
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - wazuh-manager-etc:/var/ossec/etc
+      - wazuh-manager-logs:/var/ossec/logs
+      - wazuh-manager-queue:/var/ossec/queue
+      - wazuh-manager-var-multigroups:/var/ossec/var/multigroups
+      - wazuh-manager-integrations:/var/ossec/integrations
+      - wazuh-manager-active-response:/var/ossec/active-response/bin
+      - wazuh-manager-agentless:/var/ossec/agentless
+      - wazuh-manager-wodles:/var/ossec/wodles
+      - wazuh-manager-stats:/var/ossec/stats
+      - wazuh-manager-api-config:/var/ossec/api/configuration
+    mem_limit: 1g
+    cpus: 1.0
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      # `wazuh-control status` itself exits 1 whenever ANY daemon it knows
+      # about isn't running — including ones this single-node, no-indexer
+      # deployment deliberately never enables (wazuh-clusterd, wazuh-maild,
+      # wazuh-agentlessd, wazuh-integratord, wazuh-csyslogd). Checking its
+      # raw exit code would make this healthcheck permanently red for
+      # reasons that have nothing to do with whether the manager can
+      # actually do its job. Check by name instead for only the daemons
+      # agent connectivity + FIM/log analysis actually depend on.
+      test: ["CMD-SHELL", "s=$$(/var/ossec/bin/wazuh-control status 2>&1); echo \"$$s\" | grep -q 'wazuh-remoted is running' && echo \"$$s\" | grep -q 'wazuh-authd is running' && echo \"$$s\" | grep -q 'wazuh-analysisd is running' && echo \"$$s\" | grep -q 'wazuh-db is running'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    # No egress needed: internal:true network already forbids it outright;
+    # this just documents the intent rather than relying on that alone.
+    networks:
+      - agentshroud-isolated
+
   # Split out of the gateway container 2026-09-06: wazuh-agentd's privilege
   # drop (setgroups()+setgid()+setuid() from root to the "wazuh" user) needs a
   # real root moment, which the gateway's non-root-from-boot + cap_drop: ALL
@@ -281,6 +339,7 @@ services:
     restart: unless-stopped
     depends_on:
       - gateway
+      - wazuh-manager
     volumes:
       # FIM target — gateway application source, read-only.
       - ../gateway:/app/gateway:ro
@@ -290,6 +349,16 @@ services:
       - falco-alerts:/var/log/falco:ro
       # This agent's own local FIM/log-analysis output — read-write.
       - wazuh-alerts:/var/ossec/logs/alerts
+      # client.keys lives here. Added 2026-09-18 alongside the real
+      # wazuh-manager: without a writable /var/ossec/etc, wazuh-agentd
+      # could successfully enroll (negotiate a real key from the manager)
+      # but had nowhere to persist it under read_only:true — every restart
+      # re-enrolled from scratch under the same agent name, and the manager
+      # correctly rejected the repeat as "Duplicate agent name". Docker
+      # seeds this volume from the image's own /var/ossec/etc (baked
+      # ossec.conf + empty client.keys) on first creation, then the real
+      # negotiated key persists here across restarts like it should.
+      - wazuh-agent-etc:/var/ossec/etc
     security_opt:
       - no-new-privileges:true
     cap_drop:
@@ -321,12 +390,19 @@ services:
         max-size: "10m"
         max-file: "3"
     healthcheck:
-      test: ["CMD", "pgrep", "-f", "wazuh-agentd"]
+      # A bare `pgrep` here previously reported "healthy" even though the
+      # agent had never once connected to a manager (there wasn't one) — the
+      # process being alive proved nothing about the thing this container
+      # exists for. wazuh-agentd writes its real connection state to
+      # wazuh-agentd.state (status='connected'|'disconnected'|'pending');
+      # check that too, not just that the process exists.
+      test: ["CMD-SHELL", "pgrep -f wazuh-agentd >/dev/null && grep -q \"status='connected'\" /var/ossec/var/run/wazuh-agentd.state"]
       interval: 30s
       timeout: 5s
       retries: 3
-      start_period: 30s
-    # No internet egress needed — local FIM/log analysis only, no live manager.
+      start_period: 60s
+    # Egress still not needed here: real manager traffic is agentshroud-isolated
+    # (internal:true, no internet route) rather than requiring external access.
     networks:
       - agentshroud-isolated
 
@@ -984,6 +1060,28 @@ volumes:
   security-reports:
     driver: local
   wazuh-alerts:
+    driver: local
+  wazuh-agent-etc:
+    driver: local
+  wazuh-manager-etc:
+    driver: local
+  wazuh-manager-logs:
+    driver: local
+  wazuh-manager-queue:
+    driver: local
+  wazuh-manager-var-multigroups:
+    driver: local
+  wazuh-manager-integrations:
+    driver: local
+  wazuh-manager-active-response:
+    driver: local
+  wazuh-manager-agentless:
+    driver: local
+  wazuh-manager-wodles:
+    driver: local
+  wazuh-manager-stats:
+    driver: local
+  wazuh-manager-api-config:
     driver: local
   falco-alerts:
     driver: local
