@@ -59,6 +59,9 @@ services:
   wazuh-agent:
     container_name: agentshroud-dev-wazuh-agent
 
+  wazuh-manager:
+    container_name: agentshroud-dev-wazuh-manager
+
   voice-gateway:
     container_name: agentshroud-dev-voice-gateway
     ports: !override
