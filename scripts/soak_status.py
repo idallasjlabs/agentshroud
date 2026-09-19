@@ -16,6 +16,26 @@ import json
 import sys
 from typing import Any
 
+# OpenClaw's own documented, intentional behavior (dist/heartbeat-D9QLafFo
+# .mjs's isHeartbeatContentEffectivelyEmpty): a heartbeat job skips its API
+# call when the agent's own scratch/notepad has no actionable tasks queued,
+# to avoid burning an LLM call on nothing. Root-caused 2026-09-19 after this
+# gate flagged 164 consecutive occurrences as NOT_SOAKED — confirmed via
+# `openclaw cron scratch <id>`: the scratch content was OpenClaw's own
+# default template ("Keep this file empty... to skip heartbeat API calls"),
+# not corrupted or unset. This is a real, working-as-designed no-op, not
+# evidence of a regression — must not block soaking. It also proves nothing
+# happened, so it must not count toward min_successes either; a real job
+# succeeding is still required to soak.
+_BENIGN_SKIP_MARKERS = ("empty-heartbeat-file",)
+
+
+def _is_benign_skip(job: dict[str, Any]) -> bool:
+    if job.get("status") != "skipped":
+        return False
+    last_error = (job.get("state") or {}).get("lastError") or job.get("lastRunError") or ""
+    return any(marker in last_error for marker in _BENIGN_SKIP_MARKERS)
+
 
 def classify(
     jobs: list[dict[str, Any]], started_at_ms: int, min_successes: int
@@ -26,9 +46,15 @@ def classify(
     status == "ok" since started_at_ms, AND no job that ran since
     started_at_ms is in any other status (error, skipped, etc.) — an
     actively-failing job since redeploy blocks soak regardless of how many
-    other jobs succeeded.
+    other jobs succeeded. A known-benign heartbeat skip (see
+    _is_benign_skip) is excluded entirely: neutral, not a block and not a
+    success.
     """
-    since_boot = [j for j in jobs if (j.get("state") or {}).get("lastRunAtMs", 0) > started_at_ms]
+    since_boot = [
+        j
+        for j in jobs
+        if (j.get("state") or {}).get("lastRunAtMs", 0) > started_at_ms and not _is_benign_skip(j)
+    ]
 
     errored = [j for j in since_boot if j.get("status") != "ok"]
     succeeded = [j for j in since_boot if j.get("status") == "ok"]
