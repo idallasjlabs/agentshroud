@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.agentshroud.colima-autostart</string>
+
+    <!-- Defense-in-depth only: fires when this account logs into the GUI
+         (console or screen-share), NOT on a headless pre-login boot. The
+         actual guarantee for scripts/sunday-upgrade.sh's unattended run is
+         that script's own Colima check/start at the top -- this LaunchAgent
+         just gets a normal interactive login back to a working state faster,
+         without anyone having to remember to run `colima start` by hand. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/colima</string>
+        <string>start</string>
+        <string>--cpu</string>
+        <string>8</string>
+        <string>--memory</string>
+        <string>12</string>
+        <string>--disk</string>
+        <string>120</string>
+        <string>--network-address</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+
+    <!-- Required: launchd hands a job a minimal PATH that excludes
+         Homebrew's bin dir (same class of bug com.agentshroud.sunday-upgrade
+         .plist already documents). colima's own binary is found fine via
+         the absolute path above, but it internally shells out to `limactl`
+         via a bare PATH lookup -- without this, RunAtLoad fails with
+         "limactl: executable file not found in $PATH" on every login,
+         silently defeating the whole point of this LaunchAgent. Found live
+         2026-09-19 installing this on prod, the night before this repo's
+         first unattended Sunday run. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/colima-autostart.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/colima-autostart.err</string>
+</dict>
+</plist>
