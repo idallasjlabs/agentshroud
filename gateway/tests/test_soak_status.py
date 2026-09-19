@@ -66,15 +66,71 @@ class TestClassify:
         assert "heartbeat-main" in message
         assert "agent-runner-failure" in message
 
-    def test_skipped_status_counts_as_not_ok(self):
-        """The 2026-09-18 heartbeat regression showed status='skipped', not
-        'error' — must not be misclassified as a success."""
+    def test_other_skipped_status_counts_as_not_ok(self):
+        """A skip for any OTHER reason (not the known-benign empty-heartbeat-
+        file case below) must not be misclassified as a success — it still
+        blocks soaking like any other non-ok status."""
         jobs = [
-            _job("heartbeat-main", "skipped", last_run_at_ms=300, last_error="empty-heartbeat-file")
+            _job(
+                "heartbeat-main", "skipped", last_run_at_ms=300, last_error="some other skip reason"
+            )
         ]
         soaked, message = classify(jobs, started_at_ms=200, min_successes=1)
         assert soaked is False
         assert "skipped" in message
+
+    def test_empty_heartbeat_file_skip_is_benign_not_blocking(self):
+        """2026-09-19 root cause: 'heartbeat skipped: empty-heartbeat-file' is
+        OpenClaw's own documented, intentional behavior (dist/heartbeat-
+        D9QLafFo.mjs's isHeartbeatContentEffectivelyEmpty — skips the
+        heartbeat API call when the agent's own scratch/notepad has no
+        actionable tasks queued, to avoid burning an LLM call on nothing).
+        It is not evidence of a regression and must not block soaking by
+        itself — but it also proves nothing, so it must not count toward
+        min_successes either. A real job succeeding is still required."""
+        jobs = [
+            _job(
+                "heartbeat-main",
+                "skipped",
+                last_run_at_ms=300,
+                last_error="heartbeat skipped: empty-heartbeat-file",
+            ),
+            _job("memory-dream", "ok", last_run_at_ms=310),
+        ]
+        soaked, message = classify(jobs, started_at_ms=200, min_successes=1)
+        assert soaked is True
+        assert "1 successful run" in message
+
+    def test_empty_heartbeat_file_skip_alone_is_not_soaked(self):
+        """The benign skip alone proves nothing — still need a real success."""
+        jobs = [
+            _job(
+                "heartbeat-main",
+                "skipped",
+                last_run_at_ms=300,
+                last_error="heartbeat skipped: empty-heartbeat-file",
+            ),
+        ]
+        soaked, message = classify(jobs, started_at_ms=200, min_successes=1)
+        assert soaked is False
+        assert "only 0/1" in message
+
+    def test_empty_heartbeat_file_skip_does_not_mask_a_real_error(self):
+        """A benign heartbeat skip must not hide an actual failing job."""
+        jobs = [
+            _job(
+                "heartbeat-main",
+                "skipped",
+                last_run_at_ms=300,
+                last_error="heartbeat skipped: empty-heartbeat-file",
+            ),
+            _job("skill-review", "error", last_run_at_ms=310, last_error="Sandbox image not found"),
+        ]
+        soaked, message = classify(jobs, started_at_ms=200, min_successes=1)
+        assert soaked is False
+        assert "errored_since_boot" in message
+        assert "skill-review" in message
+        assert "heartbeat-main" not in message
 
     def test_runs_before_boot_are_ignored(self):
         """A job that last succeeded before this boot proves nothing about
