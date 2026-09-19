@@ -33,13 +33,38 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 # Fail loudly and specifically if a required binary is missing, instead of dying
 # 40 lines later with a bare "command not found" that takes a session to diagnose.
 missing=""
-for _bin in tmux claude docker git; do
+for _bin in tmux claude docker colima git; do
   command -v "$_bin" >/dev/null 2>&1 || missing="${missing} ${_bin}"
 done
 if [ -n "$missing" ]; then
   echo "[sunday-upgrade] FATAL: required binary/binaries not on PATH:${missing}" >&2
   echo "[sunday-upgrade] PATH was: $PATH" >&2
   exit 127
+fi
+
+# ── Colima auto-start ─────────────────────────────────────────────────────────
+# Added 2026-09-19, the night before this job's first unattended Sunday firing:
+# neither this account nor the dev account has a LaunchAgent that brings Colima
+# back up after a reboot (confirmed empty on both -- `launchctl list | grep
+# colima` and `~/Library/LaunchAgents/` had nothing), and this script never
+# checked or started it either -- DOCKER_HOST above just points at a socket
+# that may not exist yet. Without this, tmux/claude/git all launch fine (none
+# of them need Docker), so the mission session would start successfully and
+# only fall apart confusingly on its FIRST real docker call, deep inside the
+# mission, instead of failing fast and clearly right here. Idempotent: a
+# `colima status` check up front means an already-running Colima (the normal
+# case on any non-post-reboot Sunday) costs one fast status call, not a
+# needless restart.
+if ! colima status >/dev/null 2>&1; then
+  echo "[sunday-upgrade] Colima is not running -- starting it before anything else needs Docker..."
+  if ! timeout 300 colima start; then
+    echo "[sunday-upgrade] FATAL: colima start failed or did not finish within 300s." >&2
+    echo "[sunday-upgrade] Nothing past this point can reach Docker. Resolve manually: colima start" >&2
+    exit 126
+  fi
+  echo "[sunday-upgrade] Colima started."
+else
+  echo "[sunday-upgrade] Colima already running."
 fi
 
 # ── On-demand invocation (owner directive 2026-09-15) ────────────────────────
