@@ -439,7 +439,28 @@ _prune_docker() {
     || timeout 60 docker buildx prune -f 2>/dev/null \
     || echo "  BuildKit prune timed out — continuing anyway"
   _prune_superseded_images
+  _fstrim_colima_datadisk
   echo "Docker prune complete. Named volumes preserved."
+}
+
+# `docker rmi`/image prune only frees space INSIDE the Colima VM's guest
+# filesystem — the VM's own sparse disk file on the host (~/.colima/_lima/
+# _disks/colima/datadisk) never shrinks back on its own, because deleting a
+# file only marks guest blocks free; it does not TRIM/discard them back to
+# the host-side sparse file. Confirmed 2026-09-19: after a full asb prune
+# reclaimed images inside the VM, `df -h` on the host was essentially
+# unchanged (97% -> 96%) because the datadisk's host-side allocation stayed
+# at ~160GB of its 200GB apparent size. `colima ssh -- sudo fstrim -av`
+# reclaimed ~11.5GB immediately. Prod hit and fixed the identical pattern on
+# its own datadisk the same day. Without this, `asb prune`'s own log
+# ("Docker prune complete") is exactly the class of step-not-outcome false
+# green CLAUDE.md section 0.0 exists to catch: the prune step ran, but the disk
+# space it claims to have freed was still not available to the host.
+_fstrim_colima_datadisk() {
+  command -v colima >/dev/null 2>&1 || return 0
+  colima status >/dev/null 2>&1 || return 0
+  echo "Trimming Colima VM disk (reclaims freed image space back to the host)..."
+  timeout 60 colima ssh -- sudo fstrim -av 2>/dev/null || echo "  fstrim failed or timed out — continuing anyway"
 }
 
 # `docker image prune` only removes DANGLING images — superseded *tagged*
