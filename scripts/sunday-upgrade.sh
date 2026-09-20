@@ -132,10 +132,31 @@ mkdir -p reports
 # a launchd/cron failure that emails/logs an actionable error is recoverable;
 # a "successful" run against a week-old checkout or someone's feature branch
 # is not, and reads as a completed upgrade when nothing current was applied.
-git fetch origin main >/dev/null 2>&1 || {
-  echo "[sunday-upgrade] FATAL: git fetch origin main failed — check network/auth before the next scheduled run." >&2
+# Retried, not single-shot. This job fires once a week (0 3 * * 0), so a
+# single transient fetch failure forfeits the ENTIRE week — which is exactly
+# what happened on 2026-09-20: the 03:02 run died here at the first attempt
+# and nothing retried it, so no upgrade ran that Sunday. This host sees
+# intermittent transport failures to some CDNs (verified 2026-09-20: streams
+# from files.pythonhosted.org abort at random sizes with TLS "bad decrypt",
+# while a 41.9MB file from another host downloads fine), so one blip must not
+# cost a week. Backoff is 30/60/90/120s — about 5 minutes total, negligible
+# against a weekly job with a 90-minute budget.
+_fetch_ok=0
+for _try in 1 2 3 4 5; do
+  if git fetch origin main >/dev/null 2>&1; then
+    _fetch_ok=1
+    [ "$_try" -gt 1 ] && echo "[sunday-upgrade] git fetch succeeded on attempt ${_try}."
+    break
+  fi
+  if [ "$_try" -lt 5 ]; then
+    echo "[sunday-upgrade] git fetch origin main failed (attempt ${_try}/5) — retrying in $((_try * 30))s."
+    sleep $((_try * 30))
+  fi
+done
+if [ "$_fetch_ok" -ne 1 ]; then
+  echo "[sunday-upgrade] FATAL: git fetch origin main failed after 5 attempts — check network/auth before the next scheduled run." >&2
   exit 3
-}
+fi
 _current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
 if [ "$_current_branch" != "main" ]; then
   echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main." >&2

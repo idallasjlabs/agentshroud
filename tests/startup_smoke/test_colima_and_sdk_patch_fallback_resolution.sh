@@ -363,6 +363,62 @@ else
 fi
 
 echo ""
+echo "── sunday-upgrade.sh: transient fetch failure must not forfeit the week ──"
+
+# 2026-09-20: the 03:02 unattended run died on its FIRST `git fetch origin
+# main` and nothing retried it, so no upgrade ran that Sunday at all. The job
+# fires once a week (0 3 * * 0), so a single-shot network call means one blip
+# costs seven days. Not theoretical on this host: streams from
+# files.pythonhosted.org abort at random sizes with TLS "bad decrypt" while a
+# 41.9MB file from another host downloads cleanly.
+
+check "git fetch is retried rather than single-shot" \
+    "scripts/sunday-upgrade.sh" \
+    "_fetch_ok"
+
+check "still FATALs (exit 3) once the retries are exhausted" \
+    "scripts/sunday-upgrade.sh" \
+    "failed after 5 attempts"
+
+if /usr/bin/grep -qE '^git fetch origin main >/dev/null 2>&1 \|\| \{' \
+    "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the old single-shot fetch guard is still present" >&2
+    fail=1
+else
+    echo "  OK : the single-shot fetch guard is gone"
+fi
+
+# Dynamic: drive the retry block with a stubbed git, to prove it both recovers
+# and still gives up — asserting behaviour, not the presence of text.
+RT="$TMPROOT/retry.sh"
+/usr/bin/sed -n '/^_fetch_ok=0$/,/^fi$/p' "$REPO/scripts/sunday-upgrade.sh" > "$RT.body"
+{
+  echo 'sleep() { :; }'
+  echo 'git() { [ "$ATTEMPT_N" -ge "${FAIL_UNTIL:-99}" ] && return 0; ATTEMPT_N=$((ATTEMPT_N+1)); return 1; }'
+  echo 'ATTEMPT_N=1'
+  cat "$RT.body"
+  echo 'exit 0'
+} > "$RT"
+
+if OUT=$(FAIL_UNTIL=3 bash "$RT" 2>&1) && echo "$OUT" | /usr/bin/grep -q "succeeded on attempt 3"; then
+    echo "  OK : recovers when a later attempt succeeds"
+else
+    echo "  FAIL: did not recover on a later successful attempt" >&2
+    fail=1
+fi
+
+# Must be inside the `if` condition: this file runs under `set -e`, so a bare
+# invocation that exits 3 aborts the whole suite and silently truncates every
+# check after it (it did, on first run).
+if FAIL_UNTIL=99 bash "$RT" >/dev/null 2>&1; then _rc=0; else _rc=$?; fi
+if [ "$_rc" -eq 3 ]; then
+    echo "  OK : still exits 3 when every attempt fails"
+else
+    echo "  FAIL: exhausted retries did not exit 3" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0
