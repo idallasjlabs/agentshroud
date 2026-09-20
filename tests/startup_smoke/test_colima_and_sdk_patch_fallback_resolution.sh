@@ -281,6 +281,88 @@ else
 fi
 
 echo ""
+echo "── hook ownership: installers must be additive, never clobber ──"
+
+# .git/hooks/pre-commit is a single file. Four things used to write it
+# (.llm_settings/git-hooks/install.sh twice, its `git secrets --install
+# --force`, and scripts/pre-commit-hook.sh's documented `cp`), so whichever ran
+# last silently won. On 2026-09-20 a bare `git secrets --install` had reduced
+# it to a two-line git-secrets call, leaving gitleaks, detect-secrets, ruff,
+# black and semgrep running on no commit at all. Owner will keep installing
+# llm_settings into this and other repos as it grows; these checks are what
+# stop that from costing coverage again.
+
+# Strip comments and blanks first — this file DOCUMENTS the old clobbering
+# behaviour at length, and a naive grep matches that prose and reports a
+# regression that isn't there (it did, on first run).
+INSTALL_CODE="$TMPROOT/install.code.sh"
+/usr/bin/sed -e 's/[[:space:]]*#.*$//' -e '/^[[:space:]]*$/d' \
+    "$REPO/.llm_settings/git-hooks/install.sh" > "$INSTALL_CODE"
+
+if /usr/bin/grep -qE 'cp .*\$HOOK_SOURCE.* \.git/hooks/pre-commit' "$INSTALL_CODE"; then
+    echo "  FAIL: install.sh still copies a hook over .git/hooks/pre-commit" >&2
+    fail=1
+else
+    echo "  OK : install.sh no longer clobbers the hook path"
+fi
+
+if /usr/bin/grep -q 'git secrets --install --force' "$INSTALL_CODE"; then
+    echo "  FAIL: install.sh still runs 'git secrets --install --force'" >&2
+    fail=1
+else
+    echo "  OK : install.sh no longer force-installs git-secrets over the hook"
+fi
+
+check "install.sh hands ownership to pre-commit" \
+    ".llm_settings/git-hooks/install.sh" \
+    "pre-commit install"
+
+check "install.sh refuses to overwrite an existing config" \
+    ".llm_settings/git-hooks/install.sh" \
+    "left untouched"
+
+check "scripts/pre-commit-hook.sh warns against being copied into place" \
+    "scripts/pre-commit-hook.sh" \
+    "DO NOT INSTALL THIS BY COPYING"
+
+if /usr/bin/grep -A2 'gitleaks not found' "$REPO/scripts/pre-commit-hook.sh" \
+    | /usr/bin/grep -q 'exit 0'; then
+    echo "  FAIL: pre-commit-hook.sh still exits 0 when gitleaks is missing" >&2
+    fail=1
+else
+    echo "  OK : a missing gitleaks fails instead of silently passing"
+fi
+
+# Dynamic: prove the installer preserves a config and hook it did not write.
+echo ""
+echo "── dynamic: installer preserves pre-existing config + hook ──"
+
+HR="$TMPROOT/hookrepo"
+mkdir -p "$HR"
+(
+  cd "$HR" && git init -q 2>/dev/null
+  printf 'repos:\n  - repo: local\n    hooks:\n      - id: sentinel-hook\n        name: sentinel\n        entry: true\n        language: system\n' > .pre-commit-config.yaml
+  printf '#!/bin/sh\necho custom\n' > .git/hooks/pre-commit
+  chmod +x .git/hooks/pre-commit
+  shasum .pre-commit-config.yaml | awk '{print $1}' > .sentinel-before
+  bash "$REPO/.llm_settings/git-hooks/install.sh" >/dev/null 2>&1 || true
+  shasum .pre-commit-config.yaml | awk '{print $1}' > .sentinel-after
+)
+if [ "$(cat "$HR/.sentinel-before" 2>/dev/null)" = "$(cat "$HR/.sentinel-after" 2>/dev/null)" ] \
+   && /usr/bin/grep -q sentinel-hook "$HR/.pre-commit-config.yaml" 2>/dev/null; then
+    echo "  OK : pre-existing .pre-commit-config.yaml survives the installer byte-for-byte"
+else
+    echo "  FAIL: installer modified or replaced a config it did not write" >&2
+    fail=1
+fi
+if ls "$HR"/.git/hooks/pre-commit.pre-llm-settings.* >/dev/null 2>&1; then
+    echo "  OK : pre-existing hook was backed up, not discarded"
+else
+    echo "  FAIL: pre-existing hook was not backed up" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0

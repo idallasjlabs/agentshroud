@@ -108,13 +108,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Pinned to the same rev as the semgrep hook in .pre-commit-config.yaml
-      # so `pre-commit run semgrep` locally and this job cannot disagree.
-      # NOTE 2026-09-20: 1.60.1 is past upstream EOL (semgrep.dev supports
-      # >= 1.76.0 and the CLI says so on every run). Bump both together —
-      # scripts/sunday-upgrade.sh owns that, per CLAUDE.md 0.05.
+      # Keep in step with the semgrep provided by flake.nix devTools, so
+      # `pre-commit run semgrep` locally and this job cannot disagree.
+      # Bumped 1.60.1 -> 1.177.0 on 2026-09-20: 1.60.1 was past upstream EOL
+      # (semgrep.dev supports >= 1.76.0 and the CLI warned on every run).
+      # Verified before landing — 1.177.0 returns the identical finding set on
+      # gateway/ (136: 131 WARNING / 5 ERROR) and the baselined gate below
+      # still exits 0, so the bump changes enforcement not at all.
       - name: Install semgrep
-        run: pip install semgrep==1.60.1
+        run: pip install semgrep==1.177.0
 
       # THE GATE: fail on findings this change INTRODUCES.
       # gateway/ carries 136 pre-existing findings (131 WARNING / 5 ERROR,
