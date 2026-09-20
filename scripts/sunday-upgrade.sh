@@ -133,33 +133,40 @@ mkdir -p reports
 # a "successful" run against a week-old checkout or someone's feature branch
 # is not, and reads as a completed upgrade when nothing current was applied.
 # ── Memory precondition ─────────────────────────────────────────────────────
-# Refuse to start into a host that is already swapping hard. This box runs two
-# Colima VMs (dev + prod) on one machine, and on 2026-09-20 prod's upgrade had
-# driven swap to 16.7GB of 18.4GB (91%) with macOS having grown the swap file
-# twice. A build started into that gets OOM-killed for reasons that appear
-# nowhere in this job's log, which is worse than not starting: it burns the
-# retry slot AND produces a failure nobody can diagnose from the record.
+# Refuse to start into a host that is genuinely out of memory. This box runs
+# two Colima VMs (dev + prod) on one machine, and a build started into a
+# critically-pressured host gets OOM-killed for reasons that appear nowhere in
+# this job's log — worse than not starting, because it burns the retry slot AND
+# leaves a failure nobody can diagnose from the record.
+#
+# Keyed on macOS's own pressure level, NOT on free swap. The first version of
+# this check used swap headroom and was wrong: on 2026-09-20 this host showed
+# 392MB free swap (looks dire) while physical memory was 32% free of 64GB and
+# the kernel reported pressure level 2. macOS grows the swap file under load
+# and does not release it afterwards, so "free swap" stays near zero on a
+# perfectly healthy host — a swap threshold here would defer every run forever,
+# which is precisely the failure this job cannot afford.
+#
+# kern.memorystatus_vm_pressure_level: 1 = normal, 2 = warn, 4 = critical.
+# Defer only at critical. Warn is the normal state of a busy build host.
 #
 # Deferring is safe because retries are scheduled — the next fire re-checks.
 # Exit 5 is distinct from 3 (fetch) and 4 (wrong branch) so "deferred for
 # memory" is never mistaken for either a success or a hard failure.
-# Override with SUNDAY_UPGRADE_MIN_SWAP_FREE_MB=0 to disable.
-_min_swap_free_mb="${SUNDAY_UPGRADE_MIN_SWAP_FREE_MB:-3072}"
-if [ "$_min_swap_free_mb" -gt 0 ]; then
-  # sysctl prints: total = N.00M  used = N.00M  free = N.00M  (encrypted)
-  _swap_free_mb="$(sysctl -n vm.swapusage 2>/dev/null \
-      | sed -n 's/.*free = \([0-9]*\)\.[0-9]*M.*/\1/p')"
-  if [ -n "$_swap_free_mb" ]; then
-    if [ "$_swap_free_mb" -lt "$_min_swap_free_mb" ]; then
-      echo "[sunday-upgrade] DEFERRED: only ${_swap_free_mb}MB swap free (need ${_min_swap_free_mb}MB)." >&2
-      echo "[sunday-upgrade] Host is swapping hard; a build started now would likely be OOM-killed." >&2
-      echo "[sunday-upgrade] Not consuming today's run — the next scheduled retry will re-check." >&2
-      exit 5
-    fi
-    echo "[sunday-upgrade] memory precondition OK (${_swap_free_mb}MB swap free)."
+# Override with SUNDAY_UPGRADE_SKIP_MEM_CHECK=1.
+if [ "${SUNDAY_UPGRADE_SKIP_MEM_CHECK:-0}" != "1" ]; then
+  _mem_level="$(sysctl -n kern.memorystatus_vm_pressure_level 2>/dev/null || echo '')"
+  if [ -n "$_mem_level" ] && [ "$_mem_level" -ge 4 ] 2>/dev/null; then
+    echo "[sunday-upgrade] DEFERRED: host memory pressure is CRITICAL (level ${_mem_level})." >&2
+    echo "[sunday-upgrade] A build started now would likely be OOM-killed." >&2
+    echo "[sunday-upgrade] Not consuming today's run — the next scheduled retry will re-check." >&2
+    exit 5
+  fi
+  if [ -n "$_mem_level" ]; then
+    echo "[sunday-upgrade] memory precondition OK (pressure level ${_mem_level}; 4 would defer)."
   else
     # Never fail the run because the probe itself did not work.
-    echo "[sunday-upgrade] NOTE: could not read vm.swapusage — skipping the memory precondition."
+    echo "[sunday-upgrade] NOTE: could not read kern.memorystatus_vm_pressure_level — skipping the memory precondition."
   fi
 fi
 

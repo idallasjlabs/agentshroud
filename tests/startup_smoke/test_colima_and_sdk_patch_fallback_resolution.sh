@@ -421,50 +421,61 @@ fi
 echo ""
 echo "── sunday-upgrade.sh: memory precondition ──"
 
-# This box runs two Colima VMs on one machine. On 2026-09-20 prod's upgrade had
-# driven swap to 16.7GB of 18.4GB (91%), with macOS growing the swap file twice.
-# A build started into that gets OOM-killed for reasons that appear nowhere in
-# this job's log — worse than not starting, because it burns a retry slot AND
-# leaves an undiagnosable failure. Exit 5 keeps "deferred" distinct from 3
-# (fetch) and 4 (wrong branch), so a defer is never read as success or failure.
+# This box runs two Colima VMs on one machine; a build started into a
+# critically-pressured host gets OOM-killed for reasons that appear nowhere in
+# the job's log. Exit 5 keeps "deferred" distinct from 3 (fetch) and 4 (wrong
+# branch), so a defer is never read as success or failure.
+#
+# Keyed on macOS's pressure level, NOT free swap. The first version used swap
+# headroom and was wrong: on 2026-09-20 this host showed 392MB free swap while
+# physical memory was 32% free of 64GB at pressure level 2. macOS grows swap
+# under load and never releases it, so free swap sits near zero on a healthy
+# host — that threshold would have deferred every run forever.
 
-check "defers on low swap with a distinct exit code" \
+check "keys on the kernel pressure level, not free swap" \
+    "scripts/sunday-upgrade.sh" \
+    "kern.memorystatus_vm_pressure_level"
+
+if /usr/bin/grep -q "SUNDAY_UPGRADE_MIN_SWAP_FREE_MB" "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the swap-based threshold is still present" >&2
+    fail=1
+else
+    echo "  OK : the swap-based threshold is gone"
+fi
+
+check "defers with a distinct exit code" \
     "scripts/sunday-upgrade.sh" \
     "exit 5"
-
-check "threshold is overridable" \
-    "scripts/sunday-upgrade.sh" \
-    "SUNDAY_UPGRADE_MIN_SWAP_FREE_MB"
 
 MG="$TMPROOT/memguard.sh"
 /usr/bin/sed -n '/^# ── Memory precondition/,/^fi$/p' \
     "$REPO/scripts/sunday-upgrade.sh" > "$MG.body"
 {
   echo '#!/bin/bash'
-  echo 'sysctl() { echo "total = 18432.00M  used = 1.00M  free = ${FAKE_FREE:-1702}.25M  (encrypted)"; }'
+  echo 'sysctl() { [ "${FAKE_FAIL:-0}" = "1" ] && return 1; echo "${FAKE_LEVEL:-2}"; }'
   cat "$MG.body"
   echo 'exit 0'
 } > "$MG"
 
-if FAKE_FREE=1702 bash "$MG" >/dev/null 2>&1; then _rc=0; else _rc=$?; fi
+for lvl in 1 2; do
+    if FAKE_LEVEL=$lvl bash "$MG" >/dev/null 2>&1; then
+        echo "  OK : proceeds at pressure level $lvl"
+    else
+        echo "  FAIL: deferred at pressure level $lvl (should proceed)" >&2
+        fail=1
+    fi
+done
+
+if FAKE_LEVEL=4 bash "$MG" >/dev/null 2>&1; then _rc=0; else _rc=$?; fi
 if [ "$_rc" -eq 5 ]; then
-    echo "  OK : defers (exit 5) when swap headroom is below the threshold"
+    echo "  OK : defers (exit 5) at critical pressure"
 else
-    echo "  FAIL: low swap did not defer with exit 5 (got $_rc)" >&2
+    echo "  FAIL: critical pressure did not defer with exit 5 (got $_rc)" >&2
     fail=1
 fi
 
-if FAKE_FREE=8000 bash "$MG" >/dev/null 2>&1; then
-    echo "  OK : proceeds when headroom is healthy"
-else
-    echo "  FAIL: healthy headroom did not proceed" >&2
-    fail=1
-fi
-
-# The probe failing must never fail the run — only a real reading may defer.
-if { echo '#!/bin/bash'; echo 'sysctl() { return 1; }'; cat "$MG.body"; echo 'exit 0'; } > "$MG.noprobe" \
-   && bash "$MG.noprobe" >/dev/null 2>&1; then
-    echo "  OK : an unreadable vm.swapusage skips the check rather than blocking"
+if FAKE_FAIL=1 bash "$MG" >/dev/null 2>&1; then
+    echo "  OK : an unreadable probe skips the check rather than blocking"
 else
     echo "  FAIL: a failed probe blocked the run" >&2
     fail=1
