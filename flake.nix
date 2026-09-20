@@ -63,6 +63,14 @@
           pkgs.curl
           pkgs.jq
           pkgs.trivy
+          # Added 2026-09-20. Their absence here was why the security gates
+          # that depend on them silently no-opped: semgrep drives the SAST in
+          # scripts/security-scan.sh and .semgrep.yml, pre-commit owns
+          # .git/hooks/pre-commit via .pre-commit-config.yaml, and gitleaks is
+          # the secret scanner both that config and CI rely on.
+          pkgs.semgrep
+          pkgs.pre-commit
+          pkgs.gitleaks
         ];
       in
       {
