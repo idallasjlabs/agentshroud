@@ -132,6 +132,37 @@ mkdir -p reports
 # a launchd/cron failure that emails/logs an actionable error is recoverable;
 # a "successful" run against a week-old checkout or someone's feature branch
 # is not, and reads as a completed upgrade when nothing current was applied.
+# ── Memory precondition ─────────────────────────────────────────────────────
+# Refuse to start into a host that is already swapping hard. This box runs two
+# Colima VMs (dev + prod) on one machine, and on 2026-09-20 prod's upgrade had
+# driven swap to 16.7GB of 18.4GB (91%) with macOS having grown the swap file
+# twice. A build started into that gets OOM-killed for reasons that appear
+# nowhere in this job's log, which is worse than not starting: it burns the
+# retry slot AND produces a failure nobody can diagnose from the record.
+#
+# Deferring is safe because retries are scheduled — the next fire re-checks.
+# Exit 5 is distinct from 3 (fetch) and 4 (wrong branch) so "deferred for
+# memory" is never mistaken for either a success or a hard failure.
+# Override with SUNDAY_UPGRADE_MIN_SWAP_FREE_MB=0 to disable.
+_min_swap_free_mb="${SUNDAY_UPGRADE_MIN_SWAP_FREE_MB:-3072}"
+if [ "$_min_swap_free_mb" -gt 0 ]; then
+  # sysctl prints: total = N.00M  used = N.00M  free = N.00M  (encrypted)
+  _swap_free_mb="$(sysctl -n vm.swapusage 2>/dev/null \
+      | sed -n 's/.*free = \([0-9]*\)\.[0-9]*M.*/\1/p')"
+  if [ -n "$_swap_free_mb" ]; then
+    if [ "$_swap_free_mb" -lt "$_min_swap_free_mb" ]; then
+      echo "[sunday-upgrade] DEFERRED: only ${_swap_free_mb}MB swap free (need ${_min_swap_free_mb}MB)." >&2
+      echo "[sunday-upgrade] Host is swapping hard; a build started now would likely be OOM-killed." >&2
+      echo "[sunday-upgrade] Not consuming today's run — the next scheduled retry will re-check." >&2
+      exit 5
+    fi
+    echo "[sunday-upgrade] memory precondition OK (${_swap_free_mb}MB swap free)."
+  else
+    # Never fail the run because the probe itself did not work.
+    echo "[sunday-upgrade] NOTE: could not read vm.swapusage — skipping the memory precondition."
+  fi
+fi
+
 # Retried, not single-shot. This job fires once a week (0 3 * * 0), so a
 # single transient fetch failure forfeits the ENTIRE week — which is exactly
 # what happened on 2026-09-20: the 03:02 run died here at the first attempt
