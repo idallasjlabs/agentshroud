@@ -547,3 +547,111 @@ def test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated
                 f"{tool_id}/{cve['id']} has status {cve['status']!r} — only "
                 "under_review is expected until a real triage pass runs"
             )
+
+
+# ---------------------------------------------------------------------------
+# Multi-agent triage coverage (2026-09-21)
+#
+# The registry holds ten agents (openclaw, hermes, trivy, cosign, openscap,
+# syft, falco, clamav, wazuh, semgrep) but scripts/triage-cve-mitigations.py
+# processed ONE per invocation, defaulting to openclaw, and wrote every report
+# to a single fixed path — so running it for another agent would OVERWRITE the
+# OpenClaw report rather than add to it. Nine registries were therefore never
+# triaged: 98 advisories across trivy/cosign/syft/falco/wazuh were invisible
+# while docs/security/cve-triage-gaps.md called itself "the HONEST residual"
+# and "NOT hidden behind a green badge".
+#
+# Making them visible is the easy half. Making them CORRECT is gated on a
+# per-agent running-version source: RUNNING_VERSION is read once from
+# OPENCLAW_VERSION and WRAPPED_AGENT is the literal "OpenClaw", so triaging
+# another agent emits "Fixed upstream in OpenClaw 0.69.3; the running image
+# (2026.9.4) is unaffected" on a Trivy advisory. Enabling --all-agents without
+# that guard flipped 96 advisories to fully_mitigated on exactly that
+# reasoning; those writes were reverted, not shipped.
+# ---------------------------------------------------------------------------
+
+import subprocess  # noqa: E402
+import sys as _sys  # noqa: E402
+from pathlib import Path as _Path  # noqa: E402
+
+_TRIAGE = _Path(__file__).parent.parent.parent / "scripts" / "triage-cve-mitigations.py"
+
+
+def _run_triage(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run(
+        [_sys.executable, str(_TRIAGE), *args],
+        capture_output=True,
+        text=True,
+        timeout=600,
+    )
+
+
+def _load_triage_module():
+    """Import the triage script by path.
+
+    It must be registered in sys.modules before exec_module: the script defines
+    dataclasses, and @dataclass resolves its owner via sys.modules[__module__].
+    Without the registration that lookup returns None and construction dies with
+    "'NoneType' object has no attribute '__dict__'".
+    """
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("_triage_mod", _TRIAGE)
+    mod = importlib.util.module_from_spec(spec)
+    _sys.modules[spec.name] = mod
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_all_agents_flag_exists():
+    """Every registry must be reachable, not just openclaw."""
+    out = _run_triage("--help").stdout
+    assert "--all-agents" in out, (
+        "triage must be able to cover every registry; processing one agent per "
+        "invocation is how 98 advisories stayed invisible"
+    )
+
+
+def test_gap_reports_are_per_agent():
+    """A single shared output path makes multi-agent coverage impossible."""
+    mod = _load_triage_module()
+    paths = {a: mod.gap_report_path(a) for a in ("openclaw", "trivy", "wazuh")}
+    assert (
+        len(set(paths.values())) == 3
+    ), f"agents must not share a gap-report path (would overwrite): {paths}"
+    assert (
+        paths["openclaw"].name == "cve-triage-gaps.md"
+    ), "openclaw must keep the original filename so existing references resolve"
+
+
+def test_untriageable_agents_are_refused_not_guessed():
+    """An agent with no version source must be refused, never verdicted.
+
+    Emitting fully_mitigated for trivy based on OpenClaw's version is worse
+    than leaving it under_review: it converts an open question into a false
+    assurance, which is the exact thing the gap report promises it is not.
+    """
+    mod = _load_triage_module()
+    assert mod.untriageable_reason("openclaw") is None
+    for agent in ("trivy", "cosign", "falco", "wazuh", "syft"):
+        assert mod.untriageable_reason(
+            agent
+        ), f"{agent} has no per-agent version source and must be refused"
+
+
+def test_all_agents_run_reports_untriaged_and_exits_nonzero():
+    """Coverage gaps must be loud and must fail an automated caller."""
+    proc = _run_triage("--all-agents", "--dry-run")
+    assert proc.returncode == 1, (
+        "a run leaving advisories untriaged must not exit 0 — a caller would "
+        f"read it as complete coverage. stdout:\n{proc.stdout[-800:]}"
+    )
+    assert "UNTRIAGED" in proc.stdout
+    for agent in ("trivy", "cosign", "falco", "wazuh"):
+        assert agent in proc.stdout, f"{agent} must appear in the untriaged report"
+
+
+def test_default_single_agent_run_still_succeeds():
+    """Backward compatibility: the default openclaw run must still exit 0."""
+    proc = _run_triage("--dry-run")
+    assert proc.returncode == 0, proc.stdout[-500:]
