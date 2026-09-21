@@ -322,11 +322,19 @@ echo "[sunday-upgrade] mission submitted at launch — watch/steer from the phon
 
 # Wait for the session to finish, then stage the report for Hermes delivery.
 elapsed=0
+TIMED_OUT=0
 while tmux has-session -t "$SESSION" 2>/dev/null; do
   sleep 60
   elapsed=$((elapsed + 1))
   if [ "$elapsed" -ge "$WATCH_TIMEOUT_MIN" ]; then
-    echo "[sunday-upgrade] WARN: session still open after ${WATCH_TIMEOUT_MIN}m — staging whatever report exists and leaving the session running"
+    # Actually STOP it. This previously logged a warning, broke out of the
+    # wait loop and left the agent running: on 2026-09-20 an 11:00 run was
+    # "timed out" at 14:00 and kept working until 21:09 — ten hours against a
+    # three-hour ceiling, with the script long since exited. A timeout that
+    # does not terminate is not a timeout, and the run has a hard budget.
+    echo "[sunday-upgrade] WARN: session exceeded ${WATCH_TIMEOUT_MIN}m — terminating it now." >&2
+    tmux kill-session -t "$SESSION" 2>/dev/null || true
+    TIMED_OUT=1
     break
   fi
 done
@@ -342,8 +350,43 @@ else
   echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
 fi
 
-# Completion sentinel — only written once the run reached the end of the script.
-# Guards same-day re-fires (see DONE_MARKER check above) WITHOUT trapping a
-# failed run behind its own partial output.
+# ── Return the checkout to main ─────────────────────────────────────────────
+# The run works on chore/upgrade-<date>. It used to LEAVE the checkout there,
+# which hard-blocks every later run at the branch guard (exit 4) — on
+# 2026-09-21 the 03:00 and 05:00 fires both FATAL'd on the branch left behind
+# by the 2026-09-20 run. The job must not sabotage its own next invocation.
+#
+# Push first so the work is never stranded local-only, then switch back. Both
+# steps are skipped when the tree is dirty: a half-finished working tree is
+# the one case where switching branches loses work, and losing work is worse
+# than leaving the checkout somewhere inconvenient.
+_final_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+if [ -n "$_final_branch" ] && [ "$_final_branch" != "main" ]; then
+  _leftover="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' | grep -v '^??' || true)"
+  if [ -n "$_leftover" ]; then
+    echo "[sunday-upgrade] WARN: staying on '${_final_branch}' — uncommitted changes present." >&2
+    echo "[sunday-upgrade] WARN: the NEXT run will fail its branch guard until this is resolved." >&2
+  else
+    if git push -u origin "$_final_branch" >/dev/null 2>&1; then
+      echo "[sunday-upgrade] pushed '${_final_branch}' (work preserved for review)."
+    else
+      echo "[sunday-upgrade] WARN: could not push '${_final_branch}' — it exists only locally." >&2
+    fi
+    if git checkout main >/dev/null 2>&1; then
+      echo "[sunday-upgrade] checkout returned to main (next run's branch guard will pass)."
+    else
+      echo "[sunday-upgrade] WARN: could not return the checkout to main." >&2
+    fi
+  fi
+fi
+
+# Completion sentinel — ONLY on a run that genuinely finished. Writing it after
+# a timeout marked the day done while the agent was still working (2026-09-20:
+# sentinel at 14:00, report actually written at 19:53), which then made every
+# remaining retry that day skip. A timed-out run must stay retryable.
+if [ "${TIMED_OUT:-0}" = "1" ]; then
+  echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
+  exit 6
+fi
 touch "$DONE_MARKER"
 echo "[sunday-upgrade] $(date '+%H:%M:%S') run complete (sentinel: $DONE_MARKER)"

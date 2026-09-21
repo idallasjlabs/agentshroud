@@ -482,6 +482,83 @@ else
 fi
 
 echo ""
+echo "── sunday-upgrade.sh: 3h ceiling is enforced, and no branch is left behind ──"
+
+# 2026-09-20/21, both found live:
+#  * The 180m watchdog logged "leaving the session running" and broke out of
+#    the wait loop WITHOUT killing tmux. An 11:00 run was "timed out" at 14:00
+#    and kept working until 21:09 — ten hours against a three-hour ceiling.
+#  * The sentinel was written unconditionally, so that timed-out run marked the
+#    day complete at 14:00 while its report was not written until 19:53, and
+#    every remaining retry that day skipped.
+#  * The run left the checkout on chore/upgrade-<date>, so the next day's 03:00
+#    and 05:00 fires both FATAL'd on the branch guard. The job sabotaged its
+#    own next invocation.
+
+check "the watchdog actually kills the session" \
+    "scripts/sunday-upgrade.sh" \
+    "tmux kill-session -t"
+
+check "a timed-out run is flagged rather than silently completed" \
+    "scripts/sunday-upgrade.sh" \
+    "TIMED_OUT=1"
+
+check "a timed-out run writes no sentinel and stays retryable" \
+    "scripts/sunday-upgrade.sh" \
+    "no sentinel written"
+
+if /usr/bin/grep -q "leaving the session running" "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the watchdog still leaves the session running" >&2
+    fail=1
+else
+    echo "  OK : the 'leaving the session running' behaviour is gone"
+fi
+
+check "the checkout is returned to main" \
+    "scripts/sunday-upgrade.sh" \
+    "checkout returned to main"
+
+# Dynamic: drive the branch-return block against real scratch repos.
+BR="$TMPROOT/br.body"
+/usr/bin/sed -n '/^_final_branch=/,/^fi$/p' "$REPO/scripts/sunday-upgrade.sh" > "$BR"
+BREM="$TMPROOT/bremote"; git init -q --bare "$BREM" 2>/dev/null
+
+_mk() {  # $1 = dirty|clean
+    rm -rf "$TMPROOT/brepo"; git init -q -b main "$TMPROOT/brepo" 2>/dev/null
+    ( cd "$TMPROOT/brepo"
+      git config user.email t@t; git config user.name t
+      git remote add origin "$BREM"
+      echo base > f.txt; git add -A; git commit -qm base; git push -q -u origin main 2>/dev/null
+      git checkout -q -b chore/upgrade-test; echo work >> f.txt; git add -A; git commit -qm work
+      [ "$1" = "dirty" ] && echo uncommitted >> f.txt
+      true )
+}
+
+_mk clean
+( cd "$TMPROOT/brepo" && source "$BR" ) >/dev/null 2>&1 || true
+if [ "$(cd "$TMPROOT/brepo" && git rev-parse --abbrev-ref HEAD)" = "main" ]; then
+    echo "  OK : a clean tree is returned to main"
+else
+    echo "  FAIL: a clean tree was left on the upgrade branch" >&2
+    fail=1
+fi
+if [ "$(cd "$TMPROOT/brepo" && git ls-remote --heads origin chore/upgrade-test | wc -l | tr -d ' ')" = "1" ]; then
+    echo "  OK : the branch is pushed before switching, so work is never stranded"
+else
+    echo "  FAIL: the upgrade branch was not pushed" >&2
+    fail=1
+fi
+
+_mk dirty
+( cd "$TMPROOT/brepo" && source "$BR" ) >/dev/null 2>&1 || true
+if [ "$(cd "$TMPROOT/brepo" && git rev-parse --abbrev-ref HEAD)" = "chore/upgrade-test" ]; then
+    echo "  OK : a dirty tree is left alone rather than losing uncommitted work"
+else
+    echo "  FAIL: switched away from a dirty tree" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0
