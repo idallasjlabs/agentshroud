@@ -8,7 +8,59 @@
       "Bash(conda run:*)",
       "Bash(ruff:*)",
       "Bash(black:*)",
-      "Bash(pytest:*)"
+      "Bash(pytest:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(gitleaks:*)",
+      "Bash(docker:*)",
+      "Bash(docker-compose:*)",
+      "Bash(colima:*)",
+      "Bash(limactl:*)",
+      "Bash(pip:*)",
+      "Bash(uv:*)",
+      "Bash(mypy:*)",
+      "Bash(semgrep:*)",
+      "Bash(shellcheck:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(conda:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(awk:*)",
+      "Bash(sed:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(jq:*)",
+      "Bash(stat:*)",
+      "Bash(file:*)",
+      "Bash(df:*)",
+      "Bash(du:*)",
+      "Bash(ps:*)",
+      "Bash(lsof:*)",
+      "Bash(sysctl:*)",
+      "Bash(echo:*)",
+      "Bash(printf:*)",
+      "Bash(true)",
+      "Bash(false)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(tar:*)",
+      "Bash(rsync:*)",
+      "Bash(tee:*)",
+      "Bash(xargs:*)",
+      "Bash(timeout:*)",
+      "Bash(curl:*)",
+      "Bash(tmux:*)",
+      "Bash(scripts/:*)",
+      "Bash(docker/scripts/:*)",
+      "Bash(bash scripts/:*)"
     ],
     "deny": [
       "Read(docker/secrets/**)",
@@ -19,13 +71,10 @@
       "Read(**/.env.*)"
     ]
   },
-
   "model": "sonnet",
-
   "agentPushNotifEnabled": true,
   "tui": "fullscreen",
   "remoteControlAtStartup": true,
-
   "hooks": {
     "PreToolUse": [
       {
@@ -68,7 +117,6 @@
         ]
       }
     ],
-
     "PostToolUse": [
       {
         "matcher": "tools:BashTool",

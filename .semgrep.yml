@@ -145,6 +145,22 @@ rules:
     patterns:
       - pattern: assert $EXPR, $MSG
       - pattern-not: assert $EXPR  # no message = test context
+    # The pattern-not above tried to spot test code by the ABSENCE of a
+    # message, which is backwards: a pytest assertion carrying an explanatory
+    # message is better test code, not production security code, so the
+    # heuristic fired on exactly the tests it meant to spare. Excluding test
+    # paths outright is both correct and honest — `assert` IS the pytest
+    # idiom, and a test file is not a place where -O stripping is a security
+    # concern. Added 2026-09-21, when this fired on every assertion in
+    # test_hermes_cron_seed.py and blocked the commit.
+    # Production code remains fully covered: this narrows the rule by path
+    # only, never by severity or by weakening the pattern.
+    paths:
+      exclude:
+        - "**/tests/**"
+        - "**/test_*.py"
+        - "**/*_test.py"
+        - "**/conftest.py"
     message: |
       assert statements are removed when Python runs with -O optimization.
       Never use assert for security checks. Use explicit if/raise instead.

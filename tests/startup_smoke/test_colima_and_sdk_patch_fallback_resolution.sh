@@ -363,6 +363,256 @@ else
 fi
 
 echo ""
+echo "── sunday-upgrade.sh: transient fetch failure must not forfeit the week ──"
+
+# 2026-09-20: the 03:02 unattended run died on its FIRST `git fetch origin
+# main` and nothing retried it, so no upgrade ran that Sunday at all. The job
+# fires once a week (0 3 * * 0), so a single-shot network call means one blip
+# costs seven days. Not theoretical on this host: streams from
+# files.pythonhosted.org abort at random sizes with TLS "bad decrypt" while a
+# 41.9MB file from another host downloads cleanly.
+
+check "git fetch is retried rather than single-shot" \
+    "scripts/sunday-upgrade.sh" \
+    "_fetch_ok"
+
+check "still FATALs (exit 3) once the retries are exhausted" \
+    "scripts/sunday-upgrade.sh" \
+    "failed after 5 attempts"
+
+if /usr/bin/grep -qE '^git fetch origin main >/dev/null 2>&1 \|\| \{' \
+    "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the old single-shot fetch guard is still present" >&2
+    fail=1
+else
+    echo "  OK : the single-shot fetch guard is gone"
+fi
+
+# Dynamic: drive the retry block with a stubbed git, to prove it both recovers
+# and still gives up — asserting behaviour, not the presence of text.
+RT="$TMPROOT/retry.sh"
+/usr/bin/sed -n '/^_fetch_ok=0$/,/^fi$/p' "$REPO/scripts/sunday-upgrade.sh" > "$RT.body"
+{
+  echo 'sleep() { :; }'
+  echo 'git() { [ "$ATTEMPT_N" -ge "${FAIL_UNTIL:-99}" ] && return 0; ATTEMPT_N=$((ATTEMPT_N+1)); return 1; }'
+  echo 'ATTEMPT_N=1'
+  cat "$RT.body"
+  echo 'exit 0'
+} > "$RT"
+
+if OUT=$(FAIL_UNTIL=3 bash "$RT" 2>&1) && echo "$OUT" | /usr/bin/grep -q "succeeded on attempt 3"; then
+    echo "  OK : recovers when a later attempt succeeds"
+else
+    echo "  FAIL: did not recover on a later successful attempt" >&2
+    fail=1
+fi
+
+# Must be inside the `if` condition: this file runs under `set -e`, so a bare
+# invocation that exits 3 aborts the whole suite and silently truncates every
+# check after it (it did, on first run).
+if FAIL_UNTIL=99 bash "$RT" >/dev/null 2>&1; then _rc=0; else _rc=$?; fi
+if [ "$_rc" -eq 3 ]; then
+    echo "  OK : still exits 3 when every attempt fails"
+else
+    echo "  FAIL: exhausted retries did not exit 3" >&2
+    fail=1
+fi
+
+echo ""
+echo "── sunday-upgrade.sh: memory precondition ──"
+
+# This box runs two Colima VMs on one machine; a build started into a
+# critically-pressured host gets OOM-killed for reasons that appear nowhere in
+# the job's log. Exit 5 keeps "deferred" distinct from 3 (fetch) and 4 (wrong
+# branch), so a defer is never read as success or failure.
+#
+# Keyed on macOS's pressure level, NOT free swap. The first version used swap
+# headroom and was wrong: on 2026-09-20 this host showed 392MB free swap while
+# physical memory was 32% free of 64GB at pressure level 2. macOS grows swap
+# under load and never releases it, so free swap sits near zero on a healthy
+# host — that threshold would have deferred every run forever.
+
+check "keys on the kernel pressure level, not free swap" \
+    "scripts/sunday-upgrade.sh" \
+    "kern.memorystatus_vm_pressure_level"
+
+if /usr/bin/grep -q "SUNDAY_UPGRADE_MIN_SWAP_FREE_MB" "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the swap-based threshold is still present" >&2
+    fail=1
+else
+    echo "  OK : the swap-based threshold is gone"
+fi
+
+check "defers with a distinct exit code" \
+    "scripts/sunday-upgrade.sh" \
+    "exit 5"
+
+MG="$TMPROOT/memguard.sh"
+/usr/bin/sed -n '/^# ── Memory precondition/,/^fi$/p' \
+    "$REPO/scripts/sunday-upgrade.sh" > "$MG.body"
+{
+  echo '#!/bin/bash'
+  echo 'sysctl() { [ "${FAKE_FAIL:-0}" = "1" ] && return 1; echo "${FAKE_LEVEL:-2}"; }'
+  cat "$MG.body"
+  echo 'exit 0'
+} > "$MG"
+
+for lvl in 1 2; do
+    if FAKE_LEVEL=$lvl bash "$MG" >/dev/null 2>&1; then
+        echo "  OK : proceeds at pressure level $lvl"
+    else
+        echo "  FAIL: deferred at pressure level $lvl (should proceed)" >&2
+        fail=1
+    fi
+done
+
+if FAKE_LEVEL=4 bash "$MG" >/dev/null 2>&1; then _rc=0; else _rc=$?; fi
+if [ "$_rc" -eq 5 ]; then
+    echo "  OK : defers (exit 5) at critical pressure"
+else
+    echo "  FAIL: critical pressure did not defer with exit 5 (got $_rc)" >&2
+    fail=1
+fi
+
+if FAKE_FAIL=1 bash "$MG" >/dev/null 2>&1; then
+    echo "  OK : an unreadable probe skips the check rather than blocking"
+else
+    echo "  FAIL: a failed probe blocked the run" >&2
+    fail=1
+fi
+
+echo ""
+echo "── sunday-upgrade.sh: 3h ceiling is enforced, and no branch is left behind ──"
+
+# 2026-09-20/21, both found live:
+#  * The 180m watchdog logged "leaving the session running" and broke out of
+#    the wait loop WITHOUT killing tmux. An 11:00 run was "timed out" at 14:00
+#    and kept working until 21:09 — ten hours against a three-hour ceiling.
+#  * The sentinel was written unconditionally, so that timed-out run marked the
+#    day complete at 14:00 while its report was not written until 19:53, and
+#    every remaining retry that day skipped.
+#  * The run left the checkout on chore/upgrade-<date>, so the next day's 03:00
+#    and 05:00 fires both FATAL'd on the branch guard. The job sabotaged its
+#    own next invocation.
+
+check "the watchdog actually kills the session" \
+    "scripts/sunday-upgrade.sh" \
+    "tmux kill-session -t"
+
+check "a timed-out run is flagged rather than silently completed" \
+    "scripts/sunday-upgrade.sh" \
+    "TIMED_OUT=1"
+
+check "a timed-out run writes no sentinel and stays retryable" \
+    "scripts/sunday-upgrade.sh" \
+    "no sentinel written"
+
+if /usr/bin/grep -q "leaving the session running" "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: the watchdog still leaves the session running" >&2
+    fail=1
+else
+    echo "  OK : the 'leaving the session running' behaviour is gone"
+fi
+
+check "the checkout is returned to main" \
+    "scripts/sunday-upgrade.sh" \
+    "checkout returned to main"
+
+# Dynamic: drive the branch-return block against real scratch repos.
+BR="$TMPROOT/br.body"
+/usr/bin/sed -n '/^_final_branch=/,/^fi$/p' "$REPO/scripts/sunday-upgrade.sh" > "$BR"
+BREM="$TMPROOT/bremote"; git init -q --bare "$BREM" 2>/dev/null
+
+_mk() {  # $1 = dirty|clean
+    rm -rf "$TMPROOT/brepo"; git init -q -b main "$TMPROOT/brepo" 2>/dev/null
+    ( cd "$TMPROOT/brepo"
+      git config user.email t@t; git config user.name t
+      git remote add origin "$BREM"
+      echo base > f.txt; git add -A; git commit -qm base; git push -q -u origin main 2>/dev/null
+      git checkout -q -b chore/upgrade-test; echo work >> f.txt; git add -A; git commit -qm work
+      [ "$1" = "dirty" ] && echo uncommitted >> f.txt
+      true )
+}
+
+_mk clean
+( cd "$TMPROOT/brepo" && source "$BR" ) >/dev/null 2>&1 || true
+if [ "$(cd "$TMPROOT/brepo" && git rev-parse --abbrev-ref HEAD)" = "main" ]; then
+    echo "  OK : a clean tree is returned to main"
+else
+    echo "  FAIL: a clean tree was left on the upgrade branch" >&2
+    fail=1
+fi
+if [ "$(cd "$TMPROOT/brepo" && git ls-remote --heads origin chore/upgrade-test | wc -l | tr -d ' ')" = "1" ]; then
+    echo "  OK : the branch is pushed before switching, so work is never stranded"
+else
+    echo "  FAIL: the upgrade branch was not pushed" >&2
+    fail=1
+fi
+
+_mk dirty
+( cd "$TMPROOT/brepo" && source "$BR" ) >/dev/null 2>&1 || true
+if [ "$(cd "$TMPROOT/brepo" && git rev-parse --abbrev-ref HEAD)" = "chore/upgrade-test" ]; then
+    echo "  OK : a dirty tree is left alone rather than losing uncommitted work"
+else
+    echo "  FAIL: switched away from a dirty tree" >&2
+    fail=1
+fi
+
+echo ""
+echo "── unattended run must not be able to hang on a permission prompt ──"
+
+# Root cause of ~3 weeks of failed unattended runs, found 2026-09-21.
+# --permission-mode acceptEdits auto-accepts EDITS but still prompts for Bash,
+# and a prompt in an unattended session hangs forever. The job only appeared to
+# work on the dev host because .claude/settings.local.json had accumulated 287
+# allow rules (265 Bash) from prompts answered by hand over weeks — and that
+# file is gitignored, so a fresh clone has none of them and stalls on the first
+# Bash call. Reliability was a function of how many prompts someone had clicked
+# on that specific machine, which cannot be shipped to anyone else.
+
+if /usr/bin/grep -q 'permission-mode acceptEdits' "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: unattended run still uses acceptEdits (prompts on Bash -> hangs)" >&2
+    fail=1
+else
+    echo "  OK : acceptEdits is no longer used for the unattended run"
+fi
+
+check "uses a mode that never prompts" \
+    "scripts/sunday-upgrade.sh" \
+    "SUNDAY_UPGRADE_PERMISSION_MODE:-dontAsk"
+
+if /usr/bin/grep -qE 'SUNDAY_UPGRADE_PERMISSION_MODE:-bypassPermissions' \
+    "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: bypassPermissions is the DEFAULT — ships a no-boundary posture" >&2
+    fail=1
+else
+    echo "  OK : bypassPermissions is an opt-in override, not the default"
+fi
+
+# The committed allowlist is what makes dontAsk workable on a fresh clone.
+python3 - "$REPO/.claude/settings.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1])); p = d.get("permissions", {})
+allow, deny = p.get("allow", []), p.get("deny", [])
+hooks = sum(len(m["hooks"]) for k in d.get("hooks", {}) for m in d["hooks"][k])
+ok = True
+if len(allow) < 40:
+    print("  FAIL: committed allowlist too small (%d) — a fresh clone will stall" % len(allow)); ok = False
+else:
+    print("  OK : committed allowlist carries %d rules (no reliance on gitignored local state)" % len(allow))
+if not deny:
+    print("  FAIL: deny rules missing — secrets would be readable"); ok = False
+else:
+    print("  OK : %d deny rules preserved" % len(deny))
+if hooks < 10:
+    print("  FAIL: PreToolUse/PostToolUse hooks were weakened (%d)" % hooks); ok = False
+else:
+    print("  OK : %d hooks preserved — they refuse with exit 2, returning control" % hooks)
+sys.exit(0 if ok else 1)
+PY
+[ "$?" -eq 0 ] || fail=1
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0

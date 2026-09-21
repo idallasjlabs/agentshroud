@@ -16,6 +16,27 @@ import yaml
 REPO = Path(__file__).parent.parent.parent
 INIT_CONFIG = REPO / "docker" / "bots" / "hermes" / "init-config.sh"
 JOBS_YAML = REPO / "docker" / "config" / "hermes" / "cron" / "jobs.yaml"
+CREDENTIAL_INJECTOR = REPO / "gateway" / "security" / "credential_injector.py"
+
+
+def _injectable_providers() -> set[str]:
+    """Provider names the gateway can actually inject a credential for.
+
+    Derived from credential_injector.py rather than hardcoded, so adding an
+    upstream there automatically permits it here and this test cannot drift
+    out of step with the thing it is guarding.
+    """
+    text = CREDENTIAL_INJECTOR.read_text(encoding="utf-8")
+    providers: set[str] = set()
+    for domain in re.findall(r'domain="([^"]+)"', text):
+        # api.anthropic.com -> anthropic, api.openai.com -> openai
+        parts = [p for p in domain.split(".") if p not in ("api", "com", "ai", "*")]
+        if parts:
+            providers.add(parts[0])
+    return providers
+
+
+_INJECTABLE_PROVIDERS = _injectable_providers()
 
 # init-config.sh native cron jobs: 5 original + 3 (stability, landscape, email)
 # + 1 SCRUM-81 (jira-weekly-review)
@@ -176,21 +197,44 @@ def _parse_seed_cron_calls_from_sh() -> dict[str, str]:
     return calls
 
 
-def test_content_generating_jobs_pinned_to_evidence_backed_model():
+def test_content_generating_jobs_pinned_to_injectable_upstream():
+    """These jobs must target an upstream the gateway can inject credentials for.
+
+    Superseded the 2026-08-23 hard pin to gemma-4-26b-a4b-it/custom (#394) on
+    2026-09-21. That pin resolved through the OpenRouter registry to
+    https://openrouter.ai/api/v1, and gateway/security/credential_injector.py
+    knows exactly two upstreams — api.anthropic.com (anthropic_oauth_token) and
+    api.openai.com (openai_api_key). There is no openrouter.ai rule and no
+    OpenRouter secret on the gateway, so every one of these jobs failed with
+    "HTTP 401: Missing Authentication header" on every scheduled run.
+
+    Nothing was bypassing the proxy: the request reached the gateway correctly,
+    the gateway simply had no credential to inject for that upstream. So the
+    invariant worth testing is not WHICH model is pinned — that is a tuning
+    decision the model evidence can revise — but that whatever is pinned
+    resolves to a provider the injector actually supports. A pin the gateway
+    cannot authenticate is broken no matter how good the weights are.
+    """
     calls = _parse_seed_cron_calls_from_sh()
     for name in _PINNED_JOB_NAMES:
         assert name in calls, f"{name} not found in init-config.sh"
-        assert '"gemma-4-26b-a4b-it" "custom"' in calls[name], (
-            f"{name} must be pinned to gemma-4-26b-a4b-it/custom (the "
-            "2026-08-23 evidence-backed weights via Turbo Fieldflare — the "
-            "coordinated active backend per local-llms, 2026-08-27; see the "
-            "serving-history comment above for why the mlx_gemma re-point "
-            "was reverted same-day). See the evidence in the comment above "
-            "_seed_cron() in init-config.sh. "
-            "Provider is 'custom', not 'ollama': confirmed via `hermes doctor` "
-            "2026-08-24 that 'ollama' was never a valid provider name in this "
-            "Hermes version (0.20.1) -- every job using it was silently broken."
+        assert '"$_HERMES_CRON_MODEL" "$_HERMES_CRON_PROVIDER"' in calls[name], (
+            f"{name} must use the shared $_HERMES_CRON_MODEL/"
+            "$_HERMES_CRON_PROVIDER pair rather than a literal pin, so the "
+            "model can be moved without editing every call site."
         )
+
+    text = INIT_CONFIG.read_text(encoding="utf-8")
+    provider_default = re.search(
+        r'_HERMES_CRON_PROVIDER="\$\{HERMES_CRON_PROVIDER:-([^}"]+)\}"', text
+    )
+    assert provider_default, "_HERMES_CRON_PROVIDER default not found"
+    assert provider_default.group(1) in _INJECTABLE_PROVIDERS, (
+        f"default provider {provider_default.group(1)!r} has no rule in "
+        "gateway/security/credential_injector.py — the gateway would have no "
+        "credential to inject and every job would 401, which is exactly the "
+        "2026-09-21 outage this test exists to prevent recurring."
+    )
 
 
 def test_jira_weekly_review_not_pinned_to_a_model():
