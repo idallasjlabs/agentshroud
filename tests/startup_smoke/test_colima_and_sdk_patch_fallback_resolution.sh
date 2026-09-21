@@ -688,6 +688,113 @@ else
 fi
 
 echo ""
+echo "── socket-forward repair: bounded stop THEN start, not one restart ──"
+
+# The repair failed on its own first live outage (2026-09-21). It used a single
+# `timeout 420 colima restart`; the restart blew that budget, the timeout killed
+# it mid-flight leaving the VM stopped, and the run logged "colima restart
+# failed" and gave up. What actually recovered the host was step 1a's
+# stopped-VM path on the NEXT cron invocation — the repair only worked by
+# accident, through a different branch, a tick later.
+#
+# Split into bounded stop + bounded start so that recovery is deliberate: a
+# wedged stop can no longer starve the start, and the start runs even when the
+# stop fails, because that is the half that restores service.
+
+# Comments must be stripped first: the block below DOCUMENTS the old
+# `timeout 420 colima restart` while explaining why it was replaced, and a
+# naive grep matches that prose and reports a regression that isn't there
+# (it did, on first run — the same comment-vs-code trap this suite already
+# guards against in the llm_settings installer checks).
+HC_CODE="$TMPROOT/hc.code.sh"
+/usr/bin/sed -e 's/[[:space:]]*#.*$//' -e '/^[[:space:]]*$/d' \
+    "$REPO/docker/scripts/colima-health-check.sh" > "$HC_CODE"
+
+if /usr/bin/grep -qE 'timeout [0-9]+ colima restart' "$HC_CODE"; then
+    echo "  FAIL: still a single 'colima restart' — a slow stop starves the start" >&2
+    fail=1
+else
+    echo "  OK : no single-command restart remains"
+fi
+
+check "stop is bounded separately" \
+    "docker/scripts/colima-health-check.sh" \
+    "timeout 300 colima stop"
+
+check "start runs even when the stop fails" \
+    "docker/scripts/colima-health-check.sh" \
+    "continuing to start anyway"
+
+# 300 + 420 must stay under the 900s stale-lock threshold, or a repair can be
+# declared stale and re-entered by the next tick — two colima starts racing.
+python3 - "$HC_CODE" "$REPO/docker/scripts/colima-health-check.sh" <<'PY'
+import re, sys
+t = open(sys.argv[1]).read()          # comment-stripped code only
+full = open(sys.argv[2]).read()
+m = re.search(r'timeout (\d+) colima stop', t)
+stop = int(m.group(1))
+# The REPAIR's start is the first one AFTER the stop — not step 1a's earlier
+# stopped-VM start, which a plain search matches instead (it did, reporting
+# 300+300 rather than the real 300+420).
+m2 = re.search(r'timeout (\d+) colima start', t[m.end():])
+start = int(m2.group(1))
+stale = int(re.search(r'LOCK_AGE" -gt (\d+)', full).group(1))
+if stop + start < stale:
+    print(f"  OK : repair budget {stop}+{start}={stop+start}s stays under the {stale}s stale-lock threshold")
+else:
+    print(f"  FAIL: {stop}+{start}={stop+start}s >= {stale}s stale lock — concurrent repairs possible", file=sys.stderr)
+    sys.exit(1)
+PY
+[ "$?" -eq 0 ] || fail=1
+
+RS="$TMPROOT/restart"; mkdir -p "$RS/bin" "$RS/home/Library/Logs"
+cat > "$RS/bin/colima" <<'STUB'
+#!/bin/bash
+case "$1" in
+  status) exit 0 ;;
+  stop)   echo stop >> "$STUB_DIR/calls"; exit ${STOP_RC:-0} ;;
+  start)  echo start >> "$STUB_DIR/calls"; [ "${START_RC:-0}" = "0" ] && echo up > "$STUB_DIR/sock"; exit ${START_RC:-0} ;;
+  ssh)    exit 0 ;;
+esac
+exit 0
+STUB
+cat > "$RS/bin/docker" <<'STUB'
+#!/bin/bash
+[ "$1" = "info" ] && { [ -f "$STUB_DIR/sock" ] && exit 0 || exit 1; }
+exit 1
+STUB
+printf '#!/bin/bash\necho agentshroud-bot\n' > "$RS/bin/whoami"
+chmod +x "$RS/bin"/*
+/usr/bin/sed -e "s|^export PATH=.*|export PATH=\"$RS/bin:/opt/homebrew/bin:/usr/bin:/bin\"|" \
+    -e "s|^STATE_FILE=.*|STATE_FILE=\"$RS/state.json\"|" \
+    -e "s|^LOCK_DIR=.*|LOCK_DIR=\"$RS/lock\"|" \
+    "$REPO/docker/scripts/colima-health-check.sh" > "$RS/hc.sh"
+
+_bounce() { rm -rf "$RS/sock" "$RS/calls" "$RS/state.json" "$RS/lock" \
+                   "$RS/home/Library/Logs/agentshroud-health.log"
+            env HOME="$RS/home" STUB_DIR="$RS" STOP_RC="$1" START_RC="$2" \
+                bash "$RS/hc.sh" >/dev/null 2>&1 || true; }
+
+# The regression that matters: a FAILED stop must not prevent the start.
+_bounce 1 0
+if /usr/bin/grep -q start "$RS/calls" 2>/dev/null \
+   && /usr/bin/grep -q "socket forward restored" \
+        "$RS/home/Library/Logs/agentshroud-health.log" 2>/dev/null; then
+    echo "  OK : a failed stop still starts the VM and recovers"
+else
+    echo "  FAIL: a failed stop prevented the start — the original defect" >&2
+    fail=1
+fi
+
+_bounce 0 0
+if [ "$(tr '\n' ' ' < "$RS/calls" 2>/dev/null)" = "stop start " ]; then
+    echo "  OK : normal path is stop then start, in order"
+else
+    echo "  FAIL: unexpected call order: $(tr '\n' ' ' < "$RS/calls" 2>/dev/null)" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0
