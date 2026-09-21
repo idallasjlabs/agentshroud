@@ -271,7 +271,38 @@ if [ -s "$REPORT_MD" ]; then
   echo "[sunday-upgrade] NOTE: report ${REPORT_MD} exists but has no completion sentinel — treating as an incomplete run and re-running."
 fi
 
-EXTRA="--permission-mode acceptEdits"
+# Permission posture for an UNATTENDED run.
+#
+# `acceptEdits` was wrong here and cost three weeks. It auto-accepts file edits
+# but still PROMPTS for Bash, and a prompt in an unattended session is an
+# infinite hang: nobody is there to answer it. That is the direct cause of the
+# 2026-09-20 ten-hour run, and of the 2026-09-21 run that sat from 08:00 on
+# "Do you want to make this edit to .pre-commit-config.yaml?".
+#
+# It also hid a release blocker. The job appeared to work on this host only
+# because .claude/settings.local.json had accumulated 287 allow rules (265 of
+# them Bash) from prompts answered by hand over weeks. That file is gitignored,
+# so a fresh clone has none of them and stalls on the first Bash call. The
+# job's reliability was a function of how many prompts someone had previously
+# clicked on that particular machine — not a property that can be shipped.
+#
+# `dontAsk` never prompts, so the run CANNOT hang. Anything outside the
+# committed allowlist in .claude/settings.json is denied and fails visibly in
+# the log instead of silently proceeding. When a run trips on a missing rule
+# the fix is to add it to that committed, reviewable file — not to click yes at
+# 3am and leave the next machine with the same gap.
+#
+# The security boundary is unchanged and does not depend on prompts: the deny
+# rules (secrets, .env) and the PreToolUse hooks (block_credential_read,
+# block_credential_write, block_main_commits, warn_dangerous_bash) still run.
+# Hooks refuse with exit 2, which RETURNS CONTROL instead of hanging — that is
+# what makes them the correct boundary for unattended work.
+#
+# Override for a one-off run if dontAsk proves too strict:
+#   SUNDAY_UPGRADE_PERMISSION_MODE=bypassPermissions
+# Do NOT make that the default: it grants everything, which is precisely the
+# posture this change exists to avoid shipping to other people.
+EXTRA="--permission-mode ${SUNDAY_UPGRADE_PERMISSION_MODE:-dontAsk}"
 if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
   EXTRA="$EXTRA --allowedTools Bash,Read,Edit,Write,Glob,Grep"
 fi

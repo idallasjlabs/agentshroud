@@ -559,6 +559,60 @@ else
 fi
 
 echo ""
+echo "── unattended run must not be able to hang on a permission prompt ──"
+
+# Root cause of ~3 weeks of failed unattended runs, found 2026-09-21.
+# --permission-mode acceptEdits auto-accepts EDITS but still prompts for Bash,
+# and a prompt in an unattended session hangs forever. The job only appeared to
+# work on the dev host because .claude/settings.local.json had accumulated 287
+# allow rules (265 Bash) from prompts answered by hand over weeks — and that
+# file is gitignored, so a fresh clone has none of them and stalls on the first
+# Bash call. Reliability was a function of how many prompts someone had clicked
+# on that specific machine, which cannot be shipped to anyone else.
+
+if /usr/bin/grep -q 'permission-mode acceptEdits' "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: unattended run still uses acceptEdits (prompts on Bash -> hangs)" >&2
+    fail=1
+else
+    echo "  OK : acceptEdits is no longer used for the unattended run"
+fi
+
+check "uses a mode that never prompts" \
+    "scripts/sunday-upgrade.sh" \
+    "SUNDAY_UPGRADE_PERMISSION_MODE:-dontAsk"
+
+if /usr/bin/grep -qE 'SUNDAY_UPGRADE_PERMISSION_MODE:-bypassPermissions' \
+    "$REPO/scripts/sunday-upgrade.sh"; then
+    echo "  FAIL: bypassPermissions is the DEFAULT — ships a no-boundary posture" >&2
+    fail=1
+else
+    echo "  OK : bypassPermissions is an opt-in override, not the default"
+fi
+
+# The committed allowlist is what makes dontAsk workable on a fresh clone.
+python3 - "$REPO/.claude/settings.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1])); p = d.get("permissions", {})
+allow, deny = p.get("allow", []), p.get("deny", [])
+hooks = sum(len(m["hooks"]) for k in d.get("hooks", {}) for m in d["hooks"][k])
+ok = True
+if len(allow) < 40:
+    print("  FAIL: committed allowlist too small (%d) — a fresh clone will stall" % len(allow)); ok = False
+else:
+    print("  OK : committed allowlist carries %d rules (no reliance on gitignored local state)" % len(allow))
+if not deny:
+    print("  FAIL: deny rules missing — secrets would be readable"); ok = False
+else:
+    print("  OK : %d deny rules preserved" % len(deny))
+if hooks < 10:
+    print("  FAIL: PreToolUse/PostToolUse hooks were weakened (%d)" % hooks); ok = False
+else:
+    print("  OK : %d hooks preserved — they refuse with exit 2, returning control" % hooks)
+sys.exit(0 if ok else 1)
+PY
+[ "$?" -eq 0 ] || fail=1
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0
