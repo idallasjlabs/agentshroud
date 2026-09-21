@@ -77,7 +77,10 @@ COPY --from=docker-cli-builder /out-docker /usr/local/bin/docker
 RUN chmod +x /usr/local/bin/docker
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
-ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
+# 2026-09-21 Sunday upgrade: 0.72.0 -> 0.74.0, GitHub's current latest release
+# (verified: `gh`/GitHub API `releases/latest` for aquasecurity/trivy, matches
+# the Homebrew trivy already running on the host for this same run's scans).
+ARG TRIVY_VERSION=0.74.0  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -106,7 +109,11 @@ RUN printf '%s\n' \
 # ARM64-native since Wazuh 4.3; chown to node so it runs without root.
 # SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
 # CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
-ARG WAZUH_VERSION=4.14.5
+# 2026-09-21 Sunday upgrade: 4.14.5 -> 4.14.7, the current latest 4.x tag
+# (verified via Docker Hub wazuh/wazuh-manager tags — same upstream release
+# train the wazuh-manager sidecar already pins at 4.14.7; this keeps the
+# in-image agent version aligned with it).
+ARG WAZUH_VERSION=4.14.7
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
