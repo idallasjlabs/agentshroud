@@ -166,6 +166,45 @@ if ! docker info >/dev/null 2>&1; then
     fi
   fi
 
+  # 1a-bis. VM is UP but Docker is unreachable — repair the socket forward.
+  #
+  # Distinct failure from a stopped VM, and the common one on this host: it
+  # happened four separate times on 2026-09-21 alone. lima establishes the
+  # /var/run/docker.sock forward exactly once, at VM start. When the ssh
+  # connection carrying that forward drops, lima re-establishes a mux for
+  # `colima ssh` but never restores the socket forward — so `colima ssh` keeps
+  # working (and `colima status` cheerfully reports "running") while every
+  # docker call fails with "Cannot connect" or a bare EOF. Nothing self-heals
+  # it; the forward stays dead until the VM is restarted.
+  #
+  # Verified 2026-09-21: dockerd active inside the VM with all 7 containers
+  # healthy and 5.9GB free, while the host could not reach either socket path.
+  # The hostagent log showed the forward set up once at 08:01:59 and no error
+  # afterwards — it does not know it lost anything.
+  #
+  # `colima restart` is the only reliable repair, and it does bounce the
+  # containers. That cost is worth paying: at this point docker is ALREADY
+  # unusable, so the alternative is not "uptime", it is "an unattended run that
+  # fails on its first docker call for a reason nothing in its log explains".
+  # Gated on the dev account, as with the start above.
+  if ! $COLIMA_STARTED && [ "$(whoami)" = "agentshroud-bot" ] \
+     && colima status >/dev/null 2>&1; then
+    log "DETECTED: Colima VM is running but Docker is unreachable — socket forward is dead."
+    log "AUTO-HEAL: restarting Colima to re-establish the docker.sock forward..."
+    if timeout 420 colima restart >> "$LOG_FILE" 2>&1; then
+      resolve_docker_host || true
+      if docker info >/dev/null 2>&1; then
+        COLIMA_STARTED=true
+        HEALED=true
+        log "AUTO-HEAL: ✅ socket forward restored — Docker is responding"
+      else
+        log "AUTO-HEAL: ❌ colima restart completed but Docker is still unreachable"
+      fi
+    else
+      log "AUTO-HEAL: ❌ colima restart failed or exceeded the 420s timeout"
+    fi
+  fi
+
   # When the VM came back, fall through to the remaining checks rather than
   # exiting: a freshly booted VM has no DOCKER-USER rules, so step 3's
   # firewall reapply matters most on exactly this path.
