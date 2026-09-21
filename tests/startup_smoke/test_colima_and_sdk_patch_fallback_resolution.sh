@@ -111,6 +111,258 @@ else
 fi
 
 echo ""
+echo "── colima-health-check.sh: step 2 + step 3 false-failure fixes (2026-09-19) ──"
+
+# Both found by running the script live on 2026-09-19. Each reported a
+# failure on every 5-min run while the thing it checked was actually fine —
+# inflating the daily Telegram summary and masking real failures.
+
+check "step 2 probes \$GATEWAY_CONTAINER, not a container name that does not exist here" \
+    "docker/scripts/colima-health-check.sh" \
+    'docker exec "\$GATEWAY_CONTAINER" curl'
+
+if /usr/bin/grep -q "docker exec agentshroud-gateway" "$REPO/docker/scripts/colima-health-check.sh"; then
+    echo "  FAIL: a literal 'agentshroud-gateway' docker exec survived" >&2
+    fail=1
+else
+    echo "  OK : no literal 'agentshroud-gateway' docker exec remains"
+fi
+
+# iptables needs root in the VM; without sudo it errors and the count reads 0.
+IPT_NOSUDO=$(/usr/bin/grep -c 'colima ssh -- sh -c "iptables -L DOCKER-USER' \
+    "$REPO/docker/scripts/colima-health-check.sh" || true)
+IPT_SUDO=$(/usr/bin/grep -c 'colima ssh -- sudo sh -c "iptables -L DOCKER-USER' \
+    "$REPO/docker/scripts/colima-health-check.sh" || true)
+if [ "$IPT_NOSUDO" -eq 0 ] && [ "$IPT_SUDO" -eq 2 ]; then
+    echo "  OK : both DOCKER-USER rule counts run under sudo ($IPT_SUDO/2)"
+else
+    echo "  FAIL: expected 2 sudo'd and 0 unsudo'd iptables counts, got $IPT_SUDO sudo'd / $IPT_NOSUDO unsudo'd" >&2
+    fail=1
+fi
+
+echo ""
+echo "── colima-health-check.sh: auto-starts a stopped Colima VM ──"
+
+# Added 2026-09-19. The VM was found down ~20 min on the agentshroud-bot dev
+# host while this check logged CRITICAL every 5 min and healed nothing.
+# ~/Library/LaunchAgents/com.agentshroud.colima-autostart.plist was supposed
+# to cover boot, but a RunAtLoad LaunchAgent only bootstraps into the Aqua
+# domain at GUI login and this account never gets one (console belongs to
+# ijefferson.admin; all dev work arrives over SSH, `launchctl managername`
+# reports "Background"). Its hardcoded /tmp/colima-autostart.{log,err} are
+# also created first by admin's identically-named agent as
+# ijefferson.admin:wheel 0644, so launchd cannot spawn this account's copy
+# even from a GUI session. Cron is the only path that actually runs here.
+
+check "starts the VM when colima status reports it stopped" \
+    "docker/scripts/colima-health-check.sh" \
+    "timeout 300 colima start --cpu 8 --memory 12 --disk 120 --network-address"
+
+check "gates the start on the dev account (never boots a VM on production)" \
+    "docker/scripts/colima-health-check.sh" \
+    '\[ "\$\(whoami\)" = "agentshroud-bot" \] && ! colima status'
+
+check "re-resolves DOCKER_HOST after start (socket does not exist while down)" \
+    "docker/scripts/colima-health-check.sh" \
+    "resolve_docker_host"
+
+# Dynamic check: drive the real script against stubbed colima/docker/whoami
+# so the branch is exercised, not just grepped. Isolated HOME/state/lock so
+# it cannot touch the live VM, the real health log, or the cron state file.
+echo ""
+echo "── dynamic: auto-start branch against a stubbed Colima ──"
+
+CT="$TMPROOT/colima"
+mkdir -p "$CT/bin" "$CT/home/Library/Logs"
+
+cat > "$CT/bin/colima" <<'STUB'
+#!/bin/bash
+case "$1" in
+  status) [ -f "$STUB_DIR/started" ] && exit 0 || exit 1 ;;
+  start)  touch "$STUB_DIR/started"; exit ${STUB_START_RC:-0} ;;
+  ssh)    exit 0 ;;
+esac
+exit 0
+STUB
+cat > "$CT/bin/docker" <<'STUB'
+#!/bin/bash
+[ "$1" = "info" ] && { [ -f "$STUB_DIR/started" ] && exit 0 || exit 1; }
+exit 1
+STUB
+cat > "$CT/bin/whoami" <<'STUB'
+#!/bin/bash
+echo "${STUB_USER:-agentshroud-bot}"
+STUB
+chmod +x "$CT/bin"/*
+
+# Stub PATH first; redirect state/lock away from the live cron paths.
+sed -e "s|^export PATH=.*|export PATH=\"$CT/bin:/opt/homebrew/bin:/usr/bin:/bin\"|" \
+    -e "s|^STATE_FILE=.*|STATE_FILE=\"$CT/state.json\"|" \
+    -e "s|^LOCK_DIR=.*|LOCK_DIR=\"$CT/lock\"|" \
+    "$REPO/docker/scripts/colima-health-check.sh" > "$CT/hc.sh"
+
+HC_LOG="$CT/home/Library/Logs/agentshroud-health.log"
+hc_run() {  # $1 = STUB_USER (empty for dev account), $2 = start rc
+    rm -rf "$CT/started" "$CT/state.json" "$CT/lock" "$HC_LOG"
+    env HOME="$CT/home" STUB_DIR="$CT" STUB_USER="$1" STUB_START_RC="$2" \
+        bash "$CT/hc.sh" >/dev/null 2>&1 || true
+}
+
+hc_run "" 0
+if /usr/bin/grep -q "Colima VM started" "$HC_LOG" 2>/dev/null \
+   && /usr/bin/grep -q "internet check failed\|iptables" "$HC_LOG" 2>/dev/null; then
+    echo "  OK : stopped VM is started, then the run continues to the later checks"
+else
+    echo "  FAIL: stopped VM was not started, or the run exited instead of continuing" >&2
+    fail=1
+fi
+
+hc_run "" 1
+if /usr/bin/grep -q "colima start failed" "$HC_LOG" 2>/dev/null; then
+    echo "  OK : a failed start is reported and the run stops at the Docker check"
+else
+    echo "  FAIL: a failed colima start was not reported" >&2
+    fail=1
+fi
+
+hc_run "ijefferson.admin" 0
+if /usr/bin/grep -q "CRITICAL" "$HC_LOG" 2>/dev/null \
+   && ! /usr/bin/grep -q "Colima VM is stopped" "$HC_LOG" 2>/dev/null; then
+    echo "  OK : no start is attempted on the production account"
+else
+    echo "  FAIL: production account attempted a VM start" >&2
+    fail=1
+fi
+
+echo ""
+echo "── colima-health-check.sh: diagnostic baseline is compared, not swallowed ──"
+
+# Until 2026-09-20 this branch logged ANY number of diagnostic failures as
+# "expected", so a new failure was absorbed silently. The documented set
+# ("5 expected failures ... DNS resolution ... pass") had also drifted: the
+# real figure is 8 and DNS resolution is NOT among the passes — the
+# container's embedded resolver cannot reach its upstreams under egress
+# enforcement, and does not need to (all egress goes via gateway:8181,
+# which resolves for it).
+
+check "compares against a baseline instead of accepting any count" \
+    "docker/scripts/colima-health-check.sh" \
+    'DIAG_FAILS" -le "\$DIAG_EXPECTED_FAILS'
+
+check "baseline is env-overridable (repo convention)" \
+    "docker/scripts/colima-health-check.sh" \
+    'DIAG_EXPECTED_FAILS="\$\{AGENTSHROUD_DIAG_EXPECTED_FAILS:-8\}"'
+
+check "exceeding the baseline raises a real failure" \
+    "docker/scripts/colima-health-check.sh" \
+    'FAILURES\+=\("container net diag: \$DIAG_FAILS failures exceeds'
+
+if /usr/bin/grep -q "The 5 expected failures" "$REPO/docker/scripts/colima-health-check.sh"; then
+    echo "  FAIL: stale '5 expected failures' comment still present" >&2
+    fail=1
+else
+    echo "  OK : stale '5 expected failures' comment is gone"
+fi
+
+echo ""
+echo "── com.agentshroud.colima-autostart.plist: per-account log paths ──"
+
+PLIST="$HOME/Library/LaunchAgents/com.agentshroud.colima-autostart.plist"
+if [ ! -f "$PLIST" ]; then
+    echo "  SKIP: plist not installed on this host"
+elif /usr/bin/grep -q "<string>/tmp/colima-autostart" "$PLIST"; then
+    echo "  FAIL: plist still writes to /tmp (collides with the production account's agent)" >&2
+    fail=1
+elif /usr/bin/plutil -lint "$PLIST" >/dev/null 2>&1; then
+    echo "  OK : plist is valid and no longer writes to shared /tmp paths"
+else
+    echo "  FAIL: plist does not pass plutil -lint" >&2
+    fail=1
+fi
+
+echo ""
+echo "── hook ownership: installers must be additive, never clobber ──"
+
+# .git/hooks/pre-commit is a single file. Four things used to write it
+# (.llm_settings/git-hooks/install.sh twice, its `git secrets --install
+# --force`, and scripts/pre-commit-hook.sh's documented `cp`), so whichever ran
+# last silently won. On 2026-09-20 a bare `git secrets --install` had reduced
+# it to a two-line git-secrets call, leaving gitleaks, detect-secrets, ruff,
+# black and semgrep running on no commit at all. Owner will keep installing
+# llm_settings into this and other repos as it grows; these checks are what
+# stop that from costing coverage again.
+
+# Strip comments and blanks first — this file DOCUMENTS the old clobbering
+# behaviour at length, and a naive grep matches that prose and reports a
+# regression that isn't there (it did, on first run).
+INSTALL_CODE="$TMPROOT/install.code.sh"
+/usr/bin/sed -e 's/[[:space:]]*#.*$//' -e '/^[[:space:]]*$/d' \
+    "$REPO/.llm_settings/git-hooks/install.sh" > "$INSTALL_CODE"
+
+if /usr/bin/grep -qE 'cp .*\$HOOK_SOURCE.* \.git/hooks/pre-commit' "$INSTALL_CODE"; then
+    echo "  FAIL: install.sh still copies a hook over .git/hooks/pre-commit" >&2
+    fail=1
+else
+    echo "  OK : install.sh no longer clobbers the hook path"
+fi
+
+if /usr/bin/grep -q 'git secrets --install --force' "$INSTALL_CODE"; then
+    echo "  FAIL: install.sh still runs 'git secrets --install --force'" >&2
+    fail=1
+else
+    echo "  OK : install.sh no longer force-installs git-secrets over the hook"
+fi
+
+check "install.sh hands ownership to pre-commit" \
+    ".llm_settings/git-hooks/install.sh" \
+    "pre-commit install"
+
+check "install.sh refuses to overwrite an existing config" \
+    ".llm_settings/git-hooks/install.sh" \
+    "left untouched"
+
+check "scripts/pre-commit-hook.sh warns against being copied into place" \
+    "scripts/pre-commit-hook.sh" \
+    "DO NOT INSTALL THIS BY COPYING"
+
+if /usr/bin/grep -A2 'gitleaks not found' "$REPO/scripts/pre-commit-hook.sh" \
+    | /usr/bin/grep -q 'exit 0'; then
+    echo "  FAIL: pre-commit-hook.sh still exits 0 when gitleaks is missing" >&2
+    fail=1
+else
+    echo "  OK : a missing gitleaks fails instead of silently passing"
+fi
+
+# Dynamic: prove the installer preserves a config and hook it did not write.
+echo ""
+echo "── dynamic: installer preserves pre-existing config + hook ──"
+
+HR="$TMPROOT/hookrepo"
+mkdir -p "$HR"
+(
+  cd "$HR" && git init -q 2>/dev/null
+  printf 'repos:\n  - repo: local\n    hooks:\n      - id: sentinel-hook\n        name: sentinel\n        entry: true\n        language: system\n' > .pre-commit-config.yaml
+  printf '#!/bin/sh\necho custom\n' > .git/hooks/pre-commit
+  chmod +x .git/hooks/pre-commit
+  shasum .pre-commit-config.yaml | awk '{print $1}' > .sentinel-before
+  bash "$REPO/.llm_settings/git-hooks/install.sh" >/dev/null 2>&1 || true
+  shasum .pre-commit-config.yaml | awk '{print $1}' > .sentinel-after
+)
+if [ "$(cat "$HR/.sentinel-before" 2>/dev/null)" = "$(cat "$HR/.sentinel-after" 2>/dev/null)" ] \
+   && /usr/bin/grep -q sentinel-hook "$HR/.pre-commit-config.yaml" 2>/dev/null; then
+    echo "  OK : pre-existing .pre-commit-config.yaml survives the installer byte-for-byte"
+else
+    echo "  FAIL: installer modified or replaced a config it did not write" >&2
+    fail=1
+fi
+if ls "$HR"/.git/hooks/pre-commit.pre-llm-settings.* >/dev/null 2>&1; then
+    echo "  OK : pre-existing hook was backed up, not discarded"
+else
+    echo "  FAIL: pre-existing hook was not backed up" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0

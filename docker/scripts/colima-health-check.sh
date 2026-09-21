@@ -6,6 +6,7 @@
 #   */5 * * * * /Users/agentshroud-bot/Development/agentshroud/docker/scripts/colima-health-check.sh
 #
 # What it does:
+#   0. Starts the Colima VM if it is stopped (the LaunchAgent cannot: see 1a)
 #   1. Checks if Colima VM has internet access
 #   2. If broken → fixes the route (known vz driver issue)
 #   3. Re-applies iptables firewall rules (they reset on route changes)
@@ -22,16 +23,23 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 
 # Point Docker CLI at Colima's socket explicitly — avoids relying on docker context state
 # which is user-session-specific and may not be set in non-interactive environments.
-_COLIMA_SOCK_OWNER="${SUDO_USER:-${USER:-$(id -un)}}"
-for _candidate in \
-    "/Users/${_COLIMA_SOCK_OWNER}/.colima/default/docker.sock" \
-    "/Users/agentshroud-bot/.colima/default/docker.sock" \
-    "/Users/ijefferson.admin/.colima/default/docker.sock"; do
-    if [ -S "$_candidate" ]; then
-        export DOCKER_HOST="unix://$_candidate"
-        break
-    fi
-done
+# Wrapped in a function because the socket does not exist while the VM is down:
+# the auto-start in step 1a must re-resolve it after `colima start` creates it.
+resolve_docker_host() {
+    local _owner="${SUDO_USER:-${USER:-$(id -un)}}"
+    local _candidate
+    for _candidate in \
+        "/Users/${_owner}/.colima/default/docker.sock" \
+        "/Users/agentshroud-bot/.colima/default/docker.sock" \
+        "/Users/ijefferson.admin/.colima/default/docker.sock"; do
+        if [ -S "$_candidate" ]; then
+            export DOCKER_HOST="unix://$_candidate"
+            return 0
+        fi
+    done
+    return 1
+}
+resolve_docker_host || true
 
 # ── Configuration ────────────────────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -119,6 +127,49 @@ NOW=$(date +%s)
 # 1. Check Colima is running
 if ! docker info >/dev/null 2>&1; then
   log "CRITICAL: Docker is not responding (Colima may be down)"
+
+  # 1a. Auto-start a stopped Colima VM.
+  #
+  # This cron path is the only autostart that actually works on this host.
+  # ~/Library/LaunchAgents/com.agentshroud.colima-autostart.plist cannot
+  # cover it: a RunAtLoad LaunchAgent is bootstrapped into the Aqua domain at
+  # GUI login, and this account never gets one — the console belongs to
+  # ijefferson.admin and all dev work arrives over SSH (`launchctl
+  # managername` reports "Background"). That plist also writes to
+  # /tmp/colima-autostart.{log,err}, which admin's identically-named agent
+  # creates first as ijefferson.admin:wheel 0644, so launchd could not spawn
+  # this account's copy even from a GUI session. Verified live 2026-09-19:
+  # the VM sat down ~20 min while this very check logged CRITICAL every 5
+  # min and healed nothing.
+  #
+  # Gated on the account name for the same defense-in-depth reason as the
+  # renice block in 1b — never boot a VM on the production account.
+  COLIMA_STARTED=false
+  if [ "$(whoami)" = "agentshroud-bot" ] && ! colima status >/dev/null 2>&1; then
+    log "AUTO-HEAL: Colima VM is stopped — starting (typically 60-90s)..."
+    # Flags mirror the LaunchAgent's so a VM created here matches the intended
+    # dev shape; they are a no-op against an existing VM. timeout(1) is
+    # coreutils (Homebrew, resolvable via the PATH set at the top of this
+    # script) and bounds a hung start so it cannot hold the run lock for the
+    # full 15-min stale-lock window.
+    if timeout 300 colima start --cpu 8 --memory 12 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
+      resolve_docker_host || true
+      if docker info >/dev/null 2>&1; then
+        COLIMA_STARTED=true
+        HEALED=true
+        log "AUTO-HEAL: ✅ Colima VM started — Docker is responding"
+      else
+        log "AUTO-HEAL: ❌ colima start reported success but Docker is still unreachable"
+      fi
+    else
+      log "AUTO-HEAL: ❌ colima start failed or exceeded the 300s timeout"
+    fi
+  fi
+
+  # When the VM came back, fall through to the remaining checks rather than
+  # exiting: a freshly booted VM has no DOCKER-USER rules, so step 3's
+  # firewall reapply matters most on exactly this path.
+  if ! $COLIMA_STARTED; then
   STATE=$(read_state)
   CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
   HEAL_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('heal_count',0))" 2>/dev/null || echo 0)
@@ -143,6 +194,7 @@ Time: $(date -u '+%H:%M UTC')
   fi
   write_state "{\"consecutive_fails\":$CONSEC,\"heal_count\":$HEAL_COUNT,\"fail_count\":$FAIL_COUNT,\"docker_down_count\":$DOCKER_DOWN_COUNT,\"last_daily_summary\":$LAST_DAILY}"
   exit 1
+  fi
 fi
 
 # 1b. Enforce dev-VM CPU niceness. Self-heals every run (this script already
@@ -185,8 +237,15 @@ fi
 # gateway is present). `colima ssh` uses key-based auth into the VM, where
 # sudo is passwordless for this user — contrary to the comment this line
 # used to carry, this IS fixable from cron context, not VPN-gated.
+#
+# The two `docker exec` probes below use $GATEWAY_CONTAINER, not a literal
+# name. They hardcoded `agentshroud-gateway` until 2026-09-19 — a container
+# that does not exist on this host (it is agentshroud-dev-gateway) — so this
+# entire check failed 100% of the time and logged an auto-heal failure on
+# every 5-min run. Same class of bug the container-name block above already
+# documents for commit 154262fc6; step 2 was simply missed by that fix.
 VM_INTERNET=true
-if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
+if ! docker exec "$GATEWAY_CONTAINER" curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
   log "DETECTED: Colima VM internet check failed"
   HAS_DEFAULT=$(colima ssh -- sh -c "ip route show default" 2>/dev/null | tr -dc '[:print:]')
   if [ -z "$HAS_DEFAULT" ]; then
@@ -199,7 +258,7 @@ if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null h
       log "WARNING: Colima VM has no default route and no DHCP gateway could be determined — cannot auto-heal"
     fi
   fi
-  if docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
+  if docker exec "$GATEWAY_CONTAINER" curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
     HEALED=true
     VM_INTERNET=true
     log "AUTO-HEAL: ✅ Colima VM internet access restored"
@@ -213,8 +272,19 @@ fi
 # 3. Apply/verify iptables firewall rules (check on Colima VM host, not inside container)
 # The DOCKER-USER chain lives on the VM, not inside the hardened gateway container
 # (which has cap_drop: ALL and no iptables binary).
+#
+# Both counts below run under sudo. Without it iptables exits with
+# "Could not fetch rule set generation id: Permission denied (you must be
+# root)" and the 2>/dev/null + `grep -c` swallows it into a literal 0 — so
+# the rules read as missing even when all 5 DROPs are present and correct.
+# That made step 3 reapply the firewall every 5 minutes and then report
+# "did NOT restore rules (0/5)" immediately after the firewall script
+# printed the 5 healthy rules it had just confirmed. Verified 2026-09-19:
+# same command returns 0 without sudo and 5 with it. The 2026-08-30 recheck
+# below was added to stop inflated heal counts but inherited the same
+# missing sudo, so it never actually verified anything.
 log "Checking iptables rules (Colima VM)..."
-RULE_COUNT=$(colima ssh -- sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
+RULE_COUNT=$(colima ssh -- sudo sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
 RULE_COUNT=${RULE_COUNT:-0}
 # Strip any non-numeric characters (colima ssh can prepend version lines)
 RULE_COUNT=$(echo "$RULE_COUNT" | tr -dc '0-9')
@@ -229,7 +299,7 @@ if [ "$RULE_COUNT" -lt 5 ]; then
     # run even when the reapply silently did nothing in cron context —
     # inflating the daily summary to ~265 heals+failures/day (2026-08-30)
     # while masking that the rules were never actually coming back.
-    RECHECK_COUNT=$(colima ssh -- sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
+    RECHECK_COUNT=$(colima ssh -- sudo sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
     RECHECK_COUNT=$(echo "${RECHECK_COUNT:-0}" | tr -dc '0-9')
     RECHECK_COUNT=${RECHECK_COUNT:-0}
     if [ "$RECHECK_COUNT" -ge 5 ]; then
@@ -273,14 +343,38 @@ if docker ps --filter name="$BOT_CONTAINER" --format '{{.Status}}' 2>/dev/null |
     DIAG_FAILS=$(echo "$DIAG_OUTPUT" | python3 -c "import sys,json; print(json.load(sys.stdin).get('fail',0))" 2>/dev/null || echo 0)
   fi
 
+  # Expected-failure baseline, re-derived live 2026-09-20 (8, was documented
+  # as 5). Every one is a direct consequence of egress enforcement: the
+  # container has no route off-box and reaches everything through
+  # HTTP(S)_PROXY=gateway:8181, which does its own name resolution.
+  #   1-2. DNS port           8.8.8.8:53 / 1.1.1.1:53 unreachable
+  #   3.   DNS resolution     google.com unresolvable — Docker's embedded
+  #        resolver (127.0.0.11) cannot reach its upstreams (1.1.1.1 /
+  #        8.8.8.8 / 192.168.64.1). Internal names still resolve
+  #        (gateway -> 172.21.0.8), which is all this container needs. The
+  #        comment here asserted through 2026-09-20 that DNS resolution
+  #        passes — it does not, and does not need to.
+  #   4.   Gateway ping       skipped, no gateway to test
+  #   5-7. TCP 8.8.8.8:443 / 8.8.8.8:53 / 1.1.1.1:443 closed/blocked
+  #   8.   TCP 443 reachability  ENETUNREACH
+  # Corroborated by the checks that DO pass: "Direct blocked" (direct HTTPS
+  # fails without the proxy — enforcement working as designed), TCP proxy
+  # gateway:8181 open, HTTP 405 and HTTPS 404 through the proxy.
+  #
+  # The count is compared, not just logged. This branch previously reported
+  # ANY number of failures as "expected", so a genuinely new failure was
+  # absorbed silently — the fake-green pattern CLAUDE.md section 2 prohibits.
+  # DIAG_FAILS is also set to 99 when `docker exec` itself fails, which this
+  # comparison now surfaces instead of swallowing. Override the baseline via
+  # AGENTSHROUD_DIAG_EXPECTED_FAILS when the topology legitimately changes.
+  DIAG_EXPECTED_FAILS="${AGENTSHROUD_DIAG_EXPECTED_FAILS:-8}"
   if [ "$DIAG_FAILS" -eq 0 ]; then
     log "✅ Container network diagnostic: all tests passed"
+  elif [ "$DIAG_FAILS" -le "$DIAG_EXPECTED_FAILS" ]; then
+    log "ℹ️  Container network diagnostic: $DIAG_FAILS/$DIAG_EXPECTED_FAILS expected failure(s) (egress enforcement active)"
   else
-    # The 5 expected failures (TCP 8.8.8.8:443, 8.8.8.8:53, 1.1.1.1:443, gateway ping,
-    # TCP 443 reachability) are by design — egress enforcement blocks direct outbound.
-    # DNS resolution, HTTP/HTTPS via proxy, and proxy connectivity all pass.
-    # Log for visibility but do NOT alert — these are expected in egress-enforced mode.
-    log "ℹ️  Container network diagnostic: $DIAG_FAILS test(s) failed (expected — egress enforcement active)"
+    FAILURES+=("container net diag: $DIAG_FAILS failures exceeds expected baseline of $DIAG_EXPECTED_FAILS")
+    log "⚠️  Container network diagnostic: $DIAG_FAILS failures exceeds the expected baseline of $DIAG_EXPECTED_FAILS — investigate"
   fi
 fi
 
