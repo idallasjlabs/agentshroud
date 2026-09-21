@@ -9,7 +9,7 @@
 # 8+ HIGH Go-stdlib CVEs with no dependency involved at all. Same fix already
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
-FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS docker-cli-builder
+FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
 ARG DOCKER_CLI_VERSION=29.7.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
@@ -41,8 +41,9 @@ RUN set -eux; \
 #
 # Do NOT drop back to node:22 to "reduce churn": it silently disables agent
 # sandbox configuration, which is a security control, and re-arms the crash-loop.
-# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-15.
-FROM node:24-bookworm-slim@sha256:2fe369e969550cde8e867afc3fe370b260140cab4a23d467074295b42163d553
+# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-21 Sunday upgrade
+# (previous pin from 2026-09-15 was stale — Docker Hub had rebuilt the tag).
+FROM node:24-bookworm-slim@sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
