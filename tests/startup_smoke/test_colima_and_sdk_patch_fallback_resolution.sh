@@ -613,6 +613,81 @@ PY
 [ "$?" -eq 0 ] || fail=1
 
 echo ""
+echo "── colima-health-check.sh: repairs a dead docker socket forward ──"
+
+# Happened four separate times on 2026-09-21. lima establishes the
+# /var/run/docker.sock forward exactly ONCE, at VM start. When the ssh
+# connection carrying it drops, lima re-establishes a mux for `colima ssh` but
+# never restores the socket forward — so `colima ssh` keeps working and
+# `colima status` reports "running" while every docker call fails with
+# "Cannot connect" or a bare EOF. Nothing self-heals it. Verified live:
+# dockerd active inside the VM, all 7 containers healthy, 5.9GB free, host
+# unable to reach either socket path; the hostagent log showed the forward set
+# up once at 08:01:59 with no error after — it does not know it lost anything.
+# This is a DIFFERENT failure from a stopped VM and needs a restart, not a start.
+
+check "detects VM-running-but-docker-unreachable as its own condition" \
+    "docker/scripts/colima-health-check.sh" \
+    "socket forward is dead"
+
+check "repairs it by restarting Colima" \
+    "docker/scripts/colima-health-check.sh" \
+    "colima restart"
+
+HS="$TMPROOT/hcheck"; mkdir -p "$HS/bin" "$HS/home/Library/Logs"
+cat > "$HS/bin/colima" <<'STUB'
+#!/bin/bash
+case "$1" in
+  status)  [ "${VM_UP:-1}" = "1" ] && exit 0 || exit 1 ;;
+  start)   echo up > "$STUB_DIR/sock"; exit 0 ;;
+  restart) [ "${RESTART_OK:-1}" = "1" ] && { echo up > "$STUB_DIR/sock"; exit 0; } || exit 1 ;;
+  ssh)     exit 0 ;;
+esac
+exit 0
+STUB
+cat > "$HS/bin/docker" <<'STUB'
+#!/bin/bash
+[ "$1" = "info" ] && { [ -f "$STUB_DIR/sock" ] && exit 0 || exit 1; }
+exit 1
+STUB
+printf '#!/bin/bash\necho "${STUB_USER:-agentshroud-bot}"\n' > "$HS/bin/whoami"
+chmod +x "$HS/bin"/*
+/usr/bin/sed -e "s|^export PATH=.*|export PATH=\"$HS/bin:/opt/homebrew/bin:/usr/bin:/bin\"|" \
+    -e "s|^STATE_FILE=.*|STATE_FILE=\"$HS/state.json\"|" \
+    -e "s|^LOCK_DIR=.*|LOCK_DIR=\"$HS/lock\"|" \
+    "$REPO/docker/scripts/colima-health-check.sh" > "$HS/hc.sh"
+
+HL="$HS/home/Library/Logs/agentshroud-health.log"
+_hc() { rm -rf "$HS/sock" "$HS/state.json" "$HS/lock" "$HL"
+        env HOME="$HS/home" STUB_DIR="$HS" VM_UP="$1" RESTART_OK="$2" STUB_USER="$3" \
+            bash "$HS/hc.sh" >/dev/null 2>&1 || true; }
+
+_hc 1 1 agentshroud-bot
+if /usr/bin/grep -q "socket forward restored" "$HL" 2>/dev/null; then
+    echo "  OK : VM up + socket dead is repaired by a restart"
+else
+    echo "  FAIL: a dead socket forward was not repaired" >&2
+    fail=1
+fi
+
+_hc 0 1 agentshroud-bot
+if /usr/bin/grep -q "Colima VM is stopped" "$HL" 2>/dev/null \
+   && ! /usr/bin/grep -q "socket forward is dead" "$HL" 2>/dev/null; then
+    echo "  OK : a STOPPED VM still takes the start path, not the restart path"
+else
+    echo "  FAIL: stopped VM and dead socket forward are being confused" >&2
+    fail=1
+fi
+
+_hc 1 1 ijefferson.admin
+if ! /usr/bin/grep -q "socket forward is dead" "$HL" 2>/dev/null; then
+    echo "  OK : no restart is attempted on the production account"
+else
+    echo "  FAIL: production account attempted a Colima restart" >&2
+    fail=1
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0
