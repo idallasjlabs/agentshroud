@@ -66,29 +66,36 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9
 # that cannot be validated without full upstream integration testing; they are documented as
 # upstream-vendored "currently unmitigable" residue in docs/security/cve-mitigation-matrix.md.
 #
-# 2026-09-21 Sunday upgrade (HERMES_IMAGE -> v2026.9.14 / semver 0.21.3): dropped the
-# python-multipart==0.0.30 pin that lived here (CVE-2026-53539 fix) — verified via
-# `importlib.metadata` against the raw v2026.9.14 base image that the vendor now ships
-# python-multipart 0.0.32 natively (newer than our old pin), so re-asserting ==0.0.30
-# would have silently DOWNGRADED it on every future rebuild.
+# 2026-09-21 Sunday upgrade (HERMES_IMAGE -> v2026.9.21 / semver 0.21.4, moved
+# again from the v2026.9.14/0.20.6 target this comment originally named —
+# Hermes shipped several more tags between the two discovery passes in this
+# same run): dropped the python-multipart==0.0.30 pin that lived here
+# (CVE-2026-53539 fix) — verified via `importlib.metadata` against the raw
+# v2026.9.21 base image that the vendor now ships python-multipart 0.0.32
+# natively (newer than our old pin), so re-asserting ==0.0.30 would have
+# silently DOWNGRADED it on every future rebuild.
 #
-# Independently re-verified 2026-09-21 before merge, by running
-# `importlib.metadata.version` inside the raw unpatched base image
-# (sha256:99641e57, no build, no patch layer applied):
+# Verified 2026-09-21 by running `importlib.metadata.version` inside the raw
+# unpatched base image (sha256:6bece064, no build, no patch layer applied):
 #     python-multipart  0.0.32
 #     tornado           6.5.8
 # The running container could not answer this — it reports 0.0.30 precisely
 # BECAUSE the patch line put it there, so only the unpatched base is evidence.
 #
-# tornado is a FLOOR, expressed as >= rather than ==. The vendor already ships
-# 6.5.8, so this is a no-op today and exists only to stop a future vendor
-# rebuild regressing below it. It was written `==6.5.8` while being described
-# as a floor — which is the exact downgrade hazard the python-multipart note
-# above diagnoses: an `==` "guard" silently drags the base BACKWARDS the moment
-# the vendor moves ahead (6.5.9+). `>=` keeps the regression protection and
-# drops the hazard.
+# 2026-09-21 Sunday upgrade, second pass: tornado has moved again since the
+# note above was written. PyPI's actual latest is 6.5.10 (6.5.9 released
+# 2026-09-14, 6.5.10 released 2026-09-15 — both predate this run; the earlier
+# ==6.5.8 pin, even rewritten as a floor, was simply stale). OSV.dev reports no
+# known advisory against 6.5.8-6.5.10 (checked 2026-09-21) — this is a
+# latest-stable bump per the no-exceptions directive, not a CVE fix. Pinned
+# exactly (==), matching the httplib2/pillow/etc. pattern below, rather than
+# left as a floor: an explicit pin is what "never leave a component on an
+# unpinned/undetermined version" means in practice, and the vendor's base
+# still ships 6.5.8 today (verified against the raw v2026.9.21 base image,
+# sha256:6bece064, importlib.metadata, no patch layer) so this remains a real,
+# non-no-op bump.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
-        'tornado>=6.5.8'
+        tornado==6.5.10
 
 # CVE registry verification pass (2026-07-31): real per-CVE research against the exact
 # installed versions in this image (see gateway/security/agent_cve_registry.py, Hermes
