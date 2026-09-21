@@ -137,10 +137,29 @@ RUN npm install -g npm@12.0.2
 # hermes-agent's own app-level node_modules DO have available fixes though —
 # patch bumps only, applied directly since these are leaf/near-leaf deps with
 # no API surface hermes-agent's own code touches beyond calling into them:
-#   browserslist 4.28.6 -> 4.29.0  (CVE-2026-73088, CVE-2026-73089; 4.29.0 is
-#                                   npm's current latest as of 2026-09-21)
+#   browserslist 4.28.6 -> 4.28.7  (CVE-2026-73088, CVE-2026-73089 — 4.28.7
+#                                   already contains both fixes; see the
+#                                   2026-09-21 correction below for why this
+#                                   is 4.28.7, not npm's literal latest)
 #   nanoid       3.3.17 -> 3.3.19  (CVE-2026-67213; transitive dep of both
 #                                   sanitize-html and vite under /opt/hermes)
+#
+# 2026-09-21 correction: an earlier same-day pass bumped browserslist to
+# 4.29.0 (npm's literal latest) instead of 4.28.7 (the oldest version that
+# fixes both CVEs above) and it broke the build: the vendor's own
+# /opt/hermes/.npmrc sets `min-release-age=14` (refuses any npm package
+# published <14 days ago) with an explicit `min-release-age-exclude`
+# allowlist — nanoid is on that allowlist (which is why the 3.3.19 bump above
+# installs fine), browserslist is NOT, and 4.29.0 (published 2026-09-15, 6
+# days before this build) fails the gate with `ETARGET ... no matching
+# version found ... with a date before 9/7/2026`. 4.28.7 (published
+# 2026-07-21) clears it easily and was always sufficient — CVE remediation
+# should target the OLDEST version that closes the advisory, not registry
+# latest: latest maximises unrelated churn and, here, gratuitously tripped a
+# real supply-chain control for zero additional security benefit. Do NOT add
+# browserslist to min-release-age-exclude — the fixed-and-old-enough version
+# already exists, so there is no reason to punch a hole in the vendor's own
+# freshness gate.
 # 2026-09-21: nanoid's own latest is 6.0.1, a MAJOR jump (nanoid v4 dropped
 # CommonJS support entirely — ESM-only) that would break these two `require()`-
 # based CJS consumers outright. Staying on the 3.x line's latest patch (3.3.19,
