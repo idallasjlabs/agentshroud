@@ -178,7 +178,7 @@ RUN npm install -g npm@12.0.2
 # below (vite/devtools' own compatibility is the vendor's concern, not ours).
 # No-op against the currently pinned v0.20.1 (no such conflict there), so
 # safe to leave in place regardless of which HERMES_IMAGE is pinned.
-RUN npm install --prefix /opt/hermes browserslist@4.29.0 \
+RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
     && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.19 \
     && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.19 --legacy-peer-deps
 
