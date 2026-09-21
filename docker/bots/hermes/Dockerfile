@@ -70,11 +70,25 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9
 # python-multipart==0.0.30 pin that lived here (CVE-2026-53539 fix) — verified via
 # `importlib.metadata` against the raw v2026.9.14 base image that the vendor now ships
 # python-multipart 0.0.32 natively (newer than our old pin), so re-asserting ==0.0.30
-# would have silently DOWNGRADED it on every future rebuild. tornado stays pinned:
-# the vendor also already ships 6.5.8 here, so this is a no-op today and a floor against
-# a future vendor rebuild regressing it, not an active bump.
+# would have silently DOWNGRADED it on every future rebuild.
+#
+# Independently re-verified 2026-09-21 before merge, by running
+# `importlib.metadata.version` inside the raw unpatched base image
+# (sha256:99641e57, no build, no patch layer applied):
+#     python-multipart  0.0.32
+#     tornado           6.5.8
+# The running container could not answer this — it reports 0.0.30 precisely
+# BECAUSE the patch line put it there, so only the unpatched base is evidence.
+#
+# tornado is a FLOOR, expressed as >= rather than ==. The vendor already ships
+# 6.5.8, so this is a no-op today and exists only to stop a future vendor
+# rebuild regressing below it. It was written `==6.5.8` while being described
+# as a floor — which is the exact downgrade hazard the python-multipart note
+# above diagnoses: an `==` "guard" silently drags the base BACKWARDS the moment
+# the vendor moves ahead (6.5.9+). `>=` keeps the regression protection and
+# drops the hazard.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
-        tornado==6.5.8
+        'tornado>=6.5.8'
 
 # CVE registry verification pass (2026-07-31): real per-CVE research against the exact
 # installed versions in this image (see gateway/security/agent_cve_registry.py, Hermes
