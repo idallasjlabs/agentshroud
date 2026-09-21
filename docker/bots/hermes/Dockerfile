@@ -82,20 +82,33 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9
 # The running container could not answer this — it reports 0.0.30 precisely
 # BECAUSE the patch line put it there, so only the unpatched base is evidence.
 #
-# 2026-09-21 Sunday upgrade, second pass: tornado has moved again since the
-# note above was written. PyPI's actual latest is 6.5.10 (6.5.9 released
-# 2026-09-14, 6.5.10 released 2026-09-15 — both predate this run; the earlier
-# ==6.5.8 pin, even rewritten as a floor, was simply stale). OSV.dev reports no
-# known advisory against 6.5.8-6.5.10 (checked 2026-09-21) — this is a
-# latest-stable bump per the no-exceptions directive, not a CVE fix. Pinned
-# exactly (==), matching the httplib2/pillow/etc. pattern below, rather than
-# left as a floor: an explicit pin is what "never leave a component on an
-# unpinned/undetermined version" means in practice, and the vendor's base
-# still ships 6.5.8 today (verified against the raw v2026.9.21 base image,
-# sha256:6bece064, importlib.metadata, no patch layer) so this remains a real,
-# non-no-op bump.
+# 2026-09-21 Sunday upgrade, third pass: PyPI's actual latest is 6.5.10
+# (6.5.9 released 2026-09-14, 6.5.10 released 2026-09-15), but BOTH are
+# BLOCKED BY AN UPSTREAM SUPPLY-CHAIN CONTROL, not available to us — this is
+# a stated outcome, not a silent skip (CLAUDE.md §0.05). /opt/hermes's own
+# pyproject.toml carries a `[tool.uv]` table with `exclude-newer = "14 days"`
+# (a per-package exemption table sits alongside it — python-multipart is
+# exempted, which is why that pin's removal above is safe; tornado is not
+# exempted) — structurally identical to the npm min-release-age gate that
+# broke the browserslist bump elsewhere in this file. Resolved cutoff this
+# run: 2026-09-07T21:17:38Z. Both 6.5.9 and 6.5.10 postdate it and fail with
+# `uv pip install`'s dependency resolver refusing to find a matching version.
+# 6.5.10 unblocks ~2026-09-29 (14 days after its release) — check again then.
+#
+# An initial pass here incorrectly concluded "no Python-side equivalent gate
+# exists" from checking only for a separate pip.conf/uv.toml file and missing
+# the config lives inside pyproject.toml; caught and corrected same-run by
+# prod's independent rebuild (real `uv pip install tornado==6.5.10` failure,
+# not a theoretical read).
+#
+# No CVE tradeoff in reverting: OSV.dev reports no known advisory against
+# 6.5.8-6.5.10 (checked 2026-09-21) — this was always a latest-stable bump
+# per the no-exceptions directive, never a CVE fix, so there is no security
+# regression in staying on the vendor's own already-shipped 6.5.8 until the
+# gate clears. Floor (>=), not exact pin: protects against a future vendor
+# rebuild regressing below 6.5.8 without re-triggering the gate itself.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
-        tornado==6.5.10
+        'tornado>=6.5.8'
 
 # CVE registry verification pass (2026-07-31): real per-CVE research against the exact
 # installed versions in this image (see gateway/security/agent_cve_registry.py, Hermes
