@@ -256,9 +256,14 @@ fi
 
 info "=== Semgrep SAST Scan ==="
 
-if ! command -v semgrep &>/dev/null; then
-    warn "semgrep not found — skipping SAST"
-    warn "Install: nix profile install nixpkgs#semgrep"
+if ! require_tool semgrep; then
+    # A skipped scan must never read as a clean scan (CLAUDE.md 0.0 rule 2: a
+    # no-op must be distinguishable from a success). Until 2026-09-20 this
+    # warn-skipped, so a run on a host without semgrep produced the same
+    # overall verdict as one that actually scanned — and semgrep was absent
+    # from flake.nix devTools, so "without semgrep" was the normal case.
+    error "SAST cannot run — counting as a scan failure rather than skipping"
+    SCAN_FAILURES=$((SCAN_FAILURES + 1))
 else
     semgrep_report="${REPORTS_DIR}/semgrep/semgrep-${TS}.json"
 

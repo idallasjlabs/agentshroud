@@ -1,6 +1,15 @@
 # Pre-commit hooks for secret detection and security
-# Install: pip install pre-commit && pre-commit install
+# Install: nix develop   (provides pre-commit, semgrep and gitleaks via
+#          flake.nix devTools), then: pre-commit install
 # Run manually: pre-commit run --all-files
+#
+# This file is the SINGLE owner of .git/hooks/pre-commit as of 2026-09-20.
+# Three systems used to compete for that one path and the weakest won: a bare
+# `git secrets --install` had overwritten it with a two-line git-secrets call,
+# so gitleaks, detect-secrets, ruff, black and semgrep ran on no commit at all.
+# .llm_settings/git-hooks/install.sh also copies its own script over the same
+# path — do not run it against this repo, or it will displace these hooks
+# again. The git-secrets check it provided is carried below so nothing is lost.
 
 repos:
   # Gitleaks - Secret scanning
@@ -25,6 +34,11 @@ repos:
       - id: end-of-file-fixer
 
   # Detect-secrets - Advanced secret detection
+  # v1.4.0 until 2026-09-20, which could not read .secrets.baseline (generated
+  # by 1.5.0) — it aborted with "baseline made by a newer detect-secrets
+  # version" + TypeError, blocking every commit. Invisible while no hook was
+  # installed; surfaced the moment pre-commit took ownership of the hook path.
+  # Keep this rev in step with .secrets.baseline's "version" field.
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
     hooks:
@@ -46,11 +60,39 @@ repos:
 
   # Semgrep - SAST for Python gateway source (IEC 62443 4-1 SDL)
   # Catches: command injection, path traversal, hardcoded secrets, SSRF
-  - repo: https://github.com/returntocorp/semgrep
-    rev: v1.60.1
+  #
+  # `repo: local` + `language: system` rather than the upstream pre-commit
+  # repo, for two measured reasons (both 2026-09-20):
+  #   1. --baseline-commit HEAD reports only findings the staged change
+  #      INTRODUCES. gateway/ carries 136 pre-existing findings, so a plain
+  #      `--error` run exits 1 on almost any gateway file you touch (verified
+  #      on gateway/web/installer.py). A hook that blocks routine commits
+  #      trains everyone to `git commit --no-verify`, which disables the
+  #      secret scanners above too — strictly worse than no hook. This matches
+  #      the --baseline-commit gate in .github/workflows/security-scan.yml, so
+  #      local and CI cannot disagree.
+  #   2. The upstream repo makes pre-commit pip-install semgrep into an
+  #      isolated env; that download fails on the dev host (large TLS streams
+  #      abort with "record layer failure" past ~27MB). `language: system`
+  #      uses the semgrep provided by flake.nix devTools instead — which is
+  #      also what CLAUDE.md section 5 asks for (Nix, not pip/brew).
+  # Version is pinned by flake.nix locally and by an explicit pin in CI.
+  - repo: local
     hooks:
       - id: semgrep
-        name: semgrep (agentshroud rules)
-        args: ['--config', '.semgrep.yml', '--error', '--quiet']
+        name: semgrep (agentshroud rules, new findings only)
+        entry: semgrep scan --config .semgrep.yml --error --quiet --baseline-commit HEAD
+        language: system
         types: [python]
         files: ^gateway/
+
+  # Carried over from .llm_settings/git-hooks/pre-commit so that pre-commit
+  # owning the hook path loses none of that script's coverage. `language:
+  # system` because git-secrets is provisioned by the toolchain, not by pip.
+  - repo: local
+    hooks:
+      - id: git-secrets
+        name: git-secrets (AWS credential patterns)
+        entry: git-secrets --pre_commit_hook --
+        language: system
+        pass_filenames: true

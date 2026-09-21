@@ -132,10 +132,69 @@ mkdir -p reports
 # a launchd/cron failure that emails/logs an actionable error is recoverable;
 # a "successful" run against a week-old checkout or someone's feature branch
 # is not, and reads as a completed upgrade when nothing current was applied.
-git fetch origin main >/dev/null 2>&1 || {
-  echo "[sunday-upgrade] FATAL: git fetch origin main failed — check network/auth before the next scheduled run." >&2
+# ── Memory precondition ─────────────────────────────────────────────────────
+# Refuse to start into a host that is genuinely out of memory. This box runs
+# two Colima VMs (dev + prod) on one machine, and a build started into a
+# critically-pressured host gets OOM-killed for reasons that appear nowhere in
+# this job's log — worse than not starting, because it burns the retry slot AND
+# leaves a failure nobody can diagnose from the record.
+#
+# Keyed on macOS's own pressure level, NOT on free swap. The first version of
+# this check used swap headroom and was wrong: on 2026-09-20 this host showed
+# 392MB free swap (looks dire) while physical memory was 32% free of 64GB and
+# the kernel reported pressure level 2. macOS grows the swap file under load
+# and does not release it afterwards, so "free swap" stays near zero on a
+# perfectly healthy host — a swap threshold here would defer every run forever,
+# which is precisely the failure this job cannot afford.
+#
+# kern.memorystatus_vm_pressure_level: 1 = normal, 2 = warn, 4 = critical.
+# Defer only at critical. Warn is the normal state of a busy build host.
+#
+# Deferring is safe because retries are scheduled — the next fire re-checks.
+# Exit 5 is distinct from 3 (fetch) and 4 (wrong branch) so "deferred for
+# memory" is never mistaken for either a success or a hard failure.
+# Override with SUNDAY_UPGRADE_SKIP_MEM_CHECK=1.
+if [ "${SUNDAY_UPGRADE_SKIP_MEM_CHECK:-0}" != "1" ]; then
+  _mem_level="$(sysctl -n kern.memorystatus_vm_pressure_level 2>/dev/null || echo '')"
+  if [ -n "$_mem_level" ] && [ "$_mem_level" -ge 4 ] 2>/dev/null; then
+    echo "[sunday-upgrade] DEFERRED: host memory pressure is CRITICAL (level ${_mem_level})." >&2
+    echo "[sunday-upgrade] A build started now would likely be OOM-killed." >&2
+    echo "[sunday-upgrade] Not consuming today's run — the next scheduled retry will re-check." >&2
+    exit 5
+  fi
+  if [ -n "$_mem_level" ]; then
+    echo "[sunday-upgrade] memory precondition OK (pressure level ${_mem_level}; 4 would defer)."
+  else
+    # Never fail the run because the probe itself did not work.
+    echo "[sunday-upgrade] NOTE: could not read kern.memorystatus_vm_pressure_level — skipping the memory precondition."
+  fi
+fi
+
+# Retried, not single-shot. This job fires once a week (0 3 * * 0), so a
+# single transient fetch failure forfeits the ENTIRE week — which is exactly
+# what happened on 2026-09-20: the 03:02 run died here at the first attempt
+# and nothing retried it, so no upgrade ran that Sunday. This host sees
+# intermittent transport failures to some CDNs (verified 2026-09-20: streams
+# from files.pythonhosted.org abort at random sizes with TLS "bad decrypt",
+# while a 41.9MB file from another host downloads fine), so one blip must not
+# cost a week. Backoff is 30/60/90/120s — about 5 minutes total, negligible
+# against a weekly job with a 90-minute budget.
+_fetch_ok=0
+for _try in 1 2 3 4 5; do
+  if git fetch origin main >/dev/null 2>&1; then
+    _fetch_ok=1
+    [ "$_try" -gt 1 ] && echo "[sunday-upgrade] git fetch succeeded on attempt ${_try}."
+    break
+  fi
+  if [ "$_try" -lt 5 ]; then
+    echo "[sunday-upgrade] git fetch origin main failed (attempt ${_try}/5) — retrying in $((_try * 30))s."
+    sleep $((_try * 30))
+  fi
+done
+if [ "$_fetch_ok" -ne 1 ]; then
+  echo "[sunday-upgrade] FATAL: git fetch origin main failed after 5 attempts — check network/auth before the next scheduled run." >&2
   exit 3
-}
+fi
 _current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
 if [ "$_current_branch" != "main" ]; then
   echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main." >&2
@@ -212,7 +271,38 @@ if [ -s "$REPORT_MD" ]; then
   echo "[sunday-upgrade] NOTE: report ${REPORT_MD} exists but has no completion sentinel — treating as an incomplete run and re-running."
 fi
 
-EXTRA="--permission-mode acceptEdits"
+# Permission posture for an UNATTENDED run.
+#
+# `acceptEdits` was wrong here and cost three weeks. It auto-accepts file edits
+# but still PROMPTS for Bash, and a prompt in an unattended session is an
+# infinite hang: nobody is there to answer it. That is the direct cause of the
+# 2026-09-20 ten-hour run, and of the 2026-09-21 run that sat from 08:00 on
+# "Do you want to make this edit to .pre-commit-config.yaml?".
+#
+# It also hid a release blocker. The job appeared to work on this host only
+# because .claude/settings.local.json had accumulated 287 allow rules (265 of
+# them Bash) from prompts answered by hand over weeks. That file is gitignored,
+# so a fresh clone has none of them and stalls on the first Bash call. The
+# job's reliability was a function of how many prompts someone had previously
+# clicked on that particular machine — not a property that can be shipped.
+#
+# `dontAsk` never prompts, so the run CANNOT hang. Anything outside the
+# committed allowlist in .claude/settings.json is denied and fails visibly in
+# the log instead of silently proceeding. When a run trips on a missing rule
+# the fix is to add it to that committed, reviewable file — not to click yes at
+# 3am and leave the next machine with the same gap.
+#
+# The security boundary is unchanged and does not depend on prompts: the deny
+# rules (secrets, .env) and the PreToolUse hooks (block_credential_read,
+# block_credential_write, block_main_commits, warn_dangerous_bash) still run.
+# Hooks refuse with exit 2, which RETURNS CONTROL instead of hanging — that is
+# what makes them the correct boundary for unattended work.
+#
+# Override for a one-off run if dontAsk proves too strict:
+#   SUNDAY_UPGRADE_PERMISSION_MODE=bypassPermissions
+# Do NOT make that the default: it grants everything, which is precisely the
+# posture this change exists to avoid shipping to other people.
+EXTRA="--permission-mode ${SUNDAY_UPGRADE_PERMISSION_MODE:-dontAsk}"
 if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
   EXTRA="$EXTRA --allowedTools Bash,Read,Edit,Write,Glob,Grep"
 fi
@@ -263,11 +353,19 @@ echo "[sunday-upgrade] mission submitted at launch — watch/steer from the phon
 
 # Wait for the session to finish, then stage the report for Hermes delivery.
 elapsed=0
+TIMED_OUT=0
 while tmux has-session -t "$SESSION" 2>/dev/null; do
   sleep 60
   elapsed=$((elapsed + 1))
   if [ "$elapsed" -ge "$WATCH_TIMEOUT_MIN" ]; then
-    echo "[sunday-upgrade] WARN: session still open after ${WATCH_TIMEOUT_MIN}m — staging whatever report exists and leaving the session running"
+    # Actually STOP it. This previously logged a warning, broke out of the
+    # wait loop and left the agent running: on 2026-09-20 an 11:00 run was
+    # "timed out" at 14:00 and kept working until 21:09 — ten hours against a
+    # three-hour ceiling, with the script long since exited. A timeout that
+    # does not terminate is not a timeout, and the run has a hard budget.
+    echo "[sunday-upgrade] WARN: session exceeded ${WATCH_TIMEOUT_MIN}m — terminating it now." >&2
+    tmux kill-session -t "$SESSION" 2>/dev/null || true
+    TIMED_OUT=1
     break
   fi
 done
@@ -283,8 +381,43 @@ else
   echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
 fi
 
-# Completion sentinel — only written once the run reached the end of the script.
-# Guards same-day re-fires (see DONE_MARKER check above) WITHOUT trapping a
-# failed run behind its own partial output.
+# ── Return the checkout to main ─────────────────────────────────────────────
+# The run works on chore/upgrade-<date>. It used to LEAVE the checkout there,
+# which hard-blocks every later run at the branch guard (exit 4) — on
+# 2026-09-21 the 03:00 and 05:00 fires both FATAL'd on the branch left behind
+# by the 2026-09-20 run. The job must not sabotage its own next invocation.
+#
+# Push first so the work is never stranded local-only, then switch back. Both
+# steps are skipped when the tree is dirty: a half-finished working tree is
+# the one case where switching branches loses work, and losing work is worse
+# than leaving the checkout somewhere inconvenient.
+_final_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+if [ -n "$_final_branch" ] && [ "$_final_branch" != "main" ]; then
+  _leftover="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' | grep -v '^??' || true)"
+  if [ -n "$_leftover" ]; then
+    echo "[sunday-upgrade] WARN: staying on '${_final_branch}' — uncommitted changes present." >&2
+    echo "[sunday-upgrade] WARN: the NEXT run will fail its branch guard until this is resolved." >&2
+  else
+    if git push -u origin "$_final_branch" >/dev/null 2>&1; then
+      echo "[sunday-upgrade] pushed '${_final_branch}' (work preserved for review)."
+    else
+      echo "[sunday-upgrade] WARN: could not push '${_final_branch}' — it exists only locally." >&2
+    fi
+    if git checkout main >/dev/null 2>&1; then
+      echo "[sunday-upgrade] checkout returned to main (next run's branch guard will pass)."
+    else
+      echo "[sunday-upgrade] WARN: could not return the checkout to main." >&2
+    fi
+  fi
+fi
+
+# Completion sentinel — ONLY on a run that genuinely finished. Writing it after
+# a timeout marked the day done while the agent was still working (2026-09-20:
+# sentinel at 14:00, report actually written at 19:53), which then made every
+# remaining retry that day skip. A timed-out run must stay retryable.
+if [ "${TIMED_OUT:-0}" = "1" ]; then
+  echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
+  exit 6
+fi
 touch "$DONE_MARKER"
 echo "[sunday-upgrade] $(date '+%H:%M:%S') run complete (sentinel: $DONE_MARKER)"

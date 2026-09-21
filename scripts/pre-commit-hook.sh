@@ -1,14 +1,28 @@
 #!/bin/bash
 # AgentShroud pre-commit hook — runs gitleaks on staged changes
-# Install: cp scripts/pre-commit-hook.sh .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+#
+# DO NOT INSTALL THIS BY COPYING IT OVER .git/hooks/pre-commit.
+# That path has exactly one owner: the pre-commit framework, driven by
+# .pre-commit-config.yaml (which already runs gitleaks). Copying this file
+# there displaces gitleaks, detect-secrets, ruff, black and semgrep in one
+# move — that is precisely how Semgrep SAST came to be enforced nowhere while
+# the PR template still asked authors to attest it passed (fixed 2026-09-20).
+#
+# Install with:  .llm_settings/git-hooks/install.sh   (additive, idempotent)
+# This file is kept only as a standalone scanner for environments that have no
+# pre-commit available; run it directly: bash scripts/pre-commit-hook.sh
 
 set -e
 
 # Check if gitleaks is installed
 if ! command -v gitleaks &> /dev/null; then
-    echo "⚠️  gitleaks not found — skipping secret scan"
-    echo "   Install: brew install gitleaks"
-    exit 0
+    # Was `exit 0` until 2026-09-20: a missing scanner reported the same
+    # success as a clean scan, so this hook passed every commit on any machine
+    # without gitleaks. A no-op must be distinguishable from a success
+    # (CLAUDE.md 0.0 rule 2). Nix, not brew, per CLAUDE.md section 5.
+    echo "❌ gitleaks not found — cannot scan for secrets, refusing to pass" >&2
+    echo "   Install: nix develop   (or: nix profile install nixpkgs#gitleaks)" >&2
+    exit 1
 fi
 
 echo "🔐 Running gitleaks on staged changes..."

@@ -88,6 +88,68 @@ jobs:
           sarif_file: trivy-fs.sarif
           category: trivy-fs
 
+  semgrep:
+    name: Semgrep SAST (IEC 62443 4-1 SDL)
+    runs-on: ubuntu-latest
+    # Until 2026-09-20 Semgrep ran in NO pipeline at all: declared in
+    # .pre-commit-config.yaml but no pre-commit hook was installed (a bare
+    # `git secrets --install` had displaced .git/hooks/pre-commit),
+    # scripts/security-scan.sh warn-skipped it when the binary was absent, and
+    # .github/PULL_REQUEST_TEMPLATE.md asked authors to attest "Semgrep passes"
+    # via a command that could not run. CLAUDE.md section 7 constraint 5
+    # requires new code to pass .semgrep.yml; this job makes that enforced
+    # rather than attested.
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0  # --baseline-commit needs history
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # Keep in step with the semgrep provided by flake.nix devTools, so
+      # `pre-commit run semgrep` locally and this job cannot disagree.
+      # Bumped 1.60.1 -> 1.177.0 on 2026-09-20: 1.60.1 was past upstream EOL
+      # (semgrep.dev supports >= 1.76.0 and the CLI warned on every run).
+      # Verified before landing — 1.177.0 returns the identical finding set on
+      # gateway/ (136: 131 WARNING / 5 ERROR) and the baselined gate below
+      # still exits 0, so the bump changes enforcement not at all.
+      - name: Install semgrep
+        run: pip install semgrep==1.177.0
+
+      # THE GATE: fail on findings this change INTRODUCES.
+      # gateway/ carries 136 pre-existing findings (131 WARNING / 5 ERROR,
+      # measured 2026-09-20), so an unbaselined `--error` run exits 1 on every
+      # PR. The only ways to land that are to clear the backlog first or make
+      # the job non-blocking — and a non-blocking security gate is exactly the
+      # soft-fail theater CLAUDE.md 0.0 forbids. --baseline-commit enforces
+      # precisely what constraint 5 states ("NEW code must pass") and still
+      # fails hard, so the gate means something from day one.
+      - name: Semgrep — no new findings vs baseline
+        run: |
+          BASE="${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || 'HEAD~1' }}"
+          echo "Baseline commit: $BASE"
+          semgrep scan --config .semgrep.yml --error --quiet \
+            --baseline-commit "$BASE" gateway/
+
+      # The backlog stays VISIBLE. Baselining debt without publishing the
+      # number is how it becomes invisible; this step prints it every run so
+      # a rising count is noticed. Informational by design — the gate above is
+      # what blocks.
+      - name: Pre-existing finding count (informational)
+        if: always()
+        run: |
+          semgrep scan --config .semgrep.yml --json --quiet gateway/ > semgrep-all.json || true
+          python3 -c "
+          import json, collections
+          r = json.load(open('semgrep-all.json')).get('results', [])
+          sev = collections.Counter(x['extra'].get('severity') for x in r)
+          print(f'Pre-existing .semgrep.yml findings in gateway/: {len(r)}')
+          for k, v in sorted(sev.items()):
+              print(f'  {k}: {v}')
+          "
+
   pip-audit:
     name: Python Dependency Audit
     runs-on: ubuntu-latest
