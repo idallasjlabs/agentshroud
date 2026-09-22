@@ -152,7 +152,7 @@ if ! docker info >/dev/null 2>&1; then
     # coreutils (Homebrew, resolvable via the PATH set at the top of this
     # script) and bounds a hung start so it cannot hold the run lock for the
     # full 15-min stale-lock window.
-    if timeout 300 colima start --cpu 8 --memory 12 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
+    if timeout 300 colima start --cpu 8 --memory 10 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
       resolve_docker_host || true
       if docker info >/dev/null 2>&1; then
         COLIMA_STARTED=true
