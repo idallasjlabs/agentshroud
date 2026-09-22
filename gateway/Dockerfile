@@ -112,7 +112,7 @@ RUN set -eux; \
 # for build simplicity, consistent with every other builder stage in this
 # file — same static, self-contained binary either way.
 FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.7.2
+ARG DOCKER_CLI_VERSION=29.8.1
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring, not the standard module layout every other
 # builder stage in this file uses. Must clone into $GOPATH/src/... and build
@@ -223,7 +223,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.51.1  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG SYFT_VERSION=1.52.0  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -311,7 +311,8 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # Falco runtime security — embedded in gateway (no separate container)
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
 # SCRUM-101: 0.39.2 → 0.44.1 (latest stable; libs 0.25.4, patched Go/C deps). Sidecar intact.
-ARG FALCO_VERSION=0.44.1
+# 2026-09-22 Sunday upgrade: 0.44.1 → 0.45.0 (latest stable per GitHub releases).
+ARG FALCO_VERSION=0.45.0
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) FALCO_ARCH="aarch64" ;; \

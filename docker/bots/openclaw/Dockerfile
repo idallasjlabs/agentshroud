@@ -10,7 +10,7 @@
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
 FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.7.2
+ARG DOCKER_CLI_VERSION=29.8.1
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
 # GO111MODULE=auto (falls back to GOPATH mode with no go.mod present).
