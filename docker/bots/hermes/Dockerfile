@@ -54,20 +54,61 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 # upstream image; installing into the venv keeps the system Python clean.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9.14.4
 
-# SCRUM-101 follow-up (v1.3.0): patch two vendored-venv deps whose upstream image ships a
-# vulnerable pin AND whose fix is a backward-compatible PATCH release (verified: full hermes
-# starlette/fastapi/mcp/cryptography stack still imports after the bump — smoke-checked in build).
-#   tornado         6.5.5 -> 6.5.8   (CVE-2026-49853 auth-header cross-origin redirect leak;
-#                                     CVE-2026-49855 gzip-bomb unbounded decompression;
-#                                     CVE-2026-82397 found 2026-09-08, fixed in 6.5.8)
-#   python-multipart 0.0.27 -> 0.0.30 (CVE-2026-53539 form-urlencoded DoS)
+# SCRUM-101 follow-up (v1.3.0): patch a vendored-venv dep whose upstream image
+# ships a vulnerable pin AND whose fix is a backward-compatible PATCH release
+# (verified: full hermes starlette/fastapi/mcp/cryptography stack still
+# imports after the bump — smoke-checked in build).
+#   tornado 6.5.5 -> 6.5.8   (CVE-2026-49853 auth-header cross-origin redirect leak;
+#                             CVE-2026-49855 gzip-bomb unbounded decompression;
+#                             CVE-2026-82397 found 2026-09-08, fixed in 6.5.8)
 # NOTE: starlette (->1.3.1) and cryptography (->48.0.1) are NOT bumped here — they are core
 # hermes-agent pins whose fixed versions are minor/major jumps across the fastapi/mcp/auth stack
 # that cannot be validated without full upstream integration testing; they are documented as
 # upstream-vendored "currently unmitigable" residue in docs/security/cve-mitigation-matrix.md.
+#
+# 2026-09-21 Sunday upgrade (HERMES_IMAGE -> v2026.9.21 / semver 0.21.4, moved
+# again from the v2026.9.14/0.20.6 target this comment originally named —
+# Hermes shipped several more tags between the two discovery passes in this
+# same run): dropped the python-multipart==0.0.30 pin that lived here
+# (CVE-2026-53539 fix) — verified via `importlib.metadata` against the raw
+# v2026.9.21 base image that the vendor now ships python-multipart 0.0.32
+# natively (newer than our old pin), so re-asserting ==0.0.30 would have
+# silently DOWNGRADED it on every future rebuild.
+#
+# Verified 2026-09-21 by running `importlib.metadata.version` inside the raw
+# unpatched base image (sha256:6bece064, no build, no patch layer applied):
+#     python-multipart  0.0.32
+#     tornado           6.5.8
+# The running container could not answer this — it reports 0.0.30 precisely
+# BECAUSE the patch line put it there, so only the unpatched base is evidence.
+#
+# 2026-09-21 Sunday upgrade, third pass: PyPI's actual latest is 6.5.10
+# (6.5.9 released 2026-09-14, 6.5.10 released 2026-09-15), but BOTH are
+# BLOCKED BY AN UPSTREAM SUPPLY-CHAIN CONTROL, not available to us — this is
+# a stated outcome, not a silent skip (CLAUDE.md §0.05). /opt/hermes's own
+# pyproject.toml carries a `[tool.uv]` table with `exclude-newer = "14 days"`
+# (a per-package exemption table sits alongside it — python-multipart is
+# exempted, which is why that pin's removal above is safe; tornado is not
+# exempted) — structurally identical to the npm min-release-age gate that
+# broke the browserslist bump elsewhere in this file. Resolved cutoff this
+# run: 2026-09-07T21:17:38Z. Both 6.5.9 and 6.5.10 postdate it and fail with
+# `uv pip install`'s dependency resolver refusing to find a matching version.
+# 6.5.10 unblocks ~2026-09-29 (14 days after its release) — check again then.
+#
+# An initial pass here incorrectly concluded "no Python-side equivalent gate
+# exists" from checking only for a separate pip.conf/uv.toml file and missing
+# the config lives inside pyproject.toml; caught and corrected same-run by
+# prod's independent rebuild (real `uv pip install tornado==6.5.10` failure,
+# not a theoretical read).
+#
+# No CVE tradeoff in reverting: OSV.dev reports no known advisory against
+# 6.5.8-6.5.10 (checked 2026-09-21) — this was always a latest-stable bump
+# per the no-exceptions directive, never a CVE fix, so there is no security
+# regression in staying on the vendor's own already-shipped 6.5.8 until the
+# gate clears. Floor (>=), not exact pin: protects against a future vendor
+# rebuild regressing below 6.5.8 without re-triggering the gate itself.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
-        tornado==6.5.8 \
-        python-multipart==0.0.30
+        'tornado>=6.5.8'
 
 # CVE registry verification pass (2026-07-31): real per-CVE research against the exact
 # installed versions in this image (see gateway/security/agent_cve_registry.py, Hermes
@@ -109,9 +150,36 @@ RUN npm install -g npm@12.0.2
 # hermes-agent's own app-level node_modules DO have available fixes though —
 # patch bumps only, applied directly since these are leaf/near-leaf deps with
 # no API surface hermes-agent's own code touches beyond calling into them:
-#   browserslist 4.28.6 -> 4.28.7  (CVE-2026-73088, CVE-2026-73089)
-#   nanoid       3.3.17 -> 3.3.18  (CVE-2026-67213; transitive dep of both
+#   browserslist 4.28.6 -> 4.28.7  (CVE-2026-73088, CVE-2026-73089 — 4.28.7
+#                                   already contains both fixes; see the
+#                                   2026-09-21 correction below for why this
+#                                   is 4.28.7, not npm's literal latest)
+#   nanoid       3.3.17 -> 3.3.19  (CVE-2026-67213; transitive dep of both
 #                                   sanitize-html and vite under /opt/hermes)
+#
+# 2026-09-21 correction: an earlier same-day pass bumped browserslist to
+# 4.29.0 (npm's literal latest) instead of 4.28.7 (the oldest version that
+# fixes both CVEs above) and it broke the build: the vendor's own
+# /opt/hermes/.npmrc sets `min-release-age=14` (refuses any npm package
+# published <14 days ago) with an explicit `min-release-age-exclude`
+# allowlist — nanoid is on that allowlist (which is why the 3.3.19 bump above
+# installs fine), browserslist is NOT, and 4.29.0 (published 2026-09-15, 6
+# days before this build) fails the gate with `ETARGET ... no matching
+# version found ... with a date before 9/7/2026`. 4.28.7 (published
+# 2026-07-21) clears it easily and was always sufficient — CVE remediation
+# should target the OLDEST version that closes the advisory, not registry
+# latest: latest maximises unrelated churn and, here, gratuitously tripped a
+# real supply-chain control for zero additional security benefit. Do NOT add
+# browserslist to min-release-age-exclude — the fixed-and-old-enough version
+# already exists, so there is no reason to punch a hole in the vendor's own
+# freshness gate.
+# 2026-09-21: nanoid's own latest is 6.0.1, a MAJOR jump (nanoid v4 dropped
+# CommonJS support entirely — ESM-only) that would break these two `require()`-
+# based CJS consumers outright. Staying on the 3.x line's latest patch (3.3.19,
+# which already carries the CVE-2026-67213 fix) rather than bumping across that
+# break — same "needs full upstream integration testing before a major jump"
+# reasoning as starlette/cryptography below, not something skipped for
+# convenience.
 # 2026-09-14: hermes-agent v0.20.6 bumped its bundled vite to 8.3.0, which now
 # peer-requires @vitejs/devtools@^0.7.1 — but the vendor still bundles
 # @vitejs/devtools@0.4.12 (an internal mismatch in the vendor's own tree, not
@@ -124,8 +192,8 @@ RUN npm install -g npm@12.0.2
 # No-op against the currently pinned v0.20.1 (no such conflict there), so
 # safe to leave in place regardless of which HERMES_IMAGE is pinned.
 RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
-    && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.18 \
-    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.18 --legacy-peer-deps
+    && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.19 \
+    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.19 --legacy-peer-deps
 
 # 2026-09-08: uv/uvx (vendored Rust binaries used for the ddgs/tornado/etc.
 # venv installs above) shipped at 0.11.6 in the upstream base image, carrying

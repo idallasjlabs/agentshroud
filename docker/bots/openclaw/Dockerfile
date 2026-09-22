@@ -9,8 +9,8 @@
 # 8+ HIGH Go-stdlib CVEs with no dependency involved at all. Same fix already
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
-FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.7.2
+FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
+ARG DOCKER_CLI_VERSION=29.8.1
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
 # GO111MODULE=auto (falls back to GOPATH mode with no go.mod present).
@@ -41,8 +41,9 @@ RUN set -eux; \
 #
 # Do NOT drop back to node:22 to "reduce churn": it silently disables agent
 # sandbox configuration, which is a security control, and re-arms the crash-loop.
-# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-15.
-FROM node:24-bookworm-slim@sha256:2fe369e969550cde8e867afc3fe370b260140cab4a23d467074295b42163d553
+# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-21 Sunday upgrade
+# (previous pin from 2026-09-15 was stale — Docker Hub had rebuilt the tag).
+FROM node:24-bookworm-slim@sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
@@ -77,7 +78,10 @@ COPY --from=docker-cli-builder /out-docker /usr/local/bin/docker
 RUN chmod +x /usr/local/bin/docker
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
-ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
+# 2026-09-21 Sunday upgrade: 0.72.0 -> 0.74.0, GitHub's current latest release
+# (verified: `gh`/GitHub API `releases/latest` for aquasecurity/trivy, matches
+# the Homebrew trivy already running on the host for this same run's scans).
+ARG TRIVY_VERSION=0.74.0  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -106,7 +110,11 @@ RUN printf '%s\n' \
 # ARM64-native since Wazuh 4.3; chown to node so it runs without root.
 # SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
 # CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
-ARG WAZUH_VERSION=4.14.5
+# 2026-09-21 Sunday upgrade: 4.14.5 -> 4.14.7, the current latest 4.x tag
+# (verified via Docker Hub wazuh/wazuh-manager tags — same upstream release
+# train the wazuh-manager sidecar already pins at 4.14.7; this keeps the
+# in-image agent version aligned with it).
+ARG WAZUH_VERSION=4.14.7
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \

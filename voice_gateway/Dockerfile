@@ -3,6 +3,8 @@
 # Base image pinned to SHA256 digest for supply-chain integrity (SCRUM-100).
 # Update with: docker pull python:3.12-slim && docker inspect --format='{{index .RepoDigests 0}}' python:3.12-slim
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.12-slim.
+# 2026-09-22 Sunday upgrade: digest refreshed again (same tag, same Debian
+# release — no re-litigation of the 2026-09-06 bookworm/trixie decision above).
 #
 # 2026-09-06 (Sunday upgrade): TRIED rebasing to python:3.12-slim-bookworm to
 # dodge trixie's 235 unfixed HIGH/CRITICAL ffmpeg/libav*/perl-base CVEs —
@@ -14,7 +16,7 @@
 # for a future fix. Do not re-attempt this swap without re-scanning both
 # bases fresh; the right fix is probably not a Debian-release swap at all
 # (see reports/upgrade-2026-09-06.md for options considered).
-FROM python:3.12-slim@sha256:c3d81d25b3154142b0b42eb1e61300024426268edeb5b5a26dd7ddf64d9daf28
+FROM python:3.12-slim@sha256:950206c37262dd86c55659797f6ee418fee30535072f65a82ed470d985f5cda5
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"
