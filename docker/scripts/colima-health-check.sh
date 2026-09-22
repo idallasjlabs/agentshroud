@@ -182,26 +182,51 @@ if ! docker info >/dev/null 2>&1; then
   # The hostagent log showed the forward set up once at 08:01:59 and no error
   # afterwards — it does not know it lost anything.
   #
-  # `colima restart` is the only reliable repair, and it does bounce the
+  # Bouncing the VM is the only reliable repair, and it does bounce the
   # containers. That cost is worth paying: at this point docker is ALREADY
   # unusable, so the alternative is not "uptime", it is "an unattended run that
   # fails on its first docker call for a reason nothing in its log explains".
   # Gated on the dev account, as with the start above.
+  #
+  # Done as an explicit bounded STOP then bounded START rather than a single
+  # `timeout 420 colima restart`. The first version used that, and it failed on
+  # its own first live outage (2026-09-21): the restart blew its 420s budget,
+  # the timeout killed it mid-flight leaving the VM stopped, and the run
+  # reported "❌ colima restart failed" and gave up. What actually recovered the
+  # host was step 1a's stopped-VM path on the NEXT invocation — i.e. the repair
+  # only worked by accident, via a different branch, one cron tick later.
+  #
+  # Splitting the phases makes that recovery deliberate instead of lucky:
+  #   * a slow or wedged STOP can no longer consume the entire budget and
+  #     starve the start — which is the exact way the single-command form failed
+  #   * the start is attempted even when the stop fails or times out, because a
+  #     stopped-or-wedged VM still needs starting and that is the half that
+  #     restores service
+  #   * the start reuses step 1a's flags, so a VM rebuilt here matches the
+  #     intended dev shape rather than whatever `restart` would have preserved
+  #
+  # Budget: 300 + 420 = 720s worst case, deliberately under the 900s stale-lock
+  # threshold above. Exceeding that would let one repair be declared stale and
+  # re-entered concurrently by the next cron tick, which is how you get two
+  # colima starts racing on the same VM.
   if ! $COLIMA_STARTED && [ "$(whoami)" = "agentshroud-bot" ] \
      && colima status >/dev/null 2>&1; then
     log "DETECTED: Colima VM is running but Docker is unreachable — socket forward is dead."
-    log "AUTO-HEAL: restarting Colima to re-establish the docker.sock forward..."
-    if timeout 420 colima restart >> "$LOG_FILE" 2>&1; then
+    log "AUTO-HEAL: bouncing Colima to re-establish the docker.sock forward..."
+    if ! timeout 300 colima stop >> "$LOG_FILE" 2>&1; then
+      log "AUTO-HEAL: colima stop failed or timed out — continuing to start anyway."
+    fi
+    if timeout 420 colima start --cpu 8 --memory 12 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
       resolve_docker_host || true
       if docker info >/dev/null 2>&1; then
         COLIMA_STARTED=true
         HEALED=true
         log "AUTO-HEAL: ✅ socket forward restored — Docker is responding"
       else
-        log "AUTO-HEAL: ❌ colima restart completed but Docker is still unreachable"
+        log "AUTO-HEAL: ❌ Colima started but Docker is still unreachable"
       fi
     else
-      log "AUTO-HEAL: ❌ colima restart failed or exceeded the 420s timeout"
+      log "AUTO-HEAL: ❌ colima start failed or exceeded the 420s timeout"
     fi
   fi
 
