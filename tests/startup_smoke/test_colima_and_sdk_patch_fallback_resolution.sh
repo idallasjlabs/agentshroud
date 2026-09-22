@@ -154,9 +154,14 @@ echo "── colima-health-check.sh: auto-starts a stopped Colima VM ──"
 # ijefferson.admin:wheel 0644, so launchd cannot spawn this account's copy
 # even from a GUI session. Cron is the only path that actually runs here.
 
+# Asserts the invocation, not the VM shape: the flags moved into the shared
+# $_COLIMA_VM_FLAGS on 2026-09-22 so a resize cannot land on one recovery path
+# and miss the other. The memory value itself is covered by the
+# "one source of truth" section below — duplicating it here is what let #463
+# change one copy and leave the other at 12GB.
 check "starts the VM when colima status reports it stopped" \
     "docker/scripts/colima-health-check.sh" \
-    "timeout 300 colima start --cpu 8 --memory 12 --disk 120 --network-address"
+    'timeout 300 colima start \$_COLIMA_VM_FLAGS'
 
 check "gates the start on the dev account (never boots a VM on production)" \
     "docker/scripts/colima-health-check.sh" \
@@ -523,12 +528,22 @@ BR="$TMPROOT/br.body"
 /usr/bin/sed -n '/^_final_branch=/,/^fi$/p' "$REPO/scripts/sunday-upgrade.sh" > "$BR"
 BREM="$TMPROOT/bremote"; git init -q --bare "$BREM" 2>/dev/null
 
+# A FRESH bare remote per scenario. Reusing one across calls looks harmless but
+# is not: each call re-inits brepo, so the second scenario pushes an unrelated
+# history at a `main` the first one already created. Git rejects that as a
+# non-fast-forward, and under `set -e` the failed push killed the whole suite
+# mid-run — 49 checks reported OK, 0 FAIL, exit 1, and every section after this
+# point silently never ran. Same truncation class as the earlier `set -e` bug
+# two sections up, which is why the push is also guarded here.
 _mk() {  # $1 = dirty|clean
-    rm -rf "$TMPROOT/brepo"; git init -q -b main "$TMPROOT/brepo" 2>/dev/null
+    rm -rf "$TMPROOT/brepo" "$BREM"
+    git init -q --bare "$BREM" 2>/dev/null
+    git init -q -b main "$TMPROOT/brepo" 2>/dev/null
     ( cd "$TMPROOT/brepo"
       git config user.email t@t; git config user.name t
       git remote add origin "$BREM"
-      echo base > f.txt; git add -A; git commit -qm base; git push -q -u origin main 2>/dev/null
+      echo base > f.txt; git add -A; git commit -qm base
+      git push -q -u origin main 2>/dev/null || true
       git checkout -q -b chore/upgrade-test; echo work >> f.txt; git add -A; git commit -qm work
       [ "$1" = "dirty" ] && echo uncommitted >> f.txt
       true )
@@ -791,6 +806,55 @@ if [ "$(tr '\n' ' ' < "$RS/calls" 2>/dev/null)" = "stop start " ]; then
     echo "  OK : normal path is stop then start, in order"
 else
     echo "  FAIL: unexpected call order: $(tr '\n' ' ' < "$RS/calls" 2>/dev/null)" >&2
+    fail=1
+fi
+
+echo ""
+echo "── colima VM flags: one source of truth, both recovery paths agree ──"
+
+# #463 reduced the VM memory ceiling 12 -> 10GB but changed only ONE of the two
+# `colima start` invocations: the stopped-VM path got 10, the socket-forward
+# repair kept 12. The resulting VM's memory ceiling depended on which failure
+# fired, while the commit message said the ceiling had been reduced. The miss
+# was structural, not careless — 1a-bis had been added days earlier in #461, so
+# a second copy of the literal existed by the time #463 was written.
+
+HCF="$TMPROOT/hc.flags.sh"
+/usr/bin/sed -e 's/[[:space:]]*#.*$//' -e '/^[[:space:]]*$/d' \
+    "$REPO/docker/scripts/colima-health-check.sh" > "$HCF"
+
+if /usr/bin/grep -qE 'colima start .*--memory [0-9]+' "$HCF"; then
+    echo "  FAIL: a literal --memory survives on a colima start line — it will drift again" >&2
+    /usr/bin/grep -nE 'colima start .*--memory [0-9]+' "$HCF" | sed 's/^/        /' >&2
+    fail=1
+else
+    echo "  OK : no literal --memory on any colima start line"
+fi
+
+# Anchor on `timeout N colima start` — the actual invocation form. A bare
+# 'colima start' also matches the AUTO-HEAL log strings that mention it by
+# name ("colima start failed or exceeded the 300s timeout"), which counted 5
+# paths where there are 2 (it did, on first run).
+STARTS=$(/usr/bin/grep -cE 'timeout [0-9]+ colima start ' "$HCF")
+SHARED=$(/usr/bin/grep -cE 'timeout [0-9]+ colima start \$_COLIMA_VM_FLAGS' "$HCF")
+if [ "$STARTS" -ge 2 ] && [ "$STARTS" -eq "$SHARED" ]; then
+    echo "  OK : all $STARTS colima start paths use the shared flag set"
+else
+    echo "  FAIL: $SHARED of $STARTS colima start paths use the shared flags" >&2
+    fail=1
+fi
+
+check "memory is overridable per host without editing the script" \
+    "docker/scripts/colima-health-check.sh" \
+    "AGENTSHROUD_COLIMA_MEMORY_GB"
+
+# Prove the flags actually expand to one consistent value, rather than just
+# looking consistent in source.
+EXPANDED=$(/usr/bin/sed -n 's/^_COLIMA_MEMORY_GB=.*:-\([0-9]*\)}"/\1/p' "$HCF")
+if [ -n "$EXPANDED" ]; then
+    echo "  OK : both paths resolve to a single --memory ${EXPANDED}GB default"
+else
+    echo "  FAIL: could not resolve the shared memory default" >&2
     fail=1
 fi
 

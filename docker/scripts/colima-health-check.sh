@@ -56,6 +56,24 @@ DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
 # agentshroud-marvin-* scheme 2026-09-18 for dev/prod distinguishability), not
 # the unprefixed names below, so every check against these was silently
 # checking containers that don't exist on this host.
+# Single source of truth for the VM shape BOTH recovery paths create.
+#
+# 2026-09-22: #463 reduced the ceiling 12 -> 10GB but changed only ONE of the
+# two `colima start` invocations in this file. The stopped-VM path (1a) got 10;
+# the socket-forward repair (1a-bis) kept 12. Same script, same host, and the
+# resulting VM's memory ceiling depended on WHICH failure happened to fire —
+# while the commit message said the ceiling had been reduced.
+#
+# The miss was not careless: 1a-bis had been added days earlier in #461, so
+# #463 was written against a file that had just grown a second copy of the
+# literal. That is exactly the failure mode a repeated literal guarantees
+# eventually — so the value lives in one place now, where a future resize
+# cannot land halfway.
+#
+# Override per-host without editing this file: AGENTSHROUD_COLIMA_MEMORY_GB.
+_COLIMA_MEMORY_GB="${AGENTSHROUD_COLIMA_MEMORY_GB:-10}"
+_COLIMA_VM_FLAGS="--cpu 8 --memory ${_COLIMA_MEMORY_GB} --disk 120 --network-address"
+
 BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-dev-openclaw}"
 GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-dev-gateway}"
 
@@ -152,7 +170,7 @@ if ! docker info >/dev/null 2>&1; then
     # coreutils (Homebrew, resolvable via the PATH set at the top of this
     # script) and bounds a hung start so it cannot hold the run lock for the
     # full 15-min stale-lock window.
-    if timeout 300 colima start --cpu 8 --memory 10 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
+    if timeout 300 colima start $_COLIMA_VM_FLAGS >> "$LOG_FILE" 2>&1; then
       resolve_docker_host || true
       if docker info >/dev/null 2>&1; then
         COLIMA_STARTED=true
@@ -216,7 +234,7 @@ if ! docker info >/dev/null 2>&1; then
     if ! timeout 300 colima stop >> "$LOG_FILE" 2>&1; then
       log "AUTO-HEAL: colima stop failed or timed out — continuing to start anyway."
     fi
-    if timeout 420 colima start --cpu 8 --memory 12 --disk 120 --network-address >> "$LOG_FILE" 2>&1; then
+    if timeout 420 colima start $_COLIMA_VM_FLAGS >> "$LOG_FILE" 2>&1; then
       resolve_docker_host || true
       if docker info >/dev/null 2>&1; then
         COLIMA_STARTED=true
