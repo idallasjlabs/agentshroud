@@ -858,6 +858,208 @@ else
     fail=1
 fi
 
+
+echo ""
+echo "── sunday-upgrade-apply.sh: build routed inside the VM (SUNDAY_BUILD_VIA_VM) ──"
+
+# Context: on 2026-09-23 the image store had grown to 186GiB, every image
+# operation triggered a full content-store walk, and clients timed out — which
+# had been misread for days as "the docker.sock forward dies under build load".
+# A build that had already reached "naming to ... done" was then killed by its
+# own SSH channel dropping ("exit status 255") and reported as a build failure.
+# SUNDAY_BUILD_VIA_VM=1 builds inside the VM, DETACHED, polling for an exit-code
+# sentinel, so neither the host socket nor the SSH channel is in the path.
+#
+# These checks EXECUTE the real function against stubbed commands rather than
+# grepping for it — a grep here would happily match the paragraph above instead
+# of the code, which has already produced two false-passing checks in this suite.
+APPLY="$REPO/scripts/sunday-upgrade-apply.sh"
+
+_render_build() {
+    # $1 = value of SUNDAY_BUILD_VIA_VM. Returns every command that would run.
+    # The stubs append to a capture file rather than echoing: the real launch
+    # call is redirected to /dev/null, so anything written to stdout by a stub
+    # is invisible to this test and every assertion below would pass vacuously.
+    local cap; cap="$(mktemp)"
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_build_one_service()/,/^}/p" "$1")"
+        CAP="$3"
+        log() { :; }
+        docker-compose() { echo "HOSTCALL: docker-compose $*" >> "$CAP"; }
+        colima() { echo "VMCALL: colima $*" >> "$CAP"; return 0; }
+        sed() { cat; }
+        COMPOSE_CMD="docker-compose -f a.yml -p proj --profile full"
+        REPO="/repo"
+        SUNDAY_BUILD_VIA_VM="$2"
+        SUNDAY_BUILD_VM_TIMEOUT=2
+        SUNDAY_BUILD_VM_POLL=1
+        _build_one_service gateway
+    ' _ "$APPLY" "$1" "$cap" >/dev/null 2>&1 || true
+    cat "$cap"; rm -f "$cap"
+}
+
+HOST_RENDER="$(_render_build 0)"
+VM_RENDER="$(_render_build 1)"
+
+# The remote program is base64'd so no quoting survives the ssh hop; decode it
+# and assert on what the VM would actually execute.
+VM_B64="$(printf '%s\n' "$VM_RENDER" | /usr/bin/sed -n 's/.*echo \([A-Za-z0-9+/=]\{40,\}\) | base64 -d.*/\1/p' | head -1)"
+VM_SCRIPT="$(printf '%s' "$VM_B64" | /usr/bin/base64 -d 2>/dev/null || true)"
+
+# 1. Default (unset/0) must be byte-identical to the pre-change host build, so
+#    enabling the flag is the only behaviour change this introduces.
+if [[ "$HOST_RENDER" == "HOSTCALL: docker-compose -f a.yml -p proj --profile full build --pull gateway" ]]; then
+    echo "  OK : default path is the unchanged host build (no colima in the path)"
+else
+    echo "  FAIL: default host build render changed: $HOST_RENDER" >&2
+    fail=1
+fi
+
+DEFAULT_OFF="$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_build_one_service()/,/^}/p" "$1")"
+    log() { :; }
+    docker-compose() { echo "HOSTCALL"; }
+    colima() { echo "VMCALL"; return 0; }
+    COMPOSE_CMD="docker-compose"
+    REPO="/repo"
+    SUNDAY_BUILD_VIA_VM="${SUNDAY_BUILD_VIA_VM:-0}"
+    _build_one_service gateway
+' _ "$APPLY" 2>/dev/null || true)"
+if [[ "$DEFAULT_OFF" == "HOSTCALL" ]]; then
+    echo "  OK : opt-in — with the variable unset the host path still runs"
+else
+    echo "  FAIL: unset SUNDAY_BUILD_VIA_VM did not take the host path: $DEFAULT_OFF" >&2
+    fail=1
+fi
+
+# 2. With the flag on, the build must go through colima ssh and NOT the host.
+if [[ "$VM_RENDER" == *"VMCALL: colima ssh"* && "$VM_RENDER" != *HOSTCALL* ]]; then
+    echo "  OK : SUNDAY_BUILD_VIA_VM=1 builds via colima ssh, never the host socket"
+else
+    echo "  FAIL: flag did not route the build into the VM: $VM_RENDER" >&2
+    fail=1
+fi
+
+# 3. The remote program must decode — if it does not, every check below is
+#    vacuously true, which is exactly the silent-pass class this file exists for.
+if [[ -n "$VM_SCRIPT" ]]; then
+    echo "  OK : the remote program is recoverable from the launch command"
+else
+    echo "  FAIL: could not decode the base64 remote program from the VM render" >&2
+    fail=1
+fi
+
+# 4. The VM has only the compose *plugin*; a literal 'docker-compose' inside the
+#    VM is command-not-found. Assert the translation actually happened.
+if [[ "$VM_SCRIPT" == *"docker compose "* && "$VM_SCRIPT" != *"docker-compose"* ]]; then
+    echo "  OK : COMPOSE_CMD translated to the plugin form the VM actually has"
+else
+    echo "  FAIL: remote program did not translate docker-compose -> docker compose" >&2
+    fail=1
+fi
+
+# 5. Regression: the first in-VM build attempt emitted "OPENCLAW_VERSION is not
+#    set, defaulting to a blank string" and would have built unpinned images —
+#    the VM shell inherits nothing from the caller.
+if [[ "$VM_SCRIPT" == *"versions.env"* ]]; then
+    echo "  OK : re-sources docker/versions.env in the VM (no blank version pins)"
+else
+    echo "  FAIL: remote program does not source versions.env — would build unpinned" >&2
+    fail=1
+fi
+
+# 6. Service name and --pull must survive the trip.
+if [[ "$VM_SCRIPT" == *"build --pull gateway"* ]]; then
+    echo "  OK : service name and --pull are preserved through the VM hop"
+else
+    echo "  FAIL: remote program lost '--pull' or the service name" >&2
+    fail=1
+fi
+
+# 7. The build must run from the repo path, or compose resolves no files.
+if [[ "$VM_SCRIPT" == *"cd '/repo'"* ]]; then
+    echo "  OK : in-VM build runs from \$REPO"
+else
+    echo "  FAIL: remote program does not cd to \$REPO" >&2
+    fail=1
+fi
+
+# 8. Detachment is the whole point: the build must outlive its SSH channel, and
+#    must record its exit status somewhere the host can read back.
+if [[ "$VM_RENDER" == *"nohup "* && "$VM_RENDER" == *"&"* ]]; then
+    echo "  OK : the in-VM build is launched detached (nohup, backgrounded)"
+else
+    echo "  FAIL: in-VM build is not detached — an SSH drop would kill it again" >&2
+    fail=1
+fi
+if [[ "$VM_SCRIPT" == *'echo $? >'* ]]; then
+    echo "  OK : the build writes an exit-code sentinel for the host to poll"
+else
+    echo "  FAIL: no exit-code sentinel — success and failure would be indistinguishable" >&2
+    fail=1
+fi
+
+# 9. Behavioural: a dropped SSH mid-poll must cost one tick, not the build.
+#    The stub fails the first sentinel read outright, then reports success.
+DROP_RC=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_build_one_service()/,/^}/p" "$1")"
+    log() { :; }
+    CNT=$(mktemp); echo 0 > "$CNT"
+    sed() { cat; }
+    colima() {
+        case "$*" in
+            *"base64 -d"*) return 0 ;;
+            *cat*) n=$(cat "$CNT"); n=$((n+1)); echo "$n" > "$CNT"
+                   if [ "$n" -le 2 ]; then return 255; fi   # two dropped channels
+                   echo 0 ;;
+            *) return 0 ;;
+        esac
+    }
+    COMPOSE_CMD="docker-compose"
+    REPO="/repo"
+    SUNDAY_BUILD_VIA_VM=1
+    SUNDAY_BUILD_VM_TIMEOUT=10
+    SUNDAY_BUILD_VM_POLL=1
+    _build_one_service gateway >/dev/null 2>&1
+    echo "rc=$?"
+' _ "$APPLY" 2>/dev/null || true)
+if [[ "$DROP_RC" == "rc=0" ]]; then
+    echo "  OK : two dropped SSH channels mid-build cost a poll tick, not the build"
+else
+    echo "  FAIL: a dropped SSH during polling still fails the build ($DROP_RC)" >&2
+    fail=1
+fi
+
+# 10. A build that never finishes must fail loudly rather than be read as success
+#     — the exact no-op-reads-as-PASS class CLAUDE.md 0.0 was written for.
+TIMEOUT_RC=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_build_one_service()/,/^}/p" "$1")"
+    log() { :; }
+    sed() { cat; }
+    colima() { case "$*" in *cat*) return 0 ;; *) return 0 ;; esac; }   # sentinel never appears
+    COMPOSE_CMD="docker-compose"
+    REPO="/repo"
+    SUNDAY_BUILD_VIA_VM=1
+    SUNDAY_BUILD_VM_TIMEOUT=2
+    SUNDAY_BUILD_VM_POLL=1
+    _build_one_service gateway >/dev/null 2>&1
+    echo "rc=$?"
+' _ "$APPLY" 2>/dev/null || true)
+if [[ "$TIMEOUT_RC" != "rc=0" ]]; then
+    echo "  OK : a build that never reports an exit code fails, never passes silently"
+else
+    echo "  FAIL: a never-finishing in-VM build reported success" >&2
+    fail=1
+fi
+
+# 11. The call site must actually use the helper — the helper existing while the
+#     call site still ran $COMPOSE_CMD directly would be a silent no-op.
+if /usr/bin/grep -qE '^[[:space:]]*if ! _build_one_service "\$svc"; then' "$APPLY"; then
+    echo "  OK : the build call site invokes the helper, not \$COMPOSE_CMD directly"
+else
+    echo "  FAIL: build call site still bypasses _build_one_service" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
