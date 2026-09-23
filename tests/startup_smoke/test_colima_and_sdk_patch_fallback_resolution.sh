@@ -1060,6 +1060,129 @@ else
     echo "  FAIL: build call site still bypasses _build_one_service" >&2
     fail=1
 fi
+
+echo ""
+echo "── upgrade-in-progress guard: health check must not bounce a live build ──"
+
+# On 2026-09-23 the health check bounced Colima ~30 times in one day. A heavy
+# build stops the daemon answering the host socket, which IS this script's
+# trigger to restart the VM — so the repair kept destroying the very builds the
+# upgrade job existed to run (10:20 EDT: in-flight build killed, /tmp wiped,
+# exit-code sentinel lost). The guard defers the bounce while a build is alive.
+#
+# It MUST fail safe: a crashed upgrade cannot be allowed to suppress repair
+# forever. These checks execute the real helper against a real lock file.
+HCF_GUARD="$REPO/docker/scripts/colima-health-check.sh"
+APPLY_GUARD="$REPO/scripts/sunday-upgrade-apply.sh"
+
+_guard_says() {
+    # $1 = lock file path, $2 = max age override. Prints DEFER or BOUNCE.
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_UPGRADE_LOCK=/,/^}/p" "$1")"
+        _UPGRADE_LOCK="$2"
+        _UPGRADE_LOCK_MAX_AGE="$3"
+        if _upgrade_in_progress; then echo DEFER; else echo BOUNCE; fi
+    ' _ "$HCF_GUARD" "$1" "$2" 2>/dev/null || echo BOUNCE
+}
+
+_GLOCK="$(mktemp)"; rm -f "$_GLOCK"
+
+# 1. No lock at all — ordinary operation, repair must proceed.
+if [ "$(_guard_says "$_GLOCK" 300)" = "BOUNCE" ]; then
+    echo "  OK : with no upgrade running the socket repair still bounces normally"
+else
+    echo "  FAIL: guard deferred the repair with no lock present" >&2
+    fail=1
+fi
+
+# 2. Live PID, fresh heartbeat — this is the case that was destroying builds.
+printf '%s\n' "$$" > "$_GLOCK"
+if [ "$(_guard_says "$_GLOCK" 300)" = "DEFER" ]; then
+    echo "  OK : a live, freshly-stamped upgrade defers the VM bounce"
+else
+    echo "  FAIL: guard would still bounce Colima during a live build" >&2
+    fail=1
+fi
+
+# 3. FAIL SAFE — dead PID must not suppress repair.
+printf '%s\n' "999999" > "$_GLOCK"
+if [ "$(_guard_says "$_GLOCK" 300)" = "BOUNCE" ]; then
+    echo "  OK : a dead upgrade PID does not suppress repair (fails safe)"
+else
+    echo "  FAIL: a stale PID would block socket repair indefinitely" >&2
+    fail=1
+fi
+
+# 4. FAIL SAFE — a live but hung process that stopped heartbeating must lapse.
+printf '%s\n' "$$" > "$_GLOCK"
+sleep 1
+if [ "$(_guard_says "$_GLOCK" 0)" = "BOUNCE" ]; then
+    echo "  OK : a stopped heartbeat lapses the guard even with the PID alive"
+else
+    echo "  FAIL: a hung upgrade would suppress repair forever" >&2
+    fail=1
+fi
+
+# 5. Garbage in the lock must not be read as a live upgrade.
+printf '%s\n' "not-a-pid" > "$_GLOCK"
+if [ "$(_guard_says "$_GLOCK" 300)" = "BOUNCE" ]; then
+    echo "  OK : an unparseable lock does not suppress repair"
+else
+    echo "  FAIL: garbage in the lock file suppressed repair" >&2
+    fail=1
+fi
+rm -f "$_GLOCK"
+
+# 6. The apply script's EXIT trap must actually drop the lock, or every later
+#    run would be protected by a lock nobody owns.
+_TLOCK="$(mktemp)"
+/usr/bin/env bash -c '
+    UPGRADE_LOCK="$1"
+    eval "$(/usr/bin/grep "^trap " "$2" | head -1)"
+    printf "%s\n" "$$" > "$UPGRADE_LOCK"
+    exit 0
+' _ "$_TLOCK" "$APPLY_GUARD" >/dev/null 2>&1 || true
+if [ ! -f "$_TLOCK" ]; then
+    echo "  OK : the apply script's EXIT trap removes the lock it took"
+else
+    echo "  FAIL: the lock outlives the run that took it" >&2
+    fail=1
+fi
+rm -f "$_TLOCK"
+
+# 7. The build poll loop must re-stamp the lock, or a build longer than MAX_AGE
+#    would lose its own protection partway through and be bounced.
+_HLOCK="$(mktemp)"; rm -f "$_HLOCK"
+/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_build_one_service()/,/^}/p" "$1")"
+    log() { :; }
+    sed() { cat; }
+    colima() { return 0; }          # sentinel never appears: loop keeps polling
+    COMPOSE_CMD="docker-compose"
+    REPO="/repo"
+    UPGRADE_LOCK="$2"
+    SUNDAY_BUILD_VIA_VM=1
+    SUNDAY_BUILD_VM_TIMEOUT=2
+    SUNDAY_BUILD_VM_POLL=1
+    _build_one_service gateway
+' _ "$APPLY_GUARD" "$_HLOCK" >/dev/null 2>&1 || true
+if [ -f "$_HLOCK" ]; then
+    echo "  OK : the build poll loop heartbeats the lock so long builds stay protected"
+else
+    echo "  FAIL: the lock is never re-stamped — a long build loses its guard" >&2
+    fail=1
+fi
+rm -f "$_HLOCK"
+
+# 8. The guard must actually wrap the bounce. A helper that nothing calls is the
+#    same silent no-op class already caught once in this file at the build call
+#    site — every check above would pass while the VM still got bounced.
+if /usr/bin/grep -qE '^[[:space:]]*if _upgrade_in_progress; then' "$HCF_GUARD"; then
+    echo "  OK : the socket-repair block actually consults the guard"
+else
+    echo "  FAIL: guard helper exists but the bounce does not call it" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"

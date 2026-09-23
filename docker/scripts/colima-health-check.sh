@@ -74,6 +74,37 @@ DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
 _COLIMA_MEMORY_GB="${AGENTSHROUD_COLIMA_MEMORY_GB:-10}"
 _COLIMA_VM_FLAGS="--cpu 8 --memory ${_COLIMA_MEMORY_GB} --disk 120 --network-address"
 
+# ── Upgrade-in-progress guard ────────────────────────────────────────────────
+# A heavy `docker build` makes the daemon stop answering the host socket, which
+# is precisely this script's trigger to bounce Colima. On 2026-09-23 that loop
+# ran ~30 times and killed an in-flight upgrade build at 10:20, taking /tmp and
+# the build's exit-code sentinel with it. So: when sunday-upgrade-apply.sh says
+# it is mid-run, defer the bounce rather than destroying its work.
+#
+# The lock is advisory and fails SAFE — it defers only while BOTH hold:
+#   * the recorded PID is still alive, and
+#   * the file was re-stamped within the last MAX_AGE seconds (heartbeat).
+# A crashed or wedged upgrade therefore stops protecting itself within MAX_AGE
+# and normal repair resumes. Never let this guard defer indefinitely.
+_UPGRADE_LOCK="${AGENTSHROUD_UPGRADE_LOCK:-/Users/Shared/agentshroud-sunday/upgrade-in-progress.lock}"
+_UPGRADE_LOCK_MAX_AGE="${AGENTSHROUD_UPGRADE_LOCK_MAX_AGE:-300}"
+
+_upgrade_in_progress() {
+  [ -f "$_UPGRADE_LOCK" ] || return 1
+  local pid mtime now age
+  pid="$(head -1 "$_UPGRADE_LOCK" 2>/dev/null | tr -cd '0-9')"
+  [ -n "$pid" ] || return 1
+  kill -0 "$pid" 2>/dev/null || return 1
+  # stat(1) differs between macOS and Linux; this script must run on both.
+  mtime="$(stat -f %m "$_UPGRADE_LOCK" 2>/dev/null || stat -c %Y "$_UPGRADE_LOCK" 2>/dev/null)"
+  [ -n "$mtime" ] || return 1
+  now="$(date +%s)"
+  age=$(( now - mtime ))
+  [ "$age" -le "$_UPGRADE_LOCK_MAX_AGE" ]
+}
+
+
+
 BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-dev-openclaw}"
 GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-dev-gateway}"
 
@@ -230,6 +261,9 @@ if ! docker info >/dev/null 2>&1; then
   if ! $COLIMA_STARTED && [ "$(whoami)" = "agentshroud-bot" ] \
      && colima status >/dev/null 2>&1; then
     log "DETECTED: Colima VM is running but Docker is unreachable — socket forward is dead."
+    if _upgrade_in_progress; then
+      log "AUTO-HEAL: DEFERRED — an upgrade build is in flight (pid $(head -1 "$_UPGRADE_LOCK" 2>/dev/null | tr -cd '0-9')); bouncing Colima would kill it. A busy daemon is the expected cause here; repair resumes once the lock goes stale."
+    else
     log "AUTO-HEAL: bouncing Colima to re-establish the docker.sock forward..."
     if ! timeout 300 colima stop >> "$LOG_FILE" 2>&1; then
       log "AUTO-HEAL: colima stop failed or timed out — continuing to start anyway."
@@ -245,6 +279,7 @@ if ! docker info >/dev/null 2>&1; then
       fi
     else
       log "AUTO-HEAL: ❌ colima start failed or exceeded the 420s timeout"
+    fi
     fi
   fi
 
