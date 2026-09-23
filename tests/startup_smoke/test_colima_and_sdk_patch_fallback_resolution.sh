@@ -1262,6 +1262,102 @@ else
     echo "  FAIL: nothing re-checks the socket after the in-VM build" >&2
     fail=1
 fi
+
+echo ""
+echo "── deploy verdicts must follow STATE, not the exit code of the tool ──"
+
+# All four of these are corrections to code shipped earlier the same day, after
+# a run that printed "'scripts/asb up hermes' FAILED", "rollback script FAILED"
+# and "STACK MAY BE DEGRADED" over a stack that was entirely healthy — three
+# false claims from one dead socket. CLAUDE.md 0.0: assert on resulting state.
+APPLY_V="$REPO/scripts/sunday-upgrade-apply.sh"
+
+# 1. The wait budget must cover the worst case it exists to survive:
+#    300s lock staleness + 300s until the next health-check tick + ~80s bounce.
+BUDGET="$(/usr/bin/sed -n 's/^SUNDAY_DOCKER_WAIT="\${SUNDAY_DOCKER_WAIT:-\([0-9]*\)}"/\1/p' "$APPLY_V")"
+if [ -n "$BUDGET" ] && [ "$BUDGET" -ge 700 ]; then
+    echo "  OK : socket wait budget ${BUDGET}s covers the 680s worst case"
+else
+    echo "  FAIL: wait budget '${BUDGET}' cannot cover 300+300+80s — a run dies ~2min short" >&2
+    fail=1
+fi
+
+# 2. Rollback must not call an unreachable daemon a degraded stack.
+if /usr/bin/grep -qE 'if ! _wait_for_docker; then' "$APPLY_V" \
+   && /usr/bin/grep -q 'rollback NOT attempted, stack state UNKNOWN' "$APPLY_V"; then
+    echo "  OK : rollback waits for the daemon and reports UNKNOWN, not damage"
+else
+    echo "  FAIL: rollback still reports degradation when it merely cannot connect" >&2
+    fail=1
+fi
+
+# 3. The lock must be released when builds finish, not held to the end of the
+#    run — holding it defers the socket repair the very next line waits for.
+_REL="$(/usr/bin/awk '/builds complete — released the upgrade lock/{found=1} /_wait_for_docker \|\| \{ err "apply: docker socket did not return/{if(found) print "ORDERED"; exit}' "$APPLY_V")"
+if [ "$_REL" = "ORDERED" ]; then
+    echo "  OK : the lock is released BEFORE the post-build socket wait"
+else
+    echo "  FAIL: lock is not released before the post-build wait — self-deadlock" >&2
+    fail=1
+fi
+
+# 4/5. _container_is_up must judge by state: healthy/none passes, and a
+#      container that never runs fails rather than passing on a timeout.
+_up_says() {
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_container_is_up()/,/^}/p" "$1")"
+        err() { :; }
+        sleep() { :; }
+        _ST="$2"; _HL="$3"      # capture: inside docker(), $2/$3 are ITS args
+        docker() {
+            case "$*" in
+                *State.Status*) echo "$_ST" ;;
+                *Health*)       echo "$_HL" ;;
+            esac
+        }
+        if _container_is_up c 20; then echo UP; else echo DOWN; fi
+    ' _ "$APPLY_V" "$1" "$2" 2>/dev/null || echo DOWN
+}
+if [ "$(_up_says running healthy)" = "UP" ] && [ "$(_up_says running none)" = "UP" ]; then
+    echo "  OK : a running container (healthy, or with no healthcheck) counts as up"
+else
+    echo "  FAIL: a genuinely running container was not recognised as up" >&2
+    fail=1
+fi
+if [ "$(_up_says absent none)" = "DOWN" ] && [ "$(_up_says running unhealthy)" = "DOWN" ]; then
+    echo "  OK : absent and unhealthy containers fail, never pass on timeout"
+else
+    echo "  FAIL: a container that never came up was reported as up" >&2
+    fail=1
+fi
+
+# 6. The hermes gate must consult the container, not asb's exit status alone.
+if /usr/bin/grep -qE '^[[:space:]]*"\$REPO/scripts/asb" up hermes \|\| asb_rc=\$\?' "$APPLY_V" \
+   && /usr/bin/grep -qE '^[[:space:]]*elif ! _container_is_up "\$hermes_c"; then' "$APPLY_V"; then
+    echo "  OK : the hermes verdict comes from the container, asb's rc only informs"
+else
+    echo "  FAIL: hermes is still judged solely by asb's exit code (incl. its prune)" >&2
+    fail=1
+fi
+
+# 7. A non-zero asb rc with a healthy container must NOT roll back — that is the
+#    exact false rollback of 2026-09-23 12:52.
+if /usr/bin/grep -q 'treating as deployed. asb'"'"'s status includes its trailing prune' "$APPLY_V"; then
+    echo "  OK : a prune-only failure is reported, not escalated to a rollback"
+else
+    echo "  FAIL: a trailing-prune failure would still trigger a false rollback" >&2
+    fail=1
+fi
+
+# 8. The container name must be derived per-environment, never hardcoded: dev
+#    and prod spell it differently and a hardcoded name silently matches neither.
+if /usr/bin/grep -qE '^_hermes_container\(\) \{' "$APPLY_V" \
+   && ! /usr/bin/grep -qE '_container_is_up "agentshroud(-dev)?-hermes' "$APPLY_V"; then
+    echo "  OK : the hermes container name is derived from CONTAINERS per env"
+else
+    echo "  FAIL: hermes container name is hardcoded and will miss one environment" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"

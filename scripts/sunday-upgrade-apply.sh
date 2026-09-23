@@ -300,7 +300,11 @@ _dirty_build_files() {
 # this job a coin flip unattended. This does NOT weaken the gate: after the
 # budget expires the caller still fails exactly as before. It only refuses to
 # call a transient outage a permanent one.
-SUNDAY_DOCKER_WAIT="${SUNDAY_DOCKER_WAIT:-420}"
+# Worst case the health check needs to repair the forward: up to 300s for the
+# upgrade lock to go stale, up to 300s until its next 5-minute tick, ~80s to
+# bounce. 420s could not cover that — a run was ~2 minutes short of surviving
+# on 2026-09-23 and only finished because a human released the lock by hand.
+SUNDAY_DOCKER_WAIT="${SUNDAY_DOCKER_WAIT:-900}"
 
 _wait_for_docker() {
   local waited=0
@@ -742,6 +746,13 @@ phase_apply() {
     log "apply: built '$svc' OK"
   done
 
+  # The lock exists ONLY to stop the health check bouncing the VM into a live
+  # build. Builds are done, so release it now: holding it past this point makes
+  # the health check defer the very socket repair the next line waits for, which
+  # on 2026-09-23 deadlocked a run until a human intervened.
+  rm -f "$UPGRADE_LOCK" 2>/dev/null || true
+  log "apply: builds complete — released the upgrade lock so socket repair can resume"
+
   # Builds run inside the VM and do not touch the host socket, but they take
   # long enough that the forward can die while we are busy. Everything after
   # this point (up, health, rollback) needs it, so wait rather than fail on an
@@ -785,10 +796,30 @@ phase_apply() {
   if printf '%s\n' "$build_list" | grep -qx 'hermes'; then
     if [ -x "$REPO/scripts/asb" ]; then
       log "apply: hermes was rebuilt — deploying via scripts/asb up hermes (handles secrets correctly)"
-      if ! "$REPO/scripts/asb" up hermes; then
-        err "apply: 'scripts/asb up hermes' FAILED"
+      # asb's exit status covers everything it does, INCLUDING a trailing
+      # image/build-cache prune. On 2026-09-23 hermes started cleanly and asb's
+      # own post-deploy suite reported "11 checks, 11 passed, Stack is healthy"
+      # — then the socket died during that prune, asb exited non-zero, and this
+      # gate reported hermes as FAILED and triggered a rollback. Assert on the
+      # container, per CLAUDE.md 0.0, and let the exit code inform rather than decide.
+      local asb_rc=0 hermes_c
+      "$REPO/scripts/asb" up hermes || asb_rc=$?
+      hermes_c="$(_hermes_container || true)"
+      if [ -z "$hermes_c" ]; then
+        # No hermes entry in CONTAINERS means we cannot assert on state, so the
+        # exit code is all we have — fall back to trusting it rather than
+        # silently passing, which would be the 0.0 defect in the other direction.
+        if [ "$asb_rc" -ne 0 ]; then
+          err "apply: 'scripts/asb up hermes' exited $asb_rc and no hermes container is listed in CONTAINERS to verify against"
+          _attempt_rollback
+          exit 30
+        fi
+      elif ! _container_is_up "$hermes_c"; then
+        err "apply: hermes did not come up (asb exited $asb_rc)"
         _attempt_rollback
         exit 30
+      elif [ "$asb_rc" -ne 0 ]; then
+        warn "apply: 'scripts/asb up hermes' exited $asb_rc, but $hermes_c is running and not unhealthy — treating as deployed. asb's status includes its trailing prune, which fails independently of the deploy."
       fi
     else
       warn "apply: hermes image rebuilt but scripts/asb not found/executable — hermes container NOT redeployed; the new image is tagged and ready, redeploy manually with 'scripts/asb up hermes'"
@@ -879,6 +910,35 @@ phase_verify() {
 # ═════════════════════════════════════════════════════════════════════════════
 # Rollback
 # ═════════════════════════════════════════════════════════════════════════════
+# True when a container is running and not unhealthy, waiting out its start
+# period. Used to judge a deploy by the container's STATE rather than by the
+# exit status of the tool that deployed it — see the asb call site for why.
+# The hermes container name is env-specific (dev carries a "-dev-" infix), so
+# take it from CONTAINERS rather than hardcoding either spelling.
+_hermes_container() {
+  local c
+  for c in $CONTAINERS; do
+    case "$c" in *hermes*) printf '%s' "$c"; return 0 ;; esac
+  done
+  return 1
+}
+
+_container_is_up() {
+  local name="$1" budget="${2:-240}" waited=0 state health
+  while :; do
+    state="$(docker inspect --format '{{.State.Status}}' "$name" 2>/dev/null || echo absent)"
+    health="$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$name" 2>/dev/null || echo none)"
+    if [ "$state" = "running" ] && { [ "$health" = "healthy" ] || [ "$health" = "none" ]; }; then
+      return 0
+    fi
+    [ "$waited" -ge "$budget" ] && break
+    sleep 10
+    waited=$(( waited + 10 ))
+  done
+  err "apply: container '$name' is state=$state health=$health after ${budget}s"
+  return 1
+}
+
 _attempt_rollback() {
   if ! _mutating; then
     log "rollback: [dry-run] nothing was changed, nothing to roll back"
@@ -887,6 +947,14 @@ _attempt_rollback() {
   if [ ! -x "$ROLLBACK_SH" ]; then
     err "rollback: no rollback script at $ROLLBACK_SH — baseline phase did not run. MANUAL INTERVENTION REQUIRED."
     exit 50
+  fi
+  # The socket dies on its own every few minutes (Lima SSH forward, no
+  # keepalive). Rolling back through a dead socket fails for reasons that have
+  # nothing to do with the stack, and on 2026-09-23 that printed "STACK MAY BE
+  # DEGRADED" three times over a stack that was entirely healthy. Wait first,
+  # and if the daemon never returns say THAT, rather than inventing damage.
+  if ! _wait_for_docker; then
+    die 50 "rollback: Docker daemon unreachable after ${SUNDAY_DOCKER_WAIT}s — rollback NOT attempted, stack state UNKNOWN. Check 'colima ssh -- docker ps' before assuming damage."
   fi
   warn "rollback: restoring pre-upgrade state via $ROLLBACK_SH"
   if "$ROLLBACK_SH"; then
