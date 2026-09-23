@@ -285,6 +285,38 @@ _dirty_build_files() {
 #     one. Observed live while testing this path.
 # The repo is bind-mounted at the same absolute path in the VM, so the compose
 # -f arguments resolve unchanged.
+
+# Wait, bounded, for the Docker socket to come back.
+#
+# The host socket is a Lima SSH forward configured with ControlMaster/
+# ControlPersist and NO keepalive (verified 2026-09-23: zero
+# ServerAliveInterval/TCPKeepAlive directives in the generated ssh.config,
+# which Lima regenerates on every start, so it cannot be durably fixed there).
+# The forward therefore dies silently every few minutes — distinct from the
+# daemon simply being slow: a dead forward refuses in ~30ms, a busy daemon
+# hangs for minutes. colima-health-check.sh repairs it on its 5-minute tick.
+#
+# Dying instantly on a condition that self-heals inside 5 minutes is what makes
+# this job a coin flip unattended. This does NOT weaken the gate: after the
+# budget expires the caller still fails exactly as before. It only refuses to
+# call a transient outage a permanent one.
+SUNDAY_DOCKER_WAIT="${SUNDAY_DOCKER_WAIT:-420}"
+
+_wait_for_docker() {
+  local waited=0
+  docker info >/dev/null 2>&1 && return 0
+  while [ "$waited" -lt "$SUNDAY_DOCKER_WAIT" ]; do
+    log "apply: docker socket unreachable — waiting for repair (${waited}s/${SUNDAY_DOCKER_WAIT}s)"
+    sleep 30
+    waited=$(( waited + 30 ))
+    if docker info >/dev/null 2>&1; then
+      log "apply: docker socket recovered after ${waited}s"
+      return 0
+    fi
+  done
+  return 1
+}
+
 SUNDAY_BUILD_VIA_VM="${SUNDAY_BUILD_VIA_VM:-0}"
 SUNDAY_BUILD_VM_TIMEOUT="${SUNDAY_BUILD_VM_TIMEOUT:-5400}"   # per-service ceiling, seconds
 SUNDAY_BUILD_VM_POLL="${SUNDAY_BUILD_VM_POLL:-20}"           # sentinel poll interval, seconds
@@ -390,7 +422,7 @@ phase_preflight() {
   done
   [ -z "$missing" ] || die 127 "required binaries not on PATH:${missing} (PATH=$PATH)"
 
-  docker info >/dev/null 2>&1 || die 10 "docker daemon unreachable (DOCKER_HOST=${DOCKER_HOST:-<unset>}) — is Colima running?"
+  _wait_for_docker || die 10 "docker daemon unreachable after ${SUNDAY_DOCKER_WAIT}s (DOCKER_HOST=${DOCKER_HOST:-<unset>}) — is Colima running?"
   log "preflight: docker daemon reachable"
 
   [ -f "$COMPOSE_FILE" ] || die 10 "compose file not found: $COMPOSE_FILE"
@@ -709,6 +741,12 @@ phase_apply() {
     fi
     log "apply: built '$svc' OK"
   done
+
+  # Builds run inside the VM and do not touch the host socket, but they take
+  # long enough that the forward can die while we are busy. Everything after
+  # this point (up, health, rollback) needs it, so wait rather than fail on an
+  # outage that repairs itself.
+  _wait_for_docker || { err "apply: docker socket did not return after the build"; _attempt_rollback; exit 30; }
 
   # `hermes` is profile-gated [hermes, full] so `docker compose build` above
   # builds it correctly, but its CONTAINER is deliberately NOT managed by
