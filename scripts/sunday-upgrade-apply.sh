@@ -250,6 +250,92 @@ _dirty_build_files() {
 # Services in the compose file that actually have a build context. Parsed from
 # the NORMALIZED `docker compose config` output, so it reflects overrides and
 # extends rather than the raw file text.
+# Build transport. The host reaches dockerd through Colima's docker.sock
+# forward, and that forward dies under sustained build load — it killed builds
+# at step 34/125 and 118/125 on 2026-09-20/21, and again 4 seconds into the
+# gateway build on 2026-09-23. That last one surfaced as "build FAILED" and
+# "rollback script FAILED — STACK MAY BE DEGRADED", when both were really just
+# "cannot connect to the Docker daemon"; the stack was untouched and all seven
+# containers stayed healthy throughout.
+#
+# lima forwards unix sockets over SSH with no keepalive of any kind, and that is
+# not tunable from colima: --port-forwarder grpc governs TCP forwards only, and
+# switching to it changed nothing here. Building INSIDE the VM removes the
+# forward from the path entirely — verified 2026-09-23, all three images built
+# in-VM with zero socket deaths immediately after two host-socket attempts had
+# failed mid-build.
+#
+# OFF BY DEFAULT: the host path stays the default, so this changes nothing for
+# environments without the problem. Enable with SUNDAY_BUILD_VIA_VM=1.
+#
+# Two translations are required, neither optional:
+#   * the VM has the compose PLUGIN (`docker compose`) but NOT the standalone
+#     `docker-compose` the host uses, so COMPOSE_CMD is rewritten
+#   * versions.env must be re-sourced inside the VM. Without it compose warns
+#     "OPENCLAW_VERSION is not set, defaulting to a blank string" and bakes
+#     empty pins into the image — a silently WRONG build rather than a failed
+#     one. Observed live while testing this path.
+# The repo is bind-mounted at the same absolute path in the VM, so the compose
+# -f arguments resolve unchanged.
+SUNDAY_BUILD_VIA_VM="${SUNDAY_BUILD_VIA_VM:-0}"
+SUNDAY_BUILD_VM_TIMEOUT="${SUNDAY_BUILD_VM_TIMEOUT:-5400}"   # per-service ceiling, seconds
+SUNDAY_BUILD_VM_POLL="${SUNDAY_BUILD_VM_POLL:-20}"           # sentinel poll interval, seconds
+
+_build_one_service() {
+  local svc="$1"
+  if [ "$SUNDAY_BUILD_VIA_VM" != "1" ]; then
+    $COMPOSE_CMD build --pull "$svc"
+    return $?
+  fi
+
+  # The VM carries only the compose *plugin*, never the standalone binary.
+  local vm_cmd="${COMPOSE_CMD/docker-compose/docker compose}"
+  local tag="sunday-build-${svc}-$$"
+  local vlog="/tmp/${tag}.log" vrc="/tmp/${tag}.rc"
+
+  # Run the build DETACHED inside the VM and poll for an exit-code sentinel,
+  # rather than holding one long SSH channel open for the whole build. On
+  # 2026-09-23 07:10 a build that had already reached "naming to ... done"
+  # died with ssh's own "exit status 255" when its channel dropped, and the
+  # script reported that as a build failure. Detached, a dropped channel costs
+  # one poll interval; the build itself never notices. versions.env is
+  # re-sourced in the VM because the remote shell inherits nothing from here
+  # and compose would otherwise bake blank version pins.
+  local remote
+  remote=$(printf '%s\n' \
+    "cd '$REPO' || exit 90" \
+    "set -a; . docker/versions.env || exit 91; set +a" \
+    "$vm_cmd build --pull $svc > '$vlog' 2>&1" \
+    "echo \$? > '$vrc'")
+  # base64 so no quoting of the remote program survives a trip through ssh.
+  local b64; b64=$(printf '%s' "$remote" | base64 | tr -d '\n')
+
+  log "apply: building '$svc' INSIDE the VM, detached (SUNDAY_BUILD_VIA_VM=1)"
+  if ! colima ssh -- sh -c "rm -f '$vrc'; echo $b64 | base64 -d > '/tmp/${tag}.sh'; nohup sh '/tmp/${tag}.sh' >/dev/null 2>&1 & echo launched" >/dev/null 2>&1; then
+    log "ERROR: apply: could not launch the in-VM build for '$svc'"
+    return 1
+  fi
+
+  local waited=0 rc=""
+  while [ "$waited" -lt "$SUNDAY_BUILD_VM_TIMEOUT" ]; do
+    sleep "$SUNDAY_BUILD_VM_POLL"
+    waited=$(( waited + SUNDAY_BUILD_VM_POLL ))
+    # An SSH drop reads as empty here; the next tick opens a fresh connection.
+    rc=$(colima ssh -- sh -c "cat '$vrc' 2>/dev/null" 2>/dev/null | tr -cd '0-9')
+    [ -n "$rc" ] && break
+  done
+
+  # Surface the build's own tail so a failure is diagnosable from this log.
+  colima ssh -- sh -c "tail -n 40 '$vlog' 2>/dev/null" 2>/dev/null | sed 's/^/    | /'
+  colima ssh -- sh -c "rm -f '/tmp/${tag}.sh'" >/dev/null 2>&1 || true
+
+  if [ -z "$rc" ]; then
+    log "ERROR: apply: in-VM build for '$svc' did not finish within ${SUNDAY_BUILD_VM_TIMEOUT}s"
+    return 1
+  fi
+  return "$rc"
+}
+
 _buildable_services() {
   $COMPOSE_CMD config 2>/dev/null | awk '
     /^  [a-zA-Z0-9_-]+:$/ { svc=$1; sub(/:$/,"",svc) }
@@ -605,7 +691,7 @@ phase_apply() {
   fi
   for svc in $build_list; do
     log "apply: building '$svc' (sequential)"
-    if ! $COMPOSE_CMD build --pull "$svc"; then
+    if ! _build_one_service "$svc"; then
       err "apply: build FAILED for service '$svc'"
       _attempt_rollback
       exit 30
