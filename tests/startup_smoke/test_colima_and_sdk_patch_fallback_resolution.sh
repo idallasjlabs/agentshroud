@@ -1183,6 +1183,85 @@ else
     echo "  FAIL: guard helper exists but the bounce does not call it" >&2
     fail=1
 fi
+
+echo ""
+echo "── docker socket wait: survive a transient forward outage, not a real one ──"
+
+# The host socket is a Lima SSH forward with ControlMaster/ControlPersist and
+# NO keepalive (verified 2026-09-23: zero ServerAliveInterval/TCPKeepAlive in
+# the generated ssh.config). It dies silently every few minutes; the health
+# check repairs it on its 5-minute tick. Failing instantly on that is what made
+# this job a coin flip unattended. The wait must NOT turn a real outage into a
+# pass — that would be the 0.0 defect class, so it is asserted below.
+APPLY_WAIT="$REPO/scripts/sunday-upgrade-apply.sh"
+
+_wait_result() {
+    # $1 = number of failed probes before docker comes back (999 = never).
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_wait_for_docker()/,/^}/p" "$1")"
+        log() { echo "LOG: $*"; }
+        sleep() { :; }                 # keep the test fast; budget is counted, not slept
+        CNT="$(mktemp)"; echo 0 > "$CNT"
+        FAILS="$2"
+        docker() {
+            local n; n=$(cat "$CNT"); n=$((n+1)); echo "$n" > "$CNT"
+            [ "$n" -gt "$FAILS" ]      # nonzero (unreachable) until we exceed FAILS
+        }
+        SUNDAY_DOCKER_WAIT=120
+        if _wait_for_docker; then echo "RC=0"; else echo "RC=1"; fi
+    ' _ "$APPLY_WAIT" "$1" 2>/dev/null || echo "RC=ERR"
+}
+
+# 1. Healthy socket: return immediately, and do not log a wait that never happened.
+R_OK="$(_wait_result 0)"
+if [ "${R_OK##*$'\n'}" = "RC=0" ] && ! printf '%s' "$R_OK" | /usr/bin/grep -q "waiting for repair"; then
+    echo "  OK : a reachable socket returns at once with no spurious wait"
+else
+    echo "  FAIL: healthy socket did not short-circuit: $(printf '%s' "$R_OK" | tr '\n' ' ')" >&2
+    fail=1
+fi
+
+# 2. Transient outage that repairs — the case that was killing runs outright.
+R_T="$(_wait_result 2)"
+if printf '%s' "$R_T" | /usr/bin/grep -q "RC=0" && printf '%s' "$R_T" | /usr/bin/grep -q "recovered after"; then
+    echo "  OK : a socket that returns mid-wait is waited out, not failed"
+else
+    echo "  FAIL: transient outage was not survived: $(printf '%s' "$R_T" | tr '\n' ' ')" >&2
+    fail=1
+fi
+
+# 3. A REAL outage must still fail. If this ever passes, the gate is decorative.
+R_N="$(_wait_result 999)"
+if printf '%s' "$R_N" | /usr/bin/grep -q "RC=1"; then
+    echo "  OK : a socket that never returns still fails, never passes silently"
+else
+    echo "  FAIL: a permanently dead socket was reported as success" >&2
+    fail=1
+fi
+
+# 4. The budget must be finite — an unbounded wait would hang the job forever
+#    and is indistinguishable from a hang to anything watching it.
+if /usr/bin/grep -qE '^SUNDAY_DOCKER_WAIT="\$\{SUNDAY_DOCKER_WAIT:-[0-9]+\}"' "$APPLY_WAIT"; then
+    echo "  OK : the wait is bounded by a finite, overridable budget"
+else
+    echo "  FAIL: no finite wait budget — the job could hang indefinitely" >&2
+    fail=1
+fi
+
+# 5/6. Both call sites must actually use it: preflight (before anything runs)
+#      and after the build loop (the socket can die while we build in-VM).
+if /usr/bin/grep -qE '^[[:space:]]*_wait_for_docker \|\| die 10' "$APPLY_WAIT"; then
+    echo "  OK : preflight waits for the socket instead of dying instantly"
+else
+    echo "  FAIL: preflight still fails immediately on an unreachable socket" >&2
+    fail=1
+fi
+if /usr/bin/grep -qE '_wait_for_docker \|\| \{ err "apply: docker socket did not return after the build"' "$APPLY_WAIT"; then
+    echo "  OK : the post-build path re-checks the socket before using it"
+else
+    echo "  FAIL: nothing re-checks the socket after the in-VM build" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
