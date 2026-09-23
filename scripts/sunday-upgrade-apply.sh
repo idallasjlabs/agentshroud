@@ -76,6 +76,14 @@ ALLOW_DIRTY_BUILD=0
 # so tests can point the dev->prod gate at a scratch dir instead of writing to
 # the real shared one that prod actually reads.
 HANDOFF_DIR="${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}"
+# Advisory lock telling colima-health-check.sh that a build is in flight, so its
+# socket-forward repair does not bounce the VM out from under us. A heavy build
+# makes the host socket stop answering, which is exactly the health check's
+# trigger to restart Colima — on 2026-09-23 that killed an in-flight build at
+# 10:20 and wiped the exit-code sentinel with /tmp. The lock carries this PID and
+# is re-stamped on every build poll, so if this run dies the guard lapses within
+# AGENTSHROUD_UPGRADE_LOCK_MAX_AGE and normal repair resumes.
+UPGRADE_LOCK="${SUNDAY_UPGRADE_LOCK:-$HANDOFF_DIR/upgrade-in-progress.lock}"
 COMPOSE_FILE="${SUNDAY_COMPOSE_FILE:-$REPO/docker/docker-compose.yml}"
 ARTIFACT_DIR="$REPO/reports/sunday/$TODAY"
 
@@ -320,6 +328,9 @@ _build_one_service() {
   while [ "$waited" -lt "$SUNDAY_BUILD_VM_TIMEOUT" ]; do
     sleep "$SUNDAY_BUILD_VM_POLL"
     waited=$(( waited + SUNDAY_BUILD_VM_POLL ))
+    # Re-stamp the lock so the health check keeps deferring its VM bounce for
+    # as long as this build is genuinely alive, and no longer.
+    printf '%s\n' "$$" > "$UPGRADE_LOCK" 2>/dev/null || true
     # An SSH drop reads as empty here; the next tick opens a fresh connection.
     rc=$(colima ssh -- sh -c "cat '$vrc' 2>/dev/null" 2>/dev/null | tr -cd '0-9')
     [ -n "$rc" ] && break
@@ -921,7 +932,9 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 # On any unexpected failure, record a FAIL handoff so prod stays blocked rather
 # than reading a stale PASS from a previous week.
 # shellcheck disable=SC2154  # rc is assigned by the trap body itself, immediately before use
-trap 'rc=$?; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
+trap 'rc=$?; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
+mkdir -p "$(dirname "$UPGRADE_LOCK")" 2>/dev/null || true
+printf '%s\n' "$$" > "$UPGRADE_LOCK" 2>/dev/null || true
 
 PINS_BEFORE="$(_capture_pins)"
 
