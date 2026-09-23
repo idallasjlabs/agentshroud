@@ -1358,6 +1358,125 @@ else
     echo "  FAIL: hermes container name is hardcoded and will miss one environment" >&2
     fail=1
 fi
+
+echo ""
+echo "── build-cache hygiene: bound growth without weakening rollback ──"
+
+# 2026-09-23: the VM docker volume hit 236G/236G, ZERO bytes free. Build cache
+# alone regenerated 57GiB in nine hours across five builds. openclaw's build
+# died on ENOSPC, the gateway crashed on sqlite "disk I/O error" and never bound
+# :8080, and two containers crash-looped. A weekly job that only ever ADDS disk
+# cannot run unattended.
+APPLY_C="$REPO/scripts/sunday-upgrade-apply.sh"
+
+# 1. The rollback safety net must not be touched. Rollback restores TAGGED
+#    images; `docker builder prune` only ever removes cache. If cleanup ever
+#    reaches for `image prune`/`image rm`, the anchors are at risk.
+if /usr/bin/grep -qE 'docker builder prune -f --max-used-space' "$APPLY_C" \
+   && ! /usr/bin/sed -n '/^_prune_build_cache()/,/^}/p' "$APPLY_C" | /usr/bin/grep -qE 'image (prune|rm)|rmi'; then
+    echo "  OK : cleanup prunes build cache only — rollback tags are never touched"
+else
+    echo "  FAIL: cleanup can remove images — the rollback anchors are at risk" >&2
+    fail=1
+fi
+
+# 2. Bound, don't empty: --max-used-space keeps incremental builds fast.
+if /usr/bin/grep -qE '^SUNDAY_BUILD_CACHE_MAX_GB="\$\{SUNDAY_BUILD_CACHE_MAX_GB:-[0-9]+\}"' "$APPLY_C" \
+   && ! /usr/bin/sed -n '/^_prune_build_cache()/,/^}/p' "$APPLY_C" | /usr/bin/grep -qE 'builder prune [^|]*-a'; then
+    echo "  OK : the cache is bounded to a budget, not emptied every run"
+else
+    echo "  FAIL: cleanup empties the cache (or has no budget) — cold builds every week" >&2
+    fail=1
+fi
+
+# 3. Cleanup must never turn a successful upgrade into a failure.
+_CLEAN_RC=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_prune_build_cache()/,/^}/p" "$1")"
+    log() { :; }; warn() { :; }; _mutating() { return 0; }
+    _docker_free_gb() { echo 10; }
+    timeout() { return 1; }          # prune fails outright
+    SUNDAY_BUILD_CACHE_MAX_GB=20
+    _prune_build_cache; echo "rc=$?"
+' _ "$APPLY_C" 2>/dev/null || echo "rc=ERR")
+if [ "$_CLEAN_RC" = "rc=0" ]; then
+    echo "  OK : a failed prune is reported but does not fail the run"
+else
+    echo "  FAIL: a cleanup failure would fail an otherwise successful upgrade ($_CLEAN_RC)" >&2
+    fail=1
+fi
+
+# 4/5/6. The pre-build space guard: the preflight disk check runs ONCE, but
+#        today's exhaustion happened mid-run, between services.
+_SPACE() {
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_ensure_build_space()/,/^}/p" "$1")"
+        eval "$(/usr/bin/sed -n "/^_prune_build_cache()/,/^}/p" "$1")"
+        log() { :; }; warn() { :; }; err() { :; }; _mutating() { return 0; }
+        CNT="$(mktemp)"; echo 0 > "$CNT"
+        _FREE_SEQ="$2"
+        _docker_free_gb() {
+            local n; n=$(cat "$CNT"); n=$((n+1)); echo "$n" > "$CNT"
+            local v; v="$(printf "%s" "$_FREE_SEQ" | cut -d, -f"$n")"
+            # An exhausted sequence means the test under-specified the calls;
+            # emit a sentinel rather than "" so it fails loudly instead of
+            # silently taking the unknown-free-space path.
+            [ -n "$v" ] || v=SEQ_EXHAUSTED
+            printf "%s" "$v"
+        }
+        timeout() { return 0; }
+        SUNDAY_BUILD_CACHE_MAX_GB=20
+        SUNDAY_BUILD_MIN_GB=25
+        if _ensure_build_space gateway; then echo GO; else echo STOP; fi
+    ' _ "$APPLY_C" "$1" 2>/dev/null || echo STOP
+}
+if [ "$(_SPACE '90,90')" = "GO" ]; then
+    echo "  OK : plenty of space proceeds straight to the build"
+else
+    echo "  FAIL: the guard blocked a build with ample free space" >&2
+    fail=1
+fi
+if [ "$(_SPACE '5,5,80,80')" = "GO" ]; then
+    echo "  OK : low space triggers a prune, and the build proceeds once recovered"
+else
+    echo "  FAIL: space recovered by pruning did not unblock the build" >&2
+    fail=1
+fi
+if [ "$(_SPACE '5,5,6,6')" = "STOP" ]; then
+    echo "  OK : space that pruning cannot recover stops the build BEFORE ENOSPC"
+else
+    echo "  FAIL: a build would start with no disk — the exact 2026-09-23 failure" >&2
+    fail=1
+fi
+
+# 7. An unknown free-space reading must not block the run (df can fail while the
+#    socket is flaky, and refusing to build then would be a self-inflicted outage).
+_UNK=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_ensure_build_space()/,/^}/p" "$1")"
+    log() { :; }; warn() { :; }; err() { :; }
+    _docker_free_gb() { echo ""; }
+    SUNDAY_BUILD_MIN_GB=25
+    if _ensure_build_space gateway; then echo GO; else echo STOP; fi
+' _ "$APPLY_C" 2>/dev/null || echo STOP)
+if [ "$_UNK" = "GO" ]; then
+    echo "  OK : an unreadable free-space figure does not block the build"
+else
+    echo "  FAIL: unknown free space blocks builds — a flaky df would stop every run" >&2
+    fail=1
+fi
+
+# 8/9. Both call sites must exist: guard before each build, bound after the run.
+if /usr/bin/grep -qE '^[[:space:]]*if ! _ensure_build_space "\$svc"; then' "$APPLY_C"; then
+    echo "  OK : every service build is preceded by the space guard"
+else
+    echo "  FAIL: builds are not guarded — exhaustion mid-run recurs" >&2
+    fail=1
+fi
+if /usr/bin/awk '/^_prune_build_cache$/{found=1} /^write_handoff PASS$/{if(found) print "ORDERED"; exit}' "$APPLY_C" | /usr/bin/grep -q ORDERED; then
+    echo "  OK : the cache is bounded before the run reports PASS"
+else
+    echo "  FAIL: a successful run leaves its cache growth for the next one" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"

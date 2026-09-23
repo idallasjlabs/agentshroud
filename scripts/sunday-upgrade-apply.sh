@@ -695,6 +695,64 @@ phase_scan() {
 # Version pins are edited by the session (judgement); this only builds/ships
 # whatever docker/versions.env now says, then verify() decides if it survives.
 # ═════════════════════════════════════════════════════════════════════════════
+# ── Build-cache hygiene ──────────────────────────────────────────────────────
+# Build cache is NOT rollback material. Rollback restores TAGGED images
+# (agentshroud-rollback/*), and `docker builder prune` never touches tags — so
+# bounding the cache cannot weaken the rollback safety net.
+#
+# Why this exists: on 2026-09-23 the VM's docker volume hit 236G/236G with ZERO
+# bytes free. Build cache alone had regenerated 57GiB in nine hours across five
+# builds. The consequences were not subtle — openclaw's build died with
+# "You don't have enough free space in /var/cache/apt/archives/", the gateway
+# crashed on "sqlite3.OperationalError: disk I/O error" and never bound :8080,
+# and openclaw/hermes crash-looped on ENOSPC (12 and 10 restarts). A weekly job
+# that adds tens of GiB of cache and never removes any cannot run unattended.
+#
+# --max-used-space BOUNDS the cache instead of emptying it, so incremental
+# builds stay fast (83s vs 8.5min from cold on this host) while growth is capped.
+SUNDAY_BUILD_CACHE_MAX_GB="${SUNDAY_BUILD_CACHE_MAX_GB:-20}"
+SUNDAY_BUILD_MIN_GB="${SUNDAY_BUILD_MIN_GB:-25}"
+
+_prune_build_cache() {
+  if ! _mutating; then
+    log "cleanup: [dry-run] would bound build cache to ${SUNDAY_BUILD_CACHE_MAX_GB}GiB"
+    return 0
+  fi
+  local before after bytes
+  bytes=$(( SUNDAY_BUILD_CACHE_MAX_GB * 1024 * 1024 * 1024 ))
+  before="$(_docker_free_gb 2>/dev/null || true)"
+  log "cleanup: bounding build cache to ${SUNDAY_BUILD_CACHE_MAX_GB}GiB (docker storage free before: ${before:-unknown}GiB)"
+  # Never fail the run over cleanup: a successful upgrade must not be reported
+  # as a failure because a prune timed out or the socket dropped mid-prune.
+  if ! timeout "${SUNDAY_PRUNE_TIMEOUT:-1800}" docker builder prune -f --max-used-space "$bytes" >/dev/null 2>&1; then
+    warn "cleanup: build-cache prune did not complete (timeout or socket drop) — cache NOT bounded this run"
+    return 0
+  fi
+  after="$(_docker_free_gb 2>/dev/null || true)"
+  log "cleanup: build cache bounded (docker storage free after: ${after:-unknown}GiB)"
+  return 0
+}
+
+# Refuse to start a build that cannot finish. The preflight disk gate only runs
+# once, at the start; today's exhaustion happened DURING the run, between
+# services, which is why openclaw died on ENOSPC after gateway and hermes had
+# already built successfully.
+_ensure_build_space() {
+  local svc="$1" free
+  free="$(_docker_free_gb 2>/dev/null || true)"
+  printf '%s' "$free" | grep -Eq '^[0-9]+$' || return 0   # unknown: do not block
+  [ "$free" -ge "$SUNDAY_BUILD_MIN_GB" ] && return 0
+  warn "apply: only ${free}GiB free before building '$svc' (want >=${SUNDAY_BUILD_MIN_GB}GiB) — bounding build cache first"
+  _prune_build_cache
+  free="$(_docker_free_gb 2>/dev/null || true)"
+  if printf '%s' "$free" | grep -Eq '^[0-9]+$' && [ "$free" -lt "$SUNDAY_BUILD_MIN_GB" ]; then
+    err "apply: still only ${free}GiB free after bounding the build cache — refusing to start '$svc'"
+    err "apply: a build that runs out of disk does not fail cleanly; it corrupts the run (2026-09-23: ENOSPC mid-build, sqlite 'disk I/O error', two containers crash-looping)"
+    return 1
+  fi
+  return 0
+}
+
 phase_apply() {
   if ! _mutating; then
     log "apply: [dry-run] would run: docker compose -f $COMPOSE_FILE build --pull, then up -d"
@@ -737,6 +795,10 @@ phase_apply() {
     warn "apply: no buildable services found in $COMPOSE_FILE — nothing to build"
   fi
   for svc in $build_list; do
+    if ! _ensure_build_space "$svc"; then
+      _attempt_rollback
+      exit 30
+    fi
     log "apply: building '$svc' (sequential)"
     if ! _build_one_service "$svc"; then
       err "apply: build FAILED for service '$svc'"
@@ -1061,6 +1123,10 @@ if [ "$PHASE" = "all" ]; then
     exit "$noop_rc"
   fi
 fi
+
+# Bound the cache BEFORE declaring success, so the disk this run consumed is
+# given back as part of the run rather than left for the next one to trip over.
+_prune_build_cache
 
 write_handoff PASS
 log "=== sunday-upgrade-apply COMPLETE: all requested phases passed ==="
