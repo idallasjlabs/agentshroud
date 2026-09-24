@@ -462,6 +462,41 @@ class TestDriverIsolation:
         # At least the supply-chain gaps must appear as a development task.
         assert "not_mitigated" in md
 
+    def test_gaps_include_partially_mitigated(self):
+        # Mission rule (§2b): PARTIAL coverage is a residual gap, tracked work —
+        # not a status to record and silently drop from the dev-task table.
+        t = _t()
+        entry = _entry(
+            "ASH-OCLAW-500",
+            title="authorization bypass via allowFrom mismatch",
+            fixed_in=None,
+        )
+        results = [t.triage_entry(entry)]
+        assert t.final_status(results[0]) == "partially_mitigated"
+        s = t.summarize(results)
+        assert results[0] in s["gaps"]
+
+    def test_triage_agent_full_covers_every_entry_regardless_of_status(self):
+        # triage_agent() only re-processes under_review entries; the report must
+        # be built from EVERY entry so it reflects the registry's true current
+        # state, not just what happened to change in this invocation.
+        t = _t()
+        from gateway.security.agent_cve_registry import _AGENT_CVE_REGISTRIES
+
+        full = t.triage_agent_full("openclaw")
+        assert len(full) == len(_AGENT_CVE_REGISTRIES["openclaw"])
+        assert all(r.entry_id.startswith("ASH-OCLAW-") for r in full)
+
+    def test_triage_agent_full_is_a_pure_report_view_not_a_mutation(self):
+        # Calling the full pass must not itself change any entry's stored status.
+        t = _t()
+        from gateway.security.agent_cve_registry import _AGENT_CVE_REGISTRIES
+
+        before = [dict(e) for e in _AGENT_CVE_REGISTRIES["openclaw"]]
+        t.triage_agent_full("openclaw")
+        after = _AGENT_CVE_REGISTRIES["openclaw"]
+        assert before == after
+
 
 # ── CLI main() ────────────────────────────────────────────────────────────────
 
@@ -517,6 +552,51 @@ class TestMain:
         t = _t()
         with pytest.raises(SystemExit):
             t.main(["--agent", "does-not-exist"])
+
+    def test_gap_report_reflects_full_registry_not_just_this_runs_delta(
+        self, tmp_path, monkeypatch
+    ):
+        # Regression for 2026-09-24: with 0 entries under_review, a run that
+        # reports off `results` (this invocation's delta) writes "Total
+        # triaged: 0" for a registry with hundreds of resolved advisories —
+        # indistinguishable from a registry nobody ever triaged. The gap
+        # report must describe the registry's current state, not the delta.
+        t = _t()
+        already_done = _entry(
+            "ASH-OCLAW-501",
+            title="already resolved last run",
+            fixed_in="2026.1.1",
+            status="fully_mitigated",
+        )
+        pending = _entry(
+            "ASH-OCLAW-502",
+            title="Path Traversal newly under review",
+            fixed_in="2026.3.1",
+            status="under_review",
+        )
+        monkeypatch.setitem(t._AGENT_CVE_REGISTRIES, "openclaw", [already_done, pending])
+        reg = tmp_path / "registry.py"
+        reg.write_text(
+            "_OPENCLAW_CVE_REGISTRY = [\n"
+            "    {\n"
+            '        "id": "ASH-OCLAW-502",\n'
+            '        "status": "under_review",\n'
+            '        "mitigation": "",\n'
+            '        "defense_layers": [],\n'
+            "    },\n"
+            "]\n"
+        )
+        gap = tmp_path / "gaps.md"
+        monkeypatch.setattr(t, "_REGISTRY_PATH", reg)
+        monkeypatch.setattr(t, "_GAP_REPORT_PATH", gap)
+        rc = t.main([])
+        assert rc == 0
+        # Only ASH-OCLAW-502 was under_review and got rewritten into the file...
+        assert '"id": "ASH-OCLAW-502"' in reg.read_text()
+        # ...but the gap report must count BOTH registry entries, not just the
+        # one this call happened to touch.
+        md = gap.read_text()
+        assert "Total triaged: **2**" in md
 
 
 class TestConsumeFieldEdge:
