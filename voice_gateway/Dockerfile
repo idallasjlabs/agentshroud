@@ -44,7 +44,27 @@ COPY voice_gateway/requirements.txt .
 # transient network faults from this host (PyPI read timeout + SSL record
 # failure, two of three consecutive build failures on 2026-08-30); per-package
 # retries let a blip cost seconds instead of the whole build.
-RUN pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt
+#
+# The surrounding loop retries the whole COMMAND, because pip's own --retries
+# does not cover every fault: on 2026-09-24 the build died 225s in with
+#   ssl.SSLError: [SSL] record layer failure (_ssl.c:2580)
+# raised mid-stream, which aborts the pip process outright rather than being
+# retried per package. That single blip failed the upgrade and triggered a
+# rollback. Three attempts with backoff; if all three fail the build still
+# fails loudly — a transient fault must not become a silent pass.
+RUN set -e; \
+    ok=0; \
+    for attempt in 1 2 3; do \
+        if pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt; then \
+            ok=1; break; \
+        fi; \
+        echo "[voice-gateway] pip install attempt ${attempt}/3 failed — retrying in $((attempt * 15))s"; \
+        sleep $((attempt * 15)); \
+    done; \
+    if [ "$ok" != "1" ]; then \
+        echo "[voice-gateway] pip install FAILED after 3 attempts — not a transient fault" >&2; \
+        exit 1; \
+    fi
 
 # Pre-bake the Kokoro TTS model weights so runtime needs ZERO egress.
 # voice-gateway runs on agentshroud-isolated; HF_HUB_OFFLINE=1 blocks all

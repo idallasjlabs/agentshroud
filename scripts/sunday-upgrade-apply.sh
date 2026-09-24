@@ -516,23 +516,48 @@ phase_baseline() {
   # Retag every current image so a rollback has something concrete to point at.
   # Without this, `docker compose build` overwrites :latest and the old image
   # becomes unreferenced and prunable — the rollback path evaporates.
-  local tagged=0 c id
+  local tagged=0 skipped=0 failed=0 c id
   for c in $CONTAINERS; do
     id="$(docker inspect --format '{{.Image}}' "$c" 2>/dev/null || true)"
-    [ -n "$id" ] || continue
+    if [ -z "$id" ]; then
+      # Not running. Legitimate for profile-gated services (hermes-v2,
+      # voice-gateway), but it used to `continue` in silence, so a container
+      # that was down for a BAD reason left no anchor and no trace of it.
+      skipped=$((skipped + 1))
+      log "baseline: $c is not running — no rollback anchor captured for it"
+      continue
+    fi
     if _mutating; then
-      # shellcheck disable=SC2015  # safe here: a plain `var=$((...))` assignment always exits 0,
-      # so the `|| warn` branch can only be reached by `docker tag` itself failing.
-      docker tag "$id" "agentshroud-rollback/${c}:${TODAY}" 2>/dev/null && tagged=$((tagged + 1)) || \
-        warn "baseline: could not retag $c for rollback"
+      if docker tag "$id" "agentshroud-rollback/${c}:${TODAY}" 2>/dev/null; then
+        tagged=$((tagged + 1))
+      else
+        failed=$((failed + 1))
+        err "baseline: could not retag $c for rollback"
+      fi
     else
       tagged=$((tagged + 1))
     fi
   done
   if _mutating; then
-    log "baseline: retagged ${tagged} image(s) as agentshroud-rollback/<container>:${TODAY}"
+    log "baseline: retagged ${tagged} image(s) as agentshroud-rollback/<container>:${TODAY} (skipped ${skipped} not running, ${failed} FAILED)"
   else
     log "baseline: [dry-run] would retag ${tagged} image(s) for rollback"
+  fi
+
+  # A running container we could see but could NOT anchor has no rollback path.
+  # Building anyway is how 2026-09-24 went wrong: baseline logged
+  #   "WARN: could not retag agentshroud-dev-openclaw for rollback"
+  #   "retagged 4 image(s)"        <- four, not five
+  #   "baseline: PASS"             <- and passed regardless
+  # The run then built, failed on an unrelated service, and rolled back to the
+  # PREVIOUS run's stale anchor — an OpenClaw one release older than the config
+  # volume it had already migrated. It refused to start, 80 restarts.
+  #
+  # CLAUDE.md 0.0: a no-op must not be indistinguishable from a success. If we
+  # cannot capture an anchor for a container that is right there and running,
+  # the safe move is to refuse to build, not to hope nothing fails.
+  if [ "$failed" -gt 0 ]; then
+    die 10 "baseline: ${failed} running container(s) could not be anchored for rollback — refusing to build. A failed apply would roll back to a stale or absent image; verify the Docker daemon is healthy and re-run."
   fi
 
   # Emit an executable rollback script. Generated, not hand-written, so it can
