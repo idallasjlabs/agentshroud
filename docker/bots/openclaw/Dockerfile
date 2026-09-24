@@ -164,6 +164,16 @@ RUN test -n "$OPENCLAW_VERSION" || { echo "ERROR: OPENCLAW_VERSION build arg is 
  && ACTUAL_VERSION="$(cat /app/.openclaw-image-version)" \
  && [ "$ACTUAL_VERSION" = "$OPENCLAW_VERSION" ] || { echo "ERROR: installed openclaw version ($ACTUAL_VERSION) does not match pinned OPENCLAW_VERSION ($OPENCLAW_VERSION)" >&2; exit 1; } \
  && npm cache clean --force
+# 2026.9.6+ defers part of its own npm postinstall lifecycle to first CLI
+# invocation (writes/clears a `.openclaw-lifecycle-pending` marker inside its
+# own package directory — see scripts/lib/package-lifecycle-marker.mjs in the
+# openclaw npm package). Our image installs this package as root at build
+# time but always RUNS it as the non-root `node` user, so if that first
+# invocation happens at runtime, `node` can't write the root-owned marker and
+# every invocation fails: "package lifecycle is incomplete ... EACCES".
+# Completing it once here, as root, at build time avoids that entirely —
+# confirmed 2026-09-24 (Sunday upgrade compat check on the 2026.9.6 candidate).
+RUN openclaw --version
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
 RUN sh /usr/local/bin/patch-anthropic-sdk.sh

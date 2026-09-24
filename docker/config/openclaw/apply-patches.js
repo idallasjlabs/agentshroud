@@ -79,8 +79,20 @@ const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-c
 config.agents = config.agents || {};
 config.agents.defaults = config.agents.defaults || {};
 config.commands = config.commands || {};
-if (config.commands.ownerDisplay !== 'hash') {
-  config.commands.ownerDisplay = 'hash';
+// commands.ownerDisplay / ownerDisplaySecret retired in OpenClaw 2026.9.6 —
+// "Unrecognized key" schema-validate failure; vendor now always renders owner
+// ids raw (no more hash-masking option). Strip any stale value from an older
+// config so validate doesn't reject it.
+if ('ownerDisplay' in config.commands) { delete config.commands.ownerDisplay; changed = true; }
+if ('ownerDisplaySecret' in config.commands) { delete config.commands.ownerDisplaySecret; changed = true; }
+// agents.ownership: OpenClaw 2026.9.6 requires an explicit ownership marker
+// for any multi-agent roster with no single agents.list[].default=true entry
+// (this AgentShroud config always seeds >=2 agents — collaborator + per-collaborator
+// + group-project — with none marked default). Schema-validate failure otherwise:
+// "multi-agent rosters require agents.ownership=\"explicit\"...". Vendor's own
+// `openclaw doctor --fix` stamps this same value for the same condition.
+if (config.agents.ownership !== 'explicit') {
+  config.agents.ownership = 'explicit';
   changed = true;
 }
 const currentDefaultsModel =
@@ -149,10 +161,15 @@ if (BRAVE_KEY) {
 }
 
 // Patch 0a1c: cron lane + agents.defaults timeout + compaction headroom.
-// maxConcurrentRuns=1 serialises cron jobs so LM Studio never receives more
-// than one long-context request at a time — prevents KV-cache OOM crashes.
+// cron.maxConcurrentRuns retired in OpenClaw 2026.9.6 (RETIRED_TUNING_PATHS,
+// no replacement key found) — "Unrecognized key" schema-validate failure.
+// It previously serialised cron jobs (maxConcurrentRuns=1) so LM Studio never
+// received more than one long-context request at a time, preventing KV-cache
+// OOM crashes. FOLLOW-UP (flagged in Sunday upgrade report): verify whether
+// 2026.9.6 now serialises cron runs by default, or whether this is a genuine
+// capability loss that needs a different mitigation before relying on it.
 config.cron = config.cron || {};
-if (config.cron.maxConcurrentRuns !== 1) { config.cron.maxConcurrentRuns = 1; changed = true; }
+if ('maxConcurrentRuns' in config.cron) { delete config.cron.maxConcurrentRuns; changed = true; }
 
 // agents.defaults timeout + compaction headroom.
 // Cron jobs with long competitive intelligence prompts need >900s and a generous
@@ -164,11 +181,13 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-// reserveTokensFloor=0: let OpenClaw decide compaction boundaries without a minimum floor.
-// Any positive floor > LM Studio's JIT-reload default context causes immediate failure
-// ("tokens to keep from initial prompt > context length"). 0 eliminates that failure mode.
-if (config.agents.defaults.compaction.reserveTokensFloor !== 0) {
-  config.agents.defaults.compaction.reserveTokensFloor = 0;
+// reserveTokensFloor retired in OpenClaw 2026.9.6 (RETIRED_AGENT_TUNING_PATHS)
+// — "Unrecognized key" schema-validate failure. It previously let OpenClaw
+// decide compaction boundaries without a minimum floor (reserveTokensFloor=0),
+// avoiding an LM Studio JIT-reload failure mode. Strip any stale value; no
+// replacement key found in the vendor's legacy-migration table.
+if ('reserveTokensFloor' in config.agents.defaults.compaction) {
+  delete config.agents.defaults.compaction.reserveTokensFloor;
   changed = true;
 }
 
@@ -421,7 +440,9 @@ if (cIdx < 0) {
     tools: { profile: _genericProfile, deny: _genericCollabDeny },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
-    memorySearch: { enabled: false },
+    // agents.entries.*.memorySearch moved to agents.entries.*.memory.search in
+    // OpenClaw 2026.9.6 — "Unrecognized key" schema-validate failure otherwise.
+    memory: { search: { enabled: false } },
   });
   console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, profile:${_genericProfile})`);
   changed = true;
@@ -430,8 +451,10 @@ if (cIdx < 0) {
     config.agents.list[cIdx].model = MAIN_MODEL;
     changed = true;
   }
-  if (config.agents.list[cIdx].memorySearch === false) {
-    config.agents.list[cIdx].memorySearch = { enabled: false };
+  if ('memorySearch' in config.agents.list[cIdx]) {
+    delete config.agents.list[cIdx].memorySearch;
+    config.agents.list[cIdx].memory = config.agents.list[cIdx].memory || {};
+    config.agents.list[cIdx].memory.search = config.agents.list[cIdx].memory.search || { enabled: false };
     changed = true;
   }
   // Migrate stale workspace path from read-only rootfs to writable volume path
@@ -481,7 +504,7 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
       tools: { profile: _collabProfile, deny: _collabDeny },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
-      memorySearch: { enabled: false },
+      memory: { search: { enabled: false } },
     });
     console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName}, profile:${_collabProfile})`);
     changed = true;
@@ -573,7 +596,7 @@ if (gpIdx < 0) {
     tools: { profile: 'minimal', deny: _GROUP_TOOL_DENY },
     skills: [],
     workspace: '.agentshroud/group-project',
-    memorySearch: { enabled: true },
+    memory: { search: { enabled: true } },
   });
   console.log('[init-patch] Added group-project agent (web+memory enabled)');
   changed = true;
@@ -623,7 +646,7 @@ for (const chatId of GROUP_CHAT_IDS) {
       tools: { profile: 'minimal', deny: _GROUP_TOOL_DENY },
       skills: [],
       workspace: `.agentshroud/group-${chatId}`,
-      memorySearch: { enabled: true },
+      memory: { search: { enabled: true } },
     });
     console.log(`[init-patch] Added per-chat group agent: ${groupAgentId}`);
     changed = true;
