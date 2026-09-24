@@ -1805,6 +1805,46 @@ else
     echo "  FAIL: the retry loop would mask a real, permanent failure" >&2
     fail=1
 fi
+
+echo ""
+echo "── voice-gateway: CPU-only torch, no GPU runtime on a GPU-less host ──"
+
+# kokoro declares a bare `torch` dependency. On linux/aarch64 the default PyPI
+# wheel drags the CUDA stack with it, even though this service runs CPU-only on
+# Colima. Measured from the 2026-09-24 in-VM build log:
+#     torch 454.0MB + nvidia_cusparselt 221.1MB + nvidia_nccl 216.0MB
+#     + nvidia_nvshmem 60.2MB (+ further cu13 wheels)
+# ~1GB of GPU runtime onto a machine with no GPU, and every byte is another
+# chance for the TLS record-layer fault that failed that day's upgrade.
+VG_CPU="$REPO/voice_gateway/Dockerfile"
+
+# 1. torch must come from the CPU index, and BEFORE requirements.txt — installed
+#    after, the CUDA variant is already resolved and the damage is done.
+if /usr/bin/awk '/--index-url https:\/\/download\.pytorch\.org\/whl\/cpu torch/{cpu=NR} /-r requirements\.txt/{if (cpu && NR>cpu) {print "ORDERED"; exit}}' "$VG_CPU" | /usr/bin/grep -q ORDERED; then
+    echo "  OK : CPU torch is installed from the CPU index before requirements.txt"
+else
+    echo "  FAIL: torch is not pre-installed from the CPU index — CUDA wheels return" >&2
+    fail=1
+fi
+
+# 2. It must stay inside the retry loop: a network fault here is as likely as
+#    one in the requirements install, and was the original failure.
+if /usr/bin/awk '/for attempt in 1 2 3; do/{loop=NR} /download\.pytorch\.org\/whl\/cpu/{if (loop && NR>loop) {print "INSIDE"; exit}}' "$VG_CPU" | /usr/bin/grep -q INSIDE; then
+    echo "  OK : the CPU torch install is covered by the retry loop"
+else
+    echo "  FAIL: the torch install sits outside the retry — a blip kills the build" >&2
+    fail=1
+fi
+
+# 3. Both installs must be chained so a failure in EITHER retries. `a; b` would
+#    let a failed torch install fall through to a requirements install that then
+#    silently resolves the CUDA wheel after all.
+if /usr/bin/grep -qE 'cpu torch \\$' "$VG_CPU" && /usr/bin/grep -qE '^[[:space:]]*&& pip install .* -r requirements\.txt; then' "$VG_CPU"; then
+    echo "  OK : the two installs are &&-chained, so either failing triggers a retry"
+else
+    echo "  FAIL: installs are not chained — a failed torch step would be masked" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
