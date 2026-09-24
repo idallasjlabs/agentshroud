@@ -720,6 +720,90 @@ phase_scan() {
 # Version pins are edited by the session (judgement); this only builds/ships
 # whatever docker/versions.env now says, then verify() decides if it survives.
 # ═════════════════════════════════════════════════════════════════════════════
+# ── Single-run enforcement ───────────────────────────────────────────────────
+# Two applies on one stack corrupt each other. 2026-09-24: a launchd run started
+# 09:16 and a manual run 09:31; both built images, both recreated containers,
+# and both wrote UPGRADE_LOCK, each overwriting the other's pid. UPGRADE_LOCK is
+# advisory and single-valued — it tells the health check "a build is live", it
+# was never an exclusion mechanism, and it cannot become one without breaking
+# that job. This is a separate, exclusive lock.
+#
+# mkdir is the atomic primitive here: it succeeds for exactly one caller and
+# fails for every other, with no window between test and create. A pid file
+# written then checked would race precisely when it matters.
+#
+# It fails SAFE. A crashed run must not block every future run forever, so a
+# lock whose recorded pid is dead is reclaimed. Only a lock held by a LIVE
+# process refuses the run.
+APPLY_LOCK_DIR="${SUNDAY_APPLY_LOCK_DIR:-$HANDOFF_DIR/apply-running.lock.d}"
+APPLY_LOCK_HELD=0
+
+_release_apply_lock() {
+  # Only ever remove a lock this process actually holds. If ours went stale and
+  # another run reclaimed it, that lock is theirs and removing it would hand a
+  # third run permission to start alongside them.
+  [ "$APPLY_LOCK_HELD" = "1" ] || return 0
+  rm -rf "$APPLY_LOCK_DIR" 2>/dev/null || true
+  APPLY_LOCK_HELD=0
+}
+
+_take_apply_lock() {
+  mkdir -p "$(dirname "$APPLY_LOCK_DIR")" 2>/dev/null || true
+  if mkdir "$APPLY_LOCK_DIR" 2>/dev/null; then
+    printf '%s\n' "$$" > "$APPLY_LOCK_DIR/pid" 2>/dev/null || true
+    APPLY_LOCK_HELD=1
+    return 0
+  fi
+  local other
+  other="$(head -1 "$APPLY_LOCK_DIR/pid" 2>/dev/null | tr -cd '0-9')"
+  if [ -n "$other" ] && kill -0 "$other" 2>/dev/null; then
+    err "apply: another sunday-upgrade-apply run is already in progress (pid ${other})."
+    err "apply: two runs on one stack build and recreate the same containers and corrupt each other."
+    err "apply: wait for it to finish, or stop it deliberately, then re-run."
+    return 1
+  fi
+  warn "apply: reclaiming a stale run lock (recorded pid '${other:-none}' is not running)"
+  rm -rf "$APPLY_LOCK_DIR" 2>/dev/null || true
+  if mkdir "$APPLY_LOCK_DIR" 2>/dev/null; then
+    printf '%s\n' "$$" > "$APPLY_LOCK_DIR/pid" 2>/dev/null || true
+    APPLY_LOCK_HELD=1
+    return 0
+  fi
+  err "apply: could not take the run lock at $APPLY_LOCK_DIR"
+  return 1
+}
+
+# ── Working-tree stability ───────────────────────────────────────────────────
+# `docker compose build` bakes the working tree into the image, and this repo is
+# checked out ONCE and shared: on 2026-09-24 a second session ran `git checkout`
+# in the same directory while a run was live. Nothing crashed — the build simply
+# would have shipped whatever files happened to be on disk at the moment each
+# COPY ran, with no error and no trace in the image.
+#
+# So: record the commit at startup and re-assert it before building. This cannot
+# make a shared checkout safe, but it turns a silent mis-build into a refusal.
+HEAD_AT_START=""
+
+_record_head() {
+  HEAD_AT_START="$(git -C "$REPO" rev-parse HEAD 2>/dev/null || true)"
+  [ -n "$HEAD_AT_START" ] && log "apply: working tree at $(printf '%.12s' "$HEAD_AT_START") ($(git -C "$REPO" rev-parse --abbrev-ref HEAD 2>/dev/null || echo '?'))"
+  return 0
+}
+
+_assert_head_unchanged() {
+  # Not a git repo, or HEAD unreadable at startup: nothing to compare. Do not
+  # invent a failure out of a missing baseline.
+  [ -n "$HEAD_AT_START" ] || return 0
+  local now
+  now="$(git -C "$REPO" rev-parse HEAD 2>/dev/null || true)"
+  [ -n "$now" ] || return 0
+  [ "$now" = "$HEAD_AT_START" ] && return 0
+  err "apply: the working tree MOVED mid-run: $(printf '%.12s' "$HEAD_AT_START") -> $(printf '%.12s' "$now")"
+  err "apply: refusing to build — the image would contain code this run never preflighted or scanned."
+  err "apply: this repo is a single shared checkout; another session or a human ran git checkout/reset here."
+  return 1
+}
+
 # ── Build-cache hygiene ──────────────────────────────────────────────────────
 # Build cache is NOT rollback material. Rollback restores TAGGED images
 # (agentshroud-rollback/*), and `docker builder prune` never touches tags — so
@@ -858,6 +942,8 @@ phase_apply() {
   # consuming 26GB of layers on the way; an OOM kill is the leading explanation.
   # Sequential builds cap peak memory at one toolchain and make any failure
   # attributable to a named service instead of a silent stall.
+  _assert_head_unchanged || exit 10
+
   local svc build_list
   build_list="$(_buildable_services)"
   if [ -z "$build_list" ]; then
@@ -1174,11 +1260,16 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 # way it killed the test runner that evaluates this line (2026-09-24), and in a
 # real run it would have taken down whatever shared the group. Kill only a pid
 # we actually recorded.
-trap 'rc=$?; if [ -n "${LOCK_HEARTBEAT_PID:-}" ]; then kill "$LOCK_HEARTBEAT_PID" 2>/dev/null || true; fi; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
+trap 'rc=$?; if [ -n "${LOCK_HEARTBEAT_PID:-}" ]; then kill "$LOCK_HEARTBEAT_PID" 2>/dev/null || true; fi; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; _release_apply_lock; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
 mkdir -p "$(dirname "$UPGRADE_LOCK")" 2>/dev/null || true
 printf '%s\n' "$$" > "$UPGRADE_LOCK" 2>/dev/null || true
 LOCK_HEARTBEAT_PID=""
 _start_lock_heartbeat
+
+# Exclusive: refuse to run alongside another apply. Exit 10 = preconditions are
+# wrong, nothing has been mutated yet.
+_take_apply_lock || exit 10
+_record_head
 
 PINS_BEFORE="$(_capture_pins)"
 

@@ -1845,6 +1845,135 @@ else
     echo "  FAIL: installs are not chained — a failed torch step would be masked" >&2
     fail=1
 fi
+
+echo ""
+echo "── one apply at a time; the tree must not move under a build ──"
+
+# 2026-09-24: a launchd apply started 09:16 and a manual one 09:31. Both built
+# images, both recreated containers, and both wrote UPGRADE_LOCK — overwriting
+# each other's pid, because that lock is advisory and single-valued. It tells
+# the health check "a build is live"; it was never exclusion. Separately, the
+# repo is ONE shared checkout, and a `git checkout` in it mid-run silently
+# changes what `docker compose build` bakes into the image.
+APPLY_C2="$REPO/scripts/sunday-upgrade-apply.sh"
+
+_lock_try() {
+    # $1 = dir, $2 = pid to pre-seed as owner ("" = no existing lock, "self" = us)
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_release_apply_lock()/,/^}/p" "$1")"
+        eval "$(/usr/bin/sed -n "/^_take_apply_lock()/,/^}/p" "$1")"
+        err() { :; }; warn() { :; }
+        APPLY_LOCK_DIR="$2"; APPLY_LOCK_HELD=0
+        seed="$3"
+        if [ -n "$seed" ]; then
+            mkdir -p "$APPLY_LOCK_DIR"
+            if [ "$seed" = "self" ]; then printf "%s\n" "$$" > "$APPLY_LOCK_DIR/pid";
+            else printf "%s\n" "$seed" > "$APPLY_LOCK_DIR/pid"; fi
+        fi
+        if _take_apply_lock; then echo TOOK; else echo REFUSED; fi
+    ' _ "$APPLY_C2" "$2" "$3" 2>/dev/null || echo ERR
+}
+
+_LD="$(mktemp -d)/lock.d"
+# 1. No existing lock: take it.
+if [ "$(_lock_try x "$_LD" '')" = "TOOK" ]; then
+    echo "  OK : with no run in progress the lock is taken"
+else
+    echo "  FAIL: could not take a free lock" >&2
+    fail=1
+fi
+rm -rf "$_LD"
+
+# 2. Lock held by a LIVE process: refuse. This is the collision case.
+if [ "$(_lock_try x "$_LD" self)" = "REFUSED" ]; then
+    echo "  OK : a second apply refuses to start while one is live"
+else
+    echo "  FAIL: two applies can run at once — they corrupt each other's build" >&2
+    fail=1
+fi
+rm -rf "$_LD"
+
+# 3. FAIL SAFE: a lock left by a DEAD process must be reclaimed, or one crash
+#    blocks every future Sunday run forever.
+if [ "$(_lock_try x "$_LD" 999999)" = "TOOK" ]; then
+    echo "  OK : a stale lock from a dead run is reclaimed, not honoured forever"
+else
+    echo "  FAIL: a crashed run would block all later runs permanently" >&2
+    fail=1
+fi
+rm -rf "$_LD"
+
+# 4. Garbage in the lock must not be read as a live owner.
+if [ "$(_lock_try x "$_LD" 'not-a-pid')" = "TOOK" ]; then
+    echo "  OK : an unparseable lock owner does not block the run"
+else
+    echo "  FAIL: a corrupt lock file blocks every run" >&2
+    fail=1
+fi
+rm -rf "$_LD"
+
+# 5. Atomicity: the lock must be created with mkdir, which succeeds for exactly
+#    one caller. A test-then-write pid file races exactly when it matters.
+if /usr/bin/grep -qE 'if mkdir "\$APPLY_LOCK_DIR" 2>/dev/null; then' "$APPLY_C2"; then
+    echo "  OK : the lock is acquired atomically (mkdir), not test-then-create"
+else
+    echo "  FAIL: lock acquisition has a race window between check and create" >&2
+    fail=1
+fi
+
+# 6. A run must only release a lock it actually holds — otherwise, after its own
+#    lock went stale and someone else reclaimed it, it would delete THEIR lock.
+if /usr/bin/grep -qE '\[ "\$APPLY_LOCK_HELD" = "1" \] \|\| return 0' "$APPLY_C2"; then
+    echo "  OK : a run only releases a lock it holds, never someone else's"
+else
+    echo "  FAIL: a run can delete another run's lock" >&2
+    fail=1
+fi
+
+# 7/8. HEAD guard: unchanged passes, moved fails. Executed, not grepped.
+_head_check() {
+    /usr/bin/env bash -c '
+        eval "$(/usr/bin/sed -n "/^_assert_head_unchanged()/,/^}/p" "$1")"
+        err() { :; }
+        REPO="$2"; HEAD_AT_START="$3"; _NOW="$4"
+        # Capture first: inside git(), $4 is the fourth argument of git itself.
+        git() { echo "$_NOW"; }       # current HEAD
+        if _assert_head_unchanged; then echo SAME; else echo MOVED; fi
+    ' _ "$APPLY_C2" /repo "$1" "$2" 2>/dev/null || echo ERR
+}
+if [ "$(_head_check aaaaaaaaaaaa aaaaaaaaaaaa)" = "SAME" ]; then
+    echo "  OK : an unchanged working tree proceeds to build"
+else
+    echo "  FAIL: the HEAD guard blocks a run whose tree never moved" >&2
+    fail=1
+fi
+if [ "$(_head_check aaaaaaaaaaaa bbbbbbbbbbbb)" = "MOVED" ]; then
+    echo "  OK : a tree that moved mid-run refuses to build"
+else
+    echo "  FAIL: a mid-run checkout would be baked into the image silently" >&2
+    fail=1
+fi
+# 9. No baseline (not a git repo) must not invent a failure.
+if [ "$(_head_check '' bbbbbbbbbbbb)" = "SAME" ]; then
+    echo "  OK : an unreadable HEAD at startup does not fabricate a failure"
+else
+    echo "  FAIL: a non-git checkout would be unable to run at all" >&2
+    fail=1
+fi
+
+# 10/11. Both guards must actually be wired in.
+if /usr/bin/grep -qE '^_take_apply_lock \|\| exit 10' "$APPLY_C2"; then
+    echo "  OK : the run lock is taken at startup, before any phase runs"
+else
+    echo "  FAIL: the lock helper exists but nothing calls it" >&2
+    fail=1
+fi
+if /usr/bin/grep -qE '^  _assert_head_unchanged \|\| exit 10' "$APPLY_C2"; then
+    echo "  OK : HEAD is re-asserted immediately before the first build"
+else
+    echo "  FAIL: nothing re-checks the tree before building" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
