@@ -1699,6 +1699,112 @@ else
     echo "  FAIL: heartbeat held the caller's pipe for ${_HB_ELAPSED}s — it can hang any capture" >&2
     fail=1
 fi
+
+echo ""
+echo "── baseline: no rollback anchor means no build ──"
+
+# 2026-09-24 07:36. The baseline could not retag one of five containers and
+# said so — then reported PASS anyway:
+#     WARN: baseline: could not retag agentshroud-dev-openclaw for rollback
+#     baseline: retagged 4 image(s)        <- four, not five
+#     baseline: PASS
+# The run built, failed on an unrelated service, and rolled back openclaw to
+# the PREVIOUS run's stale anchor: a binary one release older than the config
+# volume it had already migrated. OpenClaw refuses that combination by design,
+# so the container could not start — 80 restarts before anyone noticed.
+# A rollback that cannot restore service is worse than no rollback.
+APPLY_B="$REPO/scripts/sunday-upgrade-apply.sh"
+
+# 1. A running container that cannot be anchored must STOP the run.
+if /usr/bin/grep -qE 'die 10 "baseline: \$\{failed\} running container\(s\) could not be anchored' "$APPLY_B"; then
+    echo "  OK : an un-anchorable running container refuses the build"
+else
+    echo "  FAIL: baseline still proceeds without a rollback anchor" >&2
+    fail=1
+fi
+
+# 2. The failure must be counted, not just warned about — a warn that does not
+#    change the verdict is the 0.0 defect in its purest form.
+if /usr/bin/grep -qE 'failed=\$\(\(failed \+ 1\)\)' "$APPLY_B" \
+   && /usr/bin/grep -qE 'err "baseline: could not retag \$c for rollback"' "$APPLY_B"; then
+    echo "  OK : a failed retag is counted and raised as an error, not a warning"
+else
+    echo "  FAIL: a failed retag is still only a warning" >&2
+    fail=1
+fi
+
+# 3. A container that is simply not running is legitimate (profile-gated
+#    services), but must leave a trace rather than vanishing via `continue`.
+if /usr/bin/grep -qE 'is not running — no rollback anchor captured for it' "$APPLY_B" \
+   && /usr/bin/grep -qE 'skipped=\$\(\(skipped \+ 1\)\)' "$APPLY_B"; then
+    echo "  OK : a not-running container is logged and counted, not silently skipped"
+else
+    echo "  FAIL: containers can still vanish from the baseline without a trace" >&2
+    fail=1
+fi
+
+# 4. The summary must report all three outcomes, so "4 image(s)" can never
+#    again read as success when five were expected.
+if /usr/bin/grep -qE 'skipped \$\{skipped\} not running, \$\{failed\} FAILED' "$APPLY_B"; then
+    echo "  OK : the baseline summary states tagged/skipped/failed explicitly"
+else
+    echo "  FAIL: the summary hides how many anchors were missed" >&2
+    fail=1
+fi
+
+echo ""
+echo "── voice-gateway: a transient TLS fault must not fail the upgrade ──"
+
+# 2026-09-24 07:51: the upgrade died on
+#   ssl.SSLError: [SSL] record layer failure (_ssl.c:2580)
+# 225s into pip's download. pip's own --retries does not cover it: the error is
+# raised mid-stream and aborts the process. One network blip failed the run and
+# triggered the rollback above.
+VG="$REPO/voice_gateway/Dockerfile"
+
+if /usr/bin/grep -qE 'for attempt in 1 2 3; do' "$VG" \
+   && /usr/bin/grep -q 'pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt' "$VG"; then
+    echo "  OK : the whole pip command is retried, not just per-package downloads"
+else
+    echo "  FAIL: a mid-stream TLS fault still kills the build outright" >&2
+    fail=1
+fi
+
+# The retry must NOT swallow a real failure.
+if /usr/bin/grep -qE 'pip install FAILED after 3 attempts' "$VG" \
+   && /usr/bin/grep -qE 'exit 1' "$VG"; then
+    echo "  OK : exhausting the retries still fails the build loudly"
+else
+    echo "  FAIL: a genuinely broken requirements.txt could pass silently" >&2
+    fail=1
+fi
+
+# Behavioural: run the retry shell logic with a command that fails twice then
+# succeeds, and with one that always fails.
+_RETRY_TEST() {
+    /usr/bin/env bash -c '
+        CNT="$(mktemp)"; echo 0 > "$CNT"; FAILS="$1"
+        pip() { local n; n=$(cat "$CNT"); n=$((n+1)); echo "$n" > "$CNT"; [ "$n" -gt "$FAILS" ]; }
+        sleep() { :; }
+        set -e; ok=0
+        for attempt in 1 2 3; do
+            if pip install; then ok=1; break; fi
+        done
+        if [ "$ok" != "1" ]; then echo FAILED; else echo OK; fi
+    ' _ "$1" 2>/dev/null || echo ERR
+}
+if [ "$(_RETRY_TEST 2)" = "OK" ]; then
+    echo "  OK : two transient failures then success is survived"
+else
+    echo "  FAIL: a recoverable blip is not actually retried" >&2
+    fail=1
+fi
+if [ "$(_RETRY_TEST 99)" = "FAILED" ]; then
+    echo "  OK : a persistent failure is still reported as a failure"
+else
+    echo "  FAIL: the retry loop would mask a real, permanent failure" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
