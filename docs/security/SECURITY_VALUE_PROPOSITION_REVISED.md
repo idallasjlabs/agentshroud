@@ -416,7 +416,7 @@ docker exec openclaw-bot oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_standard \
   --results "$REPORT_DIR/openclaw-${TIMESTAMP}.xml" \
   --report "$REPORT_DIR/openclaw-${TIMESTAMP}.html" \
-  /usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml \
+  /usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml \
   || true
 
 # Scan Gateway container
@@ -425,7 +425,7 @@ docker exec openclaw-gateway oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_standard \
   --results "$REPORT_DIR/gateway-${TIMESTAMP}.xml" \
   --report "$REPORT_DIR/gateway-${TIMESTAMP}.html" \
-  /usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml \
+  /usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml \
   || true
 
 echo "✅ Scans complete. Reports in $REPORT_DIR/"

@@ -27,7 +27,7 @@ RUN set -eux; \
     /out-docker --version || true
 
 # M8: Base image pinned to SHA256 digest for supply chain integrity
-# Update with: docker pull node:24-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:24-bookworm-slim
+# Update with: docker pull node:24-trixie-slim && docker inspect --format='{{index .RepoDigests 0}}' node:24-trixie-slim
 #
 # Node 24 is REQUIRED, not merely current (2026-09-15). OpenClaw refuses every
 # `openclaw config set` on Node 22 with:
@@ -41,18 +41,23 @@ RUN set -eux; \
 #
 # Do NOT drop back to node:22 to "reduce churn": it silently disables agent
 # sandbox configuration, which is a security control, and re-arms the crash-loop.
-# digest for node:24-bookworm-slim (v24.21.0), pinned 2026-09-21 Sunday upgrade
+# digest for node:24-trixie-slim, pinned 2026-09-24 (moved off bookworm: all 17
+# CRITICAL CVEs in this image were Debian 12 packages with no fix available)
 # (previous pin from 2026-09-15 was stale — Docker Hub had rebuilt the tag).
-FROM node:24-bookworm-slim@sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6
+FROM node:24-trixie-slim@sha256:8ec5d7557396cfe32d21c3f9c13072355ceab22b584578ca4bb28af31120cffe
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
-# Trusted:yes workaround: apt 2.6 on ARM64/bookworm fails gpgv clearsign verification due to an apt bug,
-# even though manual gpgv --keyring confirms GOODSIG. Individual package hashes are still verified.
-# NOTE (upstream bug): remove Trusted:yes sed patch (and the same flag in Wazuh/1Password list entries below) once
-# Debian bookworm ships a fixed apt that resolves the ARM64 gpgv clearsign bug.
-RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
-    && apt-get update \
+# Repository signature verification is ENABLED. The previous `Trusted: yes`
+# workaround existed because apt 2.6 on ARM64/bookworm failed gpgv clearsign
+# verification, and it disabled signature checking to get around it — the
+# upstream note here said to remove it once apt was fixed. Moving to trixie
+# does that: apt 3.0.3 verifies correctly on arm64 (tested 2026-09-24,
+# `apt-get update` succeeding with Signed-By intact), so the flag is gone from
+# the Debian, Wazuh and 1Password entries alike. Do not reintroduce it: an
+# image that installs packages without verifying repo signatures is a
+# supply-chain exposure, not a convenience.
+RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
         openssh-client \
@@ -117,7 +122,7 @@ RUN printf '%s\n' \
 ARG WAZUH_VERSION=4.14.7
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
-    && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
     && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
@@ -200,7 +205,7 @@ RUN sh /usr/local/bin/patch-ws-proxy.sh
 # R2-H1: GPG signature verification for supply chain integrity
 RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
     tee /etc/apt/sources.list.d/1password.list && \
     apt-get update \
     && apt-get install -y --no-install-recommends 1password-cli \
@@ -220,7 +225,7 @@ RUN mkdir -p /home/node/.openclaw && \
 # build failures — see commit 7128946). oscap runs on the GATEWAY via oscap-docker
 # which reads these files from inside the bot container at scan time. Do not remove.
 RUN mkdir -p /usr/share/xml/scap/ssg/content
-COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+COPY docker/scap-content/ssg-debian13-ds.xml /usr/share/xml/scap/ssg/content/
 COPY docker/scap-content/agentshroud-tailoring.xml /usr/share/xml/scap/ssg/content/agentshroud-tailoring.xml
 
 # Wazuh ossec.conf for bot — FIM on workspace, rootcheck disabled (non-root)

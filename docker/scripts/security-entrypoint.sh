@@ -89,7 +89,7 @@ fi
 # --- Initial OpenSCAP Check ---
 log "Running initial OpenSCAP compliance check..."
 if command -v oscap >/dev/null 2>&1; then
-    SCAP_CONTENT="/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"
+    SCAP_CONTENT="/usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml"
     if [ -f "$SCAP_CONTENT" ]; then
         oscap xccdf eval \
             --profile xccdf_org.ssgproject.content_profile_standard \

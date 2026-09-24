@@ -216,7 +216,7 @@ run_oscap() {
         return 1
     fi
 
-    SCAP_CONTENT="/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"
+    SCAP_CONTENT="/usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml"
     TAILORING_FILE="/usr/share/xml/scap/ssg/content/agentshroud-tailoring.xml"
     if [ ! -f "$SCAP_CONTENT" ]; then
         log "ERROR: SCAP content not found"

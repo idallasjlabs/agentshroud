@@ -165,7 +165,7 @@ def _check_openscap() -> str:
 
     if not shutil.which("oscap"):
         return "not_installed"
-    if os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"):
+    if os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml"):
         return "running"
     return "stopped"
 

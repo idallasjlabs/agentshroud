@@ -42,7 +42,7 @@ Installed alongside ClamAV, Trivy, and 1Password CLI as part of the security too
 oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_cis \
   --results /tmp/oscap-results.xml \
-  /usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml
+  /usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml
 
 # Generate HTML report
 oscap xccdf generate report /tmp/oscap-results.xml > /tmp/oscap-report.html

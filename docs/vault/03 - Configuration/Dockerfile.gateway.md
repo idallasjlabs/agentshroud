@@ -39,7 +39,7 @@ python:3.13-slim
 ├── COPY --from=builder /install → /usr/local  # Python packages
 ├── COPY gateway/ → /app/gateway/             # Application code
 ├── mkdir /app/data (ledger volume mount point)
-├── COPY ssg-debian12-ds.xml                  # SCAP compliance content
+├── COPY ssg-debian13-ds.xml                  # SCAP compliance content
 ├── COPY docker/scripts/security-*.sh         # Security scan scripts
 ├── python3 -m spacy download en_core_web_sm  # spaCy NLP model (~560MB)
 ├── find / -perm /6000 → strip setuid bits    # CIS Docker Benchmark 4.8

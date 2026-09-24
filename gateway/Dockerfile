@@ -418,7 +418,7 @@ RUN mkdir -p /app/data && \
 
 # Copy SCAP content for compliance scanning (from parent context)
 RUN mkdir -p /usr/share/xml/scap/ssg/content
-COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+COPY docker/scap-content/ssg-debian13-ds.xml /usr/share/xml/scap/ssg/content/
 
 # OCI Image labels
 # AGENTSHROUD_VERSION comes from docker/versions.env (via docker-compose.yml's

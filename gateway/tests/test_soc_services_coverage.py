@@ -312,12 +312,12 @@ class TestCheckOpenscap:
 
     def test_running_when_content_present(self, monkeypatch):
         monkeypatch.setattr(shutil, "which", lambda *a, **k: "/usr/bin/oscap")
-        _patch_exists(monkeypatch, {"/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml": True})
+        _patch_exists(monkeypatch, {"/usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml": True})
         assert services._check_openscap() == "running"
 
     def test_stopped_when_content_missing(self, monkeypatch):
         monkeypatch.setattr(shutil, "which", lambda *a, **k: "/usr/bin/oscap")
-        _patch_exists(monkeypatch, {"/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml": False})
+        _patch_exists(monkeypatch, {"/usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml": False})
         assert services._check_openscap() == "stopped"
 
 
