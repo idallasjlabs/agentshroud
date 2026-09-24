@@ -713,6 +713,37 @@ phase_scan() {
 SUNDAY_BUILD_CACHE_MAX_GB="${SUNDAY_BUILD_CACHE_MAX_GB:-20}"
 SUNDAY_BUILD_MIN_GB="${SUNDAY_BUILD_MIN_GB:-25}"
 
+# Keep the upgrade lock fresh for the entire run, not only while building.
+#
+# The lock lapses after AGENTSHROUD_UPGRADE_LOCK_MAX_AGE (300s) so a dead run
+# cannot suppress socket repair forever. But only the build poll loop was
+# re-stamping it, which left every other phase unprotected — and the scan phase
+# alone ran 19 minutes on 2026-09-23. A VM bounce there does not kill a build
+# (there isn't one yet) but it does take out the run.
+#
+# The heartbeat is a child process that stamps the PARENT's pid and stops the
+# moment the parent is gone, then drops the lock outright so repair resumes
+# immediately rather than waiting out the staleness window. It must never
+# outlive the run: that would be a guard that never lapses, which is worse
+# than no guard at all.
+_start_lock_heartbeat() {
+  local parent=$$
+  (
+    # Detach stdio. A background child that inherits stdout keeps the write end
+    # of any pipe open, so a caller capturing this script's output — `$(...)`,
+    # a monitor, a log collector — blocks until the child exits, not until the
+    # RUN exits. Observed 2026-09-24: a heartbeat that outlived its parent hung
+    # a command substitution indefinitely.
+    exec >/dev/null 2>&1
+    while kill -0 "$parent" 2>/dev/null; do
+      printf '%s\n' "$parent" > "$UPGRADE_LOCK" 2>/dev/null || true
+      sleep "${SUNDAY_LOCK_HEARTBEAT:-30}"
+    done
+    rm -f "$UPGRADE_LOCK" 2>/dev/null || true
+  ) &
+  LOCK_HEARTBEAT_PID=$!
+}
+
 _prune_build_cache() {
   if ! _mutating; then
     log "cleanup: [dry-run] would bound build cache to ${SUNDAY_BUILD_CACHE_MAX_GB}GiB"
@@ -722,9 +753,22 @@ _prune_build_cache() {
   bytes=$(( SUNDAY_BUILD_CACHE_MAX_GB * 1024 * 1024 * 1024 ))
   before="$(_docker_free_gb 2>/dev/null || true)"
   log "cleanup: bounding build cache to ${SUNDAY_BUILD_CACHE_MAX_GB}GiB (docker storage free before: ${before:-unknown}GiB)"
+  # Prune where buildx actually lives. The HOST docker CLI here drives the
+  # legacy builder (no buildx component installed), which does not accept
+  # --max-used-space at all — so this silently no-opped on its first real run
+  # (2026-09-24 06:15:36: "cache NOT bounded this run", failing in the same
+  # second rather than timing out). The VM's docker has buildx, and the cache
+  # being bounded is the VM's disk anyway. Same colima-first shape as
+  # _docker_free_gb above.
+  local -a prune_cmd
+  if command -v colima >/dev/null 2>&1 && colima status >/dev/null 2>&1; then
+    prune_cmd=(colima ssh -- docker builder prune -f --max-used-space "$bytes")
+  else
+    prune_cmd=(docker builder prune -f --max-used-space "$bytes")
+  fi
   # Never fail the run over cleanup: a successful upgrade must not be reported
   # as a failure because a prune timed out or the socket dropped mid-prune.
-  if ! timeout "${SUNDAY_PRUNE_TIMEOUT:-1800}" docker builder prune -f --max-used-space "$bytes" >/dev/null 2>&1; then
+  if ! timeout "${SUNDAY_PRUNE_TIMEOUT:-1800}" "${prune_cmd[@]}" >/dev/null 2>&1; then
     warn "cleanup: build-cache prune did not complete (timeout or socket drop) — cache NOT bounded this run"
     return 0
   fi
@@ -1100,9 +1144,16 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 # On any unexpected failure, record a FAIL handoff so prod stays blocked rather
 # than reading a stale PASS from a previous week.
 # shellcheck disable=SC2154  # rc is assigned by the trap body itself, immediately before use
-trap 'rc=$?; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
+# NEVER `kill "${LOCK_HEARTBEAT_PID:-0}"` here: an unset variable makes that
+# `kill 0`, which signals the ENTIRE PROCESS GROUP, not "nothing". Written that
+# way it killed the test runner that evaluates this line (2026-09-24), and in a
+# real run it would have taken down whatever shared the group. Kill only a pid
+# we actually recorded.
+trap 'rc=$?; if [ -n "${LOCK_HEARTBEAT_PID:-}" ]; then kill "$LOCK_HEARTBEAT_PID" 2>/dev/null || true; fi; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
 mkdir -p "$(dirname "$UPGRADE_LOCK")" 2>/dev/null || true
 printf '%s\n' "$$" > "$UPGRADE_LOCK" 2>/dev/null || true
+LOCK_HEARTBEAT_PID=""
+_start_lock_heartbeat
 
 PINS_BEFORE="$(_capture_pins)"
 
