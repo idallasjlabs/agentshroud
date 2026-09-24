@@ -55,7 +55,7 @@ RUN mkdir -p /home/node/.openclaw && \
 
 # Copy SCAP content for compliance scanning
 RUN mkdir -p /usr/share/xml/scap/ssg/content
-COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+COPY docker/scap-content/ssg-debian13-ds.xml /usr/share/xml/scap/ssg/content/
 
 # Copy startup and utility scripts
 COPY docker/scripts/op-auth-common.sh /usr/local/bin/op-auth-common.sh

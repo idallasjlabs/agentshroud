@@ -30,8 +30,16 @@ repos:
       - id: check-yaml
       - id: check-json
       - id: check-merge-conflict
+      # Vendored upstream compliance content must stay byte-identical to what
+      # ComplianceAsCode publishes, so it can be verified against their released
+      # SHA512. On 2026-09-24 these hooks rewrote 1080 lines of
+      # ssg-debian13-ds.xml on the way in; the XML stayed valid, but the file no
+      # longer matched upstream and its provenance became unverifiable. For a
+      # security product that is the whole point of shipping the datastream.
       - id: trailing-whitespace
+        exclude: ^docker/scap-content/ssg-debian[0-9]+-ds\.xml$
       - id: end-of-file-fixer
+        exclude: ^docker/scap-content/ssg-debian[0-9]+-ds\.xml$
 
   # Detect-secrets - Advanced secret detection
   # v1.4.0 until 2026-09-20, which could not read .secrets.baseline (generated

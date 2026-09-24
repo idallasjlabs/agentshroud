@@ -213,14 +213,14 @@ else
             oval eval \
             --results "${report}" \
             --report "${REPORTS_DIR}/openscap/oscap-report-${TS}.html" \
-            /usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml 2>/dev/null || true
+            /usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml 2>/dev/null || true
 
         success "OpenSCAP report: ${report}"
     else
         # Filesystem scan fallback
         oscap oval eval \
             --results "${report}" \
-            /usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml 2>/dev/null || true
+            /usr/share/xml/scap/ssg/content/ssg-debian13-ds.xml 2>/dev/null || true
     fi
 
     # Convert to JSON summary for SOC ingestion
