@@ -614,8 +614,12 @@ class TestConfigValidation:
         assert "config.models.providers.ollama" in script
         assert "OPENCLAW_OLLAMA_API" in script
         assert "api: OLLAMA_PROVIDER_API" in script
+        # commands.ownerDisplay = 'hash' retired 2026-09-24 (Sunday upgrade,
+        # OpenClaw 2026.9.6): vendor's schema now rejects the key outright
+        # ("owner ids now render raw" per the vendor's own legacy-migration
+        # table) — apply-patches.js strips any stale value instead of setting one.
         assert "commands.ownerDisplay" in script
-        assert "'hash'" in script
+        assert "delete config.commands.ownerDisplay" in script
         assert "anthropic/claude-opus-4-6" in script
         assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
 
