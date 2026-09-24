@@ -110,19 +110,36 @@ sunday_run_scan_gate() {
   # code because the phantom-tag bug meant every image was always skipped
   # before reaching that log call; fixing the fallback here means real scans
   # actually reach it, which is what surfaced this.
-  local total_crit=0 first=1 scanned=0 body=""
-  local img resolved out crit high
+  local total_crit=0 first=1 scanned=0 failed=0 body=""
+  local img resolved out crit high trc errf
   for img in "${images[@]}"; do
     if ! resolved="$(sunday_resolve_scan_image "$img")"; then
       warn "scan: no local image found at all for $img — nothing to scan"
       continue
     fi
+    # stderr is CAPTURED, never discarded. Until 2026-09-24 this line ended in
+    # `2>/dev/null || true`, so a crashing scanner and a clean image produced
+    # the identical observable: an empty string, logged as "trivy returned
+    # nothing". Three images were "scanned" that way for weeks. The real error,
+    # once anybody looked at it, was one line long:
+    #   unable to initialize a scan service: ... docker error: unable to get
+    #   history (...docker.sock...); remote error: UNAUTHORIZED
+    # trivy reaches local images THROUGH the docker socket, and when that socket
+    # is down it falls back to a registry that 401s on local-only tags. A gate
+    # that cannot tell "no vulnerabilities" from "the scanner never ran" is the
+    # exact defect class CLAUDE.md 0.0 exists to forbid.
+    errf="$(mktemp)"
+    trc=0
     out="$("${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
-            --format json "$resolved" 2>/dev/null || true)"
-    if [ -z "$out" ]; then
-      warn "scan: trivy returned nothing for $resolved"
+            --format json "$resolved" 2>"$errf")" || trc=$?
+    if [ "$trc" -ne 0 ] || [ -z "$out" ]; then
+      failed=$((failed + 1))
+      err "scan: trivy FAILED for $resolved (exit ${trc}) — this is NOT a clean result:"
+      sed -n '1,6p' "$errf" | sed 's/^/      /' >&2
+      rm -f "$errf"
       continue
     fi
+    rm -f "$errf"
     crit="$(printf '%s' "$out" | grep -o '"Severity": *"CRITICAL"' | wc -l | tr -d ' ')"
     high="$(printf '%s' "$out" | grep -o '"Severity": *"HIGH"'     | wc -l | tr -d ' ')"
     total_crit=$((total_crit + crit))
@@ -135,9 +152,20 @@ sunday_run_scan_gate() {
     body="${body}    \"${resolved}\": {\"critical\": ${crit}, \"high\": ${high}, \"resolved_from\": \"${img}\"}"
     log "scan: $resolved -> ${crit} CRITICAL / ${high} HIGH"
   done
-  printf '{\n  "scanner": "trivy",\n  "images": {\n%s\n  }\n}\n' "$body" > "$scan_json"
+  printf '{\n  "scanner": "trivy",\n  "scanned": %s,\n  "failed": %s,\n  "images": {\n%s\n  }\n}\n' \
+    "$scanned" "$failed" "$body" > "$scan_json"
 
-  log "scan: wrote $scan_json (total CRITICAL across images: ${total_crit}, images scanned: ${scanned})"
+  log "scan: wrote $scan_json (total CRITICAL across images: ${total_crit}, images scanned: ${scanned}, scans FAILED: ${failed})"
+
+  # A scanner that errored is not a clean bill of health. Surface it loudly even
+  # when no --max-critical was requested, so a report cannot quietly describe an
+  # unscanned image set as a CVE baseline.
+  if [ "$failed" -gt 0 ]; then
+    if [ -n "$max_critical" ]; then
+      die 20 "CVE gate FAILED: ${failed} image scan(s) errored — refusing to report a pass on findings the scanner never produced"
+    fi
+    warn "scan: ${failed} image scan(s) ERRORED (see the trivy output above). The counts below cover only the ${scanned} image(s) that actually scanned — this is NOT a complete CVE baseline."
+  fi
 
   if [ "$scanned" -eq 0 ]; then
     if [ -n "$max_critical" ]; then

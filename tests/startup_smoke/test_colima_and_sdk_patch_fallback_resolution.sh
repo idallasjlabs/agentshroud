@@ -1477,6 +1477,83 @@ else
     echo "  FAIL: a successful run leaves its cache growth for the next one" >&2
     fail=1
 fi
+
+echo ""
+echo "── CVE scan gate: a crashed scanner is not a clean image ──"
+
+# Until 2026-09-23 the trivy call ended in `2>/dev/null || true`, so a crashing
+# scanner and a vulnerability-free image produced the IDENTICAL observable: an
+# empty string, logged as "trivy returned nothing". Three images were reported
+# that way while the real error went unread for weeks:
+#   unable to initialize a scan service: ... docker error ...; remote error: UNAUTHORIZED
+# trivy reaches local images through the docker socket; when that socket is down
+# it falls back to a registry that 401s on local-only tags.
+SCANLIB="$REPO/scripts/lib/sunday-scan.sh"
+
+# 1. stderr must never be discarded — without it no failure is diagnosable.
+if ! /usr/bin/grep -qE 'format json "\$resolved" 2>/dev/null' "$SCANLIB" \
+   && /usr/bin/grep -qE 'format json "\$resolved" 2>"\$errf"' "$SCANLIB"; then
+    echo "  OK : trivy stderr is captured, not discarded"
+else
+    echo "  FAIL: trivy stderr is still thrown away — failures stay undiagnosable" >&2
+    fail=1
+fi
+
+# 2. A non-zero trivy exit must be counted as a FAILURE, not skipped silently.
+if /usr/bin/grep -qE 'failed=\$\(\(failed \+ 1\)\)' "$SCANLIB" \
+   && /usr/bin/grep -q 'this is NOT a clean result' "$SCANLIB"; then
+    echo "  OK : a scanner error is recorded as a failure, not a clean skip"
+else
+    echo "  FAIL: a crashed scan is still indistinguishable from a clean one" >&2
+    fail=1
+fi
+
+# 3. The machine-readable artefact must carry the counts, or a downstream reader
+#    (report, handoff, prod promotion) cannot tell a partial scan from a full one.
+if /usr/bin/grep -qE '"scanned": %s' "$SCANLIB" && /usr/bin/grep -qE '"failed": %s' "$SCANLIB"; then
+    echo "  OK : scan.json records how many images scanned and how many errored"
+else
+    echo "  FAIL: scan.json cannot express a partial scan — a reader must assume it is complete" >&2
+    fail=1
+fi
+
+# 4. With a CVE gate requested, an errored scan must HARD FAIL. Reporting a pass
+#    on findings the scanner never produced is the 0.0 defect verbatim.
+if /usr/bin/grep -qE 'die 20 "CVE gate FAILED: \$\{failed\} image scan\(s\) errored' "$SCANLIB"; then
+    echo "  OK : --max-critical + a failed scan is a hard failure, never a pass"
+else
+    echo "  FAIL: a failed scan could still satisfy an explicit CVE gate" >&2
+    fail=1
+fi
+
+# 5. Without --max-critical it must still say loudly that this is NOT a baseline.
+if /usr/bin/grep -q 'this is NOT a complete CVE baseline' "$SCANLIB"; then
+    echo "  OK : a partial scan is labelled as not a CVE baseline"
+else
+    echo "  FAIL: a partial scan can be read as a complete baseline" >&2
+    fail=1
+fi
+
+# 6. Behavioural: a scanner that errors must NOT be counted as scanned. Runs the
+#    real loop body's accounting against a stubbed failing trivy.
+_SCAN_ACC=$(/usr/bin/env bash -c '
+    # Source FIRST, then override: the library defines these itself, so stubs
+    # declared before the source are silently replaced by the real ones.
+    . "$1" 2>/dev/null
+    log() { :; }; warn() { :; }; err() { :; }; die() { echo "DIE:$1"; exit 0; }
+    sunday_resolve_scan_image() { echo "img:$1"; }
+    sunday_ensure_trivy() { return 0; }
+    TRIVY_CMD=(false)                 # trivy always exits non-zero
+    out="$(mktemp)"
+    sunday_run_scan_gate "$out" "" a b 2>/dev/null
+    python3 -c "import json,sys;d=json.load(open(sys.argv[1]));print(\"scanned=%s failed=%s\"%(d.get(\"scanned\"),d.get(\"failed\")))" "$out"
+' _ "$SCANLIB" 2>/dev/null || echo "ERR")
+if [ "$_SCAN_ACC" = "scanned=0 failed=2" ]; then
+    echo "  OK : two erroring scans count as 0 scanned / 2 failed, not 0/0"
+else
+    echo "  FAIL: scan accounting does not distinguish error from absence ($_SCAN_ACC)" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
