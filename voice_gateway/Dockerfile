@@ -16,7 +16,10 @@
 # for a future fix. Do not re-attempt this swap without re-scanning both
 # bases fresh; the right fix is probably not a Debian-release swap at all
 # (see reports/upgrade-2026-09-06.md for options considered).
-FROM python:3.12-slim@sha256:950206c37262dd86c55659797f6ee418fee30535072f65a82ed470d985f5cda5
+#
+# 2026-09-24 Sunday upgrade: digest refreshed again (same tag, same Debian
+# release — no re-litigation of the decision above).
+FROM python:3.12-slim@sha256:2f17fc044b579bab302c2e8054d3a686e2cb9a83de48e70534b94cd8ebbe06a9
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"
