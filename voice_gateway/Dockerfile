@@ -40,6 +40,21 @@ RUN apt-get update -qq && \
     && rm -rf /var/lib/apt/lists/*
 
 COPY voice_gateway/requirements.txt .
+# torch is installed FIRST from PyTorch's CPU index, before requirements.txt.
+# kokoro declares a bare `torch` dependency, and on linux/aarch64 the default
+# PyPI wheel drags in the CUDA stack even though this service runs CPU-only on
+# Colima. Measured from the 2026-09-24 build log:
+#     torch-2.14.0                   454.0 MB
+#     nvidia_cusparselt_cu13         221.1 MB
+#     nvidia_nccl_cu13               216.0 MB
+#     nvidia_nvshmem_cu13             60.2 MB   (+ more cu13 wheels)
+# That is roughly a gigabyte of GPU runtime downloaded onto a machine with no
+# GPU. Pre-installing torch-2.14.0+cpu (which upstream publishes for
+# manylinux_2_28_aarch64) satisfies kokoro's requirement, so the CUDA variant is
+# never resolved. This attacks the retry loop's ROOT CAUSE rather than its
+# symptom: the fewer bytes crossing the wire, the less often the TLS record
+# layer failure below gets a chance to bite.
+#
 # --retries/--timeout: the multi-GB wheel downloads (torch chain) die on
 # transient network faults from this host (PyPI read timeout + SSL record
 # failure, two of three consecutive build failures on 2026-08-30); per-package
@@ -55,7 +70,9 @@ COPY voice_gateway/requirements.txt .
 RUN set -e; \
     ok=0; \
     for attempt in 1 2 3; do \
-        if pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt; then \
+        if pip install --no-cache-dir --retries 10 --timeout 60 \
+               --index-url https://download.pytorch.org/whl/cpu torch \
+           && pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt; then \
             ok=1; break; \
         fi; \
         echo "[voice-gateway] pip install attempt ${attempt}/3 failed — retrying in $((attempt * 15))s"; \
