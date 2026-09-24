@@ -1554,6 +1554,151 @@ else
     echo "  FAIL: scan accounting does not distinguish error from absence ($_SCAN_ACC)" >&2
     fail=1
 fi
+
+echo ""
+echo "── cleanup runs where buildx lives; the lock covers the whole run ──"
+
+# Both are corrections to code shipped the same day, caught by running it:
+#  * 2026-09-24 06:15:36 "cleanup: build-cache prune did not complete" — it
+#    failed in the SAME SECOND, not on a timeout. The host docker CLI drives
+#    the legacy builder (no buildx) and rejects --max-used-space outright, so
+#    the disk fix silently no-opped on its first real run.
+#  * only the build poll loop re-stamped the upgrade lock, leaving the scan
+#    phase (19 minutes on 2026-09-23) with no protection from a VM bounce.
+APPLY_H="$REPO/scripts/sunday-upgrade-apply.sh"
+
+# 1. Prune must prefer the VM, where buildx actually exists.
+_PWCAP="$(mktemp)"
+/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_prune_build_cache()/,/^}/p" "$1")"
+    CAP="$2"
+    log() { :; }; warn() { :; }; _mutating() { return 0; }
+    _docker_free_gb() { echo 100; }
+    command() { [ "$2" = "colima" ] && return 0; return 1; }
+    # Capture to a FILE: the real call redirects stdout to /dev/null, so a stub
+    # that echoes proves nothing and every assertion would pass vacuously.
+    colima() { case "$1" in status) return 0 ;; esac; echo "VM" >> "$CAP"; }
+    docker() { echo "HOST" >> "$CAP"; }
+    timeout() { shift; "$@"; }
+    SUNDAY_BUILD_CACHE_MAX_GB=20
+    _prune_build_cache
+' _ "$APPLY_H" "$_PWCAP" >/dev/null 2>&1 || true
+_PRUNE_WHERE="$(head -1 "$_PWCAP" 2>/dev/null)"; rm -f "$_PWCAP"
+if [ "$_PRUNE_WHERE" = "VM" ]; then
+    echo "  OK : cache prune runs inside the VM, where --max-used-space is supported"
+else
+    echo "  FAIL: cache prune targets the host legacy builder — silently no-ops ($_PRUNE_WHERE)" >&2
+    fail=1
+fi
+
+# 2. With no colima it must still work against a plain daemon.
+_PFCAP="$(mktemp)"
+/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_prune_build_cache()/,/^}/p" "$1")"
+    CAP="$2"
+    log() { :; }; warn() { :; }; _mutating() { return 0; }
+    _docker_free_gb() { echo 100; }
+    command() { return 1; }          # no colima on PATH
+    docker() { echo "HOST" >> "$CAP"; }
+    timeout() { shift; "$@"; }
+    SUNDAY_BUILD_CACHE_MAX_GB=20
+    _prune_build_cache
+' _ "$APPLY_H" "$_PFCAP" >/dev/null 2>&1 || true
+_PRUNE_FALLBACK="$(head -1 "$_PFCAP" 2>/dev/null)"; rm -f "$_PFCAP"
+if [ "$_PRUNE_FALLBACK" = "HOST" ]; then
+    echo "  OK : without colima it falls back to the local docker daemon"
+else
+    echo "  FAIL: no working prune path when colima is absent ($_PRUNE_FALLBACK)" >&2
+    fail=1
+fi
+
+# 3/4/5. The heartbeat must cover the whole run, stamp the PARENT pid, and —
+#        critically — die with the parent. A heartbeat that outlives its run
+#        would hold the guard open forever, which is worse than no guard.
+_HB="$(mktemp)"; rm -f "$_HB"
+_HB_OUT=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_start_lock_heartbeat()/,/^}/p" "$1")"
+    UPGRADE_LOCK="$2"
+    SUNDAY_LOCK_HEARTBEAT=1
+    _start_lock_heartbeat
+    sleep 2
+    [ -f "$UPGRADE_LOCK" ] && echo "STAMPED:$(cat "$UPGRADE_LOCK")" || echo "MISSING"
+    echo "HBPID=$LOCK_HEARTBEAT_PID"
+    echo "SELF=$$"
+' _ "$APPLY_H" "$_HB" 2>/dev/null || echo ERR)
+_STAMP=$(printf '%s\n' "$_HB_OUT" | /usr/bin/grep '^STAMPED:' | cut -d: -f2)
+_SELF=$(printf '%s\n' "$_HB_OUT" | /usr/bin/grep '^SELF=' | cut -d= -f2)
+if [ -n "$_STAMP" ] && [ "$_STAMP" = "$_SELF" ]; then
+    echo "  OK : the heartbeat stamps the RUN's pid, so the guard tracks the run"
+else
+    echo "  FAIL: heartbeat wrote '$_STAMP' but the run is '$_SELF' — guard tracks the wrong process" >&2
+    fail=1
+fi
+# The parent above has exited; within a couple of heartbeat intervals the child
+# must notice, drop the lock, and exit.
+sleep 3
+if [ ! -f "$_HB" ]; then
+    echo "  OK : the heartbeat dies with its run and drops the lock (fails safe)"
+else
+    echo "  FAIL: the lock outlived its run — the guard would never lapse" >&2
+    fail=1
+    rm -f "$_HB"
+fi
+
+# 6. It must actually be started, and stopped by the EXIT trap.
+if /usr/bin/grep -qE '^_start_lock_heartbeat$' "$APPLY_H" \
+   && /usr/bin/grep -q 'kill "${LOCK_HEARTBEAT_PID:-0}"' "$APPLY_H"; then
+    echo "  OK : the heartbeat is started at run start and killed by the EXIT trap"
+else
+    echo "  FAIL: heartbeat is defined but never started, or never stopped" >&2
+    fail=1
+fi
+
+# 7. REGRESSION: the EXIT trap must never run `kill 0`. Written as
+#    `kill "${LOCK_HEARTBEAT_PID:-0}"`, an unset variable does not mean "kill
+#    nothing" — it signals the ENTIRE PROCESS GROUP. On 2026-09-24 that killed
+#    this very test runner (no output, exit 144) the moment a test evaluated the
+#    real trap line. Assert behaviourally: evaluate the trap with the pid UNSET
+#    in a child process group and require the child to exit normally.
+_TRAPLINE="$(/usr/bin/grep '^trap ' "$APPLY_H" | head -1)"
+/usr/bin/env bash -c '
+    eval "$1"
+    UPGRADE_LOCK="$(mktemp)"
+    write_handoff() { :; }
+    # LOCK_HEARTBEAT_PID deliberately left unset — the dangerous case.
+    exit 0
+' _ "$_TRAPLINE" >/dev/null 2>&1
+_TRAP_RC=$?
+if [ "$_TRAP_RC" -eq 0 ]; then
+    echo "  OK : the EXIT trap never signals the whole process group (no kill 0)"
+else
+    echo "  FAIL: the EXIT trap killed its own process group (rc=$_TRAP_RC) — kill 0 hazard" >&2
+    fail=1
+fi
+
+# 8. The heartbeat must not hold its parent's stdout open. A background child
+#    inherits stdout, and a command substitution reads until EVERY writer closes
+#    — so an undetached heartbeat blocks the caller until the CHILD exits rather
+#    than until the run exits. Observed 2026-09-24: it hung a $(...) outright.
+#    Timing assertion, because grep cannot see this: with a 20s heartbeat
+#    interval, an undetached child pins the substitution for ~20s; a detached
+#    one returns at once.
+_HB_T0=$(date +%s)
+_HB_SPEED=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_start_lock_heartbeat()/,/^}/p" "$1")"
+    UPGRADE_LOCK="$2"
+    SUNDAY_LOCK_HEARTBEAT=20
+    _start_lock_heartbeat
+    echo started
+    exit 0
+' _ "$APPLY_H" "$(mktemp)" 2>/dev/null)
+_HB_ELAPSED=$(( $(date +%s) - _HB_T0 ))
+if [ "$_HB_SPEED" = "started" ] && [ "$_HB_ELAPSED" -lt 10 ]; then
+    echo "  OK : the heartbeat detaches stdio and never blocks a caller capturing output"
+else
+    echo "  FAIL: heartbeat held the caller's pipe for ${_HB_ELAPSED}s — it can hang any capture" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
