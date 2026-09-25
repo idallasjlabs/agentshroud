@@ -70,6 +70,9 @@ DRY_RUN=0
 PHASE="all"
 SOAK_SECONDS=120
 MAX_CRITICAL=""
+# Scan-integrity enforcement, set from the environment below once ENVIRONMENT is
+# known. prod: a scan that errored or scanned nothing is fatal. dev: loud warning.
+SUNDAY_SCAN_ENFORCE="${SUNDAY_SCAN_ENFORCE:-}"
 ALLOW_DIRTY=0
 ALLOW_DIRTY_BUILD=0
 # Overridable (like SUNDAY_COMPOSE_FILE/SUNDAY_CONTAINERS/SUNDAY_SCAN_IMAGES)
@@ -176,6 +179,12 @@ else
   DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
 fi
 CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
+
+# Default the scan-integrity gate from the environment unless explicitly set.
+if [ -z "$SUNDAY_SCAN_ENFORCE" ]; then
+  if [ "$ENVIRONMENT" = "prod" ]; then SUNDAY_SCAN_ENFORCE=1; else SUNDAY_SCAN_ENFORCE=0; fi
+fi
+export SUNDAY_SCAN_ENFORCE
 # hermes-v2 and voice-gateway are gated behind compose profiles ("hermes"/
 # "voice", both members of "full" — docker/docker-compose.yml:572,728) and are
 # invisible to `config`/`build`/`up` without an explicit --profile flag,
@@ -1156,6 +1165,44 @@ _container_is_up() {
   return 1
 }
 
+# True ONLY when we can prove the rollback anchor predates the config volume it
+# would be restored against.
+#
+# OpenClaw records the version that last wrote its config as
+# "lastTouchedVersion" in openclaw.json, and refuses to start when the binary is
+# older than that:
+#   Refusing to run automatic gateway startup migrations because this OpenClaw
+#   binary (2026.9.5) is older than the config last written by OpenClaw 2026.9.6.
+# Config migrations are one-way. Restoring an older IMAGE without restoring the
+# CONFIG therefore does not restore service — it produces a container that can
+# never start. Observed twice on 2026-09-24: 80 restarts, then 52.
+#
+# Deliberately conservative: it returns false whenever anything cannot be read,
+# because refusing a rollback that would have worked strands a stack that could
+# have been recovered. Only a proven downgrade blocks.
+_rollback_target_predates_config() {
+  local c="" cand anchor cfg_ver img_ver older
+  for cand in $CONTAINERS; do
+    case "$cand" in *openclaw*) c="$cand"; break ;; esac
+  done
+  [ -n "$c" ] || return 1
+
+  anchor="agentshroud-rollback/${c}:${TODAY}"
+  docker image inspect "$anchor" >/dev/null 2>&1 || return 1
+
+  cfg_ver="$(docker exec "$c" sh -c 'grep -oE "\"lastTouchedVersion\": *\"[^\"]+\"" /home/node/.openclaw/openclaw.json 2>/dev/null | head -1' 2>/dev/null \
+    | sed -E 's/.*"([^"]+)"$/\1/' || true)"
+  img_ver="$(docker run --rm --entrypoint cat "$anchor" /app/.openclaw-image-version 2>/dev/null | tr -d '[:space:]' || true)"
+  [ -n "$cfg_ver" ] && [ -n "$img_ver" ] || return 1
+  [ "$cfg_ver" = "$img_ver" ] && return 1
+
+  older="$(printf '%s\n%s\n' "$img_ver" "$cfg_ver" | sort -V | head -1)"
+  [ "$older" = "$img_ver" ] || return 1
+  ROLLBACK_BLOCK_IMG="$img_ver"
+  ROLLBACK_BLOCK_CFG="$cfg_ver"
+  return 0
+}
+
 _attempt_rollback() {
   if ! _mutating; then
     log "rollback: [dry-run] nothing was changed, nothing to roll back"
@@ -1173,6 +1220,18 @@ _attempt_rollback() {
   if ! _wait_for_docker; then
     die 50 "rollback: Docker daemon unreachable after ${SUNDAY_DOCKER_WAIT}s — rollback NOT attempted, stack state UNKNOWN. Check 'colima ssh -- docker ps' before assuming damage."
   fi
+  # Owner decision 2026-09-25: refuse rather than restore something that cannot
+  # run. A rollback that bricks the service is worse than one that declines and
+  # says so — the operator still has a running (if un-upgraded) stack to reason
+  # about, instead of a crash loop plus a "rollback completed" line.
+  if _rollback_target_predates_config; then
+    err "rollback: REFUSING to restore openclaw."
+    err "rollback: the anchor image is ${ROLLBACK_BLOCK_IMG}, but its config volume was last written by ${ROLLBACK_BLOCK_CFG}."
+    err "rollback: OpenClaw refuses to start against a config newer than the binary, so this restore would not recover service — it would leave a container that can never start (2026-09-24: 80 restarts)."
+    err "rollback: the stack has been left exactly as it is. Recover by deploying an openclaw image >= ${ROLLBACK_BLOCK_CFG}, or by restoring the config volume alongside the image."
+    die 50 "rollback REFUSED: restore target predates its own config — MANUAL INTERVENTION REQUIRED"
+  fi
+
   warn "rollback: restoring pre-upgrade state via $ROLLBACK_SH"
   if "$ROLLBACK_SH"; then
     log "rollback: completed — re-verifying restored stack"
