@@ -94,8 +94,15 @@ sunday_run_scan_gate() {
   shift 2
   local images=("$@")
 
+  # Scan INTEGRITY enforcement is separate from the --max-critical threshold.
+  # --max-critical asks "are there too many findings"; this asks the prior
+  # question, "did the scanner actually run". Owner decision 2026-09-25: prod
+  # fails closed, dev warns — prod can never ship an image nothing scanned,
+  # while a scanner outage does not halt dev iteration.
+  local enforce="${SUNDAY_SCAN_ENFORCE:-0}"
+
   if ! sunday_ensure_trivy; then
-    if [ -n "$max_critical" ]; then
+    if [ -n "$max_critical" ] || [ "$enforce" = "1" ]; then
       die 20 "trivy not installed and could not be provisioned via 'nix shell nixpkgs#trivy', but --max-critical=$max_critical was requested — cannot enforce a CVE gate without a scanner. Refusing to report a pass."
     fi
     warn "scan: trivy not installed and could not be provisioned via Nix — SKIPPED. No CVE claim can be made from this run."
@@ -161,14 +168,14 @@ sunday_run_scan_gate() {
   # when no --max-critical was requested, so a report cannot quietly describe an
   # unscanned image set as a CVE baseline.
   if [ "$failed" -gt 0 ]; then
-    if [ -n "$max_critical" ]; then
+    if [ -n "$max_critical" ] || [ "$enforce" = "1" ]; then
       die 20 "CVE gate FAILED: ${failed} image scan(s) errored — refusing to report a pass on findings the scanner never produced"
     fi
     warn "scan: ${failed} image scan(s) ERRORED (see the trivy output above). The counts below cover only the ${scanned} image(s) that actually scanned — this is NOT a complete CVE baseline."
   fi
 
   if [ "$scanned" -eq 0 ]; then
-    if [ -n "$max_critical" ]; then
+    if [ -n "$max_critical" ] || [ "$enforce" = "1" ]; then
       die 20 "CVE gate FAILED: no image could be scanned for any of: ${images[*]} — refusing to report a pass without a scanner having actually run"
     fi
     warn "scan: no image existed locally for any scan target — SKIPPED, not a real CVE baseline"

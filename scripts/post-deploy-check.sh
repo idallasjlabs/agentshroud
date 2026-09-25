@@ -157,9 +157,22 @@ if [[ -n "$HERMES_CONTAINER" ]]; then
     check "Hermes dashboard :9119 returns 200 within ${WAIT_SECS}s" \
         "$([[ "$hermes_dash_ok" == "true" ]] && echo true || echo false)"
 
+    # Probed from INSIDE the container, for the same reason the :9119 check
+    # above is: hermes binds its API to 127.0.0.1 in the container, and none of
+    # its ports are published to the host (NetworkSettings.Ports is null for
+    # 8642/9119/9120 — it runs on agentshroud-isolated). A host-side
+    # `curl localhost:8642` therefore cannot succeed no matter how healthy the
+    # API is, and on 2026-09-25 it reported "Hermes API :8642 reachable" as
+    # FAILED while the container's OWN healthcheck — curl -fsS
+    # http://127.0.0.1:8642/health, the identical URL — had it marked healthy.
+    #
+    # /health is the assertion. /v1/models is deliberately NOT a fallback: it
+    # answers 401 without credentials, so `curl -sf` fails on a perfectly
+    # working server and would only ever mask the real signal.
     hermes_api_ok=false
-    if curl -sf "http://localhost:8642/health" > /dev/null 2>&1 || \
-       curl -sf "http://localhost:8642/v1/models" > /dev/null 2>&1; then
+    if [[ -n "$HERMES_CONTAINER" ]] && \
+       docker exec "$HERMES_CONTAINER" curl -sf --max-time 5 \
+           "http://127.0.0.1:8642/health" > /dev/null 2>&1; then
         hermes_api_ok=true
     fi
     check "Hermes API :8642 reachable" \

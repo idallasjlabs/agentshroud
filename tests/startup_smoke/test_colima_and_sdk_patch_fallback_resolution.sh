@@ -1974,6 +1974,146 @@ else
     echo "  FAIL: nothing re-checks the tree before building" >&2
     fail=1
 fi
+
+echo ""
+echo "── post-deploy: probe hermes where it actually listens ──"
+
+# 2026-09-25: "FAIL: Hermes API :8642 reachable" while the container's OWN
+# healthcheck — curl -fsS http://127.0.0.1:8642/health, the identical URL — had
+# it marked healthy. hermes binds to 127.0.0.1 inside the container and
+# publishes NO ports (NetworkSettings.Ports null for 8642/9119/9120), so a
+# host-side curl can never succeed. The :9119 check in the same file had already
+# been fixed this way; :8642 was left behind.
+PDC="$REPO/scripts/post-deploy-check.sh"
+
+if /usr/bin/grep -qE 'docker exec "\$HERMES_CONTAINER" curl -sf --max-time 5 \\?$' "$PDC" \
+   || /usr/bin/awk '/hermes_api_ok=false/,/^    fi/' "$PDC" | /usr/bin/grep -q 'docker exec'; then
+    echo "  OK : the :8642 check probes from inside the container"
+else
+    echo "  FAIL: :8642 is still probed from the host, where no port is published" >&2
+    fail=1
+fi
+if ! /usr/bin/awk '/hermes_api_ok=false/,/^    fi/' "$PDC" | /usr/bin/grep -q 'localhost:8642'; then
+    echo "  OK : no host-side localhost:8642 probe remains"
+else
+    echo "  FAIL: a host-side localhost:8642 probe survives" >&2
+    fail=1
+fi
+# /v1/models answers 401 unauthenticated, so `curl -sf` fails on a healthy
+# server. Keeping it as a fallback can only mask the real signal.
+if ! /usr/bin/awk '/hermes_api_ok=false/,/^    fi/' "$PDC" | /usr/bin/grep -q 'v1/models'; then
+    echo "  OK : /v1/models is not used as a fallback (401 on a healthy server)"
+else
+    echo "  FAIL: /v1/models fallback reintroduced — it fails on a working API" >&2
+    fail=1
+fi
+
+echo ""
+echo "── CVE scan integrity: prod fails closed, dev warns ──"
+
+# Owner decision 2026-09-25. --max-critical asks "too many findings?"; this asks
+# the prior question, "did the scanner run at all?" Before today a scan that
+# errored or scanned nothing was a WARN in every environment, which is how 23
+# CRITICALs were reported as 0 for weeks.
+APPLY_G="$REPO/scripts/sunday-upgrade-apply.sh"
+SCANLIB_G="$REPO/scripts/lib/sunday-scan.sh"
+
+_enforce_for() {
+    /usr/bin/env bash -c '
+        ENVIRONMENT="$1"; SUNDAY_SCAN_ENFORCE=""
+        if [ -z "$SUNDAY_SCAN_ENFORCE" ]; then
+            if [ "$ENVIRONMENT" = "prod" ]; then SUNDAY_SCAN_ENFORCE=1; else SUNDAY_SCAN_ENFORCE=0; fi
+        fi
+        echo "$SUNDAY_SCAN_ENFORCE"
+    ' _ "$1" 2>/dev/null
+}
+if [ "$(_enforce_for prod)" = "1" ] && [ "$(_enforce_for dev)" = "0" ]; then
+    echo "  OK : prod enforces scan integrity, dev warns"
+else
+    echo "  FAIL: the prod/dev split is not what was decided" >&2
+    fail=1
+fi
+if /usr/bin/grep -qE 'if \[ "\$ENVIRONMENT" = "prod" \]; then SUNDAY_SCAN_ENFORCE=1; else SUNDAY_SCAN_ENFORCE=0; fi' "$APPLY_G"; then
+    echo "  OK : the default is derived from ENVIRONMENT, not hardcoded per-run"
+else
+    echo "  FAIL: enforcement is not wired to the environment" >&2
+    fail=1
+fi
+# All THREE integrity failures must honour it, not just one.
+# Check the line IMMEDIATELY following each branch opener. A naive "set a flag
+# then look anywhere after" scan passes as soon as ANY later branch mentions
+# enforce, so removing it from one branch still reads as present — this check
+# verified 1 of 3 until a mutation proved it.
+_G=0
+for pat in 'if ! sunday_ensure_trivy; then' 'if \[ "\$failed" -gt 0 \]; then' 'if \[ "\$scanned" -eq 0 \]; then'; do
+    if /usr/bin/awk "/$pat/{getline nxt; if (nxt ~ /enforce.*=.*\"1\"/) print \"Y\"; exit}" "$SCANLIB_G" | /usr/bin/grep -q Y; then
+        _G=$((_G+1))
+    fi
+done
+if [ "$_G" -eq 3 ]; then
+    echo "  OK : scanner-absent, scan-failed and nothing-scanned all honour it"
+else
+    echo "  FAIL: only $_G of 3 integrity failures consult the enforce flag" >&2
+    fail=1
+fi
+# It must remain overridable, so a prod incident can be worked around deliberately.
+if /usr/bin/grep -qE 'SUNDAY_SCAN_ENFORCE="\$\{SUNDAY_SCAN_ENFORCE:-\}"' "$APPLY_G"; then
+    echo "  OK : an explicit SUNDAY_SCAN_ENFORCE still overrides the default"
+else
+    echo "  FAIL: the gate cannot be overridden in an incident" >&2
+    fail=1
+fi
+
+echo ""
+echo "── rollback must not restore something that cannot start ──"
+
+# OpenClaw records the version that last wrote its config as lastTouchedVersion
+# and refuses to start when the binary is older. Config migrations are one-way,
+# so restoring an older IMAGE without the CONFIG yields a container that can
+# never start: 80 restarts on 2026-09-24, then 52 on a second attempt.
+_ver_verdict() {
+    /usr/bin/env bash -c '
+        img="$1"; cfg="$2"
+        [ "$img" = "$cfg" ] && { echo ALLOW; exit; }
+        older="$(printf "%s\n%s\n" "$img" "$cfg" | sort -V | head -1)"
+        [ "$older" = "$img" ] && echo BLOCK || echo ALLOW
+    ' _ "$1" "$2" 2>/dev/null
+}
+if [ "$(_ver_verdict 2026.9.5 2026.9.6)" = "BLOCK" ]; then
+    echo "  OK : an anchor older than its config is refused"
+else
+    echo "  FAIL: the exact 2026-09-24 brick would happen again" >&2
+    fail=1
+fi
+if [ "$(_ver_verdict 2026.9.6 2026.9.6)" = "ALLOW" ] && [ "$(_ver_verdict 2026.9.7 2026.9.6)" = "ALLOW" ]; then
+    echo "  OK : same-version and newer anchors still roll back normally"
+else
+    echo "  FAIL: ordinary rollbacks are being blocked" >&2
+    fail=1
+fi
+# sort -V, not lexical: 2026.9.6 < 2026.10.1 despite '9' > '1'.
+if [ "$(_ver_verdict 2026.9.6 2026.10.1)" = "BLOCK" ] && [ "$(_ver_verdict 2026.10.1 2026.9.6)" = "ALLOW" ]; then
+    echo "  OK : version ordering is numeric (2026.9.6 < 2026.10.1), not lexical"
+else
+    echo "  FAIL: lexical comparison would mis-order the 9-to-10 rollover" >&2
+    fail=1
+fi
+# Conservative: anything unreadable must NOT block. Refusing a rollback that
+# would have worked strands a stack that could have been recovered.
+if /usr/bin/awk '/^_rollback_target_predates_config\(\)/,/^}/' "$APPLY_G" \
+   | /usr/bin/grep -qE '\[ -n "\$cfg_ver" \] && \[ -n "\$img_ver" \] \|\| return 1'; then
+    echo "  OK : an unreadable version does not block the rollback"
+else
+    echo "  FAIL: a missing version could strand a recoverable stack" >&2
+    fail=1
+fi
+if /usr/bin/grep -qE 'if _rollback_target_predates_config; then' "$APPLY_G" \
+   && /usr/bin/grep -q 'rollback REFUSED: restore target predates its own config' "$APPLY_G"; then
+    echo "  OK : the refusal is wired into _attempt_rollback and exits 50"
+else
+    echo "  FAIL: the guard exists but rollback does not consult it" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
