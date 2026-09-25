@@ -133,6 +133,22 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
         pygments==2.20.0 \
         PyNaCl==1.6.2
 
+# 2026-09-25 Sunday upgrade: CVE-2026-63374 / GHSA-82r6-8w77-94w6 (AnyIO
+# TLSStream validates internationalized hostnames via the stdlib's IDNA 2003
+# encoding instead of IDNA 2008 — an attacker who hijacks a connection to a
+# non-ASCII domain can present a certificate for the IDNA-2003-derived ASCII
+# name and have it validate). Found by trivy image scan against
+# agentshroud/hermes:1.7.0 (anyio 4.12.1, no fixed version in that image).
+# Fixed upstream in anyio 4.14.2 (2026-07-12); floor (>=), not exact pin, per
+# the same "target the oldest fixed release, not registry latest" reasoning
+# as the tornado bump above (PyPI's actual latest is 4.15.1 as of this run;
+# 4.14.2 is the minimum that closes the advisory and carries far less
+# unrelated churn). No known conflict: anyio is a transitive dep of
+# starlette/httpx inside the hermes-agent stack, not something our own code
+# calls directly.
+RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
+        'anyio>=4.14.2'
+
 # 2026-09-02: CVE-2026-59873 (node-tar DoS via crafted gzip bomb, fixed in tar 7.5.19)
 # in the upstream image's global npm CLI (vendored tar 7.5.16 under npm's own
 # node_modules, not an app dependency). npm 12.0.2 is the first npm release that
