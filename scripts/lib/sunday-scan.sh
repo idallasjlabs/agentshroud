@@ -89,6 +89,39 @@ sunday_resolve_scan_image() {
   return 1
 }
 
+# Warn while there is still time to act. Trivy silently stops honouring an entry
+# the moment it expires, so without this an acceptance lapses as a surprise —
+# and under the current policy (dev warns, prod enforces) the surprise would
+# land in a Sunday prod window with no lead time. Daily dev runs now flag it for
+# SUNDAY_IGNORE_WARN_DAYS beforehand.
+_sunday_warn_expiring_acceptances() {
+  local file="$1" days="${SUNDAY_IGNORE_WARN_DAYS:-30}"
+  command -v python3 >/dev/null 2>&1 || return 0
+  python3 - "$file" "$days" <<'PYEOF' 2>/dev/null || true
+import sys, datetime, re
+path, days = sys.argv[1], int(sys.argv[2])
+try:
+    text = open(path, encoding="utf-8").read()
+except OSError:
+    sys.exit(0)
+today = datetime.date.today()
+# Deliberately regex, not a YAML parser: this must never be the reason a scan
+# fails, and PyYAML is not guaranteed present on the host.
+ids = re.findall(r"-\s*id:\s*(\S+)", text)
+exps = re.findall(r"expiredAt:\s*(\d{4}-\d{2}-\d{2})", text)
+for cve, exp in zip(ids, exps):
+    try:
+        d = datetime.date.fromisoformat(exp)
+    except ValueError:
+        continue
+    left = (d - today).days
+    if left < 0:
+        print(f"scan: accepted-risk entry {cve} EXPIRED {-left}d ago ({exp}) — it now counts against the gate")
+    elif left <= days:
+        print(f"scan: accepted-risk entry {cve} expires in {left}d ({exp}) — re-review before it lapses")
+PYEOF
+}
+
 sunday_run_scan_gate() {
   local scan_json="$1" max_critical="$2"
   shift 2
@@ -100,6 +133,21 @@ sunday_run_scan_gate() {
   # fails closed, dev warns — prod can never ship an image nothing scanned,
   # while a scanner outage does not halt dev iteration.
   local enforce="${SUNDAY_SCAN_ENFORCE:-0}"
+
+  # Accepted-risk register. Entries carry a justification, the arm-2 control
+  # covering the class, and an expiry that trivy honours natively — on that date
+  # the CVE counts again and the gate fails, forcing re-review instead of
+  # permanent amnesty. Two CRITICALs live here because they have no fixed
+  # version in ANY Debian release (libxml2, openssh-client): without a register
+  # a zero-CRITICAL gate could never pass and prod would be blocked forever.
+  local ignore_args=() ignore_file="${SUNDAY_IGNORE_FILE:-${REPO:-.}/.trivyignore.yaml}"
+  if [ -f "$ignore_file" ]; then
+    ignore_args=(--ignorefile "$ignore_file")
+    log "scan: applying accepted-risk register $ignore_file"
+    _sunday_warn_expiring_acceptances "$ignore_file"
+  else
+    warn "scan: no accepted-risk register at $ignore_file — findings with no upstream fix will count against the gate"
+  fi
 
   if ! sunday_ensure_trivy; then
     if [ -n "$max_critical" ] || [ "$enforce" = "1" ]; then
@@ -138,7 +186,7 @@ sunday_run_scan_gate() {
     errf="$(mktemp)"
     trc=0
     out="$("${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
-            --format json "$resolved" 2>"$errf")" || trc=$?
+            "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
     if [ "$trc" -ne 0 ] || [ -z "$out" ]; then
       failed=$((failed + 1))
       err "scan: trivy FAILED for $resolved (exit ${trc}) — this is NOT a clean result:"

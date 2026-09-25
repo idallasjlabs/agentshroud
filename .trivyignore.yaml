@@ -1,0 +1,45 @@
+# Accepted-risk register for the Sunday upgrade CVE gate.
+#
+# This is NOT an ignore list. Every entry states why the finding cannot be
+# fixed, which AgentShroud control covers the attack class (CLAUDE.md 0.05
+# "arm 2" — the vendor's patch is never the finish line), and when the
+# acceptance lapses. Trivy honours expiredAt natively: on that date the CVE
+# counts again and the gate fails, which forces a re-review rather than
+# granting permanent amnesty.
+#
+# scripts/lib/sunday-scan.sh warns daily once an entry is within
+# SUNDAY_IGNORE_WARN_DAYS (default 30) of expiry, so an acceptance never
+# lapses as a surprise during a Sunday prod window.
+#
+# To add an entry you must supply all four fields. An entry without a
+# statement or an expiry is not an accepted risk, it is an unexamined one.
+
+vulnerabilities:
+  - id: CVE-2026-6653
+    statement: >-
+      libxml2 use-after-free in xmlParseInternalSubset, reached via a crafted
+      DTD/entity in XML input. No fixed version exists in ANY Debian release as
+      of 2026-09-25 — present on both bookworm and trixie, so it cannot be
+      resolved by a base image bump or an apt upgrade.
+      arm 2: NOT YET IMPLEMENTED. The gateway has no DTD/entity control today
+      (verified 2026-09-25: no resolve_entities / forbid_dtd / defusedxml
+      anywhere in gateway/; xml_leak_filter.py filters OUTBOUND leaks and does
+      not parse untrusted input). Containment is partial and generic only —
+      container mem_limit and CPU bounds, per triage CLASS_PROFILE DOS=PARTIAL
+      0.58 — which bounds a crash but does NOT address a memory-safety bug
+      reachable from untrusted input. The control being built to close this is a
+      gateway-side rejection of DOCTYPE internal subsets and ENTITY declarations
+      in XML flowing to proxied agents, which protects any agent regardless of
+      its own libxml2 version. This acceptance is short-dated deliberately
+      because the compensating control does not exist yet.
+    expiredAt: 2026-10-27
+
+  - id: CVE-2026-60002
+    statement: >-
+      openssh-client. No fixed version exists in ANY Debian release as of
+      2026-09-25 — present on both bookworm and trixie. Reachability is limited:
+      the client is present in the image for git/ssh tooling, not exposed as a
+      listening service, and egress is allowlisted at the gateway. arm 2:
+      outbound SSH from a proxied agent is subject to the gateway's egress
+      filter and approval queue. Re-review when Debian ships a fix.
+    expiredAt: 2026-12-24
