@@ -195,8 +195,14 @@ sunday_run_scan_gate() {
       continue
     fi
     rm -f "$errf"
-    crit="$(printf '%s' "$out" | grep -o '"Severity": *"CRITICAL"' | wc -l | tr -d ' ')"
-    high="$(printf '%s' "$out" | grep -o '"Severity": *"HIGH"'     | wc -l | tr -d ' ')"
+    # grep exits 1 on zero matches (a clean image legitimately has 0 CRITICAL
+    # findings), and under this file's `set -euo pipefail` caller that would
+    # otherwise kill the whole run on the exact outcome a scan is supposed to
+    # report cleanly. `|| true` inside the group keeps the pipeline's real
+    # exit status at 0 for that case; `wc -l` still counts correctly on the
+    # resulting empty input.
+    crit="$(printf '%s' "$out" | { grep -o '"Severity": *"CRITICAL"' || true; } | wc -l | tr -d ' ')"
+    high="$(printf '%s' "$out" | { grep -o '"Severity": *"HIGH"'     || true; } | wc -l | tr -d ' ')"
     total_crit=$((total_crit + crit))
     scanned=$((scanned + 1))
     if [ "$first" -eq 1 ]; then
