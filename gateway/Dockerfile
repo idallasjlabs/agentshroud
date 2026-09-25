@@ -48,15 +48,19 @@ RUN set -eux; \
 # === falcoctl builder (SCRUM-174) ===
 # falco's release tarball bundles a falcoctl binary built with an older Go —
 # 43 HIGH Go-stdlib/module CVEs in the 0.13.0 binary it ships (2026-09-01
-# scan), while falcoctl v0.13.0 IS the latest release. Rebuild it from source
-# on the pinned patched-Go base (same play as slsa-builder above) and overlay
-# the bundled binary in the final stage. Two residuals CANNOT be overridden
-# (documented in cve-mitigation-matrix.md): docker/docker v28.5.2 (2 CVEs,
-# no fixed release) and moby/go-archive (its 0.3.0 fix removes
-# archive.Compression which the pinned docker/docker shim still calls ->
-# compile break; requires upstream falcoctl dep-tree bump, unreleased).
+# scan). Rebuild it from source on the pinned patched-Go base (same play as
+# slsa-builder above) and overlay the bundled binary in the final stage. Two
+# residuals CANNOT be overridden (documented in cve-mitigation-matrix.md):
+# docker/docker v28.5.2 (2 CVEs, no fixed release) and moby/go-archive (its
+# 0.3.0 fix removes archive.Compression which the pinned docker/docker shim
+# still calls -> compile break; requires upstream falcoctl dep-tree bump,
+# unreleased) — re-verify these two residuals still apply against 0.14.2's
+# go.mod if this build fails.
+# 2026-09-25 Sunday upgrade: 0.13.0 -> 0.14.2 (GitHub Releases latest,
+# published 2026-09-14 — the "0.13.0 IS latest" note above was accurate as of
+# the 2026-09-01 scan date but is now stale).
 FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS falcoctl-builder
-ARG FALCOCTL_VERSION=0.13.0
+ARG FALCOCTL_VERSION=0.14.2
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
     git clone --depth 1 --branch "v${FALCOCTL_VERSION}" \
