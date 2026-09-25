@@ -59,7 +59,15 @@ RUN set -eux; \
 # 2026-09-25 Sunday upgrade: 0.13.0 -> 0.14.2 (GitHub Releases latest,
 # published 2026-09-14 — the "0.13.0 IS latest" note above was accurate as of
 # the 2026-09-01 scan date but is now stale).
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS falcoctl-builder
+# 2026-09-25: build broke on the 1.26 base carried over from the 0.13.0 pin —
+# `go mod tidy` fails with "go.mod requires go >= 1.27.0 (running go 1.26.8;
+# GOTOOLCHAIN=local)". 0.14.2's own go.mod (or one of the forced -require
+# deps below, e.g. oras-go/v2@v2.6.2 or sigstore/fulcio@v1.8.6) now needs
+# 1.27. GOTOOLCHAIN=local is deliberate (no network toolchain fetch mid-build
+# — see slsa-builder above), so the base image is bumped instead of relaxing
+# that. Bumped this stage only: slsa/cosign/docker-cli builders above/below
+# still build clean on 1.26 with their own dep sets.
+FROM golang:1.27-trixie@sha256:433790e515d27dc6003e847e644cc0af956985cf315c1c58a3b73ee2dd305183 AS falcoctl-builder
 ARG FALCOCTL_VERSION=0.14.2
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
