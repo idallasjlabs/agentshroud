@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "SSH Config"
+community: "Mnemosyne — Retention Engineer"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # ssh-config.md
@@ -15,4 +15,4 @@ tags:
 - [[SSH Config]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

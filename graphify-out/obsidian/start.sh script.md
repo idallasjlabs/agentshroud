@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "start.sh"
+community: "MockValidator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/startsh
+  - community/MockValidator
 ---
 
 # start.sh script
@@ -17,4 +17,4 @@ tags:
 - [[_telegram_send_photo()]] - `calls` [EXTRACTED]
 - [[start.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/startsh
+#graphify/code #graphify/EXTRACTED #community/MockValidator

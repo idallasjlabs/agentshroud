@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # telegram_proxy.py
@@ -17,10 +17,10 @@ tags:
 - [[DelegationPrivilege]] - `imports` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
 - [[TELEGRAM_API_BASE_URL]] - `references` [INFERRED]
-- [[TelegramAPIProxy_2]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy]] - `contains` [EXTRACTED]
 - [[_OutboundScan]] - `contains` [EXTRACTED]
 - [[_ipv4_first_getaddrinfo()]] - `contains` [EXTRACTED]
 - [[_persist_groups()]] - `imports` [EXTRACTED]
@@ -33,10 +33,9 @@ tags:
 - [[format_rmfromgroup_success()]] - `imports` [EXTRACTED]
 - [[format_setmode_success()]] - `imports` [EXTRACTED]
 - [[format_unknown_group()]] - `imports` [EXTRACTED]
-- [[gateway.proxy.llm_proxy]] - `references` [EXTRACTED]
 - [[http_proxy.py]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[pause_collaborator()]] - `imports` [EXTRACTED]
@@ -49,4 +48,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

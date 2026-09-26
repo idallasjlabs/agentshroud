@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 614"
+community: "agent_isolation.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/agent_isolationpy
 ---
 
 # ssh-capability.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_614
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

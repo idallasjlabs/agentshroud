@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "setup-https-proxy.js"
+community: "telegram_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-https-proxyjs
+  - community/telegram_proxypy
 ---
 
 # setup-https-proxy shouldBypass()
@@ -14,4 +14,4 @@ tags:
 - [[.createConnection()]] - `calls` [EXTRACTED]
 - [[setup-https-proxy proxyCreateConnection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

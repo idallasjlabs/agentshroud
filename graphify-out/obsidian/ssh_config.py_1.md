@@ -1,27 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "ssh_config.py"
-location: "L10"
+community: "Docker Commands Reference"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/Docker_Commands_Reference
 ---
 
-# ssh_config.py
+# ssh_config.py.md
 
 ## Connections
-- [[Config Keys Read_8]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_9]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_8]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_50]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_9]] - `contains` [EXTRACTED]
-- [[Purpose_180]] - `contains` [EXTRACTED]
-- [[Related_54]] - `contains` [EXTRACTED]
-- [[Responsibilities_51]] - `contains` [EXTRACTED]
-- [[SSHConfig Fields]] - `contains` [EXTRACTED]
-- [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
-- [[ssh_config.py]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_configpy
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

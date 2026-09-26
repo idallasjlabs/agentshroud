@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "purge_low_value_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # test_audit_archive.py
@@ -18,7 +18,7 @@ tags:
 - [[_make_live_db()]] - `contains` [EXTRACTED]
 - [[_make_mixed_live_db()]] - `contains` [EXTRACTED]
 - [[archive_old_events()]] - `imports` [EXTRACTED]
-- [[now()_11]] - `contains` [EXTRACTED]
+- [[now()]] - `contains` [EXTRACTED]
 - [[purge_low_value_events()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

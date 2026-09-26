@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "RateLimiter"
+community: "A2APolicyEngine"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
 # test_auth_dependency_invalid_scheme()
@@ -16,4 +16,4 @@ tags:
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

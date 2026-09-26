@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "DNSForwarderProtocol"
+community: "canvas_proxy_app()"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/canvas_proxy_app
 ---
 
 # start_dns_forwarder()
@@ -17,9 +17,9 @@ tags:
 - [[DatagramTransport]] - `references` [EXTRACTED]
 - [[Start the DNS forwarding server with optional blocklist.      Returns the transp]] - `rationale_for` [EXTRACTED]
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main()_26]] - `calls` [EXTRACTED]
+- [[main()_12]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

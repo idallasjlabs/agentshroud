@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "sunday-upgrade.sh"
+community: "DraftEntry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/DraftEntry
 ---
 
 # sunday-upgrade.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

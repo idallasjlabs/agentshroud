@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "document"
-community: "AgentShroud Sequence Diagrams"
+community: "TestForwardEndpoint"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams
+  - community/TestForwardEndpoint
 ---
 
 # sequence-diagrams.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams
+#graphify/document #graphify/EXTRACTED #community/TestForwardEndpoint

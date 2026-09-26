@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/statusline.sh"
 type: "code"
-community: "statusline.sh"
+community: "SecureBrowser security-policies.md — threat mode"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/statuslinesh
+  - community/SecureBrowser_security-policiesmd__threat_mode
 ---
 
 # statusline.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[statusline.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/statuslinesh
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_security-policiesmd__threat_mode

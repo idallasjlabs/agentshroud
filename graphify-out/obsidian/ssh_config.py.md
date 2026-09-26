@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
-type: "document"
-community: "ssh_config.py"
+source_file: "gateway/ingest_api/ssh_config.py"
+type: "code"
+community: "TelegramAPIProxy"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/TelegramAPIProxy
 ---
 
-# ssh_config.py.md
+# ssh_config.py
 
 ## Connections
-- [[ssh_config.py_1]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `contains` [EXTRACTED]
+- [[SSHHostConfig]] - `contains` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_configpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

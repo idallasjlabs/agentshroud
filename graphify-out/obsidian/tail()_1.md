@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "cli/main.py"
-location: "L352"
+community: "SECTION 3: DRAWINGS"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/SECTION_3_DRAWINGS
 ---
 
 # tail()
 
 ## Connections
-- [[SCLClient]] - `calls` [EXTRACTED]
-- [[Stream real-time events or logs via WebSocket.]] - `rationale_for` [EXTRACTED]
-- [[_tail_ws()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
-- [[get()]] - `calls` [EXTRACTED]
+- [[.test_empty()]] - `calls` [EXTRACTED]
+- [[.test_keeps_last_n_lines()]] - `calls` [EXTRACTED]
+- [[.test_only_newlines()]] - `calls` [EXTRACTED]
+- [[.test_shorter_than_n()]] - `calls` [EXTRACTED]
+- [[.test_strips_trailing_newline()_1]] - `calls` [EXTRACTED]
+- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - `rationale_for` [EXTRACTED]
+- [[multi_host_test.py]] - `contains` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/SECTION_3_DRAWINGS

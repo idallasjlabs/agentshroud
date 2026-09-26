@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/ANNOUNCEMENT.md"
 type: "concept"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "A2AMessage"
 location: "L187-L206"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/A2AMessage
 ---
 
 # setup-wizard.html One-Click Deploy Wizard
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[One Shroud Over Every Wire (founding mantra)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/concept #graphify/EXTRACTED #community/A2AMessage

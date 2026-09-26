@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "OpenClaw Management Scripts"
+community: ".agents/skills/i-tw/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # security-audit.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/concept #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

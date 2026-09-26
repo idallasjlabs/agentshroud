@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestForwardToTelegramTimeouts"
+community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
 location: "L4493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
 ---
 
 # sendMessage and similar calls must use a 15s urlopen timeout.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_long_poll_timeout_is_15s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/rationale #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM

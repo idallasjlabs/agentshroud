@@ -1,28 +1,26 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "TestAuth"
+community: "cli/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/cli/mainpy
 ---
 
 # subagent_monitor.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]
 - [[SubagentMonitor]] - `contains` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[ToolCheckResult]] - `contains` [EXTRACTED]
-- [[egress_config.py]] - `references` [EXTRACTED]
-- [[falco_monitor.py_2]] - `references` [EXTRACTED]
-- [[gateway.security.trust_manager]] - `semantically_similar_to` [INFERRED]
+- [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

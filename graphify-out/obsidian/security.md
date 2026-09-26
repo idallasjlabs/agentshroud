@@ -1,21 +1,18 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "skill.json"
-location: "L34"
+source_file: "SECURITY.md"
+type: "document"
+community: "AgentShroud Phase Review — 2026-02-23"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
-# security
+# SECURITY.md
 
 ## Connections
-- [[auditLogging]] - `contains` [EXTRACTED]
-- [[filesystemAccess]] - `contains` [EXTRACTED]
-- [[networkAccess]] - `contains` [EXTRACTED]
-- [[requiresApproval]] - `contains` [EXTRACTED]
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

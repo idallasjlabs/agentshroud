@@ -1,18 +1,18 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
-type: "document"
-community: "Kill Switch"
-location: "L46"
+source_file: "docker/scripts/scan.sh"
+type: "code"
+community: "format_upstream_cve_alert()"
+location: "L1"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/Kill_Switch
+  - graphify/code
+  - graphify/INFERRED
+  - community/format_upstream_cve_alert
 ---
 
 # scan.sh
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[scan.sh script]] - `contains` [EXTRACTED]
+- [[security-scan.sh (unified scan dispatcher)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/code #graphify/INFERRED #community/format_upstream_cve_alert

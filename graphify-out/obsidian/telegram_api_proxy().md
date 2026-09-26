@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "BotConfig"
-location: "L4576"
+community: "gateway service (prod, sole egress point, 75-mod"
+location: "L4589"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/gateway_service_prod_sole_egress_point_75-mod
 ---
 
 # telegram_api_proxy()
@@ -19,12 +19,13 @@ tags:
 - [[BotConfig]] - `shares_data_with` [INFERRED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_10]] - `references` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `conceptually_related_to` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `calls` [EXTRACTED]
 - [[_build_telegram_token_registry()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod

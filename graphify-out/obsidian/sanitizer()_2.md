@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L47"
+community: "WebProxyConfig"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/WebProxyConfig
 ---
 
 # sanitizer()
 
 ## Connections
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

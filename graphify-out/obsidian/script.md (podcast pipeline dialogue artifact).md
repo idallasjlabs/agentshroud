@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "concept"
-community: "script.md (podcast pipeline dialogue artifact)"
+community: "i-value-stream-mapping SKILL.md (minimal stub)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/scriptmd_podcast_pipeline_dialogue_artifact
+  - community/i-value-stream-mapping_SKILLmd_minimal_stub
 ---
 
 # script.md (podcast pipeline dialogue artifact)
 
-#graphify/concept #graphify/EXTRACTED #community/scriptmd_podcast_pipeline_dialogue_artifact
+#graphify/concept #graphify/EXTRACTED #community/i-value-stream-mapping_SKILLmd_minimal_stub

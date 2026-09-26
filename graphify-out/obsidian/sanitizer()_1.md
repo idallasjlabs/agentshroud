@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_filter_xml_blocks.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "TrustManager"
-location: "L19"
+community: "KillSwitchMonitor"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/KillSwitchMonitor
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
 type: "document"
-community: "Community 1547"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1547
+  - community/AgentShroud_v120__Blue_Team_Security_Assessme
 ---
 
 # security-reviewer
 
 ## Connections
-- [[openclawagentsi-security-reviewer]] - `contains` [EXTRACTED]
+- [[i-security-reviewer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1547
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "agentshroud.yaml"
+community: "AuditStore"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/AuditStore
 ---
 
 # security section
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/document #graphify/EXTRACTED #community/AuditStore

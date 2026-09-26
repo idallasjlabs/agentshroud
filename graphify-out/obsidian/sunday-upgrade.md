@@ -1,16 +1,18 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "document"
-community: "sunday-upgrade.md"
+community: "OutputSchemaEnforcer"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/OutputSchemaEnforcer
 ---
 
 # sunday-upgrade.md
 
 ## Connections
+- [[AgentShroud Weekly Upgrade — Sunday Maintenance Run]] - `contains` [EXTRACTED]
 - [[AgentShroud-Side Remediation (Arm 2)]] - `references` [EXTRACTED]
 - [[Dev-to-Prod Handoff Contract]] - `references` [EXTRACTED]
 - [[Seven-Week No-Op Upgrade Failure (PASS reported while upgrading nothing)]] - `rationale_for` [EXTRACTED]
@@ -21,4 +23,4 @@ tags:
 - [[scriptssunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[scriptstriage-cve-mitigations.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/document #graphify/EXTRACTED #community/OutputSchemaEnforcer

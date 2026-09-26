@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "patch"
+community: "PrivacyPolicyEnforcer"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/patch
+  - community/PrivacyPolicyEnforcer
 ---
 
 # scan_type='image' is passed correctly to the trivy binary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_run_image_scan_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/patch
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

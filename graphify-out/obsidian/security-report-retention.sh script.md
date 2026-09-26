@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "format_upstream_cve_alert()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/format_upstream_cve_alert
 ---
 
 # security-report-retention.sh script
 
 ## Connections
-- [[log()_5]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[security-report-retention.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "browser-extension/package.json"
+community: "AgentShroud -- USPTO Trademark Application"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/AgentShroud_--_USPTO_Trademark_Application
 ---
 
 # testEnvironment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[jest_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "GSDL-715 (silent regression incident)"
+community: "openclaw_triage.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GSDL-715_silent_regression_incident
+  - community/openclaw_triagesh
 ---
 
 # scripts/audit_merge_regression.py
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSDL-715 (silent regression incident)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GSDL-715_silent_regression_incident
+#graphify/concept #graphify/EXTRACTED #community/openclaw_triagesh

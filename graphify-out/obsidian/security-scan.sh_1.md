@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Community 1052"
+community: "Docker Compose (infra diagram)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Docker_Compose_infra_diagram
 ---
 
 # security-scan.sh
@@ -17,6 +17,6 @@ tags:
 - [[require_tool()]] - `defines` [EXTRACTED]
 - [[security-scan.sh script_1]] - `contains` [EXTRACTED]
 - [[success()]] - `defines` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_4]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1052
+#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

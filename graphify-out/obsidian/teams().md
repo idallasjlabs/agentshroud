@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # teams()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[ProjectConfig]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

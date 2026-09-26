@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage"
+community: "Function Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
+  - community/Function_Details
 ---
 
 # security-supply-chain.md
@@ -17,4 +17,4 @@ tags:
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 - [[history-purge-plan]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
+#graphify/document #graphify/EXTRACTED #community/Function_Details

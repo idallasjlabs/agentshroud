@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "SessionManager"
 location: "L457"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/SessionManager
 ---
 
 # target_writer.close() raising after relay completes must not propagate.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/SessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Common Queries"
+community: "Skill: UX Expert (UX)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_UX_Expert_UX
 ---
 
 # session-logs
@@ -15,9 +15,9 @@ tags:
 - [[Common Queries]] - `contains` [EXTRACTED]
 - [[Fast text-only hint (low noise)]] - `contains` [EXTRACTED]
 - [[Location]] - `contains` [EXTRACTED]
-- [[Structure]] - `contains` [EXTRACTED]
-- [[Tips]] - `contains` [EXTRACTED]
-- [[Trigger]] - `contains` [EXTRACTED]
-- [[session-logsSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_227]] - `contains` [EXTRACTED]
+- [[Structure_2]] - `contains` [EXTRACTED]
+- [[Tips_4]] - `contains` [EXTRACTED]
+- [[Trigger_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

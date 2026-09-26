@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "test_alert_telegram_relay.py — AlertTelegramRela"
+community: "OTA API Header"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_alert_telegram_relaypy__AlertTelegramRela
+  - community/OTA_API_Header
 ---
 
 # test_alert_telegram_relay.py — AlertTelegramRelay tests
 
-#graphify/code #graphify/EXTRACTED #community/test_alert_telegram_relaypy__AlertTelegramRela
+#graphify/code #graphify/EXTRACTED #community/OTA_API_Header

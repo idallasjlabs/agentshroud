@@ -15,6 +15,6 @@ tags:
 - [[Request_6]] - `references` [EXTRACTED]
 - [[Serve the unified SOC web dashboard.]] - `rationale_for` [EXTRACTED]
 - [[_minimal_dashboard_html()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

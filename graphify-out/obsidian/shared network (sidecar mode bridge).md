@@ -1,11 +1,11 @@
 ---
 source_file: "docker-compose.sidecar.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "Skills by Category"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/Skills_by_Category
 ---
 
 # shared network (sidecar mode bridge)
@@ -14,4 +14,4 @@ tags:
 - [[agentshroud-gateway service (sidecar mode, optional scan)]] - `shares_data_with` [EXTRACTED]
 - [[openclaw service (sidecar mode, exposed normally)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/Skills_by_Category

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "AgentTarget"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AgentTarget
 ---
 
 # test_adversarial_ssrf_callback_bypass_attempts_over_real_http()
 
 ## Connections
 - [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `calls` [EXTRACTED]
+- [[A2AProxy]] - `calls` [EXTRACTED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
+- [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

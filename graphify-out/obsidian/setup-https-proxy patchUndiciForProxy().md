@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "setup-https-proxy patchUndiciForProxy()"
+community: "openclaw-ghsa-snapshot.json"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-https-proxy_patchUndiciForProxy
+  - community/openclaw-ghsa-snapshotjson
 ---
 
 # setup-https-proxy patchUndiciForProxy()
 
-#graphify/code #graphify/EXTRACTED #community/setup-https-proxy_patchUndiciForProxy
+#graphify/code #graphify/EXTRACTED #community/openclaw-ghsa-snapshotjson

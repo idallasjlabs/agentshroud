@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_alert_telegram_relay.py
@@ -16,7 +16,7 @@ tags:
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[_SendSpy]] - `contains` [EXTRACTED]
 - [[_alert_event()]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `contains` [EXTRACTED]
 - [[test_async_sanitizer_supported()]] - `contains` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `contains` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

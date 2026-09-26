@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/OutputSchemaEnforcer
 ---
 
 # sunday-upgrade.sh (remote-control launcher)
@@ -16,4 +16,4 @@ tags:
 - [[Sunday Upgrade Report Hermes-cron Delivery]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

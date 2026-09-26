@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: ".agents/skills/i-browser/package.json"
-location: "L7"
+community: "AgentShroud -- USPTO Trademark Application"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-browser/packagejson
+  - community/AgentShroud_--_USPTO_Trademark_Application
 ---
 
 # test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application

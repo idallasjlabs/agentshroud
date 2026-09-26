@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "FileSandbox"
-location: "L24"
+community: "TrustConfig"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/TrustConfig
 ---
 
 # strict_config()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

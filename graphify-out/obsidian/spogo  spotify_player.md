@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/spotify-player/SKILL.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+community: "browser-extension/manifest.json"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/browser-extension/manifestjson
 ---
 
 # spogo / spotify_player
 
 ## Connections
-- [[spotify-playerSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_231]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Seccomp Profiles"
+community: "diagrams/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/diagrams/READMEmd
 ---
 
 # seccomp-profiles.md
@@ -15,4 +15,4 @@ tags:
 - [[Seccomp Profiles]] - `contains` [EXTRACTED]
 - [[docker-compose.yml]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/telegram.sh"
 type: "code"
-community: "devices.sh"
+community: "Fail-Closed Outbound: pipeline exception blocks "
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/devicessh
+  - community/Fail-Closed_Outbound_pipeline_exception_blocks_
 ---
 
 # telegram.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/devicessh
+#graphify/code #graphify/EXTRACTED #community/Fail-Closed_Outbound_pipeline_exception_blocks_

@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "server.py"
+community: "test_a2a_policy.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # switch_model.sh main flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_parse_model_switch_command()]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/serverpy
+#graphify/code #graphify/INFERRED #community/test_a2a_policypy

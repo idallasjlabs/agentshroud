@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "smoke.sh Startup Smoke Runner"
+community: "graphify reference: extra exports and benchmark"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/smokesh_Startup_Smoke_Runner
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # smoke.sh Startup Smoke Runner
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh_2]] - `calls` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh_2]] - `calls` [EXTRACTED]
-- [[test_openclaw_model_provider_consistency.sh_2]] - `calls` [EXTRACTED]
-- [[test_openclaw_readiness_retry.sh_2]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `calls` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `calls` [EXTRACTED]
+- [[test_openclaw_model_provider_consistency.sh]] - `calls` [EXTRACTED]
+- [[test_openclaw_readiness_retry.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner
+#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

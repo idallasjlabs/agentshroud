@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "TestOpenAPIContract"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded S"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
 ---
 
 # test_api_contract.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenAPIContract]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "_is_stale_callback_error()"
+community: "3. Brutally Honest Self-Assessment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_stale_callback_error
+  - community/3_Brutally_Honest_Self-Assessment
 ---
 
 # telegram_egress_notify.py
@@ -17,4 +17,4 @@ tags:
 - [[_is_stale_callback_error()]] - `contains` [EXTRACTED]
 - [[_is_stale_edit_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_stale_callback_error
+#graphify/code #graphify/EXTRACTED #community/3_Brutally_Honest_Self-Assessment

@@ -1,21 +1,21 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "sunday-upgrade.sh"
+community: "DraftEntry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/DraftEntry
 ---
 
 # sunday-upgrade.sh
 
 ## Connections
-- [[PATH_2]] - `defines` [EXTRACTED]
+- [[PATH_6]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `references` [INFERRED]
 - [[sunday-upgrade-apply.sh main flow]] - `references` [EXTRACTED]
-- [[sunday-upgrade-report.sh]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade.sh script]] - `contains` [EXTRACTED]
-- [[sunday-upgrade.sh script_1]] - `contains` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

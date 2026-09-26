@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/popup.js"
 type: "code"
-community: "background.js"
+community: "SSH Capability Architecture Document"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # statusEl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[popup.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

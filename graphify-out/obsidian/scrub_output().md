@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command()"
+community: "GSDE&G Skills Reference Guide"
 location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # scrub_output()
@@ -21,4 +21,4 @@ tags:
 - [[env_guard.py]] - `contains` [EXTRACTED]
 - [[test_env_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

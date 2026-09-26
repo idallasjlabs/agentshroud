@@ -1,19 +1,27 @@
 ---
-source_file: "gateway/ingest_api/ssh_config.py"
-type: "code"
-community: "SSHProxy"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+type: "document"
+community: "Docker Commands Reference"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Docker_Commands_Reference
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[SSHConfig_2]] - `contains` [EXTRACTED]
-- [[SSHHostConfig]] - `contains` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[Config Keys Read_7]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_7]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
+- [[Purpose_118]] - `contains` [EXTRACTED]
+- [[Related_9]] - `contains` [EXTRACTED]
+- [[Responsibilities_7]] - `contains` [EXTRACTED]
+- [[SSHConfig Fields]] - `contains` [EXTRACTED]
+- [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
+- [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "TestSSRFBlocking"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/TestSSRFBlocking
 ---
 
 # stt.py
@@ -19,8 +19,7 @@ tags:
 - [[select_model_size()]] - `contains` [EXTRACTED]
 - [[server.py]] - `imports_from` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports_from` [EXTRACTED]
-- [[test_voice_gateway.py_1]] - `imports_from` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `imports` [EXTRACTED]
 - [[transcribe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking

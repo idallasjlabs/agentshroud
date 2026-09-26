@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "concept"
-community: "Constrained query-vocabulary expansion"
+community: ".complete_task()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Constrained_query-vocabulary_expansion
+  - community/complete_task
 ---
 
 # save-result Feedback Loop
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Constrained query-vocabulary expansion]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Constrained_query-vocabulary_expansion
+#graphify/concept #graphify/EXTRACTED #community/complete_task

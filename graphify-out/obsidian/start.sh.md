@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "start.sh"
+community: "MockValidator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/startsh
+  - community/MockValidator
 ---
 
 # start.sh
@@ -19,10 +19,10 @@ tags:
 - [[XDG_STATE_HOME]] - `defines` [EXTRACTED]
 - [[_email_owner()]] - `defines` [EXTRACTED]
 - [[_release_telegram_lock()]] - `defines` [EXTRACTED]
-- [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
+- [[_telegram_bot_token()]] - `defines` [EXTRACTED]
 - [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
 - [[_telegram_send()]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo()]] - `defines` [EXTRACTED]
 - [[start.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/startsh
+#graphify/code #graphify/EXTRACTED #community/MockValidator

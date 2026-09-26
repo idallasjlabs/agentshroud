@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/hermes-cron/sunday-upgrade-report.sh"
 type: "code"
-community: "sunday-upgrade.sh"
+community: "sync-version.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/sync-versionsh
 ---
 
 # sunday-upgrade-report.sh
 
 ## Connections
 - [[sunday-upgrade-report.sh script]] - `contains` [EXTRACTED]
-- [[sunday-upgrade.sh]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/code #graphify/EXTRACTED #community/sync-versionsh
