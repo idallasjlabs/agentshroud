@@ -511,6 +511,39 @@ class WebProxy:
                         }
                     )
 
+            # Dangerous XML BLOCKS rather than flags. Every other content
+            # finding here is advisory — action becomes FLAG and the body still
+            # reaches the agent — which is right for prompt-injection scoring or
+            # PII notice, where the agent can still be trusted to handle it.
+            #
+            # It is wrong here. CVE-2026-6653 is a use-after-free in libxml2's
+            # DTD parser with NO fixed version in any Debian release, so the
+            # agent's own libxml2 cannot defend itself, and a flag that still
+            # delivers the document delivers the exploit with it. Blocking is
+            # also what defusedxml does by default: forbid DTDs outright.
+            #
+            # Functionality: a document needing a DTD internal subset or entity
+            # declarations is rare in modern feeds and APIs, and
+            # block_dangerous_xml exists to downgrade this to flag-only if a
+            # legitimate source is found to need one.
+            if scan.has_dangerous_xml:
+                self._stats["dangerous_xml_blocked"] = (
+                    self._stats.get("dangerous_xml_blocked", 0) + 1
+                )
+                if getattr(self.config, "block_dangerous_xml", True):
+                    result.action = ProxyAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = (
+                        "Response contains XML DTD/entity constructs "
+                        "(CVE-2026-6653 class); blocked before reaching the agent parser"
+                    )
+                    self._stats["blocked"] += 1
+                    self._audit(
+                        "web_response_blocked_dangerous_xml",
+                        url,
+                        {"reason": result.block_reason},
+                    )
+
             result.prompt_injection_score = scan.prompt_injection_score
             result.has_prompt_injection = scan.has_prompt_injection
 

@@ -53,6 +53,7 @@ class ScanResult:
     has_pii: bool = False
     has_hidden_content: bool = False
     has_encoded_payload: bool = False
+    has_dangerous_xml: bool = False
 
     @property
     def flagged(self) -> bool:
@@ -173,6 +174,32 @@ _ZERO_WIDTH_CHARS = frozenset(
 _ZERO_WIDTH_PATTERN = re.compile("[" + "".join(re.escape(c) for c in _ZERO_WIDTH_CHARS) + "]{3,}")
 
 
+# ── Dangerous XML (CLAUDE.md 0.05 arm 2) ─────────────────────────────────────
+# A DTD *internal subset* — the "[ ... ]" block inside a DOCTYPE — is what
+# libxml2's xmlParseInternalSubset processes, and it is the reachable trigger
+# for CVE-2026-6653 (use-after-free, CVSS 9.8, no fixed version in ANY Debian
+# release as of 2026-09-25: present on bookworm AND trixie). It is also the
+# carrier for XXE and entity-expansion ("billion laughs").
+#
+# This control exists because the vendor fix does not: upgrading libxml2 is not
+# an option, so the gateway has to stop the input reaching ANY proxied agent's
+# parser, whatever that agent's own libxml2 version is. That is the whole arm-2
+# thesis — a third-party agent that never received a patch is still protected.
+#
+# Matching the construct, not a CVE signature, is deliberate: the next
+# DTD/entity parser bug is covered by the same control without a code change.
+_XML_DOCTYPE_INTERNAL_SUBSET = re.compile(
+    r"<!DOCTYPE[^>\[]*\[",  # DOCTYPE ... [  — the internal subset opener
+    re.IGNORECASE,
+)
+_XML_ENTITY_DECL = re.compile(r"<!ENTITY\s", re.IGNORECASE)
+# External DTD reference: no internal subset, but still pulls a remote DTD.
+_XML_EXTERNAL_DTD = re.compile(
+    r"<!DOCTYPE[^>]*\b(?:SYSTEM|PUBLIC)\b",
+    re.IGNORECASE,
+)
+
+
 class WebContentScanner:
     """Scan web content for prompt injection, PII, and hidden payloads.
 
@@ -224,6 +251,17 @@ class WebContentScanner:
         self._scan_zero_width(scan_content, result)
 
         # 5. PII detection in responses
+        # Any XML-ish payload, however it is labelled. Content-type is a hint
+        # from the origin and is not trustworthy, so sniff the body too.
+        _ct = content_type.lower()
+        if (
+            "xml" in _ct
+            or "svg" in _ct
+            or "<!DOCTYPE" in scan_content[:4096]
+            or scan_content.lstrip()[:5].lower() == "<?xml"
+        ):
+            self._scan_xml_dtd(scan_content, result)
+
         self._scan_pii(scan_content, result)
 
         result.scan_time_ms = (time.time() - start) * 1000
@@ -382,6 +420,39 @@ class WebContentScanner:
                 )
             )
             break  # One finding is enough
+
+    def _scan_xml_dtd(self, content: str, result: ScanResult) -> None:
+        """Detect DTD/entity constructs that drive XML parser memory-safety bugs.
+
+        Flags the *construct*, not a signature for one CVE: a DOCTYPE internal
+        subset, an ENTITY declaration, or an external DTD reference. All three
+        are inputs a well-behaved document does not need, and all three are the
+        reachable path into libxml2's DTD machinery.
+        """
+        for pattern, what in (
+            (_XML_DOCTYPE_INTERNAL_SUBSET, "DOCTYPE internal subset"),
+            (_XML_ENTITY_DECL, "ENTITY declaration"),
+            (_XML_EXTERNAL_DTD, "external DTD reference"),
+        ):
+            match = pattern.search(content)
+            if match is None:
+                continue
+            result.has_dangerous_xml = True
+            result.findings.append(
+                ContentFinding(
+                    category="dangerous_xml",
+                    severity=FindingSeverity.CRITICAL,
+                    description=(
+                        f"XML {what} detected — DTD/entity processing is the "
+                        "reachable trigger for XML parser memory-safety and "
+                        "entity-expansion flaws (e.g. CVE-2026-6653, unfixed "
+                        "in Debian) and for XXE"
+                    ),
+                    evidence=match.group(0)[:120],
+                    offset=match.start(),
+                )
+            )
+            return  # One finding is enough to act on.
 
     def _scan_pii(self, content: str, result: ScanResult) -> None:
         """Scan response content for PII."""
