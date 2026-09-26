@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
+community: "dns_filter.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/dns_filterpy
 ---
 
 # 03-session-isolation.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

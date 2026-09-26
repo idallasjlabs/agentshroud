@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used f"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # 1) REPOSITORY OVERVIEW
@@ -16,4 +16,4 @@ tags:
 - [[Primary Focus_1]] - `contains` [EXTRACTED]
 - [[Supporting Integrations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

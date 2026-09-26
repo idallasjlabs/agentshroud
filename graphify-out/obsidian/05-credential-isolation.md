@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Remediation"
+community: "wazuh_client.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/wazuh_clientpy
 ---
 
 # 05-credential-isolation.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
