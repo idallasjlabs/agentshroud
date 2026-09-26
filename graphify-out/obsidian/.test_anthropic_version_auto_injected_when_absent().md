@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # .test_anthropic_version_auto_injected_when_absent()
@@ -16,4 +16,4 @@ tags:
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 - [[anthropic-version is required on every v1messages call; the gateway adds it]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
