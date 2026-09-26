@@ -1,19 +1,14 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "script.md (podcast pipeline dialogue artifact)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/scriptmd_podcast_pipeline_dialogue_artifact
 ---
 
 # feed_hosts.py
 
-## Connections
-- [[GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…]] - `rationale_for` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
-- [[egress_config.py_3]] - `imports_from` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/scriptmd_podcast_pipeline_dialogue_artifact

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Any"
+community: "Canvas Skill"
 location: "L836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Canvas_Skill
 ---
 
 # get_fluent_bit_summary()
 
 ## Connections
-- [[Any_71]] - `references` [EXTRACTED]
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - `rationale_for` [EXTRACTED]
 - [[_is_fluent_bit_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Canvas_Skill

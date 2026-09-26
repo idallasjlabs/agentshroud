@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "rationale"
-community: "_seed_cron"
+community: "Skill: UX Expert (UX)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/Skill_UX_Expert_UX
 ---
 
 # gateway-default first-boot auto-start fix (removes stale down sentinel)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_seed_cron
+#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX

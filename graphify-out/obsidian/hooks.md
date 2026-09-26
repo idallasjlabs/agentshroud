@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/hooks.md"
 type: "document"
-community: "Community 1287"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1287
+  - community/Apple_Services_Setup_Guide
 ---
 
 # hooks.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference commit hook and native CLAUDE.md integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1287
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

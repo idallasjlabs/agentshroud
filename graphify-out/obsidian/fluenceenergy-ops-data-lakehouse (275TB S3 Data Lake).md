@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "concept"
-community: "CI/CD Pipeline Advisor (README)"
+community: "troubleshooting.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/troubleshootingmd
 ---
 
 # fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)
@@ -14,4 +14,4 @@ tags:
 - [[Code Review (CR) (SKILL)]] - `references` [EXTRACTED]
 - [[Data Validation (DATA-VAL) Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/concept #graphify/EXTRACTED #community/troubleshootingmd

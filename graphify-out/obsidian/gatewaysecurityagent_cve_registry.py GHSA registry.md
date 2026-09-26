@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh"
 type: "concept"
-community: "8. Governance Model"
+community: "Slack Channel Setup"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/8_Governance_Model
+  - community/Slack_Channel_Setup
 ---
 
 # gateway/security/agent_cve_registry.py GHSA registry
@@ -15,4 +15,4 @@ tags:
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `conceptually_related_to` [INFERRED]
 - [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/8_Governance_Model
+#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup

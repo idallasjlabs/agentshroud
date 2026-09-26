@@ -1,19 +1,17 @@
 ---
 source_file: "docker/scripts/hermes-cron-dedup.sh"
 type: "code"
-community: "Hermes Service"
+community: ".agents/skills/i-kanban/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Service
+  - community/agents/skills/i-kanban/SKILLmd
 ---
 
 # hermes-cron-dedup.sh
 
 ## Connections
-- [[Hermes Service]] - `references` [EXTRACTED]
-- [[OpenClaw cron backup 2026-08-31]] - `conceptually_related_to` [INFERRED]
 - [[hermes-cron-dedup.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Service
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-kanban/SKILLmd

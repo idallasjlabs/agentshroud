@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "concept"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "init-openclaw-config.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/init-openclaw-configsh
 ---
 
 # /i-ab merge regression audit skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/concept #graphify/EXTRACTED #community/init-openclaw-configsh

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "AgentShroud™ Brand Guidelines"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # gateway/security/skill_guard.py (SkillGuard)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skill_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

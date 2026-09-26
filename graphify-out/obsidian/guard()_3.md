@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_context_integrity.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ContextSegment"
-location: "L24"
+community: "SlackSocketClient"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/SlackSocketClient
 ---
 
 # guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_context_integrity.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "i-devsecops SKILL (stub)"
+community: "cli/__init__.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-devsecops_SKILL_stub
+  - community/cli/__init__py
 ---
 
 # i-devsecops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/i-devsecops_SKILL_stub
+#graphify/document #graphify/EXTRACTED #community/cli/__init__py

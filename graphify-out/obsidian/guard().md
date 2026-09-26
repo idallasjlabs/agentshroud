@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "SkillGuard"
-location: "L46"
+community: "test_scorecard_integrity.py"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/test_scorecard_integritypy
 ---
 
 # guard()
 
 ## Connections
-- [[SkillGuard]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

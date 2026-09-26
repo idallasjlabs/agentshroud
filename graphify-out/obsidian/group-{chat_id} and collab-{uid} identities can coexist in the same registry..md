@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # group-{chat_id} and collab-{uid} identities can coexist in the same registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_and_collab_identities_coexist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

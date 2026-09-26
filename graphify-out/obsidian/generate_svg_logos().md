@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "generate_branding_assets.py"
+community: "env_guard.py"
 location: "L492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/env_guardpy
 ---
 
 # generate_svg_logos()
@@ -15,6 +15,6 @@ tags:
 - [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - `rationale_for` [EXTRACTED]
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

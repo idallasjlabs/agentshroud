@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "cli/main.py"
-location: "L184"
+community: "api.py"
+location: "L848"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/apipy
 ---
 
 # get_logs()
 
 ## Connections
-- [[Get container logs for a service.]] - `rationale_for` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
-- [[get()]] - `calls` [EXTRACTED]
+- [[Retrieve container logs with optional filtering.]] - `rationale_for` [EXTRACTED]
+- [[_bot_service_names()]] - `calls` [EXTRACTED]
+- [[_get_engine()]] - `calls` [EXTRACTED]
+- [[_validate_service_name()]] - `calls` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/apipy

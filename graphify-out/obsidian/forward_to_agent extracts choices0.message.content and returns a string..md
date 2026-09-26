@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # forward_to_agent extracts choices[0].message.content and returns a string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openai_target_returns_content_string()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,34 +1,25 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
-type: "code"
-community: "falco_monitor.py"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+type: "document"
+community: "AgentShroud Security Verification (13-check driv"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/AgentShroud_Security_Verification_13-check_driv
 ---
 
 # falco_monitor.py
 
 ## Connections
-- [[FalcoAlertWatcher]] - `contains` [EXTRACTED]
-- [[api.py]] - `conceptually_related_to` [INFERRED]
-- [[categorize_alerts()]] - `contains` [EXTRACTED]
-- [[configure_rules()]] - `contains` [EXTRACTED]
-- [[datetime_8]] - `imports_from` [EXTRACTED]
-- [[falco-rules]] - `references` [INFERRED]
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
-- [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_alert()_1]] - `contains` [EXTRACTED]
-- [[read_alerts()_1]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py]] - `references` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `references` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[test_security_toolchain.py]] - `references` [EXTRACTED]
-- [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_22]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_42]] - `contains` [EXTRACTED]
+- [[Priority Mapping]] - `contains` [EXTRACTED]
+- [[Purpose_160]] - `contains` [EXTRACTED]
+- [[Related_46]] - `contains` [EXTRACTED]
+- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Threat Model_15]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv

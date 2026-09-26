@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L1928"
+community: "api.py"
+location: "L411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/apipy
 ---
 
 # get_config()
 
 ## Connections
-- [[.test_bot_id_returns_per_bot_config()]] - `calls` [EXTRACTED]
-- [[.test_config_none_returns_empty_dict()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_global_config()]] - `calls` [EXTRACTED]
-- [[.test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[Get current configuration.]] - `rationale_for` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
+- [[export_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/apipy

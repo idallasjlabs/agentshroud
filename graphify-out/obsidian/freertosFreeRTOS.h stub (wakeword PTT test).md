@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: "test_ptt_state.c"
+community: "A2AGovernanceProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/A2AGovernanceProxy
 ---
 
 # freertos/FreeRTOS.h stub (wakeword PTT test)
@@ -14,4 +14,4 @@ tags:
 - [[freertostask.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[test_ptt_state.c]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

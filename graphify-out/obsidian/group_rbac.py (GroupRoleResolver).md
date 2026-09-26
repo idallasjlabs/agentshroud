@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # group_rbac.py (GroupRoleResolver)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_rbac.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

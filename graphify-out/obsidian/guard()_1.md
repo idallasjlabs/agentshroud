@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard_limits.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ResourceGuard"
-location: "L30"
+community: "ServiceManager"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ServiceManager
 ---
 
 # guard()
 
 ## Connections
-- [[ResourceGuard]] - `calls` [EXTRACTED]
-- [[ResourceLimits]] - `calls` [EXTRACTED]
-- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

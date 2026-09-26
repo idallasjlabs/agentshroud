@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "generate-job-schedule.py"
+community: "audio.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/audioc
 ---
 
 # generate-job-schedule.py
@@ -17,7 +17,7 @@ tags:
 - [[fmt_ts()]] - `contains` [EXTRACTED]
 - [[load_hermes_jobs()]] - `contains` [EXTRACTED]
 - [[load_openclaw_jobs()]] - `contains` [EXTRACTED]
-- [[main()_36]] - `contains` [EXTRACTED]
+- [[main()_22]] - `contains` [EXTRACTED]
 - [[render_html()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/code #graphify/EXTRACTED #community/audioc

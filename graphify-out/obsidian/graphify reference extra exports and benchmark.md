@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
+source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Apple_Services_Setup_Guide
 ---
 
 # graphify reference: extra exports and benchmark
@@ -18,6 +18,7 @@ tags:
 - [[Step 7c - GraphML export (only if --graphml flag)]] - `contains` [EXTRACTED]
 - [[Step 7d - MCP server (only if --mcp flag)]] - `contains` [EXTRACTED]
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[exports]] - `contains` [EXTRACTED]
+- [[query]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

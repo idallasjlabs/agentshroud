@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
+source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "openclaw/skills/i-icloud/scripts/calendar.js"
-location: "L7"
+community: "egress_config.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-icloud/scripts/calendarjs
+  - community/egress_configpy
 ---
 
 # https
 
 ## Connections
-- [[openclawskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/egress_configpy

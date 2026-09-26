@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "detect_runtime()"
+community: "get_trivy_summary()"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/get_trivy_summary
 ---
 
 # get_runtimes()
@@ -15,6 +15,6 @@ tags:
 - [[Get available runtimes with recommendations.]] - `rationale_for` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 - [[get_security_comparison()]] - `calls` [EXTRACTED]
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Any"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Any
 ---
 
 # graphify reference: query, path, explain
@@ -16,6 +16,6 @@ tags:
 - [[For graphify path_1]] - `contains` [EXTRACTED]
 - [[Step 0 — Constrained query expansion (REQUIRED before traversal)_1]] - `contains` [EXTRACTED]
 - [[Step 1 — Traversal_1]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[query_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Any

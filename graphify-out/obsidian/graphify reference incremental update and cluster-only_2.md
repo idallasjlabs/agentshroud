@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "TrustLevel"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/TrustLevel
 ---
 
 # graphify reference: incremental update and cluster-only
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[For --cluster-only_2]] - `contains` [EXTRACTED]
 - [[For --update (incremental re-extraction)_2]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[query_2]] - `contains` [EXTRACTED]
+- [[update_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/TrustLevel

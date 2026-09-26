@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L315"
+community: "patch"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/patch
 ---
 
 # get_egress_pending()
 
 ## Connections
-- [[.test_filters_pending_by_bot_id()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_all_pending()]] - `calls` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[Show pending egress approval requests.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/patch

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "concept"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "GroupRegistry"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/GroupRegistry
 ---
 
 # gateway-exit-diag.log Restart/Exit Telemetry
@@ -15,4 +15,4 @@ tags:
 - [[Hermes Failure Scenario Catalog (gateway crash, volume corruption, bot disconnect, dependency outage)]] - `conceptually_related_to` [INFERRED]
 - [[Prompt Weekly Hermes Stability Report]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/concept #graphify/EXTRACTED #community/GroupRegistry

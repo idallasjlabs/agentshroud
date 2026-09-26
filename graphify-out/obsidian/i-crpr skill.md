@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "/i-crpr skill"
+community: "AgentShroud Open Graph Preview Image"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community//i-crpr_skill
+  - community/AgentShroud_Open_Graph_Preview_Image
 ---
 
 # /i-crpr skill
 
-#graphify/concept #graphify/EXTRACTED #community//i-crpr_skill
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Open_Graph_Preview_Image

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/mcp-proxy-wrapper.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "mcp-proxy-wrapper.js"
-location: "L29"
+community: "Daedalus — Concept Illustrator"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # https
 
 ## Connections
-- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
+- [[calendar.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

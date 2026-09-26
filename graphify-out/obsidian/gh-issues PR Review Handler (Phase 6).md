@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "concept"
-community: "gh-issues/SKILL.md"
+community: "TestCrossBotTrustPivot"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gh-issues/SKILLmd
+  - community/TestCrossBotTrustPivot
 ---
 
 # gh-issues PR Review Handler (Phase 6)
 
 ## Connections
-- [[gh-issuesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_207]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/TestCrossBotTrustPivot

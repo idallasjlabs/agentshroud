@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[.test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

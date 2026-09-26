@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "concept"
-community: "Bear Notes"
+community: "ADR-008-progressive-trust-levels.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # grizzly CLI (Bear notes)
 
 ## Connections
-- [[bear-notesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_197]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bear_Notes
+#graphify/concept #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

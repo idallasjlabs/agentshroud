@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "graphify reference: GitHub clone and cross-repo "
+community: ".enforce_retention()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_GitHub_clone_and_cross-repo_
+  - community/enforce_retention
 ---
 
 # graphify reference: GitHub clone and cross-repo merge
 
 ## Connections
-- [[.agentsskillsgraphifyreferencesgithub-and-merge]] - `contains` [EXTRACTED]
 - [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)]] - `contains` [EXTRACTED]
+- [[github-and-merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_
+#graphify/document #graphify/EXTRACTED #community/enforce_retention

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "graphify Skill"
+community: "AgentShroud v0.8.0 — Full Security & Functionali"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/AgentShroud_v080__Full_Security__Functionali
 ---
 
 # graphify Skill
@@ -27,4 +27,4 @@ tags:
 - [[graphify Transcribe Reference]] - `references` [EXTRACTED]
 - [[graphify Update & Cluster-Only Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali

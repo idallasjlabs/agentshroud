@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "container-net-diag.sh"
+community: "Workflow (follow in order)"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Workflow_follow_in_order
 ---
 
 # http_test()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[container-net-diag.sh]] - `defines` [EXTRACTED]
 - [[container-net-diag.sh script]] - `calls` [EXTRACTED]
-- [[fail()_5]] - `calls` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
 - [[has()]] - `calls` [EXTRACTED]
-- [[pass()_4]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/Workflow_follow_in_order

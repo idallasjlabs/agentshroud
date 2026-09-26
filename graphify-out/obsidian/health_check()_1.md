@@ -1,19 +1,18 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L166"
+community: "start-agentshroud.sh"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/start-agentshroudsh
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - `rationale_for` [EXTRACTED]
-- [[TestHealthCheck]] - `calls` [EXTRACTED]
-- [[chatbotmain.py]] - `contains` [EXTRACTED]
+- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - `rationale_for` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

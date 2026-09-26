@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Any"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Any
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[For git commit hook_1]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[hooks_1]] - `contains` [EXTRACTED]
+- [[query_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Any

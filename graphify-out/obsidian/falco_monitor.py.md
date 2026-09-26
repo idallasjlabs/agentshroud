@@ -1,17 +1,33 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
-type: "document"
-community: "falco_monitor.py"
+source_file: "gateway/security/falco_monitor.py"
+type: "code"
+community: "GroupApprovalRouter"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/GroupApprovalRouter
 ---
 
-# falco_monitor.py.md
+# falco_monitor.py
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `contains` [EXTRACTED]
+- [[api.py]] - `conceptually_related_to` [INFERRED]
+- [[categorize_alerts()]] - `contains` [EXTRACTED]
+- [[configure_rules()]] - `contains` [EXTRACTED]
+- [[datetime_3]] - `imports_from` [EXTRACTED]
+- [[falco-rules]] - `references` [INFERRED]
+- [[generate_summary()_1]] - `contains` [EXTRACTED]
+- [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[parse_alert()]] - `contains` [EXTRACTED]
+- [[read_alerts()]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py]] - `references` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `references` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
+- [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "patch"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/patch
 ---
 
 # get()
@@ -15,11 +15,11 @@ tags:
 - [[_print_table()]] - `calls` [EXTRACTED]
 - [[_tail_ws()]] - `calls` [EXTRACTED]
 - [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
 - [[freeze()]] - `calls` [EXTRACTED]
-- [[get_logs()_1]] - `calls` [EXTRACTED]
-- [[restart_service()_2]] - `calls` [EXTRACTED]
-- [[stop_service()_2]] - `calls` [EXTRACTED]
-- [[tail()_1]] - `calls` [EXTRACTED]
+- [[get_logs()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
+- [[restart_service()]] - `calls` [EXTRACTED]
+- [[stop_service()]] - `calls` [EXTRACTED]
+- [[tail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/patch

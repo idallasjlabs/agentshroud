@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "get_engine()"
+community: "REPORT STRUCTURE"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_engine
+  - community/REPORT_STRUCTURE
 ---
 
 # get_engine()
@@ -19,14 +19,14 @@ tags:
 - [[.test_explicit_podman()]] - `calls` [EXTRACTED]
 - [[.test_invalid_runtime()]] - `calls` [EXTRACTED]
 - [[.test_no_runtime_available()]] - `calls` [EXTRACTED]
-- [[ContainerEngine_2]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `references` [EXTRACTED]
 - [[Return an appropriate container engine instance.      Args         preference]] - `rationale_for` [EXTRACTED]
+- [[__init__.py_8]] - `contains` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 - [[get_status()]] - `calls` [EXTRACTED]
 - [[health.py]] - `imports` [EXTRACTED]
-- [[runtime__init__.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_engine
+#graphify/code #graphify/EXTRACTED #community/REPORT_STRUCTURE

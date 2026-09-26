@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # gog
 
 ## Connections
-- [[gogSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_210]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

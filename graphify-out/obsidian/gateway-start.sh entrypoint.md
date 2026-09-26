@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/gateway-start.sh"
 type: "code"
-community: "Marvin Dev Overlay (port and subnet offsets from"
+community: "TestOutboundClassifierHelpers"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+  - community/TestOutboundClassifierHelpers
 ---
 
 # gateway-start.sh entrypoint
@@ -15,4 +15,4 @@ tags:
 - [[Wazuh Agent Service]] - `references` [EXTRACTED]
 - [[security-entrypoint.sh boot scan flow]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

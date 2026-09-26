@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "TrustLevel"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/TrustLevel
 ---
 
 # graphify reference: query, path, explain
@@ -16,6 +16,6 @@ tags:
 - [[For graphify path_2]] - `contains` [EXTRACTED]
 - [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Traversal_2]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[query_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/TrustLevel

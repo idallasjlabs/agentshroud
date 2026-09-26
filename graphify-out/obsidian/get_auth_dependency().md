@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "RateLimiter"
+community: "A2APolicyEngine"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
 # get_auth_dependency()
@@ -15,10 +15,10 @@ tags:
 - [[.check()]] - `calls` [EXTRACTED]
 - [[Factory that returns authentication dependency for FastAPI      This allows us t]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig]] - `references` [EXTRACTED]
-- [[GatewayConfig_4]] - `shares_data_with` [INFERRED]
-- [[auth.py]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `shares_data_with` [INFERRED]
+- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[ingest_apiauth.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

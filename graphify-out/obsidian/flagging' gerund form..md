@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "EgressFilterConfig"
 location: "L551"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/EgressFilterConfig
 ---
 
 # flagging' gerund form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_flagging_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

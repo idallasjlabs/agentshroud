@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "document"
-community: "agentshroud-redteam/references/steve-hay-assessm"
+community: "block_credential_read.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-redteam/references/steve-hay-assessm
+  - community/block_credential_readsh
 ---
 
 # feature-priorities
 
 ## Connections
-- [[agentshroud-redteamreferencessteve-hay-assessment]] - `contains` [EXTRACTED]
+- [[steve-hay-assessment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-redteam/references/steve-hay-assessm
+#graphify/document #graphify/EXTRACTED #community/block_credential_readsh

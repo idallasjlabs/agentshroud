@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "concept"
-community: "goplaces/SKILL.md"
+community: ".test_owner_deny_without_target_auto_selects_sin"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/goplaces/SKILLmd
+  - community/test_owner_deny_without_target_auto_selects_sin
 ---
 
 # goplaces CLI
 
 ## Connections
-- [[goplacesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_211]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/goplaces/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/test_owner_deny_without_target_auto_selects_sin

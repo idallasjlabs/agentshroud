@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SecurityEvent"
+community: "Findings & Mitigations"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/Findings__Mitigations
 ---
 
 # from_egress_attempt()
 
 ## Connections
-- [[Any_45]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityEvent
+#graphify/code #graphify/EXTRACTED #community/Findings__Mitigations

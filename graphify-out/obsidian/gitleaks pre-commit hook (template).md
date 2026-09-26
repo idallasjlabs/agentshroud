@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/templates/.pre-commit-config.yaml"
 type: "code"
-community: "Pre-commit hook strategy (framework vs manual)"
+community: "client_from_env()"
 location: "L6-11"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pre-commit_hook_strategy_framework_vs_manual
+  - community/client_from_env
 ---
 
 # gitleaks pre-commit hook (template)
@@ -16,4 +16,4 @@ tags:
 - [[Pre-commit hook strategy (framework vs manual)]] - `references` [EXTRACTED]
 - [[detect-secrets pre-commit hook (baseline-driven)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Pre-commit_hook_strategy_framework_vs_manual
+#graphify/code #graphify/INFERRED #community/client_from_env

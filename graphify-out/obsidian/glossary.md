@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "AgentShroud Project Terminology"
+community: "Blue Team Security Assessment — AgentShroud v0.8"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Project_Terminology
+  - community/Blue_Team_Security_Assessment__AgentShroud_v08
 ---
 
 # Glossary
@@ -18,4 +18,4 @@ tags:
 - [[Technical Abbreviations]] - `contains` [EXTRACTED]
 - [[glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v08

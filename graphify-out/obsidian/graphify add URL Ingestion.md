@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "concept"
-community: "/graphify add URL Ingestion"
+community: "Cron: Agentic AI Threat Intelligence"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community//graphify_add_URL_Ingestion
+  - community/Cron_Agentic_AI_Threat_Intelligence
 ---
 
 # /graphify add URL Ingestion
 
-#graphify/concept #graphify/EXTRACTED #community//graphify_add_URL_Ingestion
+#graphify/concept #graphify/EXTRACTED #community/Cron_Agentic_AI_Threat_Intelligence

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "concept"
-community: "graphify Skill"
+community: "AgentShroud v0.8.0 — Full Security & Functionali"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/AgentShroud_v080__Full_Security__Functionali
 ---
 
 # graphify MCP Stdio Server
@@ -14,4 +14,4 @@ tags:
 - [[graphify Exports & Benchmark Reference]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali

@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/requirements.txt"
 type: "concept"
-community: "Voice Gateway Service (STT/TTS WebSocket Bridge "
+community: "AgentShroud Typography Guidelines"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # faster-whisper STT Engine (Local, CPU-friendly)
@@ -14,4 +14,4 @@ tags:
 - [[Voice Gateway Python Requirements (faster-whisper, kokoro)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines
