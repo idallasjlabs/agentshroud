@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L1000"
+community: "EncryptedStore"
+location: "L1008"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/EncryptedStore
 ---
 
 # Compute resulting-status counts and gap themes from triage results.      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[summarize()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

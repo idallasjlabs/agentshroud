@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "Incident Response Playbook — AgentShroud"
+community: "AgentShroud Security Architecture"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Communication Templates
@@ -18,4 +18,4 @@ tags:
 - [[Internal Alert (Telegram)]] - `contains` [EXTRACTED]
 - [[Stakeholder Notification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

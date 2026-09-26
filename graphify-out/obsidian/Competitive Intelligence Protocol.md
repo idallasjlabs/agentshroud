@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/IDENTITY.md"
+source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "proxy_status.py"
+community: "Mnemosyne — Retention Engineer"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Competitive Intelligence Protocol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

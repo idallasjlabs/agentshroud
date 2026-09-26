@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Add information filtering to prevent agent self-"
-location: "L60"
+community: "dns_filter.py"
+location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-
+  - community/dns_filterpy
 ---
 
 # Constraints
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

@@ -1,25 +1,17 @@
 ---
-source_file: "docs/runbooks/troubleshooting.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "troubleshooting.md"
-location: "L5"
+community: "Kill Switch"
+location: "L642"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/Kill_Switch
 ---
 
 # Common Issues
 
 ## Connections
-- [[Bot Not Responding to Telegram Messages]] - `contains` [EXTRACTED]
-- [[Container Keeps Restarting]] - `contains` [EXTRACTED]
-- [[Dashboard Not Loading]] - `contains` [EXTRACTED]
-- [[Kill Switch Won't Deactivate]] - `contains` [EXTRACTED]
-- [[PII Sanitizer Blocking Legitimate Content]] - `contains` [EXTRACTED]
-- [[SSH Command Approval Stuck]] - `contains` [EXTRACTED]
-- [[Tailscale Serve Not Working]] - `contains` [EXTRACTED]
-- [[Tests Failing]] - `contains` [EXTRACTED]
-- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

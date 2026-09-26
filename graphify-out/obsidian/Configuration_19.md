@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "EgressFilter"
-location: "L70"
+community: "Mnemosyne — Retention Engineer"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Configuration
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[7. Deployment]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

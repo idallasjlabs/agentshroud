@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # Configuration for compliance audit export functionality.
 
 ## Connections
-- [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
+- [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

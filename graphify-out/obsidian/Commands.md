@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
-type: "document"
-community: "Common Queries"
-location: "L8"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "2. Security Value Audit"
+location: "L46"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/2_Security_Value_Audit
 ---
 
 # Commands
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/code #graphify/EXTRACTED #community/2_Security_Value_Audit

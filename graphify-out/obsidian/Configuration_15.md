@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L83"
+community: "AgentShroud Security Assessment — v0.8.0"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # Configuration
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

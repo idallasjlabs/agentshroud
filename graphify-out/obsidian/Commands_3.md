@@ -1,17 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "main.rs"
-location: "L57"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+type: "document"
+community: "Skill: UX Expert (UX)"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Skill_UX_Expert_UX
 ---
 
 # Commands
 
 ## Connections
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

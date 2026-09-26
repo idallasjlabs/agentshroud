@@ -1,17 +1,22 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Bear Notes"
-location: "L42"
+community: "AgentShroud Branding Assets Index"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Common Commands
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[Capture Output]] - `contains` [EXTRACTED]
+- [[List Sessions]] - `contains` [EXTRACTED]
+- [[Send Keys]] - `contains` [EXTRACTED]
+- [[Session Management]] - `contains` [EXTRACTED]
+- [[WindowPane Navigation]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

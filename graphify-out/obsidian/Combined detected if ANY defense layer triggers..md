@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "_any_detector_fires()"
+community: "BotConfig"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/BotConfig
 ---
 
 # Combined: detected if ANY defense layer triggers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_any_detector_fires()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

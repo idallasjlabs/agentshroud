@@ -1,18 +1,19 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Telegram Channel Setup"
-location: "L76"
+community: "iCloud Services"
+location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Channel_Setup
+  - community/iCloud_Services
 ---
 
 # Collaborators
 
 ## Connections
-- [[Collaborators]] - `conceptually_related_to` [EXTRACTED]
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Collaborator Session Isolation (blocked functionsskills)]] - `semantically_similar_to` [INFERRED]
+- [[Collaborators_2]] - `conceptually_related_to` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

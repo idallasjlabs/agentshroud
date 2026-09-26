@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Path"
+community: "Skill: Branding Specialist (BS)"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Compute the deploy plan without mutating the filesystem.      Pure with respect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_deploy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

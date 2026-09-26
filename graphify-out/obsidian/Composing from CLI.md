@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language"
+community: "TestPerAgentUpstreamChecks"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # Composing from CLI
@@ -19,4 +19,4 @@ tags:
 - [[Reply (opens editor with quoted message)]] - `contains` [EXTRACTED]
 - [[Send from stdin]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

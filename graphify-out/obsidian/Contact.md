@@ -1,17 +1,18 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L37"
+community: "AgentShroud Incident Response Plan"
+location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Contact
 
 ## Connections
-- [[Trademark Notice_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

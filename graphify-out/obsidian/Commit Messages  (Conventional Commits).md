@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+community: "multi_host_test.py"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/multi_host_testpy
 ---
 
 # Commit Messages  (Conventional Commits)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/multi_host_testpy

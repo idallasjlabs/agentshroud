@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L194"
+community: "AgentShroud Changelog"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AgentShroud_Changelog
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
-- [[Mitigation]] - `contains` [EXTRACTED]
-- [[Negative]] - `contains` [EXTRACTED]
-- [[Positive]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Mitigation Strategies]] - `contains` [EXTRACTED]
+- [[Negative Consequences]] - `contains` [EXTRACTED]
+- [[Positive Consequences]] - `contains` [EXTRACTED]
+- [[Risk Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCPServerConfig"
+community: "GitGuard"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/GitGuard
 ---
 
 # Configuration for an MCP server.
 
 ## Connections
-- [[MCPServerConfig_2]] - `rationale_for` [EXTRACTED]
+- [[MCPServerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Troubleshooting Common Issues"
-location: "L598"
+community: "discover_upstream_versions.py"
+location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_Common_Issues
+  - community/discover_upstream_versionspy
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues
+#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy

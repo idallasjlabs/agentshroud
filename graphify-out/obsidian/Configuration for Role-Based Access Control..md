@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # Configuration for Role-Based Access Control.
 
 ## Connections
-- [[RBACConfig_2]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L148"
+community: "Goal: Codex is a secondary/tertiary agent used f"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
 ---
 
 # Configuration
 
 ## Connections
-- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
-- [[Environment variables]] - `contains` [EXTRACTED]
-- [[Header pass-through policy]] - `contains` [EXTRACTED]
-- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
+- [[Key Thresholds]] - `contains` [EXTRACTED]
+- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
+- [[Owner Exemption]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f

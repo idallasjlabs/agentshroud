@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "document"
-community: "engine.py"
+community: "test_subagent_governance.py"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/enginepy
+  - community/test_subagent_governancepy
 ---
 
 # ContainerEngine._run(cmd, check, capture, timeout)
 
 ## Connections
-- [[Function Details_51]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/enginepy
+#graphify/document #graphify/EXTRACTED #community/test_subagent_governancepy

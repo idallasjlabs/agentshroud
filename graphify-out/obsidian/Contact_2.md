@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "AgentShroud — Collaborator Knowledge Base"
-location: "L48"
+community: "Message Composition with MML (MIME Meta Language"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Collaborator_Knowledge_Base
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # Contact
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

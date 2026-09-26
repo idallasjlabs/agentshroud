@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Implement gateway-level outbound information fil"
-location: "L383"
+community: "TestBotIdIsolationInSharedMemory"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_fil
+  - community/TestBotIdIsolationInSharedMemory
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil
+#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "MCPAuditTrail"
+community: "brand-guidelines.md"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/brand-guidelinesmd
 ---
 
 # Compute hash chain values. Returns (content_hash, chain_hash).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compute_chain_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/rationale #graphify/EXTRACTED #community/brand-guidelinesmd

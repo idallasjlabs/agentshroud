@@ -1,17 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "main.rs"
-location: "L46"
+source_file: "docs/user-guide.md"
+type: "document"
+community: "Skill: Mindmap Architect (MM)"
+location: "L38"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Commands
 
 ## Connections
-- [[Cli]] - `references` [EXTRACTED]
+- [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

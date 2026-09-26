@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+community: "TestEmailSend"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/TestEmailSend
 ---
 
 # Collaborators (Advisory — Read-Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/TestEmailSend

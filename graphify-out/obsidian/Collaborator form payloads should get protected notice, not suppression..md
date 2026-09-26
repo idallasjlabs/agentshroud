@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "scanner_integration.py"
 location: "L2056"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/scanner_integrationpy
 ---
 
 # Collaborator form payloads should get protected notice, not suppression.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_urlencoded_collaborator_no_reply_gets_protected_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

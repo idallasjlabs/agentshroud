@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "iCloud Services"
-location: "L125"
+community: "Skill: Project Management (PM)"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Skill_Project_Management_PM
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Decision_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

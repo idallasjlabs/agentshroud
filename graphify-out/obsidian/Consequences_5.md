@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
-location: "L33"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Mitigation_1]] - `contains` [EXTRACTED]
-- [[Negative Consequences_4]] - `contains` [EXTRACTED]
-- [[Positive Consequences_4]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Mitigation_2]] - `contains` [EXTRACTED]
+- [[Negative]] - `contains` [EXTRACTED]
+- [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

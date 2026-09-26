@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L184"
+community: "LVGL KAWAII FACE"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

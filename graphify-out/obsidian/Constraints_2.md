@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
-location: "L244"
+community: "AgentShroud — Collaborator Knowledge Base"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

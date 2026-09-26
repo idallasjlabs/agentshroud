@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "iCloud Services"
-location: "L125"
+community: "generate-job-schedule.py"
+location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/generate-job-schedulepy
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/generate-job-schedulepy

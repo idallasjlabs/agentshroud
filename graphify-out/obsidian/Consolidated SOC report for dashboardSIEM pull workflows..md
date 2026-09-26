@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "test_dashboard.py"
-location: "L2353"
+community: "TestCollaboratorPromptClassifiers"
+location: "L2366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Consolidated SOC report for dashboard/SIEM pull workflows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Cron: AgentShroud Daily Check-in"
 location: "L1287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Cron_AgentShroud_Daily_Check-in
 ---
 
 # Collaborators should not receive telegram user-id enrollment leakage text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Cron_AgentShroud_Daily_Check-in

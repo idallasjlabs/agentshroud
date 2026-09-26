@@ -1,22 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L56"
+community: "ADR-008-progressive-trust-levels.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Common Commands
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
-- [[CompleteDelete]] - `contains` [EXTRACTED]
-- [[Create Reminders]] - `contains` [EXTRACTED]
-- [[Manage Lists]] - `contains` [EXTRACTED]
-- [[Output Formats_1]] - `contains` [EXTRACTED]
-- [[View Reminders]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

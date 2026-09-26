@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Function Details"
-location: "L82"
+community: "Layer-by-Layer Breakdown"
+location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[key_vault.py_1]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

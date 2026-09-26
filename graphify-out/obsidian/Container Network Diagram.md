@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Network Topology"
+community: ".get_or_create_session()"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/get_or_create_session
 ---
 
 # Container Network Diagram
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Network Topology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_Topology
+#graphify/document #graphify/EXTRACTED #community/get_or_create_session

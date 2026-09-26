@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # ConfigIntegrityMonitor
 
 ## Connections
-- [[.__init__()_98]] - `method` [EXTRACTED]
+- [[.__init__()_63]] - `method` [EXTRACTED]
 - [[._hash_file()]] - `method` [EXTRACTED]
 - [[._load_baseline()]] - `method` [EXTRACTED]
 - [[._save_baseline()]] - `method` [EXTRACTED]
-- [[.check()_3]] - `method` [EXTRACTED]
+- [[.check()_2]] - `method` [EXTRACTED]
 - [[.format_alert_text()]] - `method` [EXTRACTED]
 - [[.reset_baseline()]] - `method` [EXTRACTED]
 - [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - `rationale_for` [EXTRACTED]
 - [[config_integrity.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_added_file_is_detected()]] - `calls` [EXTRACTED]
 - [[test_baseline_advances_only_when_clean()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - `calls` [EXTRACTED]
 - [[test_unchanged_second_run_reports_no_changes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

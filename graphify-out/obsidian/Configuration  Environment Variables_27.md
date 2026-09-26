@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "config.py"
-location: "L62"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

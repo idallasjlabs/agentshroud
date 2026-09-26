@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_gmail_credential_retrieval.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "_get_gmail_app_password()"
-location: "L19"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L458"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - graphify/INFERRED
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_completed()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/code #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL

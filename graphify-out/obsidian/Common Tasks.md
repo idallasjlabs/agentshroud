@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "OpenClaw Management Scripts"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Common Tasks
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[Updating Telegram Bot Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

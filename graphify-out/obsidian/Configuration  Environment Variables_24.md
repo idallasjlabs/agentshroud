@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "mcp_config.py"
-location: "L78"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

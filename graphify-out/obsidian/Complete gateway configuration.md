@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "SSHProxy"
+community: "ModeRequest"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ModeRequest
 ---
 
 # Complete gateway configuration
 
 ## Connections
-- [[GatewayConfig_4]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

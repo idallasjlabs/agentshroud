@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 location: "L500"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # Configuration Reference
@@ -18,4 +18,4 @@ tags:
 - [[egress-config.yml - Egress Filtering]] - `contains` [EXTRACTED]
 - [[mcp-config.yml - MCP Server Registry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

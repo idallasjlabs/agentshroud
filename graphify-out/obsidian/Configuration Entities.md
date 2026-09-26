@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Himalaya Email CLI"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Configuration Entities
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[Configuration Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

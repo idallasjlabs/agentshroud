@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # ContainerSnapshot
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[.check_drift()]] - `references` [EXTRACTED]
 - [[.config_hash()]] - `method` [EXTRACTED]
-- [[.from_dict()]] - `method` [EXTRACTED]
+- [[.from_dict()_5]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `references` [EXTRACTED]
 - [[.set_baseline()]] - `references` [EXTRACTED]
-- [[.setup_method()_10]] - `calls` [EXTRACTED]
+- [[.setup_method()_30]] - `calls` [EXTRACTED]
 - [[.test_acknowledge_alert()]] - `calls` [EXTRACTED]
 - [[.test_alerts_persisted()]] - `calls` [EXTRACTED]
 - [[.test_config_hash_changes()]] - `calls` [EXTRACTED]
@@ -36,13 +36,13 @@ tags:
 - [[.test_removed_capability()]] - `calls` [EXTRACTED]
 - [[.test_seccomp_drift()]] - `calls` [EXTRACTED]
 - [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
-- [[.to_dict()_5]] - `method` [EXTRACTED]
+- [[.to_dict()_8]] - `method` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -65,16 +65,16 @@ tags:
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[drift_detector.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EncryptedStore
+#graphify/code #graphify/INFERRED #community/lifespanpy

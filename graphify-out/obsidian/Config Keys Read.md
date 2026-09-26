@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "models.py"
-location: "L82"
+community: "validate_network_security()"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/validate_network_security
 ---
 
 # Config Keys Read
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/validate_network_security

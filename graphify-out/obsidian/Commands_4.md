@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Weather Skill"
+community: "Findings"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/Findings
 ---
 
 # Commands
@@ -18,4 +18,4 @@ tags:
 - [[Format Options]] - `contains` [EXTRACTED]
 - [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/Findings

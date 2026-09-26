@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "OpenSCAP"
-location: "L22"
+community: "ADR-008-progressive-trust-levels.md"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Configuration
 
 ## Connections
-- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

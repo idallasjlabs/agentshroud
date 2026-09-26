@@ -1,47 +1,19 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ContainerInfo"
-location: "L17"
+community: "GatewayEmailService"
+location: "L127"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContainerInfo
+  - community/GatewayEmailService
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[.ps()_2]] - `references` [EXTRACTED]
-- [[.test_defaults()]] - `calls` [EXTRACTED]
-- [[.test_with_data()]] - `calls` [EXTRACTED]
-- [[Any_48]] - `uses` [INFERRED]
-- [[Any_47]] - `uses` [INFERRED]
-- [[Any_38]] - `uses` [INFERRED]
-- [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
-- [[ContainerInfo_1]] - `uses` [INFERRED]
+- [[.ps()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
 - [[ContainerInfo_2]] - `uses` [INFERRED]
-- [[DockerEngine]] - `uses` [INFERRED]
-- [[Lightweight container metadata returned by psinspect.]] - `rationale_for` [EXTRACTED]
-- [[PodmanEngine]] - `uses` [INFERRED]
-- [[TestAppleContainerEngine]] - `uses` [INFERRED]
-- [[TestComposeGenerator]] - `uses` [INFERRED]
-- [[TestConfigRoundTrip]] - `uses` [INFERRED]
-- [[TestContainerInfo]] - `uses` [INFERRED]
-- [[TestDetectRuntime]] - `uses` [INFERRED]
-- [[TestDockerEngine]] - `uses` [INFERRED]
-- [[TestGetEngine_1]] - `uses` [INFERRED]
-- [[TestInstallerAPI]] - `uses` [INFERRED]
-- [[TestManagementPage]] - `uses` [INFERRED]
-- [[TestPodmanEngine]] - `uses` [INFERRED]
-- [[TestRuntimeConfig]] - `uses` [INFERRED]
-- [[TestSecurityFeatures]] - `uses` [INFERRED]
-- [[TestWebAPI]] - `uses` [INFERRED]
-- [[apple_engine.py]] - `imports` [EXTRACTED]
-- [[docker_engine.py]] - `imports` [EXTRACTED]
-- [[engine.py]] - `contains` [EXTRACTED]
-- [[podman_engine.py]] - `imports` [EXTRACTED]
-- [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContainerInfo
+#graphify/code #graphify/INFERRED #community/GatewayEmailService

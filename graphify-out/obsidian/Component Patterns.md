@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Coding Agent (bash-first)"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Coding_Agent_bash-first
 ---
 
 # Component Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Navigation]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

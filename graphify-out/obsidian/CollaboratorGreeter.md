@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "CollaboratorGreeter"
+community: "Validation Runner Specialist"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/Validation_Runner_Specialist
 ---
 
 # CollaboratorGreeter
 
 ## Connections
-- [[.__init__()_75]] - `method` [EXTRACTED]
+- [[.__init__()_19]] - `method` [EXTRACTED]
 - [[._get_client()]] - `method` [EXTRACTED]
 - [[._load_state()]] - `method` [EXTRACTED]
 - [[._load_taglines()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - `rationale_for` [EXTRACTED]
 - [[_make_greeter()]] - `calls` [EXTRACTED]
 - [[collaborator_greeter.py]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[test_caption_length_clamped()]] - `calls` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `imports` [EXTRACTED]
 - [[test_get_client_creates_own_when_not_injected()]] - `calls` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_persist_state_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/Validation_Runner_Specialist

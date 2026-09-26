@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "AgentShroud Access Control Matrix"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Configuration for :class:`DataExfilVolumeGuard`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataExfilVolumeConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
+community: "SOCWebSocketHandler"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/SOCWebSocketHandler
 ---
 
 # Common Validation Commands
@@ -17,4 +17,4 @@ tags:
 - [[Quick Checks]] - `contains` [EXTRACTED]
 - [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler

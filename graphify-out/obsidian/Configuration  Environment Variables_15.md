@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "docker_engine.py"
-location: "L64"
+community: "🎯 High-Value Features (Justify the Effort)"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker_enginepy
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker_enginepy
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

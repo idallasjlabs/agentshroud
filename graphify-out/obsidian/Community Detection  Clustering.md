@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Community Detection / Clustering"
+community: "docker-compose.agentshroud-bot.marvin.yml (dev h"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_Detection_/_Clustering
+  - community/docker-composeagentshroud-botmarvinyml_dev_h
 ---
 
 # Community Detection / Clustering
 
-#graphify/concept #graphify/EXTRACTED #community/Community_Detection_/_Clustering
+#graphify/concept #graphify/EXTRACTED #community/docker-composeagentshroud-botmarvinyml_dev_h

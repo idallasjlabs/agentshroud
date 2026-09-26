@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "rationale"
-community: "Claude Code skill catalog (59 skills)"
+community: "Atlas — Curriculum Architect"
 location: "Common Mistakes to Avoid"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Configure each tool natively (no config copying)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tool comparison matrix (config format  agents  skills  hooks)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

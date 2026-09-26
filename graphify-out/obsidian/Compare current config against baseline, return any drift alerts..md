@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # Compare current config against baseline, return any drift alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_drift()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

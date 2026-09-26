@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "75 Security Modules"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/75_Security_Modules
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # Content & Context Guards
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/75_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

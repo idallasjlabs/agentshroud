@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Phase Review: P0 — Core Pipeline Wiring"
-location: "L192"
+community: "Multi-Agent Role Matrix"
+location: "L652"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Conclusion
 
 ## Connections
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "_build_image_targets()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/_build_image_targets
 ---
 
 # Components (to be implemented in Week 2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/_build_image_targets

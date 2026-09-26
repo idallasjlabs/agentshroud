@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Container-Image CVE Domain (our own images)
@@ -16,4 +16,4 @@ tags:
 - [[Transitive-Dependency Security Floors]] - `conceptually_related_to` [INFERRED]
 - [[slsa-verifier From-Source Dependency Override]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/concept #graphify/EXTRACTED #community/pick_latest_hermes_tag

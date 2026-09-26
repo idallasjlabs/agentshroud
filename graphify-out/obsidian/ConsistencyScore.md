@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "ConsistencyScore"
+community: "Deliverables"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsistencyScore
+  - community/Deliverables
 ---
 
 # ConsistencyScore
@@ -16,4 +16,4 @@ tags:
 - [[Heuristic consistency score between a query and its response.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsistencyScore
+#graphify/code #graphify/EXTRACTED #community/Deliverables

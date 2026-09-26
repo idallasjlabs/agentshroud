@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "iMessage Integration Status"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/iMessage_Integration_Status
 ---
 
 # Comparison: Three Deployment Options
@@ -17,4 +17,4 @@ tags:
 - [[Option 2 OpenClaw in Basic Docker Container]] - `contains` [EXTRACTED]
 - [[Option 3 AgentShroud (Current Architecture)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Make gateway source code, config, and security p"
-location: "L266"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_p
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Constraints
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

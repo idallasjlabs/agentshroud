@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L73"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Migration from ADR-002]] - `contains` [EXTRACTED]
-- [[Negative Consequences_1]] - `contains` [EXTRACTED]
-- [[Positive Consequences_1]] - `contains` [EXTRACTED]
+- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
+- [[Mitigation]] - `contains` [EXTRACTED]
+- [[Negative Consequences_2]] - `contains` [EXTRACTED]
+- [[Positive Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

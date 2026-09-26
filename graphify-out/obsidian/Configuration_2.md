@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L495"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

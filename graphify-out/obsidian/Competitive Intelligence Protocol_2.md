@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/agents/openclaw-identity.md"
+source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "auth.py"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
 ---
 
 # Competitive Intelligence Protocol
 
 ## Connections
-- [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
 - [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
-- [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_

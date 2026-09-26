@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "PromptGuard"
-location: "L89"
+community: "check-vendor-compat.sh"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/check-vendor-compatsh
 ---
 
 # Configuration
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

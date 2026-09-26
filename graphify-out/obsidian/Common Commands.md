@@ -1,22 +1,22 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "tmux Session Control"
-location: "L39"
+community: "Backup & Restore Runbook — AgentShroud"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # Common Commands
 
 ## Connections
-- [[Capture Output]] - `contains` [EXTRACTED]
-- [[List Sessions]] - `contains` [EXTRACTED]
-- [[Send Keys]] - `contains` [EXTRACTED]
-- [[Session Management]] - `contains` [EXTRACTED]
-- [[WindowPane Navigation]] - `contains` [EXTRACTED]
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
+- [[CompleteDelete]] - `contains` [EXTRACTED]
+- [[Create Reminders]] - `contains` [EXTRACTED]
+- [[Manage Lists]] - `contains` [EXTRACTED]
+- [[Output Formats]] - `contains` [EXTRACTED]
+- [[View Reminders]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

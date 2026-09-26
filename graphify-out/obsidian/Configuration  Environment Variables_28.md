@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "forwarder.py"
-location: "L49"
+community: "ANTHROPIC_BASE_URL"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwarderpy
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwarderpy
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

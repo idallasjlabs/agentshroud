@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "SSH Config"
-location: "L191"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Deployment]] - `contains` [EXTRACTED]
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SSH Config]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

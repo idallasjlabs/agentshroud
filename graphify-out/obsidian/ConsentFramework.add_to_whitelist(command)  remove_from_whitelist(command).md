@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "TestKeyRotationManager"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/TestKeyRotationManager
 ---
 
 # ConsentFramework.add_to_whitelist(command) / remove_from_whitelist(command)
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/TestKeyRotationManager

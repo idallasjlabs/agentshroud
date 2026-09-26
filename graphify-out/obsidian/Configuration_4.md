@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "iCloud Services"
-location: "L125"
+community: "OpenClaw Workspace Usage Guide"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

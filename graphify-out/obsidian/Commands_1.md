@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
-type: "document"
-community: "AgentShroud User Guide"
-location: "L38"
+source_file: "cli/src/main.rs"
+type: "code"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L57"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Commands
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # Configuration for the HTTP forwarder.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwarderConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
