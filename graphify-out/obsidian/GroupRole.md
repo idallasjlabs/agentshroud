@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # GroupRole
@@ -17,15 +17,19 @@ tags:
 - [[.get_role()]] - `references` [EXTRACTED]
 - [[.rank()]] - `method` [EXTRACTED]
 - [[.set_role()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - `rationale_for` [EXTRACTED]
 - [[TestGroupRoleProperties]] - `uses` [INFERRED]
 - [[TestGroupRoleResolver]] - `uses` [INFERRED]
 - [[TestMemberGroupContext]] - `uses` [INFERRED]
 - [[TestOwnerGroupContext]] - `uses` [INFERRED]
 - [[TestReadOnlyMemberGroupContext]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[ToolRateLimit]] - `uses` [INFERRED]
 - [[group_rbac.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
+- [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

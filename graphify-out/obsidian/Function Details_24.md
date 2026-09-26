@@ -1,24 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Function Details"
-location: "L37"
+community: "1Password Vault Sharing Instructions"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/1Password_Vault_Sharing_Instructions
 ---
 
 # Function Details
 
 ## Connections
-- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
-- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
-- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
-- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
+- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
+- [[podman_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions

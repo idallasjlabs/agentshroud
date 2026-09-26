@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "version_routes.py"
-location: "L37"
+community: "Deployment Runbook — AgentShroud"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Function Details
 
 ## Connections
-- [[downgrade_version(request)]] - `contains` [EXTRACTED]
-- [[get_version_history()_1]] - `contains` [EXTRACTED]
-- [[rollback_version(request)]] - `contains` [EXTRACTED]
-- [[upgrade_version(request)]] - `contains` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

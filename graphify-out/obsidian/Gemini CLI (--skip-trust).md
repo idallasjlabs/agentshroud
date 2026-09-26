@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Hermes Dev Workflow (HDEV) Skill"
+community: "TestUserMemoryWriteACL"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/TestUserMemoryWriteACL
 ---
 
 # Gemini CLI (--skip-trust)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/concept #graphify/EXTRACTED #community/TestUserMemoryWriteACL

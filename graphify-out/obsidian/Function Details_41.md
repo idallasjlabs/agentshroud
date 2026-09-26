@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L37"
+community: "Socrates — Dialogue Architect"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Function Details
 
 ## Connections
-- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
-- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
-- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
-- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[detect_base64_payloads(text)]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[normalize_input(text)]] - `contains` [EXTRACTED]
+- [[strip_markdown_exfil(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

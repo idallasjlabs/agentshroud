@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: ".decide()"
+community: "A2APeer"
 location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/decide
+  - community/A2APeer
 ---
 
 # Get all pending (not expired, not decided) items          First expires any stal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_pending()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/decide
+#graphify/rationale #graphify/EXTRACTED #community/A2APeer

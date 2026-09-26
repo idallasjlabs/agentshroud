@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "GroupRegistry"
+community: "MiddlewareManager"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRegistry
+  - community/MiddlewareManager
 ---
 
 # GroupRegistry
@@ -31,10 +31,10 @@ tags:
 - [[.test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[.test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord]] - `uses` [INFERRED]
 - [[Manages user groups including auto-groups and custom groups.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
@@ -42,9 +42,9 @@ tags:
 - [[TestRBACIntegration]] - `uses` [INFERRED]
 - [[TestRBACManager]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRegistry
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

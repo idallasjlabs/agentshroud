@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Architecture Overview"
+community: "PipelineAction"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Overview
+  - community/PipelineAction
 ---
 
 # Gateway Internal Layer Order
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Overview
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

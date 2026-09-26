@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "dns_filter.py"
-location: "L44"
+community: "1. Accomplishments This Phase"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/1_Accomplishments_This_Phase
 ---
 
 # Function Details
 
 ## Connections
-- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
-- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
-- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[RateLimiter.check(domain, rpm_limit)]] - `contains` [EXTRACTED]
+- [[WebProxy._audit(event_type, url, metadata)]] - `contains` [EXTRACTED]
+- [[WebProxy.check_request(url, method, headers)]] - `contains` [EXTRACTED]
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustLevel"
+community: "MemoryIntegrityMonitor"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/MemoryIntegrityMonitor
 ---
 
 # Get current trust level and score for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustLevel
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

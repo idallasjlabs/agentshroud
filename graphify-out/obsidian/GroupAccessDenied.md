@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # GroupAccessDenied
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[.resolve_workspace()]] - `calls` [EXTRACTED]
 - [[PermissionError]] - `inherits` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]
 - [[TestCrossGroupIsolation]] - `uses` [INFERRED]
 - [[TestDefensiveGuards]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

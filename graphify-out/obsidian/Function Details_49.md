@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "web_config.py"
-location: "L30"
+community: "TestNoResponseGuarantee"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/TestNoResponseGuarantee
 ---
 
 # Function Details
 
 ## Connections
-- [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
-- [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
-- [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
+- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee

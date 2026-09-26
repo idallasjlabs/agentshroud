@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "SSH Config"
+community: "Mnemosyne — Retention Engineer"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Full Configuration Example
 
 ## Connections
-- [[Configuration]] - `contains` [EXTRACTED]
+- [[Configuration_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

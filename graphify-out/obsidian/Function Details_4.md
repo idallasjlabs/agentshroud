@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L41"
+community: "test_adversarial_injection.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/test_adversarial_injectionpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
-- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
-- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
-- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
-- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
+- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
+- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
+- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
+- [[sanitize(content)]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy

@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L43"
+community: "Deploying AgentShroud on macOS (Apple Silicon / "
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
 ---
 
 # Function Details
 
 ## Connections
-- [[AlertDispatcher._send_notification(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.cleanup_seen()]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.dispatch(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.get_digest(clear)]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
+- [[health_check(target)]] - `contains` [EXTRACTED]
+- [[resolve_target(request)]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_

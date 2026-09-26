@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "3. AWS API MCP Authentication Reset"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/3_AWS_API_MCP_Authentication_Reset
 ---
 
 # Gleim Unit Mapping
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset

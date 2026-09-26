@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_session()"
+community: "KeyVaultConfig"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/KeyVaultConfig
 ---
 
 # Get existing session or create a new one for the (user_id, bot_id) pair.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_or_create_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

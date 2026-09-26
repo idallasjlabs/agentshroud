@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "security.py"
-location: "L36"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Function Details
 
 ## Connections
-- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
-- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
-- [[security.py_2]] - `contains` [EXTRACTED]
-- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
+- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

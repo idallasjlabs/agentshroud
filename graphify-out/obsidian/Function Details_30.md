@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "egress_config.py"
-location: "L40"
+community: "tmux Session Control"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/tmux_Session_Control
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(report)]] - `contains` [EXTRACTED]
+- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
+- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

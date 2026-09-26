@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "TrustManager"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/TrustManager
 ---
 
 # Get statistics about approval hardening.
 
 ## Connections
-- [[.get_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_13]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

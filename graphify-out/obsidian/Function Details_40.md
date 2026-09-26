@@ -1,21 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "log_sanitizer.py"
-location: "L37"
+community: "Security Controls"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/Security_Controls
 ---
 
 # Function Details
 
 ## Connections
-- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
-- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
-- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[calculate_overall_score(summaries)]] - `contains` [EXTRACTED]
+- [[calculate_tool_score(summary)]] - `contains` [EXTRACTED]
+- [[format_report(report)]] - `contains` [EXTRACTED]
+- [[generate_report(summaries, db_path, save_history)]] - `contains` [EXTRACTED]
+- [[get_trend(days, db_path)]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[init_db(db_path)]] - `contains` [EXTRACTED]
+- [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
+- [[score_to_grade(score)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Security_Controls

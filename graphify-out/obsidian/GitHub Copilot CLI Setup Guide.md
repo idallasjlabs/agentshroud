@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "OpenClaw Live Cron Job Index (11 jobs)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
 ---
 
 # GitHub Copilot CLI Setup Guide
@@ -17,7 +17,7 @@ tags:
 - [[Basic Usage]] - `contains` [EXTRACTED]
 - [[Built-in Default Agents]] - `contains` [EXTRACTED]
 - [[COPILOT_CLI_SETUP]] - `contains` [EXTRACTED]
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows]] - `contains` [EXTRACTED]
 - [[Configuration Files]] - `contains` [EXTRACTED]
 - [[Context Management]] - `contains` [EXTRACTED]
 - [[Custom Agents]] - `contains` [EXTRACTED]
@@ -29,6 +29,6 @@ tags:
 - [[Repository Context]] - `contains` [EXTRACTED]
 - [[Role & Restrictions]] - `contains` [EXTRACTED]
 - [[Security & Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs

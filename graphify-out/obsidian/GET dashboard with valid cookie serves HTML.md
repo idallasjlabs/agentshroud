@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 815"
+community: "Socrates — Dialogue Architect"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_815
+  - community/Socrates__Dialogue_Architect
 ---
 
 # GET /dashboard with valid cookie serves HTML
 
 ## Connections
-- [[dot-test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
+- [[.test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_815
+#graphify/rationale #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

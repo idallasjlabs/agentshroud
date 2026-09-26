@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Dependency Graph"
+community: "ModeRequest"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dependency_Graph
+  - community/ModeRequest
 ---
 
 # Gateway Module Dependencies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dependency_Graph
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

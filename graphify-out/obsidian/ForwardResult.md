@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # ForwardResult
@@ -16,4 +16,4 @@ tags:
 - [[Result of forwarding a request.]] - `rationale_for` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

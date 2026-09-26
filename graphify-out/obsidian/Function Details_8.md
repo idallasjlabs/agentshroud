@@ -1,22 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L36"
+community: "TestDNSForwarderProtocol"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/TestDNSForwarderProtocol
 ---
 
 # Function Details
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
-- [[generate_summary(report)]] - `contains` [EXTRACTED]
-- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
-- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
-- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
-- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.generate_report()]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
+- [[Query Methods]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol

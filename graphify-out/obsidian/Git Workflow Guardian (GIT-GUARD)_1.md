@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "SECTION 2: MARK INFORMATION"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/SECTION_2_MARK_INFORMATION
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_47]] - `contains` [EXTRACTED]
-- [[Related Skills_38]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_48]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_53]] - `contains` [EXTRACTED]
+- [[Related Skills_51]] - `contains` [EXTRACTED]
+- [[Usage_54]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION

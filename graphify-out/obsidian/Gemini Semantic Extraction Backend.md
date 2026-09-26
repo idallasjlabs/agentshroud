@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gemini Semantic Extraction Backend"
+community: "docker-compose.sidecar.yml — Sidecar Mode Deploy"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gemini_Semantic_Extraction_Backend
+  - community/docker-composesidecaryml__Sidecar_Mode_Deploy
 ---
 
 # Gemini Semantic Extraction Backend
 
-#graphify/concept #graphify/EXTRACTED #community/Gemini_Semantic_Extraction_Backend
+#graphify/concept #graphify/EXTRACTED #community/docker-composesidecaryml__Sidecar_Mode_Deploy

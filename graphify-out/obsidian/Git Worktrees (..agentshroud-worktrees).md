@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
+community: "v1.0.0 — \"Fortress\" (Polish + Public Release)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
+  - community/v100__Fortress_Polish__Public_Release
 ---
 
 # Git Worktrees (../agentshroud-worktrees/)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Get Shit Done (GSD) Governance Cadence]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/CI/CD_Quality_Gates_14_jobs_6_workflows
+#graphify/image #graphify/INFERRED #community/v100__Fortress_Polish__Public_Release

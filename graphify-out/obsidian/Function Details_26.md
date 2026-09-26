@@ -1,23 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "web_content_scanner.py"
-location: "L33"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Function Details
 
 ## Connections
-- [[WebContentScanner._scan_encoded_payloads(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_hidden_content(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_pii(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.generate_compose()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "url_analyzer.py"
-location: "L34"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Function Details
 
 ## Connections
-- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

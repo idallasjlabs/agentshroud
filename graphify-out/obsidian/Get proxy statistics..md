@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPServerConfig"
+community: "TestParanoidConfig"
 location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/TestParanoidConfig
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[.get_stats()_15]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig

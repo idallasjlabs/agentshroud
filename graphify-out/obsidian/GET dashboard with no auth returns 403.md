@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "TestDashboardCookieAuth"
+community: "TelegramAPIProxy"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDashboardCookieAuth
+  - community/TelegramAPIProxy
 ---
 
 # GET /dashboard with no auth returns 403
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDashboardCookieAuth
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

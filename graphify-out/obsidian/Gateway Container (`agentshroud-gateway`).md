@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "4. Environment Variables"
-location: "L17"
+community: "PipelineAction"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/PipelineAction
 ---
 
 # Gateway Container (`agentshroud-gateway`)
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[Derived (set at runtime by `config.py`)]] - `contains` [EXTRACTED]
-- [[Optional  Runtime]] - `contains` [EXTRACTED]
-- [[Required]] - `contains` [EXTRACTED]
+- [[Container Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
-location: "L141"
+community: "Pre-Deployment Checklist"
+location: "L321"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Pre-Deployment_Checklist
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[Planned Features]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

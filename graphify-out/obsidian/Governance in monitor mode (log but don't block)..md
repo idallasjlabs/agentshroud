@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "rationale"
-community: "test_subagent_governance.py"
+community: "Quick Reference — AgentShroud"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Governance in monitor mode (log but don't block).
 
 ## Connections
 - [[monitor_gov()]] - `rationale_for` [EXTRACTED]
-- [[monitor_gov()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

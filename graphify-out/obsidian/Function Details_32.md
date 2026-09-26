@@ -1,22 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "falco_monitor.py"
-location: "L38"
+community: "TestFromAuditChainEntry"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/TestFromAuditChainEntry
 ---
 
 # Function Details
 
 ## Connections
-- [[categorize_alerts(alerts)]] - `contains` [EXTRACTED]
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
-- [[generate_summary(alerts)_1]] - `contains` [EXTRACTED]
-- [[is_agentshroud_rule(rule_name)]] - `contains` [EXTRACTED]
-- [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
-- [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
+- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
+- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
+- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry

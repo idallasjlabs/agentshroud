@@ -12,6 +12,6 @@ tags:
 # Get current configuration.
 
 ## Connections
-- [[get_config()]] - `rationale_for` [EXTRACTED]
+- [[get_config()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "ledger.py"
-location: "L39"
+community: "🎯 High-Value Features (Justify the Effort)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # Function Details
 
 ## Connections
-- [[enforce_retention()]] - `contains` [EXTRACTED]
-- [[initialize()]] - `contains` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
+- [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

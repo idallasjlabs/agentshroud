@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "clamav.md"
+community: "Mode A — Single task"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamavmd
+  - community/Mode_A__Single_task
 ---
 
 # Gateway Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamavmd
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

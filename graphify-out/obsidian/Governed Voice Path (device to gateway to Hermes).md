@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Governed Voice Path (device to gateway to Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Spoken High-Risk Command Approval Pause]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/concept #graphify/EXTRACTED #community/pick_latest_hermes_tag

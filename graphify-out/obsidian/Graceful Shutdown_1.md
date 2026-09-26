@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Shutdown & Recovery"
+community: "API Keys Setup Guide"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__Recovery
+  - community/API_Keys_Setup_Guide
 ---
 
 # Graceful Shutdown
@@ -16,4 +16,4 @@ tags:
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 - [[Shutdown Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

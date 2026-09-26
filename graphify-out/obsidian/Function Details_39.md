@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "AgentShroud Security Verification (13-check driv"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/AgentShroud_Security_Verification_13-check_driv
 ---
 
 # Function Details
 
 ## Connections
-- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
-- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[categorize_alerts(alerts)]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)]] - `contains` [EXTRACTED]
+- [[is_agentshroud_rule(rule_name)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # Glibc TLS Block Allocation Fix (Container Rebuild)
@@ -14,4 +14,4 @@ tags:
 - [[Glibc TLS Incompatibility (Trillian)]] - `conceptually_related_to` [INFERRED]
 - [[RUNBOOK]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task

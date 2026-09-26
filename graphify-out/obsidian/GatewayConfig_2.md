@@ -1,23 +1,27 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "SSHProxy"
-location: "L31"
+community: "EgressPolicy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # GatewayConfig
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[ProxyResult]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[test_config()_1]] - `references` [EXTRACTED]
+- [[sanitizer()]] - `references` [EXTRACTED]
+- [[test_client()]] - `references` [EXTRACTED]
+- [[test_config()]] - `references` [EXTRACTED]
+- [[test_ledger()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/EgressPolicy

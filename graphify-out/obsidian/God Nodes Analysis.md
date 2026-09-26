@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "graphify.serve MCP stdio Server"
+community: ".test_start_control_center_script_uses_repo_rela"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphifyserve_MCP_stdio_Server
+  - community/test_start_control_center_script_uses_repo_rela
 ---
 
 # God Nodes Analysis
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify.serve MCP stdio Server]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphifyserve_MCP_stdio_Server
+#graphify/concept #graphify/EXTRACTED #community/test_start_control_center_script_uses_repo_rela

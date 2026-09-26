@@ -1,21 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "PromptGuard"
-location: "L41"
+community: "GSDE&G Development Master Checklist"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Function Details
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
-- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
+- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
+- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

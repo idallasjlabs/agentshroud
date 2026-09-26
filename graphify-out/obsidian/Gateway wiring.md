@@ -1,17 +1,17 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Browser Extension"
+community: "SECURITY_VALUE_PROPOSITION.md"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # Gateway wiring
 
 ## Connections
-- [[Structure_1]] - `contains` [EXTRACTED]
+- [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

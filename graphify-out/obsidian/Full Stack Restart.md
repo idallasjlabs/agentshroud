@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Restart Procedure"
+community: "TestScanParameterAllowlists"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/TestScanParameterAllowlists
 ---
 
 # Full Stack Restart
 
 ## Connections
-- [[Restart Procedure_1]] - `contains` [EXTRACTED]
+- [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/TestScanParameterAllowlists

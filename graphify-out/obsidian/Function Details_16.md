@@ -1,24 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "apple_engine.py"
-location: "L29"
+community: "notion"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/notion
 ---
 
 # Function Details
 
 ## Connections
-- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/notion

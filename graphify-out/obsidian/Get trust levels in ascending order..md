@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "MemoryIntegrityMonitor"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/MemoryIntegrityMonitor
 ---
 
 # Get trust levels in ascending order.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_trust_level_order()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

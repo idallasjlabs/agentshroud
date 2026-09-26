@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/CONFIGURATION_SUMMARY.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Atlas — Curriculum Architect"
 location: "Role Hierarchy"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Four-tool role hierarchy summary
@@ -16,4 +16,4 @@ tags:
 - [[Claude Code skill catalog (59 skills)]] - `references` [EXTRACTED]
 - [[Tool comparison matrix (config format  agents  skills  hooks)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

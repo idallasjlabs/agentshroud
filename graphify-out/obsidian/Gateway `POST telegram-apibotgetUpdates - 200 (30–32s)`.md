@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Known Log Messages"
+community: "Contributing to AgentShroud™"
 location: "L506"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Contributing_to_AgentShroud
 ---
 
 # Gateway: `POST /telegram-api/bot***/getUpdates -> 200 (30–32s)`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

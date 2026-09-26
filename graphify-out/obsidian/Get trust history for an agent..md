@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustManager"
+community: "MemoryIntegrityMonitor"
 location: "L424"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MemoryIntegrityMonitor
 ---
 
 # Get trust history for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "Mode A — Single task"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/Mode_A__Single_task
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -17,6 +17,6 @@ tags:
 - [[OpenClaw Integration Guide (v0.9.0)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
-- [[ingest_apimain.py]] - `implements` [EXTRACTED]
+- [[main.py_2]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

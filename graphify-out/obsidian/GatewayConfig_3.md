@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_config_hot_reloadpy
+#graphify/code #graphify/INFERRED #community/ModeRequest

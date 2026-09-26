@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: ".get_or_create_group_session()"
+community: "KeyVaultConfig"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_group_session
+  - community/KeyVaultConfig
 ---
 
 # GroupSession
@@ -16,4 +16,4 @@ tags:
 - [[Represents a shared workspace + memory for a group.]] - `rationale_for` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_group_session
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

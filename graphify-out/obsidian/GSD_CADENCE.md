@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "TestMultiBotContextvarRouting"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/TestMultiBotContextvarRouting
 ---
 
 # GSD_CADENCE.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting

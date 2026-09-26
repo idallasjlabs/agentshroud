@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "GitGuard"
+community: "LLMProxy"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GitGuard
+  - community/LLMProxy
 ---
 
 # GitGuard
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_151]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_82]] - `method` [EXTRACTED]
 - [[._analyze_file_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_file()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[.test_clean_hook_passes()]] - `calls` [EXTRACTED]
 - [[.test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
 - [[.test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[.test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_6]] - `calls` [EXTRACTED]
 - [[.test_finding_has_file_path()]] - `calls` [EXTRACTED]
 - [[.test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
 - [[.test_git_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -40,21 +40,21 @@ tags:
 - [[.test_no_git_dir_returns_empty()]] - `calls` [EXTRACTED]
 - [[.test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[.test_wget_flagged()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and analyze git hooks and package installation scripts.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestFileSandboxDefaultEnforce]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestGitGuard_1]] - `uses` [INFERRED]
+- [[TestGitGuard]] - `uses` [INFERRED]
 - [[TestGitGuardDefaultEnforce]] - `uses` [INFERRED]
 - [[TestHTTPSecurity]] - `uses` [INFERRED]
 - [[TestInfoLeakage]] - `uses` [INFERRED]
@@ -83,19 +83,19 @@ tags:
 - [[TestResourceGuardFailClosed]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[scan_repository()]] - `references` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_git_guard.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GitGuard
+#graphify/code #graphify/INFERRED #community/LLMProxy

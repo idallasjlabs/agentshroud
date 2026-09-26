@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_19]] - `contains` [EXTRACTED]
-- [[Related Skills_10]] - `contains` [EXTRACTED]
-- [[Usage_14]] - `contains` [EXTRACTED]
+- [[Purpose_11]] - `contains` [EXTRACTED]
+- [[README_11]] - `contains` [EXTRACTED]
+- [[Related Skills_11]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,18 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "engine.py"
-location: "L52"
+community: "clamav.md"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/enginepy
+  - community/clamavmd
 ---
 
 # Function Details
 
 ## Connections
-- [[ContainerEngine._run(cmd, check, capture, timeout)]] - `contains` [EXTRACTED]
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)_1]] - `contains` [EXTRACTED]
+- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - `contains` [EXTRACTED]
+- [[level_to_severity(level)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/enginepy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

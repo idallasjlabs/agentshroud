@@ -1,19 +1,18 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "Skill: Security Review (SEC)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/Skill_Security_Review_SEC
 ---
 
 # GSDE&G Development Master Checklist
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Emergency Hotfix]] - `contains` [EXTRACTED]
+- [[Emergency Hotfix_1]] - `contains` [EXTRACTED]
 - [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 2 · TDD  → `tddSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 3 · QA  → `qaSKILL.md`]] - `contains` [EXTRACTED]
@@ -22,6 +21,8 @@ tags:
 - [[Phase 6 · CI  → `cicdSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 7 · Deploy  → `psSKILL.md`]] - `contains` [EXTRACTED]
 - [[Quick Commands]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[SKILL_30]] - `contains` [EXTRACTED]
 - [[Skill Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

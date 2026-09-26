@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "Production Safety Checklist (SKILL)"
 location: "L637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Get egress attempt log, optionally filtered by agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

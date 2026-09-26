@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "._validate_network_definitions()"
+community: "AgentShroud Security Value Proposition - REVISED"
 location: "L570"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_validate_network_definitions
+  - community/AgentShroud_Security_Value_Proposition_-_REVISED
 ---
 
 # Get comprehensive network security report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_validate_network_definitions
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED

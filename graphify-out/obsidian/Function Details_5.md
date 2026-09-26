@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "encrypted_store.py"
-location: "L43"
+community: "Step-by-Step Deployment"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Step-by-Step_Deployment
 ---
 
 # Function Details
 
 ## Connections
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
-- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[downgrade_version(request)]] - `contains` [EXTRACTED]
+- [[get_version_history()_1]] - `contains` [EXTRACTED]
+- [[rollback_version(request)]] - `contains` [EXTRACTED]
+- [[upgrade_version(request)]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

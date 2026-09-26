@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "TestEgressApprovalQueue"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestEgressApprovalQueue
 ---
 
 # GroupApprovalRouter
 
 ## Connections
-- [[.__init__()_197]] - `method` [EXTRACTED]
+- [[.__init__()_4]] - `method` [EXTRACTED]
 - [[._build_group_reply_text()]] - `method` [EXTRACTED]
 - [[._build_owner_dm_text()]] - `method` [EXTRACTED]
 - [[._default_send()]] - `method` [EXTRACTED]
@@ -25,15 +25,15 @@ tags:
 - [[.test_is_group_context_false_for_default()]] - `calls` [EXTRACTED]
 - [[.test_is_group_context_true_for_group_agent_id()]] - `calls` [EXTRACTED]
 - [[.test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `uses` [INFERRED]
 - [[TestGroupApprovalOwnerDM]] - `uses` [INFERRED]
 - [[TestGroupApprovalRouterContextDetection]] - `uses` [INFERRED]
 - [[TestGroupApprovalRouterDefaultSend]] - `uses` [INFERRED]
 - [[group_router.py]] - `contains` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
+- [[router()]] - `calls` [EXTRACTED]
 - [[router_with_sent()]] - `calls` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

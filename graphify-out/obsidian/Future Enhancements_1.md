@@ -1,18 +1,22 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "SecureBrowser Security Policies"
-location: "L321"
+community: "TestIsFresh"
+location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/TestIsFresh
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Planned Features]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Priority 1 Auto-Discovery]] - `contains` [EXTRACTED]
+- [[Priority 2 Enhanced Extraction]] - `contains` [EXTRACTED]
+- [[Priority 3 Screenshot Capture]] - `contains` [EXTRACTED]
+- [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
+- [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/TestIsFresh

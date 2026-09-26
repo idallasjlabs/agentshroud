@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "concept"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "TestCVE2026_9367TerminalToolDenied"
 location: "L29-31, L69-71"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/TestCVE2026_9367TerminalToolDenied
 ---
 
 # Gateway DNS filter endpoint (port 53)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclaw service (internal network only)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/concept #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
