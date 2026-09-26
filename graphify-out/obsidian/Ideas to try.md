@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Actions"
+community: "AgentShroud Falco Detection Rules"
 location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/AgentShroud_Falco_Detection_Rules
 ---
 
 # Ideas to try
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Falco_Detection_Rules

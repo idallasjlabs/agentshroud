@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "STPA-Sec Analysis of AgentShroud"
+community: "Function Details"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STPA-Sec_Analysis_of_AgentShroud
+  - community/Function_Details
 ---
 
 # Hay, Enterprise Security Feature Priorities Assessment (2026)
@@ -15,4 +15,4 @@ tags:
 - [[Steve Hay Blue Team Assessment]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Function_Details

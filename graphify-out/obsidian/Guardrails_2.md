@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV)"
-location: "L478"
+community: "Starting a Development Task via Hermes / OpenCla"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla

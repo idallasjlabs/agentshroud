@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "test_cli_coverage.py"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/test_cli_coveragepy
 ---
 
 # Hierarchy Design — Outline First
@@ -16,4 +16,4 @@ tags:
 - [[Outline Template_1]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy

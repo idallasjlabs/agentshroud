@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L21"
+community: "Credential Management - 1Password Integration"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # How It Works
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

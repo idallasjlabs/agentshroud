@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # If the underlying session store raises, the authorized write reports         fai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_write_io_failure_returns_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

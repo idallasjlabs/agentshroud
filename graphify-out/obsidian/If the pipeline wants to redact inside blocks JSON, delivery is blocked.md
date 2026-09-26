@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "test_agent_cve_registry.py"
 location: "L659"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_agent_cve_registrypy
 ---
 
 # If the pipeline wants to redact inside blocks JSON, delivery is blocked
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_structured_field_sanitization_blocks_delivery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy

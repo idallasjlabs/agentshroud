@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
+community: "Skill: Technical Illustrator (TI)"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Hermes Agent — Connection Setup
@@ -16,9 +16,9 @@ tags:
 - [[HERMES_SETUP]] - `contains` [EXTRACTED]
 - [[Hermes OpenAI-Compatible API]] - `contains` [EXTRACTED]
 - [[Overview_16]] - `contains` [EXTRACTED]
-- [[Prerequisites_8]] - `contains` [EXTRACTED]
-- [[Security Model_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_10]] - `contains` [EXTRACTED]
+- [[Security Model]] - `contains` [EXTRACTED]
 - [[Table of Contents_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

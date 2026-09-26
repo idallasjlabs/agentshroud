@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "iMessage Integration Status"
+community: "check_command()"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/check_command
 ---
 
 # How to Fix (5 Minutes)
@@ -18,4 +18,4 @@ tags:
 - [[Step 4 Verify from Docker]] - `contains` [EXTRACTED]
 - [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/check_command

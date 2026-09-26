@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "mcp_audit.py"
-location: "L61"
+community: "test_block_credentials.py"
+location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_auditpy
+  - community/test_block_credentialspy
 ---
 
 # Hash Chain Structure
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[Block Structure]] - `contains` [EXTRACTED]
+- [[Chain Architecture]] - `contains` [EXTRACTED]
+- [[Genesis Block Specification]] - `contains` [EXTRACTED]
+- [[Hash Calculation Algorithm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_auditpy
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

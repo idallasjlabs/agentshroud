@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "§5 — Trivy Container Scan Results"
+community: "TestLifecycle"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/5__Trivy_Container_Scan_Results
+  - community/TestLifecycle
 ---
 
 # Hermes container — Not scanned
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§5 — Trivy Container Scan Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/5__Trivy_Container_Scan_Results
+#graphify/document #graphify/EXTRACTED #community/TestLifecycle

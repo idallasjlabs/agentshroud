@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # HOST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

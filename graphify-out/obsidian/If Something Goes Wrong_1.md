@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "test_dns_canvas_coverage.py"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/test_dns_canvas_coveragepy
 ---
 
 # If Something Goes Wrong
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

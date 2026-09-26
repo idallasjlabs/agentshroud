@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
+community: "Network Topology"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/Network_Topology
 ---
 
 # How to Share the Vault
@@ -17,4 +17,4 @@ tags:
 - [[Option 2 Create and Share New Vault]] - `contains` [EXTRACTED]
 - [[Option 3 Use the Bot's Private Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

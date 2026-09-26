@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/http-proxy-256x256.png"
 type: "image"
-community: "EgressFilterConfig"
+community: "chatbot/main.py"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/EgressFilterConfig
+  - community/chatbot/mainpy
 ---
 
 # HTTP Proxy Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[http_proxy.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/EgressFilterConfig
+#graphify/image #graphify/INFERRED #community/chatbot/mainpy

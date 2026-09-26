@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Step-by-Step Installation"
-location: "L385"
+community: "Apple Reminders CLI (remindctl)"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Health Check
 
 ## Connections
-- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

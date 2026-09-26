@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
+community: "AgentShroud Security Overview v0.8.0"
 location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/AgentShroud_Security_Overview_v080
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Overview_v080

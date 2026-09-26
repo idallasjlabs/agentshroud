@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestHermesEgressAllowlist"
+community: "TestAuditStore"
 location: "L457"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestHermesEgressAllowlist
+  - community/TestAuditStore
 ---
 
 # Hermes heartbeat uses hc-ping.com for dead-man's switch.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hc_ping_in_permanent_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestHermesEgressAllowlist
+#graphify/rationale #graphify/EXTRACTED #community/TestAuditStore

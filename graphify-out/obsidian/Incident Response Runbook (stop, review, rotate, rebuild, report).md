@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Incident Response Plan (stop, investigate, conta"
+community: "upgrade.sh"
 location: "L313-L349"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Incident_Response_Plan_stop_investigate_conta
+  - community/upgradesh
 ---
 
 # Incident Response Runbook (stop, review, rotate, rebuild, report)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response Plan (stop, investigate, contain, recover)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Incident_Response_Plan_stop_investigate_conta
+#graphify/document #graphify/INFERRED #community/upgradesh

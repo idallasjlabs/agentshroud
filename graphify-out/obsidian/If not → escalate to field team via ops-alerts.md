@@ -1,19 +1,19 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "TestCollaboratorPersistence"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/TestCollaboratorPersistence
 ---
 
 # If not → escalate to field team via #ops-alerts
 
 ## Connections
-- [[.agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[API  Function Reference]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)]] - `contains` [EXTRACTED]
+- [[SKILL_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

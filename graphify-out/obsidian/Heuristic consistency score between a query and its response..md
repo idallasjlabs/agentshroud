@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "ConsistencyScore"
+community: "Deliverables"
 location: "L496"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsistencyScore
+  - community/Deliverables
 ---
 
 # Heuristic consistency score between a query and its response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConsistencyScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsistencyScore
+#graphify/rationale #graphify/EXTRACTED #community/Deliverables

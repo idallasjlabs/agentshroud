@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "SOUL"
+community: "ADR-001: Transparent Proxy Decision"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOUL
+  - community/ADR-001_Transparent_Proxy_Decision
 ---
 
 # How to Represent Isaiah
 
 ## Connections
-- [[SOUL]] - `contains` [EXTRACTED]
+- [[SOUL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOUL
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Control-Plane / Data-Plane Separation"
+community: "xTaskGetTickCount()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Control-Plane_/_Data-Plane_Separation
+  - community/xTaskGetTickCount
 ---
 
 # HexStrike MCP Proxy Plan
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Control-Plane  Data-Plane Separation]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Control-Plane_/_Data-Plane_Separation
+#graphify/document #graphify/EXTRACTED #community/xTaskGetTickCount

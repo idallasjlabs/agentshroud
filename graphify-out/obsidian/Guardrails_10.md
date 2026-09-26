@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
-location: "L254"
+community: "OpenClaw Management Scripts"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

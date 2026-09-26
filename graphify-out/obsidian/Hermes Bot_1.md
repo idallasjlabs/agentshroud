@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "AgentShroud Changelog"
+community: "mcp-proxy-wrapper.js"
 location: "## [1.1.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Hermes Bot
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/concept #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

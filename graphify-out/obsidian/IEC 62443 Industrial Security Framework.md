@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "system-requirements.md"
+community: "test_dashboard_endpoints.py"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_dashboard_endpointspy
 ---
 
 # IEC 62443 Industrial Security Framework
@@ -20,4 +20,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
-location: "L226"
+community: "Skill: UI Expert (UI)"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/Skill_UI_Expert_UI
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "system-requirements.md"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_dashboard_endpointspy
 ---
 
 # HERMES_SETUP.md
@@ -20,4 +20,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy

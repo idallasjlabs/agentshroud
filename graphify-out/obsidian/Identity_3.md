@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "SOUL"
-location: "L4"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOUL
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Identity
 
 ## Connections
-- [[SOUL]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOUL
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

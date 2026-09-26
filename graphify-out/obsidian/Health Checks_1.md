@@ -1,26 +1,20 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Health Checks"
-location: "L9"
+community: "archive_old_events()"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/archive_old_events
 ---
 
-# Health Checks
+# Health Checks.md
 
 ## Connections
-- [[Approval Queue Health]] - `contains` [EXTRACTED]
-- [[Bot Health Check]] - `contains` [EXTRACTED]
-- [[Container Health Check]] - `contains` [EXTRACTED]
-- [[Gateway Health Endpoints]] - `contains` [EXTRACTED]
-- [[Health Check Intervals (Docker)]] - `contains` [EXTRACTED]
-- [[Health Checks]] - `contains` [EXTRACTED]
-- [[Ledger Health]] - `contains` [EXTRACTED]
-- [[Monitoring Script]] - `contains` [EXTRACTED]
-- [[Related Notes_50]] - `contains` [EXTRACTED]
-- [[Security Health Report]] - `contains` [EXTRACTED]
+- [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

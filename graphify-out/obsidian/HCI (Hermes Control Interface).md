@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
+community: "Skill: Technical Illustrator (TI)"
 location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # HCI (Hermes Control Interface)
@@ -18,4 +18,4 @@ tags:
 - [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 - [[Starting the HCI Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

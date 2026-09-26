@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # If an agent response contains a registered canary value, block it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_canary_token_triggers_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

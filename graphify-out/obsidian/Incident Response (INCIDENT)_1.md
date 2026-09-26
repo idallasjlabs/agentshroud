@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "TestSSRFDetection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/TestSSRFDetection
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_97]] - `contains` [EXTRACTED]
-- [[Related Skills_88]] - `contains` [EXTRACTED]
-- [[Usage_92]] - `contains` [EXTRACTED]
-- [[openclawskillsi-productionSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_98]] - `contains` [EXTRACTED]
+- [[README_103]] - `contains` [EXTRACTED]
+- [[Related Skills_107]] - `contains` [EXTRACTED]
+- [[SKILL_170]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection

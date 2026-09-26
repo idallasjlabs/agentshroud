@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 509"
+community: "llm_proxy.py"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/llm_proxypy
 ---
 
 # Implementation Strategy
@@ -18,4 +18,4 @@ tags:
 - [[Option 3 Disable Credential Commands via Telegram]] - `contains` [EXTRACTED]
 - [[Option 4 Role-Based Access Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_509
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

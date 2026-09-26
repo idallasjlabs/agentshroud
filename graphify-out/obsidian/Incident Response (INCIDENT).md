@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: "_is_stale_callback_error()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/_is_stale_callback_error
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_60]] - `contains` [EXTRACTED]
-- [[Related Skills_51]] - `contains` [EXTRACTED]
-- [[Usage_55]] - `contains` [EXTRACTED]
-- [[hermesskillsi-productionREADME]] - `contains` [EXTRACTED]
+- [[Purpose_61]] - `contains` [EXTRACTED]
+- [[README_66]] - `contains` [EXTRACTED]
+- [[Related Skills_67]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/_is_stale_callback_error

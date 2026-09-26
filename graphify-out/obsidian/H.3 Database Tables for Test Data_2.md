@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "TestParanoidConfig"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/TestParanoidConfig
 ---
 
 # H.3 Database Tables for Test Data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/TestParanoidConfig

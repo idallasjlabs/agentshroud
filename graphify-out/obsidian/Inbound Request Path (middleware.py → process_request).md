@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive "
+community: "System Audit & Documentation"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_
+  - community/System_Audit__Documentation
 ---
 
 # Inbound Request Path (middleware.py → process_request)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ CONFIRMED WIRED AND WORKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

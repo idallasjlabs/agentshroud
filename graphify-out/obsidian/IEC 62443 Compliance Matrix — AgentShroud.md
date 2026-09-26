@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "GSDE&G Development Master Checklist"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # IEC 62443 Compliance Matrix — AgentShroud
@@ -20,8 +20,8 @@ tags:
 - [[FR 6 Timely Response to Events (TRE)]] - `contains` [EXTRACTED]
 - [[FR 7 Resource Availability (RA)]] - `contains` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `contains` [EXTRACTED]
-- [[Overview_29]] - `contains` [EXTRACTED]
-- [[Summary_21]] - `contains` [EXTRACTED]
+- [[Overview_8]] - `contains` [EXTRACTED]
+- [[Summary_3]] - `contains` [EXTRACTED]
 - [[iec-62443-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

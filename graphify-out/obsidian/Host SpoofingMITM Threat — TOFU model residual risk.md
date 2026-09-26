@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "rationale"
-community: "SSH Proxy Threat Model (6 threats)"
+community: "SecureBrowser Security Policies"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Threat_Model_6_threats
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Host Spoofing/MITM Threat — TOFU model residual risk
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Proxy Threat Model (6 threats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy_Threat_Model_6_threats
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

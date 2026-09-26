@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L101"
+community: "Browser — Secure Browser Automation"
+location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Health Check
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

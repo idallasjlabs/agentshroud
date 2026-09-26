@@ -1,28 +1,20 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L50"
+community: "EncryptedStore"
+location: "L204"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - graphify/INFERRED
+  - community/EncryptedStore
 ---
 
 # HealthStatus
 
 ## Connections
-- [[Any_70]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus]] - `uses` [INFERRED]
-- [[services.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_services.py]] - `imports` [EXTRACTED]
-- [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
+- [[_engine_health_to_health()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/EncryptedStore

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "IV. System Architecture"
+community: ".connect()"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IV_System_Architecture
+  - community/connect
 ---
 
 # IV-A. Transparent Proxy Design
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IV. System Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IV_System_Architecture
+#graphify/document #graphify/EXTRACTED #community/connect

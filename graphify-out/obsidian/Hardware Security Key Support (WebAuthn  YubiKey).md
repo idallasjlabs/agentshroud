@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "A2AMessage"
 location: "L198-L217"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/A2AMessage
 ---
 
 # Hardware Security Key Support (WebAuthn / YubiKey)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Residual Risks We Accept (API key exposure, host compromise)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/concept #graphify/EXTRACTED #community/A2AMessage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "test_daily_cve_report.py"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/test_daily_cve_reportpy
 ---
 
 # HTTPConnectProxy ships with a populated default allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_default_allowed_domains_non_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

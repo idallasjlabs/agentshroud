@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "SlackAPIProxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/SlackAPIProxy
 ---
 
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[Purpose_48]] - `contains` [EXTRACTED]
-- [[Related Skills_39]] - `contains` [EXTRACTED]
-- [[Usage_43]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_49]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_54]] - `contains` [EXTRACTED]
+- [[Related Skills_52]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy

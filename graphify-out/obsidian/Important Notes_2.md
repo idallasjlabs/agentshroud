@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
-location: "L80"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
+location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/AgentShroud_v080_Watchtower__Execution_Summ
 ---
 
 # Important Notes
 
 ## Connections
-- [[Security Considerations_1]] - `contains` [EXTRACTED]
+- [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ

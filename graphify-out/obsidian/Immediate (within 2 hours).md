@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "TestStartupScannerKeying"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/TestStartupScannerKeying
 ---
 
 # Immediate (within 2 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying

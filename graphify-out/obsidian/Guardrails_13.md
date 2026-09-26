@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
-location: "L226"
+community: "Make gateway source code, config, and security p"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/Make_gateway_source_code_config_and_security_p
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p

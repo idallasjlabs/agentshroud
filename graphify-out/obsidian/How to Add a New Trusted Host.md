@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # How to Add a New Trusted Host
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Pre-populate known_hosts (recommended)]] - `contains` [EXTRACTED]
 - [[Step 5 Restart the gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

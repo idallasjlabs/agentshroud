@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "What is the symptom?"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/What_is_the_symptom
 ---
 
 # In-Scope Departments (Cost Reduction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom

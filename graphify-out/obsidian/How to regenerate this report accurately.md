@@ -1,17 +1,18 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "SkillGuard"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/SkillGuard
 ---
 
 # How to regenerate this report accurately
 
 ## Connections
-- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/SkillGuard

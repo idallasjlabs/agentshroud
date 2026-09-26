@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "BlockingPipeline"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/BlockingPipeline
 ---
 
 # HOST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/BlockingPipeline

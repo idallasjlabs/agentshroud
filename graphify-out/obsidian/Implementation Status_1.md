@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Contributing to AgentShroud™"
-location: "L47"
+community: "_build_image_targets()"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/_build_image_targets
 ---
 
 # Implementation Status
 
 ## Connections
-- [[Utility Scripts]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/_build_image_targets

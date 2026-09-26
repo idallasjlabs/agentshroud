@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Hermes — Podcast Production Orchestrator"
+community: "BaseModel"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Podcast_Production_Orchestrator
+  - community/BaseModel
 ---
 
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[Purpose_85]] - `contains` [EXTRACTED]
-- [[Related Skills_76]] - `contains` [EXTRACTED]
-- [[Usage_80]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[README_91]] - `contains` [EXTRACTED]
+- [[Related Skills_92]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator
+#graphify/document #graphify/EXTRACTED #community/BaseModel

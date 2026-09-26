@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "concept"
-community: "system-requirements.md"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_dashboard_endpointspy
 ---
 
 # Hermes Agent (OpenAI-compatible LLM endpoint)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[HERMES_SETUP]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/concept #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Implementation Status"
+community: "llm_proxy.py"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/llm_proxypy
 ---
 
 # Implementation Status
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
-- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 - [[Option 1 Gateway-Level Filtering (Recommended)]] - `contains` [EXTRACTED]
 - [[Option 2 Approval Queue for Credential Ops]] - `contains` [EXTRACTED]
 - [[Option 3 Disable Credential Commands via Telegram]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive "
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/AgentShroud_v080_Watchtower__Comprehensive_
 ---
 
 # I4: `AppState` class missing dynamically-set attributes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟢 INFO (nice to have)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_

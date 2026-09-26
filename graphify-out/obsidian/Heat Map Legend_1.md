@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "mcp_inspector.py"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/mcp_inspectorpy
 ---
 
 # Heat Map Legend
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

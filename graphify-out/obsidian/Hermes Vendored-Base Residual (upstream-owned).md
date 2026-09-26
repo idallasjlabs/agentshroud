@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Hermes Vendored-Base Residual (upstream-owned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Currently Unmitigable Residual Class]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_hermes_tag

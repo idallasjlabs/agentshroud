@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Apple Platform Integration"
-location: "L33"
+community: "Hermes Agent — Connection Setup"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Platform_Integration
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Implementation Notes
 
 ## Connections
-- [[Apple Platform Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Platform_Integration
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

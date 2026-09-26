@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "auth.py"
-location: "L69"
+community: "test_adversarial_injection.py"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/test_adversarial_injectionpy
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy

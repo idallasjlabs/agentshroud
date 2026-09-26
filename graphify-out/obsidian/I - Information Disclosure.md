@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "I - Information Disclosure"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/I_-_Information_Disclosure
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # I - Information Disclosure
@@ -18,4 +18,4 @@ tags:
 - [[Threat PII Leakage in Logs]] - `contains` [EXTRACTED]
 - [[Threat SSRF (Server-Side Request Forgery)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/I_-_Information_Disclosure
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

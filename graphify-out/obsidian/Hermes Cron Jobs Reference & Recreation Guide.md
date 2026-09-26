@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
@@ -16,6 +16,10 @@ tags:
 - [[Cron Daily Competitive Landscape Update]] - `references` [EXTRACTED]
 - [[Hermes Bot_1]] - `references` [EXTRACTED]
 - [[Hermes Live Cron Store (optdatacronjobs.json)]] - `references` [EXTRACTED]
+- [[How to recreate a job]] - `contains` [EXTRACTED]
+- [[JOBS-REFERENCE]] - `contains` [EXTRACTED]
+- [[Job details]] - `contains` [EXTRACTED]
+- [[Job index]] - `contains` [EXTRACTED]
 - [[PrepSend Job Split (agent prep job + no-agent email job)]] - `rationale_for` [INFERRED]
 - [[Prompt AgentShroud Daily Check-in]] - `references` [EXTRACTED]
 - [[Prompt Daily Component Health Digest]] - `references` [EXTRACTED]
@@ -40,4 +44,4 @@ tags:
 - [[Weekly job-log cleanup (cleanup-job-logs.sh)]] - `references` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy

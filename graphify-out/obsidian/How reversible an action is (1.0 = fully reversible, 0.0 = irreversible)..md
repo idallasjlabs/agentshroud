@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Enum"
+community: "GroupRoleResolver"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReversibilityScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

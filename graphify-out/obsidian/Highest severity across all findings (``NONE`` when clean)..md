@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "SkillGuard"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # Highest severity across all findings (``NONE`` when clean).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

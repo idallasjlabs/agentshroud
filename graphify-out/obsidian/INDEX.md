@@ -1,21 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "docs/diagrams/README.md"
 type: "document"
-community: "branding/README.md"
-location: "L1"
+community: "gateway.security.agent_cve_registry"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/gatewaysecurityagent_cve_registry
 ---
 
-# INDEX.md
+# Index
 
 ## Connections
-- [[AgentShroud Blue — 1583f0]] - `references` [EXTRACTED]
-- [[AgentShroud Branding Assets Index]] - `contains` [EXTRACTED]
-- [[QUICK-REFERENCE]] - `references` [EXTRACTED]
-- [[brand-guidelines]] - `references` [EXTRACTED]
-- [[typography]] - `references` [EXTRACTED]
+- [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

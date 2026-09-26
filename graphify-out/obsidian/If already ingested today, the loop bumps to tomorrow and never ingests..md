@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "_sleep()"
+community: "AgentShroud™ Security Policy"
 location: "L1391"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/AgentShroud_Security_Policy
 ---
 
 # If already ingested today, the loop bumps to tomorrow and never ingests.
 
 ## Connections
 - [[.test_skips_when_already_ingested_today()]] - `rationale_for` [EXTRACTED]
-- [[.test_skips_when_already_ingested_today()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_sleep
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Policy

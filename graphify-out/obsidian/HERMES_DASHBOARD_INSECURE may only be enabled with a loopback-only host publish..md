@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "MCPToolCall"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/MCPToolCall
 ---
 
 # HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.
 
 ## Connections
-- [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

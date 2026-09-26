@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "_make_proxy()"
 location: "L1383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_make_proxy
 ---
 
 # Healthcheck SKILL.md sandbox errors should rewrite when payload uses caption fie
@@ -18,4 +18,4 @@ tags:
 - [[.test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - `rationale_for` [EXTRACTED]
 - [[.test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

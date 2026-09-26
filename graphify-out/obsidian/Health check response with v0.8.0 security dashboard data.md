@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "StatusResponse"
+community: "start-agentshroud.sh"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/start-agentshroudsh
 ---
 
 # Health check response with v0.8.0 security dashboard data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[StatusResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StatusResponse
+#graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh

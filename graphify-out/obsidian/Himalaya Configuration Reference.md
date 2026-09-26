@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Himalaya Configuration Reference"
+community: ".validate_docker_compose_config()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/validate_docker_compose_config
 ---
 
 # Himalaya Configuration Reference
@@ -23,4 +23,4 @@ tags:
 - [[iCloud Configuration]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/validate_docker_compose_config

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Identity Reference - AgentShroud System"
+community: "LOW Findings"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_Reference_-_AgentShroud_System
+  - community/LOW_Findings
 ---
 
 # Identity Reference - AgentShroud System
 
 ## Connections
-- [[architectureIDENTITY]] - `contains` [EXTRACTED]
+- [[IDENTITY_1]] - `contains` [EXTRACTED]
 - [[🎯 Bot Identity Configuration]] - `contains` [EXTRACTED]
 - [[👤 You (The Real Person)]] - `contains` [EXTRACTED]
 - [[💬 Communication Flow]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[🔐 Security]] - `contains` [EXTRACTED]
 - [[🤖 Your AI Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings

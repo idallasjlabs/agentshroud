@@ -1,13 +1,13 @@
 ---
 source_file: "CONTINUE-2026-08-17.md"
 type: "concept"
-community: "Hermes Local-Model Temperature Repetition-Loop I"
+community: "ingest_api/__init__.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Local-Model_Temperature_Repetition-Loop_I
+  - community/ingest_api/__init__py
 ---
 
 # Hermes Local-Model Temperature Repetition-Loop Investigation
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Local-Model_Temperature_Repetition-Loop_I
+#graphify/concept #graphify/EXTRACTED #community/ingest_api/__init__py
