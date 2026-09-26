@@ -1,24 +1,25 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
+community: "1. GitHub MCP Authentication Reset"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Technical Illustrator (i-ti)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
-- [[Purpose_70]] - `contains` [EXTRACTED]
-- [[Purpose_195]] - `contains` [EXTRACTED]
-- [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Related Skills_119]] - `contains` [EXTRACTED]
-- [[Usage_65]] - `contains` [EXTRACTED]
-- [[Usage_132]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_34]] - `contains` [EXTRACTED]
+- [[Purpose_71]] - `contains` [EXTRACTED]
+- [[README_34]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_37]] - `contains` [EXTRACTED]
+- [[Related Skills_77]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_37]] - `contains` [EXTRACTED]
+- [[Usage_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

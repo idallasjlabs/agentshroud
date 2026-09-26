@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "GitHub Skill"
+community: "sunday-upgrade.md"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/sunday-upgrademd
 ---
 
 # Templates
@@ -16,4 +16,4 @@ tags:
 - [[Issue Triage]] - `contains` [EXTRACTED]
 - [[PR Review Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd

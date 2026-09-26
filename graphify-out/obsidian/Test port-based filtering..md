@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "EgressFilter"
+community: "ConsentFramework"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ConsentFramework
 ---
 
 # Test port-based filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_port_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

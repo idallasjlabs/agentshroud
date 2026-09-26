@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.png"
 type: "image"
-community: "Approval Queue (human-in-the-loop)"
+community: "TestDockerEngine"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/TestDockerEngine
 ---
 
 # Telegram Message Sequence Diagram
@@ -16,7 +16,7 @@ tags:
 - [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - `conceptually_related_to` [EXTRACTED]
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `conceptually_related_to` [EXTRACTED]
 - [[Peer binding Telegram 8096968754 → agentmain]] - `conceptually_related_to` [EXTRACTED]
-- [[flowsREADME]] - `conceptually_related_to` [AMBIGUOUS]
+- [[README_121]] - `conceptually_related_to` [AMBIGUOUS]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/image #graphify/EXTRACTED #community/TestDockerEngine

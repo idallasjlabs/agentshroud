@@ -1,26 +1,26 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Test Augmentation Specialist"
+community: "session-prompt-setup.sh"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/session-prompt-setupsh
 ---
 
 # Test Augmentation Specialist
 
 ## Connections
-- [[Definition of Done_2]] - `contains` [EXTRACTED]
+- [[Definition of Done_1]] - `contains` [EXTRACTED]
 - [[Environment_1]] - `contains` [EXTRACTED]
-- [[Remember_2]] - `contains` [EXTRACTED]
-- [[Repository Context_3]] - `contains` [EXTRACTED]
-- [[Role Definition_2]] - `contains` [EXTRACTED]
+- [[Remember_1]] - `contains` [EXTRACTED]
+- [[Repository Context_2]] - `contains` [EXTRACTED]
+- [[Role Definition_1]] - `contains` [EXTRACTED]
 - [[Test Standards]] - `contains` [EXTRACTED]
 - [[Tooling Standards]] - `contains` [EXTRACTED]
-- [[What You CANNOT Do_1]] - `contains` [EXTRACTED]
-- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
+- [[What You CANNOT Do]] - `contains` [EXTRACTED]
+- [[Your Responsibilities]] - `contains` [EXTRACTED]
 - [[test-augmenter.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh

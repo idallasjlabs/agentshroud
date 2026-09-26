@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
+community: "ProxyDashboard"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/ProxyDashboard
 ---
 
 # Test detection of tool inventory queries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tool_name_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

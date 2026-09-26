@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "sync-cve-registry.py"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/sync-cve-registrypy
 ---
 
 # Test ending user session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_end_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

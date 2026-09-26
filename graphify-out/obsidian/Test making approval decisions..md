@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "AsyncMock"
+community: "TestCollaboratorAccess"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/TestCollaboratorAccess
 ---
 
 # Test making approval decisions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_approval_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorAccess

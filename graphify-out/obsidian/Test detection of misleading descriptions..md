@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: ".test_deception_detection_misleading_description"
+community: "_make_token()"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_deception_detection_misleading_description
+  - community/_make_token
 ---
 
 # Test detection of misleading descriptions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deception_detection_misleading_description()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_deception_detection_misleading_description
+#graphify/rationale #graphify/EXTRACTED #community/_make_token

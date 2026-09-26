@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "test_approval_queue.py"
+community: "TelegramAPIProxy"
 location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_approval_queuepy
+  - community/TelegramAPIProxy
 ---
 
 # Test getting all pending requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "test_sanitizer.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Test phone number redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_phone_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

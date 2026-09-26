@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "Incident → Test Backfill Rule (R3 extension): ev"
+community: "Skill: UI Expert (UI)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident__Test_Backfill_Rule_R3_extension_ev
+  - community/Skill_UI_Expert_UI
 ---
 
 # Test Strategy (docs/governance/TEST_STRATEGY.md)
@@ -17,4 +17,4 @@ tags:
 - [[Test-Type Decision Matrix (pytest vs static smoke vs live smoke vs data validation vs browser automation vs chaos drill)]] - `conceptually_related_to` [EXTRACTED]
 - [[testsstartup_smoke suite (static grep assertions for Dockerfile, entry scripts, JS patches, compose, secret scripts)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

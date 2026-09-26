@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "test_ledger.py"
+community: "EgressPolicy"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/EgressPolicy
 ---
 
 # Test ledger query with source filter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_query_with_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

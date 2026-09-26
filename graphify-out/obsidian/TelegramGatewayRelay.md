@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "TelegramGatewayRelay"
+community: "get_engine()"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramGatewayRelay
+  - community/get_engine
 ---
 
 # TelegramGatewayRelay
 
 ## Connections
-- [[.__init__()_192]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
 - [[.send_message()]] - `method` [EXTRACTED]
 - [[.send_status_update()]] - `method` [EXTRACTED]
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - `rationale_for` [EXTRACTED]
 - [[telegram_gateway_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay
+#graphify/code #graphify/EXTRACTED #community/get_engine

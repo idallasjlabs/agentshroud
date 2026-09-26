@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_observatory_mode.py"
+community: "TeamsConfig"
 location: "L514"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/TeamsConfig
 ---
 
 # Test GET /manage/mode endpoint returns correct structure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_observatory_mode_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

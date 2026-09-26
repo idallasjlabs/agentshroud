@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "TestAuditStore"
+community: "load_config()"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuditStore
+  - community/load_config
 ---
 
 # Test AuditStore functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuditStore
+#graphify/rationale #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "EgressFilterConfig"
-location: "L31"
+community: "run_targeted_tests.sh"
+location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/run_targeted_testssh
 ---
 
 # Test default configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/run_targeted_testssh

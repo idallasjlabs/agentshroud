@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "Skill: UX Expert (UX)"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Skill_UX_Expert_UX
 ---
 
 # Test domain allowlist checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX

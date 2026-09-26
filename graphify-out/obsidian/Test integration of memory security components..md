@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "DataExfilVolumeGuard"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/DataExfilVolumeGuard
 ---
 
 # Test integration of memory security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemorySecurityIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard

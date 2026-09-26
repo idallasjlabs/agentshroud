@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
-location: "L431"
+community: "test_soc_realtime_coverage.py"
+location: "L275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[.test_edge_cases()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_edge_cases()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "InjectionSeverity"
+community: "MCPPermissionManager"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/MCPPermissionManager
 ---
 
 # Test cases for ToolResultInjectionScanner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

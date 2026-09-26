@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "lifespan.py"
 location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/lifespanpy
 ---
 
 # Test context manipulation detection.
 
 ## Connections
-- [[TestContextGuard]] - `rationale_for` [EXTRACTED]
+- [[TestContextGuard_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

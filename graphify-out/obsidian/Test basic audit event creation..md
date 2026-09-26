@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "AuditExporter"
+community: "load_config()"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/load_config
 ---
 
 # Test basic audit event creation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_event_creation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExporter
+#graphify/rationale #graphify/EXTRACTED #community/load_config

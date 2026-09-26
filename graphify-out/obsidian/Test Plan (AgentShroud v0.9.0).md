@@ -1,11 +1,11 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "Test Coverage Report (AgentShroud v1.3.0)"
+community: "TestOutputTrustScoring"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Test_Coverage_Report_AgentShroud_v130
+  - community/TestOutputTrustScoring
 ---
 
 # Test Plan (AgentShroud v0.9.0)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Test_Coverage_Report_AgentShroud_v130
+#graphify/document #graphify/INFERRED #community/TestOutputTrustScoring

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
+community: "ConfigIntegrityMonitor"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/ConfigIntegrityMonitor
 ---
 
 # Test cleanup removes expired pending requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cleanup_expired_requests()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

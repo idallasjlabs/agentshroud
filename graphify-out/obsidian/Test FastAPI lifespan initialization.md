@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TestNormalizeForSpeech"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestNormalizeForSpeech
 ---
 
 # Test FastAPI lifespan initialization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

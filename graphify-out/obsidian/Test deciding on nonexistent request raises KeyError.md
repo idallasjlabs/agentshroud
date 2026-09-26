@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "test_approval_queue.py"
+community: "TelegramAPIProxy"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_approval_queuepy
+  - community/TelegramAPIProxy
 ---
 
 # Test deciding on nonexistent request raises KeyError
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_nonexistent_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

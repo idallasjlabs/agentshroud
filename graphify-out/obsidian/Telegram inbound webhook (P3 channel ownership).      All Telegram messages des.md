@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "forward.py"
+community: "RateLimiter"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # Telegram inbound webhook (P3: channel ownership).      All Telegram messages des
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_webhook()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/forwardpy
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

@@ -1,17 +1,17 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L417"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # Technical Documentation
 
 ## Connections
-- [[Documentation_1]] - `contains` [EXTRACTED]
+- [[Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

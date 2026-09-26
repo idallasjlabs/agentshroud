@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "test_trust_manager.py"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # Test earning and losing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

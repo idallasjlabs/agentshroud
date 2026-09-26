@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Technical Illustrator README
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `references` [EXTRACTED]
+- [[Technical Illustrator (TI)_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "AgentTarget"
+community: "TestNormalizeForSpeech"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/TestNormalizeForSpeech
 ---
 
 # Test ForwardRequest with valid data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

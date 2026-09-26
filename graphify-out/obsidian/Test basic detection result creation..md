@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "DeceptionDetection"
+community: "TrustManager"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/TrustManager
 ---
 
 # Test basic detection result creation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_basic_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
+community: "1. GitHub MCP Authentication Reset"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Technical Writing (i-tw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "rationale"
-community: "apply-patches.js"
+community: "AuditChain"
 location: "lines 670-693"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/AuditChain
 ---
 
 # Telegram channel-wide fallback binding design
 
 ## Connections
-- [[apply-patches.js_2]] - `rationale_for` [EXTRACTED]
+- [[apply-patches.js]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

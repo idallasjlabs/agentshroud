@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "TestApprovalHardening"
+community: "_make_token()"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/_make_token
 ---
 
 # Test normalization handles empty descriptions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_normalize_description_handles_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/_make_token

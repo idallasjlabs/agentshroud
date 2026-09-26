@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "TestPathIsolationManager"
-location: "L24"
+community: "aiosqlite"
+location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/aiosqlite
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_6]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/aiosqlite

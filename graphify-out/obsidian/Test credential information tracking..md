@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "CredentialInfo"
+community: "TestInspectorEdgeCases"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/TestInspectorEdgeCases
 ---
 
 # Test credential information tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInfo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo
+#graphify/rationale #graphify/EXTRACTED #community/TestInspectorEdgeCases

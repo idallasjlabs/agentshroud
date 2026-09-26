@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "Quick Reference Commands"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Quick_Reference_Commands
 ---
 
 # Test ResourceGuardConfig dataclass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_resource_guard_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_Commands

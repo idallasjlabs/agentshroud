@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "clawhub/SKILL.md"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/clawhub/SKILLmd
 ---
 
 # Test configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_config_from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/clawhub/SKILLmd

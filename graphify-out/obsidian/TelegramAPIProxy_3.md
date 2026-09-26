@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "_make_proxy()"
 location: "L4533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_make_proxy
 ---
 
 # TelegramAPIProxy
 
 ## Connections
 - [[._make_owner_proxy()]] - `calls` [EXTRACTED]
-- [[._make_proxy()]] - `references` [EXTRACTED]
+- [[._make_proxy()_5]] - `references` [EXTRACTED]
 - [[._make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -228,9 +228,9 @@ tags:
 - [[.test_web_search_log_called_with_correct_params()]] - `calls` [EXTRACTED]
 - [[.test_web_search_no_egress_filter()]] - `calls` [EXTRACTED]
 - [[.test_web_search_query_truncation()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "rationale"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "GroupRegistry"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/GroupRegistry
 ---
 
 # Telegram Formatting Rule (bold only, no headers or tables)
@@ -18,4 +18,4 @@ tags:
 - [[Prompt Weekly Hermes Stability Report]] - `implements` [EXTRACTED]
 - [[Prompt Weekly Kaizen Review]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry

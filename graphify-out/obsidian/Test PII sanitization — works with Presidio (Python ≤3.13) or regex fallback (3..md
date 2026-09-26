@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "lifespan.py"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/lifespanpy
 ---
 
 # Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "TestMultilingualInjection"
+community: "TestApprovalHardening"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/TestApprovalHardening
 ---
 
 # Test Dutch injection detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tier1_dutch_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening

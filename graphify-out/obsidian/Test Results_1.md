@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
-location: "L17"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Test Results
 
 ## Connections
-- [[Summary_20]] - `contains` [EXTRACTED]
+- [[Fixes Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

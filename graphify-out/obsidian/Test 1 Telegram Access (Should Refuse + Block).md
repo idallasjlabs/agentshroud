@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "agentshroud-gateway"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/agentshroud-gateway
 ---
 
 # Test 1: Telegram Access (Should Refuse + Block)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Verification Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "aiosqlite"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/aiosqlite
 ---
 
 # Test ToolResultSanitizerConfig.
@@ -15,4 +15,4 @@ tags:
 - [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/aiosqlite

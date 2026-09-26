@@ -1,11 +1,11 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Test Coverage Report (AgentShroud v1.3.0)"
+community: "TestOutputTrustScoring"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Coverage_Report_AgentShroud_v130
+  - community/TestOutputTrustScoring
 ---
 
 # Test Coverage Report (AgentShroud v1.3.0)
@@ -17,4 +17,4 @@ tags:
 - [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - `references` [EXTRACTED]
 - [[Test Plan (AgentShroud v0.9.0)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Coverage_Report_AgentShroud_v130
+#graphify/document #graphify/EXTRACTED #community/TestOutputTrustScoring

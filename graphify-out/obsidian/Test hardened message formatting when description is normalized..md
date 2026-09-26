@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "DeceptionDetection"
+community: "_make_token()"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/_make_token
 ---
 
 # Test hardened message formatting when description is normalized.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_format_hardened_message_with_normalization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/rationale #graphify/EXTRACTED #community/_make_token

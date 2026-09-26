@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_prompt_protection.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestPromptProtection"
-location: "L275"
+community: "ProxyDashboard"
+location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/ProxyDashboard
 ---
 
 # Test edge cases and error conditions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_edge_cases()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
