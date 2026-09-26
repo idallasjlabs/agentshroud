@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "pick_latest_stable()"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/pick_latest_stable
 ---
 
 # Step 3 - Extract entities and relationships
@@ -17,4 +17,4 @@ tags:
 - [[Part C - Merge AST + semantic into final extraction]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/pick_latest_stable

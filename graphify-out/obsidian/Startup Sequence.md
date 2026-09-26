@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "MiddlewareManager"
+community: "PipelineAction"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PipelineAction
 ---
 
 # Startup Sequence.md
 
 ## Connections
-- [[Architecture Overview_1]] - `references` [EXTRACTED]
+- [[Architecture Overview_2]] - `references` [EXTRACTED]
 - [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[EgressFilter_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `references` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery]] - `references` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

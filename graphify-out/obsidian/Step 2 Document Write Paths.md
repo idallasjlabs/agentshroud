@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow"
+community: "AgentShroud Audit Specification"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Step 2: Document Write Paths
 
 ## Connections
-- [[Development Workflow]] - `contains` [EXTRACTED]
+- [[Development Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

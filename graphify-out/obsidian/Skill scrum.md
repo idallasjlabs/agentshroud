@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: ".agents/skills/i-scrum/SKILL.md"
+community: "agentshroud-secrets.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-scrum/SKILLmd
+  - community/agentshroud-secretssh
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[.agentsskillsi-scrumSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_49]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-scrum/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-secretssh

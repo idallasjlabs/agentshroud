@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: "hermes/skills/i-scrum/SKILL.md"
+community: ".test_openclaw_patch_script_uses_multi_group_all"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-scrum/SKILLmd
+  - community/test_openclaw_patch_script_uses_multi_group_all
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[hermesskillsi-scrumSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_112]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-scrum/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_openclaw_patch_script_uses_multi_group_all

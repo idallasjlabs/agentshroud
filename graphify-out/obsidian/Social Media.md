@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
-location: "L127"
+community: "Atlas — Curriculum Architect"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Social Media
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[📊 Asset Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

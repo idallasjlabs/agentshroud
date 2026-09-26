@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Telegram Channel Setup"
+community: "iCloud Services"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Channel_Setup
+  - community/iCloud_Services
 ---
 
 # Step 3: Find Your Telegram User ID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "hermes/skills/i-kaizen/SKILL.md"
+community: ".test_lifespan_uvicorn_warning_filter_drops_inva"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-kaizen/SKILLmd
+  - community/test_lifespan_uvicorn_warning_filter_drops_inva
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[hermesskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_91]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kaizen/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_lifespan_uvicorn_warning_filter_drops_inva

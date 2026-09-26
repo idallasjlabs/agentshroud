@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "OpenClaw Host Hardening"
+community: "openai-whisper-api/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Stable-named cron scheduling for periodic audits
 
 ## Connections
+- [[SKILL_212]] - `implements` [EXTRACTED]
 - [[gh-issues Cursor File (cron sequential tracking)]] - `semantically_similar_to` [INFERRED]
-- [[healthcheckSKILL]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/concept #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

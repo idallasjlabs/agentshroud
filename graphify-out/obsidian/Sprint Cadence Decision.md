@@ -1,22 +1,22 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Sprint Cadence Decision"
+community: "TestForwardToTelegramTimeouts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/TestForwardToTelegramTimeouts
 ---
 
 # Sprint Cadence Decision
 
 ## Connections
-- [[Decision]] - `contains` [EXTRACTED]
+- [[Decision_11]] - `contains` [EXTRACTED]
 - [[GSD Issue Requirements]] - `contains` [EXTRACTED]
 - [[SPRINT_CADENCE]] - `contains` [EXTRACTED]
 - [[Skills Available (if needed)]] - `contains` [EXTRACTED]
 - [[What We Do Instead]] - `contains` [EXTRACTED]
 - [[When to Revisit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/document #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts

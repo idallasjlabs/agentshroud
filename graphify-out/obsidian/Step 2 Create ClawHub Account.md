@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "📋 Detailed Step-by-Step"
+community: "Dependency Graph"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Detailed_Step-by-Step
+  - community/Dependency_Graph
 ---
 
 # Step 2: Create ClawHub Account
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Detailed Step-by-Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Detailed_Step-by-Step
+#graphify/document #graphify/EXTRACTED #community/Dependency_Graph

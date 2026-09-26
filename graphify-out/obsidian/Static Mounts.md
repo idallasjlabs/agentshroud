@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
+community: "TestNetworkValidator"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/TestNetworkValidator
 ---
 
 # Static Mounts
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

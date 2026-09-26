@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Step 3: Collect Alarms and Events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

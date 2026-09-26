@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: ".agents/skills/i-chaos-engineering/SKILL.md"
+community: "statusline.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-chaos-engineering/SKILLmd
+  - community/statuslinesh
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[.agentsskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-chaos-engineering/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/statuslinesh

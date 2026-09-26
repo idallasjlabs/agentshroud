@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Function Details"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Function_Details
 ---
 
 # Speaker Definitions
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EXPERT_1]] - `contains` [EXTRACTED]
 - [[HOST_1]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Function_Details

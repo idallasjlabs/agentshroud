@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L22"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
-- [[_make_proxy()_2]] - `references` [EXTRACTED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[_make_proxy()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SlackAPIProxy
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

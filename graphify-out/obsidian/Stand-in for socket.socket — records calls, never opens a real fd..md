@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "ServiceManager"
+community: "EgressAction"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressAction
 ---
 
 # Stand-in for socket.socket — records calls, never opens a real fd.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeUnixSocket]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressAction

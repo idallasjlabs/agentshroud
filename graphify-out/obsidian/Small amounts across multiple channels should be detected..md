@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "lifespan.py"
+community: "apply-patches.js (OpenClaw)"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # Small amounts across multiple channels should be detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_slow_drip_across_channels()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

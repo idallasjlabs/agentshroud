@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Make gateway source code, config, and security p"
+community: "Feature: Global Monitor-Only Mode (\"Observatory "
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_p
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_
 ---
 
 # Step 3: Block SSH commands targeting the gateway host
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_

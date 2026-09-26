@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "AgentShroud™ Brand Guidelines"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_skill_guardpy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # SkillScanError
 
 ## Connections
 - [[.scan_file()_1]] - `calls` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_22]] - `uses` [INFERRED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[Path_38]] - `uses` [INFERRED]
 - [[Raised when SkillGuard is handed content it cannot scan.]] - `rationale_for` [EXTRACTED]
-- [[ScanResult]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient_1]] - `uses` [INFERRED]
+- [[TestClient]] - `uses` [INFERRED]
 - [[TestExecOfDownload]] - `uses` [INFERRED]
 - [[TestExfiltration]] - `uses` [INFERRED]
 - [[TestKnownMalicious]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_skill_guardpy
+#graphify/code #graphify/INFERRED #community/AgentShroud_Brand_Guidelines

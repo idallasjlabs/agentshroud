@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "hermes/skills/i-value-stream-mapping/SKILL.md"
+community: ".test_openclaw_ssh_config_allows_all_lab_hosts()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-value-stream-mapping/SKILLmd
+  - community/test_openclaw_ssh_config_allows_all_lab_hosts
 ---
 
 # Skill: value-stream-mapping
 
 ## Connections
-- [[hermesskillsi-value-stream-mappingSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_125]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-value-stream-mapping/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_openclaw_ssh_config_allows_all_lab_hosts

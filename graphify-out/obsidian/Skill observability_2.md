@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-observability/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-observability/SKILL.md"
+community: ".test_lowercase_bracket_not_matched()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-observability/SKILLmd
+  - community/test_lowercase_bracket_not_matched
 ---
 
 # Skill: observability
 
 ## Connections
-- [[openclawskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
+- [[SKILL_164]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-observability/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_lowercase_bracket_not_matched

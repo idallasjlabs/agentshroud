@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "BROWSER_FETCH_SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[.agentsskillsi-socratesSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_33]] - `contains` [EXTRACTED]
-- [[Related Skills_24]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
+- [[Purpose_32]] - `contains` [EXTRACTED]
+- [[README_32]] - `contains` [EXTRACTED]
+- [[Related Skills_35]] - `contains` [EXTRACTED]
+- [[SKILL_55]] - `contains` [EXTRACTED]
+- [[Usage_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

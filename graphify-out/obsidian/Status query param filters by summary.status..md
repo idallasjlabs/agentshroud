@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "rationale"
-community: "make_event()"
+community: "TestOriginAwareAuthorization"
 location: "L550"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_event
+  - community/TestOriginAwareAuthorization
 ---
 
 # Status query param filters by summary.status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_scanners_recent_status_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_event
+#graphify/rationale #graphify/EXTRACTED #community/TestOriginAwareAuthorization

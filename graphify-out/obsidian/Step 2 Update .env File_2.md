@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "sync-llm-settings.sh"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/sync-llm-settingssh
 ---
 
 # Step 2: Update .env File
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. GitHub MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/sync-llm-settingssh

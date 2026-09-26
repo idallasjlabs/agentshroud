@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills by Category"
+community: "Skill: Security Review (SEC)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skills by Category
@@ -23,6 +23,6 @@ tags:
 - [[Reference_2]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)_1]] - `contains` [EXTRACTED]
 - [[System Utilities_1]] - `contains` [EXTRACTED]
-- [[Workflow_5]] - `contains` [EXTRACTED]
+- [[Workflow_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

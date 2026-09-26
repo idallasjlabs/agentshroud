@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "TestMultipartOutboundPipeline"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/TestMultipartOutboundPipeline
 ---
 
 # Step 3 - Extract entities and relationships
@@ -17,4 +17,4 @@ tags:
 - [[Part C - Merge AST + semantic into final extraction_1]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

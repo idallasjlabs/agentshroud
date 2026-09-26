@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Remediation"
+community: "format_cve_report()"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/format_cve_report
 ---
 
 # Step 1: Define MCP tool risk tiers
 
 ## Connections
-- [[Remediation_2]] - `contains` [EXTRACTED]
+- [[Remediation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/format_cve_report

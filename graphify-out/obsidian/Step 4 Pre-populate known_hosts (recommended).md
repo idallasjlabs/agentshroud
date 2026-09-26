@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # Step 4: Pre-populate known_hosts (recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

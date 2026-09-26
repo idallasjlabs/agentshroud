@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Community 114"
-location: "L667"
+community: "test_a2a_policy.py"
+location: "L669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/test_a2a_policypy
 ---
 
 # Spoken answer for a volume READ query: the tracked level, or a     calibration h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_answer_volume_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

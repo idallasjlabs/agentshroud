@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
-location: "L99"
+community: "Competitive Security Matrix — AgentShroud vs AI "
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/Competitive_Security_Matrix__AgentShroud_vs_AI_
 ---
 
 # Social Media
 
 ## Connections
-- [[📊 Asset Summary]] - `contains` [EXTRACTED]
+- [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/Competitive_Security_Matrix__AgentShroud_vs_AI_

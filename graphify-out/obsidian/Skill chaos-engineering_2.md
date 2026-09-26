@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-chaos-engineering/SKILL.md"
+community: ".test_agent_reply_from_log()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-chaos-engineering/SKILLmd
+  - community/test_agent_reply_from_log
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[openclawskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_139]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-chaos-engineering/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_agent_reply_from_log

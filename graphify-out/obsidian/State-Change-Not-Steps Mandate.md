@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "sunday-upgrade.md"
+community: "OutputSchemaEnforcer"
 location: "9"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/OutputSchemaEnforcer
 ---
 
 # State-Change-Not-Steps Mandate
@@ -17,4 +17,4 @@ tags:
 - [[scriptssunday-upgrade-apply.sh]] - `conceptually_related_to` [EXTRACTED]
 - [[sunday-upgrade]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/concept #graphify/EXTRACTED #community/OutputSchemaEnforcer

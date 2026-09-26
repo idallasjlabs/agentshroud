@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Remediation"
+community: "wazuh_client.py"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/wazuh_clientpy
 ---
 
 # Step 3: Remove credential environment variables from agent container
 
 ## Connections
-- [[Remediation_4]] - `contains` [EXTRACTED]
+- [[Remediation_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

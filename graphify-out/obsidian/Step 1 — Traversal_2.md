@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "TrustLevel"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/TrustLevel
 ---
 
 # Step 1 — Traversal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference query, path, explain_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/TrustLevel

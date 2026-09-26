@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "TELEGRAM_API_BASE_URL"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_API_BASE_URL
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Stdin-Pipe Deploy Pattern (never docker cp)
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `rationale_for` [EXTRACTED]
 - [[OpenClaw Service]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "_seed_cron"
+community: "Skill: UX Expert (UX)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/Skill_UX_Expert_UX
 ---
 
 # Skills sync — installs ~/.llm_settings/skills into /opt/data/skills every boot
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/Skill_UX_Expert_UX

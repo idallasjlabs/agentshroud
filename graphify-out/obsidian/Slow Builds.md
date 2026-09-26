@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8G"
-location: "L1734"
+community: "TestKillSwitchScript"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+  - community/TestKillSwitchScript
 ---
 
 # Slow Builds
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchScript

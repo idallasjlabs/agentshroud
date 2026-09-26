@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Migration Path (SSH → Distributed Node)"
+community: "is_rate_limited_post_retry()"
 location: "L465"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/is_rate_limited_post_retry
 ---
 
 # Step 1: Verify Option 1 Working
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/document #graphify/EXTRACTED #community/is_rate_limited_post_retry

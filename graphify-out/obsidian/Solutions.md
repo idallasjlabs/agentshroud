@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "iMessage Integration Status"
+community: "check_command()"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/check_command
 ---
 
 # Solutions
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - `contains` [EXTRACTED]
 - [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/check_command

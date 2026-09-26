@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Starting a Development Task via Hermes / OpenCla"
+community: "🛡️ AgentShroud Release Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Starting a Development Task via Hermes / OpenClaw
@@ -21,4 +21,4 @@ tags:
 - [[What is not currently automated (the 4 gaps)]] - `contains` [EXTRACTED]
 - [[hermes-openclaw-dev-workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

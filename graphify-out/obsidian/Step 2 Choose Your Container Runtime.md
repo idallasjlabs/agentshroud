@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Browser — Secure Browser Automation"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Step 2: Choose Your Container Runtime
@@ -17,4 +17,4 @@ tags:
 - [[Option C Apple Containers (macOS 26+)]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "EgressFilterConfig"
 location: "L561"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/EgressFilterConfig
 ---
 
 # Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_blocked_unauthorized_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

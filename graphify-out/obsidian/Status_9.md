@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "ADR-007: Zero-Config Security (docker-compose up"
-location: "L3"
+community: "TestRunningImageResolution"
+location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up
+  - community/TestRunningImageResolution
 ---
 
 # Status
 
 ## Connections
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up
+#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution

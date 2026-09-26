@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "StatusResponse"
+community: "start-agentshroud.sh"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/start-agentshroudsh
 ---
 
 # StatusResponse
@@ -20,7 +20,7 @@ tags:
 - [[TestEnhancedStatus]] - `uses` [INFERRED]
 - [[health.py]] - `imports` [EXTRACTED]
 - [[health_check_detail()]] - `calls` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 - [[test_enhanced_status.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StatusResponse
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

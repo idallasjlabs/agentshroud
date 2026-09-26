@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Core Components"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Core_Components
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
 
 ## Connections
-- [[.agentsskillsi-session-promptSKILL]] - `contains` [EXTRACTED]
 - [[Re-injection Command (for reference)]] - `contains` [EXTRACTED]
-- [[Role_75]] - `contains` [EXTRACTED]
-- [[Rules_20]] - `contains` [EXTRACTED]
-- [[Trigger_1]] - `contains` [EXTRACTED]
+- [[Role_32]] - `contains` [EXTRACTED]
+- [[Rules_2]] - `contains` [EXTRACTED]
+- [[SKILL_54]] - `contains` [EXTRACTED]
+- [[Trigger]] - `contains` [EXTRACTED]
 - [[Workflow Survey → Draft → Inject → Confirm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Core_Components

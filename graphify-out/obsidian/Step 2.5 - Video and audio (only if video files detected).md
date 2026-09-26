@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "pick_latest_stable()"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/pick_latest_stable
 ---
 
 # Step 2.5 - Video and audio (only if video files detected)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/pick_latest_stable

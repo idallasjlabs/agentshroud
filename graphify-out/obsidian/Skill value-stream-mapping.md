@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: ".agents/skills/i-value-stream-mapping/SKILL.md"
+community: "graphify reference: GitHub clone and cross-repo "
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-value-stream-mapping/SKILLmd
+  - community/graphify_reference_GitHub_clone_and_cross-repo_
 ---
 
 # Skill: value-stream-mapping
 
 ## Connections
-- [[.agentsskillsi-value-stream-mappingSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_62]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-value-stream-mapping/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_

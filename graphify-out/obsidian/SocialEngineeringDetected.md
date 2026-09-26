@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "test_scorecard_integrity.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/test_scorecard_integritypy
 ---
 
 # SocialEngineeringDetected
 
 ## Connections
-- [[Exception_4]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 location: "L21-L30, L42-L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # Stdin-Pipe File Deployment Pattern (never docker cp)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Branded HTML Report Template]] - `references` [EXTRACTED]
 - [[Report Delivery Format Instructions]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/rationale #graphify/EXTRACTED #community/run_test

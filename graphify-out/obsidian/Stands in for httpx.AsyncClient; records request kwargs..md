@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "test_dns_canvas_coverage.py"
+community: "Seccomp Profiles"
 location: "L592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Seccomp_Profiles
 ---
 
 # Stands in for httpx.AsyncClient; records request kwargs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeAsyncClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Seccomp_Profiles

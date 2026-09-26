@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "TestInternalBannerMatcher"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/TestInternalBannerMatcher
 ---
 
 # Step 1: Open the Control UI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher

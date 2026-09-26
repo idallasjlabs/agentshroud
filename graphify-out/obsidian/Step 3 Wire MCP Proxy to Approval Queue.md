@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Remediation"
+community: "format_cve_report()"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/format_cve_report
 ---
 
 # Step 3: Wire MCP Proxy to Approval Queue
 
 ## Connections
-- [[Remediation_2]] - `contains` [EXTRACTED]
+- [[Remediation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/format_cve_report

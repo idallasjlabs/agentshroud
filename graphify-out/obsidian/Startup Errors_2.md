@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Gateway Container Startup Failures"
+community: "is_overloaded()"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Container_Startup_Failures
+  - community/is_overloaded
 ---
 
 # Startup Errors
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
 - [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
-- [[Related Notes_46]] - `contains` [EXTRACTED]
-- [[Startup Errors]] - `contains` [EXTRACTED]
+- [[Related Notes_63]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures
+#graphify/document #graphify/EXTRACTED #community/is_overloaded

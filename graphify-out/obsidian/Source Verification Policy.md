@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "rationale"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 location: "L80-L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # Source Verification Policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Report Delivery Format Instructions]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/rationale #graphify/EXTRACTED #community/run_test

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Flip core security modules from monitor to enfor"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enfor
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Step 4: Document the risk of monitor mode
 
 ## Connections
-- [[Remediation_6]] - `contains` [EXTRACTED]
+- [[Remediation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

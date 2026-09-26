@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "_make_tm()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/_make_tm
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_72]] - `contains` [EXTRACTED]
+- [[SKILL_79]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/_make_tm

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "v0.9.0 — Apple Messages Integration"
-location: "L391"
+community: "Weather Skill"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/Weather_Skill
 ---
 
 # Status
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

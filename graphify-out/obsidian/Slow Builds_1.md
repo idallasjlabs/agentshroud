@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L131"
+community: "forward.py"
+location: "L1734"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/forwardpy
 ---
 
 # Slow Builds
 
 ## Connections
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/forwardpy

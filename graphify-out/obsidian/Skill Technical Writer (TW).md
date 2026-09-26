@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "TestCollaboratorPersistence"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/TestCollaboratorPersistence
 ---
 
 # Skill: Technical Writer (TW)
 
 ## Connections
-- [[.agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_9]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_5]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Structure → Write → Validate]] - `contains` [EXTRACTED]
 - [[Document Structure]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns]] - `contains` [EXTRACTED]
-- [[Role_34]] - `contains` [EXTRACTED]
-- [[Rules_10]] - `contains` [EXTRACTED]
+- [[Role_36]] - `contains` [EXTRACTED]
+- [[Rules_5]] - `contains` [EXTRACTED]
+- [[SKILL_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
