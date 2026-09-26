@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # Return True if any focus_topic appears in the text (case-insensitive).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_topic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

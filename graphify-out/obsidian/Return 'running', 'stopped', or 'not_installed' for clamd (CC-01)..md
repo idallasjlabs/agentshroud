@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "SOCWebSocketHandler"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).
@@ -15,4 +15,4 @@ tags:
 - [[_check_clamd()]] - `rationale_for` [EXTRACTED]
 - [[_check_openscap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

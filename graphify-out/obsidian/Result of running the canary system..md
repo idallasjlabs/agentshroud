@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "KillSwitchMonitor"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/KillSwitchMonitor
 ---
 
 # Result of running the canary system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

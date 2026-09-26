@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "router.py"
-location: "L15"
+community: "TestFromAuditChainEntry"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/TestFromAuditChainEntry
 ---
 
 # Responsibilities
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry

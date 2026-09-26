@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "GroupRegistry"
+community: "MiddlewareManager"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRegistry
+  - community/MiddlewareManager
 ---
 
 # Return True if user_id is in the group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_member()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

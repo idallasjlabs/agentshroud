@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "tool_result_injection.py"
+community: "test_scanner_integration.py"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/tool_result_injectionpy
+  - community/test_scanner_integrationpy
 ---
 
 # Result from tool result injection scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InjectionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/tool_result_injectionpy
+#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy

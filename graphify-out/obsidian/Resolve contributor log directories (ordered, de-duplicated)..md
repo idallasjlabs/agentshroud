@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Resolve contributor log directories (ordered, de-duplicated).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_collaborator_log_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

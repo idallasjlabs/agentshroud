@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "forward.py"
+community: "RateLimiter"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # Response from POST /email/send.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/forwardpy
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

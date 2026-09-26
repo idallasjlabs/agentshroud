@@ -12,6 +12,6 @@ tags:
 # Return complete audit log
 
 ## Connections
-- [[.get_audit_log()_3]] - `rationale_for` [EXTRACTED]
+- [[.get_audit_log()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

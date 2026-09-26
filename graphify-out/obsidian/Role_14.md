@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "BaseModel"
-location: "L141"
+source_file: ".agents/skills/i-hdev/SKILL.md"
+type: "document"
+community: "AgentShroud Security Overview v0.8.0"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/AgentShroud_Security_Overview_v080
 ---
 
 # Role
 
 ## Connections
-- [[.__init__()_66]] - `references` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Overview_v080

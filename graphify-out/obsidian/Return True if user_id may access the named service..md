@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "PrivacyPolicyEnforcer"
+community: "Local-Model Job Quality Matrix"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Return True if user_id may access the named service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_service_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

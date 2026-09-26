@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # Return member IDs of a group, or empty list if no teams config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_groups_by_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

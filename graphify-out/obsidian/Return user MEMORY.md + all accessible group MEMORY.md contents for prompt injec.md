@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_group_session()"
+community: "KeyVaultConfig"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_group_session
+  - community/KeyVaultConfig
 ---
 
 # Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_merged_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_group_session
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

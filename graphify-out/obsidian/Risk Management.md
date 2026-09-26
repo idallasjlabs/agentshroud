@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Risk Management
@@ -16,4 +16,4 @@ tags:
 - [[Known Risks]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

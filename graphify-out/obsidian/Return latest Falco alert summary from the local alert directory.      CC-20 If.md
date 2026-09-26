@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "wazuh_client.py"
+community: "Canvas Skill"
 location: "L697"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Canvas_Skill
 ---
 
 # Return latest Falco alert summary from the local alert directory.      CC-20: If
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_falco_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/rationale #graphify/EXTRACTED #community/Canvas_Skill

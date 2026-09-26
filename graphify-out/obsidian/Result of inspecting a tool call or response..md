@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPServerConfig"
+community: "TestParanoidConfig"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/TestParanoidConfig
 ---
 
 # Result of inspecting a tool call or response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig

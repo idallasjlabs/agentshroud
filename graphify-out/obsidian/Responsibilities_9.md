@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "models.py"
-location: "L15"
+community: "API Keys Setup Guide"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/API_Keys_Setup_Guide
 ---
 
 # Responsibilities
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Backup & Restore Runbook — AgentShroud"
+community: ".scan()"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Backup__Restore_Runbook__AgentShroud
+  - community/scan
 ---
 
 # Restore from Backup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Restore Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/scan

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "IntelReportStore"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/IntelReportStore
 ---
 
 # Return True if the user's session is currently suspended.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_suspended()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore

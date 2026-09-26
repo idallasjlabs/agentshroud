@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "test_telegram_replay.py"
+community: "_sleep()"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/_sleep
 ---
 
 # Return undelivered updates older than grace window (avoids replay storms).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.pull_undelivered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

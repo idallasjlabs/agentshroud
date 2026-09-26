@@ -1,16 +1,23 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "server.py"
+community: "AgentTarget"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/serverpy
+  - graphify/INFERRED
+  - community/AgentTarget
 ---
 
 # Response
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
+- [[._handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/INFERRED #community/AgentTarget

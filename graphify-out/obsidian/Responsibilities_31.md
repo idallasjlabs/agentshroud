@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "agent_isolation.py"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Responsibilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

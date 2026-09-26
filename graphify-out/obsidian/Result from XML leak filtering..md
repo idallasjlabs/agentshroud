@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "A2AProxyResult"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/A2AProxyResult
 ---
 
 # Result from XML leak filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FilterResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult

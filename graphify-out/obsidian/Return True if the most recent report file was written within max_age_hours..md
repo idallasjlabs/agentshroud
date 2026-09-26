@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_scorecard_integrity.py"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Return True if the most recent report file was written within max_age_hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fresh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

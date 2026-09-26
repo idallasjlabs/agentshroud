@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "ssh_proxy.py"
-location: "L19"
+community: "clamav.md"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/clamavmd
 ---
 
 # Responsibilities
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

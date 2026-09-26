@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "Community 852"
+community: "_t()"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_852
+  - community/_t
 ---
 
 # Return the Hermes provider key for a bare model name.      Local models (qwen/ll
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[provider_for_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_852
+#graphify/rationale #graphify/EXTRACTED #community/_t

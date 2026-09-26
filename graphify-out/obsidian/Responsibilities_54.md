@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "sidecar.py"
-location: "L15"
+community: "TestNoResponseGuarantee"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/TestNoResponseGuarantee
 ---
 
 # Responsibilities
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee

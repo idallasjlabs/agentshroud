@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "rationale"
-community: "run_multi_host()"
+community: "TestPatternDetection"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/TestPatternDetection
 ---
 
 # Return a runner that looks up (exit_code, output) by host name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fake_runner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run_multi_host
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

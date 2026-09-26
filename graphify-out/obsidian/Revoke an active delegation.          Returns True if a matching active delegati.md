@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "DelegationManager"
+community: "make_event()"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # Revoke an active delegation.          Returns True if a matching active delegati
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.revoke()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DelegationManager
+#graphify/rationale #graphify/EXTRACTED #community/make_event

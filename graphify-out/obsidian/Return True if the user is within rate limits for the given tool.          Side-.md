@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "TelegramAPIProxy"
 location: "L595"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/TelegramAPIProxy
 ---
 
 # Return True if the user is within rate limits for the given tool.          Side-
 
 ## Connections
-- [[.check_tool_rate_limit()_1]] - `rationale_for` [EXTRACTED]
+- [[.check_tool_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

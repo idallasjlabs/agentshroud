@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "multi_host_test.py"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/multi_host_testpy
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/multi_host_testpy

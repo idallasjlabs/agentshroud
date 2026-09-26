@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L61"
+community: "test_a2a_policy.py"
+location: "L377"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/A2APolicyEngine
+  - graphify/EXTRACTED
+  - community/test_a2a_policypy
 ---
 
 # Response
 
 ## Connections
-- [[._handle()]] - `references` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

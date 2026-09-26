@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "_process_inbound()"
+community: "RateLimiter"
 location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/RateLimiter
 ---
 
 # Resolve the outbound trust level for `request`, shared by the blocking     and s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_user_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_process_inbound
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

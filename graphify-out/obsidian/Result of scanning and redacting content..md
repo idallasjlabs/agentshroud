@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "PromptProtection"
+community: "DockerEngine"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/DockerEngine
 ---
 
 # Result of scanning and redacting content.
 
 ## Connections
-- [[RedactionResult_3]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/DockerEngine

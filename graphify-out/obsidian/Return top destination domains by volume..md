@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "Production Safety Checklist (SKILL)"
 location: "L667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Return top destination domains by volume.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_top_destinations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

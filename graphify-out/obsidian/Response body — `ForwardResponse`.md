@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Response body — `ForwardResponse`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

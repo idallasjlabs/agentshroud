@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "TrustConfig"
+community: "RBACConfig"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/RBACConfig
 ---
 
 # Return incidents, optionally filtered by source bot.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_incidents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

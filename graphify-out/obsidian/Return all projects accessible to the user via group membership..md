@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # Return all projects accessible to the user via group membership.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_projects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

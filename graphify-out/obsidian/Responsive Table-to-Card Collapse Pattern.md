@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "concept"
-community: "Local-Model Job Quality Matrix"
+community: "start.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/startsh
 ---
 
 # Responsive Table-to-Card Collapse Pattern
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Job Schedule Dashboard]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/concept #graphify/EXTRACTED #community/startsh

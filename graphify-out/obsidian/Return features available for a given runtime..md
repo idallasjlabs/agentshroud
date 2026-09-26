@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "TestSecurityFeatures"
+community: "TestObservatoryMode"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/TestObservatoryMode
 ---
 
 # Return features available for a given runtime.
@@ -15,4 +15,4 @@ tags:
 - [[get_features_for_runtime()]] - `rationale_for` [EXTRACTED]
 - [[get_missing_features()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode

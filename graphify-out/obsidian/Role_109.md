@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L8"
+community: "Skill: Mindmap Architect (MM)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

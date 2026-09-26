@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "IntelReportStore"
+community: "HTTPConnectProxy"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/HTTPConnectProxy
 ---
 
 # Return True iff the stored content_hash matches recomputation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

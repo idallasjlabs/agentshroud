@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "get_trivy_summary()"
+community: "agentshroud-bot"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/agentshroud-bot
 ---
 
 # Return latest Trivy scan summary from saved reports.      When Trivy is installe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_trivy_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-bot

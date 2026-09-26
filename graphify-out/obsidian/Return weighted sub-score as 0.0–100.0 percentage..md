@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L2308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # Return weighted sub-score as 0.0–100.0 percentage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_compute_weighted_subscore()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/compute_scorecard
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

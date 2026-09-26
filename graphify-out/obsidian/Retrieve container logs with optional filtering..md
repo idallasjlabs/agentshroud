@@ -12,6 +12,6 @@ tags:
 # Retrieve container logs with optional filtering.
 
 ## Connections
-- [[get_logs()]] - `rationale_for` [EXTRACTED]
+- [[get_logs()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

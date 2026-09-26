@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "DelegationManager"
+community: "make_event()"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # Return True if the user currently holds the delegated privilege.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_delegated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DelegationManager
+#graphify/rationale #graphify/EXTRACTED #community/make_event

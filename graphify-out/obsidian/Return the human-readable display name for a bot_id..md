@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "gateway.security.agent_cve_registry"
+community: "Browser-Fetch Skill for 1Password Share Links"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - community/Browser-Fetch_Skill_for_1Password_Share_Links
 ---
 
 # Return the human-readable display name for a bot_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_agent_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/rationale #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links

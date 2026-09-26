@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Path"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Path
 ---
 
 # Roadmap
@@ -21,4 +21,4 @@ tags:
 - [[P4 Wire MCP Proxy ✅ DONE]] - `contains` [EXTRACTED]
 - [[P5 Wire SecurityPipeline to forward ✅ DONE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Path

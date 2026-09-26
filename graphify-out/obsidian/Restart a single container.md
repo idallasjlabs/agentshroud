@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "TestPromptProtection"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/TestPromptProtection
 ---
 
 # Restart a single container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Container Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/TestPromptProtection

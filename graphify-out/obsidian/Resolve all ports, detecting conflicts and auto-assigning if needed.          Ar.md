@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "PortManager"
+community: "KeyVault"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.resolve_ports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PortManager
+#graphify/rationale #graphify/EXTRACTED #community/KeyVault

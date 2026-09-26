@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "rbac_config.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/rbac_configpy
 ---
 
 # ResourceGuard
 
 ## Connections
 - [[.__del__()]] - `method` [EXTRACTED]
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_88]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_114]] - `method` [EXTRACTED]
 - [[._alert_high_usage()]] - `method` [EXTRACTED]
-- [[._check_system_resources()]] - `method` [EXTRACTED]
+- [[._check_system_resources()_1]] - `method` [EXTRACTED]
 - [[._cleanup_expired_usage()]] - `method` [EXTRACTED]
 - [[._get_disk_io_stats()]] - `method` [EXTRACTED]
 - [[._monitor_resources()]] - `method` [EXTRACTED]
 - [[._start_monitoring_task()]] - `method` [EXTRACTED]
-- [[.add_alert_callback()_2]] - `method` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `method` [EXTRACTED]
 - [[.check_cpu_limit()]] - `method` [EXTRACTED]
 - [[.check_disk_write_limit()]] - `method` [EXTRACTED]
 - [[.check_memory_limit()]] - `method` [EXTRACTED]
@@ -30,9 +30,9 @@ tags:
 - [[.cleanup_temp_files()]] - `method` [EXTRACTED]
 - [[.get_usage_stats()]] - `method` [EXTRACTED]
 - [[.register_temp_file()]] - `method` [EXTRACTED]
-- [[.setup_method()_19]] - `calls` [EXTRACTED]
+- [[.setup_method()_22]] - `calls` [EXTRACTED]
 - [[.start_request_tracking()]] - `method` [EXTRACTED]
-- [[.stop()_6]] - `method` [EXTRACTED]
+- [[.stop()_11]] - `method` [EXTRACTED]
 - [[.stop_monitoring()]] - `method` [EXTRACTED]
 - [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - `calls` [EXTRACTED]
 - [[.test_check_cpu_limit_returns_false_on_exception()]] - `calls` [EXTRACTED]
@@ -45,20 +45,21 @@ tags:
 - [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[.test_stop_cancels_monitor_task_and_idempotent()]] - `calls` [EXTRACTED]
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Any_32]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[LLMProxy_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and limit resource usage per agentrequest.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCpuMemoryDiskLimits]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
@@ -82,21 +83,27 @@ tags:
 - [[TestResourceGuardLifecycle]] - `uses` [INFERRED]
 - [[TestResourceGuardWiring]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTempFiles]] - `uses` [INFERRED]
 - [[TestUsageStatsAndTracking]] - `uses` [INFERRED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
+- [[_FakeSanitizer_1]] - `uses` [INFERRED]
 - [[get_resource_guard()]] - `references` [EXTRACTED]
-- [[guard()_1]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[guard()_3]] - `calls` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `references` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
+- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `calls` [EXTRACTED]
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - `calls` [EXTRACTED]
+- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - `calls` [EXTRACTED]
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - `calls` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

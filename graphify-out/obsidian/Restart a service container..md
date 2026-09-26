@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "cli/main.py"
+community: "patch"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/patch
 ---
 
 # Restart a service container.
 
 ## Connections
-- [[restart_service()_2]] - `rationale_for` [EXTRACTED]
+- [[restart_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/patch

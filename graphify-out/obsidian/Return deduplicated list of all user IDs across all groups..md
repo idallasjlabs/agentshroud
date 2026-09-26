@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "TelegramAPIProxy"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TelegramAPIProxy
 ---
 
 # Return deduplicated list of all user IDs across all groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_all_member_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

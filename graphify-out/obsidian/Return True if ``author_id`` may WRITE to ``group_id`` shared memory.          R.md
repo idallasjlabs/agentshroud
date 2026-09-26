@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # Return True if ``author_id`` may WRITE to ``group_id`` shared memory.          R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_authorized_group_writer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

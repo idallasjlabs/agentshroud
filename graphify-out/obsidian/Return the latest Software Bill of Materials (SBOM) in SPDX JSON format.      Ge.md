@@ -12,6 +12,6 @@ tags:
 # Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge
 
 ## Connections
-- [[get_sbom()]] - `rationale_for` [EXTRACTED]
+- [[get_sbom()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

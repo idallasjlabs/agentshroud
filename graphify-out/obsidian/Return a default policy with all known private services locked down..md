@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "PrivacyPolicyEnforcer"
+community: "What You Must Do When Invoked"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Return a default policy with all known private services locked down.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
