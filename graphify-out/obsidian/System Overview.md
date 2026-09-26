@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "MiddlewareManager"
+community: "PipelineAction"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PipelineAction
 ---
 
 # System Overview.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `references` [EXTRACTED]
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
-- [[Architecture Overview_1]] - `references` [EXTRACTED]
+- [[Architecture Overview_2]] - `references` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
-- [[Quick Reference_6]] - `references` [EXTRACTED]
+- [[Quick Reference_9]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

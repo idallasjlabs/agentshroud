@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
+source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Apple Services Setup Guide"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Apple_Services_Setup_Guide
 ---
 
 # Step 6b - Wiki (only if --wiki flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

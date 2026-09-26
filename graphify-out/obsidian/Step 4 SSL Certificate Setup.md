@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Step-by-Step Deployment"
+community: "Implement per-user session isolation using Teleg"
 location: "L182"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Implement_per-user_session_isolation_using_Teleg
 ---
 
 # Step 4: SSL Certificate Setup
@@ -17,4 +17,4 @@ tags:
 - [[Option C Corporate Certificate Authority]] - `contains` [EXTRACTED]
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L87"
+community: "Athena — Knowledge Distiller"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/Athena__Knowledge_Distiller
 ---
 
 # System Prompt
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

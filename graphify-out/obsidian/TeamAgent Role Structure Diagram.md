@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.png"
 type: "image"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer "
+community: "OKE Channel — CPA Exam Context"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # Team/Agent Role Structure Diagram
@@ -17,4 +17,4 @@ tags:
 - [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - `conceptually_related_to` [EXTRACTED]
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+#graphify/image #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

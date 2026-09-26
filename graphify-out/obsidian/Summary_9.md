@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L11"
+community: "SecureBrowser"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/SecureBrowser
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser

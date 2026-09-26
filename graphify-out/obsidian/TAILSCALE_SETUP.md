@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "OpenClaw Bot Container"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # TAILSCALE_SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[PAIRING_INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

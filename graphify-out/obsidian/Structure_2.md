@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Features"
-location: "L5"
+community: "Skill: UX Expert (UX)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Skill_UX_Expert_UX
 ---
 
 # Structure
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

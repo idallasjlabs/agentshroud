@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "4. Environment Variables"
-location: "L11"
+community: "postmortem.md"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/postmortemmd
 ---
 
 # Summary
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

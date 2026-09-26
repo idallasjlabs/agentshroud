@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Playwright"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Playwright
 ---
 
 # System Requirements Specification (SRS)
 
 ## Connections
-- [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 - [[system-requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Playwright

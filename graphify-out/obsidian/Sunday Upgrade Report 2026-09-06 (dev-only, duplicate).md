@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "document"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/OutputSchemaEnforcer
 ---
 
 # Sunday Upgrade Report 2026-09-06 (dev-only, duplicate)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade Report 2026-09-06 (dev-only scoped run)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/OutputSchemaEnforcer

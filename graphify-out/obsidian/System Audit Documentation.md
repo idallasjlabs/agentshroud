@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_29]] - `contains` [EXTRACTED]
-- [[Related Skills_20]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
+- [[Purpose_27]] - `contains` [EXTRACTED]
+- [[README_27]] - `contains` [EXTRACTED]
+- [[Related Skills_30]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,20 +1,20 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Browser — Secure Browser Automation"
 location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Step 7: Verify Installation
 
 ## Connections
-- [[Dashboard Access]] - `contains` [EXTRACTED]
-- [[Health Check_1]] - `contains` [EXTRACTED]
+- [[Dashboard Access_1]] - `contains` [EXTRACTED]
+- [[Health Check]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 - [[Test a Message]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

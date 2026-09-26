@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "AgentShroud Semgrep SAST Configuration"
-location: "L1"
+community: "Kill Switch Procedure"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Semgrep_SAST_Configuration
+  - community/Kill_Switch_Procedure
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

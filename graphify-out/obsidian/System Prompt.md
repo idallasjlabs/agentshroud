@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L73"
+community: "AgentShroud Consolidated Issues Report"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # System Prompt
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

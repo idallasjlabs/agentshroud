@@ -12,6 +12,6 @@ tags:
 # Stop a specific service container.
 
 ## Connections
-- [[stop_service()_1]] - `rationale_for` [EXTRACTED]
+- [[stop_service()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

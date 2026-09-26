@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ServiceManager"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ServiceManager
 ---
 
 # Tagged provenance record for a context segment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextSegment]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

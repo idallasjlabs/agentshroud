@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
-location: "L157"
+community: "graphify reference: extra exports and benchmark"
+location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feat
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

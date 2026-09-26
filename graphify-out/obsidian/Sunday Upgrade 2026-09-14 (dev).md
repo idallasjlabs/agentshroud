@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "Local-Model Job Quality Matrix"
+community: "start.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/startsh
 ---
 
 # Sunday Upgrade 2026-09-14 (dev)
@@ -16,4 +16,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [AMBIGUOUS]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/document #graphify/EXTRACTED #community/startsh

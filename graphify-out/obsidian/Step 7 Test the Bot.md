@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "record_decision"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/record_decision
 ---
 
 # Step 7: Test the Bot
@@ -16,4 +16,4 @@ tags:
 - [[Test via Control UI]] - `contains` [EXTRACTED]
 - [[Test via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/record_decision

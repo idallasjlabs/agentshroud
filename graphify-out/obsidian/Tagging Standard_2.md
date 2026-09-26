@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Tagging Standard
@@ -16,4 +16,4 @@ tags:
 - [[Required Tags (All Resources)_2]] - `contains` [EXTRACTED]
 - [[Tag Audit Process_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/cve-registry-manual-review.md"
+source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "Community 1338"
-location: "L14"
+community: "_process_inbound()"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1338
+  - community/_process_inbound
 ---
 
 # Summary
 
 ## Connections
-- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1338
+#graphify/document #graphify/EXTRACTED #community/_process_inbound

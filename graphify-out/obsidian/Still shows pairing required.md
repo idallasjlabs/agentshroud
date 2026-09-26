@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "TestInternalBannerMatcher"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/TestInternalBannerMatcher
 ---
 
 # Still shows "pairing required"
 
 ## Connections
-- [[Troubleshooting_34]] - `contains` [EXTRACTED]
+- [[Troubleshooting_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher

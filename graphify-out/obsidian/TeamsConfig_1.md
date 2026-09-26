@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "PermissionLevel"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/PermissionLevel
 ---
 
 # TeamsConfig
@@ -17,7 +17,7 @@ tags:
 - [[.test_get_user_collab_mode_falls_back_to_group()]] - `calls` [EXTRACTED]
 - [[.test_user_override_takes_precedence_over_group()]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

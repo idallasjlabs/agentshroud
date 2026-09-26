@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "test_daily_cve_report.py"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/test_daily_cve_reportpy
 ---
 
 # System bypass domains should not error when egress_filter is None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_system_bypass_without_egress_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

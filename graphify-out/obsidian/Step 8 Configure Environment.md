@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Telegram Channel Setup"
+community: "iCloud Services"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Channel_Setup
+  - community/iCloud_Services
 ---
 
 # Step 8: Configure Environment
@@ -15,4 +15,4 @@ tags:
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

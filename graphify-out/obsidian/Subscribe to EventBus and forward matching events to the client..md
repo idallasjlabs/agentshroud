@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "SOCWebSocketHandler"
+community: "MiddlewareManager"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/MiddlewareManager
 ---
 
 # Subscribe to EventBus and forward matching events to the client.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._event_fan_out()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

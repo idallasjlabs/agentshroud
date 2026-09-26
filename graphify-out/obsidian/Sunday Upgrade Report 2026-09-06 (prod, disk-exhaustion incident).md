@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/OutputSchemaEnforcer
 ---
 
 # Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)
@@ -19,4 +19,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh (remote-control launcher)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/OutputSchemaEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "rationale"
-community: "Release Workflow"
+community: "promote-firmware.sh"
 location: "lines 38-50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Release_Workflow
+  - community/promote-firmwaresh
 ---
 
 # Tag/Version Sync Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Release Workflow]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Release_Workflow
+#graphify/rationale #graphify/EXTRACTED #community/promote-firmwaresh

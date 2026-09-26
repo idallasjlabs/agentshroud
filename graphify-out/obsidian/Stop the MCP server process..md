@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "test_voice_gateway.py"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_voice_gatewaypy
 ---
 
 # Stop the MCP server process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

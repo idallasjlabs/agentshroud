@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "WebhookReceiver"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/WebhookReceiver
 ---
 
 # Stop a running container.
 
 ## Connections
-- [[.stop()]] - `rationale_for` [EXTRACTED]
+- [[.stop()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

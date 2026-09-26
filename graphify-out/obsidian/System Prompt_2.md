@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L88"
+community: "ADR-003: Two-Network Container Isolation"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # System Prompt
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

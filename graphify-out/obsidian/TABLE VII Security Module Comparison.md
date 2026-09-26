@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "VIII. Evaluation"
+community: "AgentShroud Gateway (holds 1Password service acc"
 location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/VIII_Evaluation
+  - community/AgentShroud_Gateway_holds_1Password_service_acc
 ---
 
 # TABLE VII: Security Module Comparison
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/VIII_Evaluation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_acc

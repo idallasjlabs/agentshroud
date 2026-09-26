@@ -1,17 +1,17 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L48"
+community: "egress_monitor.py"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/egress_monitorpy
 ---
 
 # Tech Stack
 
 ## Connections
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

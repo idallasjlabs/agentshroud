@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation"
+community: "DeniedRequest"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/DeniedRequest
 ---
 
 # System Audit & Documentation
@@ -25,6 +25,7 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW_2]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_173]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/document #graphify/EXTRACTED #community/DeniedRequest

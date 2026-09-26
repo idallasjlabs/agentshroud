@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Features"
-location: "L109"
+community: "_build_image_targets()"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/_build_image_targets
 ---
 
 # Tech Stack
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/_build_image_targets

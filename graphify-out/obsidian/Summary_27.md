@@ -1,20 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "Community 360"
-location: "L434"
+community: "Gateway-Enforced Intel Verification (SCRUM-75)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
 ---
 
 # Summary
 
 ## Connections
-- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-03-20)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Gateway-Enforced_Intel_Verification_SCRUM-75

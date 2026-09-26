@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Architecture Overview"
-location: "L10"
+community: "Apple Reminders CLI (remindctl)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Overview
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Overview
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

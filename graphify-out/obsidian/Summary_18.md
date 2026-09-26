@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L11"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

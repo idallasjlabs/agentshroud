@@ -1,17 +1,23 @@
 ---
-source_file: "docs/project/glossary.md"
-type: "document"
-community: "AgentShroud Project Terminology"
-location: "L115"
+source_file: "cli/src/main.rs"
+type: "code"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L337"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Project_Terminology
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # T
 
 ## Connections
-- [[AgentShroud Project Terminology]] - `contains` [EXTRACTED]
+- [[.new()_1]] - `references` [EXTRACTED]
+- [[GatewayClient]] - `references` [EXTRACTED]
+- [[run_approvals_decide()]] - `references` [EXTRACTED]
+- [[run_approvals_list()]] - `references` [EXTRACTED]
+- [[run_cves()]] - `references` [EXTRACTED]
+- [[run_deploy_status()]] - `references` [EXTRACTED]
+- [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

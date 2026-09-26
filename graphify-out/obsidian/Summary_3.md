@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L171"
+community: "GSDE&G Development Master Checklist"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Implementation Status"
-location: "L383"
+community: "main.py"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/mainpy
 ---
 
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/mainpy

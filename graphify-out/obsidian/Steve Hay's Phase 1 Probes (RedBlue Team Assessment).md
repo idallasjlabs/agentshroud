@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "concept"
-community: "GSDE&G Skills Reference Guide"
+community: "AgentShroud: A Transparent Proxy Framework for E"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
 ---
 
 # Steve Hay's Phase 1 Probes (Red/Blue Team Assessment)
@@ -14,4 +14,4 @@ tags:
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
 - [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E

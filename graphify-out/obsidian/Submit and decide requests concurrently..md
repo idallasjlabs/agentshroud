@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # Submit and decide requests concurrently.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_concurrent_submit_and_decide()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

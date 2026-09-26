@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "_handle()"
+community: "TestOAuthInjection"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/TestOAuthInjection
 ---
 
 # StreamWriter
@@ -15,4 +15,4 @@ tags:
 - [[_handle()]] - `references` [EXTRACTED]
 - [[_pipe()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

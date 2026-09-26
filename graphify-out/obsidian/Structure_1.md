@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Browser Extension"
+community: "egress_monitor.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/egress_monitorpy
 ---
 
 # Structure
 
 ## Connections
-- [[Browser Extension]] - `contains` [EXTRACTED]
-- [[Gateway wiring]] - `contains` [EXTRACTED]
-- [[Safari]] - `contains` [EXTRACTED]
-- [[Tests_2]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

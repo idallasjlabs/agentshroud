@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/exports.md"
+source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "TrustLevel"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/TrustLevel
 ---
 
 # Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/TrustLevel

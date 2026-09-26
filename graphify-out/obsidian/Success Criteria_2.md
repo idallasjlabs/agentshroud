@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
-location: "L319"
+community: "test_wire_llm_settings.js"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/test_wire_llm_settingsjs
 ---
 
 # Success Criteria
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs

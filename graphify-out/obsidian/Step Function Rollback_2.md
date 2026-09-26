@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "TestSSRFDetection"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/TestSSRFDetection
 ---
 
 # Step Function Rollback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection

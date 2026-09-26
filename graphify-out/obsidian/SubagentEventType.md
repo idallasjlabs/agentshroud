@@ -12,9 +12,9 @@ tags:
 # SubagentEventType
 
 ## Connections
-- [[._log_event()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[._log_event()_1]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 

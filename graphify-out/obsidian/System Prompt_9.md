@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "<description of what this does>"
-location: "L118"
+community: "AGENTS.md — Codex CLI Guidance"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/description_of_what_this_does
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # System Prompt
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/description_of_what_this_does
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

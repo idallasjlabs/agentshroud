@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Backup & Restore Runbook — AgentShroud"
+community: ".scan()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Backup__Restore_Runbook__AgentShroud
+  - community/scan
 ---
 
 # Tamper-Evident Audit (SHA-256 Hash Chain)
@@ -14,4 +14,4 @@ tags:
 - [[Daily Audit Ledger Review]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud
+#graphify/concept #graphify/EXTRACTED #community/scan

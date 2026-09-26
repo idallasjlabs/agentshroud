@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit Documentation (SAD)"
+community: "IV. System Architecture"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Documentation_SAD
+  - community/IV_System_Architecture
 ---
 
 # System Audit Documentation (SAD)
@@ -14,4 +14,4 @@ tags:
 - [[Session Prompt Generator]] - `semantically_similar_to` [INFERRED]
 - [[System Audit Vault README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation_SAD
+#graphify/document #graphify/EXTRACTED #community/IV_System_Architecture

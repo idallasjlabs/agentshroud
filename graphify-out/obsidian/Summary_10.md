@@ -1,19 +1,18 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L434"
+community: "main()"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/main
 ---
 
 # Summary
 
 ## Connections
-- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
+- [[Test Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/main

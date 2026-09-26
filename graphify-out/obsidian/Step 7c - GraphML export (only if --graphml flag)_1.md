@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/exports.md"
+source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Any"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Any
 ---
 
 # Step 7c - GraphML export (only if --graphml flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Any

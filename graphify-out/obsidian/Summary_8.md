@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L339"
+community: "SecureBrowser"
+location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/SecureBrowser
 ---
 
 # Summary
 
 ## Connections
-- [[Quick Start Commands]] - `contains` [EXTRACTED]
-- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
-- [[✅ Current Status]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser

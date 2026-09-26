@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "Community 911"
-location: "L406"
+community: "Recommendation"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_911
+  - community/Recommendation
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_911
+#graphify/document #graphify/EXTRACTED #community/Recommendation

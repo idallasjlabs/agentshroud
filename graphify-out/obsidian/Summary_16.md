@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "AgentShroud — Master Feature List (Everything Ev"
-location: "L406"
+community: "llm_proxy.py"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/llm_proxypy
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

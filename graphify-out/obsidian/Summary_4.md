@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L228"
+community: "Skill Creation Process"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/Skill_Creation_Process
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

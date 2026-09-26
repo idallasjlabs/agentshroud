@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Community 114"
-location: "L712"
+community: "test_a2a_policy.py"
+location: "L714"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/test_a2a_policypy
 ---
 
 # Stream conversation history through the gateway's OpenAI-compat     endpoint, yi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_call_llm_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

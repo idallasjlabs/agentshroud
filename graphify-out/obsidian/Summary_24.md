@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-inventory.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Security Modules (58)"
-location: "L215"
+community: "03-data.md"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/03-datamd
 ---
 
 # Summary
 
 ## Connections
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/document #graphify/EXTRACTED #community/03-datamd

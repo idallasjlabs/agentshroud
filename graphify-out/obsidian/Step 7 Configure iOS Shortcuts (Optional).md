@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "First Time Setup"
+community: "is_overloaded()"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/is_overloaded
 ---
 
 # Step 7: Configure iOS Shortcuts (Optional)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/is_overloaded

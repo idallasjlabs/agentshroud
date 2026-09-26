@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
+community: "SOCWebSocketHandler"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/SOCWebSocketHandler
 ---
 
 # Successful Validation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Report Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler

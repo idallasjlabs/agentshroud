@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Security Verification Report"
-location: "L5"
+community: "AgentShroud Audit Specification"
+location: "L604"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Summary
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Browser — Secure Browser Automation"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Step-by-Step Installation
@@ -21,4 +21,4 @@ tags:
 - [[Step 6 Deploy AgentShroud]] - `contains` [EXTRACTED]
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

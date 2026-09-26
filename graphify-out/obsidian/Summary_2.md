@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L132"
+community: "OpenClaw Workspace Usage Guide"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

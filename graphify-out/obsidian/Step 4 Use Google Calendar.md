@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "Browser — Secure Browser Automation"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Step 4: Use Google Calendar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

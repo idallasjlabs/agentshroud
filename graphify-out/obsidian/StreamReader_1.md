@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "_handle()"
+community: "TestOAuthInjection"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/TestOAuthInjection
 ---
 
 # StreamReader
@@ -15,4 +15,4 @@ tags:
 - [[_handle()_1]] - `references` [EXTRACTED]
 - [[_pump()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

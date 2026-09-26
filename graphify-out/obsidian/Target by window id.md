@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Examples"
+community: "apple_engine.py"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Examples
+  - community/apple_enginepy
 ---
 
 # Target by window id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Examples
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

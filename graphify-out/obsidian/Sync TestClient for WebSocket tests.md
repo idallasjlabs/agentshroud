@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

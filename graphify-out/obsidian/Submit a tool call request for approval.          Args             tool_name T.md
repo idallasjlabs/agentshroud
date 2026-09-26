@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # Submit a tool call request for approval.          Args:             tool_name: T
 
 ## Connections
-- [[.submit_tool_request()_1]] - `rationale_for` [EXTRACTED]
+- [[.submit_tool_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

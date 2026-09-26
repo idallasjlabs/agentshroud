@@ -1,17 +1,20 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "CronStateMonitor"
+community: "Development Workflow: Read-Only Filesystem Strat"
 location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/Development_Workflow_Read-Only_Filesystem_Strat
 ---
 
 # Task
 
 ## Connections
 - [[.start()_2]] - `references` [EXTRACTED]
+- [[app_main.c]] - `imports` [EXTRACTED]
+- [[main.c]] - `imports` [EXTRACTED]
+- [[wakeword.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat

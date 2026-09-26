@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation"
+community: "mcp_audit.py"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/mcp_auditpy
 ---
 
 # System Audit & Documentation
@@ -25,6 +25,7 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW_1]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[SKILL_110]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

@@ -1,18 +1,19 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
-location: "L11"
+community: ".mcp.json"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+  - community/mcpjson
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
-- [[Test Results_1]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+#graphify/document #graphify/EXTRACTED #community/mcpjson

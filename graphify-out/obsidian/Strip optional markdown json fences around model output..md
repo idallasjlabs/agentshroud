@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestPathIsolationManager"
 location: "L2705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestPathIsolationManager
 ---
 
 # Strip optional markdown json fences around model output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._strip_json_fence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

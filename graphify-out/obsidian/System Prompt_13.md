@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L66"
+community: "OpenClaw"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/OpenClaw
 ---
 
 # System Prompt
 
 ## Connections
-- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/OpenClaw
