@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "i-vulcan SKILL.md (Subject Matter Auditor, podca"
+community: "TestComplianceMaths"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podca
+  - community/TestComplianceMaths
 ---
 
 # i-socrates SKILL.md (Dialogue Architect, referenced dependency)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podca
+#graphify/document #graphify/EXTRACTED #community/TestComplianceMaths

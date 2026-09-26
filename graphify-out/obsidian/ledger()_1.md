@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "SSHProxy"
-location: "L91"
+community: "TrustConfig"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TrustConfig
 ---
 
 # ledger()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
+- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
+- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

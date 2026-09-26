@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "SSHProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/SSHProxy
 ---
 
 # main.py
@@ -26,9 +26,12 @@ tags:
 - [[DNSFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EnvironmentGuard]] - `imports` [EXTRACTED]
+- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
 - [[FileSandbox]] - `imports` [EXTRACTED]
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 - [[GitGuard]] - `imports` [EXTRACTED]
+- [[Ingest API (POST ingest)]] - `conceptually_related_to` [INFERRED]
 - [[LedgerEntry_1]] - `imports` [EXTRACTED]
 - [[LedgerQueryResponse_1]] - `imports` [EXTRACTED]
 - [[LogSanitizer_1]] - `imports` [EXTRACTED]
@@ -72,6 +75,7 @@ tags:
 - [[_resolve_effective_agent_id()]] - `contains` [EXTRACTED]
 - [[_scanner_summary()]] - `contains` [EXTRACTED]
 - [[add_blocked_domain()]] - `contains` [EXTRACTED]
+- [[agent_cve_registry.py]] - `conceptually_related_to` [INFERRED]
 - [[api.py]] - `imports_from` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[auth.py]] - `imports_from` [EXTRACTED]
@@ -102,6 +106,7 @@ tags:
 - [[falco_monitor.py]] - `imports_from` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 - [[full_security_report()]] - `contains` [EXTRACTED]
+- [[gateway package __init__]] - `conceptually_related_to` [INFERRED]
 - [[get_dns_stats()]] - `contains` [EXTRACTED]
 - [[get_ledger_entry()]] - `contains` [EXTRACTED]
 - [[get_my_permissions()]] - `contains` [EXTRACTED]
@@ -193,4 +198,4 @@ tags:
 - [[wazuh_alerts()]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

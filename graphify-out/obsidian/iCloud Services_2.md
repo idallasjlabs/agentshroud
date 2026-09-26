@@ -1,25 +1,26 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "hermes/SOUL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/hermes/SOULmd
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations_2]] - `contains` [EXTRACTED]
-- [[Configuration_5]] - `contains` [EXTRACTED]
-- [[Contact Operations_1]] - `contains` [EXTRACTED]
-- [[Mail Operations_1]] - `contains` [EXTRACTED]
-- [[Notes Operations_1]] - `contains` [EXTRACTED]
+- [[Configuration_1]] - `contains` [EXTRACTED]
+- [[Contact Operations_2]] - `contains` [EXTRACTED]
+- [[Mail Operations_2]] - `contains` [EXTRACTED]
+- [[Notes Operations_2]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
 - [[Security_5]] - `contains` [EXTRACTED]
-- [[Setup_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Setup_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

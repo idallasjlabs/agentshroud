@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/README.md"
 type: "concept"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "Project-Level Deployment"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # llm-init.sh — project-level multi-tool config deployment
@@ -16,4 +16,4 @@ tags:
 - [[LLM Operating Context — Isaiah Jefferson]] - `references` [EXTRACTED]
 - [[MCP server expansion (3 → 11) and --mcp flag]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

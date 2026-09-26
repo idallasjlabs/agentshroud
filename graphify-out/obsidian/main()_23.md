@@ -1,28 +1,25 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "model_usage.py"
-location: "L235"
+community: "env_guard.py"
+location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/env_guardpy
 ---
 
 # main()
 
 ## Connections
-- [[aggregate_costs()]] - `calls` [EXTRACTED]
-- [[build_json_all()]] - `calls` [EXTRACTED]
-- [[build_json_current()]] - `calls` [EXTRACTED]
-- [[eprint()]] - `calls` [EXTRACTED]
-- [[filter_by_days()]] - `calls` [EXTRACTED]
-- [[latest_day_cost()]] - `calls` [EXTRACTED]
-- [[load_payload()]] - `calls` [EXTRACTED]
-- [[model_usage.py]] - `contains` [EXTRACTED]
-- [[parse_daily_entries()]] - `calls` [EXTRACTED]
-- [[pick_current_model()]] - `calls` [EXTRACTED]
-- [[render_text_all()]] - `calls` [EXTRACTED]
-- [[render_text_current()]] - `calls` [EXTRACTED]
+- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
+- [[generate_email()]] - `calls` [EXTRACTED]
+- [[generate_favicons()]] - `calls` [EXTRACTED]
+- [[generate_feature_icons()]] - `calls` [EXTRACTED]
+- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
+- [[generate_presentation()]] - `calls` [EXTRACTED]
+- [[generate_social()]] - `calls` [EXTRACTED]
+- [[generate_svg_logos()]] - `calls` [EXTRACTED]
+- [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/model_usagepy
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

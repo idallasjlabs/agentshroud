@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "1.4 Implementation Plan"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/14_Implementation_Plan
 ---
 
 # ledger.py (audit trail, SHA-256 hashing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/image #graphify/EXTRACTED #community/14_Implementation_Plan

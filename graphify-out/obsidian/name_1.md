@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
-community: "browser-extension/package.json"
-location: "L2"
+community: "._can_use_tool_impl()"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/_can_use_tool_impl
 ---
 
 # name
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[manifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/_can_use_tool_impl

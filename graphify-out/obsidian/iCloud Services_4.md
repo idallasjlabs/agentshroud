@@ -1,25 +1,25 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "check-vendor-compat.sh"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/check-vendor-compatsh
 ---
 
 # iCloud Services
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration]] - `contains` [EXTRACTED]
+- [[Calendar Operations_3]] - `contains` [EXTRACTED]
+- [[Configuration_18]] - `contains` [EXTRACTED]
 - [[Contact Operations_3]] - `contains` [EXTRACTED]
 - [[Mail Operations_3]] - `contains` [EXTRACTED]
 - [[Notes Operations_3]] - `contains` [EXTRACTED]
-- [[Security_7]] - `contains` [EXTRACTED]
-- [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_29]] - `contains` [EXTRACTED]
+- [[SKILL_193]] - `contains` [EXTRACTED]
+- [[Security_10]] - `contains` [EXTRACTED]
+- [[Setup_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

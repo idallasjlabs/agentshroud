@@ -1,21 +1,25 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L232"
+community: "TestConfigValidation"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/TestConfigValidation
 ---
 
 # main()
 
 ## Connections
-- [[Path_45]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[.click()_3]] - `calls` [EXTRACTED]
+- [[.close()_20]] - `calls` [EXTRACTED]
+- [[.extract()_3]] - `calls` [EXTRACTED]
+- [[.fill_field()_3]] - `calls` [EXTRACTED]
+- [[.navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

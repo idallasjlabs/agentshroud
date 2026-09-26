@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "check_benchmark_regression.py"
-location: "L24"
+community: "canvas_proxy_app()"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_benchmark_regressionpy
+  - community/canvas_proxy_app
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # instruction_envelope.py
@@ -15,4 +15,4 @@ tags:
 - [[EnvelopeSigner]] - `contains` [EXTRACTED]
 - [[InstructionEnvelope]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

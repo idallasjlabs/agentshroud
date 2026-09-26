@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "concept"
-community: "Bear Notes"
+community: "ADR-008-progressive-trust-levels.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # memo CLI (antoniorodr/memo)
 
 ## Connections
-- [[apple-notesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_195]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bear_Notes
+#graphify/concept #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

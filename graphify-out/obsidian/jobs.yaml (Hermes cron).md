@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "run_test()"
+community: "AgentShroud — Master Feature List (Everything Ev"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_test
+  - community/AgentShroud__Master_Feature_List_Everything_Ev
 ---
 
 # jobs.yaml (Hermes cron)
 
 ## Connections
 - [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
-- [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run_test
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev

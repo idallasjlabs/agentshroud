@@ -1,11 +1,11 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "Skills by Category"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/Skills_by_Category
 ---
 
 # internal network (isolated, internal:true)
@@ -15,4 +15,4 @@ tags:
 - [[openclaw service (proxy mode, internal-only network)]] - `shares_data_with` [EXTRACTED]
 - [[wazuh service (proxy-mode HIDS sidecar)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/Skills_by_Category

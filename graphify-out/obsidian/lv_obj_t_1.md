@@ -1,19 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
+source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "lvgl_kawaii_face.c"
-location: "L291"
+community: "Telegram Channel Setup"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/Telegram_Channel_Setup
 ---
 
 # lv_obj_t
 
 ## Connections
-- [[draw_eye()]] - `references` [EXTRACTED]
-- [[draw_mouth()]] - `references` [EXTRACTED]
-- [[face_get_container()]] - `references` [EXTRACTED]
+- [[_find_canvas()]] - `references` [EXTRACTED]
+- [[_report_and_place_canvas()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/code #graphify/EXTRACTED #community/Telegram_Channel_Setup

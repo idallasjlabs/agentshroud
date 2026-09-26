@@ -1,25 +1,25 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "init_skill.py"
+community: "AgentShroud -- USPTO Provisional Patent Applicat"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
 ---
 
 # init_skill.py
 
 ## Connections
 - [[TODO Add actual script logic here]] - `rationale_for` [EXTRACTED]
+- [[SKILL_228]] - `references` [EXTRACTED]
 - [[create_resource_dirs()]] - `contains` [EXTRACTED]
 - [[init_skill()]] - `contains` [EXTRACTED]
-- [[main()_32]] - `contains` [EXTRACTED]
+- [[main()_33]] - `contains` [EXTRACTED]
 - [[normalize_skill_name()]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `conceptually_related_to` [INFERRED]
 - [[parse_resources()]] - `contains` [EXTRACTED]
-- [[skill-creatorSKILL]] - `references` [EXTRACTED]
 - [[title_case_skill_name()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/init_skillpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat

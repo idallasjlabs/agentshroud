@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-007: Zero-Config Security (docker-compose up"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-007_Zero-Config_Security_docker-compose_up
 ---
 
 # mcp-config.yml
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/code #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up

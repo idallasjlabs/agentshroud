@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # middleware.py
 
 ## Connections
-- [[Action]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[AgentRegistry]] - `imports` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AlertDispatcher]] - `imports` [EXTRACTED]
@@ -43,13 +43,14 @@ tags:
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
 - [[OutputCanary]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
-- [[RBACManager]] - `imports` [EXTRACTED]
-- [[Resource]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACManager_1]] - `imports` [EXTRACTED]
+- [[Resource_1]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[SessionManager]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
@@ -59,14 +60,13 @@ tags:
 - [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
-- [[ToolTier_2]] - `imports` [EXTRACTED]
+- [[ToolTier]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

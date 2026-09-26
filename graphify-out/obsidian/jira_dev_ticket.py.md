@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 171"
+community: "test_config_hot_reload.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/test_config_hot_reloadpy
 ---
 
 # jira_dev_ticket.py
@@ -34,4 +34,4 @@ tags:
 - [[run()]] - `contains` [EXTRACTED]
 - [[transition_issue()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_171
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

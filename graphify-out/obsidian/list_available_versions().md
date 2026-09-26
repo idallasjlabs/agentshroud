@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "EgressFilterConfig"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/EgressFilterConfig
 ---
 
 # list_available_versions()
@@ -19,4 +19,4 @@ tags:
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

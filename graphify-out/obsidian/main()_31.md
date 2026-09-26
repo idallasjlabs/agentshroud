@@ -1,21 +1,18 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "chat_console.py"
-location: "L120"
+community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[generate_image.py]] - `contains` [EXTRACTED]
+- [[get_api_key()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat_consolepy
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind

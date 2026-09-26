@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "DelegationManager"
-location: "L24"
+community: "asyncio"
+location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/asyncio
 ---
 
 # mgr()
 
 ## Connections
-- [[DelegationManager]] - `references` [EXTRACTED]
-- [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
-- [[test_delegation.py]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

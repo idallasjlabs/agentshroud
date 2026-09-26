@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "_script()"
-location: "L32"
+community: "TestFileDownload"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_script
+  - community/TestFileDownload
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_script
+#graphify/code #graphify/EXTRACTED #community/TestFileDownload

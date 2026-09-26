@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/package.json"
-type: "code"
-community: "hermes/skills/i-browser/package.json"
-location: "L11"
+source_file: "skills/custom/securebrowser/README.md"
+type: "document"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L396"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/packagejson
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
-# license
+# License
 
 ## Connections
-- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -1,20 +1,21 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # is_source_fixed()
 
 ## Connections
-- [[True when ``fixed_in`` version is = the running image (already patched). Args…]] - `rationale_for` [EXTRACTED]
-- [[parse_version()]] - `calls` [EXTRACTED]
+- [[TestVersion]] - `calls` [EXTRACTED]
+- [[True when ``fixed_in`` version is = the running image (already patched).      A]] - `rationale_for` [EXTRACTED]
+- [[parse_version()_1]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

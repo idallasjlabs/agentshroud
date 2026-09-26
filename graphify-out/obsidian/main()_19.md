@@ -1,24 +1,20 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "gen.py"
-location: "L164"
+community: "CollaboratorGreeter"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/CollaboratorGreeter
 ---
 
 # main()
 
 ## Connections
-- [[Path_27]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[Path_44]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter

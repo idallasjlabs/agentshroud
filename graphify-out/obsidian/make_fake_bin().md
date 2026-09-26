@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "test-container-runtime.sh"
+community: "TestSourceTagging"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/TestSourceTagging
 ---
 
 # make_fake_bin()
@@ -15,4 +15,4 @@ tags:
 - [[test-container-runtime.sh]] - `defines` [EXTRACTED]
 - [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/code #graphify/EXTRACTED #community/TestSourceTagging

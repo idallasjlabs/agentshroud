@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L309"
+community: "pytest.ini"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/pytestini
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_1]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/pytestini

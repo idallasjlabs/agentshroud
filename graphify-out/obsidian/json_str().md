@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # json_str()
 
 ## Connections
-- [[.get()_3]] - `calls` [EXTRACTED]
+- [[.get()_1]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[Value]] - `references` [EXTRACTED]
 - [[format_approvals()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[format_status()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

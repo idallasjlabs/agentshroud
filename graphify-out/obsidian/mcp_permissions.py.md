@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPServerConfig"
+community: "GitGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/GitGuard
 ---
 
 # mcp_permissions.py
 
 ## Connections
 - [[MCPPermissionManager]] - `contains` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
-- [[MCPServerConfig_2]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig]] - `imports` [EXTRACTED]
+- [[MCPServerConfig]] - `imports` [EXTRACTED]
 - [[PermissionCheck]] - `contains` [EXTRACTED]
-- [[PermissionLevel_1]] - `imports` [EXTRACTED]
+- [[PermissionLevel]] - `imports` [EXTRACTED]
 - [[PrivateAccessAttempt]] - `contains` [EXTRACTED]
 - [[PrivateRedactionEvent]] - `contains` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[RateLimitEntry]] - `contains` [EXTRACTED]
+- [[__init__.py_7]] - `re_exports` [EXTRACTED]
 - [[mcp_config.py]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
-- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/GitGuard

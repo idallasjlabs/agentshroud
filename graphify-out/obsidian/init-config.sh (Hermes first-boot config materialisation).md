@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "_seed_cron"
+community: "Skill: UX Expert (UX)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/Skill_UX_Expert_UX
 ---
 
 # init-config.sh (Hermes first-boot config materialisation)
@@ -17,10 +17,10 @@ tags:
 - [[Runtime facts writer — AGENTS.md AgentShroud version line (fixes hallucinated version)]] - `implements` [EXTRACTED]
 - [[Skills sync — installs ~.llm_settingsskills into optdataskills every boot]] - `implements` [EXTRACTED]
 - [[Tirith trust seeding — competitorresearch TLD lookalike bypass]] - `implements` [EXTRACTED]
-- [[_write_soul]] - `calls` [EXTRACTED]
+- [[_write_soul()]] - `calls` [EXTRACTED]
 - [[config.yaml seedupgrade — adds telegram.extra.base_url for gateway routing]] - `implements` [EXTRACTED]
 - [[gateway-default first-boot auto-start fix (removes stale down sentinel)]] - `implements` [EXTRACTED]
 - [[hermes service (prod, profiles hermesfull — service block is dead code, see run-standalone.sh)]] - `shares_data_with` [INFERRED]
 - [[start.sh — Hermes s6-overlay startup wrapper (main program)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/Skill_UX_Expert_UX

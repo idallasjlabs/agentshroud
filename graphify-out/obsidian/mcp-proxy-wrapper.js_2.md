@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
+community: "mcp_permissions.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/mcp_permissionspy
 ---
 
 # mcp-proxy-wrapper.js
 
 ## Connections
-- [[Environment Variables_14]] - `contains` [EXTRACTED]
+- [[Environment Variables_2]] - `contains` [EXTRACTED]
 - [[Fail-Closed Patch]] - `contains` [EXTRACTED]
 - [[Gateway Communication]] - `contains` [EXTRACTED]
-- [[How It Works_3]] - `contains` [EXTRACTED]
+- [[How It Works_1]] - `contains` [EXTRACTED]
 - [[Key Behavior]] - `contains` [EXTRACTED]
 - [[Process Architecture]] - `contains` [EXTRACTED]
-- [[Purpose_165]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
-- [[Usage_122]] - `contains` [EXTRACTED]
+- [[Purpose_122]] - `contains` [EXTRACTED]
+- [[Related Notes_8]] - `contains` [EXTRACTED]
+- [[Usage_123]] - `contains` [EXTRACTED]
 - [[mcp-proxy-wrapper.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

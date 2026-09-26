@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "generate-job-schedule.py"
-location: "L259"
+community: "TestNewPatternsV080"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/TestNewPatternsV080
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[.run()_6]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Enum"
-location: "L31"
+community: "EncryptedStore"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # mock_alert_callback()
 
 ## Connections
 - [[Create a mock alert callback for testing.]] - `rationale_for` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

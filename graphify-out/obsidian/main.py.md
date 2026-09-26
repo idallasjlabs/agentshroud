@@ -1,34 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
-type: "document"
-community: "MiddlewareManager"
+source_file: "chatbot/main.py"
+type: "code"
+community: "server.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/serverpy
 ---
 
-# main.py.md
+# main.py
 
 ## Connections
-- [[Architecture Overview_1]] - `references` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[MiddlewareManager]] - `references` [EXTRACTED]
-- [[MultiAgentRouter]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[TrustManager]] - `references` [EXTRACTED]
-- [[auth.py]] - `references` [EXTRACTED]
-- [[event_bus.py_1]] - `references` [EXTRACTED]
-- [[fastapi]] - `references` [INFERRED]
-- [[ledger.py_1]] - `references` [EXTRACTED]
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `references` [EXTRACTED]
+- [[ChatRequest]] - `contains` [EXTRACTED]
+- [[ChatResponse]] - `contains` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
+- [[_check_rate_limit()]] - `contains` [EXTRACTED]
+- [[_get_auth_token()]] - `contains` [EXTRACTED]
+- [[chat()]] - `contains` [EXTRACTED]
+- [[health_check()]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `contains` [EXTRACTED]
+- [[load_persona_files()]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/serverpy

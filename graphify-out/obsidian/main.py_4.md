@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 379"
+community: "TestNetworkValidator"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/TestNetworkValidator
 ---
 
 # main.py
@@ -26,4 +26,4 @@ tags:
 - [[WebSocket Endpoints]] - `contains` [EXTRACTED]
 - [[main.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_379
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

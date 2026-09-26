@@ -1,29 +1,25 @@
 ---
-source_file: "gateway/security/key_vault.py"
-type: "code"
-community: "KeyVault"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+type: "document"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # key_vault.py
 
 ## Connections
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[KeyAuditEvent]] - `contains` [EXTRACTED]
-- [[KeyEntry]] - `contains` [EXTRACTED]
-- [[KeyInjector]] - `contains` [EXTRACTED]
-- [[KeyLeakDetector]] - `contains` [EXTRACTED]
-- [[KeyScope]] - `contains` [EXTRACTED]
-- [[KeyVault]] - `contains` [EXTRACTED]
-- [[KeyVaultConfig]] - `contains` [EXTRACTED]
-- [[LeakScanResult]] - `contains` [EXTRACTED]
-- [[egress_config.py]] - `references` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
-- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
+- [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
+- [[Purpose_163]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Responsibilities_47]] - `contains` [EXTRACTED]
+- [[Threat Model_18]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

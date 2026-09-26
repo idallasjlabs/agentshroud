@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L431"
@@ -12,14 +12,14 @@ tags:
 # main()
 
 ## Connections
-- [[._take_screenshot()]] - `calls` [EXTRACTED]
-- [[.agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[.click()]] - `calls` [EXTRACTED]
-- [[.close()_5]] - `calls` [EXTRACTED]
-- [[.extract()]] - `calls` [EXTRACTED]
-- [[.fill_field()]] - `calls` [EXTRACTED]
-- [[.navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
+- [[.click()_2]] - `calls` [EXTRACTED]
+- [[.close()_2]] - `calls` [EXTRACTED]
+- [[.extract()_2]] - `calls` [EXTRACTED]
+- [[.fill_field()_2]] - `calls` [EXTRACTED]
+- [[.navigate()_2]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

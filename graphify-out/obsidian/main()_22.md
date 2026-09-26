@@ -1,25 +1,20 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L550"
+community: "audio.c"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/audioc
 ---
 
 # main()
 
 ## Connections
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_svg_logos()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
+- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
+- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
+- [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/audioc

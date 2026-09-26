@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 92"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/test_dashboard_endpointspy
 ---
 
 # incident-response.md
@@ -18,4 +18,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy

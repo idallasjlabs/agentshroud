@@ -1,23 +1,19 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "docker/scripts/security-scan.sh"
-location: "L18"
+community: "Add information filtering to prevent agent self-"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # log()
 
 ## Connections
-- [[alert_if_critical()]] - `calls` [EXTRACTED]
-- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh script]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

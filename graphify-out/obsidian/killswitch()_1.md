@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "SkillGuard"
 location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/SkillGuard
 ---
 
 # killswitch()
@@ -15,4 +15,4 @@ tags:
 - [[Serve the emergency kill switch page.]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

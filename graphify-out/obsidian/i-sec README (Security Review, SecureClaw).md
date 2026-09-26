@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide"
+community: "AgentShroud: A Transparent Proxy Framework for E"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
 ---
 
 # i-sec README (Security Review, SecureClaw)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-sec SKILL (Security Review  SEC, SecureClaw)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E

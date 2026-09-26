@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # map_http_error()
 
 ## Connections
-- [[.get()_2]] - `calls` [EXTRACTED]
-- [[.get()_3]] - `calls` [EXTRACTED]
-- [[.ok()_1]] - `calls` [EXTRACTED]
-- [[.post()_1]] - `calls` [EXTRACTED]
+- [[.get()]] - `calls` [EXTRACTED]
+- [[.get()_1]] - `calls` [EXTRACTED]
+- [[.ok()]] - `calls` [EXTRACTED]
+- [[.post()]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[map_http_error_generic_status()]] - `calls` [EXTRACTED]
 - [[map_http_error_includes_detail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

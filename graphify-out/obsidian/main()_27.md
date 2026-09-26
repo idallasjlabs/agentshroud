@@ -1,18 +1,20 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "_handle()"
-location: "L134"
+community: "mcp_oauth_preflight.py"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/mcp_oauth_preflightpy
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[Path_48]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 164"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # jira_dev_ticket.py
@@ -34,4 +34,4 @@ tags:
 - [[run()_2]] - `contains` [EXTRACTED]
 - [[transition_issue()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_164
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

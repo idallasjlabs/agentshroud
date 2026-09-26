@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "generate-job-schedule.py"
+community: "audio.c"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/audioc
 ---
 
 # load_openclaw_jobs()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[docker_exec()]] - `calls` [EXTRACTED]
 - [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[main()_36]] - `calls` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/code #graphify/EXTRACTED #community/audioc

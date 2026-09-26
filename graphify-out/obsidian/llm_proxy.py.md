@@ -1,17 +1,32 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
-type: "document"
-community: "llm_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
+type: "code"
+community: "AgentShroud Security Hardening Plan"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
-# llm_proxy.py.md
+# llm_proxy.py
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[LLMProxy]] - `contains` [EXTRACTED]
+- [[anthropic_to_openai_request()]] - `imports` [EXTRACTED]
+- [[anthropic_to_openai_response()]] - `imports` [EXTRACTED]
+- [[gemini_failover_unsupported_reason()]] - `imports` [EXTRACTED]
+- [[gemini_to_openai_request()]] - `imports` [EXTRACTED]
+- [[gemini_to_openai_response()]] - `imports` [EXTRACTED]
+- [[is_overloaded()]] - `imports` [EXTRACTED]
+- [[is_quota_exhausted()]] - `imports` [EXTRACTED]
+- [[is_rate_limited_post_retry()]] - `imports` [EXTRACTED]
+- [[openai_to_anthropic_request()]] - `imports` [EXTRACTED]
+- [[openai_to_anthropic_response()]] - `imports` [EXTRACTED]
+- [[openai_to_gemini_request()]] - `imports` [EXTRACTED]
+- [[openai_to_gemini_response()]] - `imports` [EXTRACTED]
+- [[test_llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
+- [[translate_openai_sse_to_anthropic()]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

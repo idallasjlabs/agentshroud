@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "security-entrypoint.sh"
-location: "L18"
+community: "Daedalus — Concept Illustrator"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh_1]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script_1]] - `calls` [EXTRACTED]
+- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
+- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

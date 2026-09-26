@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # mfa_guard.py
@@ -19,4 +19,4 @@ tags:
 - [[queue.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

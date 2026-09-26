@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config()"
+community: "ModeRequest"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ModeRequest
 ---
 
 # load_config()
@@ -24,20 +24,21 @@ tags:
 - [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
 - [[.test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[ChannelsConfig]] - `calls` [EXTRACTED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[Path_6]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
-- [[SSHConfig_2]] - `calls` [EXTRACTED]
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[ToolRiskConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SecurityConfig_3]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
 - [[_entity_type_mapping()]] - `calls` [EXTRACTED]
 - [[_get_default_bot_dockerfile()]] - `calls` [EXTRACTED]
 - [[_known_services()]] - `calls` [EXTRACTED]
@@ -46,15 +47,16 @@ tags:
 - [[_resolve_bot_container()]] - `calls` [EXTRACTED]
 - [[_valid_services()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
 - [[reload_config()]] - `calls` [EXTRACTED]
-- [[require_auth()]] - `calls` [EXTRACTED]
+- [[require_auth()_1]] - `calls` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[services.py]] - `imports` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
@@ -62,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

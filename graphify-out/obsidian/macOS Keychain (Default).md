@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "📱 Required Accounts & Services"
+community: "Threat Model"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Required_Accounts__Services
+  - community/Threat_Model
 ---
 
 # macOS Keychain (Default)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Secrets Backend (Credential Management)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Required_Accounts__Services
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

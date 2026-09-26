@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # intel_report module (CompetitiveIntelReport, IntelReportStore)
@@ -14,4 +14,4 @@ tags:
 - [[test_citation_verifier.py]] - `references` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

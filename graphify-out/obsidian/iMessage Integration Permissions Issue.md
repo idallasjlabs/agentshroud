@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # iMessage Integration Permissions Issue
@@ -14,4 +14,4 @@ tags:
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task

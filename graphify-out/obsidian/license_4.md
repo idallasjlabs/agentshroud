@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "openclaw/skills/i-browser/package.json"
+community: "proxy_status.py"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/proxy_statuspy
 ---
 
 # license
 
 ## Connections
-- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[package.json_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/code #graphify/EXTRACTED #community/proxy_statuspy

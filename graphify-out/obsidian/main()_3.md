@@ -1,23 +1,17 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "auto_remediate_cves.py"
-location: "L300"
+community: "TestOAuthInjection"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/auto_remediate_cvespy
+  - community/TestOAuthInjection
 ---
 
 # main()
 
 ## Connections
-- [[.to_dict()]] - `calls` [EXTRACTED]
-- [[_print_plan()]] - `calls` [EXTRACTED]
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
-- [[read_pin()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/auto_remediate_cvespy
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

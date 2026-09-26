@@ -1,20 +1,24 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "init_skill.py"
-location: "L320"
+community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[Path_50]] - `calls` [EXTRACTED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/init_skillpy
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind

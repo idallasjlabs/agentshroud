@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "i-sdlc SKILL"
+community: "DNSQuery (data entity)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-sdlc_SKILL
+  - community/DNSQuery_data_entity
 ---
 
 # i-sdlc SKILL
 
-#graphify/document #graphify/EXTRACTED #community/i-sdlc_SKILL
+#graphify/document #graphify/EXTRACTED #community/DNSQuery_data_entity

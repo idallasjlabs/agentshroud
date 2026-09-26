@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/logs.sh"
 type: "code"
-community: "logs.sh"
+community: "Decision Framework"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/logssh
+  - community/Decision_Framework
 ---
 
 # logs.sh
@@ -15,4 +15,4 @@ tags:
 - [[logs.sh script]] - `contains` [EXTRACTED]
 - [[restart.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/logssh
+#graphify/code #graphify/EXTRACTED #community/Decision_Framework

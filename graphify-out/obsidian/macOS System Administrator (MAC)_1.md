@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "SlackAPIProxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/SlackAPIProxy
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_50]] - `contains` [EXTRACTED]
-- [[Related Skills_41]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_51]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_56]] - `contains` [EXTRACTED]
+- [[Related Skills_54]] - `contains` [EXTRACTED]
+- [[Usage_57]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy

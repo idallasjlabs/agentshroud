@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/openclaw_triage.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "openclaw_triage.sh"
-location: "L10"
+community: "format_upstream_cve_alert()"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/format_upstream_cve_alert
 ---
 
 # log()
 
 ## Connections
-- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
-- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert

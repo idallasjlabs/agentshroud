@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "hermes/skills/i-browser/browse.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_22]] - `contains` [EXTRACTED]
-- [[Related Skills_13]] - `contains` [EXTRACTED]
-- [[Usage_17]] - `contains` [EXTRACTED]
+- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[README_14]] - `contains` [EXTRACTED]
+- [[Related Skills_14]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

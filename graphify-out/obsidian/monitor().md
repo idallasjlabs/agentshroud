@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "TestAuth"
-location: "L38"
+community: "apply-patches.js (OpenClaw)"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # monitor()
 
 ## Connections
-- [[SubagentMonitor]] - `calls` [EXTRACTED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[EgressMonitor]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

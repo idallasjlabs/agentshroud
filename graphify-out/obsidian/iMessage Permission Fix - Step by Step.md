@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "iMessage Integration Status"
+community: "check_command()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/check_command
 ---
 
 # iMessage Permission Fix - Step by Step
@@ -18,4 +18,4 @@ tags:
 - [[If It Still Doesn't Work]] - `contains` [EXTRACTED]
 - [[The Error We're Getting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/check_command

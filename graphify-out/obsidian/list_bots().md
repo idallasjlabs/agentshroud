@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L1900"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # list_bots()
@@ -22,11 +22,11 @@ tags:
 - [[.test_returns_registered_bots()]] - `calls` [EXTRACTED]
 - [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[TestListBots]] - `calls` [EXTRACTED]
 - [[TestServicesBotFilter]] - `conceptually_related_to` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

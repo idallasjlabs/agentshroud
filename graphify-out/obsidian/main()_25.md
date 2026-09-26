@@ -1,18 +1,23 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "package_skill()"
-location: "L99"
+community: "PromptProtection"
+location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/PromptProtection
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[build_id_plan()]] - `calls` [EXTRACTED]
+- [[compute_stats()]] - `calls` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_registry()_1]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
+- [[render_manual_review()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

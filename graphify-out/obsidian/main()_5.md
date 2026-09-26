@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L871"
+community: "_t()"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/_t
 ---
 
 # main()
 
 ## Connections
-- [[Path_50]] - `calls` [EXTRACTED]
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
+- [[_resolve_from_env()]] - `calls` [EXTRACTED]
+- [[resolve_model.py]] - `contains` [EXTRACTED]
+- [[start.sh (Hermes s6 main program)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/_t

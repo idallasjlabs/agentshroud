@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "discover_upstream_versions.py"
-location: "L199"
+community: "AgentShroud v0.8.0 — Blue Team Security Assessme"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/AgentShroud_v080__Blue_Team_Security_Assessme
 ---
 
 # main()
 
 ## Connections
-- [[discover()]] - `calls` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
-- [[phase_discover()]] - `references` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Blue_Team_Security_Assessme

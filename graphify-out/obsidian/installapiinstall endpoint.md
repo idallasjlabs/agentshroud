@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "startInstall()"
+community: "TestScoreLoggingMonitoring"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/startInstall
+  - community/TestScoreLoggingMonitoring
 ---
 
 # /install/api/install endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[startInstall()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/startInstall
+#graphify/concept #graphify/EXTRACTED #community/TestScoreLoggingMonitoring

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
-type: "code"
-community: ".agents/skills/i-browser/package.json"
-location: "L11"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
+type: "document"
+community: "AgentShroud Security Architecture"
+location: "L77"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-browser/packagejson
+  - community/AgentShroud_Security_Architecture
 ---
 
-# license
+# License
 
 ## Connections
-- [[.agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

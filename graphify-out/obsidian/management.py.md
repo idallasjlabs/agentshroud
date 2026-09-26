@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/SkillGuard
 ---
 
 # management.py
@@ -28,11 +28,11 @@ tags:
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[falco_dashboard()]] - `contains` [EXTRACTED]
 - [[get_egress_allowlist()]] - `contains` [EXTRACTED]
-- [[get_egress_config]] - `imports` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[get_egress_config()]] - `imports` [EXTRACTED]
 - [[killswitch()_1]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[modules()]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `contains` [EXTRACTED]
 - [[security_overview()]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

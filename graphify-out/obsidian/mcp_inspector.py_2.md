@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "FakeProcess"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/FakeProcess
 ---
 
 # mcp_inspector.py
 
 ## Connections
-- [[Configuration  Environment Variables_11]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_4]] - `contains` [EXTRACTED]
 - [[Detection Patterns_1]] - `contains` [EXTRACTED]
-- [[Function Details_23]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
-- [[Purpose_152]] - `contains` [EXTRACTED]
-- [[Related_29]] - `contains` [EXTRACTED]
-- [[Responsibilities_26]] - `contains` [EXTRACTED]
+- [[Function Details_10]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_13]] - `contains` [EXTRACTED]
+- [[Purpose_131]] - `contains` [EXTRACTED]
+- [[Related_16]] - `contains` [EXTRACTED]
+- [[Responsibilities_15]] - `contains` [EXTRACTED]
 - [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/FakeProcess

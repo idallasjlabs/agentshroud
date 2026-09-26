@@ -1,22 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "installer.py"
-location: "L10"
+community: "Bot Container (agent decides: reply + tool call)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
-# installer.py
+# installer.py.md
 
 ## Connections
-- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
-- [[Key Features_1]] - `contains` [EXTRACTED]
-- [[Purpose_4]] - `contains` [EXTRACTED]
-- [[Related Notes_5]] - `contains` [EXTRACTED]
-- [[When Used]] - `contains` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

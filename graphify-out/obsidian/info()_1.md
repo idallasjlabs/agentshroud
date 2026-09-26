@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "TrustManager"
-location: "L24"
+community: "Docker Compose (infra diagram)"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Docker_Compose_infra_diagram
 ---
 
 # info()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[security-scan.sh_1]] - `defines` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

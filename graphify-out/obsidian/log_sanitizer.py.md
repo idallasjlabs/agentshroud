@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "lifespan.py"
+community: "iCloud Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/iCloud_Services
 ---
 
 # log_sanitizer.py
@@ -17,7 +17,7 @@ tags:
 - [[env_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `semantically_similar_to` [INFERRED]
+- [[key_vault.py]] - `semantically_similar_to` [INFERRED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services

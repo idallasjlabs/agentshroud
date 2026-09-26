@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "is_overloaded()"
+community: "AgentShroud Project Terminology"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/AgentShroud_Project_Terminology
 ---
 
 # is_overloaded()
 
 ## Connections
+- [[.proxy_messages()]] - `calls` [EXTRACTED]
 - [[.test_anthropic_api_error_500_not_flagged()]] - `calls` [EXTRACTED]
 - [[.test_anthropic_detection_unchanged()]] - `calls` [EXTRACTED]
 - [[.test_empty_and_garbage_bodies()]] - `calls` [EXTRACTED]
@@ -37,7 +38,8 @@ tags:
 - [[LLMProxy.proxy_messages]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[Return (True, provider_overloaded) for a provider capacity-error     envelop]] - `rationale_for` [EXTRACTED]
+- [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

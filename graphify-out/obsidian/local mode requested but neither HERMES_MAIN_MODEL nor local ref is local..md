@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Community 179"
+community: "_t()"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/_t
 ---
 
 # local mode requested but neither HERMES_MAIN_MODEL nor local ref is local.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_179
+#graphify/rationale #graphify/EXTRACTED #community/_t

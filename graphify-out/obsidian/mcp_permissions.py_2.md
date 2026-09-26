@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "mcp_permissions.py"
+community: "Morning Checklist (5 minutes)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/Morning_Checklist_5_minutes
 ---
 
 # mcp_permissions.py
 
 ## Connections
-- [[Configuration  Environment Variables_19]] - `contains` [EXTRACTED]
-- [[Function Details_35]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_37]] - `contains` [EXTRACTED]
-- [[Purpose_166]] - `contains` [EXTRACTED]
-- [[Related_41]] - `contains` [EXTRACTED]
-- [[Responsibilities_38]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_5]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_14]] - `contains` [EXTRACTED]
+- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Related_17]] - `contains` [EXTRACTED]
+- [[Responsibilities_16]] - `contains` [EXTRACTED]
 - [[Trust Level Reference]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

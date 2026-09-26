@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "browser-fetch/package.json"
-location: "L11"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+type: "document"
+community: "_is_op_reference_allowed()"
+location: "L130"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetch/packagejson
+  - community/_is_op_reference_allowed
 ---
 
-# license
+# License
 
 ## Connections
-- [[browser-fetchpackage.json]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-fetch/packagejson
+#graphify/document #graphify/EXTRACTED #community/_is_op_reference_allowed

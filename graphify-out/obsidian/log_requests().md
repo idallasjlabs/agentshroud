@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L331"
+community: "SSHProxy"
+location: "L344"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # log_requests()
 
 ## Connections
 - [[Log all incoming requests      Never logs request bodies (may contain PII).]] - `rationale_for` [EXTRACTED]
-- [[Request]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_10]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_log_requests_middleware()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

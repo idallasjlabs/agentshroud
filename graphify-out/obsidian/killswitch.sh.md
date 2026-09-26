@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "killswitch.sh"
+community: "._filter_streaming_event()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/_filter_streaming_event
 ---
 
 # killswitch.sh
@@ -15,6 +15,6 @@ tags:
 - [[confirm()]] - `defines` [EXTRACTED]
 - [[killswitch.sh script]] - `contains` [EXTRACTED]
 - [[op-wrapper.sh]] - `semantically_similar_to` [INFERRED]
-- [[usage()_7]] - `defines` [EXTRACTED]
+- [[usage()_1]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/killswitchsh
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

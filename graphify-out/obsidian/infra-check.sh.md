@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "tailscale-check.sh"
+community: ".send()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/tailscale-checksh
+  - community/send
 ---
 
 # infra-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[tailscale-check.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/tailscale-checksh
+#graphify/code #graphify/INFERRED #community/send

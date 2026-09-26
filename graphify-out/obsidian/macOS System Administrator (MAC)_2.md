@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: "sunday-upgrade.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/sunday-upgradesh
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_87]] - `contains` [EXTRACTED]
-- [[Related Skills_78]] - `contains` [EXTRACTED]
-- [[Usage_82]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_88]] - `contains` [EXTRACTED]
+- [[README_93]] - `contains` [EXTRACTED]
+- [[Related Skills_94]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_97]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/sunday-upgradesh

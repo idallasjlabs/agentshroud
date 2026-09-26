@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L391"
+community: "_seed_cron"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/_seed_cron
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[discover()]] - `calls` [EXTRACTED]
+- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
+- [[phase_discover()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

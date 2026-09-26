@@ -1,17 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
-type: "document"
-community: "Function Details"
+source_file: "gateway/security/key_vault.py"
+type: "code"
+community: "AsyncMock"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AsyncMock
 ---
 
-# key_vault.py.md
+# key_vault.py
 
 ## Connections
-- [[key_vault.py_1]] - `contains` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
+- [[KeyAuditEvent]] - `contains` [EXTRACTED]
+- [[KeyEntry]] - `contains` [EXTRACTED]
+- [[KeyInjector]] - `contains` [EXTRACTED]
+- [[KeyLeakDetector]] - `contains` [EXTRACTED]
+- [[KeyScope]] - `contains` [EXTRACTED]
+- [[KeyVault]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `contains` [EXTRACTED]
+- [[LeakScanResult]] - `contains` [EXTRACTED]
+- [[egress_monitor.py]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
+- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
+community: "PromptProtection"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/PromptProtection
 ---
 
 # match_entry()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[Counter]] - `references` [EXTRACTED]
 - [[Match a single registry entry to at most one advisory, honestly.      Returns]] - `rationale_for` [EXTRACTED]
 - [[MatchResult]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[build_id_plan()]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

@@ -1,34 +1,28 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "main()"
-location: "L312"
+community: "_build_image_targets"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main
+  - community/_build_image_targets
 ---
 
 # main()
 
 ## Connections
-- [[.render_summary()]] - `calls` [EXTRACTED]
-- [[.test_dry_run_default_command()]] - `calls` [EXTRACTED]
-- [[.test_dry_run_touches_nothing()]] - `calls` [EXTRACTED]
-- [[.test_main_all_pass_with_injected_runner()]] - `calls` [EXTRACTED]
-- [[.test_main_default_hosts()]] - `calls` [EXTRACTED]
-- [[.test_main_failure_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[.test_main_unreachable_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - `rationale_for` [EXTRACTED]
-- [[HostRunner]] - `references` [EXTRACTED]
-- [[_dry_run_report()]] - `calls` [EXTRACTED]
-- [[_resolve_command()]] - `calls` [EXTRACTED]
-- [[build_parser()]] - `calls` [EXTRACTED]
-- [[multi-host-test.sh]] - `calls` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[parse_hosts()]] - `calls` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[ssh_runner()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[aggregate_costs()]] - `calls` [EXTRACTED]
+- [[build_json_all()]] - `calls` [EXTRACTED]
+- [[build_json_current()]] - `calls` [EXTRACTED]
+- [[eprint()]] - `calls` [EXTRACTED]
+- [[filter_by_days()]] - `calls` [EXTRACTED]
+- [[latest_day_cost()]] - `calls` [EXTRACTED]
+- [[load_payload()]] - `calls` [EXTRACTED]
+- [[model_usage.py]] - `contains` [EXTRACTED]
+- [[parse_daily_entries()]] - `calls` [EXTRACTED]
+- [[pick_current_model()]] - `calls` [EXTRACTED]
+- [[render_text_all()]] - `calls` [EXTRACTED]
+- [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

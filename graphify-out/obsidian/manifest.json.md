@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 415"
+community: "._can_use_tool_impl()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/_can_use_tool_impl
 ---
 
 # manifest.json
@@ -25,4 +25,4 @@ tags:
 - [[permissions]] - `contains` [EXTRACTED]
 - [[version_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_415
+#graphify/code #graphify/EXTRACTED #community/_can_use_tool_impl

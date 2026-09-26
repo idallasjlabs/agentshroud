@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide"
+community: "AgentShroud: A Transparent Proxy Framework for E"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
 ---
 
 # i-qa README (Quality Assurance)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-qa SKILL (Quality Assurance  QA)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/GSDEG_Skills_Reference_Guide
+#graphify/document #graphify/INFERRED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E

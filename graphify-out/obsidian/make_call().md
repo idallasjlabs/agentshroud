@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "test_voice_gateway.py"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_voice_gatewaypy
 ---
 
 # make_call()
@@ -32,8 +32,8 @@ tags:
 - [[.test_timeout_error()]] - `calls` [EXTRACTED]
 - [[.test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[.test_unknown_server_returns_error_result()]] - `calls` [EXTRACTED]
-- [[MCPToolCall]] - `references` [EXTRACTED]
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

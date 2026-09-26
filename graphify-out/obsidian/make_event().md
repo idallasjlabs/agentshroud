@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event()"
+community: "TestCollaboratorPromptClassifiers"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # make_event()
@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[._emit_privacy_event()]] - `calls` [EXTRACTED]
 - [[._emit_quarantine_event()]] - `calls` [EXTRACTED]
-- [[._record()]] - `calls` [EXTRACTED]
+- [[._record()_1]] - `calls` [EXTRACTED]
 - [[.approve()]] - `calls` [EXTRACTED]
 - [[.check_async()]] - `calls` [EXTRACTED]
 - [[.deny()]] - `calls` [EXTRACTED]
 - [[.request_approval()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -33,18 +33,20 @@ tags:
 - [[discard_blocked_outbound()]] - `calls` [EXTRACTED]
 - [[egress_add_rule()]] - `calls` [EXTRACTED]
 - [[egress_approval.py]] - `imports` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports` [EXTRACTED]
+- [[egress_filter.py]] - `imports` [EXTRACTED]
 - [[egress_remove_rule()]] - `calls` [EXTRACTED]
 - [[egress_websocket()]] - `calls` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `references` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[receive_security_alert()]] - `calls` [EXTRACTED]
 - [[release_blocked_message()]] - `calls` [EXTRACTED]
 - [[release_blocked_outbound()]] - `calls` [EXTRACTED]
+- [[ssh_exec()]] - `calls` [EXTRACTED]
+- [[ssh_write_file()]] - `calls` [EXTRACTED]
 - [[submit_approval_request()]] - `calls` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
@@ -56,7 +58,7 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_event_has_required_fields()]] - `calls` [EXTRACTED]
 - [[test_get_recent()]] - `calls` [EXTRACTED]
-- [[test_get_stats()]] - `calls` [EXTRACTED]
+- [[test_get_stats()_1]] - `calls` [EXTRACTED]
 - [[test_manage_soc_events_endpoint()]] - `calls` [EXTRACTED]
 - [[test_manage_soc_report_endpoint()]] - `calls` [EXTRACTED]
 - [[test_non_alert_events_ignored()]] - `calls` [EXTRACTED]
@@ -68,4 +70,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

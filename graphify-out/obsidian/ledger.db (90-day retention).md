@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "container-net-diag.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/container-net-diagsh
 ---
 
 # ledger.db (90-day retention)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Audit Ledger (SHA-256 hash only)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/container-net-diagsh

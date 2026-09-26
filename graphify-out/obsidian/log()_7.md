@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "container-net-diag.sh"
-location: "L75"
+community: "Approval queue (notify Isaiah via Telegram, wait"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
 ---
 
 # log()
 
 ## Connections
-- [[colima-health-check.sh_1]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script_1]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait

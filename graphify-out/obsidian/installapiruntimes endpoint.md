@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "loadRuntimes()"
+community: "bot-access-audit.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/loadRuntimes
+  - community/bot-access-auditsh
 ---
 
 # /install/api/runtimes endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[loadRuntimes()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/loadRuntimes
+#graphify/concept #graphify/EXTRACTED #community/bot-access-auditsh

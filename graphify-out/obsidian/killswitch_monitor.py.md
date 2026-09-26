@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # killswitch_monitor.py
@@ -17,8 +17,8 @@ tags:
 - [[Kill Switch Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[killswitch_config.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

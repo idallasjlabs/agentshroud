@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "RBACConfig"
-location: "L96"
+community: "Google Services Setup - Calendar, Contacts, Keep"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # manager()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationManager]] - `calls` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

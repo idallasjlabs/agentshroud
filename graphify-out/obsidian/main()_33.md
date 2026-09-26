@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L136"
+community: "AgentShroud -- USPTO Provisional Patent Applicat"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
 ---
 
 # main()
 
 ## Connections
-- [[Path_46]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[init_skill()]] - `calls` [EXTRACTED]
+- [[init_skill.py]] - `contains` [EXTRACTED]
+- [[normalize_skill_name()]] - `calls` [EXTRACTED]
+- [[parse_resources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat

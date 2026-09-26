@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "generate_branding_assets.py"
+community: "env_guard.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/env_guardpy
 ---
 
 # icon_on_canvas()
@@ -20,4 +20,4 @@ tags:
 - [[generate_social()]] - `calls` [EXTRACTED]
 - [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

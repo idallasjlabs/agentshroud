@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "concept"
-community: "markmap-mcp-server (MCP server)"
+community: "ToolResultInjectionScanner Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/markmap-mcp-server_MCP_server
+  - community/ToolResultInjectionScanner_Test_Suite
 ---
 
 # markmap-mcp-server (MCP server)
 
-#graphify/concept #graphify/EXTRACTED #community/markmap-mcp-server_MCP_server
+#graphify/concept #graphify/EXTRACTED #community/ToolResultInjectionScanner_Test_Suite

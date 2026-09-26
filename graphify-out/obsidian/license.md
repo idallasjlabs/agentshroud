@@ -1,17 +1,18 @@
 ---
-source_file: "browser-extension/package.json"
-type: "code"
-community: "browser-extension/package.json"
-location: "L6"
+source_file: "BRAND.md"
+type: "document"
+community: "AgentShroud Security Architecture"
+location: "L77"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/AgentShroud_Security_Architecture
 ---
 
-# license
+# License
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

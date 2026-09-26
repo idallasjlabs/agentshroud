@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/web/installer.py"
-type: "code"
-community: "detect_runtime()"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+type: "document"
+community: "Bot Container (agent decides: reply + tool call)"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
 # installer.py
 
 ## Connections
-- [[InstallConfig]] - `contains` [EXTRACTED]
-- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
-- [[api.py]] - `references` [EXTRACTED]
-- [[check_prerequisites()]] - `contains` [EXTRACTED]
-- [[detect_runtime()]] - `imports` [EXTRACTED]
-- [[get_runtimes()]] - `contains` [EXTRACTED]
-- [[get_security_comparison()]] - `imports` [EXTRACTED]
-- [[installer_page()]] - `contains` [EXTRACTED]
-- [[security.py]] - `imports_from` [EXTRACTED]
-- [[start_install()]] - `contains` [EXTRACTED]
+- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
+- [[Key Features]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related Notes_14]] - `contains` [EXTRACTED]
+- [[When Used]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

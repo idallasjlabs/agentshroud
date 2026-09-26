@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # iOS / macOS Shortcuts — Relay to AgentShroud
@@ -15,14 +15,14 @@ tags:
 - [[Content-type quick reference]] - `contains` [EXTRACTED]
 - [[Contract verification (automated)]] - `contains` [EXTRACTED]
 - [[One-time setup (do this first)]] - `contains` [EXTRACTED]
+- [[README_130]] - `contains` [EXTRACTED]
 - [[Recipe A — Share Sheet text  URL]] - `contains` [EXTRACTED]
 - [[Recipe B — Siri voice capture (Hey Siri, send to AgentShroud)]] - `contains` [EXTRACTED]
 - [[Recipe C — Screenshot relay (OCR text)]] - `contains` [EXTRACTED]
 - [[Recipe D — Clipboard relay (macOS menu bar  iOS)]] - `contains` [EXTRACTED]
 - [[Recipe E — Share Sheet photo relay]] - `contains` [EXTRACTED]
-- [[Status_4]] - `contains` [EXTRACTED]
+- [[Status_11]] - `contains` [EXTRACTED]
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
-- [[shortcutsREADME]] - `contains` [EXTRACTED]
+- [[Troubleshooting_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

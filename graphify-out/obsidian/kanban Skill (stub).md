@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "kaizen Skill (stub)"
+community: "iCloud Services Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/kaizen_Skill_stub
+  - community/iCloud_Services_Skill
 ---
 
 # kanban Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[kaizen Skill (stub)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/kaizen_Skill_stub
+#graphify/document #graphify/INFERRED #community/iCloud_Services_Skill

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "i-ti SKILL.md (Technical Illustrator, Mermaid di"
+community: "TestReplayBufferOffsetParsing"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_di
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # i-tw SKILL.md (Technical Writer)
@@ -15,4 +15,4 @@ tags:
 - [[i-tw README]] - `references` [EXTRACTED]
 - [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_di
+#graphify/document #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

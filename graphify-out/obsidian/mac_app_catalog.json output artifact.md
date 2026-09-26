@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "concept"
-community: "Mac App Discovery Skill"
+community: "AgentShroud v0.9.0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/AgentShroud_v090
 ---
 
 # mac_app_catalog.json output artifact
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v090
