@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Collaborator Report - Morning]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

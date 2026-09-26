@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.17
 members: 17
 ---
 
 # AgentShroud — Master Feature List (Everything Ev
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Collaborators_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_16]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Tagline]] - concept - BRAND.md
+- [[AgentShroud Taglines List]] - document - branding/taglines.json
+- [[check()_8]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[check()_9]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[check()_11]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
+- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
+- [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[run_test()]] - code - scripts/smoke.sh
+- [[smoke.sh]] - code - scripts/smoke.sh
+- [[smoke.sh script]] - code - scripts/smoke.sh
+- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,12 +36,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Every]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-- 1 edge to [[_COMMUNITY_Post-v1.0.0 — Deferred]]
-- 1 edge to [[_COMMUNITY_v1.0.0 — Fortress (Polish + Public Release)]]
+- 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
+- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
 
 ## Top bridge nodes
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 9, connects to 1 community
-- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community
+- [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities
+- [[run_test()]] - degree 3, connects to 1 community
+- [[AgentShroud Tagline]] - degree 2, connects to 1 community

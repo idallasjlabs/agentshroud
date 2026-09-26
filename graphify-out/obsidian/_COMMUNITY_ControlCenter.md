@@ -1,45 +1,45 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.07
 members: 30
 ---
 
 # ControlCenter
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[.__init__()_116]] - code - src/interfaces/text_control_center.py
-- [[.clear_screen()]] - code - src/interfaces/text_control_center.py
-- [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
-- [[.draw_box()]] - code - src/interfaces/text_control_center.py
-- [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
-- [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
-- [[.draw_log()]] - code - src/interfaces/text_control_center.py
-- [[.draw_modules()]] - code - src/interfaces/text_control_center.py
-- [[.draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
-- [[.get_auth()]] - code - src/interfaces/text_control_center.py
-- [[.get_key()]] - code - src/interfaces/text_control_center.py
-- [[.make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[.run()_3]] - code - src/interfaces/text_control_center.py
-- [[ANSI]] - code - src/interfaces/text_control_center.py
-- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
-- [[ControlCenter]] - code - src/interfaces/text_control_center.py
-- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
-- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
-- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
-- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
-- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
-- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_15]] - code - src/interfaces/text_control_center.py
-- [[start-control-center]] - code - scripts/start-control-center
-- [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
+- [[AgentShroud Daily Check-in]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[AgentShroud Weekly Summary]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Daily Component Health Digest]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Daily Memory Journal]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Job details]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[OMLX MoE Streaming Health Check]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly Kaizen Review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly job-log cleanup]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[jira-weekly-review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,3 +47,9 @@ members: 30
 TABLE source_file, type FROM #community/ControlCenter
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
+
+## Top bridge nodes
+- [[Job details]] - degree 30, connects to 1 community

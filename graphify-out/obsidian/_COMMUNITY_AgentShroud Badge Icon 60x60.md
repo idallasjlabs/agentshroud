@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
+- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Deliverables_3]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Reports (`.reports`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Script Templates_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Scripts (`.scripts`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[.score_response_consistency()]] - code - gateway/security/multi_turn_tracker.py
+- [[Compute a heuristic consistency score between query and response.          Retur]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ConsistencyScore]] - code - gateway/security/multi_turn_tracker.py
+- [[Heuristic consistency score between a query and its response.]] - rationale - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
 
 ## Top bridge nodes
-- [[Deliverables_3]] - degree 4, connects to 1 community
+- [[ConsistencyScore]] - degree 3, connects to 1 community
+- [[.score_response_consistency()]] - degree 3, connects to 1 community

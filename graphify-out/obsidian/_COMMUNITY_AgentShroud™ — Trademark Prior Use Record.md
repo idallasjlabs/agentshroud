@@ -1,40 +1,41 @@
 ---
 type: community
-cohesion: 0.09
-members: 25
+cohesion: 0.12
+members: 26
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
-- [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
-- [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
-- [[COMMUNICATION-TEMPLATES]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Contact]] - document - docs/project/legal/TRADEMARK.md
-- [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
-- [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
-- [[GitHub Repository Evidence]] - document - docs/project/legal/PRIOR-USE.md
-- [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
-- [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
-- [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
-- [[Option 1 — Clean & Professional Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 2 — Compact Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 3 — Full Collaborator Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 4 — Documentation Footer Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
-- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
-- [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Notice_2]] - document - docs/project/legal/TRADEMARK.md
-- [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Usage Guidelines]] - document - docs/project/legal/TRADEMARK.md
+- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_make_pipeline()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
+- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_clean()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_infected()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +45,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_USPTO Trademark Application — AgentShroud™]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Communication Templates]]
+- 7 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_falco_monitor.py]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 
 ## Top bridge nodes
-- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 1 community
-- [[USPTO-APPLICATION]] - degree 6, connects to 1 community
+- [[test_clamav_pipeline.py]] - degree 18, connects to 3 communities
+- [[scan_bytes()]] - degree 11, connects to 2 communities
+- [[_make_pipeline()]] - degree 8, connects to 1 community
+- [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
+- [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Gateway OpenAPI Spec v1.2.1]] - document - docs/api/openapi.json
+- [[ws_ctrl_cb_t (server control frame callback type)]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 

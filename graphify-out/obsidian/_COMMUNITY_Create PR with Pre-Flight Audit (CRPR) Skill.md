@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Create PR with Pre-Flight Audit (CRPR) Skill]] - document - .agents/skills/i-crpr/SKILL.md
+- [[RemediationPlan dataclass]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 

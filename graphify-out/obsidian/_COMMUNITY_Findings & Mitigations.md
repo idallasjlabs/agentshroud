@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.22
 members: 18
 ---
 
 # Findings & Mitigations
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[Architecture_10]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Any_66]] - code - gateway/soc/event_adapter.py
+- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
+- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
+- [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - rationale - gateway/soc/event_adapter.py
+- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[SecurityEvent]] - code - gateway/soc/event_adapter.py
+- [[Severity_1]] - code - gateway/soc/event_adapter.py
+- [[_map_severity()]] - code - gateway/soc/event_adapter.py
+- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
+- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
+- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
+- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
+- [[from_dict()]] - code - gateway/soc/event_adapter.py
+- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
+- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,8 +37,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 10 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 5 edges to [[_COMMUNITY_EncryptedStore]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities
+- [[event_adapter.py]] - degree 11, connects to 3 communities
+- [[collect_recent_events()]] - degree 10, connects to 3 communities
+- [[Any_66]] - degree 9, connects to 2 communities
+- [[SecurityEvent]] - degree 8, connects to 2 communities
+- [[from_dict()]] - degree 8, connects to 2 communities

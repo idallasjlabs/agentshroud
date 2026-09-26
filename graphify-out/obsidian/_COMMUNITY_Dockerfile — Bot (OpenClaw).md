@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Directory Structure_2]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Related Notes_53]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Context_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Decision_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Mitigation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Negative Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Positive Consequences_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Status_2]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
-- 1 edge to [[_COMMUNITY_4. Environment Variables]]
+- 1 edge to [[_COMMUNITY_forwarder.js]]
+- 1 edge to [[_COMMUNITY_forward_query()]]
 
 ## Top bridge nodes
-- [[Dockerfile — Bot (OpenClaw)]] - degree 13, connects to 3 communities
+- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.submit]] - code - gateway/approval_queue/enhanced_queue.py
+- [[AgentShroud trademark notice (USPTO 99728633)]] - concept - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[RT-MB1 — Cross-Bot Trust Pivot]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB2 — Shared-Memory Leak Between Bots]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB3 — Group-Context Escalation (Anticipating Workstream A)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes Cron Job Injection (NEW — Hermes-specific)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Domain_allowlisted_agentshroudyaml_proxyallo
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_post-deploy-check.sh]]
+
+## Top bridge nodes
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - degree 7, connects to 1 community

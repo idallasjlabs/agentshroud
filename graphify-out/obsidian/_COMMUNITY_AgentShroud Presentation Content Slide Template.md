@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
+- [[Node ID format must match AST extractor]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

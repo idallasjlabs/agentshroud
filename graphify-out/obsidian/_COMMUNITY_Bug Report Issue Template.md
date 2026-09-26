@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Bug Report Issue Template]] - document - .github/ISSUE_TEMPLATE/bug_report.yml
+- [[app.json]] - code - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

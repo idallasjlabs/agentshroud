@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_soul_documents_ssh_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[Hermes SOUL.md must document all three lab hosts and the gateway sshexec…]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[.test_hermes_soul_documents_ssh_hosts()]] - degree 2, connects to 1 community
+- [[.test_long_outbound_message_quarantined()]] - degree 4, connects to 3 communities

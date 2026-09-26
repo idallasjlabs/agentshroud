@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue._notify_telegram]] - code - gateway/approval_queue/enhanced_queue.py
+- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

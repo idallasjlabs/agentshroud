@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
-- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
-- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
-- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
-- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
-- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
-- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[Auto-Restart_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Diagnosis]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Recovery_2]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Data Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Immediate Assessment]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Ledger Database_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[OOM Kill (Exit Code 137)_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 1 Simple Restart (most common fix)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 2 Full Stop and Start]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 3 Rebuild and Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 4 Volume-Safe Reset]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Pending Approvals]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Post-Recovery Verification]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_65]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,10 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
 
 ## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[07-team-planning]] - degree 5, connects to 1 community
-- [[Roadmap  Timeline — Development Phases]] - degree 2, connects to 1 community
+- [[Crash Recovery_2]] - degree 9, connects to 1 community

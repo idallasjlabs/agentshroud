@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[CI job smoke-static (startup smoke tests)]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

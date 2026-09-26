@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[AgentShroud Data Flow Diagrams]] - document - docs/flows/data-flow-diagram.md
-- [[Level 0 Context Diagram]] - document - docs/flows/data-flow-diagram.md
-- [[Level 1 Security Components]] - document - docs/flows/data-flow-diagram.md
-- [[Level 2 MCP Proxy Detail]] - document - docs/flows/data-flow-diagram.md
-- [[data-flow-diagram]] - document - docs/flows/data-flow-diagram.md
+- [[.test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/AgentShroud_Data_Flow_Diagrams
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
+
+## Top bridge nodes
+- [[TestScoreIncidentResponse_1]] - degree 5, connects to 1 community

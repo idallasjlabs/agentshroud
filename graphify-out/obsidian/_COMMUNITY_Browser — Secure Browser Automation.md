@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation_3]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Purpose_77]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Related Skills_68]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Usage_72]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[.test_returns_false_when_checked_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_false_when_file_missing()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_true_when_checked_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestAlreadyCheckedUpstreamToday]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
 
 ## Top bridge nodes
-- [[Browser — Secure Browser Automation_3]] - degree 4, connects to 1 community
+- [[TestAlreadyCheckedUpstreamToday]] - degree 4, connects to 1 community

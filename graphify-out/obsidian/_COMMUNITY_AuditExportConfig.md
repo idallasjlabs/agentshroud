@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.29
 members: 10
 ---
 
 # AuditExportConfig
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.__init__()_8]] - code - gateway/security/audit_export.py
-- [[.__init__()_38]] - code - gateway/security/audit_export.py
-- [[._default_jsonld_context()]] - code - gateway/security/audit_export.py
-- [[.export_config()]] - code - gateway/tests/test_audit_export.py
-- [[AuditExportConfig]] - code - gateway/security/audit_export.py
-- [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
-- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
-- [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
-- [[soc_export()]] - code - gateway/ingest_api/main.py
+- [[.test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
+- [[main()_24]] - code - scripts/list_registry_ghsa_ids.py
+- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,16 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/AuditExportConfig
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 12 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 6 edges to [[_COMMUNITY_AuditExporter]]
-- 4 edges to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_TestAuditStore]]
-- 1 edge to [[_COMMUNITY_TestAuditStoreBotId]]
-
-## Top bridge nodes
-- [[AuditExportConfig]] - degree 24, connects to 5 communities
-- [[soc_export()]] - degree 5, connects to 2 communities
-- [[.__init__()_38]] - degree 3, connects to 2 communities
-- [[.export_config()]] - degree 3, connects to 1 community

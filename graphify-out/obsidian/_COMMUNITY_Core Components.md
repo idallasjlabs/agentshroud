@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. Gateway (FastAPI)]] - document - docs/architecture/system-architecture.md
-- [[10. Dashboard (WebSocket)]] - document - docs/architecture/system-architecture.md
-- [[11. Trust Manager]] - document - docs/architecture/system-architecture.md
-- [[12. Egress Monitor]] - document - docs/architecture/system-architecture.md
-- [[2. PII Sanitizer (Presidio + Regex)]] - document - docs/architecture/system-architecture.md
-- [[3. Audit Ledger (SHA-256 Hash Chain)]] - document - docs/architecture/system-architecture.md
-- [[4. Approval Queue (SQLite)]] - document - docs/architecture/system-architecture.md
-- [[5. Kill Switch (3 Modes)]] - document - docs/architecture/system-architecture.md
-- [[6. SSH Proxy]] - document - docs/architecture/system-architecture.md
-- [[7. MCP Proxy (Model Context Protocol)]] - document - docs/architecture/system-architecture.md
-- [[8. Web Proxy]] - document - docs/architecture/system-architecture.md
-- [[9. DNS Filter]] - document - docs/architecture/system-architecture.md
-- [[Core Components]] - document - docs/architecture/system-architecture.md
+- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Role_32]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Rules_2]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[SKILL_54]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Trigger]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Core_Components
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud System Architecture Document (SAD)]]
-
-## Top bridge nodes
-- [[Core Components]] - degree 13, connects to 1 community

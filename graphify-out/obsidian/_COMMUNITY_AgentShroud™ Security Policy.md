@@ -1,40 +1,41 @@
 ---
 type: community
-cohesion: 0.08
-members: 25
+cohesion: 0.10
+members: 26
 ---
 
 # AgentShroud™ Security Policy
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[7-Layer Security Architecture]] - concept - SECURITY.md
-- [[AgentShroud™ Security Policy]] - document - SECURITY.md
-- [[CI Security Scanning Toolchain]] - concept - SECURITY.md
-- [[Compliance Alignment]] - document - SECURITY.md
-- [[Daily CVE Sync + Page Update Workflow]] - document - .github/workflows/update-cve-page.yml
-- [[Emergency Response]] - document - SECURITY.md
-- [[Kill Switch Operations]] - concept - CHEATSHEET.md
-- [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md
-- [[Layer 2 — Middleware (P1)]] - document - SECURITY.md
-- [[Layer 3 — Output Protection]] - document - SECURITY.md
-- [[Layer 4 — Tool & Agent Control]] - document - SECURITY.md
-- [[Layer 5 — Network & Egress]] - document - SECURITY.md
-- [[Layer 6 — File & Memory Integrity]] - document - SECURITY.md
-- [[Layer 7 — Infrastructure & Supply Chain]] - document - SECURITY.md
-- [[Monitor Mode Warning]] - document - SECURITY.md
-- [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
-- [[Reporting a Vulnerability]] - document - SECURITY.md
-- [[Response Timeline]] - document - SECURITY.md
-- [[SECURITY]] - document - SECURITY.md
-- [[Security Architecture_4]] - document - SECURITY.md
-- [[Security Scan Workflow]] - document - .github/workflows/security-scan.yml
-- [[Security Scanning]] - document - SECURITY.md
-- [[Supported Versions]] - document - SECURITY.md
-- [[Trademark_1]] - document - BRAND.md
-- [[Upstream Agent CVE Tracking]] - document - SECURITY.md
+- [[.test_already_ingested_helper_swallows_read_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_gives_up_and_marks_sent_after_max_retries()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_ingest_records_even_when_disk_write_fails()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_per_agent_check_error_is_isolated_not_fatal()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_retries_on_failed_send_before_giving_up()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_runs_ingest_records_then_skips_next_iteration()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_ingest_when_marked_done_after_wake()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_when_already_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_successful_send_marks_sent_immediately_no_retry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_undelivered_new_advisory_retries_not_marked_ingested()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_undelivered_new_cves_retries_not_marked_checked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_zero_new_cves_marks_checked_immediately()]] - code - gateway/tests/test_daily_cve_report.py
+- [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A failed send retries (bounded) within the same day, not next-day.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A raised per-agent check error is ISOLATED — the ingest still completes.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After sleeping, if the day is now marked done, the loop skips ingest.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After the retry cap, the day IS marked done so the loop moves on.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[First iteration ingests + records; second sees dedup and skips.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[If already ingested today, the loop bumps to tomorrow and never ingests.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestCveReportSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestScheduler]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[datetime_2]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,16 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_gateway.security.daily_cve_report]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_75 Security Modules]]
-- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+- 8 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
-- [[Trademark_1]] - degree 4, connects to 2 communities
-- [[AgentShroud™ Security Policy]] - degree 14, connects to 1 community
-- [[Kill Switch Operations]] - degree 2, connects to 1 community
-- [[Security Scan Workflow]] - degree 2, connects to 1 community
-- [[SECURITY]] - degree 2, connects to 1 community
+- [[datetime_2]] - degree 14, connects to 1 community
+- [[TestGhsaIngestScheduler]] - degree 7, connects to 1 community
+- [[TestCveReportSchedulerRetry]] - degree 4, connects to 1 community
+- [[.test_runs_ingest_records_then_skips_next_iteration()]] - degree 4, connects to 1 community
+- [[TestUpstreamCveCheckSchedulerRetry]] - degree 3, connects to 1 community

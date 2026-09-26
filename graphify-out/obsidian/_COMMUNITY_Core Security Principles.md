@@ -10,30 +10,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Core Security Principles_4]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Critical Findings]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 3 ToolResultInjectionScanner (12 patterns) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Threat Matrix What Gets Through]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[prompt-injection-assessment-2026-02-25]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Core Identity (from IDENTITY.md, SOUL.md, USER.md)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Critical Constraint]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[DEFERRED TO PHASE 4+ (Advanced Features)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Deferred Security Controls (Phase 5+)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Files to Mount in Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[MUST HAVE (Phase 3 - Minimum Viable Chat)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Notes]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[PHASE3_REQUIREMENTS]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 1 Isaiah's Persona Package]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 2 Phase 3 Feature Scope]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 3 Security Requirements for Base Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Part 4 Implementation Checklist]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[References_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 4 Integration Testing (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Step 5 Documentation (Day 3)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Success Criteria_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Timeline_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/Core_Security_Principles
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
-- 1 edge to [[_COMMUNITY_Security Implementation Verification]]
-
-## Top bridge nodes
-- [[Core Security Principles_4]] - degree 5, connects to 1 community
-- [[🎓 Key Principles]] - degree 4, connects to 1 community

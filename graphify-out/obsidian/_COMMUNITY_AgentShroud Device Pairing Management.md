@@ -1,51 +1,51 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.12
 members: 36
 ---
 
 # AgentShroud Device Pairing Management
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 36 nodes
 
 ## Members
-- [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
-- [[2. Principle of Least Privilege]] - document - docs/setup/DEVICE_PAIRING.md
-- [[3. Monitor Remote IPs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[4. Document Your Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[5. Rotate on Compromise]] - document - docs/setup/DEVICE_PAIRING.md
-- [[AgentShroud Device Pairing Management]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approve All Pending Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approving Device Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Common Scenarios]] - document - docs/setup/DEVICE_PAIRING.md
-- [[File Locations]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Finding Pending Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[How Device Pairing Works]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Integration with AgentShroud Workflow]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Listing Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 1 Via CLI (Recommended)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 2 View Raw Pending File]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 3 Check Container Logs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Overview_3]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Quick Approval (Single Device)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Rejecting Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Revoking Device Access]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Scenario 1 New BrowserComputer]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Scenario 2 Safari Private Window]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Scenario 3 Multiple Computers]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Scenario 4 LostStolen Device]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Scenario 5 Clear All Devices (Nuclear Option)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Notes]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Troubleshooting_10]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Verify Approval]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View All Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View Detailed Device Information]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Why Device Pairing Matters]] - document - docs/setup/DEVICE_PAIRING.md
+- [[.test_archived_rows_preserved_verbatim()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_archives_only_events_older_than_cutoff()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_live_forward_chain_still_valid_after_archival()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_missing_db_is_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_no_events_to_archive_is_a_noop()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_no_vacuum_flag_skips_vacuum()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_running_twice_is_idempotent()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_vacuum_failure_does_not_discard_a_successful_archive()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_vacuum_reduces_file_size_after_bulk_delete()]] - code - gateway/tests/test_audit_archive.py
+- [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - code - gateway/tests/test_audit_archive.py
+- [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - rationale - gateway/tests/test_audit_archive.py
+- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
+- [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
+- [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
+- [[Path_6]] - code - gateway/security/audit_archive.py
+- [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
+- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
+- [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
+- [[_chain_events()]] - code - gateway/tests/test_audit_archive.py
+- [[_cli()]] - code - gateway/security/audit_archive.py
+- [[_make_live_db()]] - code - gateway/tests/test_audit_archive.py
+- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
+- [[archive_old_events()]] - code - gateway/security/audit_archive.py
+- [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
+- [[audit_archive.py]] - code - gateway/security/audit_archive.py
+- [[datetime_1]] - code - gateway/security/audit_archive.py
+- [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
+- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
+- [[now()]] - code - gateway/tests/test_audit_archive.py
+- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
+- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,8 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
+- 1 edge to [[_COMMUNITY_load_config()]]
 
 ## Top bridge nodes
-- [[AgentShroud Device Pairing Management]] - degree 16, connects to 2 communities
+- [[archive_old_events()]] - degree 17, connects to 1 community

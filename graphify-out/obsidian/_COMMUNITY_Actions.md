@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
-- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
-- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
-- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
-- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
-- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
-- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
-- [[Member info]] - document - skills/openclaw/slack/SKILL.md
-- [[Overview_21]] - document - skills/openclaw/slack/SKILL.md
-- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
-- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
-- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
-- [[slackSKILL]] - document - skills/openclaw/slack/SKILL.md
+- [[1. Enhanced Management Dashboard Routes (`gatewaywebmanagement.py`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[2. Responsive CSS Framework (`gatewaywebstaticagentshroud-dashboard.css`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[3. Main Dashboard Template (`gatewaywebtemplatesdashboard.html`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[AgentShroud Web Control Center - Implementation Summary]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[✅ Dashboard Pages Created]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[✅ Design Principles Met]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[✅ Technical Implementation]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[✨ Security Features]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🌐 Access Points]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🎨 Branding Compliance]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🎯 Key Features Implemented]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[📋 Task Completed Successfully]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[📱 Device Compatibility]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🔄 Next Steps]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🔧 Architecture]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🚀 What Was Built]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[🚢 Deployment Status]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
+- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[slackSKILL]] - degree 2, connects to 1 community
+- [[AgentShroud Web Control Center - Implementation Summary]] - degree 11, connects to 1 community

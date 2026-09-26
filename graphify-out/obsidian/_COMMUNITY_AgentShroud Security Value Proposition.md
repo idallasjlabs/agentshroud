@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.10
 members: 23
 ---
 
 # AgentShroud Security Value Proposition
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Kill Switch]] - document - dashboard/README.md
+- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Troubleshooting_22]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,8 +42,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
+- 1 edge to [[_COMMUNITY__build_image_targets()]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
+- 1 edge to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_Crash Recovery]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities
+- [[Kill Switch]] - degree 9, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 3 communities

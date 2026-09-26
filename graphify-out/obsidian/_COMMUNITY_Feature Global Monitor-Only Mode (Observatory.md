@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.13
 members: 15
 ---
 
 # Feature: Global Monitor-Only Mode ("Observatory 
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[API Response]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Architecture (high-level)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Concept]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Console Management]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Design]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Estimated Effort]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Implementation Priority]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Key Behaviors]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Open Questions (for v0.8.0 planning)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Risk Assessment Heuristic]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Use Cases_2]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[User Experience]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0-egress-firewall]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Constraints_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Problem_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Root Cause_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Verification_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
 
 ## Live Query (requires Dataview plugin)
 

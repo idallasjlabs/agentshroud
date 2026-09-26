@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # AgentShroud v1.2.0 — Red Team Assessment
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud v1.2.0 — Red Team Assessment]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Methodology note]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-00 — Tool inventory disclosure]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[red-team-assessment-v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§3 — SAST Scan Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§4 — Findings Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§5 — Acceptance Rationales (Signed Off)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§6 — Regression Test Index]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[4. Skill System]] - document - docs/architecture/agentic-os.md
+- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
+- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
+- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
+- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
+- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
+- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
+- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_§1 — Re-run of Prior Scenarios]]
-- 1 edge to [[_COMMUNITY_§2 — New Multi-Bot Attack Scenarios (v1.1+ Surfa]]
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessme]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
 
 ## Top bridge nodes
-- [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities
-- [[red-team-assessment-v1.2.0]] - degree 2, connects to 1 community
+- [[4. Skill System]] - degree 3, connects to 1 community

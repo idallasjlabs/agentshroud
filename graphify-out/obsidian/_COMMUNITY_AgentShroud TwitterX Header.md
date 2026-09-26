@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud TwitterX Header]] - image - branding/social/twitter-header-1500x500.png
+- [[Raw-flag triage discipline (74-merge sweep)]] - rationale - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

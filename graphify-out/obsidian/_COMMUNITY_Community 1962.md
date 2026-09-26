@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolResultInjectionScanner Test Suite]] - code - gateway/tests/test_tool_injection_scan.py
+- [[CI SOUL.md freshness check (90-day limit)]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

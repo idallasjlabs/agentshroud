@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.24
 members: 10
 ---
 
 # AgentShroud Threat Model (STRIDE Analysis)
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
-- [[Assets Under Protection]] - document - docs/security/threat-model.md
-- [[Executive Summary_14]] - document - docs/security/threat-model.md
-- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
-- [[System Components in Scope]] - document - docs/security/threat-model.md
-- [[Threat Feeds]] - document - docs/security/threat-model.md
-- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
-- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
-- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
-- [[threat-model]] - document - docs/security/threat-model.md
+- [[.test_argv_shape()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_custom_user()]] - code - gateway/tests/test_multi_host_test.py
+- [[Build the ssh argv for a host. Non-interactive, fail-fast on connect.      ``Bat]] - rationale - gateway/tools/multi_host_test.py
+- [[Describe exactly what would run, without executing anything.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestBuildSshArgv]] - code - gateway/tests/test_multi_host_test.py
+- [[Turn argparse REMAINDER tokens into a command string.      Drops a leading ``--`]] - rationale - gateway/tools/multi_host_test.py
+- [[_dry_run_report()]] - code - gateway/tools/multi_host_test.py
+- [[_resolve_command()]] - code - gateway/tools/multi_host_test.py
+- [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
+- [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +29,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_A2A (Agent-to-Agent) Protocol Threat Analysis]]
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
+- 4 edges to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
+- 3 edges to [[_COMMUNITY_SECTION 1 COVER SHEET (Form PTOSB16)]]
+- 3 edges to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_Hermes — Podcast Production Orchestrator]]
+- 1 edge to [[_COMMUNITY_Common Operations]]
+- 1 edge to [[_COMMUNITY_TestPatternDetection]]
+- 1 edge to [[_COMMUNITY_Development Workflow]]
+- 1 edge to [[_COMMUNITY_SECTION 3 DRAWINGS]]
 
 ## Top bridge nodes
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities
+- [[multi_host_test.py]] - degree 15, connects to 10 communities
+- [[TestBuildSshArgv]] - degree 6, connects to 3 communities
+- [[build_ssh_argv()]] - degree 6, connects to 1 community
+- [[_dry_run_report()]] - degree 4, connects to 1 community
+- [[_resolve_command()]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.decide]] - code - gateway/approval_queue/enhanced_queue.py
+- [[AgentShroud TwitterX Header]] - image - branding/social/twitter-header-1500x500.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,108 +1,114 @@
 ---
 type: community
-cohesion: 0.03
-members: 93
+cohesion: 0.02
+members: 99
 ---
 
 # CollaboratorActivityTracker
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 93 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 99 nodes
 
 ## Members
-- [[.__init__()_45]] - code - gateway/security/collaborator_tracker.py
-- [[._append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
-- [[._coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
-- [[._normalize_preview()]] - code - gateway/security/collaborator_tracker.py
-- [[._normalize_username()]] - code - gateway/security/collaborator_tracker.py
-- [[.get_activity()]] - code - gateway/security/collaborator_tracker.py
-- [[.get_activity_summary()]] - code - gateway/security/collaborator_tracker.py
-- [[.get_health()]] - code - gateway/security/collaborator_tracker.py
-- [[.record_activity()]] - code - gateway/security/collaborator_tracker.py
-- [[.test_failed_write_makes_unhealthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_initial_state_healthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - rationale - gateway/security/collaborator_tracker.py
-- [[Best-effort float timestamp coercion for resilient log reads.]] - rationale - gateway/security/collaborator_tracker.py
-- [[CollaboratorActivityTracker]] - code - gateway/tests/test_lifespan_prune.py
-- [[CollaboratorActivityTracker_1]] - code - gateway/security/collaborator_tracker.py
-- [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
-- [[IDs  10000 should be treated as test fixtures by the pruner heuristic.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Mirror activity into workspace contributor logs used by daily digests.]] - rationale - gateway/security/collaborator_tracker.py
-- [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - rationale - gateway/security/collaborator_tracker.py
-- [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
-- [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Path_2]] - code - gateway/security/collaborator_tracker.py
-- [[Path_3]] - code - gateway/tests/test_lifespan_prune.py
-- [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
-- [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
-- [[Return a health snapshot suitable for statusdetail.]] - rationale - gateway/security/collaborator_tracker.py
-- [[Return activity entries sorted newest-first.          Args             since U]] - rationale - gateway/security/collaborator_tracker.py
-- [[Return aggregated statistics over all recorded activity.          Returns]] - rationale - gateway/security/collaborator_tracker.py
-- [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
-- [[Short numeric UIDs ( 7 digits) must be silently dropped before any write.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
-- [[TestTrackerGetHealth]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Tracks collaborator messages at the gateway level.      Records every inbound me]] - rationale - gateway/security/collaborator_tracker.py
-- [[UIDs matching test_user prefix must be silently dropped.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
-- [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
-- [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
-- [[collaborator_tracker.py]] - code - gateway/security/collaborator_tracker.py
-- [[get_activity(bot_id=...) returns only entries matching that bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[get_activity_summary returns empty by_bot when no log file exists.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[process_webhook passes agent_id as bot_id to record_activity.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[record_activity without bot_id stores bot_id=None in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[test_collaborator_entry_has_is_owner_false()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_collaborator_tracker.py]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_correlation_id_absent_when_not_provided()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_correlation_id_included_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_fixture_uid_writes_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_filters_by_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_ignores_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_respects_limit()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_respects_since()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_returns_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_returns_entries_newest_first()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_summary_by_bot_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_get_activity_summary_includes_by_bot()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_is_fixture_uid_blocks_short_numeric()]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_is_fixture_uid_blocks_test_user_prefix()]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_is_fixture_uid_passes_real_uids()]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_lifespan_prune.py]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_message_preview_newlines_normalized()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_message_preview_truncated()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_multiple_entries_appended()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_owner_correlation_id_is_stored()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_owner_display_name_overrides_pipe()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_owner_is_recorded_with_is_owner_flag()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_prune_keeps_real_uid_markdown()]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_prune_walks_all_contributor_dirs()]] - code - gateway/tests/test_lifespan_prune.py
-- [[test_pruner_real_telegram_uids_not_flagged()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_pruner_short_numeric_ids_are_test_fixtures()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_real_uid_writes_unblocked()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_record_activity_mirror_handles_delimiter_chars_in_username()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_record_activity_mirror_is_single_line_for_multiline_message()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_record_activity_mirrors_to_contributor_daily_log()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_record_activity_stores_bot_id_none_when_omitted()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_record_activity_stores_bot_id_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_records_known_collaborator()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_summary_counts()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_summary_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_summary_handles_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_test_user_prefix_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[tracker()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[usetellasktalk toswitch to... modelagent - ('model', gateway     mo]] - rationale - gateway/tests/test_voice_gateway.py
+- [[voice is the one endpoint reachable over the public internet (Tailscale     Fun]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A modelpipeline warm-up failure at startup must NOT down the gateway.      Regr]] - rationale - gateway/tests/test_voice_gateway.py
+- [[After a set, the read query reports the tracked level in percent.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Before any set, the read query reports an unknown-state calibration hint.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with correct token= query param is accepted and gets idle state.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with no token is rejected when auth is configured.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with wrong token= is closed (server returns no state frame).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device]] - rationale - gateway/tests/test_voice_gateway.py
+- [[ConnectionClosedOK (WS code 10001001 — clean websockets-library close path)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Digit, percent, word-number and compound forms; clamping; non-commands.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second     ``re]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Each synthesized sentence must ramp inout over ~5 ms so per-sentence     Kokoro]] - rationale - gateway/tests/test_voice_gateway.py
+- [[External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405     makes a h]] - rationale - gateway/tests/test_voice_gateway.py
+- [[GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body field)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If a device sends LISTEN but never sends END (crash  stuck firmware), the     s]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If the pipeline raises mid-synthesis, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[No agent= param → _DEFAULT_AGENT is used for routing.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[No fabricated version when the env var is genuinely unset — say     'unknown' ra]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Read phrasings match; set commands and unrelated speech do not.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Regression 2026-08-08 the voice assistant answered what version is     AgentSh]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Text that normalises to emptywhitespace returns b'' without invoking Kokoro.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[The very first frame after WS accept must be idle, not listening.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_DIR (baked path) beats WHISPER_MODEL_SIZE — preserves offline guar]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_DIR env var is honoured _MODEL_PATH resolves to the directory]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When agent= is absent the default agent must be 'direct' (fast local     model)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When _VG_AUTH_TOKEN is empty, any connection is accepted (dev  backward compat)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the STT→LLM→TTS pipeline raises, the inner exception handler must       1.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_GATEWAY_TOKEN is read from the secret file when it exists.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream must POST to forwardstream with streamtrue, not     the ol]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream must yield a spoken fallback string and log a WARNING     whe]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_fake_kokoro_pipeline()]] - code - gateway/tests/test_voice_gateway.py
+- [[_load_ota_tokens merges env + secret file and falls back to the WS token.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_mock_llm_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
+- [[_mock_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
+- [[_reset_reply_resume()]] - code - gateway/tests/test_voice_gateway.py
+- [[_run_disconnect_test()]] - code - gateway/tests/test_voice_gateway.py
+- [[pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.      A device that]] - rationale - gateway/tests/test_voice_gateway.py
+- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - rationale - gateway/tests/test_voice_gateway.py
+- [[synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[test_answer_volume_query_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_answer_volume_query_unknown_before_any_set()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_read_timeout_returns_fallback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_uses_structured_timeout()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_health_returns_ok()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_health_supports_head()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_is_volume_query_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_lifespan_tolerates_warmup_failure()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_listen_without_end_times_out()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_load_ota_tokens_sources()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_owner_user_id_propagated_as_header()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_parse_model_switch_command_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_parse_volume_command_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_pcm_buffer_bounded()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_default_model_size_is_small_en()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_model_dir_wins_over_model_size()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_model_size_env_override()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_transcribe_empty_bytes_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_transcribe_mocked_model()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_uses_local_model_dir_when_env_set()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_token_falls_back_to_env_when_no_file()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_token_loaded_from_secret_file()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_empty_text_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_kokoro_pipeline_load_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_kokoro_synthesis_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_resamples_24000_to_16000()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_fades_sentence_edges()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_via_kokoro()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_gateway.py]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_system_message_includes_agentshroud_version()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_system_message_version_unknown_when_env_unset()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_accepts_correct_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_accepts_when_auth_not_configured()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_agent_query_param_absent_uses_default()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connect_sends_idle_first()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_default_agent_is_direct()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_rejects_missing_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_rejects_wrong_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_token_check_uses_constant_time_comparison()]] - code - gateway/tests/test_voice_gateway.py
+- [[transcribe() calls the model and returns joined segment text.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[voice_gateway app (FastAPI)]] - code - voice_gateway/server.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -112,27 +118,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 5 edges to [[_COMMUNITY_lifespan.py]]
-- 3 edges to [[_COMMUNITY_WebhookReceiver]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
-- 1 edge to [[_COMMUNITY_TestEgressTargetExtraction]]
-- 1 edge to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
-- 1 edge to [[_COMMUNITY_TestInternalBannerMatcher]]
-- 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
-- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
-- 1 edge to [[_COMMUNITY_TestReplayBufferOffsetParsing]]
-- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 31 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 9 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 8 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 6 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 6 edges to [[_COMMUNITY_TestSetMode]]
+- 6 edges to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Dete]]
+- 1 edge to [[_COMMUNITY_auto_remediate_cves.py]]
+- 1 edge to [[_COMMUNITY_TestWebSocketHandshakeAuth]]
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
 
 ## Top bridge nodes
-- [[CollaboratorActivityTracker_1]] - degree 52, connects to 15 communities
-- [[TestTrackerGetHealth]] - degree 8, connects to 3 communities
-- [[test_collaborator_tracker.py]] - degree 40, connects to 1 community
-- [[test_lifespan_prune.py]] - degree 10, connects to 1 community
-- [[_is_fixture_uid()]] - degree 9, connects to 1 community
+- [[test_voice_gateway.py]] - degree 115, connects to 8 communities
+- [[_run_disconnect_test()]] - degree 5, connects to 1 community
+- [[test_listen_without_end_times_out()]] - degree 3, connects to 1 community
+- [[test_pcm_buffer_bounded()]] - degree 3, connects to 1 community
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - degree 3, connects to 1 community

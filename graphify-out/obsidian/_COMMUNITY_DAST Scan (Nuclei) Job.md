@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DAST Scan (Nuclei) Job]] - code - .github/workflows/ci.yml
+- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

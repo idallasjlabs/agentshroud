@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[API Reference]] - document - docs/api/api-reference.md
-- [[AgentShroud v1.3.0]] - document - docs/api/api-reference.md
-- [[Authentication_1]] - document - docs/api/api-reference.md
-- [[Error responses]] - document - docs/api/api-reference.md
-- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
-- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
-- [[Overview_18]] - document - docs/api/api-reference.md
-- [[Overview_19]] - document - docs/api/integration-guide.md
-- [[Source of truth_1]] - document - docs/api/api-reference.md
-- [[api-reference]] - document - docs/api/api-reference.md
+- [[author_2]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[description_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[keywords_2]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[license_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[main_2]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[name_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[package.json_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[scripts_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[test_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[version_6]] - code - docker/config/openclaw/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/API_Reference
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Route map (by router)]]
-- 1 edge to [[_COMMUNITY_Integration Guide]]
-
-## Top bridge nodes
-- [[API Reference]] - degree 8, connects to 1 community
-- [[AgentShroud v1.3.0]] - degree 4, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[Newsletter Chat Front-ends & Search Infra]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
 
 ## Live Query (requires Dataview plugin)
 

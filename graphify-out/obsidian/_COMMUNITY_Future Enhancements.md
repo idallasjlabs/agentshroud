@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Future Enhancements
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Future Enhancements]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 1 Auto-Discovery]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 2 Enhanced Extraction]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 3 Screenshot Capture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 4 Multi-Page Support]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 5 Direct Gmail Configuration]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_83]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[README_88]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Related Skills_89]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Usage_92]] - document - docker/config/openclaw/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[Future Enhancements]] - degree 6, connects to 1 community
+- [[Data Validation (DATA-VAL)_2]] - degree 5, connects to 1 community

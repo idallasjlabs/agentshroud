@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Context_9]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Decision_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Mitigation_3]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Status_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Common Commands_1]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Configuration_20]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Notes_3]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[SKILL_195]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[SKILL_197]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
+- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

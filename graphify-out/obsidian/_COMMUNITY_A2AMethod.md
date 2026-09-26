@@ -1,70 +1,69 @@
 ---
 type: community
-cohesion: 0.05
-members: 55
+cohesion: 0.08
+members: 54
 ---
 
 # A2AMethod
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 55 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 54 nodes
 
 ## Members
-- [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - rationale - gateway/security/a2a_policy.py
-- [[.__init__()_120]] - code - gateway/security/a2a_policy.py
-- [[.__init__()_121]] - code - gateway/tests/test_a2a_policy.py
-- [[.__post_init__()_3]] - code - gateway/security/a2a_policy.py
-- [[._decide()]] - code - gateway/security/a2a_policy.py
-- [[._tier_for()]] - code - gateway/security/a2a_policy.py
-- [[.allowed()_1]] - code - gateway/security/a2a_policy.py
-- [[.enforce()]] - code - gateway/security/a2a_policy.py
-- [[.evaluate()]] - code - gateway/security/a2a_policy.py
-- [[.from_dict()_2]] - code - gateway/security/a2a_policy.py
-- [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[.test_bare_config_denies_every_peer()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_configured_allowlist_still_works_alongside_fail_closed_default()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_from_dict_empty_dict_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_from_dict_none_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_invalid_default_action_string_falls_back_to_deny()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_owner_bypass_is_always_false_regardless_of_input()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[A2AMethod]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
-- [[Accept either the enum or its string value (JSON-RPC payloads arrive     as plai]] - rationale - gateway/security/a2a_policy.py
-- [[Any_41]] - code - gateway/security/a2a_policy.py
-- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - rationale - gateway/security/a2a_policy.py
-- [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - rationale - gateway/security/a2a_policy.py
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
-- [[Evaluate a single A2A request. Pure — no IO, no side effects         beyond bes]] - rationale - gateway/security/a2a_policy.py
-- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          Identical f]] - rationale - gateway/security/a2a_policy.py
-- [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[IPv4Address]] - code - gateway/security/a2a_policy.py
-- [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - rationale - gateway/security/a2a_policy.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
-- [[TestDefaultA2APolicyIsFailClosed]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
-- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
-- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
-- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[_BaseAddress]] - code - gateway/security/a2a_policy.py
-- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
-- [[_address_is_public()]] - code - gateway/security/a2a_policy.py
-- [[_canonicalize_ip_literal()]] - code - gateway/security/a2a_policy.py
-- [[_int_to_ipv4()]] - code - gateway/security/a2a_policy.py
-- [[_method_of()]] - code - gateway/security/a2a_policy.py
-- [[_norm()]] - code - gateway/security/a2a_policy.py
-- [[`A2APolicyEngine()` with no config argument — the laziest possible         call]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[a2a_policy.py]] - code - gateway/security/a2a_policy.py
-- [[load_config-style callers pass whatever the YAML section resolved         to, wh]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[test_a2a_policy_default_failclosed.py]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[test_decision_allowed_property_only_true_for_terminal_allow()]] - code - gateway/tests/test_a2a_policy.py
+- [[.test_baseline_three_when_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_defined_when_all_passing_no_report_on_disk()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_defined_when_oscap_binary_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_five_when_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_four_when_openscap_running_with_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_managed_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_managed_when_has_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_one_when_no_tools()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_one_when_no_wazuh_no_fluent()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_optimizing_when_clean_zero_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_overall_clean_when_all_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_three_when_both_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_two_when_falco_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_two_when_wazuh_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[Any_70]] - code - gateway/tests/test_scanner_integration.py
+- [[Score domain 10 Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 9 Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,]] - rationale - gateway/security/scanner_integration.py
+- [[TestScoreComplianceAuditing]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreContainerHardening]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreIncidentResponse]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreLoggingMonitoring]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreRuntimeProtection]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_warn()]] - code - gateway/tests/test_scanner_integration.py
+- [[_score_compliance_auditing()]] - code - gateway/security/scanner_integration.py
+- [[_score_container_hardening()]] - code - gateway/security/scanner_integration.py
+- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_incident_response()]] - code - gateway/security/scanner_integration.py
+- [[_score_logging_monitoring()]] - code - gateway/security/scanner_integration.py
+- [[_score_runtime_protection()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_wazuh_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_wazuh_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,19 +73,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 24 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 10 edges to [[_COMMUNITY_test_a2a_proxy.py]]
-- 5 edges to [[_COMMUNITY_A2AProxyResult]]
-- 5 edges to [[_COMMUNITY_Enum]]
-- 2 edges to [[_COMMUNITY_record_decision]]
-- 1 edge to [[_COMMUNITY_RovoBlast Attack (Atlassian Rovo AI)]]
-- 1 edge to [[_COMMUNITY_cls]]
-- 1 edge to [[_COMMUNITY_load_config()]]
+- 19 edges to [[_COMMUNITY_Canvas Skill]]
+- 16 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 16 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 10 edges to [[_COMMUNITY_Step-by-Step Installation]]
+- 9 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8G]]
+- 4 edges to [[_COMMUNITY_agentshroud-bot]]
+- 4 edges to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 2 edges to [[_COMMUNITY_LLMProxy]]
+- 2 edges to [[_COMMUNITY_iCloud Data Manager (ICLOUD)]]
 
 ## Top bridge nodes
-- [[A2AMethod]] - degree 29, connects to 5 communities
-- [[a2a_policy.py]] - degree 16, connects to 5 communities
-- [[A2APolicyConfig]] - degree 27, connects to 4 communities
-- [[A2APolicyAction]] - degree 13, connects to 2 communities
-- [[_LegacyStubApprovalQueue]] - degree 11, connects to 2 communities
+- [[test_scanner_integration.py]] - degree 61, connects to 9 communities
+- [[_score_compliance_auditing()]] - degree 10, connects to 3 communities
+- [[_score_image_integrity()]] - degree 10, connects to 3 communities
+- [[_score_incident_response()]] - degree 10, connects to 3 communities
+- [[_score_logging_monitoring()]] - degree 9, connects to 3 communities

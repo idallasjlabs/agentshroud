@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[i-crpr skill]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

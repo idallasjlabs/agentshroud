@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[2. Security Analysis]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2a. Owner Bypass (`OWNER_USER_IDS`) — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2b. Telegram SDK Patch Removal — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2c. Telegram Proxy Auth Added — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2d. Credential Reference Fixes — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2e. Gateway Auth Simplification — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3a. Enforcement Mode Flip — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3b. ContextGuard Pipeline Integration — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3c. Observatory Mode API — ✅ GOOD with note]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3d. 20 New Prompt Injection Patterns — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3e. Docker Hardening — ✅ GOOD (minus YAML bugs)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[4a. Blue Team Fixes — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4b. Remaining Risk Tailscale Networking (E1)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4c. Test Coverage Improvements]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[0. Preflight (both environments)]] - document - prompts/sunday-upgrade.md
+- [[1. Inventory]] - document - prompts/sunday-upgrade.md
+- [[2b. AgentShroud-side remediation — the vendor's fix is NOT the finish line]] - document - prompts/sunday-upgrade.md
+- [[3. Upgrade DEV]] - document - prompts/sunday-upgrade.md
+- [[4. Promote to PROD]] - document - prompts/sunday-upgrade.md
+- [[5. Cleanup]] - document - prompts/sunday-upgrade.md
+- [[6. Jira tracking (standard procedure, owner directive 2026-08-30)]] - document - prompts/sunday-upgrade.md
+- [[7. Report]] - document - prompts/sunday-upgrade.md
+- [[AgentShroud Weekly Upgrade — Sunday Maintenance Run]] - document - prompts/sunday-upgrade.md
+- [[Cross-account reality (marvin)]] - document - prompts/sunday-upgrade.md
+- [[Ground rules]] - document - prompts/sunday-upgrade.md
+- [[Procedure_1]] - document - prompts/sunday-upgrade.md
+- [[THE RUN IS JUDGED ON STATE CHANGE, NOT ON STEPS COMPLETED]] - document - prompts/sunday-upgrade.md
+- [[USE THE DETERMINISTIC SCRIPT — do not improvise these steps]] - document - prompts/sunday-upgrade.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY__process_inbound()]]
+- 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
+- 1 edge to [[_COMMUNITY_TestEgressTargetExtraction]]
 
 ## Top bridge nodes
-- [[2. Security Analysis]] - degree 14, connects to 1 community
+- [[AgentShroud Weekly Upgrade — Sunday Maintenance Run]] - degree 7, connects to 2 communities
+- [[Procedure_1]] - degree 10, connects to 1 community

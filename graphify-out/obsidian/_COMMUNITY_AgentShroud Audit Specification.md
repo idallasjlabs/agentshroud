@@ -10,43 +10,43 @@ members: 37
 **Members:** 37 nodes
 
 ## Members
-- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
-- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
-- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
-- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
-- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
-- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
-- [[Advanced Search Query]] - document - docs/security/audit-specification.md
-- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
-- [[Archival Process]] - document - docs/security/audit-specification.md
-- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
-- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
-- [[Basic Event Query]] - document - docs/security/audit-specification.md
-- [[Block Structure]] - document - docs/security/audit-specification.md
-- [[Chain Architecture]] - document - docs/security/audit-specification.md
-- [[Chain Verification Query]] - document - docs/security/audit-specification.md
-- [[Compliance Mapping]] - document - docs/security/audit-specification.md
-- [[Core Event Categories]] - document - docs/security/audit-specification.md
-- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
-- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
-- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
-- [[Hash Chain Structure]] - document - docs/security/audit-specification.md
-- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
-- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
-- [[Overview_2]] - document - docs/security/audit-specification.md
-- [[Performance and Scalability]] - document - docs/security/audit-specification.md
-- [[Processing Activities Register]] - document - docs/security/audit-specification.md
-- [[Query API Specification]] - document - docs/security/audit-specification.md
-- [[Query Capabilities]] - document - docs/security/audit-specification.md
-- [[Query Response Format]] - document - docs/security/audit-specification.md
-- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
-- [[Retention Policies]] - document - docs/security/audit-specification.md
-- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
-- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
-- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
-- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
+- [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[2. What Needs to PERSIST]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[3. What's System-Level]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Configuration Status]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow_1]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Gateway (FastAPI)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Kill Switch (Phase 3B)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature OpenSCAP Scanning (Phase 3A)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SSH Proxy (Phase 4)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SecureBrowser (Playwright)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature iCloudGmail Services]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[For Each New Feature, Document]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Functional Testing (Read-Only Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[If Any Test Fails]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Lockdown Procedure]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Planned Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Summary_17]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Write Paths Inventory]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,8 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_system-requirements]]
+- 2 edges to [[_COMMUNITY_Function Details]]
 
 ## Top bridge nodes
-- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
-- [[Compliance Mapping]] - degree 5, connects to 1 community
+- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community

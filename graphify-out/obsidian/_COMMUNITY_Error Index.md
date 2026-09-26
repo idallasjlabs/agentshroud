@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.27
 members: 10
 ---
 
 # Error Index
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[Auth Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Container Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Egress Filter Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Error Index_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[HTTP Status Codes]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[PII Pipeline Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Prompt Injection Blocks]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Related Notes_19]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[01-architecture]] - document - docs/diagrams/01-architecture.md
+- [[1. C4 Level 0 — Context Diagram (Executive View)]] - document - docs/diagrams/01-architecture.md
+- [[2. C4 Level 1 — Container Diagram]] - document - docs/diagrams/01-architecture.md
+- [[3. Architecture Component Diagram — Gateway internals]] - document - docs/diagrams/01-architecture.md
+- [[AgentShroud — Architecture Diagrams]] - document - docs/diagrams/01-architecture.md
+- [[C4 Level 0 — System Context Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[C4 Level 1 — Container Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Gateway Internals Component Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Rendered C4 Context Diagram (PNG)]] - image - docs/diagrams/images/diagram-01-c4-context.png
+- [[Rendered Gateway Components Diagram (PNG)]] - image - docs/diagrams/images/diagram-03-gateway-components.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_gateway.security.agent_cve_registry]]
 
 ## Top bridge nodes
-- [[Error Index_1]] - degree 10, connects to 1 community
+- [[01-architecture]] - degree 5, connects to 1 community

@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Consequences_5]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Context_7]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Decision_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Mitigation_1]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Status_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
+- [[Daedalus — Concept Illustrator_1]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Input Requirements_3]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Output Format_3]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Persona_2]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_3]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Role_11]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[SKILL_17]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[System Prompt_2]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[diagramsREADME]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)]] - document - .agents/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud System Architecture Document (SAD)]]
-- 1 edge to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities
+- [[Daedalus — Concept Illustrator_1]] - degree 8, connects to 1 community

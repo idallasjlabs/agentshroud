@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # AgentShroud Red Team Adversarial Tester
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[Adversary Model_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Attack Phases_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Attack Techniques Reference_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Critical Rules_8]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Infrastructure_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Key Principle_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Output_5]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 2 Prompt Injection_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 3 Indirect Injection_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 4 Data Exfiltration_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 5 Exploitation Chains_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Phase 6 Detection Validation_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Test Structure_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Writing Exploit Tests_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Function Details_46]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Purpose_167]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Related_53]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.get_usage_stats(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.start_request_tracking(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[resource_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[resource_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +35,3 @@ members: 17
 TABLE source_file, type FROM #community/AgentShroud_Red_Team_Adversarial_Tester
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[AgentShroud Red Team Adversarial Tester_3]] - degree 7, connects to 1 community

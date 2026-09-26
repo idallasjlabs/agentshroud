@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Clone the Repository_2]] - document - docs/operations/macos.md
-- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
-- [[3. Set Up Secrets_2]] - document - docs/operations/macos.md
-- [[4. Configure AgentShroud_2]] - document - docs/operations/macos.md
-- [[5. Build and Start_2]] - document - docs/operations/macos.md
-- [[6. Verify_2]] - document - docs/operations/macos.md
-- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
-- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
-- [[Fresh Install_2]] - document - docs/operations/macos.md
-- [[Prerequisites_12]] - document - docs/operations/macos.md
-- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
-- [[Updating to Latest Release_2]] - document - docs/operations/macos.md
-- [[macos]] - document - docs/operations/macos.md
+- [[Config Keys Read_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Function Details_3]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Imports From  Exports To_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Known Issues  Notes_6]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Purpose_116]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Related_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[health_check(target)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[resolve_target(request)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py_3]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py_2]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
 
 ## Live Query (requires Dataview plugin)
 

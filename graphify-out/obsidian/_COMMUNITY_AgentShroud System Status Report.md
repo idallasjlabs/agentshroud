@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.17
 members: 16
 ---
 
 # AgentShroud System Status Report
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud System Status Report]] - document - docs/project/SYSTEM_STATUS.md
-- [[Critical Issues]] - document - docs/project/SYSTEM_STATUS.md
-- [[Features Confirmed Working]] - document - docs/project/SYSTEM_STATUS.md
-- [[Immediate (Required for Bot to Work)]] - document - docs/project/SYSTEM_STATUS.md
-- [[Infrastructure_5]] - document - docs/project/SYSTEM_STATUS.md
-- [[Local]] - document - docs/project/SYSTEM_STATUS.md
-- [[Remote (Tailscale)]] - document - docs/project/SYSTEM_STATUS.md
-- [[When Ready to Continue]] - document - docs/project/SYSTEM_STATUS.md
-- [[iMessage Fix Required]] - document - docs/project/SYSTEM_STATUS.md
-- [[⚠️ What's NOT Working]] - document - docs/project/SYSTEM_STATUS.md
-- [[✅ What's WORKING]] - document - docs/project/SYSTEM_STATUS.md
-- [[🎯 Current Focus]] - document - docs/project/SYSTEM_STATUS.md
-- [[📁 Documentation]] - document - docs/project/SYSTEM_STATUS.md
-- [[📊 Container Status]] - document - docs/project/SYSTEM_STATUS.md
-- [[📋 Next Steps for User]] - document - docs/project/SYSTEM_STATUS.md
-- [[🔧 System Access]] - document - docs/project/SYSTEM_STATUS.md
+- [[._make_anthropic_injector()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_adds_oauth_beta_header_when_injecting()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_anthropic_version_auto_injected_when_absent()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_existing_anthropic_version_preserved()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_inject_if_absent_skips_when_bearer_already_present()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - code - gateway/tests/test_credential_injector.py
+- [[Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered]] - rationale - gateway/tests/test_credential_injector.py
+- [[Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once.]] - rationale - gateway/tests/test_credential_injector.py
+- [[Path_27]] - code - gateway/tests/test_credential_injector.py
+- [[TestOAuthInjection]] - code - gateway/tests/test_credential_injector.py
+- [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - rationale - gateway/tests/test_credential_injector.py
+- [[anthropic-version is required on every v1messages call; the gateway adds it]] - rationale - gateway/tests/test_credential_injector.py
+- [[inject_headers does NOT overwrite an existing Authorization Bearer token,]] - rationale - gateway/tests/test_credential_injector.py
+- [[inject_headers sets anthropic-beta oauth-2025-04-20 when Bearer is injected.]] - rationale - gateway/tests/test_credential_injector.py
+- [[x-api-key is stripped; Authorization Bearer and anthropic-beta are added.]] - rationale - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 1 edge to [[_COMMUNITY_ssh_proxy.py]]
+- 1 edge to [[_COMMUNITY_Features]]
 
 ## Top bridge nodes
-- [[AgentShroud System Status Report]] - degree 8, connects to 1 community
+- [[TestOAuthInjection]] - degree 9, connects to 1 community
+- [[._make_anthropic_injector()]] - degree 9, connects to 1 community

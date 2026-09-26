@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.12
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # AgentShroud (system, C4 context)
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1Password (credential vault)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[1Password Integration (service account)]] - document - docs/api/integration-guide.md
-- [[ADR-008 Progressive Trust Level System]] - concept - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[AgentShroud (system, C4 context)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[Anthropic API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Approval DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[ApprovalRequest (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Brave Search API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[External Collaborators]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Gateway Container (Python 3.11FastAPI 8080)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[GitHub (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Isaiah Jefferson (ArchitectOwner)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[OpenAI API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[RateLimitBucket (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Running Containers (gateway + bot, healthy)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[Telegram (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[TrustLevel (data entity)]] - concept - docs/data/data-dictionary.md
-- [[agent_trust SQLite table]] - code - docs/data/schema-documentation.md
-- [[agentshroud.yaml (main config schema)]] - code - docs/data/schema-documentation.md
-- [[approval_requests SQLite table]] - code - docs/data/schema-documentation.md
+- [[ASCII Art (fallback — no renderer available)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_20]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Dependencies_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Role_107]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rules_23]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[SKILL_184]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validation Checklist_7]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,12 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy Decision]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 2 communities
-- [[AgentShroud (system, C4 context)]] - degree 9, connects to 1 community
-- [[ADR-008 Progressive Trust Level System]] - degree 3, connects to 1 community
+- [[Skill Technical Illustrator (TI)_2]] - degree 12, connects to 1 community

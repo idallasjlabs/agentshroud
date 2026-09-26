@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
+- [[Assets Under Protection]] - document - docs/security/threat-model.md
+- [[Executive Summary_12]] - document - docs/security/threat-model.md
+- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
+- [[System Components in Scope]] - document - docs/security/threat-model.md
+- [[Threat Feeds]] - document - docs/security/threat-model.md
+- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
+- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
+- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
+- [[threat-model]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomou]]
+- 1 edge to [[_COMMUNITY_AgentShroud Hermes — System Identity]]
+- 1 edge to [[_COMMUNITY_TelegramGatewayRelay]]
 
 ## Top bridge nodes
-- [[9. Deep Security Hardening (v0.9.0)]] - degree 10, connects to 1 community
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

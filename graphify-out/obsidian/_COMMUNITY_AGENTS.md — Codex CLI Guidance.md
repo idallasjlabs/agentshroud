@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[AGENTS.md — Codex CLI Guidance]] - document - AGENTS.md
-- [[Codex Configuration (.codexconfig.toml)]] - document - AGENTS.md
-- [[Codex Safe Refactor Role]] - concept - AGENTS.md
-- [[Codex Test Augmenter Role]] - concept - AGENTS.md
-- [[Codex Validation Runner Role]] - concept - AGENTS.md
-- [[Data Lakehouse Platform (GSDL)]] - concept - AGENTS.md
-- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - document - AGENTS.md
-- [[safe-refactor.agent]] - document - .github/agents/safe-refactor.agent.md
-- [[test-augmenter.agent]] - document - .github/agents/test-augmenter.agent.md
-- [[validation-runner.agent]] - document - .github/agents/validation-runner.agent.md
+- [[Atlas — Curriculum Architect_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Input Requirements_12]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Output Format_14]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Persona_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Quality Checklist_11]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Role_43]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[SKILL_70]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[System Prompt_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[User Prompt Template_5]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,14 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Goal Codex is a secondarytertiary agent used f]]
-- 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
-- 1 edge to [[_COMMUNITY_Safe Refactor Specialist]]
-- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Communication Templates]]
+- 1 edge to [[_COMMUNITY_3. AWS API MCP Authentication Reset]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[AGENTS.md — Codex CLI Guidance]] - degree 8, connects to 2 communities
-- [[safe-refactor.agent]] - degree 2, connects to 1 community
-- [[test-augmenter.agent]] - degree 2, connects to 1 community
-- [[validation-runner.agent]] - degree 2, connects to 1 community
+- [[Atlas — Curriculum Architect_2]] - degree 11, connects to 2 communities

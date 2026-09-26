@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
+- [[esp_err.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

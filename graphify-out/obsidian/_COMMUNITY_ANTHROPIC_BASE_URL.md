@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # ANTHROPIC_BASE_URL
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Description]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[How It Works_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_32]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Function Details_47]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Key Classes  Functions_50]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_168]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Related_54]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,10 +34,3 @@ members: 16
 TABLE source_file, type FROM #community/ANTHROPIC_BASE_URL
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_gateway.proxy.llm_proxy]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_API_BASE_URL]]
-
-## Top bridge nodes
-- [[ANTHROPIC_BASE_URL]] - degree 4, connects to 2 communities

@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.15
 members: 15
 ---
 
 # 1.4 Implementation Plan
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[1.1 The Problem]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.2 Root Cause Analysis]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.3 Solution Options]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.4 Implementation Plan]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.5 Testing Strategy]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.6 Success Criteria]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[Phase 1 Pi Preparation (Prerequisites)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 2 Node Pairing]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 3 Security Configuration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 4 Skill Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 5 Distributed Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 1 Automated Testing on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 2 Continuous Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 3 IoT + AI Integration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[ADR-005-sha256-hash-chain-audit-integrity]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - concept - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Context_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Decision_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Hash Chain Structure]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Status_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[audit_entries SQLite table]] - code - docs/data/schema-documentation.md
+- [[ledger.py (audit trail, SHA-256 hashing)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[mcp_audit_entries SQLite table]] - code - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +34,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspber]]
-- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
+- 1 edge to [[_COMMUNITY_container-net-diag.sh]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
 
 ## Top bridge nodes
-- [[1.4 Implementation Plan]] - degree 7, connects to 1 community
-- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - degree 7, connects to 1 community
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities
+- [[Ledger DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
+- [[On-site Zabbix MySQL (200+ sites)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

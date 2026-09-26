@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Contact Information
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Contact Information]] - document - docs/operations/incident-response.md
-- [[Emergency Contacts_2]] - document - docs/operations/incident-response.md
-- [[External Contacts]] - document - docs/operations/incident-response.md
+- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/Contact_Information
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[Contact Information]] - degree 3, connects to 1 community

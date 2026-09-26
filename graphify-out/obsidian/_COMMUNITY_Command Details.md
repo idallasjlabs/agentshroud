@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # Command Details
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Command Details]] - document - skills/openclaw/xurl/SKILL.md
-- [[Direct Messages]] - document - skills/openclaw/xurl/SKILL.md
-- [[Engagement]] - document - skills/openclaw/xurl/SKILL.md
-- [[Media Upload]] - document - skills/openclaw/xurl/SKILL.md
-- [[Posting]] - document - skills/openclaw/xurl/SKILL.md
-- [[Reading]] - document - skills/openclaw/xurl/SKILL.md
-- [[Social Graph]] - document - skills/openclaw/xurl/SKILL.md
-- [[Timelines & Mentions]] - document - skills/openclaw/xurl/SKILL.md
-- [[User Info]] - document - skills/openclaw/xurl/SKILL.md
+- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +25,3 @@ members: 9
 TABLE source_file, type FROM #community/Command_Details
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_xurl — Agent Skill Reference]]
-
-## Top bridge nodes
-- [[Command Details]] - degree 9, connects to 1 community

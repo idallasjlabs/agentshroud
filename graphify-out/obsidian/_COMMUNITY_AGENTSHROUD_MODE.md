@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Description_8]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Related Notes_67]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Usage_131]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Values_4]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[AgentShroud Hermes — System Identity_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Capabilities_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Core Behaviors_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Owner_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Remote Hosts (SSH via gateway)_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Trademark Notice_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Your Role_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[hermes-soul]] - document - docker/config/hermes/agents/hermes-soul.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/AGENTSHROUD_MODE
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-
-## Top bridge nodes
-- [[AGENTSHROUD_MODE_1]] - degree 8, connects to 1 community

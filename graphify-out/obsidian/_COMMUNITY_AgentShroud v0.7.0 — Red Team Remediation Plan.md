@@ -1,37 +1,38 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+cohesion: 0.13
+members: 23
 ---
 
 # AgentShroud v0.7.0 — Red Team Remediation Plan
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[4 Architectural Gaps (No Existing Module)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Credential Isolation Planning]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Critical Finding]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Enterprise Security Feature Priorities]] - document - docs/planning/redteam/feature-priorities.md
-- [[Implementation Notes_1]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Loss Categories_1]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Outbound Information Filter Planning]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Red Team Engagement Plan (Pending)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Separation of Privilege Planning]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Source]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 1 Enforce-by-Default (R-02, R-03)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 2 Outbound Information Filter (R-01)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 3 Human-in-the-Loop (R-08, R-09)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 4 Per-User Session Isolation (R-04, R-05)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 5 Separation of Privilege (R-06, R-07)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 2 Should-Have (Compliance Enablers) — v0.7.x or v0.8.0]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 3 Nice-to-Have — v0.9.0+]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.6.0 → v0.7.0 Delta]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.7.0-remediation-plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[.__init__()_118]] - code - gateway/security/skill_guard.py
+- [[._line_at()]] - code - gateway/security/skill_guard.py
+- [[._scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
+- [[.blocked()]] - code - gateway/security/skill_guard.py
+- [[.extend()]] - code - gateway/security/skill_guard.py
+- [[.recommendation()]] - code - gateway/security/skill_guard.py
+- [[.scan_file()_1]] - code - gateway/security/skill_guard.py
+- [[.scan_skill_tree()]] - code - gateway/security/skill_guard.py
+- [[.severity()]] - code - gateway/security/skill_guard.py
+- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
+- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
+- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
+- [[Finding]] - code - gateway/security/skill_guard.py
+- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
+- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
+- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
+- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
+- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
+- [[ScanResult_2]] - code - gateway/security/skill_guard.py
+- [[SkillGuard]] - code - gateway/security/skill_guard.py
+- [[_Rule]] - code - gateway/security/skill_guard.py
+- [[_c()]] - code - gateway/security/skill_guard.py
+- [[skill_guard.py]] - code - gateway/security/skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +40,20 @@ members: 22
 TABLE source_file, type FROM #community/AgentShroud_v070__Red_Team_Remediation_Plan
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 26 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
+- 9 edges to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 8 edges to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
+- 8 edges to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
+- 2 edges to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 2 edges to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_Incident → Test Backfill Rule (R3 extension) ev]]
+
+## Top bridge nodes
+- [[SkillGuard]] - degree 34, connects to 7 communities
+- [[ScanResult_2]] - degree 32, connects to 5 communities
+- [[skill_guard.py]] - degree 9, connects to 4 communities
+- [[.scan_file()_1]] - degree 8, connects to 1 community
+- [[.recommendation()]] - degree 3, connects to 1 community

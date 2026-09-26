@@ -1,39 +1,40 @@
 ---
 type: community
-cohesion: 0.14
-members: 24
+cohesion: 0.08
+members: 25
 ---
 
 # AppleContainerEngine
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[.__init__()_138]] - code - gateway/runtime/apple_engine.py
-- [[._cmd()_2]] - code - gateway/runtime/apple_engine.py
-- [[.build()_3]] - code - gateway/runtime/apple_engine.py
-- [[.compose_down()_3]] - code - gateway/runtime/apple_engine.py
-- [[.compose_up()_3]] - code - gateway/runtime/apple_engine.py
-- [[.exec()_3]] - code - gateway/runtime/apple_engine.py
-- [[.health_check()_5]] - code - gateway/runtime/apple_engine.py
-- [[.inspect()_3]] - code - gateway/runtime/apple_engine.py
-- [[.logs()_3]] - code - gateway/runtime/apple_engine.py
-- [[.network_create()_3]] - code - gateway/runtime/apple_engine.py
-- [[.network_rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[.pause()_3]] - code - gateway/runtime/apple_engine.py
-- [[.pull()_3]] - code - gateway/runtime/apple_engine.py
-- [[.push()_4]] - code - gateway/runtime/apple_engine.py
-- [[.rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[.run()_5]] - code - gateway/runtime/apple_engine.py
-- [[.stop()_9]] - code - gateway/runtime/apple_engine.py
-- [[.unpause()_3]] - code - gateway/runtime/apple_engine.py
-- [[.volume_create()_3]] - code - gateway/runtime/apple_engine.py
-- [[.volume_rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[Any_48]] - code - gateway/runtime/apple_engine.py
-- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
-- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
-- [[get_engine]] - code - gateway/runtime/__init__.py
+- [[11. Current status (v1.2.0)]] - document - firmware/voice-terminal/SETUP.md
+- [[12. OTA Wireless Firmware Updates]] - document - firmware/voice-terminal/SETUP.md
+- [[2. Toolchain — install ESP-IDF v5.4]] - document - firmware/voice-terminal/SETUP.md
+- [[3. Get the firmware]] - document - firmware/voice-terminal/SETUP.md
+- [[4. Configure WiFi credentials]] - document - firmware/voice-terminal/SETUP.md
+- [[5. Build · flash · monitor]] - document - firmware/voice-terminal/SETUP.md
+- [[5a. IDF v5.4 auto-patches (applied automatically — for reference)]] - document - firmware/voice-terminal/SETUP.md
+- [[6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
+- [[6a. marvin is your tailnet host]] - document - firmware/voice-terminal/SETUP.md
+- [[6b. Generate an auth key for the device]] - document - firmware/voice-terminal/SETUP.md
+- [[6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client)]] - document - firmware/voice-terminal/SETUP.md
+- [[6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`)]] - document - firmware/voice-terminal/SETUP.md
+- [[6e. ACL lock-down (recommended)]] - document - firmware/voice-terminal/SETUP.md
+- [[7. Voice Gateway — server-side ✅ LIVE (installconfigOTA docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
+- [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - document - firmware/voice-terminal/SETUP.md
+- [[Adding a future agent_1]] - document - firmware/voice-terminal/SETUP.md
+- [[Agent toggle — runtime button]] - document - firmware/voice-terminal/SETUP.md
+- [[Credentials file]] - document - firmware/voice-terminal/SETUP.md
+- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - document - firmware/voice-terminal/SETUP.md
+- [[How it works]] - document - firmware/voice-terminal/SETUP.md
+- [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
+- [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
+- [[SETUP]] - document - firmware/voice-terminal/SETUP.md
+- [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
+- [[What you're building]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,20 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 4 edges to [[_COMMUNITY_ContainerInfo]]
-- 3 edges to [[_COMMUNITY_RuntimeConfig]]
-- 2 edges to [[_COMMUNITY_ContainerEngine]]
-- 2 edges to [[_COMMUNITY_get_engine()]]
-- 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_TestInstallerAPI]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_detect_runtime()]]
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
-- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
-- 1 edge to [[_COMMUNITY_TestWebAPI]]
+- 2 edges to [[_COMMUNITY_TestHeuristicClassifier]]
+- 1 edge to [[_COMMUNITY_Telegram & Gmail Integration Guide]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 13 communities
-- [[Any_48]] - degree 3, connects to 2 communities
+- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - degree 16, connects to 3 communities

@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.06
 members: 32
 ---
 
 # ContextSegment
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[.__init__()_102]] - code - gateway/security/context_integrity.py
-- [[.get_segment_provenance()]] - code - gateway/security/context_guard.py
-- [[.score_context()]] - code - gateway/security/context_integrity.py
-- [[.test_below_alert_threshold_logs_warning()]] - code - gateway/tests/test_context_integrity.py
-- [[.test_duplicate_hashes_detected()]] - code - gateway/tests/test_context_integrity.py
-- [[.test_empty_context_scores_clean()]] - code - gateway/tests/test_context_integrity.py
-- [[.test_injected_untrusted_segment_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[.test_pristine_context_scores_high()]] - code - gateway/tests/test_context_integrity.py
-- [[.test_tampered_system_prompt_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[A well-formed context with valid HMAC should score close to 1.0.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Any_37]] - code - gateway/security/context_integrity.py
-- [[Compute a 0.0–1.0 integrity score for the given context segments.          Args]] - rationale - gateway/security/context_integrity.py
-- [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
-- [[ContextSegment]] - code - gateway/security/context_guard.py
-- [[Duplicate content hashes reduce score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Empty segment list should not penalize the score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[HMAC-SHA256 fingerprint for a registered system prompt.]] - rationale - gateway/security/prompt_guard.py
-- [[IntegrityScore]] - code - gateway/security/context_integrity.py
-- [[Mismatched HMAC should reduce score by at least 0.15.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
-- [[Rolling context integrity score for a session.]] - rationale - gateway/security/context_integrity.py
-- [[Score below 0.6 should produce a warning log.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - rationale - gateway/security/context_integrity.py
-- [[SystemPromptFingerprint]] - code - gateway/security/prompt_guard.py
-- [[Tagged provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[TestContextIntegrityScorer]] - code - gateway/tests/test_context_integrity.py
-- [[Untrusted segment injected after system segment reduces score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[_make_segment()]] - code - gateway/tests/test_context_integrity.py
-- [[context_integrity.py]] - code - gateway/security/context_integrity.py
-- [[guard()_3]] - code - gateway/tests/test_context_integrity.py
-- [[scorer()]] - code - gateway/tests/test_context_integrity.py
-- [[test_context_integrity.py]] - code - gateway/tests/test_context_integrity.py
+- [[3A.1 Re-enable seccomp profiles ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.2 Make OpenClaw container read-only ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.3 Remove NET_RAW capability ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.4 Add mDNSBonjour disable ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.5 Move gateway password to Docker secrets ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.6 Create verify-security.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.7 Create scan.sh (OpenSCAP) ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.8 Change DM policy to allowlist ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3B.1 Create killswitch.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Created]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[DM Policy Allowlist Configuration]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Disable seccomp (if causing startup failures)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Emergency container access]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Files Changed]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Gateway Password Moved to Docker Secrets]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Next Steps_2]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Security Completion (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3B.1 Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3B.1 Kill Switch (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Pre-Test Preparation]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Restore hardcoded gateway password (if secret mounting fails)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Rollback Plan]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Security Improvements Summary]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Testing Checklist]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[verify-security.sh (13 Security Checks)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,20 +51,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_.record_segment()]]
-- 2 edges to [[_COMMUNITY_check_message()]]
-- 2 edges to [[_COMMUNITY_._get_hmac_key()]]
-- 1 edge to [[_COMMUNITY_tool_result_injection.py]]
-- 1 edge to [[_COMMUNITY_TestSourceTagging]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
-- 1 edge to [[_COMMUNITY_TestOverallDetectionRate]]
+- 2 edges to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 1 edge to [[_COMMUNITY_.test_gives_up_and_marks_sent_after_max_retries(]]
+- 1 edge to [[_COMMUNITY_IntelReportStore]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_start.sh]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[ContextSegment]] - degree 15, connects to 4 communities
-- [[SystemPromptFingerprint]] - degree 13, connects to 4 communities
-- [[ContextIntegrityScorer]] - degree 13, connects to 2 communities
-- [[TestContextIntegrityScorer]] - degree 12, connects to 2 communities
-- [[IntegrityScore]] - degree 9, connects to 1 community
+- [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities
+- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 1 community
+- [[DM Policy Allowlist Configuration]] - degree 2, connects to 1 community
+- [[Gateway Password Moved to Docker Secrets]] - degree 2, connects to 1 community
+- [[NET_RAW Capability Removal]] - degree 2, connects to 1 community

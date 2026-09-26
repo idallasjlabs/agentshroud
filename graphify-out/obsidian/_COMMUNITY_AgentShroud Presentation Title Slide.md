@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
+- [[Per-subfolder graphify-out avoids output clobbering]] - rationale - docker/config/hermes/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

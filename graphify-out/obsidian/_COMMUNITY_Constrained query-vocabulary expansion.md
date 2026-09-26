@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Constrained query-vocabulary expansion]] - rationale - docker/config/hermes/skills/graphify/references/query.md
-- [[save-result Feedback Loop]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[.test_healthcheck_skill_sandbox_error_variant_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Wording variants for healthcheck SKILL.md sandbox errors should be rewritten.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/Constrained_query-vocabulary_expansion
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_healthcheck_skill_sandbox_error_variant_is_rewritten()]] - degree 4, connects to 3 communities

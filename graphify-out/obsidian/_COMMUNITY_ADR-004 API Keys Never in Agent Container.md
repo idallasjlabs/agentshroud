@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.24
 members: 10
 ---
 
 # ADR-004: API Keys Never in Agent Container
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[ADR-004-api-keys-never-in-agent-container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[ADR-004 API Keys Never in Agent Container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Consequences_8]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Context_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Decision_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Implementation]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Mitigation_4]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Negative Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Positive Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Status_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[05-behavior]] - document - docs/diagrams/05-behavior.md
+- [[14. Logic Flow  Flowchart — Request Execution]] - document - docs/diagrams/05-behavior.md
+- [[15. Sequence Diagram — Telegram Message to Response]] - document - docs/diagrams/05-behavior.md
+- [[16. State Machine Diagram — Approval Queue Item Lifecycle]] - document - docs/diagrams/05-behavior.md
+- [[17. State Machine — Bot Session  Context Lifecycle]] - document - docs/diagrams/05-behavior.md
+- [[AgentShroud — System Behavior Diagrams]] - document - docs/diagrams/05-behavior.md
+- [[Logic Flow — Request Execution]] - concept - docs/diagrams/05-behavior.md
+- [[Sequence Diagram — Telegram Message to Response]] - concept - docs/diagrams/05-behavior.md
+- [[State Machine — Approval Queue Item Lifecycle]] - concept - docs/diagrams/05-behavior.md
+- [[State Machine — Bot Session  Context Lifecycle]] - concept - docs/diagrams/05-behavior.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +27,12 @@ members: 10
 TABLE source_file, type FROM #community/ADR-004_API_Keys_Never_in_Agent_Container
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_IntelReportStore]]
+
+## Top bridge nodes
+- [[State Machine — Approval Queue Item Lifecycle]] - degree 4, connects to 2 communities
+- [[05-behavior]] - degree 6, connects to 1 community

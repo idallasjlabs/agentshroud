@@ -1,45 +1,45 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.09
 members: 30
 ---
 
 # A2AMessage
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
-- [[._check_peer()]] - code - gateway/security/a2a_governance.py
-- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
-- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
-- [[._finalize()]] - code - gateway/security/a2a_governance.py
-- [[._process()]] - code - gateway/security/a2a_governance.py
-- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
-- [[.get_events()]] - code - gateway/security/a2a_governance.py
-- [[.process_inbound()]] - code - gateway/security/a2a_governance.py
-- [[.process_outbound()]] - code - gateway/security/a2a_governance.py
-- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
-- [[A2ADecision]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
-- [[A2AMessage]] - code - gateway/security/a2a_governance.py
-- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
-- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
-- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
-- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
-- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
-- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
-- [[Enum_2]] - code
-- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
-- [[Retrieve governance events with optional filters.]] - rationale - gateway/security/a2a_governance.py
-- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
-- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
-- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
-- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[Apple Shortcuts Integration (iOSmacOS forwarding)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Archive Documentation Index]] - document - docs/archive/README.md
+- [[Attack Surface Analysis & Scenario Mitigations]] - rationale - docs/archive/SECURITY-AUDIT.md
+- [[Blast Radius Limitation (burner account + $40)]] - concept - docs/archive/ANNOUNCEMENT.md
+- [[CVE-2026-25253 (WebSocket origin hijacking → RCE, CVSS 9.8)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[ClawHub Malicious Skills Supply Chain Attack (900 skills, ~20%)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Compliance Alignment (NIST CSF, CIS Docker Benchmark L2, OWASP)]] - concept - docs/archive/SECURITY-AUDIT.md
+- [[Control UI → Gateway WebSocket Connection Procedure]] - document - docs/archive/CONNECTION-GUIDE.md
+- [[Disconnected (1006) WebSocket Failure Mode]] - concept - docs/archive/CONNECTION-GUIDE.md
+- [[February 14, 2026 Documentation Session Log]] - document - docs/archive/SESSION-SUMMARY.md
+- [[Five Isolation Layers (network, identity, staging, hardening, depth)]] - rationale - docs/archive/README.md
+- [[Gmail Smart Filtering (ASKREMEMBERTASK labels)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Hardware Security Key Support (WebAuthn  YubiKey)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Information Valve (user-controlled manual forwarding)]] - concept - docs/archive/ANNOUNCEMENT.md
+- [[Internet-Only Isolation (no LAN, no VPN)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Mass Exposure of 42,900+ OpenClaw Instances]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Network Isolation Architecture (internet-only, RFC1918 blocked)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[One Shroud Over Every Wire (founding mantra)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[PayPal Integration with Per-Transaction Approval]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Residual Risks We Accept (API key exposure, host compromise)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[Self-Assessed 1010 Maximum Security Score]] - concept - docs/archive/SECURITY-AUDIT.md
+- [[Separate Digital Environment Philosophy]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Technical Decisions & Trade-offs (why separate identity, internet-only, localhost bind, manual skill approval)]] - rationale - docs/archive/SESSION-SUMMARY.md
+- [[Telegram Quick Forwarding Commands]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[The Lethal Trifecta (private data + untrusted content + egress with memory)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Threat Model & Attack Surface (post-RCE blast radius)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[Trust Through Isolation (assume breach, limit the take)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Unresolved Control UI Connection Issue]] - concept - docs/archive/SESSION-SUMMARY.md
+- [[What We Don't Protect Against (keys, social engineering, zero-days)]] - rationale - docs/archive/SECURITY.md
+- [[setup-wizard.html One-Click Deploy Wizard]] - concept - docs/archive/ANNOUNCEMENT.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,17 +47,3 @@ members: 30
 TABLE source_file, type FROM #community/A2AMessage
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 38 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 14 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 2 edges to [[_COMMUNITY_A2APeer]]
-- 2 edges to [[_COMMUNITY_TestPeerManagement]]
-- 1 edge to [[_COMMUNITY_Enum]]
-
-## Top bridge nodes
-- [[A2AMessage]] - degree 26, connects to 3 communities
-- [[A2ADecision]] - degree 24, connects to 2 communities
-- [[TestMessageFingerprint]] - degree 9, connects to 2 communities
-- [[a2a_governance.py]] - degree 8, connects to 2 communities
-- [[Retrieve governance events with optional filters.]] - degree 3, connects to 2 communities

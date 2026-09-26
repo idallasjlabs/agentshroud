@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[graphify explain command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

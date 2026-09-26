@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # 1. Accomplishments This Phase — Delivered Securi
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎛️ Production-Ready Control Centers]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Complete Security Module Pipeline — 3333 Modules Active]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🏗️ Robust Infrastructure & Architecture]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 Enhanced PII Detection & Compliance]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🧪 Enhanced Testing Infrastructure — 1547 Tests + 125 Security Audits]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_85]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[README_90]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Related Skills_91]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_94]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - degree 6, connects to 1 community
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - degree 5, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSH Exec Endpoint Tests (allowlist, deny, injection)]] - code - gateway/tests/test_ssh_endpoints.py
+- [[CI job lint (blackisortflake8, pinned versions)]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

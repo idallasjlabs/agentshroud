@@ -1,31 +1,32 @@
 ---
 type: community
-cohesion: 0.13
-members: 16
+cohesion: 0.12
+members: 17
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded S
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
-- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
-- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
-- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
-- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
-- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
-- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
-- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
-- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
-- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
-- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
-- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
-- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
-- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
-- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
+- [[.client()]] - code - gateway/tests/test_api_contract.py
+- [[.test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
+- [[.test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
+- [[.test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
+- [[.test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
+- [[.test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
+- [[.test_version_consistency()]] - code - gateway/tests/test_api_contract.py
+- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
+- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
+- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
+- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
+- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
+- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
+- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
+- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
+- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
+- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,20 +34,3 @@ members: 16
 TABLE source_file, type FROM #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_EncryptedStore]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-
-## Top bridge nodes
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 3 communities
-- [[Agent Isolation Module Badge Icon]] - degree 2, connects to 1 community
-- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
-- [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
-- [[Encrypted Store Module Badge Icon]] - degree 2, connects to 1 community

@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 3. Remaining Work — Prioritized by Value
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[🔴 Priority 1 Critical Security Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🟡 Priority 2 Operational Security Maturity]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🟢 Priority 3 Security Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Jira Weekly Review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[SCRUM-81 (Jira weekly review ticket)]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[jira_weekly_review.py_1]] - code - docker/config/hermes/cron/prompts/jira-weekly-review.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/3_Remaining_Work__Prioritized_by_Value
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[3. Remaining Work — Prioritized by Value_1]] - degree 4, connects to 1 community

@@ -1,26 +1,26 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.18
 members: 11
 ---
 
 # .test_short_text_passes_through_unchanged()
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[.test_short_text_passes_through_unchanged()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_truncates_over_length_text()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestSendTelegramTruncation]] - code - gateway/tests/test_daily_cve_report.py
-- [[__enter__()]] - code - gateway/tests/test_daily_cve_report.py
-- [[__enter__()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[__exit__()]] - code - gateway/tests/test_daily_cve_report.py
-- [[__exit__()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[_fake_urlopen()]] - code - gateway/tests/test_daily_cve_report.py
-- [[_fake_urlopen()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[read()]] - code - gateway/tests/test_daily_cve_report.py
-- [[read()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[Test forward endpoint rejects requests without auth]] - rationale - gateway/tests/test_integration.py
+- [[Test forward endpoint with proper authentication]] - rationale - gateway/tests/test_integration.py
+- [[Test WebSocket authentication flow]] - rationale - gateway/tests/test_integration.py
+- [[Test ledger query endpoint]] - rationale - gateway/tests/test_integration.py
+- [[Test that status endpoint works without authentication]] - rationale - gateway/tests/test_integration.py
+- [[test_forward_with_auth()]] - code - gateway/tests/test_integration.py
+- [[test_forward_without_auth()]] - code - gateway/tests/test_integration.py
+- [[test_health_check_no_auth()]] - code - gateway/tests/test_integration.py
+- [[test_integration.py]] - code - gateway/tests/test_integration.py
+- [[test_ledger_query()]] - code - gateway/tests/test_integration.py
+- [[test_websocket_auth()]] - code - gateway/tests/test_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/test_short_text_passes_through_unchanged
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_asyncio]]
-
-## Top bridge nodes
-- [[.test_short_text_passes_through_unchanged()]] - degree 7, connects to 1 community
-- [[.test_truncates_over_length_text()]] - degree 6, connects to 1 community
-- [[TestSendTelegramTruncation]] - degree 3, connects to 1 community

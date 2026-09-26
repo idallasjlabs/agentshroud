@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 16x16 (AgentShroud logo mark)]] - image - branding/favicons/favicon-16x16.png
+- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

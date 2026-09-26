@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 1.00
+members: 3
 ---
 
 # .test_collaborator_metadata_endpoint_probe_is_bl
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[AWS credentials path probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Cloud metadata endpoint probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Podcast Production Pipeline (multi-agent)_1]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/test_collaborator_metadata_endpoint_probe_is_bl
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-
-## Top bridge nodes
-- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

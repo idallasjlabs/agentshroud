@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.39
+cohesion: 0.22
 members: 9
 ---
 
 # Claude Code (claude-sonnet-4-6) — Lead Engineer 
 
-**Cohesion:** 0.39 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
+- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
+- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
+
+## Top bridge nodes
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community

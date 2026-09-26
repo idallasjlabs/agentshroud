@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
+- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

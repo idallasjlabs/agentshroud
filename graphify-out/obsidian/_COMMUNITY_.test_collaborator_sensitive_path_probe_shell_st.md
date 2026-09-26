@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .test_collaborator_sensitive_path_probe_shell_st
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Sensitive path probes should be blockedquarantined for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Shell-style sensitive path probes (e.g., ls ~.ssh) should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[SKILL_217]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/test_collaborator_sensitive_path_probe_shell_st
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-
-## Top bridge nodes
-- [[.test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

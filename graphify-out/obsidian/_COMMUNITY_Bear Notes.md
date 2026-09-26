@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Common Commands_3]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Notes_11]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[apple-notesSKILL]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[bear-notesSKILL]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
-- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
+- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Input Requirements_23]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Output Format_29]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Persona_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_21]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Role_84]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[SKILL_144]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[System Prompt_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,9 @@ members: 11
 TABLE source_file, type FROM #community/Bear_Notes
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[Daedalus — Concept Illustrator_5]] - degree 8, connects to 1 community

@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Constraints_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Evidence_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Problem_7]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Remediation_6]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Root Cause_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Severity_8]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[2. Multi-Host Deployment Orchestration]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[3. ARM32  Low-Resource Support]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4. Compliance & Standards Alignment]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4.1 IEC 62443 (Industrial Automation Security)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.2 EU AI Act]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.3 NIST AI Risk Management Framework (AI RMF)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4a. OT  Industrial Security (P1 — Critical)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4b. Enterprise IT (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4c. Container & Cloud Security (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4d. Regulatory Compliance (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4e. Tooling Integration (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4f. Documentation Deliverables]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[Features_3]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,11 @@ members: 14
 TABLE source_file, type FROM #community/Flip_core_security_modules_from_monitor_to_enfor
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
+
+## Top bridge nodes
+- [[4. Compliance & Standards Alignment]] - degree 11, connects to 1 community
+- [[Features_3]] - degree 5, connects to 1 community

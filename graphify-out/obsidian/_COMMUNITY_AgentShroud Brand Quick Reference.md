@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
-- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
-- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
-- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
-- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
-- [[Favicon]] - document - branding/QUICK-REFERENCE.md
-- [[File Locations_2]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Files_2]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Usage Rules_1]] - document - branding/QUICK-REFERENCE.md
-- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
-- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
-- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
-- [[Typography_1]] - document - branding/QUICK-REFERENCE.md
-- [[Website Header]] - document - branding/QUICK-REFERENCE.md
-- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
-- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
+- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[10. Approval Queue]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[2. Network Isolation]] - document - docs/security/container-policy.md
+- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
+- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
+- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
+- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[6. DNS Filter]] - document - docs/security/security-architecture.md
+- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
+- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
+- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Security Controls]] - document - docs/security/SECURITY_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_brandingREADME]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_8. Governance Model]]
+- 1 edge to [[_COMMUNITY_test_e2e.py]]
+- 1 edge to [[_COMMUNITY__FakeUpstreamWS]]
 
 ## Top bridge nodes
-- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community
+- [[Security Controls]] - degree 10, connects to 2 communities
+- [[2. Network Isolation]] - degree 6, connects to 1 community
+- [[Layer 2 Network Security (4 Modules)]] - degree 5, connects to 1 community
+- [[10. Approval Queue]] - degree 2, connects to 1 community

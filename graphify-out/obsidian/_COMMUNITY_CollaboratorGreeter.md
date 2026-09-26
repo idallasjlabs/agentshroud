@@ -1,54 +1,53 @@
 ---
 type: community
-cohesion: 0.09
-members: 39
+cohesion: 0.10
+members: 38
 ---
 
 # CollaboratorGreeter
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 39 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[.__init__()_75]] - code - gateway/proxy/collaborator_greeter.py
-- [[._get_client()]] - code - gateway/proxy/collaborator_greeter.py
-- [[._load_state()]] - code - gateway/proxy/collaborator_greeter.py
-- [[._load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
-- [[._persist_state()]] - code - gateway/proxy/collaborator_greeter.py
-- [[.maybe_greet()]] - code - gateway/proxy/collaborator_greeter.py
-- [[CollaboratorGreeter]] - code - gateway/proxy/collaborator_greeter.py
-- [[CollaboratorGreeter creates its own httpx client lazily.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - rationale - gateway/proxy/collaborator_greeter.py
-- [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - rationale - gateway/proxy/collaborator_greeter.py
-- [[Unexpected exception in maybe_greet must be caught and return False.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_err_response()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_load_state reads and returns a pre-existing valid JSON dict.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_load_state returns {} when state file is a JSON list (not a dict).]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_load_taglines falls back to default when JSON is valid but not a list.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_make_greeter()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_ok_response()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_persist_state failure must not raise.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[collaborator_greeter.py]] - code - gateway/proxy/collaborator_greeter.py
-- [[test_bot_isolation()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_caption_length_clamped()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_collaborator_greeter.py]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_exception_in_maybe_greet_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_first_call_sends_greeting_and_persists_state()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_first_name_none_uses_there_fallback()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_get_client_creates_own_when_not_injected()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_loads_existing_valid_dict()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_non_dict_json_returns_empty()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_write_empty_fails_silently()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_taglines_with_non_list_json_falls_back()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_missing_logo_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_missing_taglines_falls_back_to_default()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_persist_state_exception_is_swallowed()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_random_tagline_pulled_from_file()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_repeat_after_24h_greets_again()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_repeat_within_24h_is_suppressed()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_send_failure_does_not_persist_state()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_state_file_corruption_recovers()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[FR7 Resource Availability]] - concept - docs/compliance/iec-62443-matrix.md
+- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - rationale - scripts/export-bot-conversations.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - rationale - scripts/export-bot-conversations.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
+- [[Path_43]] - code - scripts/export-bot-conversations.py
+- [[Path_44]] - code - scripts/export-email-reports.py
+- [[Path_45]] - code - scripts/export-telegram-history.py
+- [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
+- [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
+- [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
+- [[_docker_read_file()]] - code - scripts/export-bot-conversations.py
+- [[_extract_text()]] - code - scripts/export-bot-conversations.py
+- [[_list_report_files()]] - code - scripts/export-email-reports.py
+- [[_parse_since()]] - code - scripts/export-bot-conversations.py
+- [[_parse_since()_1]] - code - scripts/export-email-reports.py
+- [[_parse_since()_2]] - code - scripts/export-telegram-history.py
+- [[_report_date()]] - code - scripts/export-email-reports.py
+- [[_require_env()]] - code - scripts/export-telegram-history.py
+- [[_serialize()]] - code - scripts/export-telegram-history.py
+- [[agentshroud-openclaw bot container]] - concept - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh]] - code - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh script]] - code - scripts/backup-bot-memory.sh
+- [[datetime_6]] - code - scripts/export-bot-conversations.py
+- [[datetime_7]] - code - scripts/export-email-reports.py
+- [[datetime_8]] - code - scripts/export-telegram-history.py
+- [[disaster-recovery-backup.sh]] - code - scripts/disaster-recovery-backup.sh
+- [[disaster-recovery-backup.sh script]] - code - scripts/disaster-recovery-backup.sh
+- [[export()]] - code - scripts/export-telegram-history.py
+- [[export-bot-conversations.py]] - code - scripts/export-bot-conversations.py
+- [[export-email-reports.py]] - code - scripts/export-email-reports.py
+- [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
+- [[export_bot()]] - code - scripts/export-email-reports.py
+- [[export_hermes()]] - code - scripts/export-bot-conversations.py
+- [[export_openclaw()]] - code - scripts/export-bot-conversations.py
+- [[main()_18]] - code - scripts/export-bot-conversations.py
+- [[main()_19]] - code - scripts/export-email-reports.py
+- [[main()_20]] - code - scripts/export-telegram-history.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,12 +57,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_e2e.py]]
-- 1 edge to [[_COMMUNITY_run_test()]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[CollaboratorGreeter]] - degree 22, connects to 2 communities
-- [[.__init__()_75]] - degree 4, connects to 1 community
-- [[._get_client()]] - degree 3, connects to 1 community
-- [[collaborator_greeter.py]] - degree 2, connects to 1 community
+- [[FR7 Resource Availability]] - degree 3, connects to 2 communities

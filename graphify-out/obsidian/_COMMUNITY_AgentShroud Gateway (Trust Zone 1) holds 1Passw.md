@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.12
 members: 16
 ---
 
 # AgentShroud Gateway (Trust Zone 1): holds 1Passw
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - concept - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, googleapis.com, .github.com, .githubusercontent.com, imapsmtp.mail.me.com)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
-- [[BlockedUntrusted (LAN RFC1918, unlisted domains)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on macOS (docsoperationsmacos.md)]] - document - docs/operations/macos.md
-- [[Docker Buildx multi-arch build (linuxamd64, linuxarm64)]] - concept - docs/operations/linux.md
-- [[Docker Desktop (Apple Silicon  Intel transparent arch handling; resource allocation guidance)]] - concept - docs/operations/macos.md
-- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.png
-- [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - concept - docs/operations/macos.md
-- [[Trust Boundary Diagram]] - concept - docs/diagrams/04-security.md
-- [[Trust Zone 0 — Owner (Isaiah Jefferson approvereject, gateway admin, container restart, secret rotation)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
-- [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - concept - docs/operations/linux.md
-- [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - concept - docs/operations/linux.md
+- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Authentication_2]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Related Notes_38]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Testing_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,16 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
-- 2 edges to [[_COMMUNITY_Containers startup order agentshroud-gateway st]]
-- 1 edge to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
-- 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
 
 ## Top bridge nodes
-- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - degree 7, connects to 3 communities
-- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - degree 10, connects to 2 communities
-- [[Trust Boundary Diagram]] - degree 8, connects to 2 communities
-- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - degree 5, connects to 1 community
-- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - degree 4, connects to 1 community
+- [[All Dependencies_1]] - degree 5, connects to 1 community

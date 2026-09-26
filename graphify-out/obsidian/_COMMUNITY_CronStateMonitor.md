@@ -1,29 +1,29 @@
 ---
 type: community
 cohesion: 0.09
-members: 56
+members: 55
 ---
 
 # CronStateMonitor
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 56 nodes
+**Members:** 55 nodes
 
 ## Members
-- [[.__call__()_9]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__call__()_10]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_194]] - code - gateway/security/cron_state_monitor.py
-- [[.__init__()_195]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_196]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__call__()_5]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__call__()_4]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_67]] - code - gateway/security/cron_state_monitor.py
+- [[.__init__()_147]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_146]] - code - gateway/tests/test_cron_state_monitor.py
 - [[._dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[._episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[._evaluate()]] - code - gateway/security/cron_state_monitor.py
 - [[._run()_1]] - code - gateway/security/cron_state_monitor.py
 - [[._safe_dispatch()]] - code - gateway/security/cron_state_monitor.py
-- [[.check()_5]] - code - gateway/security/cron_state_monitor.py
+- [[.check()_3]] - code - gateway/security/cron_state_monitor.py
 - [[.parse_store()]] - code - gateway/security/cron_state_monitor.py
 - [[.start()_2]] - code - gateway/security/cron_state_monitor.py
-- [[.stop()_11]] - code - gateway/security/cron_state_monitor.py
+- [[.stop()_9]] - code - gateway/security/cron_state_monitor.py
 - [[.test_alert_ids_stable_per_job_episode()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[.test_corrupt_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[.test_disabled_jobs_ignored()]] - code - gateway/tests/test_cron_state_monitor.py
@@ -53,7 +53,6 @@ members: 56
 - [[Poll bot cron stores; dispatch AlertDispatcher alerts on failures.]] - rationale - gateway/security/cron_state_monitor.py
 - [[Read one bot's cron store; tolerate absencecorruption.]] - rationale - gateway/security/cron_state_monitor.py
 - [[Start the poll loop as an asyncio task (idempotent).]] - rationale - gateway/security/cron_state_monitor.py
-- [[Task]] - code - gateway/security/cron_state_monitor.py
 - [[TestAdversarial]] - code - gateway/tests/test_cron_state_monitor.py
 - [[TestParsing]] - code - gateway/tests/test_cron_state_monitor.py
 - [[TestTransitions]] - code - gateway/tests/test_cron_state_monitor.py
@@ -75,9 +74,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_gateway.security.daily_cve_report]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strat]]
 
 ## Top bridge nodes
-- [[CronStateMonitor]] - degree 36, connects to 1 community
-- [[cron_state_monitor.py]] - degree 3, connects to 1 community
+- [[CronStateMonitor]] - degree 36, connects to 2 communities
+- [[.start()_2]] - degree 4, connects to 1 community

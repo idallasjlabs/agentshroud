@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[App Icon 512x512 (AgentShroud logo mark)]] - image - branding/icons/app/icon-512x512.png
+- [[Cron Monthly Chaos Engineering Drill]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

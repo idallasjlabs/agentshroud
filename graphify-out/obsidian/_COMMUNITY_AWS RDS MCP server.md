@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS RDS MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[Newsletter Personal AI Assistants_1]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
 
 ## Live Query (requires Dataview plugin)
 

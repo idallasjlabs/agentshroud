@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # AgentShroud Config with Tool Risk Tiers (example
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[AgentShroud Config with Tool Risk Tiers (example)]] - document - examples/agentshroud-with-tool-risk.yaml
-- [[PII confidence 0.8 (example) vs 0.9 floor (CLAUDE.md §7) discrepancy]] - rationale - examples/agentshroud-with-tool-risk.yaml
-- [[Tool Risk Tier Policy (criticalhighmediumlow)]] - concept - examples/agentshroud-with-tool-risk.yaml
+- [[SKILL_28]] - document - .agents/skills/i-kanban/SKILL.md
+- [[Skill kanban]] - document - .agents/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

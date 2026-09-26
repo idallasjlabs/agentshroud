@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Cron AgentShroud Daily Check-in]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[daily-checkin.sh (marvinpi status check)]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should not receive telegram user-id enrollment leakage text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/Cron_AgentShroud_Daily_Check-in
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - degree 4, connects to 3 communities

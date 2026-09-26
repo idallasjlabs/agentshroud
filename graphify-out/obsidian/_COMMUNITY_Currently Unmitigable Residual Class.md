@@ -1,37 +1,38 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+cohesion: 0.14
+members: 23
 ---
 
 # Currently Unmitigable Residual Class
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[Base-Image Change Flagged For Decision, Not Attempted]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Container-Image CVE Domain (our own images)]] - concept - docs/security/cve-mitigation-matrix.md
-- [[Currently Unmitigable Residual Class]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Dev-Side Copy of the 2026-09-06 Report]] - document - reports/upgrade-2026-09-06-dev.md
-- [[DevProd Mapping Keyed Off $USER via scriptsasb]] - rationale - reports/upgrade-2026-09-06.md
-- [[Fresh-DB vs Cached-DB Trivy Verification]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Governed Voice Path (device to gateway to Hermes)]] - concept - firmware/voice-terminal/SETUP.md
-- [[Hermes Vendored-Base Residual (upstream-owned)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[One-Cause-Per-Failure Bring-Up Order]] - rationale - firmware/voice-terminal/SETUP.md
-- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - rationale - reports/upgrade-2026-09-14.md
-- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - concept - reports/upgrade-2026-09-14.md
-- [[Reachability Context (cap_drop ALL, isolated network)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Spoken High-Risk Command Approval Pause]] - rationale - firmware/voice-terminal/SETUP.md
-- [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - document - reports/upgrade-2026-09-06.md
-- [[Tailscale Funnel Exposure (supersedes on-device client)]] - rationale - firmware/voice-terminal/SETUP.md
-- [[Transitive-Dependency Security Floors]] - rationale - gateway/requirements.txt
-- [[Two-Terminal-State Finding Taxonomy]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Voice Gateway Service (STTTTS on marvin)]] - concept - firmware/voice-terminal/SETUP.md
-- [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - rationale - reports/upgrade-2026-09-06.md
-- [[Zeroed .trivyignore (no suppressions)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[python-jose Removal (CVE-2024-3366333664)]] - rationale - gateway/requirements.txt
-- [[slsa-verifier From-Source Dependency Override]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Map job name - the full '_seed_cron Name ...' call text (all lines,     since]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[SCRUM-81 weekly Jira review cron must exist in both sh and yaml, Sun 0900.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[Stamp-file gating (v1v2v3) caused job triplication on every version bump.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[These jobs must target an upstream the gateway can inject credentials for.]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_parse_seed_cron_calls_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward     them]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[jira-weekly-review is pure script execution (near-zero free-form     generation)]] - rationale - gateway/tests/test_hermes_cron_seed.py
+- [[test_competitive_email_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_competitive_landscape_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_content_generating_jobs_pinned_to_injectable_upstream()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_cron_seed_is_stampless_and_idempotent()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_hermes_cron_seed.py]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_init_config_has_expected_cron_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_not_pinned_to_a_model()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jira_weekly_review_schedule_is_sunday_9am()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_jobs_yaml_has_expected_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_seed_cron_supports_optional_model_and_provider_args()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[test_stability_report_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,14 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_AgentShroud Changelog]]
-- 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
-- 1 edge to [[_COMMUNITY_Pre-Purge Secret Rotation Checklist]]
+- 2 edges to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
 
 ## Top bridge nodes
-- [[Currently Unmitigable Residual Class]] - degree 7, connects to 1 community
-- [[Container-Image CVE Domain (our own images)]] - degree 4, connects to 1 community
-- [[Governed Voice Path (device to gateway to Hermes)]] - degree 4, connects to 1 community
-- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - degree 3, connects to 1 community
-- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - degree 2, connects to 1 community
+- [[test_hermes_cron_seed.py]] - degree 18, connects to 2 communities

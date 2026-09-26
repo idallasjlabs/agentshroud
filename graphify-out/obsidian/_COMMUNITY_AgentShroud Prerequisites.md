@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # AgentShroud Prerequisites
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Accounts]] - document - docs/reference/PREREQUISITES.md
-- [[Additional Tools in Containers]] - document - docs/reference/PREREQUISITES.md
-- [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
-- [[Annually]] - document - docs/reference/PREREQUISITES.md
-- [[Base Images]] - document - docs/reference/PREREQUISITES.md
-- [[Common Issues_1]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
-- [[Monthly]] - document - docs/reference/PREREQUISITES.md
-- [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_11]] - document - docs/reference/PREREQUISITES.md
-- [[Quarterly]] - document - docs/reference/PREREQUISITES.md
-- [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
-- [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_2]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
-- [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 Philosophy Separation of Concerns]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 You're Not Missing Anything!]] - document - docs/reference/PREREQUISITES.md
-- [[📊 Cost Breakdown]] - document - docs/reference/PREREQUISITES.md
-- [[📚 Additional Resources]] - document - docs/reference/PREREQUISITES.md
-- [[📦 Docker Images & Dependencies]] - document - docs/reference/PREREQUISITES.md
-- [[🔄 Maintenance Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🔐 Security Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🗂️ File Structure]] - document - docs/reference/PREREQUISITES.md
-- [[🚀 Quick Start Command]] - document - docs/reference/PREREQUISITES.md
+- [[1. Accomplishments This Phase_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Conclusion_1]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Executive Summary_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P1 - High-Value Security Enhancements (NEXT PHASE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P2 - Feature Completeness (FUTURE PHASES)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Phase Review P0 — Core Pipeline Wiring]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Security Configuration Hardening (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[phase-review-p0-2026-02-23]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[❌ NOT READY FOR MERGE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🔴 HIGH RISK — Immediate Attention Required]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔴 POTENTIAL SECURITY THEATER]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🟡 AREAS REQUIRING VALIDATION]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🟢 LOW RISK — Future Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🟢 GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,9 +46,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
-- 1 edge to [[_COMMUNITY_📱 Required Accounts & Services]]
-- 1 edge to [[_COMMUNITY_Required Software]]
+- 2 edges to [[_COMMUNITY_SecureBrowser]]
+- 1 edge to [[_COMMUNITY_AgentShroud Web Control Center - Implementation]]
 
 ## Top bridge nodes
-- [[AgentShroud Prerequisites]] - degree 16, connects to 3 communities
+- [[Phase Review P0 — Core Pipeline Wiring]] - degree 10, connects to 2 communities
+- [[4. Risks & Gaps — Critical Security Concerns]] - degree 4, connects to 1 community

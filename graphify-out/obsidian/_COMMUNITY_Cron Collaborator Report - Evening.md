@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Collaborator Report - Evening]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

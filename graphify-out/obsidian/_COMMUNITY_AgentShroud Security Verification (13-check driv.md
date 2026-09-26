@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.23
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # AgentShroud Security Verification (13-check driv
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Seccomp Profile (default-deny syscall allowlist)]] - document - docker/seccomp/agentshroud-seccomp.json
-- [[AgentShroud Security Verification (13-check driver)]] - code - docker/scripts/verify-security.sh
-- [[OpenClaw Volume Architecture (persistent volumes vs tmpfs)]] - concept - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Phase 3 Container Security Hardening Baseline]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Success Criteria]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Read-Only Root FS Constraint — what breaks without proper mounts]] - rationale - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[SecureClaw Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Security Review (SEC) README]] - document - .agents/skills/i-sec/README.md
-- [[check_fail()_1]] - code - docker/scripts/verify-security.sh
-- [[check_pass()_1]] - code - docker/scripts/verify-security.sh
-- [[check_warn()]] - code - docker/scripts/verify-security.sh
-- [[toggle-readonly.sh mode switcher]] - code - docker/scripts/toggle-readonly.sh
-- [[verify-security.sh_1]] - code - docker/scripts/verify-security.sh
-- [[verify-security.sh script]] - code - docker/scripts/verify-security.sh
+- [[Configuration  Environment Variables_22]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Function Details_39]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Key Classes  Functions_42]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Priority Mapping]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Purpose_160]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[categorize_alerts(alerts)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[falco_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[falco_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[generate_summary(alerts)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[is_agentshroud_rule(rule_name)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[parse_alert(raw)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[read_alerts(alert_dir, since, agentshroud_only)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +32,3 @@ members: 14
 TABLE source_file, type FROM #community/AgentShroud_Security_Verification_13-check_driv
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-
-## Top bridge nodes
-- [[SecureClaw Security Review (SEC)]] - degree 3, connects to 1 community

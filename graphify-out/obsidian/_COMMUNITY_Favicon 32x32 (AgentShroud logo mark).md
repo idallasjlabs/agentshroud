@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 32x32 (AgentShroud logo mark)]] - image - branding/favicons/favicon-32x32.png
+- [[Cron Collaborator Daily Digest]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Architecture Review (Positive Observations)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Prior Findings — Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R2 Findings (all verified fixed)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R3 Findings (NEW — this round)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R3-W1 — WARNING Stale version string in control page HTML]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R3-W2 — WARNING Stale OCI label version in Dockerfile]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R3-W3 — WARNING Dead code `_is_imessage_recipient_allowed` in forward.py]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[R3-W4 — WARNING Debug log leaking agent response content]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Release Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Summary_20]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Test Results_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[phase-review-2026-03-03]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[AgentShroud Red Team Assessment — Live Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[CIS Docker Benchmark 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Container Security Profile 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Deep Integration Test 3637 (97%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Expected v0.7.0 Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Identified Gaps (Steve Hay's Assessment)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Module Status 3333 Active]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Sprint Status]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Test Environment]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Unit Tests 1953 passed, 0 failures]] - document - docs/planning/redteam/live-assessment-results.md
+- [[live-assessment-results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.6.0 Baseline Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.7.0 Remediation (In Progress)]] - document - docs/planning/redteam/live-assessment-results.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8]]
-
-## Top bridge nodes
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - degree 8, connects to 2 communities
-- [[phase-review-2026-03-03]] - degree 2, connects to 1 community

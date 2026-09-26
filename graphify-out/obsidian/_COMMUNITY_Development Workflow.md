@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.40
+members: 6
 ---
 
 # Development Workflow
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[Development Workflow]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[.test_ssh_runner_none_streams()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_ssh_runner_uses_subprocess()]] - code - gateway/tests/test_multi_host_test.py
+- [[HostRunner]] - code - gateway/tools/multi_host_test.py
+- [[Return a HostRunner that executes the command on the host over SSH.      SSH con]] - rationale - gateway/tools/multi_host_test.py
+- [[TestSshRunner]] - code - gateway/tests/test_multi_host_test.py
+- [[ssh_runner()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strat]]
+- 2 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
+- 2 edges to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 2 edges to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
+- 1 edge to [[_COMMUNITY_SECTION 1 COVER SHEET (Form PTOSB16)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
+- 1 edge to [[_COMMUNITY_TestPatternDetection]]
 
 ## Top bridge nodes
-- [[Development Workflow]] - degree 7, connects to 1 community
+- [[ssh_runner()]] - degree 7, connects to 3 communities
+- [[TestSshRunner]] - degree 6, connects to 3 communities
+- [[HostRunner]] - degree 3, connects to 2 communities

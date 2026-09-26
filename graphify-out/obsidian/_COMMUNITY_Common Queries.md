@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.06
-members: 31
+cohesion: 0.10
+members: 32
 ---
 
 # Common Queries
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[CodexBar CLI quick ref (usage + cost)]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Commands]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Common Queries]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Cost JSON fields]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Count messages and tokens in a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Current model logic]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Daily cost summary]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Extract user messages from a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Fast text-only hint (low noise)]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Find sessions from a specific day]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Get total cost for a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Inputs]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Install]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[List all sessions by date and size]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Location]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Notes_2]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Output]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Overview_7]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Quick start_2]] - document - skills/openclaw/model-usage/SKILL.md
-- [[References_2]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Search for keyword in assistant responses]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Structure]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Tips]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Tool usage breakdown]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Trigger]] - document - skills/openclaw/session-logs/SKILL.md
-- [[codexbar-cli]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[model-usageSKILL]] - document - skills/openclaw/model-usage/SKILL.md
-- [[session-logs]] - document - skills/openclaw/session-logs/SKILL.md
-- [[session-logsSKILL]] - document - skills/openclaw/session-logs/SKILL.md
+- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
+- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,3 +49,14 @@ members: 31
 TABLE source_file, type FROM #community/Common_Queries
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 25 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_OutboundInfoFilter]]
+
+## Top bridge nodes
+- [[SSHProxy_1]] - degree 30, connects to 1 community
+- [[TestValidateCommand]] - degree 17, connects to 1 community
+- [[TestInjectionNewline]] - degree 12, connects to 1 community
+- [[TestExecute]] - degree 9, connects to 1 community
+- [[TestIsAutoApproved]] - degree 8, connects to 1 community

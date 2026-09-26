@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
+- [[Hermes Standalone Deploy (docker run, not compose)]] - rationale - scripts/asb
 
 ## Live Query (requires Dataview plugin)
 

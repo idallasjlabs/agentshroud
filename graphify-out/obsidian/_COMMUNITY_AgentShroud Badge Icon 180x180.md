@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 180x180]] - image - branding/logos/variants/badge-180x180.png
+- [[docker-compose.agentshroud-bot.marvin.yml (dev host override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
 
 ## Live Query (requires Dataview plugin)
 

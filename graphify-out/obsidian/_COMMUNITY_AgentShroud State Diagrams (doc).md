@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # AgentShroud State Diagrams (doc)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Agent Trust Levels (UNTRUSTED, BASIC, STANDARD, TRUSTED, ADMIN)]] - concept - docs/flows/state-diagrams.md
-- [[AgentShroud State Diagrams (doc)]] - document - docs/flows/state-diagrams.md
-- [[Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)]] - concept - docs/flows/state-diagrams.md
-- [[Diagram 16 State — Approval Queue]] - image - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - concept - docs/flows/state-diagrams.md
-- [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - concept - docs/flows/state-diagrams.md
+- [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Purpose_38]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[README_43]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Related Skills_41]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Usage_43]] - document - docker/config/hermes/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/AgentShroud_State_Diagrams_doc
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+
+## Top bridge nodes
+- [[Athena — Knowledge Distiller_1]] - degree 5, connects to 1 community

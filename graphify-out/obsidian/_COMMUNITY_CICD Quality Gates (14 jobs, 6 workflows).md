@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.33
 members: 7
 ---
 
 # CI/CD Quality Gates (14 jobs, 6 workflows)
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Governance Cadence]] - concept - docs/architecture/agentic-os.md
-- [[CICD Pipeline Integration Guide]] - document - docs/api/integration-guide.md
-- [[CICD Quality Gates (14 jobs, 6 workflows)]] - concept - docs/architecture/agentic-os.md
-- [[Gap Analysis & Recommendations]] - concept - docs/architecture/agentic-os.md
-- [[Git Worktrees (..agentshroud-worktrees)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[GitHub Actions CI (test + lint + security-scan)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[PrePost Tool Hook Enforcement Layer]] - concept - docs/architecture/agentic-os.md
+- [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
+- [[PATH_4]] - code - scripts/peer-review.sh
+- [[call_gemini()]] - code - scripts/gemini-review.py
+- [[gemini-review.py]] - code - scripts/gemini-review.py
+- [[main()_21]] - code - scripts/gemini-review.py
+- [[peer-review.sh]] - code - scripts/peer-review.sh
+- [[peer-review.sh script]] - code - scripts/peer-review.sh
 
 ## Live Query (requires Dataview plugin)
 

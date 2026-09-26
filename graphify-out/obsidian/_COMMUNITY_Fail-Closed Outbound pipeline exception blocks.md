@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
-- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
-- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[devices.sh]] - code - docker/scripts/devices.sh
+- [[devices.sh script]] - code - docker/scripts/devices.sh
+- [[telegram.sh]] - code - docker/scripts/telegram.sh
+- [[telegram.sh script]] - code - docker/scripts/telegram.sh
 
 ## Live Query (requires Dataview plugin)
 

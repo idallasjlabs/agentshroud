@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
+- [[openclaw-ghsa-snapshot.json]] - document - scripts/data/openclaw-ghsa-snapshot.json
 
 ## Live Query (requires Dataview plugin)
 

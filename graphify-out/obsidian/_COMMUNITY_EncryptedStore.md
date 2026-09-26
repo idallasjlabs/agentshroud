@@ -1,155 +1,160 @@
 ---
 type: community
-cohesion: 0.02
-members: 140
+cohesion: 0.03
+members: 145
 ---
 
 # EncryptedStore
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 140 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 145 nodes
 
 ## Members
-- [[.__init__()_73]] - code - gateway/security/encrypted_store.py
-- [[._derive_key()]] - code - gateway/security/encrypted_store.py
-- [[._resolve_secret()]] - code - gateway/security/encrypted_store.py
-- [[.check_drift()]] - code - gateway/security/drift_detector.py
-- [[.config_hash()]] - code - gateway/security/drift_detector.py
-- [[.decrypt()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_json()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_str()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.from_dict()]] - code - gateway/security/drift_detector.py
-- [[.get_baseline()]] - code - gateway/security/drift_detector.py
-- [[.get_blob_key_id()]] - code - gateway/security/encrypted_store.py
-- [[.rotate()]] - code - gateway/security/encrypted_store.py
-- [[.set_baseline()]] - code - gateway/security/drift_detector.py
-- [[.setup_method()_10]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_11]] - code - gateway/tests/test_security_hardening.py
-- [[.store()_1]] - code - gateway/tests/test_security_audit.py
-- [[.teardown_method()_2]] - code - gateway/tests/test_security_hardening.py
-- [[.test_acknowledge_alert()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_agent_isolation_module()]] - code - gateway/tests/test_security_audit.py
-- [[.test_alerts_persisted()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_b64_roundtrip()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_ciphertext_not_plaintext()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_parse_clean()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
-- [[.test_config_hash_changes()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_config_hash_consistency()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_custom_key_id()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_different_encryptions_differ()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_different_plaintexts_different_ciphertexts()]] - code - gateway/tests/test_security_audit.py
-- [[.test_encrypt_decrypt_bytes()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_encrypt_decrypt_dict()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_encrypt_decrypt_roundtrip()]] - code - gateway/tests/test_security_audit.py
-- [[.test_encrypt_decrypt_string()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_encrypt_json()]] - code - gateway/tests/test_security_audit.py
-- [[.test_encrypted_store_constant_time()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_encrypted_store_error_no_key_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_env_var_secret()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_file_secret()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_blob_key_id()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_image_change()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_invalid_blob_too_short()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_invalid_blob_version()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_key_rotation()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_key_rotation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_key_rotation_auto_increment()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_large_data()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
-- [[.test_new_capability()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_env_var()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_mount()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_no_baseline_no_alerts()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_no_drift()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_no_secret_raises()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_privileged_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_read_only_disabled()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_removed_capability()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_seccomp_drift()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_security_toolchain_clamav()]] - code - gateway/tests/test_security_audit.py
-- [[.test_security_toolchain_falco()]] - code - gateway/tests/test_security_audit.py
-- [[.test_security_toolchain_trivy()]] - code - gateway/tests/test_security_audit.py
-- [[.test_security_toolchain_wazuh()]] - code - gateway/tests/test_security_audit.py
-- [[.test_set_and_get_baseline()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_simultaneous_baseline_and_config_change()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_tampered_ciphertext_fails()]] - code - gateway/tests/test_security_audit.py
-- [[.test_wrong_key_fails()]] - code - gateway/tests/test_security_audit.py
-- [[.test_wrong_key_fails()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.to_dict()_3]] - code - gateway/security/canary.py
-- [[.to_dict()_5]] - code - gateway/security/drift_detector.py
-- [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - rationale - gateway/security/encrypted_store.py
-- [[Any_18]] - code - gateway/security/canary.py
-- [[Any_63]] - code - gateway/security/clamav_scanner.py
-- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
-- [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult]] - code - gateway/security/canary.py
-- [[Compare current config against baseline, return any drift alerts.]] - rationale - gateway/security/drift_detector.py
-- [[ContainerSnapshot]] - code - gateway/security/drift_detector.py
-- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
-- [[Decryption errors shouldn't expose the encryption key.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
-- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
-- [[Drift detector catches container config changes during operation.]] - rationale - gateway/tests/test_security_integration.py
-- [[DriftAlert]] - code - gateway/security/drift_detector.py
-- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
-- [[EncryptedStore]] - code - gateway/security/encrypted_store.py
-- [[Encryptiondecryption time should not leak plaintext length.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
-- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
-- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/falco_monitor.py
-- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
-- [[Individual canary check result.]] - rationale - gateway/security/canary.py
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
-- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
-- [[Key rotation should re-encrypt all blobs.]] - rationale - gateway/tests/test_security_audit.py
-- [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
-- [[Path_38]] - code - gateway/security/clamav_scanner.py
-- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
-- [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
-- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
-- [[Retrieve baseline snapshot for a container.]] - rationale - gateway/security/drift_detector.py
-- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
-- [[SHA-256 hash of the config for quick comparison.]] - rationale - gateway/security/drift_detector.py
-- [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - rationale - gateway/tests/test_security_audit.py
-- [[Same plaintext should produce different blobs (random saltnonce).]] - rationale - gateway/tests/test_security_hardening.py
-- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
-- [[Store a known-good baseline configuration. Returns config hash.]] - rationale - gateway/security/drift_detector.py
-- [[Test container hardening and runtime security.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test encryption, key management, and secret handling.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestContainerSecurity]] - code - gateway/tests/test_security_audit.py
-- [[TestCryptography]] - code - gateway/tests/test_security_audit.py
-- [[TestDriftDetector]] - code - gateway/tests/test_security_hardening.py
-- [[TestEncryptedStore]] - code - gateway/tests/test_security_hardening.py
-- [[Update ClamAV virus database using freshclam.      Args         freshclam_bin]] - rationale - gateway/security/clamav_scanner.py
-- [[Verify drift is detected even with rapid changes.]] - rationale - gateway/tests/test_security_hardening.py
-- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
-- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
-- [[alert_dispatcher.py_2]] - code - gateway/security/alert_dispatcher.py
-- [[canary.py]] - code - gateway/security/canary.py
-- [[clamav_scanner.py_2]] - code - gateway/security/clamav_scanner.py
-- [[drift_detector.py_2]] - code - gateway/security/drift_detector.py
-- [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
-- [[env_guard.py]] - code - gateway/security/env_guard.py
-- [[gateway.security.trust_manager]] - code - gateway/security/trust_manager.py
-- [[generate_summary()_1]] - code - gateway/security/clamav_scanner.py
-- [[get_env_guard()]] - code - gateway/security/env_guard.py
-- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
-- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
-- [[save_report()]] - code - gateway/security/clamav_scanner.py
-- [[test_drift_detection_in_pipeline()]] - code - gateway/tests/test_security_integration.py
-- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
+- [[.__init__()_132]] - code - gateway/soc/websocket.py
+- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.test_approved_status()]] - code - gateway/tests/test_soc_egress.py
+- [[.test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
+- [[.test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_construction()_1]] - code - gateway/tests/test_soc_models.py
+- [[.test_construction()]] - code - gateway/tests/test_soc_models.py
+- [[.test_construction()_2]] - code - gateway/tests/test_soc_models.py
+- [[.test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
+- [[.test_details_excludes_reserved_keys()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_egress_denied()]] - code - gateway/tests/test_soc_websocket.py
+- [[.test_error_model()]] - code - gateway/tests/test_soc_models.py
+- [[.test_event_type_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_invalid_dict_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_legacy_inbound_blocked()]] - code - gateway/tests/test_soc_websocket.py
+- [[.test_message_fallback_for_summary()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
+- [[.test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
+- [[.test_preserves_severity()]] - code - gateway/tests/test_soc_websocket.py
+- [[.test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
+- [[.test_returns_none_on_bad_input()]] - code - gateway/tests/test_soc_websocket.py
+- [[.test_security_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[.test_source_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_type_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_unknown_severity_defaults_to_info()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_wsevent_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[A single disclosure event in a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[AgentShroud's stance on one vulnerability class.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Alarm]] - code - gateway/soc/models.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
+- [[Any_80]] - code - scripts/triage-cve-mitigations.py
+- [[Best-effort repo-relative path string for display (falls back to str).]] - rationale - scripts/triage-cve-mitigations.py
+- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - rationale - scripts/triage-cve-mitigations.py
+- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[ClassProfile]] - code - scripts/triage-cve-mitigations.py
+- [[Classify an advisory into its vulnerability class from title+description.      D]] - rationale - scripts/triage-cve-mitigations.py
+- [[Compute resulting-status counts and gap themes from triage results.      Args]] - rationale - scripts/triage-cve-mitigations.py
+- [[ContributorRecord_1]] - code - gateway/soc/models.py
+- [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - rationale - gateway/soc/websocket.py
+- [[Coverage]] - code - scripts/triage-cve-mitigations.py
+- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
+- [[DisclosureEvent]] - code - gateway/security/multi_turn_tracker.py
+- [[EgressRequest_1]] - code - gateway/soc/models.py
+- [[EgressStatus]] - code - gateway/soc/models.py
+- [[Enum]] - code
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[Fixed taxonomy of advisory vulnerability classes.]] - rationale - scripts/triage-cve-mitigations.py
+- [[HealthStatus_1]] - code - gateway/soc/services.py
+- [[HealthStatus]] - code - gateway/soc/models.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``)     to]] - rationale - scripts/triage-cve-mitigations.py
+- [[Path_49]] - code - scripts/triage-cve-mitigations.py
+- [[Per-agent gap report path.      This used to be the single constant ``_GAP_REPOR]] - rationale - scripts/triage-cve-mitigations.py
+- [[Platform]] - code - gateway/soc/models.py
+- [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - rationale - scripts/triage-cve-mitigations.py
+- [[Re-derive a verdict for EVERY entry in agent_id's registry.      ``triage_agen]] - rationale - scripts/triage-cve-mitigations.py
+- [[Read the raw pinned ``OPENCLAW_VERSION`` string from dockerversions.env.      R]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render a Python list-of-strings literal matching the file's style.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render the gap report markdown (development plan).      Args         agent_id]] - rationale - scripts/triage-cve-mitigations.py
+- [[ResourceUsage_2]] - code - gateway/soc/models.py
+- [[Return the index just past a field value that may span multiple lines.      Trac]] - rationale - scripts/triage-cve-mitigations.py
+- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place.      For each]] - rationale - scripts/triage-cve-mitigations.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_4]] - code - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_5]] - code - gateway/soc/models.py
+- [[SCLError]] - code - gateway/soc/models.py
+- [[ServiceStatus_1]] - code - gateway/soc/services.py
+- [[ServiceStatus]] - code - gateway/soc/models.py
+- [[Severity_2]] - code - gateway/soc/models.py
+- [[TestCoerceToWSEvent]] - code - gateway/tests/test_soc_websocket.py
+- [[TestCoerceToWSEventExtra]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
+- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
+- [[The status that will actually be written for a result.      Unapplied verdicts f]] - rationale - scripts/triage-cve-mitigations.py
+- [[The verdict for one advisory.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel_2]] - code - gateway/security/git_guard.py
+- [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - rationale - scripts/triage-cve-mitigations.py
+- [[TriageResult]] - code - scripts/triage-cve-mitigations.py
+- [[True when ``fixed_in`` version is = the running image (already patched).      A]] - rationale - scripts/triage-cve-mitigations.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[UserRole_1]] - code - gateway/soc/models.py
+- [[UserRole]] - code - gateway/soc/contributors.py
+- [[VulnClass]] - code - scripts/triage-cve-mitigations.py
+- [[WSEvent]] - code - gateway/soc/models.py
+- [[WSEvent_1]] - code - gateway/soc/websocket.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebSocket_6]] - code - gateway/soc/websocket.py
+- [[Why agent_id cannot be triaged, or None if it can.]] - rationale - scripts/triage-cve-mitigations.py
+- [[_coerce_to_ws_event()]] - code - gateway/soc/websocket.py
+- [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
+- [[_new_uuid()]] - code - gateway/soc/models.py
+- [[_now_iso()]] - code - gateway/soc/models.py
+- [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
+- [[_read_running_version_str()]] - code - scripts/triage-cve-mitigations.py
+- [[_rel()]] - code - scripts/triage-cve-mitigations.py
+- [[_role_enum()]] - code - gateway/soc/contributors.py
+- [[classify()_2]] - code - scripts/triage-cve-mitigations.py
+- [[contributors.py]] - code - gateway/soc/contributors.py
+- [[final_status()]] - code - scripts/triage-cve-mitigations.py
+- [[gap_report_path()]] - code - scripts/triage-cve-mitigations.py
+- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
+- [[main()_28]] - code - scripts/triage-cve-mitigations.py
+- [[mock_alert_callback()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[models.py_1]] - code - gateway/soc/models.py
+- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
+- [[parse_version()_1]] - code - scripts/triage-cve-mitigations.py
+- [[render_gap_report()]] - code - scripts/triage-cve-mitigations.py
+- [[rewrite_registry_text()_1]] - code - scripts/triage-cve-mitigations.py
+- [[str]] - code
+- [[summarize()]] - code - scripts/triage-cve-mitigations.py
+- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
+- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
+- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[triage-cve-mitigations.py]] - code - scripts/triage-cve-mitigations.py
+- [[triage_agent()]] - code - scripts/triage-cve-mitigations.py
+- [[triage_agent_full()]] - code - scripts/triage-cve-mitigations.py
+- [[triage_entry()]] - code - scripts/triage-cve-mitigations.py
+- [[untriageable_reason()]] - code - scripts/triage-cve-mitigations.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
+- [[web_config.py]] - code - gateway/proxy/web_config.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
+- [[websocket.py]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -159,52 +164,83 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 77 edges to [[_COMMUNITY_lifespan.py]]
-- 29 edges to [[_COMMUNITY_EgressAction]]
-- 27 edges to [[_COMMUNITY_AgentRegistry]]
-- 26 edges to [[_COMMUNITY_test_security_audit.py]]
-- 14 edges to [[_COMMUNITY_TrustManager]]
-- 8 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 8 edges to [[_COMMUNITY_TestAuth]]
-- 7 edges to [[_COMMUNITY_ResourceGuard]]
-- 6 edges to [[_COMMUNITY_Enum]]
-- 5 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 5 edges to [[_COMMUNITY_KeyVault]]
-- 5 edges to [[_COMMUNITY_EgressFilter]]
-- 4 edges to [[_COMMUNITY_TrustConfig]]
-- 4 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded S]]
-- 4 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 4 edges to [[_COMMUNITY_test_security_integration.py]]
-- 4 edges to [[_COMMUNITY_EgressPolicy]]
-- 4 edges to [[_COMMUNITY_FileSandbox]]
-- 3 edges to [[_COMMUNITY_TrustLevel]]
-- 3 edges to [[_COMMUNITY_check_command()]]
-- 3 edges to [[_COMMUNITY_TestFileSandbox]]
-- 3 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 40 edges to [[_COMMUNITY_MiddlewareManager]]
+- 28 edges to [[_COMMUNITY_main.rs]]
+- 17 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 17 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 15 edges to [[_COMMUNITY_TrustManager]]
+- 11 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 11 edges to [[_COMMUNITY_MCPServerConfig]]
+- 6 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_FetchOutcome]]
+- 5 edges to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 5 edges to [[_COMMUNITY_AgentTarget]]
+- 5 edges to [[_COMMUNITY_Findings & Mitigations]]
+- 5 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 4 edges to [[_COMMUNITY_GitGuard]]
+- 4 edges to [[_COMMUNITY_chatbotmain.py]]
+- 4 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 4 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 4 edges to [[_COMMUNITY_background.js]]
+- 4 edges to [[_COMMUNITY_DelegationManager]]
 - 3 edges to [[_COMMUNITY_falco_monitor.py]]
-- 3 edges to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 3 edges to [[_COMMUNITY_make_event()]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 3 edges to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
+- 3 edges to [[_COMMUNITY_What You Must Do When Invoked]]
+- 3 edges to [[_COMMUNITY_IntelReportStore]]
+- 3 edges to [[_COMMUNITY_ProxyDashboard]]
+- 3 edges to [[_COMMUNITY_oracle — best use]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager]]
+- 2 edges to [[_COMMUNITY_SecureBrowser]]
+- 2 edges to [[_COMMUNITY_SecureBrowser]]
+- 2 edges to [[_COMMUNITY_TestParanoidConfig]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
 - 2 edges to [[_COMMUNITY_ConsentFramework]]
-- 2 edges to [[_COMMUNITY_GitGuard]]
-- 2 edges to [[_COMMUNITY_clamav]]
-- 1 edge to [[_COMMUNITY__make_tm()]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_LLMProxy]]
+- 2 edges to [[_COMMUNITY_ContainerEngine]]
+- 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_SCLClient]]
+- 2 edges to [[_COMMUNITY_TestConfigValidation]]
+- 2 edges to [[_COMMUNITY_SECTION 1 COVER SHEET (Form PTOSB16)]]
+- 2 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 2 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 2 edges to [[_COMMUNITY_cls]]
+- 2 edges to [[_COMMUNITY_DockerEngine]]
+- 2 edges to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 2 edges to [[_COMMUNITY_EgressAction]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 2 edges to [[_COMMUNITY_mcp_oauth_preflight.py]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_ReportStore]]
 - 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_cls]]
-- 1 edge to [[_COMMUNITY_patch]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_health_report.py]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_._process_connect()]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-- 1 edge to [[_COMMUNITY_diagramsREADME]]
+- 1 edge to [[_COMMUNITY_test_http_proxy.py]]
+- 1 edge to [[_COMMUNITY_Path]]
+- 1 edge to [[_COMMUNITY_3. Security Controls]]
+- 1 edge to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 — Red Team Remediation Plan]]
+- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 1 edge to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_generate_branding_assets.py]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_Deliverables]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
+- 1 edge to [[_COMMUNITY_.analyze_tool_call()]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[TestContainerSecurity]] - degree 45, connects to 13 communities
-- [[gateway.security.trust_manager]] - degree 18, connects to 13 communities
-- [[TestCryptography]] - degree 44, connects to 12 communities
-- [[ContainerSnapshot]] - degree 64, connects to 10 communities
-- [[TestDriftDetector]] - degree 35, connects to 10 communities
+- [[Enum]] - degree 112, connects to 49 communities
+- [[str]] - degree 48, connects to 20 communities
+- [[multi_turn_tracker.py]] - degree 12, connects to 7 communities
+- [[models.py_1]] - degree 29, connects to 5 communities
+- [[ServiceStatus]] - degree 13, connects to 4 communities

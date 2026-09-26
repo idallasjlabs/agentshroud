@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Cost Optimization Priority_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Decision Framework_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rightsizing Logic_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[logs.sh]] - code - docker/scripts/logs.sh
+- [[logs.sh script]] - code - docker/scripts/logs.sh
+- [[restart.sh]] - code - docker/scripts/restart.sh
+- [[restart.sh script]] - code - docker/scripts/restart.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Decision_Framework
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
-
-## Top bridge nodes
-- [[Decision Framework_2]] - degree 4, connects to 1 community

@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.40
+cohesion: 0.70
 members: 5
 ---
 
 # Daedalus — Concept Illustrator
 
-**Cohesion:** 0.40 - moderately connected
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_1]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Purpose_44]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Related Skills_35]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Usage_39]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[hermesskillsi-daedalusREADME]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[log()_8]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
+- [[save_cmd()]] - code - scripts/openclaw_triage.sh
+- [[save_shell()]] - code - scripts/openclaw_triage.sh
 
 ## Live Query (requires Dataview plugin)
 

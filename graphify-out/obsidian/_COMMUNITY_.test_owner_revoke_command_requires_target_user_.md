@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .test_owner_revoke_command_requires_target_user_
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_revoke_command_requires_target_user_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[revoke must persist through pause_collaborator() so the pause survives]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner revoke without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Incident Classification System]] - document - docs/operations/incident-response.md
+- [[Priority Levels]] - document - docs/operations/incident-response.md
+- [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes
-- [[.test_owner_revoke_command_requires_target_user_id()]] - degree 8, connects to 2 communities
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - degree 7, connects to 2 communities
+- [[Incident Classification System]] - degree 3, connects to 1 community

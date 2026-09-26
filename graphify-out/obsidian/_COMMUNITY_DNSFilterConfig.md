@@ -1,92 +1,88 @@
 ---
 type: community
-cohesion: 0.04
-members: 77
+cohesion: 0.03
+members: 73
 ---
 
 # DNSFilterConfig
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 77 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 73 nodes
 
 ## Members
-- [[.__init__()_154]] - code - gateway/proxy/web_proxy.py
-- [[.__init__()_171]] - code - gateway/security/dns_filter.py
-- [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
-- [[._detect_tunneling()]] - code - gateway/security/dns_filter.py
-- [[._domain_in_allowlist()]] - code - gateway/security/dns_filter.py
-- [[._is_private_ip()_2]] - code - gateway/security/dns_filter.py
-- [[.check()_4]] - code - gateway/security/dns_filter.py
-- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
-- [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[.get_audit_log()_6]] - code - gateway/security/dns_filter.py
-- [[.get_flagged_queries()]] - code - gateway/security/dns_filter.py
-- [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
-- [[.shannon_entropy()]] - code - gateway/security/dns_filter.py
-- [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_mode_is_enforce()_5]] - code - gateway/tests/test_dns_filter.py
-- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[DNSFilter]] - code - gateway/security/dns_filter.py
-- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
-- [[DNSQuery_1]] - code - gateway/security/dns_filter.py
-- [[DNSVerdict]] - code - gateway/security/dns_filter.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - rationale - gateway/tests/test_dns_filter.py
-- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
-- [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
-- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
-- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
-- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
-- [[TestAuditLogging_1]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
-- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
-- [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
-- [[TestRateLimiting_3]] - code - gateway/tests/test_dns_filter.py
-- [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[default_config()_3]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter.py_2]] - code - gateway/security/dns_filter.py
-- [[monitor_config()_2]] - code - gateway/tests/test_dns_filter.py
-- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[strict_config()_1]] - code - gateway/tests/test_dns_filter.py
-- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
+- [[AWS Cloud Management & FinOps]] - document - .agents/skills/i-aws/README.md
+- [[Apollo — Audio Systems Producer]] - document - .agents/skills/i-apollo/README.md
+- [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
+- [[Daedalus — Concept Illustrator]] - document - .agents/skills/i-daedalus/README.md
+- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
+- [[MCP Tools Usage (MCPM)]] - document - .agents/skills/i-mcpm/README.md
+- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
+- [[Purpose]] - document - .agents/skills/i-apollo/README.md
+- [[Purpose_3]] - document - .agents/skills/i-aws/README.md
+- [[Purpose_5]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_8]] - document - .agents/skills/i-daedalus/README.md
+- [[Purpose_11]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_19]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_23]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_27]] - document - .agents/skills/i-sad/README.md
+- [[Purpose_28]] - document - .agents/skills/i-sav/README.md
+- [[Purpose_30]] - document - .agents/skills/i-sec-offense/README.md
+- [[Purpose_35]] - document - .agents/skills/i-tw/README.md
+- [[Purpose_36]] - document - .agents/skills/i-vulcan/README.md
+- [[README]] - document - .agents/skills/i-apollo/README.md
+- [[README_3]] - document - .agents/skills/i-aws/README.md
+- [[README_5]] - document - .agents/skills/i-bs/README.md
+- [[README_8]] - document - .agents/skills/i-daedalus/README.md
+- [[README_11]] - document - .agents/skills/i-gg/README.md
+- [[README_19]] - document - .agents/skills/i-mcpm/README.md
+- [[README_23]] - document - .agents/skills/i-pr/README.md
+- [[README_27]] - document - .agents/skills/i-sad/README.md
+- [[README_28]] - document - .agents/skills/i-sav/README.md
+- [[README_30]] - document - .agents/skills/i-sec-offense/README.md
+- [[README_35]] - document - .agents/skills/i-tw/README.md
+- [[README_36]] - document - .agents/skills/i-vulcan/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/README.md
+- [[Related Skills]] - document - .agents/skills/i-apollo/README.md
+- [[Related Skills_3]] - document - .agents/skills/i-aws/README.md
+- [[Related Skills_5]] - document - .agents/skills/i-bs/README.md
+- [[Related Skills_8]] - document - .agents/skills/i-daedalus/README.md
+- [[Related Skills_11]] - document - .agents/skills/i-gg/README.md
+- [[Related Skills_22]] - document - .agents/skills/i-mcpm/README.md
+- [[Related Skills_26]] - document - .agents/skills/i-pr/README.md
+- [[Related Skills_30]] - document - .agents/skills/i-sad/README.md
+- [[Related Skills_31]] - document - .agents/skills/i-sav/README.md
+- [[Related Skills_33]] - document - .agents/skills/i-sec-offense/README.md
+- [[Related Skills_38]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_39]] - document - .agents/skills/i-vulcan/README.md
+- [[SKILL_8]] - document - .agents/skills/i-bdd/SKILL.md
+- [[SKILL_13]] - document - .agents/skills/i-ci/SKILL.md
+- [[SKILL_15]] - document - .agents/skills/i-cr/SKILL.md
+- [[SKILL_22]] - document - .agents/skills/i-gitops/SKILL.md
+- [[SKILL_27]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[SKILL_50]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[SKILL_56]] - document - .agents/skills/i-sre/SKILL.md
+- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Skill ci]] - document - .agents/skills/i-ci/SKILL.md
+- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
+- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[Skill sdlc]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
+- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
+- [[System Audit Vault]] - document - .agents/skills/i-sav/README.md
+- [[Technical Writer (TW)]] - document - .agents/skills/i-tw/README.md
+- [[Usage_1]] - document - .agents/skills/i-apollo/README.md
+- [[Usage_4]] - document - .agents/skills/i-aws/README.md
+- [[Usage_7]] - document - .agents/skills/i-bs/README.md
+- [[Usage_10]] - document - .agents/skills/i-daedalus/README.md
+- [[Usage_13]] - document - .agents/skills/i-gg/README.md
+- [[Usage_22]] - document - .agents/skills/i-mcpm/README.md
+- [[Usage_26]] - document - .agents/skills/i-pr/README.md
+- [[Usage_30]] - document - .agents/skills/i-sad/README.md
+- [[Usage_31]] - document - .agents/skills/i-sav/README.md
+- [[Usage_33]] - document - .agents/skills/i-sec-offense/README.md
+- [[Usage_38]] - document - .agents/skills/i-tw/README.md
+- [[Usage_39]] - document - .agents/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor]] - document - .agents/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -96,25 +92,49 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_lifespan.py]]
-- 11 edges to [[_COMMUNITY_test_security_audit.py]]
-- 5 edges to [[_COMMUNITY_EncryptedStore]]
-- 4 edges to [[_COMMUNITY_URLAnalyzer]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_TestAuth]]
-- 2 edges to [[_COMMUNITY_TestFileSandbox]]
-- 2 edges to [[_COMMUNITY_ResourceGuard]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 3 edges to [[_COMMUNITY__w()]]
+- 2 edges to [[_COMMUNITY_AuditExporter]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.9.0]]
+- 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_Skill Code Review (CR)]]
+- 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
+- 1 edge to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitiz]]
+- 1 edge to [[_COMMUNITY_Starting a Development Task via Hermes  OpenCla]]
+- 1 edge to [[_COMMUNITY_ADR-003 Two-Network Container Isolation]]
+- 1 edge to [[_COMMUNITY_.__init__()]]
+- 1 edge to [[_COMMUNITY_TestPatternDetection]]
+- 1 edge to [[_COMMUNITY_i-eightd SKILL — 8D Root Cause Analysis]]
+- 1 edge to [[_COMMUNITY_AgentShroud Phase 3 - Quick Start Guide]]
+- 1 edge to [[_COMMUNITY_multi_host_test.py]]
+- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_SecurityEvent]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
+- 1 edge to [[_COMMUNITY__handle()]]
+- 1 edge to [[_COMMUNITY_app_main.c]]
+- 1 edge to [[_COMMUNITY_Available MCP Servers]]
+- 1 edge to [[_COMMUNITY_Attack Teardowns How AgentShroud Stops RovoBlas]]
+- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
+- 1 edge to [[_COMMUNITY_TestBotIdIsolationInSharedMemory]]
+- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 1 edge to [[_COMMUNITY_setup-https-proxy.js]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Skill CICD Pipeline Advisor (CICD)]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessme]]
+- 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_AuditEvent]]
+- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset]]
+- 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
+- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
+- 1 edge to [[_COMMUNITY__FakeRBAC]]
 
 ## Top bridge nodes
-- [[DNSFilterConfig]] - degree 49, connects to 9 communities
-- [[EntropyCalculator]] - degree 34, connects to 6 communities
-- [[.__init__()_154]] - degree 12, connects to 5 communities
-- [[dns_filter.py_2]] - degree 10, connects to 4 communities
-- [[DNSFilter]] - degree 38, connects to 3 communities
+- [[SKILL_15]] - degree 67, connects to 43 communities

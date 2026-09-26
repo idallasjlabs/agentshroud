@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.15
 members: 13
 ---
 
 # Claude Code skill catalog (59 skills)
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[AI Engineering OS v1.0 integration (2026-03-08)]] - document - .llm_settings/UPGRADE_LOG.md
-- [[AWS API MCP server (official, recommended)]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Athena MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[Agent layer (skills, subagents, orchestration)]] - concept - .llm_settings/WORKFLOW.md
-- [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - concept - .llm_settings/ci-cd/README.md
-- [[Claude Code skill catalog (59 skills)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[Configure each tool natively (no config copying)]] - rationale - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
-- [[Four-tool role hierarchy summary]] - concept - .llm_settings/docs/CONFIGURATION_SUMMARY.md
-- [[Nine-stage AI-augmented lifecycle]] - concept - .llm_settings/WORKFLOW.md
-- [[Podcast automation pipeline (PKEOKE agent chain)]] - concept - .llm_settings/podcast/README.md
-- [[Podcast pipeline skills (atlas→socrates→…→oracle)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[SRE practice area (observability, runbooks, postmortems)]] - concept - .llm_settings/sre/README.md
-- [[Tool comparison matrix (config format  agents  skills  hooks)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_68]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[When to Use]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
-- 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
-- 1 edge to [[_COMMUNITY_CI test job (matrix ubuntumacos x py3.113.13)]]
-- 1 edge to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
 
 ## Top bridge nodes
-- [[Claude Code skill catalog (59 skills)]] - degree 7, connects to 3 communities
-- [[AWS API MCP server (official, recommended)]] - degree 4, connects to 1 community
-- [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - degree 3, connects to 1 community
-- [[AWS Athena MCP server]] - degree 2, connects to 1 community
+- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

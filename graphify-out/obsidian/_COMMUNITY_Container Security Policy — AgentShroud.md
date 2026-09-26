@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.11
 members: 21
 ---
 
 # Container Security Policy — AgentShroud
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[1. Container Hardening]] - document - docs/security/container-policy.md
-- [[1.1 Capabilities]] - document - docs/security/container-policy.md
-- [[1.2 Seccomp Profile]] - document - docs/security/container-policy.md
-- [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
-- [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
-- [[1.5 Resource Limits]] - document - docs/security/container-policy.md
-- [[3. Secret Management]] - document - docs/security/container-policy.md
-- [[3.1 Hierarchy]] - document - docs/security/container-policy.md
-- [[3.2 Rules]] - document - docs/security/container-policy.md
-- [[3.3 Secret Rotation]] - document - docs/security/container-policy.md
-- [[4. Image Provenance and Updates]] - document - docs/security/container-policy.md
-- [[4.1 Base Images]] - document - docs/security/container-policy.md
-- [[4.2 Dependencies]] - document - docs/security/container-policy.md
-- [[4.3 Image Build]] - document - docs/security/container-policy.md
-- [[4.4 Image Storage]] - document - docs/security/container-policy.md
-- [[5. Runtime Monitoring]] - document - docs/security/container-policy.md
-- [[5.1 Health Checks]] - document - docs/security/container-policy.md
-- [[5.2 Logging]] - document - docs/security/container-policy.md
-- [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
-- [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
-- [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
+- [[1Password CLI Skill]] - document - skills/openclaw/1password/SKILL.md
+- [[1Password Desktop App Integration Flow]] - document - skills/openclaw/1password/references/get-started.md
+- [[1Password Item ID Vault-Structure Disclosure]] - rationale - docs/security/secret-scan-results.md
+- [[Archive Directory Exposure Risk]] - concept - docs/security/secret-scan-results.md
+- [[Credential Rotation Checklist]] - concept - docs/security/secrets-inventory.md
+- [[Deploy-Time dockersecrets Provisioning]] - concept - docs/security/secrets-inventory.md
+- [[Gateway Auth Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Git History Expungement via filter-repo]] - rationale - docs/security/secrets-inventory.md
+- [[GitHub 90-Day Unreferenced-Commit Cache Warning]] - rationale - docs/security/secrets-inventory.md
+- [[Gitignored wifi_credentials.h Pattern]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Post-Purge Gitleaks Verification]] - concept - docs/security/secret-scan-results.md
+- [[Pre-Purge Secret Rotation Checklist]] - document - docs/security/secret-scan-results.md
+- [[Pre-Release Secrets Inventory]] - document - docs/security/secrets-inventory.md
+- [[Real Credentials Present in Git History]] - concept - docs/security/secrets-inventory.md
+- [[Required Dedicated tmux Session For op]] - rationale - skills/openclaw/1password/SKILL.md
+- [[Secret-Adjacent Template Files (.example)]] - concept - docs/security/secrets-inventory.md
+- [[Telegram Bot Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Telegram Chat History Artifact Risk]] - concept - docs/security/secret-scan-results.md
+- [[iCloud App-Specific Password Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[op Secret-Handling Guardrails]] - rationale - skills/openclaw/1password/SKILL.md
+- [[op read  run  inject Command Examples]] - document - skills/openclaw/1password/references/cli-examples.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +40,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
-- 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
+- 1 edge to [[_COMMUNITY_pick_latest_hermes_tag()]]
 
 ## Top bridge nodes
-- [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities
+- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community
+- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community

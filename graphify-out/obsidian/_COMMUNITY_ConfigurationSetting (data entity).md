@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
+- [[i-scrum SKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

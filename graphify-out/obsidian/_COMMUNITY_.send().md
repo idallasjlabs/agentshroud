@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.29
 members: 10
 ---
 
 # .send()
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.build_message()]] - code - gateway/ingest_api/email_service.py
-- [[.login()]] - code - gateway/ingest_api/email_service.py
-- [[.send()]] - code - gateway/ingest_api/email_service.py
-- [[.sendmail()]] - code - gateway/ingest_api/email_service.py
-- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
-- [[Protocol]] - code
-- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
-- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
-- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
-- [[email_service.py]] - code - gateway/ingest_api/email_service.py
+- [[check()_1]] - code - scripts/preflight-check.sh
+- [[fail()_4]] - code - scripts/tailscale-check.sh
+- [[infra-check.sh]] - code - scripts/infra-check.sh
+- [[infra-check.sh script]] - code - scripts/infra-check.sh
+- [[ok()_1]] - code - scripts/tailscale-check.sh
+- [[preflight-check.sh]] - code - scripts/preflight-check.sh
+- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
+- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
+- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
+- [[warn()_6]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_GatewayEmailService]]
-- 1 edge to [[_COMMUNITY_forward.py]]
+- 1 edge to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
 
 ## Top bridge nodes
-- [[email_service.py]] - degree 3, connects to 2 communities
-- [[.send()]] - degree 5, connects to 1 community
-- [[.build_message()]] - degree 3, connects to 1 community
+- [[preflight-check.sh]] - degree 4, connects to 1 community

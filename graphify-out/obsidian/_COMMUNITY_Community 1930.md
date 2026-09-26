@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsesp_log.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[CLASS_PROFILE]] - code - scripts/triage-cve-mitigations.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+cohesion: 0.19
+members: 20
 ---
 
 # AgentShroud™ — Project Knowledge Base
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Current Status_5]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How He Works]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How to Contribute]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Red Team Testing (Most Valuable!)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Technology Stack]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Conjecture]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Problem]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Solution]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Thesis]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What He Builds]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What Is AgentShroud]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Why AgentShroud Exists]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[v0.8.0 Focus Areas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[._resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,8 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud — Collaborator Knowledge Base]]
-- 1 edge to [[_COMMUNITY_Architecture]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[AgentShroud™ — Project Knowledge Base]] - degree 9, connects to 2 communities
+- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 3 communities
+- [[._resp()]] - degree 19, connects to 1 community

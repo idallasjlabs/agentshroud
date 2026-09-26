@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.wait_for_decision]] - code - gateway/approval_queue/enhanced_queue.py
+- [[v1.0.0 Fortress]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

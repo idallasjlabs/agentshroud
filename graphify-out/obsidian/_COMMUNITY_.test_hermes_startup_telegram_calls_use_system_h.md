@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # .test_hermes_startup_telegram_calls_use_system_h
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
-- [[.test_hermes_startup_telegram_calls_use_system_header()_1]] - code - gateway/tests/test_config_validation.py
-- [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
+- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/test_hermes_startup_telegram_calls_use_system_h
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
-
-## Top bridge nodes
-- [[.test_hermes_startup_telegram_calls_use_system_header()]] - degree 2, connects to 1 community
-- [[.test_hermes_startup_telegram_calls_use_system_header()_1]] - degree 2, connects to 1 community

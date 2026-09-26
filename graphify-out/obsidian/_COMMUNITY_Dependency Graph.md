@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Related Notes_4]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Step 1 Install ClawHub CLI]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 2 Create ClawHub Account]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 3 Verify Skill Ready]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 4 Publish to ClawHub]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 5 Verify Publication]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 6 Test Installation (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📋 Detailed Step-by-Step]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_security.py]]
 
 ## Top bridge nodes
-- [[Dependency Graph]] - degree 3, connects to 1 community
+- [[📋 Detailed Step-by-Step]] - degree 7, connects to 1 community

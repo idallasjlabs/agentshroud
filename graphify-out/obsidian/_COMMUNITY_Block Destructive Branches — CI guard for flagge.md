@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
+- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

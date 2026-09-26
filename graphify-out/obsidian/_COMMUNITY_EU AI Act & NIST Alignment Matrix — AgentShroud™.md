@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Default Ports]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Environment Variables_3]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Key Class `PortManager`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Purpose_124]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Related Notes_10]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py_2]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 

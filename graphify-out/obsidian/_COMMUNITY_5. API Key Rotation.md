@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 5. API Key Rotation
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[5. API Key Rotation]] - document - docs/operations/runbook.md
-- [[Admin API Token]] - document - docs/operations/runbook.md
-- [[OpenClaw API Key]] - document - docs/operations/runbook.md
-- [[SSL Certificates]] - document - docs/operations/runbook.md
+- [[SKILL_198]] - document - skills/openclaw/blogwatcher/SKILL.md
+- [[blogwatcher]] - document - skills/openclaw/blogwatcher/SKILL.md
+- [[blogwatcher CLI]] - concept - skills/openclaw/blogwatcher/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/5_API_Key_Rotation
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[5. API Key Rotation]] - degree 4, connects to 1 community

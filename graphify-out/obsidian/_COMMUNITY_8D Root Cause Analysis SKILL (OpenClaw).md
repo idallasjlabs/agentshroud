@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 8D Root Cause Analysis SKILL (OpenClaw)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
-- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[1Password item Apple ID - therealidallasj_1]] - concept - .agents/skills/i-icloud/scripts/calendar.js
+- [[iCloud Data Manager README]] - document - .agents/skills/i-icloud/README.md
+- [[iCloud Services Skill_1]] - document - .agents/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/8D_Root_Cause_Analysis_SKILL_OpenClaw
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
-
-## Top bridge nodes
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - degree 3, connects to 1 community

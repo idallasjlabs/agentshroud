@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # 1. Accomplishments This Phase
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[8D Root Cause Analysis_2]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Purpose_84]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[README_89]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Related Skills_90]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Usage_93]] - document - docker/config/openclaw/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/1_Accomplishments_This_Phase
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community

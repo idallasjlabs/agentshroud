@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.60
+members: 6
 ---
 
 # 3. Brutally Honest Self-Assessment
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.60 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Should we continue or cut losses]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[BaseException_1]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_err_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_is_stale_callback_error()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[_is_stale_edit_error()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[telegram_egress_notify.py]] - code - gateway/proxy/telegram_egress_notify.py
+- [[urllib HTTPError carries the response body on .read(); fall back to str.]] - rationale - gateway/proxy/telegram_egress_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 4 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 3 edges to [[_COMMUNITY_TrustManager]]
 
 ## Top bridge nodes
-- [[3. Brutally Honest Self-Assessment]] - degree 7, connects to 1 community
+- [[_is_stale_callback_error()]] - degree 6, connects to 2 communities
+- [[_is_stale_edit_error()]] - degree 6, connects to 2 communities
+- [[telegram_egress_notify.py]] - degree 4, connects to 1 community

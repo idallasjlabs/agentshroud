@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # Attack Teardowns: How AgentShroud Stops RovoBlas
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[1. GitHub MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Role_19]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[SKILL_34]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +24,10 @@ members: 8
 TABLE source_file, type FROM #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_Telegram & Gmail Integration Guide]]
+
+## Top bridge nodes
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - degree 5, connects to 2 communities

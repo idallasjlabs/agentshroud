@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Common Missing Domains]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Diagnosis_1]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Fix Add Domain to Allowlist]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[HTTP 403 — Egress Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Monitor Mode — Egress Not Enforced]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[RFC1918 Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Related Notes_63]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[Architecture_2]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Design Philosophy]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Infrastructure_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves()]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
 
 ## Top bridge nodes
-- [[Egress Filter Errors_2]] - degree 6, connects to 1 community
+- [[Architecture_2]] - degree 7, connects to 2 communities

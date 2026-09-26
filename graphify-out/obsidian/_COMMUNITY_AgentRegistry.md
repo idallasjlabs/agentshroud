@@ -1,102 +1,108 @@
 ---
 type: community
-cohesion: 0.05
-members: 87
+cohesion: 0.03
+members: 93
 ---
 
 # AgentRegistry
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 87 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 93 nodes
 
 ## Members
-- [[.__init__()_126]] - code - gateway/security/agent_isolation.py
-- [[.__init__()_127]] - code - gateway/security/agent_isolation.py
-- [[.from_dict()_3]] - code - gateway/security/agent_isolation.py
-- [[.generate_compose()]] - code - gateway/security/agent_isolation.py
-- [[.get()_1]] - code - gateway/security/agent_isolation.py
-- [[.list_agents()]] - code - gateway/security/agent_isolation.py
-- [[.register()]] - code - gateway/security/agent_isolation.py
-- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
-- [[.test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_compose_security_opts()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_container_config_defaults()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_fully_isolated_agents_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_generate_compose()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_group_agents_are_isolatable()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_and_collab_identities_coexist()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_list_agents()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_list_agents()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_network_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_network_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_privileges_allowed_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_register_and_get()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_register_and_get()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_group_agent_identity()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_register_group_agent_with_chat_type_supergroup()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_separate_networks_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_separate_volumes_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_serialization()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_serialization_roundtrip()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_shared_network_detected()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_shared_network_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_shared_nothing_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_shared_nothing_security_issue()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_shared_volume_detected()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_shared_volume_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_single_agent_fully_secure()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_unregister()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_unregister_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_unregister_removes_agent()]] - code - gateway/tests/test_agent_isolation.py
-- [[.test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[.to_dict()_9]] - code - gateway/security/agent_isolation.py
-- [[.unregister()]] - code - gateway/security/agent_isolation.py
-- [[.verify_network_isolation()]] - code - gateway/security/agent_isolation.py
-- [[.verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
-- [[.verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
-- [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[AgentRegistry]] - code - gateway/security/agent_isolation.py
-- [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
-- [[ContainerConfig]] - code - gateway/tests/test_agent_isolation.py
-- [[ContainerConfig_1]] - code - gateway/security/agent_isolation.py
-- [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
-- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
-- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
-- [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
-- [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
-- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
-- [[Register a group-{chat_id} identity in AgentRegistry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Register a supergroup-type agent identity.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Register an agent with its container configuration.]] - rationale - gateway/security/agent_isolation.py
-- [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
-- [[Remove an agent from the registry.]] - rationale - gateway/security/agent_isolation.py
-- [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
-- [[TestAgentIsolation]] - code - gateway/tests/test_security_hardening.py
-- [[TestAgentRegistry]] - code - gateway/tests/test_agent_isolation.py
-- [[TestAgentRegistryGroupIdentity]] - code - gateway/tests/test_group_isolation.py
-- [[TestGenerateCompose]] - code - gateway/tests/test_agent_isolation.py
-- [[TestNetworkIsolation]] - code - gateway/tests/test_agent_isolation.py
-- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
-- [[TestSharedNothing]] - code - gateway/tests/test_agent_isolation.py
-- [[TestVolumeIsolation]] - code - gateway/tests/test_agent_isolation.py
-- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
-- [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
-- [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
-- [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
+- [[7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a     re]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Any_30]] - code - gateway/security/agent_cve_registry.py
+- [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[CompletedProcess_5]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Coverage gaps must be loud and must fail an automated caller.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Every registry must be reachable, not just openclaw.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Freshly-synced advisories must never arrive pre-marked as mitigated —     that r]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Import the triage script by path.      It must be registered in sys.modules befo]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Return a summary of the advisory registry for the specified agent.      Counts a]] - rationale - gateway/security/agent_cve_registry.py
+- [[Return the list of registered agent bot IDs with CVE coverage.      Returns]] - rationale - gateway/security/agent_cve_registry.py
+- [[Same integrity guard as test_no_entry_id_looks_like_a_cve, extended to     the s]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Synthetic ids are unique and numbered 1..N in list order for each agent.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[The first curated OpenClaw entry (Feishu media download) survives migration.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[The migration produced a real (non-zero) verified GHSA match set.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[_HERMES_CVE_REGISTRY (HERMES_CVE_REGISTRY alias)]] - code - gateway/security/agent_cve_registry.py
+- [[_OPENCLAW_CVE_REGISTRY (AGENT_CVE_REGISTRY alias)]] - code - gateway/security/agent_cve_registry.py
+- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[_hermes_by_title()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[_load_triage_module()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[_run_triage()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[agent_cve_registry.py]] - code - gateway/security/agent_cve_registry.py
+- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[get_agent_cve_summary()]] - code - gateway/security/agent_cve_registry.py
+- [[ghsacvepending counts must be internally consistent and honest.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[list_cve_agents()]] - code - gateway/security/agent_cve_registry.py
+- [[test_agent_cve_registries_contains_both()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_agent_cve_registries_objects_match_lists()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_agent_cve_registry.py]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_agent_cve_registry_alias_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_agent_cve_registry_alias_nonempty()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_all_agents_flag_exists()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_all_registered_sources_are_wrapped_agents_plus_security_tools()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_ash_ids_are_unique_and_stable_order()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_default_single_agent_run_still_succeeds()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_default_summary_equals_openclaw_summary()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_default_summary_wrapped_agent_openclaw()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_empty_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_every_security_tool_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_gap_reports_are_per_agent()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_cvss_are_numeric()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_defense_layers_are_lists()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_required_titles_present()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_auth_entries_use_gateway_auth_gate()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_command_injection_high_severity()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_cve_registry_public_alias()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_summary_count_is_fourteen()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_summary_cves_is_hermes_list()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_summary_wrapped_agent_is_hermes()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_symlink_entry_upstream_fix()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_verified_ids_are_never_fabricated()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_hermes_wechat_adapter_fully_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_list_cve_agents_is_list_of_str()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_no_security_tool_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_first_entry_is_feishu_media_download()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_has_some_confident_ghsa_matches()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_match_counts_are_consistent()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_summary_cves_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_openclaw_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_security_tool_entries_ghsa_and_cve_ids_well_formed()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_security_tool_entries_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_security_tool_entries_have_valid_status_and_severity()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_security_tool_registries_present_in_registries_dict()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_unknown_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_untriageable_agents_are_refused_not_guessed()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_wrapped_agent_constant_unchanged()]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -106,26 +112,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_EgressAction]]
-- 27 edges to [[_COMMUNITY_EncryptedStore]]
-- 19 edges to [[_COMMUNITY_lifespan.py]]
-- 5 edges to [[_COMMUNITY_RBACConfig]]
-- 5 edges to [[_COMMUNITY_EgressFilter]]
-- 4 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_TrustLevel]]
-- 2 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 2 edges to [[_COMMUNITY_EgressPolicy]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_TestGroupMemoryInvisibleFromDM]]
-- 2 edges to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_cls]]
+- 7 edges to [[_COMMUNITY_mcp_oauth_preflight.py]]
+- 4 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 4 edges to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
-- [[TestAgentIsolation]] - degree 31, connects to 10 communities
-- [[TestSecureZero]] - degree 23, connects to 10 communities
-- [[AgentRegistry]] - degree 71, connects to 8 communities
-- [[ContainerConfig_1]] - degree 40, connects to 7 communities
-- [[IsolationVerifier]] - degree 50, connects to 4 communities
+- [[agent_cve_registry.py]] - degree 13, connects to 6 communities
+- [[get_agent_cve_summary()]] - degree 30, connects to 4 communities
+- [[list_cve_agents()]] - degree 15, connects to 4 communities
+- [[test_agent_cve_registry.py]] - degree 68, connects to 1 community

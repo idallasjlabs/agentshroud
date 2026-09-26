@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[audio.h_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

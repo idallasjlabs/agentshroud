@@ -11,10 +11,10 @@ members: 44
 
 ## Members
 - [[.is_blocked()]] - code - gateway/proxy/dns_blocklist.py
-- [[.is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.setup_method()_7]] - code - gateway/tests/test_dns_blocklist.py
+- [[.is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
 - [[.stats()]] - code - gateway/proxy/dns_blocklist.py
-- [[.stop()_4]] - code - gateway/proxy/dns_blocklist.py
+- [[.stop()]] - code - gateway/proxy/dns_blocklist.py
 - [[.test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
 - [[.test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
 - [[.test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
@@ -47,7 +47,7 @@ members: 44
 - [[TestBlocklistUpdate]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[TestBlocklistWildcardsAndAllowlist]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[TestIsBlocked]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLifecycle_1]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLifecycle]] - code - gateway/tests/test_dns_blocklist.py
 - [[TestStats]] - code - gateway/tests/test_dns_blocklist.py
 - [[_BlockNone]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - rationale - gateway/tests/test_dns_blocklist.py
@@ -63,18 +63,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 9 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 7 edges to [[_COMMUNITY_.update()]]
-- 5 edges to [[_COMMUNITY__FakeUpstreamWS]]
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_TestLoadFromText]]
-- 3 edges to [[_COMMUNITY_TestParseHostsLine]]
-- 3 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_forward_query()]]
-- 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
-- 1 edge to [[_COMMUNITY_parse_query()]]
+- 9 edges to [[_COMMUNITY_canvas_proxy_app()]]
+- 9 edges to [[_COMMUNITY_Seccomp Profiles]]
+- 7 edges to [[_COMMUNITY_75 Security Modules]]
+- 5 edges to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
+- 3 edges to [[_COMMUNITY_TestOutboundScanUnification]]
+- 3 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_TestDataExfiltration]]
+- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
+- 1 edge to [[_COMMUNITY_v0.6.0 Baseline Results]]
 
 ## Top bridge nodes
 - [[DNSBlocklist]] - degree 60, connects to 11 communities

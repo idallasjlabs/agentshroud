@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[.test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection]]
+- 4 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
+- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[Discovery Strategy_2]] - degree 7, connects to 2 communities
+- [[TestSpawnAuthorization]] - degree 12, connects to 2 communities

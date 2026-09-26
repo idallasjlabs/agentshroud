@@ -1,188 +1,173 @@
 ---
 type: community
 cohesion: 0.02
-members: 173
+members: 158
 ---
 
 # Enum
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 173 nodes
+**Members:** 158 nodes
 
 ## Members
-- [[.__init__()_155]] - code - gateway/security/subagent_governance.py
-- [[._check_budget()]] - code - gateway/security/subagent_governance.py
-- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._log_event()_1]] - code - gateway/security/subagent_governance.py
-- [[.acceptable()]] - code - gateway/security/subagent_governance.py
-- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.authorize_spawn()]] - code - gateway/security/subagent_governance.py
-- [[.authorize_tool()]] - code - gateway/security/subagent_governance.py
-- [[.deregister()_1]] - code - gateway/security/subagent_governance.py
-- [[.get_governance_events()]] - code - gateway/security/subagent_governance.py
-- [[.get_summary()_1]] - code - gateway/security/subagent_governance.py
-- [[.get_usage()]] - code - gateway/security/subagent_governance.py
-- [[.record_api_call()]] - code - gateway/security/subagent_governance.py
-- [[.record_egress()]] - code - gateway/security/subagent_governance.py
-- [[.record_tokens()]] - code - gateway/security/subagent_governance.py
-- [[.record_tool_call()]] - code - gateway/security/subagent_governance.py
-- [[.runtime_seconds()]] - code - gateway/security/subagent_governance.py
-- [[.score_output()]] - code - gateway/security/subagent_governance.py
-- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_initialization()_5]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.to_dict()_13]] - code - gateway/security/subagent_governance.py
-- [[.tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[A2AMessageType_1]] - code - gateway/security/a2a_governance.py
-- [[Action to take when a governance limit is hit.]] - rationale - gateway/security/subagent_governance.py
-- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[AlarmStatus]] - code - gateway/soc/models.py
-- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
-- [[Authorize a subagent spawn. Returns (allowed, reason).]] - rationale - gateway/security/subagent_governance.py
-- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
-- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
-- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[Check if a resource budget is exceeded.]] - rationale - gateway/security/subagent_governance.py
-- [[Check if a subagent is allowed to use a specific tool.]] - rationale - gateway/security/subagent_governance.py
-- [[Check text for PII patterns. Returns list of pattern names found.]] - rationale - gateway/security/subagent_governance.py
-- [[Check text for data exfiltration patterns.]] - rationale - gateway/security/subagent_governance.py
-- [[Check text for prompt injection patterns.]] - rationale - gateway/security/subagent_governance.py
-- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
-- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
-- [[EgressStatus]] - code - gateway/soc/models.py
-- [[Enum_3]] - code
-- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
-- [[Get a summary of all subagent governance state for a session.]] - rationale - gateway/security/subagent_governance.py
-- [[Get current resource usage for a subagent.]] - rationale - gateway/security/subagent_governance.py
-- [[GovernanceAction]] - code - gateway/security/subagent_governance.py
-- [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
-- [[GovernanceEvent]] - code - gateway/security/subagent_governance.py
-- [[GovernanceEventType]] - code - gateway/security/subagent_governance.py
-- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[OutputScore]] - code - gateway/security/subagent_governance.py
-- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
-- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
-- [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
-- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
-- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
-- [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - rationale - gateway/security/trust_manager.py
-- [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
-- [[Record a tool invocation.]] - rationale - gateway/security/subagent_governance.py
-- [[Record an LLM API call.]] - rationale - gateway/security/subagent_governance.py
-- [[Record outbound data volume.]] - rationale - gateway/security/subagent_governance.py
-- [[Record token consumption. Returns (within_budget, message).]] - rationale - gateway/security/subagent_governance.py
-- [[Remove a subagent from governance tracking. Returns final usage.]] - rationale - gateway/security/subagent_governance.py
-- [[ResourceBudget]] - code - gateway/security/subagent_governance.py
-- [[ResourceUsage_1]] - code - gateway/security/subagent_governance.py
-- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
-- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
-- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[RiskLevel_5]] - code - gateway/security/tool_chain_analyzer.py
-- [[RiskLevel_6]] - code - gateway/soc/models.py
-- [[Score a subagent's output for safety and quality.          In a full deployment,]] - rationale - gateway/security/subagent_governance.py
-- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
-- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
-- [[ThreatLevel_1]] - code - gateway/security/git_guard.py
-- [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
-- [[Tracks cumulative resource consumption for a single subagent.]] - rationale - gateway/security/subagent_governance.py
-- [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
-- [[TrustLevel_2]] - code - gateway/security/progressive_trust_config.py
-- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
-- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
-- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[_check_exfil_patterns()]] - code - gateway/security/subagent_governance.py
-- [[_check_injection_patterns()]] - code - gateway/security/subagent_governance.py
-- [[_check_pii_patterns()]] - code - gateway/security/subagent_governance.py
-- [[disabled_gov()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[mock_alert_callback()_1]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[mock_alert_callback()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
-- [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
-- [[str_2]] - code
-- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
-- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[test_subagent_governance.py_1]] - code - gateway/tests/test_subagent_governance.py
-- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
-- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
-- [[web_config.py]] - code - gateway/proxy/web_config.py
-- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
+- [[.__init__()_81]] - code - gateway/security/file_sandbox.py
+- [[._check()]] - code - gateway/security/file_sandbox.py
+- [[._detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
+- [[._is_immutable_file()]] - code - gateway/security/file_sandbox.py
+- [[._match_pattern()]] - code - gateway/security/file_sandbox.py
+- [[._matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
+- [[._matches_blocked()]] - code - gateway/security/file_sandbox.py
+- [[.check_read()]] - code - gateway/security/file_sandbox.py
+- [[.check_write()]] - code - gateway/security/file_sandbox.py
+- [[.detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
+- [[.get_audit_log()_4]] - code - gateway/security/file_sandbox.py
+- [[.get_security_violations()]] - code - gateway/security/file_sandbox.py
+- [[.get_temp_files()]] - code - gateway/security/file_sandbox.py
+- [[.record_network_activity()]] - code - gateway/security/file_sandbox.py
+- [[.scan()_3]] - code - gateway/security/file_sandbox.py
+- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_credit_card_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_mode_is_enforce()_2]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
+- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
+- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
+- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
+- [[FileOperation]] - code - gateway/security/file_sandbox.py
+- [[FileSandbox]] - code - gateway/security/file_sandbox.py
+- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[FileVerdict]] - code - gateway/security/file_sandbox.py
+- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
+- [[Large-write-then-network-activity stagingexfiltration pattern detection]] - concept - gateway/tests/test_file_sandbox.py
+- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[PIIFinding]] - code - gateway/security/file_sandbox.py
+- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
+- [[PIIScanner]] - code - gateway/security/file_sandbox.py
+- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
+- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Privilege Separation File Sandbox Tests]] - code - gateway/tests/test_privilege_separation.py
+- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Round 2 Security Hardening Tests]] - code - gateway/tests/test_round2_hardening.py
+- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
+- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[StagingPattern]] - code - gateway/security/file_sandbox.py
+- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
+- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
+- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
+- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
+- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
+- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
+- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
+- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
+- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
+- [[default_config()_3]] - code - gateway/tests/test_file_sandbox.py
+- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
+- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
+- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
+- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_config()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
+- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -192,77 +177,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_lifespan.py]]
-- 20 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 12 edges to [[_COMMUNITY_URLAnalyzer]]
-- 11 edges to [[_COMMUNITY_.analyze_tool_call()]]
-- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 6 edges to [[_COMMUNITY_EncryptedStore]]
-- 5 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
-- 5 edges to [[_COMMUNITY_PipelineAction]]
-- 5 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 5 edges to [[_COMMUNITY_A2AMethod]]
-- 5 edges to [[_COMMUNITY_WebProxy]]
-- 4 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 4 edges to [[_COMMUNITY_BaseModel]]
-- 4 edges to [[_COMMUNITY_TestMultiTurnTracker]]
-- 4 edges to [[_COMMUNITY_MCPServerConfig]]
-- 4 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 4 edges to [[_COMMUNITY_SessionContext]]
-- 4 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 3 edges to [[_COMMUNITY_test_subagent_governance.py]]
-- 3 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 3 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 3 edges to [[_COMMUNITY_load_config()]]
-- 3 edges to [[_COMMUNITY_DelegationManager]]
-- 3 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 3 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 2 edges to [[_COMMUNITY_server.py]]
-- 2 edges to [[_COMMUNITY_InjectionSeverity]]
-- 2 edges to [[_COMMUNITY_HostStatus]]
-- 2 edges to [[_COMMUNITY_SecureBrowser]]
-- 2 edges to [[_COMMUNITY_SecureBrowser]]
-- 2 edges to [[_COMMUNITY_SecureBrowser]]
-- 2 edges to [[_COMMUNITY_SecureBrowser]]
-- 2 edges to [[_COMMUNITY_EgressAction]]
-- 2 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_test_redteam_probes.py]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
-- 2 edges to [[_COMMUNITY_MCPToolCall]]
-- 2 edges to [[_COMMUNITY_ConsentFramework]]
-- 2 edges to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY__make_tm()]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_tool_result_injection.py]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_CredentialValidator]]
-- 1 edge to [[_COMMUNITY_KeyRotationConfig]]
-- 1 edge to [[_COMMUNITY_ConsistencyScore]]
-- 1 edge to [[_COMMUNITY_.__init__()]]
-- 1 edge to [[_COMMUNITY_TestAuth]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-- 1 edge to [[_COMMUNITY_TestDataExfiltration]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_A2AMessage]]
-- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_TestLifecycle]]
-- 1 edge to [[_COMMUNITY_TestOutputTrustScoring]]
-- 1 edge to [[_COMMUNITY_TestPatternDetection]]
-- 1 edge to [[_COMMUNITY_TestResourceBudgets]]
-- 1 edge to [[_COMMUNITY_TestSpawnAuthorization]]
-- 1 edge to [[_COMMUNITY_TestToolAuthorization]]
+- 46 edges to [[_COMMUNITY_lifespan.py]]
+- 32 edges to [[_COMMUNITY_TrustManager]]
+- 3 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[Enum_3]] - degree 112, connects to 45 communities
-- [[str_2]] - degree 48, connects to 22 communities
-- [[test_subagent_governance.py_1]] - degree 13, connects to 7 communities
-- [[multi_turn_tracker.py]] - degree 12, connects to 7 communities
-- [[tool_chain_analyzer.py]] - degree 12, connects to 4 communities
+- [[FileSandbox]] - degree 86, connects to 5 communities
+- [[file_sandbox.py]] - degree 11, connects to 3 communities
+- [[test_privilege_separation.py]] - degree 15, connects to 2 communities
+- [[TestAgentShroudSourceCodeProtection]] - degree 9, connects to 2 communities
+- [[TestReadAccess]] - degree 9, connects to 2 communities

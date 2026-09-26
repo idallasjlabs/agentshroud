@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,10 @@ members: 11
 TABLE source_file, type FROM #community/AgentShroud_Recovery_Plan_v040
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 2 edges to [[_COMMUNITY_TrustConfig]]
+
+## Top bridge nodes
+- [[TestTrustProgression]] - degree 11, connects to 2 communities

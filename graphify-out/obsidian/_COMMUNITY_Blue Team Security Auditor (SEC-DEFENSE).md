@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Purpose_102]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Related Skills_93]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Usage_97]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[.test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreContainerHardening_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
 
 ## Top bridge nodes
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - degree 4, connects to 1 community
+- [[TestScoreContainerHardening_1]] - degree 4, connects to 1 community

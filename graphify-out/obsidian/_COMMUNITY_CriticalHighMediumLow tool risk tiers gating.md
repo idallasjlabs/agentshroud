@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
+- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

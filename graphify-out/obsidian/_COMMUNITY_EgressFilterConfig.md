@@ -1,42 +1,43 @@
 ---
 type: community
 cohesion: 0.10
-members: 27
+members: 28
 ---
 
 # EgressFilterConfig
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 27 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[._matches_any_pattern()]] - code - gateway/security/egress_config.py
-- [[._matches_any_pattern()_1]] - code - gateway/security/egress_config.py
-- [[.from_environment()]] - code - gateway/security/egress_config.py
-- [[.from_environment()_1]] - code - gateway/security/egress_config.py
-- [[.get_effective_allowlist()]] - code - gateway/security/egress_config.py
-- [[.get_effective_allowlist()_1]] - code - gateway/security/egress_config.py
-- [[.is_denylisted()]] - code - gateway/security/egress_config.py
-- [[.is_denylisted()_1]] - code - gateway/security/egress_config.py
-- [[.matches_allowlist()]] - code - gateway/security/egress_config.py
-- [[.matches_allowlist()_1]] - code - gateway/security/egress_config.py
-- [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
-- [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
-- [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
-- [[Create config from environment variables and AGENTSHROUD_MODE.]] - rationale - gateway/security/egress_config.py
-- [[EgressFilterConfig_2]] - code - gateway/security/egress_config.py
-- [[FEED_HOSTS]] - code - gateway/security/feed_hosts.py
-- [[GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…]] - rationale - gateway/security/feed_hosts.py
-- [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
-- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[PERMANENT_EGRESS_DOMAINS]] - code - gateway/security/egress_config.py
-- [[Public does domain match any pattern in the effective default allowlist]] - rationale - gateway/security/egress_config.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
-- [[egress_config.py_3]] - code - gateway/security/egress_config.py
-- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
-- [[get_egress_config()]] - code - gateway/security/egress_config.py
-- [[set_egress_config()_1]] - code - gateway/security/egress_config.py
+- [[._has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
+- [[.setup_method()_18]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_case_insensitive()_1]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
+- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
+- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,12 +47,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_DraftEntry]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[._matches_any_pattern()]] - degree 5, connects to 2 communities
-- [[.matches_allowlist()]] - degree 3, connects to 2 communities
-- [[Get the global egress filter configuration.]] - degree 4, connects to 1 community
-- [[.get_effective_allowlist()]] - degree 3, connects to 1 community
-- [[.is_denylisted()]] - degree 3, connects to 1 community
+- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
+- [[.setup_method()_18]] - degree 2, connects to 1 community

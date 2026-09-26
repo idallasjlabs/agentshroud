@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .record_segment()
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.record_segment()]] - code - gateway/security/context_guard.py
-- [[.tag_segment()]] - code - gateway/security/context_guard.py
-- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
+- [[GET ledger audit query API]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Observability Gaps (Future Work) no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/record_segment
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
-
-## Top bridge nodes
-- [[.record_segment()]] - degree 4, connects to 2 communities
-- [[.tag_segment()]] - degree 4, connects to 2 communities

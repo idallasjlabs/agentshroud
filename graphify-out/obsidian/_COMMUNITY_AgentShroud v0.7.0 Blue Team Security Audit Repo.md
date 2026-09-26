@@ -10,36 +10,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[1. Security Module Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[1.1 Module Integration Status]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[1.2 Critical Security Pipeline Flow]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[10. Steve Hay Assessment Alignment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[4. Configuration Security Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[4.1 Default Configuration Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[4.2 Global Mode Override Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[4.3 Module-Specific Configuration]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5. Integration Gap Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5.1 New v0.7.0 Features Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5.2 Pipeline Integration Verification]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8. Red Team Readiness Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.1 Attack Surface Hardening]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.2 Monitoring & Detection]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.3 Resilience Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[9. Final Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[9.1 Security Maturity Level]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[9.2 Threat Model Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[9.3 GONO-GO Decision]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[Executive Summary_1]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[planningreviewsblue-team-audit-v0.7.0]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[Action requires approval but none granted_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser timeout_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[CAPTCHA detected_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Rate limit exceeded_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[URL not in allowlist_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[1. Always Specify Risk Level_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Best Practices_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fill Form_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Limitations_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Navigate to URL_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[SKILL_73]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Architecture_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_7]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_47]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,12 +47,3 @@ members: 30
 TABLE source_file, type FROM #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_7. Recommendations by Severity]]
-- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - degree 19, connects to 4 communities

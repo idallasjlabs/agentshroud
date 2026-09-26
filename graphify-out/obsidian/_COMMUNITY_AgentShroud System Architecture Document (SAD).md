@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[AgentShroud System Architecture Document (SAD)]] - document - docs/architecture/system-architecture.md
-- [[Component Architecture]] - document - docs/architecture/system-architecture.md
-- [[Core Technologies]] - document - docs/architecture/system-architecture.md
-- [[Executive Overview]] - document - docs/architecture/system-architecture.md
-- [[Metrics to Track]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Monitoring and Observability]] - document - docs/architecture/system-architecture.md
-- [[Network Isolation Benefits]] - document - docs/architecture/system-architecture.md
-- [[Security Technologies]] - document - docs/architecture/system-architecture.md
-- [[System Context]] - document - docs/architecture/system-architecture.md
-- [[System Traffic Flow]] - document - docs/architecture/system-architecture.md
-- [[Technology Stack_1]] - document - docs/architecture/system-architecture.md
-- [[Two-Network Docker Architecture]] - document - docs/architecture/system-architecture.md
-- [[system-architecture]] - document - docs/architecture/system-architecture.md
+- [[Input Requirements_7]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst]] - document - .agents/skills/i-oracle/README.md
+- [[Oracle — Feedback Analyst_1]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Output Format_7]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Persona_5]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Purpose_21]] - document - .agents/skills/i-oracle/README.md
+- [[Quality Checklist_6]] - document - .agents/skills/i-oracle/SKILL.md
+- [[README_21]] - document - .agents/skills/i-oracle/README.md
+- [[Related Skills_24]] - document - .agents/skills/i-oracle/README.md
+- [[Role_23]] - document - .agents/skills/i-oracle/SKILL.md
+- [[SKILL_39]] - document - .agents/skills/i-oracle/SKILL.md
+- [[System Prompt_5]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Usage_24]] - document - .agents/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,13 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/AgentShroud_System_Architecture_Document_SAD
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspber]]
-- 1 edge to [[_COMMUNITY_Core Components]]
-- 1 edge to [[_COMMUNITY_ADR-003 Two-Network Container Isolation]]
-
-## Top bridge nodes
-- [[Monitoring and Observability]] - degree 3, connects to 1 community
-- [[Two-Network Docker Architecture]] - degree 3, connects to 1 community
-- [[Component Architecture]] - degree 2, connects to 1 community

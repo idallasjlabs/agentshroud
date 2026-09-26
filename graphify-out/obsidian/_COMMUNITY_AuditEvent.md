@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.15
 members: 13
 ---
 
 # AuditEvent
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._export_cef()]] - code - gateway/security/audit_export.py
-- [[._export_json()]] - code - gateway/security/audit_export.py
-- [[._export_jsonld()]] - code - gateway/security/audit_export.py
-- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
-- [[.export_events()]] - code - gateway/security/audit_export.py
-- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
-- [[AuditEvent_1]] - code - gateway/security/audit_export.py
-- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
-- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
-- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[Anti-Patterns to Flag_3]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Role_34]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Rules_3]] - document - .agents/skills/i-tdd/SKILL.md
+- [[SKILL_57]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test Structure_1]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`]] - document - .agents/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,12 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AuditExporter]]
-- 3 edges to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[.export_events()]] - degree 6, connects to 2 communities
-- [[AuditEvent_1]] - degree 6, connects to 1 community
-- [[._export_cef()]] - degree 4, connects to 1 community
-- [[._export_json()]] - degree 4, connects to 1 community
-- [[._export_jsonld()]] - degree 4, connects to 1 community
+- [[Skill Test-Driven Development (TDD)]] - degree 8, connects to 1 community

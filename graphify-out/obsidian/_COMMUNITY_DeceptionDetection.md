@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[.test_basic_detection()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_default_detection()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
-- [[DeceptionDetection]] - code - gateway/security/approval_hardening.py
-- [[Result of deception detection analysis.]] - rationale - gateway/security/approval_hardening.py
-- [[Test basic detection result creation.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection with default values.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[approval_hardening.py]] - code - gateway/security/approval_hardening.py
+- [[Configuration  Environment Variables_14]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Function Details_20]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Purpose_141]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Related_27]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[openclaw service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,18 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/DeceptionDetection
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 7 edges to [[_COMMUNITY_DeniedRequest]]
-- 6 edges to [[_COMMUNITY_Any]]
-- 4 edges to [[_COMMUNITY_TestApprovalHardening]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-
-## Top bridge nodes
-- [[approval_hardening.py]] - degree 6, connects to 4 communities
-- [[DeceptionDetection]] - degree 18, connects to 3 communities
-- [[.test_format_hardened_message_basic()]] - degree 3, connects to 1 community
-- [[.test_format_hardened_message_with_normalization()]] - degree 3, connects to 1 community
-- [[.test_format_hardened_message_with_security_concerns()]] - degree 3, connects to 1 community

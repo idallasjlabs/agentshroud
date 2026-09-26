@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .test_collaborator_approval_action_request_is_bl
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[System promptinstruction leakage probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Escalation Chain]] - document - docs/operations/incident-response.md
+- [[Incident Response Team Structure]] - document - docs/operations/incident-response.md
+- [[Primary Roles]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes
-- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[Incident Response Team Structure]] - degree 3, connects to 1 community

@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # Community 1660
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[set-model.sh]] - code - docker/scripts/set-model.sh
-- [[set-model.sh script]] - code - docker/scripts/set-model.sh
+- [[MCP Server home-assistant]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

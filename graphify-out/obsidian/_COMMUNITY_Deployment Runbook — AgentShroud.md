@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
-- [[2. Run Tests]] - document - docs/runbooks/deployment.md
-- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
-- [[4. Build Containers]] - document - docs/runbooks/deployment.md
-- [[5. Deploy]] - document - docs/runbooks/deployment.md
-- [[6. Verify_3]] - document - docs/runbooks/deployment.md
-- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
-- [[Environment Variables_15]] - document - docs/runbooks/deployment.md
-- [[First-Time Setup]] - document - docs/runbooks/deployment.md
-- [[Prerequisites_13]] - document - docs/runbooks/deployment.md
-- [[Quick Summary]] - document - docs/runbooks/deployment.md
-- [[Rolling Back]] - document - docs/runbooks/deployment.md
-- [[Standard Deployment]] - document - docs/runbooks/deployment.md
-- [[Version Tagging]] - document - docs/runbooks/deployment.md
+- [[Configuration  Environment Variables_9]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Function Details_15]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Key Classes  Functions_18]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Purpose_136]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Related_22]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Responsibilities_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_ssrf(hostname)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze_and_pin(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Deployment_Runbook__AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Update AgentShroud]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
-- 1 edge to [[_COMMUNITY_auth.py]]
-- 1 edge to [[_COMMUNITY_4. Environment Variables]]
-
-## Top bridge nodes
-- [[Environment Variables_15]] - degree 4, connects to 3 communities
-- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

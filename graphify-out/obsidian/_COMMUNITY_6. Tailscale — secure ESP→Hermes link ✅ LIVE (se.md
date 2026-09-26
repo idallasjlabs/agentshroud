@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # 6. Tailscale — secure ESP→Hermes link ✅ LIVE (se
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
-- [[6a. marvin is your tailnet host]] - document - firmware/voice-terminal/SETUP.md
-- [[6b. Generate an auth key for the device]] - document - firmware/voice-terminal/SETUP.md
-- [[6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client)]] - document - firmware/voice-terminal/SETUP.md
-- [[6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`)]] - document - firmware/voice-terminal/SETUP.md
-- [[6e. ACL lock-down (recommended)]] - document - firmware/voice-terminal/SETUP.md
+- [[AgentShroud Data Flow Diagrams]] - document - docs/flows/data-flow-diagram.md
+- [[Level 0 Context Diagram]] - document - docs/flows/data-flow-diagram.md
+- [[Level 1 Security Components]] - document - docs/flows/data-flow-diagram.md
+- [[Level 2 MCP Proxy Detail]] - document - docs/flows/data-flow-diagram.md
+- [[data-flow-diagram]] - document - docs/flows/data-flow-diagram.md
 
 ## Live Query (requires Dataview plugin)
 

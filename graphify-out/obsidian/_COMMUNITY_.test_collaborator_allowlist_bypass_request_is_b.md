@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # .test_collaborator_allowlist_bypass_request_is_b
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_path_traversal_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Allowlistredirect-bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Path traversal prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unsafe URL scheme fetch requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[1. Add Test Coverage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[1. test-augmenter]] - document - .github/COPILOT_CLI_SETUP.md
+- [[2. Run Validation Suite]] - document - .github/COPILOT_CLI_SETUP.md
+- [[2. validation-runner]] - document - .github/COPILOT_CLI_SETUP.md
+- [[3. safe-refactor]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Common Workflows]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Custom Agents]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 4 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_OpenClaw Live Cron Job Index (11 jobs)]]
 
 ## Top bridge nodes
-- [[.test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_path_traversal_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[Common Workflows]] - degree 4, connects to 1 community
+- [[Custom Agents]] - degree 4, connects to 1 community

@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
-- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Pre-commit Hooks Configuration]] - document - .pre-commit-config.yaml
-- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
-- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
-- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
-- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
-- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Summary_22]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[black (Python formatter)]] - concept - .pre-commit-config.yaml
-- [[detect-secrets (Yelp secret scanner)]] - concept - .pre-commit-config.yaml
-- [[gitleaks (secret scanner)]] - concept - .pre-commit-config.yaml
-- [[ruff (Python linter)]] - concept - .pre-commit-config.yaml
+- [[Anti-Patterns to Flag_16]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_12]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_80]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[SKILL_137]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,12 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_KeyRotationConfig]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 3 edges to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[AgentShroud Semgrep SAST Configuration]] - degree 13, connects to 3 communities
-- [[Rule agentshroud-ssrf-requests]] - degree 2, connects to 1 community
-- [[Rule agentshroud-subprocess-shell-true]] - degree 2, connects to 1 community
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)_2]] - degree 8, connects to 1 community
+- [[Validate contrast ratio_2]] - degree 2, connects to 1 community

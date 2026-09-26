@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # A2A (Agent-to-Agent) Protocol Threat Analysis
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - document - docs/security/threat-model.md
-- [[E — Elevation of Privilege Cross-Process Isolation Break]] - document - docs/security/threat-model.md
-- [[I — Information Disclosure  Elevation of Privilege Unsandboxed Live-Session Injection]] - document - docs/security/threat-model.md
-- [[I — Information Disclosure SSRF via Push-Notification Callback URLs]] - document - docs/security/threat-model.md
-- [[Not Yet Mitigated (Explicitly Deferred)]] - document - docs/security/threat-model.md
-- [[R — Repudiation Rejected Auth Attempts Not Audited]] - document - docs/security/threat-model.md
-- [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - document - docs/security/threat-model.md
-- [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - document - docs/security/threat-model.md
+- [[Deployment Matrix  (Direct to Prod)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Role_81]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[SKILL_141]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - degree 8, connects to 1 community
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - degree 7, connects to 1 community

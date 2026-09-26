@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Atlassian MCP Server (Jira + Confluence, concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[__init__.py_3]] - code - gateway/cli/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

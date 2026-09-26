@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.10
 members: 20
 ---
 
 # Audit Ledger (SHA-256 hash only)
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[1Password (op-proxy)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Anthropic API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Approval Queue (human gate)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Cron Scheduler (8 scheduled jobs)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Execute Action (tool call  reply)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[GitHub API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[HTTP CONNECT Proxy (domain allowlist)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[LLM Inference (OpenAI  Anthropic)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[MCP Inspector]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[OpenAI API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[PII Sanitizer (Presidio  regex)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Receive message  cron trigger]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Telegram API_1]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Telegram Input (@agentshroud_bot)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Web UI Input (localhost18790)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[agentshroud-config volume (openclaw.json)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[approval_queue.py]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[iMessage Input (imsg-ssh bridge)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[A. AWS Glue Jobs]] - document - .agents/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions]] - document - .agents/skills/i-qa/SKILL.md
+- [[C. AWS Athena]] - document - .agents/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)]] - document - .agents/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)]] - document - .agents/skills/i-qa/SKILL.md
+- [[F. IAM Policies]] - document - .agents/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network]] - document - .agents/skills/i-qa/SKILL.md
+- [[General Rules]] - document - .agents/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist]] - document - .agents/skills/i-qa/SKILL.md
+- [[Objective_1]] - document - .agents/skills/i-qa/SKILL.md
+- [[Output Format_8]] - document - .agents/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_29]] - document - .agents/skills/i-qa/SKILL.md
+- [[SKILL_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
+- [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,17 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
-- 1 edge to [[_COMMUNITY_Shutdown & Recovery]]
-- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
-- 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
-- 1 edge to [[_COMMUNITY_Security Controls]]
-- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy Decision]]
-- 1 edge to [[_COMMUNITY_Gateway ManagementControl-Plane API (v1.3.0)]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[approval_queue.py]] - degree 7, connects to 6 communities
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 4 communities
+- [[Skill Quality Assurance (QA)]] - degree 7, connects to 1 community

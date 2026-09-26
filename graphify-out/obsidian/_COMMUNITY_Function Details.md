@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.15
 members: 15
 ---
 
 # Function Details
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Function Details_24]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Key Classes  Functions_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_153]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Related_30]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,14 @@ members: 15
 TABLE source_file, type FROM #community/Function_Details
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_The 8D Investigation Process]]
+- 2 edges to [[_COMMUNITY_SecureBrowser - Enterprise Secure Browser Automa]]
+
+## Top bridge nodes
+- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
+- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
+- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
+- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
+- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

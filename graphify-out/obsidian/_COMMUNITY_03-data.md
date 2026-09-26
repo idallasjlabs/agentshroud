@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.12
 members: 16
 ---
 
 # 03-data.md
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[03-data]] - document - docs/diagrams/03-data.md
-- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
-- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
-- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
-- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
-- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
-- [[Current Status_9]] - document - docs/data/README.md
-- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
-- [[Data Documentation]] - document - docs/data/README.md
-- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
-- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
-- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
-- [[Planned Documents_6]] - document - docs/data/README.md
-- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
-- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
-- [[dataREADME]] - document - docs/data/README.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Environment Variables_17]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Key Endpoints_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Networks_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_52]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Security Hardening_4]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_24]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/03-datamd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_05-behavior]]
-
-## Top bridge nodes
-- [[03-data]] - degree 6, connects to 1 community
-- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community

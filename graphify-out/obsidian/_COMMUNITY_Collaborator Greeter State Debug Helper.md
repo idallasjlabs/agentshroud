@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
+- [[CI benchmark regression job (macOS)]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

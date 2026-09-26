@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Allowlist]] - document - docker/bot-capabilities.md
-- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
-- [[Credential flow]] - document - docker/bot-capabilities.md
-- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
-- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Known working credentials]] - document - docker/bot-capabilities.md
-- [[What NEVER to do]] - document - docker/bot-capabilities.md
-- [[What NEVER to do_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Advanced 1Password Access]] - document - docker/bot-capabilities.md
+- [[Available Commands]] - document - docker/bot-capabilities.md
+- [[Credential Management - 1Password Integration]] - document - docker/bot-capabilities.md
+- [[Security Decision Tree]] - document - docker/bot-capabilities.md
+- [[Security Rules (Ultra-Conservative)]] - document - docker/bot-capabilities.md
+- [[Troubleshooting_6]] - document - docker/bot-capabilities.md
+- [[Usage Examples]] - document - docker/bot-capabilities.md
+- [[Vault Access]] - document - docker/bot-capabilities.md
+- [[Why Ultra-Conservative]] - document - docker/bot-capabilities.md
+- [[🔴 Chat Interfaces (NEVER display credentials)]] - document - docker/bot-capabilities.md
+- [[🟢 Console Commands (ALWAYS display)]] - document - docker/bot-capabilities.md
+- [[🟢 Internal Use (ALWAYS allowed)]] - document - docker/bot-capabilities.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-]]
-- 1 edge to [[_COMMUNITY_Credential Management - 1Password Integration]]
+- 1 edge to [[_COMMUNITY_competitive-report-.md dated reports]]
 
 ## Top bridge nodes
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - degree 7, connects to 1 community
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 6, connects to 1 community
+- [[Credential Management - 1Password Integration]] - degree 9, connects to 1 community

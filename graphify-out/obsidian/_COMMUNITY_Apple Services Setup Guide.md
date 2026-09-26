@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[Access Pattern]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[App-Specific Password (if 2FA enabled)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple ID Creation]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple Services Setup Guide]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CalDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CardDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Credential Storage]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[IMAP Settings (Incoming Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Notes Access Options]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 1 Email]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 2 Calendar]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 3 Contacts]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[iCloud Services]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🎯 Next Steps_1]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📝 Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📞 Contacts (CardDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📧 Apple Mail (IMAPSMTP)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🔐 App-Specific Passwords]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🚨 Security Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🤖 Bot Integration Plan]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[For --cluster-only]] - document - .agents/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)]] - document - .agents/skills/graphify/references/update.md
+- [[For --watch]] - document - .agents/skills/graphify/references/add-watch.md
+- [[For graphify add]] - document - .agents/skills/graphify/references/add-watch.md
+- [[For graphify explain]] - document - .agents/skills/graphify/references/query.md
+- [[For graphify path]] - document - .agents/skills/graphify/references/query.md
+- [[For git commit hook]] - document - .agents/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)]] - document - .agents/skills/graphify/references/query.md
+- [[Step 1 — Traversal]] - document - .agents/skills/graphify/references/query.md
+- [[Step 6b - Wiki (only if --wiki flag)]] - document - .agents/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)]] - document - .agents/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)]] - document - .agents/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)]] - document - .agents/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)]] - document - .agents/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - document - .agents/skills/graphify/references/exports.md
+- [[add-watch]] - document - .agents/skills/graphify/references/add-watch.md
+- [[exports]] - document - .agents/skills/graphify/references/exports.md
+- [[graphify reference add a URL and watch a folder]] - document - .agents/skills/graphify/references/add-watch.md
+- [[graphify reference commit hook and native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
+- [[graphify reference extra exports and benchmark]] - document - .agents/skills/graphify/references/exports.md
+- [[graphify reference incremental update and cluster-only]] - document - .agents/skills/graphify/references/update.md
+- [[graphify reference query, path, explain]] - document - .agents/skills/graphify/references/query.md
+- [[hooks]] - document - .agents/skills/graphify/references/hooks.md
+- [[query]] - document - .agents/skills/graphify/references/query.md
+- [[update]] - document - .agents/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Apple_Services_Setup_Guide
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
-
-## Top bridge nodes
-- [[Apple Services Setup Guide]] - degree 11, connects to 1 community

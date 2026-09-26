@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.09
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Coding Agent (bash-first)
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
-- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
-- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
-- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[coding-agentSKILL]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[geminiSKILL]] - document - skills/openclaw/gemini/SKILL.md
-- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
-- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Accessibility Requirements]] - document - .agents/skills/i-ui/SKILL.md
+- [[Anti-Patterns to Flag_6]] - document - .agents/skills/i-ui/SKILL.md
+- [[BEM (Block Element Modifier)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Breakpoints (mobile-first)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Button]] - document - .agents/skills/i-ui/SKILL.md
+- [[CSS Architecture Recommendations]] - document - .agents/skills/i-ui/SKILL.md
+- [[CSS Modules (React  Next.js)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component Patterns]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component contract rules]] - document - .agents/skills/i-ui/SKILL.md
+- [[Component file structure]] - document - .agents/skills/i-ui/SKILL.md
+- [[Container Query Pattern (preferred over breakpoints for components)]] - document - .agents/skills/i-ui/SKILL.md
+- [[Core Discipline Structure → Component → Layout → Validate]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dark  Light Theme Implementation]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dashboard Grid]] - document - .agents/skills/i-ui/SKILL.md
+- [[Data Table]] - document - .agents/skills/i-ui/SKILL.md
+- [[Dependencies_4]] - document - .agents/skills/i-ui/SKILL.md
+- [[Form Field]] - document - .agents/skills/i-ui/SKILL.md
+- [[Modal  Dialog]] - document - .agents/skills/i-ui/SKILL.md
+- [[Navigation]] - document - .agents/skills/i-ui/SKILL.md
+- [[React  Next.js Component Architecture]] - document - .agents/skills/i-ui/SKILL.md
+- [[Responsive Layout System]] - document - .agents/skills/i-ui/SKILL.md
+- [[Role_37]] - document - .agents/skills/i-ui/SKILL.md
+- [[Rules_6]] - document - .agents/skills/i-ui/SKILL.md
+- [[SKILL_60]] - document - .agents/skills/i-ui/SKILL.md
+- [[Skill UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
+- [[UI Validation Checklist]] - document - .agents/skills/i-ui/SKILL.md
+- [[Utility-First (Tailwind  custom utilities)]] - document - .agents/skills/i-ui/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,10 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_gh-issuesSKILL]]
-- 1 edge to [[_COMMUNITY_graphify Skill]]
-- 1 edge to [[_COMMUNITY_Hermes Dev Workflow (HDEV) Skill]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
-- [[coding-agentSKILL]] - degree 9, connects to 1 community
+- [[Skill UI Expert (UI)]] - degree 14, connects to 1 community

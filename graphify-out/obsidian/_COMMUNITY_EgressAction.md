@@ -1,90 +1,86 @@
 ---
 type: community
-cohesion: 0.03
-members: 75
+cohesion: 0.04
+members: 71
 ---
 
 # EgressAction
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 75 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 71 nodes
 
 ## Members
-- [[.__init__()_74]] - code - gateway/security/prompt_guard.py
-- [[.setup_method()_15]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_25]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_12]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_13]] - code - gateway/tests/test_security_hardening.py
-- [[.teardown_method()_3]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_base64_encoded_injection()_2]] - code - gateway/tests/test_security_hardening.py
-- [[.test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_mapped_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_mapped_ipv6_private()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_private()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_ula()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_localhost_variants()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_clean_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
-- [[.test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_instructions_override()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_none_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_extraction()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_role_reassignment()_2]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
-- [[Args             block_threshold Score at or above which input is blocked.]] - rationale - gateway/security/prompt_guard.py
-- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
-- [[EgressAction]] - code - gateway/security/egress_filter.py
-- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[PatternRule]] - code - gateway/security/prompt_guard.py
-- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestEgressSSRF]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for SSRF protection in egress filter.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
+- [[.__init__()_188]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.__init__()_189]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.close()_19]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_falls_back_to_openclaw_only_on_config_load_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_no_engine_no_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_non_200_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_4]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[PermissionError]] - code
+- [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckClamd]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckOpenscap]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_check_clamd]] - code - gateway/soc/services.py
+- [[_check_fluent_bit]] - code - gateway/soc/services.py
+- [[_check_openscap]] - code - gateway/soc/services.py
+- [[_check_wazuh_agent]] - code - gateway/soc/services.py
+- [[_frame()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_inspect_via_socket]] - code - gateway/soc/services.py
+- [[_known_services]] - code - gateway/soc/services.py
+- [[_known_services() must resolve each bot's real container name — not a     hardco]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[_patch_exists()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_http_connection()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
+- [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,24 +90,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_EncryptedStore]]
-- 27 edges to [[_COMMUNITY_AgentRegistry]]
-- 25 edges to [[_COMMUNITY_TrustManager]]
-- 22 edges to [[_COMMUNITY_EgressPolicy]]
-- 15 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 13 edges to [[_COMMUNITY_EgressFilter]]
-- 10 edges to [[_COMMUNITY_TrustConfig]]
-- 7 edges to [[_COMMUNITY_TrustLevel]]
-- 7 edges to [[_COMMUNITY_lifespan.py]]
-- 7 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 3 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 3 edges to [[_COMMUNITY_test_http_proxy.py]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_test_security_integration.py]]
+- 26 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_A2APeer]]
+- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_DraftEntry]]
 
 ## Top bridge nodes
-- [[EgressAction]] - degree 45, connects to 10 communities
-- [[TestPromptGuard_1]] - degree 40, connects to 10 communities
-- [[TestTrustManager]] - degree 35, connects to 10 communities
-- [[test_security_hardening.py]] - degree 30, connects to 10 communities
-- [[TestEgressSSRF]] - degree 28, connects to 10 communities
+- [[PermissionError]] - degree 6, connects to 3 communities
+- [[test_soc_services_coverage.py]] - degree 24, connects to 2 communities
+- [[_FakeResponse]] - degree 13, connects to 2 communities
+- [[TestKnownServices]] - degree 7, connects to 2 communities
+- [[TestCheckWazuhAgent]] - degree 9, connects to 1 community

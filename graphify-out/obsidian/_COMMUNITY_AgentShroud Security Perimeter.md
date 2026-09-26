@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[1Password credential isolation]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[AgentShroud Security Perimeter]] - concept - docs/vault/00 - START HERE/System Overview.md
-- [[Audit ledger (hash-verifiable chain)]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Enforce mode by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Fail-closed by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Human-in-the-loop approval queue]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Least privilege MCP permissions]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[PII redacted before forwarding]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalRequest]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_forward.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Perimeter]] - degree 8, connects to 1 community
-- [[Audit ledger (hash-verifiable chain)]] - degree 2, connects to 1 community
-- [[Human-in-the-loop approval queue]] - degree 2, connects to 1 community
+- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community

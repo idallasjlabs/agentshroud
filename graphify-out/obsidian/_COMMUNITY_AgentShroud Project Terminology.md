@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.13
+members: 27
 ---
 
 # AgentShroud Project Terminology
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[A]] - document - docs/project/glossary.md
-- [[AgentShroud Project Terminology]] - document - docs/project/glossary.md
-- [[B]] - document - docs/project/glossary.md
-- [[C]] - document - docs/project/glossary.md
-- [[D]] - document - docs/project/glossary.md
-- [[E]] - document - docs/project/glossary.md
-- [[F]] - document - docs/project/glossary.md
-- [[Glossary]] - document - docs/project/glossary.md
-- [[H]] - document - docs/project/glossary.md
-- [[I]] - document - docs/project/glossary.md
-- [[K]] - document - docs/project/glossary.md
-- [[M]] - document - docs/project/glossary.md
-- [[N]] - document - docs/project/glossary.md
-- [[O]] - document - docs/project/glossary.md
-- [[Operational Terms]] - document - docs/project/glossary.md
-- [[P]] - document - docs/project/glossary.md
-- [[R]] - document - docs/project/glossary.md
-- [[S]] - document - docs/project/glossary.md
-- [[Security Terms]] - document - docs/project/glossary.md
-- [[T]] - document - docs/project/glossary.md
-- [[Technical Abbreviations]] - document - docs/project/glossary.md
-- [[U]] - document - docs/project/glossary.md
-- [[V]] - document - docs/project/glossary.md
-- [[W]] - document - docs/project/glossary.md
-- [[Z]] - document - docs/project/glossary.md
-- [[glossary]] - document - docs/project/glossary.md
+- [[.test_anthropic_api_error_500_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_anthropic_detection_unchanged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_empty_and_garbage_bodies()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_gemini_invalid_argument_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_gemini_resource_exhausted_stays_quota_territory()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_gemini_unavailable_503()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_gemini_unavailable_http_200()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_http_200_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_http_503_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_http_529_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_mention_in_content_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_non_dict_json_body_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_normal_200_message_body_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_openai_invalid_request_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_openai_overloaded_message_http_200()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_openai_server_error_500_requires_capacity_wording()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_openai_server_error_503()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_openai_server_error_503_without_capacity_wording()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_other_error_types_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_overloaded_word_in_chat_content_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_quota_statuses_not_claimed()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[.test_unrecognized_error_shape_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[Return (True, provider_overloaded) for a provider capacity-error     envelop]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[SCRUM-60 in-body overload envelopes from OpenAI and Gemini must fail     over e]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[TestIsOverloaded]] - code - gateway/tests/test_llm_quota_detector.py
+- [[TestOverloadedMultiProvider]] - code - gateway/tests/test_llm_quota_detector.py
+- [[is_overloaded()]] - code - gateway/proxy/llm_quota_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +44,14 @@ members: 26
 TABLE source_file, type FROM #community/AgentShroud_Project_Terminology
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_graphify Skill]]
+- 2 edges to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
+- 1 edge to [[_COMMUNITY_test_trust_manager.py]]
+
+## Top bridge nodes
+- [[is_overloaded()]] - degree 29, connects to 4 communities
+- [[TestOverloadedMultiProvider]] - degree 16, connects to 1 community
+- [[TestIsOverloaded]] - degree 9, connects to 1 community

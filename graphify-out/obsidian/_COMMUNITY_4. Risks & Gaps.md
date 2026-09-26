@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # 4. Risks & Gaps
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[CI docs drift  version consistency check]] - code - .github/workflows/ci.yml
+- [[CI security-scan job (pip-audit)]] - code - .github/workflows/ci.yml
+- [[Streaming direct voice path (_call_llm_stream)]] - concept - CHANGELOG.md
+- [[Trivy action immutable SHA pin (CI supply chain)]] - rationale - CHANGELOG.md
+- [[Upstream-advisory watch cron jobs (8 toolchain components)]] - concept - CHANGELOG.md
+- [[v1.5.1 — A2A Governance patch release]] - document - CHANGELOG.md
+- [[v1.6.0 — voice terminal release]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +24,3 @@ members: 8
 TABLE source_file, type FROM #community/4_Risks__Gaps
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[4. Risks & Gaps]] - degree 8, connects to 1 community

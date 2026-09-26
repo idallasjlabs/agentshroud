@@ -1,39 +1,41 @@
 ---
 type: community
-cohesion: 0.13
-members: 24
+cohesion: 0.08
+members: 26
 ---
 
 # Approval Queue (human-in-the-loop)
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[Agent Decision Logic Flowchart]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[Agent routing (bindings config; e.g. Telegram ID 8096968754 → main agent)]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Approval Queue (human-in-the-loop)_1]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Approval Queue State Diagram (pending → approvedrejectedexpired)]] - image - docs/diagrams/images/diagram-16-state-approval-queue.png
-- [[Approval queue data (in-memory, backed by SQLite)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Bot Session State Diagram (fresh → active → idlecompacting → reset)]] - image - docs/diagrams/images/diagram-17-state-bot-session.png
-- [[Current Status_4]] - document - docs/flows/README.md
-- [[Data Lineage Diagram (5-Layer Pipeline)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[EphemeralTransient data (never persisted raw)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[Flows Documentation]] - document - docs/flows/README.md
-- [[Layer 1 — Source (TelegramiMessageCron)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 4 — Processing (Bot LLM API call, MCP-inspected tool call)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 5 — Consumption (auto-delete at expires_at, audit query, user response)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.png
-- [[MCP inspection result (in-memory only, logged to gateway stdout)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[PII redaction result (hash only in ledger, never persisted raw)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Peer binding Telegram 8096968754 → agentmain]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[Planned Documents_4]] - document - docs/flows/README.md
-- [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Telegram Message Sequence Diagram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[flowsREADME]] - document - docs/flows/README.md
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
+- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 1 — Threat Modeling and Security Boundaries]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 10 — Human Approval Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 11 — Prompt and Policy Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 12 — Output Validation and Secondary Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 13 — Sandboxing and Execution Isolation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 14 — Browser and Document Ingestion Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 15 — Secret Management and Anti-Exfiltration Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 16 — Detection Engineering and Monitoring]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 17 — Canary and Tripwire Strategies]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 18 — Policy-as-Code and Formal Guardrails]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 19 — Resilience Against Long-Horizon Attacks]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 2 — Instruction  Data Separation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 20 — Training, Tuning, and Specialized Models]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 21 — Secure UX and Operator Ergonomics]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 22 — Incident Response and Recovery]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 23 — Red Teaming and Continuous Evaluation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 24 — Supply Chain and Ecosystem Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 25 — Governance and Change Control]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 3 — Taint Tracking and Data Lineage]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 4 — Capability Security and Least Privilege]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 5 — Tool-Call Governance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 6 — Egress Control and Exfiltration Resistance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 7 — Retrieval and RAG Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 8 — Memory Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 9 — Multi-Agent Trust Architecture]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,15 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
-- 3 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
-- 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Assets (root)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Passw]]
+- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
 
 ## Top bridge nodes
-- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 3 communities
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 2 communities
-- [[Telegram Message Sequence Diagram]] - degree 7, connects to 2 communities
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - degree 8, connects to 1 community
-- [[EphemeralTransient data (never persisted raw)]] - degree 5, connects to 1 community
+- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - degree 26, connects to 1 community

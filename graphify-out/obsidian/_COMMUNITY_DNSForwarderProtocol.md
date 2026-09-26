@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.13
 members: 16
 ---
 
 # DNSForwarderProtocol
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[.__init__()_166]] - code - gateway/proxy/dns_forwarder.py
-- [[.close()_15]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.connection_made()]] - code - gateway/proxy/dns_forwarder.py
-- [[.error_received()]] - code - gateway/proxy/dns_forwarder.py
-- [[.test_binds_and_returns_transport()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_error_received_logs()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[AgentShroud DNS Forwarder — Lightweight DNS proxy for gateway container.  Routes]] - rationale - gateway/proxy/dns_forwarder.py
-- [[DNSForwarderProtocol]] - code - gateway/proxy/dns_forwarder.py
-- [[DatagramTransport]] - code - gateway/proxy/dns_forwarder.py
-- [[Start the DNS forwarding server with optional blocklist.      Returns the transp]] - rationale - gateway/proxy/dns_forwarder.py
-- [[TestStartDNSForwarder]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[UDP protocol handler for DNS forwarding with optional blocklist.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[dns_blocklist.py]] - code - gateway/proxy/dns_blocklist.py
-- [[dns_forwarder.py]] - code - gateway/proxy/dns_forwarder.py
-- [[main()_26]] - code - gateway/proxy/dns_forwarder.py
-- [[start_dns_forwarder()]] - code - gateway/proxy/dns_forwarder.py
+- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
+- [[Decision_1]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
+- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
+- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,18 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_DNSBlocklist]]
-- 8 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 6 edges to [[_COMMUNITY__FakeUpstreamWS]]
-- 4 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_parse_query()]]
-- 4 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
-- 2 edges to [[_COMMUNITY_forward_query()]]
-- 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
 
 ## Top bridge nodes
-- [[DNSForwarderProtocol]] - degree 31, connects to 7 communities
-- [[dns_forwarder.py]] - degree 10, connects to 5 communities
-- [[start_dns_forwarder()]] - degree 9, connects to 2 communities
-- [[TestStartDNSForwarder]] - degree 4, connects to 2 communities
-- [[dns_blocklist.py]] - degree 3, connects to 2 communities
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.22
 members: 9
 ---
 
 # ADR-001: Transparent Proxy Decision
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
-- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
-- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
-- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
-- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
-- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[Current Focus (AgentShroud v1.2.x — Fortress)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Decision-Making Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[How to Represent Isaiah]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Identity_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Long-Term Goals]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[SOUL_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[SOUL]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Thinking Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Values_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,13 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/ADR-001_Transparent_Proxy_Decision
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment Architecture]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
-
-## Top bridge nodes
-- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
-- [[Deployment Modes]] - degree 3, connects to 1 community
-- [[PII Sanitizer (Presidio + Regex)]] - degree 3, connects to 1 community

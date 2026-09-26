@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1. Clone the Repository]] - document - docs/operations/raspberry-pi.md
-- [[2. Install Docker]] - document - docs/operations/raspberry-pi.md
-- [[3. Set Up Secrets]] - document - docs/operations/raspberry-pi.md
-- [[4. Configure AgentShroud]] - document - docs/operations/raspberry-pi.md
-- [[5. Build and Start]] - document - docs/operations/raspberry-pi.md
-- [[6. Verify]] - document - docs/operations/raspberry-pi.md
-- [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
-- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
-- [[Fresh Install]] - document - docs/operations/raspberry-pi.md
-- [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
-- [[From a Tagged Release]] - document - docs/operations/raspberry-pi.md
-- [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
-- [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
-- [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
-- [[Prerequisites_9]] - document - docs/operations/raspberry-pi.md
-- [[Slow Builds_1]] - document - docs/operations/raspberry-pi.md
-- [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
-- [[Troubleshooting_30]] - document - docs/operations/raspberry-pi.md
-- [[Updating to Latest Release]] - document - docs/operations/raspberry-pi.md
-- [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
+- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
+- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[ApprovalRequest_5]] - document - docs/data/data-dictionary.md
+- [[AuditEntry]] - document - docs/data/data-dictionary.md
+- [[Configuration Entities]] - document - docs/data/data-dictionary.md
+- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
+- [[DNSQuery_1]] - document - docs/data/data-dictionary.md
+- [[Data Classification]] - document - docs/data/data-dictionary.md
+- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
+- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
+- [[Network Security Entities]] - document - docs/data/data-dictionary.md
+- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
+- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
+- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
+- [[Security Management Entities]] - document - docs/data/data-dictionary.md
+- [[SessionState]] - document - docs/data/data-dictionary.md
+- [[TrustLevel_3]] - document - docs/data/data-dictionary.md
+- [[URLAnalysisResult_1]] - document - docs/data/data-dictionary.md
+- [[data-dictionary]] - document - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,7 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 1 edge to [[_COMMUNITY__process_inbound()]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_test_ledger.py]]
 
 ## Top bridge nodes
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community
+- [[Network Security Entities]] - degree 5, connects to 1 community
+- [[Approval Workflows]] - degree 3, connects to 1 community
+- [[Configuration Setup]] - degree 2, connects to 1 community

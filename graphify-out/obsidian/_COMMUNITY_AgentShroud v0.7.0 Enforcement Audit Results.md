@@ -1,48 +1,49 @@
 ---
 type: community
-cohesion: 0.09
-members: 33
+cohesion: 0.10
+members: 34
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 33 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_1]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
-- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[.test_pin_revert_restores_the_exact_original_string()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_missing_key_returns_none()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_returns_the_pinned_value()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_is_idempotent()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.to_dict()_17]] - code - scripts/auto_remediate_cves.py
+- [[Any_75]] - code - scripts/auto_remediate_cves.py
+- [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re]] - rationale - scripts/auto_remediate_cves.py
+- [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
+- [[Origin-Aware Authorization (refuse owner elevation over unverified origin)]] - rationale - gateway/security/tool_acl.py
+- [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - rationale - scripts/auto_remediate_cves.py
+- [[Path_42]] - code - scripts/auto_remediate_cves.py
+- [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
+- [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[RemediationPlan]] - code - scripts/auto_remediate_cves.py
+- [[Rewrite one pin in place, preserving every other line byte for byte.      Raises]] - rationale - scripts/auto_remediate_cves.py
+- [[Serialise for the unattended run's audit trail.]] - rationale - scripts/auto_remediate_cves.py
+- [[Silently appending a new key could create a pin nothing consumes.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[TestVersionPinIO]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Two-Arm CVE Remediation (vendor fix + independent AgentShroud gateway control)]] - rationale - prompts/sunday-upgrade.md
+- [[What a version bump would and would not remediate.      Every ``under_review`` a]] - rationale - scripts/auto_remediate_cves.py
+- [[_print_plan()]] - code - scripts/auto_remediate_cves.py
+- [[_run()_1]] - code - scripts/auto_remediate_cves.py
+- [[apply_remediation()]] - code - scripts/auto_remediate_cves.py
+- [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
+- [[load_registry()]] - code - scripts/auto_remediate_cves.py
+- [[main()_15]] - code - scripts/auto_remediate_cves.py
+- [[parse_version()]] - code - scripts/auto_remediate_cves.py
+- [[read_pin()]] - code - scripts/auto_remediate_cves.py
+- [[test_pin_revert_restores_the_exact_original_string]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[write_pin()]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,15 +53,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-- 6 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Repo]]
-- 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8]]
-- 1 edge to [[_COMMUNITY_Findings & Mitigations]]
+- 9 edges to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 4 edges to [[_COMMUNITY_OutputSchemaEnforcer]]
+- 2 edges to [[_COMMUNITY_DraftEntry]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
+- 1 edge to [[_COMMUNITY__seed_cron]]
 
 ## Top bridge nodes
-- [[Egress Filter  SSRF Protection]] - degree 7, connects to 3 communities
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - degree 20, connects to 2 communities
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 2 communities
-- [[ContextGuard (context window poisoning defense)]] - degree 4, connects to 1 community
+- [[auto_remediate_cves.py]] - degree 18, connects to 5 communities
+- [[apply_remediation()]] - degree 9, connects to 2 communities
+- [[read_pin()]] - degree 11, connects to 1 community
+- [[TestVersionPinIO]] - degree 10, connects to 1 community
+- [[RemediationPlan]] - degree 9, connects to 1 community

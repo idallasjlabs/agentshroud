@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.17
 members: 16
 ---
 
 # Examples
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[App + window management]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Capture screenshots + analyze]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common capture parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common motiontyping parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common targeting parameters (most interaction commands)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Examples]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Features (all CLI capabilities, excluding agentMCP)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Keyboard input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Live capture (motion-aware)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Menus, menubar, dock]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Mouse + gesture input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Peekaboo]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Quickstart (happy path)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[See - click - type (most reliable flow)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Target by window id]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[peekabooSKILL]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[._no_docker()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_always_includes_every_configured_bot_image()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_always_includes_gateway_image()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_deduplication()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_env_var_adds_extra_targets()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_env_var_empty_string_ignored()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_gateway_container_name_is_env_overridable()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_whitespace_stripped_from_env_var()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Build the list of container image targets for Trivy image scanning.      Prefers]] - rationale - gateway/security/daily_cve_report.py
+- [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Path_19]] - code - gateway/security/trivy_report.py
+- [[Pin _running_image to the docker-unavailable fallback path so these         test]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Regression guard AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestBuildImageTargets]] - code - gateway/tests/test_daily_cve_report.py
+- [[_build_image_targets()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,12 @@ members: 16
 TABLE source_file, type FROM #community/Examples
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+
+## Top bridge nodes
+- [[_build_image_targets()]] - degree 13, connects to 2 communities
+- [[TestBuildImageTargets]] - degree 9, connects to 1 community
+- [[Path_19]] - degree 2, connects to 1 community

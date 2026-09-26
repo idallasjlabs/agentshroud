@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .test_allowed_collaborator_model_command_with_me
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Allowed collaborator local command should survive mentionpunctuation normalizat]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown collaborator slash commands should stay blocked with mentionpunctuation]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_13]] - code - gateway/ingest_api/ledger.py
+- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
+- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
 
 ## Top bridge nodes
-- [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - degree 8, connects to 2 communities
-- [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities
+- [[LedgerConfig_1]] - degree 4, connects to 2 communities
+- [[.__init__()_13]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[agentshroud-isolated Network (DMZ tier)]] - code - docker/docker-compose.yml
 
 ## Live Query (requires Dataview plugin)
 

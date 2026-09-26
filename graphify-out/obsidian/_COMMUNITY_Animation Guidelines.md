@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Accessibility]] - document - branding/guidelines/brand-guidelines.md
-- [[Animation Guidelines]] - document - branding/guidelines/brand-guidelines.md
-- [[CSS Reference]] - document - branding/guidelines/brand-guidelines.md
-- [[Color Usage]] - document - branding/guidelines/brand-guidelines.md
-- [[Logo Animation Constraints]] - document - branding/guidelines/brand-guidelines.md
-- [[Motion Principles]] - document - branding/guidelines/brand-guidelines.md
-- [[Primary Color Application]] - document - branding/guidelines/brand-guidelines.md
-- [[Status & Feedback Animations]] - document - branding/guidelines/brand-guidelines.md
-- [[Timing & Easing]] - document - branding/guidelines/brand-guidelines.md
+- [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
+- [[assert()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[fs_5]] - code - tests/startup_smoke/test_apply_patches.js
+- [[os]] - code - tests/startup_smoke/test_apply_patches.js
+- [[path_5]] - code - tests/startup_smoke/test_apply_patches.js
+- [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
+- [[{ spawnSync }]] - code - tests/startup_smoke/test_apply_patches.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/Animation_Guidelines
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-
-## Top bridge nodes
-- [[Animation Guidelines]] - degree 7, connects to 1 community
-- [[Color Usage]] - degree 3, connects to 1 community

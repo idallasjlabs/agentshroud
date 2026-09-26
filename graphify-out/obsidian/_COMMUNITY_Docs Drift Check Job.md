@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Docs Drift Check Job]] - code - .github/workflows/ci.yml
+- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

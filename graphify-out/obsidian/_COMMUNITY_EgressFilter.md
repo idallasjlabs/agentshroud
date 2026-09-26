@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration_19]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[EgressFilter_3]] - concept - docker/config/hermes/SOUL.md
-- [[EgressFilter._is_private_ip(host)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[EgressFilter.check(agent_id, destination, port)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[EgressPolicy.matches_domain(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Function Details_20]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Purpose_149]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Related_26]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Responsibilities_23]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[egress_filter.py]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Mode A — Single task]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 1 — Sync and confirm clean state]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 10 — Notify the owner]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 12 — Clean up]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 2 — Create a branch + worktree]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 2b — Create the Jira ticket]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 3 — Write and edit code]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 4 — Test and lint]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 5 — Multi-LLM review]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 6 — Build and validate containers]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 7 — Update documentation and website]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 8 — Update the knowledge graph]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 9 — Push and open the PR]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link]] - document - .agents/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,10 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Execution Summ]]
-- 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Overview v0.8.0]]
 
 ## Top bridge nodes
-- [[EgressFilter_3]] - degree 16, connects to 4 communities
+- [[Mode A — Single task]] - degree 15, connects to 1 community

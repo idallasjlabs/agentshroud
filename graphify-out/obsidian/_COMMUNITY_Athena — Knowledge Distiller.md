@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller_2]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_74]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Related Skills_65]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Usage_69]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[.test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Athena__Knowledge_Distiller
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+
+## Top bridge nodes
+- [[TestComplianceMaths]] - degree 5, connects to 1 community

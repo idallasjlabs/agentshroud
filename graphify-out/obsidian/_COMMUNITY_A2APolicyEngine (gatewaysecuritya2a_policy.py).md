@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # A2APolicyEngine (gateway/security/a2a_policy.py)
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - concept - CHANGELOG.md
-- [[A2AProxy (gatewayproxya2a_proxy.py)]] - concept - CHANGELOG.md
-- [[v1.5.0 A2A Governance]] - document - CHANGELOG.md
+- [[SKILL_2]] - document - .agents/skills/i-agile/SKILL.md
+- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

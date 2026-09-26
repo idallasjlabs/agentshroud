@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Apple Platform Integration
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Post-v1.0.0 Roadmap]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Platform Integration]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Watch Support]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Control Center Widget (iPhone + macOS)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Implementation Notes]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Push Notifications (iPhone + Mac + Apple Watch)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[ROADMAP-POST-v1.0]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,15 @@ members: 7
 TABLE source_file, type FROM #community/Apple_Platform_Integration
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_CredentialValidator]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+
+## Top bridge nodes
+- [[TestCrossSessionAccess]] - degree 10, connects to 4 communities
+- [[.test_non_owner_blocked()]] - degree 2, connects to 1 community
+- [[.test_owner_allowed()]] - degree 2, connects to 1 community

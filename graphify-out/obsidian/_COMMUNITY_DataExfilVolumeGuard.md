@@ -1,53 +1,53 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.09
 members: 38
 ---
 
 # DataExfilVolumeGuard
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[.__init__()_80]] - code - gateway/security/data_exfil_volume_guard.py
-- [[._size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.get_stats()_13]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
-- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
-- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
-- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[.__post_init__()_6]] - code - gateway/security/memory_lifecycle.py
+- [[.setup_method()_10]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.setup_method()_11]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_3]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_status_reporting()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
+- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
+- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
+- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig]] - code - gateway/security/memory_config.py
+- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
+- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
+- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
+- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,15 +57,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_lifespan.py]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 21 edges to [[_COMMUNITY_ContainerEngine]]
+- 17 edges to [[_COMMUNITY_TrustManager]]
+- 14 edges to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
+- 9 edges to [[_COMMUNITY_3. AWS API MCP Authentication Reset]]
+- 4 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_clawhubSKILL]]
+- 1 edge to [[_COMMUNITY_run_targeted_tests.sh]]
+- 1 edge to [[_COMMUNITY_Hermes Podcast Production Orchestrator README]]
+- 1 edge to [[_COMMUNITY_remind_proposal_review.sh]]
+- 1 edge to [[_COMMUNITY_warn_dangerous_bash.sh]]
 
 ## Top bridge nodes
-- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
-- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
-- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
+- [[MemoryLifecycleManager]] - degree 39, connects to 5 communities
+- [[TestMemoryLifecycleManager]] - degree 20, connects to 4 communities
+- [[MemoryLifecycleConfig]] - degree 18, connects to 4 communities
+- [[TestMemoryIntegrityConfig]] - degree 12, connects to 4 communities
+- [[ContentThreat]] - degree 15, connects to 3 communities

@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Problem_8]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Root Cause_6]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Verification_12]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Input Requirements_27]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst_4]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Oracle — Feedback Analyst_5]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Output Format_33]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Persona_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Purpose_95]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Quality Checklist_24]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[README_100]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Related Skills_104]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Role_96]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[SKILL_166]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[System Prompt_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Usage_105]] - document - docker/config/openclaw/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
-
-## Top bridge nodes
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - degree 9, connects to 1 community

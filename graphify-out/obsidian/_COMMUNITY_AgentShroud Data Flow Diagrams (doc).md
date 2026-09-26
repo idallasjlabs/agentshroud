@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Data Flow Diagrams (doc)]] - document - docs/flows/data-flow-diagram.md
-- [[Audit Ledger (blockchain-style chain)]] - concept - docs/flows/data-flow-diagram.md
-- [[Diagram 11 Trust Boundary]] - image - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Diagram 13 Network Security Egress]] - image - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Diagram 14 Logic Flow]] - image - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Kill Switch (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[MCP Proxy Detailed Flow (tool call inspection, permission check, rate limit, forward, result inspection)]] - concept - docs/flows/data-flow-diagram.md
-- [[PII Sanitizer (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[Trust Manager (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/AgentShroud_Data_Flow_Diagrams_doc
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
+
+## Top bridge nodes
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community

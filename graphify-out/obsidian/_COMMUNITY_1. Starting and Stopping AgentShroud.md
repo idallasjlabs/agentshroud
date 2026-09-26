@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 1. Starting and Stopping AgentShroud
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
-- [[Restart Procedure_2]] - document - docs/operations/runbook.md
-- [[Starting the System]] - document - docs/operations/runbook.md
-- [[Stopping the System]] - document - docs/operations/runbook.md
+- [[CI job security-scan (pip-audit)]] - code - .github/workflows/ci.yml
+- [[Prove the Outcome, Never the Steps — assert on state deltas not exit codes]] - rationale - CLAUDE.md
+- [[Weekly Sunday Upgrade directive — every versioned component to latest]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/1_Starting_and_Stopping_AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[1. Starting and Stopping AgentShroud]] - degree 4, connects to 1 community

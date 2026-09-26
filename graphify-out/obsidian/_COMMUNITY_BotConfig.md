@@ -1,97 +1,97 @@
 ---
 type: community
-cohesion: 0.03
+cohesion: 0.04
 members: 82
 ---
 
 # BotConfig
 
-**Cohesion:** 0.03 - loosely connected
+**Cohesion:** 0.04 - loosely connected
 **Members:** 82 nodes
 
 ## Members
-- [[._allowed_networks()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[._mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[._mock_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.base_url()]] - code - gateway/ingest_api/bot_config.py
-- [[.resolved_container_name()]] - code - gateway/ingest_api/bot_config.py
-- [[.test_bot_config_has_telegram_token_secret_field()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_bot_config_image_field_present()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_bot_config_telegram_token_secret_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_both_bots_registered_distinct_ids()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_hermes_token_resolves_to_hermes()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_miss_debounced_within_rebuild_interval()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_miss_rebuilds_and_recovers_when_secret_becomes_available()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_no_token_collision()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_openclaw_bot_config_backward_compat()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_openclaw_token_resolves_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_registry_rejects_case_variant()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_registry_rejects_empty_string()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_registry_rejects_partial_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_unknown_token_resolves_to_none()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[A genuinely-unregistered token must not be falsely accepted by the         rebui]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[A token missing from a stale cached registry is picked up on retry         once]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[BotConfig]] - code - gateway/ingest_api/bot_config.py
-- [[BotConfig.base_url computes http{hostname}{port}.]] - rationale - gateway/tests/test_config.py
-- [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
-- [[Compute the bot's internal base URL from hostname and port.]] - rationale - gateway/ingest_api/bot_config.py
-- [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - rationale - gateway/ingest_api/bot_config.py
-- [[Explicit container_name wins over the 'agentshroud-{id}' convention —     regres]] - rationale - gateway/tests/test_config.py
-- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Load the real agentshroud.yaml when present (deployment host), else the     comm]] - rationale - gateway/tests/test_config.py
-- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
-- [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - rationale - gateway/tests/test_config.py
-- [[OpenClaw BotConfig must still work without the new fields.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
-- [[Registry maps two distinct tokens to two distinct bot_ids.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Repeated misses within the debounce window must not re-read secrets         on e]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[RouterConfig must accept the Hermes Docker service hostname.]] - rationale - gateway/tests/test_config.py
-- [[RouterConfig should accept single-label Docker service hostnames.]] - rationale - gateway/tests/test_config.py
-- [[Test PII entity type mapping]] - rationale - gateway/tests/test_config.py
-- [[Test loading configuration from agentshroud.yaml (or the committed example).]] - rationale - gateway/tests/test_config.py
-- [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
-- [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
-- [[TestTelegramBotConfigTokenSecretField]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestTelegramTokenRegistry]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestTelegramTokenRegistryRebuildOnMiss]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[The real docker container name for this bot — see container_name field.]] - rationale - gateway/ingest_api/bot_config.py
-- [[The token registry is built lazily on the first telegram-api{path} request]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Verify BotConfig.telegram_token_secret field is present and defaults correctly.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
-- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
-- [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - rationale - gateway/tests/test_config.py
-- [[_build_telegram_token_registry()]] - code - gateway/ingest_api/main.py
-- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
-- [[_load_config()]] - code - gateway/tests/test_config.py
-- [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
-- [[telegram_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[test_bot_config_base_url()]] - code - gateway/tests/test_config.py
-- [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - code - gateway/tests/test_config.py
-- [[test_bot_config_resolved_container_name_uses_explicit_override()]] - code - gateway/tests/test_config.py
-- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
-- [[test_config.py]] - code - gateway/tests/test_config.py
-- [[test_config_defaults()]] - code - gateway/tests/test_config.py
-- [[test_entity_type_mapping()]] - code - gateway/tests/test_config.py
-- [[test_load_config()]] - code - gateway/tests/test_config.py
-- [[test_load_config_has_bots()]] - code - gateway/tests/test_config.py
-- [[test_load_config_registers_hermes()]] - code - gateway/tests/test_config.py
-- [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
-- [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
-- [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.__init__()_85]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
+- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
+- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
+- [[._try_load_model()]] - code - gateway/security/heuristic_classifier.py
+- [[.classify()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
+- [[.setup_method()_6]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_base64_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classic_override_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_classic_payloads_individually()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classifier_flags_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_context_injection_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_detection_breakdown_by_category()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_encoding_bypass_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_high_confidence_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multilingual_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_overall_detection_rate_meets_threshold()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_payload_count_meets_minimum()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_persona_hijack_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_prompt_extraction_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[Classic instruction-override payloads — should have near-100% detection.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
+- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
+- [[Combined detected if ANY defense layer triggers.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Context  document retrieval poisoning payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
+- [[End-to-end all 110+ payloads against combined defense layer.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Ensure the payload library stays above 100 entries (CI regression gate).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier_1]] - code - gateway/tests/test_adversarial_injection.py
+- [[HeuristicClassifier]] - code - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier returns injection or uncertain on known bad payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Multilingual injection variants.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Pattern]] - code - gateway/security/heuristic_classifier.py
+- [[Persona hijack  DAN-style payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[PromptGuard_1]] - code - gateway/tests/test_adversarial_injection.py
+- [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Report per-category detection rates for observability (not a gate).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Return True if HeuristicClassifier flags as injection or uncertain.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Return True if InputNormalizer changes the text (encoding detected).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Return True if PromptGuard assigns a non-zero score or blocks.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
+- [[System prompt extraction payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[TestClassicOverride]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestContextInjection]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
+- [[TestHeuristicClassifierDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestMultilingual]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestOverallDetectionRate]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPersonaHijack]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPromptExtraction]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPromptGuardDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.]] - rationale - gateway/security/heuristic_classifier.py
+- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
+- [[_any_detector_fires()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_heuristic_detects()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_normalizer_transforms()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_prompt_guard_detects()]] - code - gateway/tests/test_adversarial_injection.py
+- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
+- [[test_adversarial_injection.py]] - code - gateway/tests/test_adversarial_injection.py
+- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -101,24 +101,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_SSHProxy]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 4 edges to [[_COMMUNITY_load_config()]]
-- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_ApprovalRequest]]
-- 2 edges to [[_COMMUNITY_test_config_hot_reload.py]]
-- 2 edges to [[_COMMUNITY_SecurityConfig]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_TestMultiBotContextvarRouting]]
-- 2 edges to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_BaseModel]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 12 edges to [[_COMMUNITY_ServiceManager]]
+- 10 edges to [[_COMMUNITY_FileSandbox]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[BotConfig]] - degree 34, connects to 8 communities
-- [[test_config.py]] - degree 18, connects to 3 communities
-- [[telegram_api_proxy()]] - degree 14, connects to 3 communities
-- [[test_telegram_proxy_multibot.py]] - degree 9, connects to 3 communities
-- [[_entity_type_mapping()]] - degree 5, connects to 2 communities
+- [[HeuristicClassifier]] - degree 26, connects to 3 communities
+- [[test_adversarial_injection.py]] - degree 16, connects to 2 communities
+- [[HeuristicClassifier_1]] - degree 15, connects to 1 community
+- [[PromptGuard_1]] - degree 15, connects to 1 community
+- [[ClassificationResult]] - degree 10, connects to 1 community

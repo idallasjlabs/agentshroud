@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Filing Reference]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[collectCoverageFrom]] - code - browser-extension/package.json
+- [[description_2]] - code - browser-extension/package.json
+- [[devDependencies]] - code - browser-extension/package.json
+- [[jest]] - code - browser-extension/package.json
+- [[jest_1]] - code - browser-extension/package.json
+- [[license_1]] - code - browser-extension/package.json
+- [[name_2]] - code - browser-extension/package.json
+- [[package.json_1]] - code - browser-extension/package.json
+- [[private]] - code - browser-extension/package.json
+- [[scripts_1]] - code - browser-extension/package.json
+- [[test_1]] - code - browser-extension/package.json
+- [[testcoverage]] - code - browser-extension/package.json
+- [[testEnvironment]] - code - browser-extension/package.json
+- [[version_2]] - code - browser-extension/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,12 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/AgentShroud_--_USPTO_Trademark_Application
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_SECTION 2 MARK INFORMATION]]
-- 1 edge to [[_COMMUNITY_AGENTSHROUD standard character mark]]
-- 1 edge to [[_COMMUNITY_SECTION 9 IMPORTANT NOTES]]
-- 1 edge to [[_COMMUNITY_SECTION 7 FILING CHECKLIST]]
-
-## Top bridge nodes
-- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

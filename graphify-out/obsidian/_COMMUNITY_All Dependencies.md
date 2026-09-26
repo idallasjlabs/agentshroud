@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # All Dependencies.md
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[CI Workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[FastAPI_2]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Key FastAPI Features Used]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_119]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_120]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Purpose_121]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Purpose_2]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Related Notes_21]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Related Notes_22]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Related Notes_23]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Related Notes_2]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Security Note_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Where Used_3]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Where Used_4]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[fastapi]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Folder Structure]] - document - .agents/skills/i-sav/SKILL.md
+- [[Linking]] - document - .agents/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT]] - document - .agents/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)]] - document - .agents/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT]] - document - .agents/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - document - .agents/skills/i-sav/SKILL.md
+- [[SKILL_48]] - document - .agents/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)]] - document - .agents/skills/i-sav/SKILL.md
+- [[Tags]] - document - .agents/skills/i-sav/SKILL.md
+- [[YAML Frontmatter]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR]] - document - .agents/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY]] - document - .agents/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`]] - document - .agents/skills/i-sav/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,17 +50,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Error Index]]
-- 2 edges to [[_COMMUNITY_clamav]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_OpenClaw]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_pytest.ini]]
-- 1 edge to [[_COMMUNITY_Gateway Python Dependencies (`gatewayrequiremen]]
-- 1 edge to [[_COMMUNITY_Playwright]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[All Dependencies]] - degree 14, connects to 7 communities
-- [[fastapi]] - degree 4, connects to 1 community
-- [[pytest.ini]] - degree 3, connects to 1 community
+- [[System Audit Vault (Obsidian)]] - degree 6, connects to 1 community

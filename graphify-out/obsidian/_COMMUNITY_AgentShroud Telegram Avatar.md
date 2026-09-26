@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
+- [[.githubworkflowsmerge-regression-audit.yml]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

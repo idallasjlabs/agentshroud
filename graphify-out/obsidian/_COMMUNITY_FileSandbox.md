@@ -1,179 +1,166 @@
 ---
 type: community
 cohesion: 0.02
-members: 164
+members: 151
 ---
 
 # FileSandbox
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 164 nodes
+**Members:** 151 nodes
 
 ## Members
-- [[.__init__()_183]] - code - gateway/security/file_sandbox.py
-- [[._check()]] - code - gateway/security/file_sandbox.py
-- [[._detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
-- [[._is_immutable_file()]] - code - gateway/security/file_sandbox.py
-- [[._match_pattern()]] - code - gateway/security/file_sandbox.py
-- [[._matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
-- [[._matches_blocked()]] - code - gateway/security/file_sandbox.py
-- [[.check_read()]] - code - gateway/security/file_sandbox.py
-- [[.check_write()]] - code - gateway/security/file_sandbox.py
-- [[.detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
-- [[.get_audit_log()_7]] - code - gateway/security/file_sandbox.py
-- [[.get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[.get_temp_files()]] - code - gateway/security/file_sandbox.py
-- [[.monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.record_network_activity()]] - code - gateway/security/file_sandbox.py
-- [[.sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.scan()_4]] - code - gateway/security/file_sandbox.py
-- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_credit_card_detected()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_mode_is_enforce()_6]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_file_sandbox_staging_detection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
-- [[Detect data staging patterns (collect → compress → exfil).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
-- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
-- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
-- [[FileOperation]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
-- [[FileVerdict]] - code - gateway/security/file_sandbox.py
-- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
-- [[Large-write-then-network-activity stagingexfiltration pattern detection]] - concept - gateway/tests/test_file_sandbox.py
-- [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
-- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[PIIFinding]] - code - gateway/security/file_sandbox.py
-- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
-- [[PIIScanner]] - code - gateway/security/file_sandbox.py
-- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
-- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Privilege Separation File Sandbox Tests]] - code - gateway/tests/test_privilege_separation.py
-- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
-- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
-- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
-- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
-- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
-- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
-- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
-- [[default_config()_4]] - code - gateway/tests/test_file_sandbox.py
-- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
-- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
-- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_config()_3]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
-- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
+- [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
+- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
+- [[._bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
+- [[._build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
+- [[._filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[._get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
+- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_group_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_immune()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
+- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
+- [[.get_stats()_9]] - code - gateway/proxy/telegram_proxy.py
+- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[CollaboratorActivityTracker.record_activity]] - code - gateway/security/collaborator_tracker.py
+- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
+- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
+- [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
+- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
+- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[normalize_input()]] - code - gateway/security/input_normalizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -183,25 +170,56 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 59 edges to [[_COMMUNITY_lifespan.py]]
-- 13 edges to [[_COMMUNITY_MiddlewareManager]]
-- 12 edges to [[_COMMUNITY_ResourceGuard]]
-- 10 edges to [[_COMMUNITY_test_security_audit.py]]
-- 4 edges to [[_COMMUNITY_EncryptedStore]]
-- 4 edges to [[_COMMUNITY_TrustManager]]
-- 4 edges to [[_COMMUNITY_TestFileSandbox]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_SecurityConfig]]
-- 2 edges to [[_COMMUNITY_TestAuth]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_AgentShroud Semgrep SAST Configuration]]
+- 58 edges to [[_COMMUNITY_TestPathIsolationManager]]
+- 33 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 20 edges to [[_COMMUNITY_StdioConnection]]
+- 13 edges to [[_COMMUNITY_IntelReportStore]]
+- 12 edges to [[_COMMUNITY_falco_monitor.py]]
+- 11 edges to [[_COMMUNITY_test_security_audit.py]]
+- 10 edges to [[_COMMUNITY_ResourceGuard]]
+- 10 edges to [[_COMMUNITY_BotConfig]]
+- 8 edges to [[_COMMUNITY_LLMProxy]]
+- 5 edges to [[_COMMUNITY_test_a2a_proxy.py]]
+- 5 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 5 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 4 edges to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 3 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY_models.py]]
+- 3 edges to [[_COMMUNITY_SCLClient]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_make_event()]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_SecureBrowser Skill]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY__sleep()]]
+- 1 edge to [[_COMMUNITY_ReportStore]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_rbac_config.py]]
+- 1 edge to [[_COMMUNITY_Plan Proxying HexStrike AI MCP Agents via Agent]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves]]
+- 1 edge to [[_COMMUNITY_TestAuditStoreBotId]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
+- 1 edge to [[_COMMUNITY_AgentShroud Schema Documentation]]
+- 1 edge to [[_COMMUNITY_Gateway Container Startup Failures]]
+- 1 edge to [[_COMMUNITY_test_ptt_state.c]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_sidecar.py]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[FileSandbox]] - degree 86, connects to 11 communities
-- [[FileSandboxConfig]] - degree 81, connects to 11 communities
-- [[file_sandbox.py]] - degree 11, connects to 2 communities
-- [[Rule agentshroud-path-traversal-open]] - degree 3, connects to 2 communities
-- [[test_privilege_separation.py]] - degree 15, connects to 1 community
+- [[TelegramAPIProxy]] - degree 248, connects to 40 communities
+- [[normalize_input()]] - degree 80, connects to 7 communities
+- [[._filter_inbound_updates()]] - degree 87, connects to 6 communities
+- [[._send_telegram_text()]] - degree 11, connects to 3 communities
+- [[TestEncodingBypass]] - degree 9, connects to 2 communities

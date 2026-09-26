@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # Community 1666
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[agentshroud-blueteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
-- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[EnhancedApprovalQueue._notify_telegram]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,42 +10,42 @@ members: 36
 **Members:** 36 nodes
 
 ## Members
-- [[AgentShroud Docker Configuration]] - document - docker/README.md
-- [[Architecture_3]] - document - docker/README.md
-- [[Check Status]] - document - docker/README.md
-- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
-- [[Container Stack]] - document - docker/README.md
-- [[Core Configuration]] - document - docker/README.md
-- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
-- [[Detection contract]] - document - docker/README.md
-- [[Development_1]] - document - docker/README.md
-- [[Documentation_3]] - document - docker/README.md
-- [[Exec into Container]] - document - docker/README.md
-- [[Files_1]] - document - docker/README.md
-- [[Hermes  HCI]] - document - docker/README.md
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
-- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
-- [[Next Steps (Phase 4+)]] - document - docker/README.md
-- [[Port Reference]] - document - docker/README.md
-- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
-- [[Quick Start_2]] - document - docker/README.md
-- [[Rebuild Containers]] - document - docker/README.md
-- [[Reference]] - document - docker/README.md
-- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
-- [[Secrets]] - document - docker/README.md
-- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
-- [[Security Features (Implemented)]] - document - docker/README.md
-- [[Start the Stack]] - document - docker/README.md
-- [[Startup Warnings Reference]] - document - docker/README.md
-- [[Stop the Stack]] - document - docker/README.md
-- [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_9]] - document - docker/README.md
-- [[Usage_110]] - document - docker/README.md
-- [[Verify Security]] - document - docker/README.md
-- [[View Logs]] - document - docker/README.md
-- [[dockerREADME]] - document - docker/README.md
+- [[1. Clone]] - document - README.md
+- [[2. Store credentials]] - document - README.md
+- [[3. Start the stack]] - document - README.md
+- [[4. Verify]] - document - README.md
+- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
+- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
+- [[AgentShroud Production Docker Compose stack]] - document - docker/docker-compose.yml
+- [[Build troubleshooting (BuildKit stale overlay  disk full)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[CHEATSHEET]] - document - CHEATSHEET.md
+- [[Colima & Docker Operations Guide]] - document - docs/runbooks/colima-docker-guide.md
+- [[Colima VM]] - document - CHEATSHEET.md
+- [[Container Basics]] - document - CHEATSHEET.md
+- [[Dual-stack bind race — Lima SSH port forwarder]] - rationale - docs/runbooks/colima-docker-guide.md
+- [[Hermes Agent Management]] - document - CHEATSHEET.md
+- [[Hermes Bot]] - concept - README.md
+- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
+- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
+- [[Key Paths]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency) commands]] - concept - CHEATSHEET.md
+- [[Network Diagnostics]] - document - CHEATSHEET.md
+- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
+- [[Prerequisites]] - document - README.md
+- [[Quickstart]] - document - README.md
+- [[SOC API]] - concept - CHEATSHEET.md
+- [[SOC API — Common Queries]] - document - CHEATSHEET.md
+- [[Secrets]] - document - CHEATSHEET.md
+- [[Security Scanners]] - document - CHEATSHEET.md
+- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
+- [[Tests_1]] - document - CHEATSHEET.md
+- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
+- [[Web Management UI]] - document - CHEATSHEET.md
+- [[`asb` reference]] - document - README.md
+- [[agentshroud-bot Marvin dev compose overlay]] - document - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[asb Helper — Primary Interface]] - concept - docs/runbooks/colima-docker-guide.md
+- [[asb Wrapper Script]] - concept - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,9 +55,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_record_decision]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 3 edges to [[_COMMUNITY_Release Notes - AgentShroud v0.9.0]]
+- 2 edges to [[_COMMUNITY_Skills by Category]]
+- 1 edge to [[_COMMUNITY_SessionContext]]
+- 1 edge to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
 
 ## Top bridge nodes
-- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
+- [[AgentShroud Operations Cheat Sheet]] - degree 22, connects to 1 community
+- [[Quickstart]] - degree 10, connects to 1 community
+- [[Colima & Docker Operations Guide]] - degree 6, connects to 1 community
+- [[Hermes Control Interface (HCI)]] - degree 3, connects to 1 community
+- [[Hermes Bot]] - degree 2, connects to 1 community

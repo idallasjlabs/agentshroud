@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Related Notes_68]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Security_9]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Set In_5]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Value_5]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Hermes — Reference Verifier_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Input Requirements_15]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Output Format_17]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Persona_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Quality Checklist_13]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Role_52]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[SKILL_88]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[System Prompt_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +25,9 @@ members: 8
 TABLE source_file, type FROM #community/GATEWAY_OP_PROXY_URL
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__make_tm()]]
+
+## Top bridge nodes
+- [[Hermes — Reference Verifier_1]] - degree 8, connects to 1 community

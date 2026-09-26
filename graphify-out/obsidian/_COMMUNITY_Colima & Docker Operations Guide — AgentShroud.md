@@ -1,58 +1,58 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.06
 members: 43
 ---
 
 # Colima & Docker Operations Guide — AgentShroud
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 43 nodes
 
 ## Members
-- [[1. Environment Overview]] - document - docs/runbooks/colima-docker-guide.md
-- [[10. Port Forwarding — Dual-Stack Bind Race (silently unreachable host port)]] - document - docs/runbooks/colima-docker-guide.md
-- [[11. Common Errors — Quick Reference]] - document - docs/runbooks/colima-docker-guide.md
-- [[12. Dev Account (agentshroud-bot) Operations]] - document - docs/runbooks/colima-docker-guide.md
-- [[2. `asb` Helper — Primary Interface]] - document - docs/runbooks/colima-docker-guide.md
-- [[3. Colima VM Lifecycle]] - document - docs/runbooks/colima-docker-guide.md
-- [[4. Disk & Resource Monitoring]] - document - docs/runbooks/colima-docker-guide.md
-- [[5. Container Management]] - document - docs/runbooks/colima-docker-guide.md
-- [[6. Volume Management]] - document - docs/runbooks/colima-docker-guide.md
-- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
-- [[8. Docker System Pruning]] - document - docs/runbooks/colima-docker-guide.md
-- [[9. VPN Networking Fix (Cisco AnyConnect)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Accounts on Marvin]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check Docker disk usage from host]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check VM disk usage]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check container resource usage (live)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check what would be removed (dry run)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Colima & Docker Operations Guide — AgentShroud]] - document - docs/runbooks/colima-docker-guide.md
-- [[Compose Files]] - document - docs/runbooks/colima-docker-guide.md
-- [[Container Names]] - document - docs/runbooks/colima-docker-guide.md
-- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
-- [[Exec into a container]] - document - docs/runbooks/colima-docker-guide.md
-- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Health status]] - document - docs/runbooks/colima-docker-guide.md
-- [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
-- [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
-- [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
-- [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
-- [[Prune from inside Colima VM (use when host-side prune hangs)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Reclaim space from dangling layers in overlay2]] - document - docs/runbooks/colima-docker-guide.md
-- [[Remove specific volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Restart a single container]] - document - docs/runbooks/colima-docker-guide.md
-- [[SSH into the VM]] - document - docs/runbooks/colima-docker-guide.md
-- [[Safe prune (removes only stopped containers + unused images + build cache)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Start (required flags)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Status & Info]] - document - docs/runbooks/colima-docker-guide.md
-- [[Stop  Restart]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
+- [[--noproxy gateway is required so the call reaches the control-plane directly.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[A command with quotesmetacharacters cannot inject extra JSON fields.      This]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[An explicitly set GATEWAY_AUTH_TOKEN takes priority over the _FILE (back-compat]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Belt-and-suspenders the wrapper must not contain a literal empty Bearer.      T]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[CompletedProcess_1]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Extract the 'Bearer token' value from the captured curl argv.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[GATEWAY_AUTH_TOKEN_FILE contents become the Bearer token (Hermes path).]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Hermes' belt-and-suspenders tirith trust must be scoped, never blanket.      It]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Literal newlinestabsbackslashesquotes round-trip through JSON safely.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[OPENCLAW_GATEWAY_PASSWORD_FILE contents become the Bearer token.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Proof the exemption is NARROW an EXTERNAL http curl is still flaggable.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Pull the _json_escape helper + payload-build block out of the wrapper.      We r]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Return the contents of ``` fenced code blocks (the runnable recipes).]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Run the real wrapper with a fake `curl` that records its argv.      The stub cur]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Run the wrapper's shell payload builder and return the emitted JSON text.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[The documented agent-facing RECIPE (fenced code) must be scanner-clean.      Thi]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[The interpreter-free builder produces valid JSON for a normal command.      PATH]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[The wrapper hard-codes the internal control-plane endpoint and nothing else.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[The wrapper must NOT shell out to python3python for JSON building.      Regress]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[With NO token source the wrapper must fail loudly and NOT call curl.      Guards]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[Wrapper is COPY'd into and chmod'd in BOTH bot Dockerfiles.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[_bearer_from_argv()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[_build_payload_via_shell()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[_extract_payload_builder()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[_fenced_code_blocks()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[_run_wrapper_capture_bearer()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_both_bot_images_bake_in_the_wrapper()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_bots_ssh_exec_wrapper.py]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_external_http_curl_still_matches_the_flagged_pattern()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_hermes_tirith_trust_is_scoped_not_blanket()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_no_token_source_exits_nonzero_and_sends_no_request()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_shell_payload_builder_emits_valid_json_without_python()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_shell_payload_builder_encodes_newlines_and_tabs()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_shell_payload_builder_escapes_shell_metacharacters_injection_safe()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_token_env_var_wins_over_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_token_resolved_from_hermes_auth_token_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_token_resolved_from_openclaw_password_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_agent_facing_invocation_has_no_plain_http_url()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_exists_and_is_executable()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_forces_noproxy_gateway()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_has_no_python_dependency()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_never_sends_empty_bearer()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[test_wrapper_targets_only_internal_gateway_endpoint()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,9 +60,3 @@ members: 43
 TABLE source_file, type FROM #community/Colima__Docker_Operations_Guide__AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
-
-## Top bridge nodes
-- [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

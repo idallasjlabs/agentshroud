@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_56]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Usage_129]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked internal-network probes should return deterministic Protect egress wordi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Internal-network target probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Obfuscated decode+execute prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 15 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
-- [[AGENTSHROUD_CONFIG_1]] - degree 6, connects to 1 community
+- [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

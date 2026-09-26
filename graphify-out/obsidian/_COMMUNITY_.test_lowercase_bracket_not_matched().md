@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # .test_lowercase_bracket_not_matched()
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_lowercase_bracket_not_matched()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_lowercase_bracket_not_matched()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[1, possible, note — not uppercase-only, must not be touched.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[SKILL_164]] - document - docker/config/openclaw/skills/i-observability/SKILL.md
+- [[Skill observability_2]] - document - docker/config/openclaw/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/test_lowercase_bracket_not_matched
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-
-## Top bridge nodes
-- [[.test_lowercase_bracket_not_matched()]] - degree 3, connects to 1 community
-- [[.test_lowercase_bracket_not_matched()_1]] - degree 3, connects to 1 community

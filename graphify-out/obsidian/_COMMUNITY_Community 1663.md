@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # Community 1663
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
-- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

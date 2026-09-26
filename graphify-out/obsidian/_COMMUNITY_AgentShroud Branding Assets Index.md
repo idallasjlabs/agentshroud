@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # AgentShroud Branding Assets Index
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
-- [[Assets Needed]] - document - branding/INDEX.md
-- [[Brand Color]] - document - branding/INDEX.md
-- [[Documentation_4]] - document - branding/INDEX.md
-- [[Documentation Needed]] - document - branding/INDEX.md
-- [[Documentation Status]] - document - branding/INDEX.md
-- [[Icon Sets]] - document - branding/INDEX.md
-- [[Logo Files_1]] - document - branding/INDEX.md
-- [[Logo Formats Available]] - document - branding/INDEX.md
-- [[Social Media_1]] - document - branding/INDEX.md
-- [[🎨 Quick Access]] - document - branding/INDEX.md
-- [[💡 Usage Tips]] - document - branding/INDEX.md
-- [[📁 Directory Overview]] - document - branding/INDEX.md
-- [[📊 Asset Summary]] - document - branding/INDEX.md
-- [[📝 To-Do]] - document - branding/INDEX.md
-- [[📞 Contact]] - document - branding/INDEX.md
+- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
+- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
+- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
+- [[Common Commands_3]] - document - skills/openclaw/tmux/SKILL.md
+- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[Notes_7]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
+- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
+- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
+- [[When NOT to Use_2]] - document - skills/openclaw/tmux/SKILL.md
+- [[When to Use_3]] - document - skills/openclaw/tmux/SKILL.md
+- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
+- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_brandingREADME]]
+- 1 edge to [[_COMMUNITY_→ {site site1, test_mode True, output_p]]
 
 ## Top bridge nodes
-- [[AgentShroud Branding Assets Index]] - degree 7, connects to 1 community
+- [[tmux Session Control]] - degree 8, connects to 1 community

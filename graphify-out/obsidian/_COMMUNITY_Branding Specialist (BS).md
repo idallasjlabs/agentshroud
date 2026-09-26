@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Purpose_78]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Related Skills_69]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Usage_73]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[.test_returns_false_when_file_missing()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_false_when_ingested_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_true_when_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestAlreadyIngestedGhsaToday]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
 
 ## Top bridge nodes
-- [[Branding Specialist (BS)_2]] - degree 4, connects to 1 community
+- [[TestAlreadyIngestedGhsaToday]] - degree 4, connects to 1 community

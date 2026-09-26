@@ -1,31 +1,32 @@
 ---
 type: community
-cohesion: 0.20
-members: 16
+cohesion: 0.12
+members: 17
 ---
 
 # AgentShroud Falco Detection Rules
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[AgentShroud Falco Detection Rules]] - document - docker/falco/rules.yaml
-- [[AgentShroud Falco Rules]] - document - docker/falco/rules.yaml
-- [[Capability Dropping Layer (cap_drop ALL, add back minimum)]] - rationale - docs/archive/SECURITY.md
-- [[Docker Hardening Measures (no-new-privileges, cap_drop ALL, non-root)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
-- [[Falco Configuration]] - document - docker/falco/falco.yaml
-- [[Falco Rule Unexpected Outbound Connection]] - concept - docker/falco/rules.yaml
-- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - concept - docker/falco/rules.yaml
-- [[Intrusion Detection & Honeypot Files]] - concept - docs/archive/FUTURE-FEATURES.md
-- [[Rule Container Shell Spawned]] - code - docker/falco/rules.yaml
-- [[Rule Crypto Mining Detection]] - code - docker/falco/rules.yaml
-- [[Rule File Access Outside Workspace]] - code - docker/falco/rules.yaml
-- [[Rule Privilege Escalation Attempt]] - code - docker/falco/rules.yaml
-- [[Rule Secret File Access]] - code - docker/falco/rules.yaml
-- [[Rule Unexpected Outbound Connection from AgentShroud]] - code - docker/falco/rules.yaml
-- [[container macro (always-true placeholder inside the gateway)]] - rationale - docker/falco/rules.yaml
-- [[macOS Bridge (localhost-only BlueBubbles webhook relay)]] - concept - docs/archive/SECURITY.md
+- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
+- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
+- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
+- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
+- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
+- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
+- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
+- [[Member info]] - document - skills/openclaw/slack/SKILL.md
+- [[Overview_29]] - document - skills/openclaw/slack/SKILL.md
+- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
+- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
+- [[SKILL_229]] - document - skills/openclaw/slack/SKILL.md
+- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_setup-https-proxy.js]]
-- 1 edge to [[_COMMUNITY_bot-access-audit.sh]]
-- 1 edge to [[_COMMUNITY_Marvin Dev Overlay (port and subnet offsets from]]
-- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 
 ## Top bridge nodes
-- [[Rule Container Shell Spawned]] - degree 5, connects to 2 communities
-- [[container macro (always-true placeholder inside the gateway)]] - degree 7, connects to 1 community
-- [[Rule Secret File Access]] - degree 5, connects to 1 community
-- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - degree 2, connects to 1 community
+- [[SKILL_229]] - degree 2, connects to 1 community

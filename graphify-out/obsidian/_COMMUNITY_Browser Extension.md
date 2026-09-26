@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[1. URL Forwarder]] - document - browser-extension/README.md
-- [[2. Page Clipper]] - document - browser-extension/README.md
-- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
-- [[4. Tab Session Exporter]] - document - browser-extension/README.md
-- [[5. Reading List Queue]] - document - browser-extension/README.md
-- [[Browser Extension]] - document - browser-extension/README.md
-- [[Browser Support]] - document - browser-extension/README.md
-- [[Features_2]] - document - browser-extension/README.md
-- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
-- [[Gateway wiring]] - document - browser-extension/README.md
-- [[Privacy Features]] - document - browser-extension/README.md
-- [[Safari]] - document - browser-extension/README.md
-- [[Structure_1]] - document - browser-extension/README.md
-- [[Tests_2]] - document - browser-extension/README.md
-- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
-- [[browser-extensionREADME]] - document - browser-extension/README.md
+- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Description_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Description_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[How It Works_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_30]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_32]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/Browser_Extension
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_background.js]]
-
-## Top bridge nodes
-- [[Browser Extension]] - degree 6, connects to 1 community
-- [[browser-extensionREADME]] - degree 4, connects to 1 community

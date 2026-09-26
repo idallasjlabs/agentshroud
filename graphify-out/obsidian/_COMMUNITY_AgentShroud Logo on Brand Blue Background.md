@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
+- [[docker-compose.sidecar.yml — Sidecar Mode Deployment]] - document - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 

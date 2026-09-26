@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[CI Workflow]] - code - .github/workflows/ci.yml
-- [[CI test job (matrix ubuntumacos x py3.113.13)]] - code - .github/workflows/ci.yml
-- [[Coverage gate --cov-fail-under=84]] - rationale - .github/workflows/ci.yml
-- [[Leak Gate Scoped to ubuntu+3.11]] - rationale - .github/workflows/ci.yml
-- [[Per-platform independent reporting (fail-fast false)]] - rationale - .github/workflows/ci.yml
+- [[._make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_400_retry_no_loop()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_400_retry_succeeds_when_text_strippable()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[First sendMessage returns 400 'can't parse entities'; retry with plain text succ]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Persistent 400 returns the error after exactly one retry (no infinite loop).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[CI test job (matrix ubuntumacos x py3.113.13)]] - degree 4, connects to 1 community
+- [[._make_proxy()_5]] - degree 5, connects to 3 communities
+- [[.test_400_retry_no_loop()]] - degree 3, connects to 1 community
+- [[.test_400_retry_succeeds_when_text_strippable()]] - degree 3, connects to 1 community

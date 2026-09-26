@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)]] - code - gateway/approval_queue/enhanced_queue.py
+- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

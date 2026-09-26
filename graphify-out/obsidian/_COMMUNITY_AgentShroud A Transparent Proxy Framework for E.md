@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.17
 members: 21
 ---
 
 # AgentShroud: A Transparent Proxy Framework for E
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-C. Transparent Proxy Architectures]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II. Related Work]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III-A. Attacker Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III. Threat Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-A. Limitations]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[References_1]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[GSDE&G Skills Reference Guide_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[STPA-Sec Methodology_2]] - concept - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Steve Hay's Phase 1 Probes (RedBlue Team Assessment)]] - concept - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[i-production README (Incident Response)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[i-production SKILL (Incident Response  INCIDENT)]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[i-ps README (Production Safety Checklist)]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[i-ps SKILL (Production Safety Checklist  PROD-SAFETY)]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[i-qa README (Quality Assurance)]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[i-qa SKILL (Quality Assurance  QA)]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[i-sad README (System Audit Documentation)]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[i-sav README (System Audit Vault)]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[i-sav SKILL (System Audit Vault, Obsidian)]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[i-sec README (Security Review, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[i-sec SKILL (Security Review  SEC, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[i-sec-defense README (Blue Team Security Auditor)]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[i-sec-offense README (Red Team Adversarial Tester)]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[i-session-prompt SKILL (Session Prompt Generator)]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[i-socrates README (Dialogue Architect)]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,13 +38,3 @@ members: 21
 TABLE source_file, type FROM #community/AgentShroud_A_Transparent_Proxy_Framework_for_E
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_75 Security Modules]]
-- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
-- 1 edge to [[_COMMUNITY_IV. System Architecture]]
-- 1 edge to [[_COMMUNITY_VII. v0.8.0 Remediation]]
-- 1 edge to [[_COMMUNITY_VIII. Evaluation]]
-
-## Top bridge nodes
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 13, connects to 5 communities

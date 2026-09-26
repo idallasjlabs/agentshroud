@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Control Center
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Text Interfaces]] - document - src/interfaces/README.md
-- [[Control Center]] - document - src/interfaces/README.md
-- [[Controls]] - document - src/interfaces/README.md
-- [[Future Interfaces]] - document - src/interfaces/README.md
-- [[Usage_1]] - document - src/interfaces/README.md
-- [[What it Shows]] - document - src/interfaces/README.md
-- [[interfacesREADME]] - document - src/interfaces/README.md
+- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 

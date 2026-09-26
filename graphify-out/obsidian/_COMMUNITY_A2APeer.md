@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.13
 members: 21
 ---
 
 # A2APeer
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[.get_peer()]] - code - gateway/security/a2a_governance.py
-- [[.get_peer()_1]] - code - gateway/security/a2a_governance.py
-- [[.get_summary()]] - code - gateway/security/a2a_governance.py
-- [[.get_summary()_2]] - code - gateway/security/a2a_governance.py
-- [[.is_trusted()]] - code - gateway/security/a2a_governance.py
-- [[.is_trusted()_1]] - code - gateway/security/a2a_governance.py
-- [[.register_peer()]] - code - gateway/security/a2a_governance.py
-- [[.register_peer()_2]] - code - gateway/security/a2a_governance.py
-- [[.to_dict()_1]] - code - gateway/security/a2a_governance.py
-- [[.to_dict()_18]] - code - gateway/security/a2a_governance.py
-- [[.unregister_peer()]] - code - gateway/security/a2a_governance.py
-- [[.unregister_peer()_1]] - code - gateway/security/a2a_governance.py
-- [[A2APeer]] - code - gateway/security/a2a_governance.py
-- [[A2APeer_1]] - code - gateway/security/a2a_governance.py
-- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
-- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
-- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[._append_audit_event()]] - code - gateway/approval_queue/queue.py
+- [[._expire_stale()]] - code - gateway/approval_queue/queue.py
+- [[._persist_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[.broadcast()_1]] - code - gateway/approval_queue/queue.py
+- [[.cleanup_decided()]] - code - gateway/approval_queue/queue.py
+- [[.decide()_1]] - code - gateway/approval_queue/queue.py
+- [[.get_item()_1]] - code - gateway/approval_queue/queue.py
+- [[.get_pending()_1]] - code - gateway/approval_queue/queue.py
+- [[.submit()_1]] - code - gateway/approval_queue/queue.py
+- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
+- [[Any_2]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_2]] - code - gateway/approval_queue/queue.py
+- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
+- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
+- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
+- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
+- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
+- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
+- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,14 +40,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 6 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 2 edges to [[_COMMUNITY_A2AMessage]]
-- 1 edge to [[_COMMUNITY_TestPeerManagement]]
+- 9 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_EgressAction]]
 
 ## Top bridge nodes
-- [[A2APeer]] - degree 20, connects to 3 communities
-- [[A2APeer_1]] - degree 8, connects to 1 community
-- [[.get_peer()]] - degree 3, connects to 1 community
-- [[.register_peer()]] - degree 3, connects to 1 community
-- [[.unregister_peer()]] - degree 3, connects to 1 community
+- [[.decide()_1]] - degree 7, connects to 2 communities
+- [[.submit()_1]] - degree 7, connects to 1 community
+- [[._append_audit_event()]] - degree 6, connects to 1 community
+- [[.broadcast()_1]] - degree 6, connects to 1 community
+- [[._expire_stale()]] - degree 6, connects to 1 community

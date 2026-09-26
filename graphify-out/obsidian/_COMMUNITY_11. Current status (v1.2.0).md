@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 11. Current status (v1.2.0)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[11. Current status (v1.2.0)]] - document - firmware/voice-terminal/SETUP.md
-- [[Adding a future agent]] - document - firmware/voice-terminal/SETUP.md
-- [[Agent toggle — runtime button]] - document - firmware/voice-terminal/SETUP.md
-- [[Credentials file]] - document - firmware/voice-terminal/SETUP.md
+- [[OTA Promotion Gate Rationale (2026-07-27 incident)]] - rationale - scripts/promote-firmware.sh
+- [[promote-firmware.sh]] - code - scripts/promote-firmware.sh
+- [[promote-firmware.sh script]] - code - scripts/promote-firmware.sh
 
 ## Live Query (requires Dataview plugin)
 

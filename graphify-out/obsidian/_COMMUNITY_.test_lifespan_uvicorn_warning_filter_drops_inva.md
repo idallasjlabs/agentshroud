@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # .test_lifespan_uvicorn_warning_filter_drops_inva
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()_1]] - code - gateway/tests/test_config_validation.py
-- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
+- [[SKILL_91]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/test_lifespan_uvicorn_warning_filter_drops_inva
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
-
-## Top bridge nodes
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 2, connects to 1 community
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()_1]] - degree 2, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Apple Touch Icon (AgentShroud logo mark)]] - image - branding/favicons/apple-touch-icon.png
+- [[SessionState (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

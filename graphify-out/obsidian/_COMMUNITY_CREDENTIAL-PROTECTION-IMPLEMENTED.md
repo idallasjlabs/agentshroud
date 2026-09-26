@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.06
-members: 31
+cohesion: 0.07
+members: 32
 ---
 
 # CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Console Access Only (Layer 2)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Credential Access Audit Logging (Layer 3)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Gateway Credential Filter (Layer 1)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 1 Gateway Credential Filter (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 2 Console Access Only (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 3 Audit Logging (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 1 Console (Direct Access)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 2 Control UI (With Approval)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 3 Ask Bot to Configure (No Display)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 1 Friend Asks Your Bot for Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 2 You Need to See Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 3 You Want Bot to Configure Something]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 4 Telegram Account Compromised]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 1 Console Access (Should Work)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 2 Via Telegram (Should Be Blocked)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 3 Check Audit Log]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[✅ What the Bot CAN Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[✅ Your Requirements Met]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[❌ What the Bot CANNOT Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎉 Result]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎉 What We Implemented]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎓 Configuration]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎯 Real-World Scenarios]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[📊 Summary]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[📋 Security Guarantees]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🔍 How It Works Internally]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🔐 How to Access Credentials Securely]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🚀 Next Steps]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🛡️ Protection Layers]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🧪 Testing the Protection]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[._validate_container_runtime_config()]] - code - gateway/security/network_validator.py
+- [[.detect_configuration_drift()]] - code - gateway/security/network_validator.py
+- [[.test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
+- [[.test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
+- [[.test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[.test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
+- [[.validate_runtime_configuration()]] - code - gateway/security/network_validator.py
+- [[A network security finding.]] - rationale - gateway/security/network_validator.py
+- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
+- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
+- [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
+- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
+- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
+- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,10 +51,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_Skills by Category]]
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
+- 15 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - REVISED]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 4 communities
+- [[.validate_runtime_configuration()]] - degree 6, connects to 2 communities
+- [[NetworkSecurityFinding]] - degree 15, connects to 1 community
+- [[TestNetworkValidator]] - degree 15, connects to 1 community
+- [[.detect_configuration_drift()]] - degree 5, connects to 1 community
+- [[._validate_container_runtime_config()]] - degree 4, connects to 1 community

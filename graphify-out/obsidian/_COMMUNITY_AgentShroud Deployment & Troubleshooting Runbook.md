@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Fatal glibc error Cannot allocate TLS block]] - document - docs/runbooks/RUNBOOK.md
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - document - docs/runbooks/RUNBOOK.md
-- [[Architecture Notes_1]] - document - docs/runbooks/RUNBOOK.md
-- [[Check Gateway Health]] - document - docs/runbooks/RUNBOOK.md
-- [[Colima won't start]] - document - docs/runbooks/RUNBOOK.md
-- [[Container starts but unhealthy]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy Latest Code (Any Host)]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy to Production]] - document - docs/runbooks/RUNBOOK.md
-- [[Docker says Cannot connect to Docker daemon]] - document - docs/runbooks/RUNBOOK.md
-- [[Infrastructure_9]] - document - docs/runbooks/RUNBOOK.md
-- [[Quick Restart (No Rebuild)]] - document - docs/runbooks/RUNBOOK.md
-- [[Run Tests on Any Host]] - document - docs/runbooks/RUNBOOK.md
-- [[Tests failing after deploy]] - document - docs/runbooks/RUNBOOK.md
-- [[Troubleshooting_33]] - document - docs/runbooks/RUNBOOK.md
+- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Constraints_4]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Evidence_1]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Problem_4]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Remediation_2]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Root Cause_3]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Severity_4]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Verification_3]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/AgentShroud_Deployment__Troubleshooting_Runbook
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - degree 9, connects to 1 community

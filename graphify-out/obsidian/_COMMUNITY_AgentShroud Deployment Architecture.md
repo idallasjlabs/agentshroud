@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # AgentShroud Deployment Architecture
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
-- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
-- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
-- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
-- [[Network Topology_2]] - document - docs/architecture/deployment-diagram.md
-- [[Overview_15]] - document - docs/architecture/deployment-diagram.md
-- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
-- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
-- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
-- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
-- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
+- [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Configuration_8]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Environment variables]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover controls]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover notifications]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Header pass-through policy]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Key Classes  Functions_10]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_22]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Related_13]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Retry policy (`_forward_request`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Stats tracked]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Streaming]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[True-streaming path (`proxy_messages_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[`think` tag stripping]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,9 +40,3 @@ members: 22
 TABLE source_file, type FROM #community/AgentShroud_Deployment_Architecture
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy Decision]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # .test_collaborator_service_control_request_is_bl
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_model_switch_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_service_control_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator modelprovider switching requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator servicecontainer control requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Contact Information]] - document - docs/operations/incident-response.md
+- [[Emergency Contacts_2]] - document - docs/operations/incident-response.md
+- [[External Contacts]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes
-- [[.test_collaborator_service_control_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_model_switch_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[Contact Information]] - degree 3, connects to 1 community

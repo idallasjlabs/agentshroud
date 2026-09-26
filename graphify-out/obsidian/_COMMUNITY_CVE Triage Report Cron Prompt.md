@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CVE Triage Report Cron Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[CodexBar Model Cost Usage CLI Summarizer]] - code - skills/openclaw/model-usage/scripts/model_usage.py
 
 ## Live Query (requires Dataview plugin)
 

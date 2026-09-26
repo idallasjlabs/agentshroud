@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller (SKILL)]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Atlas — Curriculum Architect (README)]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect (SKILL)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Bloom's Taxonomy]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[cheatsheet.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
-- [[curriculum.md Output Template]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[show_notes.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
+- [[.test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
-- 1 edge to [[_COMMUNITY_OKE Channel — CPA Exam Context]]
+- 3 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_RateLimiter]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect (SKILL)]] - degree 5, connects to 1 community
-- [[Bloom's Taxonomy]] - degree 2, connects to 1 community
+- [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community
+- [[.test_owner_recipient_body_preserved()]] - degree 3, connects to 1 community
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - degree 3, connects to 1 community
+- [[.test_unknown_recipient_body_still_scrubbed()]] - degree 3, connects to 1 community

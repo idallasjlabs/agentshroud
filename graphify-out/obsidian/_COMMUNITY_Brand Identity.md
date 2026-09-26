@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # Brand Identity
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Brand Identity_2]] - document - branding/guidelines/brand-guidelines.md
-- [[Mission]] - document - branding/guidelines/brand-guidelines.md
-- [[Values]] - document - branding/guidelines/brand-guidelines.md
-- [[Vision]] - document - branding/guidelines/brand-guidelines.md
+- [[Related Notes_74]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/Brand_Identity
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-
-## Top bridge nodes
-- [[Brand Identity_2]] - degree 4, connects to 1 community

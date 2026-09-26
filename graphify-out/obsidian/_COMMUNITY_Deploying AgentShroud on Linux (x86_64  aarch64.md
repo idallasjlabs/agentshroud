@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.22
 members: 16
 ---
 
 # Deploying AgentShroud on Linux (x86_64 / aarch64
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[1. Clone the Repository_1]] - document - docs/operations/linux.md
-- [[2. Install Docker_1]] - document - docs/operations/linux.md
-- [[3. Set Up Secrets_1]] - document - docs/operations/linux.md
-- [[4. Configure AgentShroud_1]] - document - docs/operations/linux.md
-- [[5. Build and Start_1]] - document - docs/operations/linux.md
-- [[6. Verify_1]] - document - docs/operations/linux.md
-- [[Architecture Notes]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
-- [[Firewall]] - document - docs/operations/linux.md
-- [[Fresh Install_1]] - document - docs/operations/linux.md
-- [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_11]] - document - docs/operations/linux.md
-- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
-- [[Updating to Latest Release_1]] - document - docs/operations/linux.md
-- [[VPS Deployment Notes]] - document - docs/operations/linux.md
-- [[linux]] - document - docs/operations/linux.md
+- [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Any_12]] - code - gateway/proxy/canvas_proxy.py
+- [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Return gateway password from secret file or env var.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Validate HTTP Basic Auth credentials against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Validate token query parameter against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[_build_proxy_headers()]] - code - gateway/proxy/canvas_proxy.py
+- [[_check_basic_auth()]] - code - gateway/proxy/canvas_proxy.py
+- [[_check_token_auth()]] - code - gateway/proxy/canvas_proxy.py
+- [[_handle_http()]] - code - gateway/proxy/canvas_proxy.py
+- [[_handle_websocket()]] - code - gateway/proxy/canvas_proxy.py
+- [[_read_gateway_password()]] - code - gateway/proxy/canvas_proxy.py
+- [[canvas_proxy.py]] - code - gateway/proxy/canvas_proxy.py
+- [[canvas_proxy_app()]] - code - gateway/proxy/canvas_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,11 @@ members: 16
 TABLE source_file, type FROM #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_Seccomp Profiles]]
+
+## Top bridge nodes
+- [[canvas_proxy_app()]] - degree 8, connects to 3 communities

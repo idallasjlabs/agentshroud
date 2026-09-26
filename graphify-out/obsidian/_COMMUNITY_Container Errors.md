@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Port Already in Use_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Related Notes_16]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Guardrails_14]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Invocation_8]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Role_87]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[SKILL_150]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_LLM Operating Context — Isaiah Jefferson]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 1 edge to [[_COMMUNITY_CVE Triage — Gaps & Development Plan (OpenClaw)]]
 
 ## Top bridge nodes
-- [[Container Errors_1]] - degree 8, connects to 1 community
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - degree 9, connects to 2 communities
+- [[SKILL_150]] - degree 2, connects to 1 community

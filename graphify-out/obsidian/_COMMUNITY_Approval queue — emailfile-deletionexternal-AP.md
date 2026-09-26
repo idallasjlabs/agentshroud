@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Approval queue — emailfile-deletionexternal-APIskill-install must route through it]] - rationale - CLAUDE.md
+- [[Favicon 512x512 (AgentShroud logo mark)]] - image - branding/favicons/favicon-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

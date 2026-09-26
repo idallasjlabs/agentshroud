@@ -1,42 +1,42 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 27
 ---
 
 # AuditExporter
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
-- [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
-- [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
-- [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
-- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[AuditExporter]] - code - gateway/security/audit_export.py
-- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
-- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
-- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
-- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
+- [[Code Review (CR)]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
+- [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
+- [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
+- [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
+- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
+- [[Purpose_7]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_22]] - document - .agents/skills/i-pm/README.md
+- [[Purpose_44]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Purpose_59]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[README_7]] - document - .agents/skills/i-cr/README.md
+- [[README_22]] - document - .agents/skills/i-pm/README.md
+- [[README_49]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[README_64]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_25]] - document - .agents/skills/i-pm/README.md
+- [[Related Skills_47]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_65]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
+- [[Usage_9]] - document - .agents/skills/i-cr/README.md
+- [[Usage_25]] - document - .agents/skills/i-pm/README.md
+- [[Usage_50]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_66]] - document - docker/config/hermes/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,16 +46,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_AuditStore]]
-- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 6 edges to [[_COMMUNITY_AuditExportConfig]]
-- 6 edges to [[_COMMUNITY_AuditEvent]]
-- 3 edges to [[_COMMUNITY_TestAuditStore]]
-- 2 edges to [[_COMMUNITY_TestAuditStoreBotId]]
+- 3 edges to [[_COMMUNITY__w()]]
+- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[AuditExporter]] - degree 33, connects to 6 communities
-- [[test_audit_export.py]] - degree 8, connects to 4 communities
-- [[TestAuditExporter]] - degree 15, connects to 3 communities
-- [[TestAuditEvent]] - degree 9, connects to 2 communities
-- [[.test_content_hash()]] - degree 3, connects to 1 community
+- [[Project Management (README)]] - degree 11, connects to 3 communities
+- [[Code Review (i-cr)]] - degree 10, connects to 2 communities
+- [[Project Management (SKILL)]] - degree 8, connects to 2 communities
+- [[Pull Request Generator (README)]] - degree 2, connects to 1 community

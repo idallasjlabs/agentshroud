@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.27
 members: 12
 ---
 
 # Add information filtering to prevent agent self-
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.27 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[00-information-disclosure]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Add information filtering to prevent agent self-disclosure]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Constraints_6]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Evidence_6]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Option A System prompt restriction (fast, partial)]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Option B Outbound content filter (robust)]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Option C Both (recommended)]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Problem_9]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Remediation_7]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Root Cause_7]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Severity_9]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Verification_13]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[PATH_1]] - code - docker/scripts/colima-health-check.sh
+- [[Socket-forward-dead repair rationale (bounded stopstart split)]] - rationale - docker/scripts/colima-health-check.sh
+- [[_upgrade_in_progress()]] - code - docker/scripts/colima-health-check.sh
+- [[colima-firewall.sh]] - code - docker/scripts/colima-firewall.sh
+- [[colima-firewall.sh script]] - code - docker/scripts/colima-firewall.sh
+- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
+- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
+- [[log()]] - code - docker/scripts/colima-health-check.sh
+- [[notify()_1]] - code - docker/scripts/colima-health-check.sh
+- [[read_state()]] - code - docker/scripts/colima-health-check.sh
+- [[resolve_docker_host()]] - code - docker/scripts/colima-health-check.sh
+- [[write_state()]] - code - docker/scripts/colima-health-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +29,11 @@ members: 12
 TABLE source_file, type FROM #community/Add_information_filtering_to_prevent_agent_self-
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark]]
+
+## Top bridge nodes
+- [[colima-health-check.sh]] - degree 13, connects to 3 communities

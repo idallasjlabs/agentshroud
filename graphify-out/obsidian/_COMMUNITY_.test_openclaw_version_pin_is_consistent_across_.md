@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
-- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION (backed…]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Domains containing invalid hostname characters must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - degree 2, connects to 1 community
+- [[.test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - degree 4, connects to 3 communities

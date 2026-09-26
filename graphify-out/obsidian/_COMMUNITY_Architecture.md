@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Architecture_2]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Design Philosophy]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
+- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
+- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
+- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
+- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
+- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Leak Incident]] - document - docs/operations/incident-response.md
+- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
 
 ## Top bridge nodes
-- [[Architecture_2]] - degree 6, connects to 2 communities
+- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
+- [[Prompt Injection Detected]] - degree 3, connects to 1 community

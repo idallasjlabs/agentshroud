@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.13
 members: 15
 ---
 
 # CredentialInjector
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.injector()]] - code - gateway/tests/test_credential_isolation.py
-- [[.injector()_1]] - code - gateway/tests/test_credential_isolation.py
-- [[.injector_with_secrets()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_has_credential()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_inject_anthropic_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_inject_openai_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_leak_detection_disabled()_1]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_injection_unknown_domain()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_injection_when_disabled()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_secrets_loaded_from_empty_dir()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_status_report()]] - code - gateway/tests/test_credential_isolation.py
-- [[Agent container should have no secrets.]] - rationale - gateway/tests/test_credential_isolation.py
-- [[CredentialInjector_1]] - code - gateway/tests/test_credential_injector.py
-- [[Test the CredentialInjector module.]] - rationale - gateway/tests/test_credential_isolation.py
-- [[TestCredentialInjector]] - code - gateway/tests/test_credential_isolation.py
+- [[Check A — Substantive change on the losing side]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)]] - document - .agents/skills/i-ab/SKILL.md
+- [[Guardrails]] - document - .agents/skills/i-ab/SKILL.md
+- [[Invocation Forms]] - document - .agents/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format]] - document - .agents/skills/i-ab/SKILL.md
+- [[Role_3]] - document - .agents/skills/i-ab/SKILL.md
+- [[SKILL_1]] - document - .agents/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report]] - document - .agents/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,17 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestCredentialInjection]]
-- 2 edges to [[_COMMUNITY_TestCredentialLeakDetection]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_TestLeakDetection]]
-- 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
-- 1 edge to [[_COMMUNITY_TestDockerSecretIsolation]]
-- 1 edge to [[_COMMUNITY_TestOAuthInjection]]
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[CredentialInjector_1]] - degree 13, connects to 6 communities
-- [[TestCredentialInjector]] - degree 12, connects to 2 communities
-- [[.injector()_1]] - degree 2, connects to 1 community
-- [[.test_leak_detection_disabled()_1]] - degree 2, connects to 1 community
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - degree 12, connects to 1 community

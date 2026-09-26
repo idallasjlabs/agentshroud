@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Glue Jobs]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[CVE-2026-9367 — command injection bypass via terminal_tool]] - document - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

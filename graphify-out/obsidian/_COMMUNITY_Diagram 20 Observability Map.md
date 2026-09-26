@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
+- [[esp_log.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

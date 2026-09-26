@@ -1,35 +1,36 @@
 ---
 type: community
-cohesion: 0.11
-members: 20
+cohesion: 0.10
+members: 21
 ---
 
 # DOCKER-VPN-NETWORKING.md
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[Action Feed]] - document - dashboard/README.md
-- [[ActionFeed Component (Live Action Stream)]] - concept - dashboard/README.md
-- [[AgentShroud Dashboard]] - document - dashboard/README.md
-- [[Components (to be implemented in Week 2)]] - document - dashboard/README.md
-- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Data Ledger Viewer]] - document - dashboard/README.md
-- [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
-- [[Features_5]] - document - dashboard/README.md
-- [[Implementation Status_3]] - document - dashboard/README.md
-- [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
-- [[Memory Browser]] - document - dashboard/README.md
-- [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
-- [[Network Inspector]] - document - dashboard/README.md
-- [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
-- [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[Tech Stack_1]] - document - dashboard/README.md
-- [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[dashboardREADME]] - document - dashboard/README.md
-- [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
+- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +40,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_API_BASE_URL]]
-- 1 edge to [[_COMMUNITY_Docker Desktop Network Settings — Cisco AnyConne]]
+- 4 edges to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
+- 4 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
+- 4 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 4 edges to [[_COMMUNITY_OpenClaw Bot Container]]
+- 2 edges to [[_COMMUNITY_3. Security Controls]]
+- 2 edges to [[_COMMUNITY_TestOpProxyEndpoint]]
+- 1 edge to [[_COMMUNITY_4. Environment Variables]]
 
 ## Top bridge nodes
-- [[DOCKER-VPN-NETWORKING]] - degree 8, connects to 3 communities
-- [[Features_5]] - degree 6, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 6 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 6 communities
+- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[.test_register_validator()]] - degree 3, connects to 1 community

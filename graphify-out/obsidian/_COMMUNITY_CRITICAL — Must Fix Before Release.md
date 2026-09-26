@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # CRITICAL — Must Fix Before Release
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[3. Viewing Audit Logs]] - document - docs/operations/runbook.md
+- [[Command-Line Access]] - document - docs/operations/runbook.md
+- [[Web Interface Access]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Findings]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes
-- [[CRITICAL — Must Fix Before Release_1]] - degree 4, connects to 1 community
+- [[3. Viewing Audit Logs]] - degree 3, connects to 1 community

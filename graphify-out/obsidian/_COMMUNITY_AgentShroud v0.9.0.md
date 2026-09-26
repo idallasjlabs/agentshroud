@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[1. Purpose and Scope]] - document - docs/requirements/system-requirements.md
-- [[1.1 Purpose]] - document - docs/requirements/system-requirements.md
-- [[1.2 Scope]] - document - docs/requirements/system-requirements.md
-- [[1.3 Intended Audience]] - document - docs/requirements/system-requirements.md
-- [[2. Functional Requirements]] - document - docs/requirements/system-requirements.md
-- [[2.1 Core Security Modules]] - document - docs/requirements/system-requirements.md
-- [[3. Non-Functional Requirements]] - document - docs/requirements/system-requirements.md
-- [[4. Constraints and Assumptions]] - document - docs/requirements/system-requirements.md
-- [[4.1 Technical Constraints]] - document - docs/requirements/system-requirements.md
-- [[4.2 Operational Constraints]] - document - docs/requirements/system-requirements.md
-- [[4.3 Assumptions]] - document - docs/requirements/system-requirements.md
-- [[5. Compliance Requirements]] - document - docs/requirements/system-requirements.md
-- [[5.1 Security Standards]] - document - docs/requirements/system-requirements.md
-- [[5.2 Audit Requirements]] - document - docs/requirements/system-requirements.md
-- [[6. Risk Assessment]] - document - docs/requirements/system-requirements.md
-- [[6.1 Security Risks]] - document - docs/requirements/system-requirements.md
-- [[6.2 Operational Risks]] - document - docs/requirements/system-requirements.md
-- [[AgentShroud v0.9.0_1]] - document - docs/requirements/system-requirements.md
-- [[System Requirements Specification (SRS)]] - document - docs/requirements/system-requirements.md
+- [[Assigning Work_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Continuity Files_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Escalation_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Known Risks_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Project Roadmap_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[README.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Risk Management_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Role_98]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[SKILL_168]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Status Reporting_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Task Coordination_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Tracking Format_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[System Requirements Specification (SRS)]] - degree 2, connects to 1 community
+- [[Skill Project Management (PM)_2]] - degree 8, connects to 1 community

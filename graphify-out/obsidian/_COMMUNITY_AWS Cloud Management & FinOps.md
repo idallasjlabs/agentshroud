@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps_2]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Purpose_76]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Related Skills_67]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Usage_71]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Current Status_10]] - document - docs/testing/README.md
+- [[Planned Documents_6]] - document - docs/testing/README.md
+- [[README_126]] - document - docs/testing/README.md
+- [[Testing Documentation]] - document - docs/testing/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/AWS_Cloud_Management__FinOps
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[AWS Cloud Management & FinOps_2]] - degree 4, connects to 1 community

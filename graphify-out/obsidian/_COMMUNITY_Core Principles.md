@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Anatomy of a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Assets (`assets`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Bundled Resources (optional)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Concise is Key]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Core Principles]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Design Principle]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[References (`references`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[SKILL.md (required)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Scripts (`scripts`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Set Appropriate Degrees of Freedom]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[What to Not Include in a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
+- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
+- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Creation Process]]
+- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
 
 ## Top bridge nodes
-- [[Core Principles]] - degree 5, connects to 1 community
+- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities

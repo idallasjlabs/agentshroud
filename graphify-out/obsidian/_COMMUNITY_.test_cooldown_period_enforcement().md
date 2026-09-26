@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # .test_cooldown_period_enforcement()
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[.test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
-- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[omlx-keepwarm.sh — keeps gemma model resident (cold 5.06s vs warm 0.69s)]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +18,3 @@ members: 2
 TABLE source_file, type FROM #community/test_cooldown_period_enforcement
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestApprovalHardening]]
-
-## Top bridge nodes
-- [[.test_cooldown_period_enforcement()]] - degree 2, connects to 1 community

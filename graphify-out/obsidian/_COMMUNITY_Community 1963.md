@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[goStep()]] - code - gateway/web/templates/installer.html
+- [[xmind-generator-mcp (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.23
-members: 14
+cohesion: 0.30
+members: 15
 ---
 
 # AgentShroud Development Roadmap — 2026 Gantt Cha
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.30 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Development Roadmap — 2026 Gantt Chart]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Alert Thresholds (health check 3x10s, 200K token hard limit196K compaction trigger, 1h approval timeout, 90-day ledger retention, op-proxy 6 cascading retries)]] - image - docs/diagrams/images/diagram-20-observability-map.png
-- [[Observability Gaps (future work) no centralised log aggregation (ELKLoki), no metrics export (Prometheus), no uptime monitor, Zabbix installed but not configured]] - image - docs/diagrams/images/diagram-20-observability-map.png
-- [[Observability Map Diagram]] - image - docs/diagrams/images/diagram-20-observability-map.png
-- [[OpenClaw auto-compaction (reserveTokensFloor=4000; triggers at ~196K of 200K tokens; hard overflow 200K after 3 failed retries → session reset)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.png
-- [[Phase 1 — Foundation Gateway API+Ledger, Bot Container+Telegram, HMAC Auth+PII Sanitizer]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 2 — Security Core HTTP CONNECT Proxy, MCP Proxy Inspector, Approval Queue, SSH Proxy]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 3 — Credential Isolation Op-Proxy, 1Password service account, cascading retry+startup]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 4 — Channels iMessage MCP integration, iCloud Email (replaces Gmail), Telegram startup notification]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 5 — Stability Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 6 — Observability (planned) Tailscale config & serve, Prometheus+Grafana, Log aggregation (Loki)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Phase 7 — Enterprise Hardening (planned) IEC 62443 policy docs, Multi-tenant isolation, External contributor access]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.png
-- [[Runbook branch Context resets → check reserveTokensFloor setting]] - image - docs/diagrams/images/diagram-18-runbook.png
-- [[What Is Instrumented (bot apihealth, gateway status and ledger, MCP audit log, HTTP CONNECT proxy stats)]] - image - docs/diagrams/images/diagram-20-observability-map.png
+- [[._make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,13 +34,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 5 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
-- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Passw]]
+- 4 edges to [[_COMMUNITY_canvas_proxy_app()]]
+- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY_DNSBlocklist]]
+- 3 edges to [[_COMMUNITY_Seccomp Profiles]]
+- 2 edges to [[_COMMUNITY_v0.6.0 Baseline Results]]
 
 ## Top bridge nodes
-- [[Phase 2 — Security Core HTTP CONNECT Proxy, MCP Proxy Inspector, Approval Queue, SSH Proxy]] - degree 6, connects to 2 communities
-- [[Alert Thresholds (health check 3x10s, 200K token hard limit196K compaction trigger, 1h approval timeout, 90-day ledger retention, op-proxy 6 cascading retries)]] - degree 5, connects to 2 communities
-- [[Phase 5 — Stability Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams]] - degree 7, connects to 1 community
-- [[OpenClaw auto-compaction (reserveTokensFloor=4000; triggers at ~196K of 200K tokens; hard overflow 200K after 3 failed retries → session reset)]] - degree 4, connects to 1 community
-- [[Phase 3 — Credential Isolation Op-Proxy, 1Password service account, cascading retry+startup]] - degree 4, connects to 1 community
+- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
+- [[_BlockAll]] - degree 9, connects to 3 communities
+- [[build_dns_query()]] - degree 11, connects to 2 communities
+- [[.test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
+- [[._make_protocol()]] - degree 10, connects to 1 community

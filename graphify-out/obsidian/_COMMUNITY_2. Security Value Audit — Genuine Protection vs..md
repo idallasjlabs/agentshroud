@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # 2. Security Value Audit — Genuine Protection vs.
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[AgentShroud Config with Tool Risk Tiers (example)]] - document - examples/agentshroud-with-tool-risk.yaml
+- [[PII confidence 0.8 (example) vs 0.9 floor (CLAUDE.md §7) discrepancy]] - rationale - examples/agentshroud-with-tool-risk.yaml
+- [[Tool Risk Tier Policy (criticalhighmediumlow)]] - concept - examples/agentshroud-with-tool-risk.yaml
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/2_Security_Value_Audit__Genuine_Protection_vs
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - degree 4, connects to 1 community

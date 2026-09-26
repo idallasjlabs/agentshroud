@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.27
+cohesion: 0.20
 members: 10
 ---
 
 # 01-architecture.md
 
-**Cohesion:** 0.27 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[01-architecture]] - document - docs/diagrams/01-architecture.md
-- [[1. C4 Level 0 — Context Diagram (Executive View)]] - document - docs/diagrams/01-architecture.md
-- [[2. C4 Level 1 — Container Diagram]] - document - docs/diagrams/01-architecture.md
-- [[3. Architecture Component Diagram — Gateway internals]] - document - docs/diagrams/01-architecture.md
-- [[AgentShroud — Architecture Diagrams]] - document - docs/diagrams/01-architecture.md
-- [[C4 Level 0 — System Context Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[C4 Level 1 — Container Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[Gateway Internals Component Diagram]] - concept - docs/diagrams/01-architecture.md
-- [[Rendered C4 Context Diagram (PNG)]] - image - docs/diagrams/images/diagram-01-c4-context.png
-- [[Rendered Gateway Components Diagram (PNG)]] - image - docs/diagrams/images/diagram-03-gateway-components.png
+- [[1. GitHub MCP_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[2. Atlassian MCP (Jira + Confluence)_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Authentication Issues_3]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Common Errors_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[MCP Troubleshooting_1]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Role_92]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[SKILL_161]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_diagramsREADME]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[01-architecture]] - degree 5, connects to 1 community
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - degree 5, connects to 1 community

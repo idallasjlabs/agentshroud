@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
 
 ## Live Query (requires Dataview plugin)
 

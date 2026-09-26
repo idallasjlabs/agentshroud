@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+cohesion: 0.18
+members: 19
 ---
 
 # ADR-009: Enforce-by-Default Security Philosophy
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[ADR-002 Default-Allow with Comprehensive Logging]] - concept - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[ADR-009-enforce-by-default]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Compliance Alignment (9 standards)]] - concept - docs/architecture/agentic-os.md
-- [[Configuration_11]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Consequences_2]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Context_4]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Decision_4]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Migration from ADR-002]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Negative Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Policy Table]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Positive Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Related_6]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Security Modules (30+, gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[SecurityPipeline (75 modules, 7 layers)]] - concept - docs/architecture/agentic-os.md
-- [[Status_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[prompt_guard (prompt injection)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[trust_manager (trust levels)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[.effective_rootless()]] - code - gateway/runtime/config.py
+- [[.test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_effective_rootless_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_dict()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
+- [[Configuration for container runtime selection and behavior.      Loaded from env]] - rationale - gateway/runtime/config.py
+- [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
+- [[RuntimeConfig]] - code - gateway/runtime/config.py
+- [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
+- [[__init__.py_8]] - code - gateway/runtime/__init__.py
+- [[apple_engine.py]] - code - gateway/runtime/apple_engine.py
+- [[compose_generator.py]] - code - gateway/runtime/compose_generator.py
+- [[config.py_1]] - code - gateway/runtime/config.py
+- [[docker_engine.py]] - code - gateway/runtime/docker_engine.py
+- [[engine.py]] - code - gateway/runtime/engine.py
+- [[podman_engine.py]] - code - gateway/runtime/podman_engine.py
+- [[security.py]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +38,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Gateway ManagementControl-Plane API (v1.3.0)]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 11 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 6 edges to [[_COMMUNITY_WebhookReceiver]]
+- 5 edges to [[_COMMUNITY_api.py]]
+- 5 edges to [[_COMMUNITY_TestObservatoryMode]]
+- 3 edges to [[_COMMUNITY_iCloud Services]]
+- 3 edges to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 3 edges to [[_COMMUNITY_GatewayEmailService]]
+- 2 edges to [[_COMMUNITY_get_trivy_summary()]]
+- 2 edges to [[_COMMUNITY_TestAlertDispatcher]]
+- 2 edges to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
+- 1 edge to [[_COMMUNITY_REPORT STRUCTURE]]
 
 ## Top bridge nodes
-- [[SecurityPipeline (75 modules, 7 layers)]] - degree 4, connects to 1 community
-- [[trust_manager (trust levels)]] - degree 2, connects to 1 community
+- [[__init__.py_8]] - degree 10, connects to 6 communities
+- [[TestRuntimeConfig]] - degree 12, connects to 4 communities
+- [[docker_engine.py]] - degree 9, connects to 4 communities
+- [[podman_engine.py]] - degree 9, connects to 4 communities
+- [[RuntimeConfig]] - degree 13, connects to 3 communities

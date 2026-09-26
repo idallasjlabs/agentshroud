@@ -1,105 +1,110 @@
 ---
 type: community
-cohesion: 0.05
-members: 90
+cohesion: 0.02
+members: 95
 ---
 
 # DifferentialPIIDetector
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 90 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 95 nodes
 
 ## Members
-- [[.__init__()_149]] - code - gateway/security/differential_pii_detector.py
-- [[.__init__()_150]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.__post_init__()_7]] - code - gateway/security/differential_pii_detector.py
-- [[._deduplicate()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_pii()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_presidio()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_regex()]] - code - gateway/security/differential_pii_detector.py
-- [[._detector_with_fake()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[._init_presidio()_1]] - code - gateway/security/differential_pii_detector.py
-- [[._redact()]] - code - gateway/security/differential_pii_detector.py
-- [[._scan()]] - code - gateway/security/differential_pii_detector.py
-- [[.from_confidence()]] - code - gateway/security/differential_pii_detector.py
-- [[.scan_prompt()]] - code - gateway/security/differential_pii_detector.py
-- [[.scan_tool_result()_3]] - code - gateway/security/differential_pii_detector.py
-- [[.test_bare_city_name_not_flagged_but_street_address_is()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_cannot_set_tool_floor_above_prompt_floor()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_cannot_set_tool_floor_below_minimum()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_clean_content_no_hits()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_core_ssn_unioned_when_presidio_misses_it()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_default_config_has_correct_floors()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_dotted_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_email_redacted_in_output()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_init_does_not_construct_bare_analyzer_engine()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_init_wires_explicit_nlp_engine_when_model_present()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_pii_hit_fields()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_plain_email_caught_in_prompt()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_plain_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_analyze_restricted_to_pii_entities()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_exception_falls_back_to_regex()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_result_becomes_pii_hit()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_redact_on_hit_false_preserves_original()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_redacted_content_is_original_when_no_pii()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_regex_fallback_when_model_absent()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_report_has_required_fields()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_scan_produces_report_with_correct_floor_used()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_spaced_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_tool_specific_floor_override()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_unknown_tool_uses_default_floor()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_us_ssn_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_weak_hit_present_in_tool_result_only()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_zero_width_space_injection_caught()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A single PII detection result.]] - rationale - gateway/security/differential_pii_detector.py
-- [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
-- [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - rationale - gateway/security/differential_pii_detector.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
-- [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig]] - code - gateway/tests/test_differential_pii_detector.py
-- [[DifferentialPIIConfig_1]] - code - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIDetector]] - code - gateway/tests/test_differential_pii_detector.py
-- [[DifferentialPIIDetector_1]] - code - gateway/security/differential_pii_detector.py
-- [[Email with Unicode dot separators.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Email with spaces added to defeat naive regex a l i c e @ e x a m p l e . c o m]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
-- [[PII Sanitizer Mitigation (Presidio + custom regex)]] - rationale - docs/security/threat-model.md
-- [[PII split with zero-width space.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[PIIHit]] - code - gateway/security/differential_pii_detector.py
-- [[PIIHitSeverity]] - code - gateway/security/differential_pii_detector.py
-- [[Presidio init must be deterministic and must NEVER trigger a runtime     model a]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Regex-based PII detection (Presidio fallback).]] - rationale - gateway/security/differential_pii_detector.py
-- [[Relative risk of a detected PII entity.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Remove overlapping hits, preferring higher confidence.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Replace detected PII tokens with ENTITY_TYPE placeholders.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Run PII detection, returning hits at or above floor.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Scan a prompt with the standard (higher) confidence floor.          Args]] - rationale - gateway/security/differential_pii_detector.py
-- [[Scan a tool result with the lower confidence floor.          Args             t]] - rationale - gateway/security/differential_pii_detector.py
-- [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - rationale - gateway/security/differential_pii_detector.py
-- [[TestAdversarialFormattingCaught]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestAsymmetricFloor]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestDeterministicPresidioInit]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestDifferentialPIIDetectorConstruction]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestPerToolConfiguration]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestPresidioPathContract]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestRedaction]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestStandardPIIAlwaysCaught]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestToolResultPIIReport]] - code - gateway/tests/test_differential_pii_detector.py
-- [[The default-model auto-download path must never be taken.          If Presidio i]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[ToolResultPIIReport]] - code - gateway/security/differential_pii_detector.py
-- [[Use Presidio (entity-restricted) unioned with the core regex.          Two guara]] - rationale - gateway/security/differential_pii_detector.py
-- [[When the pinned model loads, Presidio is built with an explicit         ``nlp_en]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[_FakeRecognizerResult]] - code - gateway/tests/test_differential_pii_detector.py
-- [[_normalize_adversarial()]] - code - gateway/security/differential_pii_detector.py
-- [[default_config()_2]] - code - gateway/tests/test_differential_pii_detector.py
-- [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[differential_pii_detector.py]] - code - gateway/security/differential_pii_detector.py
-- [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
+- [[.test_action_risk_probe_gets_no_banner_risk_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_safe_notice_maps_internal_network_probe_to_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_safe_notice_maps_metadata_probe_to_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_safe_notice_maps_obfuscated_probe_to_scope_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_dns_ping_probe_gets_network_probe_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_how_does_routes_to_local_handler()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_allowlist_bypass_request_detects_redirect_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_allowlist_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_action_request_detects_approve_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_action_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_queue_probe_detects_internal_metadata_query()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_queue_probe_ignores_generic_approval_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_token_probe_detects_callback_forgery_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_approval_token_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_archive_exfil_request_detects_archive_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_archive_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_cross_tenant_data_probe_detects_access_attempt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_cross_tenant_data_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_cross_user_messaging_request_detects_direct_messaging_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_cross_user_messaging_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_encoded_exfil_request_detects_encoded_data_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_encoded_exfil_request_ignores_conceptual_encoding_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_env_secret_probe_detects_env_listing_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_env_secret_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_file_query_detects_internal_file_content_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_guardrail_modification_request_detects_update_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_guardrail_modification_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_guardrail_modification_request_ignores_self_mod_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_hidden_channel_exfil_request_detects_hidden_metadata_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_hidden_channel_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_hypothetical_execution_question_detects_approval_wording()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_identity_enumeration_query_detects_owner_id_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_incremental_exfil_request_detects_chunked_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_incremental_exfil_request_ignores_normal_file_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_internal_network_probe_detects_loopback_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_internal_network_probe_detects_private_range_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_internal_network_probe_ignores_non_execution_context()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_log_access_request_detects_direct_log_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_log_access_request_ignores_conceptual_logging_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_memory_access_request_detects_memory_search_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_memory_access_request_ignores_conceptual_memory_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_metadata_endpoint_probe_detects_imds_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_metadata_endpoint_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_model_switch_request_detects_switch_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_model_switch_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_obfuscated_command_probe_detects_decode_and_execute()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_obfuscated_command_probe_ignores_conceptual_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_pairing_or_access_probe_detects_pairing_artifact_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_pairing_or_access_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_path_traversal_request_detects_dotdot_path()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_path_traversal_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_plugin_discovery_request_detects_inventory_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_plugin_discovery_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_policy_bypass_request_detects_disable_approval_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_policy_bypass_request_ignores_defensive_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_scheduler_or_autorun_request_detects_cron_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_scheduler_or_autorun_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_secret_value_request_detects_direct_secret_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_secret_value_request_ignores_api_key_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_secret_value_request_ignores_conceptual_credential_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_sensitive_path_probe_detects_aws_credentials_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_sensitive_path_probe_detects_shell_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_sensitive_path_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_service_control_request_detects_restart_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_service_control_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_system_prompt_probe_detects_instruction_leak_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_system_prompt_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_tool_trace_request_detects_raw_trace_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_tool_trace_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_unicode_obfuscation_bypass_request_detects_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_unicode_obfuscation_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_unsafe_scheme_request_detects_file_scheme_fetch()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_unsafe_scheme_request_ignores_conceptual_scheme_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_web_access_request_bare_domain_imperative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_web_access_request_imperative_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_looks_like_web_access_request_policy_question_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_message_processing_probe_gets_no_banner_natural_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[B1.2b pipelineprocessing questions should get a natural answer without restric]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[B1.5c action-risk questions should get a natural answer without restriction ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[B3.2d DNSping probes should return network probe notice with banner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[B5.3c identity discrimination question should get a natural answer without rest]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[BT5c streamingchunking questions should return output delivery policy with ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator-safe notices must use the canonical protected header format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Exception in safe-info response should still deliver unavailable notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Probes containing 'how does' should be caught by _looks_like_safe_collaborator_i]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestCollaboratorPromptClassifiers]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for collaborator-facing prompt classification helpers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -109,19 +114,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_test_a2a_proxy.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_A2AProxyResult]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_a2a_proxy.py]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded S]]
-- 1 edge to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_RovoBlast Attack (Atlassian Rovo AI)]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
-- [[DifferentialPIIDetector_1]] - degree 38, connects to 5 communities
-- [[differential_pii_detector.py]] - degree 9, connects to 3 communities
-- [[DifferentialPIIConfig_1]] - degree 25, connects to 2 communities
-- [[PIIHitSeverity]] - degree 17, connects to 1 community
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - degree 8, connects to 1 community
+- [[TestCollaboratorPromptClassifiers]] - degree 91, connects to 4 communities
+- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - degree 4, connects to 1 community
+- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 3, connects to 1 community
+- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - degree 3, connects to 1 community
+- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - degree 3, connects to 1 community

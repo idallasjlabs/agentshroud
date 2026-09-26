@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.19
+cohesion: 0.13
 members: 15
 ---
 
 # FakeProcess
 
-**Cohesion:** 0.19 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.send_request()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.stop()_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Configuration  Environment Variables_4]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Function Details_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_131]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,21 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/FakeProcess
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 19 edges to [[_COMMUNITY_StdioConnection]]
-- 14 edges to [[_COMMUNITY_MCPServerConfig]]
-- 6 edges to [[_COMMUNITY_PermissionLevel]]
-- 6 edges to [[_COMMUNITY_MCPToolCall]]
-- 3 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 3 edges to [[_COMMUNITY_MCPInspector]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_MCPToolResult]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-
-## Top bridge nodes
-- [[FakeProcess]] - degree 23, connects to 9 communities
-- [[TestHttpSseConnection]] - degree 18, connects to 8 communities
-- [[TestStdioConnection]] - degree 18, connects to 8 communities
-- [[.test_send_request_and_session_reuse()]] - degree 6, connects to 2 communities
-- [[.test_start_send_and_stop()]] - degree 6, connects to 2 communities

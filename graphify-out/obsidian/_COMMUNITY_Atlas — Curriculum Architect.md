@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_2]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Purpose_75]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Related Skills_66]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Usage_70]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_Integration Guide]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect_2]] - degree 4, connects to 1 community
+- [[._domain_matches_pattern()]] - degree 3, connects to 1 community
+- [[._is_domain_allowed()]] - degree 3, connects to 1 community

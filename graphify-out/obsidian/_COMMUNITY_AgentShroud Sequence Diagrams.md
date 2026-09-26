@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # AgentShroud Sequence Diagrams
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[1. Normal Message Flow]] - document - docs/flows/sequence-diagrams.md
-- [[2. MCP Tool Call Flow]] - document - docs/flows/sequence-diagrams.md
-- [[3. Kill Switch Activation Flow]] - document - docs/flows/sequence-diagrams.md
-- [[4. SSH Command Flow]] - document - docs/flows/sequence-diagrams.md
-- [[5. Web Fetch Flow]] - document - docs/flows/sequence-diagrams.md
-- [[AgentShroud Sequence Diagrams]] - document - docs/flows/sequence-diagrams.md
-- [[sequence-diagrams]] - document - docs/flows/sequence-diagrams.md
+- [[.__init__()_5]] - code - gateway/approval_queue/queue.py
+- [[._load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueConfig_1]] - code - gateway/approval_queue/queue.py
+- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[MFAGuard_1]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,10 @@ members: 7
 TABLE source_file, type FROM #community/AgentShroud_Sequence_Diagrams
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+
+## Top bridge nodes
+- [[.__init__()_5]] - degree 5, connects to 1 community
+- [[._load_pending_store()]] - degree 3, connects to 1 community

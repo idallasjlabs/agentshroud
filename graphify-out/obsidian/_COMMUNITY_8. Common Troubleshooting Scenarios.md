@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # 8. Common Troubleshooting Scenarios
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[8. Common Troubleshooting Scenarios]] - document - docs/operations/runbook.md
-- [[Database Locked Errors]] - document - docs/operations/runbook.md
-- [[High Memory Usage]] - document - docs/operations/runbook.md
-- [[Performance Issues]] - document - docs/operations/runbook.md
-- [[SSLTLS Certificate Issues]] - document - docs/operations/runbook.md
-- [[Service Won't Start]] - document - docs/operations/runbook.md
+- [[Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Purpose_79]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[README_84]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Related Skills_85]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Usage_88]] - document - docker/config/openclaw/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[8. Common Troubleshooting Scenarios]] - degree 6, connects to 1 community
+- [[Branding Specialist (BS)_2]] - degree 5, connects to 1 community

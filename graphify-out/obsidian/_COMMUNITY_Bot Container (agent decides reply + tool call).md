@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Bot Container (agent decides reply + tool call)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Isaiah (Telegram)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[MCP inspection (injection scan NONE, PII scan NONE, sensitive op NONE)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[OpenAI API (POST v1chatcompletions)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Telegram API]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[ledger.db (INSERT INTO ledger)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Endpoints (Inferred)]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Key Features]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Purpose_174]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Related Notes_14]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[When Used]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[installer.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[installer.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
 
 ## Live Query (requires Dataview plugin)
 

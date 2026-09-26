@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 1.00
+members: 3
 ---
 
 # .test_blocked_command_with_zero_width_mention_an
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Fullwidth + mentionpunctuation blocked command variants should still be quarant]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/test_blocked_command_with_zero_width_mention_an
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-
-## Top bridge nodes
-- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities

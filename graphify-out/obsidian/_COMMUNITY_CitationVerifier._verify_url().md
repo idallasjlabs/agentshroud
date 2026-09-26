@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CitationVerifier._verify_url()]] - code - gateway/security/citation_verifier.py
+- [[SOC Egress EgressRequest Model Tests]] - code - gateway/tests/test_soc_egress.py
 
 ## Live Query (requires Dataview plugin)
 

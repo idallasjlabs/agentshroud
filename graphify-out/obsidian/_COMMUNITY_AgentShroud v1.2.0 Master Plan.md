@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.08
 members: 24
 ---
 
 # AgentShroud v1.2.0 Master Plan
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Source of truth]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
+- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Telegram]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,10 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Red Team Assessment v1.2.0]]
+- 1 edge to [[_COMMUNITY_competitive-report-.md dated reports]]
+- 1 edge to [[_COMMUNITY_TestRewriteRequestHeaders]]
+- 1 edge to [[_COMMUNITY_.from_dict()]]
+- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
 
 ## Top bridge nodes
-- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
-- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
-- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community
+- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 3 communities
+- [[Quick-reference commands]] - degree 2, connects to 1 community

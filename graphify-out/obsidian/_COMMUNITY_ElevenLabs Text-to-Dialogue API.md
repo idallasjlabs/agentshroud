@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ElevenLabs Text-to-Dialogue API]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[eleven_v3 model]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[.test_outbound_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[If pipeline crashes, owner messages should still go through.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/ElevenLabs_Text-to-Dialogue_API
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_outbound_owner_exempt_from_fail_closed()]] - degree 4, connects to 3 communities

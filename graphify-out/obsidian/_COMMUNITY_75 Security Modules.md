@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[75 Security Modules]] - document - README.md
-- [[Agent Containment]] - document - README.md
-- [[Content & Context Guards]] - document - README.md
-- [[Core Security Pipeline]] - document - README.md
-- [[Infrastructure & Monitoring]] - document - README.md
-- [[Proxy & Network Layer]] - document - README.md
-- [[Supporting Infrastructure]] - document - README.md
-- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[.__init__()_20]] - code - gateway/proxy/dns_blocklist.py
+- [[._periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
+- [[.download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
+- [[.load_from_text()]] - code - gateway/proxy/dns_blocklist.py
+- [[.parse_hosts_line()]] - code - gateway/proxy/dns_blocklist.py
+- [[.start_periodic_updates()]] - code - gateway/proxy/dns_blocklist.py
+- [[.update()]] - code - gateway/proxy/dns_blocklist.py
+- [[Background loop update blocklists every UPDATE_INTERVAL_SECONDS.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Download a blocklist URL. Uses the gateway's own HTTP client.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Download all blocklists and rebuild the blocked domains set.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Path_3]] - code - gateway/proxy/dns_blocklist.py
+- [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for E]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
+- 7 edges to [[_COMMUNITY_DNSBlocklist]]
 
 ## Top bridge nodes
-- [[75 Security Modules]] - degree 17, connects to 3 communities
+- [[.update()]] - degree 6, connects to 1 community
+- [[.parse_hosts_line()]] - degree 4, connects to 1 community
+- [[._periodic_update_loop()]] - degree 4, connects to 1 community
+- [[.download_blocklist()]] - degree 3, connects to 1 community
+- [[.__init__()_20]] - degree 3, connects to 1 community

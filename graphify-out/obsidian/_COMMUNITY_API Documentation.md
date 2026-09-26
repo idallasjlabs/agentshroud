@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[API Documentation]] - document - docs/api/README.md
-- [[Current Status_2]] - document - docs/api/README.md
-- [[Planned Documents_2]] - document - docs/api/README.md
-- [[apiREADME]] - document - docs/api/README.md
+- [[5. Strategic Recommendations]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🎯 Immediate Actions (Next 2 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[📋 Architecture Evolution (Next Quarter)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 Phase Planning (Next 4-8 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,9 @@ members: 4
 TABLE source_file, type FROM #community/API_Documentation
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[5. Strategic Recommendations]] - degree 4, connects to 1 community

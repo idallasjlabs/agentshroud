@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # .test_collaborator_cross_user_messaging_request_
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_collaborator_archive_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_cross_user_messaging_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_scheduler_autorun_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Archivebulk-export exfil prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator requests to message other users should be blockedquarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator schedulerautorun requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Purpose_109]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[README_114]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Related Skills_118]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Technical Writer (TW)_2]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Usage_119]] - document - docker/config/openclaw/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[.test_collaborator_cross_user_messaging_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_scheduler_autorun_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_archive_exfil_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[Technical Writer (TW)_2]] - degree 5, connects to 1 community

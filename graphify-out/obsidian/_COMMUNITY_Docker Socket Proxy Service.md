@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Docker Socket Proxy Service
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Docker Socket Proxy Service]] - code - docker/docker-compose.yml
-- [[OpenClawHermes sandbox reaper loop]] - code - docker/scripts/start-agentshroud.sh
-- [[Sandbox Container Reaper]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[CI job test (pytest matrix, coverage 84%)]] - code - .github/workflows/ci.yml
+- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

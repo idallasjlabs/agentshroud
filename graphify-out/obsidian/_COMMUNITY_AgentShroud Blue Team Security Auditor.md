@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Audit Procedure_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Critical Rules_10]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Heat Map Legend_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Infrastructure_7]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Loss Categories_3]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Methodology_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Output Format_21]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 1 Code-Level Module Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 3 Integration Gap Analysis_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 4 Configuration Audit_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCAs)_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Architecture Overview]] - document - docs/api/integration-guide.md
+- [[Configuration_2]] - document - docs/api/integration-guide.md
+- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Integration Testing]] - document - docs/api/integration-guide.md
+- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
+- [[OpenSCAP]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Purpose_189]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_44]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Update AgentShroud]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Dete]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
 
 ## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor_2]] - degree 6, connects to 1 community
+- [[Architecture Overview]] - degree 6, connects to 2 communities
+- [[OpenSCAP]] - degree 8, connects to 1 community
+- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
+- [[Integration Testing]] - degree 3, connects to 1 community

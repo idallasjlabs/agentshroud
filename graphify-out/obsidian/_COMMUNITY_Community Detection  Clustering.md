@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Community Detection  Clustering]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 

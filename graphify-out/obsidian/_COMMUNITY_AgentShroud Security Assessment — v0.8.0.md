@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Critical Findings_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Executive Summary_12]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-4 In-memory audit chain not persisted]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[High-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Low-Priority  Informational]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Medium-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Remediation Status (Post-v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Scorecard Are We Achieving Our Goal]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[What's Working Well_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[security-assessment-v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Configuration_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Environment Variables_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Pattern Categories and Weights]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Related_52]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[prompt_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,9 @@ members: 16
 TABLE source_file, type FROM #community/AgentShroud_Security_Assessment__v080
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
+
+## Top bridge nodes
+- [[prompt_guard.py_1]] - degree 12, connects to 1 community

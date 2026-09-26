@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.08
 members: 24
 ---
 
 # EgressTelegramNotifier
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.__init__()_139]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._api_url()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._async_send()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._send_request()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[._token_for()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.send_text()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
-- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
-- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
+- [[1. Always Specify Risk Level]] - document - .agents/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally]] - document - .agents/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail]] - document - .agents/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully]] - document - .agents/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials]] - document - .agents/skills/i-browser/SKILL.md
+- [[Approval Integration]] - document - .agents/skills/i-browser/SKILL.md
+- [[Audit Logging]] - document - .agents/skills/i-browser/SKILL.md
+- [[Best Practices]] - document - .agents/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_1]] - document - .agents/skills/i-browser/SKILL.md
+- [[Click Element]] - document - .agents/skills/i-browser/SKILL.md
+- [[Core Security Principles]] - document - .agents/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)]] - document - .agents/skills/i-browser/SKILL.md
+- [[Extract Data]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fill Form]] - document - .agents/skills/i-browser/SKILL.md
+- [[Limitations]] - document - .agents/skills/i-browser/SKILL.md
+- [[Navigate to URL]] - document - .agents/skills/i-browser/SKILL.md
+- [[Risk Levels]] - document - .agents/skills/i-browser/SKILL.md
+- [[SKILL_9]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Architecture]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Configuration]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Guarantees]] - document - .agents/skills/i-browser/SKILL.md
+- [[Take Screenshot]] - document - .agents/skills/i-browser/SKILL.md
+- [[Usage_6]] - document - .agents/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_egress_callback_stale.py]]
-- 3 edges to [[_COMMUNITY__is_stale_callback_error()]]
-- 3 edges to [[_COMMUNITY_TestEgressTelegramNotify]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_Telegram & Gmail Integration Guide]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
-- [[.answer_callback()]] - degree 4, connects to 1 community
-- [[.edit_decision_message()]] - degree 4, connects to 1 community
+- [[Browser — Secure Browser Automation_1]] - degree 14, connects to 2 communities

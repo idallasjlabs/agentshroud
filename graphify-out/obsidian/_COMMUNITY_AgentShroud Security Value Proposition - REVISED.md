@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.07
-members: 28
+cohesion: 0.11
+members: 29
 ---
 
 # AgentShroud Security Value Proposition - REVISED
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[1. Re-enable Seccomp Profiles]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[2. Enable Read-Only Filesystem]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[3. Remove NET_RAW Capability]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[4. Disable mDNSBonjour Broadcasting]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[5. Set DM Policy to Allowlist]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[AgentShroud Security Value Proposition - REVISED]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Create scan.sh Script]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Action Plan (Phase 3A - Completion)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 1 Fix Broken Security (CRITICAL)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 4 Create Security Verification Script (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[.__init__()_101]] - code - gateway/security/network_validator.py
+- [[._parse_service_network_config()]] - code - gateway/security/network_validator.py
+- [[._validate_dns_configuration()]] - code - gateway/security/network_validator.py
+- [[._validate_network_definitions()]] - code - gateway/security/network_validator.py
+- [[._validate_network_modes()]] - code - gateway/security/network_validator.py
+- [[._validate_port_exposure()]] - code - gateway/security/network_validator.py
+- [[._validate_privileged_containers()]] - code - gateway/security/network_validator.py
+- [[._validate_service_network_isolation()]] - code - gateway/security/network_validator.py
+- [[.export_report()]] - code - gateway/security/network_validator.py
+- [[.get_security_report()]] - code - gateway/security/network_validator.py
+- [[.setup_method()_16]] - code - gateway/tests/test_network_validator.py
+- [[.test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
+- [[.validate_docker_compose_config()]] - code - gateway/security/network_validator.py
+- [[Any_51]] - code - gateway/security/network_validator.py
+- [[Container network configuration.]] - rationale - gateway/security/network_validator.py
+- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
+- [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
+- [[NetworkConfiguration]] - code - gateway/security/network_validator.py
+- [[NetworkValidator]] - code - gateway/security/network_validator.py
+- [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
+- [[Validate DNS configuration for security.]] - rationale - gateway/security/network_validator.py
+- [[Validate container network isolation and security.]] - rationale - gateway/security/network_validator.py
+- [[Validate docker-compose network configuration.          Args             compos]] - rationale - gateway/security/network_validator.py
+- [[Validate network definitions in compose file.]] - rationale - gateway/security/network_validator.py
+- [[Validate network mode configurations.]] - rationale - gateway/security/network_validator.py
+- [[Validate port exposure configuration.]] - rationale - gateway/security/network_validator.py
+- [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
+- [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
+- [[network_validator.py]] - code - gateway/security/network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,7 +48,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
+- 15 edges to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
+- 14 edges to [[_COMMUNITY_TrustManager]]
+- 13 edges to [[_COMMUNITY_lifespan.py]]
+- 10 edges to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition - REVISED]] - degree 8, connects to 1 community
+- [[NetworkValidator]] - degree 56, connects to 7 communities
+- [[network_validator.py]] - degree 6, connects to 3 communities
+- [[.validate_docker_compose_config()]] - degree 12, connects to 2 communities
+- [[._validate_dns_configuration()]] - degree 5, connects to 1 community
+- [[._validate_network_definitions()]] - degree 5, connects to 1 community

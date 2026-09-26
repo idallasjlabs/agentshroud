@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.13
 members: 15
 ---
 
 # DeniedRequest
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_custom_config()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_default_config()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_denied_request_creation()]] - code - gateway/tests/test_approval_hardening.py
-- [[DeniedRequest]] - code - gateway/security/approval_hardening.py
-- [[Record of a denied approval request.]] - rationale - gateway/security/approval_hardening.py
-- [[Test DeceptionDetection dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test DeniedRequest dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test approval hardening configuration.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test custom configuration values.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test default configuration values.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test denied request creation.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[TestApprovalHardeningConfig]] - code - gateway/tests/test_approval_hardening.py
-- [[TestDeceptionDetection]] - code - gateway/tests/test_approval_hardening.py
-- [[TestDeniedRequest]] - code - gateway/tests/test_approval_hardening.py
-- [[test_approval_hardening.py]] - code - gateway/tests/test_approval_hardening.py
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[SKILL_173]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[System Audit & Documentation_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,14 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_lifespan.py]]
-- 7 edges to [[_COMMUNITY_DeceptionDetection]]
-- 2 edges to [[_COMMUNITY_TestApprovalHardening]]
-- 1 edge to [[_COMMUNITY_.record_denied_request()]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[DeniedRequest]] - degree 9, connects to 3 communities
-- [[test_approval_hardening.py]] - degree 8, connects to 3 communities
-- [[TestApprovalHardeningConfig]] - degree 8, connects to 2 communities
-- [[TestDeceptionDetection]] - degree 8, connects to 2 communities
-- [[TestDeniedRequest]] - degree 7, connects to 2 communities
+- [[System Audit & Documentation_2]] - degree 15, connects to 1 community

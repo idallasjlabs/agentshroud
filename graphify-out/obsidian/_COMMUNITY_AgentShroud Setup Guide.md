@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.09
 members: 26
 ---
 
 # AgentShroud Setup Guide
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[1Password Authentication Failed]] - document - docs/setup/setup-guide.md
-- [[1Password Integration_1]] - document - docs/setup/setup-guide.md
-- [[AgentShroud Setup Guide]] - document - docs/setup/setup-guide.md
-- [[Audit Trail Verification]] - document - docs/setup/setup-guide.md
-- [[Configure AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Container Unhealthy]] - document - docs/setup/setup-guide.md
-- [[Create a Service Account]] - document - docs/setup/setup-guide.md
-- [[Dashboard Security Events]] - document - docs/setup/setup-guide.md
-- [[Gmail Connection Issues]] - document - docs/setup/setup-guide.md
-- [[Health Check Verification]] - document - docs/setup/setup-guide.md
-- [[Important Notes_1]] - document - docs/setup/setup-guide.md
-- [[Optional Requirements]] - document - docs/setup/setup-guide.md
-- [[Performance Issues_1]] - document - docs/setup/setup-guide.md
-- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_5]] - document - docs/setup/setup-guide.md
-- [[Production Checklist]] - document - docs/setup/setup-guide.md
-- [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing]] - document - docs/setup/setup-guide.md
-- [[Security Verification]] - document - docs/setup/setup-guide.md
-- [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
-- [[Supported Platforms]] - document - docs/setup/setup-guide.md
-- [[System Requirements_1]] - document - docs/setup/setup-guide.md
-- [[Tests Failing_1]] - document - docs/setup/setup-guide.md
-- [[Troubleshooting_25]] - document - docs/setup/setup-guide.md
-- [[What is AgentShroud_2]] - document - docs/setup/setup-guide.md
-- [[What's Next]] - document - docs/setup/setup-guide.md
+- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
+- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
+- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
+- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[SKILL_203]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[SKILL_206]] - document - skills/openclaw/gemini/SKILL.md
+- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
+- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,10 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Step-by-Step Installation]]
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_Update AgentShroud]]
+- 2 edges to [[_COMMUNITY_TestCrossBotTrustPivot]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — Full Security & Functionali]]
+- 1 edge to [[_COMMUNITY_TestUserMemoryWriteACL]]
 
 ## Top bridge nodes
-- [[AgentShroud Setup Guide]] - degree 12, connects to 4 communities
+- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
+- [[SKILL_203]] - degree 9, connects to 1 community

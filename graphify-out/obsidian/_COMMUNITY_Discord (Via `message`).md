@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Common Actions (Examples)]] - document - skills/openclaw/discord/SKILL.md
-- [[Discord (Via `message`)]] - document - skills/openclaw/discord/SKILL.md
-- [[Discord Components v2 preferred over legacy embeds]] - rationale - skills/openclaw/discord/SKILL.md
-- [[Guidelines]] - document - skills/openclaw/discord/SKILL.md
-- [[Musts]] - document - skills/openclaw/discord/SKILL.md
-- [[Targets]] - document - skills/openclaw/discord/SKILL.md
-- [[Writing Style (Discord)]] - document - skills/openclaw/discord/SKILL.md
-- [[discordSKILL]] - document - skills/openclaw/discord/SKILL.md
-- [[message tool (channel=discord)]] - concept - skills/openclaw/discord/SKILL.md
+- [[AgentShroud Data Flow Diagrams (doc)]] - document - docs/flows/data-flow-diagram.md
+- [[Audit Ledger (blockchain-style chain)]] - concept - docs/flows/data-flow-diagram.md
+- [[Diagram 11 Trust Boundary]] - image - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Diagram 13 Network Security Egress]] - image - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Diagram 14 Logic Flow]] - image - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Kill Switch (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
+- [[MCP Proxy Detailed Flow (tool call inspection, permission check, rate limit, forward, result inspection)]] - concept - docs/flows/data-flow-diagram.md
+- [[PII Sanitizer (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
+- [[Trust Manager (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
 
 ## Live Query (requires Dataview plugin)
 

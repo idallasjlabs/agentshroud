@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DNSQuery (data entity)]] - concept - docs/data/data-dictionary.md
+- [[i-sdlc SKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

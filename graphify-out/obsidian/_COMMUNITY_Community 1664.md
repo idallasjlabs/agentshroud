@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # Community 1664
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.reanchor_delimiters() (C8)]] - code - gateway/security/prompt_guard.py
-- [[UserSessionManager.reanchor_system_prompt() (C16)]] - code - gateway/security/session_manager.py
+- [[EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

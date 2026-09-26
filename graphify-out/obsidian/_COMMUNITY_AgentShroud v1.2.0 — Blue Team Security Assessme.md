@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # AgentShroud v1.2.0 — Blue Team Security Assessme
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Method_1]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Previously FIXED findings — verification]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Previously OPEN findings — current status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§1 — Re-audit of v0.8.0 Prior Findings]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§2 — New v1.2.0 Findings (OpenClaw-specific)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§6 — SAST (Semgrep) Status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§7 — Summary Table]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§8 — Regression Tests]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Purpose_31]] - document - .agents/skills/i-sec/README.md
+- [[README_31]] - document - .agents/skills/i-sec/README.md
+- [[Related Skills_34]] - document - .agents/skills/i-sec/README.md
+- [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
+- [[Usage_34]] - document - .agents/skills/i-sec/README.md
+- [[i-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
+- [[i-security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
-- 1 edge to [[_COMMUNITY_§4 — Hermes-Specific Section (NEW — first assess]]
-- 1 edge to [[_COMMUNITY_§5 — Trivy Container Scan Results]]
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - degree 10, connects to 4 communities
+- [[Security Review (SEC)]] - degree 7, connects to 1 community

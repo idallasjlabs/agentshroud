@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.11
-members: 23
+cohesion: 0.13
+members: 24
 ---
 
 # Any
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[._check_description_parameter_mismatch()]] - code - gateway/security/approval_hardening.py
-- [[._check_misleading_language()]] - code - gateway/security/approval_hardening.py
-- [[._check_parameter_obfuscation()]] - code - gateway/security/approval_hardening.py
-- [[._check_repeat_request_patterns()]] - code - gateway/security/approval_hardening.py
-- [[._create_parameter_fingerprint()]] - code - gateway/security/approval_hardening.py
-- [[._format_parameters_with_highlighting()]] - code - gateway/security/approval_hardening.py
-- [[._normalize_description()]] - code - gateway/security/approval_hardening.py
-- [[.analyze_request()]] - code - gateway/security/approval_hardening.py
-- [[.format_hardened_message()]] - code - gateway/security/approval_hardening.py
-- [[.get_stats()_2]] - code - gateway/security/approval_hardening.py
-- [[.is_request_in_cooldown()]] - code - gateway/security/approval_hardening.py
-- [[Analyze an approval request for potential deception or social engineering.]] - rationale - gateway/security/approval_hardening.py
-- [[Any_4]] - code - gateway/security/approval_hardening.py
-- [[Check for misleading language patterns in description.]] - rationale - gateway/security/approval_hardening.py
-- [[Check for mismatch between description and actual parameters.]] - rationale - gateway/security/approval_hardening.py
-- [[Check for obfuscated or encoded parameters.]] - rationale - gateway/security/approval_hardening.py
-- [[Check for patterns indicating repeat request attempts.]] - rationale - gateway/security/approval_hardening.py
-- [[Check if a similar request is still in cooldown period.]] - rationale - gateway/security/approval_hardening.py
-- [[Create a fingerprint for request parameters.]] - rationale - gateway/security/approval_hardening.py
-- [[Format an approval message with hardening measures applied.]] - rationale - gateway/security/approval_hardening.py
-- [[Format parameters with risk highlighting.]] - rationale - gateway/security/approval_hardening.py
-- [[Get statistics about approval hardening.]] - rationale - gateway/security/approval_hardening.py
-- [[Normalize description by removing misleading language.]] - rationale - gateway/security/approval_hardening.py
+- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Source of truth_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,13 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_lifespan.py]]
-- 6 edges to [[_COMMUNITY_DeceptionDetection]]
-- 1 edge to [[_COMMUNITY_.record_denied_request()]]
+- 4 edges to [[_COMMUNITY_AgentShroud Typography Guidelines]]
 
 ## Top bridge nodes
-- [[.analyze_request()]] - degree 9, connects to 2 communities
-- [[._check_repeat_request_patterns()]] - degree 6, connects to 2 communities
-- [[._check_description_parameter_mismatch()]] - degree 5, connects to 2 communities
-- [[._check_parameter_obfuscation()]] - degree 5, connects to 2 communities
-- [[.format_hardened_message()]] - degree 5, connects to 2 communities
+- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
+- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
+- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community

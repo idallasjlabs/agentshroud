@@ -1,66 +1,64 @@
 ---
 type: community
-cohesion: 0.08
-members: 51
+cohesion: 0.07
+members: 49
 ---
 
 # FetchOutcome
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 51 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[.__call__()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__enter__()]] - code - gateway/tests/test_citation_verifier.py
-- [[.__enter__()_1]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__exit__()]] - code - gateway/tests/test_citation_verifier.py
-- [[.__exit__()_1]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__init__()_35]] - code - gateway/tests/test_citation_verifier.py
-- [[.__init__()_36]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__init__()_37]] - code - gateway/tests/test_intel_endpoint.py
-- [[._patch_stream()]] - code - gateway/tests/test_citation_verifier.py
-- [[.iter_bytes()]] - code - gateway/tests/test_citation_verifier.py
-- [[.iter_bytes()_1]] - code - gateway/tests/test_intel_endpoint.py
-- [[.ok()]] - code - gateway/security/citation_verifier.py
-- [[.test_2xx_with_body_hashes_content()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_2xx_with_body_is_proven()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_all_unverified_yields_empty_report()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_byte_budget_caps_reads()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_empty_body_is_not_proven()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_empty_body_yields_no_hash()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_keeps_verified_drops_unverified()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_missing_required_field_returns_422()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_network_error_maps_to_599()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_network_error_maps_to_599()_1]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_non_2xx_status_passed_through()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_oversize_body_is_capped()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_persisted_report_is_retrievable_and_chain_valid()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_redirect_is_not_proven()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_requires_auth()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_secure_stream_kwargs_are_pinned()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_too_many_candidate_urls_rejected()]] - code - gateway/tests/test_intel_endpoint.py
-- [[.test_too_many_entries_rejected()]] - code - gateway/tests/test_intel_endpoint.py
-- [[A source counts as proven only on a 2xx with non-empty content.]] - rationale - gateway/security/citation_verifier.py
-- [[Fake httpx.stream context manager yielding a body in chunks.]] - rationale - gateway/tests/test_intel_endpoint.py
-- [[FetchOutcome]] - code - gateway/security/citation_verifier.py
-- [[Patch httpx.stream; return a list that records the call kwargs.]] - rationale - gateway/tests/test_citation_verifier.py
-- [[Point the endpoint's verifier at a deterministic fake fetcher.]] - rationale - gateway/tests/test_intel_endpoint.py
-- [[Production fetcher stream the URL and hash the body as proof-of-source.      SE]] - rationale - gateway/security/citation_verifier.py
-- [[Result of re-fetching a candidate citation URL through the web proxy.]] - rationale - gateway/security/citation_verifier.py
-- [[Stand-in for the object httpx.stream() yields as a context manager.]] - rationale - gateway/tests/test_citation_verifier.py
-- [[TestHttpxFetcher]] - code - gateway/tests/test_intel_endpoint.py
-- [[TestMakeHttpxFetcher]] - code - gateway/tests/test_citation_verifier.py
-- [[TestSubmitAuth]] - code - gateway/tests/test_intel_endpoint.py
-- [[TestSubmitEndpoint]] - code - gateway/tests/test_intel_endpoint.py
-- [[_FakeFetcher]] - code - gateway/tests/test_intel_endpoint.py
-- [[_FakeStreamResponse]] - code - gateway/tests/test_citation_verifier.py
-- [[_StreamResp]] - code - gateway/tests/test_intel_endpoint.py
-- [[_draft()]] - code - gateway/tests/test_intel_endpoint.py
-- [[_inject_fetcher()]] - code - gateway/tests/test_intel_endpoint.py
-- [[client()_2]] - code - gateway/tests/test_intel_endpoint.py
-- [[make_httpx_fetcher()]] - code - gateway/security/citation_verifier.py
-- [[test_intel_endpoint.py]] - code - gateway/tests/test_intel_endpoint.py
-- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
+- [[.__init__()_192]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_194]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_193]] - code - gateway/tests/test_web_proxy_security.py
+- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check_request()]] - code - gateway/proxy/web_proxy.py
+- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
+- [[.scan_response()]] - code - gateway/proxy/web_proxy.py
+- [[.setUp()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
+- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
+- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
+- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
+- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
+- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
+- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -70,17 +68,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_DraftEntry]]
-- 10 edges to [[_COMMUNITY_IntelReportStore]]
-- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 31 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 6 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 5 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_apply-patches.js (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_TestHermesEgressAllowlist]]
+- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_test_skill_guard.py]]
-- 1 edge to [[_COMMUNITY_Path]]
 
 ## Top bridge nodes
-- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
-- [[make_httpx_fetcher()]] - degree 18, connects to 3 communities
-- [[FetchOutcome]] - degree 21, connects to 2 communities
-- [[_FakeStreamResponse]] - degree 16, connects to 2 communities
-- [[test_intel_endpoint.py]] - degree 14, connects to 2 communities
+- [[ProxyAction]] - degree 31, connects to 5 communities
+- [[WebProxyResult]] - degree 16, connects to 3 communities
+- [[MockEgressChannel]] - degree 6, connects to 3 communities
+- [[MockThreatLevel]] - degree 6, connects to 3 communities
+- [[MockDNSVerdict]] - degree 15, connects to 2 communities

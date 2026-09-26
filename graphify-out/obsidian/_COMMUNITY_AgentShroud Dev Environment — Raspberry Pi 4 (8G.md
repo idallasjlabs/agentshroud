@@ -1,53 +1,53 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.09
 members: 38
 ---
 
 # AgentShroud Dev Environment — Raspberry Pi 4 (8G
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[Add Swap File]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Backup Strategy]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cooling Recommendations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cost Estimate]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Current System Profile]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Docker Permission Denied]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[High Temperature]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Important Notes]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Next Steps After Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Optional Automated Security Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Out of Memory]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 1 OS Hardening & Cleanup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 4 Project Structure]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 5 CICD Pipeline (GitHub Actions)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 6 Docker Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 7 Secret Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 8 Monitoring & Observability]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 9 OpenClaw Agent Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Power Supply]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Connection Refused]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Hardening]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Security Hardening Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Slow Builds]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Snap Cleanup (Free Resources)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Troubleshooting_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[.test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
+- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
+- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[TestScoreMalwareDefense]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration.py
+- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,9 +57,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_8. Performance & Testing]]
-- 1 edge to [[_COMMUNITY_Phase 2 Development Tools]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
+- 9 edges to [[_COMMUNITY_A2AMethod]]
+- 4 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_Canvas Skill]]
+- 2 edges to [[_COMMUNITY_MCPAuditTrail]]
 
 ## Top bridge nodes
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - degree 17, connects to 3 communities
+- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
+- [[_score_malware_defense()]] - degree 15, connects to 4 communities
+- [[TestScoreVulnerabilityManagement]] - degree 6, connects to 1 community
+- [[TestScoreMalwareDefense]] - degree 5, connects to 1 community
+- [[.test_initial_when_infected()]] - degree 3, connects to 1 community
