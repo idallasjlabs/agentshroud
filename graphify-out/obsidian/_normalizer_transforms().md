@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "_any_detector_fires()"
+community: "BotConfig"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/BotConfig
 ---
 
 # _normalizer_transforms()
@@ -18,4 +18,4 @@ tags:
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/code #graphify/EXTRACTED #community/BotConfig

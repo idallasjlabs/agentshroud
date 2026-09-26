@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # _write()
@@ -19,7 +19,7 @@ tags:
 - [[.test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
 - [[.test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
 - [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

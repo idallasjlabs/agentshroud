@@ -1,52 +1,28 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "_make_proxy()"
-location: "L16"
+community: "falco_monitor.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/falco_monitorpy
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[.test_attachments_scanned()]] - `calls` [EXTRACTED]
-- [[.test_blocks_scanned_even_when_text_present()]] - `calls` [EXTRACTED]
-- [[.test_chat_postmessage_content_scanned()]] - `calls` [EXTRACTED]
-- [[.test_chat_update_content_scanned()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_missing_url_passthrough()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_rewrites_url()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_skips_content_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_slack_error_passthrough()]] - `calls` [EXTRACTED]
-- [[.test_consume_relay_token_one_time()]] - `calls` [EXTRACTED]
-- [[.test_consume_relay_token_unknown()]] - `calls` [EXTRACTED]
-- [[.test_each_reconnect_issues_unique_token()]] - `calls` [EXTRACTED]
-- [[.test_file_upload_initial_comment_scanned()]] - `calls` [EXTRACTED]
-- [[.test_get_stats_returns_counters()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_matches_owner_uid()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_no_match_for_other()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_token_returns_error()]] - `calls` [EXTRACTED]
-- [[.test_non_message_method_not_scanned()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_info_filter_redaction_blocks()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_pipeline_exception_fail_closed()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_tailscale_hostname_blocked()]] - `calls` [EXTRACTED]
-- [[.test_outbound_blocked_returns_error()]] - `calls` [EXTRACTED]
-- [[.test_owner_channel_uses_full_trust()]] - `calls` [EXTRACTED]
-- [[.test_owner_pipeline_exception_fail_open()]] - `calls` [EXTRACTED]
-- [[.test_post_ephemeral_scanned()]] - `calls` [EXTRACTED]
-- [[.test_sanitized_text_replaces_original()]] - `calls` [EXTRACTED]
-- [[.test_structured_field_sanitization_blocks_delivery()]] - `calls` [EXTRACTED]
-- [[.test_system_notification_skips_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
-- [[.test_urlencoded_body_parsed()]] - `calls` [EXTRACTED]
-- [[Create a SlackAPIProxy with test credentials and no real IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `references` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
-- [[test_slack_proxy.py]] - `contains` [EXTRACTED]
+- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - `calls` [EXTRACTED]
+- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - `calls` [EXTRACTED]
+- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - `calls` [EXTRACTED]
+- [[.test_outbound_blocked_replaces_text()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_exception_allows_owner_through()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
+- [[.test_pipeline_process_outbound_called_for_send_message()]] - `calls` [EXTRACTED]
+- [[.test_send_message_draft_also_runs_outbound_filtering()]] - `calls` [EXTRACTED]
+- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

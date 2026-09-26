@@ -1,36 +1,22 @@
 ---
-source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
+source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "TrustManager"
-location: "L53"
+community: "AgentShroud Access Control Matrix"
+location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # _make_pipeline()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[SecurityPipeline]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[test_inbound_base64_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_benign_base64_not_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_encoding_detector_error_fails_closed()]] - `calls` [EXTRACTED]
-- [[test_inbound_hex_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_nested_base64_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_owner_encoded_injection_allowed()]] - `calls` [EXTRACTED]
-- [[test_inbound_plain_benign_message_not_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_rot13_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_unicode_homoglyph_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[test_pipeline_allows_small_response()]] - `calls` [EXTRACTED]
+- [[test_pipeline_blocks_and_downstream_not_reached()]] - `calls` [EXTRACTED]
+- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

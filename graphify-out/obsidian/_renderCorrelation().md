@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js"
+community: "Browser — Secure Browser Automation"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # _renderCorrelation()
@@ -16,4 +16,4 @@ tags:
 - [[_loadSecurity()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # _make_config()
@@ -30,9 +30,9 @@ tags:
 - [[.test_single_agent_fully_secure()]] - `calls` [EXTRACTED]
 - [[.test_unregister_removes_agent()]] - `calls` [EXTRACTED]
 - [[.test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[ContainerConfig]] - `references` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[ContainerConfig]] - `calls` [EXTRACTED]
+- [[ContainerConfig_1]] - `references` [EXTRACTED]
 - [[Helper to create a ContainerConfig with sensible defaults.]] - `rationale_for` [EXTRACTED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

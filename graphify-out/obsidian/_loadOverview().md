@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js"
+community: "DelegationManager"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/DelegationManager
 ---
 
 # _loadOverview()
@@ -18,4 +18,4 @@ tags:
 - [[_setText()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

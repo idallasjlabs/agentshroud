@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L26"
+community: "TelegramAPIProxy"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/TelegramAPIProxy
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[.test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
-- [[.test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
-- [[.test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[.test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[.test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[RBACConfig_4]] - `references` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `references` [EXTRACTED]
 - [[rbac()_6]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

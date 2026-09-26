@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "falco_monitor.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/falco_monitorpy
 ---
 
 # _make_pipeline_result()
@@ -18,8 +18,8 @@ tags:
 - [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
 - [[.test_pipeline_process_outbound_called_for_send_message()]] - `calls` [EXTRACTED]
 - [[.test_send_message_draft_also_runs_outbound_filtering()]] - `calls` [EXTRACTED]
-- [[PipelineResult]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `calls` [EXTRACTED]
+- [[PipelineResult]] - `calls` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

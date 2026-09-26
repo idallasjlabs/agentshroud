@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "TestSSRFBlocking"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/TestSSRFBlocking
 ---
 
 # _resolve_model_size()
@@ -16,4 +16,4 @@ tags:
 - [[select_model_size()]] - `calls` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking

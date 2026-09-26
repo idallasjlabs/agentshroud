@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L1429"
+community: "SSHProxy"
+location: "L1442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # _record_scanner_result()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Persist last scanner result and emit live event-bus telemetry.]] - `rationale_for` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 - [[run_clamav_scan()]] - `calls` [EXTRACTED]
 - [[run_openscap_scan()]] - `calls` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

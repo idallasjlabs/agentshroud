@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_voice_gateway.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_voice_gatewaypy
 ---
 
 # _make_service_manager()
@@ -22,4 +22,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[test_upgrade_hermes_paths()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

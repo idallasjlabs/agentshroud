@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L755"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # _ws_scope()
@@ -20,4 +20,4 @@ tags:
 - [[.test_upstream_ws_exception_closes_gracefully()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

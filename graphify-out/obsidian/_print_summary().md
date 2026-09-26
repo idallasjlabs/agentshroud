@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "mcp_oauth_preflight.py"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/mcp_oauth_preflightpy
 ---
 
 # _print_summary()
@@ -17,4 +17,4 @@ tags:
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

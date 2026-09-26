@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # _ref_totp()
@@ -29,4 +29,4 @@ tags:
 - [[test_valid_totp_allows_high_risk()]] - `calls` [EXTRACTED]
 - [[test_valid_totp_prev_window_allowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

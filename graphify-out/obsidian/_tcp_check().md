@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
+community: "CredentialInjector"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/CredentialInjector
 ---
 
 # _tcp_check()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

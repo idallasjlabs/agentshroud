@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Fallback minimal dashboard when template file is missing.]] - `rationale_for` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 - [[soc_dashboard()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

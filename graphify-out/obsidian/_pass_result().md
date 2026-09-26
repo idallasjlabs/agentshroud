@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy()"
+community: "test_agent_cve_registry.py"
 location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_agent_cve_registrypy
 ---
 
 # _pass_result()
@@ -17,4 +17,4 @@ tags:
 - [[.test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

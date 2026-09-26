@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js"
+community: "DelegationManager"
 location: "L687"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/DelegationManager
 ---
 
 # _loadServices()
 
 ## Connections
-- [[ServiceDescriptor_1]] - `shares_data_with` [INFERRED]
+- [[ServiceDescriptor]] - `shares_data_with` [INFERRED]
 - [[_botParam()]] - `calls` [EXTRACTED]
 - [[_get()]] - `calls` [EXTRACTED]
 - [[_renderServices()]] - `calls` [EXTRACTED]
 - [[_setText()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

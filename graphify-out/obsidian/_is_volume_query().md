@@ -1,20 +1,20 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "test_a2a_policy.py"
 location: "L657"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # _is_volume_query()
 
 ## Connections
-- [[True for a spoken READ of the current volume (what's the volume, current…]] - `rationale_for` [EXTRACTED]
+- [[True for a spoken READ of the current volume (what's the volume,     current]] - `rationale_for` [EXTRACTED]
 - [[_parse_volume_command()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

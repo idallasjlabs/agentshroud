@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Any"
+community: "agentshroud-bot"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/agentshroud-bot
 ---
 
 # _load_latest_json()
@@ -19,13 +19,13 @@ tags:
 - [[.test_returns_none_on_invalid_json()]] - `calls` [EXTRACTED]
 - [[.test_returns_none_when_all_files_empty()]] - `calls` [EXTRACTED]
 - [[.test_skips_empty_files_returns_next_valid()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[Load the most recent JSON report file from a directory.      Args         direc]] - `rationale_for` [EXTRACTED]
-- [[Path_41]] - `references` [EXTRACTED]
+- [[Path_17]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_openscap_summary()]] - `calls` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/agentshroud-bot

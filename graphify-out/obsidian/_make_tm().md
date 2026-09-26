@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # _make_tm()
@@ -34,7 +34,8 @@ tags:
 - [[.test_untyped_violation_uses_legacy_points()]] - `calls` [EXTRACTED]
 - [[.test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

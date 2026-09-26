@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # _queue()
 
 ## Connections
-- [[ApprovalQueue]] - `references` [EXTRACTED]
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalQueue_1]] - `references` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_disabled_approves_without_code()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_decide_reject_never_requires_mfa()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

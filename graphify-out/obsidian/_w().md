@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_w()"
+community: "TestMultilingualInjection"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/TestMultilingualInjection
 ---
 
 # _w()
@@ -45,9 +45,9 @@ tags:
 - [[.test_full_daemon_json()]] - `calls` [EXTRACTED]
 - [[.test_full_host_evidence()]] - `calls` [EXTRACTED]
 - [[.test_full_root_caps_zero()]] - `calls` [EXTRACTED]
-- [[.test_full_stack()]] - `calls` [EXTRACTED]
-- [[.test_full_stack()_1]] - `calls` [EXTRACTED]
 - [[.test_full_stack()_2]] - `calls` [EXTRACTED]
+- [[.test_full_stack()_1]] - `calls` [EXTRACTED]
+- [[.test_full_stack()]] - `calls` [EXTRACTED]
 - [[.test_full_stack_scores_five()]] - `calls` [EXTRACTED]
 - [[.test_full_stack_with_review_evidence()]] - `calls` [EXTRACTED]
 - [[.test_fully_isolated_container_scores_five()]] - `calls` [EXTRACTED]
@@ -82,8 +82,8 @@ tags:
 - [[.test_valid()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_absent()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_detected()]] - `calls` [EXTRACTED]
-- [[Path_35]] - `references` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 - [[Write a file under the sandbox root, creating parents.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

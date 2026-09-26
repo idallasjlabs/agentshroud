@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "test_a2a_policy.py"
 location: "L678"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # _voice_system_message()
@@ -17,4 +17,4 @@ tags:
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

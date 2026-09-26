@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "SkillGuard"
+community: "Daedalus — Concept Illustrator"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # _print_findings()
 
 ## Connections
-- [[ScanResult_2]] - `references` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[ScanResult_3]] - `references` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

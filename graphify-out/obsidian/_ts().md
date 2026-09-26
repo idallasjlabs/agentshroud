@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L121"
+community: "DelegationManager"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/DelegationManager
 ---
 
 # _ts()
 
 ## Connections
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[_appendLogLine()]] - `calls` [EXTRACTED]
+- [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

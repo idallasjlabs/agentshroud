@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "_process_inbound()"
+community: "RateLimiter"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/RateLimiter
 ---
 
 # _resolve_user_trust_level()
@@ -25,4 +25,4 @@ tags:
 - [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - `calls` [EXTRACTED]
 - [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_process_inbound
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

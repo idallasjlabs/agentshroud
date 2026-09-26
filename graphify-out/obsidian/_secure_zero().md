@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "EncryptedStore"
+community: "GroupApprovalRouter"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/GroupApprovalRouter
 ---
 
 # _secure_zero()
@@ -22,4 +22,4 @@ tags:
 - [[encrypted_store.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_soc_bots.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_soc_botspy
 ---
 
 # _wrap_response()
@@ -134,7 +134,7 @@ tags:
 - [[.test_immune_command_no_immune_users()]] - `calls` [EXTRACTED]
 - [[.test_immune_user_message_passes_through_when_suspended()]] - `calls` [EXTRACTED]
 - [[.test_inbound_text_normalized_before_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_locked_no_active_lockdowns()]] - `calls` [EXTRACTED]
+- [[.test_locked_no_active_lockdowns()_1]] - `calls` [EXTRACTED]
 - [[.test_locked_shows_suspended_users()]] - `calls` [EXTRACTED]
 - [[.test_model_status_command_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_username_does_not_set_eligibility()]] - `calls` [EXTRACTED]
@@ -230,7 +230,7 @@ tags:
 - [[.test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - `calls` [EXTRACTED]
 - [[.test_stranger_within_limit_triggers_approval_workflow()]] - `calls` [EXTRACTED]
 - [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_suspended_drop_notice_respects_cooldown()]] - `calls` [EXTRACTED]
+- [[.test_suspended_drop_notice_respects_cooldown()_1]] - `calls` [EXTRACTED]
 - [[.test_suspended_user_receives_drop_notice()]] - `calls` [EXTRACTED]
 - [[.test_two_bots_same_group_independent_eligibility()]] - `calls` [EXTRACTED]
 - [[.test_unapproved_collaborator_slash_command_is_quarantined()]] - `calls` [EXTRACTED]
@@ -240,10 +240,10 @@ tags:
 - [[.test_unknown_user_repeated_start_still_gets_pending_notice()]] - `calls` [EXTRACTED]
 - [[.test_unlock_calls_reset_on_lockdown()]] - `calls` [EXTRACTED]
 - [[.test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - `calls` [EXTRACTED]
-- [[.test_unlock_clears_suspended_drop_cooldown()]] - `calls` [EXTRACTED]
+- [[.test_unlock_clears_suspended_drop_cooldown()_1]] - `calls` [EXTRACTED]
 - [[.test_unlock_persists_unpause_to_disk()]] - `calls` [EXTRACTED]
 - [[.test_unlock_unknown_user_returns_no_state_notice()]] - `calls` [EXTRACTED]
 - [[.test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

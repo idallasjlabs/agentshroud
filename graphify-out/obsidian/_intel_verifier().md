@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L1129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # _intel_verifier()
@@ -18,4 +18,4 @@ tags:
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

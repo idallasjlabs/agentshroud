@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # _read_running_version_str()
 
 ## Connections
-- [[Read the raw pinned ``OPENCLAW_VERSION`` string from dockerversions.env.…]] - `rationale_for` [EXTRACTED]
+- [[Read the raw pinned ``OPENCLAW_VERSION`` string from dockerversions.env.      R]] - `rationale_for` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

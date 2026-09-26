@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "TestSecurityFeatures"
+community: "TestObservatoryMode"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/TestObservatoryMode
 ---
 
 # _validate_runtime()
@@ -19,4 +19,4 @@ tags:
 - [[security.py]] - `contains` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

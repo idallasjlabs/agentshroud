@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "mcp_oauth_preflight.py"
 location: "L808"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/mcp_oauth_preflightpy
 ---
 
 # _run_nvd_sync()
@@ -20,7 +20,7 @@ tags:
 - [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
 - [[append_to_registry()]] - `calls` [EXTRACTED]
 - [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[main()_5]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

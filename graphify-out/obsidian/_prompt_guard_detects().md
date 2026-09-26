@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "_any_detector_fires()"
+community: "BotConfig"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/BotConfig
 ---
 
 # _prompt_guard_detects()
@@ -17,4 +17,4 @@ tags:
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/code #graphify/EXTRACTED #community/BotConfig

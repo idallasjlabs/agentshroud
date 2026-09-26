@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "forward.py"
+community: "RateLimiter"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # _is_email_recipient_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

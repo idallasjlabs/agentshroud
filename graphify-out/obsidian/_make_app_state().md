@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # _make_app_state()
@@ -38,4 +38,4 @@ tags:
 - [[.test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

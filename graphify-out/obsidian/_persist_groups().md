@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "rbac_config.py"
+community: "SCLClient"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/SCLClient
 ---
 
 # _persist_groups()
@@ -21,4 +21,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # _set_state()
@@ -27,8 +27,8 @@ tags:
 - [[.test_unknown_tool_returns_none()]] - `calls` [EXTRACTED]
 - [[.test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

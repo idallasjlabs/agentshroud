@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "apply-patches.js (OpenClaw)"
+community: "AuditChain"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs_OpenClaw
+  - community/AuditChain
 ---
 
 # _resolveCollabDenyList()
 
 ## Connections
 - [[_resolveCollabToolConfig()]] - `calls` [EXTRACTED]
-- [[apply-patches.js (OpenClaw)]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw
+#graphify/code #graphify/EXTRACTED #community/AuditChain

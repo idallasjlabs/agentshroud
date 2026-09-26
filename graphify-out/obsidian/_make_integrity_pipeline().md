@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # _make_integrity_pipeline()
@@ -22,8 +22,8 @@ tags:
 - [[.test_warn_zone_forwards()]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # _truthy()
@@ -15,4 +15,4 @@ tags:
 - [[.from_env()_3]] - `calls` [EXTRACTED]
 - [[mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # _looks_like_base64()
@@ -21,4 +21,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

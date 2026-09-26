@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "render_md_email.py"
+community: "AgentShroud v0.8.0 — Blue Team Security Assessme"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/render_md_emailpy
+  - community/AgentShroud_v080__Blue_Team_Security_Assessme
 ---
 
 # _render_table()
@@ -16,4 +16,4 @@ tags:
 - [[render()]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/render_md_emailpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Blue_Team_Security_Assessme

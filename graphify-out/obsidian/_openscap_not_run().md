@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_compliance_auditing()"
+community: "A2AMethod"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_compliance_auditing
+  - community/A2AMethod
 ---
 
 # _openscap_not_run()
@@ -17,7 +17,7 @@ tags:
 - [[.test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[.test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
 - [[.test_zero_when_not_run()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_compliance_auditing
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

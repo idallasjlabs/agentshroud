@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # _read_compose_text()
 
 ## Connections
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_host_os_hardening()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[_score_registry_security()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

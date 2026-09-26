@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "hermes/skills/i-bs/README.md"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # _msg()
@@ -24,7 +24,7 @@ tags:
 - [[.test_peer_stats_updated()]] - `calls` [EXTRACTED]
 - [[.test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[.test_ssn_sanitized()]] - `calls` [EXTRACTED]
-- [[.test_summary()_1]] - `calls` [EXTRACTED]
+- [[.test_summary()]] - `calls` [EXTRACTED]
 - [[.test_task_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[.test_task_within_limit()]] - `calls` [EXTRACTED]
 - [[.test_trusted_peer_allowed()]] - `calls` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[A2AMessage]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

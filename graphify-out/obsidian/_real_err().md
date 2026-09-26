@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_callback_stale.py"
 type: "code"
-community: "test_egress_callback_stale.py"
+community: "VIII. Evaluation"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/VIII_Evaluation
 ---
 
 # _real_err()
@@ -17,4 +17,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `contains` [EXTRACTED]
 - [[test_stale_detectors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/code #graphify/EXTRACTED #community/VIII_Evaluation

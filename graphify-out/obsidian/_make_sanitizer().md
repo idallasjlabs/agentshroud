@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_llm_proxy.py"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_llm_proxypy
 ---
 
 # _make_sanitizer()
 
 ## Connections
-- [[._make_proxy()]] - `calls` [EXTRACTED]
+- [[._make_proxy()_5]] - `calls` [EXTRACTED]
 - [[._make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -227,8 +227,8 @@ tags:
 - [[.test_web_search_no_egress_filter()]] - `calls` [EXTRACTED]
 - [[.test_web_search_query_truncation()]] - `calls` [EXTRACTED]
 - [[Create a PIISanitizer with default enforce config.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

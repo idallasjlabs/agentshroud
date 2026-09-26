@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "_stub_client()"
+community: "jira_weekly_review.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/jira_weekly_reviewpy
 ---
 
 # _invoke()
@@ -35,4 +35,4 @@ tags:
 - [[.test_tail_keyboard_interrupt_prints_disconnected()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_stub_client
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

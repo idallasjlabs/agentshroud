@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "ToolACLEnforcer"
 location: "L2264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ToolACLEnforcer
 ---
 
 # _mock_ws()
 
 ## Connections
-- [[Build a MagicMock WebSocket for direct voice_endpoint() tests. Frames are…]] - `rationale_for` [EXTRACTED]
-- [[_receive()]] - `indirect_call` [INFERRED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.      Frames are d]] - `rationale_for` [EXTRACTED]
 - [[test_bare_listen_starts_fresh()]] - `calls` [EXTRACTED]
 - [[test_listen_offset_resumes_partial_upload()]] - `calls` [EXTRACTED]
 - [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - `calls` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

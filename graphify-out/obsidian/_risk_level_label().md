@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[get_risk_score()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

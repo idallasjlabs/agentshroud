@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # _normalize_adversarial()
@@ -16,4 +16,4 @@ tags:
 - [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "FetchOutcome"
+community: "plan_remediation()"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/plan_remediation
 ---
 
 # _inject_fetcher()
@@ -20,7 +20,7 @@ tags:
 - [[.test_too_many_entries_rejected()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[Point the endpoint's verifier at a deterministic fake fetcher.]] - `rationale_for` [EXTRACTED]
-- [[_FakeFetcher]] - `calls` [EXTRACTED]
+- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

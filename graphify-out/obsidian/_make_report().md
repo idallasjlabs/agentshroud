@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "Security Verification Report"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Security_Verification_Report
 ---
 
 # _make_report()
@@ -26,12 +26,6 @@ tags:
 - [[.test_total_vulnerability_count_shown()]] - `calls` [EXTRACTED]
 - [[.test_zero_count_severity_omitted()]] - `calls` [EXTRACTED]
 - [[Build a minimal parsed Trivy report.]] - `rationale_for` [EXTRACTED]
-- [[_fake_trivy_scan()]] - `calls` [EXTRACTED]
-- [[_fake_trivy_scan()_1]] - `calls` [EXTRACTED]
-- [[_fake_trivy_scan()_2]] - `calls` [EXTRACTED]
-- [[_fake_trivy_scan()_3]] - `calls` [EXTRACTED]
-- [[_fake_trivy_scan()_4]] - `calls` [EXTRACTED]
-- [[_fake_trivy_scan()_5]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/Security_Verification_Report

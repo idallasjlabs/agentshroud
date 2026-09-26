@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "CollaboratorGreeter"
+community: "skill.json"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/skilljson
 ---
 
 # _ok_response()
@@ -22,4 +22,4 @@ tags:
 - [[test_repeat_within_24h_is_suppressed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/skilljson

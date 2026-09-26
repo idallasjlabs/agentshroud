@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "patch"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/patch
 ---
 
 # _print_table()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[.test_print_table_empty_rows_is_noop()]] - `calls` [EXTRACTED]
 - [[_output()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/patch

@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "asyncio"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/asyncio
 ---
 
 # _make_proxy()
 
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
-- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[LLMProxy_2]] - `references` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `calls` [EXTRACTED]
@@ -37,4 +38,4 @@ tags:
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # _is_wazuh_agent_running()
 
 ## Connections
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - `rationale_for` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # _now_iso()
 
 ## Connections
-- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

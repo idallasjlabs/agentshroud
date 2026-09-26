@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L810"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # _make_m6_bot_config()
@@ -17,4 +17,4 @@ tags:
 - [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

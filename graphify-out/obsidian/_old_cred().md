@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "test_key_rotation.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/test_key_rotationpy
 ---
 
 # _old_cred()
@@ -22,4 +22,4 @@ tags:
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialValidator
+#graphify/code #graphify/EXTRACTED #community/test_key_rotationpy

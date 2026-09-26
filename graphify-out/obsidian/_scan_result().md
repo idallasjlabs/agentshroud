@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "docker/scripts/security-scan.sh"
 location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/docker/scripts/security-scansh
 ---
 
 # _scan_result()
@@ -18,4 +18,4 @@ tags:
 - [[.test_warn_action_returns_sanitized()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

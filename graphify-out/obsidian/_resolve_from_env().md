@@ -1,19 +1,19 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "_t()"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/_t
 ---
 
 # _resolve_from_env()
 
 ## Connections
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 - [[resolve_model()]] - `calls` [EXTRACTED]
-- [[resolve_model.py (Hermes)]] - `contains` [EXTRACTED]
+- [[resolve_model.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/_t

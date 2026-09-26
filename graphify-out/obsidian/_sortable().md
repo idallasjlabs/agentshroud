@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "_seed_cron"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/_seed_cron
 ---
 
 # _sortable()
 
 ## Connections
-- [[Version - comparable int tuple, or None if not numeric. A trailing ``-N``…]] - `rationale_for` [EXTRACTED]
+- [[Version - comparable int tuple, or None if not numeric.      A trailing ``-N``]] - `rationale_for` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 - [[pick_latest_stable()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

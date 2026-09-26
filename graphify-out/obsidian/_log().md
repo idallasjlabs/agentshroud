@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/heartbeat.sh"
+source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "heartbeat.sh"
-location: "L24"
+community: "MockValidator"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/heartbeatsh
+  - community/MockValidator
 ---
 
 # _log()
 
 ## Connections
-- [[heartbeat.sh]] - `defines` [EXTRACTED]
-- [[heartbeat.sh script]] - `calls` [EXTRACTED]
+- [[crashwatch.sh]] - `defines` [EXTRACTED]
+- [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/heartbeatsh
+#graphify/code #graphify/EXTRACTED #community/MockValidator

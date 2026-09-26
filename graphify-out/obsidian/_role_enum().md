@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # _role_enum()
 
 ## Connections
 - [[._build_record()]] - `calls` [EXTRACTED]
-- [[UserRole_1]] - `references` [EXTRACTED]
+- [[UserRole]] - `references` [EXTRACTED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

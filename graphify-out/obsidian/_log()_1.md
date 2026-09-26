@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/crashwatch.sh"
+source_file: "docker/bots/hermes/heartbeat.sh"
 type: "code"
-community: "start.sh"
-location: "L26"
+community: ".test_blocked_command_with_zero_width_mention_an"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/startsh
+  - community/test_blocked_command_with_zero_width_mention_an
 ---
 
 # _log()
 
 ## Connections
-- [[crashwatch.sh]] - `defines` [EXTRACTED]
-- [[crashwatch.sh script]] - `calls` [EXTRACTED]
+- [[heartbeat.sh]] - `defines` [EXTRACTED]
+- [[heartbeat.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/startsh
+#graphify/code #graphify/EXTRACTED #community/test_blocked_command_with_zero_width_mention_an
