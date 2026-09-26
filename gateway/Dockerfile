@@ -48,15 +48,27 @@ RUN set -eux; \
 # === falcoctl builder (SCRUM-174) ===
 # falco's release tarball bundles a falcoctl binary built with an older Go —
 # 43 HIGH Go-stdlib/module CVEs in the 0.13.0 binary it ships (2026-09-01
-# scan), while falcoctl v0.13.0 IS the latest release. Rebuild it from source
-# on the pinned patched-Go base (same play as slsa-builder above) and overlay
-# the bundled binary in the final stage. Two residuals CANNOT be overridden
-# (documented in cve-mitigation-matrix.md): docker/docker v28.5.2 (2 CVEs,
-# no fixed release) and moby/go-archive (its 0.3.0 fix removes
-# archive.Compression which the pinned docker/docker shim still calls ->
-# compile break; requires upstream falcoctl dep-tree bump, unreleased).
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS falcoctl-builder
-ARG FALCOCTL_VERSION=0.13.0
+# scan). Rebuild it from source on the pinned patched-Go base (same play as
+# slsa-builder above) and overlay the bundled binary in the final stage. Two
+# residuals CANNOT be overridden (documented in cve-mitigation-matrix.md):
+# docker/docker v28.5.2 (2 CVEs, no fixed release) and moby/go-archive (its
+# 0.3.0 fix removes archive.Compression which the pinned docker/docker shim
+# still calls -> compile break; requires upstream falcoctl dep-tree bump,
+# unreleased) — re-verify these two residuals still apply against 0.14.2's
+# go.mod if this build fails.
+# 2026-09-25 Sunday upgrade: 0.13.0 -> 0.14.2 (GitHub Releases latest,
+# published 2026-09-14 — the "0.13.0 IS latest" note above was accurate as of
+# the 2026-09-01 scan date but is now stale).
+# 2026-09-25: build broke on the 1.26 base carried over from the 0.13.0 pin —
+# `go mod tidy` fails with "go.mod requires go >= 1.27.0 (running go 1.26.8;
+# GOTOOLCHAIN=local)". 0.14.2's own go.mod (or one of the forced -require
+# deps below, e.g. oras-go/v2@v2.6.2 or sigstore/fulcio@v1.8.6) now needs
+# 1.27. GOTOOLCHAIN=local is deliberate (no network toolchain fetch mid-build
+# — see slsa-builder above), so the base image is bumped instead of relaxing
+# that. Bumped this stage only: slsa/cosign/docker-cli builders above/below
+# still build clean on 1.26 with their own dep sets.
+FROM golang:1.27-trixie@sha256:433790e515d27dc6003e847e644cc0af956985cf315c1c58a3b73ee2dd305183 AS falcoctl-builder
+ARG FALCOCTL_VERSION=0.14.2
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
     git clone --depth 1 --branch "v${FALCOCTL_VERSION}" \
@@ -133,7 +145,8 @@ RUN set -eux; \
 # === Builder Stage ===
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
-FROM python:3.13-slim@sha256:8d9d0b8bcf6506481eae4907c18f5e3e7902e629f5f6d684f9e7c32e85e3ddf0 AS builder
+# 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b AS builder
 
 WORKDIR /build
 ENV PIP_ROOT_USER_ACTION=ignore
@@ -157,7 +170,8 @@ RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # === Runtime Stage ===
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
-FROM python:3.13-slim@sha256:8d9d0b8bcf6506481eae4907c18f5e3e7902e629f5f6d684f9e7c32e85e3ddf0
+# 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
 
 WORKDIR /app
 ENV PIP_ROOT_USER_ACTION=ignore

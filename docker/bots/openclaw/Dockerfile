@@ -136,11 +136,16 @@ RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
 # release that requires tar>=7.5.19 itself, so bumping npm is the fix rather than
 # patching tar directly underneath it (npm manages that tree). Done before any
 # other global npm install so every subsequent one uses the patched npm/tar.
-RUN npm install -g npm@12.0.2
+# 2026-09-25 Sunday upgrade: 12.0.2 -> 12.1.0, latest stable per `npm view npm
+# version` (verified against the npm registry same day) — no CVE motivating
+# this one, routine latest-stable-release bump per the no-exceptions directive.
+RUN npm install -g npm@12.1.0
 
 # Install bun via npm (avoids curl|bash supply chain risk)
 # M8: Pin bun to specific version for reproducible builds
-RUN npm install -g bun@1.2.4
+# 2026-09-25 Sunday upgrade: 1.2.4 -> 1.4.2, latest stable per GitHub Releases
+# (oven-sh/bun, verified same day) — routine latest-stable bump.
+RUN npm install -g bun@1.4.2
 
 # Enable pnpm (OpenClaw uses pnpm for package management)
 RUN corepack enable
@@ -185,7 +190,14 @@ RUN sh /usr/local/bin/patch-anthropic-sdk.sh
 
 # Install Playwright for browser automation (browser-fetch skill)
 # SCRUM-101: 1.50.1 → 1.55.1 (clears playwright CVE-2025-59288 HIGH; fixed floor).
-RUN npm install -g playwright@1.55.1 && \
+# 2026-09-25 Sunday upgrade: 1.55.1 → 1.63.0 — this pin had gone stale for a
+# full year (last touched 2025-09-23) despite eight intervening minor releases;
+# latest stable per `npm view playwright version` / GitHub Releases, verified
+# same day. No CVE fix motivating this one specifically; routine latest-stable
+# bump per the no-exceptions directive. `npx playwright install --with-deps
+# chromium` re-downloads the matching browser build for 1.63.0, so no stale
+# browser/driver mismatch.
+RUN npm install -g playwright@1.63.0 && \
     npx playwright install --with-deps chromium
 
 # SECURITY: Route Telegram API through AgentShroud gateway

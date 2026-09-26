@@ -19,7 +19,9 @@
 #
 # 2026-09-24 Sunday upgrade: digest refreshed again (same tag, same Debian
 # release — no re-litigation of the decision above).
-FROM python:3.12-slim@sha256:2f17fc044b579bab302c2e8054d3a686e2cb9a83de48e70534b94cd8ebbe06a9
+# 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was
+# 2f17fc04..., now f77ac9e4...
+FROM python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"
@@ -28,6 +30,14 @@ LABEL org.agentshroud.component="voice-gateway"
 RUN useradd -m -u 1001 -s /sbin/nologin vg
 
 WORKDIR /app
+
+# 2026-09-26 Sunday upgrade: python:3.12-slim's bundled pip/setuptools are
+# vulnerable regardless of base-digest freshness (verified: the digest bump
+# above still ships pip 25.0.1 / setuptools 78.1.0) — OSV: pip GHSA-4xh5-x5gv-
+# qwph (fixed 25.3) + 5 more, setuptools GHSA-5rjg-fvgr-3xxf path traversal
+# (fixed 78.1.1). Upgrade explicitly rather than waiting on upstream to
+# rebuild the base image with a newer pip baked in.
+RUN pip install --no-cache-dir --upgrade pip setuptools
 
 # System deps: kokoro needs espeak-ng for phonemization; faster-whisper needs ffmpeg
 RUN apt-get update -qq && \

@@ -2114,6 +2114,120 @@ else
     echo "  FAIL: the guard exists but rollback does not consult it" >&2
     fail=1
 fi
+
+echo ""
+echo "── accepted-risk register: acceptance, not amnesty ──"
+
+# CVE-2026-6653 (libxml2) and CVE-2026-60002 (openssh-client) have NO fixed
+# version in ANY Debian release — they are on bookworm AND trixie. Without a
+# register a zero-CRITICAL gate can never pass and prod is blocked forever;
+# with a bare ignore list they vanish and 0.05 is quietly violated. So every
+# entry must carry a justification, the arm-2 control, and an expiry.
+REG="$REPO/.trivyignore.yaml"
+SCANLIB_R="$REPO/scripts/lib/sunday-scan.sh"
+APPLY_R="$REPO/scripts/sunday-upgrade-apply.sh"
+
+if [ -f "$REG" ]; then
+    echo "  OK : the accepted-risk register exists"
+else
+    echo "  FAIL: no register — unfixable CVEs would block prod permanently" >&2
+    fail=1
+fi
+
+# Every entry needs all three fields. An entry without them is an unexamined
+# risk wearing an accepted one's clothes.
+_ids=$(/usr/bin/grep -c '^  - id:' "$REG" 2>/dev/null || echo 0)
+_stmts=$(/usr/bin/grep -c '^    statement:' "$REG" 2>/dev/null || echo 0)
+_exps=$(/usr/bin/grep -c '^    expiredAt:' "$REG" 2>/dev/null || echo 0)
+if [ "$_ids" -gt 0 ] && [ "$_ids" -eq "$_stmts" ] && [ "$_ids" -eq "$_exps" ]; then
+    echo "  OK : all $_ids entries carry a statement and an expiry"
+else
+    echo "  FAIL: $_ids ids but $_stmts statements and $_exps expiries — an entry is unjustified or never lapses" >&2
+    fail=1
+fi
+
+# The justification must name the compensating control, or "accepted" means
+# nothing more than "ignored".
+if [ "$(/usr/bin/grep -c 'arm 2:' "$REG" 2>/dev/null || echo 0)" -eq "$_ids" ]; then
+    echo "  OK : every entry names the arm-2 control covering the class"
+else
+    echo "  FAIL: an entry is accepted with no compensating control cited" >&2
+    fail=1
+fi
+
+# No entry may already be expired when committed.
+_EXPIRED=$(/usr/bin/awk '/expiredAt:/{print $2}' "$REG" 2>/dev/null | while read -r d; do
+    [ -n "$d" ] && [ "$d" \< "$(date -u +%Y-%m-%d)" ] && echo X
+done | /usr/bin/grep -c X || true)
+if [ "${_EXPIRED:-0}" -eq 0 ]; then
+    echo "  OK : no entry is already expired"
+else
+    echo "  FAIL: ${_EXPIRED} entr(ies) expired — they silently count against the gate again" >&2
+    fail=1
+fi
+
+# It must actually reach trivy.
+if /usr/bin/grep -qE 'ignore_args=\(--ignorefile "\$ignore_file"\)' "$SCANLIB_R" \
+   && /usr/bin/grep -qE '"\$\{ignore_args\[@\]\}" --format json' "$SCANLIB_R"; then
+    echo "  OK : the register is passed to trivy on every image scan"
+else
+    echo "  FAIL: the register exists but trivy never sees it" >&2
+    fail=1
+fi
+
+# A missing register must warn, not silently behave as if nothing is accepted.
+if /usr/bin/grep -q 'no accepted-risk register at' "$SCANLIB_R"; then
+    echo "  OK : a missing register is called out, not silently ignored"
+else
+    echo "  FAIL: a deleted register would go unnoticed" >&2
+    fail=1
+fi
+
+# Expiry must be surfaced BEFORE it bites. Under the current policy (dev warns,
+# prod enforces) a lapse discovered by prod lands in a Sunday window.
+_WARN=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_sunday_warn_expiring_acceptances()/,/^}/p" "$1")"
+    tmp="$(mktemp)"
+    soon=$(date -u -v+10d +%Y-%m-%d 2>/dev/null || date -u -d "+10 days" +%Y-%m-%d)
+    past=$(date -u -v-5d +%Y-%m-%d 2>/dev/null || date -u -d "-5 days" +%Y-%m-%d)
+    printf -- "  - id: CVE-SOON\n    expiredAt: %s\n  - id: CVE-GONE\n    expiredAt: %s\n" "$soon" "$past" > "$tmp"
+    SUNDAY_IGNORE_WARN_DAYS=30 _sunday_warn_expiring_acceptances "$tmp"
+' _ "$SCANLIB_R" 2>/dev/null)
+if printf '%s' "$_WARN" | /usr/bin/grep -q 'CVE-SOON expires in' && printf '%s' "$_WARN" | /usr/bin/grep -q 'CVE-GONE EXPIRED'; then
+    echo "  OK : approaching expiry warns, and an expired entry is reported as expired"
+else
+    echo "  FAIL: expiry is not surfaced before it lapses ($(printf '%s' "$_WARN" | tr '\n' ';' | cut -c1-70))" >&2
+    fail=1
+fi
+
+echo ""
+echo "── handoff carries scan truth, so a dev PASS cannot hide a dead scanner ──"
+
+# Policy is dev WARNS, prod ENFORCES. Dev can therefore publish status=PASS on a
+# run whose scanner produced nothing, and prod would discover that only by dying
+# in its own Sunday window. The handoff now states what actually happened.
+if /usr/bin/grep -qE '"scan": \{"images_scanned": %s, "scans_failed": %s, "enforced": %s\}' "$APPLY_R"; then
+    echo "  OK : the handoff records images scanned, scans failed, and enforcement"
+else
+    echo "  FAIL: a dev PASS still says nothing about whether the scan ran" >&2
+    fail=1
+fi
+
+# "0 scanned" and "no artefact" are different claims; prod must not read a
+# missing file as a clean zero.
+_SF=$(/usr/bin/env bash -c '
+    eval "$(/usr/bin/sed -n "/^_scan_json_field()/,/^}/p" "$1")"
+    SCAN_JSON="$(mktemp)"; printf "{\"scanned\": 3,\"failed\": 1}" > "$SCAN_JSON"
+    printf "%s/%s " "$(_scan_json_field scanned)" "$(_scan_json_field failed)"
+    SCAN_JSON=/nonexistent-artefact
+    printf "%s/%s" "$(_scan_json_field scanned)" "$(_scan_json_field failed)"
+' _ "$APPLY_R" 2>/dev/null)
+if [ "$_SF" = "3/1 null/null" ]; then
+    echo "  OK : a missing scan artefact reports null, never a clean zero"
+else
+    echo "  FAIL: scan counts are wrong or a missing artefact reads as 0 ('$_SF')" >&2
+    fail=1
+fi
 echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"

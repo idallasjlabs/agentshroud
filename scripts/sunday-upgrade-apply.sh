@@ -1253,6 +1253,16 @@ _attempt_rollback() {
 # 2026-09-06 failure mode where no JSON existed because the session never got
 # far enough to write one.
 # ═════════════════════════════════════════════════════════════════════════════
+# Read a count out of the scan artefact, defaulting to null rather than 0.
+# "0 images scanned" and "we do not know" are different claims, and prod's gate
+# must not read a missing file as a clean zero.
+_scan_json_field() {
+  local key="$1" v=""
+  [ -f "$SCAN_JSON" ] || { printf 'null'; return 0; }
+  v="$(grep -oE "\"${key}\": *[0-9]+" "$SCAN_JSON" 2>/dev/null | head -1 | grep -oE '[0-9]+$' || true)"
+  [ -n "$v" ] && printf '%s' "$v" || printf 'null'
+}
+
 write_handoff() {
   [ "$ENVIRONMENT" = "dev" ] || return 0
   local status="$1"
@@ -1298,6 +1308,17 @@ write_handoff() {
     # handoff has to record it rather than leaving PASS to imply it.
     printf '  "upgraded": %s,\n' "$([ "${UPGRADE_HAPPENED:-0}" -eq 1 ] && echo true || echo false)"
     printf '  "latest_openclaw_seen": "%s",\n' "${DISCOVERED_OPENCLAW_VERSION:-unknown}"
+    # Scan truth travels with the handoff. Policy (owner, 2026-09-25) is that
+    # dev WARNS on scan-integrity failures while prod ENFORCES, so dev can
+    # legitimately publish status=PASS on a run whose scanner never produced a
+    # finding. Without these fields prod reads that PASS, enforces, and dies in
+    # its own window with no warning — the failure lands at 06:00 Sunday with
+    # zero lead time. Recording it means the prod run, the report, and anyone
+    # reading the file can see that a dev PASS was not backed by a real CVE
+    # baseline, before prod attempts anything.
+    printf '  "scan": {"images_scanned": %s, "scans_failed": %s, "enforced": %s},\n' \
+      "$(_scan_json_field scanned)" "$(_scan_json_field failed)" \
+      "$([ "${SUNDAY_SCAN_ENFORCE:-0}" = "1" ] && echo true || echo false)"
     printf '  "versions": {\n    %s\n  },\n' "$versions"
     printf '  "notes": "Written by sunday-upgrade-apply.sh with --phase=%s. status=PASS is only ever published by a full --phase=all run, and means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$PHASE" "$SOAK_SECONDS"
     printf '}\n'
