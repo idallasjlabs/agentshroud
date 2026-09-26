@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "StatusResponse"
+community: "start-agentshroud.sh"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/start-agentshroudsh
 ---
 
 # AuthRequired
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[health_check_detail()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StatusResponse
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

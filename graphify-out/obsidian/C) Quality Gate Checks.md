@@ -1,17 +1,17 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
+community: "SOCWebSocketHandler"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/SOCWebSocketHandler
 ---
 
 # C) Quality Gate Checks
 
 ## Connections
-- [[Your Responsibilities]] - `contains` [EXTRACTED]
+- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler

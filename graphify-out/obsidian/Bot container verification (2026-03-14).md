@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
+community: "wakeword.c"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summ
+  - community/wakewordc
 ---
 
 # Bot container verification (2026-03-14)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ
+#graphify/document #graphify/EXTRACTED #community/wakewordc

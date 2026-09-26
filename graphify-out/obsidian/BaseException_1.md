@@ -1,19 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: ".proxy_messages()"
+community: "3. Brutally Honest Self-Assessment"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/3_Brutally_Honest_Self-Assessment
 ---
 
 # BaseException
 
 ## Connections
-- [[._is_connect_error()]] - `references` [EXTRACTED]
-- [[._is_connect_error()_1]] - `references` [EXTRACTED]
-- [[._local_backend_unavailable_response()]] - `references` [EXTRACTED]
-- [[._local_backend_unavailable_response()_1]] - `references` [EXTRACTED]
+- [[_err_text()]] - `references` [EXTRACTED]
+- [[_is_stale_callback_error()]] - `references` [EXTRACTED]
+- [[_is_stale_edit_error()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/3_Brutally_Honest_Self-Assessment

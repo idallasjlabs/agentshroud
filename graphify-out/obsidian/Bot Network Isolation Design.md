@@ -1,16 +1,16 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "rationale"
-community: "Network Topology"
+community: ".get_or_create_session()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/get_or_create_session
 ---
 
 # Bot Network Isolation Design
 
 ## Connections
-- [[Network Topology]] - `rationale_for` [EXTRACTED]
+- [[Network Topology_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Network_Topology
+#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session

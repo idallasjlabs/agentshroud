@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Kill Switch"
 location: "L433"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Kill_Switch
 ---
 
 # Base Images
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📦 Docker Images & Dependencies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

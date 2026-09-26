@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_real_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

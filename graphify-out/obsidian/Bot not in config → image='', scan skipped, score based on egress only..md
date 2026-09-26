@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L749"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # Bot not in config → image='', scan skipped, score based on egress only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_bot_returns_empty_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

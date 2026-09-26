@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_observatory_mode.py"
+community: "system-requirements.md"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/system-requirementsmd
 ---
 
 # Auto-revert task sets mode back to enforce after delay.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_auto_revert_restores_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd

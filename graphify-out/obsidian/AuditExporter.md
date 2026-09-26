@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditExporter"
+community: "load_config()"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/load_config
 ---
 
 # AuditExporter
 
 ## Connections
-- [[.__init__()_38]] - `method` [EXTRACTED]
+- [[.__init__()_56]] - `method` [EXTRACTED]
 - [[._export_cef()]] - `method` [EXTRACTED]
 - [[._export_json()]] - `method` [EXTRACTED]
 - [[._export_jsonld()]] - `method` [EXTRACTED]
@@ -25,25 +25,25 @@ tags:
 - [[.test_tamper_detection()]] - `calls` [EXTRACTED]
 - [[.test_verify_export_integrity()]] - `calls` [EXTRACTED]
 - [[.verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
+- [[AuditEvent_1]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[Exports audit events in various compliance formats.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
 - [[TestAuditStore]] - `uses` [INFERRED]
 - [[TestAuditStoreBotId]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[audit_export.py]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L1125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # Best-effort repo-relative path string for display (falls back to str).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_rel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

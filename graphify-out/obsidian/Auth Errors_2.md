@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
-location: "L9"
+community: "test_integration.py"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/test_integrationpy
 ---
 
 # Auth Errors
 
 ## Connections
-- [[1Password Auth Failures]] - `contains` [EXTRACTED]
-- [[Auth Errors]] - `contains` [EXTRACTED]
-- [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
-- [[Related Notes_62]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/test_integrationpy

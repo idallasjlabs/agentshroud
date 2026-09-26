@@ -1,29 +1,20 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L6"
+community: "Available MCP Servers"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Available_MCP_Servers
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[Approval Integration]] - `contains` [EXTRACTED]
-- [[Audit Logging]] - `contains` [EXTRACTED]
-- [[Best Practices]] - `contains` [EXTRACTED]
-- [[Core Security Principles]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
-- [[Limitations]] - `contains` [EXTRACTED]
-- [[Risk Levels]] - `contains` [EXTRACTED]
-- [[Security Architecture]] - `contains` [EXTRACTED]
-- [[Security Configuration]] - `contains` [EXTRACTED]
-- [[Security Guarantees]] - `contains` [EXTRACTED]
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[README_4]] - `contains` [EXTRACTED]
+- [[Related Skills_4]] - `contains` [EXTRACTED]
+- [[Usage_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: "llm_proxy.py"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/llm_proxypy
 ---
 
 # Behavior Examples
@@ -16,4 +16,4 @@ tags:
 - [[✅ What SHOULD Happen]] - `contains` [EXTRACTED]
 - [[❌ What Should NOT Happen (Blocked)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

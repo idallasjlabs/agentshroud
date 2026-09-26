@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # Blocking agent A does not affect agent B's processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_agents_process_independently()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

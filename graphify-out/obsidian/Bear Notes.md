@@ -1,22 +1,22 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Bear Notes"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Bear Notes
 
 ## Connections
-- [[Common Commands_3]] - `contains` [EXTRACTED]
-- [[Configuration_21]] - `contains` [EXTRACTED]
+- [[Common Commands_1]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
 - [[Getting a Bear Token]] - `contains` [EXTRACTED]
-- [[Notes_11]] - `contains` [EXTRACTED]
+- [[Notes_3]] - `contains` [EXTRACTED]
 - [[Options]] - `contains` [EXTRACTED]
-- [[bear-notesSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_197]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "3. AWS API MCP Authentication Reset"
+community: "._process_connect()"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/_process_connect
 ---
 
 # Authentication Reset Procedures
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/_process_connect

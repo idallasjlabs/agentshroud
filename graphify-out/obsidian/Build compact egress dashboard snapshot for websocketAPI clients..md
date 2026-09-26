@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Build compact egress dashboard snapshot for websocket/API clients.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_egress_live_snapshot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

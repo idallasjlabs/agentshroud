@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Starting a Development Task via Hermes / OpenCla"
+community: "🛡️ AgentShroud Release Plan"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+  - community/_AgentShroud_Release_Plan
 ---
 
 # BOT_CONTAINER
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+#graphify/code #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

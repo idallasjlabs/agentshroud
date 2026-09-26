@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "FileSandbox"
 location: "L2275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FileSandbox
 ---
 
 # Build informative but non-sensitive response for collaborator conceptual questio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_collaborator_safe_info_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

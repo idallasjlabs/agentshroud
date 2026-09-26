@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "🆘 Troubleshooting"
+community: "Hermes Service"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Troubleshooting
+  - community/Hermes_Service
 ---
 
 # "Authentication required"
 
 ## Connections
-- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Hermes_Service

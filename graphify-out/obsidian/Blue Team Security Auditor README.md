@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "test_redteam_probes.py"
+community: "DockerEngine"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/DockerEngine
 ---
 
 # Blue Team Security Auditor README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/document #graphify/EXTRACTED #community/DockerEngine

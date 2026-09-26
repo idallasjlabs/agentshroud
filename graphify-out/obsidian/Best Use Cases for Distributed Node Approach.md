@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
+community: "Multi-Agent Role Matrix"
 location: "L529"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Best Use Cases for Distributed Node Approach
 
 ## Connections
-- [[Use Cases_1]] - `contains` [EXTRACTED]
+- [[Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

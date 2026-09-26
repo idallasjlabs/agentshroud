@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "test_block_credentials.py"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/test_block_credentialspy
 ---
 
 # Audit Event Types and Schema
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 - [[Core Event Categories]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestMultipartOutboundPipeline"
+community: "test_ptt_state.c"
 location: "L4997"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/test_ptt_statec
 ---
 
 # Build a multipart/form-data body with text fields and an optional binary part.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_multipart_body()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/rationale #graphify/EXTRACTED #community/test_ptt_statec

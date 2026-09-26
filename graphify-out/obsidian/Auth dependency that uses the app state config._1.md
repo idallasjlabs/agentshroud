@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "forward.py"
-location: "L127"
+community: "TestCollaboratorPromptClassifiers"
+location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/forwardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

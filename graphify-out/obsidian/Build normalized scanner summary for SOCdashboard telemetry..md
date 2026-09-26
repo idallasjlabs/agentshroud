@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L1371"
+community: "SSHProxy"
+location: "L1384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # Build normalized scanner summary for SOC/dashboard telemetry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_scanner_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

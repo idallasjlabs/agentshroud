@@ -1,29 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L6"
+community: "test-container-runtime.sh"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/test-container-runtimesh
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Approval Integration_2]] - `contains` [EXTRACTED]
-- [[Audit Logging_2]] - `contains` [EXTRACTED]
-- [[Best Practices_5]] - `contains` [EXTRACTED]
-- [[Core Security Principles_2]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
-- [[Limitations_3]] - `contains` [EXTRACTED]
-- [[Risk Levels_2]] - `contains` [EXTRACTED]
-- [[Security Architecture_2]] - `contains` [EXTRACTED]
-- [[Security Configuration_2]] - `contains` [EXTRACTED]
-- [[Security Guarantees_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
-- [[Usage_113]] - `contains` [EXTRACTED]
-- [[hermesskillsi-browserSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_78]] - `contains` [EXTRACTED]
+- [[README_83]] - `contains` [EXTRACTED]
+- [[Related Skills_84]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_86]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/test-container-runtimesh

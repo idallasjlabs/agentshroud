@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestBotIdIsolationInSharedMemory"
+community: "icloud/scripts/calendar.js"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/icloud/scripts/calendarjs
 ---
 
 # BT-H4: Writing to the openclaw workspace must not leak into the hermes workspace
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/rationale #graphify/EXTRACTED #community/icloud/scripts/calendarjs

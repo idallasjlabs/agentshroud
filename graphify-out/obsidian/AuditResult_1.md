@@ -1,47 +1,24 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "BaseModel"
-location: "L77"
+community: "main.rs"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # AuditResult
 
 ## Connections
-- [[AddCollaboratorRequest]] - `uses` [INFERRED]
-- [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_22]] - `uses` [INFERRED]
-- [[ApprovalDecisionRequest]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
-- [[CreateDelegationRequest]] - `uses` [INFERRED]
-- [[CreateGroupRequest]] - `uses` [INFERRED]
-- [[DisconnectRequest]] - `uses` [INFERRED]
-- [[EgressApproveRequest]] - `uses` [INFERRED]
-- [[EgressRuleOverrideRequest]] - `uses` [INFERRED]
-- [[EgressScopeRequest]] - `uses` [INFERRED]
-- [[EmergencyBlockRequest]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[JSONResponse]] - `uses` [INFERRED]
-- [[LoginRequest]] - `uses` [INFERRED]
-- [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_6]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
-- [[ScanRequest_1]] - `uses` [INFERRED]
-- [[ServiceActionRequest]] - `uses` [INFERRED]
-- [[SetLogLevelRequest]] - `uses` [INFERRED]
-- [[SetModeRequest]] - `uses` [INFERRED]
-- [[SetModuleModeRequest]] - `uses` [INFERRED]
-- [[SetRoleRequest]] - `uses` [INFERRED]
-- [[SetUserModeRequest]] - `uses` [INFERRED]
-- [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/INFERRED #community/mainrs

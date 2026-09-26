@@ -1,22 +1,22 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
-location: "L222"
+community: "_sync()"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/_sync
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level_2]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally_2]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/document #graphify/EXTRACTED #community/_sync

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "TrustManager"
+community: "ServiceManager"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ServiceManager
 ---
 
 # Audit chain: 1000 entries in < 5s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

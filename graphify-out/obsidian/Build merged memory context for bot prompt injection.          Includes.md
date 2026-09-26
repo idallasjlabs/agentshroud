@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # Build merged memory context for bot prompt injection.          Includes:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_merged_memory_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

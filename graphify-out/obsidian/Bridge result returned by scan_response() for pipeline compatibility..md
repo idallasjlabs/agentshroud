@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # Bridge result returned by scan_response() for pipeline compatibility.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TripwireResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Health Checks"
+community: "Oracle — Feedback Analyst"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Bot Health Check
 
 ## Connections
-- [[Health Checks_1]] - `contains` [EXTRACTED]
+- [[Health Checks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

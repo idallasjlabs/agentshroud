@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "EgressTelegramNotifier"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/EgressTelegramNotifier
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

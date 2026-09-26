@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "TestUserMemoryWriteACL"
+community: "test_security_audit.py"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestUserMemoryWriteACL
+  - community/test_security_auditpy
 ---
 
 # Back-compat: existing callers that pass no author_id/rbac_config keep working.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legacy_no_author_write_still_appends()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestUserMemoryWriteACL
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

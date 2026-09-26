@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+community: "Quick Reference"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/Quick_Reference
 ---
 
 # Branch Naming
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

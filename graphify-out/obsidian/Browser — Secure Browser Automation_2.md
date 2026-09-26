@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "agentshroud-gateway container (starts first)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/agentshroud-gateway_container_starts_first
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_40]] - `contains` [EXTRACTED]
-- [[Related Skills_31]] - `contains` [EXTRACTED]
-- [[Usage_35]] - `contains` [EXTRACTED]
-- [[hermesskillsi-browserREADME]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[README_46]] - `contains` [EXTRACTED]
+- [[Related Skills_44]] - `contains` [EXTRACTED]
+- [[Usage_46]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first

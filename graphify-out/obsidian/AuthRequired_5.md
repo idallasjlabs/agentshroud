@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
-location: "L410"
+community: "SSHProxy"
+location: "L423"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/SSHProxy
 ---
 
 # AuthRequired
@@ -79,4 +79,4 @@ tags:
 - [[verify_killswitch()]] - `references` [EXTRACTED]
 - [[wazuh_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

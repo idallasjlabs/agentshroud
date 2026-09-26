@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Kill Switch"
+community: "AgentShroud Security Value Proposition"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # Automation Examples
@@ -17,4 +17,4 @@ tags:
 - [[Daily Security Check (cron)]] - `contains` [EXTRACTED]
 - [[Weekly Compliance Scan (cron)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

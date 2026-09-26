@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "KeyRotationConfig"
+community: "OpenClaw Bot Container"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/OpenClaw_Bot_Container
 ---
 
 # Build a complete op:// reference for a credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_op_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container

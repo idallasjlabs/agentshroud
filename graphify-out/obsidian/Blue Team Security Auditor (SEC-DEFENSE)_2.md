@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "Blue Team Security Auditor (SEC-DEFENSE)"
+community: "BaseModel"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+  - community/BaseModel
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
 ## Connections
-- [[Purpose_102]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[Usage_97]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[README_108]] - `contains` [EXTRACTED]
+- [[Related Skills_112]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_113]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
+#graphify/document #graphify/EXTRACTED #community/BaseModel

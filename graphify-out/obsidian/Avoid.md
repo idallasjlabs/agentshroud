@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI ("
-location: "L358"
+community: "TestEgressTelegramNotify"
+location: "L485"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
+  - community/TestEgressTelegramNotify
 ---
 
 # Avoid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8) OUTPUT FORMATTING CONTRACT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_
+#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify

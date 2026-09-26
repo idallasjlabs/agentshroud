@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "AgentShroud Setup Guide"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Batch PR Reviews (parallel army!)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Codex CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

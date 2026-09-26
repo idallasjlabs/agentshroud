@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "TestConfigValidation"
 location: "L343"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/TestConfigValidation
 ---
 
 # Authentication and Authorization Framework
@@ -17,4 +17,4 @@ tags:
 - [[Approval Queue Workflow]] - `contains` [EXTRACTED]
 - [[Trust Level Progression]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

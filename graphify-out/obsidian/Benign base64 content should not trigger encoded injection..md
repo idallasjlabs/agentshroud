@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "rationale"
-community: "InjectionSeverity"
+community: "MCPPermissionManager"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/MCPPermissionManager
 ---
 
 # Benign base64 content should not trigger encoded injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_base64_clean_content_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

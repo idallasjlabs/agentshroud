@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Implementation Status"
-location: "L320"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

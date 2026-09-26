@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Branding Specialist (BS)"
+community: "8. Common Troubleshooting Scenarios"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_BS
+  - community/8_Common_Troubleshooting_Scenarios
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_78]] - `contains` [EXTRACTED]
-- [[Related Skills_69]] - `contains` [EXTRACTED]
-- [[Usage_73]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_79]] - `contains` [EXTRACTED]
+- [[README_84]] - `contains` [EXTRACTED]
+- [[Related Skills_85]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_88]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/8_Common_Troubleshooting_Scenarios

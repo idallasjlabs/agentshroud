@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L410"
+community: "SSHProxy"
+location: "L423"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # AuthRequired
 
 ## Connections
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
 - [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[_scanner_summary()]] - `references` [EXTRACTED]
 - [[add_blocked_domain()]] - `references` [EXTRACTED]
@@ -93,4 +93,4 @@ tags:
 - [[verify_killswitch()]] - `references` [EXTRACTED]
 - [[wazuh_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

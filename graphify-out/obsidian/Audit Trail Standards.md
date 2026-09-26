@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "SecureBrowser Security Policies"
+community: "Pre-Deployment Checklist"
 location: "L188"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/Pre-Deployment_Checklist
 ---
 
 # Audit Trail Standards
@@ -17,4 +17,4 @@ tags:
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 - [[What Gets Logged]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

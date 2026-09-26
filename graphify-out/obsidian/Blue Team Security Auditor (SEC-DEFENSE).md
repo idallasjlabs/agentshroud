@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_31]] - `contains` [EXTRACTED]
-- [[Related Skills_22]] - `contains` [EXTRACTED]
-- [[Usage_26]] - `contains` [EXTRACTED]
+- [[Purpose_29]] - `contains` [EXTRACTED]
+- [[README_29]] - `contains` [EXTRACTED]
+- [[Related Skills_32]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

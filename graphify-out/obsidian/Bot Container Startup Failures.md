@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Gateway Container Startup Failures"
+community: "is_overloaded()"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Container_Startup_Failures
+  - community/is_overloaded
 ---
 
 # Bot Container Startup Failures
@@ -18,4 +18,4 @@ tags:
 - [[`Could not load Claude OAuth token after retries`]] - `contains` [EXTRACTED]
 - [[`startup Warning Gateway password file not found`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures
+#graphify/document #graphify/EXTRACTED #community/is_overloaded

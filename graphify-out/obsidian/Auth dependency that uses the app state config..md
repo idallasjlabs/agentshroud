@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "approval.py"
+community: "A2APolicyEngine"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/approvalpy
+  - community/A2APolicyEngine
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/approvalpy
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

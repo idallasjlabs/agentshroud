@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "AgentShroud Incident Response Plan"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Brand Identity
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[Mission]] - `contains` [EXTRACTED]
+- [[Values]] - `contains` [EXTRACTED]
+- [[Vision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

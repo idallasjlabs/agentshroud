@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Post-v1.0.0 — Deferred"
-location: "L322"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Browser Extension
 
 ## Connections
-- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

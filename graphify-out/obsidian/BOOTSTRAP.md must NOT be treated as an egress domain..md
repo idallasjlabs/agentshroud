@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestOutboundClassifierHelpers"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L4107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # BOOTSTRAP.md must NOT be treated as an egress domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_extract_first_egress_target_skips_md_filenames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/rationale #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

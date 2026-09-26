@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "TestMultiTurnTracker"
 location: "L780"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/TestMultiTurnTracker
 ---
 
 # Buffer streamed text deltas and yield each complete sentence as soon as     its
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_sentences_from_deltas()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

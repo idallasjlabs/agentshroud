@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestBotIdIsolationInSharedMemory"
+community: "icloud/scripts/calendar.js"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/icloud/scripts/calendarjs
 ---
 
 # BT-H3: The filesystem paths for openclaw and hermes sessions differ.          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_user_memory_openclaw_and_hermes_are_separate_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/rationale #graphify/EXTRACTED #community/icloud/scripts/calendarjs

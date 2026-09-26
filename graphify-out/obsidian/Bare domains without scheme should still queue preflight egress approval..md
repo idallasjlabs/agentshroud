@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ingest_api/main.py"
 location: "L5865"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ingest_api/mainpy
 ---
 
 # Bare domains without scheme should still queue preflight egress approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_bare_domain_triggers_egress_preflight_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

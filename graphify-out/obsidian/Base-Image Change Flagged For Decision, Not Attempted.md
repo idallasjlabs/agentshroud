@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "start.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/startsh
 ---
 
 # Base-Image Change Flagged For Decision, Not Attempted
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `rationale_for` [EXTRACTED]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/startsh

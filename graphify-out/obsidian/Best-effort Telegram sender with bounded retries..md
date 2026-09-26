@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "FileSandbox"
 location: "L7101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FileSandbox
 ---
 
 # Best-effort Telegram sender with bounded retries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_telegram_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

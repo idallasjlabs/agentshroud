@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+community: "SSHProxy"
 location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/SSHProxy
 ---
 
 # Best Practices
 
 ## Connections
-- [[MCP-Specific_2]] - `contains` [EXTRACTED]
-- [[Organization_2]] - `contains` [EXTRACTED]
-- [[Security_3]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[MCP-Specific_1]] - `contains` [EXTRACTED]
+- [[Organization_1]] - `contains` [EXTRACTED]
+- [[Security_4]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/document #graphify/EXTRACTED #community/SSHProxy

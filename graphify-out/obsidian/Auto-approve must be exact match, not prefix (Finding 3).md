@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Common Queries"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Common_Queries
 ---
 
 # Auto-approve must be exact match, not prefix (Finding #3)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_validate_auto_approve_exact_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Common_Queries

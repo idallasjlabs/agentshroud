@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Branding Specialist README (OpenClaw)"
+community: "test_hermes_mcp_reconciliation.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_README_OpenClaw
+  - community/test_hermes_mcp_reconciliationsh
 ---
 
 # Branding Specialist SKILL (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Specialist README (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_README_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

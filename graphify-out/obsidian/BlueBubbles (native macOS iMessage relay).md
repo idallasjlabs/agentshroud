@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "iMessage Integration Status"
+community: "check_command()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/check_command
 ---
 
 # BlueBubbles (native macOS iMessage relay)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[IMESSAGE_STATUS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/concept #graphify/EXTRACTED #community/check_command

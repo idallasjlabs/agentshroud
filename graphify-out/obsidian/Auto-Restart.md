@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Crash Recovery"
-location: "L28"
+community: "API Keys Setup Guide"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/API_Keys_Setup_Guide
 ---
 
 # Auto-Restart
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

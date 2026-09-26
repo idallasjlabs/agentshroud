@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "MiddlewareManager"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager
 ---
 
 # Build tool tier permissions for each role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_tool_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L183"
+community: "llm_proxy.py"
+location: "L320"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/llm_proxypy
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

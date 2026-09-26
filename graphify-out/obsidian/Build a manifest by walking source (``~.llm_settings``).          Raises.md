@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "cls"
+community: "TestAlertDispatcher"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cls
+  - community/TestAlertDispatcher
 ---
 
 # Build a manifest by walking *source* (``~/.llm_settings/``).          Raises:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cls
+#graphify/rationale #graphify/EXTRACTED #community/TestAlertDispatcher

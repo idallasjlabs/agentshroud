@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Available MCP Servers"
+community: "01-architecture.md"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/01-architecturemd
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP_2]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/01-architecturemd

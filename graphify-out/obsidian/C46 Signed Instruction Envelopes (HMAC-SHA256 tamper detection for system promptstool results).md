@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "concept"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system prompts/tool results)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EnvelopeSigner]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/concept #graphify/EXTRACTED #community/RBACConfig

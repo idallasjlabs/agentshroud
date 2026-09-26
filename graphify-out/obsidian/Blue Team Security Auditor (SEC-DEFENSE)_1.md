@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "SlackAPIProxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/SlackAPIProxy
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
 ## Connections
-- [[Purpose_65]] - `contains` [EXTRACTED]
-- [[Related Skills_56]] - `contains` [EXTRACTED]
-- [[Usage_60]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_66]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_71]] - `contains` [EXTRACTED]
+- [[Related Skills_72]] - `contains` [EXTRACTED]
+- [[Usage_73]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy

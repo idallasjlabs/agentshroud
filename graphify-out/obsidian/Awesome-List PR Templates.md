@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Awesome-List PR Templates"
+community: "agentshroud-ieee-paper.md"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Awesome-List_PR_Templates
+  - community/agentshroud-ieee-papermd
 ---
 
 # Awesome-List PR Templates
@@ -17,4 +17,4 @@ tags:
 - [[awesome-llm-apps  awesome-llm]] - `contains` [EXTRACTED]
 - [[awesome-security  defensive security list]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Awesome-List_PR_Templates
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

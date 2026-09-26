@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "test_sanitizer.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Bare 10-digit Telegram UID must pass through unchanged — no <PHONE_NUMBER>.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_uid_not_redacted_as_phone()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

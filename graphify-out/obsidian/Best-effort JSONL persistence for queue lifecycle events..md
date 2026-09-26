@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: ".decide()"
+community: "A2APeer"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/decide
+  - community/A2APeer
 ---
 
 # Best-effort JSONL persistence for queue lifecycle events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._append_audit_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/decide
+#graphify/rationale #graphify/EXTRACTED #community/A2APeer

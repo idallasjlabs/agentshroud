@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation README"
+community: "run-tests-batched.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_README
+  - community/run-tests-batchedsh
 ---
 
 # Browser — Secure Browser Automation README
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_README
+#graphify/document #graphify/EXTRACTED #community/run-tests-batchedsh

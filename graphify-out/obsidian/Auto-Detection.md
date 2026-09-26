@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Browser — Secure Browser Automation"
 location: "L342"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Auto-Detection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

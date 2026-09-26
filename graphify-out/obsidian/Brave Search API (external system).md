@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "AgentShroud (system, C4 context)"
+community: "test_cron_jobs_prompts.py"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context
+  - community/test_cron_jobs_promptspy
 ---
 
 # Brave Search API (external system)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud (system, C4 context)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context
+#graphify/image #graphify/EXTRACTED #community/test_cron_jobs_promptspy

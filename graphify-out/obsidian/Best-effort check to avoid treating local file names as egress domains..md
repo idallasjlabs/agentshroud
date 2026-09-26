@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "FileSandbox"
 location: "L1124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FileSandbox
 ---
 
 # Best-effort check to avoid treating local file names as egress domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_filename_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

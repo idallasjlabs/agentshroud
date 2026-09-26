@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "forward.py"
-location: "L148"
+community: "TestCollaboratorPromptClassifiers"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # AuthRequired
 
 ## Connections
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
