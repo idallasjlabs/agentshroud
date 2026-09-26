@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "code"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # test_hc_ping_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_heartbeat_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

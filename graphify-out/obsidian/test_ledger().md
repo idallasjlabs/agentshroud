@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "SSHProxy"
+community: "EgressPolicy"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # test_ledger()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

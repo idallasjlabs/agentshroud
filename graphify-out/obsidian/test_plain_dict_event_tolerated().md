@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "test_telegram_proxy_outbound.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_plain_dict_event_tolerated()
@@ -16,4 +16,4 @@ tags:
 - [[_SendSpy]] - `calls` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

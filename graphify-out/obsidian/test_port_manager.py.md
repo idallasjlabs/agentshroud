@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "PortManager"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # test_port_manager.py
@@ -22,4 +22,4 @@ tags:
 - [[TestResolveports]] - `contains` [EXTRACTED]
 - [[_fake_socket_factory()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

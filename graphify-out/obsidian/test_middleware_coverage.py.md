@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # test_middleware_coverage.py
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[MiddlewareResult]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[TestAnalyzeRequestForRBAC]] - `contains` [EXTRACTED]
 - [[TestBrowserSecurity]] - `contains` [EXTRACTED]
 - [[TestClose]] - `contains` [EXTRACTED]
-- [[TestContextGuard_1]] - `contains` [EXTRACTED]
+- [[TestContextGuard]] - `contains` [EXTRACTED]
 - [[TestCriticalGuardInitFailClosed]] - `contains` [EXTRACTED]
 - [[TestCrossSessionAccess]] - `contains` [EXTRACTED]
 - [[TestEnvGuard]] - `contains` [EXTRACTED]
@@ -26,14 +26,14 @@ tags:
 - [[TestExtractUserId]] - `contains` [EXTRACTED]
 - [[TestFileSandboxStep]] - `contains` [EXTRACTED]
 - [[TestFilterOutboundResponse]] - `contains` [EXTRACTED]
-- [[TestGitGuard]] - `contains` [EXTRACTED]
+- [[TestGitGuard_1]] - `contains` [EXTRACTED]
 - [[TestInit]] - `contains` [EXTRACTED]
 - [[TestIsOwner]] - `contains` [EXTRACTED]
 - [[TestIsPathAllowedForUser]] - `contains` [EXTRACTED]
 - [[TestMemoryIntegrityRegistration]] - `contains` [EXTRACTED]
 - [[TestMetadataGuard_1]] - `contains` [EXTRACTED]
 - [[TestMiddlewareResult]] - `contains` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `contains` [EXTRACTED]
 - [[TestPathIsolationStep]] - `contains` [EXTRACTED]
 - [[TestProcessRequestIdentity]] - `contains` [EXTRACTED]
 - [[TestProcessRequestRBAC]] - `contains` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[TestSetConfig]] - `contains` [EXTRACTED]
 - [[TestToolChainAnalyzer]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_bot()]] - `contains` [EXTRACTED]
 - [[_req()]] - `contains` [EXTRACTED]
 - [[_scan_result()]] - `contains` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[temp_workspace()_1]] - `contains` [EXTRACTED]
 - [[usm()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

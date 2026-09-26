@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "The 8D Investigation Process"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/The_8D_Investigation_Process
 ---
 
 # test_llm_proxy_failover.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[_call_proxy()]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `contains` [EXTRACTED]
+- [[make_proxy()]] - `contains` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_proxy_post_retry_429_now_failovers()]] - `contains` [EXTRACTED]
 - [[test_router_streaming.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

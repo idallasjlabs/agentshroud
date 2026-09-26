@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "InjectionSeverity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/InjectionSeverity
 ---
 
 # test_main_endpoints.py
@@ -28,8 +28,8 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[health.py]] - `imports_from` [EXTRACTED]
 - [[hermes_dashboard_proxy()]] - `imports` [EXTRACTED]
-- [[ingest_apimain.py]] - `references` [EXTRACTED]
+- [[main.py_2]] - `references` [EXTRACTED]
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

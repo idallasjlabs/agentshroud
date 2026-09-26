@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # test_pipeline_clamav_clean_payload()
@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Clean base64 payload → FORWARD.]] - `rationale_for` [EXTRACTED]
 - [[_b64_payload()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

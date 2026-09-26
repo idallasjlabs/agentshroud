@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "TestMCPProxyEndpoint"
+community: "Safe Refactor Specialist"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/Safe_Refactor_Specialist
 ---
 
 # test_mcp_proxy_endpoint.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ProxyResult]] - `imports` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `contains` [EXTRACTED]
-- [[client()_8]] - `contains` [EXTRACTED]
+- [[client()_9]] - `contains` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `conceptually_related_to` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/code #graphify/EXTRACTED #community/Safe_Refactor_Specialist

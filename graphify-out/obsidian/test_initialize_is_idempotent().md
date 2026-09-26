@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_ledger.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "SSHProxy"
-location: "L216"
+community: "TelegramAPIProxy"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # test_initialize_is_idempotent()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - `rationale_for` [EXTRACTED]
-- [[test_ledger.py]] - `contains` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

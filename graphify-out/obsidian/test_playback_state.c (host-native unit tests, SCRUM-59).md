@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "test_playback_state.c"
+community: "compute_scorecard()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/compute_scorecard
 ---
 
 # test_playback_state.c (host-native unit tests, SCRUM-59)
@@ -15,6 +15,5 @@ tags:
 - [[delivery_track_sent_ok()]] - `calls` [EXTRACTED]
 - [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - `references` [EXTRACTED]
 - [[stubsaudio.h (host-test stub replacing audio.h constants)]] - `references` [EXTRACTED]
-- [[wakeword_ptt_press]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/compute_scorecard

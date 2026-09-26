@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "test_gemini_openai_translator.py"
+community: "SecureBrowser"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/SecureBrowser
 ---
 
 # test_openai_to_gemini_basic_request()
@@ -15,4 +15,4 @@ tags:
 - [[openai_to_gemini_request()]] - `calls` [EXTRACTED]
 - [[test_gemini_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

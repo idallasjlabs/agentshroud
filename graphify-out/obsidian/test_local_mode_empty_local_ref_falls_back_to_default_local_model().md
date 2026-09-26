@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "_t()"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/_t
 ---
 
 # test_local_mode_empty_local_ref_falls_back_to_default_local_model()
 
 ## Connections
-- [[local mode requested but neither HERMES_MAIN_MODEL nor local ref is local. Must…]] - `rationale_for` [EXTRACTED]
+- [[local mode requested but neither HERMES_MAIN_MODEL nor local ref is local.]] - `rationale_for` [EXTRACTED]
 - [[resolve_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TestNormalizeForSpeech"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestNormalizeForSpeech
 ---
 
 # test_log_requests_middleware()
@@ -16,4 +16,4 @@ tags:
 - [[log_requests()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

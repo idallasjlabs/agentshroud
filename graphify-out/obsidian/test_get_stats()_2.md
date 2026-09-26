@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L182"
+community: "EgressPolicy"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/EgressPolicy
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

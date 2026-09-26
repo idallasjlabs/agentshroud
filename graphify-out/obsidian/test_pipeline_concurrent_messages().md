@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "EgressPolicy"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/EgressPolicy
 ---
 
 # test_pipeline_concurrent_messages()
@@ -15,4 +15,4 @@ tags:
 - [[Multiple messages through pipeline concurrently — thread safety.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

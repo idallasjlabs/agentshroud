@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "_t()"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/_t
 ---
 
 # test_hermes_model_resolver.py
 
 ## Connections
-- [[Tests for the Hermes model resolver (SCRUM-70 — WS-C local-model parity). The…]] - `rationale_for` [EXTRACTED]
 - [[_load_resolver()]] - `contains` [EXTRACTED]
-- [[resolve_model.py (Hermes)]] - `references` [EXTRACTED]
 - [[test_cli_default_key_is_model()]] - `contains` [EXTRACTED]
 - [[test_cli_emits_model_line()]] - `contains` [EXTRACTED]
 - [[test_cli_emits_provider_line()]] - `contains` [EXTRACTED]
@@ -37,4 +36,4 @@ tags:
 - [[test_unknown_mode_treated_as_cloud()]] - `contains` [EXTRACTED]
 - [[test_unrelated_model_names_pass_through_uncorrected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/_t

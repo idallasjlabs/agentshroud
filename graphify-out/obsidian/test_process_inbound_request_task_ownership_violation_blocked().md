@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "test_soc_router_coverage.py"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # test_process_inbound_request_task_ownership_violation_blocked()
 
 ## Connections
-- [[A2APolicyEngine]] - `calls` [EXTRACTED]
-- [[A2AProxy]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

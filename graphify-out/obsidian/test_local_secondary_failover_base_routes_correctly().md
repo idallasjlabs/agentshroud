@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "LLMProxy"
+community: "asyncio"
 location: "L565"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/asyncio
 ---
 
 # test_local_secondary_failover_base_routes_correctly()
 
 ## Connections
-- [[._local_failover_base()]] - `calls` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
 - [[_local_failover_base resolves correct backend for secondary model.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/asyncio

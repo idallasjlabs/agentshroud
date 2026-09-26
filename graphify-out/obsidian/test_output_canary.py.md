@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "TestOutputCanary"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # test_output_canary.py
@@ -16,4 +16,4 @@ tags:
 - [[OutputCanary]] - `imports` [EXTRACTED]
 - [[TestOutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

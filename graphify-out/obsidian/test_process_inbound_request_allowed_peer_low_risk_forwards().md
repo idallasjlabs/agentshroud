@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "test_soc_router_coverage.py"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # test_process_inbound_request_allowed_peer_low_risk_forwards()
 
 ## Connections
-- [[A2AProxy]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

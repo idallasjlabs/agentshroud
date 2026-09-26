@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # test_key_rotation_internals.py
@@ -27,7 +27,7 @@ tags:
 - [[_old_cred()]] - `contains` [EXTRACTED]
 - [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
 - [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
-- [[manager()]] - `contains` [EXTRACTED]
+- [[manager()_2]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialValidator
+#graphify/code #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

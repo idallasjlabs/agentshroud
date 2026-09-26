@@ -1,26 +1,27 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Currently Unmitigable Residual Class"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # test_hermes_cron_seed.py
 
 ## Connections
-- [[Validate that init-config.sh cron jobs and jobs.yaml stay in sync. Prevents…]] - `rationale_for` [EXTRACTED]
+- [[_injectable_providers()]] - `references` [EXTRACTED]
 - [[_parse_cron_names_from_sh()]] - `contains` [EXTRACTED]
 - [[_parse_job_names_from_yaml()]] - `contains` [EXTRACTED]
 - [[_parse_seed_cron_calls_from_sh()]] - `contains` [EXTRACTED]
-- [[gateway.proxy.llm_proxy]] - `references` [EXTRACTED]
-- [[init-config.sh (Hermes)]] - `references` [EXTRACTED]
-- [[jobs.yaml (Hermes cron)]] - `references` [EXTRACTED]
+- [[_seed_cron()]] - `references` [EXTRACTED]
+- [[init-config.sh]] - `references` [EXTRACTED]
 - [[test_competitive_email_job_present()]] - `contains` [EXTRACTED]
 - [[test_competitive_landscape_job_present()]] - `contains` [EXTRACTED]
 - [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - `contains` [EXTRACTED]
+- [[test_content_generating_jobs_pinned_to_injectable_upstream()]] - `contains` [EXTRACTED]
 - [[test_cron_seed_is_stampless_and_idempotent()]] - `contains` [EXTRACTED]
 - [[test_init_config_has_expected_cron_job_count()]] - `contains` [EXTRACTED]
 - [[test_jira_weekly_review_job_present()]] - `contains` [EXTRACTED]
@@ -30,4 +31,4 @@ tags:
 - [[test_seed_cron_supports_optional_model_and_provider_args()]] - `contains` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class

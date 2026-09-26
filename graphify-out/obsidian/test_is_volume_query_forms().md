@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "CollaboratorActivityTracker"
 location: "L2658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/CollaboratorActivityTracker
 ---
 
 # test_is_volume_query_forms()
@@ -15,4 +15,4 @@ tags:
 - [[Read phrasings match; set commands and unrelated speech do not.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

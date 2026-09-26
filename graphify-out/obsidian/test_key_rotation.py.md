@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "test_key_rotation.py"
+community: "TestOpProxyEndpoint"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_key_rotationpy
+  - community/TestOpProxyEndpoint
 ---
 
 # test_key_rotation.py
@@ -25,10 +25,10 @@ tags:
 - [[TestKeyRotationConfig]] - `contains` [EXTRACTED]
 - [[TestKeyRotationManager]] - `contains` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[test_credentials_health_endpoint()]] - `contains` [EXTRACTED]
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_key_rotationpy
+#graphify/code #graphify/EXTRACTED #community/TestOpProxyEndpoint

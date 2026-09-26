@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "test_multi_host_test.py"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # test_multi_host_test.py
@@ -16,9 +16,9 @@ tags:
 - [[HostStatus]] - `imports` [EXTRACTED]
 - [[MultiHostResult]] - `imports` [EXTRACTED]
 - [[TestBuildSshArgv]] - `contains` [EXTRACTED]
-- [[TestClassify_1]] - `contains` [EXTRACTED]
+- [[TestClassify]] - `contains` [EXTRACTED]
 - [[TestHostResult]] - `contains` [EXTRACTED]
-- [[TestMain_1]] - `contains` [EXTRACTED]
+- [[TestMain]] - `contains` [EXTRACTED]
 - [[TestMultiHostResultProperties]] - `contains` [EXTRACTED]
 - [[TestParseHosts]] - `contains` [EXTRACTED]
 - [[TestParserAndCommandResolution]] - `contains` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[_write_exec()]] - `contains` [EXTRACTED]
 - [[build_parser()]] - `imports` [EXTRACTED]
 - [[build_ssh_argv()]] - `imports` [EXTRACTED]
-- [[classify()_1]] - `imports` [EXTRACTED]
-- [[main()_30]] - `imports` [EXTRACTED]
+- [[classify()]] - `imports` [EXTRACTED]
+- [[main()_14]] - `imports` [EXTRACTED]
 - [[multi_host_test.py]] - `references` [EXTRACTED]
 - [[parse_hosts()]] - `imports` [EXTRACTED]
 - [[run_multi_host()]] - `imports` [EXTRACTED]
 - [[ssh_runner()]] - `imports` [EXTRACTED]
-- [[tail()]] - `imports` [EXTRACTED]
+- [[tail()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

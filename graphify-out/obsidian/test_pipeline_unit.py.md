@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # test_pipeline_unit.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[InstructionEnvelope]] - `imports` [EXTRACTED]
@@ -23,25 +23,25 @@ tags:
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[ScanResult_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestAuditChain]] - `contains` [EXTRACTED]
 - [[TestAuditChainBounded]] - `contains` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `contains` [EXTRACTED]
 - [[TestContextIntegrityInPipeline]] - `contains` [EXTRACTED]
 - [[TestEnvelopeSignerInPipeline]] - `contains` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `contains` [EXTRACTED]
-- [[TestKeyLeakDetection]] - `contains` [EXTRACTED]
+- [[TestKeyLeakDetection_1]] - `contains` [EXTRACTED]
 - [[TestOutboundFilterResultBinding]] - `contains` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `contains` [EXTRACTED]
 - [[TestTrustViolationRecording]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "TrustManager"
+community: "ServiceManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ServiceManager
 ---
 
 # test_performance.py
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `contains` [EXTRACTED]
 - [[TestFullPipelineLatency]] - `contains` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[TestPromptGuardPerformance]] - `contains` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

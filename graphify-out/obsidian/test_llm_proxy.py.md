@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "soc.js"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/socjs
 ---
 
 # test_llm_proxy.py
 
 ## Connections
-- [[LLMProxy]] - `imports` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
+- [[LLMProxy]] - `references` [EXTRACTED]
+- [[ToolACLEnforcer]] - `conceptually_related_to` [INFERRED]
+- [[_FakeSanitizer]] - `contains` [EXTRACTED]
 - [[_FakeToolACL]] - `contains` [EXTRACTED]
 - [[_TrackingInjector]] - `contains` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `contains` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `contains` [EXTRACTED]
-- [[gateway.proxy.llm_proxy]] - `imports_from` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - `contains` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `contains` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `contains` [EXTRACTED]
@@ -46,4 +48,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `contains` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/socjs

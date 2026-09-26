@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "CollaboratorGreeter"
+community: "Validation Runner Specialist"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/Validation_Runner_Specialist
 ---
 
 # test_persist_state_exception_is_swallowed()
@@ -16,4 +16,4 @@ tags:
 - [[_persist_state failure must not raise.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/Validation_Runner_Specialist

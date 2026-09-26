@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "_wrap_response()"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/_wrap_response
 ---
 
 # test_get_activity_filters_by_bot_id()
@@ -15,4 +15,4 @@ tags:
 - [[get_activity(bot_id=...) returns only entries matching that bot_id.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

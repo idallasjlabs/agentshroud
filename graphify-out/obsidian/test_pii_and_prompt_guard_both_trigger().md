@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "EgressPolicy"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/EgressPolicy
 ---
 
 # test_pii_and_prompt_guard_both_trigger()
@@ -15,4 +15,4 @@ tags:
 - [[When both PII sanitizer and prompt guard detect issues.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

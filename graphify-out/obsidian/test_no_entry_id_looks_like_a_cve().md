@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "AgentRegistry"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/AgentRegistry
 ---
 
 # test_no_entry_id_looks_like_a_cve()
 
 ## Connections
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id. This is the load-…]] - `rationale_for` [EXTRACTED]
+- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - `rationale_for` [EXTRACTED]
 - [[_all_entries()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

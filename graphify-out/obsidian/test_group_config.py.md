@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "PermissionLevel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/PermissionLevel
 ---
 
 # test_group_config.py
 
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[TestAdminChecks]] - `contains` [EXTRACTED]
 - [[TestCollabMode]] - `contains` [EXTRACTED]
 - [[TestGroupSafeResponsePrefix]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
 - [[teams()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

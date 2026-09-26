@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # test_output_schema.py
@@ -17,4 +17,4 @@ tags:
 - [[TestOutputSchemaEnforcer]] - `contains` [EXTRACTED]
 - [[enforcer()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "DataExfilVolumeGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/DataExfilVolumeGuard
 ---
 
 # test_memory_lifecycle.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ContentThreat]] - `imports` [EXTRACTED]
 - [[ContentThreatType]] - `imports` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `imports` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `imports` [EXTRACTED]
 - [[MemorySecurityConfig]] - `imports` [EXTRACTED]
 - [[ModificationSource]] - `imports` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[TestMemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

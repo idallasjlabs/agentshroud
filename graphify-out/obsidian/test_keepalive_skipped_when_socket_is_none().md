@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "SessionManager"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/SessionManager
 ---
 
 # test_keepalive_skipped_when_socket_is_none()
@@ -16,7 +16,7 @@ tags:
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[Transport without an underlying socket (None) is skipped cleanly.]] - `rationale_for` [EXTRACTED]
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/SessionManager

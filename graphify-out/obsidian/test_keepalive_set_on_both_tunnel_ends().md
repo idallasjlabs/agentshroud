@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "SessionManager"
 location: "L485"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/SessionManager
 ---
 
 # test_keepalive_set_on_both_tunnel_ends()
@@ -15,7 +15,7 @@ tags:
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[_SocketTransportWriter]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/SessionManager

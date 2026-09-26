@@ -1,17 +1,19 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # test_progressive_trust_integration.py
 
 ## Connections
-- [[ProgressiveTrustConfig → TrustManager integration tests. The trust ladder…]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
+- [[PromotionThreshold]] - `imports` [EXTRACTED]
 - [[TestBackwardCompat]] - `contains` [EXTRACTED]
 - [[TestEnforcementMode]] - `contains` [EXTRACTED]
 - [[TestEnforcementModeResolver]] - `contains` [EXTRACTED]
@@ -24,12 +26,12 @@ tags:
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[ViolationType]] - `imports` [EXTRACTED]
 - [[_fast_ladder()]] - `contains` [EXTRACTED]
 - [[_make_tm()]] - `contains` [EXTRACTED]
 - [[_set_state()]] - `contains` [EXTRACTED]
-- [[gateway.security.tool_acl]] - `references` [EXTRACTED]
-- [[gateway.security.trust_manager]] - `imports_from` [EXTRACTED]
-- [[progressive_trust_config.py]] - `references` [EXTRACTED]
+- [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
