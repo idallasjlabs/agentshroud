@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # test_forwarder_mock()
 
 ## Connections
-- [[.forward()_2]] - `calls` [EXTRACTED]
+- [[.forward()_4]] - `calls` [EXTRACTED]
 - [[Verify forwarder mock works correctly.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
 - [[IncidentRecord]] - `imports` [EXTRACTED]
 - [[TestBotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[TestBuildFullMesh]] - `contains` [EXTRACTED]
@@ -24,9 +24,9 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `contains` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustDecayPolicy]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[hermes_tm()]] - `contains` [EXTRACTED]
-- [[ledger()_2]] - `contains` [EXTRACTED]
+- [[ledger()_1]] - `contains` [EXTRACTED]
 - [[openclaw_tm()]] - `contains` [EXTRACTED]
 - [[policy()]] - `contains` [EXTRACTED]
 

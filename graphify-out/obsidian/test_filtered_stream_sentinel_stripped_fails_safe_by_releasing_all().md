@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "TestMultiTurnTracker"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/TestMultiTurnTracker
 ---
 
 # test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()
@@ -16,4 +16,4 @@ tags:
 - [[_filtered_sentence_stream()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker

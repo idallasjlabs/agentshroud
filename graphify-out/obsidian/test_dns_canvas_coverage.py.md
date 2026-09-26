@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
+community: "Seccomp Profiles"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Seccomp_Profiles
 ---
 
 # test_dns_canvas_coverage.py
@@ -48,4 +48,4 @@ tags:
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
 - [[test_dns_filter.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Seccomp_Profiles

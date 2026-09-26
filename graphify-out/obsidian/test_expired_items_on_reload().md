@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # test_expired_items_on_reload()
 
 ## Connections
-- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[Expired items are marked expired during load_pending.]] - `rationale_for` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

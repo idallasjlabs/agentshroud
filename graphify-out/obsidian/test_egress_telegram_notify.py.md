@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "ConfigIntegrityMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/ConfigIntegrityMonitor
 ---
 
 # test_egress_telegram_notify.py
@@ -15,4 +15,4 @@ tags:
 - [[EgressTelegramNotifier]] - `imports` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

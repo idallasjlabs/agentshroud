@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # test_docs_accuracy.py
@@ -16,7 +16,7 @@ tags:
 - [[CONTRIBUTING]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[SECURITY]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestContributingMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestLifespanWiresEveryPipelineModule]] - `contains` [EXTRACTED]
 - [[TestManageModulesEndpointAccuracy]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[TestSecurityMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestTestCountAccuracy]] - `contains` [EXTRACTED]
 - [[_read_file()]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

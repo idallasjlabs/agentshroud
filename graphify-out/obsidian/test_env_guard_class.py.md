@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "TestCheckCommandExecution"
+community: "test_observatory_mode.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/test_observatory_modepy
 ---
 
 # test_env_guard_class.py
@@ -21,4 +21,4 @@ tags:
 - [[TestSummaryAndExport]] - `contains` [EXTRACTED]
 - [[guard()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

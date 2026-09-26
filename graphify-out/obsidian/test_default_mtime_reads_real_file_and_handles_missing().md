@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # test_default_mtime_reads_real_file_and_handles_missing()
@@ -17,4 +17,4 @@ tags:
 - [[_write()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

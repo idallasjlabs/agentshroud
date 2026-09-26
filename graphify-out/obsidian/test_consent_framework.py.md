@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "test_filter_xml_blocks.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/test_filter_xml_blockspy
 ---
 
 # test_consent_framework.py
@@ -20,4 +20,4 @@ tags:
 - [[consent_framework.py]] - `imports_from` [EXTRACTED]
 - [[framework()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy

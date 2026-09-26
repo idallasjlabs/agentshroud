@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # test_forward_routing.py
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `contains` [EXTRACTED]
 - [[TestOutboundBlockedNotDelivered]] - `contains` [EXTRACTED]
 - [[TestOwnerSpoofingViaForwardBody]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[forward-routing agent_id propagation into security pipeline]] - `implements` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

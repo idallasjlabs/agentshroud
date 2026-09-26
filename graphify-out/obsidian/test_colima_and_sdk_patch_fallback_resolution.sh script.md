@@ -1,18 +1,22 @@
 ---
 source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "run_test()"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_test
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # test_colima_and_sdk_patch_fallback_resolution.sh script
 
 ## Connections
-- [[check_1]] - `calls` [EXTRACTED]
+- [[_bounce()]] - `calls` [EXTRACTED]
+- [[_hc()]] - `calls` [EXTRACTED]
+- [[_mk()]] - `calls` [EXTRACTED]
+- [[check()_7]] - `calls` [EXTRACTED]
+- [[hc_run()]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_test
+#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

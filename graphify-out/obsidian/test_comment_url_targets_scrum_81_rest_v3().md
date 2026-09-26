@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "test_jira_weekly_review.py"
+community: "AgentShroud™ README"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/AgentShroud_README
 ---
 
 # test_comment_url_targets_scrum_81_rest_v3()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

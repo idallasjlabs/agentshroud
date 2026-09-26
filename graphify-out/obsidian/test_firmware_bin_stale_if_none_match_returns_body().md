@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_fw_client()"
+community: "TestSetMode"
 location: "L3651"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_fw_client
+  - community/TestSetMode
 ---
 
 # test_firmware_bin_stale_if_none_match_returns_body()
@@ -16,4 +16,4 @@ tags:
 - [[_fw_client()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_fw_client
+#graphify/code #graphify/EXTRACTED #community/TestSetMode

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # test_config_with_ssh()
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[GatewayConfig_4]] - `calls` [EXTRACTED]
+- [[GatewayConfig_1]] - `calls` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

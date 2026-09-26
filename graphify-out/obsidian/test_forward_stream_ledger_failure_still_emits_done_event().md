@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "_make_stream_app_state()"
+community: "TestMultiTurnTracker"
 location: "L481"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_stream_app_state
+  - community/TestMultiTurnTracker
 ---
 
 # test_forward_stream_ledger_failure_still_emits_done_event()
@@ -18,4 +18,4 @@ tags:
 - [[_post_stream()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state
+#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker

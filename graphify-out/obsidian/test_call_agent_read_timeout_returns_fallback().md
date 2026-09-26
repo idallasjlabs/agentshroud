@@ -1,21 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "patch"
+community: "CollaboratorActivityTracker"
 location: "L1821"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/CollaboratorActivityTracker
 ---
 
 # test_call_agent_read_timeout_returns_fallback()
 
 ## Connections
-- [[_call_agent_stream must yield a spoken fallback string and log a WARNING when…]] - `rationale_for` [EXTRACTED]
-- [[mock_stream()_1]] - `contains` [EXTRACTED]
-- [[mock_stream()_13]] - `indirect_call` [INFERRED]
-- [[patch]] - `calls` [INFERRED]
+- [[_call_agent_stream must yield a spoken fallback string and log a WARNING     whe]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

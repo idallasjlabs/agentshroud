@@ -1,23 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_call_agent_stream()"
+community: "test_hermes_model_resolver.py"
 location: "L1305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_call_agent_stream_generic_http_error_falls_back()
 
 ## Connections
-- [[A connection-level error (not a statustimeout) also falls back to the trouble-…]] - `rationale_for` [EXTRACTED]
+- [[A connection-level error (not a statustimeout) also falls back to the     troub]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
-- [[mock_stream()]] - `contains` [EXTRACTED]
-- [[mock_stream()_13]] - `indirect_call` [INFERRED]
-- [[patch]] - `calls` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

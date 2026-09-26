@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "is_rate_limited_post_retry()"
+community: "Oracle — Feedback Analyst"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_rate_limited_post_retry
+  - community/Oracle__Feedback_Analyst
 ---
 
 # test_detector_skips_non_429()
@@ -15,4 +15,4 @@ tags:
 - [[is_rate_limited_post_retry()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry
+#graphify/code #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

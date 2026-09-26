@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `imports` [EXTRACTED]
 - [[TestIsBlocked]] - `contains` [EXTRACTED]
-- [[TestLifecycle_1]] - `contains` [EXTRACTED]
+- [[TestLifecycle]] - `contains` [EXTRACTED]
 - [[TestLoadFromText]] - `contains` [EXTRACTED]
 - [[TestParseHostsLine]] - `contains` [EXTRACTED]
 - [[TestStats]] - `contains` [EXTRACTED]

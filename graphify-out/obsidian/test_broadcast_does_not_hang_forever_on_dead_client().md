@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L544"
+community: "TelegramAPIProxy"
+location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # test_broadcast_does_not_hang_forever_on_dead_client()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[ApprovalStore_1]] - `calls` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[_HangingWebSocket]] - `calls` [EXTRACTED]
-- [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - `rationale_for` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
+- [[broadcast() bounds each client's send with a timeout — defense in     depth so a]] - `rationale_for` [EXTRACTED]
+- [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

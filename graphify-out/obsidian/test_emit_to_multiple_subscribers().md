@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "make_event()"
+community: "TestCollaboratorPromptClassifiers"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # test_emit_to_multiple_subscribers()
@@ -16,4 +16,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

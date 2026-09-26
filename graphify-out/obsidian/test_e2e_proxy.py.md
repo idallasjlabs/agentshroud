@@ -1,42 +1,42 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # test_e2e_proxy.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[ScanRequest]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
-- [[_StubForwarder_1]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `contains` [EXTRACTED]
 - [[egress_filter()]] - `contains` [EXTRACTED]
 - [[forwarder()_1]] - `contains` [EXTRACTED]
 - [[pii_config()]] - `contains` [EXTRACTED]
 - [[pipeline()]] - `contains` [EXTRACTED]
 - [[prompt_guard()]] - `contains` [EXTRACTED]
 - [[run_full()]] - `references` [EXTRACTED]
-- [[sanitizer()_2]] - `contains` [EXTRACTED]
+- [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_integrity()]] - `contains` [EXTRACTED]
@@ -66,4 +66,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

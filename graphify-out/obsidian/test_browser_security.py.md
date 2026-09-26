@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "test_scorecard_integrity.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/test_scorecard_integritypy
 ---
 
 # test_browser_security.py
@@ -18,6 +18,6 @@ tags:
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
+- [[guard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

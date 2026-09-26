@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "ServiceManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ServiceManager
 ---
 
 # test_context_integrity.py
@@ -18,7 +18,7 @@ tags:
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestContextIntegrityScorer]] - `contains` [EXTRACTED]
 - [[_make_segment()]] - `contains` [EXTRACTED]
-- [[guard()_3]] - `contains` [EXTRACTED]
+- [[guard()_1]] - `contains` [EXTRACTED]
 - [[scorer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

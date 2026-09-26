@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # test_dashboard_stats_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboardstats returns JSON stats]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "test_http_proxy.py"
+community: "test_daily_cve_report.py"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/test_daily_cve_reportpy
 ---
 
 # test_connect_system_bypass_domain_skips_policy_checks()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[WebProxy]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
-- [[_make_stream()_1]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
+- [[_make_stream()]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

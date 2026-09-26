@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "StatusResponse"
+community: "start-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/start-agentshroudsh
 ---
 
 # test_enhanced_status.py
@@ -15,4 +15,4 @@ tags:
 - [[StatusResponse]] - `imports` [EXTRACTED]
 - [[TestEnhancedStatus]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StatusResponse
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

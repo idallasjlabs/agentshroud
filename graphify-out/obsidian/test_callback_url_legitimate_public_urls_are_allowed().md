@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentTarget"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentTarget
 ---
 
 # test_callback_url_legitimate_public_urls_are_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

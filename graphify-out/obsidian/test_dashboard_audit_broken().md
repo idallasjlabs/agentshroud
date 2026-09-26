@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "ProxyDashboard"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # test_dashboard_audit_broken()
@@ -16,4 +16,4 @@ tags:
 - [[ProxyDashboard]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

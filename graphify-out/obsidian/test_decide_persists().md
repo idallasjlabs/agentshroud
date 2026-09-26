@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # test_decide_persists()
 
 ## Connections
-- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[Deciding an item persists the new status.]] - `rationale_for` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

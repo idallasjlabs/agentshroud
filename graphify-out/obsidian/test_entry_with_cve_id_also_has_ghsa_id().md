@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "AgentRegistry"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/AgentRegistry
 ---
 
 # test_entry_with_cve_id_also_has_ghsa_id()
@@ -16,4 +16,4 @@ tags:
 - [[_all_entries()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

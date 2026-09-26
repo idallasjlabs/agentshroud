@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # test_decide_reject_never_requires_mfa()
@@ -16,4 +16,4 @@ tags:
 - [[_submit_high_risk()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

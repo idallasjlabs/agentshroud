@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "The 8D Investigation Process"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/The_8D_Investigation_Process
 ---
 
 # test_forward_request_default_still_retries_429()
 
 ## Connections
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - `rationale_for` [EXTRACTED]
-- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

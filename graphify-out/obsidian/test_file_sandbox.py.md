@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # test_file_sandbox.py
@@ -21,9 +21,9 @@ tags:
 - [[TestPIIScanning]] - `contains` [EXTRACTED]
 - [[TestSensitivePathBlocking]] - `contains` [EXTRACTED]
 - [[TestStagingPatternDetection]] - `contains` [EXTRACTED]
-- [[default_config()_4]] - `contains` [EXTRACTED]
+- [[default_config()_3]] - `contains` [EXTRACTED]
 - [[sandbox()]] - `contains` [EXTRACTED]
-- [[strict_config()_3]] - `contains` [EXTRACTED]
+- [[strict_config()_1]] - `contains` [EXTRACTED]
 - [[strict_sandbox()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Enum

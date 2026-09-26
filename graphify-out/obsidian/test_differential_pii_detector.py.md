@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # test_differential_pii_detector.py
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
 - [[PIIHit]] - `imports` [EXTRACTED]
 - [[PIIHitSeverity]] - `imports` [EXTRACTED]
 - [[TestAdversarialFormattingCaught]] - `contains` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[TestStandardPIIAlwaysCaught]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIReport]] - `contains` [EXTRACTED]
 - [[_FakeRecognizerResult]] - `contains` [EXTRACTED]
-- [[default_config()_2]] - `contains` [EXTRACTED]
+- [[default_config()]] - `contains` [EXTRACTED]
 - [[detector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

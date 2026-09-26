@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "test_api_contract_fuzz.py"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # test_destructive_routes_are_excluded()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

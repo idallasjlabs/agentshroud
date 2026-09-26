@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()
@@ -15,4 +15,4 @@ tags:
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

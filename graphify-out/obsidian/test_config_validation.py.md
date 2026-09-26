@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "ApprovalRequest"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ApprovalRequest
 ---
 
 # test_config_validation.py
 
 ## Connections
+- [[ForwardRequest]] - `references` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 - [[TestAllExampleConfigsExist]] - `contains` [EXTRACTED]
 - [[TestConfigValidation]] - `contains` [EXTRACTED]
 - [[TestMinimalConfig]] - `contains` [EXTRACTED]
 - [[TestParanoidConfig]] - `contains` [EXTRACTED]
 - [[TestRecommendedConfig]] - `contains` [EXTRACTED]
+- [[_DropInvalidHTTPRequestFilter]] - `references` [EXTRACTED]
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
-- [[docker-compose.yml_2]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `references` [EXTRACTED]
-- [[ingest_apimodels.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `references` [EXTRACTED]
-- [[start-agentshroud.sh]] - `references` [EXTRACTED]
+- [[egress_config.py]] - `conceptually_related_to` [INFERRED]
+- [[test_cron_jobs_prompts.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

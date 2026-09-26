@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "test_soc_router_coverage.py"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # test_extract_text_concatenates_text_parts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

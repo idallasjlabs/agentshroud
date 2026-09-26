@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # test_default_deny_posture_when_no_config()
@@ -19,4 +19,4 @@ tags:
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

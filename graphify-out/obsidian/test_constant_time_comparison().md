@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "RateLimiter"
+community: "A2APolicyEngine"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
 # test_constant_time_comparison()
@@ -16,4 +16,4 @@ tags:
 - [[test_security.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "test_filter_xml_blocks.py"
+community: "TestOutputCanary"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_filter_xml_blockspy
+  - community/TestOutputCanary
 ---
 
 # test_filters_nested_invoke_inside_function_calls()
@@ -15,4 +15,4 @@ tags:
 - [[Nested invoke inside function_calls is fully removed.]] - `rationale_for` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

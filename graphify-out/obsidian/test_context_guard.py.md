@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "check_message()"
+community: "test_scanner_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_message
+  - community/test_scanner_integrationpy
 ---
 
 # test_context_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[TestSourceTagging]] - `contains` [EXTRACTED]
 - [[check_message()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_message
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
