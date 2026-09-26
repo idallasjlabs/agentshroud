@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-007: Zero-Config Security (docker-compose up"
-location: "L44"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_6]] - `contains` [EXTRACTED]
+- [[Consequences_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

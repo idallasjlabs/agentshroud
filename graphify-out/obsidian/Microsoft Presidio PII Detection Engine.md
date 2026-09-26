@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "agentshroud-ieee-paper.md"
+community: "UserSession"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/UserSession
 ---
 
 # Microsoft Presidio PII Detection Engine
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer_1]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/concept #graphify/EXTRACTED #community/UserSession

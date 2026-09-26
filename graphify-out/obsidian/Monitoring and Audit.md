@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "_make_cve()"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/_make_cve
 ---
 
 # Monitoring and Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Permission Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/_make_cve

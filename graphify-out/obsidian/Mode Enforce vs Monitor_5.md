@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L91"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

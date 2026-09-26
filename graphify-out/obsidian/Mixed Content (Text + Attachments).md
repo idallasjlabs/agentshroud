@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language"
+community: "TestPerAgentUpstreamChecks"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # Mixed Content (Text + Attachments)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MML for Rich Emails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

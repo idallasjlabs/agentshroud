@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L956"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # NIST CSF domain map references only valid domain IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_nist_csf_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/compute_scorecard
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

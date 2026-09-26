@@ -1,23 +1,21 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L6"
+community: "TestRunningImageResolution"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/TestRunningImageResolution
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[.agentsskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
-- [[Input Requirements_26]] - `contains` [EXTRACTED]
-- [[Output Format_38]] - `contains` [EXTRACTED]
-- [[Persona_20]] - `contains` [EXTRACTED]
-- [[Quality Checklist_23]] - `contains` [EXTRACTED]
-- [[Role_108]] - `contains` [EXTRACTED]
-- [[System Prompt_20]] - `contains` [EXTRACTED]
+- [[Purpose_94]] - `contains` [EXTRACTED]
+- [[README_99]] - `contains` [EXTRACTED]
+- [[Related Skills_103]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution

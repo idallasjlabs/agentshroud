@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "concept"
-community: "Himalaya Email CLI"
+community: "Phase 3A/3B Implementation Verification Results"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # MML (MIME Meta Language)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message-composition]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/concept #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

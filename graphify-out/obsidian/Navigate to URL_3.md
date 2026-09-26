@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L57"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Navigate to URL
 
 ## Connections
-- [[Usage_114]] - `contains` [EXTRACTED]
+- [[Usage_130]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

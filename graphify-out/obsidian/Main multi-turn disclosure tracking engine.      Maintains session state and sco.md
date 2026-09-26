@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Main multi-turn disclosure tracking engine.      Maintains session state and sco
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiTurnTracker]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

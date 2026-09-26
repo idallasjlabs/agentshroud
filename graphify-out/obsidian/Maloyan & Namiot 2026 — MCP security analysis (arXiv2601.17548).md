@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/security/consent_framework.py"
 type: "paper"
-community: "_make_token()"
-location: "12"
+community: "test_filter_xml_blocks.py"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/test_filter_xml_blockspy
 ---
 
-# Maloyan & Namiot 2026 — MCP Security Analysis (arXiv:2601.17548)
+# Maloyan & Namiot 2026 — MCP security analysis (arXiv:2601.17548)
 
 ## Connections
-- [[TokenValidator]] - `cites` [EXTRACTED]
+- [[ConsentFramework]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/_make_token
+#graphify/paper #graphify/EXTRACTED #community/test_filter_xml_blockspy

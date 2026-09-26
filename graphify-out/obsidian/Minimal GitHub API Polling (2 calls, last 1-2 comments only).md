@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Minimal GitHub API Polling (2 calls, last 1-2 comments only)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Turbo Fieldfare Fix Watch]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy

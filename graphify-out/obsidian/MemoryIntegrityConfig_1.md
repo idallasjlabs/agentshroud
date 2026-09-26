@@ -1,34 +1,18 @@
 ---
-source_file: "gateway/security/memory_config.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L21"
+community: "ContainerEngine"
+location: "L65"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/ContainerEngine
 ---
 
 # MemoryIntegrityConfig
 
 ## Connections
-- [[.setup_method()_16]] - `calls` [EXTRACTED]
-- [[.test_default_config()_1]] - `calls` [EXTRACTED]
-- [[Any_27]] - `uses` [INFERRED]
-- [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `uses` [INFERRED]
+- [[.__init__()_95]] - `references` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[ModificationSource]] - `uses` [INFERRED]
-- [[Path_10]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
-- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
-- [[memory_config.py]] - `contains` [EXTRACTED]
-- [[memory_integrity.py]] - `imports` [EXTRACTED]
-- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/ContainerEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 99"
-location: "L1097"
+community: "WebProxy"
+location: "L1163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/WebProxy
 ---
 
 # Migration Notes
@@ -17,4 +17,4 @@ tags:
 - [[v0.3.0 → v0.4.0]] - `contains` [EXTRACTED]
 - [[v0.4.0 → v0.5.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/WebProxy

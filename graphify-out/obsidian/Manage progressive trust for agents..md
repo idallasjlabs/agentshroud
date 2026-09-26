@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustManager"
+community: "MemoryIntegrityMonitor"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MemoryIntegrityMonitor
 ---
 
 # Manage progressive trust for agents.
 
 ## Connections
-- [[TrustManager]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

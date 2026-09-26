@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "_process_inbound()"
+community: "RateLimiter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/RateLimiter
 ---
 
 # MiddlewareManager.process_request()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_process_inbound
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

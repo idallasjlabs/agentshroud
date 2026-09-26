@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "concept"
-community: "GSDE&G Development Master Checklist Skill"
+community: "SecurityEvent"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/SecurityEvent
 ---
 
 # Mandatory 10-Step Git Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/concept #graphify/EXTRACTED #community/SecurityEvent

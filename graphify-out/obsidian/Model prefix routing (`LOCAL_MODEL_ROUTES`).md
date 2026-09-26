@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "llm_proxy.py"
+community: "AgentShroud Deployment Architecture"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Model prefix routing (`LOCAL_MODEL_ROUTES`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLM Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

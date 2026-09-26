@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
@@ -14,4 +14,4 @@ tags:
 - [[RUNBOOK]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/TELEGRAM_ISSUESmd
+#graphify/concept #graphify/INFERRED #community/Mode_A__Single_task

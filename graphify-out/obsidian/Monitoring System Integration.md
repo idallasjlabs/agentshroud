@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide"
+community: "Update AgentShroud"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Update_AgentShroud
 ---
 
 # Monitoring System Integration
@@ -16,4 +16,4 @@ tags:
 - [[Prometheus Metrics]] - `contains` [EXTRACTED]
 - [[Webhook Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # MiddlewareManager built via __new__ — every module attr explicitly None     so e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

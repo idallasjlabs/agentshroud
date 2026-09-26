@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "MultiHostResult"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # MultiHostResult
@@ -22,11 +22,11 @@ tags:
 - [[.test_render_summary_empty()]] - `calls` [EXTRACTED]
 - [[.unreachable()]] - `method` [EXTRACTED]
 - [[Aggregated outcome across all hosts.]] - `rationale_for` [EXTRACTED]
-- [[Path_47]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
-- [[TestClassify_1]] - `uses` [INFERRED]
+- [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
-- [[TestMain_1]] - `uses` [INFERRED]
+- [[TestMain]] - `uses` [INFERRED]
 - [[TestMultiHostResultProperties]] - `uses` [INFERRED]
 - [[TestParseHosts]] - `uses` [INFERRED]
 - [[TestParserAndCommandResolution]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiHostResult
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

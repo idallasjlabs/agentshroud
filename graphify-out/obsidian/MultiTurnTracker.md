@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # MultiTurnTracker
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_130]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_100]] - `method` [EXTRACTED]
 - [[._add_disclosure_event()]] - `method` [EXTRACTED]
 - [[._analyze_agent_response()]] - `method` [EXTRACTED]
 - [[._analyze_user_message()]] - `method` [EXTRACTED]
@@ -27,32 +27,32 @@ tags:
 - [[.add_alert_callback()]] - `method` [EXTRACTED]
 - [[.get_global_stats()]] - `method` [EXTRACTED]
 - [[.get_session_stats()]] - `method` [EXTRACTED]
-- [[.reset_session()]] - `method` [EXTRACTED]
+- [[.reset_session()_1]] - `method` [EXTRACTED]
 - [[.score_response_consistency()]] - `method` [EXTRACTED]
 - [[.test_disabled_tracker()]] - `calls` [EXTRACTED]
 - [[.test_multi_turn_tracker_instantiates()]] - `calls` [EXTRACTED]
 - [[.track_message()]] - `method` [EXTRACTED]
 - [[.tracker()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
-- [[TestMultiTurnTracker]] - `uses` [INFERRED]
+- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
 - [[TestResponseConsistency]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[multi_turn_tracker()]] - `calls` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

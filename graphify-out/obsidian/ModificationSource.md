@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "ContainerEngine"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ContainerEngine
 ---
 
 # ModificationSource
 
 ## Connections
 - [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.from_dict()_1]] - `calls` [EXTRACTED]
+- [[.from_dict()_8]] - `calls` [EXTRACTED]
 - [[.register_expected_write()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[Source of a file modification.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

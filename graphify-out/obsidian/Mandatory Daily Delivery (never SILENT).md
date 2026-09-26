@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "GroupRegistry"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/GroupRegistry
 ---
 
 # Mandatory Daily Delivery (never [SILENT])
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Daily Component Health Digest]] - `rationale_for` [EXTRACTED]
 - [[Silence-Over-Hallucination Principle]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry

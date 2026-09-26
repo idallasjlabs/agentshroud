@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # MiddlewareResult
@@ -16,10 +16,10 @@ tags:
 - [[._check_rbac_permissions()]] - `references` [EXTRACTED]
 - [[._enforce_session_isolation()]] - `references` [EXTRACTED]
 - [[.process_request()]] - `references` [EXTRACTED]
-- [[.test_defaults()_1]] - `calls` [EXTRACTED]
+- [[.test_defaults()]] - `calls` [EXTRACTED]
 - [[.test_denied_with_reason()]] - `calls` [EXTRACTED]
 - [[.test_forward_middleware_blocking()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -36,8 +36,8 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FakePipelineResult]] - `uses` [INFERRED]
-- [[FakeRBAC]] - `uses` [INFERRED]
+- [[FakePipelineResult_1]] - `uses` [INFERRED]
+- [[FakeRBAC_1]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
@@ -53,19 +53,19 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PassthroughPipeline]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PassthroughPipeline_1]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[Result from middleware processing.]] - `rationale_for` [EXTRACTED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestAlertsLocalhostEnforcement]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestApprovalEndpoints]] - `uses` [INFERRED]
@@ -75,7 +75,7 @@ tags:
 - [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]
 - [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
 - [[TestCommandTokenNormalization]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCriticalGuardInitFailClosed]] - `uses` [INFERRED]
 - [[TestCrossSessionAccess]] - `uses` [INFERRED]
 - [[TestEnvGuard]] - `uses` [INFERRED]
@@ -88,7 +88,7 @@ tags:
 - [[TestFilterOutboundResponse]] - `uses` [INFERRED]
 - [[TestForwardEndpoint]] - `uses` [INFERRED]
 - [[TestFullAccessMiddlewareBypass]] - `uses` [INFERRED]
-- [[TestGitGuard]] - `uses` [INFERRED]
+- [[TestGitGuard_1]] - `uses` [INFERRED]
 - [[TestGoogleAPIProxy]] - `uses` [INFERRED]
 - [[TestGroupMentionFilter]] - `uses` [INFERRED]
 - [[TestGroupPresenceProbe]] - `uses` [INFERRED]
@@ -104,7 +104,7 @@ tags:
 - [[TestMemoryIntegrityRegistration]] - `uses` [INFERRED]
 - [[TestMetadataGuard_1]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
+- [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
 - [[TestPathIsolationStep]] - `uses` [INFERRED]
@@ -126,10 +126,10 @@ tags:
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC]] - `uses` [INFERRED]
 - [[middleware.py]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
@@ -137,4 +137,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustManager

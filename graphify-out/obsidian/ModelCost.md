@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "model_usage.py"
+community: "_build_image_targets"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/_build_image_targets
 ---
 
 # ModelCost
@@ -15,4 +15,4 @@ tags:
 - [[model_usage.py]] - `contains` [EXTRACTED]
 - [[pick_current_model()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/model_usagepy
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

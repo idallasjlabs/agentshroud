@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
 ---
 
 # Model-Specific Parameters
@@ -17,4 +17,4 @@ tags:
 - [[Quality]] - `contains` [EXTRACTED]
 - [[Size]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind

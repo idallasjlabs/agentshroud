@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_observatory_mode.py"
+community: "system-requirements.md"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/system-requirementsmd
 ---
 
 # Minimal FastAPI app that mounts the management router with auth bypassed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_app()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd

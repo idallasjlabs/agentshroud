@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "ReportStore"
+community: "PortManager"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # Metadata (no content) for all reports, newest first.          O(n) file reads pe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

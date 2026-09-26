@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "SOCWebSocketHandler"
+community: "MiddlewareManager"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/MiddlewareManager
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[.run()_1]] - `rationale_for` [EXTRACTED]
+- [[.run()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

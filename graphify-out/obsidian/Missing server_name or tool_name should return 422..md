@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "TestMCPProxyEndpoint"
+community: "Safe Refactor Specialist"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/Safe_Refactor_Specialist
 ---
 
 # Missing server_name or tool_name should return 422.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_required_fields_returns_422()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/rationale #graphify/EXTRACTED #community/Safe_Refactor_Specialist

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L204"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Negative
 
 ## Connections
-- [[Consequences]] - `contains` [EXTRACTED]
+- [[Consequences_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

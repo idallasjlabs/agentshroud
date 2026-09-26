@@ -1,17 +1,17 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "_build_image_targets()"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/_build_image_targets
 ---
 
 # Memory Browser
 
 ## Connections
-- [[Features_5]] - `contains` [EXTRACTED]
+- [[Features_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/_build_image_targets

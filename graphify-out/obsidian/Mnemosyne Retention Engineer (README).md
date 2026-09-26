@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "_w()"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Production_Safety_Checklist_SKILL
+  - community/_w
 ---
 
 # Mnemosyne Retention Engineer (README)
@@ -14,4 +14,4 @@ tags:
 - [[Mnemosyne Retention Engineer (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/INFERRED #community/_w

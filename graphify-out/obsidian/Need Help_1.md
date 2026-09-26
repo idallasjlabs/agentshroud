@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Skill: Mindmap Architect (MM)"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Need Help?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

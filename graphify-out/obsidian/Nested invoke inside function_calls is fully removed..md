@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "test_filter_xml_blocks.py"
+community: "TestOutputCanary"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_filter_xml_blockspy
+  - community/TestOutputCanary
 ---
 
 # Nested <invoke> inside <function_calls> is fully removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_nested_invoke_inside_function_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

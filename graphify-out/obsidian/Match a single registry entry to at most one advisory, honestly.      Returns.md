@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "migrate-cve-registry-ghsa.py"
+community: "PromptProtection"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/PromptProtection
 ---
 
 # Match a single registry *entry* to at most one advisory, honestly.      Returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[match_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/rationale #graphify/EXTRACTED #community/PromptProtection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # Modifying the signature directly should fail verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tampered_signature_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

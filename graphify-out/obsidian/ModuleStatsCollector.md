@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # ModuleStatsCollector
 
 ## Connections
-- [[.__init__()_57]] - `method` [EXTRACTED]
-- [[.record()]] - `method` [EXTRACTED]
-- [[.reset()]] - `method` [EXTRACTED]
+- [[.__init__()_99]] - `method` [EXTRACTED]
+- [[.record()_2]] - `method` [EXTRACTED]
+- [[.reset()_1]] - `method` [EXTRACTED]
 - [[.snapshot()]] - `method` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `calls` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

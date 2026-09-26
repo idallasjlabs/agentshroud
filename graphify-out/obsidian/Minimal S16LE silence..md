@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "asyncio"
+community: "ToolACLEnforcer"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ToolACLEnforcer
 ---
 
 # Minimal S16LE silence.
 
 ## Connections
 - [[_pcm_bytes()]] - `rationale_for` [EXTRACTED]
-- [[_pcm_bytes()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

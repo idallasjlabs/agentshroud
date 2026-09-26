@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "ADR-004: API Keys Never in Agent Container"
-location: "L52"
+community: "Enterprise Governance Proxy System (invention)"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-004_API_Keys_Never_in_Agent_Container
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_8]] - `contains` [EXTRACTED]
+- [[Consequences_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

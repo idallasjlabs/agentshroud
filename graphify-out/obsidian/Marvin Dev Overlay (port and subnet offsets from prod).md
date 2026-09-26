@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "Marvin Dev Overlay (port and subnet offsets from"
+community: "TestOutboundClassifierHelpers"
 location: "L1-L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Marvin Dev Overlay (port and subnet offsets from prod)
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - `conceptually_related_to` [INFERRED]
 - [[Gateway Service]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

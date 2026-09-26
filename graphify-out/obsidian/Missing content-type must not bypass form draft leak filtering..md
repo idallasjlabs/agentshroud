@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "blucli/SKILL.md"
 location: "L1875"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/blucli/SKILLmd
 ---
 
 # Missing content-type must not bypass form draft leak filtering.
@@ -15,4 +15,4 @@ tags:
 - [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 - [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/blucli/SKILLmd

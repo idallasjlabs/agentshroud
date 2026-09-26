@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode B — Comprehensive review sweep"
+community: "_score_secure_development()"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep
+  - community/_score_secure_development
 ---
 
 # Mode B — Comprehensive review sweep
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 — Work through directories one at a time_5]] - `contains` [EXTRACTED]
 - [[Step 3 — After the last directory (or a natural stopping point)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep
+#graphify/document #graphify/EXTRACTED #community/_score_secure_development

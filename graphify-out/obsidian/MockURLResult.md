@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "WebProxy"
+community: "FetchOutcome"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/FetchOutcome
 ---
 
 # MockURLResult
 
 ## Connections
-- [[.__init__()_200]] - `method` [EXTRACTED]
+- [[.__init__()_193]] - `method` [EXTRACTED]
 - [[.test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[.test_oauth_security_error_handling()]] - `calls` [EXTRACTED]
 - [[.test_oauth_security_flags_auth_headers()]] - `calls` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

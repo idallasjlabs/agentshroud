@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "KeyVaultConfig"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KeyVaultConfig
 ---
 
 # Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

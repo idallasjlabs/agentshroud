@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "AsyncMock"
+community: "OutboundInfoFilter"
 location: "L8613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/OutboundInfoFilter
 ---
 
 # Minimal async callable for monkeypatching.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AsyncMock]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

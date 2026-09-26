@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "TrustManager"
+community: "RBACConfig"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/RBACConfig
 ---
 
 # Main security pipeline that all messages pass through.      Wires together: Prom
 
 ## Connections
-- [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

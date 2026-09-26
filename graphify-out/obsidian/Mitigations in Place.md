@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
+community: "Skill: Technical Illustrator (TI)"
 location: "L241"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Mitigations in Place
 
 ## Connections
-- [[Security Model_1]] - `contains` [EXTRACTED]
+- [[Security Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

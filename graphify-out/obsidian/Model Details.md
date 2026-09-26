@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "models.py"
+community: "Function Details"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Function_Details
 ---
 
 # Model Details
@@ -18,6 +18,6 @@ tags:
 - [[ForwardResponse_1]] - `contains` [EXTRACTED]
 - [[RedactionDetail_1]] - `contains` [EXTRACTED]
 - [[SSHExecRequest  SSHExecResponse]] - `contains` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[models.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

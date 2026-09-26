@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "WebProxy"
+community: "FetchOutcome"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxy
+  - community/FetchOutcome
 ---
 
 # MockEgressChannel
 
 ## Connections
 - [[EgressChannel]] - `shares_data_with` [AMBIGUOUS]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/FetchOutcome

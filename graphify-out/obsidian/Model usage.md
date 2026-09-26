@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Common Queries"
+community: "Skill: UX Expert (UX)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_UX_Expert_UX
 ---
 
 # Model usage
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Current model logic]] - `contains` [EXTRACTED]
 - [[Inputs]] - `contains` [EXTRACTED]
-- [[Output]] - `contains` [EXTRACTED]
-- [[Overview_7]] - `contains` [EXTRACTED]
-- [[Quick start_2]] - `contains` [EXTRACTED]
-- [[References_2]] - `contains` [EXTRACTED]
-- [[model-usageSKILL]] - `contains` [EXTRACTED]
+- [[Output_7]] - `contains` [EXTRACTED]
+- [[Overview_28]] - `contains` [EXTRACTED]
+- [[Quick start]] - `contains` [EXTRACTED]
+- [[References_5]] - `contains` [EXTRACTED]
+- [[SKILL_215]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

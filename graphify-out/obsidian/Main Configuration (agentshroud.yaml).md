@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "AgentShroud Schema Documentation"
+community: "drift_detector.py"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Schema_Documentation
+  - community/drift_detectorpy
 ---
 
 # Main Configuration (agentshroud.yaml)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration File Schemas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

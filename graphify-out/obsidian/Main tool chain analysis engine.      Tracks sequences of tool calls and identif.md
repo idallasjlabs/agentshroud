@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Main tool chain analysis engine.      Tracks sequences of tool calls and identif
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

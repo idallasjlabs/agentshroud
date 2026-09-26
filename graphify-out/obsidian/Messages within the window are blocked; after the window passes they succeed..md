@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestNoResponseGuarantee"
+community: "test_a2a_proxy.py"
 location: "L7849"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/test_a2a_proxypy
 ---
 
 # Messages within the window are blocked; after the window passes they succeed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_rate_limit_resets_after_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

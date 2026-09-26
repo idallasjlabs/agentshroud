@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "start-agentshroud.sh"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/start-agentshroudsh
 ---
 
 # Minimal health check endpoint — no authentication required.      Returns only ba
 
 ## Connections
-- [[health_check()]] - `rationale_for` [EXTRACTED]
+- [[health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh

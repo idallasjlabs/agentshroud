@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "Skill: Project Management (PM)"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Skill_Project_Management_PM
 ---
 
 # Migration from ADR-002
 
 ## Connections
-- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Consequences_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

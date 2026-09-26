@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "TestProductionCompose"
 location: "L436"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/TestProductionCompose
 ---
 
 # Minimum Required Configuration
@@ -15,4 +15,4 @@ tags:
 - [[For Read-Only to Work]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/TestProductionCompose

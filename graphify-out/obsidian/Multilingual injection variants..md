@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "test_adversarial_injection.py"
+community: "BotConfig"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/BotConfig
 ---
 
 # Multilingual injection variants.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultilingual]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

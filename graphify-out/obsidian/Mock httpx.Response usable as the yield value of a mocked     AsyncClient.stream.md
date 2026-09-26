@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "_call_agent_stream()"
+community: "test_hermes_model_resolver.py"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/test_hermes_model_resolverpy
 ---
 
 # Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_stream_resp()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy

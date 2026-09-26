@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "lifespan.py"
+community: "HostStatus"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/HostStatus
 ---
 
 # Monitor an agent's environment access attempts.          Args:             agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.monitor_environment_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/HostStatus

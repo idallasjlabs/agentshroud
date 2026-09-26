@@ -1,20 +1,23 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L1"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[.agentsskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_26]] - `contains` [EXTRACTED]
-- [[Related Skills_17]] - `contains` [EXTRACTED]
-- [[Usage_21]] - `contains` [EXTRACTED]
+- [[Input Requirements_6]] - `contains` [EXTRACTED]
+- [[Output Format_6]] - `contains` [EXTRACTED]
+- [[Persona_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_5]] - `contains` [EXTRACTED]
+- [[Role_21]] - `contains` [EXTRACTED]
+- [[SKILL_36]] - `contains` [EXTRACTED]
+- [[System Prompt_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+community: "browser-extension/manifest.json"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/browser-extension/manifestjson
 ---
 
 # Model + keys
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
