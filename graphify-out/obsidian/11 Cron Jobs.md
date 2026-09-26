@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "Mode A — Single task"
 location: "L770"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/Mode_A__Single_task
 ---
 
 # 11 Cron Jobs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Automated Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

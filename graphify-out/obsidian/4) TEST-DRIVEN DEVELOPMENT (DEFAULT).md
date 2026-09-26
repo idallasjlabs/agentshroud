@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI ("
-location: "L197"
+community: "TestEgressTelegramNotify"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
+  - community/TestEgressTelegramNotify
 ---
 
 # 4) TEST-DRIVEN DEVELOPMENT (DEFAULT)
@@ -16,4 +16,4 @@ tags:
 - [[Red → Green → Refactor]] - `contains` [EXTRACTED]
 - [[Test quality rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_
+#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify

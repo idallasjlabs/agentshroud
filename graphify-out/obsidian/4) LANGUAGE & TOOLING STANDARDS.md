@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShro"
+community: "Socrates — Dialogue Architect"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShro
+  - community/Socrates__Dialogue_Architect
 ---
 
 # 4) LANGUAGE & TOOLING STANDARDS
@@ -21,4 +21,4 @@ tags:
 - [[Python]] - `contains` [EXTRACTED]
 - [[Python Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

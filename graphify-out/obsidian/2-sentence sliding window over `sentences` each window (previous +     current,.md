@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "TestMultiTurnTracker"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/TestMultiTurnTracker
 ---
 
 # 2-sentence sliding window over `sentences`: each window (previous +     current,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_filtered_sentence_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

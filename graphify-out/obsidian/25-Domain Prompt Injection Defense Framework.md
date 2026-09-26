@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "concept"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
+community: "agentshroud-ieee-paper.md"
 location: "DELIVERABLE 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/agentshroud-ieee-papermd
 ---
 
 # 25-Domain Prompt Injection Defense Framework
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd

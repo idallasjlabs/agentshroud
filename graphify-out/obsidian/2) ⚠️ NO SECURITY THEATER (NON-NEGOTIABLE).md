@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI ("
-location: "L110"
+community: "TestEgressTelegramNotify"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
+  - community/TestEgressTelegramNotify
 ---
 
 # 2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)
@@ -19,4 +19,4 @@ tags:
 - [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - `contains` [EXTRACTED]
 - [[RULE E — DEFINITION OF DONE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_
+#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify
