@@ -8768,5 +8768,10 @@
     "mtime": 1790427930.5517402,
     "ast_hash": "4dc07e0df7ea828d0f8341034a0964a6",
     "semantic_hash": "4dc07e0df7ea828d0f8341034a0964a6"
+  },
+  "reports/upgrade-2026-09-26.md": {
+    "mtime": 1790427930.5547557,
+    "ast_hash": "950fe3371ad1588376a480d8984ded89",
+    "semantic_hash": ""
   }
 }
