@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "notion"
+community: "chat_console.py"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/chat_consolepy
 ---
 
 # obsidian-cli quick start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Obsidian]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/chat_consolepy

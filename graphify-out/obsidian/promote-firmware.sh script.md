@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/promote-firmware.sh"
 type: "code"
-community: "promote-firmware.sh"
+community: "11. Current status (v1.2.0)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/promote-firmwaresh
+  - community/11_Current_status_v120
 ---
 
 # promote-firmware.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[promote-firmware.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/promote-firmwaresh
+#graphify/code #graphify/EXTRACTED #community/11_Current_status_v120

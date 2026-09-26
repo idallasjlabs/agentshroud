@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "Community 832"
+community: "proxy_status.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_832
+  - community/proxy_statuspy
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts_4]] - `contains` [EXTRACTED]
 - [[version_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_832
+#graphify/code #graphify/EXTRACTED #community/proxy_statuspy

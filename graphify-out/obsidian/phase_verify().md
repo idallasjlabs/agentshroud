@@ -1,24 +1,24 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L660"
+community: "DraftEntry"
+location: "L668"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/DraftEntry
 ---
 
 # phase_verify()
 
 ## Connections
+- [[_attempt_rollback]] - `calls` [EXTRACTED]
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_3]] - `calls` [EXTRACTED]
+- [[log()_9]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh main flow]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script_1]] - `calls` [EXTRACTED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

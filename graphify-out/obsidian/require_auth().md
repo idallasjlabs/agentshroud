@@ -1,32 +1,22 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "ModeRequest"
-location: "L77"
+community: "server.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/serverpy
 ---
 
 # require_auth()
 
 ## Connections
-- [[.test_invalid_token_raises_401()]] - `calls` [EXTRACTED]
-- [[.test_valid_token_authenticates()]] - `calls` [EXTRACTED]
 - [[HTTPAuthorizationCredentials]] - `references` [EXTRACTED]
-- [[Require valid Bearer token for all management endpoints.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
-- [[dashboard_endpoints.py]] - `imports` [EXTRACTED]
-- [[load_config()]] - `calls` [EXTRACTED]
-- [[management.py]] - `imports` [EXTRACTED]
-- [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
-- [[test_key_rotation.py]] - `imports` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports` [EXTRACTED]
-- [[test_runtime_engines.py]] - `imports` [EXTRACTED]
-- [[test_skill_guard.py]] - `imports` [EXTRACTED]
-- [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
-- [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
-- [[verify_token()]] - `calls` [EXTRACTED]
+- [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - `rationale_for` [EXTRACTED]
+- [[TestAuth]] - `calls` [EXTRACTED]
+- [[_get_auth_token()]] - `calls` [EXTRACTED]
+- [[chat()]] - `calls` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/serverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 662"
+community: "Deploying AgentShroud on macOS (Apple Silicon / "
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_662
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
 ---
 
 # router.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_662
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_

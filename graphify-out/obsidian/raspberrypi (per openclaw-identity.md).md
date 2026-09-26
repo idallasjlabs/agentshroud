@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "concept"
-community: "hermes/SOUL.md"
+community: "10. Troubleshooting"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/10_Troubleshooting
 ---
 
 # raspberrypi (per openclaw-identity.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/concept #graphify/EXTRACTED #community/10_Troubleshooting

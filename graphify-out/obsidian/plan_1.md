@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "plan.md"
+community: "TestDaemonConfigReader"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/planmd
+  - community/TestDaemonConfigReader
 ---
 
 # plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/planmd
+#graphify/document #graphify/EXTRACTED #community/TestDaemonConfigReader

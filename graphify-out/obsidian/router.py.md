@@ -1,17 +1,30 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
-type: "document"
-community: "router.py"
+source_file: "gateway/ingest_api/router.py"
+type: "code"
+community: "ApprovalRequest"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/ApprovalRequest
 ---
 
-# router.py.md
+# router.py
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[AgentTarget]] - `imports` [EXTRACTED]
+- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
+- [[ForwardError]] - `contains` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[MultiAgentRouter]] - `contains` [EXTRACTED]
+- [[README_128]] - `references` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterError]] - `contains` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[models.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

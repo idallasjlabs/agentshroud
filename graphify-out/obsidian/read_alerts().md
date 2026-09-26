@@ -1,25 +1,26 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "wazuh_client.py"
-location: "L66"
+community: "LLMProxy"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/LLMProxy
 ---
 
 # read_alerts()
 
 ## Connections
-- [[Any_43]] - `references` [EXTRACTED]
-- [[Path_20]] - `references` [EXTRACTED]
-- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
+- [[.test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[Path_11]] - `references` [EXTRACTED]
+- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
 - [[datetime_3]] - `references` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
+- [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

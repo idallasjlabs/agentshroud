@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustManager

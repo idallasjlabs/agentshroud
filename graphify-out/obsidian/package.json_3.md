@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "Community 842"
+community: "API Reference"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_842
+  - community/API_Reference
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts_3]] - `contains` [EXTRACTED]
 - [[version_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_842
+#graphify/code #graphify/EXTRACTED #community/API_Reference

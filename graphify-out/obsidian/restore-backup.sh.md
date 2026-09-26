@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/restore-backup.sh"
 type: "code"
-community: "post-deploy-check.sh"
+community: "Recommendations for Production Deployment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/post-deploy-checksh
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # restore-backup.sh
@@ -16,4 +16,4 @@ tags:
 - [[restore-backup.sh script]] - `contains` [EXTRACTED]
 - [[restore_tar_to_volume()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh
+#graphify/code #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

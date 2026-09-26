@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: ".test_short_text_passes_through_unchanged()"
-location: "L499"
+community: "browser-extension/package.json"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_short_text_passes_through_unchanged
+  - community/browser-extension/packagejson
 ---
 
 # read()
 
 ## Connections
-- [[.test_short_text_passes_through_unchanged()]] - `contains` [EXTRACTED]
+- [[readHermesMcpServers()]] - `calls` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_short_text_passes_through_unchanged
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

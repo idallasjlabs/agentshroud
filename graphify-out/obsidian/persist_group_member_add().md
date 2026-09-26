@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "group_config.py"
+community: "_make_stream_app_state()"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/_make_stream_app_state
 ---
 
 # persist_group_member_add()
@@ -16,9 +16,9 @@ tags:
 - [[Persist a runtime group membership addition.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
-- [[add_group_member()]] - `calls` [EXTRACTED]
+- [[add_group_member()_1]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/group_configpy
+#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state

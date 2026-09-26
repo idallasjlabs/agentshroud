@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "asyncio"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/asyncio
 ---
 
 # p99 timeout (TimeoutError on primary local) triggers secondary local model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_p99_timeout_triggers_secondary_failover()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

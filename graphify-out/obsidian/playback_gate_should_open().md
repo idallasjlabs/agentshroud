@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "test_playback_state.c"
+community: "compute_scorecard()"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_playback_statec
+  - community/compute_scorecard
 ---
 
 # playback_gate_should_open()
@@ -19,5 +19,6 @@ tags:
 - [[test_gate_opens_on_768kb_cap()]] - `calls` [INFERRED]
 - [[test_gate_opens_on_reply_complete()]] - `calls` [INFERRED]
 - [[test_gate_stays_closed_before_any_cap()]] - `calls` [INFERRED]
+- [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_playback_statec
+#graphify/code #graphify/INFERRED #community/compute_scorecard

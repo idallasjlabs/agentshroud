@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L2695"
+community: "SSHProxy"
+location: "L2708"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # run_all_scanners()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Run all locally available security scanners and return consolidated results.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

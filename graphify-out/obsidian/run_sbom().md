@@ -1,19 +1,20 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "docker/scripts/security-scan.sh"
+community: "RuntimeConfig"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/RuntimeConfig
 ---
 
 # run_sbom()
 
 ## Connections
-- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_4]] - `calls` [EXTRACTED]
+- [[security-scan.sh]] - `defines` [EXTRACTED]
+- [[security-scan.sh_2]] - `references` [EXTRACTED]
 - [[security-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

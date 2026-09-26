@@ -1,25 +1,24 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Enum"
+community: "MemoryIntegrityMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MemoryIntegrityMonitor
 ---
 
 # progressive_trust_config.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveTrustConfig_1]] - `contains` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `contains` [EXTRACTED]
 - [[PromotionThreshold]] - `contains` [EXTRACTED]
-- [[TrustLevel_2]] - `contains` [EXTRACTED]
+- [[TrustLevel]] - `contains` [EXTRACTED]
 - [[ViolationType]] - `contains` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `contains` [EXTRACTED]
 - [[subagent_governance.py]] - `semantically_similar_to` [INFERRED]
-- [[test_progressive_trust_integration.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

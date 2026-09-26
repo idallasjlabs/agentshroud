@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Community 826"
+community: "TestParseHosts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/TestParseHosts
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts]] - `contains` [EXTRACTED]
 - [[version]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_826
+#graphify/code #graphify/EXTRACTED #community/TestParseHosts

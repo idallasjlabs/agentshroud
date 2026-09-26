@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestFileDownload"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L8534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFileDownload
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # /ri for a user not in immune set must say so.
@@ -15,4 +15,4 @@ tags:
 - [[.test_forward_file_download_returns_raw_body_sentinel()]] - `rationale_for` [EXTRACTED]
 - [[.test_revoke_immunity_unknown_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFileDownload
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "SSHProxy"
-location: "L25"
+community: "TestEgressApprovalQueue"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TestEgressApprovalQueue
 ---
 
 # router()
 
 ## Connections
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
+- [[GroupApprovalRouter]] - `calls` [EXTRACTED]
+- [[GroupApprovalRouter wired with a mock Telegram send function.]] - `rationale_for` [EXTRACTED]
+- [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

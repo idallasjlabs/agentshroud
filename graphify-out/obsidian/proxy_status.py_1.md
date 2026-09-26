@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "proxy_status.py"
-location: "L10"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
 ---
 
-# proxy_status.py
+# proxy_status.py.md
 
 ## Connections
-- [[Key Output]] - `contains` [EXTRACTED]
-- [[My Responsibilities]] - `contains` [EXTRACTED]
-- [[Purpose_9]] - `contains` [EXTRACTED]
-- [[Related Notes_9]] - `contains` [EXTRACTED]
-- [[proxy_status.py]] - `contains` [EXTRACTED]
+- [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L529"
+community: "SSHProxy"
+location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # op_proxy()
@@ -14,8 +14,10 @@ tags:
 ## Connections
 - [[1Password credential proxy (P2 credential isolation).      Reads a secret from]] - `rationale_for` [EXTRACTED]
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
+- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
 - [[OpProxyRequest]] - `references` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

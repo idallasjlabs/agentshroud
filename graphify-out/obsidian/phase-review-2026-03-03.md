@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
+community: "main()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+  - community/main
 ---
 
 # phase-review-2026-03-03.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+#graphify/document #graphify/EXTRACTED #community/main

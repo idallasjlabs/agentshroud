@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBACConfig"
-location: "L74"
+community: "Local-Model Job Quality Matrix"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

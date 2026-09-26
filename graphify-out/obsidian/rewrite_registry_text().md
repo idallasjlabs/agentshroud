@@ -1,24 +1,21 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "triage-cve-mitigations.py"
-location: "L873"
+community: "PromptProtection"
+location: "L368"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/PromptProtection
 ---
 
 # rewrite_registry_text()
 
 ## Connections
-- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place. For each…]] - `rationale_for` [EXTRACTED]
-- [[TriageResult]] - `references` [EXTRACTED]
-- [[_consume_field()]] - `calls` [EXTRACTED]
-- [[_nl()]] - `contains` [EXTRACTED]
-- [[_py_list_literal()]] - `calls` [EXTRACTED]
-- [[final_status()]] - `calls` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `calls` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
+- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - `rationale_for` [EXTRACTED]
+- [[_py_literal()]] - `calls` [EXTRACTED]
+- [[main()_25]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

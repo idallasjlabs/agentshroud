@@ -1,36 +1,27 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "TrustManager"
-location: "L63"
+community: "awslabs.aws-api-mcp-server configuration (--read"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/awslabsaws-api-mcp-server_configuration_--read
 ---
 
 # run_canary()
 
 ## Connections
-- [[AlertDispatcher]] - `conceptually_related_to` [INFERRED]
-- [[CanaryCheck]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `calls` [INFERRED]
-- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [INFERRED]
-- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
-- [[canary.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[PIISanitizer]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `references` [EXTRACTED]
+- [[fail()_5]] - `calls` [EXTRACTED]
+- [[info()_2]] - `calls` [EXTRACTED]
+- [[pass()_3]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]
-- [[run_quick()]] - `references` [EXTRACTED]
-- [[test_canary.py]] - `imports` [EXTRACTED]
-- [[test_canary_fails_without_pipeline()]] - `calls` [EXTRACTED]
-- [[test_canary_passes_with_pipeline()]] - `calls` [EXTRACTED]
-- [[test_canary_result_serialization()]] - `calls` [EXTRACTED]
-- [[test_canary_verifies_audit_chain()]] - `calls` [EXTRACTED]
-- [[test_canary_verifies_pii_stripping()]] - `calls` [EXTRACTED]
-- [[test_canary_with_healthy_forwarder()]] - `calls` [EXTRACTED]
-- [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
-- [[test_security_audit.py]] - `imports` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read

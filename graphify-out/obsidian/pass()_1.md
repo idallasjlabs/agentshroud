@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "TrustManager"
-location: "L22"
+community: "AgentShroud Sequence Diagrams (doc)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/AgentShroud_Sequence_Diagrams_doc
 ---
 
 # pass()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc

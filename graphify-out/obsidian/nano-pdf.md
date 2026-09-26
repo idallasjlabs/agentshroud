@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/nano-pdf/SKILL.md"
 type: "document"
-community: "nano-pdf"
+community: ".test_collaborator_sensitive_path_probe_shell_st"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/nano-pdf
+  - community/test_collaborator_sensitive_path_probe_shell_st
 ---
 
 # nano-pdf
 
 ## Connections
 - [[Quick start_1]] - `contains` [EXTRACTED]
-- [[nano-pdfSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_217]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/nano-pdf
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_sensitive_path_probe_shell_st

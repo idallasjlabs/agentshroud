@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L2242"
+community: "SSHProxy"
+location: "L2255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # release_blocked_outbound()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Release a blocked outbound message for adminmanual resend flow.]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

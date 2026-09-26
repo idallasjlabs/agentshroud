@@ -1,16 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "wakeword.c"
+community: "agentshroud-console network (legacy, retained fo"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/agentshroud-console_network_legacy_retained_fo
 ---
 
 # remote_log.h (WS-mirrored diagnostic log declaration)
 
-## Connections
-- [[vt_remote_log]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/agentshroud-console_network_legacy_retained_fo

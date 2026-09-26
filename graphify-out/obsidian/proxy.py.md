@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # proxy.py
 
 ## Connections
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `contains` [EXTRACTED]
 - [[SSHResult]] - `contains` [EXTRACTED]
 - [[SSHWriteResult]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[__init__.py_12]] - `re_exports` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[ssh_proxy__init__.py]] - `re_exports` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

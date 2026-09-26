@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "openclaw_triage.sh"
+community: "Daedalus — Concept Illustrator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # openclaw_triage.sh
 
 ## Connections
-- [[log()_2]] - `defines` [EXTRACTED]
+- [[log()_8]] - `defines` [EXTRACTED]
 - [[openclaw_triage.sh script]] - `contains` [EXTRACTED]
 - [[save_cmd()]] - `defines` [EXTRACTED]
 - [[save_shell()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "group_config.py"
+community: "PermissionLevel"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/PermissionLevel
 ---
 
 # persist_user_collab_mode writes under __user_overrides__ key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/group_configpy
+#graphify/rationale #graphify/EXTRACTED #community/PermissionLevel

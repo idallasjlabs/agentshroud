@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "_sleep()"
-location: "L1554"
+community: "AgentShroud Device Pairing Management"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # now()
 
 ## Connections
-- [[.test_ingest_records_even_when_disk_write_fails()]] - `contains` [EXTRACTED]
+- [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

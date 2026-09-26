@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "postmortem.md"
+community: "iMessage Integration Fix - Using imsg + imessage"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # postmortem.md
@@ -19,6 +19,6 @@ tags:
 - [[Remediation]] - `contains` [EXTRACTED]
 - [[Root Cause]] - `contains` [EXTRACTED]
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
-- [[Timeline_1]] - `contains` [EXTRACTED]
+- [[Timeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage

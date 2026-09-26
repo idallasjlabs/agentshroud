@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L2605"
+community: "SSHProxy"
+location: "L2618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # run_openscap_scan()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Run OpenSCAP XCCDF evaluation against the running container.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

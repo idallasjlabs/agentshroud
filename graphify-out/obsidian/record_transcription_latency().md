@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "TestSSRFBlocking"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/TestSSRFBlocking
 ---
 
 # record_transcription_latency()
@@ -16,4 +16,4 @@ tags:
 - [[stt.py]] - `contains` [EXTRACTED]
 - [[transcribe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking

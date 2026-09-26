@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "ToolACLEnforcer"
-location: "L41"
+community: "test_security_audit.py"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/test_security_auditpy
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()]] - `calls` [EXTRACTED]
-- [[fixture_2]] - `references` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "TestParseHostsLine"
+community: "TestOutboundScanUnification"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/TestOutboundScanUnification
 ---
 
 # parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParseHostsLine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundScanUnification

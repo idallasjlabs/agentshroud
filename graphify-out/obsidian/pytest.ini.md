@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "All Dependencies.md"
+community: "TestFileSandbox"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/TestFileSandbox
 ---
 
 # pytest.ini.md
@@ -16,4 +16,4 @@ tags:
 - [[ci-workflows]] - `references` [EXTRACTED]
 - [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/TestFileSandbox

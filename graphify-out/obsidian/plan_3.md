@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "agentshroud-redteam/references/steve-hay-plan.md"
+community: "block_main_commits.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-redteam/references/steve-hay-planmd
+  - community/block_main_commitssh
 ---
 
 # plan
 
 ## Connections
-- [[agentshroud-redteamreferencessteve-hay-plan]] - `contains` [EXTRACTED]
+- [[steve-hay-plan_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-redteam/references/steve-hay-planmd
+#graphify/document #graphify/EXTRACTED #community/block_main_commitssh

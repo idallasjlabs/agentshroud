@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/references/cli-examples.md"
 type: "document"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "Container Security Policy — AgentShroud"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/Container_Security_Policy__AgentShroud
 ---
 
 # op read / run / inject Command Examples
@@ -14,4 +14,4 @@ tags:
 - [[1Password CLI Skill]] - `cites` [EXTRACTED]
 - [[op Secret-Handling Guardrails]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/document #graphify/EXTRACTED #community/Container_Security_Policy__AgentShroud

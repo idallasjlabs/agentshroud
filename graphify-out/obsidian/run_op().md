@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/bot-access-audit.sh"
 type: "code"
-community: "bot-access-audit.sh"
+community: "TestOutboundClassifierHelpers"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bot-access-auditsh
+  - community/TestOutboundClassifierHelpers
 ---
 
 # run_op()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bot-access-audit.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bot-access-auditsh
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

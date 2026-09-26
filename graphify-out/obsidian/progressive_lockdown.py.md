@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "IntelReportStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/IntelReportStore
 ---
 
 # progressive_lockdown.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[LockdownAction]] - `contains` [EXTRACTED]
 - [[LockdownLevel]] - `contains` [EXTRACTED]
 - [[ProgressiveLockdown]] - `contains` [EXTRACTED]
 - [[UserLockdownState]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

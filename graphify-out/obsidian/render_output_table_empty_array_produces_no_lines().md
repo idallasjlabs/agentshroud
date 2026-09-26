@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # render_output_table_empty_array_produces_no_lines()
@@ -15,4 +15,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
-type: "document"
-community: "port_manager.py"
+source_file: "gateway/tools/port_manager.py"
+type: "code"
+community: "KeyVault"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/KeyVault
 ---
 
-# port_manager.py.md
+# port_manager.py
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[PortAssignment]] - `contains` [EXTRACTED]
+- [[PortManager]] - `contains` [EXTRACTED]
+- [[PortResolution]] - `contains` [EXTRACTED]
+- [[check_and_report()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

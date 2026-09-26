@@ -1,19 +1,22 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L51"
+community: "awslabs.aws-api-mcp-server configuration (--read"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/awslabsaws-api-mcp-server_configuration_--read
 ---
 
 # pass()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read

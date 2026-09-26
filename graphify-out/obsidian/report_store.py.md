@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ReportStore"
+community: "PortManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # report_store.py
@@ -15,4 +15,4 @@ tags:
 - [[ReportStore]] - `contains` [EXTRACTED]
 - [[test_report_store.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/PortManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # remove_role on a user not in map is a no-op (no exception).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_remove_role_noop_for_missing_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

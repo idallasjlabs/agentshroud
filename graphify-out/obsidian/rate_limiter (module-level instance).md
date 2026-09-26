@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "RateLimiter"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
 # rate_limiter (module-level instance)
 
 ## Connections
-- [[auth.py]] - `references` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

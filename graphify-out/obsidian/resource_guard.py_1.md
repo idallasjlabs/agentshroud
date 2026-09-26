@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Function Details"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # resource_guard.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

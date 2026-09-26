@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L39"
+community: "test_llm_proxy_local_parity.py"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # passthrough_proxy()
 
 ## Connections
-- [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

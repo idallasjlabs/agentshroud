@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "SecureBrowser"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/SecureBrowser
 ---
 
 # phase-review-2026-02-23.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser

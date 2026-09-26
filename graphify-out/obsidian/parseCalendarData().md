@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: ".agents/skills/i-icloud/scripts/calendar.js"
+community: "TestBotIsMentioned"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-icloud/scripts/calendarjs
+  - community/TestBotIsMentioned
 ---
 
 # parseCalendarData()
 
 ## Connections
-- [[.agentsskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[calendar.js]] - `contains` [EXTRACTED]
 - [[listEvents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/TestBotIsMentioned

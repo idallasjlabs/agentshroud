@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
-type: "document"
-community: "proxy_status.py"
+source_file: "gateway/dashboard/proxy_status.py"
+type: "code"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
-# proxy_status.py.md
+# proxy_status.py
 
 ## Connections
-- [[proxy_status.py_1]] - `contains` [EXTRACTED]
+- [[ProxyDashboard]] - `contains` [EXTRACTED]
+- [[ProxyStatusReport]] - `contains` [EXTRACTED]
+- [[api.py]] - `calls` [EXTRACTED]
+- [[health_report.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

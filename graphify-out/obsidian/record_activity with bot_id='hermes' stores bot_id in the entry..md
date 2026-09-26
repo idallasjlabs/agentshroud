@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "_wrap_response()"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/_wrap_response
 ---
 
 # record_activity with bot_id='hermes' stores bot_id in the entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_activity_stores_bot_id_when_provided()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

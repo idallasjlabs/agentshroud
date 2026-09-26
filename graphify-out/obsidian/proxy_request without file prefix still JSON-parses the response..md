@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestFileDownload"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L8787"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFileDownload
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # proxy_request without file/ prefix still JSON-parses the response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_api_path_still_json_parsed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFileDownload
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

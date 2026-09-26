@@ -1,23 +1,27 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L356"
+community: "The 8D Investigation Process"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/The_8D_Investigation_Process
 ---
 
 # run()
 
 ## Connections
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - `rationale_for` [EXTRACTED]
-- [[_build_arg_parser()]] - `calls` [EXTRACTED]
-- [[add_comment()]] - `calls` [EXTRACTED]
-- [[create_issue()]] - `calls` [EXTRACTED]
-- [[fetch_credentials()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[transition_issue()]] - `calls` [EXTRACTED]
+- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - `rationale_for` [EXTRACTED]
+- [[_git_commits_last_week()]] - `calls` [EXTRACTED]
+- [[build_comment_payload()_1]] - `calls` [EXTRACTED]
+- [[build_weekly_summary()]] - `calls` [EXTRACTED]
+- [[extract_scrum_items()]] - `calls` [EXTRACTED]
+- [[fetch_op_secret()_1]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket run()]] - `semantically_similar_to` [INFERRED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[post_comment()]] - `calls` [EXTRACTED]
+- [[resolve_cloud_id()_1]] - `calls` [EXTRACTED]
+- [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

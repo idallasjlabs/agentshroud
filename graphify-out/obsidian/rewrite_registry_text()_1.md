@@ -1,21 +1,25 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L368"
+community: "EncryptedStore"
+location: "L873"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/EncryptedStore
 ---
 
 # rewrite_registry_text()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - `rationale_for` [EXTRACTED]
-- [[_py_literal()]] - `calls` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
+- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place.      For each]] - `rationale_for` [EXTRACTED]
+- [[TestRewrite]] - `calls` [EXTRACTED]
+- [[TriageResult]] - `references` [EXTRACTED]
+- [[_consume_field]] - `calls` [EXTRACTED]
+- [[_consume_field()]] - `calls` [EXTRACTED]
+- [[_py_list_literal()]] - `calls` [EXTRACTED]
+- [[final_status()]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

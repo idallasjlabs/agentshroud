@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Hermes Dev Workflow (HDEV) Skill"
+community: "TestUserMemoryWriteACL"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/TestUserMemoryWriteACL
 ---
 
 # omlx local model (DeepSeek-R1-0528-Qwen3-8B)
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 - [[LM Studio local model (Qwen3-14B)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/concept #graphify/INFERRED #community/TestUserMemoryWriteACL

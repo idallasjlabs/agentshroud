@@ -1,17 +1,19 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "skill.json"
-location: "L41"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
+type: "document"
+community: "Pre-Deployment Checklist"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/Pre-Deployment_Checklist
 ---
 
-# playwright
+# playwright.md
 
 ## Connections
-- [[dependencies]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[Playwright]] - `contains` [EXTRACTED]
+- [[volumes]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

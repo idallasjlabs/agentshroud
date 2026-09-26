@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
+community: "Seccomp Profiles"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Seccomp_Profiles
 ---
 
 # parse_domain_name()
@@ -21,4 +21,4 @@ tags:
 - [[parse_query()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Seccomp_Profiles

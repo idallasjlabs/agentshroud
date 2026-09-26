@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/op-to-keychain.sh"
 type: "code"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - graphify/AMBIGUOUS
+  - community/OutputSchemaEnforcer
 ---
 
 # op-to-keychain.sh
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[Sunday Upgrade Report 2026-08-30 (local-llms upgrade requested)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[op-to-keychain.sh script]] - `contains` [EXTRACTED]
-- [[op-to-keychain.sh script_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/AMBIGUOUS #community/OutputSchemaEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "group_config.py"
+community: "_make_stream_app_state()"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/_make_stream_app_state
 ---
 
 # persist_group_member_remove()
@@ -18,7 +18,7 @@ tags:
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[remove_group_member()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/group_configpy
+#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state

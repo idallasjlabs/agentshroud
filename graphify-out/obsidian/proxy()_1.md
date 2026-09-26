@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L34"
+community: "test_soc_router_coverage.py"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # proxy()
 
 ## Connections
-- [[WebProxy]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
+- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[_base_policy_engine()]] - `calls` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

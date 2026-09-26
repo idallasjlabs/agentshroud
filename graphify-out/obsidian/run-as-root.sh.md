@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/run-as-root.sh"
 type: "code"
-community: "run-as-root.sh"
+community: "Manual Usage (Current Method)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/run-as-rootsh
+  - community/Manual_Usage_Current_Method
 ---
 
 # run-as-root.sh
@@ -15,4 +15,4 @@ tags:
 - [[browser-fetch skill.json (tool manifest)]] - `shares_data_with` [INFERRED]
 - [[run-as-root.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/run-as-rootsh
+#graphify/code #graphify/INFERRED #community/Manual_Usage_Current_Method

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-auth-common.sh"
 type: "code"
-community: "killswitch.sh"
+community: "._filter_streaming_event()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/_filter_streaming_event
 ---
 
 # op-auth-common.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-auth-common.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/killswitchsh
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

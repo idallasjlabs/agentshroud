@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L19"
+community: "test_llm_proxy_local_parity.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # proxy()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

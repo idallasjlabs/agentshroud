@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # reload_config()
 
 ## Connections
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[Path_6]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - `rationale_for` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_reload_applies_valid_change()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

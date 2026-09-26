@@ -12,9 +12,9 @@ tags:
 # revoke_collaborator()
 
 ## Connections
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "oracle — best use"
+community: "mcp_config.py"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/mcp_configpy
 ---
 
 # oracle — best use
@@ -18,9 +18,9 @@ tags:
 - [[Golden path]] - `contains` [EXTRACTED]
 - [[Main use case (browser, GPT‑5.2 Pro)]] - `contains` [EXTRACTED]
 - [[Prompt template (high signal)]] - `contains` [EXTRACTED]
-- [[Safety]] - `contains` [EXTRACTED]
+- [[SKILL_223]] - `contains` [EXTRACTED]
+- [[Safety_3]] - `contains` [EXTRACTED]
 - [[Sessions + slugs]] - `contains` [EXTRACTED]
-- [[oracleSKILL]] - `contains` [EXTRACTED]
 - [[“Exhaustive prompt” restoration pattern]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

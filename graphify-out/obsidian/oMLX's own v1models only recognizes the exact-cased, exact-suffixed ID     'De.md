@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 54"
+community: "asyncio"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/asyncio
 ---
 
 # oMLX's own /v1/models only recognizes the exact-cased, exact-suffixed ID     'De
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "SSHProxy"
-location: "L47"
+community: "SOCWebSocketHandler"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/SOCWebSocketHandler
 ---
 
 # proxy()
 
 ## Connections
-- [[SSHConfig_1]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

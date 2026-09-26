@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L2096"
+community: "SSHProxy"
+location: "L2109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # release_blocked_message()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Release a quarantined message for admin workflow follow-up.]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "What You Must Do When Invoked"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # privacy_policy.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[PrivacyPolicy]] - `contains` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `contains` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[ServicePolicy]] - `contains` [EXTRACTED]
 - [[ServicePrivacy]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

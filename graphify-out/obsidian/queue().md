@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # queue()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

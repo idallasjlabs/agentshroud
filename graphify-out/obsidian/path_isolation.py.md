@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # path_isolation.py
@@ -17,6 +17,6 @@ tags:
 - [[PathIsolationManager]] - `contains` [EXTRACTED]
 - [[PathRewriteResult]] - `contains` [EXTRACTED]
 - [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

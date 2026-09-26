@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "_sleep()"
-location: "L1442"
+community: "TestAuth"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/TestAuth
 ---
 
 # now()
 
 ## Connections
-- [[.test_per_agent_check_error_is_isolated_not_fatal()]] - `contains` [EXTRACTED]
+- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/TestAuth

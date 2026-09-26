@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "group_config.py"
+community: "_make_stream_app_state()"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/_make_stream_app_state
 ---
 
 # persist_user_collab_mode()
@@ -18,8 +18,8 @@ tags:
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/group_configpy
+#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state

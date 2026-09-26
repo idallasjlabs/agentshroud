@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/agents/_README.txt"
 type: "document"
-community: "openclaw agents/_README.txt (50+ specialized age"
+community: "GitHub MCP Server (concept)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw_agents/_READMEtxt_50_specialized_age
+  - community/GitHub_MCP_Server_concept
 ---
 
 # openclaw agents/_README.txt (50+ specialized agents)
 
-#graphify/document #graphify/EXTRACTED #community/openclaw_agents/_READMEtxt_50_specialized_age
+#graphify/document #graphify/EXTRACTED #community/GitHub_MCP_Server_concept

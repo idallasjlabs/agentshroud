@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "Community 837"
+community: "Technical Illustrator (i-ti)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_837
+  - community/Technical_Illustrator_i-ti
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts_2]] - `contains` [EXTRACTED]
 - [[version_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_837
+#graphify/code #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

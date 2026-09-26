@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "skill.json"
+community: "AgentShroud -- USPTO Trademark Application"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/AgentShroud_--_USPTO_Trademark_Application
 ---
 
 # name
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[package.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application

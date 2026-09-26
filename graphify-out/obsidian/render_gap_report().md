@@ -1,22 +1,22 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L1050"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # render_gap_report()
 
 ## Connections
-- [[Render the gap report markdown (development plan). Args agent_id The agent id…]] - `rationale_for` [EXTRACTED]
+- [[Render the gap report markdown (development plan).      Args         agent_id]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[final_status()]] - `calls` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 - [[summarize()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

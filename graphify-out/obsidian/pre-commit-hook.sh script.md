@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/pre-commit-hook.sh"
 type: "code"
-community: "pre-commit-hook.sh"
+community: "RuntimeConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pre-commit-hooksh
+  - community/RuntimeConfig
 ---
 
 # pre-commit-hook.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pre-commit-hook.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pre-commit-hooksh
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

@@ -1,19 +1,23 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "RateLimiter"
-location: "L1"
+community: "A2APolicyEngine"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
-# python-jose.md
+# python-jose
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[auth.py]] - `references` [INFERRED]
+- [[Auth Methods]] - `contains` [EXTRACTED]
+- [[Current Usage]] - `contains` [EXTRACTED]
+- [[Key Features_1]] - `contains` [EXTRACTED]
+- [[Purpose_193]] - `contains` [EXTRACTED]
+- [[Related Notes_48]] - `contains` [EXTRACTED]
+- [[Security Note_2]] - `contains` [EXTRACTED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimiter
+#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine

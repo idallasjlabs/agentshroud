@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "notion"
+community: "chat_console.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/chat_consolepy
 ---
 
 # notion
@@ -15,9 +15,9 @@ tags:
 - [[API Basics]] - `contains` [EXTRACTED]
 - [[Common Operations_1]] - `contains` [EXTRACTED]
 - [[Key Differences in 2025-09-03]] - `contains` [EXTRACTED]
-- [[Notes_9]] - `contains` [EXTRACTED]
+- [[Notes_6]] - `contains` [EXTRACTED]
 - [[Property Types]] - `contains` [EXTRACTED]
-- [[Setup_8]] - `contains` [EXTRACTED]
-- [[notionSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_218]] - `contains` [EXTRACTED]
+- [[Setup_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/chat_consolepy

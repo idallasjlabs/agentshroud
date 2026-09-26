@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "Community 745"
+community: "Mnemosyne — Retention Engineer"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # openclaw-identity.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

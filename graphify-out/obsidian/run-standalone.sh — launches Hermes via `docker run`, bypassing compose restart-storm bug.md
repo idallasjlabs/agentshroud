@@ -1,20 +1,20 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "run-standalone.sh"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # run-standalone.sh — launches Hermes via `docker run`, bypassing compose restart-storm bug
 
 ## Connections
-- [[cmd_down]] - `calls` [EXTRACTED]
-- [[cmd_logs]] - `calls` [EXTRACTED]
-- [[cmd_status]] - `calls` [EXTRACTED]
-- [[cmd_up]] - `calls` [EXTRACTED]
+- [[cmd_down()]] - `calls` [EXTRACTED]
+- [[cmd_logs()]] - `calls` [EXTRACTED]
+- [[cmd_status()]] - `calls` [EXTRACTED]
+- [[cmd_up()]] - `calls` [EXTRACTED]
 - [[hermes service (prod, profiles hermesfull — service block is dead code, see run-standalone.sh)]] - `semantically_similar_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh
+#graphify/rationale #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

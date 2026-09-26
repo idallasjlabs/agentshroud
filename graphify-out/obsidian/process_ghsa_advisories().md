@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "mcp_oauth_preflight.py"
 location: "L568"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/mcp_oauth_preflightpy
 ---
 
 # process_ghsa_advisories()
 
 ## Connections
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Diff advisories against an agent's OWN registry and build under_review…]] - `rationale_for` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Diff advisories against an agent's OWN registry and build under_review entri]] - `rationale_for` [EXTRACTED]
 - [[Prove the Outcome, Never the Steps]] - `rationale_for` [EXTRACTED]
 - [[_ghsa_cvss_score()]] - `calls` [EXTRACTED]
 - [[_ghsa_patched_version()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 - [[triage_agent()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

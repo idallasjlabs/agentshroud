@@ -1,11 +1,11 @@
 ---
 source_file: "browser-extension/popup.html"
 type: "code"
-community: "background.js"
+community: "SSH Capability Architecture Document"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # popup.html (toolbar popup UI)
@@ -14,4 +14,4 @@ tags:
 - [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - `conceptually_related_to` [INFERRED]
 - [[popup.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
