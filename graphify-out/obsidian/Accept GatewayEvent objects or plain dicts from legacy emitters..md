@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "rationale"
-community: "AlertTelegramRelay"
+community: "test_telegram_proxy_outbound.py"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # Accept GatewayEvent objects or plain dicts from legacy emitters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._coerce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

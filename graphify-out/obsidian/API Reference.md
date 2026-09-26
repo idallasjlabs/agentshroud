@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "API Reference"
+community: "Known Log Messages"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/Known_Log_Messages
 ---
 
 # API Reference
@@ -18,7 +18,7 @@ tags:
 - [[Example `GET managehealth`]] - `contains` [EXTRACTED]
 - [[Example `POST manageegress{request_id}approve`]] - `contains` [EXTRACTED]
 - [[Route map (by router)]] - `contains` [EXTRACTED]
-- [[Source of truth_1]] - `contains` [EXTRACTED]
+- [[Source of truth]] - `contains` [EXTRACTED]
 - [[api-reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Reference
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

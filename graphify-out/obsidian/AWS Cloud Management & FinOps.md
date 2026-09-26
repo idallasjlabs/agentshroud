@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_13]] - `contains` [EXTRACTED]
-- [[Related Skills_4]] - `contains` [EXTRACTED]
-- [[Usage_8]] - `contains` [EXTRACTED]
+- [[Purpose_3]] - `contains` [EXTRACTED]
+- [[README_3]] - `contains` [EXTRACTED]
+- [[Related Skills_3]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

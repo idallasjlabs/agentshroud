@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "diagrams/README.md"
+community: "gateway.security.agent_cve_registry"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # AgentShroud — Operations & Reliability Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[19. Incident Response Flow — Severity & Escalation]] - `contains` [EXTRACTED]
 - [[20. Monitoring & Observability Map]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

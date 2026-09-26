@@ -1,13 +1,13 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "Admin CLI Chat Console (OpenClaw via Gateway)"
+community: "Newsletter: Model Version Tracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_CLI_Chat_Console_OpenClaw_via_Gateway
+  - community/Newsletter_Model_Version_Tracker
 ---
 
 # Admin CLI Chat Console (OpenClaw via Gateway)
 
-#graphify/code #graphify/EXTRACTED #community/Admin_CLI_Chat_Console_OpenClaw_via_Gateway
+#graphify/code #graphify/EXTRACTED #community/Newsletter_Model_Version_Tracker

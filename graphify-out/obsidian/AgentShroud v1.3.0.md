@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "API Reference"
+community: "Update AgentShroud"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/Update_AgentShroud
 ---
 
 # AgentShroud v1.3.0
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
-- [[Overview_18]] - `contains` [EXTRACTED]
-- [[Overview_19]] - `contains` [EXTRACTED]
+- [[Overview_4]] - `contains` [EXTRACTED]
+- [[Overview_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Reference
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

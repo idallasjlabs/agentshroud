@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "image"
-community: "Approval Queue (human-in-the-loop)"
+community: "TestDockerEngine"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/TestDockerEngine
 ---
 
 # Agent Decision Logic Flowchart
@@ -16,4 +16,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `conceptually_related_to` [EXTRACTED]
 - [[Telegram Message Sequence Diagram]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/image #graphify/EXTRACTED #community/TestDockerEngine

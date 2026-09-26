@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # AgentRegistry
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_126]] - `method` [EXTRACTED]
-- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_51]] - `method` [EXTRACTED]
+- [[.__init__()_52]] - `references` [EXTRACTED]
 - [[.from_dict()_3]] - `method` [EXTRACTED]
-- [[.get()_1]] - `method` [EXTRACTED]
+- [[.get()_3]] - `method` [EXTRACTED]
 - [[.list_agents()]] - `method` [EXTRACTED]
 - [[.register()]] - `method` [EXTRACTED]
-- [[.setup_method()_28]] - `calls` [EXTRACTED]
+- [[.setup_method()_31]] - `calls` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
 - [[.test_compose_networks_are_internal()]] - `calls` [EXTRACTED]
@@ -44,18 +44,18 @@ tags:
 - [[.test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
 - [[.test_unregister_removes_agent()]] - `calls` [EXTRACTED]
 - [[.test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[.to_dict()_9]] - `method` [EXTRACTED]
+- [[.to_dict()_4]] - `method` [EXTRACTED]
 - [[.unregister()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
 - [[Registry mapping agent IDs to container configurations.]] - `rationale_for` [EXTRACTED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
@@ -75,13 +75,13 @@ tags:
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 179"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # AgentShroud Brand Guidelines
@@ -15,15 +15,15 @@ tags:
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 - [[Brand Applications]] - `contains` [EXTRACTED]
 - [[Brand Approval Process]] - `contains` [EXTRACTED]
-- [[Brand Identity_2]] - `contains` [EXTRACTED]
+- [[Brand Identity_1]] - `contains` [EXTRACTED]
 - [[Brand Personality]] - `contains` [EXTRACTED]
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
 - [[Color Usage]] - `contains` [EXTRACTED]
-- [[Contact_1]] - `contains` [EXTRACTED]
+- [[Contact]] - `contains` [EXTRACTED]
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
-- [[Logo Usage_3]] - `contains` [EXTRACTED]
+- [[Logo Usage_2]] - `contains` [EXTRACTED]
 - [[Press Kit]] - `contains` [EXTRACTED]
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

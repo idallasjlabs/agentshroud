@@ -1,20 +1,20 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Community 526"
-location: "L3"
+community: "SkillGuard"
+location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_526
+  - community/SkillGuard
 ---
 
 # AgentShroud v1.3.0
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
-- [[Integration Guide]] - `contains` [EXTRACTED]
-- [[Overview_18]] - `contains` [EXTRACTED]
-- [[Overview_19]] - `contains` [EXTRACTED]
+- [[Adversarial Red-Team  Blue-Team Assessment]] - `contains` [EXTRACTED]
+- [[Executive Summary_14]] - `contains` [EXTRACTED]
+- [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
+- [[Test Coverage Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_526
+#graphify/document #graphify/EXTRACTED #community/SkillGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestNoResponseGuarantee"
+community: "test_a2a_proxy.py"
 location: "L7845"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/test_a2a_proxypy
 ---
 
 # After the rate-limit window expires, collaborator messages go through normally.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorRateLimitRecovery]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

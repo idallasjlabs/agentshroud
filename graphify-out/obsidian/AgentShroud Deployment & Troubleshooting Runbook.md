@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
+community: "log_sanitizer.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/log_sanitizerpy
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
@@ -16,10 +16,10 @@ tags:
 - [[Check Gateway Health]] - `contains` [EXTRACTED]
 - [[Deploy Latest Code (Any Host)]] - `contains` [EXTRACTED]
 - [[Deploy to Production]] - `contains` [EXTRACTED]
-- [[Infrastructure_9]] - `contains` [EXTRACTED]
+- [[Infrastructure_8]] - `contains` [EXTRACTED]
 - [[Quick Restart (No Rebuild)]] - `contains` [EXTRACTED]
 - [[RUNBOOK]] - `contains` [EXTRACTED]
 - [[Run Tests on Any Host]] - `contains` [EXTRACTED]
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

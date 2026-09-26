@@ -1,17 +1,17 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "SSH Capability Architecture Document"
+community: "agent_isolation.py"
 location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/agent_isolationpy
 ---
 
 # API Endpoints (`gateway/ingest_api/main.py`)
 
 ## Connections
-- [[Components_2]] - `contains` [EXTRACTED]
+- [[Components_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

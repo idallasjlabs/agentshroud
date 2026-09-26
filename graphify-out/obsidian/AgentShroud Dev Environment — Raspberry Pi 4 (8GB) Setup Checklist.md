@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8G"
+community: "forward.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+  - community/forwardpy
 ---
 
 # AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
@@ -28,6 +28,6 @@ tags:
 - [[Phase 7 Secret Management]] - `contains` [EXTRACTED]
 - [[Phase 8 Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Phase 9 OpenClaw Agent Configuration]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+#graphify/document #graphify/EXTRACTED #community/forwardpy

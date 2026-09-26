@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded S"
+community: "chatbot/main.py"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
+  - community/chatbot/mainpy
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
+#graphify/image #graphify/INFERRED #community/chatbot/mainpy

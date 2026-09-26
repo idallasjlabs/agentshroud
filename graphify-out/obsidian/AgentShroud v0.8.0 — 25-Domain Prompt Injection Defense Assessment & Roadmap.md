@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
+community: "TestWebSearchLog"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
+  - community/TestWebSearchLog
 ---
 
 # AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap
 
 ## Connections
 - [[Additional Controls Checklist]] - `contains` [EXTRACTED]
-- [[Context]] - `contains` [EXTRACTED]
+- [[Context_11]] - `contains` [EXTRACTED]
 - [[Critical Files (v0.8.0 Changes)]] - `contains` [EXTRACTED]
 - [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - `contains` [EXTRACTED]
 - [[DELIVERABLE 2 — Maturity Scorecard]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Verification Plan]] - `contains` [EXTRACTED]
 - [[security-assessment-v0.8.0-25-domain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_
+#graphify/document #graphify/EXTRACTED #community/TestWebSearchLog

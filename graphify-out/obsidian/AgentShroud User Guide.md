@@ -1,25 +1,25 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Skill: Mindmap Architect (MM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # AgentShroud User Guide
 
 ## Connections
 - [[Dashboard Overview]] - `contains` [EXTRACTED]
-- [[FAQ]] - `contains` [EXTRACTED]
+- [[FAQ_1]] - `contains` [EXTRACTED]
 - [[Getting Started]] - `contains` [EXTRACTED]
 - [[Interacting via Telegram]] - `contains` [EXTRACTED]
 - [[Need Help_1]] - `contains` [EXTRACTED]
 - [[SSH Access]] - `contains` [EXTRACTED]
 - [[Understanding Approval Requests]] - `contains` [EXTRACTED]
-- [[What is AgentShroud_1]] - `contains` [EXTRACTED]
+- [[What is AgentShroud_3]] - `contains` [EXTRACTED]
 - [[user-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

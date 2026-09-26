@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "TestMultiBotContextvarRouting"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/TestMultiBotContextvarRouting
 ---
 
 # AGENT_ROLES.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting

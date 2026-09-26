@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "system-requirements.md"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_dashboard_endpointspy
 ---
 
 # AgentShroud v0.8.0 "Watchtower" Release Plan
@@ -26,4 +26,4 @@ tags:
 - [[Steven Hay (Security Advisor)]] - `references` [EXTRACTED]
 - [[Trillian (host, x86_64)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy

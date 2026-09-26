@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "AgentShroud Data Flow Diagrams"
+community: "6. Tailscale — secure ESP→Hermes link ✅ LIVE (se"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Flow_Diagrams
+  - community/6_Tailscale__secure_ESPHermes_link__LIVE_se
 ---
 
 # AgentShroud Data Flow Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[Level 2 MCP Proxy Detail]] - `contains` [EXTRACTED]
 - [[data-flow-diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams
+#graphify/document #graphify/EXTRACTED #community/6_Tailscale__secure_ESPHermes_link__LIVE_se

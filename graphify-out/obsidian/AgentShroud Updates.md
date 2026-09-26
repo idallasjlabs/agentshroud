@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "6. System Updates"
+community: "HIGH — Should Fix"
 location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/6_System_Updates
+  - community/HIGH__Should_Fix
 ---
 
 # AgentShroud Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/6_System_Updates
+#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix

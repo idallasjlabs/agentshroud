@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "AgentShroud — Vault Home"
+community: "PipelineAction"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Vault_Home
+  - community/PipelineAction
 ---
 
 # AgentShroud — Vault Home
@@ -19,4 +19,4 @@ tags:
 - [[Navigate This Vault]] - `contains` [EXTRACTED]
 - [[Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Vault_Home
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

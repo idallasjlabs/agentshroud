@@ -1,19 +1,19 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "TestConfigValidation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/TestConfigValidation
 ---
 
 # AgentShroud Security Architecture
 
 ## Connections
 - [[Approval Queue Control]] - `references` [EXTRACTED]
-- [[Architecture Diagram]] - `contains` [EXTRACTED]
+- [[Architecture Diagram_1]] - `contains` [EXTRACTED]
 - [[Audit Ledger (SQLite)]] - `references` [EXTRACTED]
 - [[Authentication and Authorization Framework]] - `contains` [EXTRACTED]
 - [[Bot Identity Separation (Separate Accounts)]] - `references` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[Deployment Security]] - `contains` [EXTRACTED]
 - [[Docker Network Isolation (agentshroud-isolated)]] - `references` [EXTRACTED]
 - [[Encryption and Cryptographic Controls]] - `contains` [EXTRACTED]
-- [[Executive Summary_2]] - `contains` [EXTRACTED]
+- [[Executive Summary_10]] - `contains` [EXTRACTED]
 - [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 - [[Kill Switch]] - `references` [EXTRACTED]
 - [[Limitations & Residual Risks]] - `contains` [EXTRACTED]
@@ -38,11 +38,11 @@ tags:
 - [[Prompt Guard System (Module 25)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
-- [[Quick Reference]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
+- [[Quick Reference_6]] - `contains` [EXTRACTED]
+- [[Security Controls]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 - [[Threat Model]] - `references` [EXTRACTED]
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[security-architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

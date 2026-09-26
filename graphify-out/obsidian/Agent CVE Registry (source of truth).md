@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Agent CVE Registry (source of truth)
@@ -14,4 +14,4 @@ tags:
 - [[Application CVE Domain (OpenClaw  Hermes)]] - `references` [EXTRACTED]
 - [[Daily GHSA  NVD Registry Sync]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/TestCheckCommandExecution

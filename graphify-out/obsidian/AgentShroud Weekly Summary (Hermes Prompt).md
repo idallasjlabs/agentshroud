@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # AgentShroud Weekly Summary (Hermes Prompt)
@@ -16,4 +16,4 @@ tags:
 - [[Report Delivery Format Instructions]] - `references` [EXTRACTED]
 - [[Seed Job AgentShroud Weekly Summary]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/run_test

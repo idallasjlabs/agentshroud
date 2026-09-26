@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "AgentShroud Changelog"
+community: "mcp-proxy-wrapper.js"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/mcp-proxy-wrapperjs
 ---
 
 # AgentShroud Changelog
@@ -21,4 +21,4 @@ tags:
 - [[Voice Gateway]] - `references` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

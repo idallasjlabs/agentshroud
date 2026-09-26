@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "test_cli_coverage.py"
+community: "patch"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/patch
 ---
 
 # AgentShroud SOC CLI — Shared Command Layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cli()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/patch

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Prompt: Hermes Competitive Intelligence Email (A"
+community: "TestSplitForSpeech"
 location: "L100-L105"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_A
+  - community/TestSplitForSpeech
 ---
 
 # AgentShroud Control Layers (PromptGuard / EgressFilter / ToolACL / ApprovalQueue / AuditChain)
@@ -16,4 +16,4 @@ tags:
 - [[Seed Job AI Security Standards Tracker]] - `references` [EXTRACTED]
 - [[Seed Job Agentic AI CVE and Exploit Watch]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_A
+#graphify/concept #graphify/EXTRACTED #community/TestSplitForSpeech

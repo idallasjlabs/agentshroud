@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestAuth"
+community: "lifespan.py"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/lifespanpy
 ---
 
 # Agent registry should be importable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_agent_registry_module()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

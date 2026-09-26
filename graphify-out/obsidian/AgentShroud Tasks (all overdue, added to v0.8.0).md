@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud — Master Feature List (Everything Ev"
+community: "Skill Creation Process"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/Skill_Creation_Process
 ---
 
 # AgentShroud Tasks (all overdue, added to v0.8.0):
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders — Items Recovered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

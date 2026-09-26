@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
+community: "wakeword.c"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summ
+  - community/wakewordc
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Execution Summary (Draft)
@@ -23,7 +23,7 @@ tags:
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Bot container verification (2026-03-14)]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
-- [[Executive Summary_9]] - `contains` [EXTRACTED]
+- [[Executive Summary_6]] - `contains` [EXTRACTED]
 - [[Gateway regression suites]] - `contains` [EXTRACTED]
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[OpenClaw_1]] - `references` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[v0.8.0-execution-summary-draft]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ
+#graphify/document #graphify/EXTRACTED #community/wakewordc

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo-transparent.svg"
 type: "image"
-community: "AgentShroud™ Brand Guidelines"
+community: "AgentShroud Security Architecture"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Security_Architecture
 ---
 
 # AgentShroud Transparent Logo (SVG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Logo Usage]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

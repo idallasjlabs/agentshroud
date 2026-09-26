@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "_make_cve()"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/_make_cve
 ---
 
 # Administrative Roles
@@ -17,4 +17,4 @@ tags:
 - [[RBAC Role Definitions]] - `contains` [EXTRACTED]
 - [[Viewer (viewer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/_make_cve

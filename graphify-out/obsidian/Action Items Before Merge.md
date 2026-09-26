@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-04.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "SecureBrowser"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/SecureBrowser
 ---
 
 # Action Items Before Merge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Verdict]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser

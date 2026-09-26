@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_session()"
+community: "KeyVaultConfig"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/KeyVaultConfig
 ---
 
 # Add a message to the user's conversation history for a specific bot.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_conversation_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

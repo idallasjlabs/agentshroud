@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L532"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Agent Interaction Protocol
@@ -16,4 +16,4 @@ tags:
 - [[How to Collaborate with the AWS Agent]] - `contains` [EXTRACTED]
 - [[How to Interact with the Human Investigator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

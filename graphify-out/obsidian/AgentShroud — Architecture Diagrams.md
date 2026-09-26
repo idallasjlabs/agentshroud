@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "01-architecture.md"
+community: "Error Index"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01-architecturemd
+  - community/Error_Index
 ---
 
 # AgentShroud — Architecture Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[2. C4 Level 1 — Container Diagram]] - `contains` [EXTRACTED]
 - [[3. Architecture Component Diagram — Gateway internals]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01-architecturemd
+#graphify/document #graphify/EXTRACTED #community/Error_Index

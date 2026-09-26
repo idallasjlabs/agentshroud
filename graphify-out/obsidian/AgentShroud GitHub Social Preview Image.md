@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/github-social-preview-1280x640.png"
 type: "image"
-community: "AgentShroud GitHub Social Preview Image"
+community: "MCP Server: home-assistant"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_GitHub_Social_Preview_Image
+  - community/MCP_Server_home-assistant
 ---
 
 # AgentShroud GitHub Social Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_GitHub_Social_Preview_Image
+#graphify/image #graphify/EXTRACTED #community/MCP_Server_home-assistant

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: "02-infrastructure.md"
+community: ".test_gives_up_and_marks_sent_after_max_retries("
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # AgentShroud — Infrastructure & Network Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[5. Network Topology Diagram]] - `contains` [EXTRACTED]
 - [[6. Deployment Diagram — What Runs Where]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

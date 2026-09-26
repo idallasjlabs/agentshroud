@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Quick Reference Commands"
+community: "ledger row (id, timestamp, source, hashes, sanit"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/ledger_row_id_timestamp_source_hashes_sanit
 ---
 
 # Access OpenClaw Dashboard Remotely
@@ -17,4 +17,4 @@ tags:
 - [[Option 3 Both Services]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "diagrams/README.md"
+community: "gateway.security.agent_cve_registry"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # AgentShroud — Security & Access Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[12. Credential Flow Diagram]] - `contains` [EXTRACTED]
 - [[13. Network Security Diagram — Egress Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "BaseModel"
+community: "TestClamavSummary"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/TestClamavSummary
 ---
 
 # Action
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.require()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BaseModel
+#graphify/code #graphify/EXTRACTED #community/TestClamavSummary

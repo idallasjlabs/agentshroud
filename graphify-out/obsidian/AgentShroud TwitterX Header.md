@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-header-1500x500.png"
 type: "image"
-community: "AgentShroud Twitter/X Header"
+community: "EnhancedApprovalQueue.decide"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Twitter/X_Header
+  - community/EnhancedApprovalQueuedecide
 ---
 
 # AgentShroud Twitter/X Header
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Twitter/X_Header
+#graphify/image #graphify/EXTRACTED #community/EnhancedApprovalQueuedecide

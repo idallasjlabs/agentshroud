@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "Applies to: Claude Code (primary) · Gemini CLI ("
 location: "L532"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
 ---
 
 # Agent Interaction Protocol
@@ -16,4 +16,4 @@ tags:
 - [[How to Collaborate with the AWS Agent_2]] - `contains` [EXTRACTED]
 - [[How to Interact with the Human Investigator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_

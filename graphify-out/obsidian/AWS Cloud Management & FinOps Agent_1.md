@@ -1,32 +1,29 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # AWS Cloud Management & FinOps Agent
 
 ## Connections
-- [[AWS tagging standard (CostCenter, FOD, DataRetentionTier…)]] - `references` [EXTRACTED]
-- [[Claude Code skill catalog (59 skills)]] - `references` [EXTRACTED]
 - [[Cross-Account & Future Proofing_2]] - `contains` [EXTRACTED]
 - [[Decision Framework_2]] - `contains` [EXTRACTED]
-- [[Deliverables_3]] - `contains` [EXTRACTED]
-- [[EBS bottleneck vs oversize distinction]] - `rationale_for` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
 - [[Expertise_2]] - `contains` [EXTRACTED]
-- [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
-- [[FinOps agent safety model (dry-run default, tiered approval)]] - `implements` [EXTRACTED]
-- [[Guardrails_8]] - `contains` [EXTRACTED]
-- [[Identity_2]] - `contains` [EXTRACTED]
-- [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
+- [[FY26 Cost Reduction Context_2]] - `contains` [EXTRACTED]
+- [[Guardrails_12]] - `contains` [EXTRACTED]
+- [[Identity_3]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)_2]] - `contains` [EXTRACTED]
 - [[Resource Inventory CSV Schema_2]] - `contains` [EXTRACTED]
+- [[SKILL_134]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
 - [[Tagging Standard_2]] - `contains` [EXTRACTED]
-- [[Workflow_4]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Workflow_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

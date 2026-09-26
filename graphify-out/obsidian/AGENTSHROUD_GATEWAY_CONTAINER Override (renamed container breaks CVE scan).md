@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "rationale"
-community: "Marvin Dev Overlay (port and subnet offsets from"
+community: "TestOutboundClassifierHelpers"
 location: "L21-L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+  - community/TestOutboundClassifierHelpers
 ---
 
 # AGENTSHROUD_GATEWAY_CONTAINER Override (renamed container breaks CVE scan)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Marvin Dev Overlay (port and subnet offsets from prod)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

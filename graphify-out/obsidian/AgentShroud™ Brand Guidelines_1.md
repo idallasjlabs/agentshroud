@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "AgentShroud Security Architecture"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Security_Architecture
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[AgentShroud Tagline]] - `references` [EXTRACTED]
 - [[BRAND]] - `contains` [EXTRACTED]
+- [[BRAND_1]] - `contains` [EXTRACTED]
 - [[Brand Colors]] - `contains` [EXTRACTED]
 - [[Brand Identity]] - `contains` [EXTRACTED]
-- [[Brand Identity_1]] - `contains` [EXTRACTED]
+- [[Brand Identity_2]] - `contains` [EXTRACTED]
 - [[Colors]] - `contains` [EXTRACTED]
 - [[Colors_1]] - `contains` [EXTRACTED]
 - [[Communication Templates]] - `contains` [EXTRACTED]
@@ -25,21 +26,20 @@ tags:
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[Key Messaging]] - `contains` [EXTRACTED]
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
+- [[License]] - `contains` [EXTRACTED]
 - [[License_1]] - `contains` [EXTRACTED]
-- [[License_2]] - `contains` [EXTRACTED]
 - [[Logo Usage]] - `references` [EXTRACTED]
-- [[Logo Usage_2]] - `contains` [EXTRACTED]
+- [[Logo Usage_3]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
+- [[README_38]] - `contains` [EXTRACTED]
 - [[Social Handles]] - `contains` [EXTRACTED]
 - [[Social Handles_1]] - `contains` [EXTRACTED]
-- [[Trademark_1]] - `references` [EXTRACTED]
-- [[Trademark]] - `contains` [EXTRACTED]
-- [[Typography]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
-- [[Voice & Tone]] - `references` [EXTRACTED]
-- [[Voice & Tone_1]] - `contains` [EXTRACTED]
-- [[brandingREADME]] - `contains` [EXTRACTED]
-- [[workspaceBRAND]] - `contains` [EXTRACTED]
+- [[Trademark]] - `references` [EXTRACTED]
+- [[Trademark_1]] - `contains` [EXTRACTED]
+- [[Typography_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[Voice & Tone_1]] - `references` [EXTRACTED]
+- [[Voice & Tone_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

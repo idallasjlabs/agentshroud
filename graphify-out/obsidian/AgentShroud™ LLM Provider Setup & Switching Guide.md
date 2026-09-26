@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "OpenClaw Bot Container"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # AgentShroud™ LLM Provider Setup & Switching Guide
@@ -19,4 +19,4 @@ tags:
 - [[5. Verification & Troubleshooting]] - `contains` [EXTRACTED]
 - [[LLM_PROVIDER_SETUP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

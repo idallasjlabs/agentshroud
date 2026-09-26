@@ -1,8 +1,8 @@
 ---
-source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
+source_file: "README.md"
 type: "document"
 community: "Release Notes - AgentShroud v0.9.0"
-location: "L443"
+location: "L493"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,9 +12,7 @@ tags:
 # Acknowledgments
 
 ## Connections
-- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
-- [[🏢 Enterprise Partners]] - `contains` [EXTRACTED]
-- [[👥 Contributors]] - `contains` [EXTRACTED]
-- [[🔒 Security Research]] - `contains` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[README_37]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

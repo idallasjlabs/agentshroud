@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "Function Details"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Function_Details
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -15,9 +15,10 @@ tags:
 - [[Adversary Model_1]] - `contains` [EXTRACTED]
 - [[Attack Phases_1]] - `contains` [EXTRACTED]
 - [[Critical Rules_6]] - `contains` [EXTRACTED]
-- [[Infrastructure_1]] - `contains` [EXTRACTED]
+- [[Infrastructure_3]] - `contains` [EXTRACTED]
 - [[Output_3]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[SKILL_115]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
-- [[agentshroud-redteamSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Function_Details

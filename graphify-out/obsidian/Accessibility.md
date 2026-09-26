@@ -1,18 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/colors/palette.md"
 type: "document"
-community: "Animation Guidelines"
-location: "L92"
+community: "http_proxy.py"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/http_proxypy
 ---
 
 # Accessibility
 
 ## Connections
-- [[Animation Guidelines]] - `contains` [EXTRACTED]
-- [[Color Usage]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "test_block_credentials.py"
 location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/test_block_credentialspy
 ---
 
 # Advanced Search Query
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Query API Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

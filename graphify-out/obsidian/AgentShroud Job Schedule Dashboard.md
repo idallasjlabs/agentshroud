@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "document"
-community: "Local-Model Job Quality Matrix"
+community: "start.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/startsh
 ---
 
 # AgentShroud Job Schedule Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Prefers-Color-Scheme Token Palette]] - `implements` [EXTRACTED]
 - [[Responsive Table-to-Card Collapse Pattern]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/document #graphify/EXTRACTED #community/startsh

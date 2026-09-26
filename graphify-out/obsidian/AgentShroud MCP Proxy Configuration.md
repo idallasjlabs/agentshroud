@@ -1,11 +1,11 @@
 ---
 source_file: "examples/mcp-config.yml"
 type: "document"
-community: "Default Monitor-Mode Egress Rationale"
+community: "Voice Gateway Service (STT/TTS WebSocket Bridge "
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Default_Monitor-Mode_Egress_Rationale
+  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
 ---
 
 # AgentShroud MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 - [[Default-Allow Web Proxy Design Rationale]] - `rationale_for` [EXTRACTED]
 - [[MCP Proxy Default-Allow Philosophy]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Default_Monitor-Mode_Egress_Rationale
+#graphify/document #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_

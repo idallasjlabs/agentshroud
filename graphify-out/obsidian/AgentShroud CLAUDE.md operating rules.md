@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "8. Governance Model"
+community: "Slack Channel Setup"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Governance_Model
+  - community/Slack_Channel_Setup
 ---
 
 # AgentShroud CLAUDE.md operating rules
@@ -14,6 +14,5 @@ tags:
 - [[No Security Theater (Rule A-E)]] - `references` [EXTRACTED]
 - [[Prove the Outcome, Never the Steps]] - `references` [EXTRACTED]
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `references` [EXTRACTED]
-- [[_inject_all]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Governance_Model
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

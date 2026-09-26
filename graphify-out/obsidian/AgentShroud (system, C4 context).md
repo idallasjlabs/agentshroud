@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "AgentShroud (system, C4 context)"
+community: "test_cron_jobs_prompts.py"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context
+  - community/test_cron_jobs_promptspy
 ---
 
 # AgentShroud (system, C4 context)
@@ -21,4 +21,4 @@ tags:
 - [[Tailscale (encrypted overlay network)]] - `shares_data_with` [EXTRACTED]
 - [[Telegram (external system)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context
+#graphify/image #graphify/EXTRACTED #community/test_cron_jobs_promptspy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
+community: "Security Module Inventory"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090__Human_Interface_Testing_Gui
+  - community/Security_Module_Inventory
 ---
 
 # Access and Login
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. SOC Command Center (Web UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

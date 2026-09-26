@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "concept"
-community: "AgentShroud Security Perimeter"
+community: "PipelineAction"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Perimeter
+  - community/PipelineAction
 ---
 
 # AgentShroud Security Perimeter
@@ -20,4 +20,4 @@ tags:
 - [[PII redacted before forwarding]] - `rationale_for` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Perimeter
+#graphify/concept #graphify/EXTRACTED #community/PipelineAction

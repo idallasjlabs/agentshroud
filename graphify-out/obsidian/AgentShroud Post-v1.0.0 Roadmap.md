@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Apple Platform Integration"
+community: "1password-skill.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Platform_Integration
+  - community/1password-skillsh
 ---
 
 # AgentShroud Post-v1.0.0 Roadmap
@@ -15,4 +15,4 @@ tags:
 - [[Apple Platform Integration]] - `contains` [EXTRACTED]
 - [[ROADMAP-POST-v1.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Platform_Integration
+#graphify/document #graphify/EXTRACTED #community/1password-skillsh

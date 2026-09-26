@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "test_anthropic_openai_translator.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # AgentShroud Deployment Procedure
@@ -20,10 +20,10 @@ tags:
 - [[Monitoring Setup]] - `contains` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[Post-Deployment Validation]] - `contains` [EXTRACTED]
-- [[Prerequisites]] - `contains` [EXTRACTED]
+- [[Prerequisites_3]] - `contains` [EXTRACTED]
 - [[Production Hardening]] - `contains` [EXTRACTED]
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 - [[deployment-procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

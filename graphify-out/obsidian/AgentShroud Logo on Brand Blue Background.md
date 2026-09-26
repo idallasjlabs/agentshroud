@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-brand-blue-1024x1024.png"
 type: "image"
-community: "AgentShroud Logo on Brand Blue Background"
+community: "MCP Server: awslabs.aws-api-mcp-server"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Logo_on_Brand_Blue_Background
+  - community/MCP_Server_awslabsaws-api-mcp-server
 ---
 
 # AgentShroud Logo on Brand Blue Background
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Logo_on_Brand_Blue_Background
+#graphify/image #graphify/EXTRACTED #community/MCP_Server_awslabsaws-api-mcp-server

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/agentshroud-logo-light-bg.png"
 type: "image"
-community: "AgentShroud Logo — Glow/Light Variant"
+community: "Value Stream Mapping Skill"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Logo__Glow/Light_Variant
+  - community/Value_Stream_Mapping_Skill
 ---
 
 # AgentShroud Logo — Glow/Light Variant
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Logo__Glow/Light_Variant
+#graphify/image #graphify/EXTRACTED #community/Value_Stream_Mapping_Skill

@@ -1,32 +1,23 @@
 ---
-source_file: "docs/testing/test-plan.md"
+source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Playwright"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Playwright
 ---
 
 # AgentShroud v0.9.0
 
 ## Connections
-- [[1. Executive Summary]] - `contains` [EXTRACTED]
-- [[10. Test Reporting]] - `contains` [EXTRACTED]
-- [[11. Test Environment Maintenance]] - `contains` [EXTRACTED]
-- [[2. Test Strategy]] - `contains` [EXTRACTED]
-- [[3. Test Environments]] - `contains` [EXTRACTED]
-- [[4. Test Categories]] - `contains` [EXTRACTED]
-- [[5. Test Execution]] - `contains` [EXTRACTED]
-- [[6. Test Coverage]] - `contains` [EXTRACTED]
-- [[7. Security Testing]] - `contains` [EXTRACTED]
-- [[8. Performance Benchmarks]] - `contains` [EXTRACTED]
-- [[9. Regression Testing]] - `contains` [EXTRACTED]
-- [[Adversarial Red-Team  Blue-Team Assessment]] - `contains` [EXTRACTED]
-- [[Executive Summary]] - `contains` [EXTRACTED]
-- [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
-- [[Test Coverage Report]] - `contains` [EXTRACTED]
-- [[Test Plan]] - `contains` [EXTRACTED]
+- [[1. Purpose and Scope]] - `contains` [EXTRACTED]
+- [[2. Functional Requirements]] - `contains` [EXTRACTED]
+- [[3. Non-Functional Requirements]] - `contains` [EXTRACTED]
+- [[4. Constraints and Assumptions]] - `contains` [EXTRACTED]
+- [[5. Compliance Requirements]] - `contains` [EXTRACTED]
+- [[6. Risk Assessment]] - `contains` [EXTRACTED]
+- [[System Requirements Specification (SRS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Playwright

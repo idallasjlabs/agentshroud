@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/linkedin-profile-400x400.png"
 type: "image"
-community: "AgentShroud LinkedIn Profile Image"
+community: "MCP Server: xmind"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_LinkedIn_Profile_Image
+  - community/MCP_Server_xmind
 ---
 
 # AgentShroud LinkedIn Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Profile_Image
+#graphify/image #graphify/EXTRACTED #community/MCP_Server_xmind

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "ADR-001: Transparent Proxy Decision"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # Agent Modification Approach (rejected alternative)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-001 Transparent Proxy Decision]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/concept #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

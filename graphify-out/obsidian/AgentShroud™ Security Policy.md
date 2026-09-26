@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "SessionContext"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/SessionContext
 ---
 
 # AgentShroud™ Security Policy
@@ -21,10 +21,10 @@ tags:
 - [[Monitor Mode Warning]] - `references` [EXTRACTED]
 - [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
 - [[SECURITY]] - `contains` [EXTRACTED]
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
+- [[Security Architecture_1]] - `contains` [EXTRACTED]
 - [[Security Scanning]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]
-- [[Trademark_1]] - `references` [INFERRED]
+- [[Trademark]] - `references` [INFERRED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/SessionContext

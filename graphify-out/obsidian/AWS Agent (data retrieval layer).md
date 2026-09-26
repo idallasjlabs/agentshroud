@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "concept"
-community: "8D Root Cause Analysis Skill"
+community: "Press Kit"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis_Skill
+  - community/Press_Kit
 ---
 
 # AWS Agent (data retrieval layer)
@@ -14,4 +14,4 @@ tags:
 - [[8D Root Cause Analysis Skill]] - `references` [EXTRACTED]
 - [[AWS Athena  BESS Telemetry Data Lake]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/8D_Root_Cause_Analysis_Skill
+#graphify/concept #graphify/EXTRACTED #community/Press_Kit
