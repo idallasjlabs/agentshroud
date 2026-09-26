@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L9"
+community: "compose_generator.py"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/compose_generatorpy
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

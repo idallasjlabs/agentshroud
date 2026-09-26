@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Skill: Code Review (CR)"
-location: "L36"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

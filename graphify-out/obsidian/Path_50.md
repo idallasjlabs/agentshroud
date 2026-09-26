@@ -1,18 +1,19 @@
 ---
-source_file: ""
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
 ---
 
 # Path
 
 ## Connections
-- [[main()_5]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[default_out_dir()]] - `references` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind

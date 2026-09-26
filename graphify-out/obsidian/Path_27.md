@@ -1,19 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "gen.py"
-location: "L22"
+community: "AgentShroud System Status Report"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/AgentShroud_System_Status_Report
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

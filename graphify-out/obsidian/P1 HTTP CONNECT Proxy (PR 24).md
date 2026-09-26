@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 99"
-location: "L847"
+community: "WebProxy"
+location: "L913"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/WebProxy
 ---
 
 # P1: HTTP CONNECT Proxy (PR #24)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/WebProxy

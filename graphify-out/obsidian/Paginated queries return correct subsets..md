@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "SSHProxy"
+community: "EgressPolicy"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # Paginated queries return correct subsets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_query_pagination()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

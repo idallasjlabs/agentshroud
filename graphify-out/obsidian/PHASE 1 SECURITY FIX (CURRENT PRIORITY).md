@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "1.4 Implementation Plan"
+community: "ledger.py"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/ledgerpy
 ---
 
 # PHASE 1: SECURITY FIX (CURRENT PRIORITY)
@@ -20,4 +20,4 @@ tags:
 - [[1.6 Success Criteria]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

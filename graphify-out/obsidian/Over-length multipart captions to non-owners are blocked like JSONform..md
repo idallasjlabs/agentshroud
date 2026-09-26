@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestMultipartOutboundPipeline"
+community: "test_ptt_state.c"
 location: "L5140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/test_ptt_statec
 ---
 
 # Over-length multipart captions to non-owners are blocked like JSON/form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/rationale #graphify/EXTRACTED #community/test_ptt_statec

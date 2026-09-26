@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L36"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

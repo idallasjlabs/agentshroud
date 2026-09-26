@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "P2 High Priority Incidents"
+community: "Architecture"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/Architecture
 ---
 
 # P2 High Priority Incidents
@@ -17,4 +17,4 @@ tags:
 - [[PII Leak Incident]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/Architecture

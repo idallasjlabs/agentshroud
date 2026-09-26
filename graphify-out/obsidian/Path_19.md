@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "test_config_hot_reload.py"
-location: "L58"
+community: "Examples"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/Examples
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/Examples

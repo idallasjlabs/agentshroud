@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "rationale"
-community: "GatewayEmailService"
+community: "RateLimiter"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/RateLimiter
 ---
 
 # POST /email/send to the owner sends via forward._email_service — proving
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_email_send_routes_through_injectable_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

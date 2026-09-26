@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "test_anthropic_openai_translator.py"
 location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # P3 Medium Priority Incidents
@@ -16,4 +16,4 @@ tags:
 - [[Trust Level Anomaly]] - `contains` [EXTRACTED]
 - [[Unauthorized SSH Access Attempt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

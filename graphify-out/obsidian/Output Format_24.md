@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
-location: "L26"
+community: "Function Details"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/Function_Details
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
-- [[show_notes]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/Function_Details

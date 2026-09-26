@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "hermes/skills/i-cr/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Output Schema Enforcer Tests (C25)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OutputSchemaEnforcer]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

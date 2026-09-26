@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "scripts/deploy.sh"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
-location: "L8"
+community: "§5 — Trivy Container Scan Results"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/5__Trivy_Container_Scan_Results
 ---
 
-# path
+# PATH
 
 ## Connections
-- [[.agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[deploy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/5__Trivy_Container_Scan_Results

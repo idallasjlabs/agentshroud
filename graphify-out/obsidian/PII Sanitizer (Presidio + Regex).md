@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "ADR-001: Transparent Proxy Decision"
+community: "test_cron_jobs_prompts.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/test_cron_jobs_promptspy
 ---
 
 # PII Sanitizer (Presidio + Regex)
@@ -15,4 +15,4 @@ tags:
 - [[Gateway (FastAPI)]] - `calls` [EXTRACTED]
 - [[sanitizer.py (PII redaction, Presidioregex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/concept #graphify/EXTRACTED #community/test_cron_jobs_promptspy

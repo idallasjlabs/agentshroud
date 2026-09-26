@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "AsyncMock"
+community: "Atlas — Curriculum Architect (SKILL)"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/Atlas__Curriculum_Architect_SKILL
 ---
 
 # Owner-allowlisted recipient receives body verbatim; pii_redacted=False.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_recipient_body_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL

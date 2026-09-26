@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Path"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Path
 ---
 
 # P2: Credential Isolation via op-proxy ✅ DONE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Roadmap_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Path

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
-location: "L5"
+community: "AgentShroud Falco Detection Rules"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/AgentShroud_Falco_Detection_Rules
 ---
 
 # Overview
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Falco_Detection_Rules

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "container-net-diag.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/container-net-diagsh
 ---
 
 # PII Sanitizer (Presidio / regex)
@@ -15,4 +15,4 @@ tags:
 - [[Audit Ledger (SHA-256 hash only)]] - `shares_data_with` [EXTRACTED]
 - [[Execute Action (tool call  reply)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/container-net-diagsh

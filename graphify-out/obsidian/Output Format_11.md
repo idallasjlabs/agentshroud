@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
-location: "L27"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "rationale"
-community: "export-bot-conversations.py"
+community: "CollaboratorGreeter"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/CollaboratorGreeter
 ---
 
 # Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_since()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorGreeter

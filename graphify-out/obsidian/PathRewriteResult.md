@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "sync-cve-registry.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/sync-cve-registrypy
 ---
 
 # PathRewriteResult
@@ -22,4 +22,4 @@ tags:
 - [[path_isolation.py]] - `contains` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

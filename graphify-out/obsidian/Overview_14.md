@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L22"
+community: "Gateway Python Dependencies (`gateway/requiremen"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Gateway_Python_Dependencies_gateway/requiremen
 ---
 
 # Overview
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requiremen

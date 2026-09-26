@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "agentshroud-ssh-exec.sh"
+community: "TestGetSbom"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/TestGetSbom
 ---
 
 # Pending Tasks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/TestGetSbom

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L129"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Startup Sequence"
-location: "L10"
+community: "openai-whisper-api/SKILL.md"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Sequence
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Overview
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Sequence
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

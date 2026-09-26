@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
+community: "TestLoadFromText"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/TestLoadFromText
 ---
 
 # PUBLISH-TO-CLAWHUB.md
@@ -16,4 +16,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestLoadFromText

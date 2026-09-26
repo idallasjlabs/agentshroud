@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "rationale"
-community: "Coding Agent (bash-first)"
+community: "AgentShroud Setup Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/AgentShroud_Setup_Guide
 ---
 
 # PTY Mode Required for Interactive Coding Agents
 
 ## Connections
-- [[coding-agentSKILL]] - `rationale_for` [EXTRACTED]
+- [[SKILL_203]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

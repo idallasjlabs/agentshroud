@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Attack Teardowns: How AgentShroud Stops RovoBlas"
+community: "run-standalone.sh"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
+  - community/run-standalonesh
 ---
 
 # Part 2 — Cross-turn correlation: the differentiator, made concrete
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
+#graphify/document #graphify/EXTRACTED #community/run-standalonesh

@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "SSHProxy"
-location: "L173"
+community: "ResourceGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/ResourceGuard
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[._get_sanitizer_for_tool()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[sanitizer()_3]] - `references` [EXTRACTED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/ResourceGuard

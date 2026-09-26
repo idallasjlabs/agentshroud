@@ -1,19 +1,27 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L55"
+community: "HTTPConnectProxy"
+location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/HTTPConnectProxy
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[.store()_1]] - `references` [EXTRACTED]
+- [[.store_dir()]] - `references` [EXTRACTED]
+- [[.test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
+- [[.test_load_all_skips_malformed_files()]] - `references` [EXTRACTED]
+- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `references` [EXTRACTED]
+- [[.test_store_creates_directory()]] - `references` [EXTRACTED]
+- [[.test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[ReportIntegrityError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "AgentShroud Recovery Plan v0.4.0"
+community: "sunday_run_scan_gate"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/sunday_run_scan_gate
 ---
 
 # PHASE 3: iMESSAGE INTEGRATION TEST
@@ -18,4 +18,4 @@ tags:
 - [[3.4 Verify End-to-End Message Flow]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/document #graphify/EXTRACTED #community/sunday_run_scan_gate

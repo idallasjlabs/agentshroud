@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "FileSandbox"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Path Isolation Manager Tests
@@ -14,4 +14,4 @@ tags:
 - [[PathIsolationManager]] - `references` [EXTRACTED]
 - [[Privilege Separation File Sandbox Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Enum

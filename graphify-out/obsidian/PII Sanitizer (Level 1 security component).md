@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "AgentShroud Data Flow Diagrams (doc)"
+community: "Discord (Via `message`)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Flow_Diagrams_doc
+  - community/Discord_Via_message
 ---
 
 # PII Sanitizer (Level 1 security component)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Audit Ledger (blockchain-style chain)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/Discord_Via_message

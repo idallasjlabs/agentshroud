@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/USPTO-APPLICATION.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L17"
+community: "Presidio Analyzer"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/Presidio_Analyzer
 ---
 
 # Owner
 
 ## Connections
-- [[Application Fields]] - `contains` [EXTRACTED]
+- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer

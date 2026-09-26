@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L25"
+community: "MCP Proxy Errors"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/MCP_Proxy_Errors
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
-- [[diagramsREADME_1]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors

@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L25"
+community: "test_image_verifier.py"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/test_image_verifierpy
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
-- [[diagramsREADME_2]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/test_image_verifierpy

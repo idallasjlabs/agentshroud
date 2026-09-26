@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L132"
+community: ".process_tool_call()"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/process_tool_call
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/process_tool_call

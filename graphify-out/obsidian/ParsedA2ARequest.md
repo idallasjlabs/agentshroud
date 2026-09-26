@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "AgentTarget"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2APolicyEngine
+  - community/AgentTarget
 ---
 
 # ParsedA2ARequest
@@ -18,4 +18,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/INFERRED #community/AgentTarget

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L8"
+community: "Applies to: Claude Code (primary) · Gemini CLI ("
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway "
+community: "test_scanner_integration_coverage.py"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
+  - community/test_scanner_integration_coveragepy
 ---
 
 # Part 2 — Red-Team Attack Run (SCRUM-73)
@@ -27,4 +27,4 @@ tags:
 - [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - `contains` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
+#graphify/document #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

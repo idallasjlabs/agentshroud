@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: ".update()"
+community: "75 Security Modules"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/update
+  - community/75_Security_Modules
 ---
 
 # Parse a single line from a hosts-format or domain-only blocklist.          Suppo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.parse_hosts_line()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/update
+#graphify/rationale #graphify/EXTRACTED #community/75_Security_Modules

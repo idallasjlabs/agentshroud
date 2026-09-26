@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "Assess severity"
+community: "render_md_email.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Assess_severity
+  - community/render_md_emailpy
 ---
 
 # P2 — High (respond within 1 hour; restart containers, rebuild image)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Assess severity]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Assess_severity
+#graphify/concept #graphify/EXTRACTED #community/render_md_emailpy

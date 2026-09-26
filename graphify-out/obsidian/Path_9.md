@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "_make_cve()"
-location: "L249"
+community: "_wrap_response()"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/_wrap_response
 ---
 
 # Path
 
 ## Connections
-- [[._run_generate()]] - `references` [EXTRACTED]
+- [[.__init__()_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

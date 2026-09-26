@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "Kill Switch"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Kill_Switch
 ---
 
 # Overview
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

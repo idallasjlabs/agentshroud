@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "SCLClient"
+community: "test_voice_stt_model_ab.py"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/test_voice_stt_model_abpy
 ---
 
 # Patch gateway.cli.client.urlopen; return list of captured Request objects.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_urlopen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SCLClient
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy

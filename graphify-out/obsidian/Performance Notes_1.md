@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill"
+community: "AgentShroud v0.9.0"
 location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/AgentShroud_v090
 ---
 
 # Performance Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Skill: Code Review (CR)"
-location: "L36"
+community: "HIGH — Should Fix Before Release"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/HIGH__Should_Fix_Before_Release
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release

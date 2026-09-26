@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Error Index.md"
+community: "test_playback_state.c"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/test_playback_statec
 ---
 
 # PII Pipeline Errors
@@ -17,8 +17,8 @@ tags:
 - [[PII Not Being Detected]] - `contains` [EXTRACTED]
 - [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
 - [[Redaction Breaking JSONStructured Data]] - `contains` [EXTRACTED]
-- [[Related Notes_73]] - `contains` [EXTRACTED]
+- [[Related Notes_60]] - `contains` [EXTRACTED]
 - [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
 - [[spaCy Model Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/test_playback_statec

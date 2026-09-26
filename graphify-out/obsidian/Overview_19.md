@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "API Reference"
-location: "L4"
+community: "_FakeUpstreamWS"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/_FakeUpstreamWS
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Reference
+#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS

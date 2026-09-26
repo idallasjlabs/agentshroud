@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "wazuh_client.py"
+community: "LLMProxy"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/LLMProxy
 ---
 
 # Parse a single Wazuh alert.      Args:         raw: Raw Wazuh alert JSON.      R
 
 ## Connections
-- [[parse_alert()]] - `rationale_for` [EXTRACTED]
+- [[parse_alert()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

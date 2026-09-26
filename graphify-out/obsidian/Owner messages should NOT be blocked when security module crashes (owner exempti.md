@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # Owner messages should NOT be blocked when security module crashes (owner exempti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

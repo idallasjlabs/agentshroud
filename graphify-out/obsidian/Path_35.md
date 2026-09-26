@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "_age()"
-location: "L41"
+community: "TeamsConfig"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_age
+  - graphify/INFERRED
+  - community/TeamsConfig
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[._make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_age
+#graphify/code #graphify/INFERRED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L2618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_bot_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

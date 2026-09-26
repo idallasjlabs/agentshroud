@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L3"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

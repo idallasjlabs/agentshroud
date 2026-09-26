@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "load_config()"
-location: "L73"
+community: "ModeRequest"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/load_config
+  - graphify/EXTRACTED
+  - community/ModeRequest
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

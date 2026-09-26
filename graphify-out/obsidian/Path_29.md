@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "TestKillSwitchVerification"
-location: "L268"
+community: "apply-patches.js"
+location: "L249"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TestKillSwitchVerification
+  - graphify/EXTRACTED
+  - community/apply-patchesjs
 ---
 
 # Path
 
 ## Connections
-- [[._make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[._run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestKillSwitchVerification
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

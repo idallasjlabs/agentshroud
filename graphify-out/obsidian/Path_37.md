@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "TestGroupRoleResolver"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TestGroupRoleResolver
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_163]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TestGroupRoleResolver

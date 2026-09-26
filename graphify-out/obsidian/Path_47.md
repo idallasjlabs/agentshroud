@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "test_multi_host_test.py"
-location: "L324"
+community: "PromptProtection"
+location: "L472"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_multi_host_testpy
+  - graphify/EXTRACTED
+  - community/PromptProtection
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/PromptProtection

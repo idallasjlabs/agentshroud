@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "gen.py"
-location: "L85"
+community: "Skill: Project Management (PM)"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/Skill_Project_Management_PM
 ---
 
 # Output
 
 ## Connections
-- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

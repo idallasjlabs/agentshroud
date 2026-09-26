@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/icon-192x192.png"
 type: "image"
-community: "PWA Icon 192x192 (AgentShroud logo mark)"
+community: "Knowledge Map — Obsidian vault entry points"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/PWA_Icon_192x192_AgentShroud_logo_mark
+  - community/Knowledge_Map__Obsidian_vault_entry_points
 ---
 
 # PWA Icon 192x192 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/PWA_Icon_192x192_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/Knowledge_Map__Obsidian_vault_entry_points

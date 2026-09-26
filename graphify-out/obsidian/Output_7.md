@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L132"
+community: "Skill: UX Expert (UX)"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Skill_UX_Expert_UX
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

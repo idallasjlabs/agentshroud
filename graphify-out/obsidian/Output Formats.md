@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Himalaya Email CLI"
-location: "L229"
+community: "Backup & Restore Runbook — AgentShroud"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # Output Formats
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Common Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

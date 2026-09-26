@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L10"
+community: "AgentShroud Deployment Architecture"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "concept"
-community: "Owner vs Bot Telegram Identity Separation"
+community: "DNSForwarderProtocol"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Owner_vs_Bot_Telegram_Identity_Separation
+  - community/DNSForwarderProtocol
 ---
 
 # Owner vs Bot Telegram Identity Separation
@@ -15,4 +15,4 @@ tags:
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `conceptually_related_to` [INFERRED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Owner_vs_Bot_Telegram_Identity_Separation
+#graphify/concept #graphify/INFERRED #community/DNSForwarderProtocol

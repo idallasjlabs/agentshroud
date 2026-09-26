@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Canvas Skill"
-location: "L5"
+community: "_make_cve()"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/_make_cve
 ---
 
 # Overview
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/_make_cve

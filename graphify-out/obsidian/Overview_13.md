@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "test_block_credentials.py"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/test_block_credentialspy
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

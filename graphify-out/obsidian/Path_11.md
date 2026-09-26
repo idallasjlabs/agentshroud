@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L75"
+community: "LLMProxy"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/LLMProxy
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_82]] - `references` [EXTRACTED]
-- [[.archive_file()]] - `references` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[.__init__()_80]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

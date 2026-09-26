@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L25"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # Output Format
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

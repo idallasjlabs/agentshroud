@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Detailed Profiles"
-location: "L5"
+community: "Health Checks"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Health_Checks
 ---
 
 # Overview
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

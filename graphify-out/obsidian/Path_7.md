@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "container-net-diag.sh"
-location: "L21"
+community: "load_config()"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/load_config
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[colima-health-check.sh_1]] - `defines` [EXTRACTED]
+- [[.__init__()_58]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/load_config

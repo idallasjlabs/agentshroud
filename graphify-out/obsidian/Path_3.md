@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
+source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "apply-patches.js (OpenClaw)"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs_OpenClaw
+  - community/Browser__Secure_Browser_Automation
 ---
 
-# path
+# PATH
 
 ## Connections
-- [[apply-patches.js (OpenClaw)]] - `contains` [EXTRACTED]
+- [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

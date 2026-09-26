@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L89"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_141]] - `calls` [EXTRACTED]
-- [[._can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

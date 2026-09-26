@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L26"
+community: "workspace.sh"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/workspacesh
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/workspacesh

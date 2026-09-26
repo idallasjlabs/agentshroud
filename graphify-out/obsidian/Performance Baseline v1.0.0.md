@@ -1,13 +1,13 @@
 ---
 source_file: ".benchmarks/baseline-v1.0.0.json"
 type: "document"
-community: "Performance Baseline v1.0.0"
+community: "SRE Practices"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Performance_Baseline_v100
+  - community/SRE_Practices
 ---
 
 # Performance Baseline v1.0.0
 
-#graphify/document #graphify/EXTRACTED #community/Performance_Baseline_v100
+#graphify/document #graphify/EXTRACTED #community/SRE_Practices

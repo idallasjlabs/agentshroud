@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
-location: "L14"
+community: "TestKillSwitchVerification"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/TestKillSwitchVerification
 ---
 
 # Owner
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[Application Fields]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchVerification

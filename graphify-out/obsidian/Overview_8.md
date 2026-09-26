@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
-location: "L3"
+community: "GSDE&G Development Master Checklist"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

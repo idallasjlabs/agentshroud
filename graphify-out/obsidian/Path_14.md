@@ -1,18 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "_build_image_targets()"
+community: "HTTPConnectProxy"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/HTTPConnectProxy
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.__init__()_87]] - `references` [EXTRACTED]
+- [[._load_latest_file()]] - `references` [EXTRACTED]
+- [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "IntelReportStore"
-location: "L205"
+community: "openclaw/skills/i-icloud/scripts/calendar.js"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/IntelReportStore
+  - graphify/INFERRED
+  - community/openclaw/skills/i-icloud/scripts/calendarjs
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_128]] - `references` [EXTRACTED]
-- [[._load_latest_file()]] - `references` [EXTRACTED]
-- [[.save()_1]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/INFERRED #community/openclaw/skills/i-icloud/scripts/calendarjs

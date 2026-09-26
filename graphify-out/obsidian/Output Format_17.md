@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L40"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

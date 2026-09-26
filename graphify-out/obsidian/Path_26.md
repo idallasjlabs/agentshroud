@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "archive_old_events()"
-location: "L46"
+community: "ApprovalRequest"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/archive_old_events
+  - graphify/INFERRED
+  - community/ApprovalRequest
 ---
 
 # Path
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[purge_low_value_events()]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/INFERRED #community/ApprovalRequest

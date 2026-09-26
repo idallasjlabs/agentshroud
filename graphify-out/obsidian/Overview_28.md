@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Browser-Fetch Skill for 1Password Share Links"
-location: "L9"
+community: "Skill: UX Expert (UX)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser-Fetch_Skill_for_1Password_Share_Links
+  - community/Skill_UX_Expert_UX
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

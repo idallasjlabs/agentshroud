@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "concept"
-community: "Local-Model Job Quality Matrix"
+community: "start.sh"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/startsh
 ---
 
 # Per-Bot Status Badge Vocabulary
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Job Schedule Dashboard]] - `implements` [EXTRACTED]
 - [[Local-Model Job Quality Matrix]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Local-Model_Job_Quality_Matrix
+#graphify/concept #graphify/INFERRED #community/startsh

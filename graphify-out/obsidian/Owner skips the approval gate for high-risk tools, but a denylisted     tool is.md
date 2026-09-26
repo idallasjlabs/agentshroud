@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # Owner skips the approval gate for high-risk tools, but a denylisted     tool is
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Actions"
-location: "L9"
+community: "TestNetworkValidator"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/TestNetworkValidator
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Common Queries"
-location: "L62"
+community: "TestIsContainerRunning"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/TestIsContainerRunning
 ---
 
 # Output
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L26"
+community: "TestParanoidConfig"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/TestParanoidConfig
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/TestParanoidConfig

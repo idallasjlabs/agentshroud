@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L3"
+community: "TestBuildCollaboratorSafeInfoResponse"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

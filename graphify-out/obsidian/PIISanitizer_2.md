@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "TrustManager"
-location: "L62"
+community: "EgressPolicy"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustManager
+  - community/EgressPolicy
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[._get_sanitizer_for_tool()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/INFERRED #community/EgressPolicy

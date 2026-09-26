@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L40"
+community: "Route map (by router)"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Route_map_by_router
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
+- [[diagramsREADME_1]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

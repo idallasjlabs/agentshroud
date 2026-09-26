@@ -1,19 +1,19 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L96"
+community: "env_guard.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/env_guardpy
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

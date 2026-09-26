@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
 type: "rationale"
-community: "Per-subfolder graphify-out avoids output clobber"
+community: "AgentShroud Presentation Title Slide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Per-subfolder_graphify-out_avoids_output_clobber
+  - community/AgentShroud_Presentation_Title_Slide
 ---
 
 # Per-subfolder graphify-out avoids output clobbering
 
-#graphify/rationale #graphify/EXTRACTED #community/Per-subfolder_graphify-out_avoids_output_clobber
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Presentation_Title_Slide

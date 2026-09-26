@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L129"
+community: "Technical Specification"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Technical_Specification
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

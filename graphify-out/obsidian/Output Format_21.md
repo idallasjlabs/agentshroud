@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L129"
+community: "health_report.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/health_reportpy
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/health_reportpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/use-cases.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Use Cases"
-location: "L4"
+community: "Credential Management - 1Password Integration"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

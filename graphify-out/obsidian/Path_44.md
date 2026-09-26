@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: ".from_dict()"
-location: "L138"
+community: "CollaboratorGreeter"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/from_dict
+  - community/CollaboratorGreeter
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_179]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `calls` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/from_dict
+#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter

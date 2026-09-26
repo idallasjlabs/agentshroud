@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L65"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_81]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[.__init__()_63]] - `references` [EXTRACTED]
+- [[._hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

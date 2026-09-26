@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Common Queries"
-location: "L27"
+community: "start.sh"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/startsh
 ---
 
 # Overview
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/startsh

@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "openclaw/skills/i-browser/browse.js"
-location: "L8"
+community: "ModeRequest"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/browsejs
+  - community/ModeRequest
 ---
 
-# path
+# Path
 
 ## Connections
-- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[.model_post_init()]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

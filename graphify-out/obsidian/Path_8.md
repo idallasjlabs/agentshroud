@@ -1,17 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "_parse_env_file()"
+community: "test_runtime_engines.py"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_parse_env_file
+  - community/test_runtime_enginespy
 ---
 
 # Path
 
 ## Connections
-- [[_parse_env_file()]] - `references` [EXTRACTED]
-- [[_parse_env_file()_1]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_parse_env_file
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

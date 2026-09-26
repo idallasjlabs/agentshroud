@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "health_report.py"
-location: "L116"
+community: "_wrap_response()"
+location: "L43"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/health_reportpy
+  - graphify/INFERRED
+  - community/_wrap_response
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/health_reportpy
+#graphify/code #graphify/INFERRED #community/_wrap_response

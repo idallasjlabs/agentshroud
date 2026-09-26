@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "SkillGuard"
-location: "L42"
+community: "TestAlertDispatcher"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard
+  - graphify/EXTRACTED
+  - community/TestAlertDispatcher
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[.from_file()]] - `references` [EXTRACTED]
+- [[.from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher

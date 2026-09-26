@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "version_routes.py"
+community: "EgressFilterConfig"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/EgressFilterConfig
 ---
 
 # Perform a security review before version change.      Checks:     - Known CVEs f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/version_routespy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

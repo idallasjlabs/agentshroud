@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "API Reference"
-location: "L5"
+community: "agent_isolation.py"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/agent_isolationpy
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Reference
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

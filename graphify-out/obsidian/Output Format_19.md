@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L40"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

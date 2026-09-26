@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier"
-location: "L26"
+community: "BlockingPipeline"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/BlockingPipeline
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/BlockingPipeline

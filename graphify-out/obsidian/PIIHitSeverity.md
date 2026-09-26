@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # PIIHitSeverity
 
 ## Connections
 - [[.from_confidence()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Relative risk of a detected PII entity.]] - `rationale_for` [EXTRACTED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector
+#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy

@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "SSH Proxy Errors"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/SSH_Proxy_Errors
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_2]] - `contains` [EXTRACTED]
-- [[diagramsREADME_3]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/browse.js"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
-location: "L8"
+community: "TelegramAPIProxy"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/TelegramAPIProxy
 ---
 
-# path
+# Path
 
 ## Connections
-- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[.__init__()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

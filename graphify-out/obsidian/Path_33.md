@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "GitGuard"
-location: "L219"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L324"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GitGuard
+  - graphify/INFERRED
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_151]] - `calls` [EXTRACTED]
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `calls` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/INFERRED #community/Required__45_for_text__30_for_UI_elements

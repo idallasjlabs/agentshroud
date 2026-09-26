@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills by Category"
+community: "clamav_scanner.py"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/clamav_scannerpy
 ---
 
 # P1 Incident Response
 
 ## Connections
-- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

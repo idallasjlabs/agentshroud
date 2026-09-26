@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L26"
+community: "mcp_inspector.py"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/mcp_inspectorpy
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

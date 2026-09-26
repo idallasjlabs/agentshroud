@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L26"
+community: "test_jira_weekly_review.py"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/test_jira_weekly_reviewpy
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

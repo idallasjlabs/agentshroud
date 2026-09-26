@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "rationale"
-community: "CI test job (matrix ubuntu/macos x py3.11/3.13)"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L20-24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CI_test_job_matrix_ubuntu/macos_x_py311/313
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Per-platform independent reporting (fail-fast: false)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CI test job (matrix ubuntumacos x py3.113.13)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CI_test_job_matrix_ubuntu/macos_x_py311/313
+#graphify/rationale #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

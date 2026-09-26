@@ -1,18 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L26"
+community: "Bear Notes"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/Bear_Notes
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
-- [[show_notes_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_2]] - `contains` [EXTRACTED]
+- [[diagramsREADME_2]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Docker Desktop Network Settings — Cisco AnyConne"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne

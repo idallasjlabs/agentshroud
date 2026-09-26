@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L26"
+community: ".analyze_message()"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/analyze_message
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/analyze_message

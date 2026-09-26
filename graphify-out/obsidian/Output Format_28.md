@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L26"
+community: "TestCollaboratorAccess"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/TestCollaboratorAccess
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
-- [[show_notes_1]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorAccess

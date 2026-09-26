@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L129"
+community: "TrustManager"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TrustManager
 ---
 
 # Pattern
 
 ## Connections
-- [[._score_signal()]] - `references` [EXTRACTED]
+- [[._create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TrustManager

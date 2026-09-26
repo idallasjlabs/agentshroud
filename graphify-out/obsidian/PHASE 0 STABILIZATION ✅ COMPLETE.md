@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "AgentShroud Recovery Plan v0.4.0"
+community: "sunday_run_scan_gate"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/sunday_run_scan_gate
 ---
 
 # PHASE 0: STABILIZATION ✅ COMPLETE
@@ -16,4 +16,4 @@ tags:
 - [[0.2 Current State ✅]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/document #graphify/EXTRACTED #community/sunday_run_scan_gate

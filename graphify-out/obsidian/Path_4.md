@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "test_wire_llm_settings.js"
-location: "L35"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

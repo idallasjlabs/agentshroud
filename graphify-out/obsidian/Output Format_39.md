@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/SKILL.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L26"
+community: "detect_runtime()"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/detect_runtime
 ---
 
 # Output Format
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/detect_runtime

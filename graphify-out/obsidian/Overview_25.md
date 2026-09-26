@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L8"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

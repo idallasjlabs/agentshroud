@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Examples"
+community: "apple_engine.py"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Examples
+  - community/apple_enginepy
 ---
 
 # Peekaboo
@@ -18,6 +18,6 @@ tags:
 - [[Examples]] - `contains` [EXTRACTED]
 - [[Features (all CLI capabilities, excluding agentMCP)]] - `contains` [EXTRACTED]
 - [[Quickstart (happy path)]] - `contains` [EXTRACTED]
-- [[peekabooSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_225]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Examples
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy
