@@ -1,18 +1,17 @@
 ---
-source_file: "CONTRIBUTING.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Contributing to AgentShroud™"
-location: "L1"
+community: "TestConfigValidation"
+location: "L515"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/TestConfigValidation
 ---
 
-# CONTRIBUTING.md
+# Contributing
 
 ## Connections
-- [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

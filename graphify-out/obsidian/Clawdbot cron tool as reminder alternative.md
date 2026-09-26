@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "rationale"
-community: "Apple Reminders CLI (remindctl)"
+community: "Backup & Restore Runbook — AgentShroud"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # Clawdbot cron tool as reminder alternative
 
 ## Connections
-- [[apple-remindersSKILL]] - `conceptually_related_to` [EXTRACTED]
+- [[SKILL_196]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/rationale #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

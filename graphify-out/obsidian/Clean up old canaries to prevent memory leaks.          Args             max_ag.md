@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Clean up old canaries to prevent memory leaks.          Args:             max_ag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_expired_canaries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

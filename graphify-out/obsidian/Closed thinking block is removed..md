@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "test_filter_xml_blocks.py"
+community: "TestOutputCanary"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_filter_xml_blockspy
+  - community/TestOutputCanary
 ---
 
 # Closed <thinking> block is removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_thinking_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

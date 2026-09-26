@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
+community: "v1.0.0 — \"Fortress\" (Polish + Public Release)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
+  - community/v100__Fortress_Polish__Public_Release
 ---
 
 # CI/CD Pipeline Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/CI/CD_Quality_Gates_14_jobs_6_workflows
+#graphify/document #graphify/INFERRED #community/v100__Fortress_Polish__Public_Release

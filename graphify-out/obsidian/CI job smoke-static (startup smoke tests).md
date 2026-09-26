@@ -1,13 +1,13 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "CI job: smoke-static (startup smoke tests)"
+community: "Community 1961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI_job_smoke-static_startup_smoke_tests
+  - community/Community_1961
 ---
 
 # CI job: smoke-static (startup smoke tests)
 
-#graphify/code #graphify/EXTRACTED #community/CI_job_smoke-static_startup_smoke_tests
+#graphify/code #graphify/EXTRACTED #community/Community_1961

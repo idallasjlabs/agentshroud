@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # Check if a domain is on the denylist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_domain_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

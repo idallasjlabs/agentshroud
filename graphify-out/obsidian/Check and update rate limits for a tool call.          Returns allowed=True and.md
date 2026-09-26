@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPServerConfig"
+community: "GitGuard"
 location: "L568"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/GitGuard
 ---
 
 # Check and update rate limits for a tool call.          Returns allowed=True and
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

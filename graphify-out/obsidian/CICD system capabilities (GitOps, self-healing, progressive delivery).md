@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/ci-cd/README.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Atlas — Curriculum Architect"
 location: "L1-12"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Atlas__Curriculum_Architect
 ---
 
 # CI/CD system capabilities (GitOps, self-healing, progressive delivery)
@@ -16,4 +16,4 @@ tags:
 - [[CI test job (matrix ubuntumacos x py3.113.13)]] - `conceptually_related_to` [INFERRED]
 - [[Nine-stage AI-augmented lifecycle]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/collaborator-report-morning.txt"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # Collaborator Report (Morning) Cron Prompt
@@ -20,4 +20,4 @@ tags:
 - [[OpenClaw Live Cron Job Index (11 jobs)]] - `references` [EXTRACTED]
 - [[Report Delivery Format Instructions]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/run_test

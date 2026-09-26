@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "WebProxy"
+community: "FetchOutcome"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/FetchOutcome
 ---
 
 # Check an outbound HTTP request before it's sent.          This is the pre-flight
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

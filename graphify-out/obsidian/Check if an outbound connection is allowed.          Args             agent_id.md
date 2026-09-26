@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "Production Safety Checklist (SKILL)"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Check if an outbound connection is allowed.          Args:             agent_id:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

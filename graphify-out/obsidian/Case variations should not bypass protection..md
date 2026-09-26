@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Enum"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Case variations should not bypass protection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_case_sensitivity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Enum

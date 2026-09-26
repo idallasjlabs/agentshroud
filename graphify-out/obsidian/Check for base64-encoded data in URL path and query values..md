@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # Check for base64-encoded data in URL path and query values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_base64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

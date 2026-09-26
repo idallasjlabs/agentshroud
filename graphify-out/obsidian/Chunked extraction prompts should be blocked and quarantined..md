@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_collaborator_incremental_exfil_request_is_"
+community: "SECTION 7: FILING CHECKLIST"
 location: "L3644"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_incremental_exfil_request_is_
+  - community/SECTION_7_FILING_CHECKLIST
 ---
 
 # Chunked extraction prompts should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_incremental_exfil_request_is_
+#graphify/rationale #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST

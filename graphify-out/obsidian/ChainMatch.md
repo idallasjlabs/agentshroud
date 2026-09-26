@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Enum"
+community: "GroupRoleResolver"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # ChainMatch
@@ -23,4 +23,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

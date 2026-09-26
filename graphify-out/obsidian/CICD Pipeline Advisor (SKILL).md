@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "troubleshooting.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/troubleshootingmd
 ---
 
 # CI/CD Pipeline Advisor (SKILL)
@@ -20,4 +20,4 @@ tags:
 - [[Deployment Matrix (Direct to Prod)]] - `references` [EXTRACTED]
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/INFERRED #community/troubleshootingmd

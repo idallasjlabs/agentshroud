@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
+community: "agentshroud-ssh-exec.sh"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/agentshroud-ssh-execsh
 ---
 
 # CSS Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh

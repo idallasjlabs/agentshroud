@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "TestOutputCanary"
+community: "openclaw/skills/i-browser/package.json"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
 # Check if response contains the session's canary (prompt leakage detected).
 
 ## Connections
-- [[.check_response()_1]] - `rationale_for` [EXTRACTED]
+- [[.check_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

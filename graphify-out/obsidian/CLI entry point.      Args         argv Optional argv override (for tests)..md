@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L1125"
+community: "EncryptedStore"
+location: "L1133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/EncryptedStore
 ---
 
 # CLI entry point.      Args:         argv: Optional argv override (for tests).
 
 ## Connections
-- [[main()_25]] - `rationale_for` [EXTRACTED]
+- [[main()_28]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

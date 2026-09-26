@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: "TestConfigValidation"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/TestConfigValidation
 ---
 
 # Click an element          Security: Risk classification for destructive actions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.click()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

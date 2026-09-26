@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L286"
+community: "discover_upstream_versions.py"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/discover_upstream_versionspy
 ---
 
 # Check Status
 
 ## Connections
-- [[Usage_110]] - `contains` [EXTRACTED]
+- [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy

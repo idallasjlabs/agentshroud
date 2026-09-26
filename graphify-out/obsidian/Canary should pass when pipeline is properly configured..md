@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "TrustManager"
+community: "KillSwitchMonitor"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/KillSwitchMonitor
 ---
 
 # Canary should pass when pipeline is properly configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_passes_with_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

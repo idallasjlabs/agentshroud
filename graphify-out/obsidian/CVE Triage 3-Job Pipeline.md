@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "TELEGRAM_ISSUES.md"
 location: "L61-L63, L91-L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # CVE Triage 3-Job Pipeline
@@ -17,4 +17,4 @@ tags:
 - [[Known Drift from jobs.json Seed File]] - `conceptually_related_to` [EXTRACTED]
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

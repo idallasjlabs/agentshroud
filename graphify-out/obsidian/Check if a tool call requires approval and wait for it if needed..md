@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: ".process_tool_call()"
+community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
 location: "L860"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/process_tool_call
+  - community/AgentShroud_v090__Human_Interface_Testing_Gui
 ---
 
 # Check if a tool call requires approval and wait for it if needed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_approval_required()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/process_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui

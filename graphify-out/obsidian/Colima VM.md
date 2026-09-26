@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "AgentShroud Docker Configuration"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Colima VM
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

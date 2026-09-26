@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L3096"
+community: "SSHProxy"
+location: "L3109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # CIS Docker Benchmark checks for this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_cis_benchmark()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

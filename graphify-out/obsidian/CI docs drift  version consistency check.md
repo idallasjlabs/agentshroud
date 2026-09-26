@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Trivy action immutable SHA pin (CI supply chain)"
+community: "4. Risks & Gaps"
 location: "L261-281"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Trivy_action_immutable_SHA_pin_CI_supply_chain
+  - community/4_Risks__Gaps
 ---
 
 # CI docs drift / version consistency check
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.6.0 — voice terminal release]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Trivy_action_immutable_SHA_pin_CI_supply_chain
+#graphify/code #graphify/INFERRED #community/4_Risks__Gaps

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "TestScoreRuntimeProtection"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/TestScoreRuntimeProtection
 ---
 
 # Clean shutdown — close all connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.shutdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/TestScoreRuntimeProtection

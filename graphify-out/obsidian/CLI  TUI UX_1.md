@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
+community: "sunday-upgrade-apply.sh"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/sunday-upgrade-applysh
 ---
 
 # CLI / TUI UX
@@ -15,4 +15,4 @@ tags:
 - [[CLI UX Rules_1]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

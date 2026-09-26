@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Enum"
+community: "EncryptedStore"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # ChainPattern
@@ -20,4 +20,4 @@ tags:
 - [[Definition of a suspicious tool call pattern.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

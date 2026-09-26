@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: ".dispatch()"
+community: "Detailed Profiles"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/dispatch
+  - community/Detailed_Profiles
 ---
 
 # Check if alert was already seen within dedup window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_duplicate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/dispatch
+#graphify/rationale #graphify/EXTRACTED #community/Detailed_Profiles

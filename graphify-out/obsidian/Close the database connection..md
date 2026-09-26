@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "AuditStore"
-location: "L164"
+community: "TelegramAPIProxy"
+location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/TelegramAPIProxy
 ---
 
 # Close the database connection.
 
 ## Connections
-- [[.close()_3]] - `rationale_for` [EXTRACTED]
+- [[.close()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditStore
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

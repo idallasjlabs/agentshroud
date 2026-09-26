@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "BaseModel"
+community: "main.rs"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # Check group admin status via TeamsConfig if available.
 
 ## Connections
-- [[.is_group_admin()]] - `rationale_for` [EXTRACTED]
+- [[.is_group_admin()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BaseModel
+#graphify/rationale #graphify/EXTRACTED #community/mainrs

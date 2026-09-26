@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "REPORT STRUCTURE"
+community: ".agents/skills/i-icloud/scripts/calendar.js"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REPORT_STRUCTURE
+  - community/agents/skills/i-icloud/scripts/calendarjs
 ---
 
 # CRITICAL RULES — READ BEFORE DOING ANYTHING
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-icloud/scripts/calendarjs

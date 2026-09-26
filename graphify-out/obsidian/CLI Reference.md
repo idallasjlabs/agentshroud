@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "SecureBrowser Skill"
+community: "TestOutputTrustScoring"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/TestOutputTrustScoring
 ---
 
 # CLI Reference
@@ -19,4 +19,4 @@ tags:
 - [[Screenshot]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/TestOutputTrustScoring

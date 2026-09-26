@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L393"
+community: "SSHProxy"
+location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # Catch-all error handler      Never leaks stack traces or internal details to cli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

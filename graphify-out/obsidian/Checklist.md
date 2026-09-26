@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "AgentShroud Semgrep SAST Configuration"
+community: "chatbot/main.py"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Semgrep_SAST_Configuration
+  - community/chatbot/mainpy
 ---
 
 # Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration
+#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy

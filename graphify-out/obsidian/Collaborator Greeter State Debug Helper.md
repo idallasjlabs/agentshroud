@@ -1,13 +1,13 @@
 ---
 source_file: "scripts/verify-greeter-state.sh"
 type: "code"
-community: "Collaborator Greeter State Debug Helper"
+community: "esp_err.h stub (playback state test)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Greeter_State_Debug_Helper
+  - community/esp_errh_stub_playback_state_test
 ---
 
 # Collaborator Greeter State Debug Helper
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Greeter_State_Debug_Helper
+#graphify/code #graphify/EXTRACTED #community/esp_errh_stub_playback_state_test

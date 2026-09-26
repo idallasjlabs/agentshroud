@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # Check if the OpenClaw backend is healthy.
 
 ## Connections
-- [[.health_check()_2]] - `rationale_for` [EXTRACTED]
+- [[.health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

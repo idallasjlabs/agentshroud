@@ -1,24 +1,25 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "_FakeRBAC"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/_FakeRBAC
 ---
 
 # CI/CD Pipeline Advisor (README)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [INFERRED]
-- [[Purpose_42]] - `contains` [EXTRACTED]
-- [[Purpose_123]] - `contains` [EXTRACTED]
-- [[Related Skills_33]] - `contains` [EXTRACTED]
-- [[Related Skills_110]] - `contains` [EXTRACTED]
-- [[Usage_37]] - `contains` [EXTRACTED]
-- [[Usage_115]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_6]] - `contains` [EXTRACTED]
+- [[Purpose_43]] - `contains` [EXTRACTED]
+- [[README_6]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_6]] - `contains` [EXTRACTED]
+- [[Related Skills_46]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
+- [[Usage_49]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/_FakeRBAC

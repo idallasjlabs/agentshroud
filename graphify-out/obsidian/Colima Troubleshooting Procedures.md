@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # Colima Troubleshooting Procedures
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[RUNBOOK]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/concept #graphify/EXTRACTED #community/Mode_A__Single_task

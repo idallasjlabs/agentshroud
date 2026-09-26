@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "SessionContext"
+community: "background.js"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/backgroundjs
 ---
 
 # Check session score against thresholds and take action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_thresholds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionContext
+#graphify/rationale #graphify/EXTRACTED #community/backgroundjs

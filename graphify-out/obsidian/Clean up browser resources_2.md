@@ -12,6 +12,6 @@ tags:
 # Clean up browser resources
 
 ## Connections
-- [[.close()_7]] - `rationale_for` [EXTRACTED]
+- [[.close()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Skill: Mindmap Architect (MM)"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # CSS Architecture Recommendations
@@ -17,4 +17,4 @@ tags:
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 - [[Utility-First (Tailwind  custom utilities)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L50"
+community: "AlertTelegramRelay"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/AlertTelegramRelay
 ---
 
 # Check Status
 
 ## Connections
-- [[Launch the Stack]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "test_hermes_model_resolver.py"
+community: "_t()"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/_t
 ---
 
 # CLI: `resolve_model.py [model|provider]`. Defaults to 'model'.
 
 ## Connections
-- [[main()]] - `rationale_for` [EXTRACTED]
+- [[main()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/rationale #graphify/EXTRACTED #community/_t

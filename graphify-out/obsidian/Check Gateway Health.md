@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
+community: "log_sanitizer.py"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/log_sanitizerpy
 ---
 
 # Check Gateway Health
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -1,25 +1,25 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Canvas Skill"
+community: "Credential Management - 1Password Integration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Canvas Skill
 
 ## Connections
 - [[Actions]] - `contains` [EXTRACTED]
-- [[Configuration_8]] - `contains` [EXTRACTED]
+- [[Configuration_21]] - `contains` [EXTRACTED]
 - [[Debugging]] - `contains` [EXTRACTED]
-- [[How It Works]] - `contains` [EXTRACTED]
-- [[Overview_12]] - `contains` [EXTRACTED]
-- [[Tips_2]] - `contains` [EXTRACTED]
+- [[How It Works_3]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
+- [[SKILL_201]] - `contains` [EXTRACTED]
+- [[Tips_1]] - `contains` [EXTRACTED]
 - [[URL Path Structure]] - `contains` [EXTRACTED]
-- [[Workflow_3]] - `contains` [EXTRACTED]
-- [[canvasSKILL]] - `contains` [EXTRACTED]
+- [[Workflow_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "Production Safety Checklist (SKILL)"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Check if domain matches any allowed domain (supports wildcards).          Wildca
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

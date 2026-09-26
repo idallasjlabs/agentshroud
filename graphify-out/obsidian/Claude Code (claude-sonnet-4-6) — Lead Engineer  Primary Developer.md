@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer "
+community: "OKE Channel — CPA Exam Context"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer
@@ -20,4 +20,4 @@ tags:
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 - [[TeamAgent Role Structure Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+#graphify/concept #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

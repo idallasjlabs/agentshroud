@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "TrustManager"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TrustManager
 ---
 
 # Check if path is trying to access another user's isolated namespace.          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_cross_user_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

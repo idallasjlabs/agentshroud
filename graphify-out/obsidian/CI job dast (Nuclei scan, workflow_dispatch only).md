@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "Skills by Category"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/Skills_by_Category
 ---
 
 # CI job: dast (Nuclei scan, workflow_dispatch only)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gateway service (prod, sole egress point, 75-module pipeline)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/Skills_by_Category

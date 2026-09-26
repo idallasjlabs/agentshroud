@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "CHEATSHEET.md"
 type: "document"
-community: "<description of what this does>"
-location: "L80"
+community: "AgentShroud Docker Configuration"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/description_of_what_this_does
+  - community/AgentShroud_Docker_Configuration
 ---
 
-# cheatsheet.md
+# CHEATSHEET.md
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/description_of_what_this_does
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

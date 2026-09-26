@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "TrustManager"
+community: "KillSwitchMonitor"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/KillSwitchMonitor
 ---
 
 # Canary result should serialize to dict properly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_result_serialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

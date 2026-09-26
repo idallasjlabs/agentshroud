@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Enum"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Check if path matches any blocked pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Enum

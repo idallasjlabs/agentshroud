@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "TrustManager"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TrustManager
 ---
 
 # Clean up abandoned user directories based on max age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_abandoned_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

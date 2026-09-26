@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustLevel"
+community: "MemoryIntegrityMonitor"
 location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/MemoryIntegrityMonitor
 ---
 
 # Check the progressive ladder's threshold for promotion to target_level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._promotion_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustLevel
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

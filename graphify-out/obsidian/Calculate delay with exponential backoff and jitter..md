@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "gateway.proxy.llm_proxy"
+community: "ssh_config.py"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/ssh_configpy
 ---
 
 # Calculate delay with exponential backoff and jitter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[calculate_delay()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/rationale #graphify/EXTRACTED #community/ssh_configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "test_forward_stream.py"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/test_forward_streampy
 ---
 
 # CSS Modules (React / Next.js)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CSS Architecture Recommendations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/test_forward_streampy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "TrustManager"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/TrustManager
 ---
 
 # Check for patterns indicating repeat request attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_repeat_request_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

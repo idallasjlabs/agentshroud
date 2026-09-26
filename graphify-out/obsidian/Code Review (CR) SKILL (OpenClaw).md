@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "SecurityEvent"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/SecurityEvent
 ---
 
 # Code Review (CR) SKILL (OpenClaw)
@@ -18,4 +18,4 @@ tags:
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 - [[GSDE&G Development Master Checklist Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/SecurityEvent

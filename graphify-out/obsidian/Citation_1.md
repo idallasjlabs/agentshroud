@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "IntelReportStore"
+community: "HTTPConnectProxy"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/IntelReportStore
+  - community/HTTPConnectProxy
 ---
 
 # Citation
@@ -16,12 +16,12 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Citation]] - `uses` [INFERRED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport]] - `uses` [INFERRED]
+- [[CompetitorEntry]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[Fetcher]] - `uses` [INFERRED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/IntelReportStore
+#graphify/code #graphify/INFERRED #community/HTTPConnectProxy

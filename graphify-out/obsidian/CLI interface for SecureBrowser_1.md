@@ -12,6 +12,6 @@ tags:
 # CLI interface for SecureBrowser
 
 ## Connections
-- [[main()_9]] - `rationale_for` [EXTRACTED]
+- [[main()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

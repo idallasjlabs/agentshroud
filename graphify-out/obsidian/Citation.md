@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "IntelReportStore"
+community: "HTTPConnectProxy"
 location: "L142"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/IntelReportStore
+  - community/HTTPConnectProxy
 ---
 
 # Citation
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[._verify_url()]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/IntelReportStore
+#graphify/code #graphify/INFERRED #community/HTTPConnectProxy

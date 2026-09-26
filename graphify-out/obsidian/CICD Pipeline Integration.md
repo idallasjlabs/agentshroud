@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide"
+community: "Update AgentShroud"
 location: "L539"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Update_AgentShroud
 ---
 
 # CI/CD Pipeline Integration
@@ -16,4 +16,4 @@ tags:
 - [[GitHub Actions Integration]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

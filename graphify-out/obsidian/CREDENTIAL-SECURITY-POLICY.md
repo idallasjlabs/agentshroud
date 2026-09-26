@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: "llm_proxy.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/llm_proxypy
 ---
 
 # CREDENTIAL-SECURITY-POLICY.md
@@ -19,7 +19,7 @@ tags:
 - [[Option 3 Disable Credential Commands via Telegram]] - `references` [EXTRACTED]
 - [[Option 4 Role-Based Access Control]] - `references` [EXTRACTED]
 - [[SECURITY-POLICY-FINAL]] - `cites` [EXTRACTED]
-- [[ingest_apirouter.py]] - `references` [EXTRACTED]
+- [[router.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

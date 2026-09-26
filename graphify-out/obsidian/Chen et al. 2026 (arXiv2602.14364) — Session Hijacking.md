@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "paper"
-community: "SessionManager"
+community: "test_dashboard.py"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/test_dashboardpy
 ---
 
 # Chen et al. 2026 (arXiv:2602.14364) — Session Hijacking
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[session_security.py]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/SessionManager
+#graphify/paper #graphify/EXTRACTED #community/test_dashboardpy

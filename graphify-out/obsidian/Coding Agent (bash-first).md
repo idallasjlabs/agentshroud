@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "AgentShroud Setup Guide"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Coding Agent (bash-first)
@@ -21,9 +21,9 @@ tags:
 - [[Pi Coding Agent]] - `contains` [EXTRACTED]
 - [[Progress Updates (Critical)]] - `contains` [EXTRACTED]
 - [[Quick Start One-Shot Tasks]] - `contains` [EXTRACTED]
+- [[SKILL_203]] - `contains` [EXTRACTED]
 - [[The Pattern workdir + background + pty]] - `contains` [EXTRACTED]
-- [[coding-agentSKILL]] - `contains` [EXTRACTED]
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

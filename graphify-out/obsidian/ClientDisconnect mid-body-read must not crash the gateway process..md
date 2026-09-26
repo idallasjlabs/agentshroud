@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # ClientDisconnect mid-body-read must not crash the gateway process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegramProxyClientDisconnect]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

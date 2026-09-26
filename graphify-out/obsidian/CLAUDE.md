@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "postmortem.md"
+community: "iMessage Integration Fix - Using imsg + imessage"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # CLAUDE.md
@@ -20,4 +20,4 @@ tags:
 - [[gsd]] - `shares_data_with` [INFERRED]
 - [[postmortem]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
