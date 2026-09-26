@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/update.md"
 type: "rationale"
-community: "build_merge() avoids NetworkX round-trip (#801)"
+community: "AgentShroud LinkedIn Banner"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/build_merge_avoids_NetworkX_round-trip_801
+  - community/AgentShroud_LinkedIn_Banner
 ---
 
 # build_merge() avoids NetworkX round-trip (#801)
 
-#graphify/rationale #graphify/EXTRACTED #community/build_merge_avoids_NetworkX_round-trip_801
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Banner

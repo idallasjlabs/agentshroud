@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "AgentShroud (system, C4 context)"
+community: "TestAppleContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context
+  - community/TestAppleContainerEngine
 ---
 
 # approval_requests SQLite table
@@ -14,4 +14,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `implements` [EXTRACTED]
 - [[agentshroud.yaml (main config schema)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context
+#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine

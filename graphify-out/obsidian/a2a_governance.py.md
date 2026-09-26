@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AMessage"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMessage
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # a2a_governance.py
@@ -19,6 +19,6 @@ tags:
 - [[A2AMessage]] - `contains` [EXTRACTED]
 - [[A2AMessageType]] - `contains` [EXTRACTED]
 - [[A2APeer]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMessage
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

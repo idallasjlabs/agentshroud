@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Community 1082"
+community: "TestSpawnAuthorization"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/TestSpawnAuthorization
 ---
 
 # browse.js
@@ -18,4 +18,4 @@ tags:
 - [[path_1]] - `contains` [EXTRACTED]
 - [[{ chromium }_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1082
+#graphify/code #graphify/EXTRACTED #community/TestSpawnAuthorization

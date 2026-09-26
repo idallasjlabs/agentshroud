@@ -1,26 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
-type: "document"
-community: "RateLimiter"
+source_file: "gateway/ingest_api/auth.py"
+type: "code"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
-# auth.py.md
+# auth.py
 
 ## Connections
-- [[Auth Errors]] - `references` [INFERRED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[RateLimiter]] - `references` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[python-jose_1]] - `references` [INFERRED]
-- [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
-- [[verify_token()]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[README_128]] - `references` [EXTRACTED]
+- [[RateLimiter]] - `contains` [EXTRACTED]
+- [[api.py]] - `imports_from` [EXTRACTED]
+- [[approval.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
+- [[create_auth_dependency()]] - `contains` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[get_auth_dependency()]] - `contains` [EXTRACTED]
+- [[health.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[verify_token()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

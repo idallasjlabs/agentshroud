@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # append_trend_log.py Trend-Log Append Script
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Newsletter — Coding-Agent CLIs]] - `references` [EXTRACTED]
 - [[trend-log.md Rolling One-Line Summary Log]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/concept #graphify/EXTRACTED #community/test_telegram_replaypy

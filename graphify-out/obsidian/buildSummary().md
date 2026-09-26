@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "startInstall()"
+community: "TestScoreLoggingMonitoring"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/startInstall
+  - community/TestScoreLoggingMonitoring
 ---
 
 # buildSummary()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[startInstall()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/startInstall
+#graphify/code #graphify/INFERRED #community/TestScoreLoggingMonitoring

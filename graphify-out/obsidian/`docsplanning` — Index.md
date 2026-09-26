@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "`docs/planning/` — Index"
+community: "HTTP_PROXY / HTTPS_PROXY"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/planning/__Index
+  - community/HTTP_PROXY_/_HTTPS_PROXY
 ---
 
 # `docs/planning/` — Index
@@ -16,7 +16,7 @@ tags:
 - [[Historic  archive]] - `contains` [EXTRACTED]
 - [[How to add a plan]] - `contains` [EXTRACTED]
 - [[Layout]] - `contains` [EXTRACTED]
+- [[README_123]] - `contains` [EXTRACTED]
 - [[What does NOT live here]] - `contains` [EXTRACTED]
-- [[planningREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index
+#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY

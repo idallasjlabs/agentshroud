@@ -1,21 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Restart Procedure"
-location: "L1"
+community: "archive_old_events()"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/archive_old_events
 ---
 
-# aiosqlite.md
+# aiosqlite
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
+- [[Database Files]] - `contains` [EXTRACTED]
+- [[Purpose_184]] - `contains` [EXTRACTED]
+- [[Related Notes_39]] - `contains` [EXTRACTED]
+- [[WAL Mode]] - `contains` [EXTRACTED]
+- [[Where Used]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `contains` [EXTRACTED]
-- [[audit_store.py]] - `references` [EXTRACTED]
-- [[ledger.py]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L150"
+community: "The 8D Investigation Process"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/The_8D_Investigation_Process
 ---
 
 # build_comment_payload()
 
 ## Connections
 - [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - `rationale_for` [EXTRACTED]
-- [[_adf_doc()_1]] - `calls` [EXTRACTED]
-- [[add_comment()_1]] - `calls` [EXTRACTED]
-- [[hermesworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[_adf_paragraph()]] - `calls` [EXTRACTED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

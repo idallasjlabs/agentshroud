@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "DeceptionDetection"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/TrustManager
 ---
 
 # approval_hardening.py
@@ -17,6 +17,6 @@ tags:
 - [[ApprovalHardeningConfig]] - `contains` [EXTRACTED]
 - [[DeceptionDetection]] - `contains` [EXTRACTED]
 - [[DeniedRequest]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/code #graphify/EXTRACTED #community/TrustManager

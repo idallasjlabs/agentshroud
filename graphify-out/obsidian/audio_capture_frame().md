@@ -1,17 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "audio.c"
+community: "_t()"
 location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/audioc
+  - graphify/INFERRED
+  - community/_t
 ---
 
 # audio_capture_frame()
 
 ## Connections
 - [[audio.c]] - `contains` [EXTRACTED]
+- [[voice_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/audioc
+#graphify/code #graphify/INFERRED #community/_t

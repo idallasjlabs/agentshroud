@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h"
+source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "iot_button_register_cb()"
-location: "L11"
+community: "TestStoreIn1Password"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/TestStoreIn1Password
 ---
 
 # button_handle_t
 
 ## Connections
-- [[iot_button_delete()]] - `references` [EXTRACTED]
-- [[iot_button_register_cb()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/code #graphify/EXTRACTED #community/TestStoreIn1Password

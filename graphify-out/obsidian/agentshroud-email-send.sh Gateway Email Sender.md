@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "concept"
-community: "Prompt: Hermes Competitive Intelligence Email (A"
+community: "TestSplitForSpeech"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_A
+  - community/TestSplitForSpeech
 ---
 
 # agentshroud-email-send.sh Gateway Email Sender
@@ -14,4 +14,4 @@ tags:
 - [[Mandatory --html Flag Rule]] - `rationale_for` [EXTRACTED]
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_A
+#graphify/concept #graphify/EXTRACTED #community/TestSplitForSpeech

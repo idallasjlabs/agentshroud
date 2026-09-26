@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "TestCVE2026_9367TerminalToolDenied"
 location: "L111-118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/TestCVE2026_9367TerminalToolDenied
 ---
 
 # agentshroud-internal network (no external access)
@@ -17,4 +17,4 @@ tags:
 - [[openclaw service (internal network only)]] - `shares_data_with` [EXTRACTED]
 - [[wazuh-agent sidecar (pinned 4.14.7)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied

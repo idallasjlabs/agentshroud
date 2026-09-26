@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L10"
+community: "TestOverallDetectionRate"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/TestOverallDetectionRate
 ---
 
-# browser-fetch.js
+# browser-fetch.js.md
 
 ## Connections
-- [[Expected Behavior]] - `contains` [EXTRACTED]
-- [[Purpose_7]] - `contains` [EXTRACTED]
-- [[Related Notes_7]] - `contains` [EXTRACTED]
-- [[Security Controls]] - `contains` [EXTRACTED]
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/TestOverallDetectionRate

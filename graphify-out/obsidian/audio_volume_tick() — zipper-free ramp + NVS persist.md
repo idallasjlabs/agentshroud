@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "audio_volume_tick() — zipper-free ramp + NVS per"
+community: ".github/workflows/merge-regression-audit.yml"
 location: "line 178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audio_volume_tick__zipper-free_ramp__NVS_per
+  - community/github/workflows/merge-regression-audityml
 ---
 
 # audio_volume_tick() — zipper-free ramp + NVS persist
 
-#graphify/code #graphify/EXTRACTED #community/audio_volume_tick__zipper-free_ramp__NVS_per
+#graphify/code #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml

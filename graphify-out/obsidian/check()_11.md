@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
-location: "L34"
+community: "AgentShroud — Master Feature List (Everything Ev"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/AgentShroud__Master_Feature_List_Everything_Ev
 ---
 
 # check()
 
 ## Connections
-- [[test_colima_and_sdk_patch_fallback_resolution.sh_1]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script_1]] - `calls` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev

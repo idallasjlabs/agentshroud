@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "API Keys Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/API_Keys_Setup_Guide
 ---
 
 # approval_queue.py.md
@@ -17,7 +17,7 @@ tags:
 - [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
+- [[Security Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

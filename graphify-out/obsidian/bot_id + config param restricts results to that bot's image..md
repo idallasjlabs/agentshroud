@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Path"
+community: "Step-by-Step Installation"
 location: "L1122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/Step-by-Step_Installation
 ---
 
 # bot_id + config param restricts results to that bot's image.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bot_id_filter_matches_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/Step-by-Step_Installation

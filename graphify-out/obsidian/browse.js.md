@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Community 1071"
+community: "test_skill_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/test_skill_guardpy
 ---
 
 # browse.js
@@ -18,4 +18,4 @@ tags:
 - [[path]] - `contains` [EXTRACTED]
 - [[{ chromium }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1071
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

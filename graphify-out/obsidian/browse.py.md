@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 136"
+community: "KeyRotationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/KeyRotationManager
 ---
 
 # browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError]] - `contains` [EXTRACTED]
 - [[main()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

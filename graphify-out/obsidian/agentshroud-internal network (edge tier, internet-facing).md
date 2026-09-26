@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "Skills by Category"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/Skills_by_Category
 ---
 
 # agentshroud-internal network (EDGE tier, internet-facing)
@@ -14,4 +14,4 @@ tags:
 - [[gateway service (prod, sole egress point, 75-module pipeline)]] - `shares_data_with` [EXTRACTED]
 - [[voice-gateway service (ESP32-S3-BOX-3 STTTTS bridge)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/Skills_by_Category

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "TestEgressApprovalQueue"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestEgressApprovalQueue
 ---
 
 # agent_id='default' is NOT recognized as group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_is_group_context_false_for_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "TestToolAuthorization"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/TestToolAuthorization
 ---
 
 # appendLog()
 
 ## Connections
-- [[.agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[browse.js_2]] - `contains` [EXTRACTED]
 - [[browserFetch()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/TestToolAuthorization

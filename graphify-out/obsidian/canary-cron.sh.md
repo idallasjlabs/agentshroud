@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "canary-cron.sh"
+community: "TestSecretsManagement"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canary-cronsh
+  - community/TestSecretsManagement
 ---
 
 # canary-cron.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[canary-cron.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canary-cronsh
+#graphify/code #graphify/EXTRACTED #community/TestSecretsManagement

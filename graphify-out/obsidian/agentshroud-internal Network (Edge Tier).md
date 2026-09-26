@@ -1,13 +1,13 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "agentshroud-internal Network (Edge tier)"
+community: "Vulcan (i-vulcan skill, script approver)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-internal_Network_Edge_tier
+  - community/Vulcan_i-vulcan_skill_script_approver
 ---
 
 # agentshroud-internal Network (Edge tier)
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-internal_Network_Edge_tier
+#graphify/code #graphify/EXTRACTED #community/Vulcan_i-vulcan_skill_script_approver

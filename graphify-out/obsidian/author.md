@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
+source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "skill.json"
-location: "L5"
+community: "TestParseHosts"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/TestParseHosts
 ---
 
 # author
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/code #graphify/EXTRACTED #community/TestParseHosts

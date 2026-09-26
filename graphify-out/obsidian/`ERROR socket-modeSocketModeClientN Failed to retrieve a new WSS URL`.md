@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Known Log Messages"
+community: "Contributing to AgentShroud™"
 location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Contributing_to_AgentShroud
 ---
 
 # `[ERROR] socket-mode:SocketModeClient:N Failed to retrieve a new WSS URL`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

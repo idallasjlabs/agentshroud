@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "UserSession"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/UserSession
 ---
 
 # agentshroud-ieee-paper.md
@@ -37,4 +37,4 @@ tags:
 - [[Transparent Proxy Architecture]] - `references` [EXTRACTED]
 - [[Zetherion AI Platform]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/UserSession

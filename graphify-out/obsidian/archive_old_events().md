@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "archive_old_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # archive_old_events()
@@ -24,10 +24,10 @@ tags:
 - [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `calls` [EXTRACTED]
 - [[AuditStore_1]] - `references` [EXTRACTED]
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_6]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
 - [[audit_archive.py]] - `contains` [EXTRACTED]
-- [[datetime_4]] - `references` [EXTRACTED]
+- [[datetime_1]] - `references` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

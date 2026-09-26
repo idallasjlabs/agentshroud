@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "TestBenchmarkRegression"
+community: "Test Augmentation Specialist"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/Test_Augmentation_Specialist
 ---
 
 # assert_within_threshold()
@@ -18,4 +18,4 @@ tags:
 - [[Assert measured value is within THRESHOLD of baseline.]] - `rationale_for` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/code #graphify/EXTRACTED #community/Test_Augmentation_Specialist

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 711"
+community: "validate_network_security()"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_711
+  - community/validate_network_security
 ---
 
 # auth.py
@@ -24,4 +24,4 @@ tags:
 - [[Responsibilities]] - `contains` [EXTRACTED]
 - [[auth.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_711
+#graphify/document #graphify/EXTRACTED #community/validate_network_security

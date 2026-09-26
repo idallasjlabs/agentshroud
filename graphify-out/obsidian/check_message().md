@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "check_message()"
+community: "test_scanner_integration.py"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_message
+  - community/test_scanner_integrationpy
 ---
 
 # check_message()
@@ -24,4 +24,4 @@ tags:
 - [[get_context_guard()]] - `calls` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_message
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

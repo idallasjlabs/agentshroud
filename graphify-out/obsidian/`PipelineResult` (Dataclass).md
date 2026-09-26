@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
+community: "Goal: Codex is a secondary/tertiary agent used f"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
 ---
 
 # `PipelineResult` (Dataclass)
 
 ## Connections
-- [[Key Classes]] - `contains` [EXTRACTED]
+- [[Key Classes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "code"
-community: "export-bot-conversations.py"
+community: "CollaboratorGreeter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/CollaboratorGreeter
 ---
 
 # backup-bot-memory.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[backup-bot-memory.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter

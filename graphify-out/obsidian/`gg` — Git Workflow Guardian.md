@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Key Skills in Detail"
+community: "AgentShroud v1.2.0 — Red Team Assessment"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/AgentShroud_v120__Red_Team_Assessment
 ---
 
 # `/gg` — Git Workflow Guardian
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Skills in Detail]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Red_Team_Assessment

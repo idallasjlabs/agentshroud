@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "test_apply_patches.js"
+community: "Animation Guidelines"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/Animation_Guidelines
 ---
 
 # baseConfig()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/Animation_Guidelines

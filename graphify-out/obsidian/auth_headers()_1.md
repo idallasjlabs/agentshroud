@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "SSHProxy"
-location: "L46"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

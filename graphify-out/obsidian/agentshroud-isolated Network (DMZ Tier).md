@@ -1,16 +1,13 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "init-openclaw-config.sh"
+community: "BDD Skill (Gherkin Given/When/Then specs)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/init-openclaw-configsh
+  - community/BDD_Skill_Gherkin_Given/When/Then_specs
 ---
 
 # agentshroud-isolated Network (DMZ tier)
 
-## Connections
-- [[_oc_config_set]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/init-openclaw-configsh
+#graphify/code #graphify/EXTRACTED #community/BDD_Skill_Gherkin_Given/When/Then_specs

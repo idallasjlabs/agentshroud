@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Docker Compose (infra diagram)"
+community: "forward_query()"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/Docker_Compose_infra_diagram
+  - community/forward_query
 ---
 
 # agentshroud-isolated network (172.21.0.0/16)
@@ -14,4 +14,4 @@ tags:
 - [[ADR-003 Two-Network Container Isolation]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Docker Compose (infra diagram)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/AMBIGUOUS #community/Docker_Compose_infra_diagram
+#graphify/image #graphify/AMBIGUOUS #community/forward_query

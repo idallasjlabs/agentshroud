@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "canvas_proxy_app()"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # canvas_proxy.py
@@ -20,4 +20,4 @@ tags:
 - [[_read_gateway_password()]] - `contains` [EXTRACTED]
 - [[canvas_proxy_app()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "Route map (by router)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Route_map_by_router
 ---
 
 # architecture.puml (PlantUML)
 
 ## Connections
-- [[Output Format_31]] - `contains` [EXTRACTED]
+- [[Output Format_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

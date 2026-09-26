@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/pyproject.toml"
 type: "code"
-community: "agentshroud-gateway pyproject config"
+community: "TestLoadLatestJson"
 location: "6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_pyproject_config
+  - community/TestLoadLatestJson
 ---
 
 # agentshroud-gateway pyproject config
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Gateway Package (__init__.py)]] - `shares_data_with` [EXTRACTED]
 - [[Gateway OpenAPI Spec]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway_pyproject_config
+#graphify/code #graphify/EXTRACTED #community/TestLoadLatestJson

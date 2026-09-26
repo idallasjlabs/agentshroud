@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "AgentShroud Operations Cheat Sheet"
+community: "AgentShroud Docker Configuration"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - graphify/INFERRED
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # asb Wrapper Script
@@ -13,5 +13,6 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[Quickstart]] - `semantically_similar_to` [INFERRED]
+- [[asb Helper — Primary Interface]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Docker_Configuration

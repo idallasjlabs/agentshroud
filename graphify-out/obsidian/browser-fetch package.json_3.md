@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "test_skill_guard.py"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/test_skill_guardpy
 ---
 
 # browser-fetch package.json
 
 ## Connections
-- [[browserFetch()_2]] - `references` [AMBIGUOUS]
+- [[browserFetch()]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/AMBIGUOUS #community/test_skill_guardpy

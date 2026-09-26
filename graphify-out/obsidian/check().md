@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "test-container-runtime.sh"
-location: "L40"
+community: "Recommendations for Production Deployment"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/code #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

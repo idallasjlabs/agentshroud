@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "archive_old_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # audit_archive.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_cli()]] - `contains` [EXTRACTED]
 - [[archive_old_events()]] - `contains` [EXTRACTED]
-- [[datetime_4]] - `imports_from` [EXTRACTED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[purge_low_value_events()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/OutputSchemaEnforcer
 ---
 
 # check-vendor-compat.sh script
@@ -16,4 +16,4 @@ tags:
 - [[check_hermes()]] - `calls` [EXTRACTED]
 - [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

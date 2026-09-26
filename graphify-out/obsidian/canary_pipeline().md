@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "TrustManager"
+community: "KillSwitchMonitor"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/KillSwitchMonitor
 ---
 
 # canary_pipeline()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

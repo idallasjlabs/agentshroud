@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-skills-sync.sh"
+source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
 type: "code"
-community: "sync-llm-settings.sh"
-location: "L38"
+community: "AgentShroud — Master Feature List (Everything Ev"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/AgentShroud__Master_Feature_List_Everything_Ev
 ---
 
 # check()
 
 ## Connections
-- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
-- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev

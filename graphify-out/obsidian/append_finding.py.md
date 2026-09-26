@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt"
 type: "code"
-community: "append_finding.py"
+community: "cd (Continuous Delivery) SKILL stub (OpenClaw)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/append_findingpy
+  - community/cd_Continuous_Delivery_SKILL_stub_OpenClaw
 ---
 
 # append_finding.py
 
-#graphify/code #graphify/EXTRACTED #community/append_findingpy
+#graphify/code #graphify/EXTRACTED #community/cd_Continuous_Delivery_SKILL_stub_OpenClaw

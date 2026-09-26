@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # build_project_context_injection()
@@ -19,4 +19,4 @@ tags:
 - [[format_groups_list()]] - `conceptually_related_to` [INFERRED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

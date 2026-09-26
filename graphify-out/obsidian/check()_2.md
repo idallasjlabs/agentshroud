@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_static.sh"
+source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "test_bot_boot_static.sh"
-location: "L37"
+community: "TestSourceTagging"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bot_boot_staticsh
+  - community/TestSourceTagging
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
+- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
+- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bot_boot_staticsh
+#graphify/code #graphify/EXTRACTED #community/TestSourceTagging

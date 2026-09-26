@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "hermes/SOUL.md"
+community: "10. Troubleshooting"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/10_Troubleshooting
 ---
 
 # agentshroud-ssh-exec.sh helper
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[AgentShroud Gateway]] - `shares_data_with` [EXTRACTED]
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
 - [[tirith command-safety scanner]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/concept #graphify/EXTRACTED #community/10_Troubleshooting

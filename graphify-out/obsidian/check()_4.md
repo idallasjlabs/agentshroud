@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/post-deploy-check.sh"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "post-deploy-check.sh"
-location: "L42"
+community: "Dockerfile — Gateway"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/post-deploy-checksh
+  - community/Dockerfile__Gateway
 ---
 
 # check()
 
 ## Connections
-- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
-- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh
+#graphify/code #graphify/EXTRACTED #community/Dockerfile__Gateway

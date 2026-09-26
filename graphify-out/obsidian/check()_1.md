@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_live.sh"
+source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "test_bot_boot_live.sh"
-location: "L29"
+community: ".send()"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bot_boot_livesh
+  - community/send
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
+- [[preflight-check.sh]] - `defines` [EXTRACTED]
+- [[preflight-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bot_boot_livesh
+#graphify/code #graphify/EXTRACTED #community/send

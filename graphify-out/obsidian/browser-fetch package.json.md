@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "document"
-community: "browser-fetch package.json"
+community: "v0.9.0 \"Sentinel\" — SOC team collaboration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetch_packagejson
+  - community/v090_Sentinel__SOC_team_collaboration
 ---
 
 # browser-fetch package.json
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetch_packagejson
+#graphify/document #graphify/EXTRACTED #community/v090_Sentinel__SOC_team_collaboration

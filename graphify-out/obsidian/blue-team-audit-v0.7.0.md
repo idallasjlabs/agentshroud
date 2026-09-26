@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Community 185"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Error_Indexmd
 ---
 
 # blue-team-audit-v0.7.0.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

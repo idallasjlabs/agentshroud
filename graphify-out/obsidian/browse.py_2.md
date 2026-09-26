@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 139"
+community: "SecureBrowser"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SecureBrowser
 ---
 
 # browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError_2]] - `contains` [EXTRACTED]
 - [[main()_8]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

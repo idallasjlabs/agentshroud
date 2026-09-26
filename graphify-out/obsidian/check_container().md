@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "workspace.sh"
+community: "._is_local_oom()"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/_is_local_oom
 ---
 
 # check_container()
@@ -22,4 +22,4 @@ tags:
 - [[cmd_tree()]] - `calls` [EXTRACTED]
 - [[workspace.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/workspacesh
+#graphify/code #graphify/EXTRACTED #community/_is_local_oom

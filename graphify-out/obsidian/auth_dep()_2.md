@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "forward.py"
-location: "L126"
+community: "TestCollaboratorPromptClassifiers"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._1]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[forward.py]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
-- [[test_forward_stream.py]] - `imports` [EXTRACTED]
+- [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

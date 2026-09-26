@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "BotConfig"
+community: "ModeRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ModeRequest
 ---
 
 # bot_config.py
 
 ## Connections
 - [[BotConfig]] - `contains` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

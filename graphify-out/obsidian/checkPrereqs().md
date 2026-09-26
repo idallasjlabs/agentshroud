@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "checkPrereqs()"
+community: "6. System Updates"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/checkPrereqs
+  - community/6_System_Updates
 ---
 
 # checkPrereqs()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[installapiprerequisites endpoint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/checkPrereqs
+#graphify/code #graphify/EXTRACTED #community/6_System_Updates

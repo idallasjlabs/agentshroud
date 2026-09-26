@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "EncryptedStore"
+community: "GroupApprovalRouter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/GroupApprovalRouter
 ---
 
 # canary.py
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `contains` [EXTRACTED]
 - [[CanaryResult]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[encrypted_store.py]] - `references` [EXTRACTED]
-- [[gateway.security.trust_manager]] - `references` [AMBIGUOUS]
-- [[run_canary()_1]] - `contains` [EXTRACTED]
+- [[run_canary()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

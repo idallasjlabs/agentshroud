@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/health-check.sh"
 type: "code"
-community: "health-check.sh"
+community: "GSDL-715 (silent regression incident)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/health-checksh
+  - community/GSDL-715_silent_regression_incident
 ---
 
 # check_fail()
@@ -15,4 +15,4 @@ tags:
 - [[health-check.sh]] - `defines` [EXTRACTED]
 - [[health-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/health-checksh
+#graphify/code #graphify/EXTRACTED #community/GSDL-715_silent_regression_incident

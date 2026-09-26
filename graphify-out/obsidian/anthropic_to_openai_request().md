@@ -1,17 +1,19 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "test_gemini_openai_translator.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # anthropic_to_openai_request()
 
 ## Connections
+- [[._failover_request()]] - `calls` [EXTRACTED]
+- [[._local_secondary_failover_request()]] - `calls` [EXTRACTED]
 - [[LLMProxy._failover_request]] - `calls` [EXTRACTED]
 - [[LLMProxy._local_secondary_failover_request]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
@@ -21,6 +23,7 @@ tags:
 - [[_random_msg_id()_1]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[gemini_to_openai_request()]] - `semantically_similar_to` [INFERRED]
+- [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `imports` [EXTRACTED]
 - [[test_translator_anthropic_tool_definitions()]] - `calls` [EXTRACTED]
 - [[test_translator_basic_text_message()]] - `calls` [EXTRACTED]
@@ -32,4 +35,4 @@ tags:
 - [[test_translator_tool_result_becomes_tool_role_message()]] - `calls` [EXTRACTED]
 - [[test_translator_tool_use_blocks()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

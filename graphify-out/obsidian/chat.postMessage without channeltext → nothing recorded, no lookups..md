@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # chat.postMessage without channel/text → nothing recorded, no lookups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_channel_or_text_skips_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

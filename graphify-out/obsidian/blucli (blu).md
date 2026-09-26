@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "document"
-community: "blucli/SKILL.md"
+community: "Technical Details"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/blucli/SKILLmd
+  - community/Technical_Details
 ---
 
 # blucli (blu)
 
 ## Connections
-- [[blucliSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_199]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/blucli/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "audio.c"
+community: "_t()"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audioc
+  - community/_t
 ---
 
 # audio_get_saved_volume()
@@ -15,4 +15,4 @@ tags:
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[audio_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/audioc
+#graphify/code #graphify/EXTRACTED #community/_t

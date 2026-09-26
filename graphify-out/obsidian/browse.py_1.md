@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 138"
+community: "SecureBrowser"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/SecureBrowser
 ---
 
 # browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError_1]] - `contains` [EXTRACTED]
 - [[main()_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

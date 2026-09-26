@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Ingest API & Approval Routes"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/A2APolicyEngine
 ---
 
 # auth.py.md
@@ -23,4 +23,4 @@ tags:
 - [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
 - [[verify_token()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine

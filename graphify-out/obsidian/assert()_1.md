@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "test_apply_patches.js"
-location: "L38"
+community: "browser-extension/package.json"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/browser-extension/packagejson
 ---
 
 # assert()
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

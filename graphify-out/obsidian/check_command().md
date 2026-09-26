@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command()"
+community: "GSDE&G Skills Reference Guide"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # check_command()
@@ -20,7 +20,7 @@ tags:
 - [[.test_allows_safe_command()]] - `calls` [EXTRACTED]
 - [[.test_blocks_dollar_env()]] - `calls` [EXTRACTED]
 - [[.test_blocks_env_pipe()]] - `calls` [EXTRACTED]
-- [[.test_blocks_printenv()_1]] - `calls` [EXTRACTED]
+- [[.test_blocks_printenv()]] - `calls` [EXTRACTED]
 - [[.test_blocks_proc_environ()]] - `calls` [EXTRACTED]
 - [[.test_blocks_proc_star_environ()]] - `calls` [EXTRACTED]
 - [[Check if command execution should be allowed.      Args         cmd Command to]] - `rationale_for` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[get_env_guard()]] - `calls` [EXTRACTED]
 - [[test_env_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

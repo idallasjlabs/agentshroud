@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPAuditTrail"
+community: "brand-guidelines.md"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/brand-guidelinesmd
 ---
 
 # audit()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/brand-guidelinesmd

@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "chat_console.py"
+community: "ContainerInfo"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/ContainerInfo
 ---
 
 # chat_console.py
@@ -15,9 +15,9 @@ tags:
 - [[_read_auth_token()]] - `contains` [EXTRACTED]
 - [[chat-console launcher]] - `references` [EXTRACTED]
 - [[check_status()]] - `contains` [EXTRACTED]
-- [[main()_31]] - `contains` [EXTRACTED]
+- [[main()_35]] - `contains` [EXTRACTED]
 - [[print_banner()]] - `contains` [EXTRACTED]
 - [[print_help()]] - `contains` [EXTRACTED]
 - [[send_message()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat_consolepy
+#graphify/code #graphify/EXTRACTED #community/ContainerInfo
