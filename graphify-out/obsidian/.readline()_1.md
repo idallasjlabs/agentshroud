@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "_DummyTargetWriter"
+community: "Usage"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/Usage
 ---
 
 # .readline()
@@ -15,4 +15,4 @@ tags:
 - [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 - [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/Usage

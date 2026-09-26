@@ -11614,56 +11614,7 @@
       }
     },
     {
-      "query": "tag:#community/.test_raw_web_fetch_json_approval_prunes_expired",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/.test_raw_web_fetch_json_filename_reference_does",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/.test_long_outbound_message_quarantined()",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/.test_raw_web_fetch_json_overlong_fqdn_does_not_",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/.test_collaborator_legacy_block_notice_is_normal",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/.test_ollama_tools_unsupported_error_is_sanitize",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/.test_collaborator_llm_timeout_error_is_normaliz",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/.test_timeout_error_is_sanitized_for_form_payloa",
+      "query": "tag:#community/Community_1666",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -11677,7 +11628,7 @@
       }
     },
     {
-      "query": "tag:#community/_resolve_model_size()_\u2014_reads_WHISPER_MODEL_SIZE",
+      "query": "tag:#community/Community_1668",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -13385,13 +13336,6 @@
       }
     },
     {
-      "query": "tag:#community/text_control_center.py_\u2014_Terminal_TUI_control_ce",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
       "query": "tag:#community/Gemini_CLI_(SECONDARY_agent_configuration)",
       "color": {
         "a": 1,
@@ -13434,14 +13378,14 @@
       }
     },
     {
-      "query": "tag:#community/setup-pgpass.sh_(PostgreSQL_pgpass_setup)",
+      "query": "tag:#community/Community_1919",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/remote_log.h",
+      "query": "tag:#community/Community_1920",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -13504,17 +13448,10 @@
       }
     },
     {
-      "query": "tag:#community/agentshroud-gateway",
+      "query": "tag:#community/Community_1929",
       "color": {
         "a": 1,
         "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/agentshroud-soc",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     },
     {
@@ -13714,52 +13651,38 @@
       }
     },
     {
-      "query": "tag:#community/PromptGuard.scan()",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/PromptGuard.scan_tool_result()",
+      "query": "tag:#community/Community_1960",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/RateLimitGuard.check()",
+      "query": "tag:#community/Community_1961",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/ReportStore.save()_/_save_async()",
+      "query": "tag:#community/Community_1962",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/_SCORECARD_DOMAINS_(33-domain_IEC_62443_scorecar",
+      "query": "tag:#community/Community_1963",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/SharedMemoryManager.get_merged_memory_for_user()",
+      "query": "tag:#community/Community_1964",
       "color": {
         "a": 1,
         "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/SkillGuard.scan_file()",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
       }
     },
     {
@@ -13819,45 +13742,31 @@
       }
     },
     {
-      "query": "tag:#community/SSHProxy.validate_command()",
+      "query": "tag:#community/Community_1974",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/SSHProxy.validate_write_file()",
+      "query": "tag:#community/Community_1975",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/SSHProxy.write_file()",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_bot_boot_static.sh_\u2014_static_bot_boot_assemb",
+      "query": "tag:#community/Community_1977",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/test_hermes_mcp_reconciliation.sh_\u2014_Hermes_MCP_s",
+      "query": "tag:#community/Community_1978",
       "color": {
         "a": 1,
         "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_wire_llm_settings.js_\u2014_~/.llm_settings_wiri",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
       }
     },
     {
@@ -13938,77 +13847,21 @@
       }
     },
     {
-      "query": "tag:#community/voice_gateway/stt.py_\u2014_faster-whisper_Speech-to-",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/voice_gateway/tts.py_\u2014_Kokoro_Text-to-Speech",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/SETUP.md",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/2._Toolchain_\u2014_install_ESP-IDF_v5.4",
+      "query": "tag:#community/Community_1994",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/3._Get_the_firmware",
+      "query": "tag:#community/Community_1995",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/4._Configure_WiFi_credentials",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/5._Build_\u00b7_flash_\u00b7_monitor",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/5a._IDF_v5.4_auto-patches_(applied_automatically",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/7._Voice_Gateway_\u2014_server-side_\u2705_LIVE_(install/c",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/8._Connect_to_Hermes_(governed_path)_\u2705_LIVE_\u2014_He",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/What_you're_building",
+      "query": "tag:#community/Community_2001",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -14089,6 +13942,139 @@
       "color": {
         "a": 1,
         "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Community_2013",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Community_2019",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Community_2027",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Community_2028",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Community_2029",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Community_2030",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Community_2031",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Community_2032",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Community_2033",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Community_2034",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Community_2035",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/Community_2036",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/Community_2037",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Community_2038",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Community_2039",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Community_2040",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Community_2041",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Community_2042",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Community_2043",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
       }
     }
   ]
