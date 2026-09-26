@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # A policy-permitted call passes the policy gate (inspection/permission     layers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

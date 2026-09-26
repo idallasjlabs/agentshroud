@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # A pipeline-blocked outbound response must NOT be delivered.      Regression test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_outbound_block_withheld()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "hermes/SOUL.md"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/hermes/SOULmd
 ---
 
 # "401 Unauthorized"
 
 ## Connections
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

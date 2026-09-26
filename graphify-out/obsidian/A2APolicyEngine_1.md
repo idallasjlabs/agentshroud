@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "AgentTarget"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AgentTarget
 ---
 
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_120]] - `method` [EXTRACTED]
+- [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._decide()]] - `method` [EXTRACTED]
 - [[._tier_for()]] - `method` [EXTRACTED]
 - [[.enforce()]] - `method` [EXTRACTED]
@@ -31,16 +31,16 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_26]] - `uses` [INFERRED]
+- [[Any_11]] - `uses` [INFERRED]
 - [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - `rationale_for` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
-- [[Request_2]] - `uses` [INFERRED]
-- [[Response_1]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
+- [[Response]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `semantically_similar_to` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_2]] - `uses` [INFERRED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `implements` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `implements` [EXTRACTED]
 - [[_Event]] - `uses` [INFERRED]
@@ -48,7 +48,7 @@ tags:
 - [[_StubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
 - [[_StubForwarder]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[_base_policy_engine()]] - `calls` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
@@ -71,4 +71,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

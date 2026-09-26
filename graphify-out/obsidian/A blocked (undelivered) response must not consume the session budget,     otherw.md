@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "AgentShroud Access Control Matrix"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # A blocked (undelivered) response must not consume the session budget,     otherw
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_blocked_response_does_not_add_to_cumulative()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

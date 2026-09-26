@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "PermissionLevel"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/PermissionLevel
 ---
 
 # A team group with members, admin, projects, and collab mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/PermissionLevel

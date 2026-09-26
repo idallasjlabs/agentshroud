@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentTarget"
 location: "L106"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_a2a_policypy
+  - community/AgentTarget
 ---
 
 # A2AMethod
@@ -21,4 +21,4 @@ tags:
 - [[test_low_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 - [[test_medium_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_a2a_policypy
+#graphify/code #graphify/INFERRED #community/AgentTarget

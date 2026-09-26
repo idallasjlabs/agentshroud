@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "8D Root Cause Analysis Skill"
+community: "Press Kit"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/8D_Root_Cause_Analysis_Skill
+  - community/Press_Kit
 ---
 
 # 8D Root Cause Analysis README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/8D_Root_Cause_Analysis_Skill
+#graphify/document #graphify/INFERRED #community/Press_Kit

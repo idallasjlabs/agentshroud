@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # A ladder with thresholds small enough for unit tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fast_ladder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_tm
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

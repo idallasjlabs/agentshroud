@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2AMethod"
+community: "AgentTarget"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AMethod
+  - community/AgentTarget
 ---
 
 # A2AMethod
@@ -23,9 +23,9 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_26]] - `uses` [INFERRED]
+- [[Any_11]] - `uses` [INFERRED]
 - [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
@@ -37,9 +37,9 @@ tags:
 - [[_method_of()]] - `references` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AMethod
+#graphify/code #graphify/INFERRED #community/AgentTarget

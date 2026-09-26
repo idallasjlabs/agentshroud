@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Discovery Strategy"
+community: "AgentShroud v0.9.0"
 location: "L291"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Discovery_Strategy
+  - community/AgentShroud_v090
 ---
 
 # A. `mac_app_catalog.json` — Machine-readable manifest
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

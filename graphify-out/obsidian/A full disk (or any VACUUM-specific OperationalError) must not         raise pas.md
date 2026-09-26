@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "archive_old_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # A full disk (or any VACUUM-specific OperationalError) must not         raise pas
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_vacuum_failure_does_not_discard_a_successful_archive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/archive_old_events
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

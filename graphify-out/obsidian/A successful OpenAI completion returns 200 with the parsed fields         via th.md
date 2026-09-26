@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "server.py"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/serverpy
 ---
 
 # A successful OpenAI completion returns 200 with the parsed fields         via th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_chat_success_returns_parsed_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

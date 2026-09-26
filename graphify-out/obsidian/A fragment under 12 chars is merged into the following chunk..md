@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "TestSplitForSpeech"
+community: "TestWebSocketHandshakeAuth"
 location: "L490"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/TestWebSocketHandshakeAuth
 ---
 
 # A fragment under 12 chars is merged into the following chunk.
 
 ## Connections
 - [[.test_short_fragment_merged_forward()]] - `rationale_for` [EXTRACTED]
-- [[.test_short_fragment_merged_forward()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSocketHandshakeAuth

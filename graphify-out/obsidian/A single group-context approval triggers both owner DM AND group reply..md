@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "TestEgressApprovalQueue"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestEgressApprovalQueue
 ---
 
 # A single group-context approval triggers both owner DM AND group reply.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_both_owner_dm_and_group_notified()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

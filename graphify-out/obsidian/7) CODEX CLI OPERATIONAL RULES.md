@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used f"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # 7) CODEX CLI OPERATIONAL RULES
@@ -17,4 +17,4 @@ tags:
 - [[When to Defer to Claude Code]] - `contains` [EXTRACTED]
 - [[Your Role in the Multi-Agent System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

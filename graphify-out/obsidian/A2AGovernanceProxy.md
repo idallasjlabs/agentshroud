@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "168"
+community: "hermes/skills/i-bs/README.md"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # A2AGovernanceProxy
 
 ## Connections
-- [[.__init__()_4]] - `method` [EXTRACTED]
+- [[.__init__()_49]] - `method` [EXTRACTED]
 - [[._check_message_size()]] - `method` [EXTRACTED]
 - [[._check_peer()]] - `method` [EXTRACTED]
 - [[._check_rate_limit()]] - `method` [EXTRACTED]
@@ -21,11 +21,11 @@ tags:
 - [[._process()]] - `method` [EXTRACTED]
 - [[._sanitize_message()]] - `method` [EXTRACTED]
 - [[.complete_task()]] - `method` [EXTRACTED]
-- [[.get_events()]] - `method` [EXTRACTED]
+- [[.get_events()_1]] - `method` [EXTRACTED]
 - [[.get_peer()]] - `method` [EXTRACTED]
 - [[.get_summary()]] - `method` [EXTRACTED]
-- [[.process_inbound()]] - `method` [EXTRACTED]
-- [[.process_outbound()]] - `method` [EXTRACTED]
+- [[.process_inbound()_1]] - `method` [EXTRACTED]
+- [[.process_outbound()_1]] - `method` [EXTRACTED]
 - [[.register_peer()]] - `method` [EXTRACTED]
 - [[.test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[.test_disabled_allows_all()]] - `calls` [EXTRACTED]
@@ -34,7 +34,12 @@ tags:
 - [[.test_task_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[.unregister_peer()]] - `method` [EXTRACTED]
 - [[.update_peer_trust()]] - `method` [EXTRACTED]
-- [[Governance proxy for Agent-to-Agent communication. Sits between local agents…]] - `rationale_for` [EXTRACTED]
+- [[A2ADecision]] - `shares_data_with` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `shares_data_with` [EXTRACTED]
+- [[A2AGovernanceEvent]] - `calls` [EXTRACTED]
+- [[A2AMessage]] - `shares_data_with` [EXTRACTED]
+- [[A2APeer]] - `shares_data_with` [EXTRACTED]
+- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - `rationale_for` [EXTRACTED]
 - [[TestDisabledProxy]] - `uses` [INFERRED]
 - [[TestInboundProcessing]] - `uses` [INFERRED]
 - [[TestMessageFingerprint]] - `uses` [INFERRED]
@@ -42,12 +47,13 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `semantically_similar_to` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_2]] - `calls` [EXTRACTED]
-- [[test_a2a_governance.py]] - `tests` [EXTRACTED]
+- [[proxy()]] - `calls` [EXTRACTED]
+- [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

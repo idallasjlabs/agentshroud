@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "TestGroupMemoryWriteACL"
+community: "agentshroud.yaml"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestGroupMemoryWriteACL
+  - community/agentshroudyaml
 ---
 
 # A legitimate group member's write lands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryWriteACL
+#graphify/rationale #graphify/EXTRACTED #community/agentshroudyaml

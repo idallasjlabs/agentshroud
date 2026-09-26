@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Path"
+community: "Step-by-Step Installation"
 location: "L1168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/Step-by-Step_Installation
 ---
 
 # A JSON-corrupt file is silently skipped, others are still returned.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_corrupt_report_file_is_skipped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/Step-by-Step_Installation

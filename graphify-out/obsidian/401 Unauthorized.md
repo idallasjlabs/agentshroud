@@ -1,8 +1,8 @@
 ---
-source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services Setup - Complete Guide"
-location: "L436"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # "401 Unauthorized"
 
 ## Connections
-- [[🔍 Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L1119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # A draft competitive-intel report submitted for citation verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DraftEntry
+#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream

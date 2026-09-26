@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: ".proxy_messages()"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/proxy_messages
 ---
 
 # A successful WSS connection resets the attempt counter to 0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_run_resets_backoff_after_successful_connect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "1. Accomplishments This Phase"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/1_Accomplishments_This_Phase
 ---
 
 # 8D Root Cause Analysis
 
 ## Connections
-- [[Purpose_83]] - `contains` [EXTRACTED]
-- [[Related Skills_74]] - `contains` [EXTRACTED]
-- [[Usage_78]] - `contains` [EXTRACTED]
-- [[openclawskillsi-eightdREADME]] - `contains` [EXTRACTED]
+- [[Purpose_84]] - `contains` [EXTRACTED]
+- [[README_89]] - `contains` [EXTRACTED]
+- [[Related Skills_90]] - `contains` [EXTRACTED]
+- [[Usage_93]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

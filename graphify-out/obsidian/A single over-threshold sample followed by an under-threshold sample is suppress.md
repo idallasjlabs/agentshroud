@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "Quick Reference Commands"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Quick_Reference_Commands
 ---
 
 # A single over-threshold sample followed by an under-threshold sample is suppress
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_brief_spike_below_debounce_does_not_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_Commands

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "Enterprise Governance Proxy System (invention)"
+community: "DNSForwarderProtocol"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/DNSForwarderProtocol
 ---
 
 # ADR-001-proxy-layer-inversion.md
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Alternatives rejected]] - `contains` [EXTRACTED]
 - [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - `semantically_similar_to` [INFERRED]
-- [[Decision_5]] - `contains` [EXTRACTED]
+- [[Decision_1]] - `contains` [EXTRACTED]
 - [[Rationale]] - `contains` [EXTRACTED]
 - [[Transparent Interception Architecture]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/document #graphify/EXTRACTED #community/DNSForwarderProtocol

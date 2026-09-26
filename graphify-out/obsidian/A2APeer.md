@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2APeer"
-location: "76"
+community: "hermes/skills/i-bs/README.md"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeer
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # A2APeer
@@ -15,8 +15,9 @@ tags:
 - [[.get_peer()]] - `references` [EXTRACTED]
 - [[.is_trusted()]] - `method` [EXTRACTED]
 - [[.register_peer()]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `method` [EXTRACTED]
+- [[.to_dict()_3]] - `method` [EXTRACTED]
 - [[.unregister_peer()]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `shares_data_with` [EXTRACTED]
 - [[Registered A2A peer agent.]] - `rationale_for` [EXTRACTED]
 - [[TestDisabledProxy]] - `uses` [INFERRED]
 - [[TestInboundProcessing]] - `uses` [INFERRED]
@@ -25,7 +26,7 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
@@ -33,4 +34,4 @@ tags:
 - [[trusted_peer()]] - `calls` [EXTRACTED]
 - [[untrusted_peer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeer
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

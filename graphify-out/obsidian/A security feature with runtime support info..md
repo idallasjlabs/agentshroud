@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "TestSecurityFeatures"
+community: "TestObservatoryMode"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/TestObservatoryMode
 ---
 
 # A security feature with runtime support info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityFeature]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode
