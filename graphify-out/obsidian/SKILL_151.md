@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 959"
+community: "MCP Proxy Errors"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_959
+  - community/MCP_Proxy_Errors
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_959
+#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors

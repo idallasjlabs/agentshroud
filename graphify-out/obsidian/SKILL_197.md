@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Community 789"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_789
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[SKILL_195]] - `semantically_similar_to` [INFERRED]
 - [[grizzly CLI (Bear notes)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_789
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "Community 715"
+community: "mcp_config.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_715
+  - community/mcp_configpy
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[SKILL_223]] - `conceptually_related_to` [INFERRED]
 - [[mcporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_715
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

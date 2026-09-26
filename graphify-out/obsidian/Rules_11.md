@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
-location: "L22"
+community: "test_cli_coverage.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/test_cli_coveragepy
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
+community: ".agents/skills/i-browser/package.json"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/agents/skills/i-browser/packagejson
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson

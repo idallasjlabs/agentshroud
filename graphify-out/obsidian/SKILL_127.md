@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 358"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_358
+  - community/AgentShroud_v080_Watchtower__Complete_Feat
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_358
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat

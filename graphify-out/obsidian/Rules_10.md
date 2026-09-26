@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
-location: "L22"
+community: "_age()"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/_age
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/_age

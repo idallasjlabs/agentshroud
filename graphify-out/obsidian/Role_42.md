@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L7"
+community: "Output Sections (ALL required)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

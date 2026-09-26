@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "AgentShroud State Diagrams"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/AgentShroud_State_Diagrams
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams

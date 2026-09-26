@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 489"
+community: ".process_tool_call()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/process_tool_call
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/process_tool_call

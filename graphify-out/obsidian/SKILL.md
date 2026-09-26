@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 354"
+community: "pick_latest_stable()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/pick_latest_stable
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/pick_latest_stable

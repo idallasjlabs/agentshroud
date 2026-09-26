@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Community 887"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_887
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[Discord (Via `message`)]] - `contains` [EXTRACTED]
 - [[message tool (channel=discord)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_887
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Available MCP Servers"
-location: "L7"
+community: "Docker Desktop Network Settings — Cisco AnyConne"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne

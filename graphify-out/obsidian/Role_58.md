@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L7"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

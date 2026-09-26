@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
-location: "L7"
+community: "LLM Operating Context — Isaiah Jefferson"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/LLM_Operating_Context__Isaiah_Jefferson
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson

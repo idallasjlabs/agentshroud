@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "concept"
-community: "Jira Weekly Review"
+community: "3. Remaining Work — Prioritized by Value"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Jira_Weekly_Review
+  - community/3_Remaining_Work__Prioritized_by_Value
 ---
 
 # SCRUM-81 (Jira weekly review ticket)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Jira Weekly Review]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Jira_Weekly_Review
+#graphify/concept #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value

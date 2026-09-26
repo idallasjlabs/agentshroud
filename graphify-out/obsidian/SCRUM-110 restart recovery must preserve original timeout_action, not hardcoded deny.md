@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "SCRUM-110: restart recovery must preserve origin"
+community: "Community 1919"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SCRUM-110_restart_recovery_must_preserve_origin
+  - community/Community_1919
 ---
 
 # SCRUM-110: restart recovery must preserve original timeout_action, not hardcoded deny
 
-#graphify/rationale #graphify/EXTRACTED #community/SCRUM-110_restart_recovery_must_preserve_origin
+#graphify/rationale #graphify/EXTRACTED #community/Community_1919

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier"
-location: "L8"
+community: "CredentialInjector"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/CredentialInjector
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/CredentialInjector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "BotConfig"
+community: "ModeRequest"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ModeRequest
 ---
 
 # RouterConfig must accept the Hermes Docker service hostname.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_router_config_accepts_hermes_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

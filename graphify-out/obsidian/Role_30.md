@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV)"
+community: "parse_query()"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/parse_query
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/document #graphify/EXTRACTED #community/parse_query

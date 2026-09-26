@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 891"
+community: "Management Dashboard"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Management_Dashboard
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Management_Dashboard

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # RouterError
 
 ## Connections
 - [[.resolve_target()]] - `calls` [EXTRACTED]
-- [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Exception_4]] - `inherits` [EXTRACTED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[Exception]] - `inherits` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Raised when no valid routing target found]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[ingest_apirouter.py]] - `contains` [EXTRACTED]
+- [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

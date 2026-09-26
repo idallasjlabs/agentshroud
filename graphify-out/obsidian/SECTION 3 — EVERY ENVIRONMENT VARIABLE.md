@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation"
+community: "setup-https-proxy.js"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/setup-https-proxyjs
 ---
 
 # SECTION 3 — EVERY ENVIRONMENT VARIABLE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/document #graphify/EXTRACTED #community/setup-https-proxyjs

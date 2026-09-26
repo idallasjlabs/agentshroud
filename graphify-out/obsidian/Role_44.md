@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "_age()"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/_age
 ---
 
 # Role
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/_age

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "AgentShroud Consolidated Issues Report"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

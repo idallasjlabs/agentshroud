@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L8"
+community: "Management Dashboard"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Management_Dashboard
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Management_Dashboard

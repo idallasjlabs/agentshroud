@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 1078"
+community: "TestRecommendedConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1078
+  - community/TestRecommendedConfig
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1078
+#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig

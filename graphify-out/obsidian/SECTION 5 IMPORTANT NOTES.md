@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Applicat"
+community: "Daedalus — Concept Illustrator"
 location: "L805"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # SECTION 5: IMPORTANT NOTES
@@ -18,4 +18,4 @@ tags:
 - [[What is NOT in this application (by design)]] - `contains` [EXTRACTED]
 - [[What you MUST file within 12 months]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

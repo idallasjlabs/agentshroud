@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 761"
+community: "chat_console.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_761
+  - community/chat_consolepy
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[SKILL_219]] - `semantically_similar_to` [INFERRED]
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_761
+#graphify/document #graphify/EXTRACTED #community/chat_consolepy

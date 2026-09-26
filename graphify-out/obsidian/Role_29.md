@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Audit Ledger (SHA-256 hash only)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
+community: "web_content_scanner.py"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/web_content_scannerpy
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

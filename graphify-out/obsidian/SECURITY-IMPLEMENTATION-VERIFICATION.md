@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Kill Switch"
+community: "Function Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/Function_Details
 ---
 
 # SECURITY-IMPLEMENTATION-VERIFICATION.md
@@ -19,4 +19,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [AMBIGUOUS]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/Function_Details

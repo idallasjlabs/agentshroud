@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "AGENTS.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L28"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

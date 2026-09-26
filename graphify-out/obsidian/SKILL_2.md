@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1433"
+community: "A2APolicyEngine (gateway/security/a2a_policy.py)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1433
+  - community/A2APolicyEngine_gateway/security/a2a_policypy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill agile]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1433
+#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine_gateway/security/a2a_policypy

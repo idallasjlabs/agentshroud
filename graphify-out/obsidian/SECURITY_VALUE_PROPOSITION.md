@@ -1,19 +1,19 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Function Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Function_Details
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
 
 ## Connections
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
-- [[AgentShroud Security Value Proposition - REVISED]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Value Proposition - Revised]] - `contains` [EXTRACTED]
 - [[Approval Queue — Core Security Value]] - `references` [EXTRACTED]
 - [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - `conceptually_related_to` [INFERRED]
 - [[IEC 62443 Compliance Matrix]] - `references` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/document #graphify/EXTRACTED #community/Function_Details

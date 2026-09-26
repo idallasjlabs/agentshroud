@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L137"
+community: "event_bus.py"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/event_buspy
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/event_buspy

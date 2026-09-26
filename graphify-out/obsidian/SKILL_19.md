@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Community 1439"
+community: "EU AI Act & NIST Alignment Matrix"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1439
+  - community/EU_AI_Act__NIST_Alignment_Matrix
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill devsecops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1439
+#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix

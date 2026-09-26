@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used f"
-location: "L19"
+community: "competitive-report-*.md dated reports"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+  - community/competitive-report-md_dated_reports
 ---
 
 # Rules
 
 ## Connections
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
+- [[Trademark Statements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

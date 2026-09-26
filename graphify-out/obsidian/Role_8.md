@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "TestAuditTrail"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/TestAuditTrail
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestAuditTrail

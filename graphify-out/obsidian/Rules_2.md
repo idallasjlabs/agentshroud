@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L29"
+community: "Core Components"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Core_Components
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Core_Components

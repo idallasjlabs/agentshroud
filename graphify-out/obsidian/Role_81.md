@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "A2A (Agent-to-Agent) Protocol Threat Analysis"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/A2A_Agent-to-Agent_Protocol_Threat_Analysis

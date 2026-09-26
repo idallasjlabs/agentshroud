@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L8"
+community: "AgentShroud — Collaborator Knowledge Base"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

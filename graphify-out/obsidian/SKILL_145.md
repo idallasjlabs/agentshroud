@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Community 843"
+community: "Identity Reference - AgentShroud System"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_843
+  - community/Identity_Reference_-_AgentShroud_System
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_843
+#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System

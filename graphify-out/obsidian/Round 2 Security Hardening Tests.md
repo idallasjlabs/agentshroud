@@ -1,17 +1,16 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "LLMProxy"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/Enum
 ---
 
 # Round 2 Security Hardening Tests
 
 ## Connections
 - [[FileSandbox]] - `references` [EXTRACTED]
-- [[LLMProxy]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/Enum

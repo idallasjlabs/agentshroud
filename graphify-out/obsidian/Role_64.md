@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
+source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "Implement gateway-level outbound information fil"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/Implement_gateway-level_outbound_information_fil
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil

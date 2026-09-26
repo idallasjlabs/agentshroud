@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Community 46"
+community: "test_jira_weekly_review.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/test_jira_weekly_reviewpy
 ---
 
 # SKILL.md
@@ -24,7 +24,6 @@ tags:
 - [[audit_export.py]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `references` [EXTRACTED]
 - [[config.py]] - `references` [EXTRACTED]
-- [[egress_config.py]] - `references` [EXTRACTED]
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `references` [EXTRACTED]
@@ -40,7 +39,6 @@ tags:
 - [[tool_chain_analyzer.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `references` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
-- [[trust_manager.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_46
+#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

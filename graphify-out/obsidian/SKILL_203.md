@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 319"
+community: "AgentShroud Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/AgentShroud_Setup_Guide
 ---
 
 # SKILL.md
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_207]] - `semantically_similar_to` [INFERRED]
 - [[SKILL_209]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

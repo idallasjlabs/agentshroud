@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 302"
+community: "hermes/SOUL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/hermes/SOULmd
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_302
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

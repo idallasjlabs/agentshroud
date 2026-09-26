@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L2608"
+community: "SSHProxy"
+location: "L2621"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # Run OpenSCAP XCCDF evaluation against the running container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_openscap_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

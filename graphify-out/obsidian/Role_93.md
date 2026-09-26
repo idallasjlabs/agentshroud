@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "iCloud Services"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/iCloud_Services
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

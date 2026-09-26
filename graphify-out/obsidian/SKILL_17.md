@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 786"
+community: "ADR-003: Two-Network Container Isolation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

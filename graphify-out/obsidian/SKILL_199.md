@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "document"
-community: "Community 1379"
+community: "Technical Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Technical_Details
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[blu CLI (BluesoundNAD control)]] - `implements` [EXTRACTED]
 - [[blucli (blu)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

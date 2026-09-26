@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Steps"
-location: "L8"
+community: "Make gateway source code, config, and security p"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Steps
+  - community/Make_gateway_source_code_config_and_security_p
 ---
 
 # Role
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Steps
+#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p

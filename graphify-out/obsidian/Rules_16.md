@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L23"
+community: "test_forward_stream.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/test_forward_streampy
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/test_forward_streampy

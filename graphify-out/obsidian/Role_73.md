@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
-location: "L8"
+community: "test_forward_stream.py"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/test_forward_streampy
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/test_forward_streampy

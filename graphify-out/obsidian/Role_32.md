@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
-location: "L8"
+community: "Core Components"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/Core_Components
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/Core_Components

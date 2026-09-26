@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "TestHandleEvent"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/TestHandleEvent
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/TestHandleEvent

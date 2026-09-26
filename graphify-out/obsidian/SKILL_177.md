@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 613"
+community: ".analyze_message()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/analyze_message
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/analyze_message

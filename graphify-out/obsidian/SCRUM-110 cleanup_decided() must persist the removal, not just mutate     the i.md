@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "test_approval_queue.py"
+community: "TelegramAPIProxy"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_approval_queuepy
+  - community/TelegramAPIProxy
 ---
 
 # SCRUM-110: cleanup_decided() must persist the removal, not just mutate     the i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cleanup_decided_persists_removal_to_disk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

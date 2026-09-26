@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L8"
+community: "Output Sections (ALL required)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

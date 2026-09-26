@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 658"
+community: "gateway.proxy.llm_proxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_658
+  - community/gatewayproxyllm_proxy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_658
+#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy

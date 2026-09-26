@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 120"
+community: "mcp_oauth_preflight.py"
 location: "L762"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/mcp_oauth_preflightpy
 ---
 
 # Run the GHSA pipeline for EVERY registered agent, each on its OWN path.      Ret
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_ghsa_sync()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

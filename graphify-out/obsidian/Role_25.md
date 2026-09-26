@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

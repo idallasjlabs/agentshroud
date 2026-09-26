@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L28"
+community: "TestSecurityFeatures"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/TestSecurityFeatures
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures

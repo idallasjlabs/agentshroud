@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 232"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_232
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

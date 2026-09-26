@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 398"
+community: "AgentShroud (system, C4 context)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/AgentShroud_system_C4_context
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 712"
+community: "openai-whisper-api/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[Stable-named cron scheduling for periodic audits]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

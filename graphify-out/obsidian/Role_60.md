@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L7"
+community: "OpenClaw"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/OpenClaw
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

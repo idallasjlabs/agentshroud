@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "config.py"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # RuntimeConfig.from_env()
 
 ## Connections
-- [[Function Details_47]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

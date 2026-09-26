@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "run_multi_host()"
+community: "TestPatternDetection"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/TestPatternDetection
 ---
 
 # Run ``command`` on each host via ``runner`` and aggregate the results.      A ru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_multi_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run_multi_host
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

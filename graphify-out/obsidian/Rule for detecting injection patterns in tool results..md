@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "tool_result_injection.py"
+community: "test_scanner_integration.py"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/tool_result_injectionpy
+  - community/test_scanner_integrationpy
 ---
 
 # Rule for detecting injection patterns in tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InjectionRule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/tool_result_injectionpy
+#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy

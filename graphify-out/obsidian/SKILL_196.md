@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 602"
+community: "Backup & Restore Runbook — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Clawdbot cron tool as reminder alternative]] - `conceptually_related_to` [EXTRACTED]
 - [[remindctl CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_602
+#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

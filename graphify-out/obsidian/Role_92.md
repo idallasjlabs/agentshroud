@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L8"
+community: "01-architecture.md"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/01-architecturemd
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/01-architecturemd

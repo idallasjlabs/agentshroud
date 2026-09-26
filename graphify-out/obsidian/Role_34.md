@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "AuditEvent"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/AuditEvent
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AuditEvent

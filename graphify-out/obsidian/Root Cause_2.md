@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Remediation"
-location: "L16"
+community: "Post-v1.0.0 — Deferred"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Post-v100__Deferred
 ---
 
 # Root Cause
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

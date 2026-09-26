@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L7"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

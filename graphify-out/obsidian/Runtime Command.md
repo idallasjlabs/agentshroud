@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Dockerfile — Gateway"
+community: "Pre-Deployment Checklist"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Gateway
+  - community/Pre-Deployment_Checklist
 ---
 
 # Runtime Command
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV)"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

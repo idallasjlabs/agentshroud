@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 599"
+community: "Starting a Development Task via Hermes / OpenCla"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_599
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_599
+#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla

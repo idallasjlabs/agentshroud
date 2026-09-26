@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L29"
+community: "Skill: Mindmap Architect (MM)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

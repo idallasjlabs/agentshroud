@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
-location: "L7"
+community: "Route map (by router)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Route_map_by_router
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

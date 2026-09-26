@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 469"
+community: "AgentShroud Semgrep SAST Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

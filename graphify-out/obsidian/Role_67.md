@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "Technical Specification"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

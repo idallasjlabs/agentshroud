@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 252"
+community: "Browser — Secure Browser Automation"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_252
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

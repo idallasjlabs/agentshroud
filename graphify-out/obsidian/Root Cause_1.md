@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Implement gateway-level outbound information fil"
-location: "L37"
+community: "TestFullAccessMiddlewareBypass"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_fil
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # Root Cause
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
+- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
+- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil
+#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

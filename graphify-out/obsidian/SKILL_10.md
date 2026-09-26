@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 461"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_461
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+community: "GitHub Skill"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/GitHub_Skill
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

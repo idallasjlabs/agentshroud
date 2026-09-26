@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L7"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

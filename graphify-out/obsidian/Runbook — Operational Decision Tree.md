@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "TestCollaboratorPersistence"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/TestCollaboratorPersistence
 ---
 
 # Runbook — Operational Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

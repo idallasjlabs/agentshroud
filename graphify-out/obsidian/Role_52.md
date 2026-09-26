@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L7"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

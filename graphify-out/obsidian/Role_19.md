@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
+community: "Attack Teardowns: How AgentShroud Stops RovoBlas"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas

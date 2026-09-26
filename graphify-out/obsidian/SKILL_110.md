@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
 type: "document"
-community: "Community 608"
+community: "mcp_audit.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_608
+  - community/mcp_auditpy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_608
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

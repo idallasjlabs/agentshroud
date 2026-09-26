@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 1027"
+community: "TestCrossBotTrustPivot"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1027
+  - community/TestCrossBotTrustPivot
 ---
 
 # SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[SKILL_207]] - `semantically_similar_to` [INFERRED]
 - [[gh CLI (GitHub)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1027
+#graphify/document #graphify/EXTRACTED #community/TestCrossBotTrustPivot

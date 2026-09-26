@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L23"
+community: "_make_tm()"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/_make_tm
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/_make_tm

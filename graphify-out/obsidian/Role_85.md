@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L8"
+community: "Identity Reference - AgentShroud System"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/Identity_Reference_-_AgentShroud_System
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System

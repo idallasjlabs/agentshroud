@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L8"
+community: "Telegram & Gmail Integration Guide"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

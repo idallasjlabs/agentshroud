@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "FileSandbox"
+community: "Enum"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Rule: agentshroud-path-traversal-open
@@ -15,4 +15,4 @@ tags:
 - [[file_sandbox.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FileSandbox
+#graphify/concept #graphify/EXTRACTED #community/Enum

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L8"
+community: "TestBotIdIsolationInSharedMemory"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/TestBotIdIsolationInSharedMemory
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory

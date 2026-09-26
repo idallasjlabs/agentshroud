@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L7"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

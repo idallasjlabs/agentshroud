@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
-location: "L8"
+community: "openclaw/skills/i-browser/browse.js"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

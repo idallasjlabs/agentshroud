@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
-location: "L20"
+community: "Skill: Mindmap Architect (MM)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

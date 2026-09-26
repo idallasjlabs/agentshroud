@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
-location: "L24"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Rules
 
 ## Connections
-- [[Trademark Statements]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L7"
+community: "TestStrangerRateLimit"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/TestStrangerRateLimit
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L23"
+community: "run_test()"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/run_test
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/run_test

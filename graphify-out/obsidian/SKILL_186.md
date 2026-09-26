@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 305"
+community: "Skill: Mindmap Architect (MM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_305
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

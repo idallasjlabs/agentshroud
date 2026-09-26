@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Per-Agent Container Isolation Architecture"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

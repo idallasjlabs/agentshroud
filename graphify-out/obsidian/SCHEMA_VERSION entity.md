@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.svg"
 type: "concept"
-community: "SCHEMA_VERSION entity"
+community: "i-gitops SKILL (stub)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SCHEMA_VERSION_entity
+  - community/i-gitops_SKILL_stub
 ---
 
 # SCHEMA_VERSION entity
 
-#graphify/concept #graphify/EXTRACTED #community/SCHEMA_VERSION_entity
+#graphify/concept #graphify/EXTRACTED #community/i-gitops_SKILL_stub

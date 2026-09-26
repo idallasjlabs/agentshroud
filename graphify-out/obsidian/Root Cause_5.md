@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Flip core security modules from monitor to enfor"
-location: "L14"
+community: "dns_filter.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enfor
+  - community/dns_filterpy
 ---
 
 # Root Cause
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

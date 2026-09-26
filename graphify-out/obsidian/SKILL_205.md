@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "document"
-community: "Community 1390"
+community: "ConsistencyScore"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1390
+  - community/ConsistencyScore
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[eightctl]] - `contains` [EXTRACTED]
 - [[eightctl CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1390
+#graphify/document #graphify/EXTRACTED #community/ConsistencyScore

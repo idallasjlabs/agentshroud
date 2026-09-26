@@ -1,20 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConne"
-location: "L22"
+community: "Feature: Global Monitor-Only Mode (\"Observatory "
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_
 ---
 
 # Root Cause
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
-- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
-- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
-location: "L22"
+community: "Output Sections (ALL required)"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/Output_Sections_ALL_required
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

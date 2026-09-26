@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 659"
+community: "GitHub Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/GitHub_Skill
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

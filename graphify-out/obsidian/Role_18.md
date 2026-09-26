@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

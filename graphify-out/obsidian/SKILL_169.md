@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 894"
+community: "AgentShroud — Collaborator Knowledge Base"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_894
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

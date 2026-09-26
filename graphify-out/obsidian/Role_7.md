@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Code Review (CR)"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

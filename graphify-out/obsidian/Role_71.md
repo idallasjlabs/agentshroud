@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L8"
+community: "test_security_integration.py"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/test_security_integrationpy
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/test_security_integrationpy

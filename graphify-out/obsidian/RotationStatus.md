@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "CredentialValidator"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CredentialValidator
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # RotationStatus
 
 ## Connections
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[Status of a credential rotation.]] - `rationale_for` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CredentialValidator
+#graphify/code #graphify/INFERRED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "version_routes.py"
+community: "EgressFilterConfig"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/EgressFilterConfig
 ---
 
 # Rollback to the previous version. Requires approval_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/version_routespy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

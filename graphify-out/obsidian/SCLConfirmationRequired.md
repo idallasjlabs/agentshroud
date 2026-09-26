@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L248"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # SCLConfirmationRequired
@@ -16,9 +16,9 @@ tags:
 - [[.test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_22]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
@@ -31,8 +31,8 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
@@ -41,11 +41,11 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/INFERRED #community/mainrs

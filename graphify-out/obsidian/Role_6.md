@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
-location: "L7"
+community: "MCP AWS Profile Configuration README"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

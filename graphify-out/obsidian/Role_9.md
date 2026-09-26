@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "Phase 2 — Security Core (HMAC Auth + PII Sanitiz"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz

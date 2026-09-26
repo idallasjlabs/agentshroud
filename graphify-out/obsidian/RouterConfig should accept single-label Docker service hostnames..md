@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "BotConfig"
+community: "ModeRequest"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ModeRequest
 ---
 
 # RouterConfig should accept single-label Docker service hostnames.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_router_config_accepts_docker_service_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

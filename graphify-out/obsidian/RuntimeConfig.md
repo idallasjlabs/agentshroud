@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "RuntimeConfig"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # RuntimeConfig
 
 ## Connections
 - [[.effective_rootless()]] - `method` [EXTRACTED]
-- [[.from_dict()_5]] - `method` [EXTRACTED]
+- [[.from_dict()_1]] - `method` [EXTRACTED]
 - [[.from_env()]] - `method` [EXTRACTED]
 - [[.test_effective_rootless_docker()]] - `calls` [EXTRACTED]
 - [[.test_effective_rootless_override()]] - `calls` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[Configuration for container runtime selection and behavior.      Loaded from env]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[apple_engine.py]] - `references` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 - [[docker_engine.py]] - `references` [EXTRACTED]
 - [[podman_engine.py]] - `references` [EXTRACTED]
-- [[runtimeconfig.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 1480"
+community: ".test_lock_emoji_redacted_spoken()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1480
+  - community/test_lock_emoji_redacted_spoken
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill incident-response_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1480
+#graphify/document #graphify/EXTRACTED #community/test_lock_emoji_redacted_spoken

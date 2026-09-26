@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # SCRUM-78 — operational monitor↔enforce lever.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforcementMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_tm
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

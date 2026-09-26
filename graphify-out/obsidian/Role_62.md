@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "_fw_client()"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/_fw_client
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/_fw_client

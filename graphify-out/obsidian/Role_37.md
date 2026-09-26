@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
+community: "Coding Agent (bash-first)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Coding_Agent_bash-first
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

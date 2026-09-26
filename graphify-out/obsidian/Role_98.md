@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "AgentShroud v0.9.0"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/AgentShroud_v090
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

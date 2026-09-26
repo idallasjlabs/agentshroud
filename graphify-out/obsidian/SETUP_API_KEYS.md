@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "OpenClaw Bot Container"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/OpenClaw_Bot_Container
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # SETUP_API_KEYS.md
@@ -18,4 +18,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/INFERRED #community/pipelinepy__Security_Pipeline

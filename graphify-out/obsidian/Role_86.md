@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L8"
+community: "forwarder.test.js test suite"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/forwardertestjs_test_suite
 ---
 
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/forwardertestjs_test_suite

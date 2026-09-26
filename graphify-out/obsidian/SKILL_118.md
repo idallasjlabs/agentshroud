@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 495"
+community: "Function Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/Function_Details
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_495
+#graphify/document #graphify/EXTRACTED #community/Function_Details

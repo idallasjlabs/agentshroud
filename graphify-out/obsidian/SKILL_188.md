@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Community 1487"
+community: ".test_port_inline_colon()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1487
+  - community/test_port_inline_colon
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill value-stream-mapping_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1487
+#graphify/document #graphify/EXTRACTED #community/test_port_inline_colon

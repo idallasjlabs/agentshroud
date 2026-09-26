@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Available MCP Servers"
-location: "L7"
+community: "SSH Proxy Errors"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/SSH_Proxy_Errors
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors

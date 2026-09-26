@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
-location: "L7"
+community: "AGENTS.md — Codex CLI Guidance"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Role
 
 ## Connections
-- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

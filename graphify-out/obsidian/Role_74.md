@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "sunday-upgrade-apply.sh"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/sunday-upgrade-applysh
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

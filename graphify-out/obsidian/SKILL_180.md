@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 708"
+community: "Git History Purge Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_708
+  - community/Git_History_Purge_Plan
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_708
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

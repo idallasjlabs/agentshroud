@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
-type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L8"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "main.rs"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/mainrs
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/code #graphify/EXTRACTED #community/mainrs

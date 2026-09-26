@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Trademark Application"
+community: "mcp-proxy-wrapper.js"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Trademark_Application
+  - community/mcp-proxy-wrapperjs
 ---
 
 # SECTION 6: PRIOR SEARCH RESULTS
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 - [[Recommended Searches]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

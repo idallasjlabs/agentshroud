@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L137"
+community: "Technical Specification"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Technical_Specification
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

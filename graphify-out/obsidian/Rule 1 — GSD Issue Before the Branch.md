@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "TestMultiBotContextvarRouting"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/TestMultiBotContextvarRouting
 ---
 
 # Rule 1 — GSD Issue Before the Branch
@@ -16,4 +16,4 @@ tags:
 - [[GSD Cadence — Get Shit Done Governance (doc)]] - `references` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting

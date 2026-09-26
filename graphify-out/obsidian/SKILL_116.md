@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 704"
+community: "Technical Specification"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_704
+  - community/Technical_Specification
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_704
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

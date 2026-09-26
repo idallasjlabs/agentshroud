@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L7"
+community: "gateway.proxy.llm_proxy"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/gatewayproxyllm_proxy
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy

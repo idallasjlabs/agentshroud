@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "BaseModel"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/BaseModel
 ---
 
 # Runbook — Operational Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/BaseModel
