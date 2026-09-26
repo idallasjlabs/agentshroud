@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "LLMProxy.proxy_messages"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/LLMProxyproxy_messages
 ---
 
 # 📧 Apple Mail (IMAP/SMTP)
@@ -16,4 +16,4 @@ tags:
 - [[IMAP Settings (Incoming Mail)]] - `contains` [EXTRACTED]
 - [[SMTP Settings (Outgoing Mail)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

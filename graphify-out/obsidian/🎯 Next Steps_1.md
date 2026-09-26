@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
-location: "L220"
+community: "Skills by Category"
+location: "L400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Skills_by_Category
 ---
 
 # 🎯 Next Steps
 
 ## Connections
-- [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
+- [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
+- [[Option A Quick CalDAV Setup (Recommended)]] - `contains` [EXTRACTED]
+- [[Option B Full OAuth Setup]] - `contains` [EXTRACTED]
+- [[Option C Alternative Notes Solution]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

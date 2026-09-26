@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Publish SecureBrowser to ClawHub - Step-by-Step "
+community: "security.py"
 location: "L424"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_
+  - community/securitypy
 ---
 
 # 🎉 You're Done!
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_
+#graphify/document #graphify/EXTRACTED #community/securitypy

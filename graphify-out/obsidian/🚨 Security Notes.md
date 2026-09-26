@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "LLMProxy.proxy_messages"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/LLMProxyproxy_messages
 ---
 
 # 🚨 Security Notes
@@ -17,4 +17,4 @@ tags:
 - [[Credential Storage]] - `contains` [EXTRACTED]
 - [[Two-Factor Authentication]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "security/__init__.py"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/security/__init__py
 ---
 
 # 🔍 **NEEDS STRENGTHENING (Risk of Security Theater)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/security/__init__py

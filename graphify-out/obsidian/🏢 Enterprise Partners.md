@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Release Notes - AgentShroud v0.9.0"
+community: "hermes/workspace/jira_dev_ticket.py"
 location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # 🏢 Enterprise Partners
 
 ## Connections
-- [[Acknowledgments]] - `contains` [EXTRACTED]
+- [[Acknowledgments_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

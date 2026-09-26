@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
+source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup - Calendar, Contacts, Keep"
-location: "L400"
+community: "LLMProxy.proxy_messages"
+location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/LLMProxyproxy_messages
 ---
 
 # 🎯 Next Steps
 
 ## Connections
-- [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
-- [[Option A Quick CalDAV Setup (Recommended)]] - `contains` [EXTRACTED]
-- [[Option B Full OAuth Setup]] - `contains` [EXTRACTED]
-- [[Option C Alternative Notes Solution]] - `contains` [EXTRACTED]
+- [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

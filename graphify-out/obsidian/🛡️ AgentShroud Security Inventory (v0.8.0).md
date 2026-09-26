@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Security Modules (58)"
+community: "postmortem.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/postmortemmd
 ---
 
 # 🛡️ AgentShroud Security Inventory (v0.8.0)
@@ -16,8 +16,8 @@ tags:
 - [[Security Configuration Files (9)]] - `contains` [EXTRACTED]
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 - [[Security Test Files (38)]] - `contains` [EXTRACTED]
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_19]] - `contains` [EXTRACTED]
 - [[Testing Checklist_1]] - `contains` [EXTRACTED]
 - [[security-inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "LLMProxy.proxy_messages"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/LLMProxyproxy_messages
 ---
 
 # 📅 Calendar (CalDAV)
@@ -15,4 +15,4 @@ tags:
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 - [[CalDAV Server]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

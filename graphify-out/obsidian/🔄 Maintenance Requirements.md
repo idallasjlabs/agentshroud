@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Kill Switch"
 location: "L618"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Kill_Switch
 ---
 
 # 🔄 Maintenance Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Monthly]] - `contains` [EXTRACTED]
 - [[Quarterly]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

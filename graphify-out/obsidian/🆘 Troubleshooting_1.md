@@ -1,18 +1,21 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L640"
+community: "Hermes Service"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Hermes_Service
 ---
 
 # 🆘 Troubleshooting
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Authentication required]] - `contains` [EXTRACTED]
+- [[Permission denied]] - `contains` [EXTRACTED]
+- [[Skill validation failed]] - `contains` [EXTRACTED]
+- [[clawhub command not found]] - `contains` [EXTRACTED]
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Hermes_Service

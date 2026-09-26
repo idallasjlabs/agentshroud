@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "AgentShroud Security Policy - Final Decision"
+community: "TestLooksLikeSafeCollaboratorInfoQuery"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy_-_Final_Decision
+  - community/TestLooksLikeSafeCollaboratorInfoQuery
 ---
 
 # 🤖 Why Ultra-Conservative Won
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Policy - Final Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision
+#graphify/document #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery

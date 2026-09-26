@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "_stub_client()"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/_stub_client
 ---
 
 # 🎯 Use Cases
@@ -17,4 +17,4 @@ tags:
 - [[Personal AI Assistant]] - `contains` [EXTRACTED]
 - [[Secure Development]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/_stub_client

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions: Credential Security (Ultra-"
+community: "AgentShroud v1.2.0 Master Plan"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # 🎓 Why No Exceptions?
@@ -15,4 +15,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[The Problems with Trusted Chat]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

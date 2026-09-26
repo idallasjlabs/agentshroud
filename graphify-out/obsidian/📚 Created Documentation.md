@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Skills by Category"
+community: "package_skill()"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/package_skill
 ---
 
 # 📚 Created Documentation
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/package_skill

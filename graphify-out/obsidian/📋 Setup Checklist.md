@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "LLMProxy.proxy_messages"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/LLMProxyproxy_messages
 ---
 
 # 📋 Setup Checklist
@@ -16,6 +16,6 @@ tags:
 - [[Apple ID Creation]] - `contains` [EXTRACTED]
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 - [[Test Access]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

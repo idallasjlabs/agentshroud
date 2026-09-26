@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "test_us_ssn_regex_tightened.py"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # 🔴 ERRORS (must fix)
@@ -15,4 +15,4 @@ tags:
 - [[2. Findings]] - `contains` [EXTRACTED]
 - [[E1 YAML indentation error in `docker-compose.pi.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions: Credential Security (Ultra-"
+community: "AgentShroud v1.2.0 Master Plan"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # 💬 Example Conversations
@@ -15,6 +15,6 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[Via Console]] - `contains` [EXTRACTED]
 - [[Via Control UI]] - `contains` [EXTRACTED]
-- [[Via Telegram_1]] - `contains` [EXTRACTED]
+- [[Via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

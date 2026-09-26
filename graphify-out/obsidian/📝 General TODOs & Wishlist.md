@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "AgentShroud Consolidated Issues Report"
+community: "TestLogSanitizer"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/TestLogSanitizer
 ---
 
 # 📝 General TODOs & Wishlist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/document #graphify/EXTRACTED #community/TestLogSanitizer

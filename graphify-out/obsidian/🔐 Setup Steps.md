@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "Skills by Category"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/Skills_by_Category
 ---
 
 # 🔐 Setup Steps
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Test Calendar Access]] - `contains` [EXTRACTED]
 - [[Step 4 Test Contacts Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "test_us_ssn_regex_tightened.py"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # 🟡 WARNINGS (should fix)
@@ -17,4 +17,4 @@ tags:
 - [[W2 Stale compose snapshot committed to tree]] - `contains` [EXTRACTED]
 - [[W3 Empty test file placeholder]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

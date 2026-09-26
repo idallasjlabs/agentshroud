@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "2. Security Value Audit"
+community: "Mode B — Comprehensive review sweep"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit
+  - community/Mode_B__Comprehensive_review_sweep
 ---
 
 # 🚫 Security Theater
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit
+#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep

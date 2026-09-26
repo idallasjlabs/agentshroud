@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "🎯 High-Value Features (Justify the Effort)"
+community: "_DummyTargetWriter"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_High-Value_Features_Justify_the_Effort
+  - community/_DummyTargetWriter
 ---
 
 # ❓ Low-Value Features (Questionable ROI)
@@ -17,4 +17,4 @@ tags:
 - [[9. Read-Only Filesystem (Currently Disabled)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort
+#graphify/document #graphify/EXTRACTED #community/_DummyTargetWriter

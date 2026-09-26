@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive "
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/AgentShroud_v080_Watchtower__Comprehensive_
 ---
 
 # 🟢 INFO (nice to have)
@@ -19,4 +19,4 @@ tags:
 - [[I4 `AppState` class missing dynamically-set attributes]] - `contains` [EXTRACTED]
 - [[I5 Inline import on hot path in LLM proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "Browser — Secure Browser Automation"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # 🎯 Two Options
@@ -16,4 +16,4 @@ tags:
 - [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - `contains` [EXTRACTED]
 - [[Option B Full (OAuth2 + Google APIs) - Better for production]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
