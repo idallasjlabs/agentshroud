@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "EgressTelegramNotifier"
+community: "TrustManager"
 location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/TrustManager
 ---
 
 # Remove pending requests older than max_age_seconds. Returns count removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_expired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

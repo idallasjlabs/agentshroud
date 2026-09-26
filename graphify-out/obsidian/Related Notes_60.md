@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "SSH Config"
-location: "L51"
+community: "test_playback_state.c"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/test_playback_statec
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/test_playback_statec

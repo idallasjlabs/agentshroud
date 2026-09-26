@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "8. Common Troubleshooting Scenarios"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/8_Common_Troubleshooting_Scenarios
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/8_Common_Troubleshooting_Scenarios

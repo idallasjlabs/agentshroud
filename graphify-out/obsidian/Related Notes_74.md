@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "SSH Proxy Errors"
-location: "L97"
+community: "Brand Identity"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Errors
+  - community/Brand_Identity
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Brand_Identity

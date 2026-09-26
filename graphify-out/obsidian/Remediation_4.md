@@ -1,25 +1,24 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Remediation"
-location: "L19"
+community: "dns_filter.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/dns_filterpy
 ---
 
 # Remediation
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
-- [[Step 1 Audit current secret mounts]] - `contains` [EXTRACTED]
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - `contains` [EXTRACTED]
-- [[Step 3 Remove credential environment variables from agent container]] - `contains` [EXTRACTED]
-- [[Step 4 Implement transparent credential injection in the gateway]] - `contains` [EXTRACTED]
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - `contains` [EXTRACTED]
-- [[Step 6 Handle 1Password specifically]] - `contains` [EXTRACTED]
-- [[Step 7 Add credential leak detection to egress filtering]] - `contains` [EXTRACTED]
-- [[Step 8 Verify no credentials remain in agent container]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Step 1 Add user session registry to the gateway]] - `contains` [EXTRACTED]
+- [[Step 2 Partition conversation context at the gateway]] - `contains` [EXTRACTED]
+- [[Step 3 Isolate file workspaces per user]] - `contains` [EXTRACTED]
+- [[Step 4 Scope the system prompt per session]] - `contains` [EXTRACTED]
+- [[Step 5 Isolate memory persistence]] - `contains` [EXTRACTED]
+- [[Step 6 Add cross-session access controls to sessions_send]] - `contains` [EXTRACTED]
+- [[Step 7 Add session listing protections]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

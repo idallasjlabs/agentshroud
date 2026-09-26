@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Network Topology"
-location: "L129"
+community: "diagrams/README.md"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/diagrams/READMEmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_Topology
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

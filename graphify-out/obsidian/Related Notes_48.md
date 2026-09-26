@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Startup Sequence"
-location: "L173"
+community: "A2APolicyEngine"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Sequence
+  - community/A2APolicyEngine
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Sequence
+#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine

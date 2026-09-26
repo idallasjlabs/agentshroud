@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "SecurityEvent"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/SecurityEvent
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/SecurityEvent

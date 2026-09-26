@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "aiosqlite"
-location: "L42"
+community: "TestMinimalConfig"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aiosqlite
+  - community/TestMinimalConfig
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aiosqlite
+#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig

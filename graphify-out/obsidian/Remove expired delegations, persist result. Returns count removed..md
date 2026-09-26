@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "DelegationManager"
+community: "make_event()"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # Remove expired delegations, persist result. Returns count removed.
 
 ## Connections
-- [[.cleanup_expired()_2]] - `rationale_for` [EXTRACTED]
+- [[.cleanup_expired()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DelegationManager
+#graphify/rationale #graphify/EXTRACTED #community/make_event

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
+community: "Skill: Code Review (CR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/Skill_Code_Review_CR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

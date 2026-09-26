@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Restart Procedure"
-location: "L145"
+community: "Pre-Deployment Checklist"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Pre-Deployment_Checklist
 ---
 
 # Related Notes
 
 ## Connections
-- [[Restart Procedure_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "agentshroud.yaml"
-location: "L213"
+community: "TestCredentialLeakDetection"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/TestCredentialLeakDetection
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[Auth Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection

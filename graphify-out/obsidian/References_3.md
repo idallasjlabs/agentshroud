@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
-location: "L387"
+community: "TestMCPProxyEndpoint"
+location: "L329"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/TestMCPProxyEndpoint
 ---
 
 # References
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,24 +1,24 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
-location: "L28"
+community: "format_cve_report()"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/format_cve_report
 ---
 
 # Remediation
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
-- [[Step 1 Add user session registry to the gateway]] - `contains` [EXTRACTED]
-- [[Step 2 Partition conversation context at the gateway]] - `contains` [EXTRACTED]
-- [[Step 3 Isolate file workspaces per user]] - `contains` [EXTRACTED]
-- [[Step 4 Scope the system prompt per session]] - `contains` [EXTRACTED]
-- [[Step 5 Isolate memory persistence]] - `contains` [EXTRACTED]
-- [[Step 6 Add cross-session access controls to sessions_send]] - `contains` [EXTRACTED]
-- [[Step 7 Add session listing protections]] - `contains` [EXTRACTED]
+- [[Step 1 Define MCP tool risk tiers]] - `contains` [EXTRACTED]
+- [[Step 2 Configure approval requirements per tier]] - `contains` [EXTRACTED]
+- [[Step 3 Wire MCP Proxy to Approval Queue]] - `contains` [EXTRACTED]
+- [[Step 4 Set Approval Queue to enforce mode]] - `contains` [EXTRACTED]
+- [[Step 5 Add approval UI to the control center dashboard]] - `contains` [EXTRACTED]
+- [[Step 6 Add Telegram admin notification for critical-tier tools]] - `contains` [EXTRACTED]
+- [[Step 7 Return clear error messages to the agent]] - `contains` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/format_cve_report

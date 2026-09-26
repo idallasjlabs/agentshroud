@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/web/installer.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "detect_runtime()"
-location: "L55"
+community: "AgentTarget"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/detect_runtime
+  - graphify/INFERRED
+  - community/AgentTarget
 ---
 
 # Request
 
 ## Connections
-- [[installer_page()]] - `references` [EXTRACTED]
+- [[._handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/INFERRED #community/AgentTarget

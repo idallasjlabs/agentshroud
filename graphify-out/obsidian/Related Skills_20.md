@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L12"
+community: "Available MCP Servers"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Available_MCP_Servers
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

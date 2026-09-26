@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
+community: "scripts/security-scan.sh"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/scripts/security-scansh
 ---
 
 # Required Settings
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
 - [[Required Status Checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/scripts/security-scansh

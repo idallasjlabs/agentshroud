@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ReportStore"
+community: "PortManager"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # ReportStore
 
 ## Connections
-- [[.__init__()_190]] - `method` [EXTRACTED]
+- [[.__init__()_113]] - `method` [EXTRACTED]
 - [[._check_size()]] - `method` [EXTRACTED]
 - [[._enforce_count_cap()]] - `method` [EXTRACTED]
 - [[._path()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[._sanitize_async()]] - `method` [EXTRACTED]
 - [[._sanitize_sync()]] - `method` [EXTRACTED]
 - [[._valid_id()]] - `method` [EXTRACTED]
-- [[.client()_7]] - `calls` [EXTRACTED]
+- [[.client()_1]] - `calls` [EXTRACTED]
 - [[.delete()_1]] - `method` [EXTRACTED]
 - [[.get()_4]] - `method` [EXTRACTED]
 - [[.list()]] - `method` [EXTRACTED]
@@ -39,15 +39,15 @@ tags:
 - [[.test_title_and_tags_sanitized_sync()]] - `calls` [EXTRACTED]
 - [[Filesystem-backed shared report store on the gateway-data volume.]] - `rationale_for` [EXTRACTED]
 - [[TestAsyncSave]] - `uses` [INFERRED]
-- [[TestPersistence_2]] - `uses` [INFERRED]
+- [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestReportAPI]] - `uses` [INFERRED]
 - [[TestReviewHardening]] - `uses` [INFERRED]
 - [[TestSaveAndGet]] - `uses` [INFERRED]
 - [[TestSecurity]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[report_store.py]] - `contains` [EXTRACTED]
 - [[store()_2]] - `calls` [EXTRACTED]
 - [[test_report_store.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/PortManager

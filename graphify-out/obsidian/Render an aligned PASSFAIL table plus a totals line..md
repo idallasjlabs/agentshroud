@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "main()"
+community: "TestRunAndSendCveReportImageScans"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/main
+  - community/TestRunAndSendCveReportImageScans
 ---
 
 # Render an aligned PASS/FAIL table plus a totals line.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.render_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/main
+#graphify/rationale #graphify/EXTRACTED #community/TestRunAndSendCveReportImageScans

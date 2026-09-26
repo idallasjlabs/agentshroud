@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Docker Volumes"
-location: "L90"
+community: "quick-setup.sh script"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/quick-setupsh_script
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "Containers startup order: agentshroud-gateway st"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Containers_startup_order_agentshroud-gateway_st
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st

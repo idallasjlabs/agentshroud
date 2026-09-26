@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "GATEWAY_OP_PROXY_URL"
-location: "L49"
+community: "Claude Code skill catalog (59 skills)"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GATEWAY_OP_PROXY_URL
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

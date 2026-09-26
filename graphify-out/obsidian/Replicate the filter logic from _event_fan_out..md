@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "SOCWebSocketHandler"
+community: "oracle — best use"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/oracle__best_use
 ---
 
 # Replicate the filter logic from _event_fan_out.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/rationale #graphify/EXTRACTED #community/oracle__best_use

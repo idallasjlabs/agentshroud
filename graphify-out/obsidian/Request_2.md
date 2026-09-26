@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
 community: "A2APolicyEngine"
-location: "L61"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/A2APolicyEngine
 ---
 
 # Request
 
 ## Connections
-- [[._handle()]] - `references` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[auth_dep()_1]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Playwright"
-location: "L46"
+community: "TestFileSandbox"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/TestFileSandbox
 ---
 
 # Related Notes
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/TestFileSandbox

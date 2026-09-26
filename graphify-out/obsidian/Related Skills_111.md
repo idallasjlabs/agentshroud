@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
-location: "L14"
+community: "BaseModel"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/BaseModel
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[System Audit Vault_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/BaseModel

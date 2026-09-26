@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "code"
-community: "Release Workflow"
+community: "promote-firmware.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Release_Workflow
+  - community/promote-firmwaresh
 ---
 
 # Release Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TagVersion Sync Verification]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Release_Workflow
+#graphify/code #graphify/EXTRACTED #community/promote-firmwaresh

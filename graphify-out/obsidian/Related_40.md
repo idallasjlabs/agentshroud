@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "router.py"
-location: "L86"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Related
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

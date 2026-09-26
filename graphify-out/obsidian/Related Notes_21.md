@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L47"
+community: "diagrams/README.md"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/diagrams/READMEmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

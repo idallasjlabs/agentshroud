@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "TestOverallDetectionRate"
+community: "BotConfig"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/BotConfig
 ---
 
 # Report per-category detection rates for observability (not a gate).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_detection_breakdown_by_category()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

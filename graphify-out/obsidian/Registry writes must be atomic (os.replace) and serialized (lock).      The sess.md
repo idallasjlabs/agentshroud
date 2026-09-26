@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "TestAtomicRegistryWrites"
+community: "KeyVaultConfig"
 location: "L313"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/KeyVaultConfig
 ---
 
 # Registry writes must be atomic (os.replace) and serialized (lock).      The sess
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAtomicRegistryWrites]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

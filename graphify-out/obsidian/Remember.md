@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
-location: "L199"
+community: "v0.8.0 — \"Watchtower\" (Complete Security + Every"
+location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/v080__Watchtower_Complete_Security__Every
 ---
 
 # Remember
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
+- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Every

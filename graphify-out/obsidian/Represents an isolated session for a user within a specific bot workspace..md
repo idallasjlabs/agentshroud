@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "UserSession"
+community: "KeyVaultConfig"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/KeyVaultConfig
 ---
 
 # Represents an isolated session for a user within a specific bot workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSession
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

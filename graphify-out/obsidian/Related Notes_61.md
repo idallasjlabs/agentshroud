@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Architecture Overview"
-location: "L183"
+community: "test_playback_state.c"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Overview
+  - community/test_playback_statec
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Overview
+#graphify/document #graphify/EXTRACTED #community/test_playback_statec

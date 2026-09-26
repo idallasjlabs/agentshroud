@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "canary.py"
-location: "L75"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Related
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

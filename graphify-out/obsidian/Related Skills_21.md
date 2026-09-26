@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L12"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

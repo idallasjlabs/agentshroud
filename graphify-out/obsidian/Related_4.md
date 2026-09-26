@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "env_guard.py"
-location: "L106"
+community: "TestNetworkValidator"
+location: "L464"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/TestNetworkValidator
 ---
 
 # Related
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

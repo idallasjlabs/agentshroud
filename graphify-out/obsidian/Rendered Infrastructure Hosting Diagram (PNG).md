@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.png"
 type: "image"
-community: "02-infrastructure.md"
+community: ".test_gives_up_and_marks_sent_after_max_retries("
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # Rendered Infrastructure Hosting Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Infrastructure Diagram — Hosting & Servers]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/image #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor Specialist"
+community: "v0.8.0 — \"Watchtower\" (Complete Security + Every"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/v080__Watchtower_Complete_Security__Every
 ---
 
 # Refactoring Workflow
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Verify Tests Still Pass]] - `contains` [EXTRACTED]
 - [[Step 4 Check Code Quality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Every

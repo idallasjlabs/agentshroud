@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "OpenClaw Host Hardening"
+community: "openai-whisper-api/SKILL.md"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Required prompt to schedule (always)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Periodic checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

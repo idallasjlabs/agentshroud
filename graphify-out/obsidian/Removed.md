@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 99"
-location: "L544"
+community: "WebProxy"
+location: "L610"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/WebProxy
 ---
 
 # Removed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/WebProxy

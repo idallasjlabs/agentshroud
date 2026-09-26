@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "sanitizer.py"
-location: "L88"
+community: "GSDE&G Development Master Checklist"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Related
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

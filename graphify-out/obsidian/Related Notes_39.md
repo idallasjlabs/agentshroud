@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "clamav.md"
-location: "L48"
+community: "archive_old_events()"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamavmd
+  - community/archive_old_events
 ---
 
 # Related Notes
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamavmd
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

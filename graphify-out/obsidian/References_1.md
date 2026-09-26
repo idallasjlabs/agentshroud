@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for E"
-location: "L329"
+community: "Core Security Principles"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+  - community/Core_Security_Principles
 ---
 
 # References
 
 ## Connections
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

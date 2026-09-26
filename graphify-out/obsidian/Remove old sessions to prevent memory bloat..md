@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "SessionContext"
+community: "background.js"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/backgroundjs
 ---
 
 # Remove old sessions to prevent memory bloat.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionContext
+#graphify/rationale #graphify/EXTRACTED #community/backgroundjs

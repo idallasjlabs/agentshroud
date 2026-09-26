@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestPathIsolationManager"
 location: "L3174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestPathIsolationManager
 ---
 
 # Remove Telegram HTML formatting tags from collaborator outbound text.
@@ -15,4 +15,4 @@ tags:
 - [[._html_tags_balanced()]] - `rationale_for` [EXTRACTED]
 - [[._strip_collaborator_html_markup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "troubleshooting.md"
-location: "L143"
+community: "AuditStore"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/AuditStore
 ---
 
 # Related Notes
 
 ## Connections
-- [[troubleshooting]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/AuditStore

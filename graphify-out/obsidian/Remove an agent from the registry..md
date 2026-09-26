@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # Remove an agent from the registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.unregister()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

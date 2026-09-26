@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "TrustManager"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TrustManager
 ---
 
 # Register a new user session and create their isolated directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

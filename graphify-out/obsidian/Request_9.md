@@ -1,17 +1,17 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L183"
+community: "test_a2a_policy.py"
+location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/test_a2a_policypy
 ---
 
 # Request
 
 ## Connections
-- [[chat()]] - `references` [EXTRACTED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "AGENTSHROUD_CONFIG"
-location: "L34"
+community: "archive_old_events()"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_CONFIG
+  - community/archive_old_events
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

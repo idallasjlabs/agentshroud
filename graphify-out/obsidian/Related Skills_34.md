@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/AgentShroud_v120__Blue_Team_Security_Assessme
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "TestRecommendedConfig"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestRecommendedConfig
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig

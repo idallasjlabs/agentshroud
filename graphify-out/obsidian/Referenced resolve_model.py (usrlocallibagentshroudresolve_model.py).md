@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "_seed_cron"
+community: "Skill: UX Expert (UX)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/Skill_UX_Expert_UX
 ---
 
 # Referenced: resolve_model.py (/usr/local/lib/agentshroud/resolve_model.py)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Post-migration model lock — resolve_model.py sets model.defaultprovider + cron.model after readiness]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/Skill_UX_Expert_UX

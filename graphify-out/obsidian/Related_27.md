@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "ledger.py"
-location: "L107"
+community: "DeceptionDetection"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/DeceptionDetection
 ---
 
 # Related
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/document #graphify/EXTRACTED #community/DeceptionDetection

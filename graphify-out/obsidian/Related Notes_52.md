@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Quick Reference — AgentShroud"
-location: "L176"
+community: "03-data.md"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/03-datamd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/03-datamd

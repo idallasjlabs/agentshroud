@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "proxy_status.py"
-location: "L40"
+community: "API Keys Setup Guide"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/API_Keys_Setup_Guide
 ---
 
 # Related Notes
 
 ## Connections
-- [[proxy_status.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

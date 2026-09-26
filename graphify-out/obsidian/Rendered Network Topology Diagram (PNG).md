@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.png"
 type: "image"
-community: "02-infrastructure.md"
+community: ".test_gives_up_and_marks_sent_after_max_retries("
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # Rendered Network Topology Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Network Topology Diagram]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/image #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

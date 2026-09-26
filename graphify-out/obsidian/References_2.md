@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Common Queries"
-location: "L67"
+community: "TestMultiBotContextvarRouting"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/TestMultiBotContextvarRouting
 ---
 
 # References
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Dependency Graph"
-location: "L137"
+community: "API Keys Setup Guide"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dependency_Graph
+  - community/API_Keys_Setup_Guide
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dependency_Graph
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

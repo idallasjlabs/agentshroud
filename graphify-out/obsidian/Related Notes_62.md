@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
-location: "L80"
+community: "test_playback_state.c"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/test_playback_statec
 ---
 
 # Related Notes
 
 ## Connections
-- [[Auth Errors_2]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/test_playback_statec

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L112"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Related Notes
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[OpenSCAP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

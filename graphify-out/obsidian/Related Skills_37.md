@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "1. GitHub MCP Authentication Reset"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Related Skills
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

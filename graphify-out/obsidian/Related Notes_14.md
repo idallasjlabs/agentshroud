@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Playwright"
-location: "L72"
+community: "Bot Container (agent decides: reply + tool call)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

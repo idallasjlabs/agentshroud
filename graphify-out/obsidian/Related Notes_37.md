@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
-location: "L36"
+community: "test_credential_injector.py"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+  - community/test_credential_injectorpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+#graphify/document #graphify/EXTRACTED #community/test_credential_injectorpy

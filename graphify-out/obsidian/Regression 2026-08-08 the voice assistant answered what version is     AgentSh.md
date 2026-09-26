@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "CollaboratorActivityTracker"
 location: "L803"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/CollaboratorActivityTracker
 ---
 
 # Regression 2026-08-08: the voice assistant answered "what version is     AgentSh
 
 ## Connections
-- [[test_voice_system_message_includes_agentshroud_version()_1]] - `rationale_for` [EXTRACTED]
+- [[test_voice_system_message_includes_agentshroud_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker

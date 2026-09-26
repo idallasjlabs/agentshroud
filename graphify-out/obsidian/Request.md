@@ -1,52 +1,17 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L177"
+community: "server.py"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/serverpy
 ---
 
 # Request
 
 ## Connections
-- [[Action]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[auth_dep()]] - `references` [EXTRACTED]
-- [[cors_middleware()]] - `references` [EXTRACTED]
-- [[create_report()]] - `references` [EXTRACTED]
-- [[get_my_permissions()]] - `references` [EXTRACTED]
-- [[get_user_permissions()]] - `references` [EXTRACTED]
-- [[global_exception_handler()]] - `references` [EXTRACTED]
-- [[google_api_proxy()]] - `references` [EXTRACTED]
-- [[hermes_dashboard_proxy()]] - `references` [EXTRACTED]
-- [[limit_request_body()]] - `references` [EXTRACTED]
-- [[list_users_and_roles()]] - `references` [EXTRACTED]
-- [[llm_api_proxy()]] - `references` [EXTRACTED]
-- [[llm_api_v1_prefix_alias()]] - `references` [EXTRACTED]
-- [[llm_openai_chat_alias()]] - `references` [EXTRACTED]
-- [[log_requests()]] - `references` [EXTRACTED]
-- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
-- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
-- [[ollama_api_proxy()]] - `references` [EXTRACTED]
-- [[receive_security_alert()]] - `references` [EXTRACTED]
-- [[security_headers_middleware()]] - `references` [EXTRACTED]
-- [[set_user_role()]] - `references` [EXTRACTED]
-- [[slack_api_proxy()]] - `references` [EXTRACTED]
-- [[telegram_api_proxy()]] - `references` [EXTRACTED]
+- [[chat()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/serverpy

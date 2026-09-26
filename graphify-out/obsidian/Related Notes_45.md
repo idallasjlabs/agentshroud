@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "4. Environment Variables"
-location: "L114"
+community: "Pre-Deployment Checklist"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/Pre-Deployment_Checklist
 ---
 
 # Related Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Playwright]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

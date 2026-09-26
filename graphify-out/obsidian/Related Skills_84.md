@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "test-container-runtime.sh"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/test-container-runtimesh
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test-container-runtimesh

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requiremen"
-location: "L120"
+community: "lvgl_kawaii_face.c"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requiremen
+  - community/lvgl_kawaii_facec
 ---
 
 # Related Notes
 
 ## Connections
-- [[All Dependencies_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requiremen
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

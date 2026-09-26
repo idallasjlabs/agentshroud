@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L14"
+community: "DNSFilterConfig"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/DNSFilterConfig
 ---
 
 # Related Skills
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

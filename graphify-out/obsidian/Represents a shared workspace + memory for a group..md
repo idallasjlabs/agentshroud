@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_group_session()"
+community: "KeyVaultConfig"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_group_session
+  - community/KeyVaultConfig
 ---
 
 # Represents a shared workspace + memory for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_group_session
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

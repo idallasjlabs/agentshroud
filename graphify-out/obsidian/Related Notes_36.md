@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Shutdown & Recovery"
-location: "L192"
+community: "lvgl_kawaii_face.c"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__Recovery
+  - community/lvgl_kawaii_facec
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

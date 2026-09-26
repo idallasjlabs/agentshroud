@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "MCP Proxy Errors"
-location: "L104"
+community: "ModeRequest"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Errors
+  - community/ModeRequest
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

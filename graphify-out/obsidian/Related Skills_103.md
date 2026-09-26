@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "TestRunningImageResolution"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestRunningImageResolution
 ---
 
 # Related Skills
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution

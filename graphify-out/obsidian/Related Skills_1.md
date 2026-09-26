@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "FY26 Cost Reduction Context"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "TrustConfig"
+community: "RBACConfig"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/RBACConfig
 ---
 
 # Register bot_b as a peer of bot_a.          Args:             bot_a: Source bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_peer()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

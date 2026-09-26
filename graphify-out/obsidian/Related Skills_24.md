@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

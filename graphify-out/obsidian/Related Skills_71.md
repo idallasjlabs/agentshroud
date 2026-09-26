@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L14"
+community: "SubagentMonitor._log_event"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/SubagentMonitor_log_event
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event

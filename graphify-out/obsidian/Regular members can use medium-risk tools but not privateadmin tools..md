@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # Regular members can use medium-risk tools but not private/admin tools.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

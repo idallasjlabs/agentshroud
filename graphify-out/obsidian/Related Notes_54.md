@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "First Time Setup"
-location: "L183"
+community: "Pre-Deployment Checklist"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Pre-Deployment_Checklist
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

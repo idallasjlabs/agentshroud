@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "falco_monitor.py"
-location: "L64"
+community: ".get_or_create_session()"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/get_or_create_session
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/get_or_create_session

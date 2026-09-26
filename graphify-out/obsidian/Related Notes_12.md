@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "OpenClaw"
-location: "L56"
+community: "TestDockerSecretIsolation"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw
+  - community/TestDockerSecretIsolation
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw
+#graphify/document #graphify/EXTRACTED #community/TestDockerSecretIsolation

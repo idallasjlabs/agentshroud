@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L221"
+community: "TestFileSandbox"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/TestFileSandbox
 ---
 
 # Related Notes
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/TestFileSandbox

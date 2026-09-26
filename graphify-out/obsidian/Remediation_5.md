@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Make gateway source code, config, and security p"
+community: "Feature: Global Monitor-Only Mode (\"Observatory "
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_p
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_
 ---
 
 # Remediation
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Add integrity checking for security-critical files]] - `contains` [EXTRACTED]
 - [[Step 6 Enforce read-only at the Docker layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_

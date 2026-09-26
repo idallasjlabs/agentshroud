@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # Register a credential for rotation management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

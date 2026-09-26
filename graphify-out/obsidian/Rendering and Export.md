@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
+community: "TestSecurityFeatures"
 location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/TestSecurityFeatures
 ---
 
 # Rendering and Export
@@ -17,4 +17,4 @@ tags:
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 - [[Validate syntax without exporting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L2717"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # Request
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/INFERRED #community/mainrs
