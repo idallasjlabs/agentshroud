@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/WebProxyConfig
+  - graphify/EXTRACTED
+  - community/SOCWebSocketHandler
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_114]] - `calls` [EXTRACTED]
+- [[.__init__()_23]] - `calls` [EXTRACTED]
 - [[.allowlist_config()]] - `calls` [EXTRACTED]
 - [[.get_domain_settings()]] - `method` [EXTRACTED]
 - [[.is_domain_allowed()]] - `method` [EXTRACTED]
 - [[.is_domain_denied()]] - `method` [EXTRACTED]
-- [[.test_case_insensitive()_1]] - `calls` [EXTRACTED]
+- [[.test_case_insensitive()_2]] - `calls` [EXTRACTED]
 - [[.test_custom_denylist()_1]] - `calls` [EXTRACTED]
 - [[.test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
 - [[.test_default_mode_is_denylist()]] - `calls` [EXTRACTED]
@@ -30,34 +30,34 @@ tags:
 - [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
 - [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[StreamReader_3]] - `uses` [INFERRED]
 - [[StreamReader_2]] - `uses` [INFERRED]
+- [[StreamReader_3]] - `uses` [INFERRED]
 - [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
-- [[TestDataExfiltration]] - `uses` [INFERRED]
+- [[TestDataExfiltration_1]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[URLAnalyzer_1]] - `uses` [INFERRED]
 - [[WebContentScanner_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
@@ -68,17 +68,17 @@ tags:
 - [[_DummyTargetWriter_1]] - `uses` [INFERRED]
 - [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_HeaderTimeoutReader]] - `uses` [INFERRED]
-- [[_MockWriter]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
+- [[_MockWriter]] - `uses` [INFERRED]
 - [[_SocketTransportWriter]] - `uses` [INFERRED]
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[config()_1]] - `calls` [EXTRACTED]
+- [[config()_4]] - `calls` [EXTRACTED]
 - [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - `rationale_for` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[passthrough_proxy()]] - `calls` [EXTRACTED]
+- [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

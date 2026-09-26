@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ingest_api/main.py"
 location: "L5265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ingest_api/mainpy
 ---
 
 # When update_id is missing, dedupe should fall back to message_id identity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_healthcheck_local_notice_dedupe_handles_missing_update_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "tmux Session Control"
-location: "L22"
+community: "Backup & Restore Runbook — AgentShroud"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # When NOT to Use
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

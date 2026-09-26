@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L364"
+community: "Skill: Security Review (SEC)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Skill_Security_Review_SEC
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
+- [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-007: Zero-Config Security (docker-compose up"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-007_Zero-Config_Security_docker-compose_up
 ---
 
 # Web Proxy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[web_proxy.py (domain allowlist engine)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/concept #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up

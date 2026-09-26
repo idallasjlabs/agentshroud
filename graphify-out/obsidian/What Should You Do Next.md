@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "iMessage Integration Status"
 location: "L307"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/iMessage_Integration_Status
 ---
 
 # What Should You Do Next?
@@ -17,4 +17,4 @@ tags:
 - [[Option B Full Vision (All Phase 3+ Features)]] - `contains` [EXTRACTED]
 - [[Option C Abandon AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

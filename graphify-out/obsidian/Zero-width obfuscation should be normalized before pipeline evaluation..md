@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "BlockingPipeline"
+community: "models.py"
 location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/modelspy
 ---
 
 # Zero-width obfuscation should be normalized before pipeline evaluation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_inbound_text_normalized_before_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/rationale #graphify/EXTRACTED #community/modelspy

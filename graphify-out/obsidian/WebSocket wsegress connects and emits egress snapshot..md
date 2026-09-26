@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # WebSocket /ws/egress connects and emits egress snapshot.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_connects_and_snapshot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

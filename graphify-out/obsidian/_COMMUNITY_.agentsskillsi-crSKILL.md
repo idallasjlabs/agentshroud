@@ -1,101 +1,107 @@
 ---
 type: community
-cohesion: 0.02
-members: 86
+cohesion: 0.07
+members: 92
 ---
 
 # .agents/skills/i-cr/SKILL.md
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 86 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 92 nodes
 
 ## Members
-- [[.agentsskillsi-crSKILL]] - document - .agents/skills/i-cr/SKILL.md
-- [[8D Root Cause Analysis]] - document - .agents/skills/i-eightd/README.md
-- [[AWS Cloud Management & FinOps]] - document - .agents/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer]] - document - .agents/skills/i-apollo/README.md
-- [[Atlas — Curriculum Architect]] - document - .agents/skills/i-atlas/README.md
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
-- [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
-- [[Daedalus — Concept Illustrator]] - document - .agents/skills/i-daedalus/README.md
-- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
-- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
-- [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[MCP Tools Usage (MCPM)]] - document - .agents/skills/i-mcpm/README.md
-- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_10]] - document - .agents/skills/i-apollo/README.md
-- [[Purpose_12]] - document - .agents/skills/i-atlas/README.md
-- [[Purpose_13]] - document - .agents/skills/i-aws/README.md
-- [[Purpose_15]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_16]] - document - .agents/skills/i-daedalus/README.md
-- [[Purpose_17]] - document - .agents/skills/i-data/README.md
-- [[Purpose_18]] - document - .agents/skills/i-eightd/README.md
-- [[Purpose_19]] - document - .agents/skills/i-gg/README.md
-- [[Purpose_22]] - document - .agents/skills/i-mac/README.md
-- [[Purpose_24]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Purpose_25]] - document - .agents/skills/i-mcpm/README.md
-- [[Purpose_28]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_29]] - document - .agents/skills/i-sad/README.md
-- [[Purpose_30]] - document - .agents/skills/i-sav/README.md
-- [[Purpose_31]] - document - .agents/skills/i-sec-defense/README.md
-- [[Purpose_32]] - document - .agents/skills/i-sec-offense/README.md
-- [[Purpose_6]] - document - .agents/skills/i-sec/README.md
-- [[Purpose_34]] - document - .agents/skills/i-tw/README.md
-- [[Purpose_35]] - document - .agents/skills/i-vulcan/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/README.md
-- [[Related Skills_1]] - document - .agents/skills/i-apollo/README.md
-- [[Related Skills_3]] - document - .agents/skills/i-atlas/README.md
-- [[Related Skills_4]] - document - .agents/skills/i-aws/README.md
-- [[Related Skills_6]] - document - .agents/skills/i-bs/README.md
-- [[Related Skills_7]] - document - .agents/skills/i-daedalus/README.md
-- [[Related Skills_8]] - document - .agents/skills/i-data/README.md
-- [[Related Skills_9]] - document - .agents/skills/i-eightd/README.md
-- [[Related Skills_10]] - document - .agents/skills/i-gg/README.md
-- [[Related Skills_13]] - document - .agents/skills/i-mac/README.md
-- [[Related Skills_15]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Related Skills_16]] - document - .agents/skills/i-mcpm/README.md
-- [[Related Skills_19]] - document - .agents/skills/i-pr/README.md
-- [[Related Skills_20]] - document - .agents/skills/i-sad/README.md
-- [[Related Skills_21]] - document - .agents/skills/i-sav/README.md
-- [[Related Skills_22]] - document - .agents/skills/i-sec-defense/README.md
-- [[Related Skills_23]] - document - .agents/skills/i-sec-offense/README.md
-- [[Related Skills]] - document - .agents/skills/i-sec/README.md
-- [[Related Skills_25]] - document - .agents/skills/i-tw/README.md
-- [[Related Skills_26]] - document - .agents/skills/i-vulcan/README.md
-- [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
-- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
-- [[Skill ci]] - document - .agents/skills/i-ci/SKILL.md
-- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
-- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
-- [[Skill sdlc]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
-- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
-- [[System Audit Vault]] - document - .agents/skills/i-sav/README.md
-- [[Technical Writer (TW)]] - document - .agents/skills/i-tw/README.md
-- [[Usage_5]] - document - .agents/skills/i-apollo/README.md
-- [[Usage_7]] - document - .agents/skills/i-atlas/README.md
-- [[Usage_8]] - document - .agents/skills/i-aws/README.md
-- [[Usage_10]] - document - .agents/skills/i-bs/README.md
-- [[Usage_11]] - document - .agents/skills/i-daedalus/README.md
-- [[Usage_12]] - document - .agents/skills/i-data/README.md
-- [[Usage_13]] - document - .agents/skills/i-eightd/README.md
-- [[Usage_14]] - document - .agents/skills/i-gg/README.md
-- [[Usage_17]] - document - .agents/skills/i-mac/README.md
-- [[Usage_19]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Usage_20]] - document - .agents/skills/i-mcpm/README.md
-- [[Usage_23]] - document - .agents/skills/i-pr/README.md
-- [[Usage_24]] - document - .agents/skills/i-sad/README.md
-- [[Usage_25]] - document - .agents/skills/i-sav/README.md
-- [[Usage_26]] - document - .agents/skills/i-sec-defense/README.md
-- [[Usage_27]] - document - .agents/skills/i-sec-offense/README.md
-- [[Usage_3]] - document - .agents/skills/i-sec/README.md
-- [[Usage_29]] - document - .agents/skills/i-tw/README.md
-- [[Usage_30]] - document - .agents/skills/i-vulcan/README.md
-- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
-- [[Vulcan — Subject Matter Auditor]] - document - .agents/skills/i-vulcan/README.md
-- [[hermesagentsi-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
-- [[openclawagentsi-security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[.get()]] - code - cli/src/main.rs
+- [[.get()_1]] - code - cli/src/main.rs
+- [[.new()_1]] - code - cli/src/main.rs
+- [[.new()]] - code - cli/src/main.rs
+- [[.new()_2]] - code - cli/src/main.rs
+- [[.ok()]] - code - cli/src/main.rs
+- [[.post()]] - code - cli/src/main.rs
+- [[.post()_1]] - code - cli/src/main.rs
+- [[.request()_1]] - code - cli/src/main.rs
+- [[.request()]] - code - cli/src/main.rs
+- [[.with()]] - code - cli/src/main.rs
+- [[AddResource]] - code - cli/src/main.rs
+- [[ApprovalAction]] - code - cli/src/main.rs
+- [[Client]] - code - cli/src/main.rs
+- [[Commands_1]] - code - cli/src/main.rs
+- [[FakeTransport]] - code - cli/src/main.rs
+- [[GatewayClient]] - code - cli/src/main.rs
+- [[GatewayClientT]] - code - cli/src/main.rs
+- [[GetResource]] - code - cli/src/main.rs
+- [[HttpResponse]] - code - cli/src/main.rs
+- [[HttpTransport]] - code - cli/src/main.rs
+- [[Method]] - code - cli/src/main.rs
+- [[Option]] - code - cli/src/main.rs
+- [[OutputFormat_1]] - code - cli/src/main.rs
+- [[RefCell]] - code - cli/src/main.rs
+- [[ReqwestTransport]] - code - cli/src/main.rs
+- [[Result]] - code - cli/src/main.rs
+- [[SclClient]] - code - cli/src/main.rs
+- [[Self]] - code - cli/src/main.rs
+- [[ServiceTarget]] - code - cli/src/main.rs
+- [[SetTarget]] - code - cli/src/main.rs
+- [[String]] - code - cli/src/main.rs
+- [[T]] - code - cli/src/main.rs
+- [[Value]] - code - cli/src/main.rs
+- [[Vec]] - code - cli/src/main.rs
+- [[approvals_list_empty()]] - code - cli/src/main.rs
+- [[approvals_list_errors_on_401()]] - code - cli/src/main.rs
+- [[approvals_list_formats_rows()]] - code - cli/src/main.rs
+- [[approve_sends_correct_body_and_path()]] - code - cli/src/main.rs
+- [[build_url()]] - code - cli/src/main.rs
+- [[build_url_trims_slashes()]] - code - cli/src/main.rs
+- [[cves_counts_array_when_no_total()]] - code - cli/src/main.rs
+- [[cves_formats_summary()]] - code - cli/src/main.rs
+- [[cves_reads_nested_summary()]] - code - cli/src/main.rs
+- [[cves_reads_summary_total_fallback()]] - code - cli/src/main.rs
+- [[cves_reports_unknown_bot_error()]] - code - cli/src/main.rs
+- [[cves_with_bot_id_appends_query()]] - code - cli/src/main.rs
+- [[decide_errors_on_404()]] - code - cli/src/main.rs
+- [[decide_errors_on_409_conflict()]] - code - cli/src/main.rs
+- [[deny_sends_false_and_formats()]] - code - cli/src/main.rs
+- [[deploy_status_errors_when_version_unauthorized()]] - code - cli/src/main.rs
+- [[deploy_status_formats_version_and_services()]] - code - cli/src/main.rs
+- [[deploy_status_no_services()]] - code - cli/src/main.rs
+- [[deploy_status_reads_version_endpoint()]] - code - cli/src/main.rs
+- [[encode_path_component()]] - code - cli/src/main.rs
+- [[encode_path_component_encodes_dots_and_dashes()]] - code - cli/src/main.rs
+- [[encode_path_component_encodes_special_chars()]] - code - cli/src/main.rs
+- [[encode_path_component_passes_simple()]] - code - cli/src/main.rs
+- [[format_approvals()]] - code - cli/src/main.rs
+- [[format_approvals_single_object()]] - code - cli/src/main.rs
+- [[format_cves()]] - code - cli/src/main.rs
+- [[format_decision()]] - code - cli/src/main.rs
+- [[format_deploy_status()]] - code - cli/src/main.rs
+- [[format_status()]] - code - cli/src/main.rs
+- [[format_status_handles_missing_fields()]] - code - cli/src/main.rs
+- [[json_str()]] - code - cli/src/main.rs
+- [[main()_1]] - code - cli/src/main.rs
+- [[main.rs]] - code - cli/src/main.rs
+- [[map_http_error()]] - code - cli/src/main.rs
+- [[map_http_error_401_message()]] - code - cli/src/main.rs
+- [[map_http_error_generic_status()]] - code - cli/src/main.rs
+- [[map_http_error_includes_detail()]] - code - cli/src/main.rs
+- [[map_http_error_none_on_success()]] - code - cli/src/main.rs
+- [[print_output()]] - code - cli/src/main.rs
+- [[render_output_json_is_still_pretty_json()]] - code - cli/src/main.rs
+- [[render_output_lines()]] - code - cli/src/main.rs
+- [[render_output_table_array_matches_prior_per_item_plus_separator_shape()]] - code - cli/src/main.rs
+- [[render_output_table_empty_array_produces_no_lines()]] - code - cli/src/main.rs
+- [[render_output_yaml_produces_real_yaml_not_json()]] - code - cli/src/main.rs
+- [[resolve_token()]] - code - cli/src/main.rs
+- [[resolve_token_empty_when_none()]] - code - cli/src/main.rs
+- [[resolve_token_falls_back_to_env()]] - code - cli/src/main.rs
+- [[resolve_token_prefers_cli()]] - code - cli/src/main.rs
+- [[run_approvals_decide()]] - code - cli/src/main.rs
+- [[run_approvals_list()]] - code - cli/src/main.rs
+- [[run_cves()]] - code - cli/src/main.rs
+- [[run_deploy_status()]] - code - cli/src/main.rs
+- [[run_status()]] - code - cli/src/main.rs
+- [[status_errors_on_401()]] - code - cli/src/main.rs
+- [[status_errors_when_gateway_down()]] - code - cli/src/main.rs
+- [[status_hits_correct_path()]] - code - cli/src/main.rs
+- [[status_parses_and_formats()]] - code - cli/src/main.rs
 
 ## Live Query (requires Dataview plugin)
 
@@ -105,42 +111,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
-- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Dete]]
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation]]
-- 1 edge to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
-- 1 edge to [[_COMMUNITY_Skill Branding Specialist (BS)]]
-- 1 edge to [[_COMMUNITY_Skill Code Review (CR)]]
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
-- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
-- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
-- 1 edge to [[_COMMUNITY_The 8D Investigation Process]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
-- 1 edge to [[_COMMUNITY_iCloud Services]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
-- 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
-- 1 edge to [[_COMMUNITY_Available MCP Servers]]
-- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
-- 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
-- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
-- 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
-- 1 edge to [[_COMMUNITY_System Audit & Documentation]]
-- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
-- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
-- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
-- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
-- 1 edge to [[_COMMUNITY_Technical Illustrator (i-ti)]]
-- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
+- 3 edges to [[_COMMUNITY__t()]]
+- 2 edges to [[_COMMUNITY_2. Security Value Audit]]
+- 2 edges to [[_COMMUNITY_launch-instance.sh]]
+- 2 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 2 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
+- 1 edge to [[_COMMUNITY_Telegram Channel Setup]]
+- 1 edge to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strat]]
+- 1 edge to [[_COMMUNITY_compute_scorecard()]]
 
 ## Top bridge nodes
-- [[.agentsskillsi-crSKILL]] - degree 67, connects to 36 communities
+- [[String]] - degree 32, connects to 8 communities
+- [[main.rs]] - degree 74, connects to 2 communities
+- [[Result]] - degree 14, connects to 1 community

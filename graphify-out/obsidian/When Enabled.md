@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "HTTP_PROXY / HTTPS_PROXY"
+community: "AuditStore"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_PROXY_/_HTTPS_PROXY
+  - community/AuditStore
 ---
 
 # When Enabled
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY
+#graphify/document #graphify/EXTRACTED #community/AuditStore

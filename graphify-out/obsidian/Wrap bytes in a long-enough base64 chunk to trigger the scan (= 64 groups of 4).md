@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "test_clamav_pipeline.py"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Wrap bytes in a long-enough base64 chunk to trigger the scan (>= 64 groups of 4)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_b64_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

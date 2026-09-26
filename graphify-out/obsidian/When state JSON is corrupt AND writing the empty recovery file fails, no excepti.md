@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "CollaboratorGreeter"
+community: "Validation Runner Specialist"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/Validation_Runner_Specialist
 ---
 
 # When state JSON is corrupt AND writing the empty recovery file fails, no excepti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_state_write_empty_fails_silently()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/rationale #graphify/EXTRACTED #community/Validation_Runner_Specialist

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Presidio Analyzer"
-location: "L56"
+community: "quick-setup.sh script"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Presidio_Analyzer
+  - community/quick-setupsh_script
 ---
 
 # Where Used
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer
+#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY-AUDIT.md"
 type: "rationale"
-community: "Zero-Trust Build (source never touches the host)"
+community: "Gateway observability (GET /status, GET /ledger,"
 location: "L100-L115"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Zero-Trust_Build_source_never_touches_the_host
+  - community/Gateway_observability_GET_/status_GET_/ledger
 ---
 
 # Zero-Trust Build (source never touches the host)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secure Multi-Stage Docker Build (builder discarded)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Zero-Trust_Build_source_never_touches_the_host
+#graphify/rationale #graphify/INFERRED #community/Gateway_observability_GET_/status_GET_/ledger

@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # .agents/skills/i-tw/SKILL.md
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[.agentsskillsi-twSKILL]] - document - .agents/skills/i-tw/SKILL.md
-- [[API  Function Reference]] - document - .agents/skills/i-tw/SKILL.md
-- [[Anti-Patterns to Flag_9]] - document - .agents/skills/i-tw/SKILL.md
-- [[Architecture Decision Record (ADR)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Changelog Entry]] - document - .agents/skills/i-tw/SKILL.md
-- [[Core Discipline Understand → Structure → Write → Validate]] - document - .agents/skills/i-tw/SKILL.md
-- [[Dependencies_10]] - document - .agents/skills/i-tw/SKILL.md
-- [[Document Structure]] - document - .agents/skills/i-tw/SKILL.md
-- [[Document-Type Patterns]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected output]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected ok]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected INFO Re-queued 3 jobs]] - document - .agents/skills/i-tw/SKILL.md
-- [[Formatting]] - document - .agents/skills/i-tw/SKILL.md
-- [[If not → escalate to field team via ops-alerts]] - document - .agents/skills/i-tw/SKILL.md
-- [[Query the control DB]] - document - .agents/skills/i-tw/SKILL.md
-- [[README — Entry Point for a Repo or Service]] - document - .agents/skills/i-tw/SKILL.md
-- [[Role_34]] - document - .agents/skills/i-tw/SKILL.md
-- [[Rules_10]] - document - .agents/skills/i-tw/SKILL.md
-- [[Runbook — Operational Decision Tree]] - document - .agents/skills/i-tw/SKILL.md
-- [[Skill Technical Writer (TW)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Validation Checklist_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[Voice & Tone_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[What Belongs Where]] - document - .agents/skills/i-tw/SKILL.md
-- [[Writing Style Rules]] - document - .agents/skills/i-tw/SKILL.md
-- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - .agents/skills/i-tw/SKILL.md
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - document - .agents/skills/i-tw/SKILL.md
+- [[API Keys]] - document - docker/scripts/README.md
+- [[Changing AI Model]] - document - docker/scripts/README.md
+- [[Common Tasks]] - document - docker/scripts/README.md
+- [[Container Management]] - document - docker/scripts/README.md
+- [[Debugging Issues]] - document - docker/scripts/README.md
+- [[Direct Docker Commands]] - document - docker/scripts/README.md
+- [[File Locations_1]] - document - docker/scripts/README.md
+- [[Initial Setup]] - document - docker/scripts/README.md
+- [[OpenClaw CLI]] - document - docker/scripts/README.md
+- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
+- [[Quick Reference_3]] - document - docker/scripts/README.md
+- [[README_116]] - document - docker/scripts/README.md
+- [[Security Notes]] - document - docker/scripts/README.md
+- [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
+- [[check-status.sh_1]] - document - docker/scripts/README.md
+- [[devices.sh_1]] - document - docker/scripts/README.md
+- [[dockerscripts README]] - document - docker/scripts/README.md
+- [[drift-detector.sh (planned)]] - concept - scripts/README.md
+- [[logs.sh_1]] - document - docker/scripts/README.md
+- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
+- [[restart.sh_1]] - document - docker/scripts/README.md
+- [[security-audit.sh (planned)]] - concept - scripts/README.md
+- [[set-model.sh_1]] - document - docker/scripts/README.md
+- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
+- [[telegram.sh_1]] - document - docker/scripts/README.md
+- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
+- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +44,9 @@ members: 26
 TABLE source_file, type FROM #community/agents/skills/i-tw/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_record_decision]]
+
+## Top bridge nodes
+- [[OpenClaw Management Scripts]] - degree 14, connects to 1 community

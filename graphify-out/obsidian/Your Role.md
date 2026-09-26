@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/agents/hermes-soul.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "10. Troubleshooting"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/10_Troubleshooting
 ---
 
 # Your Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

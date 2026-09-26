@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Applicat"
+community: "Daedalus — Concept Illustrator"
 location: "L819"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # What you MUST file within 12 months
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 5 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

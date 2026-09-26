@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "AgentShroud v1.2.0 Master Plan"
+community: "Any"
 location: "Workstream A"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v120_Master_Plan
+  - community/Any
 ---
 
 # Workstream A: Groups and Teamwork in OpenClaw
@@ -20,4 +20,4 @@ tags:
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan
+#graphify/concept #graphify/EXTRACTED #community/Any

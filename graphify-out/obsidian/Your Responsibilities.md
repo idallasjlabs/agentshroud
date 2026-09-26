@@ -1,20 +1,20 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
+community: "session-prompt-setup.sh"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/session-prompt-setupsh
 ---
 
 # Your Responsibilities
 
 ## Connections
-- [[A) Validation Execution]] - `contains` [EXTRACTED]
-- [[B) Result Reporting]] - `contains` [EXTRACTED]
-- [[C) Quality Gate Checks]] - `contains` [EXTRACTED]
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
+- [[A) Test Coverage Analysis]] - `contains` [EXTRACTED]
+- [[B) Edge Case Identification]] - `contains` [EXTRACTED]
+- [[C) Test Quality]] - `contains` [EXTRACTED]
+- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh

@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.13
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # .decide()
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[._append_audit_event()]] - code - gateway/approval_queue/queue.py
-- [[._expire_stale()]] - code - gateway/approval_queue/queue.py
-- [[._persist_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[.broadcast()_1]] - code - gateway/approval_queue/queue.py
-- [[.cleanup_decided()]] - code - gateway/approval_queue/queue.py
-- [[.decide()_1]] - code - gateway/approval_queue/queue.py
-- [[.get_item()_2]] - code - gateway/approval_queue/queue.py
-- [[.get_pending()_1]] - code - gateway/approval_queue/queue.py
-- [[.submit()_1]] - code - gateway/approval_queue/queue.py
-- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_53]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem_3]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest_4]] - code - gateway/approval_queue/queue.py
-- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
-- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
-- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
-- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
-- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
-- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
-- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
-- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
+- [[1. Generate the voice gateway token]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[2. Create `wifi_credentials.h`]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Adding a future agent]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Architecture_5]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Installation_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Prerequisites_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Security notes]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Troubleshooting_17]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Usage_121]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Wake word]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[voice-terminal-esp32-s3]] - document - docs/integrations/voice-terminal-esp32-s3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,14 +39,3 @@ members: 21
 TABLE source_file, type FROM #community/decide
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 9 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-
-## Top bridge nodes
-- [[.decide()_1]] - degree 7, connects to 2 communities
-- [[.submit()_1]] - degree 7, connects to 1 community
-- [[._append_audit_event()]] - degree 6, connects to 1 community
-- [[.broadcast()_1]] - degree 6, connects to 1 community
-- [[._expire_stale()]] - degree 6, connects to 1 community

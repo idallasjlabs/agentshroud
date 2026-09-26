@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "approval.py"
-location: "L119"
+community: "EncryptedStore"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/approvalpy
+  - graphify/INFERRED
+  - community/EncryptedStore
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[.__init__()_132]] - `references` [EXTRACTED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/approvalpy
+#graphify/code #graphify/INFERRED #community/EncryptedStore

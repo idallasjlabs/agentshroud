@@ -1,18 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "server.py"
+community: "container-runtime.sh"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/container-runtimesh
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[.connect()_1]] - `references` [EXTRACTED]
+- [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/container-runtimesh

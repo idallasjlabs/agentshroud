@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[Obsidian Vault Export (opt-in --obsidian)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

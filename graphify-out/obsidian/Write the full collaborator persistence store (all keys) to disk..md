@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "SCLClient"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/SCLClient
 ---
 
 # Write the full collaborator persistence store (all keys) to disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_write_collab_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/SCLClient

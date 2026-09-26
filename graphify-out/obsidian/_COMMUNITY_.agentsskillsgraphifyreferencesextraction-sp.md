@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[codex-review.sh]] - code - scripts/codex-review.sh
+- [[codex-review.sh script]] - code - scripts/codex-review.sh
 
 ## Live Query (requires Dataview plugin)
 

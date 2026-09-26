@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-kanbanSKILL]] - document - .agents/skills/i-kanban/SKILL.md
-- [[Skill kanban]] - document - .agents/skills/i-kanban/SKILL.md
+- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,42 +1,44 @@
 ---
 type: community
-cohesion: 0.11
-members: 27
+cohesion: 0.07
+members: 29
 ---
 
 # .claude/settings.json (hook + permission wiring)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[.claudesettings.json (hook + permission wiring)]] - code - .claude/settings.json
-- [[.geminisettings.json (Gemini CLI MCP config)]] - code - .gemini/settings.json
-- [[_install_hint() (nested helper)]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_convert_for_gemini()]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_ensure_production_gate_marker()]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_merge_claude_md()]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_reconcile_settings_local()]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_render_mcp()]] - code - .llm_settings/scripts/llm-init.sh
-- [[_llm_init_skill_allowed()]] - code - .llm_settings/scripts/llm-init.sh
-- [[auto_format_python.sh (PostToolUse hook)]] - code - .claude/scripts/claude-hooks/auto_format_python.sh
-- [[block_credential_read.sh (PreToolUse hook)]] - code - .claude/scripts/claude-hooks/block_credential_read.sh
-- [[block_credential_write.sh (PreToolUse hook)]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
-- [[block_main_commits.sh (PreToolUse hook)]] - code - .claude/scripts/claude-hooks/block_main_commits.sh
-- [[install.sh (git pre-commit hook installer)]] - code - .llm_settings/git-hooks/install.sh
-- [[llm-init() (main deployment function)]] - code - .llm_settings/scripts/llm-init.sh
-- [[llm-init.sh]] - code - .llm_settings/scripts/llm-init.sh
-- [[llm-init.sh script]] - code - .llm_settings/scripts/llm-init.sh
-- [[pre-commit (gitleaks + git-secrets gate)]] - code - .llm_settings/git-hooks/pre-commit
-- [[quick-setup.sh (security bootstrap orchestrator)]] - code - .llm_settings/scripts/security/quick-setup.sh
-- [[remind_proposal_review.sh (PostToolUse hook)]] - code - .claude/scripts/claude-hooks/remind_proposal_review.sh
-- [[require_impact_analysis.sh (PreToolUse hook, referenced)]] - code - .claude/scripts/claude-hooks/require_impact_analysis.sh
-- [[run_targeted_tests.sh (PostToolUse hook)]] - code - .claude/scripts/claude-hooks/run_targeted_tests.sh
-- [[security-audit.sh (gitleaksgit-secrets audit)]] - code - .llm_settings/scripts/security/security-audit.sh
-- [[setup-direnv.sh (direnv env-var setup)]] - code - .llm_settings/scripts/security/setup-direnv.sh
-- [[setup-env-store.sh (local MCP secrets store setup, referenced)]] - code - .llm_settings/scripts/security/setup-env-store.sh
-- [[setup-pgpass.sh (PostgreSQL password file setup, referenced)]] - code - .llm_settings/scripts/security/setup-pgpass.sh
-- [[warn_dangerous_bash.sh (PreToolUse hook)]] - code - .claude/scripts/claude-hooks/warn_dangerous_bash.sh
+- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,3 +46,9 @@ members: 27
 TABLE source_file, type FROM #community/claude/settingsjson_hook__permission_wiring
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
+
+## Top bridge nodes
+- [[test_voice_stt_model_ab.py]] - degree 15, connects to 1 community

@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 23
 ---
 
 # .get_or_create_session()
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[._save_sessions()]] - code - gateway/security/session_manager.py
-- [[._validate_bot_id()]] - code - gateway/security/session_manager.py
-- [[.add_conversation_message()]] - code - gateway/security/session_manager.py
-- [[.cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
-- [[.get_or_create_session()]] - code - gateway/security/session_manager.py
-- [[.get_session_context()]] - code - gateway/security/session_manager.py
-- [[.get_session_prompt_addition()]] - code - gateway/security/session_manager.py
-- [[.get_user_workspace_path()]] - code - gateway/security/session_manager.py
-- [[.reanchor_system_prompt()]] - code - gateway/security/session_manager.py
-- [[.to_dict()_10]] - code - gateway/security/session_manager.py
-- [[.update_user_trust_level()]] - code - gateway/security/session_manager.py
-- [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
-- [[Any_50]] - code - gateway/security/session_manager.py
-- [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
-- [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
-- [[Convert session to dictionary for serialization.]] - rationale - gateway/security/session_manager.py
-- [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
-- [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
-- [[Get session-specific prompt addition for the agent.]] - rationale - gateway/security/session_manager.py
-- [[Get the workspace path for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
-- [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
+- [[7-Layer Defense Architecture]] - document - docs/architecture/agentic-os.md
+- [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
+- [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Layer Reference]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Module Count by Layer]] - document - docs/architecture/agentic-os.md
+- [[Monitor Mode]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Overview_24]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Proxy Layer]] - document - docs/architecture/agentic-os.md
+- [[Related Notes_71]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Related Notes_72]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Related Notes_73]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Flow]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Layer Order]] - concept - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[`SecurityPipeline`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,14 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_.from_dict()]]
-- 2 edges to [[_COMMUNITY_.get_or_create_group_session()]]
-- 2 edges to [[_COMMUNITY_UserSession]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
+- 1 edge to [[_COMMUNITY__FakeUpstreamWS]]
+- 1 edge to [[_COMMUNITY_Goal Codex is a secondarytertiary agent used f]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
-- [[.get_or_create_session()]] - degree 13, connects to 4 communities
-- [[.add_conversation_message()]] - degree 6, connects to 2 communities
-- [[._save_sessions()]] - degree 7, connects to 1 community
-- [[Any_50]] - degree 5, connects to 1 community
-- [[.to_dict()_10]] - degree 4, connects to 1 community
+- [[`SecurityPipeline`]] - degree 11, connects to 3 communities
+- [[Full System Flowchart]] - degree 4, connects to 1 community

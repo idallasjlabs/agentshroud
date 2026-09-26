@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "_w()"
+community: "TestMultilingualInjection"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_w
+  - community/TestMultilingualInjection
 ---
 
 # Write a file under the sandbox root, creating parents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_w()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_w
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

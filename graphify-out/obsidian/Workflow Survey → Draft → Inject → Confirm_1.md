@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Output Sections (ALL required)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Output_Sections_ALL_required
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

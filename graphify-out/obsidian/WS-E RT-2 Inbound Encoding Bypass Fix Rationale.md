@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "TrustManager"
+community: "EgressFilter"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/EgressFilter
 ---
 
 # WS-E RT-2 Inbound Encoding Bypass Fix Rationale
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[EncodingDetector]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.26
 members: 13
 ---
 
 # .from_dict()
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.26 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[.__init__()_179]] - code - gateway/security/session_manager.py
-- [[._load_sessions()]] - code - gateway/security/session_manager.py
-- [[._session_key()]] - code - gateway/security/session_manager.py
-- [[.from_dict()_7]] - code - gateway/security/session_manager.py
-- [[.list_sessions_for_user()]] - code - gateway/security/session_manager.py
-- [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
-- [[ConversationMessage]] - code - gateway/security/session_manager.py
-- [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
-- [[Initialize session manager.          Args             base_workspace Base dire]] - rationale - gateway/security/session_manager.py
-- [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
-- [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
-- [[Path_44]] - code - gateway/security/session_manager.py
-- [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
+- [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
+- [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
+- [[PREREQUISITES]] - document - docs/reference/PREREQUISITES.md
+- [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
+- [[Telegram Bot]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Troubleshooting_20]] - document - docs/reference/QUICK_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_.get_or_create_session()]]
-- 1 edge to [[_COMMUNITY_UserSession]]
-- 1 edge to [[_COMMUNITY_cls]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 1 edge to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_ledger row (id, timestamp, source, hashes, sanit]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (SKILL)]]
 
 ## Top bridge nodes
-- [[.from_dict()_7]] - degree 7, connects to 3 communities
-- [[._session_key()]] - degree 5, connects to 2 communities
-- [[ConversationMessage]] - degree 4, connects to 2 communities
-- [[._load_sessions()]] - degree 5, connects to 1 community
-- [[.__init__()_179]] - degree 4, connects to 1 community
+- [[Quick Reference Commands]] - degree 11, connects to 2 communities
+- [[QUICK_REFERENCE]] - degree 5, connects to 2 communities
+- [[PREREQUISITES]] - degree 4, connects to 2 communities

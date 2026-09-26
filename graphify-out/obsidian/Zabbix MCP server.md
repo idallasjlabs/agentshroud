@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_ADDITIONAL_SERVICES.md"
 type: "concept"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "Section 5"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Zabbix MCP server
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/concept #graphify/INFERRED #community/Skill_MCP_Doctor_MCPM-DOCTOR

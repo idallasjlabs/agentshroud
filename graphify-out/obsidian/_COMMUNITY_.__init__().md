@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # .__init__()
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.__init__()_40]] - code - gateway/approval_queue/queue.py
-- [[._load_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueConfig]] - code - gateway/approval_queue/queue.py
-- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
-- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
-- [[MFAGuard]] - code - gateway/approval_queue/queue.py
+- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
+- [[Purpose_9]] - document - .agents/skills/i-data/README.md
+- [[README_9]] - document - .agents/skills/i-data/README.md
+- [[Related Skills_9]] - document - .agents/skills/i-data/README.md
+- [[Usage_11]] - document - .agents/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[.__init__()_40]] - degree 5, connects to 1 community
-- [[._load_pending_store()]] - degree 3, connects to 1 community
+- [[Data Validation (DATA-VAL)]] - degree 5, connects to 1 community

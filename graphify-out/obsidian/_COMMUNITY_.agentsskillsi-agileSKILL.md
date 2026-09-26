@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
-- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
+- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
+- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
 
 ## Live Query (requires Dataview plugin)
 

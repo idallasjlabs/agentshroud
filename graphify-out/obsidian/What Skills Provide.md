@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Skill Creation Process"
+community: "approval.py"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/approvalpy
 ---
 
 # What Skills Provide
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[About Skills]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/approvalpy

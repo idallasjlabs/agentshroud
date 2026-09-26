@@ -1,22 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Canvas Skill"
-location: "L86"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Workflow
 
 ## Connections
-- [[1. Create HTML content]] - `contains` [EXTRACTED]
-- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
-- [[3. Find connected nodes]] - `contains` [EXTRACTED]
-- [[4. Present content]] - `contains` [EXTRACTED]
-- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

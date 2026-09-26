@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "concept"
-community: "security/__init__.py"
+community: "AgentShroud Data Assets (root)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/security/__init__py
+  - community/AgentShroud_Data_Assets_root
 ---
 
 # Wazuh (file integrity monitoring)
 
 ## Connections
-- [[security__init__.py]] - `references` [EXTRACTED]
+- [[__init__.py_9]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/security/__init__py
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestCollaboratorPersistence"
+community: "What You Must Do When Invoked"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Writes to one exclusion set must not clobber the other persisted keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_removed_and_paused_ids_coexist_independently()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/rationale #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

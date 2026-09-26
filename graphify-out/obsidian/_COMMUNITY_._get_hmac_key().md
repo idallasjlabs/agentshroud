@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # ._get_hmac_key()
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[._get_hmac_key()]] - code - gateway/security/prompt_guard.py
-- [[.register_system_prompt()]] - code - gateway/security/prompt_guard.py
-- [[.verify_system_prompt()]] - code - gateway/security/prompt_guard.py
-- [[Compute and return an HMAC-SHA256 fingerprint for the system prompt.]] - rationale - gateway/security/prompt_guard.py
-- [[Return HMAC key env var preferred, session-scoped random fallback.]] - rationale - gateway/security/prompt_guard.py
-- [[Return True if prompt_text matches the stored HMAC fingerprint.]] - rationale - gateway/security/prompt_guard.py
+- [[GSDE&G Development Master Checklist (MC)_2]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_89]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[README_94]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Related Skills_95]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_98]] - document - docker/config/openclaw/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[.register_system_prompt()]] - degree 4, connects to 2 communities
-- [[.verify_system_prompt()]] - degree 4, connects to 2 communities
-- [[._get_hmac_key()]] - degree 4, connects to 1 community
+- [[GSDE&G Development Master Checklist (MC)_2]] - degree 5, connects to 1 community

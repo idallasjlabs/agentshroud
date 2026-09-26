@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.15
 members: 14
 ---
 
 # ._process_connect()
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[._agent_id_for_peer()]] - code - gateway/proxy/http_proxy.py
-- [[._clamav_scan_bytes()]] - code - gateway/proxy/http_proxy.py
-- [[._handle_client()]] - code - gateway/proxy/http_proxy.py
-- [[._process_connect()]] - code - gateway/proxy/http_proxy.py
-- [[._relay()]] - code - gateway/proxy/http_proxy.py
-- [[._relay_and_scan()]] - code - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - rationale - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer, sampling the first scan_limit bytes         fo]] - rationale - gateway/proxy/http_proxy.py
-- [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
-- [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
-- [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_3]] - code - gateway/proxy/http_proxy.py
-- [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
-- [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
+- [[1. GitHub MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[2. Atlassian MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 2 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
+- 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
+- 1 edge to [[_COMMUNITY__any_detector_fires()]]
 
 ## Top bridge nodes
-- [[StreamReader_3]] - degree 6, connects to 2 communities
-- [[StreamWriter_2]] - degree 6, connects to 2 communities
-- [[._clamav_scan_bytes()]] - degree 4, connects to 2 communities
-- [[._process_connect()]] - degree 8, connects to 1 community
-- [[._relay_and_scan()]] - degree 7, connects to 1 community
+- [[Step 4 Restart Codex]] - degree 3, connects to 2 communities
+- [[Authentication Reset Procedures_1]] - degree 4, connects to 1 community

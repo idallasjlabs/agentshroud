@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions: Credential Security (Ultra-"
+community: "AgentShroud v1.2.0 Master Plan"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # Why This Rule?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 The Ultra-Conservative Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

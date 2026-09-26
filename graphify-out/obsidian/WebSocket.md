@@ -1,31 +1,25 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L4745"
+community: "TelegramAPIProxy"
+location: "L498"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # WebSocket
 
 ## Connections
-- [[Action]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[slack_ws_relay()]] - `references` [EXTRACTED]
+- [[.connect()]] - `references` [EXTRACTED]
+- [[.disconnect()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

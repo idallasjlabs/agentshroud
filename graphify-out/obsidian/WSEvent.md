@@ -1,22 +1,30 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L34"
+community: "EncryptedStore"
+location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # WSEvent
 
 ## Connections
-- [[._keepalive_loop()]] - `calls` [EXTRACTED]
-- [[._send_event()]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
+- [[.test_construction()_2]] - `calls` [EXTRACTED]
+- [[.test_send_event_serializes()]] - `calls` [EXTRACTED]
+- [[.test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
+- [[.test_wsevent_passthrough()]] - `calls` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[_coerce_to_ws_event()]] - `references` [EXTRACTED]
+- [[WebSocket_6]] - `uses` [INFERRED]
+- [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
+- [[_connectWS()]] - `shares_data_with` [INFERRED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

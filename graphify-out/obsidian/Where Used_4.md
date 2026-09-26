@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L19"
+community: "Pre-commit hook strategy (framework vs manual)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Pre-commit_hook_strategy_framework_vs_manual
 ---
 
 # Where Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual

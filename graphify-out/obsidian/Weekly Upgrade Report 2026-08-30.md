@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
-community: "Local-Model Job Quality Matrix"
+community: "KeyRotationConfig"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/KeyRotationConfig
 ---
 
 # Weekly Upgrade Report 2026-08-30
@@ -17,4 +17,4 @@ tags:
 - [[Sidecar Gap Finding (declared vs running)]] - `references` [EXTRACTED]
 - [[Upgrade Report Snapshot 20260830-2009]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/document #graphify/EXTRACTED #community/KeyRotationConfig

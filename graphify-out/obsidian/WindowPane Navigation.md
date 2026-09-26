@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "tmux Session Control"
+community: "AgentShroud Branding Assets Index"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Window/Pane Navigation
 
 ## Connections
-- [[Common Commands]] - `contains` [EXTRACTED]
+- [[Common Commands_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

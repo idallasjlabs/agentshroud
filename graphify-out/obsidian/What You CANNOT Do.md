@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
-location: "L43"
+community: "session-prompt-setup.sh"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/session-prompt-setupsh
 ---
 
 # What You CANNOT Do
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
+- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh

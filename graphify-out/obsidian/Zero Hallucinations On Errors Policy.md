@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/daily-memory-journal.txt"
 type: "rationale"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "TELEGRAM_ISSUES.md"
 location: "L3"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Zero Hallucinations On Errors Policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Memory Journal Job (nightly memory consolidation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

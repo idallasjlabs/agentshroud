@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "AgentShroud v1.2.0 Master Plan"
+community: "Any"
 location: "Workstream B"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v120_Master_Plan
+  - community/Any
 ---
 
 # Workstream B: Security Features from Competitive Intel
@@ -17,7 +17,7 @@ tags:
 - [[B.1 — Lock the lead 26+ modules]] - `contains` [EXTRACTED]
 - [[B.2 — Strengthen the report pipeline itself]] - `contains` [EXTRACTED]
 - [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - `references` [EXTRACTED]
-- [[Source of truth]] - `contains` [EXTRACTED]
+- [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan
+#graphify/concept #graphify/EXTRACTED #community/Any

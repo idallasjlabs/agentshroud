@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "falco_monitor.py"
+community: "GroupApprovalRouter"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/GroupApprovalRouter
 ---
 
 # What Wazuh Monitors in AgentShroud
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter

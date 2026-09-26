@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "web_config.py"
+community: "notion"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/notion
 ---
 
 # WebProxyConfig Fields
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/notion

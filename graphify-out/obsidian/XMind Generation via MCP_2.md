@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "iCloud Services"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/iCloud_Services
 ---
 
 # XMind Generation via MCP
@@ -16,4 +16,4 @@ tags:
 - [[MCP Tool xmind-generator-mcp_2]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

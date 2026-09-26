@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-architecture-reviewSKILL]] - document - .agents/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
+- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
 
 ## Live Query (requires Dataview plugin)
 

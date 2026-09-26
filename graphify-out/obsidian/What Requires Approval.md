@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Skill: Mindmap Architect (MM)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # What Requires Approval?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Understanding Approval Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

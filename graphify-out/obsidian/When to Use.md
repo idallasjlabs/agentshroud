@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "tmux Session Control"
-location: "L12"
+community: "Claude Code skill catalog (59 skills)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # When to Use
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.11
 members: 18
 ---
 
 # .process_tool_call()
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[._emit_privacy_event()]] - code - gateway/proxy/mcp_proxy.py
-- [[._execute_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[._extract_egress_targets()]] - code - gateway/proxy/mcp_proxy.py
-- [[._sanitize_admin_private_data()]] - code - gateway/proxy/mcp_proxy.py
-- [[.check_approval_required()]] - code - gateway/proxy/mcp_proxy.py
-- [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_result()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[.send_request()_2]] - code - gateway/proxy/mcp_proxy.py
-- [[Actually execute the tool call against the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Best-effort privacy event emission.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Check if a tool call requires approval and wait for it if needed.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Extract outbound URL-like targets from nested MCP tool parameters.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process a tool result coming back (for cases where execution happens externally)]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process an MCP tool call through the security pipeline.          Args]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Redact admin-private data from tool results for non-owner agents.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Send an HTTP request to the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Adversary Model_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Attack Phases_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Attack Techniques Reference_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Coverage Requirements_4]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Critical Rules_11]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Infrastructure_10]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Key Principle_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Output_6]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 2 Prompt Injection_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 3 Indirect Injection_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 4 Data Exfiltration_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 5 Exploitation Chains_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 6 Detection Validation_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[SKILL_191]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Test Structure_6]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Writing Exploit Tests_3]] - document - skills/custom/agentshroud-redteam/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,17 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/process_tool_call
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 9 edges to [[_COMMUNITY_MCPToolCall]]
-- 7 edges to [[_COMMUNITY_MCPServerConfig]]
-- 4 edges to [[_COMMUNITY_StdioConnection]]
-- 2 edges to [[_COMMUNITY_MCPToolResult]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-
-## Top bridge nodes
-- [[._execute_tool_call()]] - degree 8, connects to 3 communities
-- [[.process_tool_result()_1]] - degree 6, connects to 3 communities
-- [[.process_tool_call()]] - degree 9, connects to 2 communities
-- [[.get_or_create()]] - degree 6, connects to 2 communities
-- [[._emit_privacy_event()]] - degree 5, connects to 2 communities

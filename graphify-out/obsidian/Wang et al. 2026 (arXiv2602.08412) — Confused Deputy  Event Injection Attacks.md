@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "paper"
-community: "SessionManager"
+community: "ProgressiveLockdown"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/ProgressiveLockdown
 ---
 
 # Wang et al. 2026 (arXiv:2602.08412) — Confused Deputy / Event Injection Attacks
@@ -14,4 +14,4 @@ tags:
 - [[oauth_security.py]] - `cites` [EXTRACTED]
 - [[session_security.py]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/SessionManager
+#graphify/paper #graphify/EXTRACTED #community/ProgressiveLockdown

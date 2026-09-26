@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-chaos-engineeringSKILL]] - document - .agents/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[emergency-rollback.sh]] - code - scripts/emergency-rollback.sh
+- [[emergency-rollback.sh script]] - code - scripts/emergency-rollback.sh
 
 ## Live Query (requires Dataview plugin)
 

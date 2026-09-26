@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.14
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # .dispatch()
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[._format_alert_message()]] - code - gateway/security/alert_dispatcher.py
-- [[._is_duplicate()]] - code - gateway/security/alert_dispatcher.py
-- [[._is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
-- [[._log_alert()]] - code - gateway/security/alert_dispatcher.py
-- [[._send_notification()]] - code - gateway/security/alert_dispatcher.py
-- [[.dispatch()]] - code - gateway/security/alert_dispatcher.py
-- [[.get_digest()]] - code - gateway/security/alert_dispatcher.py
-- [[.get_stats()_1]] - code - gateway/security/alert_dispatcher.py
-- [[Any_3]] - code - gateway/security/alert_dispatcher.py
-- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
-- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
-- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
+- [[AgentShroud Typography Guidelines]] - document - branding/typography/typography.md
+- [[Body Text]] - document - branding/typography/typography.md
+- [[CodeMonospace]] - document - branding/typography/typography.md
+- [[Do's_1]] - document - branding/typography/typography.md
+- [[Don'ts_1]] - document - branding/typography/typography.md
+- [[Font Families]] - document - branding/typography/typography.md
+- [[Font Weights]] - document - branding/typography/typography.md
+- [[Headings]] - document - branding/typography/typography.md
+- [[Letter Spacing]] - document - branding/typography/typography.md
+- [[Line Heights]] - document - branding/typography/typography.md
+- [[Mobile]] - document - branding/typography/typography.md
+- [[Monospace (CodeTechnical)]] - document - branding/typography/typography.md
+- [[Platform-Specific]] - document - branding/typography/typography.md
+- [[Primary Typeface]] - document - branding/typography/typography.md
+- [[Print]] - document - branding/typography/typography.md
+- [[Type Scale]] - document - branding/typography/typography.md
+- [[Usage Guidelines_2]] - document - branding/typography/typography.md
+- [[Web]] - document - branding/typography/typography.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection]]
 
 ## Top bridge nodes
-- [[.dispatch()]] - degree 7, connects to 1 community
-- [[._send_notification()]] - degree 5, connects to 1 community
-- [[._format_alert_message()]] - degree 4, connects to 1 community
-- [[._log_alert()]] - degree 4, connects to 1 community
-- [[.get_digest()]] - degree 3, connects to 1 community
+- [[AgentShroud Typography Guidelines]] - degree 8, connects to 1 community

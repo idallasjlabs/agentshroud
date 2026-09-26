@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # WSEventType
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[_handleWSEvent()]] - `shares_data_with` [INFERRED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

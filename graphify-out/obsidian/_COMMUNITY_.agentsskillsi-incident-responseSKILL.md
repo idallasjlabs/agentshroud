@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-incident-responseSKILL]] - document - .agents/skills/i-incident-response/SKILL.md
-- [[Skill incident-response]] - document - .agents/skills/i-incident-response/SKILL.md
+- [[export-openapi.sh]] - code - scripts/export-openapi.sh
+- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
 
 ## Live Query (requires Dataview plugin)
 

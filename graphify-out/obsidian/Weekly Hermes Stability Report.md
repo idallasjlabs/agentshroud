@@ -1,13 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Weekly Hermes Stability Report"
+community: "ControlCenter"
+location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weekly_Hermes_Stability_Report
+  - community/ControlCenter
 ---
 
 # Weekly Hermes Stability Report
 
-#graphify/document #graphify/EXTRACTED #community/Weekly_Hermes_Stability_Report
+## Connections
+- [[Job details]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

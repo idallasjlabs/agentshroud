@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # WebSocket /ws/activity receives emitted events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_activity_receives_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

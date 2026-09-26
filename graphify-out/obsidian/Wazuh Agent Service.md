@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Marvin Dev Overlay (port and subnet offsets from"
+community: "TestOutboundClassifierHelpers"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Wazuh Agent Service
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gateway-start.sh entrypoint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

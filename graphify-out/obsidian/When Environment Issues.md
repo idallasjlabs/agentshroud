@@ -1,17 +1,17 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner Specialist"
+community: "SOCWebSocketHandler"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/SOCWebSocketHandler
 ---
 
 # When Environment Issues
 
 ## Connections
-- [[Error Handling]] - `contains` [EXTRACTED]
+- [[Error Handling_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler

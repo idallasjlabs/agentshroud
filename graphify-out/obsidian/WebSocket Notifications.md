@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "API Keys Setup Guide"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/API_Keys_Setup_Guide
 ---
 
 # WebSocket Notifications
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "api.py"
-location: "L882"
+community: "TestCollaboratorPromptClassifiers"
+location: "L561"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/apipy
+  - graphify/EXTRACTED
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,17 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skills by Category"
-location: "L183"
+community: "Credential Management - 1Password Integration"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Workflow
 
 ## Connections
-- [[Skills by Category_1]] - `contains` [EXTRACTED]
+- [[1. Create HTML content]] - `contains` [EXTRACTED]
+- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
+- [[3. Find connected nodes]] - `contains` [EXTRACTED]
+- [[4. Present content]] - `contains` [EXTRACTED]
+- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

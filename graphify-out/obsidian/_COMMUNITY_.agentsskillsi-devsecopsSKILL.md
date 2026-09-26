@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-devsecopsSKILL]] - document - .agents/skills/i-devsecops/SKILL.md
-- [[Skill devsecops]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 

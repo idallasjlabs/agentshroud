@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[.githubworkflowsmerge-regression-audit.yml_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[audio_volume_tick() — zipper-free ramp + NVS persist]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

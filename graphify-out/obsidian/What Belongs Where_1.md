@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
+community: "_make_tm()"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/_make_tm
 ---
 
 # What Belongs Where
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/document #graphify/EXTRACTED #community/_make_tm

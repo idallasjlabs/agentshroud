@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-scrumSKILL]] - document - .agents/skills/i-scrum/SKILL.md
-- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
+- [[prefetch-ghsa-registry.sh]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[prefetch-ghsa-registry.sh script]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 
 ## Live Query (requires Dataview plugin)
 

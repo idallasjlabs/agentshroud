@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "8. Governance Model"
+community: "Slack Channel Setup"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/8_Governance_Model
+  - community/Slack_Channel_Setup
 ---
 
 # Weekly Upgrades: EVERYTHING Means Everything
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud CLAUDE.md operating rules]] - `references` [EXTRACTED]
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/8_Governance_Model
+#graphify/rationale #graphify/INFERRED #community/Slack_Channel_Setup

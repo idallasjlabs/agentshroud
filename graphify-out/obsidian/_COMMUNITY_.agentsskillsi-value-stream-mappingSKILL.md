@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.agentsskillsi-value-stream-mappingSKILL]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
+- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
 
 ## Live Query (requires Dataview plugin)
 

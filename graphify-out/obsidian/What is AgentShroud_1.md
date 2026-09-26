@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud User Guide"
-location: "L5"
+community: "detect_runtime()"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/detect_runtime
 ---
 
 # What is AgentShroud?
 
 ## Connections
-- [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/detect_runtime

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "TrustManager"
+community: "ServiceManager"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ServiceManager
 ---
 
 # Write 1000 audit entries in under 5 seconds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_1000_entries_under_5s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

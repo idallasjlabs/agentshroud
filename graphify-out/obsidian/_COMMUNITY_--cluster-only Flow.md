@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
 
 ## Live Query (requires Dataview plugin)
 

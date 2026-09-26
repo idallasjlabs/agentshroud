@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "wazuh_client.py"
+community: "clamav.md"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/clamavmd
 ---
 
 # Wazuh Level to Severity Mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

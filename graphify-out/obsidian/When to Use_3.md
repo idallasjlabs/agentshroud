@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Kill Switch Procedure"
-location: "L11"
+community: "AgentShroud Branding Assets Index"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # When to Use
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

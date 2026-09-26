@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "TestCollaboratorPersistence"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/TestCollaboratorPersistence
 ---
 
 # What Belongs Where
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "rationale"
-community: "awslabs.aws-api-mcp-server configuration (--read"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "Section 8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Warn-first hook strategy (PreToolUse/PostToolUse)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY developer configuration)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

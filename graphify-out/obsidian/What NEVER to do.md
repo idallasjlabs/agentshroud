@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
-location: "L274"
+community: "TestRewriteRequestHeaders"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/TestRewriteRequestHeaders
 ---
 
 # What NEVER to do
 
 ## Connections
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - `contains` [EXTRACTED]
+- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/TestRewriteRequestHeaders

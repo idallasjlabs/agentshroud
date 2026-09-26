@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.connect()_2]] - code - gateway/approval_queue/queue.py
-- [[.disconnect()_1]] - code - gateway/approval_queue/queue.py
-- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
-- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
-- [[WebSocket_8]] - code - gateway/approval_queue/queue.py
+- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 
 ## Top bridge nodes
-- [[.connect()_2]] - degree 3, connects to 1 community
-- [[.disconnect()_1]] - degree 3, connects to 1 community
+- [[IV. System Architecture]] - degree 5, connects to 1 community

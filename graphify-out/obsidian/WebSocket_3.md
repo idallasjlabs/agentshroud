@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L498"
+community: "TestCollaboratorPromptClassifiers"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalRequest
+  - graphify/EXTRACTED
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()]] - `references` [EXTRACTED]
-- [[.disconnect()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
