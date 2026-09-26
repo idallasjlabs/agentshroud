@@ -16,8 +16,8 @@ tags:
 - [[.extract()_2]] - `calls` [EXTRACTED]
 - [[.fill_field()_2]] - `calls` [EXTRACTED]
 - [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated_2]] - `rationale_for` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

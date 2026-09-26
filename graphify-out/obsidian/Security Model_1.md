@@ -1,20 +1,21 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L217"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Security Model
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
-- [[Inbound Path]] - `contains` [EXTRACTED]
-- [[Mitigations in Place]] - `contains` [EXTRACTED]
-- [[Outbound Path]] - `contains` [EXTRACTED]
+- [[Approval Workflow]] - `contains` [EXTRACTED]
+- [[Audit Trail]] - `contains` [EXTRACTED]
+- [[Risk Classification]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[URL Access Control_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

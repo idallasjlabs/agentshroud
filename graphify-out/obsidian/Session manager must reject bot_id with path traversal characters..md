@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestSessionPathSeparation"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L530"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSessionPathSeparation
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Session manager must reject bot_id with path traversal characters.
@@ -15,4 +15,4 @@ tags:
 - [[.test_path_traversal_rejected_for_crafted_bot_id()]] - `rationale_for` [EXTRACTED]
 - [[.test_path_traversal_rejected_for_crafted_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSessionPathSeparation
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

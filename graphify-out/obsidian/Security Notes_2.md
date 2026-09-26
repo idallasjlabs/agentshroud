@@ -1,17 +1,19 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L306"
+community: "AgentShroud Documentation"
+location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/AgentShroud_Documentation
 ---
 
 # Security Notes
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Current Security Posture]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Recommendations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

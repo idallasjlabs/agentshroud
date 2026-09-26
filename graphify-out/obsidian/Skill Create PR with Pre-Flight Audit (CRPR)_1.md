@@ -1,20 +1,22 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "v1.3.0 — Platform Expansion (53 items)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
 
 ## Connections
-- [[Guardrails_12]] - `contains` [EXTRACTED]
-- [[Invocation_7]] - `contains` [EXTRACTED]
-- [[Role_65]] - `contains` [EXTRACTED]
+- [[Guardrails_8]] - `contains` [EXTRACTED]
+- [[Invocation_4]] - `contains` [EXTRACTED]
+- [[Role_47]] - `contains` [EXTRACTED]
+- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[SKILL_80]] - `contains` [EXTRACTED]
 - [[Step 0 — Pre-flight checks_1]] - `contains` [EXTRACTED]
 - [[Step 1 — Check for an in-progress merge_1]] - `contains` [EXTRACTED]
 - [[Step 2 — Merge without committing_1]] - `contains` [EXTRACTED]
@@ -25,6 +27,5 @@ tags:
 - [[Step 4 — Push the branch_1]] - `contains` [EXTRACTED]
 - [[Step 5 — Generate the PR description_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Create the PR_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

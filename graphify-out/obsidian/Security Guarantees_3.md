@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L298"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

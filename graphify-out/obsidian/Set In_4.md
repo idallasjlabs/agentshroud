@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "LOG_LEVEL"
-location: "L24"
+community: "lvgl_kawaii_face.c"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOG_LEVEL
+  - community/lvgl_kawaii_facec
 ---
 
 # Set In
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOG_LEVEL
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "SharedMemoryManager Merged Memory Tests"
+community: "Contact Information"
 location: "line 133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager_Merged_Memory_Tests
+  - community/Contact_Information
 ---
 
 # SharedMemoryManager Merged Memory Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SharedMemoryManager Topic-Scoped Memory Tests]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager_Merged_Memory_Tests
+#graphify/code #graphify/EXTRACTED #community/Contact_Information

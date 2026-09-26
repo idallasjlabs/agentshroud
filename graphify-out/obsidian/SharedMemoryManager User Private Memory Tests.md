@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "SharedMemoryManager User Private Memory Tests"
+community: "AgentShroud Gateway OpenAPI Spec"
 location: "line 107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager_User_Private_Memory_Tests
+  - community/AgentShroud_Gateway_OpenAPI_Spec
 ---
 
 # SharedMemoryManager User Private Memory Tests
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager_User_Private_Memory_Tests
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Gateway_OpenAPI_Spec

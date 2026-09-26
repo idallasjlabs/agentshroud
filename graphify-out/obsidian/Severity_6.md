@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Remediation"
+community: "dns_filter.py"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/dns_filterpy
 ---
 
 # Severity
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

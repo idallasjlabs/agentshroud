@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "notion"
+community: "Docker Volumes"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/Docker_Volumes
 ---
 
 # Setup
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

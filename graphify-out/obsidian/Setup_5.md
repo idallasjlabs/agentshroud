@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Features"
-location: "L64"
+community: "Backup & Restore Runbook — AgentShroud"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # Setup
 
 ## Connections
-- [[1. Install Dependencies]] - `contains` [EXTRACTED]
-- [[2. Configure]] - `contains` [EXTRACTED]
-- [[3. Run]] - `contains` [EXTRACTED]
-- [[4. Test]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

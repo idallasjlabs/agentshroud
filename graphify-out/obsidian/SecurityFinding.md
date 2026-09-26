@@ -1,17 +1,28 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Data Dictionary"
-location: "L184"
+source_file: "gateway/security/git_guard.py"
+type: "code"
+community: "LLMProxy"
+location: "L38"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/LLMProxy
 ---
 
 # SecurityFinding
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[._analyze_file_content()]] - `references` [EXTRACTED]
+- [[._analyze_script_content()]] - `references` [EXTRACTED]
+- [[._analyze_script_file()]] - `references` [EXTRACTED]
+- [[._quarantine_suspicious_files()]] - `references` [EXTRACTED]
+- [[._scan_git_hooks()]] - `references` [EXTRACTED]
+- [[._scan_package_json()]] - `references` [EXTRACTED]
+- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[._scan_setup_py()]] - `references` [EXTRACTED]
+- [[.scan_content()]] - `references` [EXTRACTED]
+- [[.scan_git_repository()]] - `references` [EXTRACTED]
+- [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
+- [[git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

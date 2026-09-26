@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "api.py"
+community: "SkillGuard"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/SkillGuard
 ---
 
 # Serve the main management dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

@@ -1,22 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L914"
+community: "start.sh"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/startsh
 ---
 
 # Security Verification
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Audit Trail Verification]] - `contains` [EXTRACTED]
-- [[Dashboard Security Events]] - `contains` [EXTRACTED]
-- [[Health Check Verification]] - `contains` [EXTRACTED]
-- [[Production Checklist]] - `contains` [EXTRACTED]
-- [[Security Testing]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/startsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SessionContext"
+community: "background.js"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/backgroundjs
 ---
 
 # SessionContext
@@ -23,4 +23,4 @@ tags:
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionContext
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

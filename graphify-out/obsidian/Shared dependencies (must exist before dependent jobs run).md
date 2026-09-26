@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 213"
+community: "TELEGRAM_ISSUES.md"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Shared dependencies (must exist before dependent jobs run)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

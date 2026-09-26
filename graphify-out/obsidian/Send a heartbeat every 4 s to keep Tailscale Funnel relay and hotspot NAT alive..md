@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "server.py"
+community: "test_a2a_policy.py"
 location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_keepalive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

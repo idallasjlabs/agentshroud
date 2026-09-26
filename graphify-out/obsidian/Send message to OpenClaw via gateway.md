@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "rationale"
-community: "chat_console.py"
+community: "ContainerInfo"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/ContainerInfo
 ---
 
 # Send message to OpenClaw via gateway
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[send_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chat_consolepy
+#graphify/rationale #graphify/EXTRACTED #community/ContainerInfo

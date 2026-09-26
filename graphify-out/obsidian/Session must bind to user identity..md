@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestAuth"
+community: "lifespan.py"
 location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/lifespanpy
 ---
 
 # Session must bind to user identity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_binding()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

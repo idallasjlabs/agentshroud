@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestSessionPathSeparation"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSessionPathSeparation
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Session directory path must embed bot_id so filesystem confirms isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_user_session_paths_contain_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSessionPathSeparation
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

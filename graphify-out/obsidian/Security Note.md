@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "RateLimiter"
-location: "L40"
+community: "TestInternalBannerMatcher"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/TestInternalBannerMatcher
 ---
 
 # Security Note
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimiter
+#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher

@@ -1,23 +1,24 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Skill: Branding Specialist (BS)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_15]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag]] - `contains` [EXTRACTED]
 - [[Brand System Components]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type]] - `contains` [EXTRACTED]
-- [[Role_46]] - `contains` [EXTRACTED]
-- [[Rules_17]] - `contains` [EXTRACTED]
+- [[Role_7]] - `contains` [EXTRACTED]
+- [[Rules]] - `contains` [EXTRACTED]
+- [[SKILL_10]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -12,16 +12,17 @@ tags:
 # Skill: Mindmap Architect (MM)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_3]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Frame → Structure → Generate → Validate]] - `contains` [EXTRACTED]
-- [[Dependencies_4]] - `contains` [EXTRACTED]
+- [[Dependencies_1]] - `contains` [EXTRACTED]
 - [[Export and Sharing Conventions]] - `contains` [EXTRACTED]
 - [[Hierarchy Design — Outline First]] - `contains` [EXTRACTED]
 - [[Markdown-to-Mindmap Conversion]] - `contains` [EXTRACTED]
 - [[Markmap Generation via MCP]] - `contains` [EXTRACTED]
-- [[Role_23]] - `contains` [EXTRACTED]
-- [[Rules_3]] - `contains` [EXTRACTED]
+- [[Role_20]] - `contains` [EXTRACTED]
+- [[Rules_1]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[SKILL_35]] - `contains` [EXTRACTED]
 - [[Use Case Patterns]] - `contains` [EXTRACTED]
 - [[Validation Checklist]] - `contains` [EXTRACTED]
 - [[When to Use Mindmaps vs Other Formats]] - `contains` [EXTRACTED]

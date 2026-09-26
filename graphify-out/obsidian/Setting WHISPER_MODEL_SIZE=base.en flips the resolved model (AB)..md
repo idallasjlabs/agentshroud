@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "test_voice_stt_model_ab.py"
+community: ".claude/settings.json (hook + permission wiring)"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/claude/settingsjson_hook__permission_wiring
 ---
 
 # Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (A/B).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_module_model_size_env_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/rationale #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring

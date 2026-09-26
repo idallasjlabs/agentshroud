@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L475"
+community: "Apple Reminders CLI (remindctl)"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Production Hardening]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

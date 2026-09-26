@@ -1,25 +1,26 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
 
 ## Connections
-- [[.agentsskillsi-hdevSKILL]] - `contains` [EXTRACTED]
-- [[Guardrails_3]] - `contains` [EXTRACTED]
-- [[Invocation_1]] - `contains` [EXTRACTED]
+- [[Guardrails_4]] - `contains` [EXTRACTED]
+- [[Invocation_2]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_1]] - `contains` [EXTRACTED]
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_1]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_1]] - `contains` [EXTRACTED]
-- [[Role_24]] - `contains` [EXTRACTED]
+- [[Role_22]] - `contains` [EXTRACTED]
+- [[SKILL_23]] - `contains` [EXTRACTED]
+- [[SKILL_38]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

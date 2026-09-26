@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # SharedMemoryManager
 
 ## Connections
-- [[.__init__()_143]] - `method` [EXTRACTED]
+- [[.__init__()_117]] - `method` [EXTRACTED]
 - [[._is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[._strip_private_content()]] - `method` [EXTRACTED]
 - [[.append_to_group_memory()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[High-level shared-memory API wrapping UserSessionManager storage.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestAuthorizationHelper]] - `uses` [INFERRED]
 - [[TestBotIdIsolationInSharedMemory]] - `uses` [INFERRED]
@@ -56,17 +56,17 @@ tags:
 - [[WorkspaceContext]] - `uses` [INFERRED]
 - [[get_group_memory()]] - `calls` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[shared_memory()]] - `calls` [EXTRACTED]
-- [[shared_memory()_2]] - `calls` [EXTRACTED]
 - [[shared_memory()_1]] - `calls` [EXTRACTED]
+- [[shared_memory()_2]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `contains` [EXTRACTED]
 - [[smm()]] - `calls` [EXTRACTED]
 - [[smm()_1]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

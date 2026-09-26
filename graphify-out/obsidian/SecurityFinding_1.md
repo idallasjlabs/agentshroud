@@ -1,28 +1,32 @@
 ---
-source_file: "gateway/security/git_guard.py"
-type: "code"
-community: "GitGuard"
-location: "L38"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "_process_inbound()"
+location: "L184"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/_process_inbound
 ---
 
 # SecurityFinding
 
 ## Connections
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `references` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_content()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `references` [EXTRACTED]
-- [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
-- [[git_guard.py]] - `contains` [EXTRACTED]
+- [[7a. Image scan (Trivy, CRITICAL+HIGH, prod's currently-running tags)]] - `contains` [EXTRACTED]
+- [[7b. `npm audit` — browser-extension]] - `contains` [EXTRACTED]
+- [[7c. Python dependency audit — GAP, not silently skipped]] - `contains` [EXTRACTED]
+- [[7d. WazuhSOC alerts — partial]] - `contains` [EXTRACTED]
+- [[7e. Base images (Dockerfiles) — inventoried, not re-verified against registry]] - `contains` [EXTRACTED]
+- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - `contains` [EXTRACTED]
+- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - `contains` [EXTRACTED]
+- [[GitHub-hosted findings]] - `contains` [EXTRACTED]
+- [[Language dependencies]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[Procedure_1]] - `contains` [EXTRACTED]
+- [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - `contains` [EXTRACTED]
+- [[Wazuh  SOC]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/document #graphify/EXTRACTED #community/_process_inbound

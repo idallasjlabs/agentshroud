@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # Seed stored score/level directly (same technique lifespan.py uses).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_set_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_tm
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

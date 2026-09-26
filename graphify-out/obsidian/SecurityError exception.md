@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "test_skill_guard.py"
 location: "class SecurityError"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/test_skill_guardpy
 ---
 
 # SecurityError exception
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser class]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
+community: "discover_upstream_versions.py"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/discover_upstream_versionspy
 ---
 
 # Server-side setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy

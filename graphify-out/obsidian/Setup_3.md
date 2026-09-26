@@ -1,17 +1,21 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "iCloud Services"
-location: "L10"
+community: "egress_monitor.py"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/egress_monitorpy
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[1. Install Dependencies]] - `contains` [EXTRACTED]
+- [[2. Configure]] - `contains` [EXTRACTED]
+- [[3. Run]] - `contains` [EXTRACTED]
+- [[4. Test]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

@@ -1,24 +1,24 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[.agentsskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
 - [[Common Issues & Fixes]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow]] - `contains` [EXTRACTED]
-- [[Output Format_13]] - `contains` [EXTRACTED]
-- [[Related Skills_112]] - `contains` [EXTRACTED]
-- [[Role_47]] - `contains` [EXTRACTED]
-- [[When to Invoke_4]] - `contains` [EXTRACTED]
+- [[Output Format_5]] - `contains` [EXTRACTED]
+- [[Related Skills_21]] - `contains` [EXTRACTED]
+- [[Role_18]] - `contains` [EXTRACTED]
+- [[SKILL_33]] - `contains` [EXTRACTED]
+- [[When to Invoke_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

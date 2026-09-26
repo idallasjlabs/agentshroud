@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "concept"
-community: "Self-Written Whisper Domain-Hint Prompt"
+community: "Cron: Competitive Landscape Update (Afternoon)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Self-Written_Whisper_Domain-Hint_Prompt
+  - community/Cron_Competitive_Landscape_Update_Afternoon
 ---
 
 # Self-Written Whisper Domain-Hint Prompt
 
-#graphify/concept #graphify/EXTRACTED #community/Self-Written_Whisper_Domain-Hint_Prompt
+#graphify/concept #graphify/EXTRACTED #community/Cron_Competitive_Landscape_Update_Afternoon

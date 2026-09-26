@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "Production Safety Checklist (SKILL)"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Set a per-agent egress policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_agent_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

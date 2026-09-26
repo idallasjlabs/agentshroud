@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Post-Deployment Validation"
+community: ".test_collaborator_hidden_channel_exfil_request_"
 location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-Deployment_Validation
+  - community/test_collaborator_hidden_channel_exfil_request_
 ---
 
 # Security Validation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-Deployment_Validation
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_hidden_channel_exfil_request_

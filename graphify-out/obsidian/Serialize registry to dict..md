@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # Serialize registry to dict.
 
 ## Connections
-- [[.to_dict()_9]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

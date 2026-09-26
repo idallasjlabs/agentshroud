@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ToolACLEnforcer"
 location: "L7297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ToolACLEnforcer
 ---
 
 # Send deterministic model status without model invocation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_local_model_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

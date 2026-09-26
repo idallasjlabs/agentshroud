@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Remediation"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Severity
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

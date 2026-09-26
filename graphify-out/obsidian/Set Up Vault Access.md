@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Setup Guide"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
 location: "L437"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/AgentShroud_v080_Watchtower__Execution_Summ
 ---
 
 # Set Up Vault Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ

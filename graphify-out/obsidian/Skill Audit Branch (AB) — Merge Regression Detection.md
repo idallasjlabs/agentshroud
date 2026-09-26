@@ -1,22 +1,23 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "CredentialInjector"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/CredentialInjector
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Guardrails_9]] - `contains` [EXTRACTED]
+- [[Guardrails]] - `contains` [EXTRACTED]
 - [[Invocation Forms]] - `contains` [EXTRACTED]
 - [[Jira  PR Comment Format]] - `contains` [EXTRACTED]
-- [[Role_61]] - `contains` [EXTRACTED]
+- [[Role_3]] - `contains` [EXTRACTED]
+- [[SKILL_1]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
 - [[Step 1 — Verify the script exists]] - `contains` [EXTRACTED]
 - [[Step 2 — Determine the target]] - `contains` [EXTRACTED]
 - [[Step 3 — Run the audit script]] - `contains` [EXTRACTED]
@@ -24,4 +25,4 @@ tags:
 - [[Step 5 — Classify findings]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/document #graphify/EXTRACTED #community/CredentialInjector

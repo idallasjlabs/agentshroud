@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "rationale"
-community: "Per-Agent Container Isolation Architecture"
+community: "start.sh"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/startsh
 ---
 
 # Shared-Nothing Isolation Design Principle
@@ -15,4 +15,4 @@ tags:
 - [[Trust Boundary Diagram]] - `semantically_similar_to` [INFERRED]
 - [[per-agent-isolation]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/rationale #graphify/INFERRED #community/startsh

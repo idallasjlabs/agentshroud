@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "api.py"
-location: "L29"
+community: "test_apply_patches.js"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/test_apply_patchesjs
 ---
 
 # Security
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/test_apply_patchesjs

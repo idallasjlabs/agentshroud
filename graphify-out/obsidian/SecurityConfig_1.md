@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[._load_config()_1]] - `references` [EXTRACTED]
 - [[Security configuration for browser automation_1]] - `rationale_for` [EXTRACTED]
-- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[browse.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

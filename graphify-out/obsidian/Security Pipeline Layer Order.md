@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "concept"
-community: "Network Topology"
+community: ".get_or_create_session()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/get_or_create_session
 ---
 
 # Security Pipeline Layer Order
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Security Pipeline Flow]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Network_Topology
+#graphify/concept #graphify/EXTRACTED #community/get_or_create_session

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "_seed_cron"
+community: "TELEGRAM_ISSUES.md"
 location: "L75-L87"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/_seed_cron
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Seed Job: Daily Memory Journal
@@ -16,4 +16,4 @@ tags:
 - [[Hermes cron Daily Memory Journal (silent, local delivery)]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Daily Memory Journal]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/_seed_cron
+#graphify/document #graphify/INFERRED #community/TELEGRAM_ISSUESmd

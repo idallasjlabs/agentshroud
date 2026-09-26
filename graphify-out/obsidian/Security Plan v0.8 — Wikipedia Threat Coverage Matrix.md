@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Security Hardening Plan Reset — Real Agent Conta"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Hardening_Plan_Reset__Real_Agent_Conta
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Security Plan v0.8 — Wikipedia Threat Coverage Matrix
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Threat Model Prompt Injection, Data Exfiltration, Misconfigured Instance]] - `references` [EXTRACTED]
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Hardening_Plan_Reset__Real_Agent_Conta
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

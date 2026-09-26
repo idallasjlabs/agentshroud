@@ -1,22 +1,23 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "TestParanoidConfig"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/TestParanoidConfig
 ---
 
 # Skill: Quality Assurance (QA)
 
 ## Connections
-- [[Objective_2]] - `contains` [EXTRACTED]
-- [[Output Format_11]] - `contains` [EXTRACTED]
+- [[Objective_5]] - `contains` [EXTRACTED]
+- [[Output Format_34]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - `contains` [EXTRACTED]
-- [[Role_45]] - `contains` [EXTRACTED]
+- [[Role_102]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_172]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/TestParanoidConfig

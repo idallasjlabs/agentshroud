@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
-location: "L80"
+community: "A2APolicyEngine"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/A2APolicyEngine
 ---
 
 # Security Note
 
 ## Connections
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine

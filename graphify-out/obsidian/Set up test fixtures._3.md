@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "OutboundInfoFilter"
-location: "L23"
+community: "export-openapi.sh"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/export-openapish
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_33]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_37]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/export-openapish

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "Skill: Project Management (PM)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Skill_Project_Management_PM
 ---
 
 # Security Modules (30+, gateway diagram)
@@ -15,4 +15,4 @@ tags:
 - [[prompt_guard (prompt injection)]] - `shares_data_with` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/image #graphify/EXTRACTED #community/Skill_Project_Management_PM

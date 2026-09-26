@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "EgressTelegramNotifier"
+community: "TrustManager"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/TrustManager
 ---
 
 # Send Telegram message with time-limited approve/deny buttons.          Buttons:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.notify_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

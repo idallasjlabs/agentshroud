@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "sunday-upgrade.md"
+community: "OutputSchemaEnforcer"
 location: "prompts/sunday-upgrade.md:9"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/sunday-upgrademd
+  - community/OutputSchemaEnforcer
 ---
 
 # Seven-Week No-Op Upgrade Failure (PASS reported while upgrading nothing)
@@ -15,4 +15,4 @@ tags:
 - [[auto_remediate_cves.py]] - `rationale_for` [INFERRED]
 - [[sunday-upgrade]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/sunday-upgrademd
+#graphify/rationale #graphify/INFERRED #community/OutputSchemaEnforcer

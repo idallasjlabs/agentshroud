@@ -1,22 +1,23 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "TestAuditTrail"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/TestAuditTrail
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[.agentsskillsi-cdSKILL]] - `contains` [EXTRACTED]
 - [[Deployment Matrix  (Direct to Prod)]] - `contains` [EXTRACTED]
 - [[GitHub Actions Best Practices]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)]] - `contains` [EXTRACTED]
-- [[Role_6]] - `contains` [EXTRACTED]
+- [[Role_8]] - `contains` [EXTRACTED]
+- [[SKILL_11]] - `contains` [EXTRACTED]
+- [[SKILL_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/TestAuditTrail

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "test_redteam_probes.py"
-location: "L20"
+community: "MCPPermissionManager"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/MCPPermissionManager
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_29]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_36]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

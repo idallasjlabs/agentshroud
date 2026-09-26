@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "3. Brutally Honest Self-Assessment"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_Brutally_Honest_Self-Assessment
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # Should we continue or cut losses?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Brutally Honest Self-Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_Brutally_Honest_Self-Assessment
+#graphify/document #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

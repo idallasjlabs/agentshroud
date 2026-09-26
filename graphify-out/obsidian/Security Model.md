@@ -1,21 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L125"
+community: "Skill: Technical Illustrator (TI)"
+location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Security Model
 
 ## Connections
-- [[Approval Workflow]] - `contains` [EXTRACTED]
-- [[Audit Trail]] - `contains` [EXTRACTED]
-- [[Risk Classification]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[URL Access Control_1]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Inbound Path]] - `contains` [EXTRACTED]
+- [[Mitigations in Place]] - `contains` [EXTRACTED]
+- [[Outbound Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

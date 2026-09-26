@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
-location: "L71"
+community: "MiddlewareManager"
+location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/MiddlewareManager
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_16]] - `rationale_for` [EXTRACTED]
-- [[.setup_method()_17]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_21]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

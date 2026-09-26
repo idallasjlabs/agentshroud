@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "KeyRotationManager"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/KeyRotationManager
 ---
 
 # SecurityError
 
 ## Connections
-- [[.agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 - [[.click()]] - `calls` [EXTRACTED]
 - [[.extract()]] - `calls` [EXTRACTED]
 - [[.fill_field()]] - `calls` [EXTRACTED]
 - [[.navigate()]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
+- [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

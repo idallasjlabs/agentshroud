@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "rationale"
-community: "STPA-Sec Analysis of AgentShroud"
+community: "Function Details"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/STPA-Sec_Analysis_of_AgentShroud
+  - community/Function_Details
 ---
 
 # Separation of Concerns / Isolated Bot Accounts
@@ -14,4 +14,4 @@ tags:
 - [[Credential Isolation Architecture]] - `semantically_similar_to` [INFERRED]
 - [[PREREQUISITES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/Function_Details

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "AgentShroud Typography Guidelines"
 location: "Module 56"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Red_Team_Assessment_v120
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # SecurityPipeline: Central Inbound/Outbound Module Orchestrator
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - `calls` [INFERRED]
 - [[SSHProxy Controlled Remote Command Execution via Gateway API]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Typography_Guidelines

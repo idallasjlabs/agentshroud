@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "ssh-configuration.md"
 location: "L44-L57"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/ssh-configurationmd
 ---
 
 # Seed Job: Weekly Kaizen Review
@@ -16,4 +16,4 @@ tags:
 - [[Prompt Weekly Kaizen Review]] - `conceptually_related_to` [INFERRED]
 - [[Weekly Kaizen Review (Hermes Prompt)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/INFERRED #community/ssh-configurationmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "GatewayEmailService"
+community: "RateLimiter"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/RateLimiter
 ---
 
 # Sends owner-comms email over an injectable SMTP transport.
 
 ## Connections
-- [[GatewayEmailService_1]] - `rationale_for` [EXTRACTED]
+- [[GatewayEmailService]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

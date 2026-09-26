@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "main.rs"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/mainrs
 ---
 
 # ServiceManager
 
 ## Connections
-- [[.__init__()_107]] - `method` [EXTRACTED]
+- [[.__init__()_131]] - `method` [EXTRACTED]
 - [[._describe_service()]] - `method` [EXTRACTED]
 - [[._get_engine()]] - `method` [EXTRACTED]
 - [[._logs_via_socket()]] - `method` [EXTRACTED]
@@ -57,9 +57,9 @@ tags:
 - [[.update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_22]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
 - [[DisconnectRequest]] - `uses` [INFERRED]
@@ -67,17 +67,17 @@ tags:
 - [[EgressRuleOverrideRequest]] - `uses` [INFERRED]
 - [[EgressScopeRequest]] - `uses` [INFERRED]
 - [[EmergencyBlockRequest]] - `uses` [INFERRED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[HealthStatus]] - `uses` [INFERRED]
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `uses` [INFERRED]
 - [[SetModuleModeRequest]] - `uses` [INFERRED]
@@ -88,7 +88,7 @@ tags:
 - [[TestCheckOpenscap]] - `uses` [INFERRED]
 - [[TestCheckWazuhAgent]] - `uses` [INFERRED]
 - [[TestDescribeService]] - `uses` [INFERRED]
-- [[TestGetEngine]] - `uses` [INFERRED]
+- [[TestGetEngine_1]] - `uses` [INFERRED]
 - [[TestGetLogs]] - `uses` [INFERRED]
 - [[TestInspectViaSocket]] - `uses` [INFERRED]
 - [[TestKnownServices]] - `uses` [INFERRED]
@@ -101,20 +101,22 @@ tags:
 - [[TestStatusMappings]] - `uses` [INFERRED]
 - [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_FakeResponse]] - `uses` [INFERRED]
 - [[_FakeUnixSocket]] - `uses` [INFERRED]
-- [[get_health()]] - `calls` [EXTRACTED]
+- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `shares_data_with` [EXTRACTED]
+- [[_known_services()]] - `calls` [EXTRACTED]
+- [[get_health()_1]] - `calls` [EXTRACTED]
 - [[get_service_logs()]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
-- [[services.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
+- [[services.py]] - `references` [EXTRACTED]
 - [[start_service()]] - `calls` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/mainrs

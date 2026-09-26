@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "SecurityConfig"
+community: "ResourceGuard"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityConfig
+  - community/ResourceGuard
 ---
 
 # Security module configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityModuleConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityConfig
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "What You Must Do When Invoked"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # ServicePolicy
 
 ## Connections
 - [[.from_dict()_10]] - `calls` [EXTRACTED]
-- [[.from_dict()_11]] - `method` [EXTRACTED]
+- [[.from_dict()_9]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

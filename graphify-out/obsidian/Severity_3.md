@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Implement gateway-level outbound information fil"
+community: "Post-v1.0.0 — Deferred"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_fil
+  - community/Post-v100__Deferred
 ---
 
 # Severity
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill: Code Review (CR)"
+community: "Phase 2 — Security Core (HMAC Auth + PII Sanitiz"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
 ---
 
 # Skill: Code Review (CR)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Feedback Guidelines]] - `contains` [EXTRACTED]
-- [[Output Format_4]] - `contains` [EXTRACTED]
+- [[Output Format_2]] - `contains` [EXTRACTED]
 - [[Production-Specific Review Checks]] - `contains` [EXTRACTED]
 - [[Review Principles]] - `contains` [EXTRACTED]
-- [[Role_7]] - `contains` [EXTRACTED]
+- [[Role_9]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz

@@ -1,21 +1,22 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "openclaw/skills/i-browser/browse.js"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # Skill: Pre-Change Analysis (PCA)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Closing Gate]] - `contains` [EXTRACTED]
 - [[Output Format Rules]] - `contains` [EXTRACTED]
-- [[Output Sections (ALL required)_2]] - `contains` [EXTRACTED]
-- [[Role_13]] - `contains` [EXTRACTED]
+- [[Output Sections (ALL required)]] - `contains` [EXTRACTED]
+- [[Role_24]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[SKILL_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

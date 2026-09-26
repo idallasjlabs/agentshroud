@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "SessionManager"
+community: "test_dashboard.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SessionManager
+  - community/test_dashboardpy
 ---
 
 # SessionBindingError
@@ -16,11 +16,11 @@ tags:
 - [[SessionError]] - `inherits` [EXTRACTED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SessionManager
+#graphify/code #graphify/INFERRED #community/test_dashboardpy

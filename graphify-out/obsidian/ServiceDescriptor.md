@@ -1,22 +1,36 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L232"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
+location: "L154"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SOCWebSocketHandler
+  - graphify/EXTRACTED
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # ServiceDescriptor
 
 ## Connections
-- [[._describe_service()]] - `references` [EXTRACTED]
-- [[.get_service()]] - `references` [EXTRACTED]
-- [[.list_services()]] - `references` [EXTRACTED]
+- [[.test_defaults()_2]] - `calls` [EXTRACTED]
+- [[.test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
+- [[.test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
+- [[.test_running_service()]] - `calls` [EXTRACTED]
+- [[.test_standby_service()]] - `calls` [EXTRACTED]
+- [[.test_stopped_service()]] - `calls` [EXTRACTED]
+- [[.test_unhealthy_service()]] - `calls` [EXTRACTED]
+- [[.test_with_resource_usage()]] - `calls` [EXTRACTED]
+- [[Any_68]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_loadServices()]] - `shares_data_with` [INFERRED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[services.py]] - `imports` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

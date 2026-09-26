@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "What You Must Do When Invoked"
 location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PrivacyPolicyEnforcer
+  - graphify/EXTRACTED
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # ServicePrivacy
 
 ## Connections
-- [[.from_dict()_11]] - `calls` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

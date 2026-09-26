@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L72"
+community: "test_anthropic_openai_translator.py"
+location: "L475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Security Hardening
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Production Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

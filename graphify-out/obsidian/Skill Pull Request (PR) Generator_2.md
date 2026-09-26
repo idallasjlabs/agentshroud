@@ -1,21 +1,22 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "AgentShroud — Collaborator Knowledge Base"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # Skill: Pull Request (PR) Generator
 
 ## Connections
-- [[Constraints_9]] - `contains` [EXTRACTED]
+- [[Constraints_2]] - `contains` [EXTRACTED]
 - [[Content Requirements_2]] - `contains` [EXTRACTED]
-- [[Objective_5]] - `contains` [EXTRACTED]
-- [[Role_104]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Objective_4]] - `contains` [EXTRACTED]
+- [[Role_99]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_169]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

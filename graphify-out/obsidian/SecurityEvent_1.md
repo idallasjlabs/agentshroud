@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SecurityEvent"
+community: "ToolResultSanitizer"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/ToolResultSanitizer
 ---
 
 # SecurityEvent
@@ -17,7 +17,7 @@ tags:
 - [[.test_minimal_construction()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
 - [[.test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[Any_45]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]
@@ -28,9 +28,9 @@ tags:
 - [[from_dict()]] - `calls` [EXTRACTED]
 - [[from_egress_attempt()]] - `calls` [EXTRACTED]
 - [[from_pipeline_result()]] - `calls` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityEvent
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

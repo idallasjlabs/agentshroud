@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "_age()"
+community: "TestGroupRoleResolver"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_age
+  - community/TestGroupRoleResolver
 ---
 
 # Set a file's mtime to `hours` hours in the past.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_age()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_age
+#graphify/rationale #graphify/EXTRACTED #community/TestGroupRoleResolver

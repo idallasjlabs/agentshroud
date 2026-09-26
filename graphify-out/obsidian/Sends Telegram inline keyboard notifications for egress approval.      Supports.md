@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "EgressTelegramNotifier"
+community: "TrustManager"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/TrustManager
 ---
 
 # Sends Telegram inline keyboard notifications for egress approval.      Supports
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressTelegramNotifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager
