@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "KeyVault"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # PortResolution
@@ -16,7 +16,7 @@ tags:
 - [[.has_conflicts()]] - `method` [EXTRACTED]
 - [[.ports()]] - `method` [EXTRACTED]
 - [[.resolve_ports()]] - `references` [EXTRACTED]
-- [[.summary()_1]] - `method` [EXTRACTED]
+- [[.summary()]] - `method` [EXTRACTED]
 - [[.test_basic_mapping()]] - `calls` [EXTRACTED]
 - [[.test_has_conflicts()]] - `calls` [EXTRACTED]
 - [[.test_no_conflict_mapping()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
 - [[check_and_report()]] - `references` [EXTRACTED]
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

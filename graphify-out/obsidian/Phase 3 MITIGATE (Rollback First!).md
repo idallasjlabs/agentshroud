@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "TestStartupScannerKeying"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/TestStartupScannerKeying
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Rollback]] - `contains` [EXTRACTED]
 - [[Zabbix Rollback]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying

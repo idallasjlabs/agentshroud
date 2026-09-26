@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8G"
+community: "forward.py"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+  - community/forwardpy
 ---
 
 # Phase 1: OS Hardening & Cleanup
@@ -17,4 +17,4 @@ tags:
 - [[Snap Cleanup (Free Resources)]] - `contains` [EXTRACTED]
 - [[System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8G
+#graphify/document #graphify/EXTRACTED #community/forwardpy

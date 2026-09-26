@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "SECTION 7: FILING CHECKLIST"
+community: "TestRunUpstreamCveCheck"
 location: "L773"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_7_FILING_CHECKLIST
+  - community/TestRunUpstreamCveCheck
 ---
 
 # Pre-Filing Preparation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST
+#graphify/document #graphify/EXTRACTED #community/TestRunUpstreamCveCheck

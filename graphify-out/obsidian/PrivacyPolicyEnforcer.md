@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "Local-Model Job Quality Matrix"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[.__init__()_202]] - `method` [EXTRACTED]
+- [[.__init__()_107]] - `method` [EXTRACTED]
 - [[._get_role_value()]] - `method` [EXTRACTED]
 - [[._user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[.contains_private_data()]] - `method` [EXTRACTED]
-- [[.filter_response()_2]] - `method` [EXTRACTED]
+- [[.filter_response()_1]] - `method` [EXTRACTED]
 - [[.is_service_allowed()]] - `method` [EXTRACTED]
 - [[.should_alert()]] - `method` [EXTRACTED]
 - [[.should_audit()]] - `method` [EXTRACTED]
@@ -29,15 +29,15 @@ tags:
 - [[Evaluates access control and filters responses per privacy policy.]] - `rationale_for` [EXTRACTED]
 - [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
-- [[enforcer()_3]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[enforcer()_2]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

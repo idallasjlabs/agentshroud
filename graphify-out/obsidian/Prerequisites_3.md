@@ -1,17 +1,21 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "v0.9.0 — Apple Messages Integration"
-location: "L375"
+community: "Socrates — Dialogue Architect"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Prerequisites
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[Network Requirements]] - `contains` [EXTRACTED]
+- [[Software Dependencies]] - `contains` [EXTRACTED]
+- [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

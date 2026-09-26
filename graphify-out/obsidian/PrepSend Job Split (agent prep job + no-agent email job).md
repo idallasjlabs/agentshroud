@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 location: "L50-L67"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Prep/Send Job Split (agent prep job + no-agent email job)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/INFERRED #community/test_telegram_replaypy

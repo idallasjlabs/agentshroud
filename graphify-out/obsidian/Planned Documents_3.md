@@ -1,17 +1,17 @@
 ---
-source_file: "docs/testing/README.md"
+source_file: "docs/integrations/README.md"
 type: "document"
-community: "Testing Documentation"
+community: "alert_dispatcher.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Testing_Documentation
+  - community/alert_dispatcherpy
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Testing Documentation]] - `contains` [EXTRACTED]
+- [[Integrations Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Testing_Documentation
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

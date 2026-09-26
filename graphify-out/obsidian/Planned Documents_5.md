@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/README.md"
+source_file: "docs/requirements/README.md"
 type: "document"
-community: "1Password op-proxy (POST /credentials/op-proxy; "
+community: "Skill: Branding Specialist (BS)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_op-proxy_POST_/credentials/op-proxy_
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Integrations Documentation]] - `contains` [EXTRACTED]
+- [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

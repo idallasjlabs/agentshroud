@@ -1,17 +1,17 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docs/testing/README.md"
 type: "document"
-community: "03-data.md"
+community: "AWS Cloud Management & FinOps"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[Testing Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

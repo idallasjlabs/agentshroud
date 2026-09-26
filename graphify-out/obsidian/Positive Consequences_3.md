@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L49"
+community: "run_multi_host()"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/run_multi_host
 ---
 
 # Positive Consequences
 
 ## Connections
-- [[Consequences_4]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/run_multi_host

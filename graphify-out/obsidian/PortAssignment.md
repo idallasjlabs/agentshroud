@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "KeyVault"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # PortAssignment
@@ -24,7 +24,7 @@ tags:
 - [[TestIsPortAvailable]] - `uses` [INFERRED]
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

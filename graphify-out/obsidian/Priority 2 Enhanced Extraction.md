@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Future Enhancements"
+community: "TestIsFresh"
 location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/TestIsFresh
 ---
 
 # Priority 2: Enhanced Extraction
 
 ## Connections
-- [[Future Enhancements]] - `contains` [EXTRACTED]
+- [[Future Enhancements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/TestIsFresh

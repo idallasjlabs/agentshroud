@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "SlackSocketClient"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/SlackSocketClient
 ---
 
 # Pre-flight VRAM headroom check before dispatching a long-context local-model cal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_vram_headroom()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

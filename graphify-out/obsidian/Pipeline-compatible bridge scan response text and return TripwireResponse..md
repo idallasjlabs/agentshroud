@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # Pipeline-compatible bridge: scan response text and return TripwireResponse.
 
 ## Connections
-- [[.scan_response()]] - `rationale_for` [EXTRACTED]
+- [[.scan_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

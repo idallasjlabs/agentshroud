@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Cha"
+community: "StatusResponse"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Cha
+  - community/StatusResponse
 ---
 
 # Phase 5 — Stability: Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams
@@ -19,4 +19,4 @@ tags:
 - [[Phase 6 — Observability (planned) Tailscale config & serve, Prometheus+Grafana, Log aggregation (Loki)]] - `conceptually_related_to` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Cha
+#graphify/image #graphify/EXTRACTED #community/StatusResponse

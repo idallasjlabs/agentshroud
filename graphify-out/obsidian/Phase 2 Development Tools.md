@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Phase 2: Development Tools"
+community: "TestResourceBudgets"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2_Development_Tools
+  - community/TestResourceBudgets
 ---
 
 # Phase 2: Development Tools
@@ -19,4 +19,4 @@ tags:
 - [[Node.js (for OpenClaw & AgentShroud)]] - `contains` [EXTRACTED]
 - [[Python (for testing tools)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2_Development_Tools
+#graphify/document #graphify/EXTRACTED #community/TestResourceBudgets

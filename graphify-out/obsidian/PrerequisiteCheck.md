@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "detect_runtime()"
+community: "get_trivy_summary()"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/get_trivy_summary
 ---
 
 # PrerequisiteCheck
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

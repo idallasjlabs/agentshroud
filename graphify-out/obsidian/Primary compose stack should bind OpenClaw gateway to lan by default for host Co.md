@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "MCPToolCall"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/MCPToolCall
 ---
 
 # Primary compose stack should bind OpenClaw gateway to lan by default for host Co
 
 ## Connections
-- [[.test_main_compose_sets_openclaw_bind_lan_default()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_main_compose_sets_openclaw_bind_lan_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

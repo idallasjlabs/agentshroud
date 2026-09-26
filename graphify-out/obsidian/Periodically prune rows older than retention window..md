@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "test_telegram_replay.py"
+community: "_sleep()"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/_sleep
 ---
 
 # Periodically prune rows older than retention window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_if_due()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Git History Purge Plan"
+community: "Function Details"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/Function_Details
 ---
 
 # Post-Purge — Other Instances
@@ -17,4 +17,4 @@ tags:
 - [[Pi]] - `contains` [EXTRACTED]
 - [[Trillian (when back online)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/document #graphify/EXTRACTED #community/Function_Details

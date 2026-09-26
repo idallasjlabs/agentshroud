@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "Skill: Project Management (PM)"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Skill_Project_Management_PM
 ---
 
 # Phase 4: Data Exfiltration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

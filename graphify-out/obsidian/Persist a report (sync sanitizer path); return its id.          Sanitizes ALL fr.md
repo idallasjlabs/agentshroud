@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "ReportStore"
+community: "PortManager"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.save()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

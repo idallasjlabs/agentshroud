@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Function Details"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Function_Details
 ---
 
 # Phase A: Development Mode (Current)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Tailscale mesh VPN (tail240ea8.ts.net)"
+community: "test_listen_offset_resumes_partial_upload()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Tailscale_mesh_VPN_tail240ea8tsnet
+  - community/test_listen_offset_resumes_partial_upload
 ---
 
 # Pi (Raspberry Pi 4B) — Edge/test node
@@ -14,4 +14,4 @@ tags:
 - [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - `references` [EXTRACTED]
 - [[Tailscale mesh VPN (tail240ea8.ts.net)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Tailscale_mesh_VPN_tail240ea8tsnet
+#graphify/concept #graphify/EXTRACTED #community/test_listen_offset_resumes_partial_upload

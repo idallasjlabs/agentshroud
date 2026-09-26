@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "1.4 Implementation Plan"
+community: "ledger.py"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/ledgerpy
 ---
 
 # Phase 1: Pi Preparation (Prerequisites)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "concept"
-community: "awslabs.aws-api-mcp-server configuration (--read"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "Section 3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Plan Mode as default permission mode
@@ -15,4 +15,4 @@ tags:
 - [[Claude Code (PRIMARY developer configuration)]] - `references` [EXTRACTED]
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

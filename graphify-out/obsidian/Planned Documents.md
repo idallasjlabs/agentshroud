@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/README.md"
+source_file: "docs/api/README.md"
 type: "document"
-community: "Project Documentation"
+community: "🔵 LOW: Improvements & Formatting"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Documentation
+  - community/_LOW_Improvements__Formatting
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Project Documentation]] - `contains` [EXTRACTED]
+- [[API Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Documentation
+#graphify/document #graphify/EXTRACTED #community/_LOW_Improvements__Formatting

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/project/README.md"
 type: "document"
-community: "Approval Queue (human-in-the-loop)"
+community: "Skill: Branding Specialist (BS)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[Project Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

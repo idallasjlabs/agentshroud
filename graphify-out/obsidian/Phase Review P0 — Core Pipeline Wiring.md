@@ -1,25 +1,25 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "AgentShroud Prerequisites"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/AgentShroud_Prerequisites
 ---
 
 # Phase Review: P0 — Core Pipeline Wiring
 
 ## Connections
-- [[1. Accomplishments This Phase_2]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase_3]] - `contains` [EXTRACTED]
 - [[2. Security Value Audit_3]] - `contains` [EXTRACTED]
-- [[3. Remaining Work — Prioritized by Value_2]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
 - [[4. Risks & Gaps_3]] - `contains` [EXTRACTED]
 - [[5. Merge Readiness Assessment]] - `contains` [EXTRACTED]
 - [[AgentShroud Phase Review — 2026-02-23]] - `references` [EXTRACTED]
-- [[Conclusion]] - `contains` [EXTRACTED]
-- [[Executive Summary_6]] - `contains` [EXTRACTED]
+- [[Conclusion_1]] - `contains` [EXTRACTED]
+- [[Executive Summary_2]] - `contains` [EXTRACTED]
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 - [[phase-review-p0-2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

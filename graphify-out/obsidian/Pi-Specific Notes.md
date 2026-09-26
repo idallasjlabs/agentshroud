@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+community: "TestKillSwitchScript"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/TestKillSwitchScript
 ---
 
 # Pi-Specific Notes
@@ -17,4 +17,4 @@ tags:
 - [[Memory and Swap]] - `contains` [EXTRACTED]
 - [[seccomp on ARM64]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchScript

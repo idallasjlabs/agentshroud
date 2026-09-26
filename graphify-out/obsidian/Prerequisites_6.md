@@ -1,20 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L67"
+community: "TestKillSwitchScript"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/TestKillSwitchScript
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Other auth methods]] - `contains` [EXTRACTED]
-- [[Register an app (recommended)]] - `contains` [EXTRACTED]
-- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchScript

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Problem: Approved device still can't connect
 
 ## Connections
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

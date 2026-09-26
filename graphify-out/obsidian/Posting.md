@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Command Details"
+community: "AgentShroud Module Inventory"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Command_Details
+  - community/AgentShroud_Module_Inventory
 ---
 
 # Posting
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Command_Details
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Module_Inventory

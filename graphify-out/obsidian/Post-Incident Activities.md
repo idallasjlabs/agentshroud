@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Post-Incident Activities"
+community: "TestTextReaders"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-Incident_Activities
+  - community/TestTextReaders
 ---
 
 # Post-Incident Activities
@@ -17,4 +17,4 @@ tags:
 - [[Lessons Learned Integration]] - `contains` [EXTRACTED]
 - [[Post-Incident Review Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-Incident_Activities
+#graphify/document #graphify/EXTRACTED #community/TestTextReaders

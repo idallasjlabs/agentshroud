@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Future Enhancements"
+community: "TestIsFresh"
 location: "L360"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/TestIsFresh
 ---
 
 # Priority 5: Direct Gmail Configuration
 
 ## Connections
-- [[Future Enhancements]] - `contains` [EXTRACTED]
+- [[Future Enhancements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/TestIsFresh

@@ -12,6 +12,6 @@ tags:
 # Problem: "Bad owner or permissions on ~/.ssh/config"
 
 ## Connections
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

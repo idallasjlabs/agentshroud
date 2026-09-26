@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - REVISED"
+community: ".__init__()"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - community/__init__
 ---
 
 # Priority 1: Fix Broken Security (CRITICAL)
@@ -19,4 +19,4 @@ tags:
 - [[5. Set DM Policy to Allowlist]] - `contains` [EXTRACTED]
 - [[Immediate Action Plan (Phase 3A - Completion)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/document #graphify/EXTRACTED #community/__init__

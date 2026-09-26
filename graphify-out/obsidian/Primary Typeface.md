@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "AgentShroud Typography Guidelines"
+community: ".dispatch()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Typography_Guidelines
+  - community/dispatch
 ---
 
 # Primary Typeface
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Font Families]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines
+#graphify/document #graphify/EXTRACTED #community/dispatch

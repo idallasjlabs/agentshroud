@@ -1,42 +1,20 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "PipelineAction"
-location: "L51"
+community: "falco_monitor.py"
+location: "L22"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction
+  - community/falco_monitorpy
 ---
 
 # PipelineResult
 
 ## Connections
-- [[._maybe_record_trust_violation()]] - `references` [EXTRACTED]
-- [[._process_inbound_core()]] - `references` [EXTRACTED]
-- [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.process_inbound()_1]] - `references` [EXTRACTED]
-- [[.process_outbound()_1]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `method` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Result of running a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
-- [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
-- [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineExceptionNonOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineExceptionOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineWired]] - `uses` [INFERRED]
-- [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
-- [[TestOutboundPipelineIntegration]] - `calls` [EXTRACTED]
-- [[TestOutboundPipelineWired]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
-- [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[_make_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction
+#graphify/code #graphify/INFERRED #community/falco_monitorpy

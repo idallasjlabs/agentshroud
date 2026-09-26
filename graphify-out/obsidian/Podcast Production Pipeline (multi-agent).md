@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hermes/README.md"
 type: "concept"
-community: "Hermes Podcast Production Orchestrator README"
+community: "MCP OAuth preflight checker (mcp_oauth_preflight"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Podcast_Production_Orchestrator_README
+  - community/MCP_OAuth_preflight_checker_mcp_oauth_preflight
 ---
 
 # Podcast Production Pipeline (multi-agent)
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Podcast Production Orchestrator README]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes Reference Verifier Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Podcast_Production_Orchestrator_README
+#graphify/concept #graphify/EXTRACTED #community/MCP_OAuth_preflight_checker_mcp_oauth_preflight

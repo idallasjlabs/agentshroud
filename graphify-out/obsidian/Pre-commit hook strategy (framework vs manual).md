@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SECURITY_GUIDE.md"
 type: "concept"
-community: "Pre-commit hook strategy (framework vs manual)"
+community: "client_from_env()"
 location: "Git Security"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-commit_hook_strategy_framework_vs_manual
+  - community/client_from_env
 ---
 
 # Pre-commit hook strategy (framework vs manual)
@@ -17,4 +17,4 @@ tags:
 - [[detect-secrets pre-commit hook (baseline-driven)]] - `references` [EXTRACTED]
 - [[gitleaks pre-commit hook (template)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual
+#graphify/concept #graphify/EXTRACTED #community/client_from_env

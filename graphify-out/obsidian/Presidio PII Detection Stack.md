@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Presidio PII Detection Stack
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CWE Coverage]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/INFERRED #community/TestCheckCommandExecution

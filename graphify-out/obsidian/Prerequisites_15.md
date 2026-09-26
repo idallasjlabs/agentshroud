@@ -1,17 +1,20 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
-location: "L264"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Quickstart]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

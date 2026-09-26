@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "LLMProxy"
+community: "wakeword.h (PTT/WakeNet public API)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/wakewordh_PTT/WakeNet_public_API
 ---
 
 # Post-Retry Rate Limit Failover Tests
 
-## Connections
-- [[LLMProxy]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/wakewordh_PTT/WakeNet_public_API

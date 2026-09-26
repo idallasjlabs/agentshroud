@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "Docker Desktop Network Settings — Cisco AnyConne"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 ---
 
 # Persona
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne

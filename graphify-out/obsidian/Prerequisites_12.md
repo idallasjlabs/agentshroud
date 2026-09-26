@@ -1,17 +1,20 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / "
-location: "L3"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+  - community/AgentShroud_v080_Watchtower__Execution_Summ
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Optional Requirements]] - `contains` [EXTRACTED]
+- [[Supported Platforms]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ

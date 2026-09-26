@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "8. Performance & Testing"
+community: "AgentShroud Security Perimeter"
 location: "L413"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Performance__Testing
+  - community/AgentShroud_Security_Perimeter
 ---
 
 # Phase 10: Validation Checklist
@@ -18,4 +18,4 @@ tags:
 - [[GitHub Integration Test]] - `contains` [EXTRACTED]
 - [[System Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Performance__Testing
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Perimeter

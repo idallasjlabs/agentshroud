@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "ReportStore"
+community: "PortManager"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # Persist a report awaiting an async sanitizer (presidio) if injected.          Sa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.save_async()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/PortManager
