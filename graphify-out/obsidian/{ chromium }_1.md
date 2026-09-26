@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "openclaw/skills/i-browser/browse.js"
+community: "TestSpawnAuthorization"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/browsejs
+  - community/TestSpawnAuthorization
 ---
 
 # { chromium }
 
 ## Connections
-- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[browse.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/TestSpawnAuthorization

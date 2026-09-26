@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
+community: "killswitch.sh"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Blue_Team_Security_Assessme
+  - community/killswitchsh
 ---
 
 # §6 — SAST (Semgrep) Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme
+#graphify/document #graphify/EXTRACTED #community/killswitchsh

@@ -1,26 +1,26 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "TrustManager"
+community: "awslabs.aws-api-mcp-server configuration (--read"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/awslabsaws-api-mcp-server_configuration_--read
 ---
 
 # verify-proxy.sh
 
 ## Connections
-- [[fail()_1]] - `defines` [EXTRACTED]
-- [[info()_1]] - `defines` [EXTRACTED]
-- [[pass()_1]] - `defines` [EXTRACTED]
+- [[fail()_5]] - `defines` [EXTRACTED]
+- [[info()_2]] - `defines` [EXTRACTED]
+- [[pass()_3]] - `defines` [EXTRACTED]
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_bypass()]] - `defines` [EXTRACTED]
-- [[run_canary()]] - `defines` [EXTRACTED]
+- [[run_canary()_1]] - `defines` [EXTRACTED]
 - [[run_chain()]] - `defines` [EXTRACTED]
 - [[run_full()]] - `defines` [EXTRACTED]
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read

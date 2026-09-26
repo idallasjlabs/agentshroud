@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "wakeword.c"
+community: "A2AGovernanceProxy"
 location: "L517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/A2AGovernanceProxy
 ---
 
 # wakeword_deinit()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

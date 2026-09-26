@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "CollaboratorActivityTracker"
 location: "L1751"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/CollaboratorActivityTracker
 ---
 
 # test_ws_pipeline_error_logs_and_recovers_to_idle()
 
 ## Connections
-- [[When the STT→LLM→TTS pipeline raises, the inner exception handler must 1. log…]] - `rationale_for` [EXTRACTED]
-- [[_failing_transcribe()]] - `indirect_call` [INFERRED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[When the STT→LLM→TTS pipeline raises, the inner exception handler must       1.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

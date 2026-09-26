@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "scripts/security-scan.sh"
-location: "L51"
+community: "Workflow (follow in order)"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/security-scansh
+  - community/Workflow_follow_in_order
 ---
 
 # warn()
 
 ## Connections
-- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/Workflow_follow_in_order

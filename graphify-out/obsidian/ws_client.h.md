@@ -1,19 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.h"
 type: "code"
-community: "app_main.c"
+community: "Roadmap (v0.9.5 → v0.9.8 → v1.0.0 → Post-v1.0.0)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/Roadmap_v095__v098__v100__Post-v100
 ---
 
 # ws_client.h
 
-## Connections
-- [[app_main.c]] - `imports` [EXTRACTED]
-- [[ui_face.c]] - `imports` [EXTRACTED]
-- [[ws_client.c]] - `imports` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/Roadmap_v095__v098__v100__Post-v100

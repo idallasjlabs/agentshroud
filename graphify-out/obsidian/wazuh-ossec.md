@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "falco_monitor.py"
+community: "GroupApprovalRouter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/falco_monitorpy
+  - community/GroupApprovalRouter
 ---
 
 # wazuh-ossec.md
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `references` [INFERRED]
+- [[alert_dispatcher.py]] - `references` [INFERRED]
 - [[falco-rules]] - `references` [EXTRACTED]
-- [[falco_monitor.py_2]] - `conceptually_related_to` [INFERRED]
+- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
 - [[health_report.py]] - `references` [INFERRED]
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/falco_monitorpy
+#graphify/document #graphify/INFERRED #community/GroupApprovalRouter

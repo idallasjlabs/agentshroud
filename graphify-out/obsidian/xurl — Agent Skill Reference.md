@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # xurl — Agent Skill Reference
@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 - [[Common Workflows_2]] - `contains` [EXTRACTED]
-- [[Error Handling_1]] - `contains` [EXTRACTED]
+- [[Error Handling_8]] - `contains` [EXTRACTED]
 - [[Global Flags]] - `contains` [EXTRACTED]
-- [[Installation_1]] - `contains` [EXTRACTED]
-- [[Notes_5]] - `contains` [EXTRACTED]
-- [[Output Format_8]] - `contains` [EXTRACTED]
-- [[Prerequisites_6]] - `contains` [EXTRACTED]
-- [[Quick Reference_9]] - `contains` [EXTRACTED]
+- [[Installation_3]] - `contains` [EXTRACTED]
+- [[Notes_11]] - `contains` [EXTRACTED]
+- [[Output Format_41]] - `contains` [EXTRACTED]
+- [[Prerequisites_15]] - `contains` [EXTRACTED]
+- [[Quick Reference_10]] - `contains` [EXTRACTED]
 - [[Raw API Access]] - `contains` [EXTRACTED]
+- [[SKILL_240]] - `contains` [EXTRACTED]
 - [[Streaming_1]] - `contains` [EXTRACTED]
-- [[xurlSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

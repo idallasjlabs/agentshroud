@@ -1,17 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.h"
 type: "code"
-community: "wakeword.c"
+community: "AgentShroud Gateway OpenAPI Spec v1.2.1"
 location: "43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/AgentShroud_Gateway_OpenAPI_Spec_v121
 ---
 
 # ws_ctrl_cb_t (server control frame callback type)
 
-## Connections
-- [[_on_event]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Gateway_OpenAPI_Spec_v121

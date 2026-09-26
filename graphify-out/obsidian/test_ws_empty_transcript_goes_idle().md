@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "ToolACLEnforcer"
 location: "L1003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/ToolACLEnforcer
 ---
 
 # test_ws_empty_transcript_goes_idle()
 
 ## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
 - [[Empty STT result no LLM call, state goes directly to idle.]] - `rationale_for` [EXTRACTED]
-- [[Exception_4]] - `calls` [INFERRED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
-- [[patch]] - `calls` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

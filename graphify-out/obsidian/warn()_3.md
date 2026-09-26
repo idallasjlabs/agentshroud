@@ -1,18 +1,20 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "TrustManager"
-location: "L9"
+community: "Approval queue (notify Isaiah via Telegram, wait"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
 ---
 
 # warn()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_ensure_trivy()]] - `calls` [EXTRACTED]
+- [[sunday_resolve_scan_image()]] - `calls` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait

@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "test_a2a_policy.py"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # voice_endpoint()
 
 ## Connections
-- [[WebSocket_1]] - `references` [EXTRACTED]
+- [[WebSocket_8]] - `references` [EXTRACTED]
 - [[_answer_volume_query()]] - `calls` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[_call_llm_stream()]] - `calls` [EXTRACTED]
@@ -21,12 +21,9 @@ tags:
 - [[_keepalive()]] - `calls` [EXTRACTED]
 - [[_parse_model_switch_command()]] - `calls` [EXTRACTED]
 - [[_parse_volume_command()]] - `calls` [EXTRACTED]
-- [[_raw_text_chunks()]] - `contains` [EXTRACTED]
 - [[_send_state()]] - `calls` [EXTRACTED]
-- [[_synthesize_all()]] - `contains` [EXTRACTED]
 - [[_voice_system_message()]] - `calls` [EXTRACTED]
-- [[_watch_for_stop()]] - `contains` [EXTRACTED]
 - [[cmd_start()]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

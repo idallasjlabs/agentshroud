@@ -1,23 +1,26 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L739"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # triage_entry()
 
 ## Connections
-- [[Any_24]] - `references` [EXTRACTED]
-- [[Produce an honest mitigation verdict for a single advisory entry. Combines the…]] - `rationale_for` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
+- [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - `rationale_for` [EXTRACTED]
+- [[TestTriageEntry]] - `calls` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
-- [[classify()]] - `calls` [EXTRACTED]
+- [[_AGENT_CVE_REGISTRIES]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
 - [[is_source_fixed()]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `calls` [EXTRACTED]
+- [[triage_agent_full()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

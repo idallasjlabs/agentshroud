@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "Skill: UI Expert (UI)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/Skill_UI_Expert_UI
 ---
 
 # xml_leak_filter.py
@@ -16,7 +16,7 @@ tags:
 - [[CVE-2026-34425 — Preflight Validation Bypass (Shell-Bleed)]] - `references` [EXTRACTED]
 - [[FilterResult_1]] - `contains` [EXTRACTED]
 - [[LLMProxy._apply_filters]] - `shares_data_with` [INFERRED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[XMLLeakFilter]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/Skill_UI_Expert_UI

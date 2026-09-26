@@ -1,17 +1,17 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
+community: "agentshroud-ssh-exec.sh"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/agentshroud-ssh-execsh
 ---
 
 # ✅ Do
 
 ## Connections
-- [[Logo Usage Rules_1]] - `contains` [EXTRACTED]
+- [[Logo Usage Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh

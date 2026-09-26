@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "CollaboratorActivityTracker"
 location: "L1739"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/CollaboratorActivityTracker
 ---
 
 # test_ws_connectionclosed_ok_logs_info_no_traceback()
@@ -16,4 +16,4 @@ tags:
 - [[_run_disconnect_test()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

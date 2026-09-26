@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/update.md"
 type: "document"
-community: "Community 1288"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1288
+  - community/Apple_Services_Setup_Guide
 ---
 
 # update.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference incremental update and cluster-only]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1288
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

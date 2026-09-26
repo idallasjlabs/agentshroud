@@ -1,17 +1,21 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "test_playback_state.c"
-location: "L44"
+community: "_t()"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_t
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[test_playback_state.c]] - `contains` [EXTRACTED]
+- [[_deliver_utterance()]] - `calls` [EXTRACTED]
+- [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
+- [[app_main.c]] - `contains` [EXTRACTED]
+- [[voice_task()]] - `calls` [EXTRACTED]
+- [[wifi_event_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "test_ptt_state.c"
+community: "A2AGovernanceProxy"
 location: "L435"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_ptt_statec
+  - community/A2AGovernanceProxy
 ---
 
 # wakeword_clear()
@@ -19,7 +19,7 @@ tags:
 - [[test_push_frame_suppressed_while_triggered()]] - `calls` [INFERRED]
 - [[test_tap_in_idle_starts_listen()]] - `calls` [INFERRED]
 - [[test_vad_timeout_fires_without_audio()]] - `calls` [INFERRED]
-- [[voice_task]] - `calls` [INFERRED]
+- [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_ptt_statec
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

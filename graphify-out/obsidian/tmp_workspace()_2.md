@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_regressions_v1_2.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L38"
+community: "The 8D Investigation Process"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/The_8D_Investigation_Process
 ---
 
 # tmp_workspace()
 
 ## Connections
-- [[Isolated temporary workspace for session manager.]] - `rationale_for` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

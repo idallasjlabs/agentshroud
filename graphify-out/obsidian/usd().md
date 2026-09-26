@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "model_usage.py"
+community: "_build_image_targets"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/_build_image_targets
 ---
 
 # usd()
@@ -16,4 +16,4 @@ tags:
 - [[render_text_all()]] - `calls` [EXTRACTED]
 - [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/model_usagepy
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

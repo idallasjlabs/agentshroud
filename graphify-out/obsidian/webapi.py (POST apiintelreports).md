@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "FetchOutcome"
+community: "test_redteam_probes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/test_redteam_probespy
 ---
 
 # web/api.py (POST /api/intel/reports)
@@ -17,4 +17,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "post-deploy-check.sh"
+community: "Recommendations for Production Deployment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/post-deploy-checksh
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # update-agentshroud.sh
@@ -17,4 +17,4 @@ tags:
 - [[post-deploy-check.sh]] - `references` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh
+#graphify/code #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

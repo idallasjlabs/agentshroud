@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.h"
 type: "code"
-community: "wakeword.h (PTT/WakeNet public API)"
+community: "docker/QUICKSTART.md — 5-minute stack launch gui"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordh_PTT/WakeNet_public_API
+  - community/docker/QUICKSTARTmd__5-minute_stack_launch_gui
 ---
 
 # wakeword.h (PTT/WakeNet public API)
 
-#graphify/code #graphify/EXTRACTED #community/wakewordh_PTT/WakeNet_public_API
+#graphify/code #graphify/EXTRACTED #community/docker/QUICKSTARTmd__5-minute_stack_launch_gui

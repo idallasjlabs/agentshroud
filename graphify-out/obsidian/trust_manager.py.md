@@ -1,17 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
-type: "document"
-community: "TrustManager"
+source_file: "gateway/security/trust_manager.py"
+type: "code"
+community: "MemoryIntegrityMonitor"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MemoryIntegrityMonitor
 ---
 
-# trust_manager.py.md
+# trust_manager.py
 
 ## Connections
-- [[TrustManager_4]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
+- [[TrustConfig]] - `contains` [EXTRACTED]
+- [[TrustLevel]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `contains` [EXTRACTED]
+- [[TrustManager_1]] - `contains` [EXTRACTED]
+- [[ViolationType]] - `imports` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

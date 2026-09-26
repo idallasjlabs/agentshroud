@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "wazuh_client.py"
+community: "clamav.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/clamavmd
 ---
 
 # wazuh_client.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

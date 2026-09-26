@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "sunday-scan.sh"
-location: "L54"
+community: ".send()"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/send
 ---
 
 # warn()
 
 ## Connections
-- [[sunday-scan.sh_1]] - `defines` [EXTRACTED]
-- [[sunday_ensure_trivy()]] - `calls` [EXTRACTED]
-- [[sunday_resolve_scan_image()]] - `calls` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-scansh
+#graphify/code #graphify/EXTRACTED #community/send

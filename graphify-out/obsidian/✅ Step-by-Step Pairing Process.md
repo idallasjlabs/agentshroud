@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "TestInternalBannerMatcher"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/TestInternalBannerMatcher
 ---
 
 # ✅ Step-by-Step Pairing Process
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Enter the Gateway Token]] - `contains` [EXTRACTED]
 - [[Step 4 Verify Connection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher

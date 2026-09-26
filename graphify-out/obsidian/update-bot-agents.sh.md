@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Starting a Development Task via Hermes / OpenCla"
+community: "🛡️ AgentShroud Release Plan"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+  - community/_AgentShroud_Release_Plan
 ---
 
 # update-bot-agents.sh
@@ -18,4 +18,4 @@ tags:
 - [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
 - [[update-bot-agents.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+#graphify/code #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

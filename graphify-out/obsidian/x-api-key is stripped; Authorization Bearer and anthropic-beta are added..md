@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # x-api-key is stripped; Authorization: Bearer and anthropic-beta are added.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

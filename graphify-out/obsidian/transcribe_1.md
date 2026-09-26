@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Community 1386"
+community: "Any"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1386
+  - community/Any
 ---
 
 # transcribe.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference transcribe video and audio_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1386
+#graphify/document #graphify/EXTRACTED #community/Any

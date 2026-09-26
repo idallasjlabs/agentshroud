@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "§4 — Hermes-Specific Section (NEW — first assess"
+community: "colima-health-check.sh"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4__Hermes-Specific_Section_NEW__first_assess
+  - community/colima-health-checksh
 ---
 
 # §4 — Hermes-Specific Section (NEW — first assessment)
@@ -20,4 +20,4 @@ tags:
 - [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4__Hermes-Specific_Section_NEW__first_assess
+#graphify/document #graphify/EXTRACTED #community/colima-health-checksh

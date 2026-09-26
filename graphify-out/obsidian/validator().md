@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_token_validation.py"
+source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "_make_token()"
-location: "L38"
+community: "ProgressiveLockdown"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/ProgressiveLockdown
 ---
 
 # validator()
 
 ## Connections
-- [[TokenValidator]] - `uses` [INFERRED]
-- [[fixture_1]] - `references` [EXTRACTED]
-- [[test_token_validation.py]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
+- [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

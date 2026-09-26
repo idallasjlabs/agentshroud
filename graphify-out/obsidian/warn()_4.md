@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/container-net-diag.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "container-net-diag.sh"
-location: "L74"
+community: "Docker Compose (infra diagram)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Docker_Compose_infra_diagram
 ---
 
 # warn()
 
 ## Connections
-- [[container-net-diag.sh]] - `defines` [EXTRACTED]
-- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[security-scan.sh_1]] - `defines` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

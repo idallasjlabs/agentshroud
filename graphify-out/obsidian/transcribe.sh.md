@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "openai-whisper-api/SKILL.md"
+community: "web_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/web_proxypy
 ---
 
 # transcribe.sh
 
 ## Connections
-- [[openai-whisper-apiSKILL]] - `references` [EXTRACTED]
+- [[SKILL_221]] - `references` [EXTRACTED]
 - [[transcribe.sh script]] - `contains` [EXTRACTED]
-- [[usage()_6]] - `defines` [EXTRACTED]
+- [[usage()_5]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

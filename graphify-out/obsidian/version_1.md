@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/manifest.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
-community: "hermes/manifest.json"
-location: "L2"
+community: "._can_use_tool_impl()"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/_can_use_tool_impl
 ---
 
 # version
 
 ## Connections
-- [[openclawmanifest.json]] - `contains` [EXTRACTED]
+- [[manifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/code #graphify/EXTRACTED #community/_can_use_tool_impl

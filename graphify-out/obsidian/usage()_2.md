@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
+source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "find-sessions.sh"
-location: "L4"
+community: "._is_local_oom()"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/_is_local_oom
 ---
 
 # usage()
 
 ## Connections
-- [[wait-for-text.sh]] - `defines` [EXTRACTED]
-- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
+- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
+- [[workspace.sh]] - `defines` [EXTRACTED]
+- [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/find-sessionssh
+#graphify/code #graphify/EXTRACTED #community/_is_local_oom

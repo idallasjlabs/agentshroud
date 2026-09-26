@@ -12,7 +12,7 @@ tags:
 # ws_logs()
 
 ## Connections
-- [[WebSocket_4]] - `references` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - `rationale_for` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]

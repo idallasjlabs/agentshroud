@@ -1,12 +1,12 @@
 ---
 source_file: "docker/upgrade.sh"
 type: "code"
-community: "upgrade.sh"
+community: "logs.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgradesh
+  - community/logssh
 ---
 
 # upgrade.sh
@@ -15,4 +15,4 @@ tags:
 - [[Trillian Host Compose Override]] - `references` [EXTRACTED]
 - [[upgrade.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgradesh
+#graphify/code #graphify/EXTRACTED #community/logssh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "test_image_verifier.py"
+community: "MultiHostResult"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/MultiHostResult
 ---
 
 # verify_images: exception from one task is caught, others continue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_verify_images_exception_handled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

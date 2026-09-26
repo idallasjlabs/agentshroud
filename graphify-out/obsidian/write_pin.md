@@ -1,16 +1,16 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation()"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # write_pin
 
 ## Connections
-- [[test_auto_remediate_cves.py_1]] - `references` [EXTRACTED]
+- [[test_auto_remediate_cves.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

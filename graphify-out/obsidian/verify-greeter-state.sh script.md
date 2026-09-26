@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-greeter-state.sh"
 type: "code"
-community: "verify-greeter-state.sh"
+community: "Host Application Firewall Layer (Little Snitch /"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/verify-greeter-statesh
+  - community/Host_Application_Firewall_Layer_Little_Snitch_/
 ---
 
 # verify-greeter-state.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify-greeter-state.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/verify-greeter-statesh
+#graphify/code #graphify/EXTRACTED #community/Host_Application_Firewall_Layer_Little_Snitch_/

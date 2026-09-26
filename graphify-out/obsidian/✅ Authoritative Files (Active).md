@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
+community: "Network Topology"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/Network_Topology
 ---
 
 # ✅ Authoritative Files (Active)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Files Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

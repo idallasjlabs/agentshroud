@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
+source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "find-sessions.sh"
-location: "L4"
+community: "._filter_streaming_event()"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/_filter_streaming_event
 ---
 
 # usage()
 
 ## Connections
-- [[find-sessions.sh]] - `defines` [EXTRACTED]
-- [[find-sessions.sh script]] - `calls` [EXTRACTED]
+- [[killswitch.sh]] - `defines` [EXTRACTED]
+- [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/find-sessionssh
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

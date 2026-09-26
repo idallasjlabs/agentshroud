@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ConfigUpdate]] - `references` [EXTRACTED]
-- [[Path_24]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[Update configuration (writes YAML and optionally restarts).]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 - [[import_config()]] - `calls` [EXTRACTED]

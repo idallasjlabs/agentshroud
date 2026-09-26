@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "hermes/skills/i-icloud/scripts/calendar.js"
+community: "Daedalus — Concept Illustrator"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-icloud/scripts/calendarjs
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # { execSync }
 
 ## Connections
-- [[hermesskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[calendar.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

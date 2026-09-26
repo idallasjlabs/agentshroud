@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "agentshroud-manage.sh"
+community: "test-op-auth.sh"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/test-op-authsh
 ---
 
 # validate_input()
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
 - [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/code #graphify/EXTRACTED #community/test-op-authsh

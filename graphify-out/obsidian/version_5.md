@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: ".agents/skills/i-browser/package.json"
-location: "L3"
+community: "Key Skills in Detail"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-browser/packagejson
+  - community/Key_Skills_in_Detail
 ---
 
 # version
 
 ## Connections
-- [[.agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[manifest.json_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson
+#graphify/code #graphify/EXTRACTED #community/Key_Skills_in_Detail

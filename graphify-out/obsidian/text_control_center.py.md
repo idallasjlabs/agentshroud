@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
-type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
+source_file: "src/interfaces/text_control_center.py"
+type: "code"
+community: "TestNewPatternsV080"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/TestNewPatternsV080
 ---
 
-# text_control_center.py.md
+# text_control_center.py
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[ANSI]] - `contains` [EXTRACTED]
+- [[ControlCenter]] - `contains` [EXTRACTED]
+- [[main()_36]] - `contains` [EXTRACTED]
+- [[start-control-center]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080

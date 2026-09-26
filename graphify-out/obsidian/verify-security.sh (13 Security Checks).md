@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "concept"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "ContextSegment"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/ContextSegment
 ---
 
 # verify-security.sh (13 Security Checks)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/concept #graphify/EXTRACTED #community/ContextSegment

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "Skills by Category"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/Skills_by_Category
 ---
 
 # wazuh-agent service (standalone sidecar, split from gateway 2026-09-06)
@@ -15,5 +15,6 @@ tags:
 - [[agentshroud-isolated network (DMZ tier, internaltrue)]] - `shares_data_with` [EXTRACTED]
 - [[gateway service (prod, sole egress point, 75-module pipeline)]] - `references` [EXTRACTED]
 - [[wazuh service (proxy-mode HIDS sidecar)]] - `semantically_similar_to` [INFERRED]
+- [[wazuh-manager service]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/Skills_by_Category

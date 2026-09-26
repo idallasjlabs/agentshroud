@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "TestCollaboratorPersistence"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/TestCollaboratorPersistence
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
 ## Connections
-- [[.agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Changelog Entry]] - `contains` [EXTRACTED]
-- [[Dependencies_10]] - `contains` [EXTRACTED]
-- [[Validation Checklist_3]] - `contains` [EXTRACTED]
+- [[Dependencies_3]] - `contains` [EXTRACTED]
+- [[SKILL_59]] - `contains` [EXTRACTED]
+- [[Validation Checklist_2]] - `contains` [EXTRACTED]
 - [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

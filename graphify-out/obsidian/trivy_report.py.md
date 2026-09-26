@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
-type: "document"
-community: "trivy_report.py"
+source_file: "gateway/security/trivy_report.py"
+type: "code"
+community: "PrivacyPolicyEnforcer"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/PrivacyPolicyEnforcer
 ---
 
-# trivy_report.py.md
+# trivy_report.py
 
 ## Connections
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[generate_summary()_2]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_trivy_output()]] - `contains` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
+- [[save_report()_1]] - `contains` [EXTRACTED]
+- [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

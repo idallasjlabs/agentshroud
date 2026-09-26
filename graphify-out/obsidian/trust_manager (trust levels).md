@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "Skill: Project Management (PM)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Skill_Project_Management_PM
 ---
 
 # trust_manager (trust levels)
 
 ## Connections
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
-- [[TrustManager_4]] - `conceptually_related_to` [EXTRACTED]
+- [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/image #graphify/EXTRACTED #community/Skill_Project_Management_PM

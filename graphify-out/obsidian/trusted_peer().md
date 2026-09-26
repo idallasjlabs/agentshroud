@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2APeer"
+community: "hermes/skills/i-bs/README.md"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeer
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # trusted_peer()
@@ -15,4 +15,4 @@ tags:
 - [[A2APeer]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeer
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

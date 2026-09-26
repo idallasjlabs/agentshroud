@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "version_routes.py"
+community: "Step-by-Step Deployment"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Step-by-Step_Deployment
 ---
 
 # version_routes.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

@@ -1,19 +1,21 @@
 ---
 source_file: "docker/versions.env"
 type: "document"
-community: "auto_remediate_cves.py"
+community: "CI/CD Pipeline Advisor (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/auto_remediate_cvespy
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # versions.env
 
 ## Connections
-- [[asb]] - `references` [EXTRACTED]
+- [[TestVersion]] - `references` [EXTRACTED]
+- [[_read_running_version_str]] - `references` [EXTRACTED]
+- [[asb (AgentShroud Bot helper)]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `references` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
-- [[test_triage_cve_mitigations.py]] - `references` [EXTRACTED]
+- [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/auto_remediate_cvespy
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

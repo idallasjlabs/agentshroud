@@ -1,21 +1,22 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
+community: "Skill: Branding Specialist (BS)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
 ## Connections
 - [[Changelog Entry_2]] - `contains` [EXTRACTED]
-- [[Dependencies_12]] - `contains` [EXTRACTED]
-- [[Validation Checklist_5]] - `contains` [EXTRACTED]
+- [[Dependencies_15]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_185]] - `contains` [EXTRACTED]
+- [[Validation Checklist_8]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "agentshroud-gateway"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/agentshroud-gateway
 ---
 
 # ✅ Verification Tests
@@ -18,4 +18,4 @@ tags:
 - [[Test 3 Console Access (Should Display)]] - `contains` [EXTRACTED]
 - [[Test 4 Internal Use (Should Work)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

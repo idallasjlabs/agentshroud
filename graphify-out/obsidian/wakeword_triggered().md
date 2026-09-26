@@ -1,23 +1,22 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "test_ptt_state.c"
+community: "compute_scorecard()"
 location: "L416"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_ptt_statec
+  - community/compute_scorecard
 ---
 
 # wakeword_triggered()
 
 ## Connections
-- [[_on_vg_state]] - `calls` [INFERRED]
-- [[_send_status_beacon]] - `calls` [INFERRED]
-- [[_touch_pressed]] - `calls` [INFERRED]
-- [[_touch_start_only]] - `calls` [INFERRED]
+- [[_on_vg_state()]] - `calls` [INFERRED]
+- [[_send_status_beacon()]] - `calls` [INFERRED]
+- [[_touch_pressed()]] - `calls` [INFERRED]
+- [[_touch_start_only()]] - `calls` [INFERRED]
 - [[playback_step()]] - `calls` [INFERRED]
-- [[playback_step() — reproduces tts_task's gate-opendrain branches for testing]] - `calls` [EXTRACTED]
 - [[test_clear_allows_fresh_tap()]] - `calls` [INFERRED]
 - [[test_drain_keeps_face_off_idle_when_retriggered()]] - `calls` [INFERRED]
 - [[test_ptt_finish_ends_listening()]] - `calls` [INFERRED]
@@ -25,8 +24,8 @@ tags:
 - [[test_push_frame_suppressed_while_triggered()]] - `calls` [INFERRED]
 - [[test_tap_in_idle_starts_listen()]] - `calls` [INFERRED]
 - [[test_vad_timeout_fires_without_audio()]] - `calls` [INFERRED]
-- [[tts_task]] - `calls` [INFERRED]
-- [[voice_task]] - `calls` [INFERRED]
+- [[tts_task()]] - `calls` [INFERRED]
+- [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_ptt_statec
+#graphify/code #graphify/INFERRED #community/compute_scorecard
