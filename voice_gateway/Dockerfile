@@ -31,6 +31,14 @@ RUN useradd -m -u 1001 -s /sbin/nologin vg
 
 WORKDIR /app
 
+# 2026-09-26 Sunday upgrade: python:3.12-slim's bundled pip/setuptools are
+# vulnerable regardless of base-digest freshness (verified: the digest bump
+# above still ships pip 25.0.1 / setuptools 78.1.0) — OSV: pip GHSA-4xh5-x5gv-
+# qwph (fixed 25.3) + 5 more, setuptools GHSA-5rjg-fvgr-3xxf path traversal
+# (fixed 78.1.1). Upgrade explicitly rather than waiting on upstream to
+# rebuild the base image with a newer pip baked in.
+RUN pip install --no-cache-dir --upgrade pip setuptools
+
 # System deps: kokoro needs espeak-ng for phonemization; faster-whisper needs ffmpeg
 RUN apt-get update -qq && \
     apt-get upgrade -y && \
