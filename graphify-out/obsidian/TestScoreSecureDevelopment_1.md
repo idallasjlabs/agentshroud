@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scorecard_scoring.py"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # TestScoreSecureDevelopment
@@ -16,4 +16,4 @@ tags:
 - [[.test_one_baseline_no_configs()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/code #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

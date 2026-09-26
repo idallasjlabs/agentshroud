@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # The 8D Investigation Process
@@ -23,4 +23,4 @@ tags:
 - [[D7 — Systemic Prevention_1]] - `contains` [EXTRACTED]
 - [[D8 — Documentation & Recognition_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

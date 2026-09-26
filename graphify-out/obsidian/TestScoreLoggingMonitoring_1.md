@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L775"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # TestScoreLoggingMonitoring
 
 ## Connections
-- [[.test_one_when_no_wazuh_no_fluent()]] - `method` [EXTRACTED]
-- [[.test_two_when_wazuh_running()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_all_pillars()]] - `method` [EXTRACTED]
+- [[.test_one_baseline()]] - `method` [EXTRACTED]
+- [[.test_two_with_wazuh()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

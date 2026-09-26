@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestSSRFBlocking"
+community: "TestHermesEgressAllowlist"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFBlocking
+  - community/TestHermesEgressAllowlist
 ---
 
 # TestSSRFBlocking
@@ -27,8 +27,8 @@ tags:
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking
+#graphify/code #graphify/EXTRACTED #community/TestHermesEgressAllowlist

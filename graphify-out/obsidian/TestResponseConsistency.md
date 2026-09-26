@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Enum"
+community: "EncryptedStore"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # TestResponseConsistency
@@ -22,4 +22,4 @@ tags:
 - [[MultiTurnTracker]] - `uses` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

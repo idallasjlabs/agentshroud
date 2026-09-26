@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressAction"
+community: "ConsentFramework"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ConsentFramework
 ---
 
 # Tests for drift detector hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDriftDetectorHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAction
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

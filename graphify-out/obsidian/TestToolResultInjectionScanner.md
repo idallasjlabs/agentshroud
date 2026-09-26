@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "InjectionSeverity"
+community: "MCPPermissionManager"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/MCPPermissionManager
 ---
 
 # TestToolResultInjectionScanner
 
 ## Connections
-- [[.setup_method()_3]] - `method` [EXTRACTED]
-- [[.test_base64_encoded_injection()]] - `method` [EXTRACTED]
+- [[.setup_method()_36]] - `method` [EXTRACTED]
+- [[.test_base64_encoded_injection()_1]] - `method` [EXTRACTED]
 - [[.test_clean_content_passes_through()]] - `method` [EXTRACTED]
 - [[.test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]
 - [[.test_xml_function_injection_detection()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_injection_scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

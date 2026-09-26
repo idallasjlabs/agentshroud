@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L514"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_skill_guardpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # TestScanEntrypoint
@@ -17,10 +17,10 @@ tags:
 - [[.test_cli_fails_closed_on_unreadable_file()]] - `method` [EXTRACTED]
 - [[.test_cli_missing_source_nonzero()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_skill_guardpy
+#graphify/code #graphify/INFERRED #community/Skill_Technical_Illustrator_TI

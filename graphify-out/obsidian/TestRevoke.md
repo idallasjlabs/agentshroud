@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "make_event()"
 location: "L88"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # TestRevoke
@@ -15,10 +15,10 @@ tags:
 - [[.test_revoke_all_for_user()]] - `method` [EXTRACTED]
 - [[.test_revoke_removes_delegation()]] - `method` [EXTRACTED]
 - [[.test_revoke_returns_false_when_nothing_to_revoke()]] - `method` [EXTRACTED]
-- [[Delegation_1]] - `uses` [INFERRED]
+- [[Delegation]] - `uses` [INFERRED]
 - [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
+- [[DelegationManager]] - `uses` [INFERRED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DelegationManager
+#graphify/code #graphify/INFERRED #community/make_event

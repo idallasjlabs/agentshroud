@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # TestServiceDescriptor
@@ -16,4 +16,4 @@ tags:
 - [[.test_with_resource_usage()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

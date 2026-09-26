@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "_FakeRBAC"
+community: "MiddlewareManager"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/MiddlewareManager
 ---
 
 # TestSCLCaller
@@ -19,12 +19,12 @@ tags:
 - [[.test_require_allowed_does_not_raise()]] - `method` [EXTRACTED]
 - [[.test_require_denied_raises_403_with_reason()]] - `method` [EXTRACTED]
 - [[.test_require_denied_without_reason_uses_forbidden()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

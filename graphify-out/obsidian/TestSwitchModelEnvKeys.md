@@ -12,7 +12,7 @@ tags:
 # TestSwitchModelEnvKeys
 
 ## Connections
-- [[._run_and_read()_1]] - `method` [EXTRACTED]
+- [[._run_and_read()]] - `method` [EXTRACTED]
 - [[.test_anthropic_sets_cloud_mode()]] - `method` [EXTRACTED]
 - [[.test_local_coder_sets_local_multi_mode()]] - `method` [EXTRACTED]
 - [[.test_local_model_mode_is_local()]] - `method` [EXTRACTED]

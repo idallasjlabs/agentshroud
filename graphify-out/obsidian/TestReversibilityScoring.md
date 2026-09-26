@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Enum"
+community: "GroupRoleResolver"
 location: "L525"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # TestReversibilityScoring
@@ -21,8 +21,8 @@ tags:
 - [[ChainMatch]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_5]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/INFERRED #community/GroupRoleResolver

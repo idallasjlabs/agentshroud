@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "postmortem.md"
-location: "L13"
+community: "Core Security Principles"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/Core_Security_Principles
 ---
 
 # Timeline
 
 ## Connections
-- [[postmortem]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

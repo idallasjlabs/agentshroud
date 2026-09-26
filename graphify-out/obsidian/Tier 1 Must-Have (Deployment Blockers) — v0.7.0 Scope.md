@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+community: "Hermes Agent — Connection Setup"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Tier 1: Must-Have (Deployment Blockers) — v0.7.0 Scope
@@ -20,4 +20,4 @@ tags:
 - [[Sprint 5 Separation of Privilege (R-06, R-07)]] - `contains` [EXTRACTED]
 - [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

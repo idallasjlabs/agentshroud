@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "falco_monitor.py"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Threat Model
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

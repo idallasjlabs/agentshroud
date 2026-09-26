@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Enum"
+community: "EncryptedStore"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # Threat levels for detected issues.
 
 ## Connections
-- [[ThreatLevel_1]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

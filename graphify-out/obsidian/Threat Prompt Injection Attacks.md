@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "E - Elevation of Privilege"
+community: "TelegramGatewayRelay"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/E_-_Elevation_of_Privilege
+  - community/TelegramGatewayRelay
 ---
 
 # Threat: Prompt Injection Attacks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[E - Elevation of Privilege]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/E_-_Elevation_of_Privilege
+#graphify/document #graphify/EXTRACTED #community/TelegramGatewayRelay

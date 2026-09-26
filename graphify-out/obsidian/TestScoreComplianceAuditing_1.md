@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "_mock_dir_with_fresh_files()"
+community: "3. Remaining Work — Prioritized by Value"
 location: "L473"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_dir_with_fresh_files
+  - community/3_Remaining_Work__Prioritized_by_Value
 ---
 
 # TestScoreComplianceAuditing
@@ -19,4 +19,4 @@ tags:
 - [[.test_zero_when_not_run()_1]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_fresh_files
+#graphify/code #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "DNSForwarderProtocol"
+community: "canvas_proxy_app()"
 location: "L333"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DNSForwarderProtocol
+  - community/canvas_proxy_app
 ---
 
 # TestStartDNSForwarder
@@ -17,4 +17,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DNSForwarderProtocol
+#graphify/code #graphify/INFERRED #community/canvas_proxy_app

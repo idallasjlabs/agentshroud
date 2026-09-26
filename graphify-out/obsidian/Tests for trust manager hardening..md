@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressAction"
+community: "ConsentFramework"
 location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ConsentFramework
 ---
 
 # Tests for trust manager hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAction
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

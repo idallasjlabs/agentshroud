@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "TestRewriteRequestHeaders"
+community: "Athena — Knowledge Distiller"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRewriteRequestHeaders
+  - community/Athena__Knowledge_Distiller
 ---
 
 # TestRewriteRequestHeaders
@@ -20,4 +20,4 @@ tags:
 - [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - `method` [EXTRACTED]
 - [[test_hermes_dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders
+#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

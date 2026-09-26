@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "run_multi_host()"
+community: "TestPatternDetection"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/TestPatternDetection
 ---
 
 # TestRunMultiHost
 
 ## Connections
-- [[.test_all_pass()]] - `method` [EXTRACTED]
+- [[.test_all_pass()_1]] - `method` [EXTRACTED]
 - [[.test_empty_host_list_is_not_ok()]] - `method` [EXTRACTED]
 - [[.test_mixed_pass_fail_unreachable()]] - `method` [EXTRACTED]
 - [[.test_on_host_callback_invoked_per_host()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "AgentShroud User Guide"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/AgentShroud_User_Guide
 ---
 
 # TestTrivyParser
@@ -22,6 +22,7 @@ tags:
 - [[.test_parse_top_cves_ordered_by_severity()]] - `method` [EXTRACTED]
 - [[.test_parse_total_vulnerabilities()]] - `method` [EXTRACTED]
 - [[.test_parse_unknown_severity()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_User_Guide

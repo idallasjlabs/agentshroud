@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "STRIDE Threat Analysis"
+community: "Key Messaging"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STRIDE_Threat_Analysis
+  - community/Key_Messaging
 ---
 
 # Threat: Configuration Drift
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[T - Tampering with Data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/Key_Messaging

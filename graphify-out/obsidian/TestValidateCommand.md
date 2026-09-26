@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "SSHProxy"
+community: "Common Queries"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Common_Queries
 ---
 
 # TestValidateCommand
@@ -24,10 +24,10 @@ tags:
 - [[.test_validate_command_not_in_allowlist()]] - `method` [EXTRACTED]
 - [[.test_validate_command_unknown_host()]] - `method` [EXTRACTED]
 - [[.test_validate_empty_command()]] - `method` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Common_Queries

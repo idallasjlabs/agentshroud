@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Enum"
+community: "GroupRoleResolver"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # TestToolChainAnalyzer
@@ -23,7 +23,7 @@ tags:
 - [[.test_edge_cases()_3]] - `method` [EXTRACTED]
 - [[.test_exec_to_network_pattern()]] - `method` [EXTRACTED]
 - [[.test_global_stats()_1]] - `method` [EXTRACTED]
-- [[.test_initialization()_5]] - `method` [EXTRACTED]
+- [[.test_initialization()_4]] - `method` [EXTRACTED]
 - [[.test_normal_tool_sequences_allowed()]] - `method` [EXTRACTED]
 - [[.test_pattern_configuration()]] - `method` [EXTRACTED]
 - [[.test_rapid_file_enumeration()]] - `method` [EXTRACTED]
@@ -37,9 +37,9 @@ tags:
 - [[ChainMatch]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_5]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[Test cases for ToolChainAnalyzer class.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

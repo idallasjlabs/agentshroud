@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # TestVerifyEntry
@@ -26,10 +26,10 @@ tags:
 - [[.test_unreachable_source_dropped()]] - `method` [EXTRACTED]
 - [[.test_wildcard_allowlist_match_kept()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

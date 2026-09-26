@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: ".proxy_messages()"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/proxy_messages
 ---
 
 # TestSlackSocketClient
@@ -21,4 +21,4 @@ tags:
 - [[Unit tests for SlackSocketClient.]] - `rationale_for` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

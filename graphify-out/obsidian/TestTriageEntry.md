@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t()"
+community: "MCPServerConfig"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MCPServerConfig
 ---
 
 # TestTriageEntry
@@ -23,5 +23,6 @@ tags:
 - [[.test_uncovered_class_source_fixed_uses_source_fix()]] - `method` [EXTRACTED]
 - [[.test_unknown_class_not_source_fixed_stays_under_review()]] - `method` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
+- [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

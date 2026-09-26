@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # TestSSHProxyValidateWriteFile
@@ -25,20 +25,20 @@ tags:
 - [[.test_root_itself_rejected()]] - `method` [EXTRACTED]
 - [[.test_unknown_host_rejected()]] - `method` [EXTRACTED]
 - [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - `method` [EXTRACTED]
-- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHWriteResult]] - `uses` [INFERRED]
 - [[Unit tests for SSHProxy.validate_cwd().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

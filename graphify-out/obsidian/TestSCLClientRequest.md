@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "SCLClient"
+community: "test_voice_stt_model_ab.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/test_voice_stt_model_abpy
 ---
 
 # TestSCLClientRequest
@@ -23,4 +23,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

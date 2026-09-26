@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
+community: "9. Deep Security Hardening (v0.9.0)"
 location: "L371"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/9_Deep_Security_Hardening_v090
 ---
 
 # Threat Intelligence Integration
@@ -16,4 +16,4 @@ tags:
 - [[Threat Feeds]] - `contains` [EXTRACTED]
 - [[Threat Scoring Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/document #graphify/EXTRACTED #community/9_Deep_Security_Hardening_v090

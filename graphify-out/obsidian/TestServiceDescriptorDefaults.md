@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # TestServiceDescriptorDefaults
@@ -20,4 +20,4 @@ tags:
 - [[Validate ServiceDescriptor model defaults — no real container calls.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

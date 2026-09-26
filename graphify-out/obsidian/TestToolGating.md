@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L227"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_make_tm
+  - graphify/INFERRED
+  - community/MemoryIntegrityMonitor
 ---
 
 # TestToolGating
@@ -17,7 +17,14 @@ tags:
 - [[.test_tool_denied_above_level()]] - `method` [EXTRACTED]
 - [[.test_unknown_tool_returns_none()]] - `method` [EXTRACTED]
 - [[.test_unregistered_agent_returns_none()]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[PromotionThreshold]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # TestSharedNothing
@@ -20,9 +20,9 @@ tags:
 - [[.test_single_agent_fully_secure()]] - `method` [EXTRACTED]
 - [[.test_writable_root_flagged()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

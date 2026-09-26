@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "STRIDE Threat Analysis"
+community: "TelegramGatewayRelay"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STRIDE_Threat_Analysis
+  - community/TelegramGatewayRelay
 ---
 
 # Threat: Non-Repudiation Bypass
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[R - Repudiation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/TelegramGatewayRelay

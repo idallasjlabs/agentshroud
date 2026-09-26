@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L270"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_make_tm
+  - graphify/INFERRED
+  - community/MemoryIntegrityMonitor
 ---
 
 # TestToolACLComposition
@@ -15,8 +15,14 @@ tags:
 - [[.test_enforcer_without_trust_manager_unchanged()]] - `method` [EXTRACTED]
 - [[.test_trust_deny_wins_over_acl()]] - `method` [EXTRACTED]
 - [[.test_unknown_tool_falls_through_to_acl()]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

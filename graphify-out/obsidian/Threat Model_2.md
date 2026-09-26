@@ -1,19 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "SecureBrowser Security Policies"
-location: "L69"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Threat Model
 
 ## Connections
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
-- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
-- [[What We Protect Against]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

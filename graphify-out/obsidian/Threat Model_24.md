@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "canary.py"
+community: "TELEGRAM_API_BASE_URL"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # Threat Model
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "generate_branding_assets.py"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/generate_branding_assetspy
 ---
 
 # TestSSRFDetection
@@ -24,15 +24,15 @@ tags:
 - [[.test_decimal_ip_blocked()]] - `method` [EXTRACTED]
 - [[.test_hex_ip_blocked()]] - `method` [EXTRACTED]
 - [[.test_ip6_localhost_blocked()]] - `method` [EXTRACTED]
-- [[.test_ipv4_mapped_ipv6_blocked()]] - `method` [EXTRACTED]
+- [[.test_ipv4_mapped_ipv6_blocked()_1]] - `method` [EXTRACTED]
 - [[.test_ipv4_mapped_ipv6_private_blocked()]] - `method` [EXTRACTED]
 - [[.test_ipv6_link_local_blocked()]] - `method` [EXTRACTED]
 - [[.test_ipv6_loopback_blocked()]] - `method` [EXTRACTED]
 - [[.test_ipv6_ula_blocked()]] - `method` [EXTRACTED]
 - [[.test_localhost_blocked()]] - `method` [EXTRACTED]
 - [[SSRF blocking — the one hard block.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

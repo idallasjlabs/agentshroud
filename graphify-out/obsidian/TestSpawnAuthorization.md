@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestSpawnAuthorization"
+community: "Discovery Strategy"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSpawnAuthorization
+  - community/Discovery_Strategy
 ---
 
 # TestSpawnAuthorization
@@ -18,6 +18,11 @@ tags:
 - [[.test_depth_penalty_reduces_trust()]] - `method` [EXTRACTED]
 - [[.test_disabled_always_allows()]] - `method` [EXTRACTED]
 - [[.test_strict_inheritance_caps_trust()]] - `method` [EXTRACTED]
+- [[GovernanceAction]] - `uses` [INFERRED]
+- [[GovernanceConfig]] - `uses` [INFERRED]
+- [[GovernanceEventType]] - `uses` [INFERRED]
+- [[ResourceBudget]] - `uses` [INFERRED]
+- [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSpawnAuthorization
+#graphify/code #graphify/EXTRACTED #community/Discovery_Strategy

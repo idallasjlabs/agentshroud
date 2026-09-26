@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "input_normalizer.py"
+community: "ANTHROPIC_BASE_URL"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Threat Model
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

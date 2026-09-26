@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "triage-cve-mitigations.py"
+community: "EncryptedStore"
 location: "L720"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/EncryptedStore
 ---
 
 # The verdict for one advisory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TriageResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "RuntimeConfig"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # TestRuntimeConfig
@@ -19,10 +19,10 @@ tags:
 - [[.test_from_env_defaults()]] - `method` [EXTRACTED]
 - [[.test_from_env_set()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

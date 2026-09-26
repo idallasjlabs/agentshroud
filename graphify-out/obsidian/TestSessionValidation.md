@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager"
+community: "test_dashboard.py"
 location: "L50"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SessionManager
+  - graphify/INFERRED
+  - community/test_dashboardpy
 ---
 
 # TestSessionValidation
@@ -25,4 +25,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/INFERRED #community/test_dashboardpy

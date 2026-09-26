@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Threat Model"
+community: "Atlas — Curriculum Architect"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Threat: Resource Exhaustion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

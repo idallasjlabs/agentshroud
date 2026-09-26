@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "ResourceGuard"
 location: "L4526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/ResourceGuard
 ---
 
 # TestTelegram400Retry
 
 ## Connections
-- [[._make_proxy()]] - `method` [EXTRACTED]
+- [[._make_proxy()_5]] - `method` [EXTRACTED]
 - [[.test_400_retry_no_loop()]] - `method` [EXTRACTED]
 - [[.test_400_retry_succeeds_when_text_strippable()]] - `method` [EXTRACTED]
 - [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - `rationale_for` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

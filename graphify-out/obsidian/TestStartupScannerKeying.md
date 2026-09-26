@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestStartupScannerKeying"
+community: "Apollo — Audio Systems Producer"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # TestStartupScannerKeying
@@ -20,7 +20,8 @@ tags:
 - [[.test_image_key_summary_severity_computed()]] - `method` [EXTRACTED]
 - [[.test_image_keys_do_not_overwrite_each_other()]] - `method` [EXTRACTED]
 - [[.test_legacy_trivy_key_present()]] - `method` [EXTRACTED]
-- [[Simulate the _store_result keying logic from lifespan._startup_scanner. The…]] - `rationale_for` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[Simulate the _store_result keying logic from lifespan._startup_scanner.      The]] - `rationale_for` [EXTRACTED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/code #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

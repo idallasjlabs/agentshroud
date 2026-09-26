@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "ModeRequest"
-location: "L209"
+community: "ssh_proxy.py"
+location: "L176"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ModeRequest
+  - graphify/EXTRACTED
+  - community/ssh_proxypy
 ---
 
 # TestStatus
 
 ## Connections
-- [[.test_status_runtime_failure_degrades_gracefully()]] - `method` [EXTRACTED]
-- [[.test_status_with_running_and_stopped_containers()]] - `method` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_credential_never_in_logs()]] - `method` [EXTRACTED]
+- [[.test_get_status_structure()]] - `method` [EXTRACTED]
+- [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/ssh_proxypy

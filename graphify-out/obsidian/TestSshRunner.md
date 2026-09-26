@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "ssh_runner()"
+community: "Development Workflow"
 location: "L203"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ssh_runner
+  - graphify/EXTRACTED
+  - community/Development_Workflow
 ---
 
 # TestSshRunner
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ssh_runner
+#graphify/code #graphify/EXTRACTED #community/Development_Workflow

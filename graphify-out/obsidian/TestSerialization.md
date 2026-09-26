@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "_sync()"
-location: "L146"
+community: "make_event()"
+location: "L192"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_sync
+  - graphify/INFERRED
+  - community/make_event
 ---
 
 # TestSerialization
 
 ## Connections
-- [[.test_append_targets_correct_agent_marker()]] - `method` [EXTRACTED]
-- [[.test_dry_run_writes_nothing()_1]] - `method` [EXTRACTED]
-- [[.test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
-- [[.test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
-- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
+- [[.test_delegation_to_dict_and_back()]] - `method` [EXTRACTED]
+- [[Delegation]] - `uses` [INFERRED]
+- [[DelegationError]] - `uses` [INFERRED]
+- [[DelegationManager]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/INFERRED #community/make_event

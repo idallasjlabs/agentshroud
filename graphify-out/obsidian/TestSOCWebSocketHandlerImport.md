@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "oracle — best use"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/oracle__best_use
 ---
 
 # TestSOCWebSocketHandlerImport
 
 ## Connections
-- [[.test_import()]] - `method` [EXTRACTED]
+- [[.test_import()_1]] - `method` [EXTRACTED]
 - [[.test_instantiate()]] - `method` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/oracle__best_use

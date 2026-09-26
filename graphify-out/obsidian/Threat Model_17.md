@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "EgressFilter"
+community: "Socrates — Dialogue Architect"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Threat Model
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "TestScoreIncidentResponse"
-location: "L519"
+community: "A2AMethod"
+location: "L844"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreIncidentResponse
+  - community/A2AMethod
 ---
 
 # TestScoreIncidentResponse
 
 ## Connections
-- [[.test_five_with_soc_correlation_and_killswitch()]] - `method` [EXTRACTED]
-- [[.test_four_with_soc_correlation()]] - `method` [EXTRACTED]
-- [[.test_one_baseline_neither_running()]] - `method` [EXTRACTED]
-- [[.test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[.test_one_when_no_tools()]] - `method` [EXTRACTED]
+- [[.test_three_when_both_running()]] - `method` [EXTRACTED]
+- [[.test_two_when_falco_running()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreIncidentResponse
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

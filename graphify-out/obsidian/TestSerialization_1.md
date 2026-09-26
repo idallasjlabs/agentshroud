@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSession"
+community: "KeyVaultConfig"
 location: "L178"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSession
+  - community/KeyVaultConfig
 ---
 
 # TestSerialization
@@ -17,4 +17,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSession
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

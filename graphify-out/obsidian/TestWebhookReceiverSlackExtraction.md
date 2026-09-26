@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "TestWebhookReceiverSlackExtraction"
+community: "test_agent_cve_registry.py"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebhookReceiverSlackExtraction
+  - community/test_agent_cve_registrypy
 ---
 
 # TestWebhookReceiverSlackExtraction
@@ -17,8 +17,8 @@ tags:
 - [[.test_extract_user_id_telegram_unchanged()]] - `method` [EXTRACTED]
 - [[.test_extract_username_slack()]] - `method` [EXTRACTED]
 - [[.test_extract_username_slack_fallback_to_user_id()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebhookReceiverSlackExtraction
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

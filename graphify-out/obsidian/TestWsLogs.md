@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "test_redteam_probes.py"
 location: "L925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/test_redteam_probespy
 ---
 
 # TestWsLogs
@@ -20,4 +20,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

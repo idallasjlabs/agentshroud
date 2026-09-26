@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # TestWSEvent
@@ -15,4 +15,4 @@ tags:
 - [[.test_construction()_2]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

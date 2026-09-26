@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "test_trust_manager.py"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # TestTrustProgression
@@ -20,8 +20,8 @@ tags:
 - [[.test_violation_severe_penalty()]] - `method` [EXTRACTED]
 - [[Test earning and losing trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

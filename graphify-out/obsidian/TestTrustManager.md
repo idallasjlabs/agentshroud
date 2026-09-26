@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressAction"
+community: "1Password op-proxy (POST /credentials/op-proxy; "
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/1Password_op-proxy_POST_/credentials/op-proxy_
 ---
 
 # TestTrustManager
 
 ## Connections
-- [[.setup_method()_13]] - `method` [EXTRACTED]
-- [[.teardown_method()_3]] - `method` [EXTRACTED]
+- [[.setup_method()_28]] - `method` [EXTRACTED]
+- [[.teardown_method()_6]] - `method` [EXTRACTED]
 - [[.test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[.test_action_denied_high_trust()]] - `method` [EXTRACTED]
 - [[.test_action_unknown_agent()]] - `method` [EXTRACTED]
@@ -30,11 +30,11 @@ tags:
 - [[.test_trust_level_progression()]] - `method` [EXTRACTED]
 - [[.test_violation_large_decrease()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -44,8 +44,8 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAction
+#graphify/code #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_

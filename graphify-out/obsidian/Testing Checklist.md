@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "ContextSegment"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/ContextSegment
 ---
 
 # Testing Checklist
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3B.1 Testing]] - `contains` [EXTRACTED]
 - [[Pre-Test Preparation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/ContextSegment

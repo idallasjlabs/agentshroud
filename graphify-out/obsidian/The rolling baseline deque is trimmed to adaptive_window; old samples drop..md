@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "AgentShroud Access Control Matrix"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # The rolling baseline deque is trimmed to adaptive_window; old samples drop.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_adaptive_window_bounds_baseline_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

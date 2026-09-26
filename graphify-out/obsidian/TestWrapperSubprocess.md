@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "test_multi_host_test.py"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # TestWrapperSubprocess
@@ -21,4 +21,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

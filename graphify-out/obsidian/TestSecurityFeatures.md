@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "TestSecurityFeatures"
+community: "TestObservatoryMode"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/TestObservatoryMode
 ---
 
 # TestSecurityFeatures
@@ -23,10 +23,10 @@ tags:
 - [[.test_security_options_unknown()]] - `method` [EXTRACTED]
 - [[.test_warn_missing()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

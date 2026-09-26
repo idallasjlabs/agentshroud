@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "trivy_report.py"
+community: "clamav.md"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/clamavmd
 ---
 
 # Threat Model
 
 ## Connections
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_secure_development()"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_secure_development
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # TestScoreSecureDevelopment
@@ -16,4 +16,4 @@ tags:
 - [[.test_three_when_semgrep_and_precommit_present()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_secure_development
+#graphify/code #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestTail"
+community: "SECTION 3: DRAWINGS"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/SECTION_3_DRAWINGS
 ---
 
 # TestTail
@@ -16,10 +16,10 @@ tags:
 - [[.test_keeps_last_n_lines()]] - `method` [EXTRACTED]
 - [[.test_only_newlines()]] - `method` [EXTRACTED]
 - [[.test_shorter_than_n()]] - `method` [EXTRACTED]
-- [[.test_strips_trailing_newline()]] - `method` [EXTRACTED]
+- [[.test_strips_trailing_newline()_1]] - `method` [EXTRACTED]
 - [[HostResult]] - `uses` [INFERRED]
 - [[HostStatus]] - `uses` [INFERRED]
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTail
+#graphify/code #graphify/EXTRACTED #community/SECTION_3_DRAWINGS

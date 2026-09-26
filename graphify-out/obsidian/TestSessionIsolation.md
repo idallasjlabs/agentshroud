@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "TestSessionIsolation"
+community: "KeyVaultConfig"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSessionIsolation
+  - community/KeyVaultConfig
 ---
 
 # TestSessionIsolation
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSessionIsolation
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

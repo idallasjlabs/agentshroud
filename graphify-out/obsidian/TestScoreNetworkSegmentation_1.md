@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L756"
+community: "Security Review (SEC)"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Security_Review_SEC
 ---
 
 # TestScoreNetworkSegmentation
 
 ## Connections
-- [[.test_baseline_three_without_daemon_config()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_with_icc_disabled_and_validator()]] - `method` [EXTRACTED]
+- [[.test_four_with_icc_disabled()]] - `method` [EXTRACTED]
+- [[.test_three_baseline()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Security_Review_SEC

@@ -1,44 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "MCPToolCall"
-location: "L66"
+community: "EncryptedStore"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPToolCall
+  - graphify/EXTRACTED
+  - community/EncryptedStore
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[.highest_threat()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestAllowDenyList]] - `uses` [INFERRED]
-- [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestAuditTrailBounded]] - `uses` [INFERRED]
-- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
-- [[TestConfigParsing]] - `uses` [INFERRED]
-- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
-- [[TestHashChainIntegration]] - `uses` [INFERRED]
-- [[TestInjectionDetection]] - `uses` [INFERRED]
-- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
-- [[TestProcessingTime]] - `uses` [INFERRED]
-- [[TestProxyInterception]] - `uses` [INFERRED]
-- [[TestProxyPermissions]] - `uses` [INFERRED]
-- [[TestProxyRateLimiting]] - `uses` [INFERRED]
-- [[TestProxyResultProcessing]] - `uses` [INFERRED]
-- [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestSensitiveOps]] - `uses` [INFERRED]
-- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
+- [[git_guard.py]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

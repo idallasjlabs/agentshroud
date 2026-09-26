@@ -1,23 +1,26 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "test_trust_manager.py"
-location: "L54"
+community: "asyncio"
+location: "L121"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - graphify/INFERRED
+  - community/asyncio
 ---
 
 # TestTrustLevels
 
 ## Connections
-- [[.test_default_config()_7]] - `method` [EXTRACTED]
-- [[.test_trust_level_ordering()]] - `method` [EXTRACTED]
-- [[Test trust level hierarchy and thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[.test_clamp_high()]] - `method` [EXTRACTED]
+- [[.test_clamp_low()]] - `method` [EXTRACTED]
+- [[.test_default_trust_is_1()]] - `method` [EXTRACTED]
+- [[.test_set_and_get()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/code #graphify/INFERRED #community/asyncio

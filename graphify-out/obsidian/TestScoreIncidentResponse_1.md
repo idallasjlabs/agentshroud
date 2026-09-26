@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L844"
+community: "AgentShroud Data Flow Diagrams"
+location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/AgentShroud_Data_Flow_Diagrams
 ---
 
 # TestScoreIncidentResponse
 
 ## Connections
-- [[.test_one_when_no_tools()]] - `method` [EXTRACTED]
-- [[.test_three_when_both_running()]] - `method` [EXTRACTED]
-- [[.test_two_when_falco_running()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_with_soc_correlation_and_killswitch()]] - `method` [EXTRACTED]
+- [[.test_four_with_soc_correlation()]] - `method` [EXTRACTED]
+- [[.test_one_baseline_neither_running()]] - `method` [EXTRACTED]
+- [[.test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams

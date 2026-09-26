@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "LVGL KAWAII FACE"
+community: "_is_op_reference_allowed()"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/_is_op_reference_allowed
 ---
 
 # Thread safety
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/_is_op_reference_allowed

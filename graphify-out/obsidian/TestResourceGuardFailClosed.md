@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard"
+community: "rbac_config.py"
 location: "L10"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard
+  - community/rbac_configpy
 ---
 
 # TestResourceGuardFailClosed
@@ -20,8 +20,8 @@ tags:
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify resource check methods return False (deny) on exception.]] - `rationale_for` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/rbac_configpy

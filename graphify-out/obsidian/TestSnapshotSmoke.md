@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # TestSnapshotSmoke
@@ -17,4 +17,4 @@ tags:
 - [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

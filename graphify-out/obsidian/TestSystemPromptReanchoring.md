@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSession"
+community: "KeyVaultConfig"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/KeyVaultConfig
 ---
 
 # TestSystemPromptReanchoring
@@ -19,4 +19,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSession
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

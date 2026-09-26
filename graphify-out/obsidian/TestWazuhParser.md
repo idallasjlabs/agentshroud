@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "LLMProxy"
 location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/LLMProxy
 ---
 
 # TestWazuhParser
@@ -18,6 +18,7 @@ tags:
 - [[.test_parse_empty()]] - `method` [EXTRACTED]
 - [[.test_parse_fim_event()]] - `method` [EXTRACTED]
 - [[.test_parse_rootkit_event()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "egress_config.py"
+community: "Shutdown & Recovery"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/Shutdown__Recovery
 ---
 
 # Threat Model
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

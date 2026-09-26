@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Tier 1 Hand-Curated OpenClaw CVEs
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ CVE Mitigation Matrix]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/TestCheckCommandExecution

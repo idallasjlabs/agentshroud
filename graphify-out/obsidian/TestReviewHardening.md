@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ReportStore"
+community: "PortManager"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # TestReviewHardening
@@ -21,4 +21,4 @@ tags:
 - [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - `rationale_for` [EXTRACTED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/PortManager

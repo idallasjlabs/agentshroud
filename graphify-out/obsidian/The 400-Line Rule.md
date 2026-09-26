@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "concept"
-community: "CI/CD Pipeline Advisor (README)"
+community: "troubleshooting.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/troubleshootingmd
 ---
 
 # The 400-Line Rule
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/concept #graphify/EXTRACTED #community/troubleshootingmd

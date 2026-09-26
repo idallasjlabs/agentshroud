@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t()"
+community: "MCPServerConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MCPServerConfig
 ---
 
 # TestVersion
@@ -20,6 +20,9 @@ tags:
 - [[.test_source_fixed_equal()]] - `method` [EXTRACTED]
 - [[.test_source_fixed_older()]] - `method` [EXTRACTED]
 - [[.test_unparseable_is_not_source_fixed()]] - `method` [EXTRACTED]
+- [[is_source_fixed()]] - `calls` [EXTRACTED]
+- [[parse_version()_1]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
+- [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

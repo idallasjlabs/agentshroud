@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries("
+community: "Oracle — Feedback Analyst"
 location: "L1082"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/Oracle__Feedback_Analyst
 ---
 
 # TestTrivySkipDirs
@@ -17,4 +17,4 @@ tags:
 - [[.test_skip_dirs_added_to_command()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/code #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

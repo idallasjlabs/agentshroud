@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Function Details"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Threat Model
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

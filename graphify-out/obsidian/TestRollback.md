@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "EgressFilterConfig"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/EgressFilterConfig
 ---
 
 # TestRollback
@@ -17,4 +17,4 @@ tags:
 - [[.test_successful_rollback()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestTextReaders"
+community: "active"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTextReaders
+  - community/active
 ---
 
 # TestTextReaders
@@ -18,4 +18,4 @@ tags:
 - [[.test_security_scan_sh_read()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTextReaders
+#graphify/code #graphify/EXTRACTED #community/active

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "AuditChain"
+community: "RBACConfig"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/RBACConfig
 ---
 
 # Tests for the SHA-256 hash chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChain]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_compliance_auditing()"
+community: "A2AMethod"
 location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_compliance_auditing
+  - community/A2AMethod
 ---
 
 # TestScoreComplianceAuditing
@@ -18,4 +18,4 @@ tags:
 - [[.test_zero_when_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_compliance_auditing
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

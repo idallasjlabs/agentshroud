@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_summary()"
+community: "🟢 INFO (nice to have)"
 location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/_INFO_nice_to_have
 ---
 
 # TestScoreSupplyChain
@@ -17,4 +17,4 @@ tags:
 - [[.test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have

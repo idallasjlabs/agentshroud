@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Path"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Path
 ---
 
 # Threat Coverage Matrix
@@ -16,4 +16,4 @@ tags:
 - [[Injection vectors explicitly covered]] - `contains` [EXTRACTED]
 - [[Key points the Cisco finding implies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Path

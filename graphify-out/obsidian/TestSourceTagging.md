@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "TestSourceTagging"
+community: "test_scanner_integration.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSourceTagging
+  - community/test_scanner_integrationpy
 ---
 
 # TestSourceTagging
@@ -22,4 +22,4 @@ tags:
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[test_context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSourceTagging
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

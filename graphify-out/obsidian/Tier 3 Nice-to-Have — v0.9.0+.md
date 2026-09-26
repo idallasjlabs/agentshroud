@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+community: "Hermes Agent — Connection Setup"
 location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Tier 3: Nice-to-Have — v0.9.0+
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

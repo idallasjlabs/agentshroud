@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "test_scorecard_integrity.py"
 location: "L118"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework
+  - community/test_scorecard_integritypy
 ---
 
 # TestScreenshotAnalysis
@@ -18,7 +18,7 @@ tags:
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[CredentialEntryBlocked]] - `uses` [INFERRED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework
+#graphify/code #graphify/INFERRED #community/test_scorecard_integritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestSplitForSpeech"
+community: "TestWebSocketHandshakeAuth"
 location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/TestWebSocketHandshakeAuth
 ---
 
 # TestSplitForSpeech
@@ -23,4 +23,4 @@ tags:
 - [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/code #graphify/EXTRACTED #community/TestWebSocketHandshakeAuth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # TestToolPermission
@@ -34,10 +34,10 @@ tags:
 - [[.test_write_tool_allowed_at_trust_1()]] - `method` [EXTRACTED]
 - [[.test_write_tool_denied_at_trust_0()]] - `method` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "TestScoreRuntimeProtection"
-location: "L323"
+community: "A2AMethod"
+location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreRuntimeProtection
+  - community/A2AMethod
 ---
 
 # TestScoreRuntimeProtection
 
 ## Connections
-- [[.test_five_running_zero_findings()]] - `method` [EXTRACTED]
-- [[.test_four_running_with_noncritical_findings()]] - `method` [EXTRACTED]
-- [[.test_one_when_not_run()_2]] - `method` [EXTRACTED]
-- [[.test_two_with_criticals()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[.test_initial_when_not_run()_1]] - `method` [EXTRACTED]
+- [[.test_managed_when_has_criticals()]] - `method` [EXTRACTED]
+- [[.test_optimizing_when_clean_zero_findings()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreRuntimeProtection
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

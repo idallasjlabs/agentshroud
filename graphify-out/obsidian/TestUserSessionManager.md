@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Pre-Purge Secret Rotation Checklist"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Pre-Purge_Secret_Rotation_Checklist
 ---
 
 # TestUserSessionManager
 
 ## Connections
 - [[.session_manager()]] - `method` [EXTRACTED]
-- [[.temp_workspace()_2]] - `method` [EXTRACTED]
+- [[.temp_workspace()]] - `method` [EXTRACTED]
 - [[.test_conversation_history_isolation()]] - `method` [EXTRACTED]
 - [[.test_memory_file_isolation()]] - `method` [EXTRACTED]
 - [[.test_owner_access_control()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist

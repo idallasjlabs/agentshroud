@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "FetchOutcome"
+community: "plan_remediation()"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/plan_remediation
 ---
 
 # TestSubmitEndpoint
@@ -22,4 +22,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

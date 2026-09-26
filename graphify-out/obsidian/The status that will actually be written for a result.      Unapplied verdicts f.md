@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L839"
+community: "EncryptedStore"
+location: "L847"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/EncryptedStore
 ---
 
 # The status that will actually be written for a result.      Unapplied verdicts f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[final_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

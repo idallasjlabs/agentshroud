@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TrustManager"
+community: "ServiceManager"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ServiceManager
 ---
 
 # TestToolResultScan
@@ -24,4 +24,4 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

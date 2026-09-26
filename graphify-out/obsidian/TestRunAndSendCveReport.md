@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "PrivacyPolicyEnforcer"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PrivacyPolicyEnforcer
 ---
 
 # TestRunAndSendCveReport
@@ -17,4 +17,4 @@ tags:
 - [[.test_trivy_error_still_sends_error_report()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

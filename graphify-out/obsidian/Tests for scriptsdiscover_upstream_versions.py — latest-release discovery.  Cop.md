@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "sunday-upgrade.md"
+community: "_seed_cron"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/_seed_cron
 ---
 
 # Tests for scripts/discover_upstream_versions.py — latest-release discovery.  Cop
 
 ## Connections
-- [[test_discover_upstream_versions.py_1]] - `rationale_for` [EXTRACTED]
+- [[test_discover_upstream_versions.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/rationale #graphify/EXTRACTED #community/_seed_cron

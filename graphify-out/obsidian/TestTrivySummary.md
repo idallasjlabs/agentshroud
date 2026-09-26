@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L146"
+community: "System Audit Vault"
+location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/System_Audit_Vault
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[.test_summary_clean()]] - `method` [EXTRACTED]
-- [[.test_summary_critical()]] - `method` [EXTRACTED]
-- [[.test_summary_error()]] - `method` [EXTRACTED]
-- [[.test_summary_top_cves_ids()]] - `method` [EXTRACTED]
-- [[.test_summary_warning_high_only()]] - `method` [EXTRACTED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[.test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
+- [[.test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
+- [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/System_Audit_Vault

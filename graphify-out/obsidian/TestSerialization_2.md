@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "DelegationManager"
-location: "L192"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L146"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DelegationManager
+  - graphify/EXTRACTED
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # TestSerialization
 
 ## Connections
-- [[.test_delegation_to_dict_and_back()]] - `method` [EXTRACTED]
-- [[Delegation_1]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[test_delegation.py]] - `contains` [EXTRACTED]
+- [[.test_append_targets_correct_agent_marker()]] - `method` [EXTRACTED]
+- [[.test_dry_run_writes_nothing()]] - `method` [EXTRACTED]
+- [[.test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
+- [[.test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
+- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

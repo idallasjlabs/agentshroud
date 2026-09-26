@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "InjectionSeverity"
+community: "MCPPermissionManager"
 location: "L164"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/InjectionSeverity
+  - community/MCPPermissionManager
 ---
 
 # TestSanitization
@@ -19,4 +19,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/InjectionSeverity
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

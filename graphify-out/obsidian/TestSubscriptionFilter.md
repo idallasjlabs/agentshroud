@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "oracle — best use"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/oracle__best_use
 ---
 
 # TestSubscriptionFilter
@@ -18,8 +18,8 @@ tags:
 - [[.test_no_subscription_accepts_log_event()]] - `method` [EXTRACTED]
 - [[.test_no_subscription_accepts_security_event()]] - `method` [EXTRACTED]
 - [[.test_subscription_filters_correctly()]] - `method` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - `rationale_for` [EXTRACTED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/oracle__best_use

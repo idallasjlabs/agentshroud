@@ -1,23 +1,19 @@
 ---
-source_file: "docs/ssh-security-review.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Threat Model"
-location: "L5"
+community: "Pre-Deployment Checklist"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/Pre-Deployment_Checklist
 ---
 
 # Threat Model
 
 ## Connections
-- [[1. Command Injection]] - `contains` [EXTRACTED]
-- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
-- [[3. Credential Theft]] - `contains` [EXTRACTED]
-- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
-- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
-- [[D - Denial of Service]] - `contains` [EXTRACTED]
-- [[SSH Security Review]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
+- [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

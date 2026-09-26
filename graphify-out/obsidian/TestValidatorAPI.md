@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "validate_network_security()"
+community: "AgentShroud™ Telegram-Reported Issues"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # TestValidatorAPI
@@ -16,4 +16,4 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

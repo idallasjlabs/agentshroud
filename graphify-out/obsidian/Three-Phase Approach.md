@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Function Details"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Function_Details
 ---
 
 # Three-Phase Approach
@@ -18,4 +18,4 @@ tags:
 - [[Phase B Compatibility Testing]] - `contains` [EXTRACTED]
 - [[Phase C Production Lockdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "ConsentFramework"
 location: "L766"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/ConsentFramework
 ---
 
 # TestSecureZero
@@ -17,11 +17,11 @@ tags:
 - [[.test_secure_zero_bytearray()]] - `method` [EXTRACTED]
 - [[.test_secure_zero_empty()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -32,8 +32,8 @@ tags:
 - [[Tests for key material zeroing (C2 fix).]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/ConsentFramework

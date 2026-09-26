@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "egress_monitor.py"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # Threat Model
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

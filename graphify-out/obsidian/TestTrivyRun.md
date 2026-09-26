@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "patch"
+community: "PrivacyPolicyEnforcer"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/PrivacyPolicyEnforcer
 ---
 
 # TestTrivyRun
@@ -20,6 +20,7 @@ tags:
 - [[.test_run_success()]] - `method` [EXTRACTED]
 - [[.test_run_timeout()]] - `method` [EXTRACTED]
 - [[.test_run_whitespace_only_stdout_is_error()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

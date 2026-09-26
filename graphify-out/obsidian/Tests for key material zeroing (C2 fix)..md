@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "ConsentFramework"
 location: "L767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ConsentFramework
 ---
 
 # Tests for key material zeroing (C2 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecureZero]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

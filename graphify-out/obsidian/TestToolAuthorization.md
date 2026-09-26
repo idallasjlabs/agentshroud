@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestToolAuthorization"
+community: "Mnemosyne — Retention Engineer"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolAuthorization
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # TestToolAuthorization
@@ -18,6 +18,11 @@ tags:
 - [[.test_denied_tool_delegate_task()]] - `method` [EXTRACTED]
 - [[.test_denied_tool_memory()]] - `method` [EXTRACTED]
 - [[.test_denied_tool_send_message()]] - `method` [EXTRACTED]
+- [[GovernanceAction]] - `uses` [INFERRED]
+- [[GovernanceConfig]] - `uses` [INFERRED]
+- [[GovernanceEventType]] - `uses` [INFERRED]
+- [[ResourceBudget]] - `uses` [INFERRED]
+- [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolAuthorization
+#graphify/code #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

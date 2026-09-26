@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_sleep()"
+community: "AgentShroud™ Security Policy"
 location: "L1769"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/AgentShroud_Security_Policy
 ---
 
 # TestUpstreamCveCheckSchedulerRetry
@@ -16,4 +16,4 @@ tags:
 - [[.test_zero_new_cves_marks_checked_immediately()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Policy

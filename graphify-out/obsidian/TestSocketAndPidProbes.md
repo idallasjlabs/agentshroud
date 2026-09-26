@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestSocketAndPidProbes"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSocketAndPidProbes
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # TestSocketAndPidProbes
@@ -17,4 +17,4 @@ tags:
 - [[.test_fluent_bit_running_true_with_live_pid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSocketAndPidProbes
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

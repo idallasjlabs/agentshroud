@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # TestSyncScriptPreflight
@@ -17,11 +17,11 @@ tags:
 - [[.test_sync_allows_clean_tree()]] - `method` [EXTRACTED]
 - [[.test_sync_dry_run_does_not_write_but_still_scans()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - `rationale_for` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

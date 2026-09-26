@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
+community: "voice_task"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/voice_task
 ---
 
 # TestResourceGuardLifecycle
@@ -18,4 +18,4 @@ tags:
 - [[The lifespan must stop the background monitor task on shutdown.]] - `rationale_for` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/voice_task

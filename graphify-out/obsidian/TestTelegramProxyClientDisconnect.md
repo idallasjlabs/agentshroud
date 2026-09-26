@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L393"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SSHProxy
+  - graphify/INFERRED
+  - community/TelegramAPIProxy
 ---
 
 # TestTelegramProxyClientDisconnect
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[.test_client_disconnect_returns_499()]] - `method` [EXTRACTED]
 - [[ClientDisconnect mid-body-read must not crash the gateway process.]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

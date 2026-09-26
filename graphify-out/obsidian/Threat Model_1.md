@@ -1,17 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "TrustManager"
-location: "L15"
+community: "Atlas — Curriculum Architect"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Threat Model
 
 ## Connections
-- [[TrustManager_4]] - `contains` [EXTRACTED]
+- [[1. Command Injection]] - `contains` [EXTRACTED]
+- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
+- [[3. Credential Theft]] - `contains` [EXTRACTED]
+- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
+- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
+- [[D - Denial of Service]] - `contains` [EXTRACTED]
+- [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # ThreatAction
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestNewPatternsV080]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
@@ -41,9 +41,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig

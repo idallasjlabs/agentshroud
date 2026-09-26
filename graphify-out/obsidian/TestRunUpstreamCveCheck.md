@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "Incident Response (INCIDENT)"
 location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Incident_Response_INCIDENT
 ---
 
 # TestRunUpstreamCveCheck
@@ -18,4 +18,4 @@ tags:
 - [[.test_sends_alert_when_new_cves_found()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/Incident_Response_INCIDENT

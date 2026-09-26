@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "TestWebSocketHandshakeAuth"
+community: "TelegramAPIProxy"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSocketHandshakeAuth
+  - community/TelegramAPIProxy
 ---
 
 # TestWebSocketHandshakeAuth
@@ -19,10 +19,10 @@ tags:
 - [[.test_ws_approvals_rejects_bad_token()]] - `method` [EXTRACTED]
 - [[.test_ws_approvals_rejects_master_token()]] - `method` [EXTRACTED]
 - [[.test_ws_approvals_rejects_no_token()]] - `method` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[WebSocket endpoints must validate token during handshake, not first message]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSocketHandshakeAuth
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

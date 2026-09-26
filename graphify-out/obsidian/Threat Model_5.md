@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "TestParseHostsLine"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/TestParseHostsLine
 ---
 
 # Threat Model
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine

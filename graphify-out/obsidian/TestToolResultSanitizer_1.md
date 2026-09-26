@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "Skill: UX Expert (UX)"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Skill_UX_Expert_UX
 ---
 
 # TestToolResultSanitizer
 
 ## Connections
-- [[.setup_method()_36]] - `method` [EXTRACTED]
+- [[.setup_method()_37]] - `method` [EXTRACTED]
 - [[.test_blocked_pattern_detection()]] - `method` [EXTRACTED]
 - [[.test_code_blocks_preserved()]] - `method` [EXTRACTED]
 - [[.test_convenience_function()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/Skill_UX_Expert_UX

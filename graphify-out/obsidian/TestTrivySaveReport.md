@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "AgentShroud User Guide"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/AgentShroud_User_Guide
 ---
 
 # TestTrivySaveReport
@@ -16,6 +16,7 @@ tags:
 - [[.test_default_prefix()]] - `method` [EXTRACTED]
 - [[.test_log_dir_created_if_missing()]] - `method` [EXTRACTED]
 - [[.test_report_content_persisted()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_User_Guide

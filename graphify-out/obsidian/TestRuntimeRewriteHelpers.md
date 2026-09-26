@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "ResourceGuard"
 location: "L3786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/ResourceGuard
 ---
 
 # TestRuntimeRewriteHelpers
@@ -22,11 +22,11 @@ tags:
 - [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - `method` [EXTRACTED]
 - [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - `method` [EXTRACTED]
 - [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for deterministic runtime error rewrite helper behavior.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

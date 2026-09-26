@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "wazuh_client.py"
+community: "Security Controls"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Security_Controls
 ---
 
 # Threat Model
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/Security_Controls

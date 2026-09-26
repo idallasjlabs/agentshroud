@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestTrivySummary"
-location: "L267"
+community: "AgentShroud User Guide"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivySummary
+  - community/AgentShroud_User_Guide
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[.test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
-- [[.test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
-- [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_summary_clean()]] - `method` [EXTRACTED]
+- [[.test_summary_critical()]] - `method` [EXTRACTED]
+- [[.test_summary_error()]] - `method` [EXTRACTED]
+- [[.test_summary_top_cves_ids()]] - `method` [EXTRACTED]
+- [[.test_summary_warning_high_only()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivySummary
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_User_Guide

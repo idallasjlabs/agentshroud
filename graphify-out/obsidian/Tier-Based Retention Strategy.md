@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "test_block_credentials.py"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/test_block_credentialspy
 ---
 
 # Tier-Based Retention Strategy
@@ -18,4 +18,4 @@ tags:
 - [[Tier 3 Debug and Diagnostic Events (1 Year)]] - `contains` [EXTRACTED]
 - [[Tier 4 High-Volume Events (90 Days)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

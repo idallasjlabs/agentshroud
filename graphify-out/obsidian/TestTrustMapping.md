@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "asyncio"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PermissionLevel
+  - community/asyncio
 ---
 
 # TestTrustMapping
@@ -17,10 +17,10 @@ tags:
 - [[.test_trust_2_execute()]] - `method` [EXTRACTED]
 - [[.test_trust_3_admin()]] - `method` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PermissionLevel
+#graphify/code #graphify/INFERRED #community/asyncio

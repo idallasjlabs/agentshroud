@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "TrustManager"
+community: "ResourceGuard"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ResourceGuard
 ---
 
 # TestSecurityPipelineChainLatency
 
 ## Connections
-- [[.pipeline()_1]] - `method` [EXTRACTED]
+- [[.pipeline()]] - `method` [EXTRACTED]
 - [[.test_100_inbound_messages_under_5s()]] - `method` [EXTRACTED]
 - [[.test_100_outbound_messages_under_5s()]] - `method` [EXTRACTED]
 - [[.test_pii_inbound_latency()]] - `method` [EXTRACTED]
@@ -20,12 +20,12 @@ tags:
 - [[.test_single_outbound_under_200ms()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

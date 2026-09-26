@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "TrustManager"
+community: "EgressFilter"
 location: "L323"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/EgressFilter
 ---
 
 # The check_rot13 config flag gates the rot13 layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
