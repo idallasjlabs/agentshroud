@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Production testing guidelines (test isolation patterns)]] - rationale - .llm_settings/docs/SKILLS_REFERENCE.md
+- [[OpenClaw researchweb_search domains pre-approved after 210-denial SOC saturation incident]] - rationale - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 

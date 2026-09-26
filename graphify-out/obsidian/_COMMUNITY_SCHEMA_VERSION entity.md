@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[esp_log.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

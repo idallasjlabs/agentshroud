@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
+- [[CitationVerifier._verify_url()]] - code - gateway/security/citation_verifier.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.11
 members: 18
 ---
 
 # MCPToolResult
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[.__post_init__()_5]] - code - gateway/proxy/mcp_proxy.py
-- [[.test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_result_processing_time()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
-- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
+- [[CI job gitleaks (full-history secret scan)]] - code - .github/workflows/ci.yml
+- [[Cron Telegram delivery bypassed v1.5.2 base_url patch — fixed via third patch anchor on _send_to_platform]] - rationale - CHANGELOG.md
+- [[Daily Check-in dumped raw ssh-exec JSON verbatim — rewritten to parse stdoutstderr]] - rationale - CHANGELOG.md
+- [[Hermes cron AgentShroud Daily Check-in (gemma-4-26b-a4b-it)]] - code - docker/bots/hermes/init-config.sh
+- [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[Patch 1 — _send_telegram signature + Bot() construction (version-tolerant anchors)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Patch 1b — _send_to_platform Telegram call site (fixes cron Delivertelegram bypass)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Patch 2 — adapter.py _standalone_send passthrough]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _send_telegram (toolssend_message_tool.py or send_message_senders.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _send_to_platform (toolssend_message_tool.py, cron delivery call site)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _standalone_send (pluginsplatformstelegramadapter.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[_read()]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[config.yaml seedupgrade — adds telegram.extra.base_url for gateway routing]] - code - docker/bots/hermes/init-config.sh
+- [[dash echo XSI backslash-escape bug — fixed with printf '%sn']] - rationale - CHANGELOG.md
+- [[patch_telegram_send_base_url.py]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[patch_telegram_send_base_url.py patch driver]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[ssh-exec.sh  ssh-write-file.sh fixed-filename race — moved to PID-suffixed files]] - rationale - CHANGELOG.md
+- [[v1.5.3 Release — Telegramcron delivery fixes]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,24 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_MCPToolCall]]
-- 25 edges to [[_COMMUNITY_StdioConnection]]
-- 15 edges to [[_COMMUNITY_MCPServerConfig]]
-- 7 edges to [[_COMMUNITY_PermissionLevel]]
-- 6 edges to [[_COMMUNITY_load_config()]]
-- 5 edges to [[_COMMUNITY_MCPInspector]]
-- 5 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_FakeProcess]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 2 edges to [[_COMMUNITY_.process_tool_call()]]
-- 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_TestInjectionDetection]]
+- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
 
 ## Top bridge nodes
-- [[MCPToolResult]] - degree 79, connects to 14 communities
-- [[TestDataclasses]] - degree 17, connects to 7 communities
-- [[MCPToolCall]] - degree 16, connects to 7 communities
-- [[TestProxyResultProcessing]] - degree 23, connects to 6 communities
-- [[.test_result_processing_time()]] - degree 2, connects to 1 community
+- [[Hermes cron AgentShroud Daily Check-in (gemma-4-26b-a4b-it)]] - degree 2, connects to 1 community
+- [[config.yaml seedupgrade — adds telegram.extra.base_url for gateway routing]] - degree 2, connects to 1 community

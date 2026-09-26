@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
+- [[AWS RDS MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 
 ## Live Query (requires Dataview plugin)
 

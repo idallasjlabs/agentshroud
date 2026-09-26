@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Documentation]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[⚡ Next Phase Focus]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ Key Achievements]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🎯 Strategic Position]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspber]]
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
 
 ## Top bridge nodes
-- [[Resources]] - degree 4, connects to 1 community
+- [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - degree 4, connects to 1 community

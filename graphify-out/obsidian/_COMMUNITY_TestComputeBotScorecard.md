@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.53
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestComputeBotScorecard
 
-**Cohesion:** 0.53 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[._state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_findings_and_denials_penalised()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_heavy_findings_clamp_to_red_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stats_exception_defaults_to_zero_denials()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_unknown_bot_clean_score()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeBotScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Pull Request Generator (PR)_2]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_97]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[README_102]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Related Skills_106]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Usage_107]] - document - docker/config/openclaw/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestComputeBotScorecard]] - degree 6, connects to 1 community
+- [[Pull Request Generator (PR)_2]] - degree 5, connects to 1 community

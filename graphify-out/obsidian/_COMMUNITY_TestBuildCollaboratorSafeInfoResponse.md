@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.06
 members: 32
 ---
 
 # TestBuildCollaboratorSafeInfoResponse
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[._resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
-- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Architecture Context_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Confidence Scoring_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Critical Rules_4]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Device Hierarchy_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Input Requirements_14]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_2]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[SKILL_84]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[What to Extract_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Why This Matters_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,16 +49,3 @@ members: 32
 TABLE source_file, type FROM #community/TestBuildCollaboratorSafeInfoResponse
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-
-## Top bridge nodes
-- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 4 communities
-- [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
-- [[hermes_dashboard_proxy()]] - degree 7, connects to 1 community

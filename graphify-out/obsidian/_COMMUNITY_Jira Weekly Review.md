@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Jira Weekly Review
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Jira Weekly Review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[SCRUM-81 (Jira weekly review ticket)]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[jira_weekly_review.py_1]] - code - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[SKILL_37]] - document - .agents/skills/i-observability/SKILL.md
+- [[Skill observability]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

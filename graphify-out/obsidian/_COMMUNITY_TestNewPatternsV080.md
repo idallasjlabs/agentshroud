@@ -10,36 +10,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[._hits()]] - code - gateway/tests/test_prompt_guard.py
-- [[.pg()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_ascii_art_injection()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_authority_escalation()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_benign_encoding_discussion()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_benign_llama_reference()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_completion_attack()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_constitutional_bypass()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_continuation_prefix()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_encoding_chain()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_json_yaml_injection()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_llama_tokens_chatml()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_llama_tokens_sys()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_multi_model_confusion()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_multilingual_japanese()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_multilingual_korean()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_multilingual_portuguese()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_nested_injection()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_operator_permission_claim()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_pattern_count()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_payload_splitting()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_persona_chaining()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_reward_hacking()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_safety_exception_claim()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_tool_call_injection()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_tool_result_injection_ref()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_whitespace_obfuscation()]] - code - gateway/tests/test_prompt_guard.py
-- [[Regression guard — fail if patterns drop below 43.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[TestNewPatternsV080]] - code - gateway/tests/test_prompt_guard.py
-- [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - rationale - gateway/tests/test_prompt_guard.py
+- [[.__init__()_201]] - code - src/interfaces/text_control_center.py
+- [[.clear_screen()]] - code - src/interfaces/text_control_center.py
+- [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
+- [[.draw_box()]] - code - src/interfaces/text_control_center.py
+- [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
+- [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
+- [[.draw_log()]] - code - src/interfaces/text_control_center.py
+- [[.draw_modules()]] - code - src/interfaces/text_control_center.py
+- [[.draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
+- [[.get_auth()]] - code - src/interfaces/text_control_center.py
+- [[.get_key()_1]] - code - src/interfaces/text_control_center.py
+- [[.make_api_request()]] - code - src/interfaces/text_control_center.py
+- [[.run()_6]] - code - src/interfaces/text_control_center.py
+- [[ANSI]] - code - src/interfaces/text_control_center.py
+- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
+- [[ControlCenter]] - code - src/interfaces/text_control_center.py
+- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
+- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
+- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
+- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
+- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
+- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
+- [[main()_36]] - code - src/interfaces/text_control_center.py
+- [[start-control-center]] - code - scripts/start-control-center
+- [[text_control_center.py]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,12 +47,3 @@ members: 30
 TABLE source_file, type FROM #community/TestNewPatternsV080
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-
-## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 32, connects to 3 communities
-- [[.pg()]] - degree 2, connects to 1 community

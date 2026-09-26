@@ -1,52 +1,52 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 37
 ---
 
 # TestApprovalHardening
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 37 nodes
 
 ## Members
-- [[.config()_3]] - code - gateway/tests/test_approval_hardening.py
-- [[.hardening()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_get_stats()_1]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_initialization()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
-- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
+- [[.setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_obfuscation_resistance()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_pattern_priority()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_dutch_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_hindi_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_italian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_japanese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_korean_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier1_portuguese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier2_bengali_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier2_persian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier2_tagalog_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier2_tamil_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[.test_tier2_ukrainian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[Set up PromptGuard with standard thresholds.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Bengali injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Dutch injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Hindi injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Italian injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Japanese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Korean injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test PersianFarsi injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Portuguese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tagalog injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tamil injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Ukrainian injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test injection attempts mixing languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test resistance to basic obfuscation attempts.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that benign multilingual text is not blocked.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
+- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,14 +56,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_DeceptionDetection]]
-- 2 edges to [[_COMMUNITY_DeniedRequest]]
-- 1 edge to [[_COMMUNITY_.test_cooldown_period_enforcement()]]
-- 1 edge to [[_COMMUNITY_.test_deception_detection_misleading_description]]
-- 1 edge to [[_COMMUNITY_.test_different_requests_not_in_cooldown()]]
+- 3 edges to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[TestApprovalHardening]] - degree 32, connects to 6 communities
-- [[.config()_3]] - degree 3, connects to 1 community
-- [[.hardening()]] - degree 3, connects to 1 community
+- [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
+- [[TestMultilingualInjection]] - degree 20, connects to 1 community
+- [[.setup_method()_15]] - degree 3, connects to 1 community

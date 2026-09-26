@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[RemediationPlan dataclass]] - code - scripts/auto_remediate_cves.py
+- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

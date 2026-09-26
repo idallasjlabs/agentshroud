@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.33
+members: 7
 ---
 
 # TestLoadFromText
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
-- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
+- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_forwarder.py]]
+- 1 edge to [[_COMMUNITY_security.py]]
 
 ## Top bridge nodes
-- [[TestLoadFromText]] - degree 9, connects to 1 community
-- [[.setup_method()_4]] - degree 2, connects to 1 community
+- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
+- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Anti-Security-Theater Principle]] - rationale - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
-- [[SOUL.md — Isaiah Jefferson Persona]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Hermes — 7 entries]] - document - scripts/cve-registry-manual-review.md
+- [[Openclaw — 168 entries]] - document - scripts/cve-registry-manual-review.md
+- [[Summary_27]] - document - scripts/cve-registry-manual-review.md
+- [[cve-registry-manual-review]] - document - scripts/cve-registry-manual-review.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Purpose_101]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Related Skills_92]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[System Audit Vault_2]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Usage_96]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[.test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivySummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
 
 ## Top bridge nodes
-- [[System Audit Vault_2]] - degree 4, connects to 1 community
+- [[TestTrivySummary]] - degree 4, connects to 1 community
+- [[.test_timestamp_falls_back_to_file_mtime()]] - degree 2, connects to 1 community

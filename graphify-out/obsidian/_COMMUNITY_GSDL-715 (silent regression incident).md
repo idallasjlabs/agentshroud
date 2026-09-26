@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.83
 members: 4
 ---
 
 # GSDL-715 (silent regression incident)
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.83 - tightly connected
 **Members:** 4 nodes
 
 ## Members
-- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
-- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
-- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[check_fail()]] - code - docker/scripts/health-check.sh
+- [[check_pass()]] - code - docker/scripts/health-check.sh
+- [[health-check.sh]] - code - docker/scripts/health-check.sh
+- [[health-check.sh script]] - code - docker/scripts/health-check.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.13
 members: 17
 ---
 
 # Google Calendar & Contacts - Quick Setup
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Check Current Version]] - document - docs/operations/updating.md
+- [[Checking the Changelog]] - document - docs/operations/updating.md
+- [[Database Migrations]] - document - docs/operations/updating.md
+- [[Manual Update Process]] - document - docs/setup/setup-guide.md
+- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
+- [[Rollback Procedure]] - document - docs/operations/updating.md
+- [[Tracking Main Branch]] - document - docs/operations/updating.md
+- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
+- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
+- [[Update from Git]] - document - docs/operations/updating.md
+- [[Update from Release Tarball]] - document - docs/operations/updating.md
+- [[Updating]] - document - docs/setup/setup-guide.md
+- [[With Git]] - document - docs/operations/updating.md
+- [[Without Git]] - document - docs/operations/updating.md
+- [[deployment]] - document - docs/runbooks/deployment.md
+- [[updating]] - document - docs/operations/updating.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
+- 2 edges to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_consent_framework.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Execution Summ]]
 
 ## Top bridge nodes
-- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community
+- [[deployment]] - degree 4, connects to 2 communities
+- [[Updating]] - degree 5, connects to 1 community

@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.39
+cohesion: 0.25
 members: 8
 ---
 
 # TestAggregateResults
 
-**Cohesion:** 0.39 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[._patch_all()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_clean()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Any_8]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY_killswitch.sh]]
 
 ## Top bridge nodes
-- [[TestAggregateResults]] - degree 6, connects to 1 community
-- [[_stub_summary()]] - degree 3, connects to 1 community
+- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community

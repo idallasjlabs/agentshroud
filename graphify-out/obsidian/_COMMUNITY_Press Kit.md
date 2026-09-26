@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.67
+members: 4
 ---
 
 # Press Kit
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[About AgentShroud™]] - document - branding/guidelines/brand-guidelines.md
-- [[Approved Logo Assets for Media]] - document - branding/guidelines/brand-guidelines.md
-- [[Key Facts]] - document - branding/guidelines/brand-guidelines.md
-- [[Media Contact]] - document - branding/guidelines/brand-guidelines.md
-- [[Press Kit]] - document - branding/guidelines/brand-guidelines.md
+- [[8D Root Cause Analysis README]] - document - .agents/skills/i-eightd/README.md
+- [[8D Root Cause Analysis Skill]] - document - .agents/skills/i-eightd/SKILL.md
+- [[AWS Agent (data retrieval layer)]] - concept - .agents/skills/i-eightd/SKILL.md
+- [[AWS Athena  BESS Telemetry Data Lake]] - concept - .agents/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/Press_Kit
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-
-## Top bridge nodes
-- [[Press Kit]] - degree 5, connects to 1 community

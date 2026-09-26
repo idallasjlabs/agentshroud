@@ -1,96 +1,93 @@
 ---
 type: community
-cohesion: 0.07
-members: 81
+cohesion: 0.06
+members: 78
 ---
 
 # HTTPConnectProxy
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 81 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 78 nodes
 
 ## Members
-- [[.__init__()_169]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_170]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_16]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.drain()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.get_stats()_18]] - code - gateway/proxy/http_proxy.py
-- [[.readline()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.start()_1]] - code - gateway/proxy/http_proxy.py
-- [[.stop()_10]] - code - gateway/proxy/http_proxy.py
-- [[.write()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
-- [[Bytes relayed before a connection error are still sampled for scanning.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[CONNECT tunnel establishment must race IPv4IPv6 (RFC 8305) instead of     tryin]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[First open_connection attempt fails; retry (with patched sleep) succeeds.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[HTTPConnectProxy]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[HTTPConnectProxy_1]] - code - gateway/proxy/http_proxy.py
-- [[Host-only CONNECT target defaults to port 443; blocked host - 403.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Minimal StreamWriter stand-in that records written bytes.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-80 downloads are plaintext — malware sampling must keep working.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Real-world regression (2026-07-29) uvloop (the active event loop under     uvic]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
-- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_2]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Transport without an underlying socket (None) is skipped cleanly.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Writer exposing a .transport whose socket records setsockopt calls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[_CloseRaisesWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_MockWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_capture_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_eof_target_connection()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_make_stream()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[asyncio.open_connection replacement returning an immediately-EOF stream.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan runs must never share the default executor with LLM upstream     calls]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[get_extra_info raising must not break the established tunnel.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[log_external_decision raising must not break the CONNECT.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[readline() always raises TimeoutError — simulates a stalled client.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[target_writer.close() raising after relay completes must not propagate.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_logging_failure_does_not_block_tunnel()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_with_egress_filter_lacking_approval_queue()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_clean_records_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_infected_records_stats()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unavailable_degrades_silently()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unlink_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scans_use_dedicated_single_thread_executor()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_empty_request_line_returns_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_generic_exception()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_timeout_and_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_tolerates_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_header_read_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_http_proxy_coverage.py]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_set_on_both_tunnel_ends()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_skipped_when_socket_is_none()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_socket_lookup_failure_is_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_non_numeric_port_returns_400()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_recent_stats_trimmed_to_100_entries()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_limit_reached_scans_once()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_plain_http_port_still_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_small_download_scanned_at_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_copies_bytes_until_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_idle_timeout_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_read_errors()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_request_line_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_stop_without_start_is_noop()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_target_without_port_defaults_to_443()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_all_attempts_fail_returns_502()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_uses_happy_eyeballs()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_retries_then_succeeds()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_target_writer_close_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_87]] - code - gateway/security/intel_report.py
+- [[._compute_content_hash()]] - code - gateway/security/intel_report.py
+- [[._load_latest_file()]] - code - gateway/security/intel_report.py
+- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.load_all()_1]] - code - gateway/security/intel_report.py
+- [[.load_latest()]] - code - gateway/security/intel_report.py
+- [[.report_id_not_empty()]] - code - gateway/security/intel_report.py
+- [[.save()_1]] - code - gateway/security/intel_report.py
+- [[.source_not_empty()]] - code - gateway/security/intel_report.py
+- [[.store()_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_content_hash_is_deterministic()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_different_content_different_hash()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_empty_report_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_empty_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_full_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_minimal_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_missing_required_fields_raises()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_negative_security_score_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_has_content_hash()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_roundtrips_via_json()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_serialises_to_json()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_security_score_above_max_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.verify_chain()_2]] - code - gateway/security/intel_report.py
+- [[.verify_integrity()]] - code - gateway/security/intel_report.py
+- [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
+- [[A verified source backing a competitor claim.      A Citation is only created by]] - rationale - gateway/security/intel_report.py
+- [[Citation]] - code - gateway/security/citation_verifier.py
+- [[Citation_1]] - code - gateway/security/intel_report.py
+- [[CitationVerifier.verify_report()]] - code - gateway/security/citation_verifier.py
+- [[CompetitiveIntelReport]] - code - gateway/security/citation_verifier.py
+- [[CompetitiveIntelReport_2]] - code - gateway/tests/test_intel_pipeline.py
+- [[CompetitiveIntelReport_1]] - code - gateway/security/intel_report.py
+- [[CompetitorEntry]] - code - gateway/security/citation_verifier.py
+- [[CompetitorEntry_1]] - code - gateway/security/intel_report.py
+- [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - rationale - gateway/security/intel_report.py
+- [[Derive content_hash from the canonical content fields.          Only computed wh]] - rationale - gateway/security/intel_report.py
+- [[Fetcher]] - code - gateway/security/citation_verifier.py
+- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
+- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[IntelReportStore]] - code - gateway/security/intel_report.py
+- [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
+- [[Load the most recently saved report.          Args             verify If True,]] - rationale - gateway/security/intel_report.py
+- [[Path_14]] - code - gateway/security/intel_report.py
+- [[Path_30]] - code - gateway/tests/test_intel_pipeline.py
+- [[Persist report to the store, linking it to the previous report.          Sets]] - rationale - gateway/security/intel_report.py
+- [[Persistent store for competitive intelligence reports.      Each report is saved]] - rationale - gateway/security/intel_report.py
+- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
+- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
+- [[Return True iff the stored content_hash matches recomputation.]] - rationale - gateway/security/intel_report.py
+- [[Return the most recent JSON file in the store, or None.]] - rationale - gateway/security/intel_report.py
+- [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - rationale - gateway/security/intel_report.py
+- [[TestCompetitiveIntelReportSchema]] - code - gateway/tests/test_intel_pipeline.py
+- [[TestIntelReportHashIntegrity]] - code - gateway/tests/test_intel_pipeline.py
+- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
+- [[Tests for Pydantic model validation.]] - rationale - gateway/tests/test_intel_pipeline.py
+- [[Walk the entire report chain and verify hash linkage.          Returns]] - rationale - gateway/security/intel_report.py
+- [[_compute_hash()]] - code - gateway/security/intel_report.py
+- [[citation_verifier.py]] - code - gateway/security/citation_verifier.py
+- [[intel_report.py]] - code - gateway/security/intel_report.py
+- [[test_intel_pipeline.py]] - code - gateway/tests/test_intel_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -100,23 +97,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_test_http_proxy.py]]
-- 10 edges to [[_COMMUNITY_WebProxyConfig]]
-- 10 edges to [[_COMMUNITY__DummyTargetWriter]]
-- 9 edges to [[_COMMUNITY_WebProxy]]
-- 6 edges to [[_COMMUNITY_._process_connect()]]
-- 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
-- 1 edge to [[_COMMUNITY_canvas_proxy_app()]]
-- 1 edge to [[_COMMUNITY_PortManager]]
+- 29 edges to [[_COMMUNITY__call_agent_stream()]]
+- 10 edges to [[_COMMUNITY_plan_remediation()]]
+- 8 edges to [[_COMMUNITY_api.py]]
+- 3 edges to [[_COMMUNITY_main.rs]]
+- 3 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy_1]] - degree 93, connects to 13 communities
-- [[test_http_proxy_coverage.py]] - degree 53, connects to 4 communities
-- [[HTTPConnectProxy]] - degree 36, connects to 3 communities
-- [[_MockWriter]] - degree 36, connects to 2 communities
-- [[StreamReader_2]] - degree 15, connects to 2 communities
+- [[IntelReportStore]] - degree 39, connects to 5 communities
+- [[CompetitiveIntelReport_1]] - degree 36, connects to 3 communities
+- [[CompetitorEntry_1]] - degree 22, connects to 3 communities
+- [[Citation_1]] - degree 11, connects to 3 communities
+- [[citation_verifier.py]] - degree 10, connects to 3 communities

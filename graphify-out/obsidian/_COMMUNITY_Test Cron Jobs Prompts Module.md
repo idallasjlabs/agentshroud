@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Test Cron Jobs Prompts Module]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
 
 ## Live Query (requires Dataview plugin)
 

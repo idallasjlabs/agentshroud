@@ -1,94 +1,91 @@
 ---
 type: community
-cohesion: 0.03
-members: 79
+cohesion: 0.05
+members: 76
 ---
 
 # TestAuth
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 79 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 76 nodes
 
 ## Members
-- [[.__init__()_21]] - code - gateway/security/subagent_monitor.py
-- [[._log_event()]] - code - gateway/security/subagent_monitor.py
-- [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
-- [[.deregister()]] - code - gateway/security/subagent_monitor.py
-- [[.get_active()]] - code - gateway/security/subagent_monitor.py
-- [[.get_audit_log()_5]] - code - gateway/security/subagent_monitor.py
-- [[.get_flagged_events()]] - code - gateway/security/subagent_monitor.py
-- [[.kill_agent()]] - code - gateway/security/subagent_monitor.py
-- [[.kill_all()]] - code - gateway/security/subagent_monitor.py
-- [[.register_spawn()]] - code - gateway/security/subagent_monitor.py
-- [[.test_agent_registry_module()]] - code - gateway/tests/test_security_audit.py
-- [[.test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_consent_framework_loads()]] - code - gateway/tests/test_security_audit.py
-- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_oauth_confused_deputy()]] - code - gateway/tests/test_security_audit.py
-- [[.test_oauth_pkce_violation()]] - code - gateway/tests/test_security_audit.py
-- [[.test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_reject_empty_token()]] - code - gateway/tests/test_security_audit.py
-- [[.test_reject_garbage_token()]] - code - gateway/tests/test_security_audit.py
-- [[.test_reject_malformed_jwt()]] - code - gateway/tests/test_security_audit.py
-- [[.test_reject_none_algorithm()]] - code - gateway/tests/test_security_audit.py
-- [[.test_session_binding()]] - code - gateway/tests/test_security_audit.py
-- [[.test_session_different_fingerprints()]] - code - gateway/tests/test_security_audit.py
-- [[.test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
-- [[.test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
-- [[.test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.token_validator()]] - code - gateway/tests/test_security_audit.py
-- [[Agent registry should be importable.]] - rationale - gateway/tests/test_security_audit.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[Different fingerprints should create different sessions.]] - rationale - gateway/tests/test_security_audit.py
-- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[Reject JWTs with alg=none (classic attack).]] - rationale - gateway/tests/test_security_audit.py
-- [[Session must bind to user identity.]] - rationale - gateway/tests/test_security_audit.py
-- [[SubagentEvent]] - code - gateway/security/subagent_monitor.py
-- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
-- [[Test authentication and authorization enforcement.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestAuditTrail_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestAuth]] - code - gateway/tests/test_security_audit.py
-- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
-- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
-- [[Trust should recover after good behavior.]] - rationale - gateway/tests/test_security_audit.py
-- [[default_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor()]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
-- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
-- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
+- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
+- [[.__init__()_98]] - code - gateway/security/mfa_guard.py
+- [[._decode_secret()]] - code - gateway/security/mfa_guard.py
+- [[._prune_used()]] - code - gateway/security/mfa_guard.py
+- [[._totp_for_counter()]] - code - gateway/security/mfa_guard.py
+- [[.from_env()_3]] - code - gateway/security/mfa_guard.py
+- [[.is_required()]] - code - gateway/security/mfa_guard.py
+- [[.verify()_1]] - code - gateway/security/mfa_guard.py
+- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
+- [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
+- [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
+- [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
+- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
+- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
+- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
+- [[MFAResult]] - code - gateway/security/mfa_guard.py
+- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
+- [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
+- [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
+- [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
+- [[Verify the second factor for a high-risk action.          Args             acti]] - rationale - gateway/security/mfa_guard.py
+- [[_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
+- [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
+- [[now()_1]] - code - gateway/tests/test_mfa_guard.py
+- [[queue.py]] - code - gateway/approval_queue/queue.py
+- [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_invalid_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_replayed_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_reject_never_requires_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_allows_even_high_risk_with_no_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_by_default_allows_without_factor()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_empty_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enabled_without_secret_denies_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_item_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_reject_no_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_enabled_no_secret_warns()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_disabled_never_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_tier_parsing()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_mfa_guard.py]] - code - gateway/tests/test_mfa_guard.py
+- [[test_missing_code_denies_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_non_high_risk_action_not_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_prune_used_drops_stale_entries()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_real_time_default_now()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_replayed_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_uses_constant_time_compare()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_allows_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_prev_window_allowed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_wrong_length_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,29 +95,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 52 edges to [[_COMMUNITY_lifespan.py]]
-- 14 edges to [[_COMMUNITY_test_security_audit.py]]
-- 8 edges to [[_COMMUNITY_EncryptedStore]]
-- 6 edges to [[_COMMUNITY_TrustManager]]
-- 5 edges to [[_COMMUNITY_ResourceGuard]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_TestFileSandbox]]
-- 2 edges to [[_COMMUNITY_FileSandbox]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_falco_monitor.py]]
-- 1 edge to [[_COMMUNITY_SessionManager]]
-- 1 edge to [[_COMMUNITY_Enum]]
+- 42 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[TestAuth]] - degree 48, connects to 12 communities
-- [[SubagentMonitor]] - degree 47, connects to 8 communities
-- [[subagent_monitor.py]] - degree 12, connects to 7 communities
-- [[SubagentEvent]] - degree 17, connects to 5 communities
-- [[test_subagent_monitor.py]] - degree 15, connects to 1 community
+- [[MFAGuard_2]] - degree 48, connects to 3 communities
+- [[queue.py]] - degree 14, connects to 3 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 2 communities
+- [[EnhancedApprovalQueue_2]] - degree 11, connects to 1 community
+- [[_queue()]] - degree 11, connects to 1 community

@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Skill: UX Expert (UX)
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[Alert Prioritization Display_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI  TUI UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI UX Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Confirmation Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Content Organization Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Contextual Actions_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dashboard UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Data Density Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dependencies_3]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Error Message Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Field Design Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Form UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Information Architecture_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Role_21]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[User Flow Diagrams_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Wayfinding_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[.test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,7 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShro]]
+- 1 edge to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_aiosqlite]]
+- 1 edge to [[_COMMUNITY_export-openapi.sh]]
 
 ## Top bridge nodes
-- [[Skill UX Expert (UX)_2]] - degree 14, connects to 1 community
+- [[TestToolResultSanitizer_1]] - degree 22, connects to 4 communities

@@ -1,43 +1,44 @@
 ---
 type: community
 cohesion: 0.08
-members: 28
+members: 29
 ---
 
 # TELEGRAM_ISSUES.md
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 28 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
-- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Colima Troubleshooting Procedures]] - concept - docs/runbooks/RUNBOOK.md
-- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Configuration Reference]] - document - docs/setup/setup-guide.md
-- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
-- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - rationale - docs/runbooks/RUNBOOK.md
-- [[Glibc TLS Incompatibility (Trillian)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
-- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[RUNBOOK]] - document - docs/runbooks/RUNBOOK.md
-- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
-- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
-- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
-- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
-- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
-- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
+- [[.ghsa-ids-cache.json (GHSA registry prefetch artifact)]] - concept - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[.new-cves.json (pre-diffed advisory handoff file)]] - concept - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[2026-08-24 incident history (for context, not action items)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[AgentShroud Branded Report Template]] - code - docker/config/openclaw/cron/templates/report-template.html
+- [[Automatic Security Updates (blue-green weekly rebuild)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[CVE Triage 3-Job Pipeline]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Daily CVE Triage & Remediation Scan Job]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Daily Memory Journal (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/daily-memory-journal.txt
+- [[Daily Memory Journal Job (nightly memory consolidation)]] - document - docker/config/openclaw/cron/prompts/daily-memory-journal.txt
+- [[Hermes cron Daily Memory Journal (silent, local delivery)]] - code - docker/bots/hermes/init-config.sh
+- [[How to recreate a job_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[JOBS-REFERENCE_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Job index_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Known Drift from jobs.json Seed File]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Known drift from `dockerconfigopenclawcronjobs.json`]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Long-Term Memory with Vector Search]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Monthly Journal File (optdatamemoriesjournal-YYYY-MM.md)]] - concept - docker/config/hermes/cron/prompts/daily-memory-journal.txt
+- [[NO_REPLY Suppression Token]] - concept - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[OpenClaw Service]] - code - docker/docker-compose.yml
+- [[Prompt Daily Memory Journal]] - document - docker/config/hermes/cron/prompts/daily-memory-journal.txt
+- [[Seed Job Daily Memory Journal]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Shared dependencies (must exist before dependent jobs run)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Zero Hallucinations On Errors Policy]] - rationale - docker/config/openclaw/cron/prompts/daily-memory-journal.txt
+- [[cve_prefetch.py (CVE fetch-and-diff)]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[init-openclaw-config.sh bootstrap]] - code - docker/scripts/init-openclaw-config.sh
+- [[memorycontext.md Continuity File (50 lines)]] - concept - docker/config/openclaw/cron/prompts/daily-memory-journal.txt
+- [[start-agentshroud.sh (OpenClaw entrypoint)]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,19 +48,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_troubleshooting]]
-- 2 edges to [[_COMMUNITY_Update AgentShroud]]
-- 2 edges to [[_COMMUNITY_Quick Reference Commands]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
-- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
-- 1 edge to [[_COMMUNITY_AgentShroud System Status Report]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment & Troubleshooting Runbook]]
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
+- 5 edges to [[_COMMUNITY_run_test()]]
+- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_GroupRegistry]]
+- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
 
 ## Top bridge nodes
-- [[raspberry-pi]] - degree 8, connects to 4 communities
-- [[RUNBOOK]] - degree 7, connects to 4 communities
-- [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
-- [[Configuration Reference]] - degree 5, connects to 1 community
-- [[SYSTEM_STATUS]] - degree 3, connects to 1 community
+- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - degree 13, connects to 2 communities
+- [[Daily CVE Triage & Remediation Scan Job]] - degree 7, connects to 1 community
+- [[Prompt Daily Memory Journal]] - degree 5, connects to 1 community
+- [[Daily Memory Journal Job (nightly memory consolidation)]] - degree 4, connects to 1 community
+- [[AgentShroud Branded Report Template]] - degree 2, connects to 1 community

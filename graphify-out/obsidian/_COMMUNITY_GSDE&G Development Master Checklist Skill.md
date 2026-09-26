@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.12
-members: 21
+cohesion: 0.10
+members: 22
 ---
 
 # GSDE&G Development Master Checklist Skill
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
-- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
-- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
-- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[Purpose_125]] - document - .agents/skills/i-mc/README.md
-- [[Related Skills_111]] - document - .agents/skills/i-mc/README.md
-- [[Usage_120]] - document - .agents/skills/i-mc/README.md
-- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
-- [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
-- [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
-- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[.__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
+- [[._cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[._cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.archive_file()]] - code - gateway/security/memory_lifecycle.py
+- [[.enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
+- [[.enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
+- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Any_49]] - code - gateway/security/memory_lifecycle.py
+- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
+- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,11 +41,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Hermes Dev Workflow (HDEV) Skill]]
-- 1 edge to [[_COMMUNITY_.agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_8D Root Cause Analysis SKILL (OpenClaw)]]
+- 14 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 1 edge to [[_COMMUNITY_3. AWS API MCP Authentication Reset]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 2 communities
-- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
-- [[GIT-GUARD Skill]] - degree 5, connects to 1 community
+- [[.archive_file()]] - degree 6, connects to 2 communities
+- [[RetentionAction]] - degree 8, connects to 1 community
+- [[.run_lifecycle_maintenance()]] - degree 6, connects to 1 community
+- [[.enforce_memory_md_size_limit()]] - degree 5, connects to 1 community
+- [[.get_lifecycle_status()]] - degree 5, connects to 1 community

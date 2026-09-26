@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Phase 2: Development Tools
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Additional Dev Tools]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Docker & Docker Compose]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Git Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Node.js (for OpenClaw & AgentShroud)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 2 Development Tools]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Python (for testing tools)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_90]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[README_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_96]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Usage_99]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/Phase_2_Development_Tools
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8G]]
-
-## Top bridge nodes
-- [[Phase 2 Development Tools]] - degree 6, connects to 1 community

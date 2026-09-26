@@ -1,72 +1,72 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 57
 ---
 
 # ReportStore
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 57 nodes
 
 ## Members
-- [[.__init__()_190]] - code - gateway/security/report_store.py
-- [[._check_size()]] - code - gateway/security/report_store.py
-- [[._enforce_count_cap()]] - code - gateway/security/report_store.py
-- [[._persist()]] - code - gateway/security/report_store.py
-- [[._sanitize_async()]] - code - gateway/security/report_store.py
-- [[._sanitize_sync()]] - code - gateway/security/report_store.py
-- [[._valid_id()]] - code - gateway/security/report_store.py
-- [[.client()_7]] - code - gateway/tests/test_report_store.py
-- [[.delete()_1]] - code - gateway/security/report_store.py
-- [[.get()_4]] - code - gateway/security/report_store.py
-- [[.list()]] - code - gateway/security/report_store.py
-- [[.save()_2]] - code - gateway/security/report_store.py
-- [[.save_async()]] - code - gateway/security/report_store.py
-- [[.test_async_sanitizer_refused_on_sync_save()]] - code - gateway/tests/test_report_store.py
-- [[.test_bot_and_title_length_capped()]] - code - gateway/tests/test_report_store.py
-- [[.test_content_cap_default_is_1mb()]] - code - gateway/tests/test_report_store.py
-- [[.test_content_size_cap()]] - code - gateway/tests/test_report_store.py
-- [[.test_corrupt_metadata_skipped_in_list()]] - code - gateway/tests/test_report_store.py
-- [[.test_count_cap_prunes_oldest()]] - code - gateway/tests/test_report_store.py
-- [[.test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
-- [[.test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
-- [[.test_delete()]] - code - gateway/tests/test_report_store.py
-- [[.test_get_missing_returns_none()_1]] - code - gateway/tests/test_report_store.py
-- [[.test_get_rejects_path_traversal()]] - code - gateway/tests/test_report_store.py
-- [[.test_list_filter_by_bot()]] - code - gateway/tests/test_report_store.py
-- [[.test_list_returns_metadata_without_content()]] - code - gateway/tests/test_report_store.py
-- [[.test_missing_content_422()]] - code - gateway/tests/test_report_store.py
-- [[.test_pii_redacted_on_save()]] - code - gateway/tests/test_report_store.py
-- [[.test_report_id_is_path_safe()]] - code - gateway/tests/test_report_store.py
-- [[.test_round_trip()]] - code - gateway/tests/test_report_store.py
-- [[.test_save_async_size_cap()]] - code - gateway/tests/test_report_store.py
-- [[.test_save_async_with_async_sanitizer()]] - code - gateway/tests/test_report_store.py
-- [[.test_save_async_with_sync_sanitizer()]] - code - gateway/tests/test_report_store.py
-- [[.test_survives_new_instance()]] - code - gateway/tests/test_report_store.py
-- [[.test_tags_preserved()]] - code - gateway/tests/test_report_store.py
-- [[.test_title_and_tags_sanitized_async()]] - code - gateway/tests/test_report_store.py
-- [[.test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
-- [[.test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
-- [[.test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
-- [[Any_76]] - code - gateway/security/report_store.py
-- [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
-- [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
-- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
-- [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
-- [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
-- [[ReportStore]] - code - gateway/security/report_store.py
-- [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
-- [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
-- [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
-- [[TestPersistence_2]] - code - gateway/tests/test_report_store.py
-- [[TestReportAPI]] - code - gateway/tests/test_report_store.py
-- [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
-- [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
-- [[TestSecurity]] - code - gateway/tests/test_report_store.py
-- [[report_store.py]] - code - gateway/security/report_store.py
-- [[store()_2]] - code - gateway/tests/test_report_store.py
-- [[test_report_store.py]] - code - gateway/tests/test_report_store.py
+- [[.__init__()_74]] - code - gateway/security/egress_approval.py
+- [[._append_decision()]] - code - gateway/security/egress_approval.py
+- [[._assess_risk()]] - code - gateway/security/egress_approval.py
+- [[._check_existing_rule()]] - code - gateway/security/egress_approval.py
+- [[._load_rules()]] - code - gateway/security/egress_approval.py
+- [[._rule_to_dict()]] - code - gateway/security/egress_approval.py
+- [[._save_rules()]] - code - gateway/security/egress_approval.py
+- [[.add_rule()]] - code - gateway/security/egress_approval.py
+- [[.approve()]] - code - gateway/security/egress_approval.py
+- [[.cleanup_expired()_2]] - code - gateway/security/egress_approval.py
+- [[.deny()]] - code - gateway/security/egress_approval.py
+- [[.from_dict()_6]] - code - gateway/security/egress_approval.py
+- [[.get_all_rules()]] - code - gateway/security/egress_approval.py
+- [[.get_decision_log()]] - code - gateway/security/egress_approval.py
+- [[.get_emergency_status()]] - code - gateway/security/egress_approval.py
+- [[.get_pending_requests()]] - code - gateway/security/egress_approval.py
+- [[.get_rules_for_user()]] - code - gateway/security/egress_approval.py
+- [[.log_external_decision()]] - code - gateway/security/egress_approval.py
+- [[.matches()]] - code - gateway/security/egress_approval.py
+- [[.preload_permanent_rules()]] - code - gateway/security/egress_approval.py
+- [[.remove_rule()]] - code - gateway/security/egress_approval.py
+- [[.request_approval()]] - code - gateway/security/egress_approval.py
+- [[.revoke_decision()]] - code - gateway/security/egress_approval.py
+- [[.set_emergency_block_all()]] - code - gateway/security/egress_approval.py
+- [[.set_event_bus()_1]] - code - gateway/security/egress_approval.py
+- [[.to_dict()_9]] - code - gateway/security/egress_approval.py
+- [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
+- [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
+- [[Approve a pending egress request.          Args             request_id ID of r]] - rationale - gateway/security/egress_approval.py
+- [[Assess risk level for a domainport combination.          Returns             R]] - rationale - gateway/security/egress_approval.py
+- [[Check if domain matches an existing rule.]] - rationale - gateway/security/egress_approval.py
+- [[Defines who an egress rule applies to.      kind values       all   — applies]] - rationale - gateway/security/egress_approval.py
+- [[Deny a pending egress request.          Args             request_id ID of requ]] - rationale - gateway/security/egress_approval.py
+- [[EgressApprovalQueue]] - code - gateway/security/egress_approval.py
+- [[EgressRule]] - code - gateway/security/egress_approval.py
+- [[EgressScope]] - code - gateway/security/egress_approval.py
+- [[Enabledisable emergency global egress deny.]] - rationale - gateway/security/egress_approval.py
+- [[Get all rules (permanent and session) with scope information.]] - rationale - gateway/security/egress_approval.py
+- [[Get emergency block-all state.]] - rationale - gateway/security/egress_approval.py
+- [[Get list of pending approval requests.]] - rationale - gateway/security/egress_approval.py
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - rationale - gateway/security/egress_approval.py
+- [[Load rules from persistent storage.]] - rationale - gateway/security/egress_approval.py
+- [[Log an automatic allowdeny from EgressFilter.check() (non-interactive).]] - rationale - gateway/security/egress_approval.py
+- [[Pre-approve known service domains at startup without interactive prompts.]] - rationale - gateway/security/egress_approval.py
+- [[Public risk assessment helper for managementAPI surfaces.]] - rationale - gateway/security/egress_approval.py
+- [[Remove an egress rule.          Args             domain Domain to remove rule]] - rationale - gateway/security/egress_approval.py
+- [[Remove expired session rules and timed-out requests.]] - rationale - gateway/security/egress_approval.py
+- [[Represents an egress allowdeny rule.]] - rationale - gateway/security/egress_approval.py
+- [[Request approval for egress to a domainport.          Args             domain]] - rationale - gateway/security/egress_approval.py
+- [[Return True if this scope applies to the given user context.]] - rationale - gateway/security/egress_approval.py
+- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - rationale - gateway/security/egress_approval.py
+- [[Return recent approvaldenial decisions (CC-40).]] - rationale - gateway/security/egress_approval.py
+- [[Revoke an active rule associated with a decision log entry (CC-40).]] - rationale - gateway/security/egress_approval.py
+- [[Save rules to persistent storage.]] - rationale - gateway/security/egress_approval.py
+- [[Set optional event bus for approval telemetry.]] - rationale - gateway/security/egress_approval.py
+- [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - rationale - gateway/security/egress_approval.py
+- [[egress_approval.py]] - code - gateway/security/egress_approval.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -76,12 +76,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 9 edges to [[_COMMUNITY_Path]]
+- 5 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_test_http_proxy.py]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_make_event()]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
 
 ## Top bridge nodes
-- [[ReportStore]] - degree 37, connects to 2 communities
-- [[test_report_store.py]] - degree 10, connects to 1 community
-- [[.get()_4]] - degree 6, connects to 1 community
-- [[._persist()]] - degree 5, connects to 1 community
-- [[.delete()_1]] - degree 4, connects to 1 community
+- [[egress_approval.py]] - degree 11, connects to 7 communities
+- [[EgressApprovalQueue]] - degree 35, connects to 4 communities
+- [[.request_approval()]] - degree 7, connects to 3 communities
+- [[.approve()]] - degree 7, connects to 2 communities
+- [[.deny()]] - degree 7, connects to 2 communities

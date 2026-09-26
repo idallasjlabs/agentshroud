@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Next Steps_9]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Troubleshooting_32]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
+- [[Browser Extension_2]] - document - docs/planning/RELEASE-PLAN.md
+- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
+- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
+- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Host Deployment_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Platform Container Support_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
+- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[iOSmacOS Shortcuts_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
 
 ## Top bridge nodes
-- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community
+- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

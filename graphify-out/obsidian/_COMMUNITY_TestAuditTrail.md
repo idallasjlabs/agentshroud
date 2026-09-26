@@ -1,25 +1,24 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.22
+members: 9
 ---
 
 # TestAuditTrail
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditTrail_2]] - code - gateway/tests/test_mcp_proxy.py
+- [[Deployment Matrix  (Direct to Prod)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Role_8]] - document - .agents/skills/i-cicd/SKILL.md
+- [[SKILL_11]] - document - .agents/skills/i-cd/SKILL.md
+- [[SKILL_14]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Skill cd]] - document - .agents/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,15 +26,3 @@ members: 10
 TABLE source_file, type FROM #community/TestAuditTrail
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_MCPToolCall]]
-- 3 edges to [[_COMMUNITY_MCPServerConfig]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
-
-## Top bridge nodes
-- [[TestAuditTrail_2]] - degree 23, connects to 7 communities

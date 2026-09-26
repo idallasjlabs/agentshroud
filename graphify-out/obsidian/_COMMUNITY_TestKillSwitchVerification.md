@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.26
+cohesion: 0.17
 members: 12
 ---
 
 # TestKillSwitchVerification
 
-**Cohesion:** 0.26 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
-- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Path_29]] - code - gateway/tests/test_observatory_mode.py
-- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
-- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Notes_2]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,12 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
+- 1 edge to [[_COMMUNITY_Message Composition with MML (MIME Meta Language]]
 
 ## Top bridge nodes
-- [[TestKillSwitchVerification]] - degree 13, connects to 4 communities
-- [[Path_29]] - degree 5, connects to 3 communities
-- [[._make_monitor()]] - degree 10, connects to 1 community
+- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 1 community

@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # TestFluentBitSummary
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.get_stats()_1]] - code - gateway/ingest_api/ledger.py
+- [[Any_7]] - code - gateway/ingest_api/ledger.py
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY__w()]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
 
 ## Top bridge nodes
-- [[TestFluentBitSummary]] - degree 4, connects to 1 community
-- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community
+- [[Any_7]] - degree 4, connects to 2 communities
+- [[.get_stats()_1]] - degree 3, connects to 1 community

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[1. True Distributed AI]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[2. Enhanced Security]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[3. Advanced Capabilities]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[4. Better Development Workflow]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Key Benefits]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Troubleshooting_19]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspber]]
+- 1 edge to [[_COMMUNITY_forwarder.py]]
 
 ## Top bridge nodes
-- [[Key Benefits]] - degree 5, connects to 1 community
+- [[Troubleshooting_19]] - degree 5, connects to 1 community

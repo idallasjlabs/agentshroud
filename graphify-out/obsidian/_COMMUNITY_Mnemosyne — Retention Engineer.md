@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Input Requirements_2]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Mnemosyne — Retention Engineer]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Output Format_2]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Persona_2]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Quality Checklist_2]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Role_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[System Prompt_2]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
+- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[Mnemosyne — Retention Engineer]] - degree 7, connects to 1 community
+- [[TestToolAuthorization]] - degree 12, connects to 2 communities

@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # TestCollaboratorAccess
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[.test_collaborator_allowed_tools_does_not_include_private()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_blocked_from_admin_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_blocked_from_private_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_can_use_allowed_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_tools_includes_admin_and_private()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_unknown_by_default()_1]] - code - gateway/tests/test_tool_acl.py
-- [[TestCollaboratorAccess_1]] - code - gateway/tests/test_tool_acl.py
+- [[.test_approval_decision()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_approval_queue_list()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test approval queue endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test listing pending approvals.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test making approval decisions.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestApprovalEndpoints]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_InjectionSeverity]]
 
 ## Top bridge nodes
-- [[TestCollaboratorAccess_1]] - degree 9, connects to 1 community
+- [[TestApprovalEndpoints]] - degree 5, connects to 2 communities
+- [[.test_approval_decision()]] - degree 3, connects to 1 community
+- [[.test_approval_queue_list()]] - degree 3, connects to 1 community

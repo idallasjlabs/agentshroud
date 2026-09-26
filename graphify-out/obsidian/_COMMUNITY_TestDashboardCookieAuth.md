@@ -1,25 +1,24 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.22
+members: 9
 ---
 
 # TestDashboardCookieAuth
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
+- [[1. Scope of Change]] - document - .agents/skills/i-pca/SKILL.md
+- [[2. What Changes and Why]] - document - .agents/skills/i-pca/SKILL.md
+- [[3. Scalability Gate]] - document - .agents/skills/i-pca/SKILL.md
+- [[4. Blast Radius]] - document - .agents/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions]] - document - .agents/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered]] - document - .agents/skills/i-pca/SKILL.md
+- [[7. Open Questions]] - document - .agents/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)]] - document - .agents/skills/i-pca/SKILL.md
+- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_test_e2e.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
 
 ## Top bridge nodes
-- [[TestDashboardCookieAuth]] - degree 10, connects to 2 communities
+- [[Verification Plan]] - degree 3, connects to 2 communities
+- [[Output Sections (ALL required)]] - degree 9, connects to 1 community

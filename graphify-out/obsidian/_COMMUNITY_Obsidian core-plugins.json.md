@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
+- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 

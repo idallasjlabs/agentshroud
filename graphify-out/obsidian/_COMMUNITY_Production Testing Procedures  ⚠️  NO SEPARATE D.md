@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Objective_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Output Format_11]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Role_45]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
+- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
+- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
+- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
+- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_25]] - document - .agents/skills/i-pm/SKILL.md
+- [[SKILL_41]] - document - .agents/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
+- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
+- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[Skill Quality Assurance (QA)_2]] - degree 6, connects to 1 community
+- [[Skill Project Management (PM)]] - degree 8, connects to 1 community

@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.08
+members: 24
 ---
 
 # TestHeuristicClassifier
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
-- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
-- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
-- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
-- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
-- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
+- [[1. Hardware prep]] - document - firmware/voice-terminal/SETUP.md
+- [[1. Why this differs from a generic ESP32+Hermes build]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[10. Alternatives (only if needed)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[11. Open decisions (confirm before server-side coding)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2. Server-side work this branch must implement]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.1 New `voice_gateway` service]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.2 Close the governed-path schema gap for Hermes  ⚠️ required]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.3 Compose + tailnet exposure]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.4 Egress & governance — what does NOT change]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.5 Tests (CLAUDE.md §4, coverage gate `fail_under=84`)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[3. Tailscale changes]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[4. iPhone & iPad (just hotspots — they do NOT tunnel the box)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6. Firmware]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.1 Toolchain + board support]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.2 Roaming WiFi (join first reachable, skip captive portals)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.3 Join the tailnet (MicroLink)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.4 Connect to the Voice Gateway]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.5 Audio + display state machine]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[8. Gotchas (incl. AgentShroud-specific)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[9. hey buddy wake word — honest status]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[9. Bring-up order — one cause per failure]] - document - firmware/voice-terminal/SETUP.md
+- [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[Sources]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[esp32-s3-hermes-voice-terminal]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,10 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
 
 ## Top bridge nodes
-- [[ClassificationResult]] - degree 10, connects to 2 communities
-- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
-- [[test_heuristic_classifier.py]] - degree 4, connects to 1 community
+- [[1. Hardware prep]] - degree 2, connects to 1 community
+- [[9. Bring-up order — one cause per failure]] - degree 2, connects to 1 community

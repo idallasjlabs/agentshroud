@@ -1,33 +1,34 @@
 ---
 type: community
 cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # OpenClaw cron: AgentShroud Daily Check-in (disab
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[CI job gitleaks (full-history secret scan)]] - code - .github/workflows/ci.yml
-- [[Cron Telegram delivery bypassed v1.5.2 base_url patch — fixed via third patch anchor on _send_to_platform]] - rationale - CHANGELOG.md
-- [[Daily Check-in dumped raw ssh-exec JSON verbatim — rewritten to parse stdoutstderr]] - rationale - CHANGELOG.md
-- [[Hermes cron AgentShroud Daily Check-in (gemma-4-26b-a4b-it)]] - code - docker/bots/hermes/init-config.sh
-- [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[Patch 1 — _send_telegram signature + Bot() construction (version-tolerant anchors)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[Patch 1b — _send_to_platform Telegram call site (fixes cron Delivertelegram bypass)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[Patch 2 — adapter.py _standalone_send passthrough]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[Vendor target _send_telegram (toolssend_message_tool.py or send_message_senders.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[Vendor target _send_to_platform (toolssend_message_tool.py, cron delivery call site)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[Vendor target _standalone_send (pluginsplatformstelegramadapter.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[_read]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[config.yaml seedupgrade — adds telegram.extra.base_url for gateway routing]] - code - docker/bots/hermes/init-config.sh
-- [[dash echo XSI backslash-escape bug — fixed with printf '%sn']] - rationale - CHANGELOG.md
-- [[patch_telegram_send_base_url.py_1]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[patch_telegram_send_base_url.py patch driver]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
-- [[ssh-exec.sh  ssh-write-file.sh fixed-filename race — moved to PID-suffixed files]] - rationale - CHANGELOG.md
-- [[v1.5.3 Release — Telegramcron delivery fixes]] - rationale - CHANGELOG.md
+- [[.test_is_high_risk_false_for_web_search()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_email_sending()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_external_api_calls()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_file_deletion()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_skill_installation()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_resolves_to_member_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_non_member_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_owner_resolves_to_owner_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_user_resolves_to_readonly_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_unknown_group_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only user resolves to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member resolves to GroupRole.MEMBER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[TestGroupRoleResolver]] - code - gateway/tests/test_group_rbac.py
+- [[Unknown group_chat_id defaults to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - rationale - gateway/tests/test_group_rbac.py
+- [[email_sending is recognized as a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
+- [[owner_in_group resolves to GroupRole.OWNER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[web_search is NOT a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,8 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__seed_cron]]
+- 6 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[Hermes cron AgentShroud Daily Check-in (gemma-4-26b-a4b-it)]] - degree 2, connects to 1 community
-- [[config.yaml seedupgrade — adds telegram.extra.base_url for gateway routing]] - degree 2, connects to 1 community
+- [[TestGroupRoleResolver]] - degree 18, connects to 2 communities

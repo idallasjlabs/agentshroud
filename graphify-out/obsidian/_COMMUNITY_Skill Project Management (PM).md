@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Assigning Work_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Continuity Files_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Escalation_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Known Risks_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Project Roadmap_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[README.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Risk Management_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Role_54]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Status Reporting_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Task Coordination_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Tracking Format_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Adversary Model]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Phases]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Techniques Reference]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Critical Rules_2]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Infrastructure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Key Principle]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Output_1]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 2 Prompt Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 3 Indirect Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 4 Data Exfiltration]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 5 Exploitation Chains]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 6 Detection Validation]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[SKILL_52]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Test Structure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Writing Exploit Tests]] - document - .agents/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[Skill Project Management (PM)_2]] - degree 7, connects to 1 community
+- [[AgentShroud Red Team Adversarial Tester]] - degree 8, connects to 1 community

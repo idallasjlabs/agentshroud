@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Test Kill Switch Monitor
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
-- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
-- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
+- [[SKILL_131]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

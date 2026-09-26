@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
-- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
-- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
-- [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
-- [[Source of truth_2]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[What happens automatically (confirmed real, in]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[What is not currently automated (the 4 gaps)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[hermes-openclaw-dev-workflow]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
-- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
+- [[Guardrails_2]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Invocation]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_10]] - document - .agents/skills/i-crpr/SKILL.md
+- [[SKILL_16]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Starting_a_Development_Task_via_Hermes_/_OpenCla
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+
+## Top bridge nodes
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - degree 15, connects to 1 community

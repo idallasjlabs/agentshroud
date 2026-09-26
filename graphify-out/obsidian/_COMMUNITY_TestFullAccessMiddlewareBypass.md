@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.12
 members: 18
 ---
 
 # TestFullAccessMiddlewareBypass
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_default_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_outbound_not_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_per_user_mode_override_controls_outbound_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Middleware block must be bypassed for full_access collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-user mode override is respected by the outbound filter.          A collabora]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFullAccessMiddlewareBypass]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access bypass applies even when the message has no interrogative marker.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator must receive the general-access disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator outbound must pass through even when leakage filter wou]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborators must pass through middleware and secondary pipeline bl]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborator must receive the restricted-scope disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborators must still be blocked by the leakage filter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[project_scoped collaborators are still blocked when middleware blocks (non-multi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Problem_1]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Root Cause_1]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[Verification]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,15 +37,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 4 edges to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY__build_image_targets()]]
 
 ## Top bridge nodes
-- [[TestFullAccessMiddlewareBypass]] - degree 13, connects to 4 communities
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - degree 6, connects to 2 communities
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - degree 6, connects to 2 communities
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - degree 6, connects to 2 communities
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - degree 4, connects to 1 community
+- [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities

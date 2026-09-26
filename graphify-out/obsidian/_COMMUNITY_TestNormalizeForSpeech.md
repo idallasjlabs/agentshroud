@@ -1,50 +1,50 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.06
 members: 35
 ---
 
 # TestNormalizeForSpeech
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 35 nodes
 
 ## Members
-- [[._n()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_angle_redacted_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_blockquote_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bold_double_star_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bold_double_underscore_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_bullet_list_marker_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_code_fence_delimiter_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_credential_redacted_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_credential_var_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_email_address_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_heading_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_horizontal_rule_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_image_link_reduced_to_alt()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_inline_code_backtick_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_internal_host_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_internal_url_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_italic_star_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_markdown_link_reduced_to_text()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_model_info_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_numbered_list_marker_stripped()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_person_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_phone_number_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_plain_prose_unchanged()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_port_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_raw_secret_value_not_present_after_normalise()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_secret_path_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_security_module_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_tool_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_unknown_angle_token_fallback()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_unknown_bracket_token_fallback()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_us_ssn_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_user_id_redacted_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_user_id_spoken()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[If a secret somehow reaches normalise (shouldn't — pipeline redacted it),]] - rationale - gateway/tests/test_voice_gateway.py
-- [[TestNormalizeForSpeech_1]] - code - gateway/tests/test_voice_gateway.py
+- [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,13 +54,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_.test_agent_reply_from_log()]]
-- 2 edges to [[_COMMUNITY_.test_lock_emoji_redacted_spoken()]]
-- 2 edges to [[_COMMUNITY_.test_lowercase_bracket_not_matched()]]
-- 2 edges to [[_COMMUNITY_.test_port_inline_colon()]]
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 13 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_ApprovalRequest]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
 
 ## Top bridge nodes
-- [[TestNormalizeForSpeech_1]] - degree 39, connects to 6 communities
-- [[._n()_1]] - degree 37, connects to 4 communities
+- [[test_main_simple.py]] - degree 22, connects to 3 communities
+- [[ApprovalDecision]] - degree 6, connects to 3 communities
+- [[security_headers_middleware()]] - degree 9, connects to 2 communities
+- [[test_approval_request_valid()]] - degree 3, connects to 1 community
+- [[test_forward_request_valid()]] - degree 3, connects to 1 community

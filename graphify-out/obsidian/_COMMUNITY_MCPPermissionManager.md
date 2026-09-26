@@ -1,61 +1,61 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.06
 members: 46
 ---
 
 # MCPPermissionManager
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 46 nodes
 
 ## Members
-- [[.__init__()_47]] - code - gateway/proxy/mcp_permissions.py
-- [[._load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
-- [[._recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
-- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[mgr()_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[._detect_encoded_injection()]] - code - gateway/security/tool_result_injection.py
+- [[._detect_unicode_obfuscation()]] - code - gateway/security/tool_result_injection.py
+- [[.setup_method()_36]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_base64_clean_content_not_flagged()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_base64_encoded_injection()_1]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_base64_encoded_injection()_2]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_clean_content_passes_through()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_clean_tool_output_passes()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_empty_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_high_severity_strips_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_ignore_instructions_injection_high_severity()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_ignore_previous_instructions()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_jailbreak_attempt()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_medium_severity_warns()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_new_instructions_override()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_none_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_prompt_extraction()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_role_reassignment()_2]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_rtl_override_detected()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_social_engineering_admin()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_system_delimiter_injection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_xml_function_injection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_xml_function_injection_detection()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_zero_width_chars_dont_bypass_detection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[Benign base64 content should not trigger encoded injection.]] - rationale - gateway/tests/test_tool_result_injection.py
+- [[Check for base64 or hex encoded injection attempts.]] - rationale - gateway/security/tool_result_injection.py
+- [[Detect unicode-based obfuscation techniques.]] - rationale - gateway/security/tool_result_injection.py
+- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
+- [[InjectionSeverity]] - code - gateway/security/tool_result_injection.py
+- [[Set up test fixtures._2]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test cases for ToolResultInjectionScanner.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of 'ignore previous instructions' injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of XML function call injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of base64 encoded injections.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test that clean content passes through unchanged.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[TestCleanContent]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestEncodedInjection]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestHighSeverity]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestMediumSeverity]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestSanitization]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestToolResultInjectionScanner]] - code - gateway/tests/test_tool_injection_scan.py
+- [[TestUnicodeObfuscation]] - code - gateway/tests/test_tool_result_injection.py
+- [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - rationale - gateway/tests/test_tool_result_injection.py
+- [[scanner()]] - code - gateway/tests/test_tool_result_injection.py
+- [[test_tool_injection_scan.py]] - code - gateway/tests/test_tool_injection_scan.py
+- [[test_tool_result_injection.py]] - code - gateway/tests/test_tool_result_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,22 +65,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_MCPServerConfig]]
-- 21 edges to [[_COMMUNITY_MCPToolCall]]
-- 18 edges to [[_COMMUNITY_StdioConnection]]
-- 14 edges to [[_COMMUNITY_PermissionLevel]]
-- 4 edges to [[_COMMUNITY_MCPToolResult]]
-- 3 edges to [[_COMMUNITY_FakeProcess]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 2 edges to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_TestInjectionDetection]]
+- 15 edges to [[_COMMUNITY_RBACConfig]]
+- 13 edges to [[_COMMUNITY_TrustManager]]
+- 5 edges to [[_COMMUNITY_falco_monitor.py]]
+- 4 edges to [[_COMMUNITY_EncryptedStore]]
+- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 101, connects to 12 communities
-- [[TestToolPermission]] - degree 27, connects to 2 communities
-- [[.__init__()_47]] - degree 5, connects to 2 communities
-- [[.record_private_data_redaction()]] - degree 3, connects to 1 community
-- [[mgr()_2]] - degree 2, connects to 1 community
+- [[InjectionAction]] - degree 34, connects to 5 communities
+- [[InjectionSeverity]] - degree 14, connects to 2 communities
+- [[._detect_encoded_injection()]] - degree 4, connects to 2 communities
+- [[._detect_unicode_obfuscation()]] - degree 4, connects to 2 communities
+- [[TestToolResultInjectionScanner]] - degree 10, connects to 1 community

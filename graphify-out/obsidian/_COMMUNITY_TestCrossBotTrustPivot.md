@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.38
+members: 7
 ---
 
 # TestCrossBotTrustPivot
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.38 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[SKILL_207]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[SKILL_209]] - document - skills/openclaw/github/SKILL.md
+- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
+- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_TrustLevel]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_AgentShroud Setup Guide]]
+- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 1 edge to [[_COMMUNITY_sunday-upgrade]]
+- 1 edge to [[_COMMUNITY_openai-whisper-apiSKILL]]
 
 ## Top bridge nodes
-- [[TestCrossBotTrustPivot]] - degree 9, connects to 4 communities
+- [[SKILL_207]] - degree 7, connects to 2 communities
+- [[SKILL_209]] - degree 4, connects to 2 communities
+- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community

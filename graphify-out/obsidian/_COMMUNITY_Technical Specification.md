@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[API Call Structure_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Audio Quality Settings_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Error Handling_8]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Primary API Text-to-Dialogue_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Quick Mode Create Podcast API_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Script Parsing_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Technical Specification_2]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Voice Configuration_2]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Anti-Patterns to Flag_21]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document Structure_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document-Type Patterns_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Role_108]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Rules_24]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Apollo — Audio Systems Producer]]
+- 2 edges to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[Technical Specification_2]] - degree 8, connects to 1 community
+- [[Skill Technical Writer (TW)_2]] - degree 8, connects to 1 community

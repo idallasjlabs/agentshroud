@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[apply-patches.js Behavioral Smoke Test Suite (Node.js)]] - code - tests/startup_smoke/test_apply_patches.js
 
 ## Live Query (requires Dataview plugin)
 

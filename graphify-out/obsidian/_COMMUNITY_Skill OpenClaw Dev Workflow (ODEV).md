@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Guardrails_7]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Invocation_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Role_32]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[openclawskillsi-hdevSKILL]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[.test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV)]]
-- 1 edge to [[_COMMUNITY_Mode A — Single task]]
-- 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep]]
+- 1 edge to [[_COMMUNITY_ssh_proxy.py]]
+- 1 edge to [[_COMMUNITY_Features]]
 
 ## Top bridge nodes
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - degree 9, connects to 2 communities
-- [[openclawskillsi-hdevSKILL]] - degree 2, connects to 1 community
+- [[TestLeakDetection]] - degree 8, connects to 1 community
+- [[.test_leak_detection_disabled()]] - degree 2, connects to 1 community

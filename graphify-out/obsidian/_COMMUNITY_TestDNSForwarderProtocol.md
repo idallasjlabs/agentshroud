@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.13
 members: 15
 ---
 
 # TestDNSForwarderProtocol
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Configuration  Environment Variables_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Function Details_8]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Hash Chain Structure_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Purpose_129]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Related_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Responsibilities_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,17 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/TestDNSForwarderProtocol
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 3 edges to [[_COMMUNITY_DNSBlocklist]]
-- 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 2 edges to [[_COMMUNITY_parse_query()]]
-
-## Top bridge nodes
-- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
-- [[_BlockAll]] - degree 9, connects to 3 communities
-- [[build_dns_query()]] - degree 11, connects to 2 communities
-- [[.test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
-- [[._make_protocol()]] - degree 10, connects to 1 community

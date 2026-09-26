@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.11
+members: 31
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[Folder Structure_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Linking_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OUTPUT FORMAT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[System Audit Vault (Obsidian)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Tags_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[YAML Frontmatter_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREHome.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREQuick Reference.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HERESystem Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureArchitecture Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureData Flow.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureShutdown & Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureStartup Sequence.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesAll Dependencies.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingError Index.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksCrash Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksFirst Time Setup.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksRestart Procedure.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsFull System Flowchart.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsStartup Flow Diagram.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[.__init__()_99]] - code - gateway/security/module_stats.py
+- [[.record()_2]] - code - gateway/security/module_stats.py
+- [[.reset()_1]] - code - gateway/security/module_stats.py
+- [[.setup_method()_14]] - code - gateway/tests/test_module_stats.py
+- [[.setup_method()_13]] - code - gateway/tests/test_module_stats.py
+- [[.snapshot()]] - code - gateway/security/module_stats.py
+- [[.test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
+- [[.test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
+- [[.test_record_decision_helper()]] - code - gateway/tests/test_module_stats.py
+- [[.test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
+- [[.test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
+- [[Decision]] - code - gateway/security/module_stats.py
+- [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
+- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - rationale - gateway/security/module_stats.py
+- [[Return a per-module stats snapshot with totals and block rate.]] - rationale - gateway/security/module_stats.py
+- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - rationale - gateway/tests/test_module_stats.py
+- [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - rationale - gateway/tests/test_module_stats.py
+- [[TestEgressWiringEndToEnd]] - code - gateway/tests/test_module_stats.py
+- [[TestEnforcementWiring]] - code - gateway/tests/test_module_stats.py
+- [[Thread-safe per-module allowblocksanitize counters.]] - rationale - gateway/security/module_stats.py
+- [[get_collector()]] - code - gateway/security/module_stats.py
+- [[module_stats.py]] - code - gateway/security/module_stats.py
+- [[test_block_rate_computed()]] - code - gateway/tests/test_module_stats.py
+- [[test_empty_module_zero_rate_not_division_error()]] - code - gateway/tests/test_module_stats.py
+- [[test_module_stats.py]] - code - gateway/tests/test_module_stats.py
+- [[test_record_and_snapshot()]] - code - gateway/tests/test_module_stats.py
+- [[test_record_ignores_invalid_decision_safely()]] - code - gateway/tests/test_module_stats.py
+- [[test_reset()]] - code - gateway/tests/test_module_stats.py
+- [[test_sanitize_decision()]] - code - gateway/tests/test_module_stats.py
+- [[test_thread_safe_under_concurrency()]] - code - gateway/tests/test_module_stats.py
+- [[test_unknown_module_created_on_demand()]] - code - gateway/tests/test_module_stats.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,7 +50,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 5 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 5 edges to [[_COMMUNITY_AgentTarget]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_EncryptedStore]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[System Audit Vault (Obsidian)_2]] - degree 5, connects to 1 community
+- [[test_module_stats.py]] - degree 18, connects to 4 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
+- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
+- [[module_stats.py]] - degree 6, connects to 2 communities
+- [[get_collector()]] - degree 11, connects to 1 community

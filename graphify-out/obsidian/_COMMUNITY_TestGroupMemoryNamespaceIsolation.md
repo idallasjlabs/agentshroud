@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[.test_raw_web_search_json_collaborator_safe_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_raw_web_search_json_owner_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_web_search_log_called_with_correct_params()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_web_search_no_egress_filter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_web_search_query_truncation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator chat raw web_search JSON produces a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Queries longer than 200 chars are truncated in the SOC log reason.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestWebSearchLog]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_trigger_web_search_log returns silently when egress_filter is None.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +31,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 5 edges to [[_COMMUNITY__make_proxy()]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 4 communities
+- [[TestWebSearchLog]] - degree 11, connects to 3 communities
+- [[.test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 2 communities
+- [[.test_raw_web_search_json_owner_message()]] - degree 4, connects to 2 communities
+- [[.test_web_search_log_called_with_correct_params()]] - degree 4, connects to 2 communities
+- [[.test_web_search_no_egress_filter()]] - degree 4, connects to 2 communities

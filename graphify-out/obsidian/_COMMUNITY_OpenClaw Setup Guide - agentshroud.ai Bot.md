@@ -1,49 +1,49 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.07
 members: 34
 ---
 
 # OpenClaw Setup Guide - agentshroud.ai Bot
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 34 nodes
 
 ## Members
-- [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Data Locations]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Gateway Can't Reach OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Initial Configuration]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Inside Container]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[On Host (Docker Volumes)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Features Now Available]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Won't Start]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Quick Start_3]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Recommendations]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Security Notes_1]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 4 Set Up Channels (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Troubleshooting_11]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Agents]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ MCP Servers]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Multi-LLM Support]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Skills]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[1. Pre-cache the Lima disk image]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[2. Start Colima]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[3. Apply the VPN networking fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[4. Verify_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[ADR-006-multi-runtime-support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[ADR-006 Multi-Runtime Container Support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Cisco AnyConnect VPN Networking Fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Colima (primary macOS runtime)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Colima Initial Setup Procedure]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Colima as primary macOS dev runtime]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Consequences_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Context_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Decision_7]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Docker Desktop (network topology diagram)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[Fix (Colima)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Fix (Docker Desktop)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Mitigation_2]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Multi-Runtime Support (DockerPodmanApple Containers)]] - concept - docs/architecture/deployment-diagram.md
+- [[Negative]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Per-Host Runtime Selection]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Positive]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Problem_2]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Roadmap]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Runtime Abstraction Layer]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Status_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Supported Runtimes]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Tailscale (encrypted overlay network)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Tailscale Overlay Network (tail240ea8.ts.net)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - rationale - docs/runbooks/colima-docker-guide.md
+- [[macOS Host (Development Machine)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[marvin (100.90.175.83, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[trillian (100.94.68.61, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,7 +53,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
+- 2 edges to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
 
 ## Top bridge nodes
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - degree 12, connects to 1 community
+- [[ADR-006 Multi-Runtime Container Support]] - degree 19, connects to 1 community
+- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community
+- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - degree 2, connects to 1 community

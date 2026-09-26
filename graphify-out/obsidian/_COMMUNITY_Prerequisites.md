@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # Prerequisites
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
-- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
-- [[Prerequisites]] - document - docs/operations/deployment-procedure.md
-- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
-- [[System Requirements]] - document - docs/operations/deployment-procedure.md
+- [[Mode B — Comprehensive review sweep]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)]] - document - .agents/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Overview v0.8.0]]
 
 ## Top bridge nodes
-- [[Prerequisites]] - degree 5, connects to 1 community
+- [[Mode B — Comprehensive review sweep]] - degree 4, connects to 1 community

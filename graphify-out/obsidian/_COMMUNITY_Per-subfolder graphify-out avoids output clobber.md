@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Per-subfolder graphify-out avoids output clobbering]] - rationale - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[podcast_plan.json (voice config)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

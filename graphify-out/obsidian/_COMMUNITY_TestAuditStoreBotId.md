@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.22
 members: 10
 ---
 
 # TestAuditStoreBotId
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.store()_2]] - code - gateway/tests/test_audit_export.py
-- [[.test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
-- [[.test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
-- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
-- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[.test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_stranger_rate_limit_notice_includes_reset_time()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_stranger_within_limit_triggers_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[First message from unknown user (within limit) queues approval flow.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Once stranger exhausts rate limit, they get a rate-limit notice; owner is NOT no]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Repeated rate-limited messages within the cooldown window send at most one notic]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestStrangerRateLimit]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknownunapproved users have stricter rate limits than collaborators.      Afte]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +29,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AuditStore]]
-- 2 edges to [[_COMMUNITY_AuditExporter]]
-- 1 edge to [[_COMMUNITY_AuditExportConfig]]
+- 15 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 4 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
 
 ## Top bridge nodes
-- [[TestAuditStoreBotId]] - degree 13, connects to 3 communities
-- [[.test_migration_adds_bot_id_column()]] - degree 3, connects to 1 community
-- [[.store()_2]] - degree 2, connects to 1 community
+- [[TestStrangerRateLimit]] - degree 9, connects to 4 communities
+- [[.test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - degree 7, connects to 2 communities
+- [[.test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - degree 7, connects to 2 communities
+- [[.test_stranger_within_limit_triggers_approval_workflow()]] - degree 7, connects to 2 communities
+- [[.test_stranger_rate_limit_notice_includes_reset_time()]] - degree 6, connects to 1 community

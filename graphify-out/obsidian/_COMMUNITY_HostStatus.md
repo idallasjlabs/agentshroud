@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.36
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # HostStatus
 
-**Cohesion:** 0.36 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[HostStatus]] - code - gateway/tools/multi_host_test.py
-- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
-- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestClassify_1]] - code - gateway/tests/test_multi_host_test.py
-- [[classify()_1]] - code - gateway/tools/multi_host_test.py
+- [[.export_leakage_report()]] - code - gateway/security/env_guard.py
+- [[.get_leakage_summary()]] - code - gateway/security/env_guard.py
+- [[.monitor_environment_access()]] - code - gateway/security/env_guard.py
+- [[Any_39]] - code - gateway/security/env_guard.py
+- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
+- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,18 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 4 edges to [[_COMMUNITY_MultiHostResult]]
-- 3 edges to [[_COMMUNITY_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_run_multi_host()]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_main()]]
-- 1 edge to [[_COMMUNITY_TestParseHosts]]
-- 1 edge to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 1 edge to [[_COMMUNITY_ssh_runner()]]
-- 1 edge to [[_COMMUNITY_TestTail]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[HostStatus]] - degree 18, connects to 10 communities
-- [[classify()_1]] - degree 8, connects to 3 communities
-- [[TestClassify_1]] - degree 7, connects to 2 communities
+- [[.get_leakage_summary()]] - degree 4, connects to 1 community
+- [[.export_leakage_report()]] - degree 3, connects to 1 community
+- [[.monitor_environment_access()]] - degree 3, connects to 1 community

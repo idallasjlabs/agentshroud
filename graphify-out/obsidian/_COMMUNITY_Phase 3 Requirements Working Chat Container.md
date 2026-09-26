@@ -1,39 +1,41 @@
 ---
 type: community
 cohesion: 0.08
-members: 24
+members: 26
 ---
 
 # Phase 3 Requirements: Working Chat Container
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[Core Identity (from IDENTITY.md, SOUL.md, USER.md)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Critical Constraint]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[DEFERRED TO PHASE 4+ (Advanced Features)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Deferred Security Controls (Phase 5+)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Files to Mount in Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[MUST HAVE (Phase 3 - Minimum Viable Chat)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Notes_3]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[PHASE3_REQUIREMENTS]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 1 Isaiah's Persona Package]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 2 Phase 3 Feature Scope]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 3 Security Requirements for Base Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 4 Implementation Checklist]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[References_3]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 4 Integration Testing (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 5 Documentation (Day 3)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Success Criteria_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Timeline]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_12]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Test Results_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +43,9 @@ members: 24
 TABLE source_file, type FROM #community/Phase_3_Requirements_Working_Chat_Container
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_hermes_cron_seed.py]]
+
+## Top bridge nodes
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - degree 5, connects to 1 community

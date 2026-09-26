@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
-- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Whitespace in leaked URL should queue approval using first URL token.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/MiddlewareManager_Session_Enforcement_Tests
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token()]] - degree 4, connects to 3 communities

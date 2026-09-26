@@ -1,124 +1,134 @@
 ---
 type: community
-cohesion: 0.04
-members: 109
+cohesion: 0.03
+members: 119
 ---
 
 # KillSwitchMonitor
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 109 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 119 nodes
 
 ## Members
-- [[.__init__()_161]] - code - gateway/proxy/mcp_audit.py
-- [[.__init__()_162]] - code - gateway/proxy/pipeline.py
-- [[.__init__()_163]] - code - gateway/security/alert_dispatcher.py
-- [[.__init__()_174]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.__init__()_164]] - code - gateway/security/killswitch_monitor.py
-- [[._check_request_rate()]] - code - gateway/security/killswitch_monitor.py
-- [[._check_system_resources()_1]] - code - gateway/security/killswitch_monitor.py
-- [[._check_token_usage()]] - code - gateway/security/killswitch_monitor.py
-- [[._check_tool_call_rate()]] - code - gateway/security/killswitch_monitor.py
-- [[._clean_old_metrics()]] - code - gateway/security/killswitch_monitor.py
-- [[._count_recent_events()]] - code - gateway/security/killswitch_monitor.py
-- [[._get_system_stats()]] - code - gateway/security/killswitch_monitor.py
-- [[._log_heartbeat_result()]] - code - gateway/security/killswitch_monitor.py
-- [[._log_verification_result()]] - code - gateway/security/killswitch_monitor.py
-- [[._send_anomaly_alert()]] - code - gateway/security/killswitch_monitor.py
-- [[._send_heartbeat_alert()]] - code - gateway/security/killswitch_monitor.py
-- [[._send_verification_alert()]] - code - gateway/security/killswitch_monitor.py
-- [[._test_docker_available()]] - code - gateway/security/killswitch_monitor.py
-- [[._test_killswitch_mode()]] - code - gateway/security/killswitch_monitor.py
-- [[._test_script_exists()]] - code - gateway/security/killswitch_monitor.py
-- [[._test_script_permissions()]] - code - gateway/security/killswitch_monitor.py
-- [[._test_script_syntax()]] - code - gateway/security/killswitch_monitor.py
-- [[.anomaly_detection()]] - code - gateway/security/killswitch_monitor.py
-- [[.from_env()_1]] - code - gateway/security/killswitch_config.py
-- [[.get_status()_1]] - code - gateway/security/killswitch_monitor.py
-- [[.heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
-- [[.test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_excessive_requests_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_excessive_tokens_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_excessive_tool_calls_flagged_and_alerted()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_fail_when_script_missing_triggers_alert()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_failure_increments_and_alerts_at_threshold()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_get_status_reports_verification_due()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_get_system_stats_handles_psutil_error()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_healthy_resets_miss_counter()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_no_anomaly_when_within_limits()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_slow_when_response_exceeds_timeout()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_system_resource_cpu_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.to_dict()_12]] - code - gateway/security/killswitch_config.py
-- [[.verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
-- [[Any_52]] - code - gateway/security/killswitch_config.py
-- [[Any_60]] - code - gateway/security/killswitch_monitor.py
-- [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Check if the agent is responding within expected parameters.          Returns]] - rationale - gateway/security/killswitch_monitor.py
-- [[Check if token usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Check if tool call rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
-- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
-- [[Count events in the last N seconds.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Detect unusual patterns that might indicate rogue behavior.          Args]] - rationale - gateway/security/killswitch_monitor.py
-- [[Get current kill switch monitor status.          Returns             Dict conta]] - rationale - gateway/security/killswitch_monitor.py
-- [[Get current system statistics.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[KillSwitchConfig_1]] - code - gateway/security/killswitch_monitor.py
-- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
-- [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
-- [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
-- [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
-- [[Path_37]] - code - gateway/security/alert_dispatcher.py
-- [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Send alert for verification failure.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test a specific kill switch mode.          Args             mode The kill swit]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test if the kill switch script has valid syntax.]] - rationale - gateway/security/killswitch_monitor.py
-- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_monitor.py
-- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
-- [[TestStatusAndStats]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
-- [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[config()_2]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[deque]] - code - gateway/security/killswitch_monitor.py
-- [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
-- [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
-- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
-- [[killswitch_monitor.py (KillSwitchMonitor)]] - code - gateway/security/killswitch_monitor.py
-- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
-- [[test_killswitch_monitor_behavior.py]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.__init__()_22]] - code - gateway/proxy/forwarder.py
+- [[.__init__()_34]] - code - gateway/proxy/sidecar.py
+- [[.__init__()_154]] - code - gateway/tests/test_e2e_proxy.py
+- [[.__init__()_153]] - code - gateway/tests/test_e2e_proxy.py
+- [[.forward()_1]] - code - gateway/proxy/forwarder.py
+- [[.forward()_4]] - code - gateway/tests/test_e2e_proxy.py
+- [[.get_stats()_2]] - code - gateway/proxy/forwarder.py
+- [[.get_stats()_7]] - code - gateway/proxy/sidecar.py
+- [[.health_check()_1]] - code - gateway/proxy/forwarder.py
+- [[.is_healthy()]] - code - gateway/proxy/forwarder.py
+- [[.last_forward_time()]] - code - gateway/proxy/forwarder.py
+- [[.process_inbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[.process_outbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[.scan()]] - code - gateway/proxy/sidecar.py
+- [[.set_response_handler()]] - code - gateway/proxy/forwarder.py
+- [[.to_dict()_6]] - code - gateway/security/canary.py
+- [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Any_13]] - code - gateway/proxy/forwarder.py
+- [[Any_20]] - code - gateway/proxy/sidecar.py
+- [[Any_33]] - code - gateway/security/canary.py
+- [[Canary result should serialize to dict properly.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should detect that fake PII was stripped.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should fail when no pipeline configured.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should pass proxy check with healthy forwarder.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
+- [[CanaryCheck]] - code - gateway/security/canary.py
+- [[CanaryResult]] - code - gateway/security/canary.py
+- [[Check if the OpenClaw backend is healthy.]] - rationale - gateway/proxy/forwarder.py
+- [[Configuration for the HTTP forwarder.]] - rationale - gateway/proxy/forwarder.py
+- [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Forward a request to the OpenClaw backend.]] - rationale - gateway/proxy/forwarder.py
+- [[ForwardResult]] - code - gateway/proxy/forwarder.py
+- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[ForwarderConfig]] - code - gateway/proxy/forwarder.py
+- [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - rationale - gateway/proxy/forwarder.py
+- [[HTTPForwarder]] - code - gateway/proxy/forwarder.py
+- [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Individual canary check result.]] - rationale - gateway/security/canary.py
+- [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
+- [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
+- [[Result of forwarding a request.]] - rationale - gateway/proxy/forwarder.py
+- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
+- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
+- [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
+- [[ScanRequest]] - code - gateway/proxy/sidecar.py
+- [[ScanResponse]] - code - gateway/proxy/sidecar.py
+- [[SecurityPipeline (external, referenced)]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline.process_inbound]] - code - gateway/proxy/pipeline.py
+- [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send command requiring approval — verify queued, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send message with SSN — verify it's redacted before forwarding.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send prompt injection — verify blocked, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Set a mock response handler for testing.]] - rationale - gateway/proxy/forwarder.py
+- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - rationale - gateway/proxy/sidecar.py
+- [[SidecarScanner]] - code - gateway/proxy/sidecar.py
+- [[Trigger freeze mode — verify pipeline blocks all traffic.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify allowed domains pass egress check.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify both inbound and outbound are in audit chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify canary message contains the expected fake PII.]] - rationale - gateway/tests/test_canary.py
+- [[Verify clean messages pass through without blocking.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify forwarder handles errors gracefully.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify forwarder mock works correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify multiple injection patterns are detected.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify pipeline statistics are tracked correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify processing time is tracked.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify sidecar scanner works.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
+- [[_StubForwarder_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
+- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
+- [[forwarder()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[forwarder.py]] - code - gateway/proxy/forwarder.py
+- [[healthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
+- [[pipeline()]] - code - gateway/tests/test_e2e_proxy.py
+- [[prompt_guard()]] - code - gateway/tests/test_e2e_proxy.py
+- [[run_canary()]] - code - gateway/security/canary.py
+- [[sanitizer()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[sidecar.py]] - code - gateway/proxy/sidecar.py
+- [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_canary.py]] - code - gateway/tests/test_canary.py
+- [[test_canary_fails_without_pipeline()]] - code - gateway/tests/test_canary.py
+- [[test_canary_message_contains_fake_pii()]] - code - gateway/tests/test_canary.py
+- [[test_canary_passes_with_pipeline()]] - code - gateway/tests/test_canary.py
+- [[test_canary_result_serialization()]] - code - gateway/tests/test_canary.py
+- [[test_canary_verifies_audit_chain()]] - code - gateway/tests/test_canary.py
+- [[test_canary_verifies_pii_stripping()]] - code - gateway/tests/test_canary.py
+- [[test_canary_with_healthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[test_canary_with_unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[test_clean_message_passes()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_direct_bypass_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_e2e_proxy.py]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_allowed_domain()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_forwarder_error_handling()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_forwarder_mock()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_inbound_outbound_both_audited()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_kill_switch_freezes()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_mixed_pii_and_injection()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_multiple_prompt_patterns()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_outbound_pii_stripped()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pii_stripped_inbound()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pipeline_processing_time()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pipeline_stats()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_prompt_injection_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_sidecar_scanner()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_tampered_audit_detected()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_trust_level_enforced()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
+- [[unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -128,26 +138,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_lifespan.py]]
-- 14 edges to [[_COMMUNITY_test_observatory_mode.py]]
-- 6 edges to [[_COMMUNITY_TestKillSwitchVerification]]
-- 2 edges to [[_COMMUNITY_TestObservatoryMode]]
-- 2 edges to [[_COMMUNITY_TestSetMode]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_.analyze_message()]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded S]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_cls]]
+- 16 edges to [[_COMMUNITY_RBACConfig]]
+- 14 edges to [[_COMMUNITY_ResourceGuard]]
+- 8 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 7 edges to [[_COMMUNITY_ServiceManager]]
+- 5 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 4 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 4 edges to [[_COMMUNITY_TrustConfig]]
+- 3 edges to [[_COMMUNITY_falco_monitor.py]]
+- 3 edges to [[_COMMUNITY_GroupApprovalRouter]]
+- 3 edges to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 3 edges to [[_COMMUNITY_EgressApprovalQueue]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_ApprovalRequest]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
 
 ## Top bridge nodes
-- [[KillSwitchMonitor]] - degree 80, connects to 6 communities
-- [[KillSwitchConfig]] - degree 43, connects to 6 communities
-- [[killswitch_monitor.py]] - degree 8, connects to 5 communities
-- [[deque]] - degree 8, connects to 1 community
-- [[.__init__()_163]] - degree 3, connects to 1 community
+- [[test_e2e_proxy.py]] - degree 53, connects to 11 communities
+- [[_PassInboundPipeline]] - degree 23, connects to 10 communities
+- [[_StubForwarder_2]] - degree 22, connects to 10 communities
+- [[test_canary.py]] - degree 21, connects to 6 communities
+- [[run_canary()]] - degree 20, connects to 5 communities

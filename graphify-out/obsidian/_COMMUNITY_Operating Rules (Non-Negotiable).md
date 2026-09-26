@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[.test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 5 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 3 edges to [[_COMMUNITY_GitGuard]]
+- 3 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 1 edge to [[_COMMUNITY_brand-guidelines]]
+- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
+- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
 
 ## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)_1]] - degree 7, connects to 1 community
+- [[TestExtractEgressTargets]] - degree 21, connects to 7 communities

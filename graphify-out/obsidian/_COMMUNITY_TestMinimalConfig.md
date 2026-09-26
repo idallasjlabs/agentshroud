@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.config()_6]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_auth_token()_1]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_bind()_1]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_port()_1]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_log_level()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_log_level()_1]] - code - gateway/tests/test_config_validation.py
-- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestMinimalConfig_1]] - code - gateway/tests/test_config_validation.py
-- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
+- [[Additional Patches]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Behavior]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 1 Main Agent as Default]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Purpose_120]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Related Notes_6]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Usage_122]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js_2]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,13 +29,3 @@ members: 12
 TABLE source_file, type FROM #community/TestMinimalConfig
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__parse_env_file()]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_config_validation.py]]
-
-## Top bridge nodes
-- [[TestMinimalConfig]] - degree 7, connects to 2 communities
-- [[TestMinimalConfig_1]] - degree 7, connects to 1 community
-- [[.config()_6]] - degree 2, connects to 1 community

@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.08
 members: 24
 ---
 
 # TestMultipartOutboundPipeline
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Markdown exfil links are stripped from multipart captions (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[graphify_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For --update and --cluster-only_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify add and --watch_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify query_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For the commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Honesty Rules_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[SKILL_64]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2 - Detect files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 5 - Label communities_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Usage_41]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What graphify is for_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,19 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/TestMultipartOutboundPipeline
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_BlockingPipeline]]
-- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
-
-## Top bridge nodes
-- [[TestMultipartOutboundPipeline]] - degree 15, connects to 4 communities
-- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 2 communities
-- [[.test_multipart_markdown_exfil_link_scrubbed()]] - degree 5, connects to 2 communities
-- [[_make_multipart_body()]] - degree 12, connects to 1 community
-- [[.test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 1 community

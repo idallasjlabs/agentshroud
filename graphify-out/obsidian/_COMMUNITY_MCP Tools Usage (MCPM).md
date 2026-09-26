@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)_2]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Related Skills_83]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Usage_87]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
 
 ## Top bridge nodes
-- [[MCP Tools Usage (MCPM)_2]] - degree 4, connects to 1 community
+- [[TestFluentBitSummary]] - degree 4, connects to 1 community
+- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community

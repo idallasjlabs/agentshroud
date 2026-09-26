@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 1.00
+cohesion: 0.67
 members: 3
 ---
 
 # Hermes Podcast Production Orchestrator README
 
-**Cohesion:** 1.00 - tightly connected
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Hermes Podcast Production Orchestrator README]] - document - .agents/skills/i-hermes/README.md
-- [[Hermes Reference Verifier Skill]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)]] - concept - .agents/skills/i-hermes/README.md
+- [[.teardown_method()_1]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_2]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,11 @@ members: 3
 TABLE source_file, type FROM #community/Hermes_Podcast_Production_Orchestrator_README
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ContainerEngine]]
+- 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
+
+## Top bridge nodes
+- [[.teardown_method()_1]] - degree 2, connects to 1 community
+- [[.teardown_method()_2]] - degree 2, connects to 1 community

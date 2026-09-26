@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Purpose_103]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Related Skills_94]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Usage_98]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[.test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
 
 ## Top bridge nodes
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - degree 4, connects to 1 community
+- [[TestScoreLoggingMonitoring_1]] - degree 4, connects to 1 community

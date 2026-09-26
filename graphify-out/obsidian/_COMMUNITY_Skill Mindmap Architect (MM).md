@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Skill: Mindmap Architect (MM)
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_7]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Brainstorming Session Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Core Discipline Frame → Structure → Generate → Validate_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Curriculum Design (with `i-atlas`)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Decision Tree Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Dependencies_8]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Example FODL Pipeline Overview_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Export and Sharing Conventions_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Hierarchy Design — Outline First_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Knowledge Map (PKE  OKE integration)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool markmap-mcp-server_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool xmind-generator-mcp_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markdown-to-Mindmap Conversion_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_31]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Rules_7]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Validation Checklist_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[When to Use Mindmaps vs Other Formats_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[XMind Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[1. Find the Bot]] - document - docs/user-guide.md
+- [[2. Verify You're Authorized]] - document - docs/user-guide.md
+- [[3. Start Chatting]] - document - docs/user-guide.md
+- [[AgentShroud User Guide]] - document - docs/user-guide.md
+- [[Commands_2]] - document - docs/user-guide.md
+- [[Dashboard Overview]] - document - docs/user-guide.md
+- [[FAQ_1]] - document - docs/user-guide.md
+- [[Getting Started]] - document - docs/user-guide.md
+- [[Interacting via Telegram]] - document - docs/user-guide.md
+- [[Need Help_1]] - document - docs/user-guide.md
+- [[Q Can I request the AI to do something on the server]] - document - docs/user-guide.md
+- [[Q Can I use the bot in group chats]] - document - docs/user-guide.md
+- [[Q Can the AI see my personal information]] - document - docs/user-guide.md
+- [[Q How do I know my data is being protected]] - document - docs/user-guide.md
+- [[Q The bot isn't responding. What do I do]] - document - docs/user-guide.md
+- [[Q What happens if I accidentally send a password]] - document - docs/user-guide.md
+- [[Q What's the kill switch]] - document - docs/user-guide.md
+- [[Reading the Audit Trail]] - document - docs/user-guide.md
+- [[Regular Messages]] - document - docs/user-guide.md
+- [[SSH Access]] - document - docs/user-guide.md
+- [[Tips]] - document - docs/user-guide.md
+- [[Understanding Approval Requests]] - document - docs/user-guide.md
+- [[What Requires Approval]] - document - docs/user-guide.md
+- [[What You'll See]] - document - docs/user-guide.md
+- [[What is AgentShroud_3]] - document - docs/user-guide.md
+- [[Why Approvals Exist]] - document - docs/user-guide.md
+- [[user-guide]] - document - docs/user-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +44,3 @@ members: 26
 TABLE source_file, type FROM #community/Skill_Mindmap_Architect_MM
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Mindmap Architect (MM)_2]] - degree 14, connects to 1 community

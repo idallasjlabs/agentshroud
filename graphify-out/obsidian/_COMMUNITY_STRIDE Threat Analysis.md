@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[R - Repudiation]] - document - docs/security/threat-model.md
-- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
-- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
-- [[T - Tampering with Data]] - document - docs/security/threat-model.md
-- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
-- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
-- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
-- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
-- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
+- [[Key Endpoints]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Purpose_173]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Pydantic Models]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Related Notes_13]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Responsibilities_57]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Runtime Engine Integration]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Security_7]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/STRIDE_Threat_Analysis
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_I - Information Disclosure]]
-- 1 edge to [[_COMMUNITY_E - Elevation of Privilege]]
-- 1 edge to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
-- 1 edge to [[_COMMUNITY_Threat Model]]
-
-## Top bridge nodes
-- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

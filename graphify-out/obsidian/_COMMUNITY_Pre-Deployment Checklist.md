@@ -10,26 +10,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[1. Change Documentation_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[2. Testing Evidence_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[4. Blast Radius_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[5. Observability_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[6. Security_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[7. Communication_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[8. Service Control Commands_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Invoke Before_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Role_42]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Playwright]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Purpose_190]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_45]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_54]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Security Controls_2]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+- 1 edge to [[_COMMUNITY_Telegram Formatting Rule (bold only, no headers]]
 
 ## Top bridge nodes
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - degree 6, connects to 1 community
+- [[volumes]] - degree 4, connects to 2 communities
+- [[playwright_1]] - degree 3, connects to 1 community

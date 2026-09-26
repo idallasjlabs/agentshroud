@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_returns_false_when_file_missing()_2]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_ingested_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_true_when_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestAlreadyIngestedGhsaToday]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[System promptinstruction leakage probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_asyncio]]
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
-- [[TestAlreadyIngestedGhsaToday]] - degree 4, connects to 1 community
+- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

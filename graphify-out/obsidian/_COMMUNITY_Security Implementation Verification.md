@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Layer 1 Bot Instructions (Primary Defense)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Layer 2 Gateway Blocking (Defense in Depth)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Layer 3 Audit Logging (Monitoring)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Security Implementation Verification]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 1 Telegram Access (Should Refuse + Block)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 2 Control UI Access (Should Refuse)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 3 Console Access (Should Display)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 4 Internal Use (Should Work)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Ultra-Conservative Policy Requirements]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[✅ Verification Tests]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🎯 Policy Compliance Check]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🎯 Summary]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🏗️ Architecture Overview]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[📊 Multi-Layer Defense]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[📋 Compliance Checklist]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🔍 Container Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Apple Containers vs DockerPodman]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Configuration  Environment Variables_13]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Function Details_19]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Purpose_140]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Related_26]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/Security_Implementation_Verification
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_Core Security Principles]]
-- 1 edge to [[_COMMUNITY_1Password Vault Sharing Instructions]]
-
-## Top bridge nodes
-- [[Security Implementation Verification]] - degree 10, connects to 3 communities

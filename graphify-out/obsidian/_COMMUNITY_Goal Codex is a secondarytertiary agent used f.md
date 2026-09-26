@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Goal: Codex is a secondary/tertiary agent used f
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - document - AGENTS.md
-- [[1) REPOSITORY OVERVIEW]] - document - AGENTS.md
-- [[10) MCP SERVERS (EXTERNAL INTEGRATIONS)]] - document - AGENTS.md
-- [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
-- [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
-- [[5) ENVIRONMENT SETUP]] - document - AGENTS.md
-- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - AGENTS.md
-- [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
-- [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
-- [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
-- [[B) Validation Runner (Primary Job)]] - document - AGENTS.md
-- [[C) Safe Refactor (Secondary Job)]] - document - AGENTS.md
-- [[Conda Environment]] - document - AGENTS.md
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - document - AGENTS.md
-- [[Primary Focus_1]] - document - AGENTS.md
-- [[Rules_9]] - document - AGENTS.md
-- [[Supporting Integrations]] - document - AGENTS.md
-- [[What You Can Own]] - document - AGENTS.md
-- [[What You Don't Have]] - document - AGENTS.md
-- [[What You Have]] - document - AGENTS.md
-- [[When to Defer to Claude Code]] - document - AGENTS.md
-- [[Your Role in the Multi-Agent System]] - document - AGENTS.md
+- [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Overview_23]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Related_19]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineAction` (Enum)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineResult` (Dataclass)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShro]]
-- 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
-- 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
+- 1 edge to [[_COMMUNITY_.get_or_create_session()]]
 
 ## Top bridge nodes
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 12, connects to 3 communities
-- [[5) ENVIRONMENT SETUP]] - degree 3, connects to 1 community
+- [[Key Classes_1]] - degree 5, connects to 1 community

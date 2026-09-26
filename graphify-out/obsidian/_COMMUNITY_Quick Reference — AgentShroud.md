@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.10
-members: 19
+cohesion: 0.22
+members: 20
 ---
 
 # Quick Reference — AgentShroud
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Components_1]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Configuration Files_3]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Health Checks_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Logs_4]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_52]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_15]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[.__init__()_119]] - code - gateway/security/subagent_governance.py
+- [[.test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_tokens_within_budget()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_tool_calls_budget_blocks_authorize_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_warning_at_80_percent()]] - code - gateway/tests/test_subagent_governance.py
+- [[Default governance instance in enforce mode.]] - rationale - gateway/tests/test_subagent_governance.py
+- [[Governance in monitor mode (log but don't block).]] - rationale - gateway/tests/test_subagent_governance.py
+- [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
+- [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
+- [[ResourceBudget]] - code - gateway/security/subagent_governance.py
+- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
+- [[TestResourceBudgets]] - code - gateway/tests/test_subagent_governance.py
+- [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
+- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
+- [[disabled_gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[monitor_gov()]] - code - gateway/tests/test_subagent_governance.py
+- [[test_subagent_governance.py]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,8 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 11 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 8 edges to [[_COMMUNITY_Skill Project Management (PM)]]
+- 6 edges to [[_COMMUNITY_purge_low_value_events()]]
+- 4 edges to [[_COMMUNITY_Hermes — Reference Verifier]]
+- 4 edges to [[_COMMUNITY_Discovery Strategy]]
+- 4 edges to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
+- 3 edges to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 3 edges to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
 
 ## Top bridge nodes
-- [[Quick Reference — AgentShroud]] - degree 11, connects to 1 community
-- [[AgentShroud — System Overview]] - degree 8, connects to 1 community
+- [[SubagentGovernance]] - degree 30, connects to 8 communities
+- [[GovernanceConfig]] - degree 17, connects to 6 communities
+- [[ResourceBudget]] - degree 13, connects to 6 communities
+- [[test_subagent_governance.py]] - degree 17, connects to 5 communities
+- [[TestResourceBudgets]] - degree 12, connects to 1 community

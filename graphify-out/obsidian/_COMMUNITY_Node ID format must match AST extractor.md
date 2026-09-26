@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Node ID format must match AST extractor]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[.githubworkflowsmerge-regression-audit.yml_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

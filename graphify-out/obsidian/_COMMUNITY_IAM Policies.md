@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[IAM Policies]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

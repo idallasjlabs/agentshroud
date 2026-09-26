@@ -1,135 +1,143 @@
 ---
 type: community
-cohesion: 0.02
-members: 120
+cohesion: 0.03
+members: 128
 ---
 
 # OutboundInfoFilter
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 120 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 128 nodes
 
 ## Members
-- [[.__init__()_147]] - code - gateway/security/outbound_filter.py
-- [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
-- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
-- [[._has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
-- [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
-- [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
-- [[.filter_response()_1]] - code - gateway/security/outbound_filter.py
-- [[.get_stats()_16]] - code - gateway/security/outbound_filter.py
-- [[.setup_method()_27]] - code - gateway/tests/test_outbound_filter.py
-- [[.setup_method()_33]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_case_insensitive()_2]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_context_aware_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_custom_patterns()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_edge_cases()_2]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_initialization_with_config()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_internal_url_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_mcp_tool_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_monitor_mode()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_multiple_categories()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_partial_xml_tool_tag_is_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_pattern_overlaps()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_private_ip_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_stats()_2]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_tailnet_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
-- [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Any_54]] - code - gateway/security/outbound_filter.py
-- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
-- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
-- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
-- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
-- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
-- [[FilterMatch]] - code - gateway/security/outbound_filter.py
-- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
-- [[InfoCategory]] - code - gateway/security/outbound_filter.py
-- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
-- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - rationale - gateway/security/outbound_filter.py
-- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Outbound Information Filter Tests]] - code - gateway/tests/test_outbound_filter.py
-- [[OutboundInfoFilter]] - code - gateway/security/outbound_filter.py
-- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Set up test fixtures._3]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Split-fragment XML tags must still be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test adding custom filter patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test context-aware user ID filtering.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test edge cases and boundary conditions.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with custom configuration.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter statistics.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filtering with multiple information categories.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test handling of overlapping patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test suite for the outbound information filter.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that internal URLs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that private IP addresses are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that tailnet IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
-- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
-- [[TestOutboundInfoFilter]] - code - gateway/tests/test_outbound_filter.py
-- [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
-- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
+- [[.__call__()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_35]] - code - gateway/proxy/slack_proxy.py
+- [[.__init__()_173]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_180]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_191]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
+- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
+- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[._passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.consume_relay_token()]] - code - gateway/proxy/slack_proxy.py
+- [[.get_stats()_8]] - code - gateway/proxy/slack_proxy.py
+- [[.handle_event()]] - code - gateway/proxy/slack_proxy.py
+- [[.info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
+- [[.test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_bots_inventory_matches_the_real_container_name()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_history_error_records_outbound_without_correlation()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_malformed_json_body_forwards_with_empty_payload()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_args_return_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_args_return_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_channel_or_text_skips_tracking()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_name_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_network_error_returns_synthetic_failure()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_sanitizer_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_token_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_not_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_sanitized_with_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitized_without_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitizer_error_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_slack_error_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_store_error_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_structured_text_serialized_for_preview()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_posts_with_bearer_token()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_channel_id_with_sanitized_name()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_system_message_not_tracked()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_tracker_exception_does_not_break_response()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_unknown_content_type_ignored()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[A dict text payload is JSON-serialized before the 80-char preview.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[AsyncMock]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Bodies with an unrecognized Content-Type are not parsed at all.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Cached correlation for the channel → no Slack history call; outbound         is]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - rationale - gateway/proxy/slack_proxy.py
+- [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[History lookup returns ok=False → no inbound record; outbound still         logg]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
+- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Minimal async callable for monkeypatching.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Non-thread reply → conversations.history lookup; bot and subtype         message]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Pop and return the real WSS URL for a relay token (one-time use).          Retur]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
+- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
+- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[SlackAPIProxy]] - code - gateway/proxy/slack_proxy.py
+- [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestHealthCheckDetailBotsInventory]] - code - gateway/tests/test_main_endpoints.py
+- [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestProcessToolResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[health_check_detail's per-bot inventory must key the Docker lookup by     each b]] - rationale - gateway/tests/test_main_endpoints.py
+- [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[test_approvals_approve_and_deny()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_approve_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_cef()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_exporter_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_json_dict_payload()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_cve_report_queued()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_missing_or_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_mode_mapping()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_revoke()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_non_list_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_queue_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_override_scoped()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_remove()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_fallback_empty()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_source_tagging()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_exec_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_log_audit_appends_to_audit_store()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rollback_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_run_scanner_validation_and_launch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[test_ssh_compose_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ssh_compose_timeout_and_exception()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_bot_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -139,21 +147,60 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 4 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_PipelineAction]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_PromptProtection]]
+- 33 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 26 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 14 edges to [[_COMMUNITY_RBACConfig]]
+- 12 edges to [[_COMMUNITY_MiddlewareManager]]
+- 9 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 9 edges to [[_COMMUNITY_falco_monitor.py]]
+- 7 edges to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
+- 6 edges to [[_COMMUNITY_TrustManager]]
+- 6 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 5 edges to [[_COMMUNITY_.proxy_messages()]]
+- 5 edges to [[_COMMUNITY_version_routes.py]]
+- 4 edges to [[_COMMUNITY_server.py]]
+- 4 edges to [[_COMMUNITY_DNSBlocklist]]
+- 4 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
+- 4 edges to [[_COMMUNITY_TestMultiTurnTracker]]
+- 4 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 4 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 3 edges to [[_COMMUNITY_FileSandbox]]
+- 3 edges to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
+- 3 edges to [[_COMMUNITY_AgentShroud Access Control Matrix]]
+- 3 edges to [[_COMMUNITY_Atlas — Curriculum Architect (SKILL)]]
+- 3 edges to [[_COMMUNITY_ApprovalRequest]]
+- 3 edges to [[_COMMUNITY_Common Queries]]
+- 3 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 3 edges to [[_COMMUNITY_system-requirements]]
+- 2 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_input_normalizer.py]]
+- 2 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_MultiHostResult]]
+- 2 edges to [[_COMMUNITY_InjectionSeverity]]
+- 2 edges to [[_COMMUNITY_Skill Technical Writer (TW)]]
+- 2 edges to [[_COMMUNITY_TestCollaboratorAccess]]
+- 2 edges to [[_COMMUNITY_DELIVERABLE 3 — v0.8.0 Implementation Items]]
+- 2 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 2 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 2 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
+- 1 edge to [[_COMMUNITY_Path]]
+- 1 edge to [[_COMMUNITY_Phase 3 MITIGATE (Rollback First!)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
+- 1 edge to [[_COMMUNITY_Hermes — Podcast Production Orchestrator]]
+- 1 edge to [[_COMMUNITY_macOS System Administrator (MAC)]]
+- 1 edge to [[_COMMUNITY_test_approval_queue.py]]
+- 1 edge to [[_COMMUNITY_OPENCLAW_SANDBOX_MODE]]
 
 ## Top bridge nodes
-- [[outbound_filter.py]] - degree 9, connects to 6 communities
-- [[OutboundInfoFilter]] - degree 38, connects to 3 communities
-- [[.test_outbound_filter_still_escalates_fabricated_notice()]] - degree 4, connects to 3 communities
-- [[InfoCategory]] - degree 9, connects to 1 community
-- [[.filter_response()_1]] - degree 6, connects to 1 community
+- [[AsyncMock]] - degree 230, connects to 43 communities
+- [[SlackAPIProxy]] - degree 38, connects to 7 communities
+- [[TestProcessToolResult]] - degree 9, connects to 4 communities
+- [[TestClose]] - degree 8, connects to 4 communities
+- [[TestHealthCheckDetailBotsInventory]] - degree 4, connects to 2 communities

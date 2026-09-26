@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Purpose_104]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Related Skills_95]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Usage_99]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[.test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
 
 ## Top bridge nodes
-- [[Security Review (SEC)_2]] - degree 4, connects to 1 community
+- [[TestScoreNetworkSegmentation_1]] - degree 4, connects to 1 community

@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Mode A — Single task_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 10 — Notify the owner_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 12 — Clean up_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 2 — Create a branch + worktree_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 2b — Create the Jira ticket_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 3 — Write and edit code_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 4 — Test and lint_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 5 — Multi-LLM review_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 6 — Build and validate containers_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 7 — Update documentation and website_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 8 — Update the knowledge graph_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 9 — Push and open the PR_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
+- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
+- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
+- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
+- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
+- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
+- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
+- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
+- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
+- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
+- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
+- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up]]
 
 ## Top bridge nodes
-- [[Mode A — Single task_5]] - degree 15, connects to 1 community
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 3 communities
+- [[11. Automated Operations]] - degree 3, connects to 1 community
+- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

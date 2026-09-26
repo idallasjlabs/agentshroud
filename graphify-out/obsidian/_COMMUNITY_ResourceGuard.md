@@ -1,183 +1,171 @@
 ---
 type: community
 cohesion: 0.02
-members: 168
+members: 156
 ---
 
 # ResourceGuard
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 168 nodes
+**Members:** 156 nodes
 
 ## Members
-- [[.__del__()]] - code - gateway/security/resource_guard.py
-- [[.__init__()_88]] - code - gateway/security/resource_guard.py
-- [[._alert_high_usage()]] - code - gateway/security/resource_guard.py
-- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[._check_system_resources()]] - code - gateway/security/resource_guard.py
-- [[._cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
-- [[._get_disk_io_stats()]] - code - gateway/security/resource_guard.py
-- [[._monitor_resources()]] - code - gateway/security/resource_guard.py
-- [[._start_monitoring_task()]] - code - gateway/security/resource_guard.py
-- [[.add_alert_callback()_2]] - code - gateway/security/resource_guard.py
-- [[.check_cpu_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_disk_write_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_memory_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_resource()]] - code - gateway/security/resource_guard.py
-- [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
-- [[.cleanup_temp_files()]] - code - gateway/security/resource_guard.py
-- [[.get_usage_stats()]] - code - gateway/security/resource_guard.py
-- [[.register_temp_file()]] - code - gateway/security/resource_guard.py
-- [[.setup_method()_19]] - code - gateway/tests/test_resource_guard.py
-- [[.start_request_tracking()]] - code - gateway/security/resource_guard.py
-- [[.stop()_6]] - code - gateway/security/resource_guard.py
-- [[.stop_monitoring()]] - code - gateway/security/resource_guard.py
-- [[.teardown_method()_7]] - code - gateway/tests/test_resource_guard.py
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_default_mode_is_enforce()_7]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
-- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
-- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
-- [[.test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
-- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
-- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_unparseable_text_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
-- [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
-- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
-- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
-- [[Any_31]] - code - gateway/security/resource_guard.py
-- [[Any_32]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
-- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
-- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
-- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
-- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
-- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
-- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
-- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
-- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
-- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[Large inputs shouldn't crash prompt guard.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
-- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
-- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
-- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
-- [[ResourceGuard]] - code - gateway/security/resource_guard.py
-- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[ResourceLimits]] - code - gateway/security/resource_guard.py
-- [[ResourceUsage]] - code - gateway/security/resource_guard.py
-- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
-- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
-- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
-- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
-- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
-- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
-- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
-- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
-- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
-- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
-- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
-- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
-- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
-- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
-- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
-- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[guard()_1]] - code - gateway/tests/test_resource_guard_limits.py
-- [[resource_guard.py]] - code - gateway/security/resource_guard.py
-- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
-- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
-- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
-- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
+- [[.__init__()_16]] - code - gateway/ingest_api/sanitizer.py
+- [[.__init__()_124]] - code - gateway/security/tool_result_sanitizer.py
+- [[._extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._init_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
+- [[.block_credentials()]] - code - gateway/ingest_api/sanitizer.py
+- [[.default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.filter_xml_blocks()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.mock_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.pipeline()]] - code - gateway/tests/test_performance.py
+- [[.sanitize()]] - code - gateway/ingest_api/sanitizer.py
+- [[.sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.sanitizer()]] - code - gateway/tests/test_performance.py
+- [[.sanitizer()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_inbound_latency()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_resolve_text_field_falls_back_to_first_string_when_all_empty()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_resolve_text_field_prefers_first_non_empty_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_hyphen_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_underscore_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_handles_non_string_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_cannot_to_access_variant()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_http_status_without_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_memory_embedding_provider_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Any_63]] - code - gateway/security/tool_result_sanitizer.py
+- [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Create a real PII sanitizer in regex mode (no spaCy).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Detect and redact PII from content          Args             content Text to s]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Outbound filter must redact egress banners but NOT call _send_owner_admin_notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
+- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
+- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
+- [[PII-laden messages through inbound pipeline — verify redaction + timing.]] - rationale - gateway/tests/test_performance.py
+- [[PIIConfig_2]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIIConfig]] - code - gateway/ingest_api/config.py
+- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer_3]] - code - gateway/tests/test_redteam_probes.py
+- [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
+- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
+- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[RedactionResult_1]] - code - gateway/ingest_api/sanitizer.py
+- [[RedactionResult_3]] - code - gateway/security/tool_result_sanitizer.py
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - rationale - gateway/tests/test_performance.py
+- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestEgressBannerRedactionNoOwnerNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestForwardToTelegramTimeouts]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestOutboundTextFieldResolution]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerActivityNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerMirrorCoalescing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestPendingNoticeIncludesEgressSection]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestRuntimeRewriteHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestSecurityPipelineChainLatency]] - code - gateway/tests/test_performance.py
+- [[TestTelegram400Retry]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[ToolResultSanitizer._extract_dict_content]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._extract_scannable_content]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._get_sanitizer_for_tool]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._log_redaction_audit]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._reconstruct_result]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer.sanitize_tool_result]] - code - gateway/security/tool_result_sanitizer.py
+- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for deterministic runtime error rewrite helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for outbound text field resolution helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
+- [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
+- [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
+- [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_activity_notice must render tracker entries or honest error.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[sanitizer()_4]] - code - gateway/tests/test_security_integration.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
+- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
+- [[test_telegram_proxy_outbound.py]] - code - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -187,29 +175,67 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_lifespan.py]]
-- 14 edges to [[_COMMUNITY_test_security_audit.py]]
-- 13 edges to [[_COMMUNITY_GitGuard]]
-- 12 edges to [[_COMMUNITY_FileSandbox]]
-- 9 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 9 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 7 edges to [[_COMMUNITY_EncryptedStore]]
-- 5 edges to [[_COMMUNITY_TestAuth]]
-- 4 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_ConsentFramework]]
-- 2 edges to [[_COMMUNITY_TestFileSandbox]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_health_report.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
+- 40 edges to [[_COMMUNITY_version_routes.py]]
+- 35 edges to [[_COMMUNITY_TrustManager]]
+- 31 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 28 edges to [[_COMMUNITY_WebProxyConfig]]
+- 25 edges to [[_COMMUNITY_EgressPolicy]]
+- 24 edges to [[_COMMUNITY_lifespan.py]]
+- 23 edges to [[_COMMUNITY_ServiceManager]]
+- 20 edges to [[_COMMUNITY__wrap_response()]]
+- 14 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 13 edges to [[_COMMUNITY_ModeRequest]]
+- 10 edges to [[_COMMUNITY_FileSandbox]]
+- 8 edges to [[_COMMUNITY__make_proxy()]]
+- 8 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 7 edges to [[_COMMUNITY_EgressFilter]]
+- 6 edges to [[_COMMUNITY_test_approval_queue.py]]
+- 6 edges to [[_COMMUNITY_SecureBrowser Skill]]
+- 5 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 5 edges to [[_COMMUNITY_CredentialValidator]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 5 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 4 edges to [[_COMMUNITY_TestOutputCanary]]
+- 4 edges to [[_COMMUNITY_test_ptt_state.c]]
+- 3 edges to [[_COMMUNITY_AgentShroud™ Communication Templates]]
+- 3 edges to [[_COMMUNITY_Himalaya Email CLI]]
+- 3 edges to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
+- 3 edges to [[_COMMUNITY_AgentShroud Schema Documentation]]
+- 3 edges to [[_COMMUNITY_Gateway Container Startup Failures]]
+- 3 edges to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 3 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_Mode A — Single task]]
+- 3 edges to [[_COMMUNITY_sidecar.py]]
+- 3 edges to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
+- 3 edges to [[_COMMUNITY_OPENCLAW_DISABLE_HOST_FILESYSTEM]]
+- 3 edges to [[_COMMUNITY_CI test job (matrix ubuntumacos x py3.113.13)]]
+- 2 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY_i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]]
+- 2 edges to [[_COMMUNITY_Test-Driven Development README]]
+- 2 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 2 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
+- 1 edge to [[_COMMUNITY_v0.8.0 Watchtower — Security Fixes + Module Wi]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (MC)]]
+- 1 edge to [[_COMMUNITY_Apple Platform Integration]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_Security Hardening Plan Reset — Real Agent Conta]]
+- 1 edge to [[_COMMUNITY_MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
+- 1 edge to [[_COMMUNITY_RateLimiter]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[TestResourceProtection]] - degree 43, connects to 12 communities
-- [[ResourceGuard]] - degree 86, connects to 8 communities
-- [[ResourceLimits]] - degree 42, connects to 6 communities
-- [[test_round2_hardening.py]] - degree 17, connects to 5 communities
-- [[TestResourceGuardFailClosed]] - degree 11, connects to 5 communities
+- [[PIIConfig]] - degree 175, connects to 42 communities
+- [[PIISanitizer]] - degree 156, connects to 32 communities
+- [[test_telegram_proxy_outbound.py]] - degree 30, connects to 15 communities
+- [[PIISanitizer_3]] - degree 13, connects to 9 communities
+- [[get_module_mode()]] - degree 14, connects to 5 communities

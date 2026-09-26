@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server awslabs.aws-api-mcp-server]] - code - .mcp.json
+- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

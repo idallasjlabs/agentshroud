@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Role_9]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
+- [[Purpose_29]] - document - .agents/skills/i-sec-defense/README.md
+- [[README_29]] - document - .agents/skills/i-sec-defense/README.md
+- [[Related Skills_32]] - document - .agents/skills/i-sec-defense/README.md
+- [[Usage_32]] - document - .agents/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - degree 6, connects to 1 community
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - degree 5, connects to 1 community

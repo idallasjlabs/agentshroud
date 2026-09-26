@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Purpose_91]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Related Skills_82]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Usage_86]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 3 edges to [[_COMMUNITY_CredentialValidator]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - degree 4, connects to 1 community
+- [[TestMultiTurnTracker]] - degree 8, connects to 4 communities
+- [[.test_blocked_non_owner_denied()]] - degree 2, connects to 1 community
+- [[.test_blocked_owner_exempted()]] - degree 2, connects to 1 community
+- [[.test_tracker_exception_fails_closed()]] - degree 2, connects to 1 community

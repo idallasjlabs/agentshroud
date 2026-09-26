@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_47]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[When to Use_3]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Related Notes_16]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Summary_22]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 2 edges to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_consent_framework.py]]
 
 ## Top bridge nodes
-- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community
+- [[4. Environment Variables]] - degree 8, connects to 2 communities
+- [[All Environment Variables (reference)]] - degree 3, connects to 1 community

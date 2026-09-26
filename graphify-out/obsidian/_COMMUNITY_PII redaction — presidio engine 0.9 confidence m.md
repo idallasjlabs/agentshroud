@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PII redaction — presidio engine 0.9 confidence minimum]] - rationale - CLAUDE.md
+- [[App Icon 32x32 (AgentShroud logo mark)]] - image - branding/icons/app/icon-32x32.png
 
 ## Live Query (requires Dataview plugin)
 

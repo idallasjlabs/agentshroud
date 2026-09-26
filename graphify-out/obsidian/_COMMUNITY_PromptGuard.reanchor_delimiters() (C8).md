@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # PromptGuard.reanchor_delimiters() (C8)
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.reanchor_delimiters() (C8)]] - code - gateway/security/prompt_guard.py
-- [[UserSessionManager.reanchor_system_prompt() (C16)]] - code - gateway/security/session_manager.py
+- [[Observability Skill]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

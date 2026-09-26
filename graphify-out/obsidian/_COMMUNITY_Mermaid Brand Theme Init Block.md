@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[BLOCKED-Awaiting-Dev Outcome]] - rationale - reports/upgrade-2026-08-30.md
 
 ## Live Query (requires Dataview plugin)
 

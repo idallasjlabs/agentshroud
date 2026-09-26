@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # TestInjectionDetection
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_59]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_MCPToolCall]]
-- 3 edges to [[_COMMUNITY_MCPServerConfig]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
+- 1 edge to [[_COMMUNITY_test_playback_state.c]]
 
 ## Top bridge nodes
-- [[TestInjectionDetection]] - degree 22, connects to 7 communities
+- [[MCP Proxy Errors_1]] - degree 2, connects to 1 community

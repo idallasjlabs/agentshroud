@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestClamavSummary
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.require()]] - code - gateway/soc/auth.py
+- [[Action_2]] - code - gateway/soc/auth.py
+- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
+- [[Resource_2]] - code - gateway/soc/auth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY__w()]]
+- 1 edge to [[_COMMUNITY_main.rs]]
 
 ## Top bridge nodes
-- [[TestClamavSummary]] - degree 5, connects to 1 community
-- [[.test_running_report_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[.require()]] - degree 4, connects to 1 community

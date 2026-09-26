@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 — blocking response.read() froze the gateway event loop]] - concept - gateway/tests/test_llm_proxy_failover.py
+- [[CI job benchmark (pytest-benchmark regression check)]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

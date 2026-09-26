@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # SecureBrowser security-policies.md — threat mode
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SecureBrowser browse.py — enterprise secure browser automation]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[SecureBrowser class — enterprise-controlled Playwright wrapper]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[SecureBrowser config.yaml — allowlistapprovalaudit security config]] - document - skills/custom/securebrowser/config.yaml
-- [[SecureBrowser security-policies.md — threat model and policy reference]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Claude Code Statusline Documentation]] - document - .claude/statusline.sh
+- [[statusline.sh]] - code - .claude/statusline.sh
+- [[statusline.sh script]] - code - .claude/statusline.sh
 
 ## Live Query (requires Dataview plugin)
 

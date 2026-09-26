@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_22]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Core Principle_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 1 Application Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 2 Container Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 3 Network Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 4 Data Flow Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Output Format_27]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Review Layers_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Role_80]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[SecureClaw-Specific Threat Model_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Skill Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Verification Commands_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Cloud & FinOps_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_2]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_4]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
 
 ## Top bridge nodes
-- [[Skill Security Review (SEC)_2]] - degree 8, connects to 1 community
+- [[Skills by Category_1]] - degree 12, connects to 1 community

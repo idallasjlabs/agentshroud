@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Current Status_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_57]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[Active]] - document - docs/planning/README.md
+- [[Historic  archive]] - document - docs/planning/README.md
+- [[How to add a plan]] - document - docs/planning/README.md
+- [[Layout]] - document - docs/planning/README.md
+- [[README_123]] - document - docs/planning/README.md
+- [[What does NOT live here]] - document - docs/planning/README.md
+- [[`docsplanning` — Index]] - document - docs/planning/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/HTTP_PROXY_/_HTTPS_PROXY
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-
-## Top bridge nodes
-- [[HTTP_PROXY  HTTPS_PROXY]] - degree 7, connects to 1 community

@@ -1,38 +1,39 @@
 ---
 type: community
 cohesion: 0.10
-members: 23
+members: 24
 ---
 
 # OpenClaw Bot Container
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 23 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[1. Provision Your Secrets (API Keys & Tokens)]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[2. Apply Configuration & Restart]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[3. Switching Models in OpenClaw]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[4. Local Ollama Integration]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[5. Verification & Troubleshooting]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[AgentShroud™ LLM Provider Setup & Switching Guide]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[Current Status_7]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[How to Switch via Telegram]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[LLM_PROVIDER_SETUP]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[OpenClaw Bot Container]] - concept - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Option 1 Tailscale Serve (Recommended - Most Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Option 2 Bind to All Interfaces (Less Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[PAIRING_INSTRUCTIONS]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
-- [[Provider Model Strings]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[SETUP_API_KEYS]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Setup Commands]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[TAILSCALE_SETUP]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[TELEGRAM_SETUP]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Tailscale ACLs (Recommended)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Tailscale Access to OpenClaw Control UI]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[VAULT-SHARING-INSTRUCTIONS]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Verification_3]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[.get_op_reference()]] - code - gateway/security/key_rotation_config.py
+- [[.is_emergency_trigger_enabled()]] - code - gateway/security/key_rotation_config.py
+- [[.test_add_custom_policy()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_default_config_has_common_policies()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_get_op_reference_builds_correctly()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_get_policy_returns_default_for_unknown_type()]] - code - gateway/tests/test_key_rotation.py
+- [[Build a complete op reference for a credential.]] - rationale - gateway/security/key_rotation_config.py
+- [[Check if a specific emergency trigger is enabled.]] - rationale - gateway/security/key_rotation_config.py
+- [[Configuration for key rotation policies and schedules.]] - rationale - gateway/security/key_rotation_config.py
+- [[EgressAllowlistResponse]] - code - gateway/web/management.py
+- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
+- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
+- [[KeyRotationConfig_1]] - code - gateway/security/key_rotation_config.py
+- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
+- [[Test adding custom policy for new credential type.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test default config includes policies for common credential types.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test get_policy falls back to api_key for unknown types.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test op reference building.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationConfig]] - code - gateway/tests/test_key_rotation.py
+- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
+- [[credentials_health()]] - code - gateway/web/management.py
+- [[credentials_status()]] - code - gateway/web/management.py
+- [[rotate_credential()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,16 +43,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
-- 1 edge to [[_COMMUNITY_OpenClaw Control UI Pairing Instructions]]
-- 1 edge to [[_COMMUNITY_Telegram Bot Setup for OpenClaw]]
-- 1 edge to [[_COMMUNITY_1Password Vault Sharing Instructions]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Status]]
+- 11 edges to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
+- 9 edges to [[_COMMUNITY_3. Security Controls]]
+- 8 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 7 edges to [[_COMMUNITY_SkillGuard]]
+- 4 edges to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 3 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
+- 2 edges to [[_COMMUNITY_TestOpProxyEndpoint]]
+- 2 edges to [[_COMMUNITY_test_key_rotation.py]]
+- 2 edges to [[_COMMUNITY_4. Environment Variables]]
+- 1 edge to [[_COMMUNITY_main.rs]]
 
 ## Top bridge nodes
-- [[OpenClaw Bot Container]] - degree 7, connects to 2 communities
-- [[SETUP_API_KEYS]] - degree 5, connects to 1 community
-- [[PAIRING_INSTRUCTIONS]] - degree 4, connects to 1 community
-- [[TELEGRAM_SETUP]] - degree 4, connects to 1 community
-- [[VAULT-SHARING-INSTRUCTIONS]] - degree 3, connects to 1 community
+- [[KeyRotationConfig_1]] - degree 44, connects to 9 communities
+- [[TestKeyRotationConfig]] - degree 12, connects to 5 communities
+- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
+- [[credentials_health()]] - degree 4, connects to 2 communities
+- [[credentials_status()]] - degree 4, connects to 2 communities

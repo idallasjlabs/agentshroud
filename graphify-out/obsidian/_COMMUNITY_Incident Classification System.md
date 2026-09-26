@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Incident Classification System
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Incident Classification System]] - document - docs/operations/incident-response.md
-- [[Priority Levels]] - document - docs/operations/incident-response.md
-- [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
+- [[SOC Auth WS Token IssuanceRedemption Tests]] - code - gateway/tests/test_soc_auth.py
+- [[SOCWebSocketHandler Subscription Filter Tests]] - code - gateway/tests/test_soc_websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/Incident_Classification_System
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[Incident Classification System]] - degree 3, connects to 1 community

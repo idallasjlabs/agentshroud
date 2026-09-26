@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.36
 members: 8
 ---
 
 # SECTION 1: COVER SHEET (Form PTO/SB/16)
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[.test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[HostStatus]] - code - gateway/tools/multi_host_test.py
+- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
+- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestClassify]] - code - gateway/tests/test_multi_host_test.py
+- [[classify()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Provisional Patent Applicat]]
+- 5 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
+- 4 edges to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 3 edges to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_TestPatternDetection]]
+- 1 edge to [[_COMMUNITY_Common Operations]]
+- 1 edge to [[_COMMUNITY_SECTION 3 DRAWINGS]]
+- 1 edge to [[_COMMUNITY_Development Workflow]]
+- 1 edge to [[_COMMUNITY_Hermes — Podcast Production Orchestrator]]
+- 1 edge to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
 
 ## Top bridge nodes
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community
+- [[HostStatus]] - degree 18, connects to 10 communities
+- [[classify()]] - degree 8, connects to 3 communities
+- [[TestClassify]] - degree 7, connects to 2 communities

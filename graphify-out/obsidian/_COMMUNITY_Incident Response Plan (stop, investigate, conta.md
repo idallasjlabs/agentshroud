@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Incident Response Plan (stop, investigate, contain, recover)]] - document - docs/archive/SECURITY-ANALYSIS.md
-- [[Incident Response Runbook (stop, review, rotate, rebuild, report)]] - document - docs/archive/SECURITY.md
+- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
+- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
 
 ## Live Query (requires Dataview plugin)
 

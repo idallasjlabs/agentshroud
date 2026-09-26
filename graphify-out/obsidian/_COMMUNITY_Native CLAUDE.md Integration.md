@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[docsREADME.md — documentation structure index and project phase status]] - document - docs/README.md
 
 ## Live Query (requires Dataview plugin)
 

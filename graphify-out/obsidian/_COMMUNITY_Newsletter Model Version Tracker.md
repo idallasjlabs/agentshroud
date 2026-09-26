@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Model Version Tracker]] - document - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
+- [[Admin CLI Chat Console (OpenClaw via Gateway)]] - code - src/interfaces/chat_console.py
 
 ## Live Query (requires Dataview plugin)
 

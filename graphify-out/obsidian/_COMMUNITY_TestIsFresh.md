@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestIsFresh
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIsFresh_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__w()]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY__age()]]
+- 1 edge to [[_COMMUNITY_SecurityEvent]]
 
 ## Top bridge nodes
-- [[.test_old_file_returns_false()]] - degree 3, connects to 2 communities
-- [[TestIsFresh_1]] - degree 5, connects to 1 community
-- [[.test_fresh_file_returns_true()]] - degree 2, connects to 1 community
+- [[8D Root Cause Analysis SKILL (OpenClaw)]] - degree 3, connects to 1 community

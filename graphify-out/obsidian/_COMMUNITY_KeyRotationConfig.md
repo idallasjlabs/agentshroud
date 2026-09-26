@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.11
-members: 28
+cohesion: 0.08
+members: 29
 ---
 
 # KeyRotationConfig
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[.__init__()_124]] - code - gateway/security/key_rotation.py
-- [[.add_custom_policy()]] - code - gateway/security/key_rotation_config.py
-- [[.get_op_reference()]] - code - gateway/security/key_rotation_config.py
-- [[.get_policy()_1]] - code - gateway/security/key_rotation_config.py
-- [[.is_emergency_trigger_enabled()]] - code - gateway/security/key_rotation_config.py
-- [[.test_add_custom_policy()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_default_config_has_common_policies()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_op_reference_builds_correctly()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_policy_returns_default_for_unknown_type()]] - code - gateway/tests/test_key_rotation.py
-- [[Add or update a rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
-- [[Build a complete op reference for a credential.]] - rationale - gateway/security/key_rotation_config.py
-- [[Check if a specific emergency trigger is enabled.]] - rationale - gateway/security/key_rotation_config.py
-- [[Configuration for key rotation policies and schedules.]] - rationale - gateway/security/key_rotation_config.py
-- [[CredentialRotationPolicy_1]] - code - gateway/security/key_rotation_config.py
-- [[Get rotation policy for a credential type, falling back to api_key default.]] - rationale - gateway/security/key_rotation_config.py
-- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
-- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
-- [[KeyRotationConfig_1]] - code - gateway/security/key_rotation_config.py
-- [[Rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
-- [[Test adding custom policy for new credential type.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test default config includes policies for common credential types.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test get_policy falls back to api_key for unknown types.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test op reference building.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationConfig]] - code - gateway/tests/test_key_rotation.py
-- [[datetime_2]] - code - gateway/security/key_rotation.py
-- [[key_rotation.py]] - code - gateway/security/key_rotation.py
-- [[key_rotation_config.py]] - code - gateway/security/key_rotation_config.py
+- [[Compose Overlay Discrepancy Flagged For Review]] - rationale - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Docker Storage Exhaustion (silent Hermes failure)]] - rationale - reports/upgrade-2026-09-06-prod.md
+- [[Env-split note (prod FYI, for init-config.sh work)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Exit-50 Rollback Failure Incident]] - rationale - reports/upgrade-2026-09-14.md
+- [[Failure Class Local Model Call Hangs]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure Class Memory-Pressure Garbling]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure Class Search Backend Unreachable]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure classes (prod investigation handover, 2026-08-31)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[First-Pass Abort on Dirty Tree  Branch Churn]] - rationale - reports/upgrade-2026-08-30.md
+- [[Five Previously-Unexercised Apply-Script Bugs]] - rationale - reports/upgrade-2026-09-14.md
+- [[Hard-Fail Rather Than Deliver an Empty Shell]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Healthcheck Blind Spot (no disk-write probe)]] - rationale - reports/upgrade-2026-09-06-prod.md
+- [[Hermes Is Not Compose-Managed (asb owns it)]] - rationale - reports/upgrade-2026-09-14.md
+- [[Hermes Standalone Lifecycle (outside compose)]] - rationale - reports/upgrade-2026-08-30.md
+- [[Job Quality Matrix — local-model reportnewsletter jobs (Mission 1)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[LibreChatsearxng Sibling-Repo Boundary]] - rationale - reports/upgrade-2026-08-30.md
+- [[Local-Model Job Quality Matrix]] - document - docs/dev-notes/job-quality-matrix.md
+- [[OWASP Agentic AI (ASI) Coverage Map]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Owner Policy — Fix Prompts, Never Switch to Cloud Models]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Per-job verdicts]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Phantom latest Scan Tag (false 0-CRITICAL pass)]] - rationale - reports/upgrade-2026-09-14.md
+- [[Prod BLOCKED Snapshot 20260906-0808]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Prod-Side 2026-09-06 Upgrade Report]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Related delivery-layer defects (separate from model quality)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Sidecar Gap Finding (declared vs running)]] - rationale - reports/upgrade-2026-08-30.md
+- [[ToolResultSanitizer Link Stripping (delivery defect)]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Upgrade Report Snapshot 20260830-2009]] - document - reports/upgrade-2026-08-30-20260830-2009.md
+- [[Weekly Upgrade Report 2026-08-30]] - document - reports/upgrade-2026-08-30.md
+- [[job-quality-matrix]] - document - docs/dev-notes/job-quality-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,23 +48,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_CredentialValidator]]
-- 13 edges to [[_COMMUNITY_KeyRotationManager]]
-- 8 edges to [[_COMMUNITY_CredentialInfo]]
-- 6 edges to [[_COMMUNITY_test_key_rotation.py]]
-- 6 edges to [[_COMMUNITY_MockValidator]]
-- 3 edges to [[_COMMUNITY_TestKeyRotationManager]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestStoreIn1Password]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_AgentShroud Semgrep SAST Configuration]]
+- 2 edges to [[_COMMUNITY_start.sh]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_TestCheckCommandExecution]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
 
 ## Top bridge nodes
-- [[KeyRotationConfig_1]] - degree 44, connects to 8 communities
-- [[key_rotation.py]] - degree 13, connects to 8 communities
-- [[CredentialRotationPolicy_1]] - degree 24, connects to 6 communities
-- [[TestKeyRotationConfig]] - degree 12, connects to 4 communities
-- [[datetime_2]] - degree 4, connects to 1 community
+- [[Local-Model Job Quality Matrix]] - degree 6, connects to 1 community
+- [[job-quality-matrix]] - degree 5, connects to 1 community
+- [[Five Previously-Unexercised Apply-Script Bugs]] - degree 4, connects to 1 community
+- [[Failure Class Local Model Call Hangs]] - degree 3, connects to 1 community
+- [[OWASP Agentic AI (ASI) Coverage Map]] - degree 2, connects to 1 community

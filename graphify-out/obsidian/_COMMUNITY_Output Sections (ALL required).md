@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[1. Scope of Change]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[2. What Changes and Why]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[3. Scalability Gate]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[4. Blast Radius_3]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[7. Open Questions]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Closing Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Output Format Rules_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Role_70]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Skill Pre-Change Analysis (PCA)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[description of what this does_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Input Requirements_11]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Output Format_13]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Persona_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Quality Checklist_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Role_42]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[SKILL_69]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[System Prompt_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[User Prompt Template_4]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[cheatsheet_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[show_notes_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +29,3 @@ members: 12
 TABLE source_file, type FROM #community/Output_Sections_ALL_required
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
-
-## Top bridge nodes
-- [[Output Sections (ALL required)]] - degree 9, connects to 1 community
-- [[Skill Pre-Change Analysis (PCA)_1]] - degree 5, connects to 1 community

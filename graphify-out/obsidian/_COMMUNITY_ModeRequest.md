@@ -1,119 +1,127 @@
 ---
 type: community
-cohesion: 0.04
-members: 104
+cohesion: 0.03
+members: 112
 ---
 
 # ModeRequest
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 104 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 112 nodes
 
 ## Members
-- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_config_load_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_default_bot_has_no_dockerfile()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_no_bots()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_first_bot_used_when_no_default_flag()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_engine_uses_runtime_config()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_status_with_running_and_stopped_containers()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[HTTPAuthorizationCredentials]] - code - gateway/web/api.py
-- [[KillSwitchAction]] - code - gateway/web/api.py
-- [[ModeRequest]] - code - gateway/web/api.py
-- [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
-- [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[UpdateRequest]] - code - gateway/web/api.py
-- [[_container()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_16]] - code - gateway/tests/test_web_api_coverage.py
-- [[require_auth()]] - code - gateway/web/api.py
-- [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
+- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[.base_url()]] - code - gateway/ingest_api/bot_config.py
+- [[.model_post_init()]] - code - gateway/ingest_api/config.py
+- [[.resolved_container_name()]] - code - gateway/ingest_api/bot_config.py
+- [[.test_bot_config_has_telegram_token_secret_field()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_bot_config_image_field_present()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_bot_config_telegram_token_secret_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_openclaw_bot_config_backward_compat()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
+- [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
+- [[BotConfig]] - code - gateway/ingest_api/bot_config.py
+- [[BotConfig.base_url computes http{hostname}{port}.]] - rationale - gateway/tests/test_config.py
+- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
+- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
+- [[Compute the bot's internal base URL from hostname and port.]] - rationale - gateway/ingest_api/bot_config.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
+- [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - rationale - gateway/ingest_api/bot_config.py
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[Explicit container_name wins over the 'agentshroud-{id}' convention —     regres]] - rationale - gateway/tests/test_config.py
+- [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
+- [[GatewayConfig_1]] - code - gateway/ingest_api/config.py
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
+- [[Load the real agentshroud.yaml when present (deployment host), else the     comm]] - rationale - gateway/tests/test_config.py
+- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
+- [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - rationale - gateway/tests/test_config.py
+- [[OpenClaw BotConfig must still work without the new fields.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Path_1]] - code - gateway/ingest_api/config.py
+- [[Path_25]] - code - gateway/tests/test_config_hot_reload.py
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[README_128]] - document - gateway/README.md
+- [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
+- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
+- [[RouterConfig must accept the Hermes Docker service hostname.]] - rationale - gateway/tests/test_config.py
+- [[RouterConfig should accept single-label Docker service hostnames.]] - rationale - gateway/tests/test_config.py
+- [[Test PII entity type mapping]] - rationale - gateway/tests/test_config.py
+- [[Test loading configuration from agentshroud.yaml (or the committed example).]] - rationale - gateway/tests/test_config.py
+- [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
+- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
+- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[TestTelegramBotConfigTokenSecretField]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[The real docker container name for this bot — see container_name field.]] - rationale - gateway/ingest_api/bot_config.py
+- [[Verify BotConfig.telegram_token_secret field is present and defaults correctly.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
+- [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - rationale - gateway/tests/test_config.py
+- [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[_default_mtime()]] - code - gateway/ingest_api/config.py
+- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
+- [[_load()]] - code - gateway/tests/test_config_hot_reload.py
+- [[_load_config()]] - code - gateway/tests/test_config.py
+- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
+- [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
+- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
+- [[config.py]] - code - gateway/ingest_api/config.py
+- [[config_watcher()]] - code - gateway/ingest_api/config.py
+- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
+- [[load_config()]] - code - gateway/ingest_api/config.py
+- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[reload_config()]] - code - gateway/ingest_api/config.py
+- [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_bot_config_base_url()]] - code - gateway/tests/test_config.py
+- [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - code - gateway/tests/test_config.py
+- [[test_bot_config_resolved_container_name_uses_explicit_override()]] - code - gateway/tests/test_config.py
+- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
+- [[test_config.py]] - code - gateway/tests/test_config.py
+- [[test_config_defaults()]] - code - gateway/tests/test_config.py
+- [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
+- [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_entity_type_mapping()]] - code - gateway/tests/test_config.py
+- [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_load_config()]] - code - gateway/tests/test_config.py
+- [[test_load_config_has_bots()]] - code - gateway/tests/test_config.py
+- [[test_load_config_registers_hermes()]] - code - gateway/tests/test_config.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_no_reloadable_field_changed()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_invalid_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
+- [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
+- [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
+- [[verify.sh]] - code - gateway/verify.sh
+- [[verify.sh script]] - code - gateway/verify.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -123,29 +131,48 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_test_observatory_mode.py]]
-- 13 edges to [[_COMMUNITY_api.py]]
-- 8 edges to [[_COMMUNITY_DraftEntry]]
-- 5 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_IntelReportStore]]
-- 4 edges to [[_COMMUNITY_TestConfig]]
-- 3 edges to [[_COMMUNITY_BaseModel]]
-- 2 edges to [[_COMMUNITY_FetchOutcome]]
-- 2 edges to [[_COMMUNITY_TestKillSwitchVerification]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 1 edge to [[_COMMUNITY_test_skill_guard.py]]
-- 1 edge to [[_COMMUNITY_load_config()]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_TestObservatoryMode]]
-- 1 edge to [[_COMMUNITY_TestSetMode]]
-- 1 edge to [[_COMMUNITY_test_key_rotation.py]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 23 edges to [[_COMMUNITY_EgressPolicy]]
+- 21 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 13 edges to [[_COMMUNITY_ResourceGuard]]
+- 13 edges to [[_COMMUNITY_ApprovalRequest]]
+- 11 edges to [[_COMMUNITY_version_routes.py]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 10 edges to [[_COMMUNITY_api.py]]
+- 9 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 8 edges to [[_COMMUNITY_TrustManager]]
+- 8 edges to [[_COMMUNITY__wrap_response()]]
+- 6 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 6 edges to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 5 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_TestAuth]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 2 edges to [[_COMMUNITY_Safe Refactor Specialist]]
+- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY__make_stream_app_state()]]
+- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
+- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_Examples]]
+- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
+- 1 edge to [[_COMMUNITY_.get_or_create_session()]]
+- 1 edge to [[_COMMUNITY_egress_monitor.py]]
 
 ## Top bridge nodes
-- [[require_auth()]] - degree 16, connects to 11 communities
-- [[ModeRequest]] - degree 47, connects to 9 communities
-- [[UpdateRequest]] - degree 29, connects to 5 communities
-- [[KillSwitchAction]] - degree 27, connects to 5 communities
-- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities
+- [[config.py]] - degree 43, connects to 16 communities
+- [[load_config()]] - degree 51, connects to 15 communities
+- [[GatewayConfig_1]] - degree 65, connects to 11 communities
+- [[test_mcp_result_endpoint.py]] - degree 16, connects to 9 communities
+- [[BotConfig]] - degree 34, connects to 8 communities

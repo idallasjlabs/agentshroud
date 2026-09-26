@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.33
+members: 7
 ---
 
 # TestOpProxyEndpoint
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_requires_auth()_4]] - code - gateway/tests/test_op_proxy.py
-- [[.test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
-- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
+- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
+- [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
+- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +26,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
+- 2 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
+- 2 edges to [[_COMMUNITY_3. Security Controls]]
+- 2 edges to [[_COMMUNITY_OpenClaw Bot Container]]
+- 2 edges to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 1 edge to [[_COMMUNITY_4. Environment Variables]]
+- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
 
 ## Top bridge nodes
-- [[TestOpProxyEndpoint]] - degree 7, connects to 1 community
+- [[test_key_rotation.py]] - degree 18, connects to 8 communities

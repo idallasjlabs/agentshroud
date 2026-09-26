@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.15
 members: 18
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[1. Check MCP Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_15]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_114]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Role_53]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
+- [[Purpose_33]] - document - .agents/skills/i-tdd/README.md
+- [[Purpose_70]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[README_33]] - document - .agents/skills/i-tdd/README.md
+- [[README_75]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Related Skills_36]] - document - .agents/skills/i-tdd/README.md
+- [[Related Skills_76]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
+- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
+- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
+- [[Test-Driven Development (TDD)]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Test-Driven Development (TDD) Coach]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
+- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
+- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
+- [[Usage_36]] - document - .agents/skills/i-tdd/README.md
+- [[Usage_77]] - document - docker/config/hermes/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_AuditExporter]]
 
 ## Top bridge nodes
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - degree 8, connects to 1 community
+- [[Test-Driven Development README]] - degree 11, connects to 3 communities

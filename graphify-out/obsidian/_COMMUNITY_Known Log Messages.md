@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
-- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
-- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
-- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
-- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
-- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
-- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
-- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
-- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
+- [[API Reference]] - document - docs/api/api-reference.md
+- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
+- [[Audit  ledger]] - document - docs/api/api-reference.md
+- [[Authentication_1]] - document - docs/api/api-reference.md
+- [[DNS]] - document - docs/api/api-reference.md
+- [[Egress control]] - document - docs/api/api-reference.md
+- [[Error responses]] - document - docs/api/api-reference.md
+- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
+- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
+- [[Health & status]] - document - docs/api/api-reference.md
+- [[Quarantine]] - document - docs/api/api-reference.md
+- [[RBAC]] - document - docs/api/api-reference.md
+- [[Route map (by router)]] - document - docs/api/api-reference.md
+- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
+- [[Scanning]] - document - docs/api/api-reference.md
+- [[Source of truth]] - document - docs/api/api-reference.md
+- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
+- [[api-reference]] - document - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_troubleshooting]]
+- 1 edge to [[_COMMUNITY_Update AgentShroud]]
 
 ## Top bridge nodes
-- [[Known Log Messages]] - degree 19, connects to 1 community
+- [[API Reference]] - degree 8, connects to 1 community

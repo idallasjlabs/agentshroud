@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # HIGH — Should Fix Before Release
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Hermes — Reference Verifier]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Input Requirements_5]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Output Format_4]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Persona_3]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Quality Checklist_4]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Role_15]] - document - .agents/skills/i-hermes/SKILL.md
+- [[SKILL_24]] - document - .agents/skills/i-hermes/SKILL.md
+- [[System Prompt_3]] - document - .agents/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +25,3 @@ members: 9
 TABLE source_file, type FROM #community/HIGH__Should_Fix_Before_Release
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — Blue Team Security Assessme]]
-- 1 edge to [[_COMMUNITY_LOW — Informational]]
-- 1 edge to [[_COMMUNITY_MEDIUM — Fix Soon]]
-
-## Top bridge nodes
-- [[New Findings]] - degree 5, connects to 3 communities

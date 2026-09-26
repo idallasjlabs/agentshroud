@@ -1,74 +1,73 @@
 ---
 type: community
-cohesion: 0.07
-members: 59
+cohesion: 0.06
+members: 58
 ---
 
 # PortManager
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 59 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 58 nodes
 
 ## Members
-- [[.__init__()_187]] - code - gateway/tools/port_manager.py
-- [[.find_available_port()]] - code - gateway/tools/port_manager.py
-- [[.generate_compose_ports()]] - code - gateway/tools/port_manager.py
-- [[.has_conflicts()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available_udp()]] - code - gateway/tools/port_manager.py
-- [[.ports()]] - code - gateway/tools/port_manager.py
-- [[.resolve_ports()]] - code - gateway/tools/port_manager.py
-- [[.summary()_1]] - code - gateway/tools/port_manager.py
-- [[.test_all_free_no_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_basic_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_bound_port_is_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_auto_resolved()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_no_auto_resolve()]] - code - gateway/tests/test_port_manager.py
-- [[.test_duplicate_port_detection()]] - code - gateway/tests/test_port_manager.py
-- [[.test_finds_base_when_free()]] - code - gateway/tests/test_port_manager.py
-- [[.test_has_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_no_conflict_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_offset_applied()]] - code - gateway/tests/test_port_manager.py
-- [[.test_ports_property()]] - code - gateway/tests/test_port_manager.py
-- [[.test_raises_if_no_port_found()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_bound_port()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_excluded_ports()]] - code - gateway/tests/test_port_manager.py
-- [[.test_summary_format()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_bound_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_unbound_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_unbound_port_is_available()]] - code - gateway/tests/test_port_manager.py
-- [[Busy port should be detected via connect_ex check.]] - rationale - gateway/tests/test_port_manager.py
-- [[Check if a TCP port is available for binding.          Tries to bind briefly. Re]] - rationale - gateway/tools/port_manager.py
-- [[Check if a UDP port is available (used for DNS).]] - rationale - gateway/tools/port_manager.py
-- [[Detect port conflicts and auto-assign available ports.]] - rationale - gateway/tools/port_manager.py
-- [[Find next available port starting from base.          Args             base St]] - rationale - gateway/tools/port_manager.py
-- [[Generate docker-compose port mapping strings from resolution.          Returns d]] - rationale - gateway/tools/port_manager.py
-- [[Get the final port mapping.]] - rationale - gateway/tools/port_manager.py
-- [[If all ports in range are excluded, raises RuntimeError.]] - rationale - gateway/tests/test_port_manager.py
-- [[PortAssignment]] - code - gateway/tools/port_manager.py
-- [[PortManager]] - code - gateway/tools/port_manager.py
-- [[PortResolution]] - code - gateway/tools/port_manager.py
-- [[Quick check are the default ports available Log and return result.]] - rationale - gateway/tools/port_manager.py
-- [[Record of a port assignment decision.]] - rationale - gateway/tools/port_manager.py
-- [[Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar]] - rationale - gateway/tools/port_manager.py
-- [[Result of resolving all ports for an instance.]] - rationale - gateway/tools/port_manager.py
-- [[Test PortResolution dataclass.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test auto-port discovery.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test docker-compose port mapping generation.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test full port resolution logic.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test port availability detection.]] - rationale - gateway/tests/test_port_manager.py
-- [[TestFindAvailablePort]] - code - gateway/tests/test_port_manager.py
-- [[TestGenerateComposePorts]] - code - gateway/tests/test_port_manager.py
-- [[TestIsPortAvailable]] - code - gateway/tests/test_port_manager.py
-- [[TestPortResolution]] - code - gateway/tests/test_port_manager.py
-- [[TestResolveports]] - code - gateway/tests/test_port_manager.py
-- [[Two services requesting same port — second gets reassigned.]] - rationale - gateway/tests/test_port_manager.py
-- [[_fake_socket_factory()]] - code - gateway/tests/test_port_manager.py
-- [[check_and_report()]] - code - gateway/tools/port_manager.py
-- [[find-ports.sh]] - code - scripts/find-ports.sh
-- [[find-ports.sh script]] - code - scripts/find-ports.sh
-- [[port_manager.py_2]] - code - gateway/tools/port_manager.py
-- [[test_port_manager.py]] - code - gateway/tests/test_port_manager.py
+- [[.__init__()_113]] - code - gateway/security/report_store.py
+- [[._check_size()]] - code - gateway/security/report_store.py
+- [[._enforce_count_cap()]] - code - gateway/security/report_store.py
+- [[._path()]] - code - gateway/security/report_store.py
+- [[._persist()]] - code - gateway/security/report_store.py
+- [[._sanitize_async()]] - code - gateway/security/report_store.py
+- [[._sanitize_sync()]] - code - gateway/security/report_store.py
+- [[._valid_id()]] - code - gateway/security/report_store.py
+- [[.client()_1]] - code - gateway/tests/test_report_store.py
+- [[.delete()_1]] - code - gateway/security/report_store.py
+- [[.get()_4]] - code - gateway/security/report_store.py
+- [[.list()]] - code - gateway/security/report_store.py
+- [[.save()_2]] - code - gateway/security/report_store.py
+- [[.save_async()]] - code - gateway/security/report_store.py
+- [[.test_async_sanitizer_refused_on_sync_save()]] - code - gateway/tests/test_report_store.py
+- [[.test_bot_and_title_length_capped()]] - code - gateway/tests/test_report_store.py
+- [[.test_content_cap_default_is_1mb()]] - code - gateway/tests/test_report_store.py
+- [[.test_content_size_cap()]] - code - gateway/tests/test_report_store.py
+- [[.test_corrupt_metadata_skipped_in_list()]] - code - gateway/tests/test_report_store.py
+- [[.test_count_cap_prunes_oldest()]] - code - gateway/tests/test_report_store.py
+- [[.test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
+- [[.test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
+- [[.test_delete()]] - code - gateway/tests/test_report_store.py
+- [[.test_get_missing_returns_none()_1]] - code - gateway/tests/test_report_store.py
+- [[.test_get_rejects_path_traversal()]] - code - gateway/tests/test_report_store.py
+- [[.test_list_filter_by_bot()]] - code - gateway/tests/test_report_store.py
+- [[.test_list_returns_metadata_without_content()]] - code - gateway/tests/test_report_store.py
+- [[.test_missing_content_422()]] - code - gateway/tests/test_report_store.py
+- [[.test_pii_redacted_on_save()]] - code - gateway/tests/test_report_store.py
+- [[.test_report_id_is_path_safe()]] - code - gateway/tests/test_report_store.py
+- [[.test_round_trip()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_size_cap()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_with_async_sanitizer()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_with_sync_sanitizer()]] - code - gateway/tests/test_report_store.py
+- [[.test_survives_new_instance()]] - code - gateway/tests/test_report_store.py
+- [[.test_tags_preserved()]] - code - gateway/tests/test_report_store.py
+- [[.test_title_and_tags_sanitized_async()]] - code - gateway/tests/test_report_store.py
+- [[.test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
+- [[.test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
+- [[.test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
+- [[Any_56]] - code - gateway/security/report_store.py
+- [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
+- [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
+- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
+- [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
+- [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
+- [[ReportStore]] - code - gateway/security/report_store.py
+- [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
+- [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
+- [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
+- [[TestPersistence_1]] - code - gateway/tests/test_report_store.py
+- [[TestReportAPI]] - code - gateway/tests/test_report_store.py
+- [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
+- [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
+- [[TestSecurity]] - code - gateway/tests/test_report_store.py
+- [[report_store.py]] - code - gateway/security/report_store.py
+- [[store()_2]] - code - gateway/tests/test_report_store.py
+- [[test_report_store.py]] - code - gateway/tests/test_report_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,7 +77,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 3 edges to [[_COMMUNITY__wrap_response()]]
+- 3 edges to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_api.py]]
 
 ## Top bridge nodes
-- [[PortManager]] - degree 34, connects to 1 community
+- [[._path()]] - degree 8, connects to 3 communities
+- [[ReportStore]] - degree 37, connects to 1 community
+- [[test_report_store.py]] - degree 10, connects to 1 community

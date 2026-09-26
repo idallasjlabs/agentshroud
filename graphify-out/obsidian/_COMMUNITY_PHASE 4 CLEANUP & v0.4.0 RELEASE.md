@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # PHASE 4: CLEANUP & v0.4.0 RELEASE
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[4.1 Remove Obsolete CodeDocs]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.2 Update README]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.3 Create CHANGELOG]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.4 Tag v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.5 Deploy to Production]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[Code Review (CR)_1]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Purpose_81]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[README_86]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Related Skills_87]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Usage_90]] - document - docker/config/openclaw/skills/i-cr/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - degree 6, connects to 1 community
+- [[Code Review (CR)_1]] - degree 5, connects to 1 community

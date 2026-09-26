@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[.test_conversation_histories_are_bot_scoped()]] - code - gateway/tests/test_session_manager.py
-- [[.test_default_bot_id_is_openclaw()]] - code - gateway/tests/test_session_manager.py
-- [[.test_different_bots_get_different_memory_files()]] - code - gateway/tests/test_session_manager.py
-- [[.test_different_bots_get_different_workspace_dirs()]] - code - gateway/tests/test_session_manager.py
-- [[.test_invalid_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_lazy_migration_copies_legacy_memory()]] - code - gateway/tests/test_session_manager.py
-- [[.test_legacy_session_promoted_on_load()]] - code - gateway/tests/test_session_manager.py
-- [[.test_long_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_same_bot_same_user_returns_same_session()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_bot_id_stored_correctly()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_context_includes_bot_id()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_registry_uses_compound_key()]] - code - gateway/tests/test_session_manager.py
-- [[.test_workspace_paths_under_bot_namespace()]] - code - gateway/tests/test_session_manager.py
-- [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - rationale - gateway/tests/test_session_manager.py
-- [[If legacy users{uid}MEMORY.md exists, first openclaw session copies it.]] - rationale - gateway/tests/test_session_manager.py
-- [[TestMultiBotIsolation]] - code - gateway/tests/test_session_manager.py
-- [[Verify that different bots get independent workspaces per user.]] - rationale - gateway/tests/test_session_manager.py
-- [[openclaw and hermes sessions for the same user must not share a directory.]] - rationale - gateway/tests/test_session_manager.py
+- [[Adversary Model_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Attack Phases_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Attack Techniques Reference_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Critical Rules_9]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Infrastructure_5]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Key Principle_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Output_5]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 2 Prompt Injection_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 3 Indirect Injection_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 4 Data Exfiltration_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 5 Exploitation Chains_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Phase 6 Detection Validation_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[SKILL_178]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Test Structure_4]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Writing Exploit Tests_2]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_UserSession]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestMultiBotIsolation]] - degree 17, connects to 2 communities
-- [[.test_lazy_migration_copies_legacy_memory()]] - degree 3, connects to 1 community
-- [[.test_legacy_session_promoted_on_load()]] - degree 3, connects to 1 community
+- [[AgentShroud Red Team Adversarial Tester_2]] - degree 8, connects to 1 community

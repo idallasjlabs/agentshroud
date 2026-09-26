@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.19
+cohesion: 0.11
 members: 23
 ---
 
 # SecurityEvent
 
-**Cohesion:** 0.19 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[.test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
-- [[.test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
-- [[.test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
-- [[Any_45]] - code - gateway/soc/event_adapter.py
-- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
-- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
-- [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - rationale - gateway/soc/event_adapter.py
-- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[SecurityEvent]] - code - gateway/soc/event_adapter.py
-- [[SecurityEvent_1]] - code - gateway/soc/models.py
-- [[Severity_1]] - code - gateway/soc/event_adapter.py
-- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
-- [[_map_severity()]] - code - gateway/soc/event_adapter.py
-- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
-- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
-- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
-- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
-- [[from_dict()]] - code - gateway/soc/event_adapter.py
-- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
-- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
+- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
+- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[GSDE&G Development Master Checklist (MC)]] - document - .agents/skills/i-mc/README.md
+- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
+- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
+- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Purpose_15]] - document - .agents/skills/i-mc/README.md
+- [[README_15]] - document - .agents/skills/i-mc/README.md
+- [[Related Skills_15]] - document - .agents/skills/i-mc/README.md
+- [[Usage_17]] - document - .agents/skills/i-mc/README.md
+- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
+- [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
+- [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,17 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 5 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 4 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_TestFromAuditChainEntry]]
-- 1 edge to [[_COMMUNITY_BaseModel]]
-- 1 edge to [[_COMMUNITY_soc.js]]
+- 2 edges to [[_COMMUNITY_TestUserMemoryWriteACL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_TestIsFresh]]
 
 ## Top bridge nodes
-- [[SecurityEvent_1]] - degree 20, connects to 5 communities
-- [[collect_recent_events()]] - degree 10, connects to 3 communities
-- [[event_adapter.py]] - degree 11, connects to 2 communities
-- [[Any_45]] - degree 9, connects to 1 community
-- [[SecurityEvent]] - degree 8, connects to 1 community
+- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 2 communities
+- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
+- [[GIT-GUARD Skill]] - degree 5, connects to 1 community

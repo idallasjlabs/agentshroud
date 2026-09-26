@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.40
 members: 5
 ---
 
 # Hermes Service
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Hermes Service]] - code - docker/docker-compose.yml
-- [[Multi-Agent Orchestration (specialized agents, per-agent isolation)]] - concept - docs/archive/FUTURE-FEATURES.md
-- [[OpenClaw cron backup 2026-08-31]] - document - docs/dev-notes/cron-backup-20260831-161542/jobs.json
-- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
-- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[Authentication required]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Permission denied]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Skill validation failed]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[clawhub command not found]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🆘 Troubleshooting_1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Hermes_Service
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_security.py]]
+
+## Top bridge nodes
+- [[🆘 Troubleshooting_1]] - degree 5, connects to 1 community

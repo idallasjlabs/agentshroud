@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[5. Setapp Detection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Context_9]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Deliverable & branch]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[HEXSTRIKE_PROXY_PLAN]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Known integration gaps to document (not fix in this planning branch)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Out of scope (explicitly)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Policy levers to configure (per engagement)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Proposed architecture]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[The core tension (and its resolution)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Verification (of the planning deliverable, once implementation begins)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[What already exists (no build needed)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/Phase_1__Raw_Collection
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Discovery Strategy]]
-
-## Top bridge nodes
-- [[Phase 1 — Raw Collection_2]] - degree 11, connects to 1 community

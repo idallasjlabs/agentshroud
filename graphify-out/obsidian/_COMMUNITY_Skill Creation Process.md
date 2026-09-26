@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[About Skills]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Body]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Frontmatter]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Learn Proven Design Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Skill Creation Process]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Skill Creator]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Skill Naming]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Start with Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 1 Understanding the Skill with Concrete Examples]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 2 Planning the Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 3 Initializing the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 4 Edit the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 5 Packaging a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Step 6 Iterate]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Update SKILL]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[What Skills Provide]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[skill-creatorSKILL]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Collaborators]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure_6]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +36,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_package_skill()]]
-- 1 edge to [[_COMMUNITY_init_skill.py]]
-- 1 edge to [[_COMMUNITY_Core Principles]]
+- 2 edges to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (A]]
+- 1 edge to [[_COMMUNITY_USPTO Trademark Application — AgentShroud™]]
+- 1 edge to [[_COMMUNITY_AgentShroud Hermes — System Identity]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
 
 ## Top bridge nodes
-- [[skill-creatorSKILL]] - degree 3, connects to 2 communities
-- [[Skill Creator]] - degree 4, connects to 1 community
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 9, connects to 1 community
+- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community

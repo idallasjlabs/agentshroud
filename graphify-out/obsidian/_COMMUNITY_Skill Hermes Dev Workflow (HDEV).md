@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.33
 members: 7
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Guardrails_6]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Invocation_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Jira ticket — every development batch gets one_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Reviewers and fixer available to you_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Role_30]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Tools you have for this workflow_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
-- 1 edge to [[_COMMUNITY_Mode A — Single task]]
-- 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
 
 ## Top bridge nodes
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - degree 9, connects to 3 communities
+- [[TestSessionPathSeparation]] - degree 9, connects to 3 communities

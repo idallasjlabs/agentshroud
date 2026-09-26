@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[AGENTSHROUD_GATEWAY_CONTAINER Override (renamed container breaks CVE scan)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Gateway Service]] - code - docker/docker-compose.yml
-- [[Marvin Dev Overlay (port and subnet offsets from prod)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Wazuh Agent Service]] - code - docker/docker-compose.yml
-- [[gateway-start.sh entrypoint]] - code - docker/scripts/gateway-start.sh
-- [[security-entrypoint.sh boot scan flow]] - code - docker/scripts/security-entrypoint.sh
+- [[.test_compose_agent_no_gateway_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_compose_gateway_has_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[Agent (agentshroud) service should not have credential secrets.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[Gateway service should have secrets configured.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestDockerSecretIsolation]] - code - gateway/tests/test_credential_isolation.py
+- [[Verify Docker Compose configuration isolates secrets correctly.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[test_credential_isolation.py]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Falco Detection Rules]]
+- 1 edge to [[_COMMUNITY_Features]]
+- 1 edge to [[_COMMUNITY__script()]]
 
 ## Top bridge nodes
-- [[Gateway Service]] - degree 3, connects to 1 community
+- [[test_credential_isolation.py]] - degree 3, connects to 2 communities

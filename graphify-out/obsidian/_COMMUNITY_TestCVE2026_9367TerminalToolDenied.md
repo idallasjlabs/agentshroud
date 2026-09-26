@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[.test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_admin_denied_terminal_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_terminal_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_allowed_terminal_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_in_private_tools()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_in_private_tools()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_not_in_collab_allowed()_1]] - code - gateway/tests/test_tool_acl.py
-- [[.test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_viewer_denied_terminal_tool()_1]] - code - gateway/tests/test_tool_acl.py
-- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
-- [[TestCVE2026_9367TerminalToolDenied_1]] - code - gateway/tests/test_tool_acl.py
-- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
+- [[CI DAST scan job (Nuclei, self-hosted)]] - code - .github/workflows/ci.yml
+- [[Credential isolation — keys live only in the gateway]] - rationale - docker-compose.secure.yml
+- [[Gateway DNS filter endpoint (port 53)]] - concept - docker-compose.secure.yml
+- [[MCP servers confined to the internal network]] - rationale - docker-compose.secure.yml
+- [[PostgreSQL ~.pgpass password management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[Proxy mode — full network isolation + egress control]] - concept - docker-compose.secure.yml
+- [[Sidecar mode — optional security scanning]] - concept - docker-compose.sidecar.yml
+- [[agentshroud-external network]] - code - docker-compose.secure.yml
+- [[agentshroud-gateway service (proxy mode)]] - code - docker-compose.secure.yml
+- [[agentshroud-gateway service (sidecar mode)]] - code - docker-compose.sidecar.yml
+- [[agentshroud-internal network (no external access)]] - code - docker-compose.secure.yml
+- [[direnv-based environment variable management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[external network (gateway host-facing bridge)]] - code - docker-compose.secure.yml
+- [[openclaw service (exposed, sidecar mode)]] - code - docker-compose.sidecar.yml
+- [[openclaw service (internal network only)]] - code - docker-compose.secure.yml
+- [[wazuh-agent sidecar (pinned 4.14.7)]] - code - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ToolACLEnforcer]]
-- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
+- 2 edges to [[_COMMUNITY_Skills by Category]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
 
 ## Top bridge nodes
-- [[TestCVE2026_9367TerminalToolDenied_1]] - degree 11, connects to 1 community
-- [[TestCVE2026_9367TerminalToolDenied]] - degree 9, connects to 1 community
+- [[agentshroud-gateway service (proxy mode)]] - degree 8, connects to 1 community
+- [[Autonomous remote dev workflows (hdev, odev)]] - degree 2, connects to 1 community

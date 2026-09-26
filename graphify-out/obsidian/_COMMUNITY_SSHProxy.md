@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.06
 members: 32
 ---
 
 # SSHProxy
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[SSHProxy]] - code - gateway/tests/test_ssh_proxy.py
-- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
+- [[Access Denied_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configuration Files_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_59]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_54]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_10]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,12 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_SSHProxy]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY__handle()]]
+- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
 
 ## Top bridge nodes
-- [[SSHProxy]] - degree 30, connects to 1 community
-- [[TestValidateCommand]] - degree 17, connects to 1 community
-- [[TestInjectionNewline]] - degree 12, connects to 1 community
-- [[TestExecute]] - degree 9, connects to 1 community
-- [[TestIsAutoApproved]] - degree 8, connects to 1 community
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - degree 14, connects to 2 communities

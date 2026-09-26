@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 22
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter conv
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[CLI]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Config]] - document - skills/openclaw/summarize/SKILL.md
-- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[Quick start_3]] - document - skills/openclaw/summarize/SKILL.md
-- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
-- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
-- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Useful flags]] - document - skills/openclaw/summarize/SKILL.md
-- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
-- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
-- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
-- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
-- [[songseeSKILL]] - document - skills/openclaw/songsee/SKILL.md
-- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[spotify-playerSKILL]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[summarizeSKILL]] - document - skills/openclaw/summarize/SKILL.md
-- [[things-macSKILL]] - document - skills/openclaw/things-mac/SKILL.md
-- [[voice-callSKILL]] - document - skills/openclaw/voice-call/SKILL.md
-- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
-- [[wacliSKILL]] - document - skills/openclaw/wacli/SKILL.md
-- [[xurlSKILL]] - document - skills/openclaw/xurl/SKILL.md
+- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - document - AGENTS.md
+- [[1) REPOSITORY OVERVIEW]] - document - AGENTS.md
+- [[10) MCP SERVERS (EXTERNAL INTEGRATIONS)]] - document - AGENTS.md
+- [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
+- [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
+- [[5) ENVIRONMENT SETUP]] - document - AGENTS.md
+- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - AGENTS.md
+- [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
+- [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
+- [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
+- [[B) Validation Runner (Primary Job)]] - document - AGENTS.md
+- [[C) Safe Refactor (Secondary Job)]] - document - AGENTS.md
+- [[Conda Environment]] - document - AGENTS.md
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - document - AGENTS.md
+- [[Primary Focus_1]] - document - AGENTS.md
+- [[Rules_8]] - document - AGENTS.md
+- [[Supporting Integrations]] - document - AGENTS.md
+- [[What You Can Own]] - document - AGENTS.md
+- [[What You Don't Have]] - document - AGENTS.md
+- [[What You Have]] - document - AGENTS.md
+- [[When to Defer to Claude Code]] - document - AGENTS.md
+- [[Your Role in the Multi-Agent System]] - document - AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,14 +41,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_find-sessions.sh]]
-- 1 edge to [[_COMMUNITY_frame.sh]]
-- 1 edge to [[_COMMUNITY_xurl — Agent Skill Reference]]
-- 1 edge to [[_COMMUNITY_package_skill()]]
-- 1 edge to [[_COMMUNITY_Actions]]
-- 1 edge to [[_COMMUNITY_Usage]]
-- 1 edge to [[_COMMUNITY_Weather Skill]]
+- 2 edges to [[_COMMUNITY_ADR-002 Default-Allow Security Philosophy]]
+- 1 edge to [[_COMMUNITY_SOCWebSocketHandler]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
 
 ## Top bridge nodes
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
-- [[xurlSKILL]] - degree 3, connects to 1 community
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 13, connects to 3 communities
+- [[5) ENVIRONMENT SETUP]] - degree 3, connects to 1 community

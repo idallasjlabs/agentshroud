@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[1. Docker Desktop]] - document - docs/reference/PREREQUISITES.md
-- [[2. Python 3.11+]] - document - docs/reference/PREREQUISITES.md
-- [[3. Python Packages]] - document - docs/reference/PREREQUISITES.md
-- [[4. Node.js 22+ (for OpenClaw)]] - document - docs/reference/PREREQUISITES.md
-- [[5. Git]] - document - docs/reference/PREREQUISITES.md
-- [[6. Tailscale (Optional but Recommended)]] - document - docs/reference/PREREQUISITES.md
-- [[Hardware_1]] - document - docs/reference/PREREQUISITES.md
-- [[Operating System]] - document - docs/reference/PREREQUISITES.md
-- [[Required Software]] - document - docs/reference/PREREQUISITES.md
-- [[💻 System Requirements]] - document - docs/reference/PREREQUISITES.md
+- [[AgentShroud Module Inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[AgentShroud Module Inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[Original 33 Modules (v0.6.0)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Original 33 Modules (v0.6.0)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[Pipeline Integration Points]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Pipeline Integration Points_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[module-inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[module-inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/Required_Software
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Prerequisites]]
-
-## Top bridge nodes
-- [[💻 System Requirements]] - degree 4, connects to 1 community

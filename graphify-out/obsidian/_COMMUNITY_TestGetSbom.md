@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestGetSbom
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Active Projects]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[Key Facts_1]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[Pending Tasks]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[context]] - document - docker/config/openclaw/workspace/memory/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/TestGetSbom
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__w()]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-
-## Top bridge nodes
-- [[TestGetSbom]] - degree 5, connects to 1 community
-- [[.test_invalid_json()]] - degree 2, connects to 1 community
-- [[.test_valid()]] - degree 2, connects to 1 community

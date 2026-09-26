@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # TestIdentityAuth
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[ContextGuard Bug — should_block_message() Always Returns False (monitor-only in enforce mode)]] - concept - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Prompt Injection Threat Assessment v0.7.0 — 4-Layer Defense Analysis]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/TestIdentityAuth
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY__w()]]
-
-## Top bridge nodes
-- [[TestIdentityAuth]] - degree 3, connects to 1 community
-- [[.test_full_stack()]] - degree 2, connects to 1 community

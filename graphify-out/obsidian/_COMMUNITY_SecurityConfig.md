@@ -1,48 +1,48 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.09
 members: 33
 ---
 
 # SecurityConfig
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
-- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
-- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
-- [[SecurityConfig_4]] - code - gateway/ingest_api/config.py
-- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
-- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
-- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
+- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Summary_6]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Summary_11]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,21 +52,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_lifespan.py]]
-- 16 edges to [[_COMMUNITY_TrustManager]]
-- 5 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_BaseModel]]
-- 2 edges to [[_COMMUNITY_BotConfig]]
-- 2 edges to [[_COMMUNITY_FileSandbox]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_load_config()]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 8 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 6 edges to [[_COMMUNITY_Error Index]]
+- 2 edges to [[_COMMUNITY_TestDockerEngine]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 
 ## Top bridge nodes
-- [[TestSecurityConfigDefaults]] - degree 30, connects to 8 communities
-- [[SecurityConfig_4]] - degree 30, connects to 6 communities
-- [[SecurityModuleConfig]] - degree 15, connects to 5 communities
-- [[.test_get_module_mode_enforce_override()]] - degree 4, connects to 2 communities
-- [[.test_get_module_mode_no_override()]] - degree 4, connects to 2 communities
+- [[Egress Filter  SSRF Protection]] - degree 7, connects to 3 communities
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - degree 20, connects to 2 communities
+- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
+- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 2 communities
+- [[ContextGuard (context window poisoning defense)]] - degree 4, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Roadmap (v0.9.5 → v0.9.8 → v1.0.0 → Post-v1.0.0)]] - concept - docs/agentshroud-knowledge.md
+- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 

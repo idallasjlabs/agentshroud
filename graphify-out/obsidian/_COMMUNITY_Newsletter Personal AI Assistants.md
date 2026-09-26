@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Personal AI Assistants]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
+- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

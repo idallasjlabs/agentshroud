@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # TestLeakDetection
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
+- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +24,3 @@ members: 8
 TABLE source_file, type FROM #community/TestLeakDetection
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
-- 1 edge to [[_COMMUNITY_CredentialInjector]]
-
-## Top bridge nodes
-- [[TestLeakDetection]] - degree 8, connects to 1 community
-- [[.test_leak_detection_disabled()]] - degree 2, connects to 1 community

@@ -1,70 +1,68 @@
 ---
 type: community
-cohesion: 0.07
-members: 55
+cohesion: 0.08
+members: 53
 ---
 
 # GitGuard
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 55 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 53 nodes
 
 ## Members
-- [[.__init__()_151]] - code - gateway/security/git_guard.py
-- [[._analyze_file_content()]] - code - gateway/security/git_guard.py
-- [[._analyze_script_content()]] - code - gateway/security/git_guard.py
-- [[._analyze_script_file()]] - code - gateway/security/git_guard.py
-- [[._make_hook()]] - code - gateway/tests/test_git_guard.py
-- [[._quarantine_suspicious_files()]] - code - gateway/security/git_guard.py
-- [[._scan_git_hooks()]] - code - gateway/security/git_guard.py
-- [[._scan_package_json()]] - code - gateway/security/git_guard.py
-- [[._scan_pyproject_toml()]] - code - gateway/security/git_guard.py
-- [[._scan_setup_py()]] - code - gateway/security/git_guard.py
-- [[.export_findings_report()]] - code - gateway/security/git_guard.py
-- [[.get_findings_summary()]] - code - gateway/security/git_guard.py
-- [[.monitor_git_operations()]] - code - gateway/security/git_guard.py
-- [[.scan_content()]] - code - gateway/security/git_guard.py
-- [[.scan_git_repository()]] - code - gateway/security/git_guard.py
-- [[.test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
-- [[.test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
-- [[.test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[.test_default_mode_is_enforce()_4]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
-- [[.test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[.test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
-- [[.test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[.test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[A security finding in git hooks or install scripts.]] - rationale - gateway/security/git_guard.py
-- [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze file content for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze script content string for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Any_57]] - code - gateway/security/git_guard.py
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - rationale - gateway/security/git_guard.py
-- [[Convenience function to scan a repository.]] - rationale - gateway/security/git_guard.py
-- [[Export findings to a detailed report.]] - rationale - gateway/security/git_guard.py
-- [[Get a summary of all findings.]] - rationale - gateway/security/git_guard.py
-- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[GitGuard]] - code - gateway/security/git_guard.py
-- [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
-- [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
-- [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
-- [[Path_33]] - code - gateway/security/git_guard.py
-- [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
-- [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
-- [[Scan git hooks directory for malicious content.]] - rationale - gateway/security/git_guard.py
-- [[Scan package.json for suspicious install scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan pyproject.toml for suspicious build scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan setup.py for suspicious installation scripts.]] - rationale - gateway/security/git_guard.py
-- [[SecurityFinding_1]] - code - gateway/security/git_guard.py
-- [[TestGitGuard_1]] - code - gateway/tests/test_git_guard.py
-- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[git_guard.py]] - code - gateway/security/git_guard.py
-- [[scan_repository()]] - code - gateway/security/git_guard.py
-- [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
+- [[.__ge__()]] - code - gateway/proxy/mcp_config.py
+- [[.__gt__()]] - code - gateway/proxy/mcp_config.py
+- [[.__le__()]] - code - gateway/proxy/mcp_config.py
+- [[.__lt__()]] - code - gateway/proxy/mcp_config.py
+- [[._record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_all()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_permission()]] - code - gateway/proxy/mcp_permissions.py
+- [[.from_dict()]] - code - gateway/proxy/mcp_config.py
+- [[.get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.level_value()]] - code - gateway/proxy/mcp_config.py
+- [[.test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[A single finding from inspection.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[Any_16]] - code - gateway/proxy/mcp_config.py
+- [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
+- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[InspectionFinding]] - code - gateway/proxy/mcp_inspector.py
+- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPProxyConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPServerConfig]] - code - gateway/proxy/mcp_config.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
+- [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
+- [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
+- [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
+- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Result of permission check.]] - rationale - gateway/security/rbac.py
+- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[TestRateLimiting_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[__init__.py_7]] - code - gateway/proxy/__init__.py
+- [[config()_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
+- [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
+- [[mcp_inspector.py]] - code - gateway/proxy/mcp_inspector.py
+- [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
+- [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,25 +72,35 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_lifespan.py]]
-- 13 edges to [[_COMMUNITY_ResourceGuard]]
-- 6 edges to [[_COMMUNITY_test_security_audit.py]]
-- 2 edges to [[_COMMUNITY_EncryptedStore]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
-- 1 edge to [[_COMMUNITY_TestAuth]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+- 82 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 75 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 43 edges to [[_COMMUNITY_asyncio]]
+- 19 edges to [[_COMMUNITY_TestParanoidConfig]]
+- 9 edges to [[_COMMUNITY_brand-guidelines]]
+- 9 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
+- 4 edges to [[_COMMUNITY_EncryptedStore]]
+- 4 edges to [[_COMMUNITY__wrap_response()]]
+- 4 edges to [[_COMMUNITY_Safe Refactor Specialist]]
+- 3 edges to [[_COMMUNITY_Operating Rules (Non-Negotiable)]]
+- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
+- 3 edges to [[_COMMUNITY_v0.9.0 Sentinel — Data Isolation + SOC + Remed]]
+- 3 edges to [[_COMMUNITY_→ {site site1, test_mode True, output_p]]
+- 3 edges to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 3 edges to [[_COMMUNITY_Steps]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
-- [[GitGuard]] - degree 85, connects to 11 communities
-- [[TestGitGuardDefaultEnforce]] - degree 9, connects to 5 communities
-- [[git_guard.py]] - degree 5, connects to 1 community
-- [[scan_repository()]] - degree 5, connects to 1 community
-- [[.test_git_guard_detects_credential_patterns()]] - degree 3, connects to 1 community
+- [[MCPProxyConfig]] - degree 88, connects to 14 communities
+- [[mcp_proxy.py]] - degree 27, connects to 13 communities
+- [[MCPServerConfig]] - degree 90, connects to 12 communities
+- [[PermissionLevel]] - degree 71, connects to 11 communities
+- [[__init__.py_7]] - degree 23, connects to 7 communities

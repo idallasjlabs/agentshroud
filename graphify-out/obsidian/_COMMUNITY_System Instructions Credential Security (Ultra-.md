@@ -1,39 +1,40 @@
 ---
 type: community
 cohesion: 0.08
-members: 24
+members: 25
 ---
 
 # System Instructions: Credential Security (Ultra-
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
-- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Telegram_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[.setup_method()_12]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Credential Management - 1Password Integration]]
-- 1 edge to [[_COMMUNITY_Credential Isolation — Gateway op-proxy (ACTIVE)]]
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
+- 2 edges to [[_COMMUNITY_test_dashboard.py]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 3 communities
+- [[TestMetadataGuard]] - degree 16, connects to 2 communities
+- [[.setup_method()_12]] - degree 2, connects to 1 community

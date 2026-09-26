@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.29
+members: 13
 ---
 
 # Startup Sequence
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Overview_27]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Related Notes_48]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Startup Sequence_1]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[._make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_dedup()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_get_stats()_2]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
+- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
 
 ## Top bridge nodes
-- [[Startup Sequence_1]] - degree 7, connects to 1 community
+- [[TestAlertDispatcher]] - degree 14, connects to 2 communities
+- [[._make_dispatcher()]] - degree 13, connects to 1 community

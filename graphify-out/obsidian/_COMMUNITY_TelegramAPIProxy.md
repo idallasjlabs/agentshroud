@@ -1,295 +1,207 @@
 ---
 type: community
-cohesion: 0.01
-members: 280
+cohesion: 0.02
+members: 192
 ---
 
 # TelegramAPIProxy
 
-**Cohesion:** 0.01 - loosely connected
-**Members:** 280 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 192 nodes
 
 ## Members
-- [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
-- [[._active_send_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._answer_callback_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
-- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[._bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
-- [[._collaborator_safe_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
-- [[._forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
-- [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
-- [[._get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_groupinfo_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_groups_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_projects_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_rmfromgroup_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_setmode_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_group_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_immune()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[._notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[._parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
-- [[._queue_collaborator_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_display_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
-- [[._sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
-- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_status_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_admin_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_stranger_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_telegram_with_keyboard()]] - code - gateway/proxy/telegram_proxy.py
-- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
-- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
-- [[._username_for_bot()]] - code - gateway/proxy/telegram_proxy.py
-- [[.get_stats()_17]] - code - gateway/proxy/telegram_proxy.py
-- [[.proxy_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Any_66]] - code - gateway/proxy/telegram_proxy.py
-- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[CollaboratorActivityTracker.record_activity]] - code - gateway/security/collaborator_tracker.py
-- [[Concise collaborator-safe reason text without internal leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Dismiss the Telegram inline button spinner with a brief toast.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Estimate seconds until collaborator rate limit window opens again.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle addtogroup user_id group_id (owner only).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle groupinfo group_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle groups — list groups this user belongs to.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle projects — list accessible projects.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle rmfromgroup user_id group_id (owner or group admin).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle setmode group_iduser_id local_onlyproject_scopedfull_access (owne]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
-- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue owner approval request for unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve a readable label for user id when available.          Priority user sel]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic status summary without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic gateway health status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner admin notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[TelegramAPIProxy_2]] - code - gateway/proxy/telegram_proxy.py
-- [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
-- [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[normalize_input()]] - code - gateway/security/input_normalizer.py
+- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[..' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.__init__()_133]] - code - gateway/ssh_proxy/proxy.py
+- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
+- [[.expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
+- [[.expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
+- [[.is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
+- [[.no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_rejects_empty_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.validate_command()]] - code - gateway/ssh_proxy/proxy.py
+- [[.validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
+- [[.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[.write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
+- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
+- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
+- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
+- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
+- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
+- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Management WebSocket endpoints should use scoped tokens, not master auth.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
+- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
+- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSHConfig_1]] - code - gateway/ssh_proxy/proxy.py
+- [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
+- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
+- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
+- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
+- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[Sync TestClient for WebSocket tests_1]] - rationale - gateway/tests/test_security_fixes.py
+- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
+- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
+- [[TestManagementWSTokenScoping]] - code - gateway/tests/test_security_fixes.py
+- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
+- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
+- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
+- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
+- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
+- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
+- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should reject empty token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should reject master auth token (R3-L4)]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
+- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[__init__.py_12]] - code - gateway/ssh_proxy/__init__.py
+- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[auth_headers()_3]] - code - gateway/tests/test_ssh_endpoints.py
+- [[auth_headers()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[client()_16]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_17]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
+- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
+- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
+- [[proxy()_3]] - code - gateway/tests/test_ssh_proxy.py
+- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
+- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
+- [[sync_client()_1]] - code - gateway/tests/test_security_fixes.py
+- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
+- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
+- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -299,59 +211,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_RBACConfig]]
-- 13 edges to [[_COMMUNITY_TeamsConfig]]
-- 13 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 12 edges to [[_COMMUNITY_PipelineAction]]
-- 9 edges to [[_COMMUNITY_ResourceGuard]]
-- 9 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 6 edges to [[_COMMUNITY__any_detector_fires()]]
-- 5 edges to [[_COMMUNITY_BotConfig]]
-- 5 edges to [[_COMMUNITY_.scan()]]
-- 5 edges to [[_COMMUNITY__wrap_response()]]
-- 4 edges to [[_COMMUNITY_RateLimiter]]
-- 4 edges to [[_COMMUNITY_rbac_config.py]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_group_config.py]]
-- 3 edges to [[_COMMUNITY_BlockingPipeline]]
-- 3 edges to [[_COMMUNITY_DelegationManager]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_tool_result_injection.py]]
-- 2 edges to [[_COMMUNITY_TestNoResponseGuarantee]]
-- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 2 edges to [[_COMMUNITY_TestOverallDetectionRate]]
-- 1 edge to [[_COMMUNITY_.analyze_message()]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_TestEgressTargetExtraction]]
-- 1 edge to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
-- 1 edge to [[_COMMUNITY_TestInternalBannerMatcher]]
-- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
-- 1 edge to [[_COMMUNITY_TestReplayBufferOffsetParsing]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_test_adversarial_injection.py]]
-- 1 edge to [[_COMMUNITY_TestMultiBotContextvarRouting]]
-- 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
+- 35 edges to [[_COMMUNITY_EgressPolicy]]
+- 32 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 31 edges to [[_COMMUNITY_ResourceGuard]]
+- 30 edges to [[_COMMUNITY_ApprovalRequest]]
+- 25 edges to [[_COMMUNITY_Common Queries]]
+- 21 edges to [[_COMMUNITY_ModeRequest]]
+- 8 edges to [[_COMMUNITY_Test-Driven Development README]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 3 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
-- 1 edge to [[_COMMUNITY_TestFileDownload]]
-- 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
-- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
-- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy_2]] - degree 248, connects to 39 communities
-- [[normalize_input()]] - degree 80, connects to 9 communities
-- [[Any_66]] - degree 17, connects to 5 communities
-- [[._filter_inbound_updates()]] - degree 87, connects to 3 communities
-- [[._handle_addtogroup_command()]] - degree 7, connects to 2 communities
+- [[SSHConfig]] - degree 60, connects to 9 communities
+- [[test_ssh_endpoints.py]] - degree 23, connects to 6 communities
+- [[SSHProxy]] - degree 79, connects to 5 communities
+- [[TestSSHProxyValidateWriteFile]] - degree 28, connects to 5 communities
+- [[test_ssh_write_file_endpoint.py]] - degree 27, connects to 5 communities

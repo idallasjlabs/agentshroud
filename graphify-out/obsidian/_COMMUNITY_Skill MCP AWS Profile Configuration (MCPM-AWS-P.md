@@ -1,46 +1,47 @@
 ---
 type: community
 cohesion: 0.06
-members: 31
+members: 32
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-P
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[Access Denied_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_3]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_5]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_108]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_3]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_12]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Cloud Management & FinOps Agent_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Cost Optimization Priority_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Decision Framework_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Deliverables_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Expertise_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Context_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Guardrails_12]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Identity_3]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[In-Scope Departments (Cost Reduction)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Infrastructure You Must Know_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Operating Rules (Non-Negotiable)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Out-of-Scope Departments (Inventory & Tag Only)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Required Tags (All Resources)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[SKILL_134]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Savings Levers (Ranked by Impact)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Script Templates_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Tag Audit Process_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Tagging Standard_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Target 40% Full-Year Reduction on Global Services Resources_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Workflow_3]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,9 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_.agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Quick Reference]]
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - degree 14, connects to 3 communities
+- [[AWS Cloud Management & FinOps Agent_1]] - degree 13, connects to 1 community

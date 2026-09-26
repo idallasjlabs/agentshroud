@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # Recommendation
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Cost & timeline (indicative)]] - document - docs/compliance/soc2-attestation-path.md
-- [[Immediate Actions (Pre-Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Long-Term Strategic Items]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Next Phase Priorities]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Readiness assessment — existing controls vs SOC 2 Common Criteria]] - document - docs/compliance/soc2-attestation-path.md
-- [[Recommendation_1]] - document - docs/compliance/soc2-attestation-path.md
-- [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - document - docs/compliance/soc2-attestation-path.md
-- [[Tracking]] - document - docs/compliance/soc2-attestation-path.md
-- [[What SOC 2 Type II actually requires]] - document - docs/compliance/soc2-attestation-path.md
-- [[Why this is on the board]] - document - docs/compliance/soc2-attestation-path.md
-- [[soc2-attestation-path]] - document - docs/compliance/soc2-attestation-path.md
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[CRITICAL Docker storage exhausted (live fault, found this run)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Environment Mapping]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[GitHub-hosted findings_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Language dependencies_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[PROD OUTAGE 2026-09-06 2020 → 2026-09-07 0727 (~11 hours)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Pipeline remediation (the actual work of this run)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Preflight  Baseline_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Rollback Instructions_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Security Findings]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Summary_26]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Time spent_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Upgrade Table_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Wazuh  SOC_1]] - document - reports/upgrade-2026-09-06-prod.md
+- [[upgrade-2026-09-06-prod]] - document - reports/upgrade-2026-09-06-prod.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8]]
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomou]]
-- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 1 edge to [[_COMMUNITY_auth.py]]
 
 ## Top bridge nodes
-- [[Recommendation_1]] - degree 7, connects to 2 communities
-- [[10. Security Supply Chain Analysis]] - degree 7, connects to 1 community
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - degree 13, connects to 1 community

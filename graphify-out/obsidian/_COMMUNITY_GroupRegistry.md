@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.21
+cohesion: 0.12
 members: 20
 ---
 
 # GroupRegistry
 
-**Cohesion:** 0.21 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[._make_rbac()]] - code - gateway/tests/test_rbac.py
-- [[.filter()_1]] - code - gateway/ingest_api/lifespan.py
-- [[.is_member()_1]] - code - gateway/security/rbac_config.py
-- [[.list_groups()]] - code - gateway/security/rbac_config.py
-- [[.test_add_remove_member()]] - code - gateway/tests/test_rbac.py
-- [[.test_auto_groups_created()]] - code - gateway/tests/test_rbac.py
-- [[.test_cannot_create_reserved_group_id()]] - code - gateway/tests/test_rbac.py
-- [[.test_cannot_delete_auto_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_create_custom_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_delete_custom_group()]] - code - gateway/tests/test_rbac.py
-- [[.test_everyone_group_contains_all_users()]] - code - gateway/tests/test_rbac.py
-- [[.test_is_member_unknown_group_returns_false()]] - code - gateway/tests/test_rbac.py
-- [[.test_slack_group_contains_slack_ids()]] - code - gateway/tests/test_rbac.py
-- [[.test_telegram_group_contains_numeric_ids()]] - code - gateway/tests/test_rbac.py
-- [[GroupRegistry]] - code - gateway/security/rbac_config.py
-- [[LogRecord_2]] - code - gateway/ingest_api/lifespan.py
-- [[Manages user groups including auto-groups and custom groups.]] - rationale - gateway/security/rbac_config.py
-- [[Return True if user_id is in the group.]] - rationale - gateway/security/rbac_config.py
-- [[TestGroupRegistry]] - code - gateway/tests/test_rbac.py
-- [[Tests for GroupRegistry auto-groups and custom group management.]] - rationale - gateway/tests/test_rbac.py
+- [[.start-history Epoch Restart Ledger]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
+- [[Cron AgentShroud Weekly Summary]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[Hermes Failure Scenario Catalog (gateway crash, volume corruption, bot disconnect, dependency outage)]] - concept - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
+- [[Hermes cron Monthly Chaos Engineering Drill (gemma-4-26b-a4b-it)]] - code - docker/bots/hermes/init-config.sh
+- [[Mandatory Daily Delivery (never SILENT)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Monthly Chaos Engineering Drill (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
+- [[Prompt Daily Component Health Digest]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Prompt Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
+- [[Prompt Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
+- [[Prompt Weekly Kaizen Review]] - document - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
+- [[Restart Backoff Pause (5-minute sleep)]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
+- [[SHIPPED  FRICTION  IMPROVE Retrospective Format]] - concept - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
+- [[Script-Output-Only Constraint (no tools, no recomputation)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Seed Job Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Silence-Over-Hallucination Principle]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Stale Trivy Scan Disclosure Requirement]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Telegram Formatting Rule (bold only, no headers or tables)]] - rationale - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
+- [[Zero-Hallucination Primary-Source Rule (30-day recency)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[gateway-exit-diag.log RestartExit Telemetry]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,21 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 8 edges to [[_COMMUNITY_rbac_config.py]]
-- 5 edges to [[_COMMUNITY_lifespan.py]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPersistence]]
+- 7 edges to [[_COMMUNITY_test_telegram_replay.py]]
+- 2 edges to [[_COMMUNITY_ssh-configuration]]
+- 2 edges to [[_COMMUNITY_mcp-proxy-wrapper.js]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 1 edge to [[_COMMUNITY_run_test()]]
+- 1 edge to [[_COMMUNITY_TestSplitForSpeech]]
 
 ## Top bridge nodes
-- [[LogRecord_2]] - degree 10, connects to 6 communities
-- [[GroupRegistry]] - degree 34, connects to 5 communities
-- [[TestGroupRegistry]] - degree 21, connects to 3 communities
-- [[._make_rbac()]] - degree 12, connects to 1 community
-- [[.filter()_1]] - degree 2, connects to 1 community
+- [[Cron AgentShroud Weekly Summary]] - degree 5, connects to 3 communities
+- [[Prompt Daily Component Health Digest]] - degree 7, connects to 2 communities
+- [[Prompt Weekly Kaizen Review]] - degree 4, connects to 2 communities
+- [[Telegram Formatting Rule (bold only, no headers or tables)]] - degree 6, connects to 1 community
+- [[Prompt Weekly Hermes Stability Report]] - degree 6, connects to 1 community

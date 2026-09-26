@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Architecture_13]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Confidence Threshold]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Configured Entities]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[NLP Backend]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Presidio Analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Purpose_192]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Related Notes_69]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Where Used_5]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[AgentShroud Hermes — System Identity_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Capabilities_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Core Behaviors_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Owner_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Trademark Notice_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Your Role_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[hermes-soul_1]] - document - docker/config/openclaw/agents/hermes-soul.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Presidio_Analyzer
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
-
-## Top bridge nodes
-- [[Presidio Analyzer]] - degree 8, connects to 1 community

@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Constraints_9]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Content Requirements_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Header_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Objective_5]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Role_104]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Safety_3]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Skill Pull Request (PR) Generator_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Technical Detail_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
+- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 3 edges to [[_COMMUNITY_DNSBlocklist]]
 
 ## Top bridge nodes
-- [[Skill Pull Request (PR) Generator_2]] - degree 5, connects to 1 community
+- [[TestLoadFromText]] - degree 9, connects to 1 community
+- [[.setup_method()_4]] - degree 2, connects to 1 community

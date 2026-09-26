@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # TestDaemonConfigReader
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[plan_1]] - document - docs/planning/redteam/plan.md
+- [[plan]] - document - docs/planning/redteam/plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/TestDaemonConfigReader
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__w()]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-
-## Top bridge nodes
-- [[TestDaemonConfigReader]] - degree 3, connects to 1 community
-- [[.test_invalid_json_returns_empty()]] - degree 2, connects to 1 community
-- [[.test_reads_daemon_json()]] - degree 2, connects to 1 community

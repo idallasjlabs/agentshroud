@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Description_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Effect_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_2]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Value_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[._fake_urlopen_factory()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_long_poll_timeout_remains_60s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_non_long_poll_timeout_is_15s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[sendMessage and similar calls must use a 15s urlopen timeout.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - degree 6, connects to 1 community
+- [[.test_long_poll_timeout_remains_60s()]] - degree 5, connects to 3 communities
+- [[.test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 3 communities
+- [[._fake_urlopen_factory()]] - degree 4, connects to 1 community

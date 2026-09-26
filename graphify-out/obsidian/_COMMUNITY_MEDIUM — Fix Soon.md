@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.50
+members: 5
 ---
 
 # MEDIUM — Fix Soon
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[active]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/MEDIUM__Fix_Soon
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_HIGH — Should Fix Before Release]]
-
-## Top bridge nodes
-- [[MEDIUM — Fix Soon]] - degree 6, connects to 1 community

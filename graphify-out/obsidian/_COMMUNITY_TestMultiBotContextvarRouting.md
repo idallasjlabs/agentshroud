@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.12
 members: 20
 ---
 
 # TestMultiBotContextvarRouting
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[._make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_active_send_token_returns_default_outside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_proxy_request_contextvar_visible_inside_impl()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_proxy_request_resets_contextvar_after_return()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_send_telegram_text_falls_back_to_default_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_send_telegram_text_uses_inbound_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Cross-bot reply misrouting fix via contextvar-scoped send token]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Outside a proxy_request call, _active_send_token() returns self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestMultiBotContextvarRouting]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[The contextvar set by proxy_request is visible throughout _proxy_request_impl.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When _inbound_bot_id is set, _active_bot_id() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When _inbound_bot_token is set, _active_send_token() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Without contextvar, _send_telegram_text uses self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[_send_telegram_text uses the inbound contextvar token, not self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[AGENT_ROLES]] - document - docs/governance/AGENT_ROLES.md
+- [[Authorization Matrix_1]] - document - docs/governance/AGENT_ROLES.md
+- [[Decision Tree for New Tasks]] - document - docs/governance/AGENT_ROLES.md
+- [[Diagram 21 Team Structure]] - image - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Diagram 23 Roadmap Gantt (2026)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Escalation Path]] - document - docs/governance/AGENT_ROLES.md
+- [[GSD Cadence — Get Shit Done Governance]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD Cadence — Get Shit Done Governance (doc)]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD_CADENCE]] - document - docs/governance/GSD_CADENCE.md
+- [[Monthly (1st of month)]] - document - docs/governance/GSD_CADENCE.md
+- [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
+- [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
+- [[Out of Scope]] - document - docs/governance/GSD_CADENCE.md
+- [[References_2]] - document - docs/governance/AGENT_ROLES.md
+- [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - document - docs/governance/GSD_CADENCE.md
+- [[Security-Sensitive Paths]] - document - docs/governance/AGENT_ROLES.md
+- [[Weekly (every Friday)]] - document - docs/governance/GSD_CADENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +37,3 @@ members: 20
 TABLE source_file, type FROM #community/TestMultiBotContextvarRouting
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_BotConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-
-## Top bridge nodes
-- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities

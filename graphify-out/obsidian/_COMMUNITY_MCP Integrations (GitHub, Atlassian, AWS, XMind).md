@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
+- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
 
 ## Live Query (requires Dataview plugin)
 

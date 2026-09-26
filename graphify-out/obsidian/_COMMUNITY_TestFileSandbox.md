@@ -10,37 +10,37 @@ members: 31
 **Members:** 31 nodes
 
 ## Members
-- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
-- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
-- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
-- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[CI Workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Requirements_3]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[FastAPI_4]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Key FastAPI Features Used]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Purpose_177]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Purpose_180]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_186]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Purpose_187]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Related Notes_20]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Related Notes_24]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_41]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Related Notes_42]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Security Note_1]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Where Used_1]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Where Used_2]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[fastapi]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,19 +50,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_test_security_audit.py]]
-- 4 edges to [[_COMMUNITY_FileSandbox]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_TestAuth]]
-- 2 edges to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
+- 2 edges to [[_COMMUNITY_Mode A — Single task]]
+- 2 edges to [[_COMMUNITY_test_playback_state.c]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
+- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Passw]]
+- 1 edge to [[_COMMUNITY_Telegram Formatting Rule (bold only, no headers]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_Pre-commit hook strategy (framework vs manual)]]
 
 ## Top bridge nodes
-- [[TestFileSandbox]] - degree 55, connects to 13 communities
+- [[All Dependencies]] - degree 14, connects to 7 communities
+- [[fastapi]] - degree 4, connects to 1 community
+- [[pydantic]] - degree 3, connects to 1 community

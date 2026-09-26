@@ -1,110 +1,117 @@
 ---
 type: community
-cohesion: 0.02
-members: 95
+cohesion: 0.03
+members: 102
 ---
 
 # TestCollaboratorPromptClassifiers
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 95 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 102 nodes
 
 ## Members
-- [[.test_action_risk_probe_gets_no_banner_risk_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_internal_network_probe_to_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_metadata_probe_to_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_obfuscated_probe_to_scope_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_dns_ping_probe_gets_network_probe_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_how_does_routes_to_local_handler()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_allowlist_bypass_request_detects_redirect_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_allowlist_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_action_request_detects_approve_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_action_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_queue_probe_detects_internal_metadata_query()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_queue_probe_ignores_generic_approval_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_token_probe_detects_callback_forgery_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_token_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_archive_exfil_request_detects_archive_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_archive_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_tenant_data_probe_detects_access_attempt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_tenant_data_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_user_messaging_request_detects_direct_messaging_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_user_messaging_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_encoded_exfil_request_detects_encoded_data_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_encoded_exfil_request_ignores_conceptual_encoding_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_env_secret_probe_detects_env_listing_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_env_secret_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_file_query_detects_internal_file_content_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_detects_update_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_ignores_self_mod_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hidden_channel_exfil_request_detects_hidden_metadata_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hidden_channel_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hypothetical_execution_question_detects_approval_wording()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_identity_enumeration_query_detects_owner_id_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_incremental_exfil_request_detects_chunked_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_incremental_exfil_request_ignores_normal_file_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_detects_loopback_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_detects_private_range_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_ignores_non_execution_context()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_log_access_request_detects_direct_log_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_log_access_request_ignores_conceptual_logging_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_memory_access_request_detects_memory_search_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_memory_access_request_ignores_conceptual_memory_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_metadata_endpoint_probe_detects_imds_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_metadata_endpoint_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_model_switch_request_detects_switch_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_model_switch_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_obfuscated_command_probe_detects_decode_and_execute()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_obfuscated_command_probe_ignores_conceptual_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_pairing_or_access_probe_detects_pairing_artifact_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_pairing_or_access_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_path_traversal_request_detects_dotdot_path()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_path_traversal_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_plugin_discovery_request_detects_inventory_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_plugin_discovery_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_policy_bypass_request_detects_disable_approval_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_policy_bypass_request_ignores_defensive_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_scheduler_or_autorun_request_detects_cron_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_scheduler_or_autorun_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_detects_direct_secret_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_ignores_api_key_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_ignores_conceptual_credential_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_detects_aws_credentials_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_detects_shell_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_service_control_request_detects_restart_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_service_control_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_system_prompt_probe_detects_instruction_leak_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_system_prompt_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_tool_trace_request_detects_raw_trace_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_tool_trace_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unicode_obfuscation_bypass_request_detects_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unicode_obfuscation_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unsafe_scheme_request_detects_file_scheme_fetch()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unsafe_scheme_request_ignores_conceptual_scheme_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_bare_domain_imperative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_imperative_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_policy_question_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_message_processing_probe_gets_no_banner_natural_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.2b pipelineprocessing questions should get a natural answer without restric]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.5c action-risk questions should get a natural answer without restriction ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B3.2d DNSping probes should return network probe notice with banner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B5.3c identity discrimination question should get a natural answer without rest]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[BT5c streamingchunking questions should return output delivery policy with ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator-safe notices must use the canonical protected header format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Exception in safe-info response should still deliver unavailable notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Probes containing 'how does' should be caught by _looks_like_safe_collaborator_i]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestCollaboratorPromptClassifiers]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for collaborator-facing prompt classification helpers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_scoped_ws_token_is_single_use()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[3+ auth failures in 5 min escalates to critical]] - rationale - gateway/tests/test_event_bus.py
+- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[AuthRequired_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
+- [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
+- [[Emitting with no subscribers doesn't raise]] - rationale - gateway/tests/test_event_bus.py
+- [[Events have type, timestamp, summary, details, severity]] - rationale - gateway/tests/test_event_bus.py
+- [[Fallback activity entries when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Fallback activity summary when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[GET dashboard includes Content-Security-Policy header]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboard without auth returns 403]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats returns JSON stats]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
+- [[Helper to create a GatewayEvent with current timestamp]] - rationale - gateway/ingest_api/event_bus.py
+- [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Multiple subscribers all receive the same event]] - rationale - gateway/tests/test_event_bus.py
+- [[Path_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Recent events are returned in order]] - rationale - gateway/tests/test_event_bus.py
+- [[Request_3]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return a short-lived WS-only auth token for cookie-authenticated sessions.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Scoped WS token should be consumed after first use (single-use)]] - rationale - gateway/tests/test_security_fixes.py
+- [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Stats track event counts]] - rationale - gateway/tests/test_event_bus.py
+- [[Subscriber receives emitted events]] - rationale - gateway/tests/test_event_bus.py
+- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_dashboard.py
+- [[Unsubscribed callback stops receiving events]] - rationale - gateway/tests/test_event_bus.py
+- [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WS wsactivity accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should accept scoped ws_ token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket_3]] - code - gateway/ingest_api/routes/approval.py
+- [[WebSocket_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress connects and emits egress snapshot.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward auth_ events for SOC visibility.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward privacy_ events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward scanner_result events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - rationale - gateway/ingest_api/routes/approval.py
+- [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_entries_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_summary_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_egress_live_snapshot()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
+- [[auth_dep()_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[bus()]] - code - gateway/tests/test_event_bus.py
+- [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[get_collaborators()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[make_event()]] - code - gateway/ingest_api/event_bus.py
+- [[serve_dashboard()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[soc_report()]] - code - gateway/ingest_api/main.py
+- [[sync_client()]] - code - gateway/tests/test_dashboard.py
+- [[test_async_subscriber()]] - code - gateway/tests/test_event_bus.py
+- [[test_auth_failure_escalation()]] - code - gateway/tests/test_event_bus.py
+- [[test_build_activity_entries_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - code - gateway/tests/test_dashboard.py
+- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard.py]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_has_csp_header()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_endpoint()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_xss_prevention()]] - code - gateway/tests/test_dashboard.py
+- [[test_emit_no_subscribers_no_error()]] - code - gateway/tests/test_event_bus.py
+- [[test_emit_to_multiple_subscribers()]] - code - gateway/tests/test_event_bus.py
+- [[test_event_bus.py]] - code - gateway/tests/test_event_bus.py
+- [[test_event_has_required_fields()]] - code - gateway/tests/test_event_bus.py
+- [[test_get_recent()]] - code - gateway/tests/test_event_bus.py
+- [[test_get_stats()_1]] - code - gateway/tests/test_event_bus.py
+- [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - code - gateway/tests/test_dashboard.py
+- [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - code - gateway/tests/test_dashboard.py
+- [[test_subscribe_receive_events()]] - code - gateway/tests/test_event_bus.py
+- [[test_unsubscribe_stops_events()]] - code - gateway/tests/test_event_bus.py
+- [[test_ws_activity_connects()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_receives_events()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_connects_and_snapshot()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_auth_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_privacy_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_scanner_event()]] - code - gateway/tests/test_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -114,15 +121,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 19 edges to [[_COMMUNITY_SSHProxy]]
+- 10 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 8 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 5 edges to [[_COMMUNITY_socrouter.py]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_ReportStore]]
+- 3 edges to [[_COMMUNITY_TestOriginAwareAuthorization]]
 - 2 edges to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 2 edges to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPromptClassifiers]] - degree 91, connects to 4 communities
-- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - degree 4, connects to 1 community
-- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 3, connects to 1 community
-- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - degree 3, connects to 1 community
-- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - degree 3, connects to 1 community
+- [[make_event()]] - degree 57, connects to 13 communities
+- [[dashboard.py]] - degree 23, connects to 6 communities
+- [[test_dashboard.py]] - degree 31, connects to 2 communities
+- [[soc_report()]] - degree 10, connects to 2 communities
+- [[_build_egress_live_snapshot()]] - degree 10, connects to 2 communities

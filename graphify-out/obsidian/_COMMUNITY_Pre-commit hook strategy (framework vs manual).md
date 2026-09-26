@@ -1,23 +1,22 @@
 ---
 type: community
 cohesion: 0.29
-members: 8
+members: 7
 ---
 
 # Pre-commit hook strategy (framework vs manual)
 
 **Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Built-in pre-commit hooks (private key, AWS creds, large files)]] - code - .llm_settings/templates/.pre-commit-config.yaml
-- [[CI gitleaks secret-scanning job]] - code - .github/workflows/ci.yml
-- [[Fleet-wide pre-commit secret-blocking hook]] - concept - .llm_settings/git-hooks/README.md
-- [[Pre-commit hook strategy (framework vs manual)]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[Repository security audit script]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[Secret-in-history remediation (BFG  git-filter-repo)]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[detect-secrets pre-commit hook (baseline-driven)]] - code - .llm_settings/templates/.pre-commit-config.yaml
-- [[gitleaks pre-commit hook (template)]] - code - .llm_settings/templates/.pre-commit-config.yaml
+- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Purpose_192]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Related Notes_47]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Where Used_4]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +24,9 @@ members: 8
 TABLE source_file, type FROM #community/Pre-commit_hook_strategy_framework_vs_manual
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+
+## Top bridge nodes
+- [[Pydantic]] - degree 7, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server xmind]] - code - .mcp.json
+- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,42 +1,42 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.08
 members: 27
 ---
 
 # Phase Review: P0 — Core Pipeline Wiring
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Conclusion]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Executive Summary_6]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P1 - High-Value Security Enhancements (NEXT PHASE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P2 - Feature Completeness (FUTURE PHASES)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Phase Review P0 — Core Pipeline Wiring]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Security Configuration Hardening (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[phase-review-p0-2026-02-23]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[❌ NOT READY FOR MERGE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🔴 HIGH RISK — Immediate Attention Required]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔴 POTENTIAL SECURITY THEATER]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟡 AREAS REQUIRING VALIDATION]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟢 LOW RISK — Future Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🟢 GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
+- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
+- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_6]] - document - docs/architecture/deployment-diagram.md
+- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
+- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
+- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
+- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
+- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
+- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
+- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,9 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-- 1 edge to [[_COMMUNITY_Recommendation]]
+- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
 
 ## Top bridge nodes
-- [[Phase Review P0 — Core Pipeline Wiring]] - degree 10, connects to 2 communities
-- [[4. Risks & Gaps — Critical Security Concerns]] - degree 4, connects to 1 community
+- [[ADR-001 Transparent Proxy Decision]] - degree 4, connects to 1 community

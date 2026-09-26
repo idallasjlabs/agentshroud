@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.13
 members: 15
 ---
 
 # TestHandleEvent
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy]] - code - gateway/tests/test_slack_proxy.py
-- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
-- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Check A — Substantive change on the losing side_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Guardrails_6]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Invocation Forms_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Role_40]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[SKILL_65]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,10 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_WebhookReceiver]]
-- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[TestHandleEvent]] - degree 10, connects to 3 communities
-- [[SlackAPIProxy]] - degree 9, connects to 3 communities
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - degree 12, connects to 1 community

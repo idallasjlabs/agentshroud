@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Purpose_85]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Related Skills_76]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Usage_80]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[.test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[Hermes — Podcast Production Orchestrator_2]] - degree 4, connects to 1 community
+- [[TestStatusEndpoint]] - degree 4, connects to 2 communities
+- [[.test_status_endpoint()]] - degree 3, connects to 1 community

@@ -1,68 +1,66 @@
 ---
 type: community
-cohesion: 0.09
-members: 53
+cohesion: 0.05
+members: 51
 ---
 
 # PipelineAction
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 53 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 51 nodes
 
 ## Members
-- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
-- [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
-- [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
-- [[.append()_1]] - code - gateway/proxy/pipeline.py
-- [[.append_block()]] - code - gateway/proxy/pipeline.py
-- [[.append_owner_bypass()]] - code - gateway/proxy/pipeline.py
-- [[.entries()]] - code - gateway/proxy/pipeline.py
-- [[.process_inbound()_1]] - code - gateway/proxy/pipeline.py
-- [[.process_outbound()_1]] - code - gateway/proxy/pipeline.py
-- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_outbound_blocked_replaces_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_allows_owner_through()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_outbound_called_for_send_message()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_send_message_draft_also_runs_outbound_filtering()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.to_dict()_2]] - code - gateway/proxy/pipeline.py
-- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
-- [[Any_13]] - code - gateway/proxy/pipeline.py
-- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
-- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
-- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[FilterResult]] - code - gateway/security/outbound_filter.py
-- [[PipelineAction]] - code - gateway/proxy/pipeline.py
-- [[PipelineResult]] - code - gateway/tests/test_telegram_pipeline.py
-- [[PipelineResult_1]] - code - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
-- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
-- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
-- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
-- [[Result of running a message through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[TestInboundFallbackToDirectSanitizer]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineBlocked]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
-- [[ViolationType]] - code - gateway/security/progressive_trust_config.py
-- [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_proxy()_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_update()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[pipeline.py]] - code - gateway/proxy/pipeline.py
-- [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
+- [[1Password credential isolation]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud Security Perimeter]] - concept - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Architecture Overview_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Architecture Overview_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Audit ledger (hash-verifiable chain)]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
+- [[Configuration Files_3]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Container Architecture_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Data Flow]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
+- [[Enforce mode by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Fail-closed by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Human-in-the-loop approval queue]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Least privilege MCP permissions]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Logs_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
+- [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
+- [[Network Topology_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Operations]] - document - docs/vault/00 - START HERE/Home.md
+- [[PII redacted before forwarding]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Quick Reference_9]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Summary_21]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[ledger.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[main.py_3]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,27 +70,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_TrustManager]]
-- 17 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 12 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 10 edges to [[_COMMUNITY_AuditChain]]
-- 9 edges to [[_COMMUNITY_AsyncMock]]
-- 8 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 5 edges to [[_COMMUNITY_RBACConfig]]
-- 5 edges to [[_COMMUNITY_TrustConfig]]
-- 5 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_A2AProxyResult]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_EgressPolicy]]
+- 3 edges to [[_COMMUNITY_TrustManager]]
+- 3 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 3 edges to [[_COMMUNITY_ServiceManager]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_ApprovalRequest]]
+- 1 edge to [[_COMMUNITY__FakeUpstreamWS]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_Health Checks]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_browser_security.py]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+- 1 edge to [[_COMMUNITY_TestNetworkValidator]]
 
 ## Top bridge nodes
-- [[pipeline.py]] - degree 15, connects to 9 communities
-- [[PipelineAction]] - degree 50, connects to 8 communities
-- [[PipelineResult_1]] - degree 26, connects to 5 communities
-- [[ViolationType]] - degree 20, connects to 5 communities
-- [[Any_13]] - degree 14, connects to 4 communities
+- [[main.py_3]] - degree 17, connects to 11 communities
+- [[Data Flow]] - degree 11, connects to 6 communities
+- [[Startup Sequence]] - degree 10, connects to 6 communities
+- [[ledger.py_1]] - degree 7, connects to 3 communities
+- [[Shutdown & Recovery]] - degree 3, connects to 1 community

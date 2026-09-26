@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.21
+members: 15
 ---
 
 # Himalaya Email CLI
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.21 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Attachments_1]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Configuration Entities]] - document - docs/data/data-dictionary.md
-- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Debugging_1]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Himalaya Email CLI]] - document - skills/openclaw/himalaya/SKILL.md
-- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
-- [[Multiple Accounts]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Output Formats]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Prerequisites_10]] - document - skills/openclaw/himalaya/SKILL.md
-- [[References_5]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Tips_4]] - document - skills/openclaw/himalaya/SKILL.md
-- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
-- [[himalayaSKILL]] - document - skills/openclaw/himalaya/SKILL.md
-- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[.test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
+- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,13 +34,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
-- 1 edge to [[_COMMUNITY_Message Composition with MML (MIME Meta Language]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
-- 1 edge to [[_COMMUNITY_Common Operations]]
+- 6 edges to [[_COMMUNITY_TrustManager]]
+- 4 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 3 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Communication Templates]]
+- 1 edge to [[_COMMUNITY_CredentialValidator]]
 
 ## Top bridge nodes
-- [[Himalaya Email CLI]] - degree 10, connects to 1 community
-- [[himalayaSKILL]] - degree 4, connects to 1 community
-- [[message-composition]] - degree 3, connects to 1 community
-- [[Configuration Entities]] - degree 2, connects to 1 community
+- [[TestFileSandboxStep]] - degree 9, connects to 4 communities
+- [[TestToolChainAnalyzer]] - degree 9, connects to 4 communities
+- [[TestPathIsolationStep]] - degree 8, connects to 4 communities
+- [[_tool_req()]] - degree 13, connects to 2 communities
+- [[.test_owner_bypasses_sandbox()]] - degree 3, connects to 1 community

@@ -1,199 +1,196 @@
 ---
 type: community
 cohesion: 0.02
-members: 184
+members: 181
 ---
 
 # RBACConfig
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 184 nodes
+**Members:** 181 nodes
 
 ## Members
-- [[.__init__()_159]] - code - gateway/security/group_workspace.py
-- [[.__init__()_143]] - code - gateway/security/shared_memory.py
-- [[._is_authorized_group_writer()]] - code - gateway/security/shared_memory.py
-- [[._is_owner()_1]] - code - gateway/security/group_workspace.py
-- [[._require_memory()]] - code - gateway/security/group_workspace.py
-- [[._strip_private_content()]] - code - gateway/security/shared_memory.py
-- [[.append_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[.append_group_memory()]] - code - gateway/security/group_workspace.py
-- [[.append_to_group_memory()]] - code - gateway/security/shared_memory.py
-- [[.append_to_user_memory()]] - code - gateway/security/shared_memory.py
-- [[.can_access()]] - code - gateway/security/group_workspace.py
-- [[.contains_private_content()]] - code - gateway/security/shared_memory.py
-- [[.dm_workspace_id()]] - code - gateway/security/group_workspace.py
-- [[.get_group_memory()]] - code - gateway/security/shared_memory.py
-- [[.get_merged_memory_for_user()]] - code - gateway/security/shared_memory.py
-- [[.get_topic_scoped_memory()]] - code - gateway/security/shared_memory.py
-- [[.get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
-- [[.get_user_memory()]] - code - gateway/security/shared_memory.py
-- [[.get_user_role()]] - code - gateway/security/rbac_config.py
-- [[.get_users_by_role()]] - code - gateway/security/rbac_config.py
-- [[.group_workspace_id()]] - code - gateway/security/group_workspace.py
-- [[.is_admin_or_higher()]] - code - gateway/security/rbac_config.py
-- [[.is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[.is_operator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[.is_owner()]] - code - gateway/security/rbac_config.py
-- [[.proxy()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.read_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[.read_group_memory()]] - code - gateway/security/group_workspace.py
-- [[.resolve_workspace()]] - code - gateway/security/group_workspace.py
-- [[.set_user_role()]] - code - gateway/security/rbac_config.py
-- [[.test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_cross_group_member_blocked()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_disabled_gate_returns_none_manager()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_manager_denies_group_resolve()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_manager_still_allows_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_context_needs_no_membership()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_context_resolves_to_user_namespace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_workspace_id_differs_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_enabled_default_true()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_group_a_write_invisible_from_group_b()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_keyed_by_raw_chat_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_write_invisible_from_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_manager_is_wired()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_allowed_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_member_can_access_group_workspace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_contextvar_preserved()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_of_a_cannot_read_group_b_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_of_a_denied_group_b()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_resolves_to_shared_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_members_share_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_memory_helpers_require_shared_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_no_rbac_owner_check_is_false()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_no_teams_config_fails_closed()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_blocked_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_contextvar_isolated_to_none()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_owner_allowed_in_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_rbac_without_is_owner_callable()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_access()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_read_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_write_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_resolve_raises()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_system_owner_can_access_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_two_members_of_same_group_share_one_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_unknown_group_denied()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_workspace_ids_are_distinct_per_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.wire_teams_config()]] - code - gateway/security/rbac_config.py
-- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Append a timestamped entry to the group shared memory file.          Authorizati]] - rationale - gateway/security/shared_memory.py
-- [[Append content to user's private memory file.          Authorization (RT-5, WS-E]] - rationale - gateway/security/shared_memory.py
-- [[Append to a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Append to a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Build merged memory context for bot prompt injection.          Includes]] - rationale - gateway/security/shared_memory.py
-- [[Canonical workspace id for a direct-message context ``dm-{user_id}``.]] - rationale - gateway/security/group_workspace.py
-- [[Canonical workspace id for a group chat_id ``group-{chat_id}``.]] - rationale - gateway/security/group_workspace.py
-- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
-- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
-- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
-- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
-- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
-- [[GroupAccessDenied]] - code - gateway/security/group_workspace.py
-- [[GroupWorkspaceManager]] - code - gateway/security/group_workspace.py
-- [[High-level shared-memory API wrapping UserSessionManager storage.]] - rationale - gateway/security/shared_memory.py
-- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
-- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[PUT users{user_id}role endpoint]] - code - gateway/soc/router.py
-- [[RBACConfig_2]] - code - gateway/security/rbac_config.py
-- [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - rationale - gateway/security/group_workspace.py
-- [[Read a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Read a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Read raw group shared memory. Returns empty string if not yet created.]] - rationale - gateway/security/shared_memory.py
-- [[Read raw private memory for a user.          Args             user_id The user]] - rationale - gateway/security/shared_memory.py
-- [[Remove private-looking content from shared memory before serving         to non-]] - rationale - gateway/security/shared_memory.py
-- [[Resolve and access-control shared group workspaces.      Args         teams_con]] - rationale - gateway/security/group_workspace.py
-- [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - rationale - gateway/security/group_workspace.py
-- [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - rationale - gateway/security/group_workspace.py
-- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if ``author_id`` may WRITE to ``group_id`` shared memory.          R]] - rationale - gateway/security/shared_memory.py
-- [[Return True if text contains patterns matching privatesensitive content.]] - rationale - gateway/security/shared_memory.py
-- [[Return True if user_id is the system owner (oversight override).]] - rationale - gateway/security/group_workspace.py
-- [[Return True if user_id may access the workspace for ``group_chat_id``.]] - rationale - gateway/security/group_workspace.py
-- [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
-- [[Return memory from groups whose focus_topics match the query text.          For]] - rationale - gateway/security/shared_memory.py
-- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
-- [[SharedMemoryManager]] - code - gateway/security/shared_memory.py
-- [[SharedMemoryManager.append_to_group_memory()]] - code - gateway/security/shared_memory.py
-- [[SharedMemoryManager.append_to_user_memory()]] - code - gateway/security/shared_memory.py
-- [[Simulate the chokepoint a non-member's active group id is cleared.]] - rationale - gateway/tests/test_group_workspace_manager.py
-- [[Test Group Config]] - code - gateway/tests/test_group_config.py
-- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestConfigGate]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestCrossGroupIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDefensiveGuards]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDmIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
-- [[TestInboundChokepointWiring]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestMembersShareGroupWorkspace]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
-- [[TestNonMemberDenied]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
-- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
-- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
-- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[UserSessionManager.get_merged_context()]] - code - gateway/security/session_manager.py
-- [[WorkspaceContext]] - code - gateway/security/group_workspace.py
-- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
-- [[_score_access_control_authorization() (domain 14, FR2)]] - code - gateway/security/scanner_integration.py
-- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
-- [[group_workspace.py]] - code - gateway/security/group_workspace.py
-- [[group_workspace.py (GroupWorkspaceManager)]] - code - gateway/security/group_workspace.py
-- [[manager()_2]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()_1]] - code - gateway/tests/test_group_isolation.py
-- [[rbac()_4]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()_2]] - code - gateway/tests/test_shared_memory.py
-- [[rbac()_3]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_manager()]] - code - gateway/tests/test_group_isolation.py
-- [[session_manager()_3]] - code - gateway/tests/test_group_workspace_manager.py
-- [[session_manager()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_manager.py (UserSessionManager)]] - code - gateway/security/session_manager.py
-- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
-- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
-- [[shared_memory()_2]] - code - gateway/tests/test_group_workspace_manager.py
-- [[shared_memory()_1]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[shared_memory.py]] - code - gateway/security/shared_memory.py
-- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
-- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
-- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
-- [[teams()_3]] - code - gateway/tests/test_group_workspace_manager.py
-- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[test_group_workspace_manager.py]] - code - gateway/tests/test_group_workspace_manager.py
-- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
-- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
-- [[tmp_workspace()_1]] - code - gateway/tests/test_shared_memory.py
+- [[.__init__()_33]] - code - gateway/proxy/pipeline.py
+- [[.__init__()_86]] - code - gateway/security/instruction_envelope.py
+- [[.__len__()_1]] - code - gateway/proxy/pipeline.py
+- [[._blocking_prompt_guard()]] - code - gateway/tests/test_pipeline_unit.py
+- [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
+- [[._make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[._passthrough_pii()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[._pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
+- [[._propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[._redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.get_incidents()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.get_stats()_6]] - code - gateway/proxy/pipeline.py
+- [[.incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.last_hash()_1]] - code - gateway/proxy/pipeline.py
+- [[.peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.register_peer()_1]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
+- [[.sign()]] - code - gateway/security/instruction_envelope.py
+- [[.test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_append_owner_bypass_persists_high_severity()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_append_single()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_blocked_request_decays_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_blocked_request_propagates_to_cross_bot_peer()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_chain_continuity_preserved_across_wrap()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_clean_message_passes()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_clean_request_does_not_touch_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_clean_response_passes_unchanged()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_content_hash_deterministic()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_context_guard_error_fails_closed()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_critical_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_default_window_is_10k()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_detector_failure_fails_closed_for_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_different_content_different_hash()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_entries_returns_copy()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_envelope_metadata_in_audit_entry()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_full_trust_tool_result_injection_audited_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_generic_key_pattern_audited_but_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_genesis()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_high_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_key_leak_increments_sanitized_stat_and_audits()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_lockdown_score_blocks_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_metadata()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_missing_trust_manager_does_not_raise()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_no_context_guard_passes_through()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_no_outbound_filter_does_not_unbind()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_no_scorer_leaves_result_unscored()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_no_signer_leaves_envelope_empty()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_non_owner_block_does_not_emit_owner_bypass()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_outbound_response_is_signed_and_verifiable()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_owner_bypass_audited_at_every_guard()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_owner_bypass_is_recorded_in_audit_chain()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_owner_exempted_block_does_not_decay_trust()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_persisted_event_records_true_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_repetition_attack_does_not_block()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_scorer_error_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_scorer_error_fails_closed_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_scorer_invoked_with_session_segments()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_signer_failure_never_blocks()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_skip_context_guard_bypasses_step0()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_standard_trust_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_stored_key_value_redacted_from_outbound()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_tamper_in_retained_window_detected()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_tool_result_uses_wrap_tool_result()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_untrusted_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_unwrapped_chain_must_anchor_at_genesis()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_verify_chain_valid_after_wrap()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_verify_tampered_chain_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_verify_tampered_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_verify_valid()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_window_capped_at_max_entries()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[.total_appended()_1]] - code - gateway/proxy/pipeline.py
+- [[.verify()]] - code - gateway/security/instruction_envelope.py
+- [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
+- [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
+- [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
+- [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
+- [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
+- [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[AuditChain]] - code - gateway/proxy/pipeline.py
+- [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
+- [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
+- [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
+- [[CrossBotTrustLedger]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
+- [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
+- [[KeyLeakDetector wiring — stored credential values must never leave the gateway.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
+- [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - rationale - gateway/security/outbound_filter.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
+- [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[No trust_manager configured — the hook must no-op, not crash the         request]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Outbound Information Filter Tests]] - code - gateway/tests/test_outbound_filter.py
+- [[OutboundInfoFilter]] - code - gateway/security/outbound_filter.py
+- [[Owner messages that would trip a guard are logged but never         blocked — re]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return incidents, optionally filtered by source bot.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
+- [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[ScanResult_1]] - code - gateway/security/prompt_guard.py
+- [[SecurityPipeline]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
+- [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
+- [[Step 1.76 PromptGuard tool-result scan must respect user_trust_level.      CVE-2]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChain]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
+- [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestPromptGuardToolResultTrustGate]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestTrustViolationRecording]] - code - gateway/tests/test_pipeline_unit.py
+- [[Tests for the SHA-256 hash chain.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The in-memory window must be bounded; full history lives in SQLite.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[ThreatAction]] - code - gateway/security/prompt_guard.py
+- [[TrustManager]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Verify empty audit chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
+- [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
+- [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_pipeline()_2]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
+- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[signer()]] - code - gateway/tests/test_instruction_envelope.py
+- [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_single_entry()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
+- [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
+- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -203,53 +200,60 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_MiddlewareManager]]
-- 32 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 31 edges to [[_COMMUNITY_TeamsConfig]]
-- 16 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 16 edges to [[_COMMUNITY_lifespan.py]]
-- 15 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 13 edges to [[_COMMUNITY_load_config()]]
-- 13 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 8 edges to [[_COMMUNITY_MCPServerConfig]]
-- 8 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 7 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 6 edges to [[_COMMUNITY_forward.py]]
-- 5 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 5 edges to [[_COMMUNITY_PipelineAction]]
-- 5 edges to [[_COMMUNITY_AgentRegistry]]
-- 4 edges to [[_COMMUNITY_rbac_config.py]]
-- 4 edges to [[_COMMUNITY__process_inbound()]]
-- 4 edges to [[_COMMUNITY_WebhookReceiver]]
-- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 41 edges to [[_COMMUNITY_AsyncMock]]
+- 33 edges to [[_COMMUNITY_WebProxyConfig]]
+- 32 edges to [[_COMMUNITY_TrustConfig]]
+- 28 edges to [[_COMMUNITY_falco_monitor.py]]
+- 18 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 18 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 17 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 16 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 15 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 14 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 13 edges to [[_COMMUNITY_ServiceManager]]
+- 13 edges to [[_COMMUNITY_lifespan.py]]
+- 9 edges to [[_COMMUNITY__wrap_response()]]
+- 8 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 6 edges to [[_COMMUNITY_TeamsConfig]]
+- 6 edges to [[_COMMUNITY_system-requirements]]
+- 5 edges to [[_COMMUNITY_ResourceGuard]]
+- 5 edges to [[_COMMUNITY_EgressFilter]]
+- 5 edges to [[_COMMUNITY_ConsentFramework]]
+- 4 edges to [[_COMMUNITY_test_approval_queue.py]]
+- 4 edges to [[_COMMUNITY_RateLimitGuard]]
 - 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 3 edges to [[_COMMUNITY_TestGroupMemoryInvisibleFromDM]]
-- 3 edges to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
-- 3 edges to [[_COMMUNITY_TestGroupMemoryWriteACL]]
-- 3 edges to [[_COMMUNITY_TestUserMemoryWriteACL]]
-- 2 edges to [[_COMMUNITY_GroupRegistry]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_BaseModel]]
-- 2 edges to [[_COMMUNITY__FakeRBAC]]
-- 2 edges to [[_COMMUNITY_TestFromAuditChainEntry]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_TestGroupRoleResolver]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPersistence]]
-- 1 edge to [[_COMMUNITY_group_config.py]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_UserSession]]
-- 1 edge to [[_COMMUNITY_TestBotIdIsolationInSharedMemory]]
-- 1 edge to [[_COMMUNITY_TestCrossBotTrustPivot]]
+- 3 edges to [[_COMMUNITY_RateLimiter]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
+- 3 edges to [[_COMMUNITY_AgentShroud Access Control Matrix]]
+- 3 edges to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_PipelineAction]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_brand-guidelines]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 - 1 edge to [[_COMMUNITY_TestHermesEgressAllowlist]]
-- 1 edge to [[_COMMUNITY_TestSessionPathSeparation]]
+- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_Phase 3 MITIGATE (Rollback First!)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway]]
+- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 1 edge to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 
 ## Top bridge nodes
-- [[RBACConfig_2]] - degree 210, connects to 33 communities
-- [[SharedMemoryManager]] - degree 56, connects to 11 communities
-- [[_OutboundScan]] - degree 9, connects to 6 communities
-- [[GroupWorkspaceManager]] - degree 42, connects to 5 communities
-- [[test_group_isolation.py]] - degree 18, connects to 5 communities
+- [[SecurityPipeline]] - degree 142, connects to 30 communities
+- [[AuditChain]] - degree 89, connects to 11 communities
+- [[ThreatAction]] - degree 33, connects to 11 communities
+- [[TestKeyLeakDetection_1]] - degree 24, connects to 6 communities
+- [[KeyVaultConfig]] - degree 42, connects to 5 communities

@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.15
 members: 13
 ---
 
 # OpenClaw Host Hardening
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Conditional memory writes (memoryYYYY-MM-DD.md, MEMORY.md)]] - concept - skills/openclaw/healthcheck/SKILL.md
-- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Overview_25]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Stable-named cron scheduling for periodic audits]] - concept - skills/openclaw/healthcheck/SKILL.md
-- [[healthcheckSKILL]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[openclaw security audit command family]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[Config Keys Read_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Environment Variables Used]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Event Types Emitted by main.py]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[EventBus.emit(event)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Function Details_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Imports From  Exports To_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Known Issues  Notes_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_112]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Responsibilities_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
-- 1 edge to [[_COMMUNITY_gh-issuesSKILL]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 
 ## Top bridge nodes
-- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community
-- [[Stable-named cron scheduling for periodic audits]] - degree 3, connects to 1 community
+- [[event_bus.py_2]] - degree 11, connects to 1 community

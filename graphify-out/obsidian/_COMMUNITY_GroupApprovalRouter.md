@@ -1,79 +1,78 @@
 ---
 type: community
 cohesion: 0.04
-members: 64
+members: 63
 ---
 
 # GroupApprovalRouter
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 64 nodes
+**Members:** 63 nodes
 
 ## Members
-- [[.__init__()_197]] - code - gateway/approval_queue/group_router.py
-- [[._build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
-- [[._build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
-- [[._default_send()]] - code - gateway/approval_queue/group_router.py
-- [[.extract_group_chat_id()]] - code - gateway/approval_queue/group_router.py
-- [[.is_group_context()]] - code - gateway/approval_queue/group_router.py
-- [[.route_approval()]] - code - gateway/approval_queue/group_router.py
-- [[.test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_false_for_default()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
-- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Any_79]] - code - gateway/approval_queue/group_router.py
-- [[ApprovalRequest_5]] - code - gateway/approval_queue/group_router.py
-- [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
-- [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
-- [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - rationale - gateway/approval_queue/group_router.py
-- [[GroupApprovalRouter]] - code - gateway/approval_queue/group_router.py
-- [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[GroupApprovalRouter wired with a mock Telegram send function.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[GroupApprovalRouter._default_send returns {ok True} without raising.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Mock async Telegram sendMessage to capture DM and group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[No-op send stub — used when no transport is injected.]] - rationale - gateway/approval_queue/group_router.py
-- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Return (router, sent_list) tuple for assertion convenience.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Return True if agent_id represents a Telegram group workspace.]] - rationale - gateway/approval_queue/group_router.py
-- [[Route an approval notification to the appropriate recipients.          Routing l]] - rationale - gateway/approval_queue/group_router.py
-- [[Router with no send_message_fn uses the default stub (no network calls).]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - rationale - gateway/approval_queue/group_router.py
-- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
-- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id starting with 'collab-' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - code - gateway/approval_queue/group_router.py
-- [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
-- [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
-- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[router()_3]] - code - gateway/tests/test_group_approval_routing.py
-- [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
-- [[test_group_approval_routing.py]] - code - gateway/tests/test_group_approval_routing.py
+- [[._contains_env_access_patterns()]] - code - gateway/security/env_guard.py
+- [[._derive_key()]] - code - gateway/security/encrypted_store.py
+- [[._looks_like_credential()]] - code - gateway/security/env_guard.py
+- [[._record_leakage()]] - code - gateway/security/env_guard.py
+- [[.check_command_execution()]] - code - gateway/security/env_guard.py
+- [[.check_file_access()]] - code - gateway/security/env_guard.py
+- [[.decrypt()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_json()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_str()]] - code - gateway/security/encrypted_store.py
+- [[.encrypt()]] - code - gateway/security/encrypted_store.py
+- [[.encrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[.rotate()]] - code - gateway/security/encrypted_store.py
+- [[.scrub_command_output()]] - code - gateway/security/env_guard.py
+- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
+- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
+- [[Check if a value looks like a credential.]] - rationale - gateway/security/env_guard.py
+- [[Check if command contains patterns that could access environment.]] - rationale - gateway/security/env_guard.py
+- [[Check if command execution should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if file access should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
+- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
+- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
+- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
+- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
+- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
+- [[Extend AGENTSHROUD_RULES with bot-specific name prefixes.      Called at gateway]] - rationale - gateway/security/falco_monitor.py
+- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
+- [[Integration]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Priority Levels_1]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Purpose_178]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
+- [[Record a detected environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Related Notes_22]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Rules Defined]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Scrub environment variables and API keys from command output.          Args]] - rationale - gateway/security/env_guard.py
+- [[Shell Spawning Exceptions]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
+- [[alert_dispatcher.py]] - code - gateway/security/alert_dispatcher.py
+- [[canary.py]] - code - gateway/security/canary.py
+- [[configure_rules()]] - code - gateway/security/falco_monitor.py
+- [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
+- [[env_guard.py]] - code - gateway/security/env_guard.py
+- [[falco-rules]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[falco-rules.yaml]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[falco_monitor.py]] - code - gateway/security/falco_monitor.py
+- [[get_env_guard()]] - code - gateway/security/env_guard.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh_client.py]] - code - gateway/security/wazuh_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,11 +82,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_ApprovalRequest]]
+- 22 edges to [[_COMMUNITY_lifespan.py]]
+- 15 edges to [[_COMMUNITY_LLMProxy]]
+- 8 edges to [[_COMMUNITY_gateway.security.daily_cve_report]]
+- 4 edges to [[_COMMUNITY_GSDE&G Skills Reference Guide]]
+- 3 edges to [[_COMMUNITY__wrap_response()]]
+- 3 edges to [[_COMMUNITY_chatbotmain.py]]
+- 3 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_wazuh_client.py]]
+- 2 edges to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_test_bots_ssh_exec_wrapper.py]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_Phase 3 MITIGATE (Rollback First!)]]
+- 1 edge to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_CollaboratorGreeter]]
+- 1 edge to [[_COMMUNITY_SlackSocketClient]]
 
 ## Top bridge nodes
-- [[GroupApprovalRouter]] - degree 23, connects to 1 community
-- [[test_group_approval_routing.py]] - degree 11, connects to 1 community
-- [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
-- [[TestGroupApprovalOwnerDM]] - degree 9, connects to 1 community
-- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community
+- [[falco_monitor.py]] - degree 17, connects to 8 communities
+- [[health_report.py]] - degree 18, connects to 7 communities
+- [[wazuh_client.py]] - degree 15, connects to 6 communities
+- [[env_guard.py]] - degree 10, connects to 6 communities
+- [[alert_dispatcher.py]] - degree 10, connects to 5 communities

@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # Technical Details
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Architecture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[SKILL_199]] - document - skills/openclaw/blucli/SKILL.md
+- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
+- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/Technical_Details
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-
-## Top bridge nodes
-- [[Technical Details]] - degree 4, connects to 1 community

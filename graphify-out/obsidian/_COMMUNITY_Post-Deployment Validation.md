@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # Post-Deployment Validation
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Functional Testing]] - document - docs/operations/deployment-procedure.md
-- [[Post-Deployment Validation]] - document - docs/operations/deployment-procedure.md
-- [[Security Validation_1]] - document - docs/operations/deployment-procedure.md
+- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
+- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/Post-Deployment_Validation
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[Post-Deployment Validation]] - degree 3, connects to 1 community

@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.31
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # TestIsContainerRunning
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.__init__()_201]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[._patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.read()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_FakeResp]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Apollo README]] - document - .agents/skills/i-apollo/README.md
+- [[Apollo — Audio Systems Producer_6]] - document - .agents/skills/i-apollo/SKILL.md
+- [[ElevenLabs Text-to-Dialogue API_1]] - concept - .agents/skills/i-apollo/SKILL.md
+- [[Input Requirements]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Output]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Quality Checklist]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Role_4]] - document - .agents/skills/i-apollo/SKILL.md
+- [[SKILL_3]] - document - .agents/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY__mock_dir_with_fresh_files()]]
+- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
 
 ## Top bridge nodes
-- [[TestIsContainerRunning]] - degree 6, connects to 1 community
-- [[_FakeResp]] - degree 4, connects to 1 community
+- [[Apollo — Audio Systems Producer_6]] - degree 9, connects to 2 communities

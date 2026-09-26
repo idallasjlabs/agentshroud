@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.27
+cohesion: 0.20
 members: 10
 ---
 
 # TelegramGatewayRelay
 
-**Cohesion:** 0.27 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.__init__()_192]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[E - Elevation of Privilege]] - document - docs/security/threat-model.md
+- [[R - Repudiation]] - document - docs/security/threat-model.md
+- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
+- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
+- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
+- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
+- [[Threat Container Escape]] - document - docs/security/threat-model.md
+- [[Threat Docker Socket Access]] - document - docs/security/threat-model.md
+- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
+- [[Threat Prompt Injection Attacks]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_9. Deep Security Hardening (v0.9.0)]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
+- 1 edge to [[_COMMUNITY_MCP Auth Reset (MCPM-AUTH-RESET)]]
+- 1 edge to [[_COMMUNITY_Key Messaging]]
 
 ## Top bridge nodes
-- [[telegram_gateway_relay.py]] - degree 3, connects to 1 community
+- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

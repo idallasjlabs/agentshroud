@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - rationale - docs/archive/SECURITY.md
-- [[In-Container iptables Firewall (container-firewall.sh, needs privileges)]] - rationale - docs/archive/SECURITY.md
+- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
+- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.26
+cohesion: 0.17
 members: 12
 ---
 
 # Red Team Assessment v1.2.0
 
-**Cohesion:** 0.26 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - document - docs/security/security-inventory.md
-- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - document - docs/security/competitive-security-matrix.md
-- [[KeyVault Zero-Exposure In-Memory Secret Storage]] - concept - docs/security/security-inventory.md
-- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - concept - docs/security/security-inventory.md
-- [[RT-MB2 Cross-Bot Shared Memory Leak (Fixed in PR)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB4 Hermes Cron Job Injection via jobs.yaml (Accepted Risk)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Red Team Assessment v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
-- [[Security Module 28 Differential PII Detector on Tool Results 0.7-floor (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
-- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - concept - docs/security/security-inventory.md
-- [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[TrustManager Progressive Trust Scoring (5 Levels)]] - concept - docs/security/security-inventory.md
+- [[Container management]] - document - examples/docker-commands.md
+- [[Container status]] - document - examples/docker-commands.md
+- [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
+- [[Docker Commands Reference]] - document - examples/docker-commands.md
+- [[Exec into containers]] - document - examples/docker-commands.md
+- [[Logs_4]] - document - examples/docker-commands.md
+- [[Networking_1]] - document - examples/docker-commands.md
+- [[OpenClaw CLI commands (run inside agentshroud-bot)]] - document - examples/docker-commands.md
+- [[Reading files from containers]] - document - examples/docker-commands.md
+- [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
+- [[Volume management]] - document - examples/docker-commands.md
+- [[Writing files to containers]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,14 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
-- 1 edge to [[_COMMUNITY_Voice Gateway Service (STTTTS WebSocket Bridge]]
-- 1 edge to [[_COMMUNITY_SSH Capability Architecture Document]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
 
 ## Top bridge nodes
-- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - degree 5, connects to 2 communities
-- [[Red Team Assessment v1.2.0]] - degree 7, connects to 1 community
-- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - degree 6, connects to 1 community
-- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - degree 4, connects to 1 community
-- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - degree 4, connects to 1 community
+- [[Docker Commands Reference]] - degree 12, connects to 1 community

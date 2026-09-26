@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
-- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
-- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
+- [[Container Health]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Live System Status]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Unit Test Suite]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[5. Test Results]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,9 @@ members: 4
 TABLE source_file, type FROM #community/System_Audit_Documentation_SAD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[5. Test Results]] - degree 4, connects to 1 community

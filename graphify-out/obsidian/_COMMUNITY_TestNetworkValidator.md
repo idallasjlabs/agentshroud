@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[.setup_method()_32]] - code - gateway/tests/test_network_validator.py
-- [[.test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
-- [[.test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[.test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
-- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
-- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
+- [[Approval Router — `gatewayingest_apiroutesapproval.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Core  Root — main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Dashboard API Router — `gatewaywebdashboard_endpoints.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Dashboard Router — `gatewayingest_apiroutesdashboard.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Endpoints_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Environment Variables Used_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Forward Router — `gatewayingest_apiroutesforward.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Health Router — `gatewayingest_apirouteshealth.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Key Dependencies — Modules Wired at Init]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Lifespan  Startup]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Overview_21]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Related_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Security Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[main.py_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,10 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
 
 ## Top bridge nodes
-- [[TestNetworkValidator]] - degree 15, connects to 2 communities
-- [[test_network_validator.py]] - degree 3, connects to 2 communities
-- [[.setup_method()_32]] - degree 2, connects to 1 community
+- [[main.py_4]] - degree 13, connects to 1 community

@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Dependency Updates]] - document - docs/runbooks/daily-operations.md
-- [[1. Service Health]] - document - docs/runbooks/daily-operations.md
-- [[2. Backup Verification]] - document - docs/runbooks/daily-operations.md
-- [[2. Tailscale Connectivity]] - document - docs/runbooks/daily-operations.md
-- [[3. Audit Ledger Review]] - document - docs/runbooks/daily-operations.md
-- [[3. Tailscale ACL Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Log Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Test Suite]] - document - docs/runbooks/daily-operations.md
-- [[5. Resource Usage]] - document - docs/runbooks/daily-operations.md
-- [[Daily Operations Runbook — AgentShroud]] - document - docs/runbooks/daily-operations.md
-- [[Dashboard Monitoring]] - document - docs/runbooks/daily-operations.md
-- [[Monthly Checklist (30 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Morning Checklist (5 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Weekly Checklist (15 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Function Details_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Purpose_132]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Related_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Morning_Checklist_5_minutes
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
-
-## Top bridge nodes
-- [[Daily Operations Runbook — AgentShroud]] - degree 5, connects to 1 community

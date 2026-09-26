@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.15
 members: 13
 ---
 
 # MCP AWS Profile Configuration README
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration README]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration Skill_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Auth Reset README]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[MCP Auth Reset Skill_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[MCP Doctor README]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[MCP Doctor Skill]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Purpose_187]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_53]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_118]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_44]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Usage_130]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Usage_48]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Atlas README]] - document - .agents/skills/i-atlas/README.md
+- [[Atlas — Curriculum Architect_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Gleim CPA Review (OKE Channel)]] - concept - .agents/skills/i-atlas/SKILL.md
+- [[Input Requirements_2]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Output Format_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Persona_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Quality Checklist_2]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Role_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[System Prompt_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Vulcan README]] - document - .agents/skills/i-vulcan/README.md
+- [[Vulcan Subject Matter Auditor Skill]] - document - .agents/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_.agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
+- 2 edges to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
+- 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
+- 1 edge to [[_COMMUNITY_docker-cleanup.sh]]
+- 1 edge to [[_COMMUNITY_gh-issues — Auto-fix GitHub Issues with Parallel]]
 
 ## Top bridge nodes
-- [[MCP AWS Profile Configuration README]] - degree 9, connects to 1 community
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - degree 2, connects to 1 community
+- [[Atlas — Curriculum Architect_6]] - degree 15, connects to 3 communities
+- [[Vulcan Subject Matter Auditor Skill]] - degree 3, connects to 1 community

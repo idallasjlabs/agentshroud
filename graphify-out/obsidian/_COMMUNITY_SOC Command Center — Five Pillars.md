@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
-- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
-- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
-- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
-- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
+- [[.test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,13 @@ members: 5
 TABLE source_file, type FROM #community/SOC_Command_Center__Five_Pillars
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_TestGroupRoleResolver]]
+
+## Top bridge nodes
+- [[.test_old_file_returns_false()]] - degree 3, connects to 2 communities
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[.test_fresh_file_returns_true()]] - degree 2, connects to 1 community

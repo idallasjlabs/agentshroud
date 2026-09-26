@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_50]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Overview_20]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Related Notes_5]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Sequence_1]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
 
 ## Top bridge nodes
-- [[Health Checks_1]] - degree 10, connects to 1 community
+- [[Startup Sequence_1]] - degree 7, connects to 1 community

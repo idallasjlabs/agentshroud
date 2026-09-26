@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Current Focus (AgentShroud v1.2.x — Fortress)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Decision-Making Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[How to Represent Isaiah]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Identity_3]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Long-Term Goals]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[SOUL]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Thinking Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Values_3]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[collaborator-workspaceSOUL]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Input Requirements_29]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Output Format_38]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Persona_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Quality Checklist_26]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Role_111]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[SKILL_189]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[System Prompt_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[User Prompt Template_11]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Vulcan — Subject Matter Auditor_5]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/SOUL
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[Vulcan — Subject Matter Auditor_5]] - degree 9, connects to 1 community

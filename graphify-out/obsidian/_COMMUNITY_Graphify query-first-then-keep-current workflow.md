@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Graphify query-first-then-keep-current workflow]] - rationale - CLAUDE.md
+- [[Favicon 96x96 (AgentShroud logo mark)]] - image - branding/favicons/favicon-96x96.png
 
 ## Live Query (requires Dataview plugin)
 

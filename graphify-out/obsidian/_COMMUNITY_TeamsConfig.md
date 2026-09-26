@@ -1,135 +1,142 @@
 ---
 type: community
 cohesion: 0.03
-members: 120
+members: 127
 ---
 
 # TeamsConfig
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 120 nodes
+**Members:** 127 nodes
 
 ## Members
-- [[.coerce_members()]] - code - gateway/security/group_config.py
-- [[.get_active_project_for_user()]] - code - gateway/security/group_config.py
-- [[.get_all_member_ids()]] - code - gateway/security/group_config.py
-- [[.get_group_admin_ids()]] - code - gateway/security/group_config.py
-- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
-- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[.get_user_groups()]] - code - gateway/security/group_config.py
-- [[.get_user_projects()]] - code - gateway/security/group_config.py
-- [[.is_admin()]] - code - gateway/security/group_config.py
-- [[.is_group_admin()_1]] - code - gateway/security/group_config.py
-- [[.is_member()]] - code - gateway/security/group_config.py
-- [[.matches_topic()]] - code - gateway/security/group_config.py
-- [[.model_post_init()_1]] - code - gateway/security/group_config.py
-- [[.normalise_topics()]] - code - gateway/security/group_config.py
-- [[.test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_already_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_collab_outside_scope_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_collab_unavailable_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_allowed_tools()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_group_and_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_member_sees_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_member_sees_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_groups_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_groups_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_permission()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_projects_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_projects_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_not_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_rmfromgroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_admin()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_projects()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_unknown_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[.validate_mode()]] - code - gateway/security/group_config.py
-- [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
-- [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
-- [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[ProjectConfig]] - code - gateway/security/group_config.py
-- [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
-- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
-- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
-- [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
-- [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
-- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
-- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
-- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TeamsConfig_2]] - code - gateway/security/group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestErrorFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupInfo]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatProjectsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestMutationFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
-- [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
-- [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
-- [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
-- [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_already_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_group_info()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_groups_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_no_permission()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_not_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
-- [[project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
-- [[teams()]] - code - gateway/tests/test_collaborator_responses.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[telegram_proxy.py]] - code - gateway/proxy/telegram_proxy.py
-- [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[.__init__()_25]] - code - gateway/proxy/mcp_audit.py
+- [[.__init__()_32]] - code - gateway/proxy/pipeline.py
+- [[.__init__()_53]] - code - gateway/security/alert_dispatcher.py
+- [[.__init__()_68]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.__init__()_92]] - code - gateway/security/killswitch_monitor.py
+- [[._check_request_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_system_resources()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_token_usage()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_tool_call_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[._clean_old_metrics()]] - code - gateway/security/killswitch_monitor.py
+- [[._count_recent_events()]] - code - gateway/security/killswitch_monitor.py
+- [[._get_system_stats()]] - code - gateway/security/killswitch_monitor.py
+- [[._log_heartbeat_result()]] - code - gateway/security/killswitch_monitor.py
+- [[._log_verification_result()]] - code - gateway/security/killswitch_monitor.py
+- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
+- [[._send_anomaly_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._send_heartbeat_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._send_verification_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_docker_available()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_killswitch_mode()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_exists()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_permissions()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_syntax()]] - code - gateway/security/killswitch_monitor.py
+- [[.anomaly_detection()]] - code - gateway/security/killswitch_monitor.py
+- [[.get_status()]] - code - gateway/security/killswitch_monitor.py
+- [[.heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
+- [[.test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_excessive_requests_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_excessive_tokens_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_excessive_tool_calls_flagged_and_alerted()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_fail_when_script_missing_triggers_alert()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_failure_increments_and_alerts_at_threshold()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_get_status_reports_verification_due()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_get_system_stats_handles_psutil_error()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_healthy_resets_miss_counter()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_no_anomaly_when_within_limits()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_slow_when_response_exceeds_timeout()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_system_resource_cpu_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.to_dict()_10]] - code - gateway/security/killswitch_config.py
+- [[.verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
+- [[Any_44]] - code - gateway/security/killswitch_config.py
+- [[Any_45]] - code - gateway/security/killswitch_monitor.py
+- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if the agent is responding within expected parameters.          Returns]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if token usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if tool call rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
+- [[Count events in the last N seconds.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Detect unusual patterns that might indicate rogue behavior.          Args]] - rationale - gateway/security/killswitch_monitor.py
+- [[Get current kill switch monitor status.          Returns             Dict conta]] - rationale - gateway/security/killswitch_monitor.py
+- [[Get current system statistics.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[KillSwitchConfig_1]] - code - gateway/security/killswitch_monitor.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
+- [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
+- [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
+- [[Path_5]] - code - gateway/security/alert_dispatcher.py
+- [[Path_35]] - code - gateway/tests/test_observatory_mode.py
+- [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for verification failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test a specific kill switch mode.          Args             mode The kill swit]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has valid syntax.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
+- [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[TestStatusAndStats]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
+- [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[config()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[deque]] - code - gateway/security/killswitch_monitor.py
+- [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
+- [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
+- [[killswitch_monitor.py (KillSwitchMonitor)]] - code - gateway/security/killswitch_monitor.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
+- [[test_killswitch_monitor_behavior.py]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -139,40 +146,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_RBACConfig]]
-- 13 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 11 edges to [[_COMMUNITY_group_config.py]]
-- 7 edges to [[_COMMUNITY_rbac_config.py]]
-- 7 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 6 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_BaseModel]]
-- 2 edges to [[_COMMUNITY_gateway.proxy.llm_proxy]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_load_config()]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_API_BASE_URL]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
-- 1 edge to [[_COMMUNITY_TelegramGatewayRelay]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_.scan()]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_GroupRegistry]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_TestGroupMemoryInvisibleFromDM]]
-- 1 edge to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
-- 1 edge to [[_COMMUNITY_TestGroupRoleResolver]]
-- 1 edge to [[_COMMUNITY_TestGroupMemoryWriteACL]]
-- 1 edge to [[_COMMUNITY_TestUserMemoryWriteACL]]
+- 22 edges to [[_COMMUNITY_system-requirements]]
+- 17 edges to [[_COMMUNITY_TrustManager]]
+- 6 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
+- 1 edge to [[_COMMUNITY_brand-guidelines]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_IntelReportStore]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[TeamsConfig_2]] - degree 86, connects to 16 communities
-- [[telegram_proxy.py]] - degree 36, connects to 16 communities
-- [[GroupConfig]] - degree 32, connects to 3 communities
-- [[slack_proxy.py]] - degree 4, connects to 3 communities
-- [[ProjectConfig]] - degree 18, connects to 2 communities
+- [[KillSwitchMonitor]] - degree 80, connects to 4 communities
+- [[KillSwitchConfig]] - degree 43, connects to 4 communities
+- [[killswitch_monitor.py]] - degree 8, connects to 4 communities
+- [[TestKillSwitchVerification]] - degree 13, connects to 2 communities
+- [[TestAutoRevert]] - degree 8, connects to 2 communities

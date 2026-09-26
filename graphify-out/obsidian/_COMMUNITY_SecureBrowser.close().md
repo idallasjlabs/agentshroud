@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[agentshroud-knowledge]] - document - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

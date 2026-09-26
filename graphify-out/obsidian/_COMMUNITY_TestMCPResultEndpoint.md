@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[1. System Profiler (most comprehensive single source)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[10. Spotlight Catch-All_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[2. Applications Folders (catch drag-and-drop installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[3. Homebrew (formulae + casks)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[4. Mac App Store (via `mas` CLI)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[5. Setapp Detection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[6. Package Receipts (direct .pkg installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[7. CLI Tools & Utilities (non-.app installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[8. Launch Agents & Daemons (background services)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[9. Browser Extensions (optional but useful)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 1 — Raw Collection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ApprovalRequest]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_MCPServerConfig]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.9.0]]
 
 ## Top bridge nodes
-- [[TestMCPResultEndpoint]] - degree 17, connects to 4 communities
+- [[Discovery Strategy_2]] - degree 7, connects to 1 community

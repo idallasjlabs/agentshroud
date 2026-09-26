@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[.test_anthropic_default_strips_x_api_key()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_credential_injected_into_request()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_credential_not_injected_for_unknown_domain()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_has_credential_false_for_missing()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_has_credential_true_for_loaded()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_injection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_strip_headers_removes_conflicting_header()]] - code - gateway/tests/test_credential_injector.py
-- [[Default Anthropic mapping must strip x-api-key (regression guard).]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestCredentialInjection]] - code - gateway/tests/test_credential_injector.py
-- [[strip_headers must remove x-api-key before injecting Authorization Bearer.]] - rationale - gateway/tests/test_credential_injector.py
+- [[.test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_CredentialInjector]]
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
+- 3 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
-- [[TestCredentialInjection]] - degree 9, connects to 2 communities
-- [[.test_anthropic_default_strips_x_api_key()]] - degree 3, connects to 1 community
-- [[.test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
-- [[.test_injection_disabled()]] - degree 2, connects to 1 community
+- [[TestConfig_1]] - degree 12, connects to 2 communities

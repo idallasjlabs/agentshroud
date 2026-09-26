@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Gateway Python Dependencies (`gateway/requiremen
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Authentication_2]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Related Notes_35]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Testing]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[ClamAV — Malware Detection]] - document - docs/security/security-supply-chain.md
+- [[Detailed Profiles]] - document - docs/security/security-supply-chain.md
+- [[Docker Engine]] - document - docs/security/security-supply-chain.md
+- [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
+- [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
+- [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
+- [[Overview_14]] - document - docs/security/security-supply-chain.md
+- [[Podman]] - document - docs/security/security-supply-chain.md
+- [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
+- [[Recommendations]] - document - docs/security/security-supply-chain.md
+- [[SQLite — Approval Queue  Audit Storage]] - document - docs/security/security-supply-chain.md
+- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
+- [[Trivy — Container Image Scanning]] - document - docs/security/security-supply-chain.md
+- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
+- [[Wazuh — Host Integrity Monitoring ⚠️]] - document - docs/security/security-supply-chain.md
+- [[cryptography (Python) — Encryption Library]] - document - docs/security/security-supply-chain.md
+- [[spaCy + Presidio — PII Detection]] - document - docs/security/security-supply-chain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Function Details]]
 
 ## Top bridge nodes
-- [[All Dependencies_1]] - degree 5, connects to 1 community
+- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community

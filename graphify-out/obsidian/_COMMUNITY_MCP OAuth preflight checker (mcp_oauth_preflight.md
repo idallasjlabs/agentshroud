@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 1.00
+members: 3
 ---
 
 # MCP OAuth preflight checker (mcp_oauth_preflight
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[Atlassian OAuth 2.0 (3LO) config]] - concept - .llm_settings/docs/MCP_README.md
-- [[GitHub OAuth device authorization flow config]] - concept - .llm_settings/docs/MCP_README.md
-- [[MCP OAuth preflight checker (mcp_oauth_preflight.py)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
-- [[Secrets stay in .env, never in the repo]] - rationale - .llm_settings/docs/MCP_README.md
+- [[Hermes Podcast Production Orchestrator README]] - document - .agents/skills/i-hermes/README.md
+- [[Hermes Reference Verifier Skill]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Podcast Production Pipeline (multi-agent)]] - concept - .agents/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

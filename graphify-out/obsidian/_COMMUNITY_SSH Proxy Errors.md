@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Related Notes_74]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Input Requirements_26]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Mnemosyne — Retention Engineer_5]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Output Format_32]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Persona_20]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Quality Checklist_23]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Role_94]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[SKILL_163]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[System Prompt_20]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[SSH Proxy Errors]] - degree 2, connects to 1 community
+- [[Mnemosyne — Retention Engineer_5]] - degree 8, connects to 1 community

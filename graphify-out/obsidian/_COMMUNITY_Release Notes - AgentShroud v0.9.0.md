@@ -1,55 +1,55 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.07
 members: 40
 ---
 
 # Release Notes - AgentShroud v0.9.0
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Executive Summary_3]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[75 Security Modules]] - document - README.md
+- [[Acknowledgments]] - document - README.md
+- [[Agent Containment]] - document - README.md
+- [[AgentShroud vs Unprotected Agent]] - document - README.md
+- [[AgentShroud™ README]] - document - README.md
+- [[Architecture]] - document - README.md
+- [[Content & Context Guards]] - document - README.md
+- [[Control Centers]] - document - README.md
+- [[Core Objectives]] - document - README.md
+- [[Core Security Pipeline]] - document - README.md
+- [[Development]] - document - README.md
+- [[Development Resources]] - document - README.md
+- [[Documentation]] - document - README.md
+- [[Example Configurations]] - document - README.md
+- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
+- [[Infrastructure & Monitoring]] - document - README.md
+- [[Media]] - document - README.md
+- [[OpenClaw Bot]] - concept - README.md
+- [[Proxy & Network Layer]] - document - README.md
+- [[Quick Start]] - document - README.md
+- [[README_37]] - document - README.md
+- [[Supporting Infrastructure]] - document - README.md
+- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Technical Documentation]] - document - README.md
+- [[Terminal Control Center]] - document - README.md
+- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Web Control Center]] - document - README.md
+- [[What's New — v1.2.2 (June 2026)]] - document - README.md
+- [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
+- [[Who It's For]] - document - README.md
+- [[Why AgentShroud]] - document - README.md
+- [[v1.0.0 Fortress foundations (March 2026)]] - document - README.md
+- [[v1.1.x Hermes (May–June 2026)]] - document - README.md
+- [[v1.2.0 Voice (June 2026)]] - document - README.md
+- [[v1.2.1 (2026-06-27) — Quality sweep]] - document - README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,3 +57,14 @@ members: 40
 TABLE source_file, type FROM #community/Release_Notes_-_AgentShroud_v090
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_SessionContext]]
+- 3 edges to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+
+## Top bridge nodes
+- [[AgentShroud™ README]] - degree 19, connects to 3 communities
+- [[75 Security Modules]] - degree 18, connects to 2 communities
+- [[README_37]] - degree 13, connects to 1 community

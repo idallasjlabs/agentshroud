@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[MCP Tool Risk Tier Classification (criticalhighmediumlow) with Approval Policy]] - concept - docs/planning/redteam/02-human-in-the-loop.md
-- [[Red Team Finding 02 No Human Approval for High-Risk Tool Calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Red Team Finding 03 All Users Share Agent Context and File System]] - document - docs/planning/redteam/03-session-isolation.md
-- [[SessionManager — Telegram User ID as Partition Key for Workspaces and Memory]] - concept - docs/planning/redteam/03-session-isolation.md
+- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[AWS credentials path probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Cloud metadata endpoint probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,11 @@ members: 4
 TABLE source_file, type FROM #community/Red_Team_Finding_02_No_Human_Approval_for_High-
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+
+## Top bridge nodes
+- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

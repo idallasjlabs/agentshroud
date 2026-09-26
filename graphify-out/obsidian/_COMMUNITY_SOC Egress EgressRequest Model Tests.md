@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Egress EgressRequest Model Tests]] - code - gateway/tests/test_soc_egress.py
+- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
 
 ## Live Query (requires Dataview plugin)
 

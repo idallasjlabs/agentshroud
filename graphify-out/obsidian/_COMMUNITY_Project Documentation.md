@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # Project Documentation
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Current Status]] - document - docs/project/README.md
-- [[Current Status_1]] - document - docs/requirements/README.md
-- [[Planned Documents]] - document - docs/project/README.md
-- [[Planned Documents_1]] - document - docs/requirements/README.md
-- [[Project Documentation]] - document - docs/project/README.md
-- [[Requirements Documentation]] - document - docs/requirements/README.md
-- [[projectREADME]] - document - docs/project/README.md
-- [[requirementsREADME]] - document - docs/requirements/README.md
+- [[.load_all()]] - code - gateway/approval_queue/store.py
+- [[.load_pending()]] - code - gateway/approval_queue/store.py
+- [[.save()]] - code - gateway/approval_queue/store.py
+- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
+- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
+- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
+- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +24,11 @@ members: 8
 TABLE source_file, type FROM #community/Project_Documentation
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+
+## Top bridge nodes
+- [[.load_all()]] - degree 3, connects to 1 community
+- [[.load_pending()]] - degree 3, connects to 1 community
+- [[.save()]] - degree 3, connects to 1 community

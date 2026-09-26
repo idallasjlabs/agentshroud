@@ -1,49 +1,50 @@
 ---
 type: community
-cohesion: 0.09
-members: 34
+cohesion: 0.10
+members: 35
 ---
 
 # MCPAuditTrail
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 34 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[.__len__()_1]] - code - gateway/proxy/mcp_audit.py
-- [[._compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
-- [[.entries()_1]] - code - gateway/proxy/mcp_audit.py
-- [[.generate_report()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_blocked_entries()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_agent()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_server()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_entries_for_tool()]] - code - gateway/proxy/mcp_audit.py
-- [[.get_failed_entries()]] - code - gateway/proxy/mcp_audit.py
-- [[.last_hash()_1]] - code - gateway/proxy/mcp_audit.py
-- [[.log_tool_call()]] - code - gateway/proxy/mcp_audit.py
-- [[.log_tool_result()]] - code - gateway/proxy/mcp_audit.py
-- [[.start_call()]] - code - gateway/proxy/mcp_audit.py
-- [[.test_default_window_is_10k()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_report_total_reflects_all_appended()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tamper_in_retained_window_detected()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_verify_chain_valid_after_wrap()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_window_capped_at_max_entries()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.total_appended()_1]] - code - gateway/proxy/mcp_audit.py
-- [[.verify_chain()_1]] - code - gateway/proxy/mcp_audit.py
-- [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_35]] - code - gateway/proxy/mcp_audit.py
-- [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
-- [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
-- [[In-memory MCP audit window must be bounded (mirrors AuditChain).]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Log an incoming MCP tool result.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Log an outgoing MCP tool call.]] - rationale - gateway/proxy/mcp_audit.py
-- [[MCPAuditEntry]] - code - gateway/proxy/mcp_audit.py
-- [[MCPAuditTrail_1]] - code - gateway/proxy/mcp_audit.py
-- [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
-- [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
-- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
-- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
+- [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_all_domains_have_required_fields()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_disa_stig_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_eu_ai_act_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_iso_42001_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_maturity_labels_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_network_segmentation_baseline_three()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_nist_csf_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_overall_maturity_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_thirty_three_domains()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
+- [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - rationale - gateway/security/scanner_integration.py
+- [[DISA STIG domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Determine composite compliance level using the weakest-link rule.      All 7 sub]] - rationale - gateway/security/scanner_integration.py
+- [[Determine the highest achieved IEC 62443 Security Level.      SL 1 All IEC-mapp]] - rationale - gateway/security/scanner_integration.py
+- [[EU AI Act domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Return weighted sub-score as 0.0–100.0 percentage.]] - rationale - gateway/security/scanner_integration.py
+- [[TestComputeScorecard]] - code - gateway/tests/test_scanner_integration.py
+- [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[_compute_weighted_subscore()]] - code - gateway/security/scanner_integration.py
+- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
+- [[_determine_iec_sl()]] - code - gateway/security/scanner_integration.py
+- [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,22 +54,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_MCPToolCall]]
-- 18 edges to [[_COMMUNITY_StdioConnection]]
-- 17 edges to [[_COMMUNITY_MCPServerConfig]]
-- 5 edges to [[_COMMUNITY_MCPToolResult]]
-- 3 edges to [[_COMMUNITY_FakeProcess]]
-- 3 edges to [[_COMMUNITY_PermissionLevel]]
-- 3 edges to [[_COMMUNITY_MCPInspector]]
-- 2 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_TestInjectionDetection]]
+- 28 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 16 edges to [[_COMMUNITY_A2AMethod]]
+- 3 edges to [[_COMMUNITY_Canvas Skill]]
+- 2 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8G]]
+- 1 edge to [[_COMMUNITY_agentshroud-bot]]
+- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 1 edge to [[_COMMUNITY_iCloud Data Manager (ICLOUD)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail_1]] - degree 90, connects to 12 communities
-- [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
-- [[MCPAuditEntry]] - degree 11, connects to 1 community
-- [[audit()]] - degree 2, connects to 1 community
+- [[compute_scorecard()]] - degree 61, connects to 11 communities
+- [[_compute_weighted_subscore()]] - degree 6, connects to 2 communities
+- [[TestComputeScorecard]] - degree 21, connects to 1 community
+- [[._all_not_run_patches()]] - degree 18, connects to 1 community
+- [[_determine_compliance_level()]] - degree 3, connects to 1 community

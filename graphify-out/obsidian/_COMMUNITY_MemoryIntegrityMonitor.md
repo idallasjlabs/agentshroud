@@ -1,153 +1,155 @@
 ---
 type: community
 cohesion: 0.03
-members: 138
+members: 140
 ---
 
 # MemoryIntegrityMonitor
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 138 nodes
+**Members:** 140 nodes
 
 ## Members
-- [[.__init__()_81]] - code - gateway/security/memory_integrity.py
-- [[.__init__()_82]] - code - gateway/security/memory_lifecycle.py
-- [[.__post_init__()_1]] - code - gateway/security/memory_lifecycle.py
-- [[.__post_init__()_2]] - code - gateway/security/memory_lifecycle.py
-- [[._cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[._cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[._compute_file_hash()]] - code - gateway/security/memory_integrity.py
-- [[._detect_modification_source()]] - code - gateway/security/memory_integrity.py
-- [[._is_in_write_window()]] - code - gateway/security/memory_integrity.py
-- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[._save_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[.archive_file()]] - code - gateway/security/memory_lifecycle.py
-- [[.clear_old_alerts()]] - code - gateway/security/memory_integrity.py
-- [[.enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
-- [[.enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
-- [[.from_dict()_1]] - code - gateway/security/memory_integrity.py
-- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
-- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
-- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
-- [[.get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
-- [[.run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
-- [[.sanitize_content()]] - code - gateway/security/memory_lifecycle.py
-- [[.scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
-- [[.scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[.scan_file()]] - code - gateway/security/memory_integrity.py
-- [[.setup_method()_16]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.setup_method()_17]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.setup_method()_18]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.teardown_method()_4]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.teardown_method()_5]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.teardown_method()_6]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_default_config()_1]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_status_reporting()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.to_dict()_6]] - code - gateway/security/memory_integrity.py
-- [[.validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
-- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Any_27]] - code - gateway/security/memory_integrity.py
-- [[Any_28]] - code - gateway/security/memory_lifecycle.py
-- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
-- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
-- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
-- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
-- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
-- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
-- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
-- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
-- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
-- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
-- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
-- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
-- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
-- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
-- [[MemoryIntegrityConfig]] - code - gateway/security/memory_integrity.py
-- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_config.py
-- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleConfig]] - code - gateway/security/memory_lifecycle.py
-- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_config.py
-- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
-- [[ModificationSource]] - code - gateway/security/memory_integrity.py
-- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
-- [[Path_10]] - code - gateway/security/memory_integrity.py
-- [[Path_11]] - code - gateway/security/memory_lifecycle.py
-- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
-- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
-- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
-- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Set up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
-- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test default configuration values._1]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[memory_config.py]] - code - gateway/security/memory_config.py
-- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
-- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
-- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.__init__()_127]] - code - gateway/security/trust_manager.py
+- [[._apply_decay()]] - code - gateway/security/trust_manager.py
+- [[._force_demotion()]] - code - gateway/security/trust_manager.py
+- [[._init_db()_2]] - code - gateway/security/trust_manager.py
+- [[._promotion_allowed()]] - code - gateway/security/trust_manager.py
+- [[._score_to_level()]] - code - gateway/security/trust_manager.py
+- [[._update_score()]] - code - gateway/security/trust_manager.py
+- [[.close()_11]] - code - gateway/security/trust_manager.py
+- [[.get_history()]] - code - gateway/security/trust_manager.py
+- [[.get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[.get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[.get_trust()]] - code - gateway/security/trust_manager.py
+- [[.get_trust_level_order()]] - code - gateway/security/progressive_trust_config.py
+- [[.is_action_allowed()]] - code - gateway/security/trust_manager.py
+- [[.is_tool_allowed()]] - code - gateway/security/progressive_trust_config.py
+- [[.is_tool_allowed()_1]] - code - gateway/security/trust_manager.py
+- [[.record_failure()]] - code - gateway/security/trust_manager.py
+- [[.record_success()]] - code - gateway/security/trust_manager.py
+- [[.record_violation()]] - code - gateway/security/trust_manager.py
+- [[.register_agent()]] - code - gateway/security/trust_manager.py
+- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_default_mode_is_enforce()_4]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_get_trust_respects_stored_ceiling()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_registered_with_standard_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_is_tool_allowed_per_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_is_tool_allowed_returns_none_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_is_tool_allowed_wildcard()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_level_order()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_mapping_is_bijective_and_total()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_monitor_mode_still_allows_permitted_tools()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_next_and_previous_levels()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_non_severe_typed_violation_does_not_force_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_promotion_granted_once_thresholds_met()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_score_alone_cannot_promote_with_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_score_alone_promotes_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_severe_violation_forces_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_tool_allowed_at_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_tool_denied_above_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_trust_deny_wins_over_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
+- [[.test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
+- [[.test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_unknown_tool_falls_through_to_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_unknown_tool_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_unregistered_agent_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.vouch_for_agent()]] - code - gateway/security/trust_manager.py
+- [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
+- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0.      Thi]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Check if an agent's trust level allows a given action.]] - rationale - gateway/security/trust_manager.py
+- [[Check the progressive ladder's threshold for promotion to target_level.]] - rationale - gateway/security/trust_manager.py
+- [[Configuration for the progressive trust system.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Convert score to trust level based on thresholds.]] - rationale - gateway/security/trust_manager.py
+- [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
+- [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
+- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
+- [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
+- [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
+- [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
+- [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
+- [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
+- [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - rationale - gateway/security/trust_manager.py
+- [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - rationale - gateway/security/trust_manager.py
+- [[ProgressiveTrustConfig_1]] - code - gateway/security/trust_manager.py
+- [[ProgressiveTrustConfig_2]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[ProgressiveTrustConfig]] - code - gateway/security/progressive_trust_config.py
+- [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 lifespan.py seeds 'hermes' with STANDARD trust.      Verifies the seeding]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Record a failedblocked action, decreasing trust.]] - rationale - gateway/security/trust_manager.py
+- [[Record a security violation, significantly decreasing trust.          With a pro]] - rationale - gateway/security/trust_manager.py
+- [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
+- [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
+- [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestBackwardCompat]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestEnforcementMode]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesTrustSeeding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestPersistence_2]] - code - gateway/tests/test_trust_manager.py
+- [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestToolACLComposition]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Trust should recover after good behavior.]] - rationale - gateway/tests/test_security_audit.py
+- [[TrustLevel]] - code - gateway/security/progressive_trust_config.py
+- [[TrustLevel_1]] - code - gateway/security/trust_manager.py
+- [[TrustLevel_2]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TrustManager_4]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TrustManager_1]] - code - gateway/security/trust_manager.py
+- [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
+- [[ViolationType]] - code - gateway/security/progressive_trust_config.py
+- [[ViolationType_1]] - code - gateway/security/trust_manager.py
+- [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
+- [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
+- [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[trust_manager()]] - code - gateway/tests/test_a2a_integration.py
+- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
+- [[trust_manager.py]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -157,16 +159,43 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_Enum]]
+- 53 edges to [[_COMMUNITY_TrustConfig]]
+- 29 edges to [[_COMMUNITY_AgentTarget]]
+- 27 edges to [[_COMMUNITY_lifespan.py]]
+- 19 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 18 edges to [[_COMMUNITY_RBACConfig]]
+- 13 edges to [[_COMMUNITY_WebProxyConfig]]
+- 11 edges to [[_COMMUNITY_test_security_audit.py]]
+- 11 edges to [[_COMMUNITY_ConsentFramework]]
+- 11 edges to [[_COMMUNITY_ServiceManager]]
+- 8 edges to [[_COMMUNITY__wrap_response()]]
+- 6 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
+- 5 edges to [[_COMMUNITY_EgressPolicy]]
+- 5 edges to [[_COMMUNITY_falco_monitor.py]]
+- 5 edges to [[_COMMUNITY_ResourceGuard]]
+- 5 edges to [[_COMMUNITY_test_approval_queue.py]]
+- 5 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 4 edges to [[_COMMUNITY_EncryptedStore]]
+- 3 edges to [[_COMMUNITY_KeyVaultConfig]]
 - 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_cls]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_EgressApprovalQueue]]
+- 2 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 2 edges to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 2 edges to [[_COMMUNITY_icloudscriptscalendar.js]]
+- 2 edges to [[_COMMUNITY_TestAuditStore]]
+- 2 edges to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV)]]
+- 2 edges to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
+- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 
 ## Top bridge nodes
-- [[MemoryIntegrityMonitor]] - degree 41, connects to 2 communities
-- [[MemoryLifecycleManager]] - degree 39, connects to 2 communities
-- [[memory_lifecycle.py]] - degree 7, connects to 2 communities
-- [[memory_integrity.py]] - degree 6, connects to 2 communities
-- [[TestMemoryLifecycleManager]] - degree 20, connects to 1 community
+- [[TrustManager_1]] - degree 184, connects to 26 communities
+- [[TrustLevel_1]] - degree 62, connects to 19 communities
+- [[ViolationType]] - degree 39, connects to 5 communities
+- [[trust_manager.py]] - degree 10, connects to 5 communities
+- [[ProgressiveTrustConfig]] - degree 40, connects to 3 communities

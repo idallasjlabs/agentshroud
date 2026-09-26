@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
+- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
 
 ## Live Query (requires Dataview plugin)
 

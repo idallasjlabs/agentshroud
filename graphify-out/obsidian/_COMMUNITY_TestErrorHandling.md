@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestErrorHandling
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_404_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_method_not_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test 404 handling for non-existent endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test 405 handling for wrong HTTP methods.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test error handling across endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestErrorHandling]] - code - gateway/tests/test_main_endpoints.py
+- [[Project Management (PM)_1]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Purpose_96]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[README_101]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Related Skills_105]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Usage_106]] - document - docker/config/openclaw/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestErrorHandling]] - degree 5, connects to 2 communities
+- [[Project Management (PM)_1]] - degree 5, connects to 1 community

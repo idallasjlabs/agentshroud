@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Hermes — Reference Verifier]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Input Requirements_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Output Format_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Persona_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Quality Checklist_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Role_3]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[System Prompt_1]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[.test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
+- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[Hermes — Reference Verifier]] - degree 7, connects to 1 community
+- [[TestOutputTrustScoring]] - degree 12, connects to 2 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server github-idallasj]] - code - .mcp.json
+- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

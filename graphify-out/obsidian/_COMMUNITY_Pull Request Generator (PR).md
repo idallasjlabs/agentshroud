@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Pull Request Generator (PR)_2]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Purpose_96]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Related Skills_87]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Usage_91]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[.test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
 
 ## Top bridge nodes
-- [[Pull Request Generator (PR)_2]] - degree 4, connects to 1 community
+- [[TestResourceAvailability]] - degree 4, connects to 1 community
+- [[.test_full_compose()]] - degree 2, connects to 1 community
+- [[.test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community

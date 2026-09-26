@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
+- [[GSDE&G Team (concept)]] - concept - docker/config/hermes/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

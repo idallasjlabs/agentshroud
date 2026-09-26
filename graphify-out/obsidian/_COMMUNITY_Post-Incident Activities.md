@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # Post-Incident Activities
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Evidence Preservation]] - document - docs/operations/incident-response.md
-- [[Lessons Learned Integration]] - document - docs/operations/incident-response.md
-- [[Post-Incident Activities]] - document - docs/operations/incident-response.md
-- [[Post-Incident Review Template]] - document - docs/operations/incident-response.md
+- [[MCP Server atlassian-agentshroud]] - code - .mcp.json
+- [[MCP Server github-agentshroud]] - code - .mcp.json
+- [[MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/Post-Incident_Activities
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[Post-Incident Activities]] - degree 4, connects to 1 community

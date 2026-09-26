@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSH Exec Endpoint Tests (allowlist, deny, injection)]] - code - gateway/tests/test_ssh_endpoints.py
+- [[AWS Step Functions MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 
 ## Live Query (requires Dataview plugin)
 

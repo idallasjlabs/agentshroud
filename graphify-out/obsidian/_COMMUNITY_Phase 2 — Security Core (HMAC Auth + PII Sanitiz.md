@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Phase 2 — Security Core (HMAC Auth + PII Sanitiz
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Feedback Guidelines]] - document - .agents/skills/i-cr/SKILL.md
+- [[Output Format_2]] - document - .agents/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks]] - document - .agents/skills/i-cr/SKILL.md
+- [[Review Principles]] - document - .agents/skills/i-cr/SKILL.md
+- [[Role_9]] - document - .agents/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)]] - document - .agents/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+
+## Top bridge nodes
+- [[Skill Code Review (CR)]] - degree 6, connects to 1 community

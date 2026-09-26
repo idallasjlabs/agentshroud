@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Check Current Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Profiles_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_8]] - document - docs/setup/SETUP_API_KEYS.md
-- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Branch Naming_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_2]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Protected Branch_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[REFUSE These_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Role_50]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[SKILL_85]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[Quick Reference_8]] - degree 5, connects to 1 community
-- [[List Available Profiles_2]] - degree 3, connects to 1 community
-- [[List Available Profiles]] - degree 3, connects to 1 community
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - degree 9, connects to 1 community

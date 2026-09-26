@@ -1,93 +1,91 @@
 ---
 type: community
-cohesion: 0.06
-members: 78
+cohesion: 0.05
+members: 76
 ---
 
 # IntelReportStore
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 78 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 76 nodes
 
 ## Members
-- [[.__init__()_128]] - code - gateway/security/intel_report.py
-- [[._compute_content_hash()]] - code - gateway/security/intel_report.py
-- [[._load_latest_file()]] - code - gateway/security/intel_report.py
-- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.load_all()_1]] - code - gateway/security/intel_report.py
-- [[.load_latest()]] - code - gateway/security/intel_report.py
-- [[.report_id_not_empty()]] - code - gateway/security/intel_report.py
-- [[.save()_1]] - code - gateway/security/intel_report.py
-- [[.source_not_empty()]] - code - gateway/security/intel_report.py
-- [[.store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_content_hash_is_deterministic()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_different_content_different_hash()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_empty_report_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_empty_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_full_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_minimal_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_missing_required_fields_raises()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_negative_security_score_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_has_content_hash()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_roundtrips_via_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_serialises_to_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_security_score_above_max_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.verify_chain()_2]] - code - gateway/security/intel_report.py
-- [[.verify_integrity()]] - code - gateway/security/intel_report.py
-- [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
-- [[A verified source backing a competitor claim.      A Citation is only created by]] - rationale - gateway/security/intel_report.py
-- [[Citation]] - code - gateway/security/citation_verifier.py
-- [[Citation_1]] - code - gateway/security/intel_report.py
-- [[CitationVerifier.verify_report()]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport_1]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport]] - code - gateway/tests/test_intel_pipeline.py
-- [[CompetitiveIntelReport_2]] - code - gateway/security/intel_report.py
-- [[CompetitorEntry_1]] - code - gateway/security/citation_verifier.py
-- [[CompetitorEntry]] - code - gateway/security/intel_report.py
-- [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - rationale - gateway/security/intel_report.py
-- [[Derive content_hash from the canonical content fields.          Only computed wh]] - rationale - gateway/security/intel_report.py
-- [[Fetcher]] - code - gateway/security/citation_verifier.py
-- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore_1]] - code - gateway/security/intel_report.py
-- [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
-- [[Load the most recently saved report.          Args             verify If True,]] - rationale - gateway/security/intel_report.py
-- [[Path_23]] - code - gateway/security/intel_report.py
-- [[Path_4]] - code - gateway/tests/test_intel_pipeline.py
-- [[Persist report to the store, linking it to the previous report.          Sets]] - rationale - gateway/security/intel_report.py
-- [[Persistent store for competitive intelligence reports.      Each report is saved]] - rationale - gateway/security/intel_report.py
-- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
-- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
-- [[Return True iff the stored content_hash matches recomputation.]] - rationale - gateway/security/intel_report.py
-- [[Return the most recent JSON file in the store, or None.]] - rationale - gateway/security/intel_report.py
-- [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - rationale - gateway/security/intel_report.py
-- [[TestCompetitiveIntelReportSchema]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportHashIntegrity]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
-- [[Tests for Pydantic model validation.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[Walk the entire report chain and verify hash linkage.          Returns]] - rationale - gateway/security/intel_report.py
-- [[_compute_hash()]] - code - gateway/security/intel_report.py
-- [[citation_verifier.py]] - code - gateway/security/citation_verifier.py
-- [[intel_report.py]] - code - gateway/security/intel_report.py
-- [[test_intel_pipeline.py]] - code - gateway/tests/test_intel_pipeline.py
+- [[.__init__()_39]] - code - gateway/proxy/telegram_proxy.py
+- [[.__init__()_108]] - code - gateway/security/progressive_lockdown.py
+- [[.__init__()_177]] - code - gateway/tests/test_progressive_lockdown.py
+- [[._get_state()]] - code - gateway/security/progressive_lockdown.py
+- [[._run_owner_cmd()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[._run_owner_cmd()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.all_statuses()]] - code - gateway/security/progressive_lockdown.py
+- [[.get_status()_2]] - code - gateway/security/progressive_lockdown.py
+- [[.is_owner()_3]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.is_suspended()]] - code - gateway/security/progressive_lockdown.py
+- [[.process_inbound()_7]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.record_block()]] - code - gateway/security/progressive_lockdown.py
+- [[.reset()_2]] - code - gateway/security/progressive_lockdown.py
+- [[.test_alert_level_at_3_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_all_statuses_empty_initially()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_all_statuses_excludes_reset_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_all_statuses_tracks_all_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_escalated_level_at_5_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_locked_includes_unlock_hint()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_locked_lists_suspended_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_locked_no_active_lockdowns()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_locked_shows_all_non_normal_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_no_notify_below_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_notify_owner_fires_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_owner_messages_pass_despite_collab_suspension()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_reset_false_for_unknown_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_reset_removes_suspended_state()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_reset_true_for_known_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_suspended_level_at_10_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_suspended_user_gets_drop_notice()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_unlock_known_user_succeeds()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_unlock_unknown_user_reports_no_state()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_unlock_without_user_id_shows_usage()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[Drive a single owner command through the proxy and capture admin notices.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FakePipelineResult]] - code - gateway/tests/test_progressive_lockdown.py
+- [[FakeRBAC]] - code - gateway/tests/test_progressive_lockdown.py
+- [[LockdownAction]] - code - gateway/security/progressive_lockdown.py
+- [[LockdownLevel]] - code - gateway/security/progressive_lockdown.py
+- [[Owner command reset lockdown state for a user. Returns True if existed.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Owner messages must never be blocked by the suspension logic.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[PassthroughPipeline]] - code - gateway/tests/test_progressive_lockdown.py
+- [[Progressive Lockdown UX Tests]] - code - gateway/tests/test_progressive_lockdown.py
+- [[ProgressiveLockdown]] - code - gateway/security/progressive_lockdown.py
+- [[Record one blocked request for user_id and return the resulting action.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return True if the user's session is currently suspended.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Return current lockdown state for a user (for collabs or owner inspection).]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return lockdown status for all tracked users.]] - rationale - gateway/security/progressive_lockdown.py
+- [[TelegramAPIProxy_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestLockedCommand]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestProgressiveLockdownUnit]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestSuspendedDropNotice]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestUnlockCommand]] - code - gateway/tests/test_progressive_lockdown.py
+- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Tracks per-user block counts and returns escalation actions.      Thread-safe fo]] - rationale - gateway/security/progressive_lockdown.py
+- [[UserLockdownState]] - code - gateway/security/progressive_lockdown.py
+- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[What the caller should do in response to this block.]] - rationale - gateway/security/progressive_lockdown.py
+- [[_make_proxy()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[_make_update()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[_wrap()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
+- [[test_progressive_lockdown.py]] - code - gateway/tests/test_progressive_lockdown.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -97,17 +95,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_DraftEntry]]
-- 10 edges to [[_COMMUNITY_FetchOutcome]]
-- 7 edges to [[_COMMUNITY_api.py]]
-- 4 edges to [[_COMMUNITY_ModeRequest]]
-- 3 edges to [[_COMMUNITY_BaseModel]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 13 edges to [[_COMMUNITY_FileSandbox]]
+- 9 edges to [[_COMMUNITY_main.rs]]
+- 3 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_TestPathIsolationManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_SCLClient]]
+- 1 edge to [[_COMMUNITY_make_event()]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_ADR-004 API Keys Never in Agent Container]]
 
 ## Top bridge nodes
-- [[IntelReportStore_1]] - degree 39, connects to 4 communities
-- [[CompetitiveIntelReport_2]] - degree 36, connects to 3 communities
-- [[CompetitorEntry]] - degree 22, connects to 3 communities
-- [[Citation_1]] - degree 11, connects to 3 communities
-- [[citation_verifier.py]] - degree 10, connects to 3 communities
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
+- [[ProgressiveLockdown]] - degree 47, connects to 4 communities
+- [[.__init__()_39]] - degree 5, connects to 4 communities
+- [[_make_proxy()_1]] - degree 18, connects to 1 community
+- [[TestProgressiveLockdownUnit]] - degree 15, connects to 1 community

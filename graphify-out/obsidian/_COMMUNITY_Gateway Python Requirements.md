@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Gateway Python Requirements]] - document - gateway/requirements.txt
+- [[SOC Auth Session Token Tests]] - code - gateway/tests/test_soc_auth.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Neo4j Export  Push]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Threat Intelligence]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

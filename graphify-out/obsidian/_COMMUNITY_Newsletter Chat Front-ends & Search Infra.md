@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Chat Front-ends & Search Infra]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
+- [[Apache License 2.0 (skill-creator)]] - document - skills/openclaw/skill-creator/license.txt
 
 ## Live Query (requires Dataview plugin)
 

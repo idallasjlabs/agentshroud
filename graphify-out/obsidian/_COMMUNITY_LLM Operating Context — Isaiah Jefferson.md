@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[2026-05-05 agent stub cleanup (160 files removed)]] - document - .llm_settings/UPGRADE_LOG.md
-- [[Gemini standalone-mode recursion fix]] - rationale - .llm_settings/UPGRADE_LOG.md
-- [[Governance & risk doctrine (ITIL v4, ISO 200009001, NIST CSF)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[LLM Operating Context — Isaiah Jefferson]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[MCP server expansion (3 → 11) and --mcp flag]] - document - .llm_settings/UPGRADE_LOG.md
-- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
+- [[Guardrails_15]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Invocation_9]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Role_95]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[SKILL_165]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
-- 1 edge to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--read]]
+- 1 edge to [[_COMMUNITY_Container Errors]]
+- 1 edge to [[_COMMUNITY_docker_engine.py]]
+- 1 edge to [[_COMMUNITY__score_secure_development()]]
 
 ## Top bridge nodes
-- [[LLM Operating Context — Isaiah Jefferson]] - degree 4, connects to 1 community
-- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - degree 3, connects to 1 community
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - degree 10, connects to 3 communities

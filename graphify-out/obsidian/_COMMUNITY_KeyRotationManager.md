@@ -1,59 +1,59 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.08
 members: 44
 ---
 
 # KeyRotationManager
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[._generate_new_credential()]] - code - gateway/security/key_rotation.py
-- [[._read_credential_from_1password()]] - code - gateway/security/key_rotation.py
-- [[._retire_old_credential_after_grace_period()]] - code - gateway/security/key_rotation.py
-- [[._store_credential_in_1password()]] - code - gateway/security/key_rotation.py
-- [[._validate_credential()]] - code - gateway/security/key_rotation.py
-- [[.check_and_rotate_due_credentials()]] - code - gateway/security/key_rotation.py
-- [[.cleanup_retired_credentials()]] - code - gateway/security/key_rotation.py
-- [[.emergency_rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[.get_all_credentials_status()]] - code - gateway/security/key_rotation.py
-- [[.get_credential_status()]] - code - gateway/security/key_rotation.py
-- [[.get_health_score()]] - code - gateway/security/key_rotation.py
-- [[.register_credential()]] - code - gateway/security/key_rotation.py
-- [[.register_validator()]] - code - gateway/security/key_rotation.py
-- [[.rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[.should_rotate()]] - code - gateway/security/key_rotation.py
-- [[.should_warn()]] - code - gateway/security/key_rotation.py
-- [[.validate()_1]] - code - gateway/security/key_rotation.py
-- [[Any_19]] - code - gateway/security/key_rotation.py
-- [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
-- [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
-- [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialRotationPolicy]] - code - gateway/security/key_rotation.py
-- [[Get detailed status for a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
-- [[Get status for all managed credentials.]] - rationale - gateway/security/key_rotation.py
-- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
-- [[KeyRotationManager]] - code - gateway/security/key_rotation.py
-- [[Manages automated rotation of credentials with zero downtime.]] - rationale - gateway/security/key_rotation.py
-- [[Perform emergency rotation of a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Register a credential for rotation management.]] - rationale - gateway/security/key_rotation.py
-- [[Register a validator for a credential type.]] - rationale - gateway/security/key_rotation.py
-- [[Retire old credential after grace period ends.]] - rationale - gateway/security/key_rotation.py
-- [[Rotate a single credential with zero downtime.          Workflow generate new →]] - rationale - gateway/security/key_rotation.py
-- [[Safely read a credential from 1Password using op CLI.]] - rationale - gateway/security/key_rotation.py
-- [[Store a new credential in 1Password.]] - rationale - gateway/security/key_rotation.py
-- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
-- [[Validate a credential using registered validator.]] - rationale - gateway/security/key_rotation.py
-- [[Validate a credential.          Returns             tuple (is_valid, message)]] - rationale - gateway/security/key_rotation.py
-- [[Whether credential age warrants a warning.]] - rationale - gateway/security/key_rotation.py
-- [[Whether credential needs rotation based on age.]] - rationale - gateway/security/key_rotation.py
-- [[EXPERIMENTAL Generate a new credential value.          WARNING This method ge]] - rationale - gateway/security/key_rotation.py
-- [[credentials_health()]] - code - gateway/web/management.py
-- [[credentials_status()]] - code - gateway/web/management.py
-- [[rotate_credential()]] - code - gateway/web/management.py
+- [[.__init__()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._load_config()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._log_action()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._log_security_event()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._requires_approval()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._take_screenshot()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.click()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.close()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.extract()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.get_audit_log()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.navigate()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[CLI interface for SecureBrowser]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Clean up browser resources]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Initialize browser with security settings]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Load security configuration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log browser action to audit trail]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log security-related events]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[RiskLevel]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[browse.py]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[main()]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,20 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_KeyRotationConfig]]
-- 10 edges to [[_COMMUNITY_lifespan.py]]
-- 10 edges to [[_COMMUNITY_CredentialValidator]]
-- 6 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 4 edges to [[_COMMUNITY_CredentialInfo]]
-- 4 edges to [[_COMMUNITY_MockValidator]]
-- 2 edges to [[_COMMUNITY_test_key_rotation.py]]
-- 2 edges to [[_COMMUNITY_TestKeyRotationManager]]
-- 1 edge to [[_COMMUNITY_TestStoreIn1Password]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
 
 ## Top bridge nodes
-- [[KeyRotationManager]] - degree 55, connects to 10 communities
-- [[.register_credential()]] - degree 5, connects to 2 communities
-- [[credentials_health()]] - degree 4, connects to 2 communities
-- [[credentials_status()]] - degree 4, connects to 2 communities
-- [[rotate_credential()]] - degree 4, connects to 2 communities
+- [[SecurityError]] - degree 7, connects to 1 community
+- [[browse.py]] - degree 6, connects to 1 community
+- [[RiskLevel]] - degree 6, connects to 1 community

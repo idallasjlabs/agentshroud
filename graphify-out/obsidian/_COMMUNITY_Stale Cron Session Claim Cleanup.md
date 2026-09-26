@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Stale Cron Session Claim Cleanup]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 
 ## Live Query (requires Dataview plugin)
 

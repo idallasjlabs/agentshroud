@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
+- [[__init__.py_10]] - code - gateway/skills/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,54 +1,54 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.06
 members: 39
 ---
 
 # SkillGuard
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 39 nodes
 
 ## Members
-- [[.__init__()_189]] - code - gateway/security/skill_guard.py
-- [[._line_at()]] - code - gateway/security/skill_guard.py
-- [[._scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
-- [[.blocked()]] - code - gateway/security/skill_guard.py
-- [[.extend()]] - code - gateway/security/skill_guard.py
-- [[.recommendation()]] - code - gateway/security/skill_guard.py
-- [[.scan_file()_1]] - code - gateway/security/skill_guard.py
-- [[.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[.severity()]] - code - gateway/security/skill_guard.py
-- [[.test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
-- [[Finding]] - code - gateway/security/skill_guard.py
-- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[IntEnum]] - code
-- [[Path_21]] - code - gateway/skills/scan.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
-- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
-- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
-- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_2]] - code - gateway/skills/scan.py
-- [[ScanResult_3]] - code - gateway/security/skill_guard.py
-- [[SkillGuard_1]] - code - gateway/security/skill_guard.py
-- [[SkillGuard.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[SkillsManifest.from_source()]] - code - gateway/skills/manifest.py
-- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
-- [[_Rule]] - code - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_c()]] - code - gateway/security/skill_guard.py
-- [[_print_findings()]] - code - gateway/skills/scan.py
-- [[main()_16]] - code - gateway/skills/scan.py
-- [[scan.py]] - code - gateway/skills/scan.py
-- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[.__init__()_75]] - code - gateway/security/egress_filter.py
+- [[.test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
+- [[Egress management endpoints (manageegress)]] - code - gateway/ingest_api/main.py
+- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
+- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - code - gateway/security/egress_config.py
+- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
+- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
+- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
+- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
+- [[Serve the audit log page.]] - rationale - gateway/web/management.py
+- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
+- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
+- [[Serve the main dashboard page.]] - rationale - gateway/web/management.py
+- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
+- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
+- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
+- [[approvals()]] - code - gateway/web/management.py
+- [[audit()_1]] - code - gateway/web/management.py
+- [[collaborators()]] - code - gateway/web/management.py
+- [[dashboard()]] - code - gateway/web/management.py
+- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
+- [[dashboard_main()]] - code - gateway/web/management.py
+- [[egress_config.py]] - code - gateway/security/egress_config.py
+- [[falco_dashboard()]] - code - gateway/web/management.py
+- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[get_egress_config()]] - code - gateway/security/egress_config.py
+- [[killswitch()_1]] - code - gateway/web/management.py
+- [[management.py]] - code - gateway/web/management.py
+- [[modules()]] - code - gateway/web/management.py
+- [[security_overview()]] - code - gateway/web/management.py
+- [[set_egress_config()]] - code - gateway/security/egress_config.py
+- [[ssh()]] - code - gateway/web/management.py
+- [[update_egress_allowlist()]] - code - gateway/web/management.py
+- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,21 +58,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_SkillGuard]]
-- 33 edges to [[_COMMUNITY_test_skill_guard.py]]
-- 4 edges to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_TrustLevel]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY__skills_reload_impl()]]
-- 1 edge to [[_COMMUNITY_Enum]]
+- 10 edges to [[_COMMUNITY_ConsentFramework]]
+- 7 edges to [[_COMMUNITY_OpenClaw Bot Container]]
+- 3 edges to [[_COMMUNITY_chatbotmain.py]]
+- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_ReportStore]]
+- 1 edge to [[_COMMUNITY__call_agent_stream()]]
+- 1 edge to [[_COMMUNITY_ApprovalRequest]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
 
 ## Top bridge nodes
-- [[IntEnum]] - degree 7, connects to 6 communities
-- [[SkillGuard_1]] - degree 34, connects to 5 communities
-- [[ScanResult_3]] - degree 32, connects to 2 communities
-- [[Recommendation]] - degree 27, connects to 2 communities
-- [[skill_guard.py]] - degree 9, connects to 2 communities
+- [[egress_config.py]] - degree 13, connects to 7 communities
+- [[management.py]] - degree 27, connects to 6 communities
+- [[EgressAllowlistUpdate]] - degree 6, connects to 3 communities
+- [[.__init__()_75]] - degree 4, connects to 3 communities
+- [[get_egress_config()]] - degree 10, connects to 2 communities

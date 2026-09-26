@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server safari]] - code - .mcp.json
+- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
 
 ## Live Query (requires Dataview plugin)
 

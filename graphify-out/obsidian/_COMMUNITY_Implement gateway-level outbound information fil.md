@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Constraints]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Evidence]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Severity_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Verification_5]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Follow-up (within 48 hours)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Glue Job Rollback_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Incident Response Workflow_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Post-Incident_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Post-Mortem Template_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[RDS Rollback (Point-in-Time or Snapshot)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Role_64]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[S3 Data Rollback_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[SKILL_107]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Severity Matrix_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Step Function Rollback_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Zabbix Rollback_1]] - document - docker/config/hermes/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

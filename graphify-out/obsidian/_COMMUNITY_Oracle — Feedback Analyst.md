@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Oracle — Feedback Analyst_3]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Purpose_57]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Related Skills_48]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Usage_52]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[hermesskillsi-oracleREADME]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
+- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Oracle__Feedback_Analyst
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+
+## Top bridge nodes
+- [[TestTrivySkipDirs]] - degree 4, connects to 1 community

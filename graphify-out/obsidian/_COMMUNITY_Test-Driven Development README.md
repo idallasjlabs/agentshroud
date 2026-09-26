@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.17
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Test-Driven Development README
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Purpose_173]] - document - .agents/skills/i-tdd/README.md
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Related Skills_115]] - document - .agents/skills/i-tdd/README.md
-- [[Related Skills_60]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Technical Illustrator (TI)_1]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
-- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
-- [[Test-Driven Development (TDD) Coach]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
-- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
-- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
-- [[Usage_123]] - document - .agents/skills/i-tdd/README.md
-- [[Usage_64]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
+- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +35,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_.agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 8 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
+- 2 edges to [[_COMMUNITY_ApprovalRequest]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
-- [[Test-Driven Development README]] - degree 10, connects to 3 communities
+- [[TestSSHExec]] - degree 25, connects to 6 communities
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - degree 3, connects to 1 community
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - degree 3, connects to 1 community
+- [[.test_ssh_exec_auto_approved()]] - degree 2, connects to 1 community

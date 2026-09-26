@@ -1,37 +1,38 @@
 ---
 type: community
-cohesion: 0.10
-members: 22
+cohesion: 0.09
+members: 23
 ---
 
 # Implementation Status
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[Access Control (7)]] - document - docs/security/security-inventory.md
-- [[Audit Logging_4]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Behavior Examples]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[CREDENTIAL-SECURITY-POLICY]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[FAQ_1]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Status]] - document - browser-extension/README.md
-- [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 2 Approval Queue for Credential Ops]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 3 Disable Credential Commands via Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 4 Role-Based Access Control]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Recommended Configuration (All 4 Options Combined)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Security Requirement]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 1 Update Gateway to Block Credentials in Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_15]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[1. Summary line_1]] - document - reports/upgrade-2026-09-20.md
+- [[10. Jira tracking]] - document - reports/upgrade-2026-09-20.md
+- [[11. Verification evidence_1]] - document - reports/upgrade-2026-09-20.md
+- [[12. Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-20.md
+- [[13. Rollback instructions_1]] - document - reports/upgrade-2026-09-20.md
+- [[14. Time spent_1]] - document - reports/upgrade-2026-09-20.md
+- [[2. Environment mapping (discovered, not assumed)_1]] - document - reports/upgrade-2026-09-20.md
+- [[3. Dev handoff check (gating decision)_1]] - document - reports/upgrade-2026-09-20.md
+- [[3b. New finding — dev's run appears hung, not merely absent]] - document - reports/upgrade-2026-09-20.md
+- [[4. Preflight (prod, read-only)_1]] - document - reports/upgrade-2026-09-20.md
+- [[5. Inventory — wrapped agents (mandatory script, cited)_1]] - document - reports/upgrade-2026-09-20.md
+- [[6. Prod stack current health (read-only, unchanged by this run)]] - document - reports/upgrade-2026-09-20.md
+- [[7. Security findings]] - document - reports/upgrade-2026-09-20.md
+- [[7a. Image scan (Trivy, CRITICAL+HIGH, prod's currently-running tags)_1]] - document - reports/upgrade-2026-09-20.md
+- [[7b. `npm audit` — browser-extension_1]] - document - reports/upgrade-2026-09-20.md
+- [[7c. AgentShroud CVE-mitigation triage — NEW FINDING 98-advisory scope gap]] - document - reports/upgrade-2026-09-20.md
+- [[7d. Python dependency audit]] - document - reports/upgrade-2026-09-20.md
+- [[7e. WazuhSOC alerts]] - document - reports/upgrade-2026-09-20.md
+- [[7f. Base images  other pinned components — inventoried, not re-verified against registry this run]] - document - reports/upgrade-2026-09-20.md
+- [[7g. Untracked host services — confirmed still out of repo scope]] - document - reports/upgrade-2026-09-20.md
+- [[8. Security findings table_1]] - document - reports/upgrade-2026-09-20.md
+- [[9. Upgrade table_1]] - document - reports/upgrade-2026-09-20.md
+- [[AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)]] - document - reports/upgrade-2026-09-20.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,15 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
-- 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_Security Modules (58)]]
+- 1 edge to [[_COMMUNITY_web_config.py]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
-- [[Implementation Status]] - degree 11, connects to 2 communities
-- [[Access Control (7)]] - degree 2, connects to 1 community
+- [[AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)]] - degree 15, connects to 1 community

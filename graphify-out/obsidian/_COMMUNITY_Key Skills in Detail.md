@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[4. Skill System]] - document - docs/architecture/agentic-os.md
-- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
-- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
-- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
-- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
-- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
-- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
-- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
+- [[entries]] - code - docker/config/hermes/manifest.json
+- [[entries_1]] - code - docker/config/openclaw/manifest.json
+- [[generated_at]] - code - docker/config/hermes/manifest.json
+- [[generated_at_1]] - code - docker/config/openclaw/manifest.json
+- [[manifest.json_1]] - code - docker/config/hermes/manifest.json
+- [[manifest.json_2]] - code - docker/config/openclaw/manifest.json
+- [[version_3]] - code - docker/config/hermes/manifest.json
+- [[version_5]] - code - docker/config/openclaw/manifest.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Key_Skills_in_Detail
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
-
-## Top bridge nodes
-- [[4. Skill System]] - degree 3, connects to 1 community

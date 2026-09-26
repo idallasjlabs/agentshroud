@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[1. Clone the Repository]] - document - docs/operations/linux.md
+- [[2. Install Docker]] - document - docs/operations/linux.md
+- [[3. Set Up Secrets]] - document - docs/operations/linux.md
+- [[4. Configure AgentShroud]] - document - docs/operations/linux.md
+- [[5. Build and Start]] - document - docs/operations/linux.md
+- [[6. Verify]] - document - docs/operations/linux.md
+- [[Architecture Notes]] - document - docs/operations/linux.md
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
+- [[Firewall]] - document - docs/operations/linux.md
+- [[Fresh Install]] - document - docs/operations/linux.md
+- [[Non-Root User]] - document - docs/operations/linux.md
+- [[Prerequisites_4]] - document - docs/operations/linux.md
+- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
+- [[Updating to Latest Release]] - document - docs/operations/linux.md
+- [[VPS Deployment Notes]] - document - docs/operations/linux.md
+- [[linux]] - document - docs/operations/linux.md
 
 ## Live Query (requires Dataview plugin)
 

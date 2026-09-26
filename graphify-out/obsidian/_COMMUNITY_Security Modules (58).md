@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[Audit & Compliance (4)]] - document - docs/security/security-inventory.md
-- [[Collaborator Testing]] - document - docs/security/security-inventory.md
-- [[Encryption & Key Management (3)]] - document - docs/security/security-inventory.md
-- [[External Integrations (4)]] - document - docs/security/security-inventory.md
-- [[Inbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Infrastructure Protection (8)]] - document - docs/security/security-inventory.md
-- [[MCPTool Security (6)]] - document - docs/security/security-inventory.md
-- [[Network & Egress (6)]] - document - docs/security/security-inventory.md
-- [[Orchestration (3)]] - document - docs/security/security-inventory.md
-- [[Outbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Owner Testing]] - document - docs/security/security-inventory.md
-- [[PII & Data Protection (3)]] - document - docs/security/security-inventory.md
-- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
-- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
-- [[Security Modules (58)]] - document - docs/security/security-inventory.md
-- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
-- [[Summary_24]] - document - docs/security/security-inventory.md
-- [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
-- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
-- [[security-inventory]] - document - docs/security/security-inventory.md
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
+- [[.test_downgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[.test_downgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[.test_full_workflow()]] - code - gateway/tests/test_version_routes.py
+- [[.test_get_available()]] - code - gateway/tests/test_version_routes.py
+- [[.test_get_current_version()]] - code - gateway/tests/test_version_routes.py
+- [[.test_get_history_empty()]] - code - gateway/tests/test_version_routes.py
+- [[.test_review_version()]] - code - gateway/tests/test_version_routes.py
+- [[.test_rollback_no_history()]] - code - gateway/tests/test_version_routes.py
+- [[.test_rollback_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[.test_upgrade_dry_run()]] - code - gateway/tests/test_version_routes.py
+- [[.test_upgrade_invalid_version()]] - code - gateway/tests/test_version_routes.py
+- [[.test_upgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[.test_upgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[Create a test FastAPI app with version routes.]] - rationale - gateway/tests/test_version_routes.py
+- [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
+- [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
+- [[app()_1]] - code - gateway/tests/test_version_routes.py
+- [[client()_19]] - code - gateway/tests/test_version_routes.py
+- [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
+- [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
+- [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,9 +38,3 @@ members: 21
 TABLE source_file, type FROM #community/Security_Modules_58
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-
-## Top bridge nodes
-- [[Security Modules (58)]] - degree 13, connects to 1 community

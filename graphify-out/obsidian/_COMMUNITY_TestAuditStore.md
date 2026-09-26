@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
-- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
-- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[.test_ai_security_research_domains_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_duckduckgo_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_failover_search_engines_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hc_ping_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_nousresearch_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[AI-security researchcompetitive-intel domains must be allowlisted.          The]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes base image is from nousresearch.com — must be in egress allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes ddgs-based web search requires duckduckgo.com.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes heartbeat uses hc-ping.com for dead-man's switch.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[PR190 failover search engines must be allowlisted.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesEgressAllowlist]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AuditExporter]]
-- 3 edges to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_AuditExportConfig]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
 
 ## Top bridge nodes
-- [[TestAuditStore]] - degree 12, connects to 3 communities
-- [[.audit_store()_1]] - degree 3, connects to 1 community
+- [[TestHermesEgressAllowlist]] - degree 11, connects to 3 communities

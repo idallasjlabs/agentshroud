@@ -1,26 +1,26 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.24
 members: 11
 ---
 
 # Recommendations for Production Deployment
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.24 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
-- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
-- [[3. Key Rotation]] - document - docs/ssh-security-review.md
-- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
-- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
-- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
-- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
-- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
-- [[Risk Summary]] - document - docs/ssh-security-review.md
-- [[SSH Security Review]] - document - docs/ssh-security-review.md
-- [[ssh-security-review]] - document - docs/ssh-security-review.md
+- [[_rollback()]] - code - scripts/update-agentshroud.sh
+- [[check()]] - code - scripts/post-deploy-check.sh
+- [[check-soak-status.sh]] - code - scripts/check-soak-status.sh
+- [[check-soak-status.sh script]] - code - scripts/check-soak-status.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
+- [[restore-backup.sh]] - code - scripts/restore-backup.sh
+- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
+- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
+- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
+- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +30,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Threat Model]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
+- 1 edge to [[_COMMUNITY_pytest.ini]]
+- 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
+- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
+- 1 edge to [[_COMMUNITY_AgentShroud — Master Feature List (Everything Ev]]
 
 ## Top bridge nodes
-- [[SSH Security Review]] - degree 5, connects to 1 community
+- [[post-deploy-check.sh]] - degree 7, connects to 3 communities
+- [[update-agentshroud.sh]] - degree 4, connects to 1 community
+- [[check-soak-status.sh]] - degree 3, connects to 1 community

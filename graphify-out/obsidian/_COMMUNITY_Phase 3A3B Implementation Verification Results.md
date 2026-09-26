@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[After Phase 3A3B]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Before Phase 3A]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Container Status]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Created (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Deployment Readiness]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Development Environment]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Disconnect Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Files ModifiedCreated]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Freeze Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Kill Switch Testing]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Manual Testing (Next Session)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Modified (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Next Steps (Not in Phase 3A3B)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[OpenClaw Bot Logs (Recent)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A.8 Note DM Policy]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A3B Implementation Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Production Environment]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Remaining Work]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Security Improvements Delivered]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Security Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Shutdown Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Testing Recommendations]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[1Password iCloud Credential Retrieval]] - concept - skills/custom/icloud/SKILL.md
+- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
+- [[Field Reference]] - document - docs/ssh-configuration.md
+- [[Full Annotated Example]] - document - docs/ssh-configuration.md
+- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
+- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
+- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
+- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
+- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
+- [[SKILL_210]] - document - skills/openclaw/gog/SKILL.md
+- [[SKILL_213]] - document - skills/openclaw/himalaya/SKILL.md
+- [[SKILL_193]] - document - skills/custom/icloud/SKILL.md
+- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
+- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
+- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
+- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
+- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
+- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
+- [[gog]] - document - skills/openclaw/gog/SKILL.md
+- [[gog CLI (Google Workspace)]] - concept - skills/openclaw/gog/SKILL.md
+- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
+- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[ssh-configuration]] - document - docs/ssh-configuration.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,7 +42,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_app_main.c]]
+- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_.validate_docker_compose_config()]]
+- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
+- 1 edge to [[_COMMUNITY_test_ledger.py]]
+- 1 edge to [[_COMMUNITY_TestPerAgentUpstreamChecks]]
 
 ## Top bridge nodes
-- [[Phase 3A3B Implementation Verification Results]] - degree 10, connects to 1 community
+- [[ssh-configuration]] - degree 7, connects to 3 communities
+- [[SKILL_213]] - degree 4, connects to 1 community
+- [[SKILL_193]] - degree 4, connects to 1 community
+- [[message-composition]] - degree 3, connects to 1 community
+- [[P4 Low Priority Incidents]] - degree 2, connects to 1 community

@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # I - Information Disclosure
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[I - Information Disclosure]] - document - docs/security/threat-model.md
-- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
-- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
-- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
-- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
+- [[approved (action executed, ledger entry written)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[expired (1-hour TTL exceeded, auto-transition on load)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[pending (bot submits action requiring approval)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[rejected (action blocked, bot notified)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/I_-_Information_Disclosure
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
-
-## Top bridge nodes
-- [[I - Information Disclosure]] - degree 5, connects to 1 community

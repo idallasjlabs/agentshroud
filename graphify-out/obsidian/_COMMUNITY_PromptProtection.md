@@ -1,45 +1,45 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.13
 members: 30
 ---
 
 # PromptProtection
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[.__init__()_188]] - code - gateway/security/prompt_protection.py
-- [[._calculate_similarity()]] - code - gateway/security/prompt_protection.py
-- [[._compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
-- [[._load_protected_content()]] - code - gateway/security/prompt_protection.py
-- [[._redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
-- [[._redact_match()]] - code - gateway/security/prompt_protection.py
-- [[.add_protected_content()]] - code - gateway/security/prompt_protection.py
-- [[.get_protection_stats()]] - code - gateway/security/prompt_protection.py
-- [[.register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
-- [[.scan_response()_1]] - code - gateway/security/prompt_protection.py
-- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
-- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - rationale - gateway/security/prompt_protection.py
-- [[Add content to the protected registry.          Args             name Identifi]] - rationale - gateway/security/prompt_protection.py
-- [[Any_75]] - code - gateway/security/prompt_protection.py
-- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
-- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
-- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
-- [[Initialize prompt protection system.          Args             config Configur]] - rationale - gateway/security/prompt_protection.py
-- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
-- [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - rationale - gateway/security/prompt_protection.py
-- [[Match]] - code - gateway/security/prompt_protection.py
-- [[PromptProtection]] - code - gateway/security/prompt_protection.py
-- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
-- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
-- [[RedactionResult_3]] - code - gateway/security/prompt_protection.py
-- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
-- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
-- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
-- [[System Prompt Protection Tests]] - code - gateway/tests/test_prompt_protection.py
-- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
+- [[.__init__()_199]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[.confident()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Any_77]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Path_47]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_registry()_1]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[main()_25]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[rewrite_registry_text()]] - code - scripts/migrate-cve-registry-ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,14 +49,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TestPromptProtection]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_mcp_oauth_preflight.py]]
 
 ## Top bridge nodes
-- [[PromptProtection]] - degree 23, connects to 4 communities
-- [[prompt_protection.py]] - degree 5, connects to 2 communities
-- [[System Prompt Protection Tests]] - degree 2, connects to 1 community
+- [[Counter]] - degree 4, connects to 2 communities
+- [[fetch_advisories()]] - degree 4, connects to 1 community

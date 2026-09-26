@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[1Password Auth Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Auth Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Common Causes]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Diagnosis]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[HTTP 401 — Unauthorized]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Token Reset]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Token Verification]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[`op read` Failing]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[AgentShroud — Collaborator Knowledge Base]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Collaboration Guidelines]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Contact_1]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[PUBLIC-INFO_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[PUBLIC-INFO]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Project Goals]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[What Does It Do]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[What is AgentShroud]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Who Can Use It]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves()]]
 
 ## Top bridge nodes
-- [[Auth Errors_2]] - degree 4, connects to 1 community
+- [[PUBLIC-INFO_1]] - degree 2, connects to 1 community

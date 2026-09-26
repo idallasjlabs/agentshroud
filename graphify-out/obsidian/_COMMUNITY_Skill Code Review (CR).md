@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Skill: Code Review (CR)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Output Format_6]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Role_10]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Audio clicking fix — TTS resume dedup + dither + voice-gateway cpuset widen]] - rationale - CHANGELOG.md
+- [[ESP32 live model label fix — server-authoritative label push]] - rationale - CHANGELOG.md
+- [[Firmware TLS connect reliability — timeout 5s to 10s (DERP handshake race)]] - rationale - CHANGELOG.md
+- [[Streaming direct voice path (_call_llm_stream) — avoids blocking full-reply wait]] - rationale - CHANGELOG.md
+- [[v1.6.0 Release — Voice Terminal]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/Skill_Code_Review_CR
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Code Review (CR)_2]] - degree 6, connects to 1 community

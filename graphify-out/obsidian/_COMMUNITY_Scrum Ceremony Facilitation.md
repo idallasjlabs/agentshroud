@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
+- [[patch-ws-proxy.sh]] - code - docker/scripts/patch-ws-proxy.sh
+- [[patch-ws-proxy.sh script]] - code - docker/scripts/patch-ws-proxy.sh
 
 ## Live Query (requires Dataview plugin)
 

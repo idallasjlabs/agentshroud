@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Emergency Hotfix_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Quick Commands_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
-- [[Skill Index_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Function Details_13]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Purpose_134]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Related_20]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/GSDEG_Development_Master_Checklist
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[GSDE&G Development Master Checklist_2]] - degree 11, connects to 1 community

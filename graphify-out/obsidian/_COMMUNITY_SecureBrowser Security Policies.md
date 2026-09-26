@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[Audit Access]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Automated Tests]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Compliance]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Future Enhancements_1]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Incident Playbook]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Incident Response]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Manual Security Review]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Planned Features]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Risk Classification Matrix]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Threat Model_2]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[security-policies]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[25-Domain Prompt Injection Defense Framework_1]] - concept - docs/agentshroud-knowledge.md
+- [[34 Security Modules Pipeline (P0-P3)]] - concept - docs/claude-security-audit-prompt.md
+- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[PII Sanitizer (user-facing description)]] - concept - docs/user-guide.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
+- [[Steve Hay's External Reviewer Findings]] - concept - docs/claude-security-audit-prompt.md
+- [[egress_filter module]] - concept - docs/claude-security-audit-prompt.md
+- [[pii_sanitizer module (disabled — false positives)]] - concept - docs/claude-security-audit-prompt.md
+- [[prompt_guard module (observatory mode — too aggressive for enforce)]] - concept - docs/claude-security-audit-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Core Security Principles]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_DNSForwarderProtocol]]
 
 ## Top bridge nodes
-- [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities
+- [[34 Security Modules Pipeline (P0-P3)]] - degree 6, connects to 1 community
+- [[Collaborator Session Isolation (blocked functionsskills)]] - degree 2, connects to 1 community
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - degree 2, connects to 1 community

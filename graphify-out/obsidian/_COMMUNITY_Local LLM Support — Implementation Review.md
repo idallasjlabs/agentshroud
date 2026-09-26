@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[.setup_method()_32]] - code - gateway/tests/test_security_hardening.py
+- [[.test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
+- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
+- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +32,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_4. Environment Variables]]
+- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_ConsentFramework]]
+- 3 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities
+- [[TestPromptGuardEvasion]] - degree 26, connects to 9 communities
+- [[.setup_method()_32]] - degree 2, connects to 1 community

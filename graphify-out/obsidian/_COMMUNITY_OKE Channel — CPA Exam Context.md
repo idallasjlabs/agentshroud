@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[CPA Curriculum Frontmatter Addition]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Coverage Types]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Episode Closing]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion]] - document - .agents/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context]] - document - .agents/skills/i-atlas/SKILL.md
+- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
 
 ## Top bridge nodes
-- [[OKE Channel — CPA Exam Context]] - degree 7, connects to 1 community
+- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community

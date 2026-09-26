@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 Fix submit()decide() held the approval lock while broadcasting to a hung WebSocket client, deadlocking indefinitely — fixed with a bounded per-client broadcast timeout]] - rationale - gateway/tests/test_approval_queue.py
+- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

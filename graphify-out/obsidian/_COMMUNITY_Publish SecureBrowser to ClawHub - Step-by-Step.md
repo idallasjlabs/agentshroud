@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Immediate (Day 1)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Month 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Week 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎯 Marketing Checklist]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,10 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BROWSER_FETCH_SKILL]]
-- 1 edge to [[_COMMUNITY_📋 Detailed Step-by-Step]]
-- 1 edge to [[_COMMUNITY_🆘 Troubleshooting]]
-- 1 edge to [[_COMMUNITY_🎨 Customize Skill Page (Optional)]]
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
 
 ## Top bridge nodes
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 4 communities
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community

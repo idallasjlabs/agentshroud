@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.12
 members: 20
 ---
 
 # Message Composition with MML (MIME Meta Language
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[Address Formats]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Attachments]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Basic Message Structure]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Composing from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Forward]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Headers]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Inline Images]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Interactive compose]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[MML Tag Reference]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[MML for Rich Emails]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Message Composition with MML (MIME Meta Language)]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Mixed Content (Text + Attachments)]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Multipart Messages]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Plain Text Body]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Prefill headers from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Reply (opens editor with quoted message)]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Send from stdin]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[Tips_3]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[`multipart`]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[`part`]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
+- [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
+- [[Contact_2]] - document - docs/project/legal/TRADEMARK.md
+- [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
+- [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
+- [[GitHub Repository Evidence]] - document - docs/project/legal/PRIOR-USE.md
+- [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
+- [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
+- [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
+- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
+- [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
+- [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Usage Guidelines_3]] - document - docs/project/legal/TRADEMARK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +39,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Himalaya Email CLI]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_TestKillSwitchVerification]]
 
 ## Top bridge nodes
-- [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community
+- [[USPTO-APPLICATION]] - degree 6, connects to 1 community
+- [[TRADEMARK]] - degree 5, connects to 1 community

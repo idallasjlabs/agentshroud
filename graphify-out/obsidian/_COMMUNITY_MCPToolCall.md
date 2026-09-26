@@ -1,94 +1,92 @@
 ---
 type: community
-cohesion: 0.06
-members: 79
+cohesion: 0.03
+members: 77
 ---
 
 # MCPToolCall
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 79 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 77 nodes
 
 ## Members
-- [[.__post_init__()_8]] - code - gateway/proxy/mcp_proxy.py
-- [[.mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.set_event_bus()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[.test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_owner_bypass()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_passthrough_allows_everything()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_rate_limit_enforced()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
-- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[MCPProxy_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPToolCall_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPassthroughMode_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
-- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[ThreatLevel_2]] - code - gateway/proxy/mcp_inspector.py
-- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[passthrough_proxy()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[proxy()_3]] - code - gateway/tests/test_mcp_proxy.py
-- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
+- [[.test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
+- [[.test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_openai_api_key_wired_via_secret()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_soul_documents_ssh_hosts()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
+- [[.test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
+- [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
+- [[.test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
+- [[.test_main_compose_sets_openclaw_bind_lan_default()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_recovers_corrupt_json()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_seeds_group_allowlist()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_patch_script_uses_multi_group_allowlist_var()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_ssh_config_allows_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
+- [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
+- [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - code - gateway/tests/test_config_validation.py
+- [[.test_proxy_allowed_network_default_includes_current_subnets()]] - code - gateway/tests/test_config_validation.py
+- [[.test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
+- [[.test_start_control_center_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_notifications_use_minimal_message_format()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_notifications_wait_for_runtime_readiness()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_online_notice_sent_only_after_readiness_gate()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_script_skips_anthropic_when_local_model_selected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
+- [[.test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
+- [[.test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
+- [[.test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
+- [[.test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
+- [[.test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
+- [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
+- [[Chat console launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
+- [[Control center launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
+- [[GatewayConfig validation behavior.]] - rationale - gateway/tests/test_config_validation.py
+- [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.]] - rationale - gateway/tests/test_config_validation.py
+- [[Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it.]] - rationale - gateway/tests/test_config_validation.py
+- [[Hermes SOUL.md must document all three lab hosts and the gateway sshexec recip]] - rationale - gateway/tests/test_config_validation.py
+- [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect']] - rationale - gateway/tests/test_config_validation.py
+- [[Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.]] - rationale - gateway/tests/test_config_validation.py
+- [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
+- [[Init config should seed auth profiles for cloud providers and Ollama in local mo]] - rationale - gateway/tests/test_config_validation.py
+- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
+- [[Main compose stack should expose a single model-mode switch with localcloud ref]] - rationale - gateway/tests/test_config_validation.py
+- [[Model switch helper should support local and major cloud providers.]] - rationale - gateway/tests/test_config_validation.py
+- [[Online notice must appear after readiness probes to avoid premature status signa]] - rationale - gateway/tests/test_config_validation.py
+- [[OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' direc]] - rationale - gateway/tests/test_config_validation.py
+- [[OpenClaw patch script should default to local Ollama but keep API adapter config]] - rationale - gateway/tests/test_config_validation.py
+- [[OpenClaw's SSH client config must have Host blocks for all three lab hosts.]] - rationale - gateway/tests/test_config_validation.py
+- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (]] - rationale - gateway/tests/test_config_validation.py
+- [[Operator guidance should use valid switch_model target syntax (no legacy cloud p]] - rationale - gateway/tests/test_config_validation.py
+- [[Primary compose stack should bind OpenClaw gateway to lan by default for host Co]] - rationale - gateway/tests/test_config_validation.py
+- [[Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili]] - rationale - gateway/tests/test_config_validation.py
+- [[Startup notification Telegram calls should be marked as system-originated.]] - rationale - gateway/tests/test_config_validation.py
+- [[Startup script should verify Telegrammodel readiness before sending online noti]] - rationale - gateway/tests/test_config_validation.py
+- [[Startup wrapper should default OpenClaw bind to loopback unless explicitly overr]] - rationale - gateway/tests/test_config_validation.py
+- [[Startupshutdown notifications should use minimal, non-identifying text.]] - rationale - gateway/tests/test_config_validation.py
+- [[TestConfigValidation]] - code - gateway/tests/test_config_validation.py
+- [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - rationale - gateway/tests/test_config_validation.py
+- [[agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot]] - rationale - gateway/tests/test_config_validation.py
+- [[apply-patches.js must create per-chat group-{chatId} agents for the approval rou]] - rationale - gateway/tests/test_config_validation.py
+- [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).]] - rationale - gateway/tests/test_config_validation.py
+- [[openclaw init patch script must quarantine malformed JSON instead of exiting.]] - rationale - gateway/tests/test_config_validation.py
+- [[openclaw init patch script must remove unsupported gateway.model key.]] - rationale - gateway/tests/test_config_validation.py
+- [[openclaw init patch script must seed Telegram group allowlist when policy is all]] - rationale - gateway/tests/test_config_validation.py
+- [[openclaw init patch script must seed control UI origins for non-loopback bind.]] - rationale - gateway/tests/test_config_validation.py
+- [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,29 +96,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 75 edges to [[_COMMUNITY_MCPServerConfig]]
-- 34 edges to [[_COMMUNITY_PermissionLevel]]
-- 31 edges to [[_COMMUNITY_StdioConnection]]
-- 28 edges to [[_COMMUNITY_MCPInspector]]
-- 27 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 27 edges to [[_COMMUNITY_MCPToolResult]]
-- 21 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 16 edges to [[_COMMUNITY_load_config()]]
-- 15 edges to [[_COMMUNITY_ApprovalRequest]]
-- 10 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 9 edges to [[_COMMUNITY_.process_tool_call()]]
-- 6 edges to [[_COMMUNITY_FakeProcess]]
-- 5 edges to [[_COMMUNITY_TestAuditTrail]]
-- 5 edges to [[_COMMUNITY_TestInjectionDetection]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 10 edges to [[_COMMUNITY_ApprovalRequest]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 
 ## Top bridge nodes
-- [[MCPProxy_1]] - degree 89, connects to 17 communities
-- [[MCPToolCall_1]] - degree 102, connects to 15 communities
-- [[test_mcp_proxy.py]] - degree 46, connects to 9 communities
-- [[ThreatLevel_2]] - degree 28, connects to 8 communities
-- [[FindingType]] - degree 27, connects to 8 communities
+- [[TestConfigValidation]] - degree 45, connects to 1 community
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 3, connects to 1 community
+- [[.test_empty_content_rejected()]] - degree 2, connects to 1 community
+- [[.test_invalid_router_url_rejected()]] - degree 2, connects to 1 community
+- [[.test_invalid_source_rejected()]] - degree 2, connects to 1 community

@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.10
-members: 23
+cohesion: 0.08
+members: 24
 ---
 
 # Restart Procedure
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
-- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
-- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Crash Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Health Checks]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_17]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Procedure]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[docker-commands]] - document - examples/docker-commands.md
-- [[store.py]] - code - gateway/approval_queue/store.py
+- [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.1 The New Attack Surface]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.2 The Industry Gap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.3 Threat Model]] - document - docs/papers/agentshroud-whitepaper.md
+- [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6. Competitive Landscape]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,27 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalRequest]]
-- 2 edges to [[_COMMUNITY_Error Index]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_aiosqlite]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
-- 1 edge to [[_COMMUNITY_Container Errors]]
-- 1 edge to [[_COMMUNITY_Gateway Container Startup Failures]]
-- 1 edge to [[_COMMUNITY_troubleshooting]]
-- 1 edge to [[_COMMUNITY_Crash Recovery]]
-- 1 edge to [[_COMMUNITY_First Time Setup]]
-- 1 edge to [[_COMMUNITY_Health Checks]]
-- 1 edge to [[_COMMUNITY_Kill Switch Procedure]]
-- 1 edge to [[_COMMUNITY_Docker Commands Reference]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 1 edge to [[_COMMUNITY_AgentShroud Web Control Center - Implementation]]
+- 1 edge to [[_COMMUNITY_gitleaks.toml]]
+- 1 edge to [[_COMMUNITY_Himalaya Configuration Reference]]
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Perimeter]]
+- 1 edge to [[_COMMUNITY_RovoBlast Attack (Atlassian Rovo AI)]]
+- 1 edge to [[_COMMUNITY_Flip core security modules from monitor to enfor]]
 
 ## Top bridge nodes
-- [[aiosqlite_1]] - degree 5, connects to 4 communities
-- [[Troubleshooting Matrix]] - degree 8, connects to 3 communities
-- [[store.py]] - degree 7, connects to 3 communities
-- [[Container Errors]] - degree 4, connects to 2 communities
-- [[Crash Recovery]] - degree 6, connects to 1 community
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities

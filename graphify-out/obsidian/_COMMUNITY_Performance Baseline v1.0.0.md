@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Performance Baseline v1.0.0]] - document - .benchmarks/baseline-v1.0.0.json
+- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,96 +1,96 @@
 ---
 type: community
-cohesion: 0.03
+cohesion: 0.04
 members: 81
 ---
 
 # RateLimiter
 
-**Cohesion:** 0.03 - loosely connected
+**Cohesion:** 0.04 - loosely connected
 **Members:** 81 nodes
 
 ## Members
-- [[.__init__()_43]] - code - gateway/ingest_api/auth.py
-- [[.check()]] - code - gateway/ingest_api/auth.py
-- [[.test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_handles_empty_or_non_string()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_handles_numeric_input_as_non_command()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_handles_uppercase_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_keeps_allowed_chars_only()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_lowercases_and_preserves_command_shape()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_normalizes_fullwidth_and_zero_width()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_normalizes_fullwidth_mention_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_preserves_hyphen_and_underscore()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_strips_leading_noise_before_symbol_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_normalize_command_token_strips_mention_and_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
-- [[Auth Methods]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/health.py
-- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
-- [[Create authentication dependency callable      This is a synchronous wrapper tha]] - rationale - gateway/ingest_api/auth.py
-- [[Current Usage]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Factory that returns authentication dependency for FastAPI      This allows us t]] - rationale - gateway/ingest_api/auth.py
-- [[GatewayConfig]] - code - gateway/ingest_api/auth.py
-- [[If notice send fails, cooldown should not suppress the next retry attempt.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Key Features]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Purpose_3]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Rate-limit notice path should key retry window by user_id, not chat_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Rate-limited collaborators should receive a deterministic retry-window notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[RateLimiter]] - code - gateway/ingest_api/auth.py
-- [[Related Notes_3]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Repeated rate-limited messages should each receive a deterministic notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Request_5]] - code - gateway/ingest_api/routes/health.py
-- [[Security Note]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
-- [[Test auth dependency with invalid auth scheme]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with missing Authorization header]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with valid token]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter allows requests under limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
-- [[Test that token verification uses constant-time comparison]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with valid token]] - rationale - gateway/tests/test_auth.py
-- [[TestCommandTokenNormalization]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for command token normalization used by local inbound handlers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Verify authentication doesn't leak timing information]] - rationale - gateway/tests/test_security.py
-- [[Verify token comparison is constant-time]] - rationale - gateway/tests/test_security.py
-- [[Verify token using constant-time comparison      Uses hmac.compare_digest to pre]] - rationale - gateway/ingest_api/auth.py
-- [[auth.py]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[auth_dep()_3]] - code - gateway/ingest_api/routes/health.py
-- [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[python-jose]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[python-jose_1]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[rate_limiter (module-level instance)]] - code - gateway/ingest_api/auth.py
-- [[test_auth.py]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_scheme()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_token()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_missing_header()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_valid_token()]] - code - gateway/tests/test_auth.py
-- [[test_constant_time_comparison()]] - code - gateway/tests/test_security.py
-- [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_window_cleanup()]] - code - gateway/tests/test_auth.py
-- [[test_timing_attack_resistance()]] - code - gateway/tests/test_security.py
-- [[test_verify_token_constant_time()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_invalid()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_valid()]] - code - gateway/tests/test_auth.py
-- [[verify_token()]] - code - gateway/ingest_api/auth.py
+- [[.__enter__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[.__exit__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[.__init__()_11]] - code - gateway/ingest_api/email_service.py
+- [[.__init__()_159]] - code - gateway/tests/test_gateway_email_service.py
+- [[.body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.build_message()]] - code - gateway/ingest_api/email_service.py
+- [[.login()]] - code - gateway/ingest_api/email_service.py
+- [[.login()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[.send()]] - code - gateway/ingest_api/email_service.py
+- [[.sender()]] - code - gateway/ingest_api/email_service.py
+- [[.sendmail()]] - code - gateway/ingest_api/email_service.py
+- [[.sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_logs_in_and_sendmails_over_injected_transport()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_propagates_auth_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_propagates_generic_smtp_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
+- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/forward.py
+- [[AuthRequired_3]] - code - gateway/ingest_api/routes/forward.py
+- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
+- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
+- [[EmailSendRequest_1]] - code - gateway/ingest_api/routes/forward.py
+- [[EmailSendRequest]] - code - gateway/ingest_api/models.py
+- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
+- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - rationale - gateway/ingest_api/routes/forward.py
+- [[ForwardRequest_2]] - code - gateway/ingest_api/routes/forward.py
+- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[GatewayEmailService_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[GatewayEmailService]] - code - gateway/ingest_api/email_service.py
+- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - rationale - gateway/ingest_api/routes/forward.py
+- [[MiddlewareManager.process_request()]] - code - gateway/ingest_api/middleware.py
+- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
+- [[POST emailsend to the owner sends via forward._email_service — proving]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Protocol]] - code
+- [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Request_4]] - code - gateway/ingest_api/routes/forward.py
+- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
+- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Send an email to the owner without exposing the recipient address in the request]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
+- [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
+- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
+- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - rationale - gateway/ingest_api/routes/forward.py
+- [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
+- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
+- [[TransportFactory]] - code - gateway/ingest_api/email_service.py
+- [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
+- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
+- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
+- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
+- [[_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[auth_dep()_3]] - code - gateway/ingest_api/routes/forward.py
+- [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
+- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[client()_2]] - code - gateway/tests/test_channel_ownership.py
+- [[client()_7]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
+- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
+- [[email_service.py]] - code - gateway/ingest_api/email_service.py
+- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
+- [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
+- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
+- [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -100,37 +100,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 11 edges to [[_COMMUNITY__wrap_response()]]
-- 8 edges to [[_COMMUNITY_SSHProxy]]
-- 5 edges to [[_COMMUNITY_AgentTarget]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_BlockingPipeline]]
-- 3 edges to [[_COMMUNITY_TestNoResponseGuarantee]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 9 edges to [[_COMMUNITY_TestMultiTurnTracker]]
+- 9 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY_ApprovalRequest]]
+- 5 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_main.rs]]
+- 3 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 3 edges to [[_COMMUNITY_InjectionSeverity]]
+- 3 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 3 edges to [[_COMMUNITY_RBACConfig]]
 - 2 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 2 edges to [[_COMMUNITY_approval.py]]
-- 2 edges to [[_COMMUNITY_test_dashboard.py]]
-- 2 edges to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
-- 1 edge to [[_COMMUNITY_TestFileDownload]]
-- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
-- 1 edge to [[_COMMUNITY_Error Index]]
-- 1 edge to [[_COMMUNITY_auth.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_Remediation]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (SKILL)]]
 
 ## Top bridge nodes
-- [[RateLimiter]] - degree 47, connects to 16 communities
-- [[create_auth_dependency()]] - degree 20, connects to 5 communities
-- [[verify_token()]] - degree 13, connects to 4 communities
-- [[auth.py]] - degree 10, connects to 4 communities
-- [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
+- [[forward.py]] - degree 38, connects to 12 communities
+- [[_process_inbound()]] - degree 12, connects to 4 communities
+- [[test_email_owner_bypasses_pii.py]] - degree 7, connects to 3 communities
+- [[email_send()]] - degree 13, connects to 2 communities
+- [[forward_content()]] - degree 9, connects to 2 communities

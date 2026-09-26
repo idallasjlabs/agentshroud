@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
+- [[AWS Step Functions]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

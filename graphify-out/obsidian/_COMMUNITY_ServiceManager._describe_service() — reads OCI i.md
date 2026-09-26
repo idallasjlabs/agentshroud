@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # ServiceManager._describe_service() — reads OCI i
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[ServiceManager._describe_service() — reads OCI image LABEL org.opencontainers.image.version]] - code - gateway/soc/services.py
-- [[ServiceManager.list_services()]] - code - gateway/soc/services.py
+- [[scriptscheck-vendor-compat.sh — A2A JSON-RPC smoke check]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

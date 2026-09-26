@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Additional Options]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Downloads directory]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Editor for composing]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Folder Aliases]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Gmail Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Himalaya Configuration Reference]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Minimal IMAP + SMTP Setup]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Multiple Accounts_1]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Notmuch Backend (local mail)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[OAuth2 Authentication (for providers that support it)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Password Options]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Password from command (recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Raw password (testing only, not recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Signature]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[System keyring (requires keyring feature)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[iCloud Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[3. Security Controls]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.1 PII Sanitizer]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.10 Egress Filtering — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.11 Drift Detection — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.12 Container Hardening]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.13 MCP Proxy Layer — Phase 9]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.14 Web Traffic Proxy — Phase 10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.15 Full Egress Control — Phase 11]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.2 Audit Ledger]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.3 Approval Queue]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.4 Kill Switch]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.5 SSH Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.6 Live Security Dashboard]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.7 Encrypted Memory (AES-256-GCM) — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.8 Prompt Injection Defense — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.9 Progressive Trust System — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
-- [[Himalaya Configuration Reference]] - degree 10, connects to 1 community
+- [[3. Security Controls]] - degree 16, connects to 1 community

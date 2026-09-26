@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestInputValidation
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_empty_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_long_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_path_traversal_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_special_chars_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[TestInputValidation]] - code - gateway/tests/test_session_manager.py
+- [[Architecture_9]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Files_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_UserSession]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_forwarder.py]]
 
 ## Top bridge nodes
-- [[TestInputValidation]] - degree 7, connects to 2 communities
+- [[Technical Details]] - degree 4, connects to 1 community

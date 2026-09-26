@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Safe Refactor Specialist
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[Bad API Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
-- [[Bad Logic Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
-- [[Critical Rules_4]] - document - .github/agents/safe-refactor.agent.md
-- [[Definition of Done_1]] - document - .github/agents/safe-refactor.agent.md
-- [[Example Refactorings]] - document - .github/agents/safe-refactor.agent.md
-- [[Forbidden Changes]] - document - .github/agents/safe-refactor.agent.md
-- [[Good Extract Helper]] - document - .github/agents/safe-refactor.agent.md
-- [[Good Variable Renaming]] - document - .github/agents/safe-refactor.agent.md
-- [[Refactoring Workflow]] - document - .github/agents/safe-refactor.agent.md
-- [[Remember_1]] - document - .github/agents/safe-refactor.agent.md
-- [[Repository Context_2]] - document - .github/agents/safe-refactor.agent.md
-- [[Role Definition_1]] - document - .github/agents/safe-refactor.agent.md
-- [[Safe Refactor Specialist]] - document - .github/agents/safe-refactor.agent.md
-- [[Safe Refactorings]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 1 Verify Tests Pass]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 2 Make Small, Focused Change]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 3 Verify Tests Still Pass]] - document - .github/agents/safe-refactor.agent.md
-- [[Step 4 Check Code Quality]] - document - .github/agents/safe-refactor.agent.md
-- [[What You CAN Refactor]] - document - .github/agents/safe-refactor.agent.md
-- [[When in Doubt]] - document - .github/agents/safe-refactor.agent.md
-- [[⚠️ ONLY Refactor When]] - document - .github/agents/safe-refactor.agent.md
-- [[❌ NEVER]] - document - .github/agents/safe-refactor.agent.md
+- [[.test_body_agent_id_used_when_header_missing()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_clean_tool_call_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_empty_parameters_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_header_user_id_overrides_body_agent_id()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_injection_in_parameters_blocked()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_invalid_header_identity_rejected()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_missing_required_fields_returns_422()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_owner_body_identity_rejected_without_header()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_requires_auth()_3]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.test_response_includes_processing_time()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[A clean tool call with no threats should be allowed (200).]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body agent_id is used only when trusted header is absent.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body-only owner identity must be rejected to prevent impersonation.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Missing server_name or tool_name should return 422.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[POST mcpproxy without auth should return 401.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Response should include processing_time_ms.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestMCPProxyEndpoint_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with injection pattern in parameters should return 403.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with no parameters should be accepted.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[x-agentshroud-user-id header must override spoofable body agent_id.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +42,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
+- 4 edges to [[_COMMUNITY_GitGuard]]
+- 2 edges to [[_COMMUNITY_TestParanoidConfig]]
+- 2 edges to [[_COMMUNITY_asyncio]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_brand-guidelines]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
 
 ## Top bridge nodes
-- [[Safe Refactor Specialist]] - degree 10, connects to 1 community
+- [[ProxyResult]] - degree 18, connects to 9 communities
+- [[test_mcp_proxy_endpoint.py]] - degree 5, connects to 3 communities

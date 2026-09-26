@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Kawaii Face Basic Cycle Example Root CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt
-- [[Kawaii Face Basic Cycle Main Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt
-- [[LVGL 9.x Graphics Library Dependency]] - concept - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[LVGL Kawaii Face Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/CMakeLists.txt
-- [[LVGL Kawaii Face IDF Component Manifest (v1.0.0)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)]] - code - firmware/voice-terminal/main/CMakeLists.txt
-- [[Voice Terminal Main IDF Component Manifest]] - code - firmware/voice-terminal/main/idf_component.yml
-- [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - concept - firmware/voice-terminal/main/idf_component.yml
-- [[esp-sr Speech Recognition Library (WakeNet WN9)]] - concept - firmware/voice-terminal/main/idf_component.yml
+- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/LVGL_Kawaii_Face_Component_CMakeLists
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[3. Remaining Work — Prioritized by Value]] - degree 9, connects to 1 community

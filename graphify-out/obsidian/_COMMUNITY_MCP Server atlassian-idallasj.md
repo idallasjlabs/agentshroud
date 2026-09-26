@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server atlassian-idallasj]] - code - .mcp.json
+- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
 
 ## Live Query (requires Dataview plugin)
 

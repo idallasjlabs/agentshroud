@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.15
 members: 19
 ---
 
 # MultiHostResult
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[.all_ok()]] - code - gateway/tools/multi_host_test.py
-- [[.exit_code()]] - code - gateway/tools/multi_host_test.py
-- [[.failed()]] - code - gateway/tools/multi_host_test.py
-- [[.ok()_2]] - code - gateway/tools/multi_host_test.py
-- [[.passed()]] - code - gateway/tools/multi_host_test.py
-- [[.test_ok_only_when_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_all_pass_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_contains_hosts_and_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_render_summary_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[.unreachable()]] - code - gateway/tools/multi_host_test.py
-- [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[Aggregated outcome across all hosts.]] - rationale - gateway/tools/multi_host_test.py
-- [[HostResult]] - code - gateway/tools/multi_host_test.py
-- [[MultiHostResult]] - code - gateway/tools/multi_host_test.py
-- [[Result of running the command on a single host.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestHostResult]] - code - gateway/tests/test_multi_host_test.py
-- [[TestMultiHostResultProperties]] - code - gateway/tests/test_multi_host_test.py
-- [[True only if every host passed (none failed or unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[True only when the host ran the command and it exited 0.]] - rationale - gateway/tools/multi_host_test.py
+- [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly._1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-_1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
+- [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
+- [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[image_verifier.py]] - code - gateway/security/image_verifier.py
+- [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_success()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_timeout()]] - code - gateway/tests/test_image_verifier.py
+- [[test_image_verifier.py]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_exception_handled()]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_mixed()]] - code - gateway/tests/test_image_verifier.py
+- [[verify_image()]] - code - gateway/security/image_verifier.py
+- [[verify_images()]] - code - gateway/security/image_verifier.py
+- [[verify_images exception from one task is caught, others continue.]] - rationale - gateway/tests/test_image_verifier.py
+- [[verify_images one succeeds, one fails → results keyed by ref.]] - rationale - gateway/tests/test_image_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,18 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 4 edges to [[_COMMUNITY_HostStatus]]
-- 4 edges to [[_COMMUNITY_multi_host_test.py]]
-- 4 edges to [[_COMMUNITY_run_multi_host()]]
-- 3 edges to [[_COMMUNITY_main()]]
-- 2 edges to [[_COMMUNITY_TestTail]]
-- 2 edges to [[_COMMUNITY_ssh_runner()]]
-- 2 edges to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 2 edges to [[_COMMUNITY_TestParseHosts]]
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[MultiHostResult]] - degree 25, connects to 9 communities
-- [[HostResult]] - degree 23, connects to 9 communities
-- [[TestMultiHostResultProperties]] - degree 7, connects to 2 communities
-- [[TestHostResult]] - degree 5, connects to 2 communities
+- [[verify_images()]] - degree 7, connects to 1 community
+- [[test_cosign_fails_bad_signature()]] - degree 3, connects to 1 community
+- [[test_cosign_success()]] - degree 3, connects to 1 community

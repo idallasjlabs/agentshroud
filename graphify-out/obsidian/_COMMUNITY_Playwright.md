@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.12
-members: 18
+cohesion: 0.11
+members: 19
 ---
 
 # Playwright
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[AgentShroud Gateway Package]] - rationale - gateway/__init__.py
-- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[DNS Resolution]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[Docker Networks]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[Network Architecture]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[Playwright]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Purpose_122]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_24]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_14]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[Security Controls_1]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[agentshroud-bot]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[agentshroud-internal]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[agentshroud-isolated]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[gateway__init__.py]] - code - gateway/__init__.py
-- [[networks]] - document - docs/vault/06 - Containers & Services/networks.md
-- [[playwright]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[1. Purpose and Scope]] - document - docs/requirements/system-requirements.md
+- [[1.1 Purpose]] - document - docs/requirements/system-requirements.md
+- [[1.2 Scope]] - document - docs/requirements/system-requirements.md
+- [[1.3 Intended Audience]] - document - docs/requirements/system-requirements.md
+- [[2. Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[2.1 Core Security Modules]] - document - docs/requirements/system-requirements.md
+- [[3. Non-Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[4. Constraints and Assumptions]] - document - docs/requirements/system-requirements.md
+- [[4.1 Technical Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.2 Operational Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.3 Assumptions]] - document - docs/requirements/system-requirements.md
+- [[5. Compliance Requirements]] - document - docs/requirements/system-requirements.md
+- [[5.1 Security Standards]] - document - docs/requirements/system-requirements.md
+- [[5.2 Audit Requirements]] - document - docs/requirements/system-requirements.md
+- [[6. Risk Assessment]] - document - docs/requirements/system-requirements.md
+- [[6.1 Security Risks]] - document - docs/requirements/system-requirements.md
+- [[6.2 Operational Risks]] - document - docs/requirements/system-requirements.md
+- [[AgentShroud v0.9.0]] - document - docs/requirements/system-requirements.md
+- [[System Requirements Specification (SRS)]] - document - docs/requirements/system-requirements.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,16 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_clamav]]
-- 1 edge to [[_COMMUNITY_agentshroud-gateway]]
-- 1 edge to [[_COMMUNITY_OpenClaw]]
-- 1 edge to [[_COMMUNITY_agentshroud-bot]]
-- 1 edge to [[_COMMUNITY_Docker Volumes]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Gateway Package]] - degree 6, connects to 2 communities
-- [[agentshroud-bot]] - degree 5, connects to 2 communities
-- [[volumes]] - degree 5, connects to 2 communities
-- [[playwright]] - degree 3, connects to 1 community
+- [[System Requirements Specification (SRS)]] - degree 2, connects to 1 community

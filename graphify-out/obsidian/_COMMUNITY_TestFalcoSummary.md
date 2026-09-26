@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestFalcoSummary
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFalcoSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Atlassian OAuth 2.0 (3LO) config]] - concept - .llm_settings/docs/MCP_README.md
+- [[GitHub OAuth device authorization flow config]] - concept - .llm_settings/docs/MCP_README.md
+- [[MCP OAuth preflight checker (mcp_oauth_preflight.py)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Secrets stay in .env, never in the repo]] - rationale - .llm_settings/docs/MCP_README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/TestFalcoSummary
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY__w()]]
-
-## Top bridge nodes
-- [[TestFalcoSummary_1]] - degree 5, connects to 1 community
-- [[.test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

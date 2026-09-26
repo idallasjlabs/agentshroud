@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Sprint Cadence Decision
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Decision]] - document - docs/governance/SPRINT_CADENCE.md
-- [[GSD Issue Requirements]] - document - docs/governance/SPRINT_CADENCE.md
-- [[SPRINT_CADENCE]] - document - docs/governance/SPRINT_CADENCE.md
-- [[Skills Available (if needed)]] - document - docs/governance/SPRINT_CADENCE.md
-- [[Sprint Cadence Decision]] - document - docs/governance/SPRINT_CADENCE.md
-- [[What We Do Instead]] - document - docs/governance/SPRINT_CADENCE.md
-- [[When to Revisit]] - document - docs/governance/SPRINT_CADENCE.md
+- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
+- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
+- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
+- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
+- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

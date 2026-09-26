@@ -10,17 +10,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
-- [[Audit  ledger]] - document - docs/api/api-reference.md
-- [[DNS]] - document - docs/api/api-reference.md
-- [[Egress control]] - document - docs/api/api-reference.md
-- [[Health & status]] - document - docs/api/api-reference.md
-- [[Quarantine]] - document - docs/api/api-reference.md
-- [[RBAC]] - document - docs/api/api-reference.md
-- [[Route map (by router)]] - document - docs/api/api-reference.md
-- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
-- [[Scanning]] - document - docs/api/api-reference.md
-- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
+- [[Daedalus — Concept Illustrator_3]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Input Requirements_13]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Output Format_16]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Persona_10]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_12]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Role_48]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[SKILL_81]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[System Prompt_10]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/Route_map_by_router
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_API Reference]]
-
-## Top bridge nodes
-- [[Route map (by router)]] - degree 11, connects to 1 community

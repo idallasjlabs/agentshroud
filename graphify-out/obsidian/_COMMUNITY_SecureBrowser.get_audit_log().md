@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[AgentShroud Gateway OpenAPI Spec v1.2.1]] - document - docs/api/openapi.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[.test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[._no_docker()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_critical_image_finding_uses_red_icon()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_image_scan_error_does_not_abort_report()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_image_scan_result_in_return_value()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_image_scan_summary_appended_to_message()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_image_scans_run_for_each_target()]] - code - gateway/tests/test_daily_cve_report.py
+- [[A critical finding in an image scan uses the red icon.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A failing image scan appends an error line but does not raise.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Message sent via Telegram includes a Container Image Scans section.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Pin _running_image to the docker-unavailable fallback (same as         TestBuild]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Return value includes image_scans list.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestRunAndSendCveReportImageScans]] - code - gateway/tests/test_daily_cve_report.py
+- [[run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each tar]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryWriteACL]] - degree 11, connects to 3 communities
+- [[TestRunAndSendCveReportImageScans]] - degree 7, connects to 1 community

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Purpose_88]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Related Skills_79]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Usage_83]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 3 edges to [[_COMMUNITY_CredentialValidator]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist (MC)_1]] - degree 4, connects to 1 community
+- [[TestBrowserSecurity]] - degree 8, connects to 4 communities
+- [[.test_browser_exception_fails_closed()]] - degree 2, connects to 1 community
+- [[.test_high_threat_blocked()]] - degree 2, connects to 1 community
+- [[.test_low_threat_allowed()]] - degree 2, connects to 1 community

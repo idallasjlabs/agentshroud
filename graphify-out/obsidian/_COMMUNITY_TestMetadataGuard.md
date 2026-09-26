@@ -1,40 +1,41 @@
 ---
 type: community
-cohesion: 0.08
-members: 25
+cohesion: 0.09
+members: 26
 ---
 
 # TestMetadataGuard
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.setup_method()_30]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
+- [[401 Unauthorized_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Connection timeout_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Discovery Process]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Server Settings_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 1 Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 2 Install Dependencies]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 3 Test Services]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 4 Verify All Working]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test CalDAV Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test IMAP Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[iCloud Services Setup - Complete Guide]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[✅ Setup Checklist_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🎯 Next Steps After Setup]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📅 iCloud Calendar (CalDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📝 iCloud Notes]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📞 iCloud Contacts (CardDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📦 Required Node.js Packages]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📧 iCloud Mail (IMAPSMTP)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔍 Troubleshooting]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔐 Important App-Specific Passwords]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🚀 Complete Setup Script]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard]] - degree 16, connects to 2 communities
-- [[.setup_method()_30]] - degree 2, connects to 1 community
+- [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community

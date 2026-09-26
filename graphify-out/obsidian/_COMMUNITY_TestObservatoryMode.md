@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.15
 members: 20
 ---
 
 # TestObservatoryMode
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_auto_revert_timer_logic()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_module_mode_pinned_modules()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_module_mode_respect_global_override()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_module_mode_resolution()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_observatory_mode_state_initialization()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_observatory_mode_validation()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_pinned_modules_validation()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_security_pipeline_set_global_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_security_pipeline_set_global_mode_missing_components()]] - code - gateway/tests/test_observatory_mode.py
-- [[Test Observatory Mode configuration and endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test SecurityPipeline.set_global_mode method.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test auto-revert timer functionality.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test module mode resolution with pinned modules.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test set_global_mode handles missing components gracefully.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that get_module_mode respects AGENTSHROUD_MODE env var.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that observatory mode state is properly initialized.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that pinned modules always return enforce even in monitor mode.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test validation of observatory mode parameters.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test validation of pinned module names.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[TestObservatoryMode]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
+- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
+- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
+- [[SecurityFeature]] - code - gateway/runtime/security.py
+- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
+- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
+- [[_validate_runtime()]] - code - gateway/runtime/security.py
+- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
+- [[get_missing_features()]] - code - gateway/runtime/security.py
+- [[get_security_options()]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 7 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 5 edges to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 4 edges to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 1 edge to [[_COMMUNITY_GatewayEmailService]]
 
 ## Top bridge nodes
-- [[TestObservatoryMode]] - degree 15, connects to 4 communities
-- [[.test_get_module_mode_respect_global_override()]] - degree 3, connects to 1 community
-- [[.test_security_pipeline_set_global_mode()]] - degree 3, connects to 1 community
-- [[.test_security_pipeline_set_global_mode_missing_components()]] - degree 3, connects to 1 community
+- [[TestSecurityFeatures]] - degree 16, connects to 4 communities
+- [[get_missing_features()]] - degree 7, connects to 3 communities
+- [[get_security_options()]] - degree 9, connects to 2 communities
+- [[get_features_for_runtime()]] - degree 8, connects to 2 communities
+- [[_validate_runtime()]] - degree 6, connects to 2 communities

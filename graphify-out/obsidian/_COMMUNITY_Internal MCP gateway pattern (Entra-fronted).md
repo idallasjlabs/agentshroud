@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Internal MCP gateway pattern (Entra-fronted)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
-- [[Microsoft Entra ID app registration for MCP]] - concept - .llm_settings/docs/MCP_README.md
+- [[.test_pii_redacted_on_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Phone numbers in outbound messages must be redacted by PII sanitizer.          R]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/Internal_MCP_gateway_pattern_Entra-fronted
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_pii_redacted_on_outbound()]] - degree 4, connects to 3 communities

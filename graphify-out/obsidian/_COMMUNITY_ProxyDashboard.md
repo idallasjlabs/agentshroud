@@ -1,58 +1,59 @@
 ---
 type: community
-cohesion: 0.07
-members: 43
+cohesion: 0.05
+members: 44
 ---
 
 # ProxyDashboard
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 43 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 44 nodes
 
 ## Members
-- [[.__init__()_63]] - code - gateway/dashboard/proxy_status.py
-- [[.get_display()]] - code - gateway/dashboard/proxy_status.py
-- [[.get_report()]] - code - gateway/dashboard/proxy_status.py
-- [[.record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
-- [[.record_pii_redaction()]] - code - gateway/dashboard/proxy_status.py
-- [[.set_mode()]] - code - gateway/dashboard/proxy_status.py
-- [[.to_display()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_audit_status()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_canary()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_direct_access()]] - code - gateway/dashboard/proxy_status.py
-- [[Collects status from all security components and generates reports.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Complete proxy status report for the dashboard.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Dashboard display should include all required fields.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should count PII redactions.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should default to unprotected mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect proxy mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect sidecar mode with warning.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show audit chain status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show broken audit chain.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show failed canary.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track canary results.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track direct access status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track proxied messages.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track uptime.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[ProxyDashboard]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
-- [[proxy_status.py_2]] - code - gateway/dashboard/proxy_status.py
-- [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_default_unprotected()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_direct_access()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_display_all_fields()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_message_tracking()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_pii_counting()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_proxy_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_sidecar_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[.test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_alert_callbacks()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_basic_message_tracking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_edge_cases()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_initialization()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_repeated_query_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_sequential_extraction_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_session_blocking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_session_cleanup()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_session_reset()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_session_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_system_info_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_threshold_warnings()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_tool_name_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[Test alert callback functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test analysis of agent responses for potential leaks.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test basic message tracking functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test behavior of blocked sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cases for MultiTurnTracker class.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cleanup of old sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of PII fragment patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of credential-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of file reference patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of infrastructure-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of repeated queries with different phrasing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of sequential extraction patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of system information queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of tool inventory queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test getting session statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test proper initialization of MultiTurnTracker.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that disabled tracker doesn't track or score.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that scores accumulate across turns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[TestMultiTurnTracker_1]] - code - gateway/tests/test_multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,11 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_health_report.py]]
-- 1 edge to [[_COMMUNITY_api.py]]
+- 3 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
 
 ## Top bridge nodes
-- [[ProxyDashboard]] - degree 27, connects to 2 communities
-- [[proxy_status.py_2]] - degree 4, connects to 2 communities
+- [[TestMultiTurnTracker_1]] - degree 27, connects to 3 communities
+- [[.test_disabled_tracker()]] - degree 3, connects to 1 community

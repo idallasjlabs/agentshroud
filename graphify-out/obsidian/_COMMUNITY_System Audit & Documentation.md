@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # System Audit & Documentation
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_7]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_description of what this does]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[System Audit & Documentation_2]] - degree 14, connects to 1 community
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 2 communities

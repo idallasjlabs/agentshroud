@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Dialogue Adaptations]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Expert Persona]] - document - .agents/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - .agents/skills/i-socrates/SKILL.md
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
 
 ## Top bridge nodes
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - degree 4, connects to 1 community
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - degree 4, connects to 1 community

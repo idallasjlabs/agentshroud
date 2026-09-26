@@ -10,47 +10,47 @@ members: 41
 **Members:** 41 nodes
 
 ## Members
-- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
-- [[Browser timeout_1]] - document - skills/custom/securebrowser/README.md
-- [[CAPTCHA detected_1]] - document - skills/custom/securebrowser/README.md
-- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
-- [[URL not in allowlist_1]] - document - skills/custom/securebrowser/README.md
-- [[1. Verify Installation]] - document - skills/custom/securebrowser/README.md
-- [[2. Configure Allowlist]] - document - skills/custom/securebrowser/README.md
-- [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
-- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
-- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
-- [[CLI Reference]] - document - skills/custom/securebrowser/README.md
-- [[Click]] - document - skills/custom/securebrowser/README.md
-- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
-- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
-- [[Extract]] - document - skills/custom/securebrowser/README.md
-- [[Fill Field]] - document - skills/custom/securebrowser/README.md
-- [[Integration_1]] - document - skills/custom/securebrowser/README.md
-- [[Key Features_2]] - document - skills/custom/securebrowser/README.md
-- [[License]] - document - skills/custom/securebrowser/README.md
-- [[Limitations_1]] - document - skills/custom/securebrowser/README.md
-- [[Navigate]] - document - skills/custom/securebrowser/README.md
-- [[Overview]] - document - skills/custom/securebrowser/README.md
-- [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
-- [[Quick Start]] - document - skills/custom/securebrowser/README.md
-- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
-- [[Screenshot]] - document - skills/custom/securebrowser/README.md
-- [[SecureBrowser Skill]] - document - skills/custom/securebrowser/README.md
-- [[Security Guarantees_1]] - document - skills/custom/securebrowser/README.md
-- [[Security Model]] - document - skills/custom/securebrowser/README.md
-- [[Step 1 Package Skill]] - document - skills/custom/securebrowser/README.md
-- [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
-- [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
-- [[Support]] - document - skills/custom/securebrowser/README.md
-- [[Troubleshooting_4]] - document - skills/custom/securebrowser/README.md
-- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
-- [[Usage Examples]] - document - skills/custom/securebrowser/README.md
-- [[With 1Password]] - document - skills/custom/securebrowser/README.md
-- [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
-- [[securebrowserREADME]] - document - skills/custom/securebrowser/README.md
+- [[.test_collaboration_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_execute_verb_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_accepts_uppercase_http_scheme()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_does_not_treat_email_as_domain_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_handles_bare_domain_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_handles_empty_inputs()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_ignores_markdown_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_ignores_non_http_scheme_and_uses_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_ignores_text_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_ignores_version_like_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_prefers_first_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_rejects_ip_literal_bare_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_returns_none_when_no_url_or_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_skips_email_then_finds_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_skips_protocol_relative_host_without_tld()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_strips_markdown_wrapper_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_strips_trailing_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_supports_parenthesized_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_supports_protocol_relative_urls()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_supports_protocol_relative_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_extract_first_egress_target_trims_wrapping_quotes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_file_query_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_formatting_trick_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_bypasses_interrogative_requirement()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_good_morning_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hello_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hey_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hi_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_match_without_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_password_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_pii_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_protection_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_refuse_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restrict_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_sanitiz_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_model_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_what_can_you_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Classifier for conceptual collaborator questions.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestEgressTargetExtraction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for outbound target extraction helper used by egress preflight.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,7 +60,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSH Config]]
+- 6 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_FileSandbox]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[SecureBrowser Skill]] - degree 15, connects to 1 community
+- [[TestEgressTargetExtraction]] - degree 25, connects to 3 communities
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - degree 24, connects to 3 communities

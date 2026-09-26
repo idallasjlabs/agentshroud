@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[CI job test (pytest matrix, coverage 84%)]] - code - .github/workflows/ci.yml
-- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
+- [[set-model.sh]] - code - docker/scripts/set-model.sh
+- [[set-model.sh script]] - code - docker/scripts/set-model.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.16
-members: 17
+cohesion: 0.11
+members: 18
 ---
 
 # HeuristicClassifier
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[.__init__()_144]] - code - gateway/security/heuristic_classifier.py
-- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
-- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
-- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
-- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
-- [[._try_load_model()]] - code - gateway/security/heuristic_classifier.py
-- [[.classify()]] - code - gateway/security/heuristic_classifier.py
-- [[.setup_method()_23]] - code - gateway/tests/test_heuristic_classifier.py
-- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
-- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - rationale - gateway/security/heuristic_classifier.py
-- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
-- [[HeuristicClassifier_1]] - code - gateway/security/heuristic_classifier.py
-- [[Pattern_2]] - code - gateway/security/heuristic_classifier.py
-- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
-- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.]] - rationale - gateway/security/heuristic_classifier.py
-- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Architecture_7]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,18 +37,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_TestHeuristicClassifier]]
-- 6 edges to [[_COMMUNITY_test_adversarial_injection.py]]
-- 3 edges to [[_COMMUNITY__any_detector_fires()]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
-- 1 edge to [[_COMMUNITY_TestOverallDetectionRate]]
-- 1 edge to [[_COMMUNITY_TestPromptExtraction]]
-- 1 edge to [[_COMMUNITY_TestPromptGuardDirectly]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark]]
+- 1 edge to [[_COMMUNITY_SecurityConfig]]
 
 ## Top bridge nodes
-- [[HeuristicClassifier_1]] - degree 26, connects to 8 communities
-- [[._classify_heuristic()]] - degree 7, connects to 1 community
-- [[.classify()]] - degree 5, connects to 1 community
-- [[._classify_ml()]] - degree 5, connects to 1 community
-- [[.setup_method()_23]] - degree 2, connects to 1 community
+- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities

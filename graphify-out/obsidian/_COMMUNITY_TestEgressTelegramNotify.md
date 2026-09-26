@@ -10,41 +10,41 @@ members: 35
 **Members:** 35 nodes
 
 ## Members
-- [[.notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.0) PROVE THE OUTCOME, NEVER THE STEPS (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.05) WEEKLY UPGRADES — UNATTENDED, AND ON DEMAND]] - document - CLAUDE.md
+- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
+- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
+- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[3) SDLC — HOW TO WORK IN THIS REPO]] - document - CLAUDE.md
+- [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - document - CLAUDE.md
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - CLAUDE.md
+- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
+- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
+- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
+- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
+- [[Avoid]] - document - CLAUDE.md
+- [[Development commands]] - document - CLAUDE.md
+- [[EVERYTHING MEANS EVERYTHING (owner directive 2026-09-15, verbatim intent)]] - document - CLAUDE.md
+- [[GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT]] - document - CLAUDE.md
+- [[Hard constraints]] - document - CLAUDE.md
+- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
+- [[Key source directories]] - document - CLAUDE.md
+- [[MCP tools available]] - document - CLAUDE.md
+- [[Preferred workflow]] - document - CLAUDE.md
+- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
+- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
+- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
+- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
+- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
+- [[Red → Green → Refactor]] - document - CLAUDE.md
+- [[Session start checklist]] - document - CLAUDE.md
+- [[Test quality rules]] - document - CLAUDE.md
+- [[When to act]] - document - CLAUDE.md
+- [[When to clarify]] - document - CLAUDE.md
+- [[When to defer]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,10 +54,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_EgressTelegramNotifier]]
-- 2 edges to [[_COMMUNITY_Test handling 1-hour time-limited approval callb]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
 
 ## Top bridge nodes
-- [[TestEgressTelegramNotify]] - degree 22, connects to 2 communities
-- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community
-- [[.notifier()]] - degree 2, connects to 1 community
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 16, connects to 2 communities

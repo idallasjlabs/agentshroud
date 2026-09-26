@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Test Coverage Report (AgentShroud v1.3.0)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Agentic OS Architecture Doc (91 security-dir files  75 wired)]] - document - docs/architecture/agentic-os.md
-- [[NO SECURITY THEATER Policy (CLAUDE.md §2)]] - concept - docs/testing/test-coverage-report.md
-- [[Red-Team Assessment Plan]] - document - docs/planning/redteam/plan.md
-- [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - concept - docs/testing/test-coverage-report.md
-- [[Test Coverage Report (AgentShroud v1.3.0)]] - document - docs/testing/test-coverage-report.md
-- [[Test Plan (AgentShroud v0.9.0)]] - document - docs/testing/test-plan.md
+- [[Purpose_13]] - document - .agents/skills/i-icloud/README.md
+- [[README_13]] - document - .agents/skills/i-icloud/README.md
+- [[Related Skills_13]] - document - .agents/skills/i-icloud/README.md
+- [[Usage_15]] - document - .agents/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)]] - document - .agents/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 

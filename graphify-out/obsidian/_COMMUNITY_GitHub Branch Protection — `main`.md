@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # GitHub Branch Protection — `main`
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[BRANCH_PROTECTION]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[GitHub Branch Protection — `main`]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Local Enforcement (already active)]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Required Settings]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Required Status Checks]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Verification]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Athena — Knowledge Distiller_3]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Purpose_75]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[README_80]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Related Skills_81]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Usage_83]] - document - docker/config/openclaw/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

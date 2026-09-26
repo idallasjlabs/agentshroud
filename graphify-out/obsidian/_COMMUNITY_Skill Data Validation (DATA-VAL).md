@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.33
 members: 9
 ---
 
 # Skill: Data Validation (DATA-VAL)
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.33 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[1. Schema Validation_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[2. Partition Coverage_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[3. Data Quality Checks_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Critical Cost Control_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Role_95]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
-- [[Validation Layers_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[.client()_6]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_allows_clean_skill()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_blocks_dangerous_skill()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_fails_closed_on_unreadable_file()]] - code - gateway/tests/test_skill_guard.py
+- [[CompletedProcess_3]] - code - gateway/tests/test_skill_guard.py
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
+- [[Severity]] - code - gateway/security/skill_guard.py
+- [[TestClient]] - code - gateway/tests/test_skill_guard.py
+- [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 16 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
+- 11 edges to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
+- 8 edges to [[_COMMUNITY_AgentShroud v0.7.0 — Red Team Remediation Plan]]
+- 4 edges to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
 
 ## Top bridge nodes
-- [[Skill Data Validation (DATA-VAL)_2]] - degree 5, connects to 1 community
+- [[Severity]] - degree 24, connects to 5 communities
+- [[CompletedProcess_3]] - degree 6, connects to 4 communities
+- [[TestReloadIntegration]] - degree 10, connects to 3 communities
+- [[TestClient]] - degree 9, connects to 3 communities
+- [[.test_reload_allows_clean_skill()]] - degree 4, connects to 1 community

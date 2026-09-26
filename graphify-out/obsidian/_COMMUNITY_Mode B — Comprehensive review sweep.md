@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Mode B — Comprehensive review sweep_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 2 — Work through directories one at a time_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
+- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
 
 ## Top bridge nodes
-- [[Mode B — Comprehensive review sweep_5]] - degree 4, connects to 1 community
+- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
+- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
+- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community
