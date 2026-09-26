@@ -12,7 +12,7 @@ tags:
 # TestIsBlocked
 
 ## Connections
-- [[.setup_method()_7]] - `method` [EXTRACTED]
+- [[.setup_method()_3]] - `method` [EXTRACTED]
 - [[.test_allowlist_overrides_blocklist()]] - `method` [EXTRACTED]
 - [[.test_case_normalization()]] - `method` [EXTRACTED]
 - [[.test_custom_denylist()]] - `method` [EXTRACTED]

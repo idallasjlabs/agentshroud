@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "TestGroupMemoryNamespaceIsolation"
+community: "Core Principles"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGroupMemoryNamespaceIsolation
+  - community/Core_Principles
 ---
 
 # TestGroupMemoryNamespaceIsolation
@@ -18,12 +18,12 @@ tags:
 - [[.test_group_memory_physically_isolated()]] - `method` [EXTRACTED]
 - [[.test_group_writes_are_independent_namespaces()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[Writes in group-A must not be readable from group-B.]] - `rationale_for` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation
+#graphify/code #graphify/EXTRACTED #community/Core_Principles

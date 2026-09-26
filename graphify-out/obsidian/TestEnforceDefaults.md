@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "TrustManager"
+community: "ResourceGuard"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ResourceGuard
 ---
 
 # TestEnforceDefaults
@@ -21,12 +21,12 @@ tags:
 - [[.test_pii_sanitizer_default_action()]] - `method` [EXTRACTED]
 - [[.test_security_config_all_defaults_enforce()]] - `method` [EXTRACTED]
 - [[.test_security_module_config_defaults()]] - `method` [EXTRACTED]
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[SecurityConfig_4]] - `uses` [INFERRED]
+- [[SecurityConfig_3]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[Test that core security modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

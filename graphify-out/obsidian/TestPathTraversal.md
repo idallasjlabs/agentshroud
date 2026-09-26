@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "AgentShroud™ Brand Guidelines"
 location: "L209"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # TestPathTraversal
@@ -17,10 +17,10 @@ tags:
 - [[.test_normal_relative_import_no_false_positive()]] - `method` [EXTRACTED]
 - [[.test_single_dotdot_traversal_flags()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/AgentShroud_Brand_Guidelines

@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L161"
+community: "test_dashboard.py"
+location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DNSFilterConfig
+  - community/test_dashboardpy
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_burst_queries_flagged()]] - `method` [EXTRACTED]
-- [[.test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[.test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
+- [[EventInjectionError]] - `uses` [INFERRED]
+- [[RateLimitExceeded]] - `uses` [INFERRED]
+- [[SessionBindingError]] - `uses` [INFERRED]
+- [[SessionError]] - `uses` [INFERRED]
+- [[SessionExpired]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DNSFilterConfig
+#graphify/code #graphify/INFERRED #community/test_dashboardpy

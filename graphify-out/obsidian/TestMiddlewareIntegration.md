@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # TestMiddlewareIntegration
@@ -20,14 +20,14 @@ tags:
 - [[.test_process_tool_result_no_sanitizer()]] - `method` [EXTRACTED]
 - [[.test_process_tool_result_sanitizer_error()]] - `method` [EXTRACTED]
 - [[.test_process_tool_result_success()]] - `method` [EXTRACTED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 - [[Test integration with MiddlewareManager]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/version_routespy

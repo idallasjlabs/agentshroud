@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestFluentBitSummary"
+community: "MCP Tools Usage (MCPM)"
 location: "L476"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFluentBitSummary
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # TestFluentBitSummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_running_without_logs()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFluentBitSummary
+#graphify/code #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "test_redteam_probes.py"
 location: "L983"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ModeRequest
+  - community/test_redteam_probespy
 ---
 
 # TestGetEngineHelper
@@ -18,4 +18,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ModeRequest
+#graphify/code #graphify/INFERRED #community/test_redteam_probespy

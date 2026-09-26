@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "The 8D Investigation Process"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/The_8D_Investigation_Process
 ---
 
 # TestPrivateContentDetection
@@ -20,10 +20,10 @@ tags:
 - [[.test_owner_gets_unfiltered_group_memory()]] - `method` [EXTRACTED]
 - [[.test_strip_private_content_redacts_api_key()]] - `method` [EXTRACTED]
 - [[.test_strip_private_section()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

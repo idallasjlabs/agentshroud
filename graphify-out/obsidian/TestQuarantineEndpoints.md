@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestQuarantineEndpoints"
+community: "InjectionSeverity"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestQuarantineEndpoints
+  - community/InjectionSeverity
 ---
 
 # TestQuarantineEndpoints
@@ -19,4 +19,4 @@ tags:
 - [[Test quarantine management endpoints in main.py.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestQuarantineEndpoints
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

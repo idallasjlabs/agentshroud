@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TestKeyRotationManager"
+community: "4. Environment Variables"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyRotationManager
+  - community/4_Environment_Variables
 ---
 
 # TestKeyRotationManager
 
 ## Connections
-- [[.manager()_1]] - `method` [EXTRACTED]
+- [[.manager()]] - `method` [EXTRACTED]
 - [[.sample_credential()]] - `method` [EXTRACTED]
 - [[.test_get_credential_status()]] - `method` [EXTRACTED]
 - [[.test_get_health_score_all_healthy()]] - `method` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Test key rotation manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/4_Environment_Variables

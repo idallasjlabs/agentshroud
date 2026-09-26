@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "lifespan.py"
+community: "AgentShroud™ Telegram-Reported Issues"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # TestExpectedNetworksAllowlist
@@ -16,4 +16,4 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

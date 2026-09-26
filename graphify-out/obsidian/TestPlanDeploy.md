@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "Skill: Branding Specialist (BS)"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # TestPlanDeploy
@@ -24,4 +24,4 @@ tags:
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - `rationale_for` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

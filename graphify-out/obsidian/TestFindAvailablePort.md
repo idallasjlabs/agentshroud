@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "PortManager"
+community: "KeyVault"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # TestFindAvailablePort
@@ -22,4 +22,4 @@ tags:
 - [[Test auto-port discovery.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

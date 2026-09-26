@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestReplayBufferOffsetParsing"
+community: "ResourceGuard"
 location: "L4609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/ResourceGuard
 ---
 
 # TestReplayBufferOffsetParsing
@@ -16,11 +16,11 @@ tags:
 - [[._make_proxy_with_mock_buffer()]] - `method` [EXTRACTED]
 - [[.test_json_body_still_calls_mark_delivered()]] - `method` [EXTRACTED]
 - [[.test_url_encoded_body_calls_mark_delivered()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

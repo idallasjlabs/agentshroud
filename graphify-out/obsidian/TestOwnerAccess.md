@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestOwnerAccess"
+community: "TelegramAPIProxy"
 location: "L55"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestOwnerAccess
+  - graphify/INFERRED
+  - community/TelegramAPIProxy
 ---
 
 # TestOwnerAccess
@@ -16,6 +16,11 @@ tags:
 - [[.test_owner_can_use_any_unknown_tool()]] - `method` [EXTRACTED]
 - [[.test_owner_can_use_private_tool()]] - `method` [EXTRACTED]
 - [[.test_owner_denied_tools_is_empty()]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOwnerAccess
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

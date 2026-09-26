@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "IntelReportStore"
+community: "HTTPConnectProxy"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/HTTPConnectProxy
 ---
 
 # TestIntelReportStore
 
 ## Connections
 - [[._make_report()]] - `method` [EXTRACTED]
-- [[.store()]] - `method` [EXTRACTED]
+- [[.store()_1]] - `method` [EXTRACTED]
 - [[.store_dir()]] - `method` [EXTRACTED]
 - [[.test_chain_hash_links_reports()]] - `method` [EXTRACTED]
 - [[.test_integrity_check_fails_for_tampered_file()]] - `method` [EXTRACTED]
@@ -30,10 +30,10 @@ tags:
 - [[.test_verify_chain_empty_store_is_valid()]] - `method` [EXTRACTED]
 - [[.test_verify_chain_fails_for_tampered_entry()]] - `method` [EXTRACTED]
 - [[.test_verify_chain_passes_for_intact_store()]] - `method` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

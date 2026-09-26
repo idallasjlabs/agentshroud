@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "ConsentFramework"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ConsentFramework
 ---
 
 # TestEgressFilterConfig
 
 ## Connections
-- [[.test_default_config()_4]] - `method` [EXTRACTED]
+- [[.test_default_config()_1]] - `method` [EXTRACTED]
 - [[.test_denylist_wildcards()]] - `method` [EXTRACTED]
 - [[.test_effective_allowlist_basic()]] - `method` [EXTRACTED]
 - [[.test_effective_allowlist_with_denylist()]] - `method` [EXTRACTED]
@@ -20,9 +20,9 @@ tags:
 - [[.test_from_environment_enforce()]] - `method` [EXTRACTED]
 - [[.test_from_environment_monitor()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Test EgressFilterConfig functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

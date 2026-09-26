@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "DELIVERABLE 3 — v0.8.0 Implementation Items"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/DELIVERABLE_3__v080_Implementation_Items
 ---
 
 # TestGoogleAPIProxy
@@ -18,4 +18,4 @@ tags:
 - [[Regression tests for v1beta proxy response handling.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/DELIVERABLE_3__v080_Implementation_Items

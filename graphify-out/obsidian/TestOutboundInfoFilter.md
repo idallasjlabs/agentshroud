@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "test_security_toolchain.py"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/test_security_toolchainpy
 ---
 
 # TestOutboundInfoFilter
 
 ## Connections
 - [[._time_one_filter()]] - `method` [EXTRACTED]
-- [[.setup_method()_33]] - `method` [EXTRACTED]
+- [[.setup_method()_17]] - `method` [EXTRACTED]
 - [[.test_admin_private_service_data_redacted()]] - `method` [EXTRACTED]
 - [[.test_agentshroud_name_not_redacted()]] - `method` [EXTRACTED]
 - [[.test_code_block_filtering()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.test_context_aware_user_id_filtering()]] - `method` [EXTRACTED]
 - [[.test_credential_path_filtering()]] - `method` [EXTRACTED]
 - [[.test_custom_patterns()]] - `method` [EXTRACTED]
-- [[.test_edge_cases()_2]] - `method` [EXTRACTED]
+- [[.test_edge_cases()_1]] - `method` [EXTRACTED]
 - [[.test_initialization_default()]] - `method` [EXTRACTED]
 - [[.test_initialization_with_config()]] - `method` [EXTRACTED]
 - [[.test_internal_url_filtering()]] - `method` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[.test_private_ip_filtering()]] - `method` [EXTRACTED]
 - [[.test_risk_classification()]] - `method` [EXTRACTED]
 - [[.test_security_architecture_filtering()]] - `method` [EXTRACTED]
-- [[.test_stats()_2]] - `method` [EXTRACTED]
+- [[.test_stats()_1]] - `method` [EXTRACTED]
 - [[.test_tailnet_id_filtering()]] - `method` [EXTRACTED]
 - [[.test_tailscale_hostname_filtering()]] - `method` [EXTRACTED]
 - [[.test_telegram_user_id_filtering()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[Test suite for the outbound information filter.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

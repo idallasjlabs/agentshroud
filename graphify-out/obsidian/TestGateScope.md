@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "validate_network_security()"
+community: "AgentShroud™ Telegram-Reported Issues"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # TestGateScope
@@ -18,4 +18,4 @@ tags:
 - [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - `rationale_for` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

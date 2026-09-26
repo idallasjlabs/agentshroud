@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestBuildCollaboratorSafeInfoResponse"
+community: "InjectionSeverity"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/InjectionSeverity
 ---
 
 # TestHermesDashboardPathTraversal
@@ -23,4 +23,4 @@ tags:
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

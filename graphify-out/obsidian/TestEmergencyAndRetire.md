@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "test_key_rotation.py"
 location: "L201"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CredentialValidator
+  - community/test_key_rotationpy
 ---
 
 # TestEmergencyAndRetire
@@ -22,4 +22,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CredentialValidator
+#graphify/code #graphify/INFERRED #community/test_key_rotationpy

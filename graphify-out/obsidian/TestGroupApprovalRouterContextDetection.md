@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "TestEgressApprovalQueue"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestEgressApprovalQueue
 ---
 
 # TestGroupApprovalRouterContextDetection
@@ -18,9 +18,9 @@ tags:
 - [[.test_is_group_context_false_for_default()]] - `method` [EXTRACTED]
 - [[.test_is_group_context_true_for_group_agent_id()]] - `method` [EXTRACTED]
 - [[.test_route_approval_auto_detects_group_context()]] - `method` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

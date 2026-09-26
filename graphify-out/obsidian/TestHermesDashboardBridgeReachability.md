@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_security_audit.py"
 location: "L338"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/test_security_auditpy
 ---
 
 # TestHermesDashboardBridgeReachability
@@ -16,9 +16,9 @@ tags:
 - [[.test_run_standalone_sets_matching_bridge_port()]] - `method` [EXTRACTED]
 - [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

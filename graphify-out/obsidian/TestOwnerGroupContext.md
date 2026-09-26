@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # TestOwnerGroupContext
@@ -17,10 +17,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Owner must have unrestricted access even in group context.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GroupRoleResolver
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

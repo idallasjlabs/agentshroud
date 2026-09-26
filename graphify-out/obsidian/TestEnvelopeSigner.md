@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # TestEnvelopeSigner
@@ -23,4 +23,4 @@ tags:
 - [[InstructionEnvelope]] - `uses` [INFERRED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "TestHandleEvent"
+community: "input_normalizer.py"
 location: "L475"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/input_normalizerpy
 ---
 
 # TestHandleEvent
@@ -18,9 +18,9 @@ tags:
 - [[.test_no_tracker_does_not_raise()]] - `method` [EXTRACTED]
 - [[.test_non_message_event_ignored()]] - `method` [EXTRACTED]
 - [[.test_tracker_error_does_not_propagate()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/code #graphify/EXTRACTED #community/input_normalizerpy

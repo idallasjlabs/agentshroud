@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestProcScans"
+community: "§2 — New Multi-Bot Attack Scenarios (v1.1+ Surfa"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProcScans
+  - community/2__New_Multi-Bot_Attack_Scenarios_v11_Surfa
 ---
 
 # TestProcScans
@@ -19,4 +19,4 @@ tags:
 - [[.test_wazuh_agent_detected()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProcScans
+#graphify/code #graphify/EXTRACTED #community/2__New_Multi-Bot_Attack_Scenarios_v11_Surfa

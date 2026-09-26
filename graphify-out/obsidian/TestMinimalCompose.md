@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "TestProductionCompose"
+community: "PodmanEngine"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/PodmanEngine
 ---
 
 # TestMinimalCompose
 
 ## Connections
-- [[.compose()_1]] - `method` [EXTRACTED]
+- [[.compose()]] - `method` [EXTRACTED]
 - [[.test_gateway_has_ports()]] - `method` [EXTRACTED]
 - [[.test_has_gateway_service()]] - `method` [EXTRACTED]
 - [[.test_has_volumes()]] - `method` [EXTRACTED]
 - [[Validate examplesdocker-compose.minimal.yml.]] - `rationale_for` [EXTRACTED]
 - [[test_docker_compose.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

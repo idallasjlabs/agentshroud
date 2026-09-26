@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "make_event()"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # TestListAndCleanup
@@ -16,10 +16,10 @@ tags:
 - [[.test_get_active_delegations_excludes_expired()]] - `method` [EXTRACTED]
 - [[.test_get_delegations_for_user()]] - `method` [EXTRACTED]
 - [[.test_no_active_delegations_initially()]] - `method` [EXTRACTED]
-- [[Delegation_1]] - `uses` [INFERRED]
+- [[Delegation]] - `uses` [INFERRED]
 - [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
+- [[DelegationManager]] - `uses` [INFERRED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/make_event

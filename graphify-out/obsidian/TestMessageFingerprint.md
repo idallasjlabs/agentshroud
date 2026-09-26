@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2AMessage"
+community: "hermes/skills/i-bs/README.md"
 location: "L217"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AMessage
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # TestMessageFingerprint
@@ -22,4 +22,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AMessage
+#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd

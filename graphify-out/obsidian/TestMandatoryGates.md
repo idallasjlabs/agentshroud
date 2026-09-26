@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestMandatoryGates"
+community: "Weekly Sunday Upgrade directive — every versione"
 location: "L1034"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMandatoryGates
+  - community/Weekly_Sunday_Upgrade_directive__every_versione
 ---
 
 # TestMandatoryGates
@@ -16,4 +16,4 @@ tags:
 - [[.test_gates_zero_affected_domains()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMandatoryGates
+#graphify/code #graphify/EXTRACTED #community/Weekly_Sunday_Upgrade_directive__every_versione

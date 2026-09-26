@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "TestOpProxyEndpoint"
-location: "L82"
+community: "Mode A — Single task"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpProxyEndpoint
+  - community/Mode_A__Single_task
 ---
 
 # TestOpProxyEndpoint
@@ -18,6 +18,8 @@ tags:
 - [[.test_path_traversal_returns_403()]] - `method` [EXTRACTED]
 - [[.test_requires_auth()_4]] - `method` [EXTRACTED]
 - [[.test_valid_reference_returns_value()]] - `method` [EXTRACTED]
+- [[FastAPI app instance]] - `references` [EXTRACTED]
+- [[auth_dep()]] - `references` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpProxyEndpoint
+#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task

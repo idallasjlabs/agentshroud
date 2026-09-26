@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "TestMultilingualInjection"
+community: "TestApprovalHardening"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/TestApprovalHardening
 ---
 
 # TestMultilingualInjection
 
 ## Connections
-- [[.setup_method()_20]] - `method` [EXTRACTED]
+- [[.setup_method()_15]] - `method` [EXTRACTED]
 - [[.test_benign_multilingual_text()]] - `method` [EXTRACTED]
 - [[.test_case_insensitive_detection()]] - `method` [EXTRACTED]
 - [[.test_mixed_language_injection()]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - `rationale_for` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

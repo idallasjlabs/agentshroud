@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "ModeRequest"
 location: "L271"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/ModeRequest
 ---
 
 # TestMCPProxyConfigLoading
@@ -17,11 +17,11 @@ tags:
 - [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `method` [EXTRACTED]
 - [[.test_proxy_allowed_domains_parsed_from_yaml()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/ModeRequest

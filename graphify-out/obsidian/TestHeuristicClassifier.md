@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "TestHeuristicClassifier"
+community: "BotConfig"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHeuristicClassifier
+  - community/BotConfig
 ---
 
 # TestHeuristicClassifier
 
 ## Connections
-- [[.setup_method()_23]] - `method` [EXTRACTED]
+- [[.setup_method()_6]] - `method` [EXTRACTED]
 - [[.test_backward_compat_alias()]] - `method` [EXTRACTED]
 - [[.test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[.test_classification_result_properties()]] - `method` [EXTRACTED]
@@ -28,8 +28,8 @@ tags:
 - [[.test_separator_injection()]] - `method` [EXTRACTED]
 - [[.test_unicode_anomaly()]] - `method` [EXTRACTED]
 - [[ClassificationResult]] - `uses` [INFERRED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/BotConfig

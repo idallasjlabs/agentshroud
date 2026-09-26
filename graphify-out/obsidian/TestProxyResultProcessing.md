@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
 location: "L677"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolResult
+  - community/AgentShroud_v090__Human_Interface_Testing_Gui
 ---
 
 # TestProxyResultProcessing
@@ -22,18 +22,18 @@ tags:
 - [[.test_private_redaction_emits_privacy_event()]] - `method` [EXTRACTED]
 - [[.test_result_audit_logged()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[ThreatLevel_2]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolResult
+#graphify/code #graphify/INFERRED #community/AgentShroud_v090__Human_Interface_Testing_Gui

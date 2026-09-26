@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "test_security_audit.py"
+community: "ProgressiveLockdown"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_auditpy
+  - community/ProgressiveLockdown
 ---
 
 # TestPKCE
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/INFERRED #community/ProgressiveLockdown

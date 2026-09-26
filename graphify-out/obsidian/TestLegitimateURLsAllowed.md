@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # TestLegitimateURLsAllowed
@@ -20,8 +20,8 @@ tags:
 - [[.test_public_ip_allowed()]] - `method` [EXTRACTED]
 - [[.test_stackoverflow_allowed()]] - `method` [EXTRACTED]
 - [[Ensure normal browsing URLs pass through.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

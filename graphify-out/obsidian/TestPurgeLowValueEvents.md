@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "purge_low_value_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # TestPurgeLowValueEvents
@@ -19,4 +19,4 @@ tags:
 - [[.test_purges_only_matching_event_type_and_severity()]] - `method` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

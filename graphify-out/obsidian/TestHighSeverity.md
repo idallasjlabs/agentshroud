@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "InjectionSeverity"
+community: "MCPPermissionManager"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/MCPPermissionManager
 ---
 
 # TestHighSeverity
 
 ## Connections
-- [[.test_ignore_previous_instructions()]] - `method` [EXTRACTED]
-- [[.test_new_instructions_override()]] - `method` [EXTRACTED]
-- [[.test_role_reassignment()]] - `method` [EXTRACTED]
+- [[.test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
+- [[.test_new_instructions_override()_1]] - `method` [EXTRACTED]
+- [[.test_role_reassignment()_2]] - `method` [EXTRACTED]
 - [[.test_social_engineering_admin()]] - `method` [EXTRACTED]
 - [[.test_system_delimiter_injection()]] - `method` [EXTRACTED]
 - [[.test_xml_function_injection()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

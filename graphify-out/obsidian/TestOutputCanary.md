@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "TestOutputCanary"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # TestOutputCanary
 
 ## Connections
-- [[.setup_method()_24]] - `method` [EXTRACTED]
+- [[.setup_method()_19]] - `method` [EXTRACTED]
 - [[.test_canary_cleanup()]] - `method` [EXTRACTED]
 - [[.test_canary_generation_per_session()]] - `method` [EXTRACTED]
 - [[.test_clean_response_passes()]] - `method` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Test cases for the Output Canary System.]] - `rationale_for` [EXTRACTED]
 - [[test_output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

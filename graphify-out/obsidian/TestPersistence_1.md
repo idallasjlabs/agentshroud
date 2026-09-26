@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_trust_manager.py"
-location: "L184"
+community: "PortManager"
+location: "L90"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_trust_managerpy
+  - graphify/EXTRACTED
+  - community/PortManager
 ---
 
 # TestPersistence
 
 ## Connections
-- [[.test_persistence_across_instances()]] - `method` [EXTRACTED]
-- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[.test_delete()]] - `method` [EXTRACTED]
+- [[.test_survives_new_instance()]] - `method` [EXTRACTED]
+- [[ReportStore]] - `uses` [INFERRED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_trust_managerpy
+#graphify/code #graphify/EXTRACTED #community/PortManager

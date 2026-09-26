@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_sleep()"
+community: "AgentShroud™ Security Policy"
 location: "L1326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/AgentShroud_Security_Policy
 ---
 
 # TestGhsaIngestScheduler
@@ -20,4 +20,4 @@ tags:
 - [[.test_skips_when_already_ingested_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Policy

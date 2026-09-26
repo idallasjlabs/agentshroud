@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "_any_detector_fires()"
+community: "FileSandbox"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/FileSandbox
 ---
 
 # TestEncodingBypass
@@ -17,9 +17,9 @@ tags:
 - [[.test_url_encoded_payload_normalized()]] - `method` [EXTRACTED]
 - [[.test_zero_width_space_stripped()]] - `method` [EXTRACTED]
 - [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[normalize_input()]] - `references` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

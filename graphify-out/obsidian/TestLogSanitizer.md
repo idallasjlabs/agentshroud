@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestLogSanitizer"
+community: "iCloud Services"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/iCloud_Services
 ---
 
 # TestLogSanitizer
 
 ## Connections
 - [[._filter_msg()]] - `method` [EXTRACTED]
-- [[.setup_method()_34]] - `method` [EXTRACTED]
+- [[.setup_method()_7]] - `method` [EXTRACTED]
 - [[.test_aws_key_redacted()]] - `method` [EXTRACTED]
 - [[.test_clean_message_unchanged()]] - `method` [EXTRACTED]
-- [[.test_credit_card_redacted()_1]] - `method` [EXTRACTED]
+- [[.test_credit_card_redacted()]] - `method` [EXTRACTED]
 - [[.test_filter_always_returns_true()]] - `method` [EXTRACTED]
 - [[.test_install_log_sanitizer_no_error()]] - `method` [EXTRACTED]
 - [[.test_openai_key_redacted()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[test_log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services

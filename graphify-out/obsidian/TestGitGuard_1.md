@@ -1,27 +1,25 @@
 ---
-source_file: "gateway/tests/test_git_guard.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "GitGuard"
-location: "L16"
+community: "CredentialValidator"
+location: "L554"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/CredentialValidator
 ---
 
 # TestGitGuard
 
 ## Connections
-- [[._make_hook()]] - `method` [EXTRACTED]
-- [[.test_clean_hook_passes()]] - `method` [EXTRACTED]
-- [[.test_clean_repo_no_findings()]] - `method` [EXTRACTED]
-- [[.test_curl_in_hook_flagged()]] - `method` [EXTRACTED]
-- [[.test_finding_has_file_path()]] - `method` [EXTRACTED]
-- [[.test_nc_flagged()]] - `method` [EXTRACTED]
-- [[.test_no_git_dir_returns_empty()]] - `method` [EXTRACTED]
-- [[.test_reverse_shell_flagged()]] - `method` [EXTRACTED]
-- [[.test_wget_flagged()]] - `method` [EXTRACTED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[test_git_guard.py]] - `contains` [EXTRACTED]
+- [[.test_critical_finding_blocked()]] - `method` [EXTRACTED]
+- [[.test_git_guard_exception_fails_closed()]] - `method` [EXTRACTED]
+- [[.test_low_finding_allowed()]] - `method` [EXTRACTED]
+- [[.test_owner_bypass()_2]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/CredentialValidator

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # TestOutboundTracking
@@ -22,7 +22,7 @@ tags:
 - [[.test_system_message_not_tracked()]] - `method` [EXTRACTED]
 - [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - `method` [EXTRACTED]
 - [[.test_tracker_exception_does_not_break_response()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

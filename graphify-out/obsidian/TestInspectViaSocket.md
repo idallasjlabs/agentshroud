@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "EgressAction"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressAction
 ---
 
 # TestInspectViaSocket
@@ -17,6 +17,7 @@ tags:
 - [[.test_500_returns_none()]] - `method` [EXTRACTED]
 - [[.test_exception_returns_none()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
+- [[_inspect_via_socket]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressAction

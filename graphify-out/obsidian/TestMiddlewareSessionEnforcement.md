@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ModuleStatsCollector"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ModuleStatsCollector
 ---
 
 # TestMiddlewareSessionEnforcement
 
 ## Connections
 - [[.middleware_manager()]] - `method` [EXTRACTED]
-- [[.temp_workspace()]] - `method` [EXTRACTED]
+- [[.temp_workspace()_2]] - `method` [EXTRACTED]
 - [[.test_middleware_cross_session_blocking()]] - `method` [EXTRACTED]
 - [[.test_middleware_file_path_isolation()]] - `method` [EXTRACTED]
 - [[.test_middleware_normalizes_invisible_unicode()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

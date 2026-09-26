@@ -1,25 +1,26 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "PermissionLevel"
-location: "L392"
+community: "SOCWebSocketHandler"
+location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PermissionLevel
+  - community/SOCWebSocketHandler
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_no_limit_always_allowed()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_enforced()_2]] - `method` [EXTRACTED]
-- [[.test_rate_limit_per_agent()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PermissionLevel
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

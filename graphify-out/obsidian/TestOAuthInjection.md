@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # TestOAuthInjection
@@ -22,4 +22,4 @@ tags:
 - [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - `rationale_for` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

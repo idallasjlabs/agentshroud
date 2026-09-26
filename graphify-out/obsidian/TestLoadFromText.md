@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "TestLoadFromText"
+community: "Skill: Pull Request (PR) Generator"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # TestLoadFromText
@@ -22,4 +22,4 @@ tags:
 - [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/code #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

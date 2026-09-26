@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundScanUnification"
+community: "Mode A — Single task"
 location: "L5195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundScanUnification
+  - community/Mode_A__Single_task
 ---
 
 # TestOutboundScanUnification
@@ -19,11 +19,11 @@ tags:
 - [[.test_json_caption_pipeline_block_replaces_caption()]] - `method` [EXTRACTED]
 - [[.test_json_caption_sanitized_in_place()]] - `method` [EXTRACTED]
 - [[.test_multipart_markdown_exfil_link_scrubbed()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[Regression tests for the JSONformmultipart scan unification.      Each test pi]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification
+#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task

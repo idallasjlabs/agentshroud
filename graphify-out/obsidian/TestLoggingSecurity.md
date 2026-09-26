@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_security_audit.py"
+community: "lifespan.py"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_auditpy
+  - community/lifespanpy
 ---
 
 # TestLoggingSecurity
 
 ## Connections
 - [[._make_record()]] - `method` [EXTRACTED]
-- [[.sanitizer()_3]] - `method` [EXTRACTED]
+- [[.sanitizer()_2]] - `method` [EXTRACTED]
 - [[.test_aws_key_redaction()]] - `method` [EXTRACTED]
 - [[.test_aws_key_redaction_via_pattern()]] - `method` [EXTRACTED]
 - [[.test_credit_card_in_logs()]] - `method` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -57,7 +57,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test log sanitization and information leakage prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/INFERRED #community/lifespanpy

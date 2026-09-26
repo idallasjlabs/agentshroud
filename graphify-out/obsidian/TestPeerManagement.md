@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "TestPeerManagement"
+community: "hermes/skills/i-bs/README.md"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestPeerManagement
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # TestPeerManagement
@@ -24,4 +24,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestPeerManagement
+#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "AsyncMock"
+community: "Atlas — Curriculum Architect (SKILL)"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/Atlas__Curriculum_Architect_SKILL
 ---
 
 # TestOwnerEmailBypassesPii
@@ -17,4 +17,4 @@ tags:
 - [[.test_unknown_recipient_body_still_scrubbed()]] - `method` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "MultiHostResult"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MultiHostResult
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # TestHostResult
@@ -18,4 +18,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MultiHostResult
+#graphify/code #graphify/INFERRED #community/AgentShroud_Red_Team_Adversarial_Tester

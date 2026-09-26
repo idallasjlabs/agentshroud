@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # TestFormatProjectsList
@@ -16,7 +16,7 @@ tags:
 - [[.test_no_projects_for_unknown_user()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/StdioConnection

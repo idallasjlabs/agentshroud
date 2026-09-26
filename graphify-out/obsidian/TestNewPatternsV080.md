@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TestNewPatternsV080"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway "
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
 ---
 
 # TestNewPatternsV080
@@ -45,4 +45,4 @@ tags:
 - [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/code #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway_

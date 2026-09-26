@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestParseHosts"
+community: "Common Operations"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/Common_Operations
 ---
 
 # TestParseHosts
@@ -25,4 +25,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHosts
+#graphify/code #graphify/EXTRACTED #community/Common_Operations

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestPatternDetection"
+community: "Skill: Project Management (PM)"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Skill_Project_Management_PM
 ---
 
 # TestPatternDetection
@@ -22,6 +22,11 @@ tags:
 - [[.test_injection_role()]] - `method` [EXTRACTED]
 - [[.test_injection_system_prompt()]] - `method` [EXTRACTED]
 - [[.test_ssn_pattern()]] - `method` [EXTRACTED]
+- [[GovernanceAction]] - `uses` [INFERRED]
+- [[GovernanceConfig]] - `uses` [INFERRED]
+- [[GovernanceEventType]] - `uses` [INFERRED]
+- [[ResourceBudget]] - `uses` [INFERRED]
+- [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM

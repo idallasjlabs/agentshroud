@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "_run()"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # TestGuard
@@ -16,4 +16,4 @@ tags:
 - [[.test_refuses_when_not_green_user()]] - `method` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

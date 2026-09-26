@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # TestManifestEntry
@@ -20,4 +20,4 @@ tags:
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev

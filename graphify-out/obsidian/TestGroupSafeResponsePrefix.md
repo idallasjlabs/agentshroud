@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "PermissionLevel"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/PermissionLevel
 ---
 
 # TestGroupSafeResponsePrefix
@@ -20,7 +20,7 @@ tags:
 - [[.test_prefix_returned_for_member()]] - `method` [EXTRACTED]
 - [[.test_unknown_user_returns_none()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

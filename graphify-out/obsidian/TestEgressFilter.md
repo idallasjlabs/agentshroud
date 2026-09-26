@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilter"
+community: "ConsentFramework"
 location: "L406"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilter
+  - community/ConsentFramework
 ---
 
 # TestEgressFilter
 
 ## Connections
-- [[.setup_method()_14]] - `method` [EXTRACTED]
+- [[.setup_method()_29]] - `method` [EXTRACTED]
 - [[.test_allowed_domain()]] - `method` [EXTRACTED]
-- [[.test_allowed_ip()]] - `method` [EXTRACTED]
+- [[.test_allowed_ip()_1]] - `method` [EXTRACTED]
 - [[.test_allowed_specific_ip()]] - `method` [EXTRACTED]
 - [[.test_denied_domain()]] - `method` [EXTRACTED]
 - [[.test_denied_ip()]] - `method` [EXTRACTED]
@@ -23,17 +23,17 @@ tags:
 - [[.test_empty_ports_allows_all()]] - `method` [EXTRACTED]
 - [[.test_log()]] - `method` [EXTRACTED]
 - [[.test_per_agent_policy()]] - `method` [EXTRACTED]
-- [[.test_stats()_1]] - `method` [EXTRACTED]
-- [[.test_url_parsing()]] - `method` [EXTRACTED]
+- [[.test_stats()_2]] - `method` [EXTRACTED]
+- [[.test_url_parsing()_1]] - `method` [EXTRACTED]
 - [[.test_url_port_extraction()]] - `method` [EXTRACTED]
 - [[.test_wildcard_base_domain()]] - `method` [EXTRACTED]
 - [[.test_wildcard_domain()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -43,8 +43,8 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilter
+#graphify/code #graphify/INFERRED #community/ConsentFramework

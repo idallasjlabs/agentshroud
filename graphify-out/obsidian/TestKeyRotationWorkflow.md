@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "MockValidator"
+community: "DOCKER-VPN-NETWORKING.md"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # TestKeyRotationWorkflow
@@ -27,4 +27,4 @@ tags:
 - [[Test the complete rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

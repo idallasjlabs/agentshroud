@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_hermes_tag()"
+community: "run-standalone.sh"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_hermes_tag
+  - community/run-standalonesh
 ---
 
 # TestPickLatestHermesTag
@@ -20,4 +20,4 @@ tags:
 - [[Hermes publishes date-based image tags (vYYYY.M.D).]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_hermes_tag
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

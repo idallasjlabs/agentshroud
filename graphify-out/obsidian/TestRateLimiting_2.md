@@ -1,26 +1,25 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "SessionManager"
-location: "L110"
+community: "GitGuard"
+location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SessionManager
+  - community/GitGuard
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
-- [[.test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
-- [[SessionBindingError]] - `uses` [INFERRED]
-- [[SessionError]] - `uses` [INFERRED]
-- [[SessionExpired]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[.test_no_limit_always_allowed()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_per_agent()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SessionManager
+#graphify/code #graphify/INFERRED #community/GitGuard

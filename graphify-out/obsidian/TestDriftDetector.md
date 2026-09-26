@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[.setup_method()_10]] - `method` [EXTRACTED]
-- [[.teardown_method()_2]] - `method` [EXTRACTED]
+- [[.setup_method()_30]] - `method` [EXTRACTED]
+- [[.teardown_method()_7]] - `method` [EXTRACTED]
 - [[.test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[.test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -30,11 +30,11 @@ tags:
 - [[.test_seccomp_drift()]] - `method` [EXTRACTED]
 - [[.test_set_and_get_baseline()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -44,8 +44,8 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

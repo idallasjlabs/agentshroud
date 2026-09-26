@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard"
+community: "LLMProxy"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard
+  - community/LLMProxy
 ---
 
 # TestLLMProxyEndpoints
@@ -20,7 +20,7 @@ tags:
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/LLMProxy

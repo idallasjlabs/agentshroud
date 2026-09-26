@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "Mac App Discovery Skill"
 location: "L632"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Mac_App_Discovery_Skill
 ---
 
 # TestPerAgentUpstreamChecks
@@ -24,4 +24,4 @@ tags:
 - [[.test_zero_report_send_failure_is_swallowed()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

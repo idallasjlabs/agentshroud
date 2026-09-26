@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "is_overloaded()"
+community: "AgentShroud Project Terminology"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/AgentShroud_Project_Terminology
 ---
 
 # TestOverloadedMultiProvider
@@ -29,4 +29,4 @@ tags:
 - [[SCRUM-60 in-body overload envelopes from OpenAI and Gemini must fail     over e]] - `rationale_for` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L24"
+community: "AgentShroud Data Dictionary"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # TestKillSwitchConfig
 
 ## Connections
-- [[.test_default_config()_3]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[Test kill switch configuration.]] - `rationale_for` [EXTRACTED]
-- [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
+- [[.test_paranoid_env_has_kill_switch()]] - `method` [EXTRACTED]
+- [[.test_paranoid_env_kill_switch_action()]] - `method` [EXTRACTED]
+- [[.test_recommended_env_has_kill_switch()]] - `method` [EXTRACTED]
+- [[Kill switch configuration in example configs.]] - `rationale_for` [EXTRACTED]
+- [[test_killswitch_modes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

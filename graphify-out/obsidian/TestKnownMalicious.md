@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "AgentShroud™ Brand Guidelines"
 location: "L267"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # TestKnownMalicious
@@ -15,10 +15,10 @@ tags:
 - [[.test_crypto_miner_indicator_flags()]] - `method` [EXTRACTED]
 - [[.test_reverse_shell_indicator_blocks()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/AgentShroud_Brand_Guidelines

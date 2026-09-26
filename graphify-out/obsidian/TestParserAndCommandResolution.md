@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestParserAndCommandResolution"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L240"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TestParserAndCommandResolution
+  - graphify/EXTRACTED
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # TestParserAndCommandResolution
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestParserAndCommandResolution
+#graphify/code #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

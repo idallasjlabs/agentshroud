@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestOutputTrustScoring"
+community: "Hermes — Reference Verifier"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputTrustScoring
+  - community/Hermes__Reference_Verifier
 ---
 
 # TestOutputTrustScoring
@@ -18,6 +18,11 @@ tags:
 - [[.test_injection_detected()]] - `method` [EXTRACTED]
 - [[.test_low_agent_trust_penalty()]] - `method` [EXTRACTED]
 - [[.test_pii_detected_lowers_score()]] - `method` [EXTRACTED]
+- [[GovernanceAction]] - `uses` [INFERRED]
+- [[GovernanceConfig]] - `uses` [INFERRED]
+- [[GovernanceEventType]] - `uses` [INFERRED]
+- [[ResourceBudget]] - `uses` [INFERRED]
+- [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputTrustScoring
+#graphify/code #graphify/EXTRACTED #community/Hermes__Reference_Verifier

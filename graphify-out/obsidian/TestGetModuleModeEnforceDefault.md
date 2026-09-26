@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L98"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # TestGetModuleModeEnforceDefault
@@ -17,11 +17,11 @@ tags:
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
@@ -29,11 +29,11 @@ tags:
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityConfig_4]] - `uses` [INFERRED]
+- [[SecurityConfig_3]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[Verify get_module_mode returns enforce when no override is set.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustManager

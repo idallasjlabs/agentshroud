@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFileDownload"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L8626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFileDownload
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # TestFileDownload
@@ -21,8 +21,8 @@ tags:
 - [[.test_within_limit_document_update_passes()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Tests for _forward_file_download() and proxy_request() binary path.      Regress]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFileDownload
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

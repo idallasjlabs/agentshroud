@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "gateway.security.daily_cve_report"
 location: "L731"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # TestHealthScoring
@@ -22,6 +22,7 @@ tags:
 - [[.test_one_critical()]] - `method` [EXTRACTED]
 - [[.test_perfect_score()]] - `method` [EXTRACTED]
 - [[.test_score_floor()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "_is_op_reference_allowed()"
-location: "L23"
+community: "Mode A — Single task"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/Mode_A__Single_task
 ---
 
 # TestIsOpReferenceAllowed
@@ -14,12 +14,15 @@ tags:
 ## Connections
 - [[.test_allowed_path_different_item()]] - `method` [EXTRACTED]
 - [[.test_allowed_path_passes()]] - `method` [EXTRACTED]
-- [[.test_allowed_path_without_space_variant()]] - `method` [EXTRACTED]
 - [[.test_atlassian_token_allowed()]] - `method` [EXTRACTED]
+- [[.test_brave_api_key_reference_allowed()]] - `method` [EXTRACTED]
 - [[.test_disallowed_vault_blocked()]] - `method` [EXTRACTED]
 - [[.test_empty_reference_blocked()]] - `method` [EXTRACTED]
 - [[.test_missing_op_prefix_blocked()]] - `method` [EXTRACTED]
 - [[.test_path_traversal_blocked()]] - `method` [EXTRACTED]
+- [[_is_op_reference_allowed]] - `calls` [EXTRACTED]
+- [[setup_ephemeral_secrets]] - `shares_data_with` [INFERRED]
+- [[start-agentshroud.sh]] - `references` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task

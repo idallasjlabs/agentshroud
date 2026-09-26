@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "SessionManager"
+community: "test_dashboard.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/test_dashboardpy
 ---
 
 # TestDocumentTagging
 
 ## Connections
-- [[.guard()_6]] - `method` [EXTRACTED]
+- [[.guard()_1]] - `method` [EXTRACTED]
 - [[.test_document_tag_creation()]] - `method` [EXTRACTED]
 - [[.test_document_tag_lookup_by_hash()]] - `method` [EXTRACTED]
 - [[.test_document_tag_untrusted_source()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

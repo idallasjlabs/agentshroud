@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFullAccessMiddlewareBypass"
+community: "check_upstream_cves"
 location: "L9377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/check_upstream_cves
 ---
 
 # TestFullAccessMiddlewareBypass
@@ -22,8 +22,8 @@ tags:
 - [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[full_access collaborators must pass through middleware and secondary pipeline bl]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

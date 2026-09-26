@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "lifespan.py"
+community: "apply-patches.js (OpenClaw)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # TestEgressMonitorConfig
 
 ## Connections
-- [[.test_default_mode_is_enforce()_2]] - `method` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
 - [[.test_generous_baselines()]] - `method` [EXTRACTED]
 - [[AlertSeverity]] - `uses` [INFERRED]
 - [[EgressChannel]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/apply-patchesjs_OpenClaw

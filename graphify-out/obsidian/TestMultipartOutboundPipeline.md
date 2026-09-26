@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
+community: "test_ptt_state.c"
 location: "L5019"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/test_ptt_statec
 ---
 
 # TestMultipartOutboundPipeline
@@ -21,11 +21,11 @@ tags:
 - [[.test_multipart_sanitizer_fallback_redacts_pii()]] - `method` [EXTRACTED]
 - [[.test_multipart_text_field_scanned_when_no_caption()]] - `method` [EXTRACTED]
 - [[.test_multipart_without_text_part_passes_through()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/test_ptt_statec

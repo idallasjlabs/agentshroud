@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # TestInviteChannelMember
@@ -17,7 +17,7 @@ tags:
 - [[.test_no_token_returns_false()]] - `method` [EXTRACTED]
 - [[.test_other_error_returns_false()]] - `method` [EXTRACTED]
 - [[.test_success_returns_true()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

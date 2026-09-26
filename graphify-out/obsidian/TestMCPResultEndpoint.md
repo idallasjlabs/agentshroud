@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "TestMCPResultEndpoint"
+community: "STPA-Sec Analysis of AgentShroud"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/STPA-Sec_Analysis_of_AgentShroud
 ---
 
 # TestMCPResultEndpoint
@@ -23,11 +23,11 @@ tags:
 - [[.test_result_with_null_content()]] - `method` [EXTRACTED]
 - [[.test_result_with_pii_is_audited_not_blocked()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/code #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud

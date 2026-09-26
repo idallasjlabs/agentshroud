@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "forward_query()"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forward_query
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # TestForwardQuery
@@ -19,4 +19,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forward_query
+#graphify/code #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

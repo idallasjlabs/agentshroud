@@ -1,19 +1,19 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "server.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/serverpy
 ---
 
 # TestRateLimit
 
 ## Connections
-- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_enforced()]] - `method` [EXTRACTED]
 - [[_check_rate_limit()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/serverpy

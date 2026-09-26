@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestParanoidConfig"
+community: "AgentShroud: Enterprise Governance for Autonomou"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParanoidConfig
+  - community/AgentShroud_Enterprise_Governance_for_Autonomou
 ---
 
 # TestParanoidConfig
@@ -31,7 +31,9 @@ tags:
 - [[.test_ssh_requires_approval()]] - `method` [EXTRACTED]
 - [[.test_telemetry_disabled()]] - `method` [EXTRACTED]
 - [[.test_trust_manager_enabled()]] - `method` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParanoidConfig
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomou

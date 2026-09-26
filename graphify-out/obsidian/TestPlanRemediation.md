@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation()"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # TestPlanRemediation
@@ -22,7 +22,8 @@ tags:
 - [[.test_plan_is_serialisable_for_the_unattended_audit_trail()]] - `method` [EXTRACTED]
 - [[.test_separates_advisories_already_fixed_at_the_current_pin()]] - `method` [EXTRACTED]
 - [[.test_unparseable_fixed_in_is_treated_as_not_remediable()]] - `method` [EXTRACTED]
+- [[RemediationPlan]] - `uses` [INFERRED]
 - [[The planner decides WHAT bump remediates WHICH advisories.]] - `rationale_for` [EXTRACTED]
 - [[test_auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

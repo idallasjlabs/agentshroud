@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TestGroupRoleResolver"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disab"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGroupRoleResolver
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab
 ---
 
 # TestGroupRoleResolver
@@ -25,10 +25,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab

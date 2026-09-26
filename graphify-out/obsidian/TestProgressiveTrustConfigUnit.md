@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L306"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_make_tm
+  - graphify/INFERRED
+  - community/MemoryIntegrityMonitor
 ---
 
 # TestProgressiveTrustConfigUnit
@@ -18,6 +18,14 @@ tags:
 - [[.test_level_order()]] - `method` [EXTRACTED]
 - [[.test_next_and_previous_levels()]] - `method` [EXTRACTED]
 - [[First-ever unit tests for the config object itself.]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[PromotionThreshold]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "TestGroupMemoryInvisibleFromDM"
+community: "check_message()"
 location: "L147"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestGroupMemoryInvisibleFromDM
+  - community/check_message
 ---
 
 # TestGroupMemoryInvisibleFromDM
@@ -17,12 +17,12 @@ tags:
 - [[.test_user_dm_write_invisible_from_group()]] - `method` [EXTRACTED]
 - [[.test_user_dm_write_invisible_from_other_group()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[Group workspace content must not leak into any user's DM workspace.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestGroupMemoryInvisibleFromDM
+#graphify/code #graphify/INFERRED #community/check_message

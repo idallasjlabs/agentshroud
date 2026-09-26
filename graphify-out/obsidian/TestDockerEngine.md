@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "TestDockerEngine"
+community: "setup-secrets.sh"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/setup-secretssh
 ---
 
 # TestDockerEngine
 
 ## Connections
-- [[.setup_method()_31]] - `method` [EXTRACTED]
+- [[.setup_method()_23]] - `method` [EXTRACTED]
 - [[.test_build()]] - `method` [EXTRACTED]
 - [[.test_build_with_args()]] - `method` [EXTRACTED]
 - [[.test_compose_down()]] - `method` [EXTRACTED]
@@ -36,10 +36,10 @@ tags:
 - [[.test_stop()]] - `method` [EXTRACTED]
 - [[.test_volume_create()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

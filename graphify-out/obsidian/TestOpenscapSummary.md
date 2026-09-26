@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOpenscapSummary"
+community: "Owner vs Bot Telegram Identity Separation"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpenscapSummary
+  - community/Owner_vs_Bot_Telegram_Identity_Separation
 ---
 
 # TestOpenscapSummary
@@ -18,4 +18,4 @@ tags:
 - [[.test_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpenscapSummary
+#graphify/code #graphify/EXTRACTED #community/Owner_vs_Bot_Telegram_Identity_Separation

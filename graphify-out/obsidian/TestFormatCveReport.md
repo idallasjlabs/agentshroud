@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "Security Verification Report"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Security_Verification_Report
 ---
 
 # TestFormatCveReport
@@ -25,4 +25,4 @@ tags:
 - [[.test_zero_count_severity_omitted()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/Security_Verification_Report

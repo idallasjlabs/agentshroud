@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "_seed_cron"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/_seed_cron
 ---
 
 # TestIsStable
@@ -19,4 +19,4 @@ tags:
 - [[Pre-release builds must never be shipped to production automatically.]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

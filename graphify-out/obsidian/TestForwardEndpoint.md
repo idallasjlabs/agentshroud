@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestForwardEndpoint"
+community: "Skill: Technical Writer (TW)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestForwardEndpoint
+  - community/Skill_Technical_Writer_TW
 ---
 
 # TestForwardEndpoint
@@ -19,4 +19,4 @@ tags:
 - [[Test forward endpoint with middleware integration.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestForwardEndpoint
+#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

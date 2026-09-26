@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AsyncMock"
 location: "L80"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVault
+  - community/AsyncMock
 ---
 
 # TestKeyInjection
@@ -21,4 +21,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVault
+#graphify/code #graphify/INFERRED #community/AsyncMock

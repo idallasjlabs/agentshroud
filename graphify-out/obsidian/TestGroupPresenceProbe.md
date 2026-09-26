@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_soc_bots.py"
 location: "L9136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_soc_botspy
 ---
 
 # TestGroupPresenceProbe
 
 ## Connections
-- [[._make_proxy()_4]] - `method` [EXTRACTED]
+- [[._make_proxy()_3]] - `method` [EXTRACTED]
 - [[.test_cooldown_suppresses_second_ack()]] - `method` [EXTRACTED]
 - [[.test_dm_hello_does_not_trigger_probe()]] - `method` [EXTRACTED]
 - [[.test_hello_in_group_sends_hermes_ack()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Group presence probe bare trigger phrases make each bot reply with a short live]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

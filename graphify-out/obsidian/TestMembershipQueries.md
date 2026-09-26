@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "PermissionLevel"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/PermissionLevel
 ---
 
 # TestMembershipQueries
@@ -17,7 +17,7 @@ tags:
 - [[.test_get_user_groups_multi_group()]] - `method` [EXTRACTED]
 - [[.test_get_user_groups_non_member()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

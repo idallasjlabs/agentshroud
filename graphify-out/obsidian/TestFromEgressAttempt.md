@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "MiddlewareManager"
 location: "L408"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager
 ---
 
 # TestFromEgressAttempt
 
 ## Connections
-- [[.test_conversion_error_path()_3]] - `method` [EXTRACTED]
+- [[.test_conversion_error_path()_2]] - `method` [EXTRACTED]
 - [[.test_dict_allowed_without_reason()]] - `method` [EXTRACTED]
 - [[.test_dict_blocked_with_reason()]] - `method` [EXTRACTED]
 - [[.test_object_form()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

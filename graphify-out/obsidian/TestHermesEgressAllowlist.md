@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "TestHermesEgressAllowlist"
+community: "TestAuditStore"
 location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHermesEgressAllowlist
+  - community/TestAuditStore
 ---
 
 # TestHermesEgressAllowlist
@@ -18,10 +18,10 @@ tags:
 - [[.test_hc_ping_in_permanent_allowlist()]] - `method` [EXTRACTED]
 - [[.test_nousresearch_in_permanent_allowlist()]] - `method` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHermesEgressAllowlist
+#graphify/code #graphify/EXTRACTED #community/TestAuditStore

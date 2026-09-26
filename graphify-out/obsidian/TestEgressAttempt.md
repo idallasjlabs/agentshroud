@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressPolicy"
+community: "test_http_proxy.py"
 location: "L252"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressPolicy
+  - community/test_http_proxypy
 ---
 
 # TestEgressAttempt
@@ -18,9 +18,9 @@ tags:
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
 - [[EgressAttempt stores the right fields.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressPolicy
+#graphify/code #graphify/INFERRED #community/test_http_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_soc_bots.py"
 location: "L9002"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_soc_botspy
 ---
 
 # TestPerBotGroupMentionFilter
@@ -22,7 +22,7 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Per-bot eligibility — each bot in a shared group tracks mention state independen]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "AgentShroud™ Brand Guidelines"
 location: "L135"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # TestExfiltration
@@ -16,10 +16,10 @@ tags:
 - [[.test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
 - [[.test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/AgentShroud_Brand_Guidelines

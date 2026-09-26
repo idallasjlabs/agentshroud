@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestLeakDetection"
+community: "Skill: OpenClaw Dev Workflow (ODEV)"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLeakDetection
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV
 ---
 
 # TestLeakDetection
@@ -21,4 +21,4 @@ tags:
 - [[.test_slack_token_detected()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLeakDetection
+#graphify/code #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV

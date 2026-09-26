@@ -1,21 +1,28 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "ServiceManager"
-location: "L368"
+community: "REPORT STRUCTURE"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/REPORT_STRUCTURE
 ---
 
 # TestGetEngine
 
 ## Connections
-- [[.test_injected_engine_returned()]] - `method` [EXTRACTED]
-- [[.test_resolution_failure_returns_none()]] - `method` [EXTRACTED]
-- [[.test_resolved_from_runtime_module()]] - `method` [EXTRACTED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_auto_detect_priority()]] - `method` [EXTRACTED]
+- [[.test_explicit_apple()]] - `method` [EXTRACTED]
+- [[.test_explicit_docker()]] - `method` [EXTRACTED]
+- [[.test_explicit_podman()]] - `method` [EXTRACTED]
+- [[.test_invalid_runtime()]] - `method` [EXTRACTED]
+- [[.test_no_runtime_available()]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[DockerEngine]] - `uses` [INFERRED]
+- [[PodmanEngine]] - `uses` [INFERRED]
+- [[ServiceDef]] - `uses` [INFERRED]
+- [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/REPORT_STRUCTURE

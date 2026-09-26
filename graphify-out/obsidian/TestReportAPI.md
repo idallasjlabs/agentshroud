@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ReportStore"
+community: "PortManager"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/PortManager
 ---
 
 # TestReportAPI
 
 ## Connections
-- [[.client()_7]] - `method` [EXTRACTED]
+- [[.client()_1]] - `method` [EXTRACTED]
 - [[.test_create_list_get_roundtrip()]] - `method` [EXTRACTED]
 - [[.test_cross_bot_visibility()]] - `method` [EXTRACTED]
 - [[.test_missing_content_422()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - `rationale_for` [EXTRACTED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/PortManager

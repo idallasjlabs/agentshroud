@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable()"
+community: "_seed_cron"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/_seed_cron
 ---
 
 # TestPickLatestStable
@@ -23,4 +23,4 @@ tags:
 - [[Selecting the newest shippable npm release.]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

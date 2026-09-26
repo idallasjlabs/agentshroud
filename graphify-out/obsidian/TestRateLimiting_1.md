@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L121"
+community: "URLAnalyzer"
+location: "L161"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AGovernanceProxy
+  - community/URLAnalyzer
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[.test_within_rate_limit()]] - `method` [EXTRACTED]
-- [[A2ADecision]] - `uses` [INFERRED]
-- [[A2AGovernanceConfig]] - `uses` [INFERRED]
-- [[A2AGovernanceProxy]] - `uses` [INFERRED]
-- [[A2AMessage]] - `uses` [INFERRED]
-- [[A2AMessageType]] - `uses` [INFERRED]
-- [[A2APeer]] - `uses` [INFERRED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[.test_burst_queries_flagged()]] - `method` [EXTRACTED]
+- [[.test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/URLAnalyzer

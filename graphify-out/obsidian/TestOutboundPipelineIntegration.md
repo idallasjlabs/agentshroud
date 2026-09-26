@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "scanner_integration.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/scanner_integrationpy
 ---
 
 # TestOutboundPipelineIntegration
@@ -194,12 +194,12 @@ tags:
 - [[.test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered()]] - `method` [EXTRACTED]
 - [[.test_urlencoded_without_content_type_empty_text_with_draft_is_still_filtered()]] - `method` [EXTRACTED]
 - [[.test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[PipelineResult_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[PipelineResult]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Tests that _filter_outbound calls the full security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

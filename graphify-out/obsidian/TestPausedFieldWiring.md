@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # TestPausedFieldWiring
@@ -23,4 +23,4 @@ tags:
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BaseModel
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "GroupRegistry"
+community: "MiddlewareManager"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRegistry
+  - community/MiddlewareManager
 ---
 
 # TestGroupRegistry
@@ -23,15 +23,15 @@ tags:
 - [[.test_is_member_unknown_group_returns_false()]] - `method` [EXTRACTED]
 - [[.test_slack_group_contains_slack_ids()]] - `method` [EXTRACTED]
 - [[.test_telegram_group_contains_numeric_ids()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Tests for GroupRegistry auto-groups and custom group management.]] - `rationale_for` [EXTRACTED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRegistry
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

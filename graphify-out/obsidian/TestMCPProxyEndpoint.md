@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "macOS System Administrator (MAC)"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/macOS_System_Administrator_MAC
 ---
 
 # TestMCPProxyEndpoint
@@ -17,4 +17,4 @@ tags:
 - [[Test mcpproxy endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

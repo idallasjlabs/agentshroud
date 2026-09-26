@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "gateway.security.daily_cve_report"
+community: "OpenSCAP"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecuritydaily_cve_report
+  - community/OpenSCAP
 ---
 
 # TestFormatUpstreamCveAlert
@@ -25,4 +25,4 @@ tags:
 - [[.test_summary_under_telegram_limit_for_100_cves()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report
+#graphify/code #graphify/EXTRACTED #community/OpenSCAP

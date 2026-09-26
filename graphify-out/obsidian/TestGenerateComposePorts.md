@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "PortManager"
+community: "KeyVault"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # TestGenerateComposePorts
@@ -20,4 +20,4 @@ tags:
 - [[Test docker-compose port mapping generation.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

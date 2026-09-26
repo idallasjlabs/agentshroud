@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestIsContainerRunning"
+community: "📱 Required Accounts & Services"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/_Required_Accounts__Services
 ---
 
 # TestIsContainerRunning
@@ -19,4 +19,4 @@ tags:
 - [[.test_stopped_container_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/code #graphify/EXTRACTED #community/_Required_Accounts__Services

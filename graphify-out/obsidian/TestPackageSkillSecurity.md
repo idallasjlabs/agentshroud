@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
 type: "code"
-community: "package_skill()"
+community: "TestFileDownload"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/TestFileDownload
 ---
 
 # TestPackageSkillSecurity
 
 ## Connections
 - [[.create_skill()]] - `method` [EXTRACTED]
-- [[.setUp()]] - `method` [EXTRACTED]
+- [[.setUp()_1]] - `method` [EXTRACTED]
 - [[.tearDown()]] - `method` [EXTRACTED]
 - [[.test_allows_nested_regular_files()]] - `method` [EXTRACTED]
 - [[.test_packages_normal_files()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[TestCase]] - `inherits` [EXTRACTED]
 - [[test_package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/TestFileDownload

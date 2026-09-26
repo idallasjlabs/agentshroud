@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "TestMultiBotIsolation"
+community: "KeyVaultConfig"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/KeyVaultConfig
 ---
 
 # TestMultiBotIsolation
@@ -30,4 +30,4 @@ tags:
 - [[Verify that different bots get independent workspaces per user.]] - `rationale_for` [EXTRACTED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

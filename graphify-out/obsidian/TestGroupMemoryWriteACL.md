@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestGroupMemoryWriteACL"
+community: "agentshroud.yaml"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGroupMemoryWriteACL
+  - community/agentshroudyaml
 ---
 
 # TestGroupMemoryWriteACL
@@ -18,10 +18,10 @@ tags:
 - [[.test_non_member_write_is_blocked()]] - `method` [EXTRACTED]
 - [[.test_owner_write_succeeds()]] - `method` [EXTRACTED]
 - [[.test_unknown_group_write_is_blocked()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryWriteACL
+#graphify/code #graphify/EXTRACTED #community/agentshroudyaml

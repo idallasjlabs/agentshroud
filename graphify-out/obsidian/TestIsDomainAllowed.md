@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # TestIsDomainAllowed
 
 ## Connections
-- [[.test_case_insensitive()_1]] - `method` [EXTRACTED]
+- [[.test_case_insensitive()_2]] - `method` [EXTRACTED]
 - [[.test_empty_allowlist_blocks_everything()]] - `method` [EXTRACTED]
 - [[.test_exact_match()_1]] - `method` [EXTRACTED]
 - [[.test_wildcard_does_not_match_other_root()]] - `method` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[Unit tests for WebProxyConfig.is_domain_allowed().]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

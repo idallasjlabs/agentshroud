@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Any"
+community: "Canvas Skill"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Canvas_Skill
 ---
 
 # TestGetOpenscapSummary
@@ -18,4 +18,4 @@ tags:
 - [[.test_warning_on_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Canvas_Skill

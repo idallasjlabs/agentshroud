@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "test_security_audit.py"
+community: "ProgressiveLockdown"
 location: "L163"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_auditpy
+  - community/ProgressiveLockdown
 ---
 
 # TestRedirectURI
@@ -15,7 +15,7 @@ tags:
 - [[.test_different_uri_rejected()]] - `method` [EXTRACTED]
 - [[.test_exact_match_accepted()]] - `method` [EXTRACTED]
 - [[.test_http_rejected()]] - `method` [EXTRACTED]
-- [[.test_path_traversal_rejected()_1]] - `method` [EXTRACTED]
+- [[.test_path_traversal_rejected()]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/INFERRED #community/ProgressiveLockdown

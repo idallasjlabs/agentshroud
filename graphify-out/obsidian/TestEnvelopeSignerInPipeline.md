@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L502"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # TestEnvelopeSignerInPipeline
@@ -18,7 +18,7 @@ tags:
 - [[.test_signer_failure_never_blocks()]] - `method` [EXTRACTED]
 - [[.test_tool_result_uses_wrap_tool_result()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - `rationale_for` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
@@ -29,10 +29,10 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig

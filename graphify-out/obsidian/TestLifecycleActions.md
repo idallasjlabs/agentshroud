@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "main.rs"
 location: "L591"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/mainrs
 ---
 
 # TestLifecycleActions
 
 ## Connections
+- [[.start_service()]] - `calls` [EXTRACTED]
 - [[.test_all_actions_false_without_engine()]] - `method` [EXTRACTED]
 - [[.test_restart_success_and_failure()]] - `method` [EXTRACTED]
 - [[.test_start_success_and_failure()]] - `method` [EXTRACTED]
@@ -23,4 +24,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/mainrs
