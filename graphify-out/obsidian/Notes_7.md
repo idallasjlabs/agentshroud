@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "GitHub Skill"
-location: "L159"
+community: "AgentShroud Branding Assets Index"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Notes
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

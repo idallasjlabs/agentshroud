@@ -1,23 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L6"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements]] - `contains` [EXTRACTED]
-- [[Output Format]] - `contains` [EXTRACTED]
-- [[Persona]] - `contains` [EXTRACTED]
-- [[Quality Checklist]] - `contains` [EXTRACTED]
-- [[Role_2]] - `contains` [EXTRACTED]
-- [[System Prompt]] - `contains` [EXTRACTED]
-- [[hermesskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[README_21]] - `contains` [EXTRACTED]
+- [[Related Skills_24]] - `contains` [EXTRACTED]
+- [[SKILL_39]] - `contains` [EXTRACTED]
+- [[Usage_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

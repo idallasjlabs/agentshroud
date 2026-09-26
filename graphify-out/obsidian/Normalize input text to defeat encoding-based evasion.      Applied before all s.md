@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "FileSandbox"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FileSandbox
 ---
 
 # Normalize input text to defeat encoding-based evasion.      Applied before all s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[normalize_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

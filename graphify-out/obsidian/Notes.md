@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/USPTO-APPLICATION.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L102"
+community: "Core Security Principles"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/Core_Security_Principles
 ---
 
 # Notes
 
 ## Connections
-- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

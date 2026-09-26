@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "AgentShroud™ Communication Templates"
+community: "start-agentshroud.sh"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/start-agentshroudsh
 ---
 
 # OpenClaw Bot (agentshroud-bot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[For Agents and Bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh

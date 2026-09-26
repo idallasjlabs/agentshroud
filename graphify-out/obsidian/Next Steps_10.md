@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Quick Reference Commands"
-location: "L78"
+community: "Network Topology"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/Network_Topology
 ---
 
 # Next Steps
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

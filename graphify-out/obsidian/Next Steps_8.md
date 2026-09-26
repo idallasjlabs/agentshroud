@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage"
-location: "L90"
+community: "OpenClaw Bot SSH Configuration"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Next Steps
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

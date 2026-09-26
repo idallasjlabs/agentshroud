@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
+community: "ControlCenter"
+location: "L214"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/ControlCenter
 ---
 
 # Newsletter: Local Inference Engines
 
 ## Connections
-- [[Turbo Fieldfare (MLX inference backend)]] - `references` [EXTRACTED]
-- [[oMLX (local model backend)]] - `references` [EXTRACTED]
+- [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

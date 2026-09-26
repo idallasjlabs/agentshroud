@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_3]] - `contains` [EXTRACTED]
-- [[Output Format_3]] - `contains` [EXTRACTED]
-- [[Persona_3]] - `contains` [EXTRACTED]
-- [[Quality Checklist_3]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[System Prompt_3]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_7]] - `contains` [EXTRACTED]
+- [[Output Format_7]] - `contains` [EXTRACTED]
+- [[Persona_5]] - `contains` [EXTRACTED]
+- [[Quality Checklist_6]] - `contains` [EXTRACTED]
+- [[Role_23]] - `contains` [EXTRACTED]
+- [[SKILL_39]] - `contains` [EXTRACTED]
+- [[System Prompt_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

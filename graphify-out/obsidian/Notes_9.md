@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "notion"
-location: "L167"
+community: "Skill: Hermes Dev Workflow (HDEV)"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Notes
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

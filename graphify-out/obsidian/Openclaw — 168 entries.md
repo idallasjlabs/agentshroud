@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "cve-registry-manual-review.md"
+community: "Gateway-Enforced Intel Verification (SCRUM-75)"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cve-registry-manual-reviewmd
+  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
 ---
 
 # Openclaw — 168 entries
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Gateway-Enforced_Intel_Verification_SCRUM-75

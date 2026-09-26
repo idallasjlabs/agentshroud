@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AWS_AGENT_README.md"
 type: "concept"
-community: "AWS Cloud Management & FinOps Agent"
+community: "test_sanitizer.py"
 location: "Script Naming Convention"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/test_sanitizerpy
 ---
 
 # Numbered script naming convention (00-99)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FinOps agent safety model (dry-run default, tiered approval)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/concept #graphify/EXTRACTED #community/test_sanitizerpy

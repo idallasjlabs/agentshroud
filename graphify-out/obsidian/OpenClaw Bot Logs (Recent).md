@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "Crash Recovery"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/Crash_Recovery
 ---
 
 # OpenClaw Bot Logs (Recent)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

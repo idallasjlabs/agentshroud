@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "test_agent_cve_registry.py"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_agent_cve_registrypy
 ---
 
 # Non-owner channel: high-risk leakage detected before pipeline → blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy

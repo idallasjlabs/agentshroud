@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # Outcome of an MFA verification.      Attributes:         allowed: True if the ac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MFAResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestAuth

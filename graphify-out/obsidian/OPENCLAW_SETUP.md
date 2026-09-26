@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "system-requirements.md"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_dashboard_endpointspy
 ---
 
 # OPENCLAW_SETUP.md
@@ -22,4 +22,4 @@ tags:
 - [[TELEGRAM_GMAIL_SETUP]] - `conceptually_related_to` [EXTRACTED]
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy

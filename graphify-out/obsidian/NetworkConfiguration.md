@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: ".validate_docker_compose_config()"
+community: "AgentShroud Security Value Proposition - REVISED"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/AgentShroud_Security_Value_Proposition_-_REVISED
 ---
 
 # NetworkConfiguration
@@ -21,4 +21,4 @@ tags:
 - [[Container network configuration.]] - `rationale_for` [EXTRACTED]
 - [[network_validator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED

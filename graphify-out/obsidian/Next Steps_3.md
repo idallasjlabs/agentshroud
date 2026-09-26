@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
-location: "L293"
+community: "OpenClaw Workspace Usage Guide"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Bear Notes"
-location: "L102"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
+location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # Notes
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

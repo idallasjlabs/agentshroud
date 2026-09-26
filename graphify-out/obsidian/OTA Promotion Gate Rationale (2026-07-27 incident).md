@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/promote-firmware.sh"
 type: "rationale"
-community: "promote-firmware.sh"
+community: "11. Current status (v1.2.0)"
 location: "1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/promote-firmwaresh
+  - community/11_Current_status_v120
 ---
 
 # OTA Promotion Gate Rationale (2026-07-27 incident)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[promote-firmware.sh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/promote-firmwaresh
+#graphify/rationale #graphify/EXTRACTED #community/11_Current_status_v120

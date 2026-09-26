@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "_call_agent_stream()"
+community: "test_hermes_model_resolver.py"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/test_hermes_model_resolverpy
 ---
 
 # Outliers log at WARNING; normal turns do not.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_outlier_logs_warning()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy

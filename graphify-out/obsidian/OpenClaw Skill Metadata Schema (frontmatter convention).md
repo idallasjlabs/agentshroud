@@ -1,28 +1,28 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "concept"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+community: "browser-extension/manifest.json"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/browser-extension/manifestjson
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
 
 ## Connections
-- [[slackSKILL]] - `conceptually_related_to` [INFERRED]
-- [[songseeSKILL]] - `conceptually_related_to` [INFERRED]
-- [[spotify-playerSKILL]] - `conceptually_related_to` [INFERRED]
-- [[summarizeSKILL]] - `conceptually_related_to` [INFERRED]
-- [[things-macSKILL]] - `conceptually_related_to` [INFERRED]
-- [[tmuxSKILL]] - `conceptually_related_to` [INFERRED]
-- [[trelloSKILL]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_229]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_230]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_231]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_232]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_233]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_234]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_235]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_236]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_237]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_238]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_239]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_240]] - `conceptually_related_to` [INFERRED]
 - [[validate_skill()]] - `references` [EXTRACTED]
-- [[video-framesSKILL]] - `conceptually_related_to` [INFERRED]
-- [[voice-callSKILL]] - `conceptually_related_to` [INFERRED]
-- [[wacliSKILL]] - `conceptually_related_to` [INFERRED]
-- [[weatherSKILL]] - `conceptually_related_to` [INFERRED]
-- [[xurlSKILL]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/concept #graphify/INFERRED #community/browser-extension/manifestjson

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "TestBotIdIsolationInSharedMemory"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/TestBotIdIsolationInSharedMemory
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory

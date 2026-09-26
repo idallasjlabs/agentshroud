@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "openclaw/skills/i-browser/browse.js"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

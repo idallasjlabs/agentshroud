@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Common Queries"
-location: "L28"
+community: "TestKillSwitchVerification"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/TestKillSwitchVerification
 ---
 
 # Notes
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchVerification

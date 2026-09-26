@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "server.py"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/serverpy
 ---
 
 # OpenAI's own RateLimitError is translated to a 429 for the caller.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openai_rate_limit_error_returns_429()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

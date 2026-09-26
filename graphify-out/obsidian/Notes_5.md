@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L453"
+community: "Skill: UX Expert (UX)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Skill_UX_Expert_UX
 ---
 
 # Notes
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

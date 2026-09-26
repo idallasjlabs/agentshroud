@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "iMessage Integration Status"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/iMessage_Integration_Status
 ---
 
 # Option A: MVP (Minimum Viable Product)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What Should You Do Next]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

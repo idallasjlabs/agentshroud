@@ -1,22 +1,22 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "hermes/SOUL.md"
+community: "10. Troubleshooting"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/10_Troubleshooting
 ---
 
 # OpenClaw/AgentShroud Bot Identity
 
 ## Connections
 - [[Agents Folder README]] - `references` [INFERRED]
-- [[Competitive Intelligence Protocol_2]] - `references` [EXTRACTED]
+- [[Competitive Intelligence Protocol_1]] - `references` [EXTRACTED]
 - [[Isaiah Jefferson (Owner)]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]
 - [[marvin (dev host, per openclaw-identity.md)]] - `references` [EXTRACTED]
 - [[raspberrypi (per openclaw-identity.md)]] - `references` [EXTRACTED]
 - [[trillian (per openclaw-identity.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

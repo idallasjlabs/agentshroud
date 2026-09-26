@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Shutdown & Recovery"
+community: "API Keys Setup Guide"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__Recovery
+  - community/API_Keys_Setup_Guide
 ---
 
 # OOM Recovery
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

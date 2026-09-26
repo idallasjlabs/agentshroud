@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "SOC Command Center — Five Pillars"
+community: "LOW — Informational"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/LOW__Informational
 ---
 
 # OpenClaw — primary integration target agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Collaborator System (multi-user agentic workspace)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/SOC_Command_Center__Five_Pillars
+#graphify/concept #graphify/INFERRED #community/LOW__Informational

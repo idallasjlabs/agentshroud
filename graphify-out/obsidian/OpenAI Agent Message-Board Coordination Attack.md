@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "RovoBlast Attack (Atlassian Rovo AI)"
+community: "hermes/skills/i-icloud/scripts/calendar.js"
 location: "line 43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/RovoBlast_Attack_Atlassian_Rovo_AI
+  - community/hermes/skills/i-icloud/scripts/calendarjs
 ---
 
 # OpenAI Agent Message-Board Coordination Attack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI
+#graphify/concept #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs

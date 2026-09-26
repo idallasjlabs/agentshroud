@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "Docker Desktop Network Settings — Cisco AnyConne"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_94]] - `contains` [EXTRACTED]
-- [[Related Skills_85]] - `contains` [EXTRACTED]
-- [[Usage_89]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_95]] - `contains` [EXTRACTED]
+- [[README_100]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
+- [[SKILL_166]] - `contains` [EXTRACTED]
+- [[Usage_105]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne

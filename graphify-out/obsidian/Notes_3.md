@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
-location: "L364"
+community: "ADR-008-progressive-trust-levels.md"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Notes
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

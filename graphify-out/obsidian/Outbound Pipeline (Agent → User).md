@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Architecture"
+community: "Egress Filter Errors"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Egress_Filter_Errors
 ---
 
 # Outbound Pipeline (Agent → User)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

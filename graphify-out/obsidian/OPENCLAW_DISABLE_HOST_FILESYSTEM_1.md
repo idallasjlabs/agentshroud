@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
+community: "lvgl_kawaii_face.c"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+  - community/lvgl_kawaii_facec
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM
 
 ## Connections
-- [[Description_3]] - `contains` [EXTRACTED]
-- [[Effect_1]] - `contains` [EXTRACTED]
+- [[Description_7]] - `contains` [EXTRACTED]
+- [[Effect]] - `contains` [EXTRACTED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
-- [[Related Notes_37]] - `contains` [EXTRACTED]
-- [[Set In_2]] - `contains` [EXTRACTED]
-- [[Value_3]] - `contains` [EXTRACTED]
+- [[Related Notes_35]] - `contains` [EXTRACTED]
+- [[Set In_3]] - `contains` [EXTRACTED]
+- [[Value_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

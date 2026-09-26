@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: ".proxy_messages()"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/proxy_messages
 ---
 
 # Open the WebSocket and process events until Slack requests disconnect.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._connect_and_handle()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

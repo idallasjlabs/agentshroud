@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-04.md"
 type: "concept"
-community: "Blue Team Security Assessment — AgentShroud v0.8"
+community: "graphify reference: extra exports and benchmark"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v08
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # OWNER_USER_IDS bypass mechanism
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Phase Review — 2026-02-23]] - `references` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v08
+#graphify/concept #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

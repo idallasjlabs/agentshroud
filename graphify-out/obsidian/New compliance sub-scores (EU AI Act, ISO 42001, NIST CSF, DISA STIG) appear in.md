@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L934"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_compliance_new_keys_present()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/compute_scorecard
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

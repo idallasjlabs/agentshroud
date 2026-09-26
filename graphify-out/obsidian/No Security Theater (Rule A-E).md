@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "8. Governance Model"
+community: "Slack Channel Setup"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/8_Governance_Model
+  - community/Slack_Channel_Setup
 ---
 
 # No Security Theater (Rule A-E)
@@ -14,4 +14,4 @@ tags:
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 - [[AgentShroud CLAUDE.md operating rules]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/8_Governance_Model
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Channel_Setup

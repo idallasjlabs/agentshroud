@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Operating Rules (Non-Negotiable)"
+community: "8. Performance & Testing"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable
+  - community/8_Performance__Testing
 ---
 
 # Operating Rules (Non-Negotiable)
@@ -20,4 +20,4 @@ tags:
 - [[Rule 5 Safe Tagging]] - `contains` [EXTRACTED]
 - [[Rule 6 Never Delete Automatically]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable
+#graphify/document #graphify/EXTRACTED #community/8_Performance__Testing

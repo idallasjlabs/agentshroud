@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L144"
+community: "SSHProxy"
+location: "L157"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # OpProxyRequest
 
 ## Connections
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Request body for POST credentialsop-proxy.]] - `rationale_for` [EXTRACTED]
-- [[Resource]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
 - [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/SSHProxy

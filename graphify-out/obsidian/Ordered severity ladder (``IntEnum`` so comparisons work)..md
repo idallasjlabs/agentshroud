@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "test_skill_guard.py"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Ordered severity ladder (``IntEnum`` so comparisons work).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Severity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

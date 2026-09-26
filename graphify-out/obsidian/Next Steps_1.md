@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L366"
+community: "Multi-Agent Role Matrix"
+location: "L608"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Next Steps
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Decision Points]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Implementation Timeline]] - `contains` [EXTRACTED]
+- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

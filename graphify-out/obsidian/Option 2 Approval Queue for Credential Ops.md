@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "rationale"
-community: "Implementation Status"
+community: "llm_proxy.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/llm_proxypy
 ---
 
 # Option 2: Approval Queue for Credential Ops
@@ -13,5 +13,6 @@ tags:
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Strategy]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Implementation_Status
+#graphify/rationale #graphify/EXTRACTED #community/llm_proxypy

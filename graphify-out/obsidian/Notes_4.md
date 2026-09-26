@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L27"
+community: "sunday-upgrade.md"
+location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/sunday-upgrademd
 ---
 
 # Notes
 
 ## Connections
-- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd

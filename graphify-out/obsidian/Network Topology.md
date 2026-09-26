@@ -1,19 +1,19 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Network Topology"
-location: "L1"
+community: "Phase Review: P0 — Core Pipeline Wiring"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
-# Network Topology.md
+# Network Topology
 
 ## Connections
-- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
-- [[Full System Flowchart]] - `references` [EXTRACTED]
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
+- [[Three-Network Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_Topology
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

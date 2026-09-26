@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+community: "migrate-cve-registry-ghsa.py"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # OBSIDIAN VAULT RULES (Follow These Exactly)
@@ -18,4 +18,4 @@ tags:
 - [[Tags_2]] - `contains` [EXTRACTED]
 - [[YAML Frontmatter_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

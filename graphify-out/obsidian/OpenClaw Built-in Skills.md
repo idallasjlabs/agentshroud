@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "test_jira_weekly_review.py"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/test_jira_weekly_reviewpy
 ---
 
 # OpenClaw Built-in Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

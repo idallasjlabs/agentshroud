@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "AgentShroud Docker Configuration"
+community: "AlertTelegramRelay"
 location: "docker/README.md:188"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AlertTelegramRelay
 ---
 
 # Network DMZ — IEC 62443 FR5 (SCRUM-93)
 
 ## Connections
-- [[dockerREADME]] - `references` [EXTRACTED]
+- [[README_41]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/concept #graphify/EXTRACTED #community/AlertTelegramRelay

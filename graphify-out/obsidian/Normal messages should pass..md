@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "ProgressiveLockdown"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/ProgressiveLockdown
 ---
 
 # Normal messages should pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_message_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

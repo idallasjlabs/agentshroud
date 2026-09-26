@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "EgressFilterConfig"
+community: "lvgl_kawaii_face.c"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/lvgl_kawaii_facec
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM.md
@@ -16,4 +16,4 @@ tags:
 - [[OPENCLAW_SANDBOX_MODE]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

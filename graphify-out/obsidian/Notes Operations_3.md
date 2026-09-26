@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "check-vendor-compat.sh"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/check-vendor-compatsh
 ---
 
 # Notes Operations
@@ -17,4 +17,4 @@ tags:
 - [[Search Notes_3]] - `contains` [EXTRACTED]
 - [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

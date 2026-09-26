@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "iMessage Integration Status"
-location: "L56"
+community: "TestBenchmarkRegression"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/TestBenchmarkRegression
 ---
 
 # Next Steps
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression

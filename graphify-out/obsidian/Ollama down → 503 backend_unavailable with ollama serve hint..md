@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
+community: "soc.js"
 location: "L663"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/socjs
 ---
 
 # Ollama down → 503 backend_unavailable with ollama serve hint.
 
 ## Connections
 - [[test_ollama_connect_failure_returns_structured_503()]] - `rationale_for` [EXTRACTED]
-- [[test_ollama_connect_failure_returns_structured_503()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/socjs

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
-location: "L204"
+community: "AgentShroud Documentation"
+location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/AgentShroud_Documentation
 ---
 
 # Next Steps
 
 ## Connections
-- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "AgentShroud State Diagrams"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/AgentShroud_State_Diagrams
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams

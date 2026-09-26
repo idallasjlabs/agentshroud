@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "start.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/startsh
 ---
 
 # OpenClaw BLOCKED — node:sqlite NUL Truncation
@@ -15,4 +15,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [EXTRACTED]
 - [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - `cites` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/startsh

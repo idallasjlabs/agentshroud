@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Output Canary System Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutputCanary]] - `references` [EXTRACTED]
 - [[System Prompt Protection Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

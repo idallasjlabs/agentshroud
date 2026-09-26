@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L314"
+community: "ledger row (id, timestamp, source, hashes, sanit"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/ledger_row_id_timestamp_source_hashes_sanit
 ---
 
 # Next Steps
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit

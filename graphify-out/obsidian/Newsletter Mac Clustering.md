@@ -1,13 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Newsletter: Mac Clustering"
+community: "ControlCenter"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Newsletter_Mac_Clustering
+  - community/ControlCenter
 ---
 
 # Newsletter: Mac Clustering
 
-#graphify/document #graphify/EXTRACTED #community/Newsletter_Mac_Clustering
+## Connections
+- [[Job details]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[Adding Additional Hosts]] - `contains` [EXTRACTED]
 - [[Backup and Recovery]] - `contains` [EXTRACTED]
-- [[Next Steps_1]] - `contains` [EXTRACTED]
+- [[Next Steps_8]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SETUP]] - `contains` [EXTRACTED]
-- [[Quick Reference_2]] - `contains` [EXTRACTED]
+- [[Quick Reference_7]] - `contains` [EXTRACTED]
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
 - [[Security Considerations]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 - [[Usage Examples_1]] - `contains` [EXTRACTED]
-- [[Verification Checklist]] - `contains` [EXTRACTED]
+- [[Verification Checklist_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

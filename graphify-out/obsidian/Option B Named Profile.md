@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "3. AWS API MCP Authentication Reset"
+community: "Output Sections (ALL required)"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/Output_Sections_ALL_required
 ---
 
 # Option B: Named Profile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. AWS API MCP Authentication Reset]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

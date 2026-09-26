@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ingest_api/main.py"
 location: "L6014"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ingest_api/mainpy
 ---
 
 # Non-http schemes should not be treated as web-fetch preflight targets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_non_http_scheme_does_not_queue_egress_preflight()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

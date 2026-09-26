@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "3. AWS API MCP Authentication Reset"
+community: "sync-llm-settings.sh"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/sync-llm-settingssh
 ---
 
 # Option A: Default AWS Profile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. AWS API MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/sync-llm-settingssh

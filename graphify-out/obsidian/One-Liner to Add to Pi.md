@@ -12,6 +12,6 @@ tags:
 # One-Liner to Add to Pi
 
 ## Connections
-- [[Quick Reference_2]] - `contains` [EXTRACTED]
+- [[Quick Reference_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

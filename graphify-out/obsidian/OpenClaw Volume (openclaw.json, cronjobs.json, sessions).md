@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "AgentShroud Data Assets (root)"
+community: "gh-issues/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Assets_root
+  - community/gh-issues/SKILLmd
 ---
 
 # OpenClaw Volume (openclaw.json, cron/jobs.json, sessions)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Assets (root)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root
+#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd

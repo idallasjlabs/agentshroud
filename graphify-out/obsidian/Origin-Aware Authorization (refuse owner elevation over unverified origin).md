@@ -1,18 +1,16 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Origin-Aware Authorization (refuse owner elevation over unverified origin)
 
 ## Connections
 - [[Two-Arm CVE Remediation (vendor fix + independent AgentShroud gateway control)]] - `rationale_for` [EXTRACTED]
-- [[gateway.security.tool_acl]] - `rationale_for` [EXTRACTED]
-- [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

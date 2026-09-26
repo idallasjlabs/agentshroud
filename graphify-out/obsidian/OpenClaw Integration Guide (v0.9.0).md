@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "Mode A — Single task"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/Mode_A__Single_task
 ---
 
 # OpenClaw Integration Guide (v0.9.0)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/AMBIGUOUS #community/Mode_A__Single_task

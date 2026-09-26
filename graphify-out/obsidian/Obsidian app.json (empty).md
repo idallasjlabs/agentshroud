@@ -1,13 +1,13 @@
 ---
 source_file: "docs/vault/.obsidian/app.json"
 type: "document"
-community: "Obsidian app.json (empty)"
+community: "/graphify explain command"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_appjson_empty
+  - community//graphify_explain_command
 ---
 
 # Obsidian app.json (empty)
 
-#graphify/document #graphify/EXTRACTED #community/Obsidian_appjson_empty
+#graphify/document #graphify/EXTRACTED #community//graphify_explain_command

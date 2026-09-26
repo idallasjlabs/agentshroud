@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Docker Socket Proxy Service"
+community: "cve-registry-manual-review.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Socket_Proxy_Service
+  - community/cve-registry-manual-reviewmd
 ---
 
 # OpenClaw/Hermes sandbox reaper loop
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Docker Socket Proxy Service]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Socket_Proxy_Service
+#graphify/code #graphify/EXTRACTED #community/cve-registry-manual-reviewmd

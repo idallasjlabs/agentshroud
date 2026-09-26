@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "AgentShroud™ README"
+community: "Release Notes - AgentShroud v0.9.0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # OpenClaw Bot
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/concept #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

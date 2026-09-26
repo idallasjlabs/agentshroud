@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "concept"
-community: "OpenClaw Bot Container"
+community: "pipeline.py — Security Pipeline"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # OpenClaw Bot Container
@@ -19,4 +19,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/concept #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

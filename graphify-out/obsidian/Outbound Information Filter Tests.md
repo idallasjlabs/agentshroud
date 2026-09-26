@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/RBACConfig
 ---
 
 # Outbound Information Filter Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutboundInfoFilter]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

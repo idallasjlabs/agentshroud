@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "OpenClaw cron: Agentic AI Threat Intelligence"
+community: "AWS API MCP Server (concept)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_Agentic_AI_Threat_Intelligence
+  - community/AWS_API_MCP_Server_concept
 ---
 
 # OpenClaw cron: Agentic AI Threat Intelligence
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_Agentic_AI_Threat_Intelligence
+#graphify/code #graphify/EXTRACTED #community/AWS_API_MCP_Server_concept

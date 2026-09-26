@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L118"
+community: "Telegram Formatting Rule (bold only, no headers "
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Telegram_Formatting_Rule_bold_only_no_headers_
 ---
 
-# Networks
+# networks.md
 
 ## Connections
-- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[agentshroud-bot]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_

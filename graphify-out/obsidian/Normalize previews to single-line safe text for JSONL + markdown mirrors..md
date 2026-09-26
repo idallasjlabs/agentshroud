@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "_wrap_response()"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/_wrap_response
 ---
 
 # Normalize previews to single-line safe text for JSONL + markdown mirrors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._normalize_preview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

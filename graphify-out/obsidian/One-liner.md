@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Key Messaging"
+community: "AgentShroud Security Architecture"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Messaging
+  - community/AgentShroud_Security_Architecture
 ---
 
 # One-liner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Messaging
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

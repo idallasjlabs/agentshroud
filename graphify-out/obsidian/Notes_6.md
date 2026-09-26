@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "tmux Session Control"
-location: "L148"
+community: "chat_console.py"
+location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/chat_consolepy
 ---
 
 # Notes
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/chat_consolepy

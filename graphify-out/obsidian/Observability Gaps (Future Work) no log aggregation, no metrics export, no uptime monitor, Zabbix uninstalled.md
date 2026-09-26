@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "concept"
-community: "Gateway observability (GET /status, GET /ledger,"
+community: ".record_segment()"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Gateway_observability_GET_/status_GET_/ledger
+  - community/record_segment
 ---
 
 # Observability Gaps (Future Work): no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Gateway_observability_GET_/status_GET_/ledger
+#graphify/concept #graphify/INFERRED #community/record_segment

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "AgentShroud Setup Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/AgentShroud_Setup_Guide
 ---
 
 # OpenClaw Dev Workflow (ODEV)
@@ -17,4 +17,4 @@ tags:
 - [[graphify Skill]] - `references` [EXTRACTED]
 - [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

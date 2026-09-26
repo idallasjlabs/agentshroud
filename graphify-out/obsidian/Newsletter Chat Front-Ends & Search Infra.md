@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt"
 type: "document"
-community: "Newsletter: Chat Front-ends & Search Infra"
+community: "Community 1912"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Newsletter_Chat_Front-ends__Search_Infra
+  - community/Community_1912
 ---
 
 # Newsletter: Chat Front-ends & Search Infra
 
-#graphify/document #graphify/EXTRACTED #community/Newsletter_Chat_Front-ends__Search_Infra
+#graphify/document #graphify/EXTRACTED #community/Community_1912

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "UserSession"
+community: "KeyVaultConfig"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/KeyVaultConfig
 ---
 
 # Original system prompt content is always preserved in the output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_reanchor_preserves_original_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSession
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "test_approval_queue.py"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/test_approval_queuepy
 ---
 
 # Non-owner collaborators must be blocked by prompt guard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_non_owner_blocked_by_prompt_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy

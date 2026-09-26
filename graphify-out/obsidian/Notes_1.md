@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "frame.sh"
-location: "L43"
+community: "agentshroud-ieee-paper.md"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/framesh
+  - community/agentshroud-ieee-papermd
 ---
 
 # Notes
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/framesh
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

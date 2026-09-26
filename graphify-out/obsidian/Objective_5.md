@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "TestParanoidConfig"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/TestParanoidConfig
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/TestParanoidConfig

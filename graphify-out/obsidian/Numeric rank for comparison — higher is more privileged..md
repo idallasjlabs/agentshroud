@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TelegramAPIProxy"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TelegramAPIProxy
 ---
 
 # Numeric rank for comparison — higher is more privileged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.rank()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

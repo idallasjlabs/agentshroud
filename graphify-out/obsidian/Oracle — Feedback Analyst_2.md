@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "iot_button_register_cb()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/iot_button_register_cb
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[.agentsskillsi-oracleSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_27]] - `contains` [EXTRACTED]
-- [[Related Skills_18]] - `contains` [EXTRACTED]
-- [[Usage_22]] - `contains` [EXTRACTED]
+- [[Purpose_58]] - `contains` [EXTRACTED]
+- [[README_63]] - `contains` [EXTRACTED]
+- [[Related Skills_64]] - `contains` [EXTRACTED]
+- [[Usage_65]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb

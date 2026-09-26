@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "concept"
-community: "Canvas Skill"
+community: "Credential Management - 1Password Integration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Node Bridge (port 18790)
@@ -14,4 +14,4 @@ tags:
 - [[Canvas Host Server (port 18793)]] - `conceptually_related_to` [EXTRACTED]
 - [[Node App (MaciOSAndroid WebView)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/concept #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

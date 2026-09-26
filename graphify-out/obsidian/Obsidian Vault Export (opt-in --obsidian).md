@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Obsidian Vault Export (opt-in --obsidian)"
+community: "--watch debounce avoids per-file rebuild storms"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Obsidian_Vault_Export_opt-in_--obsidian
+  - community/--watch_debounce_avoids_per-file_rebuild_storms
 ---
 
 # Obsidian Vault Export (opt-in --obsidian)
 
-#graphify/concept #graphify/EXTRACTED #community/Obsidian_Vault_Export_opt-in_--obsidian
+#graphify/concept #graphify/EXTRACTED #community/--watch_debounce_avoids_per-file_rebuild_storms
