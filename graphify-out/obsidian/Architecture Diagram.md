@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L66"
+community: "discover_upstream_versions.py"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/discover_upstream_versionspy
 ---
 
 # Architecture Diagram
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy

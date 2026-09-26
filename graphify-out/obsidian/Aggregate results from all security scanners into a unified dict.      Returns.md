@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: "Canvas Skill"
 location: "L882"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Canvas_Skill
 ---
 
 # Aggregate results from all security scanners into a unified dict.      Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aggregate_results()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Canvas_Skill

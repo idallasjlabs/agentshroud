@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "lifespan.py"
-location: "L289"
+community: "test_telegram_proxy_outbound.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[.__call__()]] - `references` [EXTRACTED]
+- [[.__init__()_9]] - `references` [EXTRACTED]
+- [[._clean_tool()]] - `references` [EXTRACTED]
+- [[._coerce()]] - `references` [EXTRACTED]
+- [[._handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

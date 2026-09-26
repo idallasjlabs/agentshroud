@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "._validate_network_definitions()"
-location: "L124"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_validate_network_definitions
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_validate_network_definitions
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

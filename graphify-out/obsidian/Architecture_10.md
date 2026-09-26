@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Findings & Mitigations"
-location: "L10"
+community: "iCloud Services"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings__Mitigations
+  - community/iCloud_Services
 ---
 
 # Architecture
 
 ## Connections
-- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

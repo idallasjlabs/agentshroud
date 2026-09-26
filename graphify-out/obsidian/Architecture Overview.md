@@ -1,17 +1,22 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L279"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Architecture Overview
 
 ## Connections
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[2.1 Design Principle Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.2 Why Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.3 Data Flow]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

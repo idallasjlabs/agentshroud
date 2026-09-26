@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "load_config()"
-location: "L200"
+community: "iCloud Services"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/iCloud_Services
 ---
 
 # Any
 
 ## Connections
-- [[.enforce()_1]] - `references` [EXTRACTED]
-- [[.evaluate()_1]] - `references` [EXTRACTED]
-- [[.from_dict()_4]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services

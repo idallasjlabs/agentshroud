@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L30"
+community: "sunday-upgrade-apply.sh"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/sunday-upgrade-applysh
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

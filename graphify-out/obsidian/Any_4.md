@@ -1,26 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Any"
-location: "L119"
+community: "patch"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Any
+  - graphify/INFERRED
+  - community/patch
 ---
 
 # Any
 
 ## Connections
-- [[._check_description_parameter_mismatch()]] - `references` [EXTRACTED]
-- [[._check_parameter_obfuscation()]] - `references` [EXTRACTED]
-- [[._check_repeat_request_patterns()]] - `references` [EXTRACTED]
-- [[._create_parameter_fingerprint()]] - `references` [EXTRACTED]
-- [[._format_parameters_with_highlighting()]] - `references` [EXTRACTED]
-- [[.analyze_request()]] - `references` [EXTRACTED]
-- [[.format_hardened_message()]] - `references` [EXTRACTED]
-- [[.get_stats()_2]] - `references` [EXTRACTED]
-- [[.is_request_in_cooldown()]] - `references` [EXTRACTED]
-- [[.record_denied_request()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/INFERRED #community/patch

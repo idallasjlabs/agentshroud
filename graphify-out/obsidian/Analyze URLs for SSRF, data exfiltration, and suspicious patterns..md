@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # Analyze URLs for SSRF, data exfiltration, and suspicious patterns.
 
 ## Connections
-- [[URLAnalyzer_1]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

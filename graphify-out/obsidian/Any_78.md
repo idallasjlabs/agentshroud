@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L231"
+community: "pytest.ini"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/pytestini
 ---
 
 # Any
 
 ## Connections
-- [[._scan_for_canary()]] - `references` [EXTRACTED]
-- [[.get_status()_3]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/pytestini

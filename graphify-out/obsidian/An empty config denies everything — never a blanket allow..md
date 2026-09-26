@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # An empty config denies everything — never a blanket allow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_default_deny_posture_when_no_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

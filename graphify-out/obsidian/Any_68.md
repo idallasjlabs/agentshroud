@@ -1,17 +1,23 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "tts.py"
-location: "L39"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[.__init__()_131]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ttspy
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

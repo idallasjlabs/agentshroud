@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "4. Environment Variables"
+community: "Kill Switch Procedure"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/Kill_Switch_Procedure
 ---
 
 # All Environment Variables (reference)
@@ -15,4 +15,4 @@ tags:
 - [[Dockerfile — Bot (OpenClaw)]] - `shares_data_with` [EXTRACTED]
 - [[Dockerfile — Gateway]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

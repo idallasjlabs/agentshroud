@@ -1,19 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L107"
+community: "start.sh"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/startsh
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Container Stack]] - `contains` [EXTRACTED]
-- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/startsh

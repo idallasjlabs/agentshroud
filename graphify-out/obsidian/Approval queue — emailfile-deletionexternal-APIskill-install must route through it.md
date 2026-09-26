@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Approval queue — email/file-deletion/external-AP"
+community: ".test_deception_detection_misleading_description"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_queue__email/file-deletion/external-AP
+  - community/test_deception_detection_misleading_description
 ---
 
 # Approval queue — email/file-deletion/external-API/skill-install must route through it
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_queue__email/file-deletion/external-AP
+#graphify/rationale #graphify/EXTRACTED #community/test_deception_detection_misleading_description

@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "EncryptedStore"
-location: "L25"
+community: "ResourceGuard"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[.__init__()_124]] - `references` [EXTRACTED]
+- [[._extract_dict_content()]] - `references` [EXTRACTED]
+- [[._extract_scannable_content()]] - `references` [EXTRACTED]
+- [[._reconstruct_result()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: ".__init__()"
-location: "L41"
+community: "TelegramAPIProxy"
+location: "L47"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/__init__
+  - graphify/INFERRED
+  - community/TelegramAPIProxy
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[.__init__()_40]] - `references` [EXTRACTED]
+- [[.__init__()_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/__init__
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

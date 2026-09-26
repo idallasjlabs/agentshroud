@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L356"
+community: "TestConfigValidation"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/TestConfigValidation
 ---
 
 # Architecture Diagram
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

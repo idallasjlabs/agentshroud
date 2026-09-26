@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "test_cli_coverage.py"
+community: "AgentShroud Development Team — Agile Structure"
 location: "L611"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Async-iterable WebSocket double.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWS]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

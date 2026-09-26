@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # ApprovalQueueConfig
@@ -17,25 +17,25 @@ tags:
 - [[.test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
 - [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[Any_39]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyEngine]] - `uses` [INFERRED]
-- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[MFAGuard]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
@@ -57,28 +57,28 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
-- [[approval_queue()]] - `calls` [EXTRACTED]
+- [[approval_queue()_1]] - `calls` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `imports` [EXTRACTED]
 - [[queue_config()]] - `calls` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
-- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `calls` [EXTRACTED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `calls` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
@@ -90,7 +90,7 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalRequest
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

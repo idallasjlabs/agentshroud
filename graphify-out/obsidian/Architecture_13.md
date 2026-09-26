@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Presidio Analyzer"
-location: "L23"
+community: "Credential Management - 1Password Integration"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Presidio_Analyzer
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Architecture
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[How It Works_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

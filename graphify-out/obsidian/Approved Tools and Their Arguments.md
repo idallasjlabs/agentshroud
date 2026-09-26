@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Ins"
+community: "apply-patches.js"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+  - community/apply-patchesjs
 ---
 
 # Approved Tools and Their Arguments
@@ -19,4 +19,4 @@ tags:
 - [[send_message]] - `contains` [EXTRACTED]
 - [[web_search]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

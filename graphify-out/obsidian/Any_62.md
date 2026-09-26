@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "version_routes.py"
-location: "L68"
+community: "TrustManager"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/TrustManager
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[.__init__()_122]] - `references` [EXTRACTED]
+- [[.analyze_tool_call()]] - `references` [EXTRACTED]
+- [[.get_global_stats()_1]] - `references` [EXTRACTED]
+- [[.get_session_stats()_1]] - `references` [EXTRACTED]
+- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[.score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

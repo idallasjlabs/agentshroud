@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Core Principles"
+community: "tool_result_injection.py"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Principles
+  - community/tool_result_injectionpy
 ---
 
 # Anatomy of a Skill
@@ -17,4 +17,4 @@ tags:
 - [[SKILL.md (required)]] - `contains` [EXTRACTED]
 - [[What to Not Include in a Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Principles
+#graphify/document #graphify/EXTRACTED #community/tool_result_injectionpy

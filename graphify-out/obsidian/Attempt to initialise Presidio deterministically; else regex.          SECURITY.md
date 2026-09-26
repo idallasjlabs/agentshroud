@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # Attempt to initialise Presidio deterministically; else regex.          SECURITY:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._init_presidio()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

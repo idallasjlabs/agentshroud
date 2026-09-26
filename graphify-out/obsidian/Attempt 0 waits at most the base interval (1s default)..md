@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: ".proxy_messages()"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/proxy_messages
 ---
 
 # Attempt 0 waits at most the base interval (1s default).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_first_attempt_uses_base()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

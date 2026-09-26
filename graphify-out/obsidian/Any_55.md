@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "health_report.py"
-location: "L56"
+community: "MiddlewareManager"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/health_reportpy
+  - graphify/INFERRED
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/health_reportpy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

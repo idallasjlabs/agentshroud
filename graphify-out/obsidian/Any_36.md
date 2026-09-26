@@ -1,23 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "ServiceManager"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - graphify/INFERRED
+  - community/ServiceManager
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary]] - `references` [EXTRACTED]
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[parse_trivy_output]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.__init__()_66]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/INFERRED #community/ServiceManager

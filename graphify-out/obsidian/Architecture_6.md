@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Canvas Skill"
-location: "L15"
+community: "Path"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Path
 ---
 
 # Architecture
 
 ## Connections
-- [[How It Works]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/Path

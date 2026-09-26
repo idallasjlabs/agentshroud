@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "PromptProtection"
-location: "L56"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_188]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_17]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

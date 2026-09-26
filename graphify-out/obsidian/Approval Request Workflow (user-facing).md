@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "SSH Proxy Threat Model (6 threats)"
+community: "SecureBrowser Security Policies"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/SSH_Proxy_Threat_Model_6_threats
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Approval Request Workflow (user-facing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Auto-Approve Commands]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/SSH_Proxy_Threat_Model_6_threats
+#graphify/concept #graphify/INFERRED #community/SecureBrowser_Security_Policies

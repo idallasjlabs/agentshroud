@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "rationale"
-community: "_sync()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_sync
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # An OpenClaw advisory diffed against the Hermes list yields it as 'new'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_sync
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

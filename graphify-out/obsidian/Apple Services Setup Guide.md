@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "LLMProxy.proxy_messages"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/LLMProxyproxy_messages
 ---
 
 # Apple Services Setup Guide
 
 ## Connections
 - [[APPLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps]] - `contains` [EXTRACTED]
 - [[📅 Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 - [[📚 Documentation Links]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[🚨 Security Notes]] - `contains` [EXTRACTED]
 - [[🤖 Bot Integration Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages

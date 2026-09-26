@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

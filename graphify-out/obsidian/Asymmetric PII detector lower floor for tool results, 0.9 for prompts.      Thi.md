@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # Asymmetric PII detector: lower floor for tool results, 0.9 for prompts.      Thi
 
 ## Connections
-- [[DifferentialPIIDetector_1]] - `rationale_for` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

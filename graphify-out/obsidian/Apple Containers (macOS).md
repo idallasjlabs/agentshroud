@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # Apple Containers (macOS)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

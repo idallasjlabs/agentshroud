@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "ssh_config.py"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PodmanEngine
+  - graphify/EXTRACTED
+  - community/ssh_configpy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/ssh_configpy

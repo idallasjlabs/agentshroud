@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "TrustManager"
-location: "L28"
+community: "gateway.security.daily_cve_report"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_122]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

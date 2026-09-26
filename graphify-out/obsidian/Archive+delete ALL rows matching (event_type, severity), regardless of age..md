@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "rationale"
-community: "purge_low_value_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Archive+delete ALL rows matching (event_type, severity), regardless of age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[purge_low_value_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

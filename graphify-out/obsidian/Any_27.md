@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L49"
+community: "WebhookReceiver"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/WebhookReceiver
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_1]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_6]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[.inspect()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

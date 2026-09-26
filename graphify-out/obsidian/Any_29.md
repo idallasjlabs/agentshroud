@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L55"
+community: "AgentTarget"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[.__call__()_3]] - `references` [EXTRACTED]
-- [[.__init__()_85]] - `references` [EXTRACTED]
-- [[._clean_tool()]] - `references` [EXTRACTED]
-- [[._coerce()]] - `references` [EXTRACTED]
-- [[._handle()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

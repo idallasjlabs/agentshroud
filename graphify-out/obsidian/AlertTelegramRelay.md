@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "test_telegram_proxy_outbound.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # AlertTelegramRelay
 
 ## Connections
-- [[.__call__()_3]] - `method` [EXTRACTED]
-- [[.__init__()_85]] - `method` [EXTRACTED]
+- [[.__call__()]] - `method` [EXTRACTED]
+- [[.__init__()_9]] - `method` [EXTRACTED]
 - [[._clean_tool()]] - `method` [EXTRACTED]
 - [[._coerce()]] - `method` [EXTRACTED]
 - [[._dedup_key()]] - `method` [EXTRACTED]
-- [[._handle()_1]] - `method` [EXTRACTED]
+- [[._handle()]] - `method` [EXTRACTED]
 - [[._spawn_send()]] - `method` [EXTRACTED]
 - [[.flush()]] - `method` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord]] - `uses` [INFERRED]
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_SendSpy]] - `uses` [INFERRED]
 - [[alert_telegram_relay.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
 - [[test_async_sanitizer_supported()]] - `calls` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

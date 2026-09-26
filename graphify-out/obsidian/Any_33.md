@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "KillSwitchMonitor"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[._redact_pii()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[.inspect_tool_call()]] - `references` [EXTRACTED]
-- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[.to_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

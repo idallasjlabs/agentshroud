@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 120"
+community: "mcp_oauth_preflight.py"
 location: "L667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/mcp_oauth_preflightpy
 ---
 
 # Append under_review *new_entries* to *agent_id*'s OWN registry list.      Insert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_ghsa_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

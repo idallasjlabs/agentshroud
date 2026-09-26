@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "AgentTarget"
-location: "L152"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L1771"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Any
 
 ## Connections
-- [[._build_forward_payload()]] - `references` [EXTRACTED]
-- [[.forward_to_agent()]] - `references` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[.health_check()_1]] - `references` [EXTRACTED]
-- [[AgentTarget_1]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[._filter_streaming_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
-location: "L34"
+community: "Browser — Secure Browser Automation"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,18 +1,19 @@
 ---
-source_file: "README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud™ README"
-location: "L100"
+community: "AlertTelegramRelay"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AlertTelegramRelay
 ---
 
 # Architecture
 
 ## Connections
-- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Container Stack]] - `contains` [EXTRACTED]
+- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

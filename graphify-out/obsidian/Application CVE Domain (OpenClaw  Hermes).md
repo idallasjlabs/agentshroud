@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Application CVE Domain (OpenClaw / Hermes)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `references` [EXTRACTED]
 - [[Under Review Is Honest, Not Mitigated]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/TestCheckCommandExecution

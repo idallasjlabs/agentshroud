@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # Alarm
 
 ## Connections
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

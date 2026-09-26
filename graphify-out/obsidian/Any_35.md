@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L93"
+community: "TrustManager"
+location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/TrustManager
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[.get_attack_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/TrustManager

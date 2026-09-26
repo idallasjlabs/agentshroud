@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L42"
+community: "TestCollaboratorPersistence"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/TestCollaboratorPersistence
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

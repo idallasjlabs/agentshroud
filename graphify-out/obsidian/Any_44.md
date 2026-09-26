@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: ".__init__()"
-location: "L94"
+community: "TeamsConfig"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/__init__
+  - community/TeamsConfig
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_130]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/__init__
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

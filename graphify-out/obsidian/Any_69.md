@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "REPORT STRUCTURE"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/socjs
+  - graphify/INFERRED
+  - community/REPORT_STRUCTURE
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_14]] - `references` [EXTRACTED]
+- [[._build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/INFERRED #community/REPORT_STRUCTURE

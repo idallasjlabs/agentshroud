@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "cli/main.py"
-location: "L39"
+community: "CredentialInjector"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/cli/mainpy
+  - graphify/EXTRACTED
+  - community/CredentialInjector
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[.recent()]] - `references` [EXTRACTED]
+- [[.tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
+community: "FY26 Cost Reduction Context"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[.agentsskillsi-athenaREADME]] - `contains` [EXTRACTED]
-- [[Purpose_11]] - `contains` [EXTRACTED]
-- [[Related Skills_2]] - `contains` [EXTRACTED]
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[Purpose_1]] - `contains` [EXTRACTED]
+- [[README_1]] - `contains` [EXTRACTED]
+- [[Related Skills_1]] - `contains` [EXTRACTED]
+- [[Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

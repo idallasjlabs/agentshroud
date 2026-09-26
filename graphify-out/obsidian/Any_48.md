@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L149"
+community: "TestTail"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AppleContainerEngine
+  - graphify/EXTRACTED
+  - community/TestTail
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[.from_dict()_8]] - `references` [EXTRACTED]
+- [[.get_integrity_status()]] - `references` [EXTRACTED]
+- [[.get_recent_alerts()]] - `references` [EXTRACTED]
+- [[.to_dict()_11]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/TestTail

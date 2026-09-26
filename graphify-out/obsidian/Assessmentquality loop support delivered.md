@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
+community: "wakeword.c"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summ
+  - community/wakewordc
 ---
 
 # Assessment/quality loop support delivered
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ
+#graphify/document #graphify/EXTRACTED #community/wakewordc

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: ".get_or_create_session()"
-location: "L62"
+community: "GSDE&G Development Master Checklist"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_10]] - `references` [EXTRACTED]
+- [[.__init__()_100]] - `references` [EXTRACTED]
+- [[.get_global_stats()]] - `references` [EXTRACTED]
+- [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_session
+#graphify/code #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

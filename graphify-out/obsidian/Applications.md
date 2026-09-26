@@ -1,17 +1,17 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "http_proxy.py"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/http_proxypy
 ---
 
 # Applications
 
 ## Connections
-- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

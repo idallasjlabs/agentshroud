@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "LLMProxy"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/LLMProxy
 ---
 
 # Analyze a script file for malicious patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._analyze_script_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

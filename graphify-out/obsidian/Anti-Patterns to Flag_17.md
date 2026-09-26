@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L30"
+community: "iCloud Services"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/iCloud_Services
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

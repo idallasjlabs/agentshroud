@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "TestAtomicRegistryWrites"
+community: "KeyVaultConfig"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/KeyVaultConfig
 ---
 
 # An empty registry file must not crash construction.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_load_tolerates_empty_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
-location: "L40"
+community: "test_cli_coverage.py"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/test_cli_coveragepy
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy

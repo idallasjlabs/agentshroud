@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: ".update()"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/update
 ---
 
 # Audio Quality Settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/update

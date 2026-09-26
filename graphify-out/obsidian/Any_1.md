@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L726"
+community: "TestEgressApprovalQueue"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - graphify/EXTRACTED
+  - community/TestEgressApprovalQueue
 ---
 
 # Any
 
 ## Connections
-- [[._handler()]] - `references` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[.__init__()_4]] - `references` [EXTRACTED]
+- [[._default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

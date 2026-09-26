@@ -1,18 +1,22 @@
 ---
-source_file: ""
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "EgressFilterConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/EgressFilterConfig
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # Approval queue details must be PII-sanitized before storage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalQueuePIISanitization]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # An operator-authored mcp_policy: section must be honoured verbatim.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_explicit_policy_section_is_not_overridden()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

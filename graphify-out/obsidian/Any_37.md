@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "PrivacyPolicyEnforcer"
+location: "L85"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_102]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[check_upstream_cves()]] - `references` [EXTRACTED]
+- [[format_cve_report()]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

@@ -1,18 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "auto_remediate_cves.py"
+community: "AgentRegistry"
+location: "L18530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/auto_remediate_cvespy
+  - community/AgentRegistry
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/auto_remediate_cvespy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

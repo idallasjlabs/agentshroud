@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "TestParserAndCommandResolution"
-location: "L264"
+community: "test_config_hot_reload.py"
+location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParserAndCommandResolution
+  - community/test_config_hot_reloadpy
 ---
 
 # ArgumentParser
 
 ## Connections
-- [[build_parser()]] - `references` [EXTRACTED]
+- [[_build_arg_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParserAndCommandResolution
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

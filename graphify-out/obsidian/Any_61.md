@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "version_routes.py"
-location: "L51"
+community: "Browser — Secure Browser Automation"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[.to_dict()_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "alert_dispatcher.py"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # AlertDispatcher._send_notification(alert)
 
 ## Connections
-- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Function Details_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

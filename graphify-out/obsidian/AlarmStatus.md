@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Enum"
+community: "EncryptedStore"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # AlarmStatus
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

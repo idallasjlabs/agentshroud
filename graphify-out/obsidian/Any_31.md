@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ResourceGuard"
-location: "L102"
+community: "Detailed Profiles"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Detailed_Profiles
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_2]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[._format_alert_message()]] - `references` [EXTRACTED]
+- [[._log_alert()]] - `references` [EXTRACTED]
+- [[._send_notification()]] - `references` [EXTRACTED]
+- [[.dispatch()]] - `references` [EXTRACTED]
+- [[.get_digest()]] - `references` [EXTRACTED]
+- [[.get_stats()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/Detailed_Profiles

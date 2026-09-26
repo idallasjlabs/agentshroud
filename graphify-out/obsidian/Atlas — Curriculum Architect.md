@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Skill: Code Review (CR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Skill_Code_Review_CR
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_12]] - `contains` [EXTRACTED]
-- [[Related Skills_3]] - `contains` [EXTRACTED]
-- [[Usage_7]] - `contains` [EXTRACTED]
+- [[Purpose_2]] - `contains` [EXTRACTED]
+- [[README_2]] - `contains` [EXTRACTED]
+- [[Related Skills_2]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

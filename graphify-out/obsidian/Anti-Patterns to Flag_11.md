@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
-location: "L40"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

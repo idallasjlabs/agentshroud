@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "SCLClient"
-location: "L23"
+community: "ToolResultSanitizer"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SCLClient
+  - graphify/INFERRED
+  - community/ToolResultSanitizer
 ---
 
 # Any
 
 ## Connections
-- [[._request()]] - `references` [EXTRACTED]
-- [[.delete()]] - `references` [EXTRACTED]
-- [[.get()]] - `references` [EXTRACTED]
-- [[.post()]] - `references` [EXTRACTED]
-- [[.put()]] - `references` [EXTRACTED]
+- [[._audit()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_10]] - `references` [EXTRACTED]
+- [[.to_dict()_2]] - `references` [EXTRACTED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

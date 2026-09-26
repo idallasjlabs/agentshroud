@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "SCLClient"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/SCLClient
 ---
 
 # Append a collaborator UID to the persistent store (idempotent, file-locked).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_approved_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/SCLClient

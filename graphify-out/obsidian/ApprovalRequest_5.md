@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
-type: "code"
-community: "GroupApprovalRouter"
-location: "L63"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L57"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[._build_group_reply_text()]] - `references` [EXTRACTED]
-- [[._build_owner_dm_text()]] - `references` [EXTRACTED]
-- [[.route_approval()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[Approval Workflows]] - `contains` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

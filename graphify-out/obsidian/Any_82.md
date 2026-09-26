@@ -1,22 +1,17 @@
 ---
-source_file: ""
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Any
 
 ## Connections
-- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
-- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
-- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
-- [[_next_ash_number()]] - `references` [EXTRACTED]
-- [[append_ghsa_entries()]] - `references` [EXTRACTED]
-- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
-- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

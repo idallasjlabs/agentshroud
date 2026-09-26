@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "BaseModel"
-location: "L58"
+community: "_sleep()"
+location: "L82"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/BaseModel
+  - graphify/EXTRACTED
+  - community/_sleep
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[.pull_undelivered()]] - `references` [EXTRACTED]
+- [[.record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/EXTRACTED #community/_sleep

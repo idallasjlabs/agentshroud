@@ -1,33 +1,25 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L2713"
+community: "Findings & Mitigations"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Findings__Mitigations
 ---
 
 # Any
 
 ## Connections
-- [[._apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[._apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[._build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[._check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[._extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[._handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[._parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[._redact_owner_ids()]] - `references` [EXTRACTED]
-- [[._resolve_text_field()]] - `references` [EXTRACTED]
-- [[._trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[._trigger_web_search_log()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Findings__Mitigations

@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "lifespan.py"
-location: "L465"
+community: "TestFluentBitSummary"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/lifespanpy
+  - graphify/INFERRED
+  - community/TestFluentBitSummary
 ---
 
 # Any
 
 ## Connections
-- [[.get_attack_summary()]] - `references` [EXTRACTED]
+- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TestFluentBitSummary

@@ -1,21 +1,29 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "wazuh_client.py"
-location: "L66"
+community: "TestNormalizeForSpeech"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/TestNormalizeForSpeech
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[._generate_new_credential()]] - `references` [EXTRACTED]
+- [[._validate_credential()]] - `references` [EXTRACTED]
+- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[.get_credential_status()]] - `references` [EXTRACTED]
+- [[.get_health_score()]] - `references` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[.rotate_credential()]] - `references` [EXTRACTED]
+- [[.validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

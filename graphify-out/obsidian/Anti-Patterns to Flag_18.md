@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "workspace.sh"
 location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/workspacesh
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/workspacesh

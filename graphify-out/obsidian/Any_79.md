@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "mcp_oauth_preflight.py"
+location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/mcp_oauth_preflightpy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_197]] - `references` [EXTRACTED]
-- [[._default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
-location: "L40"
+community: "Technical Specification"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/Technical_Specification
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

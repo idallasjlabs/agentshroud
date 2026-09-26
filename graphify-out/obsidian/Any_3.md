@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: ".dispatch()"
-location: "L58"
+community: "test_voice_stt_model_ab.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dispatch
+  - community/test_voice_stt_model_abpy
 ---
 
 # Any
 
 ## Connections
-- [[._format_alert_message()]] - `references` [EXTRACTED]
-- [[._log_alert()]] - `references` [EXTRACTED]
-- [[._send_notification()]] - `references` [EXTRACTED]
-- [[.dispatch()]] - `references` [EXTRACTED]
-- [[.get_digest()]] - `references` [EXTRACTED]
-- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[._request()]] - `references` [EXTRACTED]
+- [[.delete()]] - `references` [EXTRACTED]
+- [[.get()_2]] - `references` [EXTRACTED]
+- [[.post()_2]] - `references` [EXTRACTED]
+- [[.put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dispatch
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

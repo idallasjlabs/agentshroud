@@ -1,20 +1,27 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L1"
+community: "AGENTS.md — Codex CLI Guidance"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_75]] - `contains` [EXTRACTED]
-- [[Related Skills_66]] - `contains` [EXTRACTED]
-- [[Usage_70]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
+- [[Output Format_14]] - `contains` [EXTRACTED]
+- [[Persona_9]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[Role_43]] - `contains` [EXTRACTED]
+- [[SKILL_70]] - `contains` [EXTRACTED]
+- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[System Prompt_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template_5]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

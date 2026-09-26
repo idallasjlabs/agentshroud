@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "test_soc_router_coverage.py"
 location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # An unparseable request must be rejected through the same     process_inbound_req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_process_inbound_request_malformed_body_is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

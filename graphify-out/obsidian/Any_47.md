@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "DockerEngine"
-location: "L139"
+community: "test_e2e_proxy.py"
+location: "L200"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DockerEngine
+  - graphify/EXTRACTED
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

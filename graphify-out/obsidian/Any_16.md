@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "GitGuard"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/GitGuard
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_5]] - `references` [EXTRACTED]
+- [[.from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/GitGuard

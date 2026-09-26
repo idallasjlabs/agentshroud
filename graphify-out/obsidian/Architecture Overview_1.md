@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "MiddlewareManager"
-location: "L1"
+community: "AgentShroud Documentation"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentShroud_Documentation
 ---
 
-# Architecture Overview.md
+# Architecture Overview
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

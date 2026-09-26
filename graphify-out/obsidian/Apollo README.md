@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-apollo/README.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
+community: "TestIsContainerRunning"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/TestIsContainerRunning
 ---
 
 # Apollo README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning

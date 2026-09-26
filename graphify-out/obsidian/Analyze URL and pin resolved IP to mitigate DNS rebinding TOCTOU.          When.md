@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.analyze_and_pin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

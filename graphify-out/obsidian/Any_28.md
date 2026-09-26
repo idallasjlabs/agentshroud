@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L379"
+community: "GatewayEmailService"
+location: "L159"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/GatewayEmailService
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[.inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/GatewayEmailService

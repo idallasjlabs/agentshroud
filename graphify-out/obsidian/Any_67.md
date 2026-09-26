@@ -1,18 +1,25 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "gateway.proxy.llm_proxy"
-location: "L75"
+community: "main.rs"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - graphify/INFERRED
+  - community/mainrs
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/code #graphify/INFERRED #community/mainrs

@@ -1,29 +1,30 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L110"
+community: "falco_monitor.py"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/falco_monitorpy
 ---
 
 # Any
 
 ## Connections
-- [[._generate_new_credential()]] - `references` [EXTRACTED]
-- [[._validate_credential()]] - `references` [EXTRACTED]
-- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
-- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
-- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
-- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
-- [[.get_credential_status()]] - `references` [EXTRACTED]
-- [[.get_health_score()]] - `references` [EXTRACTED]
-- [[.register_credential()]] - `references` [EXTRACTED]
-- [[.rotate_credential()]] - `references` [EXTRACTED]
-- [[.validate()_1]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[._process_inbound_core()]] - `references` [EXTRACTED]
+- [[._process_outbound_core()]] - `references` [EXTRACTED]
+- [[.append()]] - `references` [EXTRACTED]
+- [[.append_block()]] - `references` [EXTRACTED]
+- [[.append_owner_bypass()]] - `references` [EXTRACTED]
+- [[.get_stats()_6]] - `references` [EXTRACTED]
+- [[.process_inbound()]] - `references` [EXTRACTED]
+- [[.process_outbound()]] - `references` [EXTRACTED]
+- [[.to_dict()_1]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

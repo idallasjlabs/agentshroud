@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+community: "CredentialInfo"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/CredentialInfo
 ---
 
 # Atlassian OAuth
 
 ## Connections
-- [[Security Best Practices_3]] - `contains` [EXTRACTED]
+- [[Security Best Practices_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/CredentialInfo

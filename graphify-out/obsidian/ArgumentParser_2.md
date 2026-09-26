@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L333"
+community: "Hermes — Podcast Production Orchestrator"
+location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # ArgumentParser
 
 ## Connections
-- [[_build_arg_parser()_1]] - `references` [EXTRACTED]
+- [[build_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

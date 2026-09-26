@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "GitGuard"
-location: "L439"
+community: "rbac_config.py"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/rbac_configpy
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[._alert_high_usage()]] - `references` [EXTRACTED]
+- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

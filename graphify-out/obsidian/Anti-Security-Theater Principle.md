@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "rationale"
-community: "Gateway-Enforced Intel Verification (SCRUM-75)"
+community: "6. Go / No-Go Recommendation"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
+  - community/6_Go_/_No-Go_Recommendation
 ---
 
 # Anti-Security-Theater Principle
@@ -14,4 +14,4 @@ tags:
 - [[Gateway-Enforced Intel Verification (SCRUM-75)]] - `conceptually_related_to` [INFERRED]
 - [[SOUL.md — Isaiah Jefferson Persona]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Gateway-Enforced_Intel_Verification_SCRUM-75
+#graphify/rationale #graphify/INFERRED #community/6_Go_/_No-Go_Recommendation

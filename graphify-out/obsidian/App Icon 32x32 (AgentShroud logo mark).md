@@ -1,16 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-32x32.png"
 type: "image"
-community: "brand-guidelines.md"
+community: "PII redaction — presidio engine 0.9 confidence m"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/brand-guidelinesmd
+  - community/PII_redaction__presidio_engine_09_confidence_m
 ---
 
 # App Icon 32x32 (AgentShroud logo mark)
 
-## Connections
-- [[AgentShroud Premium Email Signature Template]] - `references` [EXTRACTED]
-
-#graphify/image #graphify/EXTRACTED #community/brand-guidelinesmd
+#graphify/image #graphify/EXTRACTED #community/PII_redaction__presidio_engine_09_confidence_m

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L97"
+community: "AgentShroud (system, C4 context)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/AgentShroud_system_C4_context
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context

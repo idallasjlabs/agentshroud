@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "ReportStore"
-location: "L182"
+community: "_seed_cron"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/_seed_cron
 ---
 
 # Any
 
 ## Connections
-- [[.get()_4]] - `references` [EXTRACTED]
-- [[.list()]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

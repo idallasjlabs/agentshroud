@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Enum"
+community: "EncryptedStore"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/EncryptedStore
 ---
 
 # Alert severity levels.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AlertLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

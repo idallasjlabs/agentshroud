@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Apple Platform Integration"
+community: "1password-skill.sh"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Platform_Integration
+  - community/1password-skillsh
 ---
 
 # Apple Platform Integration
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Post-v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 - [[Apple Watch Support]] - `contains` [EXTRACTED]
 - [[Control Center Widget (iPhone + macOS)]] - `contains` [EXTRACTED]
-- [[Implementation Notes]] - `contains` [EXTRACTED]
+- [[Implementation Notes_1]] - `contains` [EXTRACTED]
 - [[Push Notifications (iPhone + Mac + Apple Watch)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Platform_Integration
+#graphify/document #graphify/EXTRACTED #community/1password-skillsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "cli/main.py"
+community: "patch"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/patch
 ---
 
 # Approve an egress request by ID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approve()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/patch

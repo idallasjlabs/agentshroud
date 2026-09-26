@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "MCP AWS Profile Configuration README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Atlas README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

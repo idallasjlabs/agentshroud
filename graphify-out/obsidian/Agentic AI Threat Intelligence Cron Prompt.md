@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # Agentic AI Threat Intelligence Cron Prompt
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Live Cron Job Index (11 jobs)]] - `references` [EXTRACTED]
 - [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/INFERRED #community/run_test

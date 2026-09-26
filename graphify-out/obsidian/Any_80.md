@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L75"
+community: "EncryptedStore"
+location: "L739"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/URLAnalyzer
+  - graphify/EXTRACTED
+  - community/EncryptedStore
 ---
 
 # Any
 
 ## Connections
-- [[._audit()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_19]] - `references` [EXTRACTED]
-- [[.to_dict()_17]] - `references` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

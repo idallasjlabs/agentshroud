@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L100"
+community: "A2APolicyEngine"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/A2APolicyEngine
 ---
 
 # ApprovalDecision
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[User's decision on a pending approval request]] - `rationale_for` [EXTRACTED]
-- [[approval.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[test_approval_decision_valid()]] - `calls` [EXTRACTED]
-- [[test_main_simple.py]] - `imports` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

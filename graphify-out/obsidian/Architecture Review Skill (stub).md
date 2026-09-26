@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Architecture Review Skill (stub)"
+community: "patch-ws-proxy.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Review_Skill_stub
+  - community/patch-ws-proxysh
 ---
 
 # Architecture Review Skill (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Review_Skill_stub
+#graphify/document #graphify/EXTRACTED #community/patch-ws-proxysh

@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "A2AProxyResult"
-location: "L148"
+community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - graphify/INFERRED
+  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_76]] - `references` [EXTRACTED]
-- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[.process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[.inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/INFERRED #community/DELIVERABLE_1__Domain-by-Domain_Assessment

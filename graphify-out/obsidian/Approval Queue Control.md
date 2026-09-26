@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Function Details"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Function_Details
 ---
 
 # Approval Queue Control
@@ -16,4 +16,4 @@ tags:
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 - [[IEC 62443 Compliance Matrix]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/rationale #graphify/EXTRACTED #community/Function_Details

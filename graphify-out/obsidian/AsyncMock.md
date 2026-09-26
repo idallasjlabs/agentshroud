@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "AsyncMock"
+community: "OutboundInfoFilter"
 location: "L8612"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AsyncMock
+  - community/OutboundInfoFilter
 ---
 
 # AsyncMock
 
 ## Connections
-- [[.__call__()_5]] - `method` [EXTRACTED]
-- [[.__init__()_110]] - `calls` [INFERRED]
-- [[.__init__()_112]] - `method` [EXTRACTED]
+- [[.__call__()_10]] - `method` [EXTRACTED]
+- [[.__init__()_173]] - `calls` [INFERRED]
+- [[.__init__()_191]] - `method` [EXTRACTED]
 - [[._handler()]] - `calls` [INFERRED]
 - [[._mock_request()]] - `calls` [INFERRED]
 - [[._passthrough_pii()]] - `calls` [INFERRED]
@@ -155,7 +155,7 @@ tags:
 - [[.test_success_returns_true()]] - `calls` [INFERRED]
 - [[.test_success_returns_true()_1]] - `calls` [INFERRED]
 - [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_suspended_drop_notice_respects_cooldown()]] - `calls` [EXTRACTED]
+- [[.test_suspended_drop_notice_respects_cooldown()_1]] - `calls` [EXTRACTED]
 - [[.test_suspended_user_receives_drop_notice()]] - `calls` [EXTRACTED]
 - [[.test_system_message_not_tracked()]] - `calls` [INFERRED]
 - [[.test_system_notification_skips_pipeline()]] - `calls` [INFERRED]
@@ -172,20 +172,22 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Minimal async callable for monkeypatching.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_fake_ws()]] - `calls` [INFERRED]
 - [[_make_approval_queue()]] - `calls` [INFERRED]
 - [[_make_client()]] - `calls` [INFERRED]
 - [[_make_integrity_pipeline()]] - `calls` [INFERRED]
 - [[_make_mock_app_state()]] - `calls` [INFERRED]
-- [[_make_pipeline()]] - `calls` [INFERRED]
+- [[_make_pipeline()_1]] - `calls` [INFERRED]
 - [[_make_pipeline()_2]] - `calls` [INFERRED]
 - [[_make_pipeline()_3]] - `calls` [INFERRED]
 - [[_make_signer_pipeline()]] - `calls` [INFERRED]
 - [[_make_stream_app_state()]] - `calls` [INFERRED]
 - [[_make_trust_app_state()]] - `calls` [INFERRED]
 - [[_make_ws()]] - `calls` [INFERRED]
-- [[client()_1]] - `calls` [INFERRED]
+- [[_mock_ws()]] - `calls` [INFERRED]
+- [[_run_disconnect_test()]] - `calls` [INFERRED]
+- [[client()_3]] - `calls` [INFERRED]
 - [[client()_18]] - `calls` [INFERRED]
 - [[test_approvals_approve_and_deny()]] - `calls` [INFERRED]
 - [[test_approvals_approve_raises()]] - `calls` [INFERRED]
@@ -213,7 +215,9 @@ tags:
 - [[test_forward_stream_rejects_non_openai_compat_target()]] - `calls` [INFERRED]
 - [[test_launch_scan_background_exec_failure()]] - `calls` [INFERRED]
 - [[test_launch_scan_background_success()]] - `calls` [INFERRED]
+- [[test_listen_without_end_times_out()]] - `calls` [INFERRED]
 - [[test_log_audit_appends_to_audit_store()]] - `calls` [INFERRED]
+- [[test_pcm_buffer_bounded()]] - `calls` [INFERRED]
 - [[test_pipeline_allows_small_response()]] - `calls` [INFERRED]
 - [[test_pipeline_clamav_clean_payload()]] - `calls` [INFERRED]
 - [[test_pipeline_clamav_error_fail_open()]] - `calls` [INFERRED]
@@ -226,11 +230,17 @@ tags:
 - [[test_scan_bytes_clean()]] - `calls` [INFERRED]
 - [[test_scan_bytes_infected()]] - `calls` [INFERRED]
 - [[test_scan_bytes_timeout()]] - `calls` [INFERRED]
+- [[test_scan_request_data_scans_messages_without_name_error()]] - `calls` [INFERRED]
 - [[test_ssh_compose_success()]] - `calls` [INFERRED]
 - [[test_ssh_compose_timeout_and_exception()]] - `calls` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 - [[test_upgrade_bot_paths()]] - `calls` [INFERRED]
 - [[test_upgrade_gateway_paths()]] - `calls` [INFERRED]
 - [[test_websocket_connect()]] - `calls` [INFERRED]
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - `calls` [INFERRED]
+- [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - `calls` [INFERRED]
+- [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
+- [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
+- [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

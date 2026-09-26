@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustLevel"
+community: "MemoryIntegrityMonitor"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/MemoryIntegrityMonitor
 ---
 
 # Apply time-based decay to score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._apply_decay()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustLevel
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

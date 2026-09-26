@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: ".dispatch()"
+community: "Detailed Profiles"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/dispatch
+  - community/Detailed_Profiles
 ---
 
 # Append alert to JSONL log file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._log_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/dispatch
+#graphify/rationale #graphify/EXTRACTED #community/Detailed_Profiles

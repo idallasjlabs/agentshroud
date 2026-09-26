@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Seccomp Profiles"
+community: "diagrams/README.md"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/diagrams/READMEmd
 ---
 
 # Applied By
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

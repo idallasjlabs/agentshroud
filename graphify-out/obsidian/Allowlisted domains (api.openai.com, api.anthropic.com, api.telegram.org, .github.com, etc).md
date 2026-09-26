@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "Domain allowlisted? (agentshroud.yaml proxy.allo"
+community: "test-sunday-upgrade-scan.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Domain_allowlisted_agentshroudyaml_proxyallo
+  - community/test-sunday-upgrade-scansh
 ---
 
 # Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, *.github.com, etc)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Domain_allowlisted_agentshroudyaml_proxyallo
+#graphify/concept #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
