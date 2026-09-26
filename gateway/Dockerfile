@@ -145,7 +145,8 @@ RUN set -eux; \
 # === Builder Stage ===
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
-FROM python:3.13-slim@sha256:8d9d0b8bcf6506481eae4907c18f5e3e7902e629f5f6d684f9e7c32e85e3ddf0 AS builder
+# 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b AS builder
 
 WORKDIR /build
 ENV PIP_ROOT_USER_ACTION=ignore
@@ -169,7 +170,8 @@ RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # === Runtime Stage ===
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
-FROM python:3.13-slim@sha256:8d9d0b8bcf6506481eae4907c18f5e3e7902e629f5f6d684f9e7c32e85e3ddf0
+# 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
 
 WORKDIR /app
 ENV PIP_ROOT_USER_ACTION=ignore

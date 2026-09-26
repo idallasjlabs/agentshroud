@@ -19,10 +19,12 @@
 # SCRUM-101: 4.9.2 → 4.14.7 (latest 4.x; ships underscore >= 1.13, retiring
 # the CVE-2021-23358 .trivyignore suppression, and clears accumulated
 # agent-lib CVEs).
-FROM python:3.13-slim@sha256:8d9d0b8bcf6506481eae4907c18f5e3e7902e629f5f6d684f9e7c32e85e3ddf0
+# 2026-09-26 Sunday upgrade: 4.14.7 → 4.14.8 (latest 4.x per packages.wazuh.com);
+# base image digest refreshed too — was 8d9d0b8b..., now 7c61056e...
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
 
 ENV DEBIAN_FRONTEND=noninteractive
-ARG WAZUH_VERSION=4.14.7
+ARG WAZUH_VERSION=4.14.8
 
 RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
