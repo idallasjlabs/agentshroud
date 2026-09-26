@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "SlackAPIProxy"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/SlackAPIProxy
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy

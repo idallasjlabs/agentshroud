@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "_any_detector_fires()"
+community: "BotConfig"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/BotConfig
 ---
 
 # PromptGuard
@@ -23,9 +23,9 @@ tags:
 - [[.test_overall_detection_rate_meets_threshold()]] - `calls` [EXTRACTED]
 - [[.test_persona_hijack_detection_rate()]] - `calls` [EXTRACTED]
 - [[.test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[_any_detector_fires()]] - `references` [EXTRACTED]
 - [[_prompt_guard_detects()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/code #graphify/EXTRACTED #community/BotConfig

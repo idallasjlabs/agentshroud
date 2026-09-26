@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "ProxyDashboard"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # ProxyDashboard
 
 ## Connections
-- [[.__init__()_63]] - `method` [EXTRACTED]
+- [[.__init__()_8]] - `method` [EXTRACTED]
 - [[.get_display()]] - `method` [EXTRACTED]
 - [[.get_report()]] - `method` [EXTRACTED]
 - [[.record_message_proxied()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[Collects status from all security components and generates reports.]] - `rationale_for` [EXTRACTED]
 - [[ProxyStatusReport]] - `calls` [EXTRACTED]
 - [[list_security_modules()]] - `semantically_similar_to` [INFERRED]
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[proxy_status.py]] - `contains` [EXTRACTED]
 - [[run_quick()]] - `references` [EXTRACTED]
 - [[test_dashboard_audit_broken()]] - `calls` [EXTRACTED]
 - [[test_dashboard_audit_status()]] - `calls` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_dashboard_uptime()]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

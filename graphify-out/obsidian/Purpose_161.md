@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "falco_monitor.py"
+community: "Security Controls"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/Security_Controls
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/Security_Controls

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "TestDNSForwarderProtocol"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/TestDNSForwarderProtocol
 ---
 
 # Purpose
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol

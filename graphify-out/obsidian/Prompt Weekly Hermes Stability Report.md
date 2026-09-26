@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "GroupRegistry"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/GroupRegistry
 ---
 
 # Prompt: Weekly Hermes Stability Report
@@ -18,4 +18,4 @@ tags:
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 - [[gateway-exit-diag.log RestartExit Telemetry]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/EXTRACTED #community/GroupRegistry

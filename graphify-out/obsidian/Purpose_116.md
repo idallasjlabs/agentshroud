@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "OpenClaw"
-location: "L15"
+community: "Deploying AgentShroud on macOS (Apple Silicon / "
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_

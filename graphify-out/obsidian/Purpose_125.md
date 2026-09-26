@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
-location: "L6"
+community: "Available MCP Servers"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Available_MCP_Servers
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

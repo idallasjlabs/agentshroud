@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L12"
+community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud

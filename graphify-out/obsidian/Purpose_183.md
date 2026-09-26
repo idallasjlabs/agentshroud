@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "web_config.py"
-location: "L12"
+community: "GroupApprovalRouter"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/GroupApprovalRouter
 ---
 
 # Purpose
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter

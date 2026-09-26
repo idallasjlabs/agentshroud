@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "apply-patches.js"
-location: "L17"
+community: "diagrams/README.md"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/diagrams/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[apply-patches.js_1]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "ssh_proxy.py"
-location: "L15"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[OpenSCAP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

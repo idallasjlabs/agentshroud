@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "log_sanitizer.py"
+community: "test_claude_via_openai_path.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/test_claude_via_openai_pathpy
 ---
 
 # Purpose
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

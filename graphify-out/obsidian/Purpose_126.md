@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "env_guard.py"
-location: "L12"
+community: "TestDockerSecretIsolation"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/TestDockerSecretIsolation
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/TestDockerSecretIsolation

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "OpenClaw Bot Container"
+community: "pipeline.py — Security Pipeline"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Provider Model Strings:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Switching Models in OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

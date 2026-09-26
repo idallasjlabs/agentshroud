@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "BROWSER_FETCH_SKILL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

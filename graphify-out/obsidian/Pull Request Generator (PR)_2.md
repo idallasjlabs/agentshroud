@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
+community: "TestComputeBotScorecard"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/TestComputeBotScorecard
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[Related Skills_87]] - `contains` [EXTRACTED]
-- [[Usage_91]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_97]] - `contains` [EXTRACTED]
+- [[README_102]] - `contains` [EXTRACTED]
+- [[Related Skills_106]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_107]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/TestComputeBotScorecard

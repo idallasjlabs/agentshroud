@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "TestPromptGuardDirectly"
+community: "BotConfig"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptGuardDirectly
+  - community/BotConfig
 ---
 
 # PromptGuard scans high-confidence classic payloads with non-zero score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardDirectly]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptGuardDirectly
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Problem
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

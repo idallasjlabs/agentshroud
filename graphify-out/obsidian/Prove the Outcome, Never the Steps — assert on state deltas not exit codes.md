@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Weekly Sunday Upgrade directive — every versione"
+community: "1. Starting and Stopping AgentShroud"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Weekly_Sunday_Upgrade_directive__every_versione
+  - community/1_Starting_and_Stopping_AgentShroud
 ---
 
 # Prove the Outcome, Never the Steps — assert on state deltas not exit codes
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Weekly Sunday Upgrade directive — every versioned component to latest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Weekly_Sunday_Upgrade_directive__every_versione
+#graphify/rationale #graphify/EXTRACTED #community/1_Starting_and_Stopping_AgentShroud

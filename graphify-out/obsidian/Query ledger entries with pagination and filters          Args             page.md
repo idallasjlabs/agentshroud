@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "SSHProxy"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # Query ledger entries with pagination and filters          Args:             page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

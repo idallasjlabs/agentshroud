@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L127"
+community: "gateway.proxy.llm_proxy"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/gatewayproxyllm_proxy
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy

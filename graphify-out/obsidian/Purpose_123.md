@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
-location: "L6"
+community: "API Keys Setup Guide"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/API_Keys_Setup_Guide
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

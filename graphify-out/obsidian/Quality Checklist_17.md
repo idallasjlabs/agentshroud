@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L201"
+community: "Socrates — Dialogue Architect"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

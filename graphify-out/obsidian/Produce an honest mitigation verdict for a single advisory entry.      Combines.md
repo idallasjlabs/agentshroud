@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L732"
+community: "EncryptedStore"
+location: "L740"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/EncryptedStore
 ---
 
 # Produce an honest mitigation verdict for a single advisory entry.      Combines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

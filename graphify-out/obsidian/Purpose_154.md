@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Purpose
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

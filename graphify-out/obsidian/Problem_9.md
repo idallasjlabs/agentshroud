@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Add information filtering to prevent agent self-"
-location: "L6"
+community: "TestOpenAPIContract"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-
+  - community/TestOpenAPIContract
 ---
 
 # Problem
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-
+#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract

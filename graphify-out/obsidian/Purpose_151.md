@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "mcp_audit.py"
+community: "tmux Session Control"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_auditpy
+  - community/tmux_Session_Control
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_auditpy
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "AgentShroud Setup Guide"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Process Tool Actions (for background sessions)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

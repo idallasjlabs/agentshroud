@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 location: "L30-L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Provider Must Be `custom` (not ollama / openai-local)
@@ -15,4 +15,4 @@ tags:
 - [[Cron Job Recreation Procedure (create + model pin edit)]] - `rationale_for` [EXTRACTED]
 - [[Stale `model_provider ollama` in Seed YAML]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy

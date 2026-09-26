@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Pull the _json_escape helper + payload-build block out of the wrapper.      We r
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_extract_payload_builder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

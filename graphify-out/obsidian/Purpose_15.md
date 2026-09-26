@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "SecurityEvent"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/SecurityEvent
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/SecurityEvent

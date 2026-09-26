@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "TestKeyRotationManager"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/TestKeyRotationManager
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/TestKeyRotationManager

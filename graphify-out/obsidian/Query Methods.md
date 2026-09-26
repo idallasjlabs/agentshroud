@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "mcp_audit.py"
+community: "TestDNSForwarderProtocol"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_auditpy
+  - community/TestDNSForwarderProtocol
 ---
 
 # Query Methods
 
 ## Connections
-- [[Function Details_22]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_auditpy
+#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol

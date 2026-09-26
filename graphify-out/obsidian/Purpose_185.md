@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "agentshroud.yaml"
-location: "L16"
+community: "Mode A — Single task"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/Mode_A__Single_task
 ---
 
 # Purpose
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

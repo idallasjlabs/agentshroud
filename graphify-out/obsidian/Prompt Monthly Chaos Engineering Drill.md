@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "GroupRegistry"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/GroupRegistry
 ---
 
 # Prompt: Monthly Chaos Engineering Drill
@@ -16,4 +16,4 @@ tags:
 - [[Seed Job Monthly Chaos Engineering Drill]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/EXTRACTED #community/GroupRegistry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Proof the exemption is NARROW: an EXTERNAL http:// curl is still flaggable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_external_http_curl_still_matches_the_flagged_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

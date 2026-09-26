@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "DNSFilterConfig"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/DNSFilterConfig
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
-location: "L6"
+community: "OpenClaw Host Hardening"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Host_Hardening
 ---
 
 # Purpose
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

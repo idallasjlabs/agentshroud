@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "AgentShroud™ Communication Templates"
+community: "start-agentshroud.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/start-agentshroudsh
 ---
 
 # Product Owner — Isaiah Jefferson
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Scrum Master  Agile Coach — AgentShroud Bot (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/concept #graphify/EXTRACTED #community/start-agentshroudsh

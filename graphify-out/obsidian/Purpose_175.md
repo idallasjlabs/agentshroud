@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "event_bus.py"
-location: "L12"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
 ---
 
 # Purpose
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_

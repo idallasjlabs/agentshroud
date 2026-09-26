@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Prompt: Newsletter — Mac Clustering
@@ -15,4 +15,4 @@ tags:
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Strict Sequential 4-Query Search Protocol]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "AgentShroud Typography Guidelines"
 location: "Module 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # PromptGuard: Prompt Injection Defense (49 Patterns, 35+ Languages)
@@ -18,4 +18,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - `calls` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

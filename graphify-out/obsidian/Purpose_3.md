@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "RateLimiter"
-location: "L15"
+community: "DNSFilterConfig"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/DNSFilterConfig
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimiter
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

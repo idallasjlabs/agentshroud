@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

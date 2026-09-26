@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L201"
+community: "TestStrangerRateLimit"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/TestStrangerRateLimit
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit

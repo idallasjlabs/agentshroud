@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Presidio Analyzer"
-location: "L16"
+community: "Pre-commit hook strategy (framework vs manual)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Presidio_Analyzer
+  - community/Pre-commit_hook_strategy_framework_vs_manual
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer
+#graphify/document #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual

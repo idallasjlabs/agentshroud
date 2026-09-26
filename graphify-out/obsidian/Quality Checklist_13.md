@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L149"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[description of what this does_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

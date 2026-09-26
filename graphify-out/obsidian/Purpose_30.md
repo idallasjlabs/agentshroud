@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

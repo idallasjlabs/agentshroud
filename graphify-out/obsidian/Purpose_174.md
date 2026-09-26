@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "auth.py"
-location: "L12"
+community: "Bot Container (agent decides: reply + tool call)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

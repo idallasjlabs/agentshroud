@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "web_content_scanner.py"
+community: "System Audit & Documentation"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/System_Audit__Documentation
 ---
 
 # Purpose
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

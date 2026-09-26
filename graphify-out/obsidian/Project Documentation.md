@@ -1,19 +1,19 @@
 ---
 source_file: "docs/project/README.md"
 type: "document"
-community: "Project Documentation"
+community: "Skill: Branding Specialist (BS)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Documentation
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Project Documentation
 
 ## Connections
-- [[Current Status]] - `contains` [EXTRACTED]
-- [[Planned Documents]] - `contains` [EXTRACTED]
-- [[projectREADME]] - `contains` [EXTRACTED]
+- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Planned Documents_4]] - `contains` [EXTRACTED]
+- [[README_124]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Documentation
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

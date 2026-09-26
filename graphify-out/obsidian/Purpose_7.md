@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L14"
+community: "AuditExporter"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/AuditExporter
 ---
 
 # Purpose
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

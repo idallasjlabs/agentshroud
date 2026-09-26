@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
+community: "DNSFilterConfig"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/DNSFilterConfig
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
-location: "L137"
+community: "Bear Notes"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/Bear_Notes
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

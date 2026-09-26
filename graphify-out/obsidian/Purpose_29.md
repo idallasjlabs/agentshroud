@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

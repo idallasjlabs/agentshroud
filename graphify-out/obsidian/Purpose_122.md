@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Playwright"
-location: "L15"
+community: "mcp_permissions.py"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/mcp_permissionspy
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

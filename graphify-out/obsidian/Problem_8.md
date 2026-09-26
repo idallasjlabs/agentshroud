@@ -1,17 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConne"
-location: "L3"
+community: "wazuh_client.py"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+  - community/wazuh_clientpy
 ---
 
 # Problem
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

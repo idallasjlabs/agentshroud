@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/AgentShroud_v120__Blue_Team_Security_Assessme
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme

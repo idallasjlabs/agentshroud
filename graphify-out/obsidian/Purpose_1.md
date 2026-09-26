@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "gitleaks.toml"
-location: "L15"
+community: "FY26 Cost Reduction Context"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gitleakstoml
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gitleakstoml
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

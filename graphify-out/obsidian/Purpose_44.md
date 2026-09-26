@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "AuditExporter"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/AuditExporter
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

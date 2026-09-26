@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "sidecar.py"
-location: "L12"
+community: "archive_old_events()"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/archive_old_events
 ---
 
 # Purpose
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L158"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

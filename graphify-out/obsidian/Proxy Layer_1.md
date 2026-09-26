@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-007: Zero-Config Security (docker-compose up"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-007_Zero-Config_Security_docker-compose_up
 ---
 
 # Proxy Layer
@@ -17,4 +17,4 @@ tags:
 - [[ssh_proxy (approved hosts only)]] - `shares_data_with` [EXTRACTED]
 - [[web_proxy.py (domain allowlist engine)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/image #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up

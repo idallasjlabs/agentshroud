@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "AuditExporter"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/AuditExporter
 ---
 
 # Project Management (SKILL)
@@ -20,4 +20,4 @@ tags:
 - [[Security Audit (i-sec)]] - `references` [EXTRACTED]
 - [[Test-Driven Development README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

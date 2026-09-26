@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "agent_isolation.py"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

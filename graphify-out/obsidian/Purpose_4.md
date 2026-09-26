@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "installer.py"
-location: "L15"
+community: "Available MCP Servers"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/Available_MCP_Servers
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

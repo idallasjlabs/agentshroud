@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "docker_engine.py"
+community: "_FakeUpstreamWS"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker_enginepy
+  - community/_FakeUpstreamWS
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker_enginepy
+#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS

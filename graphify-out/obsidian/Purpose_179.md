@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "config.py"
-location: "L12"
+community: "sunday-scan.sh"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/sunday-scansh
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/sunday-scansh

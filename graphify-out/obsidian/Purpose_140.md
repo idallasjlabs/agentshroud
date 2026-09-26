@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "middleware.py"
+community: "Security Implementation Verification"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Security_Implementation_Verification
 ---
 
 # Purpose
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

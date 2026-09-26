@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "P2 High Priority Incidents"
+community: "Architecture"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/Architecture
 ---
 
 # Prompt Injection Detected
@@ -16,4 +16,4 @@ tags:
 - [[Multi-Layer Detection Strategy]] - `contains` [EXTRACTED]
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/Architecture

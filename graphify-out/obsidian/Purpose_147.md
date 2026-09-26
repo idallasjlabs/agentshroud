@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "clamav.md"
-location: "L15"
+community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamavmd
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
 ---
 
 # Purpose
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamavmd
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete

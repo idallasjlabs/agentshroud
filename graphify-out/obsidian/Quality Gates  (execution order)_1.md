@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "troubleshooting.md"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/troubleshootingmd
 ---
 
 # Quality Gates  (execution order)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

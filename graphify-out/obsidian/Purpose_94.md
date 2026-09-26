@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "TestRunningImageResolution"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/TestRunningImageResolution
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "url_analyzer.py"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Purpose
 
 ## Connections
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

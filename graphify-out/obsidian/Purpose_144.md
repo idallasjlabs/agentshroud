@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "document"
-community: "Function Details"
+community: "test_subagent_governance.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/test_subagent_governancepy
 ---
 
 # Purpose
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/test_subagent_governancepy

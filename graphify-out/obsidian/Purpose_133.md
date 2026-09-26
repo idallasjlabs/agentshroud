@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "models.py"
+community: "TestWebAPI"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/TestWebAPI
 ---
 
 # Purpose
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/TestWebAPI

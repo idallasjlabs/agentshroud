@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Community 1278"
+community: "TestErrorHandling"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/TestErrorHandling
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_95]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_90]] - `contains` [EXTRACTED]
-- [[openclawskillsi-pmREADME]] - `contains` [EXTRACTED]
+- [[Purpose_96]] - `contains` [EXTRACTED]
+- [[README_101]] - `contains` [EXTRACTED]
+- [[Related Skills_105]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_106]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1278
+#graphify/document #graphify/EXTRACTED #community/TestErrorHandling

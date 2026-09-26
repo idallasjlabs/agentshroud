@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "aiosqlite"
-location: "L15"
+community: "DNSFilterConfig"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aiosqlite
+  - community/DNSFilterConfig
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aiosqlite
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

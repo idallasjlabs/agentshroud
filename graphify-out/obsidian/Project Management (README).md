@@ -1,25 +1,26 @@
 ---
 source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "AuditExporter"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/AuditExporter
 ---
 
 # Project Management (README)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Purpose_58]] - `contains` [EXTRACTED]
-- [[Purpose_111]] - `contains` [EXTRACTED]
-- [[Related Skills_49]] - `contains` [EXTRACTED]
-- [[Related Skills_102]] - `contains` [EXTRACTED]
+- [[Purpose_22]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[README_22]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_25]] - `contains` [EXTRACTED]
+- [[Related Skills_65]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_53]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Usage_25]] - `contains` [EXTRACTED]
+- [[Usage_66]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

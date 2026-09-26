@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L50"
+community: "iMessage Integration Fix - Using imsg + imessage"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
 ---
 
 # Problem
 
 ## Connections
-- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
+- [[gsd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage

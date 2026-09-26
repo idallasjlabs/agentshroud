@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "1. GitHub MCP Authentication Reset"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "clamav_scanner.py"
+community: "GSDE&G Development Master Checklist"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Purpose
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

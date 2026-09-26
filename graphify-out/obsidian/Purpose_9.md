@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "proxy_status.py"
-location: "L15"
+community: ".__init__()"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/__init__
 ---
 
 # Purpose
 
 ## Connections
-- [[proxy_status.py_1]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/__init__

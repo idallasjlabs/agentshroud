@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "StdioConnection"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/StdioConnection
 ---
 
 # ProjectConfig
@@ -31,4 +31,4 @@ tags:
 - [[teams()]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

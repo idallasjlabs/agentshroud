@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
-location: "L6"
+community: "Mode A — Single task"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/Mode_A__Single_task
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L71"
+community: "BlockingPipeline"
+location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/BlockingPipeline
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/BlockingPipeline

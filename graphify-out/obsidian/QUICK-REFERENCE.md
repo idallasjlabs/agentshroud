@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "branding/README.md"
+community: "Phase 1 — Raw Collection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Phase_1__Raw_Collection
 ---
 
 # QUICK-REFERENCE.md
@@ -15,6 +15,6 @@ tags:
 - [[AgentShroud Blue — 1583f0]] - `references` [EXTRACTED]
 - [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 - [[INDEX]] - `references` [EXTRACTED]
-- [[brandingREADME]] - `references` [EXTRACTED]
+- [[README_38]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

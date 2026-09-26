@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "compose_generator.py"
-location: "L12"
+community: "GroupApprovalRouter"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/GroupApprovalRouter
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter

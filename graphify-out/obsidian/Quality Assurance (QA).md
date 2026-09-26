@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "_w()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/_w
 ---
 
 # Quality Assurance (QA)
 
 ## Connections
-- [[Purpose_99]] - `contains` [EXTRACTED]
-- [[Related Skills_90]] - `contains` [EXTRACTED]
-- [[Usage_94]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_63]] - `contains` [EXTRACTED]
+- [[README_68]] - `contains` [EXTRACTED]
+- [[Related Skills_69]] - `contains` [EXTRACTED]
+- [[Usage_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/_w

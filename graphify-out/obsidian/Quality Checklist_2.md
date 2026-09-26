@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L101"
+community: "MCP AWS Profile Configuration README"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

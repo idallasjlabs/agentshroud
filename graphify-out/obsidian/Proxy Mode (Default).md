@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Browser — Secure Browser Automation"
 location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Proxy Mode (Default)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Choose Security Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

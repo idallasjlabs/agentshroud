@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Implement gateway-level outbound information fil"
-location: "L9"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_fil
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Problem
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

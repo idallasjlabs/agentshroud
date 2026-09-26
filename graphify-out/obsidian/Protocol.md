@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: ".send()"
+community: "RateLimiter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/RateLimiter
 ---
 
 # Protocol
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SmtpLike]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

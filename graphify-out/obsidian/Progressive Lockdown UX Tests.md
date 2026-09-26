@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "IntelReportStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/IntelReportStore
 ---
 
 # Progressive Lockdown UX Tests
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ProgressiveLockdown]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

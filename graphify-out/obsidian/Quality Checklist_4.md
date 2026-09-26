@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L158"
+community: "HIGH — Should Fix Before Release"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/HIGH__Should_Fix_Before_Release
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release

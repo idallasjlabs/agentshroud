@@ -12,6 +12,6 @@ tags:
 # Problem: "Permission denied"
 
 ## Connections
-- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

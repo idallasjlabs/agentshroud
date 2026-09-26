@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "WebhookReceiver"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/WebhookReceiver
 ---
 
 # Pull an image from a registry.
 
 ## Connections
-- [[.pull()]] - `rationale_for` [EXTRACTED]
+- [[.pull()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

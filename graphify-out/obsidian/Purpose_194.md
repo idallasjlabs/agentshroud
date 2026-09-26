@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "falco_monitor.py"
+community: "quick-setup.sh script"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/quick-setupsh_script
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script

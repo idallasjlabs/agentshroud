@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "test_telegram_replay.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/test_telegram_replaypy
 ---
 
 # Prompt: Turbo Fieldfare Fix Watch
@@ -15,4 +15,4 @@ tags:
 - [[Minimal GitHub API Polling (2 calls, last 1-2 comments only)]] - `rationale_for` [EXTRACTED]
 - [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy

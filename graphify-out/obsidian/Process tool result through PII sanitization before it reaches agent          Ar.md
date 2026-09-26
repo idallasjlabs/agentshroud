@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "TrustManager"
 location: "L1397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TrustManager
 ---
 
 # Process tool result through PII sanitization before it reaches agent          Ar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

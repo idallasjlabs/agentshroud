@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Error Index"
+community: "test_integration.py"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Index
+  - community/test_integrationpy
 ---
 
 # Prompt Injection Blocks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Index
+#graphify/document #graphify/EXTRACTED #community/test_integrationpy

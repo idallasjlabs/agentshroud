@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "mcp_config.py"
-location: "L12"
+community: "AuditStore"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/AuditStore
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/AuditStore

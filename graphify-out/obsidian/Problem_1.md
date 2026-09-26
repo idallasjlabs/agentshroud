@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/gsd.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "postmortem.md"
-location: "L9"
+community: "TestFullAccessMiddlewareBypass"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # Problem
 
 ## Connections
-- [[gsd]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

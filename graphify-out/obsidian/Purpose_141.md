@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "sanitizer.py"
+community: "DeceptionDetection"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/DeceptionDetection
 ---
 
 # Purpose
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/DeceptionDetection

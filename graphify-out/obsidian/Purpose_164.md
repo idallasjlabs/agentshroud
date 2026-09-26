@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "router.py"
+community: "TestAtomicRegistryWrites"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/TestAtomicRegistryWrites
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/TestAtomicRegistryWrites

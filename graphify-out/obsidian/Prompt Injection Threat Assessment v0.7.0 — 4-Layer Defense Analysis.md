@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "ContextGuard Bug — should_block_message() Always"
+community: "TestIdentityAuth"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ContextGuard_Bug__should_block_message_Always
+  - community/TestIdentityAuth
 ---
 
 # Prompt Injection Threat Assessment v0.7.0 — 4-Layer Defense Analysis
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ContextGuard Bug — should_block_message() Always Returns False (monitor-only in enforce mode)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ContextGuard_Bug__should_block_message_Always
+#graphify/document #graphify/EXTRACTED #community/TestIdentityAuth

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "_w()"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/_w
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/_w

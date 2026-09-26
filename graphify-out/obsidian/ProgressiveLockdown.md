@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "IntelReportStore"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/IntelReportStore
 ---
 
 # ProgressiveLockdown
 
 ## Connections
-- [[.__init__()_99]] - `calls` [EXTRACTED]
-- [[.__init__()_167]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `calls` [EXTRACTED]
+- [[.__init__()_108]] - `method` [EXTRACTED]
 - [[._get_state()]] - `method` [EXTRACTED]
 - [[.all_statuses()]] - `method` [EXTRACTED]
 - [[.get_status()_2]] - `method` [EXTRACTED]
@@ -35,16 +35,16 @@ tags:
 - [[.test_reset_removes_suspended_state()]] - `calls` [EXTRACTED]
 - [[.test_reset_true_for_known_user()]] - `calls` [EXTRACTED]
 - [[.test_suspended_level_at_10_blocks()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[ContributorManager]] - `calls` [EXTRACTED]
-- [[FakePipelineResult_1]] - `uses` [INFERRED]
-- [[FakeRBAC_1]] - `uses` [INFERRED]
+- [[FakePipelineResult]] - `uses` [INFERRED]
+- [[FakeRBAC]] - `uses` [INFERRED]
 - [[LockdownAction]] - `references` [EXTRACTED]
 - [[LockdownLevel]] - `references` [EXTRACTED]
-- [[PassthroughPipeline_1]] - `uses` [INFERRED]
+- [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[Progressive Lockdown UX Tests]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
 - [[TestLockdownLevelWiring]] - `uses` [INFERRED]
 - [[TestLockedCommand]] - `uses` [INFERRED]
@@ -53,7 +53,6 @@ tags:
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[Tracks per-user block counts and returns escalation actions.      Thread-safe fo]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `semantically_similar_to` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
@@ -61,4 +60,4 @@ tags:
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

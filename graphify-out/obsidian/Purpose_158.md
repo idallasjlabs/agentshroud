@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "browser_security.py"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser_securitypy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Purpose
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser_securitypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

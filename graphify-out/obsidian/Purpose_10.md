@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "i-eightd SKILL — 8D Root Cause Analysis"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/i-eightd_SKILL__8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/i-eightd_SKILL__8D_Root_Cause_Analysis
