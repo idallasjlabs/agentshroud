@@ -34,6 +34,27 @@ vulnerabilities:
       because the compensating control does not exist yet.
     expiredAt: 2026-10-27
 
+  - id: CVE-2026-43185
+    statement: >-
+      Linux kernel ksmbd (in-kernel SMB server) signedness bug in
+      smb_direct_prepare_negotiation(), flagged via Debian's linux-libc-dev
+      6.12.107-1 (surfaced 2026-09-26, first Sunday run after today's
+      python:3.13-slim/3.12-slim base-digest refresh pulled a newer trixie
+      snapshot). No fixed linux-libc-dev build exists in Debian trixie as of
+      2026-09-26 (upstream fix landed in kernel 6.18.16/6.19.6 per OSV, not yet
+      backported into Debian's package). Not reachable regardless: linux-libc-
+      dev ships kernel HEADER files only (compile-time C headers for building
+      against kernel syscalls), never the kernel binary or the ksmbd module
+      itself — and even the theoretical target, the actual running kernel, is
+      the Colima VM host's kernel, entirely outside any container's control.
+      No AgentShroud image in this repo runs or exposes an SMB service. arm 2:
+      no gateway-side control is applicable or needed — this is not an
+      attack-class gap, it is a compile-time-headers package being flagged for
+      a runtime kernel-module bug it cannot contain code for. Re-review when
+      Debian ships a fixed linux-libc-dev (i.e. once trivy stops flagging it),
+      confirming the false-association read above still holds.
+    expiredAt: 2026-11-10
+
   - id: CVE-2026-60002
     statement: >-
       openssh-client. No fixed version exists in ANY Debian release as of
