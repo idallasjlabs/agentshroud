@@ -1,0 +1,18 @@
+---
+source_file: "scripts/lib/sunday-scan.sh"
+type: "code"
+community: "Approval queue (notify Isaiah via Telegram, wait"
+location: "L97"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
+---
+
+# _sunday_warn_expiring_acceptances()
+
+## Connections
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait
