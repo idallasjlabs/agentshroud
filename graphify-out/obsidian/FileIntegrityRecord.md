@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "ContainerEngine"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ContainerEngine
 ---
 
 # FileIntegrityRecord
 
 ## Connections
-- [[.from_dict()_1]] - `method` [EXTRACTED]
+- [[.from_dict()_8]] - `method` [EXTRACTED]
 - [[.scan_file()]] - `references` [EXTRACTED]
-- [[.to_dict()_6]] - `method` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[.to_dict()_11]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

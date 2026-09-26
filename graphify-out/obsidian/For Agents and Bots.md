@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "AgentShroud™ Communication Templates"
+community: "start-agentshroud.sh"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/start-agentshroudsh
 ---
 
 # For Agents and Bots
@@ -17,4 +17,4 @@ tags:
 - [[Gemini CLI  ChatGPT Codex (secondary agents)]] - `contains` [EXTRACTED]
 - [[OpenClaw Bot (agentshroud-bot)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh

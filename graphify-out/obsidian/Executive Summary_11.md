@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive "
-location: "L10"
+community: "TestCheckCommandExecution"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_
+  - community/TestCheckCommandExecution
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
+- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_
+#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution

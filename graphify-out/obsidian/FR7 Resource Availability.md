@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "export-bot-conversations.py"
+community: "CollaboratorGreeter"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/CollaboratorGreeter
 ---
 
 # FR7: Resource Availability
@@ -15,4 +15,4 @@ tags:
 - [[health_report.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/concept #graphify/EXTRACTED #community/CollaboratorGreeter

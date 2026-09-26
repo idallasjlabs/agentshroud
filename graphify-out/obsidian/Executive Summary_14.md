@@ -1,17 +1,18 @@
 ---
-source_file: "docs/security/threat-model.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
-location: "L3"
+community: "SkillGuard"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/SkillGuard
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/document #graphify/EXTRACTED #community/SkillGuard

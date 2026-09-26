@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "graphify Skill"
+community: "AgentShroud v0.8.0 — Full Security & Functionali"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/AgentShroud_v080__Full_Security__Functionali
 ---
 
 # Extraction Cache Check — Step B0
@@ -14,4 +14,4 @@ tags:
 - [[--update Incremental Re-extraction Flow]] - `shares_data_with` [EXTRACTED]
 - [[Semantic Extraction — Part B (parallel subagents)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali

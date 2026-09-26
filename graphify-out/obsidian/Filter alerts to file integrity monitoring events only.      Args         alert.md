@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "wazuh_client.py"
+community: "LLMProxy"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/LLMProxy
 ---
 
 # Filter alerts to file integrity monitoring events only.      Args:         alert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_fim_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

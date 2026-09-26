@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "test_voice_gateway.py"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_voice_gatewaypy
 ---
 
 # FakeConn
 
 ## Connections
-- [[.__init__()_31]] - `method` [EXTRACTED]
-- [[.send_request()_1]] - `method` [EXTRACTED]
-- [[.stop()_3]] - `method` [EXTRACTED]
+- [[.__init__()_174]] - `method` [EXTRACTED]
+- [[.send_request()_2]] - `method` [EXTRACTED]
+- [[.stop()_12]] - `method` [EXTRACTED]
 - [[.test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[.test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[.test_generic_exception()]] - `calls` [EXTRACTED]
@@ -28,19 +28,19 @@ tags:
 - [[.test_timeout_error()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[Stand-in connection injected into the proxy's pool.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

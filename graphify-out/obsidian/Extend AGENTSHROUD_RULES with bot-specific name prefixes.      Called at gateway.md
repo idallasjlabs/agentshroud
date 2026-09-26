@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "GroupApprovalRouter"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/GroupApprovalRouter
 ---
 
 # Extend AGENTSHROUD_RULES with bot-specific name prefixes.      Called at gateway
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[configure_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

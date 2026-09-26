@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Usage"
+community: "EgressTelegramNotifier"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/EgressTelegramNotifier
 ---
 
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Usage_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "Local-Model Job Quality Matrix"
+community: "KeyRotationConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/KeyRotationConfig
 ---
 
 # Exit-50 Rollback Failure Incident
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Is Not Compose-Managed (asb owns it)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

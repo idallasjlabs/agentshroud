@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "test_voice_gateway.py"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/test_voice_gatewaypy
 ---
 
 # FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_62]] - `method` [EXTRACTED]
-- [[.get_item()]] - `method` [EXTRACTED]
-- [[.submit_tool_request()]] - `method` [EXTRACTED]
+- [[.__init__()_175]] - `method` [EXTRACTED]
+- [[.get_item()_2]] - `method` [EXTRACTED]
+- [[.submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
 - [[.test_approved_decision_allows()]] - `calls` [EXTRACTED]
 - [[.test_denied_decision_blocks_with_item_status()]] - `calls` [EXTRACTED]
@@ -23,21 +23,21 @@ tags:
 - [[.test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[.test_unknown_domain_allowed_when_approved()]] - `calls` [INFERRED]
 - [[.test_unknown_domain_denied_when_denied()]] - `calls` [INFERRED]
-- [[.wait_for_decision()]] - `method` [EXTRACTED]
+- [[.wait_for_decision()_4]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

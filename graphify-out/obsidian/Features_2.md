@@ -1,22 +1,23 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Browser Extension"
-location: "L47"
+community: "Prompt: Hermes Competitive Intelligence Email (A"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_A
 ---
 
 # Features
 
 ## Connections
-- [[1. URL Forwarder]] - `contains` [EXTRACTED]
-- [[2. Page Clipper]] - `contains` [EXTRACTED]
-- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
-- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
-- [[5. Reading List Queue]] - `contains` [EXTRACTED]
-- [[Browser Extension]] - `contains` [EXTRACTED]
+- [[1. Observatory Mode (Global Monitor-Only Switch)]] - `contains` [EXTRACTED]
+- [[2. Prompt Injection Hardening]] - `contains` [EXTRACTED]
+- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
+- [[4. ML-Based Injection Classifier (Stretch)]] - `contains` [EXTRACTED]
+- [[5. Output Canary System]] - `contains` [EXTRACTED]
+- [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_A

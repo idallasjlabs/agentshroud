@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
-location: "L75"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L432"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # File Locations
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

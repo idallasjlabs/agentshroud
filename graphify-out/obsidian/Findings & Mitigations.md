@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Findings & Mitigations"
+community: "HeuristicClassifier"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings__Mitigations
+  - community/HeuristicClassifier
 ---
 
 # Findings & Mitigations
@@ -24,4 +24,4 @@ tags:
 - [[🟡 M2 `perl` and `bash` Available as Interpreters]] - `contains` [EXTRACTED]
 - [[🟡 M3 `proc1ns` Namespace Files Visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
+#graphify/document #graphify/EXTRACTED #community/HeuristicClassifier

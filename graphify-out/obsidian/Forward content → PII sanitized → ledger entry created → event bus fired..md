@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e.py"
+community: "Socrates — Dialogue Architect"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Forward content → PII sanitized → ledger entry created → event bus fired.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_pii_sanitized_and_ledger_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2epy
+#graphify/rationale #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

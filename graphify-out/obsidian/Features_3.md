@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/README.md"
+source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "Features"
-location: "L28"
+community: "Flip core security modules from monitor to enfor"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Flip_core_security_modules_from_monitor_to_enfor
 ---
 
 # Features
 
 ## Connections
-- [[Approval Queue_1]] - `contains` [EXTRACTED]
-- [[Authentication_3]] - `contains` [EXTRACTED]
-- [[Data Ledger]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
-- [[Ingest API]] - `contains` [EXTRACTED]
-- [[PII Sanitizer]] - `contains` [EXTRACTED]
+- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
+- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
+- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
+- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor

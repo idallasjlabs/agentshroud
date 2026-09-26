@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "lifespan.py"
+community: "MemoryIntegrityMonitor"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns "
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_enforcement_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

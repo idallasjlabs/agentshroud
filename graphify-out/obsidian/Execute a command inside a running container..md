@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "WebhookReceiver"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/WebhookReceiver
 ---
 
 # Execute a command inside a running container.
 
 ## Connections
-- [[.exec()]] - `rationale_for` [EXTRACTED]
+- [[.exec()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

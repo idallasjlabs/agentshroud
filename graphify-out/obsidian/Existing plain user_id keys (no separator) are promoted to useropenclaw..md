@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "TestMultiBotIsolation"
+community: "KeyVaultConfig"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/KeyVaultConfig
 ---
 
 # Existing plain user_id keys (no separator) are promoted to user::openclaw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legacy_session_promoted_on_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

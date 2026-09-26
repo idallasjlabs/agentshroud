@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Collaborator Setup Checklist"
-location: "L3"
+community: "test_scanner_integration_coverage.py"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Collaborator_Setup_Checklist
+  - community/test_scanner_integration_coveragepy
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist
+#graphify/document #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

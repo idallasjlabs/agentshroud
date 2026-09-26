@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Blue Team Security Assessment — AgentShroud v0.8"
+community: "hermes/workspace/jira_dev_ticket.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v08
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v08
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

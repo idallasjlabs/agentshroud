@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "test_gemini_openai_translator.py"
+community: "SecureBrowser"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/SecureBrowser
 ---
 
 # Extract the system instruction as plain text (camelCase or snake_case key).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_system_instruction_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

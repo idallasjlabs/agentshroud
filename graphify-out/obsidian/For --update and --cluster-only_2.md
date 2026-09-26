@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
 location: "L579"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/AgentShroud_v080_Watchtower__Complete_Feat
 ---
 
 # For --update and --cluster-only
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat

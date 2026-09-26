@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_observatory_mode.py"
-location: "L60"
+community: "test_a2a_policy.py"
+location: "L357"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_observatory_modepy
+  - graphify/EXTRACTED
+  - community/test_a2a_policypy
 ---
 
 # FastAPI
 
 ## Connections
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[_make_app()]] - `references` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
+- [[_lifespan()]] - `references` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

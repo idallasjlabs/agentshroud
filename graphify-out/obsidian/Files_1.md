@@ -1,20 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L90"
+community: "TestInputValidation"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/TestInputValidation
 ---
 
 # Files
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Core Configuration]] - `contains` [EXTRACTED]
-- [[Documentation_3]] - `contains` [EXTRACTED]
-- [[Secrets]] - `contains` [EXTRACTED]
+- [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/TestInputValidation

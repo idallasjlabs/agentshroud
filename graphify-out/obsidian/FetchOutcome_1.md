@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[.__call__()_8]] - `references` [EXTRACTED]
+- [[.__call__()_2]] - `references` [EXTRACTED]
 - [[.test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
 - [[.test_not_ok_without_content()]] - `calls` [EXTRACTED]
 - [[.test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DraftEntry
+#graphify/code #graphify/INFERRED #community/_call_agent_stream

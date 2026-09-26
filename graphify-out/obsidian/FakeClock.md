@@ -12,12 +12,12 @@ tags:
 # FakeClock
 
 ## Connections
-- [[.__call__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_84]] - `method` [EXTRACTED]
+- [[.__call__()_9]] - `method` [EXTRACTED]
+- [[.__init__()_178]] - `method` [EXTRACTED]
 - [[.advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[clock()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 

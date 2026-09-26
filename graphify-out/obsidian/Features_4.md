@@ -1,21 +1,22 @@
 ---
-source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "4. Compliance & Standards Alignment"
-location: "L5"
+community: "egress_monitor.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Compliance__Standards_Alignment
+  - community/egress_monitorpy
 ---
 
 # Features
 
 ## Connections
-- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
-- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
-- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
-- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Approval Queue_1]] - `contains` [EXTRACTED]
+- [[Authentication_3]] - `contains` [EXTRACTED]
+- [[Data Ledger]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[Ingest API]] - `contains` [EXTRACTED]
+- [[PII Sanitizer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

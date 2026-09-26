@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "SCLClient"
+community: "test_voice_stt_model_ab.py"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SCLClient
+  - community/test_voice_stt_model_abpy
 ---
 
 # Exception
@@ -15,4 +15,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_patch_urlopen()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SCLClient
+#graphify/code #graphify/INFERRED #community/test_voice_stt_model_abpy

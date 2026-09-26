@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Collaborator Setup Checklist"
+community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FO"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Collaborator_Setup_Checklist
+  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
 ---
 
 # Files intentionally not for collaborators
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist
+#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO

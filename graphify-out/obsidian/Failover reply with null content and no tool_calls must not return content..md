@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "rationale"
-community: "test_anthropic_openai_translator.py"
+community: "test_gemini_openai_translator.py"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # Failover reply with null content and no tool_calls must not return content:[].
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_translator_null_content_no_tool_calls_yields_nonempty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/rationale #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

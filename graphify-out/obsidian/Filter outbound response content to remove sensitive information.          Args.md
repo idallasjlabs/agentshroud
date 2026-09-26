@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "A2AProxyResult"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/A2AProxyResult
 ---
 
 # Filter outbound response content to remove sensitive information.          Args:
 
 ## Connections
-- [[.filter_response()]] - `rationale_for` [EXTRACTED]
+- [[.filter_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult

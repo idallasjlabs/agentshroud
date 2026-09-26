@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "Enum"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # FileSandbox
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_183]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_81]] - `method` [EXTRACTED]
 - [[._check()]] - `method` [EXTRACTED]
 - [[._detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[._is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.check_read()]] - `method` [EXTRACTED]
 - [[.check_write()]] - `method` [EXTRACTED]
 - [[.detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_7]] - `method` [EXTRACTED]
+- [[.get_audit_log()_4]] - `method` [EXTRACTED]
 - [[.get_security_violations()]] - `method` [EXTRACTED]
 - [[.get_temp_files()]] - `method` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -33,24 +33,24 @@ tags:
 - [[.test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
 - [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Large-write-then-network-activity stagingexfiltration pattern detection]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Privilege Separation File Sandbox Tests]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Round 2 Security Hardening Tests]] - `references` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -80,17 +80,17 @@ tags:
 - [[TestSecurityViolationLogging]] - `uses` [INFERRED]
 - [[TestSensitivePathBlocking]] - `uses` [INFERRED]
 - [[TestStagingPatternDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestSystemPathProtection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWorkspaceAccessPreserved]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()_1]] - `calls` [EXTRACTED]
@@ -99,4 +99,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FileSandbox
+#graphify/code #graphify/INFERRED #community/Enum

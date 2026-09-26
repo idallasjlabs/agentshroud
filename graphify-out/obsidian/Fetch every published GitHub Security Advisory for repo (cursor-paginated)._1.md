@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 120"
+community: "mcp_oauth_preflight.py"
 location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/mcp_oauth_preflightpy
 ---
 
 # Fetch every published GitHub Security Advisory for *repo* (cursor-paginated).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fetch_ghsa_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "rationale"
-community: "Local-Model Job Quality Matrix"
+community: "KeyRotationConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/KeyRotationConfig
 ---
 
 # Failure Class: Local Model Call Hangs
 
 ## Connections
-- [[Job Quality Matrix (Local-Model ReportNewsletter Jobs)]] - `conceptually_related_to` [EXTRACTED]
 - [[LLMProxy._forward_request]] - `references` [EXTRACTED]
 - [[Local-Model Job Quality Matrix]] - `references` [EXTRACTED]
+- [[job-quality-matrix]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

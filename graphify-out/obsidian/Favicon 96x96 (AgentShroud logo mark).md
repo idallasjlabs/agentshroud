@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-96x96.png"
 type: "image"
-community: "Favicon 96x96 (AgentShroud logo mark)"
+community: "Graphify query-first-then-keep-current workflow"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Favicon_96x96_AgentShroud_logo_mark
+  - community/Graphify_query-first-then-keep-current_workflow
 ---
 
 # Favicon 96x96 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Favicon_96x96_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/Graphify_query-first-then-keep-current_workflow

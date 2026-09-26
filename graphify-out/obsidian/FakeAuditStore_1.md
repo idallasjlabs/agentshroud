@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_voice_gateway.py"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_voice_gatewaypy
 ---
 
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.__init__()_185]] - `method` [EXTRACTED]
 - [[.get_recent_entries()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[test_security_events_with_filters()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

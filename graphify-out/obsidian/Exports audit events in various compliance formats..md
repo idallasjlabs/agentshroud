@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "AuditExporter"
+community: "load_config()"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/load_config
 ---
 
 # Exports audit events in various compliance formats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditExporter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExporter
+#graphify/rationale #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestStrangerRateLimit"
+community: "TestAuditStoreBotId"
 location: "L7714"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/TestAuditStoreBotId
 ---
 
 # First message from unknown user (within limit) queues approval flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_stranger_within_limit_triggers_approval_workflow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/rationale #graphify/EXTRACTED #community/TestAuditStoreBotId

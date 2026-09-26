@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Test Augmentation Specialist"
+community: "session-prompt-setup.sh"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/session-prompt-setupsh
 ---
 
 # Expected Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_voice_gateway.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_voice_gatewaypy
 ---
 
 # FakeCaller
 
 ## Connections
-- [[.__init__()_90]] - `method` [EXTRACTED]
+- [[.__init__()_184]] - `method` [EXTRACTED]
 - [[.is_group_admin()_2]] - `method` [EXTRACTED]
-- [[.is_owner()_3]] - `method` [EXTRACTED]
+- [[.is_owner()_4]] - `method` [EXTRACTED]
 - [[.require()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

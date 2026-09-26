@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "A2AProxyResult"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/A2AProxyResult
 ---
 
 # FilterResult
 
 ## Connections
-- [[.filter_response()]] - `references` [EXTRACTED]
+- [[.filter_response()_2]] - `references` [EXTRACTED]
 - [[.scan_command_injection()]] - `references` [EXTRACTED]
 - [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
 - [[TestCommandInjectionScan]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
 - [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

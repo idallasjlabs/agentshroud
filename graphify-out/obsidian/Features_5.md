@@ -1,22 +1,17 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L20"
+community: "TestRecommendedConfig"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/TestRecommendedConfig
 ---
 
 # Features
 
 ## Connections
-- [[Action Feed]] - `contains` [EXTRACTED]
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
-- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `contains` [EXTRACTED]
-- [[Memory Browser]] - `contains` [EXTRACTED]
-- [[Network Inspector]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig

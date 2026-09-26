@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # Execute the real endpoint against a fully-populated app_state and         verify
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_endpoint_reports_no_key_collisions_and_high_total()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: ".proxy_messages()"
+community: "test_trust_manager.py"
 location: "L1891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/test_trust_managerpy
 ---
 
 # Forward request to the real LLM API provider.          Retries up to 3 times on
 
 ## Connections
 - [[._forward_request()]] - `rationale_for` [EXTRACTED]
-- [[._forward_request()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy

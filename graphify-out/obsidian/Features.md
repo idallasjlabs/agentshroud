@@ -1,17 +1,22 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "Browser Fetch Skill"
-location: "L5"
+community: "SECURITY_VALUE_PROPOSITION.md"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # Features
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[1. URL Forwarder]] - `contains` [EXTRACTED]
+- [[2. Page Clipper]] - `contains` [EXTRACTED]
+- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
+- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
+- [[5. Reading List Queue]] - `contains` [EXTRACTED]
+- [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

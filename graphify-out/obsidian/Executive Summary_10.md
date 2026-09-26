@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomou"
-location: "L10"
+community: "TestConfigValidation"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomou
+  - community/TestConfigValidation
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomou
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

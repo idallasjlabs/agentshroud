@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "AuditExportConfig"
-location: "L2505"
+community: "load_config()"
+location: "L2518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/load_config
 ---
 
 # Export tamper-evident audit events in SOC/SIEM formats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_export()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/rationale #graphify/EXTRACTED #community/load_config

@@ -1,18 +1,21 @@
 ---
-source_file: "chatbot/main.py"
-type: "code"
-community: "chatbot/main.py"
-location: "L126"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "TestFileSandbox"
+location: "L9"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/TestFileSandbox
 ---
 
 # FastAPI
 
 ## Connections
-- [[chatbotmain.py]] - `imports_from` [EXTRACTED]
-- [[lifespan()_1]] - `references` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_186]] - `contains` [EXTRACTED]
+- [[Related Notes_41]] - `contains` [EXTRACTED]
+- [[Where Used_1]] - `contains` [EXTRACTED]
+- [[fastapi]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/TestFileSandbox

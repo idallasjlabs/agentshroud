@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "Implement gateway-level outbound information fil"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Implement_gateway-level_outbound_information_fil
 ---
 
 # Follow-up (within 48 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_fil
