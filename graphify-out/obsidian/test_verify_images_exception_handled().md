@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "test_image_verifier.py"
+community: "MultiHostResult"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/MultiHostResult
 ---
 
 # test_verify_images_exception_handled()
@@ -16,4 +16,4 @@ tags:
 - [[verify_images()]] - `calls` [EXTRACTED]
 - [[verify_images exception from one task is caught, others continue.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/code #graphify/EXTRACTED #community/MultiHostResult

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "DEVELOPER.md — Development Context for AgentShro"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/DEVELOPERmd__Development_Context_for_AgentShro
 ---
 
 # test_tool_result_sanitizer_enhanced.py
@@ -19,4 +19,4 @@ tags:
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[sanitize_tool_result()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro

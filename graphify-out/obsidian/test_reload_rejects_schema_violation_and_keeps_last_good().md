@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # test_reload_rejects_schema_violation_and_keeps_last_good()
@@ -18,4 +18,4 @@ tags:
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

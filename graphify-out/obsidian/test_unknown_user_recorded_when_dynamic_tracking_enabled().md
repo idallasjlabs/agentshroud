@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "_wrap_response()"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/_wrap_response
 ---
 
 # test_unknown_user_recorded_when_dynamic_tracking_enabled()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

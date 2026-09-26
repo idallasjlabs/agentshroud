@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_soc_bots.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_soc_botspy
 ---
 
 # test_telegram_proxy_inbound.py
@@ -15,12 +15,12 @@ tags:
 - [[AsyncMock]] - `contains` [EXTRACTED]
 - [[BlockingPipeline]] - `contains` [EXTRACTED]
 - [[EncodingDetectingPipeline]] - `contains` [EXTRACTED]
-- [[FakePipelineResult]] - `contains` [EXTRACTED]
-- [[FakeRBAC]] - `contains` [EXTRACTED]
+- [[FakePipelineResult_1]] - `contains` [EXTRACTED]
+- [[FakeRBAC_1]] - `contains` [EXTRACTED]
 - [[MiddlewareResult]] - `imports` [EXTRACTED]
-- [[PassthroughPipeline]] - `contains` [EXTRACTED]
+- [[PassthroughPipeline_1]] - `contains` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `tests` [EXTRACTED]
+- [[TelegramAPIProxy]] - `tests` [EXTRACTED]
 - [[TestBotIsMentioned]] - `contains` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `contains` [EXTRACTED]
 - [[TestCollaboratorRateLimitRecovery]] - `contains` [EXTRACTED]
@@ -36,9 +36,9 @@ tags:
 - [[TestProgressiveLockdownUX]] - `contains` [EXTRACTED]
 - [[TestStrangerRateLimit]] - `contains` [EXTRACTED]
 - [[_make_group_update()]] - `contains` [EXTRACTED]
-- [[_make_update()_1]] - `contains` [EXTRACTED]
+- [[_make_update()_2]] - `contains` [EXTRACTED]
 - [[_no_owner_mirror()]] - `contains` [EXTRACTED]
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

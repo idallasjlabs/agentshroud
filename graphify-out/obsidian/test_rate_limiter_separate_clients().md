@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "RateLimiter"
+community: "A2APolicyEngine"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/A2APolicyEngine
 ---
 
 # test_rate_limiter_separate_clients()
@@ -16,4 +16,4 @@ tags:
 - [[Test rate limiter tracks clients separately]] - `rationale_for` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

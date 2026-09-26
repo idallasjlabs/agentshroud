@@ -1,42 +1,42 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "EgressPolicy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/EgressPolicy
 ---
 
 # test_security_integration.py
 
 ## Connections
-- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
-- [[approval_queue()]] - `contains` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[approval_queue()_1]] - `contains` [EXTRACTED]
 - [[egress_filter()_1]] - `contains` [EXTRACTED]
 - [[encrypted_store()]] - `contains` [EXTRACTED]
 - [[full_pipeline_config()]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `contains` [EXTRACTED]
+- [[ledger()_2]] - `contains` [EXTRACTED]
 - [[prompt_guard()_2]] - `contains` [EXTRACTED]
-- [[sanitizer()_5]] - `contains` [EXTRACTED]
+- [[sanitizer()_4]] - `contains` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `contains` [EXTRACTED]
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `contains` [EXTRACTED]
 - [[test_encrypted_store_in_pipeline()]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
 - [[trust_manager()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

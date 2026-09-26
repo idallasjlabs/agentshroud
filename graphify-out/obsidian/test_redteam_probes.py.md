@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "test_approval_queue.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/test_approval_queuepy
 ---
 
 # test_redteam_probes.py
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/test_approval_queuepy

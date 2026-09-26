@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # test_unknown_module_created_on_demand()
@@ -15,4 +15,4 @@ tags:
 - [[ModuleStatsCollector]] - `calls` [EXTRACTED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

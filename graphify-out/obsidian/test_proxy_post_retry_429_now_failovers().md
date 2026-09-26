@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "The 8D Investigation Process"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/The_8D_Investigation_Process
 ---
 
 # test_proxy_post_retry_429_now_failovers()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - `rationale_for` [EXTRACTED]
 - [[_call_proxy()]] - `calls` [EXTRACTED]
-- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

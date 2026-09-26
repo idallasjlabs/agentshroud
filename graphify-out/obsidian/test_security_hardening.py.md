@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressAction"
+community: "ConsentFramework"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ConsentFramework
 ---
 
 # test_security_hardening.py
 
 ## Connections
 - [[AgentRegistry]] - `imports` [EXTRACTED]
-- [[ContainerConfig_1]] - `imports` [EXTRACTED]
+- [[ContainerConfig]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
@@ -38,9 +38,9 @@ tags:
 - [[TestTrustManagerHardened]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAction
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

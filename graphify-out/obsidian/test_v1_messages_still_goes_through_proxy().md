@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "test_v1_models_synthetic.py"
+community: "OPENCLAW_SANDBOX_MODE"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # test_v1_messages_still_goes_through_proxy()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

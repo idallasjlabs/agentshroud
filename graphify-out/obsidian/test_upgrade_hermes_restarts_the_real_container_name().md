@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_voice_gateway.py"
 location: "L2090"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_voice_gatewaypy
 ---
 
 # test_upgrade_hermes_restarts_the_real_container_name()
@@ -15,4 +15,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[update_service() must be called with the real container name     (agentshroud-he]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # test_router_streaming.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_mock_stream_response()]] - `contains` [EXTRACTED]
 - [[_sse_lines()]] - `contains` [EXTRACTED]
-- [[router()_2]] - `contains` [EXTRACTED]
+- [[router()_3]] - `contains` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `semantically_similar_to` [INFERRED]
 - [[test_router.py]] - `conceptually_related_to` [INFERRED]
 - [[test_stream_ignores_lines_without_data_prefix()]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

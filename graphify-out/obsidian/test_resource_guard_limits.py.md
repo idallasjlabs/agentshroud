@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ResourceGuard"
+community: "SlackSocketClient"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/SlackSocketClient
 ---
 
 # test_resource_guard_limits.py
@@ -22,7 +22,7 @@ tags:
 - [[TestVramHeadroom]] - `contains` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
 - [[get_resource_guard()]] - `imports` [EXTRACTED]
-- [[guard()_1]] - `contains` [EXTRACTED]
+- [[guard()_3]] - `contains` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

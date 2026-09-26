@@ -1,17 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "test_ptt_state.c"
+community: "A2AGovernanceProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/A2AGovernanceProxy
 ---
 
 # test_ptt_state.c
 
 ## Connections
+- [[String]] - `imports` [EXTRACTED]
 - [[audio.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[bspesp-bsp.h stub (wakeword PTT test)]] - `references` [INFERRED]
 - [[do_tap()]] - `contains` [EXTRACTED]
@@ -20,14 +21,14 @@ tags:
 - [[freertosFreeRTOS.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[freertostask.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[iot_button.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
-- [[main()_21]] - `contains` [EXTRACTED]
+- [[main()_10]] - `contains` [EXTRACTED]
 - [[test_clear_allows_fresh_tap()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_ends_listening()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_noop_when_idle()]] - `contains` [EXTRACTED]
 - [[test_push_frame_suppressed_while_triggered()]] - `contains` [EXTRACTED]
 - [[test_tap_in_idle_starts_listen()]] - `contains` [EXTRACTED]
 - [[test_vad_timeout_fires_without_audio()]] - `contains` [EXTRACTED]
-- [[vt_agent_count()_1]] - `contains` [EXTRACTED]
-- [[vt_remote_log()_1]] - `contains` [EXTRACTED]
+- [[vt_agent_count()_2]] - `contains` [EXTRACTED]
+- [[vt_remote_log()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

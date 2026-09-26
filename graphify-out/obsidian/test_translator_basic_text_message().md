@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "test_gemini_openai_translator.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # test_translator_basic_text_message()
@@ -15,4 +15,4 @@ tags:
 - [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy()"
+community: "test_agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_agent_cve_registrypy
 ---
 
 # test_slack_proxy.py
 
 ## Connections
-- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy]] - `imports` [EXTRACTED]
 - [[TestHandleEvent]] - `contains` [EXTRACTED]
 - [[TestMultiFieldOutboundScanning]] - `contains` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `contains` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[TestSocketModeRelay]] - `contains` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `contains` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
+- [[_make_proxy()_2]] - `contains` [EXTRACTED]
 - [[_pass_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

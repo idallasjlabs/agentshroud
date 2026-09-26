@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSession"
+community: "KeyVaultConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/KeyVaultConfig
 ---
 
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl]] - `contains` [EXTRACTED]
+- [[TestAccessControl_2]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestTrustLevel]] - `contains` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()]] - `contains` [EXTRACTED]
+- [[mgr()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSession
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

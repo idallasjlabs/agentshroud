@@ -1,26 +1,33 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "test_subagent_governance.py"
+community: "Quick Reference — AgentShroud"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/Quick_Reference__AgentShroud
 ---
 
 # test_subagent_governance.py
 
 ## Connections
-- [[TestLifecycle]] - `contains` [EXTRACTED]
+- [[GovernanceAction]] - `imports` [EXTRACTED]
+- [[GovernanceConfig]] - `imports` [EXTRACTED]
+- [[GovernanceEventType]] - `imports` [EXTRACTED]
+- [[ResourceBudget]] - `imports` [EXTRACTED]
+- [[SubagentGovernance]] - `references` [EXTRACTED]
+- [[TestLifecycle_1]] - `contains` [EXTRACTED]
 - [[TestOutputTrustScoring]] - `contains` [EXTRACTED]
 - [[TestPatternDetection]] - `contains` [EXTRACTED]
 - [[TestResourceBudgets]] - `contains` [EXTRACTED]
 - [[TestSpawnAuthorization]] - `contains` [EXTRACTED]
 - [[TestToolAuthorization]] - `contains` [EXTRACTED]
-- [[Tests for SubagentGovernance module.]] - `rationale_for` [EXTRACTED]
+- [[_check_exfil_patterns()]] - `references` [EXTRACTED]
+- [[_check_injection_patterns()]] - `references` [EXTRACTED]
+- [[_check_pii_patterns()]] - `references` [EXTRACTED]
 - [[disabled_gov()]] - `contains` [EXTRACTED]
 - [[gov()]] - `contains` [EXTRACTED]
 - [[monitor_gov()]] - `contains` [EXTRACTED]
-- [[subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/code #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

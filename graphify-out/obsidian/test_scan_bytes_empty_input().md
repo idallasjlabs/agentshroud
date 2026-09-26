@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # test_scan_bytes_empty_input()
@@ -15,4 +15,4 @@ tags:
 - [[scan_bytes()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

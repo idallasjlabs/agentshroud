@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # test_security_fixes.py
 
 ## Connections
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `contains` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `contains` [EXTRACTED]
 - [[TestDashboardSecureCookie]] - `contains` [EXTRACTED]
@@ -26,9 +26,9 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_10]] - `contains` [EXTRACTED]
+- [[client()_13]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
 - [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

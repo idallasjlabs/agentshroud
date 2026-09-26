@@ -1,29 +1,32 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t()"
+community: "MCPServerConfig"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MCPServerConfig
 ---
 
 # test_triage_cve_mitigations.py
 
 ## Connections
-- [[TestClassify]] - `contains` [EXTRACTED]
+- [[TestClassify_2]] - `contains` [EXTRACTED]
 - [[TestConsumeFieldEdge]] - `contains` [EXTRACTED]
 - [[TestDefenseLayerVocabulary]] - `contains` [EXTRACTED]
 - [[TestDriverIsolation]] - `contains` [EXTRACTED]
-- [[TestMain]] - `contains` [EXTRACTED]
+- [[TestMain_1]] - `contains` [EXTRACTED]
 - [[TestRewrite]] - `contains` [EXTRACTED]
 - [[TestTriageEntry]] - `contains` [EXTRACTED]
 - [[TestVersion]] - `contains` [EXTRACTED]
-- [[Tests for scriptstriage-cve-mitigations.py — Phase 2 mitigation-triage engine.…]] - `rationale_for` [EXTRACTED]
+- [[_AGENT_CVE_REGISTRIES]] - `references` [EXTRACTED]
 - [[_entry()_1]] - `contains` [EXTRACTED]
 - [[_t()]] - `contains` [EXTRACTED]
-- [[gateway.security.agent_cve_registry]] - `references` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `references` [EXTRACTED]
-- [[versions.env]] - `references` [EXTRACTED]
+- [[classify()_2]] - `references` [EXTRACTED]
+- [[rewrite_registry_text]] - `references` [EXTRACTED]
+- [[scriptstriage-cve-mitigations.py]] - `references` [EXTRACTED]
+- [[triage_agent]] - `references` [EXTRACTED]
+- [[triage_entry]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

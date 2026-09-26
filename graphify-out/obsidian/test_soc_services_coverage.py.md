@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "EgressAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressAction
 ---
 
 # test_soc_services_coverage.py
 
 ## Connections
-- [[HealthStatus_1]] - `imports` [EXTRACTED]
+- [[HealthStatus]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `imports` [EXTRACTED]
-- [[ServiceStatus_1]] - `imports` [EXTRACTED]
+- [[ServiceStatus]] - `imports` [EXTRACTED]
 - [[TestCheckClamd]] - `contains` [EXTRACTED]
 - [[TestCheckFluentBit]] - `contains` [EXTRACTED]
 - [[TestCheckOpenscap]] - `contains` [EXTRACTED]
 - [[TestCheckWazuhAgent]] - `contains` [EXTRACTED]
 - [[TestDescribeService]] - `contains` [EXTRACTED]
-- [[TestGetEngine]] - `contains` [EXTRACTED]
+- [[TestGetEngine_1]] - `contains` [EXTRACTED]
 - [[TestGetLogs]] - `contains` [EXTRACTED]
 - [[TestInspectViaSocket]] - `contains` [EXTRACTED]
 - [[TestKnownServices]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[_patch_open()]] - `contains` [EXTRACTED]
 - [[gatewaysocservices.py (ServiceManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressAction

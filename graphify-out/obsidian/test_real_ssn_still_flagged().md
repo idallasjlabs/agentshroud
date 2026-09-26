@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "test_us_ssn_regex_tightened.py"
+community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Ins"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
 ---
 
 # test_real_ssn_still_flagged()
@@ -16,4 +16,4 @@ tags:
 - [[US_SSN regex tightened to exclude CVE IDs]] - `rationale_for` [EXTRACTED]
 - [[test_us_ssn_regex_tightened.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins

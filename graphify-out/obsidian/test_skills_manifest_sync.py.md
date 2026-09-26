@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # test_skills_manifest_sync.py
@@ -22,13 +22,13 @@ tags:
 - [[TestSkillsManifest]] - `contains` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `contains` [EXTRACTED]
 - [[TestValidateManifest]] - `contains` [EXTRACTED]
-- [[_sha256()]] - `contains` [EXTRACTED]
-- [[_write_tree()]] - `contains` [EXTRACTED]
+- [[_sha256()_1]] - `contains` [EXTRACTED]
+- [[_write_tree()_1]] - `contains` [EXTRACTED]
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - `references` [EXTRACTED]
 - [[plan_deploy()]] - `imports` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[validate_manifest()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # test_shell_payload_builder_emits_valid_json_without_python()
@@ -16,4 +16,4 @@ tags:
 - [[_build_payload_via_shell()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

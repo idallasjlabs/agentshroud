@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "soc.js"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/socjs
 ---
 
 # test_scan_request_data_scans_messages_without_name_error()
 
 ## Connections
-- [[LLMProxy]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/socjs

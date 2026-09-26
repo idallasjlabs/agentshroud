@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "code"
-community: "LLMProxy"
+community: "AgentShroud Security Hardening Plan"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # test_proxy_gemini_translation_failure_falls_through_gracefully()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[test_gemini_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

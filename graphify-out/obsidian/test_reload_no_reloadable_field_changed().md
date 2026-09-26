@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # test_reload_no_reloadable_field_changed()
@@ -18,4 +18,4 @@ tags:
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest
