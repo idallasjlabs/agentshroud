@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Common Queries"
+community: "Skill: UX Expert (UX)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_UX_Expert_UX
 ---
 
 # Location
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

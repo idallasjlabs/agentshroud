@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Module Inventory"
+community: "test_e2e.py"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/test_e2epy
 ---
 
 # Layer 5: Identity & Access Management (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[20. Role-Based Access Control (RBAC)]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/test_e2epy

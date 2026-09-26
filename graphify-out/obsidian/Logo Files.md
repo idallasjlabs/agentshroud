@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "brand-guidelines.md"
-location: "L147"
+community: "Atlas — Curriculum Architect"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/brand-guidelinesmd
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Logo Files
 
 ## Connections
-- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/brand-guidelinesmd
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

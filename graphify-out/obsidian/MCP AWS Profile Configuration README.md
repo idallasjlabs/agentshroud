@@ -1,24 +1,25 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "_handle()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/_handle
 ---
 
 # MCP AWS Profile Configuration README
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
-- [[Purpose_53]] - `contains` [EXTRACTED]
-- [[Purpose_187]] - `contains` [EXTRACTED]
-- [[Related Skills_44]] - `contains` [EXTRACTED]
-- [[Related Skills_118]] - `contains` [EXTRACTED]
-- [[Usage_48]] - `contains` [EXTRACTED]
-- [[Usage_130]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_17]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
+- [[README_17]] - `contains` [EXTRACTED]
+- [[Related Skills_18]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[SKILL_96]] - `contains` [EXTRACTED]
+- [[Usage_20]] - `contains` [EXTRACTED]
+- [[Usage_61]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/_handle

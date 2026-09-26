@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L583"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # Log heartbeat result to file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._log_heartbeat_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

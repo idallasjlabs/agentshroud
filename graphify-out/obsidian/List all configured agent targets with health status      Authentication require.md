@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L895"
+community: "SSHProxy"
+location: "L908"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # List all configured agent targets with health status      Authentication require
 
 ## Connections
+- [[create_report()]] - `rationale_for` [EXTRACTED]
 - [[list_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

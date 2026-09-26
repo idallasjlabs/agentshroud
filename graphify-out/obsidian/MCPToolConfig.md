@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PermissionLevel"
+community: "test_voice_gateway.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PermissionLevel
+  - community/test_voice_gatewaypy
 ---
 
 # MCPToolConfig
 
 ## Connections
-- [[.from_dict()_9]] - `calls` [EXTRACTED]
+- [[.from_dict()]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuditTrailBounded]] - `uses` [INFERRED]
 - [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
 - [[TestCheckAll]] - `uses` [INFERRED]
@@ -43,7 +43,7 @@ tags:
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
 - [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -52,7 +52,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -61,15 +61,15 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolPermission]] - `uses` [INFERRED]
-- [[TestTrustLevels_1]] - `uses` [INFERRED]
+- [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[config()]] - `calls` [EXTRACTED]
-- [[config()_4]] - `calls` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[config()_2]] - `calls` [EXTRACTED]
+- [[config()_3]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PermissionLevel
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

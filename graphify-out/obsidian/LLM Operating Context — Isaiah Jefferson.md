@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "LLM Operating Context"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # LLM Operating Context — Isaiah Jefferson
@@ -17,4 +17,4 @@ tags:
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `references` [EXTRACTED]
 - [[llm-init.sh — project-level multi-tool config deployment]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

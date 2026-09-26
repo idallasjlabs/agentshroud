@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "Applies to: Claude Code (primary) · Gemini CLI ("
 location: "L426"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
 ---
 
 # Learning System (Continuous Improvement)
@@ -17,4 +17,4 @@ tags:
 - [[Knowledge Base Schema_2]] - `contains` [EXTRACTED]
 - [[Pattern Matching for New Incidents_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Findings"
+community: "test_hermes_cron_seed.py"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/test_hermes_cron_seedpy
 ---
 
 # LOW — Informational
@@ -17,4 +17,4 @@ tags:
 - [[L2 Browser Control Enabled]] - `contains` [EXTRACTED]
 - [[L3 Memory Index Not Built]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy

@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "MCP tools available — GitHub (repos/PRs/issues),"
+community: "Post-Incident Activities"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_tools_available__GitHub_repos/PRs/issues
+  - community/Post-Incident_Activities
 ---
 
 # MCP Server: atlassian-agentshroud
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCP_tools_available__GitHub_repos/PRs/issues
+#graphify/code #graphify/INFERRED #community/Post-Incident_Activities

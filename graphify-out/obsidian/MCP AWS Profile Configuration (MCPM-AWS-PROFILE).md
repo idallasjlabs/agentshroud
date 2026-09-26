@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+community: "_handle()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/_handle
 ---
 
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_90]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
+- [[README_59]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[Usage_61]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/document #graphify/EXTRACTED #community/_handle

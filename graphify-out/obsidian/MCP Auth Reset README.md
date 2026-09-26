@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "_handle()"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/_handle
 ---
 
 # MCP Auth Reset README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Auth Reset Skill_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/INFERRED #community/_handle

@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "rationale"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "TestCVE2026_9367TerminalToolDenied"
 location: "L127-151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/TestCVE2026_9367TerminalToolDenied
 ---
 
 # MCP servers confined to the internal network
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-internal network (no external access)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/rationale #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied

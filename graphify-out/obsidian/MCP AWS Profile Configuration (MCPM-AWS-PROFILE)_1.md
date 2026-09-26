@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 1273"
+community: "triage-cve-mitigations.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1273
+  - community/triage-cve-mitigationspy
 ---
 
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_90]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
+- [[Purpose_91]] - `contains` [EXTRACTED]
+- [[README_96]] - `contains` [EXTRACTED]
+- [[Related Skills_98]] - `contains` [EXTRACTED]
+- [[SKILL_159]] - `contains` [EXTRACTED]
+- [[Usage_101]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1273
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

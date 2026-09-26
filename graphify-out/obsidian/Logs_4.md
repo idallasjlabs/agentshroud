@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "examples/docker-commands.md"
 type: "document"
-community: "Quick Reference — AgentShroud"
-location: "L68"
+community: "Red Team Assessment v1.2.0"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/Red_Team_Assessment_v120
 ---
 
 # Logs
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120

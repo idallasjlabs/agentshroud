@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "MCP Auth Reset Skill"
+community: "§3 — Bot Pipeline Integrity Checks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_Skill
+  - community/3__Bot_Pipeline_Integrity_Checks
 ---
 
 # MCP Auth Reset Skill
@@ -16,4 +16,4 @@ tags:
 - [[i-mcpm-auth-reset README]] - `references` [EXTRACTED]
 - [[mcpm-doctor Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_Skill
+#graphify/document #graphify/EXTRACTED #community/3__Bot_Pipeline_Integrity_Checks

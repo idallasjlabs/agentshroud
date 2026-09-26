@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+community: "iot_button_register_cb()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/iot_button_register_cb
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Purpose_52]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_47]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
+- [[Purpose_53]] - `contains` [EXTRACTED]
+- [[README_58]] - `contains` [EXTRACTED]
+- [[Related Skills_56]] - `contains` [EXTRACTED]
+- [[Usage_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb

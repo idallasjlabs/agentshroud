@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "lvgl_kawaii_face.c"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/lvgl_kawaii_facec
 ---
 
 # List all registered agent IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/lvgl_kawaii_facec

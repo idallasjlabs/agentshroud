@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "The 8D Investigation Process"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_failoverpy
+  - community/The_8D_Investigation_Process
 ---
 
 # LLMProxy
 
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[make_proxy()_1]] - `references` [EXTRACTED]
+- [[make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/INFERRED #community/The_8D_Investigation_Process

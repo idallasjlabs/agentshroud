@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolResult
+  - community/AgentShroud_v090__Human_Interface_Testing_Gui
 ---
 
 # MCPToolResult
 
 ## Connections
-- [[.__post_init__()_5]] - `method` [EXTRACTED]
+- [[.__post_init__()_1]] - `method` [EXTRACTED]
 - [[._execute_tool_call()]] - `references` [EXTRACTED]
 - [[.process_tool_result()_1]] - `references` [EXTRACTED]
 - [[.test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]
@@ -30,28 +30,28 @@ tags:
 - [[.test_result_audit_logged()]] - `calls` [EXTRACTED]
 - [[.test_result_processing_time()]] - `calls` [EXTRACTED]
 - [[.test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyEngine]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[Represents an MCP tool result.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuditTrailBounded]] - `uses` [INFERRED]
 - [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
 - [[TestConfigParsing]] - `uses` [INFERRED]
@@ -68,7 +68,7 @@ tags:
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
 - [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -83,13 +83,13 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolResult
+#graphify/code #graphify/INFERRED #community/AgentShroud_v090__Human_Interface_Testing_Gui

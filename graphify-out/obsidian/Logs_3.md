@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Docker Commands Reference"
-location: "L134"
+community: "03-data.md"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/03-datamd
 ---
 
 # Logs
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/03-datamd

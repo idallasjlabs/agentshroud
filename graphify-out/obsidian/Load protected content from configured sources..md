@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "PromptProtection"
+community: "test_soc_realtime_coverage.py"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Load protected content from configured sources.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

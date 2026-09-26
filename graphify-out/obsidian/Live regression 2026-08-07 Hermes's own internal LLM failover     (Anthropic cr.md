@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # Live regression 2026-08-07: Hermes's own internal LLM failover     (Anthropic cr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

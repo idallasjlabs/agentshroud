@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "Per-Agent Container Isolation Architecture"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Layer 4: Data Flow Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

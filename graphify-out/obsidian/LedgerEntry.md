@@ -1,35 +1,22 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L139"
+community: "SSHProxy"
+location: "L114"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[Any_25]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[.get_entry()]] - `references` [EXTRACTED]
+- [[.query()]] - `calls` [EXTRACTED]
+- [[.record()]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
-- [[WebSocket]] - `uses` [INFERRED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/SSHProxy

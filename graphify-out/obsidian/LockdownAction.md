@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "IntelReportStore"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/IntelReportStore
 ---
 
 # LockdownAction
@@ -17,4 +17,4 @@ tags:
 - [[What the caller should do in response to this block.]] - `rationale_for` [EXTRACTED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

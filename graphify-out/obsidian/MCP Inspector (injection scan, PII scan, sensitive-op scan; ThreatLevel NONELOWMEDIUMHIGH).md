@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "concept"
-community: "Approval Queue (human-in-the-loop)"
+community: "TestDockerEngine"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/TestDockerEngine
 ---
 
 # MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONE/LOW/MEDIUM/HIGH)
@@ -20,4 +20,4 @@ tags:
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[What Is Instrumented (bot apihealth, gateway status and ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/concept #graphify/EXTRACTED #community/TestDockerEngine

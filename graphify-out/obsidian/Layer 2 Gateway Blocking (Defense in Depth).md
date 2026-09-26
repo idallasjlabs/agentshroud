@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "agentshroud-gateway"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/agentshroud-gateway
 ---
 
 # Layer 2: Gateway Blocking (Defense in Depth)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Multi-Layer Defense]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Recommendation"
+community: "AgentShroud Web Control Center - Implementation "
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/AgentShroud_Web_Control_Center_-_Implementation_
 ---
 
 # Long-Term Strategic Items
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_

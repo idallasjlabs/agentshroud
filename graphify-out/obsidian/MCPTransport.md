@@ -1,44 +1,44 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPServerConfig"
+community: "TestParanoidConfig"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPServerConfig
+  - community/TestParanoidConfig
 ---
 
 # MCPTransport
 
 ## Connections
-- [[.from_dict()_9]] - `calls` [EXTRACTED]
-- [[Any_34]] - `uses` [INFERRED]
+- [[.from_dict()]] - `calls` [EXTRACTED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuditTrailBounded]] - `uses` [INFERRED]
 - [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
 - [[TestConfigParsing]] - `uses` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
 - [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -69,11 +69,11 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPServerConfig
+#graphify/code #graphify/INFERRED #community/TestParanoidConfig

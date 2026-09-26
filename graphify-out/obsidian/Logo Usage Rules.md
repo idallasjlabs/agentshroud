@@ -1,19 +1,19 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
-type: "concept"
-community: "brand-guidelines.md"
-location: "L51-80"
+source_file: "branding/QUICK-REFERENCE.md"
+type: "document"
+community: "agentshroud-ssh-exec.sh"
+location: "L61"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/brand-guidelinesmd
+  - community/agentshroud-ssh-execsh
 ---
 
 # Logo Usage Rules
 
 ## Connections
-- [[App Icon 16x16 (AgentShroud logo mark)]] - `references` [INFERRED]
-- [[Color Usage (AgentShroud Blue 1583f0)]] - `conceptually_related_to` [EXTRACTED]
-- [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
+- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[✅ Do]] - `contains` [EXTRACTED]
+- [[❌ Don't]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/brand-guidelinesmd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh

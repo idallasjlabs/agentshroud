@@ -1,17 +1,17 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "SessionContext"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/SessionContext
 ---
 
 # Layer 1 — Core Pipeline (P0)
 
 ## Connections
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
+- [[Security Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/SessionContext

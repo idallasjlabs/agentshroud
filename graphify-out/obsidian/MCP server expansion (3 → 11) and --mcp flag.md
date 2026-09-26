@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/UPGRADE_LOG.md"
 type: "document"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L91-118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # MCP server expansion (3 → 11) and --mcp flag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm-init.sh — project-level multi-tool config deployment]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

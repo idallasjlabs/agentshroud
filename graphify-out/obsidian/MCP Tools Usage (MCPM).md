@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_25]] - `contains` [EXTRACTED]
-- [[Related Skills_16]] - `contains` [EXTRACTED]
-- [[Usage_20]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
+- [[README_19]] - `contains` [EXTRACTED]
+- [[Related Skills_22]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

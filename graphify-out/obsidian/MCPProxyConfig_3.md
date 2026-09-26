@@ -1,24 +1,31 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L230"
+community: "test_voice_gateway.py"
+location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPServerConfig
+  - community/test_voice_gatewaypy
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[.__init__()_96]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[ConnectionPool]] - `uses` [INFERRED]
+- [[HttpSseConnection]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[StdioConnection]] - `uses` [INFERRED]
+- [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPServerConfig
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

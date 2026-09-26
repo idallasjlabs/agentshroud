@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy.proxy_messages"
+community: "Skill: UI Expert (UI)"
 location: "line:607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages
+  - community/Skill_UI_Expert_UI
 ---
 
 # LLMProxy._failover_request
@@ -24,4 +24,4 @@ tags:
 - [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
 - [[openai_to_gemini_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages
+#graphify/code #graphify/EXTRACTED #community/Skill_UI_Expert_UI

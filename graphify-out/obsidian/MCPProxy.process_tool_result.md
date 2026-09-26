@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "test_llm_proxy_local_parity.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # MCPProxy.process_tool_result
 
 ## Connections
-- [[MCPInspector_1]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "IntelReportStore"
+community: "HTTPConnectProxy"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/HTTPConnectProxy
 ---
 
 # Load the most recently saved report.          Args:             verify: If True,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.load_latest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

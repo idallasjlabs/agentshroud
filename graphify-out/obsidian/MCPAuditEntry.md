@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MCPAuditTrail"
+community: "brand-guidelines.md"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/brand-guidelinesmd
 ---
 
 # MCPAuditEntry
 
 ## Connections
-- [[.entries()_1]] - `references` [EXTRACTED]
+- [[.entries()]] - `references` [EXTRACTED]
 - [[.get_blocked_entries()]] - `references` [EXTRACTED]
 - [[.get_entries_for_agent()]] - `references` [EXTRACTED]
 - [[.get_entries_for_server()]] - `references` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.log_tool_call()]] - `references` [EXTRACTED]
 - [[.log_tool_result()]] - `references` [EXTRACTED]
 - [[A single MCP tool call audit entry.]] - `rationale_for` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/brand-guidelinesmd

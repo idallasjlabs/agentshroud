@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "ledger row (id, timestamp, source, hashes, sanit"
+community: "Skill: Test-Driven Development (TDD)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanit
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # LLM API call (sanitized text only)
@@ -15,4 +15,4 @@ tags:
 - [[Tool call (MCP-inspected)]] - `calls` [EXTRACTED]
 - [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit
+#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

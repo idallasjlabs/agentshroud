@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "GroupRegistry"
-location: "L64"
+community: "CredentialInjector"
+location: "L175"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/GroupRegistry
+  - graphify/EXTRACTED
+  - community/CredentialInjector
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()_1]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[.emit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GroupRegistry
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

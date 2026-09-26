@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "mcp_config.py"
+community: "Use Cases"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/Use_Cases
 ---
 
 # MCPServerConfig Fields
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

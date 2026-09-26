@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "ResourceGuard"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ResourceGuard
 ---
 
 # Log PII redaction for audit trail without logging actual PII
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._log_redaction_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

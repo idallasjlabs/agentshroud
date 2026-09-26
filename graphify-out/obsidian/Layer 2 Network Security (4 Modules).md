@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Controls"
+community: "AgentShroud Brand Quick Reference"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Controls
+  - community/AgentShroud_Brand_Quick_Reference
 ---
 
 # Layer 2: Network Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[8. Network Rate Limiter]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Controls
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference

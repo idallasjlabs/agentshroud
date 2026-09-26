@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # MCPProxy.check_approval_required
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

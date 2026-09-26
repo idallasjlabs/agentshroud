@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L175"
+community: "Athena — Knowledge Distiller"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/Athena__Knowledge_Distiller
 ---
 
 # LogRecord
 
 ## Connections
-- [[.emit()]] - `references` [EXTRACTED]
+- [[.filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

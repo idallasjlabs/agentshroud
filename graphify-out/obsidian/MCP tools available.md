@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI ("
-location: "L403"
+community: "TestEgressTelegramNotify"
+location: "L530"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
+  - community/TestEgressTelegramNotify
 ---
 
 # MCP tools available
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10) CLAUDE CODE OPERATIONAL RULES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_
+#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify

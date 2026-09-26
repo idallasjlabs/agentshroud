@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "test_llm_proxy_local_parity.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # MCPProxy.process_tool_call
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "workspace.sh"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/workspacesh
 ---
 
 # Layer 1: Application Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/workspacesh

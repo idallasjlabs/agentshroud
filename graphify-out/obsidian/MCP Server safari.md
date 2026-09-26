@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "MCP Server: safari"
+community: "Community 1661"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Server_safari
+  - community/Community_1661
 ---
 
 # MCP Server: safari
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Server_safari
+#graphify/code #graphify/EXTRACTED #community/Community_1661

@@ -12,6 +12,6 @@ tags:
 # Lifecycle: start_periodic_updates()/stop() task management.
 
 ## Connections
-- [[TestLifecycle_1]] - `rationale_for` [EXTRACTED]
+- [[TestLifecycle]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

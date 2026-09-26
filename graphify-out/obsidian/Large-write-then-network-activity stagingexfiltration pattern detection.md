@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "concept"
-community: "FileSandbox"
+community: "Enum"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Large-write-then-network-activity staging/exfiltration pattern detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FileSandbox
+#graphify/concept #graphify/EXTRACTED #community/Enum

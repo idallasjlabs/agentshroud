@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "MCP Server: home-assistant"
+community: "Community 1660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Server_home-assistant
+  - community/Community_1660
 ---
 
 # MCP Server: home-assistant
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Server_home-assistant
+#graphify/code #graphify/EXTRACTED #community/Community_1660

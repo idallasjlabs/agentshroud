@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L2074"
+community: "SSHProxy"
+location: "L2087"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # List quarantined blocked inbound messages for admin review.
@@ -15,4 +15,4 @@ tags:
 - [[list_blocked_message_quarantine()]] - `rationale_for` [EXTRACTED]
 - [[list_blocked_outbound_quarantine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

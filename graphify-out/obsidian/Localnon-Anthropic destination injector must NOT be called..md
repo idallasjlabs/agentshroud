@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
+community: "soc.js"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/socjs
 ---
 
 # Local/non-Anthropic destination: injector must NOT be called.
 
 ## Connections
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `rationale_for` [EXTRACTED]
-- [[test_credential_injector_not_applied_for_non_anthropic_dest()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/socjs

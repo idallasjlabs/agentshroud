@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Canvas Skill"
+community: "Credential Management - 1Password Integration"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Live Reload
 
 ## Connections
-- [[Configuration_8]] - `contains` [EXTRACTED]
+- [[Configuration_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

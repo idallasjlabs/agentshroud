@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L282"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # Legitimate voice-gateway path: owner ID in body + matching trusted         heade
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

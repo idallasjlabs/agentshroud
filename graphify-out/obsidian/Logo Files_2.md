@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
-location: "L3"
+community: "AgentShroud Incident Response Plan"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Logo Files
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

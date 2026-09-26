@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L14"
+community: "Hermes Agent — Connection Setup"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology_2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

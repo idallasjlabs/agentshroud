@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L1353"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
 - [[.get_log_sanitizer()]] - `references` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -42,12 +42,12 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
@@ -58,8 +58,8 @@ tags:
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustManager

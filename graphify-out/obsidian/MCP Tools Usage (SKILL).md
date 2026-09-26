@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "_w()"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Production_Safety_Checklist_SKILL
+  - community/_w
 ---
 
 # MCP Tools Usage (SKILL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (README)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/INFERRED #community/_w
