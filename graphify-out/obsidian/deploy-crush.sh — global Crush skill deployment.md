@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/README.md"
 type: "concept"
-community: "deploy-crush.sh — global Crush skill deployment"
+community: "i-vulcan SKILL.md (Subject Matter Auditor, podca"
 location: "Global Tool Deployment"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/deploy-crushsh__global_Crush_skill_deployment
+  - community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podca
 ---
 
 # deploy-crush.sh — global Crush skill deployment
@@ -15,4 +15,4 @@ tags:
 - [[deploy-opencode.sh — global OpenCode agent deployment]] - `semantically_similar_to` [INFERRED]
 - [[i- prefix rename of all 58 skills]] - `references` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/deploy-crushsh__global_Crush_skill_deployment
+#graphify/concept #graphify/INFERRED #community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podca

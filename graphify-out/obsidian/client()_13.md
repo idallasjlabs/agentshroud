@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L76"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - graphify/INFERRED
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement

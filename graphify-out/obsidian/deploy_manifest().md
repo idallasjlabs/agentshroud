@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Path"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # deploy_manifest()
@@ -29,7 +29,7 @@ tags:
 - [[.test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[.to_json()]] - `calls` [EXTRACTED]
 - [[Copy all files in manifest from source to each per-bot destination.      Beh]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_21]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[plan_deploy()]] - `calls` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

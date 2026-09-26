@@ -1,17 +1,20 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "bsp_iot_button_create()"
-location: "L17"
+community: "_t()"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bsp_iot_button_create
+  - community/_t
 ---
 
 # esp_err_t
 
 ## Connections
-- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
+- [[audio_init()]] - `references` [EXTRACTED]
+- [[audio_play()]] - `references` [EXTRACTED]
+- [[audio_preinit()]] - `references` [EXTRACTED]
+- [[audio_set_volume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create
+#graphify/code #graphify/EXTRACTED #community/_t

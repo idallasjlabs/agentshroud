@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L1998"
+community: "SSHProxy"
+location: "L2011"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # egress_add_rule()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[Add an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[AuthRequired]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

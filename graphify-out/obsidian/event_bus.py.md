@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event()"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # event_bus.py
@@ -17,9 +17,9 @@ tags:
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[dashboard.py]] - `imports_from` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

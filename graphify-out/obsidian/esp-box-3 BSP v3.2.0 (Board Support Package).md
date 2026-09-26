@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/idf_component.yml"
 type: "concept"
-community: "LVGL Kawaii Face Component CMakeLists"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "espressif/esp-box-3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LVGL_Kawaii_Face_Component_CMakeLists
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # esp-box-3 BSP v3.2.0 (Board Support Package)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Terminal Main IDF Component Manifest]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists
+#graphify/concept #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "OpenClaw Management Scripts"
+community: ".agents/skills/i-tw/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # docker/scripts README.md
@@ -16,8 +16,7 @@ tags:
 - [[memory-scrubber.py (planned)]] - `references` [EXTRACTED]
 - [[security-audit.sh (planned)]] - `references` [EXTRACTED]
 - [[skill-scanner.sh (planned)]] - `references` [EXTRACTED]
-- [[start-agentshroud.sh]] - `semantically_similar_to` [AMBIGUOUS]
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

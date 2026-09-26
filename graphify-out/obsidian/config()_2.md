@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "GitGuard"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/GitGuard
 ---
 
 # config()
 
 ## Connections
-- [[KillSwitchConfig]] - `calls` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig]] - `calls` [EXTRACTED]
+- [[MCPServerConfig]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/GitGuard

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "api.py"
+community: "SkillGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/SkillGuard
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

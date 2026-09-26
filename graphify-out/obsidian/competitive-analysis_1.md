@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 846"
+community: "05-behavior.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_846
+  - community/05-behaviormd
 ---
 
 # competitive-analysis.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_846
+#graphify/document #graphify/EXTRACTED #community/05-behaviormd

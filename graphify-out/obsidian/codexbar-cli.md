@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Common Queries"
+community: "Skill: UX Expert (UX)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_UX_Expert_UX
 ---
 
 # codexbar-cli.md
 
 ## Connections
 - [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
-- [[model-usageSKILL]] - `references` [EXTRACTED]
+- [[SKILL_215]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

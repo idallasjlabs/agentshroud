@@ -1,28 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L10"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
-# drift_detector.py
+# drift_detector.py.md
 
 ## Connections
-- [[Configuration_13]] - `contains` [EXTRACTED]
-- [[Database Schema_1]] - `contains` [EXTRACTED]
-- [[Drift Categories and Severity]] - `contains` [EXTRACTED]
-- [[Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_4]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_4]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
-- [[Purpose_129]] - `contains` [EXTRACTED]
-- [[Related_8]] - `contains` [EXTRACTED]
-- [[Responsibilities_5]] - `contains` [EXTRACTED]
-- [[Threat Model_5]] - `contains` [EXTRACTED]
-- [[drift_detector.py]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

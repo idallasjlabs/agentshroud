@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "test_e2e.py"
-location: "L135"
+community: "Mode A — Single task"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/Mode_A__Single_task
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task

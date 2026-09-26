@@ -1,13 +1,13 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "docker-compose.agentshroud-bot.marvin.yml (dev h"
+community: "AgentShroud Badge Icon 180x180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-composeagentshroud-botmarvinyml_dev_h
+  - community/AgentShroud_Badge_Icon_180x180
 ---
 
 # docker-compose.agentshroud-bot.marvin.yml (dev host override)
 
-#graphify/code #graphify/EXTRACTED #community/docker-composeagentshroud-botmarvinyml_dev_h
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Badge_Icon_180x180

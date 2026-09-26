@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SecurityEvent"
+community: "Findings & Mitigations"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/Findings__Mitigations
 ---
 
 # event_adapter.py
@@ -21,7 +21,7 @@ tags:
 - [[from_dict()]] - `contains` [EXTRACTED]
 - [[from_egress_attempt()]] - `contains` [EXTRACTED]
 - [[from_pipeline_result()]] - `contains` [EXTRACTED]
-- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityEvent
+#graphify/code #graphify/EXTRACTED #community/Findings__Mitigations

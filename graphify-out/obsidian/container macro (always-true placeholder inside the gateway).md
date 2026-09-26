@@ -1,12 +1,12 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "rationale"
-community: "AgentShroud Falco Detection Rules"
+community: "TestOutboundClassifierHelpers"
 location: "L11-L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Falco_Detection_Rules
+  - community/TestOutboundClassifierHelpers
 ---
 
 # container macro (always-true placeholder inside the gateway)
@@ -20,4 +20,4 @@ tags:
 - [[Rule Secret File Access]] - `references` [EXTRACTED]
 - [[Rule Unexpected Outbound Connection from AgentShroud]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Falco_Detection_Rules
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

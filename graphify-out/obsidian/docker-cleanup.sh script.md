@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "docker-cleanup.sh"
+community: "Skill: Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Skill_Technical_Writer_TW
 ---
 
 # docker-cleanup.sh script
@@ -20,4 +20,4 @@ tags:
 - [[docker-cleanup.sh]] - `contains` [EXTRACTED]
 - [[usage()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

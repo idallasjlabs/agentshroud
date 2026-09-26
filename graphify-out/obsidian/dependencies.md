@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "skill.json"
-location: "L40"
+source_file: ".agents/skills/i-bs/SKILL.md"
+type: "document"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L297"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
-# dependencies
+# Dependencies
 
 ## Connections
-- [[playwright_1]] - `contains` [EXTRACTED]
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

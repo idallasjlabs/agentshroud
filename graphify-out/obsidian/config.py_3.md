@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 727"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # config.py
@@ -22,4 +22,4 @@ tags:
 - [[Rootless Resolution Table]] - `contains` [EXTRACTED]
 - [[config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

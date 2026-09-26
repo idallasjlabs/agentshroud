@@ -1,19 +1,17 @@
 ---
 source_file: "docker/scripts/entrypoint-agentshroud.sh"
 type: "code"
-community: "init-openclaw-config.sh"
+community: ".agents/skills/i-devsecops/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/AMBIGUOUS
-  - community/init-openclaw-configsh
+  - graphify/EXTRACTED
+  - community/agents/skills/i-devsecops/SKILLmd
 ---
 
 # entrypoint-agentshroud.sh
 
 ## Connections
 - [[entrypoint-agentshroud.sh script]] - `contains` [EXTRACTED]
-- [[init-openclaw-config.sh]] - `calls` [AMBIGUOUS]
-- [[start-agentshroud.sh]] - `calls` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/init-openclaw-configsh
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd

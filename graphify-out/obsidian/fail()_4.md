@@ -1,18 +1,18 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "TrustManager"
-location: "L7"
+community: ".send()"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/send
 ---
 
 # fail()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/send

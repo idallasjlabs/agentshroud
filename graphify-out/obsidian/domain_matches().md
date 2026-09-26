@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L148"
+community: "_call_agent_stream()"
+location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/_call_agent_stream
 ---
 
 # domain_matches()
 
 ## Connections
-- [[._matches_any_pattern()_1]] - `calls` [EXTRACTED]
-- [[.matches_allowlist()_1]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig_2]] - `calls` [EXTRACTED]
+- [[._matches_any_pattern()]] - `calls` [EXTRACTED]
+- [[._verify_url()]] - `calls` [EXTRACTED]
+- [[.matches_allowlist()]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - `rationale_for` [EXTRACTED]
-- [[egress_config.py_3]] - `contains` [EXTRACTED]
+- [[citation_verifier.py]] - `imports` [EXTRACTED]
+- [[egress_config.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

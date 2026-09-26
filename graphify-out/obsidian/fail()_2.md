@@ -1,18 +1,18 @@
 ---
-source_file: "docker/tests/test-get-credential.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "test-get-credential.sh"
-location: "L14"
+community: "TrustManager"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-get-credentialsh
+  - community/TrustManager
 ---
 
 # fail()
 
 ## Connections
-- [[test-get-credential.sh]] - `defines` [EXTRACTED]
-- [[test-get-credential.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-get-credentialsh
+#graphify/code #graphify/EXTRACTED #community/TrustManager

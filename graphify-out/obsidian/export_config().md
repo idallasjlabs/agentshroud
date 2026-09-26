@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Export current configuration.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
-- [[get_config()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

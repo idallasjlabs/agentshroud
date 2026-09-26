@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "hermes/manifest.json"
+community: "Key Skills in Detail"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/Key_Skills_in_Detail
 ---
 
 # entries
 
 ## Connections
-- [[hermesmanifest.json]] - `contains` [EXTRACTED]
+- [[manifest.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/code #graphify/EXTRACTED #community/Key_Skills_in_Detail

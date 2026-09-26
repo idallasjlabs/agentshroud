@@ -1,17 +1,13 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "document"
-community: "asb"
+community: "/i-crpr skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/asb
+  - community//i-crpr_skill
 ---
 
 # docker-compose.yml
 
-## Connections
-- [[asb]] - `references` [EXTRACTED]
-- [[test_config_validation.py]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/asb
+#graphify/document #graphify/EXTRACTED #community//i-crpr_skill

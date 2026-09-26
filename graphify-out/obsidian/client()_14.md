@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "test_observatory_mode.py"
-location: "L72"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L16"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - graphify/INFERRED
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # client()
 
 ## Connections
-- [[_make_app()]] - `calls` [EXTRACTED]
-- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement

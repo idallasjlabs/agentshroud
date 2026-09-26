@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
-type: "code"
-community: ".agents/skills/i-browser/package.json"
-location: "L4"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+type: "document"
+community: "test_apply_patches.js"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-browser/packagejson
+  - community/test_apply_patchesjs
 ---
 
-# description
+# Description
 
 ## Connections
-- [[.agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/test_apply_patchesjs

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SECURITY_GUIDE.md"
 type: "concept"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "TestCVE2026_9367TerminalToolDenied"
 location: "Environment Variable Management"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/TestCVE2026_9367TerminalToolDenied
 ---
 
 # direnv-based environment variable management
@@ -15,4 +15,4 @@ tags:
 - [[Credential isolation — keys live only in the gateway]] - `semantically_similar_to` [INFERRED]
 - [[PostgreSQL ~.pgpass password management]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/concept #graphify/INFERRED #community/TestCVE2026_9367TerminalToolDenied

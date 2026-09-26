@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "daily-checkin.sh"
+community: "Operating Rules (Non-Negotiable)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/daily-checkinsh
+  - community/Operating_Rules_Non-Negotiable
 ---
 
 # daily-checkin.sh script
@@ -15,4 +15,4 @@ tags:
 - [[_fmt()]] - `calls` [EXTRACTED]
 - [[daily-checkin.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/daily-checkinsh
+#graphify/code #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable

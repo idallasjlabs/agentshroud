@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "Bear Notes"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Bear_Notes
 ---
 
 # diagrams/README.md
 
 ## Connections
-- [[Output Format_31]] - `contains` [EXTRACTED]
+- [[Output Format_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L35"
+community: "apply-patches.js (OpenClaw)"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw

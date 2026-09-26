@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Community 1471"
+community: ".test_startup_notifications_use_minimal_message_"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1471
+  - community/test_startup_notifications_use_minimal_message_
 ---
 
 # extraction-spec.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extraction subagent prompt_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1471
+#graphify/document #graphify/EXTRACTED #community/test_startup_notifications_use_minimal_message_

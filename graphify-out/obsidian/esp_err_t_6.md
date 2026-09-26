@@ -1,20 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/audio.c"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "audio.c"
-location: "L41"
+community: "TestQuarantineEndpoints"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audioc
+  - community/TestQuarantineEndpoints
 ---
 
 # esp_err_t
 
 ## Connections
-- [[audio_init()]] - `references` [EXTRACTED]
-- [[audio_play()]] - `references` [EXTRACTED]
-- [[audio_preinit()]] - `references` [EXTRACTED]
-- [[audio_set_volume()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/audioc
+#graphify/code #graphify/EXTRACTED #community/TestQuarantineEndpoints

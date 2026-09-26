@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Restart Procedure"
+community: "archive_old_events()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/archive_old_events
 ---
 
 # docker-commands.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/archive_old_events

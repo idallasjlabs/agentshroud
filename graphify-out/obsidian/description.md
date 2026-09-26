@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
+community: "AuditStore"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/AuditStore
 ---
 
 # Description
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/AuditStore

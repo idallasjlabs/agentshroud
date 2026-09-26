@@ -1,16 +1,17 @@
 ---
-source_file: ""
+source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "app_main.c"
+community: "A2AGovernanceProxy"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/A2AGovernanceProxy
 ---
 
 # esp_err_t
 
 ## Connections
-- [[wakeword_init]] - `references` [EXTRACTED]
+- [[wakeword_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "URLAnalyzer"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/URLAnalyzer
 ---
 
 # dns_filter()
@@ -15,4 +15,4 @@ tags:
 - [[DNSFilter]] - `calls` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

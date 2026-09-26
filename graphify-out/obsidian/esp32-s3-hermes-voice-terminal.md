@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
+community: "TestHeuristicClassifier"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+  - community/TestHeuristicClassifier
 ---
 
 # esp32-s3-hermes-voice-terminal.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+#graphify/document #graphify/EXTRACTED #community/TestHeuristicClassifier

@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[CronStateMonitor]] - `contains` [EXTRACTED]
 - [[JobState]] - `contains` [EXTRACTED]
-- [[gateway.security.daily_cve_report]] - `semantically_similar_to` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/CronStateMonitor

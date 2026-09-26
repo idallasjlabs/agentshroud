@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
-type: "code"
-community: "browser-extension/package.json"
-location: "L5"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+type: "document"
+community: "chatbot/main.py"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/chatbot/mainpy
 ---
 
-# description
+# Description
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # egress_monitor.py
@@ -19,11 +19,10 @@ tags:
 - [[EgressMonitor]] - `contains` [EXTRACTED]
 - [[EgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[EgressSummary]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[egress_config.py]] - `references` [EXTRACTED]
-- [[key_vault.py_2]] - `references` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[key_vault.py]] - `references` [EXTRACTED]
 - [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

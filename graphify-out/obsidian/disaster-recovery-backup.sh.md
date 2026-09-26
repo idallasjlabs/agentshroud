@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/disaster-recovery-backup.sh"
 type: "code"
-community: "export-bot-conversations.py"
+community: "CollaboratorGreeter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/CollaboratorGreeter
 ---
 
 # disaster-recovery-backup.sh
@@ -16,4 +16,4 @@ tags:
 - [[backup-bot-memory.sh]] - `shares_data_with` [EXTRACTED]
 - [[disaster-recovery-backup.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter

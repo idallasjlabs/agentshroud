@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/scripts/calendar.js"
-type: "code"
-community: ".agents/skills/i-icloud/scripts/calendar.js"
-location: "L10"
+source_file: "skills/openclaw/summarize/SKILL.md"
+type: "document"
+community: "browser-extension/manifest.json"
+location: "L76"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-icloud/scripts/calendarjs
+  - community/browser-extension/manifestjson
 ---
 
-# CONFIG
+# Config
 
 ## Connections
-- [[.agentsskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-icloud/scripts/calendarjs
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

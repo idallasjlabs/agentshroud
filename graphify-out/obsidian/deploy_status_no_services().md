@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # deploy_status_no_services()
@@ -15,4 +15,4 @@ tags:
 - [[format_deploy_status()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

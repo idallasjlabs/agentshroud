@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "SSHProxy"
-location: "L92"
+community: "test_redteam_probes.py"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/test_redteam_probespy
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

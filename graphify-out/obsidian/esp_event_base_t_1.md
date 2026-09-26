@@ -1,16 +1,17 @@
 ---
-source_file: ""
+source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "wakeword.c"
+community: "_t()"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/_t
 ---
 
 # esp_event_base_t
 
 ## Connections
-- [[_on_event]] - `references` [EXTRACTED]
+- [[_on_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "chatbot/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/chatbot/mainpy
 ---
 
 # config_integrity.py
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

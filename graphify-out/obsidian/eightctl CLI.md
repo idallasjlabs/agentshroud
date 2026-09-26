@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "concept"
-community: "eightctl/SKILL.md"
+community: "ConsistencyScore"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/eightctl/SKILLmd
+  - community/ConsistencyScore
 ---
 
 # eightctl CLI
 
 ## Connections
-- [[eightctlSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_205]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/eightctl/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/ConsistencyScore

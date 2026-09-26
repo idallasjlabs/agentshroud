@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L33"
+community: "AsyncMock"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/AsyncMock
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `calls` [EXTRACTED]
+- [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "EncryptedStore"
+community: "GroupApprovalRouter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/GroupApprovalRouter
 ---
 
 # encrypted_store.py
@@ -19,4 +19,4 @@ tags:
 - [[canary.py]] - `references` [EXTRACTED]
 - [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

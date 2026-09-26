@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "_handle()"
+community: "TestOAuthInjection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/TestOAuthInjection
 ---
 
 # dashboard_bridge.py
@@ -16,7 +16,7 @@ tags:
 - [[_pipe()]] - `contains` [EXTRACTED]
 - [[_read_request_headers()]] - `contains` [EXTRACTED]
 - [[docker_proxy_relay.py]] - `semantically_similar_to` [EXTRACTED]
-- [[main()_27]] - `contains` [EXTRACTED]
+- [[main()_2]] - `contains` [EXTRACTED]
 - [[rewrite_request_headers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

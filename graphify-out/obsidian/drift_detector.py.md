@@ -1,17 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
-type: "document"
-community: "drift_detector.py"
+source_file: "gateway/security/drift_detector.py"
+type: "code"
+community: "lifespan.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/lifespanpy
 ---
 
-# drift_detector.py.md
+# drift_detector.py
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot]] - `contains` [EXTRACTED]
+- [[Drift Detector Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[DriftAlert]] - `contains` [EXTRACTED]
+- [[DriftDetector]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[clamav_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

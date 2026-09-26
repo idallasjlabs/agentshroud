@@ -1,20 +1,20 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # cves_with_bot_id_appends_query()
 
 ## Connections
 - [[.new()_2]] - `calls` [EXTRACTED]
-- [[.ok()_1]] - `calls` [EXTRACTED]
+- [[.ok()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_cves()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

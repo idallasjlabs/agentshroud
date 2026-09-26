@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 938"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_938
+  - community/Apple_Services_Setup_Guide
 ---
 
 # exports.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_938
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

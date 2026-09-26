@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Google Calendar & Contacts - Quick Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Update_AgentShroud
+  - community/Google_Calendar__Contacts_-_Quick_Setup
 ---
 
 # deployment.md
@@ -17,4 +17,4 @@ tags:
 - [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/INFERRED #community/Update_AgentShroud
+#graphify/document #graphify/INFERRED #community/Google_Calendar__Contacts_-_Quick_Setup

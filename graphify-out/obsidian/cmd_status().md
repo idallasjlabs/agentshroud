@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/tailscale-serve.sh"
+source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "server.py"
-location: "L116"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # cmd_status()
 
 ## Connections
-- [[tailscale-serve.sh]] - `defines` [EXTRACTED]
-- [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
+- [[run-standalone.sh]] - `defines` [EXTRACTED]
+- [[run-standalone.sh script]] - `calls` [EXTRACTED]
+- [[run-standalone.sh — launches Hermes via `docker run`, bypassing compose restart-storm bug]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

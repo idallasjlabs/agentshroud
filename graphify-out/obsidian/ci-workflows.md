@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "All Dependencies.md"
+community: "TestFileSandbox"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/TestFileSandbox
 ---
 
 # ci-workflows.md
@@ -16,4 +16,4 @@ tags:
 - [[CI Workflows]] - `contains` [EXTRACTED]
 - [[pytest.ini]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/TestFileSandbox

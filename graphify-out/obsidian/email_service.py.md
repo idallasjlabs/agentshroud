@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: ".send()"
+community: "RateLimiter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/RateLimiter
 ---
 
 # email_service.py
 
 ## Connections
-- [[GatewayEmailService_1]] - `contains` [EXTRACTED]
+- [[GatewayEmailService]] - `contains` [EXTRACTED]
 - [[SmtpLike]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

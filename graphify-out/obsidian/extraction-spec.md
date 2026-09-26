@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Community 1432"
+community: "run-as-root.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1432
+  - community/run-as-rootsh
 ---
 
 # extraction-spec.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extraction subagent prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1432
+#graphify/document #graphify/EXTRACTED #community/run-as-rootsh

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "forward.py"
-location: "L38"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L32"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/forwardpy
+  - graphify/INFERRED
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # client()
 
 ## Connections
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement

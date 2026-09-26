@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "env_guard.py"
+community: "Distributed OpenClaw Node Architecture — Raspber"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/Distributed_OpenClaw_Node_Architecture__Raspber
 ---
 
 # env_guard.py
@@ -15,16 +15,16 @@ tags:
 - [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - `contains` [EXTRACTED]
 - [[Blocked Commands]] - `contains` [EXTRACTED]
 - [[Blocked Paths]] - `contains` [EXTRACTED]
-- [[Environment Variables_3]] - `contains` [EXTRACTED]
-- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Environment Variables_13]] - `contains` [EXTRACTED]
+- [[Function Details_38]] - `contains` [EXTRACTED]
 - [[Global Singleton]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_2]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
-- [[Purpose_126]] - `contains` [EXTRACTED]
-- [[Related_4]] - `contains` [EXTRACTED]
-- [[Responsibilities_3]] - `contains` [EXTRACTED]
-- [[Threat Model_3]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_41]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_8]] - `contains` [EXTRACTED]
+- [[Purpose_159]] - `contains` [EXTRACTED]
+- [[Related_45]] - `contains` [EXTRACTED]
+- [[Responsibilities_43]] - `contains` [EXTRACTED]
+- [[Threat Model_14]] - `contains` [EXTRACTED]
 - [[Tracked Credential Variable Names (subset)]] - `contains` [EXTRACTED]
 - [[env_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber

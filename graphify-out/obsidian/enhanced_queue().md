@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalRequest"
+community: "TelegramAPIProxy"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # enhanced_queue()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[Create an enhanced approval queue for testing.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "docker-cleanup.sh"
+community: "Skill: Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Skill_Technical_Writer_TW
 ---
 
 # docker-cleanup.sh
@@ -17,8 +17,7 @@ tags:
 - [[cmd_nuclear()]] - `defines` [EXTRACTED]
 - [[cmd_restart()]] - `defines` [EXTRACTED]
 - [[cmd_safe_prune()]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[docker-cleanup.sh script]] - `contains` [EXTRACTED]
 - [[usage()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

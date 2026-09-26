@@ -12,10 +12,10 @@ tags:
 # <description of what this does>
 
 ## Connections
-- [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[System Prompt_11]] - `contains` [EXTRACTED]
-- [[User Prompt Template_7]] - `contains` [EXTRACTED]
+- [[Quality Checklist_19]] - `contains` [EXTRACTED]
+- [[SKILL_132]] - `contains` [EXTRACTED]
+- [[System Prompt_16]] - `contains` [EXTRACTED]
+- [[User Prompt Template_8]] - `contains` [EXTRACTED]
 - [[cheatsheet_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-athenaSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

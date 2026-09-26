@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Test-Driven Development README"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Test-Driven_Development_README
 ---
 
 # cwd with shell metacharacters is rejected before execution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssh_exec_cwd_invalid_rejects_400()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Test-Driven_Development_README

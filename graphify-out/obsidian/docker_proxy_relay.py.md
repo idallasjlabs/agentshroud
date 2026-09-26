@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "_handle()"
+community: "TestOAuthInjection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/TestOAuthInjection
 ---
 
 # docker_proxy_relay.py
@@ -15,6 +15,6 @@ tags:
 - [[_handle()_1]] - `contains` [EXTRACTED]
 - [[_pump()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py]] - `semantically_similar_to` [EXTRACTED]
-- [[main()_28]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

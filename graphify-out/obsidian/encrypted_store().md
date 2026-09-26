@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "EgressPolicy"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/EgressPolicy
 ---
 
 # encrypted_store()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

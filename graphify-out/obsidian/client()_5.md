@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "test_e2e.py"
-location: "L32"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_e2epy
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_e2epy
+#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement

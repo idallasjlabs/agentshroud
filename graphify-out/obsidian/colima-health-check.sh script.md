@@ -1,21 +1,22 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "colima-health-check.sh"
+community: "Add information filtering to prevent agent self-"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # colima-health-check.sh script
 
 ## Connections
+- [[_upgrade_in_progress()]] - `calls` [EXTRACTED]
 - [[colima-health-check.sh]] - `contains` [EXTRACTED]
-- [[log (colima-health-check)]] - `calls` [EXTRACTED]
-- [[notify (Telegram health alert)]] - `calls` [EXTRACTED]
-- [[read_state]] - `calls` [EXTRACTED]
-- [[write_state]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
+- [[resolve_docker_host()]] - `calls` [EXTRACTED]
+- [[write_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L2617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # compute_bot_scorecard()
@@ -27,13 +27,13 @@ tags:
 - [[.test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBotScorecard_1]] - `calls` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_manage_soc_report_endpoint()]] - `shares_data_with` [INFERRED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

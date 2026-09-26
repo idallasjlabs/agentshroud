@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "Production Safety Checklist (SKILL)"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # egress_filter()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "test_claude_via_openai_path.py"
-location: "L27"
+community: "OPENCLAW_SANDBOX_MODE"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_claude_via_openai_pathpy
+  - graphify/EXTRACTED
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # client()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
+- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_claude_via_openai_pathpy
+#graphify/code #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

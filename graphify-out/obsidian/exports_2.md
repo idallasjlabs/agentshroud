@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 958"
+community: "TrustLevel"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/TrustLevel
 ---
 
 # exports.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_958
+#graphify/document #graphify/EXTRACTED #community/TrustLevel

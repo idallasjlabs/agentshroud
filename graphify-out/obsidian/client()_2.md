@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "FetchOutcome"
-location: "L38"
+community: "RateLimiter"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/RateLimiter
 ---
 
 # client()
 
 ## Connections
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

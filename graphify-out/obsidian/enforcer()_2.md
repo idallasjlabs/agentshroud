@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L99"
+community: "Local-Model Job Quality Matrix"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

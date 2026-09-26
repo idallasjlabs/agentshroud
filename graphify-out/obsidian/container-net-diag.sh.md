@@ -1,26 +1,26 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "container-net-diag.sh"
+community: "Workflow (follow in order)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Workflow_follow_in_order
 ---
 
 # container-net-diag.sh
 
 ## Connections
-- [[colima-health-check.sh_1]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `calls` [EXTRACTED]
 - [[container-net-diag.sh script]] - `contains` [EXTRACTED]
-- [[fail()_5]] - `defines` [EXTRACTED]
+- [[fail()]] - `defines` [EXTRACTED]
 - [[has()]] - `defines` [EXTRACTED]
 - [[header()]] - `defines` [EXTRACTED]
 - [[http_test()]] - `defines` [EXTRACTED]
-- [[info()_2]] - `defines` [EXTRACTED]
-- [[pass()_4]] - `defines` [EXTRACTED]
+- [[info()]] - `defines` [EXTRACTED]
+- [[pass()]] - `defines` [EXTRACTED]
 - [[tcp_test()]] - `defines` [EXTRACTED]
-- [[warn()_4]] - `defines` [EXTRACTED]
+- [[warn()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/Workflow_follow_in_order

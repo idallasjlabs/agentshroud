@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
 type: "document"
-community: "ci (Continuous Integration) SKILL stub (OpenClaw"
+community: "Docs Drift Check Job"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ci_Continuous_Integration_SKILL_stub_OpenClaw
+  - community/Docs_Drift_Check_Job
 ---
 
 # ci (Continuous Integration) SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/ci_Continuous_Integration_SKILL_stub_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Docs_Drift_Check_Job

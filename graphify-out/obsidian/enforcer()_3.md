@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L56"
+community: "TelegramAPIProxy"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/TelegramAPIProxy
 ---
 
 # enforcer()
 
 ## Connections
-- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[ToolACLConfig]] - `calls` [EXTRACTED]
+- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
+- [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

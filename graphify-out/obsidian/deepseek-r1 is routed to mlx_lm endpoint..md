@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "asyncio"
 location: "L734"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/asyncio
 ---
 
 # deepseek-r1 is routed to mlx_lm endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

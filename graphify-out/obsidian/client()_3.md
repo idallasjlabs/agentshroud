@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "forward.py"
-location: "L37"
+community: "AgentShroud Security Hardening Plan"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # client()
 
 ## Connections
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

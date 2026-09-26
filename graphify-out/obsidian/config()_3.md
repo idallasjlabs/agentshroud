@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "KeyVault"
-location: "L20"
+community: "GitGuard"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/GitGuard
 ---
 
 # config()
 
 ## Connections
-- [[KeyVaultConfig]] - `calls` [EXTRACTED]
-- [[test_key_vault.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig]] - `calls` [EXTRACTED]
+- [[MCPServerConfig]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/GitGuard

@@ -1,16 +1,19 @@
 ---
-source_file: ""
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "app_main.c"
+community: "Development Workflow: Read-Only Filesystem Strat"
+location: "L1130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/Development_Workflow_Read-Only_Filesystem_Strat
 ---
 
 # face_emotion_t
 
 ## Connections
-- [[_state_to_emotion]] - `references` [EXTRACTED]
+- [[face_get_emotion()]] - `references` [EXTRACTED]
+- [[face_set_emotion()]] - `references` [EXTRACTED]
+- [[update_emotion_parameters()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat

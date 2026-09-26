@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_e2e.py"
-location: "L16"
+community: "system-requirements.md"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/system-requirementsmd
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

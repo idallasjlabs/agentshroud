@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "concept"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "init-openclaw-config.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/init-openclaw-configsh
 ---
 
 # cr/SKILL.md code review skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/concept #graphify/EXTRACTED #community/init-openclaw-configsh

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "ToolACLEnforcer"
-location: "L46"
+community: "TelegramAPIProxy"
+location: "L99"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolACLEnforcer
+  - graphify/EXTRACTED
+  - community/TelegramAPIProxy
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[fixture_2]] - `references` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
+- [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,22 +1,22 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "export-bot-conversations.py"
+community: "CollaboratorGreeter"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/CollaboratorGreeter
 ---
 
 # export_hermes()
 
 ## Connections
-- [[Path_45]] - `references` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
 - [[_docker_read_file()]] - `calls` [EXTRACTED]
-- [[datetime_5]] - `references` [EXTRACTED]
+- [[datetime_6]] - `references` [EXTRACTED]
 - [[export()]] - `conceptually_related_to` [INFERRED]
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter

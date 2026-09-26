@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "detect_runtime()"
+community: "get_trivy_summary()"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/get_trivy_summary
 ---
 
 # detect_runtime()
@@ -18,13 +18,13 @@ tags:
 - [[.test_detect_none()]] - `calls` [EXTRACTED]
 - [[.test_detect_podman()]] - `calls` [EXTRACTED]
 - [[Auto-detect which container runtimes are available on this system.]] - `rationale_for` [EXTRACTED]
+- [[__init__.py_8]] - `contains` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]
 - [[get_runtimes()]] - `calls` [EXTRACTED]
 - [[get_status()]] - `calls` [EXTRACTED]
-- [[installer.py_2]] - `imports` [EXTRACTED]
-- [[runtime__init__.py]] - `contains` [EXTRACTED]
+- [[installer.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

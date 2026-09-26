@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L125"
+community: "Approval queue (notify Isaiah via Telegram, wait"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
 ---
 
 # die()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[err()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script_1]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait

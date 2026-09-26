@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: ".proxy_messages()"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/proxy_messages
 ---
 
 # events_api envelopes call proxy.handle_event with the payload.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_events_api_envelope_dispatches_handle_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

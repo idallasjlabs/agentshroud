@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "RovoBlast Attack (Atlassian Rovo AI)"
+community: "hermes/skills/i-icloud/scripts/calendar.js"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RovoBlast_Attack_Atlassian_Rovo_AI
+  - community/hermes/skills/i-icloud/scripts/calendarjs
 ---
 
 # context_guard.py Provenance Tagging (ContextSegment)
@@ -14,4 +14,4 @@ tags:
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs

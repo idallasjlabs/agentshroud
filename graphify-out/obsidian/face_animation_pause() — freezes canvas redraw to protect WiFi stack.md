@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "face_animation_pause() — freezes canvas redraw t"
+community: "Community Detection / Clustering"
 location: "line 146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/face_animation_pause__freezes_canvas_redraw_t
+  - community/Community_Detection_/_Clustering
 ---
 
 # face_animation_pause() — freezes canvas redraw to protect WiFi stack
 
-#graphify/code #graphify/EXTRACTED #community/face_animation_pause__freezes_canvas_redraw_t
+#graphify/code #graphify/EXTRACTED #community/Community_Detection_/_Clustering

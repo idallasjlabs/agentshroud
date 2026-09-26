@@ -1,24 +1,17 @@
 ---
-source_file: "docs/diagrams/README.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "diagrams/README.md"
-location: "L1"
+community: "ADR-003: Two-Network Container Isolation"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # diagrams/README.md
 
 ## Connections
-- [[01-architecture]] - `references` [EXTRACTED]
-- [[02-infrastructure]] - `references` [EXTRACTED]
-- [[03-data]] - `references` [EXTRACTED]
-- [[04-security]] - `references` [EXTRACTED]
-- [[05-behavior]] - `references` [EXTRACTED]
-- [[06-operations]] - `references` [EXTRACTED]
-- [[07-team-planning]] - `references` [EXTRACTED]
-- [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
+- [[Output Format_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

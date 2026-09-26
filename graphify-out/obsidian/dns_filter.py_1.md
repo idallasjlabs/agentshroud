@@ -1,28 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "dns_filter.py"
-location: "L10"
+community: "TestFromAuditChainEntry"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/TestFromAuditChainEntry
 ---
 
-# dns_filter.py
+# dns_filter.py.md
 
 ## Connections
-- [[Allowlist Behavior]] - `contains` [EXTRACTED]
-- [[Audit Log]] - `contains` [EXTRACTED]
-- [[Configuration (DNSFilterConfig)]] - `contains` [EXTRACTED]
-- [[Environment Variables_9]] - `contains` [EXTRACTED]
-- [[Function Details_18]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_7]] - `contains` [EXTRACTED]
-- [[Purpose_145]] - `contains` [EXTRACTED]
-- [[Related_24]] - `contains` [EXTRACTED]
-- [[Responsibilities_21]] - `contains` [EXTRACTED]
-- [[Threat Model_15]] - `contains` [EXTRACTED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry

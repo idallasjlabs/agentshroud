@@ -1,34 +1,29 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/SkillGuard
 ---
 
 # egress_config.py
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[EgressFilterConfig]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[browser_security.py]] - `references` [EXTRACTED]
-- [[citation_verifier.py]] - `shares_data_with` [EXTRACTED]
-- [[consent_framework.py]] - `references` [EXTRACTED]
-- [[domain_matches]] - `contains` [EXTRACTED]
+- [[Egress management endpoints (manageegress)]] - `shares_data_with` [INFERRED]
+- [[EgressFilterConfig]] - `references` [EXTRACTED]
+- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - `references` [EXTRACTED]
+- [[citation_verifier.py]] - `imports_from` [EXTRACTED]
+- [[domain_matches()]] - `references` [EXTRACTED]
 - [[egress_approval.py]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[feed_hosts.py]] - `imports_from` [EXTRACTED]
-- [[get_egress_config]] - `contains` [EXTRACTED]
+- [[egress_filter.py]] - `imports_from` [EXTRACTED]
+- [[get_egress_config()]] - `references` [EXTRACTED]
 - [[http_proxy.py]] - `imports_from` [EXTRACTED]
-- [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[management.py]] - `imports_from` [EXTRACTED]
 - [[set_egress_config()]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py]] - `references` [EXTRACTED]
+- [[test_config_validation.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

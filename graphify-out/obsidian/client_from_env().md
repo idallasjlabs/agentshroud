@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "client_from_env()"
+community: "api.py"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/apipy
 ---
 
 # client_from_env()
 
 ## Connections
-- [[.get()]] - `calls` [EXTRACTED]
+- [[.get()_2]] - `calls` [EXTRACTED]
 - [[.test_env_token_and_url_used()]] - `calls` [EXTRACTED]
 - [[.test_explicit_args_win()]] - `calls` [EXTRACTED]
 - [[.test_gateway_password_fallback()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[client.py]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/client_from_env
+#graphify/code #graphify/EXTRACTED #community/apipy

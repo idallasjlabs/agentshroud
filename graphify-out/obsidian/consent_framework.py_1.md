@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "TestKeyRotationManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/TestKeyRotationManager
 ---
 
 # consent_framework.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/TestKeyRotationManager

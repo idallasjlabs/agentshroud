@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "FileSandbox"
+community: "cli/main.py"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/cli/mainpy
 ---
 
 # default_config()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

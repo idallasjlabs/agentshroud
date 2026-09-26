@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "tool_result_injection.py"
+community: "test_scanner_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tool_result_injectionpy
+  - community/test_scanner_integrationpy
 ---
 
 # context_guard.py
@@ -22,4 +22,4 @@ tags:
 - [[get_context_guard()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tool_result_injectionpy
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

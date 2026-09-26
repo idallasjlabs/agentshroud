@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "SSHProxy"
-location: "L79"
+community: "Security Modules (58)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Security_Modules_58
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Security_Modules_58

@@ -1,17 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "bsp_iot_button_create()"
-location: "L17"
+community: "Skill: OpenClaw Dev Workflow (ODEV)"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bsp_iot_button_create
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV
 ---
 
 # esp_err_t
 
 ## Connections
-- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
+- [[_http_event_handler()]] - `references` [EXTRACTED]
+- [[ota_check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create
+#graphify/code #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV

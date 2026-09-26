@@ -1,18 +1,20 @@
 ---
-source_file: "docker/tests/test-op-auth.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "test-op-auth.sh"
-location: "L14"
+community: "Workflow (follow in order)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-op-authsh
+  - community/Workflow_follow_in_order
 ---
 
 # fail()
 
 ## Connections
-- [[test-op-auth.sh]] - `defines` [EXTRACTED]
-- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[http_test()]] - `calls` [EXTRACTED]
+- [[tcp_test()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-op-authsh
+#graphify/code #graphify/EXTRACTED #community/Workflow_follow_in_order

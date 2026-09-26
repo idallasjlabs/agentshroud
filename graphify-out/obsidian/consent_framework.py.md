@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "test_filter_xml_blocks.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/test_filter_xml_blockspy
 ---
 
 # consent_framework.py
@@ -20,8 +20,7 @@ tags:
 - [[ServerConfig]] - `contains` [EXTRACTED]
 - [[ShellInjectionDetected]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `references` [EXTRACTED]
-- [[egress_config.py]] - `references` [EXTRACTED]
 - [[oauth_security.py]] - `references` [EXTRACTED]
 - [[test_consent_framework.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy

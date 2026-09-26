@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "forward.py"
+community: "RateLimiter"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # email_send()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - `rationale_for` [EXTRACTED]
-- [[EmailSendRequest]] - `references` [EXTRACTED]
+- [[EmailSendRequest_1]] - `references` [EXTRACTED]
 - [[EmailSendResponse]] - `calls` [EXTRACTED]
-- [[GatewayEmailService_1]] - `calls` [EXTRACTED]
+- [[GatewayEmailService]] - `calls` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - `rationale_for` [EXTRACTED]
 - [[Request_4]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

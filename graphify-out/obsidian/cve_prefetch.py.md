@@ -1,20 +1,19 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "cve_prefetch.py"
+community: "Slack Channel Setup"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cve_prefetchpy
+  - community/Slack_Channel_Setup
 ---
 
 # cve_prefetch.py
 
 ## Connections
-- [[Deterministic prefetch for the CVE Triage cron job. Fetches both GitHub…]] - `rationale_for` [EXTRACTED]
 - [[curl_json()]] - `contains` [EXTRACTED]
 - [[known_ghsa_ids()]] - `contains` [EXTRACTED]
-- [[main()_1]] - `contains` [EXTRACTED]
+- [[main()_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cve_prefetchpy
+#graphify/code #graphify/EXTRACTED #community/Slack_Channel_Setup

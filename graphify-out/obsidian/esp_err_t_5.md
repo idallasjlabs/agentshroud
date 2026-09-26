@@ -1,22 +1,17 @@
 ---
-source_file: ""
+source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "voice_task"
+community: "TestStoreIn1Password"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/TestStoreIn1Password
 ---
 
 # esp_err_t
 
 ## Connections
-- [[ws_client_send_end()]] - `references` [EXTRACTED]
-- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen_resume]] - `references` [EXTRACTED]
-- [[ws_client_send_log()]] - `references` [EXTRACTED]
-- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
-- [[ws_client_send_stop]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/TestStoreIn1Password

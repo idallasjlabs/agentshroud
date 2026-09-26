@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disab"
+community: "MCPToolResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab
+  - community/MCPToolResult
 ---
 
 # config.yaml seed/upgrade — adds telegram.extra.base_url for gateway routing
@@ -14,4 +14,4 @@ tags:
 - [[Patch 1 — _send_telegram signature + Bot() construction (version-tolerant anchors)]] - `shares_data_with` [INFERRED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab
+#graphify/code #graphify/EXTRACTED #community/MCPToolResult

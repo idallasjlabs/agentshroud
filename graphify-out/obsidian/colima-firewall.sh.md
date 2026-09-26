@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/colima-firewall.sh"
 type: "code"
-community: "container-net-diag.sh"
+community: "Add information filtering to prevent agent self-"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Add_information_filtering_to_prevent_agent_self-
 ---
 
 # colima-firewall.sh
 
 ## Connections
 - [[colima-firewall.sh script]] - `contains` [EXTRACTED]
-- [[colima-health-check.sh_1]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-

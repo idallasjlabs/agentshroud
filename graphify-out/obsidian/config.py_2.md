@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 727"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # config.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

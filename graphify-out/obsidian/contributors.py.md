@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # contributors.py
@@ -15,10 +15,10 @@ tags:
 - [[ContributorManager]] - `contains` [EXTRACTED]
 - [[ContributorRecord_1]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
-- [[UserRole]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[UserRole_1]] - `imports` [EXTRACTED]
 - [[_role_enum()]] - `contains` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

@@ -1,11 +1,11 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "code"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "TestCVE2026_9367TerminalToolDenied"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/TestCVE2026_9367TerminalToolDenied
 ---
 
 # external network (gateway host-facing bridge)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway service (proxy mode)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/code #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied

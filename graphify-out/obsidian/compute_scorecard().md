@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L2397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # compute_scorecard()
@@ -22,10 +22,10 @@ tags:
 - [[.test_scorecard_domain_ids_are_sequential()]] - `calls` [EXTRACTED]
 - [[.test_secrets_management_baseline_two()]] - `calls` [EXTRACTED]
 - [[.test_standard_basis_present()]] - `calls` [EXTRACTED]
-- [[.test_timestamp_present()]] - `calls` [EXTRACTED]
+- [[.test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[.test_totals_present()]] - `calls` [EXTRACTED]
 - [[.test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]
@@ -70,8 +70,8 @@ tags:
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/compute_scorecard
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

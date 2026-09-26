@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "FileSandbox"
+community: "Enum"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # enforce_config()
@@ -16,4 +16,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Enum

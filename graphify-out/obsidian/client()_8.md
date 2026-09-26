@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "test_e2e.py"
-location: "L21"
+community: "plan_remediation()"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_e2epy
+  - graphify/EXTRACTED
+  - community/plan_remediation
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

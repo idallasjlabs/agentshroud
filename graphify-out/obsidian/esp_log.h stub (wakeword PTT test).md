@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h"
 type: "code"
-community: "test_ptt_state.c"
+community: "A2AGovernanceProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/A2AGovernanceProxy
 ---
 
 # esp_log.h stub (wakeword PTT test)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_ptt_state.c]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

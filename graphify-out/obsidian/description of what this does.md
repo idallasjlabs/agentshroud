@@ -1,21 +1,22 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "<description of what this does>"
+community: "AgentShroud Consolidated Issues Report"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/description_of_what_this_does
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # <description of what this does>
 
 ## Connections
-- [[.agentsskillsi-atlasSKILL]] - `contains` [EXTRACTED]
-- [[Quality Checklist_11]] - `contains` [EXTRACTED]
-- [[System Prompt_9]] - `contains` [EXTRACTED]
-- [[User Prompt Template_5]] - `contains` [EXTRACTED]
+- [[Quality Checklist_1]] - `contains` [EXTRACTED]
+- [[SKILL_5]] - `contains` [EXTRACTED]
+- [[SKILL_6]] - `contains` [EXTRACTED]
+- [[System Prompt]] - `contains` [EXTRACTED]
+- [[User Prompt Template]] - `contains` [EXTRACTED]
 - [[cheatsheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/description_of_what_this_does
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
