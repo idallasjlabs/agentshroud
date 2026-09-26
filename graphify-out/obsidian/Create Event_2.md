@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "hermes/SOUL.md"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/hermes/SOULmd
 ---
 
 # Create Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Data Dictionary"
-location: "L110"
+source_file: "gateway/security/dns_filter.py"
+type: "code"
+community: "URLAnalyzer"
+location: "L52"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/URLAnalyzer
 ---
 
 # DNSQuery
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[.check()_4]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_3]] - `references` [EXTRACTED]
+- [[.get_flagged_queries()]] - `references` [EXTRACTED]
+- [[dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

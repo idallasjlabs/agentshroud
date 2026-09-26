@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Cron: AgentShroud Daily Check-in"
+community: "vTaskDelay()"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Cron_AgentShroud_Daily_Check-in
+  - community/vTaskDelay
 ---
 
 # Cron: AgentShroud Daily Check-in
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[daily-checkin.sh (marvinpi status check)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Cron_AgentShroud_Daily_Check-in
+#graphify/document #graphify/INFERRED #community/vTaskDelay

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ToolACLEnforcer"
 location: "L688"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ToolACLEnforcer
 ---
 
 # Create a single-use invite link for a Telegram group. Returns URL or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._telegram_create_invite_link()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "03-data.md"
-location: "L13"
+community: "pipeline.py — Security Pipeline"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Current Status
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

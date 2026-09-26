@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agen"
-location: "L3"
+community: "run_multi_host()"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agen
+  - community/run_multi_host
 ---
 
 # Context
 
 ## Connections
-- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
+- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agen
+#graphify/document #graphify/EXTRACTED #community/run_multi_host

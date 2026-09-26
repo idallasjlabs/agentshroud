@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "DELIVERABLE 3 — v0.8.0 Implementation Items"
+community: "init-openclaw-config.sh"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DELIVERABLE_3__v080_Implementation_Items
+  - community/init-openclaw-configsh
 ---
 
 # DELIVERABLE 3 — v0.8.0 Implementation Items
@@ -20,4 +20,4 @@ tags:
 - [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - `contains` [EXTRACTED]
 - [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DELIVERABLE_3__v080_Implementation_Items
+#graphify/document #graphify/EXTRACTED #community/init-openclaw-configsh

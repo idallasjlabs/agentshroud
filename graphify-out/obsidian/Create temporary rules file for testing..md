@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "Path"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Path
 ---
 
 # Create temporary rules file for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.temp_rules_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/Path

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Plan: Proxying HexStrike AI MCP Agents via Agent"
-location: "L6"
+community: "model_usage.py"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+  - community/model_usagepy
 ---
 
 # Context
 
 ## Connections
-- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+#graphify/document #graphify/EXTRACTED #community/model_usagepy

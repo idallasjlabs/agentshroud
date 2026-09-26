@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
+community: "TestRewriteRequestHeaders"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/TestRewriteRequestHeaders
 ---
 
 # Credential Isolation — Gateway op-proxy (ACTIVE)
@@ -18,6 +18,6 @@ tags:
 - [[Credential flow]] - `contains` [EXTRACTED]
 - [[How to retrieve a credential]] - `contains` [EXTRACTED]
 - [[Known working credentials]] - `contains` [EXTRACTED]
-- [[What NEVER to do]] - `contains` [EXTRACTED]
+- [[What NEVER to do_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/TestRewriteRequestHeaders

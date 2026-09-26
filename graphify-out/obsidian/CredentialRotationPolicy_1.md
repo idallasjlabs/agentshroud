@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "3. Security Controls"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationConfig
+  - community/3_Security_Controls
 ---
 
 # CredentialRotationPolicy
@@ -18,7 +18,7 @@ tags:
 - [[.test_default_policy_values()]] - `calls` [EXTRACTED]
 - [[.test_should_rotate()]] - `calls` [EXTRACTED]
 - [[.test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_43]] - `uses` [INFERRED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -32,9 +32,9 @@ tags:
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
-- [[datetime_2]] - `uses` [INFERRED]
+- [[datetime_4]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationConfig
+#graphify/code #graphify/INFERRED #community/3_Security_Controls

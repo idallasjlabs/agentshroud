@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "STPA-Sec Analysis of AgentShroud"
+community: "Function Details"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/STPA-Sec_Analysis_of_AgentShroud
+  - community/Function_Details
 ---
 
 # Credential Isolation Architecture
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud
+#graphify/concept #graphify/EXTRACTED #community/Function_Details

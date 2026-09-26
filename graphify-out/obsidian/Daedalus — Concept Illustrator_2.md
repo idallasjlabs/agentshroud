@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Containers startup order: agentshroud-gateway st"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Containers_startup_order_agentshroud-gateway_st
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_81]] - `contains` [EXTRACTED]
-- [[Related Skills_72]] - `contains` [EXTRACTED]
-- [[Usage_76]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_45]] - `contains` [EXTRACTED]
+- [[README_50]] - `contains` [EXTRACTED]
+- [[Related Skills_48]] - `contains` [EXTRACTED]
+- [[Usage_51]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st

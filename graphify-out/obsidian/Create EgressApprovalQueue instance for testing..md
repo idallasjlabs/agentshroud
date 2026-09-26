@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "Path"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Path
 ---
 
 # Create EgressApprovalQueue instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/Path

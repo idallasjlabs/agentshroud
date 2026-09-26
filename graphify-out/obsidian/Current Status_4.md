@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/integrations/README.md"
 type: "document"
-community: "Approval Queue (human-in-the-loop)"
-location: "L13"
+community: "alert_dispatcher.py"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/alert_dispatcherpy
 ---
 
 # Current Status
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[Integrations Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

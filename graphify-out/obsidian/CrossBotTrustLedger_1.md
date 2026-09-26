@@ -1,54 +1,42 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
 community: "TrustConfig"
-location: "L125"
+location: "L51"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/TrustConfig
 ---
 
 # CrossBotTrustLedger
 
 ## Connections
-- [[.__init__()_174]] - `method` [EXTRACTED]
-- [[._propagate()]] - `method` [EXTRACTED]
-- [[.build_full_mesh()]] - `method` [EXTRACTED]
-- [[.get_incidents()]] - `method` [EXTRACTED]
-- [[.incident_count()]] - `method` [EXTRACTED]
-- [[.peers_of()]] - `method` [EXTRACTED]
-- [[.record_incident()]] - `method` [EXTRACTED]
-- [[.register_peer()_1]] - `method` [EXTRACTED]
-- [[.register_trust_manager()]] - `method` [EXTRACTED]
+- [[.test_bot_without_registered_trust_manager_is_skipped()]] - `references` [EXTRACTED]
+- [[.test_critical_severity_propagates_full_fraction()]] - `references` [EXTRACTED]
+- [[.test_default_policy_is_sane()]] - `calls` [EXTRACTED]
+- [[.test_empty_ledger_has_no_incidents()]] - `references` [EXTRACTED]
+- [[.test_get_incidents_by_source()]] - `references` [EXTRACTED]
+- [[.test_get_incidents_with_limit()]] - `references` [EXTRACTED]
+- [[.test_high_severity_propagates_full_fraction()]] - `references` [EXTRACTED]
+- [[.test_incident_limit_retained()]] - `references` [EXTRACTED]
+- [[.test_incident_record_fields()]] - `references` [EXTRACTED]
+- [[.test_incidents_are_recorded()]] - `references` [EXTRACTED]
+- [[.test_low_severity_not_propagated()]] - `references` [EXTRACTED]
+- [[.test_medium_severity_propagates_to_peer()]] - `references` [EXTRACTED]
+- [[.test_no_self_propagation()]] - `references` [EXTRACTED]
+- [[.test_propagated_to_is_empty_for_no_peers()]] - `references` [EXTRACTED]
+- [[.test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
+- [[.test_propagation_registers_unregistered_peer_agent()]] - `references` [EXTRACTED]
+- [[.test_register_peer()_1]] - `references` [EXTRACTED]
+- [[.test_register_peer_is_bidirectional_by_default()]] - `references` [EXTRACTED]
+- [[.test_unregistered_bot_has_no_peers()]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
-- [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestBotIncidentSeverity]] - `uses` [INFERRED]
-- [[TestBuildFullMesh]] - `uses` [INFERRED]
-- [[TestContextGuardInPipeline]] - `uses` [INFERRED]
-- [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
-- [[TestCrossBotTrustLedgerConstruction]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
-- [[TestGetIncidentsLimit]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestIncidentAudit]] - `uses` [INFERRED]
-- [[TestIncidentPropagation]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection]] - `uses` [INFERRED]
-- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
-- [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
-- [[gateway.security.trust_manager]] - `shares_data_with` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
-- [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
+- [[IncidentRecord]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustDecayPolicy]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ledger()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

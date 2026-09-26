@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "agentshroud-ieee-paper.md"
+community: "UserSession"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/UserSession
 ---
 
 # DNS-Layer Enforcement
@@ -14,4 +14,4 @@ tags:
 - [[Pi-hole DNS Filtering]] - `implements` [EXTRACTED]
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/concept #graphify/EXTRACTED #community/UserSession

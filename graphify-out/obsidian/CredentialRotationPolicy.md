@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L97"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/KeyRotationManager
+  - graphify/EXTRACTED
+  - community/TestNormalizeForSpeech
 ---
 
 # CredentialRotationPolicy
@@ -17,4 +17,4 @@ tags:
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

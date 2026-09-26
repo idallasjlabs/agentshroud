@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Currently Unmitigable Residual (verified: no fix exists anywhere yet)
@@ -18,4 +18,4 @@ tags:
 - [[openclaw image (2 residual)]] - `contains` [EXTRACTED]
 - [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution

@@ -1,23 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L6"
+community: "BaseModel"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/BaseModel
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_18]] - `contains` [EXTRACTED]
-- [[Output Format_31]] - `contains` [EXTRACTED]
-- [[Persona_13]] - `contains` [EXTRACTED]
-- [[Quality Checklist_15]] - `contains` [EXTRACTED]
-- [[Role_88]] - `contains` [EXTRACTED]
-- [[System Prompt_13]] - `contains` [EXTRACTED]
-- [[hermesskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_82]] - `contains` [EXTRACTED]
+- [[README_87]] - `contains` [EXTRACTED]
+- [[Related Skills_88]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_91]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/BaseModel

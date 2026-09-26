@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "SlackSocketClient"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/SlackSocketClient
 ---
 
 # Current resource usage metrics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceUsage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

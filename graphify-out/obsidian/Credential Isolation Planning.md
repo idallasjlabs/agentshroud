@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+community: "Hermes Agent — Connection Setup"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Credential Isolation Planning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Enterprise Security Feature Priorities]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

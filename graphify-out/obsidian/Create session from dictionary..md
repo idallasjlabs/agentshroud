@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".from_dict()"
+community: "KeyVaultConfig"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/from_dict
+  - community/KeyVaultConfig
 ---
 
 # Create session from dictionary.
 
 ## Connections
-- [[.from_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/from_dict
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

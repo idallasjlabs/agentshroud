@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L332"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # D5 — Permanent Corrective Action Definition
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 8D Investigation Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

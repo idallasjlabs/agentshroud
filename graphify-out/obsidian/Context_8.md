@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "ADR-007: Zero-Config Security (docker-compose up"
-location: "L6"
+community: "Skill: Project Management (PM)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up
+  - community/Skill_Project_Management_PM
 ---
 
 # Context
 
 ## Connections
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

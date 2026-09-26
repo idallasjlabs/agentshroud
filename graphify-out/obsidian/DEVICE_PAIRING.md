@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Function Details"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Function_Details
 ---
 
 # DEVICE_PAIRING.md
@@ -16,4 +16,4 @@ tags:
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/document #graphify/EXTRACTED #community/Function_Details

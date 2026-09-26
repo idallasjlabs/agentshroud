@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
-type: "code"
-community: "DNSFilterConfig"
-location: "L52"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L110"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # DNSQuery
 
 ## Connections
-- [[.check()_4]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_6]] - `references` [EXTRACTED]
-- [[.get_flagged_queries()]] - `references` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

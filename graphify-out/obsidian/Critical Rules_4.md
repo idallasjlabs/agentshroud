@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Safe Refactor Specialist"
-location: "L20"
+community: "TestBuildCollaboratorSafeInfoResponse"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Critical Rules
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
-- [[⚠️ ONLY Refactor When]] - `contains` [EXTRACTED]
-- [[❌ NEVER]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

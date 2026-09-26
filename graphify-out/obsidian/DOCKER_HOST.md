@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "launch-instance.sh"
+community: "Browser — Secure Browser Automation"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # DOCKER_HOST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

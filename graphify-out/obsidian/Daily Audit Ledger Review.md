@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "concept"
-community: "Backup & Restore Runbook — AgentShroud"
+community: ".scan()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Backup__Restore_Runbook__AgentShroud
+  - community/scan
 ---
 
 # Daily Audit Ledger Review
@@ -14,4 +14,4 @@ tags:
 - [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - `conceptually_related_to` [INFERRED]
 - [[daily-operations]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud
+#graphify/concept #graphify/EXTRACTED #community/scan

@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator Skill"
+community: "toggle-readonly.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_Skill
+  - community/toggle-readonlysh
 ---
 
 # Daedalus — Concept Illustrator Skill
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_Skill
+#graphify/document #graphify/EXTRACTED #community/toggle-readonlysh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "LLMProxy"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/LLMProxy
 ---
 
 # Convenience function to scan a repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scan_repository()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

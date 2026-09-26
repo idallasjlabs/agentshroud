@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "Technical Specification"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Technical_Specification
 ---
 
 # Core Principle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

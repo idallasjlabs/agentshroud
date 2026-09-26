@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # Cookie secure=False on HTTP requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cookie_not_secure_on_http()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

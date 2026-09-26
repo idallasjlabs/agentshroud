@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Enum"
-location: "L38"
+community: "GroupRoleResolver"
+location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # Create a mock alert callback for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mock_alert_callback()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

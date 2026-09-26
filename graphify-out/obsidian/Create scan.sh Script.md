@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - REVISED"
+community: ".__init__()"
 location: "L399"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - community/__init__
 ---
 
 # Create scan.sh Script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/document #graphify/EXTRACTED #community/__init__

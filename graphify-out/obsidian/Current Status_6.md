@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/README.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "1Password op-proxy (POST /credentials/op-proxy; "
-location: "L14"
+community: "ledger row (id, timestamp, source, hashes, sanit"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_op-proxy_POST_/credentials/op-proxy_
+  - community/ledger_row_id_timestamp_source_hashes_sanit
 ---
 
 # Current Status
 
 ## Connections
-- [[Integrations Documentation]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_
+#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit

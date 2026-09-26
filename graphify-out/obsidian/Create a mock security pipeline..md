@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "AsyncMock"
+community: "GitHub Copilot CLI Setup Guide"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Create a mock security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

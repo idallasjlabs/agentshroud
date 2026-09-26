@@ -12,16 +12,16 @@ tags:
 # CronStateMonitor
 
 ## Connections
-- [[.__init__()_194]] - `method` [EXTRACTED]
+- [[.__init__()_67]] - `method` [EXTRACTED]
 - [[._dispatch_aggregate()]] - `method` [EXTRACTED]
 - [[._episode_id()]] - `method` [EXTRACTED]
 - [[._evaluate()]] - `method` [EXTRACTED]
 - [[._run()_1]] - `method` [EXTRACTED]
 - [[._safe_dispatch()]] - `method` [EXTRACTED]
-- [[.check()_5]] - `method` [EXTRACTED]
+- [[.check()_3]] - `method` [EXTRACTED]
 - [[.parse_store()]] - `method` [EXTRACTED]
 - [[.start()_2]] - `method` [EXTRACTED]
-- [[.stop()_11]] - `method` [EXTRACTED]
+- [[.stop()_9]] - `method` [EXTRACTED]
 - [[.test_alert_ids_stable_per_job_episode()]] - `calls` [EXTRACTED]
 - [[.test_dispatch_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[.test_first_sight_failing_alerts_once()]] - `calls` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[_DedupDispatchFake]] - `uses` [INFERRED]
 - [[_DispatchSpy]] - `uses` [INFERRED]
 - [[cron_state_monitor.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_cron_state_monitor.py]] - `imports` [EXTRACTED]
 - [[test_poll_loop_runs_and_stops()]] - `calls` [EXTRACTED]

@@ -1,19 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/project/README.md"
 type: "document"
-community: "AgentShroud™ — Project Knowledge Base"
-location: "L105"
+community: "Skill: Branding Specialist (BS)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Current Status
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Development Phases]] - `contains` [EXTRACTED]
-- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
+- [[Project Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

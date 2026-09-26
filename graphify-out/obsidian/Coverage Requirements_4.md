@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "pytest.ini"
-location: "L42"
+community: ".process_tool_call()"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/process_tool_call
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/process_tool_call

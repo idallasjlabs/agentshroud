@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
+community: "Enterprise Governance Proxy System (invention)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Context
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

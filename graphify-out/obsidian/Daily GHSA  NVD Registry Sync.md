@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestCheckCommandExecution"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestCheckCommandExecution
 ---
 
 # Daily GHSA / NVD Registry Sync
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Agent CVE Registry (source of truth)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/TestCheckCommandExecution

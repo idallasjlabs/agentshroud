@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "ContainerEngine"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ContainerEngine
 ---
 
 # Create from dictionary for JSON deserialization.
 
 ## Connections
-- [[.from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

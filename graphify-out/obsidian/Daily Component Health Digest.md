@@ -1,16 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Trivy (vulnerability scanner)"
+community: "ControlCenter"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trivy_vulnerability_scanner
+  - community/ControlCenter
 ---
 
 # Daily Component Health Digest
 
 ## Connections
-- [[Trivy (vulnerability scanner)]] - `references` [EXTRACTED]
+- [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trivy_vulnerability_scanner
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

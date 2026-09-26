@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L53"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/BaseModel
+  - graphify/EXTRACTED
+  - community/mainrs
 ---
 
 # ContributorRecord
@@ -17,6 +17,6 @@ tags:
 - [[.list_contributors()]] - `references` [EXTRACTED]
 - [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
-- [[UserRole]] - `uses` [INFERRED]
+- [[UserRole_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/EXTRACTED #community/mainrs

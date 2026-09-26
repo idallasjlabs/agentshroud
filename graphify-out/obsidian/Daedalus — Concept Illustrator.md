@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_16]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
+- [[Purpose_8]] - `contains` [EXTRACTED]
+- [[README_8]] - `contains` [EXTRACTED]
+- [[Related Skills_8]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

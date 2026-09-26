@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Currently Unmitigable Residual Class
@@ -19,4 +19,4 @@ tags:
 - [[Two-Terminal-State Finding Taxonomy]] - `rationale_for` [EXTRACTED]
 - [[python-jose Removal (CVE-2024-3366333664)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_hermes_tag

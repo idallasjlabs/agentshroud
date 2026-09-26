@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "sync-cve-registry.py"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/sync-cve-registrypy
 ---
 
 # Create test configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

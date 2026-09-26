@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # ContextGuard
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_22]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_65]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[._detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.get_segment_provenance()]] - `method` [EXTRACTED]
 - [[.get_session_risk_level()]] - `method` [EXTRACTED]
 - [[.guard()]] - `calls` [EXTRACTED]
-- [[.guard()_1]] - `calls` [EXTRACTED]
+- [[.guard()_6]] - `calls` [EXTRACTED]
 - [[.record_segment()]] - `method` [EXTRACTED]
 - [[.should_block_message()]] - `method` [EXTRACTED]
 - [[.tag_segment()]] - `method` [EXTRACTED]
@@ -36,24 +36,24 @@ tags:
 - [[.test_empty_inputs_everywhere()]] - `calls` [INFERRED]
 - [[.test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[.test_oversized_json_payload()]] - `calls` [INFERRED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -83,24 +83,24 @@ tags:
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSourceTagging]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[get_context_guard()]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustManager

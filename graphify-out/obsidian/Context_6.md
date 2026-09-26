@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L8"
+community: "SSH Config"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/SSH_Config
 ---
 
 # Context
 
 ## Connections
-- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
-- [[Evaluation Criteria]] - `contains` [EXTRACTED]
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

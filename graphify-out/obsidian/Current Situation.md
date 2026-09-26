@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
+community: "Network Topology"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/Network_Topology
 ---
 
 # Current Situation
@@ -16,4 +16,4 @@ tags:
 - [[What the bot can currently see]] - `contains` [EXTRACTED]
 - [[What the bot needs to see]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

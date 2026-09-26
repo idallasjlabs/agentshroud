@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
+community: "Core Security Principles"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/Core_Security_Principles
 ---
 
 # Core Identity (from IDENTITY.md, SOUL.md, USER.md)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Isaiah's Persona Package]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

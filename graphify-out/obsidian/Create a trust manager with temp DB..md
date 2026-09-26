@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "test_trust_manager.py"
+community: "TrustConfig"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/TrustConfig
 ---
 
 # Create a trust manager with temp DB.
 
 ## Connections
-- [[manager()_3]] - `rationale_for` [EXTRACTED]
+- [[manager()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

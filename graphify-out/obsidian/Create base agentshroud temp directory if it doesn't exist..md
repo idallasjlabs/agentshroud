@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Create base agentshroud temp directory if it doesn't exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._ensure_base_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

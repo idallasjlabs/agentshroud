@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 283"
+community: "ControlCenter"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_283
+  - community/ControlCenter
 ---
 
 # Daily Memory Journal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_283
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

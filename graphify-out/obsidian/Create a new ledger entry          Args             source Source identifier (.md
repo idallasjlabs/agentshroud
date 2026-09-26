@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: ".record()"
+community: "EgressPolicy"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/record
+  - community/EgressPolicy
 ---
 
 # Create a new ledger entry          Args:             source: Source identifier (
 
 ## Connections
-- [[.record()_2]] - `rationale_for` [EXTRACTED]
+- [[.record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/record
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

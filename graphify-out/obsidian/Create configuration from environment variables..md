@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "cls"
+community: "TestAlertDispatcher"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cls
+  - community/TestAlertDispatcher
 ---
 
 # Create configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_env()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cls
+#graphify/rationale #graphify/EXTRACTED #community/TestAlertDispatcher

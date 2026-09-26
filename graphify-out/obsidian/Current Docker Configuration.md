@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "TestProductionCompose"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/TestProductionCompose
 ---
 
 # Current Docker Configuration
@@ -17,4 +17,4 @@ tags:
 - [[✅ Temporary Filesystems (Cleared on Container Restart)]] - `contains` [EXTRACTED]
 - [[❌ Currently Missing (Would Break Read-Only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/TestProductionCompose

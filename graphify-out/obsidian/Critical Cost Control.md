@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "TestPatternDetection"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/TestPatternDetection
 ---
 
 # Critical: Cost Control
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/TestPatternDetection

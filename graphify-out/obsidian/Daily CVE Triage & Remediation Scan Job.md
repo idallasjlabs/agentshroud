@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/cve-triage-report.txt"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "TELEGRAM_ISSUES.md"
 location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Daily CVE Triage & Remediation Scan Job
@@ -20,4 +20,4 @@ tags:
 - [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - `implements` [EXTRACTED]
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

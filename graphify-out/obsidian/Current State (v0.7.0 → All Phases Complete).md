@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Path"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Path
 ---
 
 # Current State (v0.7.0 → All Phases Complete)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Path

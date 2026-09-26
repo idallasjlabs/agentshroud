@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "Presidio Analyzer"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/Presidio_Analyzer
 ---
 
 # Core Behaviors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer

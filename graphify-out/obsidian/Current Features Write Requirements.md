@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strat"
+community: "AgentShroud Audit Specification"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strat
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Current Features: Write Requirements
@@ -18,4 +18,4 @@ tags:
 - [[Feature SecureBrowser (Playwright)]] - `contains` [EXTRACTED]
 - [[Feature iCloudGmail Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

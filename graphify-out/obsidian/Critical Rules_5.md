@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L376"
+community: "mcp_inspector.py"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/mcp_inspectorpy
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

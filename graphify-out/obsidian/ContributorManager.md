@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # ContributorManager
 
 ## Connections
-- [[.__init__()_100]] - `method` [EXTRACTED]
+- [[.__init__()_130]] - `method` [EXTRACTED]
 - [[._build_record()]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `method` [EXTRACTED]
 - [[._ensure_teams()]] - `method` [EXTRACTED]
@@ -29,9 +29,9 @@ tags:
 - [[.test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_22]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
 - [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -41,16 +41,15 @@ tags:
 - [[EgressRuleOverrideRequest]] - `uses` [INFERRED]
 - [[EgressScopeRequest]] - `uses` [INFERRED]
 - [[EmergencyBlockRequest]] - `uses` [INFERRED]
-- [[GET users endpoint]] - `calls` [EXTRACTED]
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
@@ -61,14 +60,14 @@ tags:
 - [[TestLockdownLevelWiring]] - `uses` [INFERRED]
 - [[TestPausedFieldWiring]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[UserRole]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[UserRole_1]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/BaseModel
+#graphify/code #graphify/INFERRED #community/mainrs

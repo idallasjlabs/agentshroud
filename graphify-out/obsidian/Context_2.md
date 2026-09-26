@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Context
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Key Considerations]] - `contains` [EXTRACTED]
+- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

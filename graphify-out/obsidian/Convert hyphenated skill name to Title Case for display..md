@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "init_skill.py"
+community: "AgentShroud -- USPTO Provisional Patent Applicat"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
 ---
 
 # Convert hyphenated skill name to Title Case for display.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[title_case_skill_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/init_skillpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat

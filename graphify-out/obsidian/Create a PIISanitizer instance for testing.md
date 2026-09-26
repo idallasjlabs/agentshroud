@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "SSHProxy"
+community: "EgressPolicy"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # Create a PIISanitizer instance for testing
 
 ## Connections
-- [[sanitizer()_3]] - `rationale_for` [EXTRACTED]
+- [[sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

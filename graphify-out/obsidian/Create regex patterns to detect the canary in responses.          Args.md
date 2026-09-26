@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Create regex patterns to detect the canary in responses.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._create_detection_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

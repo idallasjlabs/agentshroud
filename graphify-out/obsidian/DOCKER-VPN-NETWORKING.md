@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "TestFullAccessMiddlewareBypass"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # DOCKER-VPN-NETWORKING.md
@@ -18,7 +18,6 @@ tags:
 - [[VPNKit Userspace Networking Mode (fix)]] - `references` [EXTRACTED]
 - [[VpnKitTransparentProxy Setting]] - `references` [EXTRACTED]
 - [[gVisor Networking Mode (Docker Desktop, problematic)]] - `references` [EXTRACTED]
-- [[patch-telegram-sdk.sh]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

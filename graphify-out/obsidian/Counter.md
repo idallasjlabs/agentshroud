@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
+community: "PromptProtection"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/migrate-cve-registry-ghsapy
+  - community/PromptProtection
 ---
 
 # Counter
@@ -17,4 +17,4 @@ tags:
 - [[build_id_plan()]] - `calls` [EXTRACTED]
 - [[match_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/INFERRED #community/PromptProtection

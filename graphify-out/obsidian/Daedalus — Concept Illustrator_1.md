@@ -1,20 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L1"
+community: "ADR-003: Two-Network Container Isolation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[Related Skills_35]] - `contains` [EXTRACTED]
-- [[Usage_39]] - `contains` [EXTRACTED]
-- [[hermesskillsi-daedalusREADME]] - `contains` [EXTRACTED]
+- [[Input Requirements_3]] - `contains` [EXTRACTED]
+- [[Output Format_3]] - `contains` [EXTRACTED]
+- [[Persona_2]] - `contains` [EXTRACTED]
+- [[Quality Checklist_3]] - `contains` [EXTRACTED]
+- [[Role_11]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[SKILL_17]] - `contains` [EXTRACTED]
+- [[System Prompt_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

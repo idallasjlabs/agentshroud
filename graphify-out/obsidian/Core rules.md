@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "OpenClaw Host Hardening"
+community: "openai-whisper-api/SKILL.md"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Core rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

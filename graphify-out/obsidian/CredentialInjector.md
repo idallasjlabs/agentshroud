@@ -1,28 +1,29 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "CredentialInjector"
-location: "98"
+community: "Features"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Features
 ---
 
 # CredentialInjector
 
 ## Connections
-- [[.__init__()_2]] - `method` [EXTRACTED]
-- [[._load_credentials()]] - `method` [EXTRACTED]
-- [[._load_default_mappings()]] - `method` [EXTRACTED]
-- [[.get_all_loaded_values()]] - `method` [EXTRACTED]
-- [[.get_status()]] - `method` [EXTRACTED]
-- [[.has_credential()]] - `method` [EXTRACTED]
-- [[.inject_headers()]] - `method` [EXTRACTED]
-- [[.scan_for_credential_leak()]] - `method` [EXTRACTED]
-- [[Injects credentials into outbound requests based on destination domain. The…]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `shares_data_with` [INFERRED]
-- [[Red Team Finding 05 credential isolation (05-credential-isolation.md)]] - `rationale_for` [EXTRACTED]
-- [[credential_injector.py]] - `contains` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [INFERRED]
+- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[.injector()]] - `calls` [INFERRED]
+- [[.injector()_1]] - `calls` [INFERRED]
+- [[.injector_with_secrets()]] - `calls` [INFERRED]
+- [[.test_anthropic_default_strips_x_api_key()]] - `calls` [EXTRACTED]
+- [[.test_get_all_loaded_values_method()]] - `calls` [EXTRACTED]
+- [[.test_injection_disabled()]] - `calls` [EXTRACTED]
+- [[.test_leak_detection_disabled()]] - `calls` [EXTRACTED]
+- [[.test_leak_detection_disabled()_1]] - `calls` [INFERRED]
+- [[.test_no_injection_when_disabled()]] - `calls` [INFERRED]
+- [[.test_strip_headers_removes_conflicting_header()]] - `calls` [EXTRACTED]
+- [[injector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/Features

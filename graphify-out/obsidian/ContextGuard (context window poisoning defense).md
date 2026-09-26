@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "SecurityConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/SecurityConfig
 ---
 
 # ContextGuard (context window poisoning defense)
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/concept #graphify/EXTRACTED #community/SecurityConfig

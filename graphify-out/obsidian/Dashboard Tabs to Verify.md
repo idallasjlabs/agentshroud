@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
+community: "Security Module Inventory"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090__Human_Interface_Testing_Gui
+  - community/Security_Module_Inventory
 ---
 
 # Dashboard Tabs to Verify
@@ -20,4 +20,4 @@ tags:
 - [[Security Tab]] - `contains` [EXTRACTED]
 - [[Users Tab]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

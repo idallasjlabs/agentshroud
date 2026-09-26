@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Step-by-Step Installation"
-location: "L404"
+community: "test_anthropic_openai_translator.py"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Dashboard Access
 
 ## Connections
-- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Health Monitoring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/collaborator-report-morning.txt"
 type: "concept"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
+community: "run_test()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/run_test
 ---
 
 # Contributor Log Read Path (gateway-data primary, memory fallback)
@@ -16,4 +16,4 @@ tags:
 - [[Collaborator Report - Evening Job]] - `shares_data_with` [EXTRACTED]
 - [[Multi-User Support with Role-Based Permissions]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/concept #graphify/EXTRACTED #community/run_test

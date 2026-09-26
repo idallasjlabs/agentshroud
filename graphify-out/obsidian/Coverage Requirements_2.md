@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "TestMultiBotIsolation"
 location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/TestMultiBotIsolation
 ---
 
 # Coverage Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotIsolation
