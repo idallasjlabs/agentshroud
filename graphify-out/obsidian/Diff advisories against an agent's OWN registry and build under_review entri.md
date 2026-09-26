@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 120"
+community: "mcp_oauth_preflight.py"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/mcp_oauth_preflightpy
 ---
 
 # Diff *advisories* against an agent's OWN *registry* and build under_review entri
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[process_ghsa_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

@@ -1,18 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L22"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
-- [[Implementation Approach]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
+- [[Colima as primary macOS dev runtime]] - `references` [EXTRACTED]
+- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "rationale"
-community: "GSDL-715 (silent regression incident)"
+community: "openclaw_triage.sh"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/GSDL-715_silent_regression_incident
+  - community/openclaw_triagesh
 ---
 
 # Discrete confidence-score rubric
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/GSDL-715_silent_regression_incident
+#graphify/rationale #graphify/INFERRED #community/openclaw_triagesh

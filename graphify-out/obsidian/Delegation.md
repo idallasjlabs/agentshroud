@@ -1,17 +1,33 @@
 ---
-source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
-type: "document"
-community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
-location: "L218"
+source_file: "gateway/security/delegation.py"
+type: "code"
+community: "make_event()"
+location: "L59"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090__Human_Interface_Testing_Gui
+  - community/make_event
 ---
 
 # Delegation
 
 ## Connections
-- [[2. Telegram Command Testing]] - `contains` [EXTRACTED]
+- [[.delegate()]] - `references` [EXTRACTED]
+- [[.from_dict()_4]] - `method` [EXTRACTED]
+- [[.get_active_delegations()]] - `references` [EXTRACTED]
+- [[.get_delegations_for_user()]] - `references` [EXTRACTED]
+- [[.is_active()]] - `method` [EXTRACTED]
+- [[.to_dict()_7]] - `method` [EXTRACTED]
+- [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
+- [[DelegationManager_1]] - `uses` [INFERRED]
+- [[TestAccessControl]] - `uses` [INFERRED]
+- [[TestDelegateBasic]] - `uses` [INFERRED]
+- [[TestIsDelegated]] - `uses` [INFERRED]
+- [[TestListAndCleanup]] - `uses` [INFERRED]
+- [[TestRedelegation]] - `uses` [INFERRED]
+- [[TestRevoke]] - `uses` [INFERRED]
+- [[TestSerialization]] - `uses` [INFERRED]
+- [[delegation.py]] - `contains` [EXTRACTED]
+- [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui
+#graphify/code #graphify/EXTRACTED #community/make_event

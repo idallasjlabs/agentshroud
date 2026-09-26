@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
-location: "L246"
+community: "AgentShroud Semgrep SAST Configuration"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

@@ -1,17 +1,17 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "AgentShroud Security Architecture"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Do's
 
 ## Connections
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "egress_config.py"
+community: "System Audit & Documentation"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/System_Audit__Documentation
 ---
 
 # Default Denylist Categories
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

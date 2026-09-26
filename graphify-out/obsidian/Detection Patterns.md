@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "TestConfigValidation"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/TestConfigValidation
 ---
 
 # Detection Patterns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PII Detection System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

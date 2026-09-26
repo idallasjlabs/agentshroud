@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "image"
-community: "Diagram 08: Entity Relationship Diagram"
+community: ".record_denied_request()"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Diagram_08_Entity_Relationship_Diagram
+  - community/record_denied_request
 ---
 
 # Diagram 09: Data Lineage
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Diagram 08 Entity Relationship Diagram]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Diagram_08_Entity_Relationship_Diagram
+#graphify/image #graphify/INFERRED #community/record_denied_request

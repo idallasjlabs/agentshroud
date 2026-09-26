@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SessionContext"
+community: "EncryptedStore"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/EncryptedStore
 ---
 
 # DisclosureEvent
@@ -16,4 +16,4 @@ tags:
 - [[A single disclosure event in a session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionContext
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

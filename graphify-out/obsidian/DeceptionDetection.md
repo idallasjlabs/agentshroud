@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "DeceptionDetection"
+community: "TrustManager"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/TrustManager
 ---
 
 # DeceptionDetection
@@ -31,4 +31,4 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/code #graphify/EXTRACTED #community/TrustManager

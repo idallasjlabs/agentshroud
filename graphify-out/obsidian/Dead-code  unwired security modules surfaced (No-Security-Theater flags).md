@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway "
+community: "test_scanner_integration_coverage.py"
 location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
+  - community/test_scanner_integration_coveragepy
 ---
 
 # Dead-code / unwired security modules surfaced (No-Security-Theater flags)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway_
+#graphify/document #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

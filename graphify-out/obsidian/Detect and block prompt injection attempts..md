@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "TrustManager"
+community: "ServiceManager"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ServiceManager
 ---
 
 # Detect and block prompt injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

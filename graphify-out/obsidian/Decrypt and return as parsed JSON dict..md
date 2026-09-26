@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "GroupApprovalRouter"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/GroupApprovalRouter
 ---
 
 # Decrypt and return as parsed JSON dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decrypt_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
+community: "TestCredentialLeakDetection"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/TestCredentialLeakDetection
 ---
 
 # Diagnosis
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection

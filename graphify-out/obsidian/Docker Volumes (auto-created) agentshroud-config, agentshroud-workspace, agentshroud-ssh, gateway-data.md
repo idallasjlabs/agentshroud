@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "Containers startup order: agentshroud-gateway st"
+community: "MCP Auth Reset Skill"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Containers_startup_order_agentshroud-gateway_st
+  - community/MCP_Auth_Reset_Skill
 ---
 
 # Docker Volumes (auto-created): agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Docker Deployment Dependency Graph]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st
+#graphify/image #graphify/EXTRACTED #community/MCP_Auth_Reset_Skill

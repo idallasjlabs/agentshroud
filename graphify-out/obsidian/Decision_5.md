@@ -1,17 +1,18 @@
 ---
-source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Enterprise Governance Proxy System (invention)"
-location: "L8"
+community: "run_multi_host()"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/run_multi_host
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
+- [[Implementation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/document #graphify/EXTRACTED #community/run_multi_host

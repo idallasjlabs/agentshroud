@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
-type: "code"
-community: "ModuleStatsCollector"
-location: "L29"
+source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
+type: "document"
+community: "DNSForwarderProtocol"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/DNSForwarderProtocol
 ---
 
 # Decision
 
 ## Connections
-- [[.record()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
-- [[TestEnforcementWiring]] - `uses` [INFERRED]
-- [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
-- [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/document #graphify/EXTRACTED #community/DNSForwarderProtocol

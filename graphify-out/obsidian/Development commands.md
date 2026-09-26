@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI ("
-location: "L316"
+community: "TestEgressTelegramNotify"
+location: "L443"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_
+  - community/TestEgressTelegramNotify
 ---
 
 # Development commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_
+#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify

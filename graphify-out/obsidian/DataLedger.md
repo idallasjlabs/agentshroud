@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "SSHProxy"
+community: "EgressPolicy"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # DataLedger
 
 ## Connections
-- [[.__init__()_69]] - `method` [EXTRACTED]
+- [[.__init__()_13]] - `method` [EXTRACTED]
 - [[._hash_content()]] - `method` [EXTRACTED]
-- [[.close()_10]] - `method` [EXTRACTED]
+- [[.close()_5]] - `method` [EXTRACTED]
 - [[.delete_entry()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.enforce_retention()]] - `method` [EXTRACTED]
 - [[.get_entry()]] - `method` [EXTRACTED]
-- [[.get_stats()_11]] - `method` [EXTRACTED]
-- [[.initialize()_1]] - `method` [EXTRACTED]
+- [[.get_stats()_1]] - `method` [EXTRACTED]
+- [[.initialize()_2]] - `method` [EXTRACTED]
 - [[.ledger()]] - `calls` [EXTRACTED]
 - [[.ledger()_1]] - `calls` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
 - [[.query()]] - `method` [EXTRACTED]
-- [[.record()_2]] - `method` [EXTRACTED]
+- [[.record()]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[LogRecord]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -61,18 +61,18 @@ tags:
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_19]] - `calls` [EXTRACTED]
-- [[client()_20]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
+- [[client()_17]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
-- [[ledger()_1]] - `calls` [EXTRACTED]
+- [[ledger()_2]] - `calls` [EXTRACTED]
 - [[ledger.py]] - `contains` [EXTRACTED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_audit_chain.py]] - `imports` [EXTRACTED]
-- [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
+- [[test_initialize_is_idempotent()_1]] - `calls` [EXTRACTED]
 - [[test_ledger()]] - `calls` [EXTRACTED]
 - [[test_ledger.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

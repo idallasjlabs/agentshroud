@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # Determine which agent should receive this content          Args:             req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.resolve_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

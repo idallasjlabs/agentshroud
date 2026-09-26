@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # Dashboard should count PII redactions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_pii_counting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

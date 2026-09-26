@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "concept"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Passw"
+community: "middleware.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+  - community/middlewarepy
 ---
 
 # Docker Buildx multi-arch build (linux/amd64, linux/arm64)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+#graphify/concept #graphify/EXTRACTED #community/middlewarepy

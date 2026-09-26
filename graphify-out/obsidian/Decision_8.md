@@ -1,18 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
-location: "L14"
+community: "SSH Config"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/SSH_Config
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Network Configuration]] - `contains` [EXTRACTED]
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[Auto-Configuration Features]] - `contains` [EXTRACTED]
+- [[Configuration Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

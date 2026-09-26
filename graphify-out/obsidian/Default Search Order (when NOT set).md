@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "AGENTSHROUD_CONFIG"
+community: "AuditStore"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_CONFIG
+  - community/AuditStore
 ---
 
 # Default Search Order (when NOT set)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG
+#graphify/document #graphify/EXTRACTED #community/AuditStore

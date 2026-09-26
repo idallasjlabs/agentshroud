@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "egress_monitor.py"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Default Thresholds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Dependency Graph"
+community: "ModeRequest"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dependency_Graph
+  - community/ModeRequest
 ---
 
 # Dependency Graph
@@ -16,6 +16,6 @@ tags:
 - [[Gateway Module Dependencies]] - `contains` [EXTRACTED]
 - [[Key Initialization Order (main.py lifespan)]] - `contains` [EXTRACTED]
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
-- [[Related Notes_4]] - `contains` [EXTRACTED]
+- [[Related Notes_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dependency_Graph
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

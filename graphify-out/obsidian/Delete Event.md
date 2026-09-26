@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "iCloud Services Setup - Complete Guide"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # Delete Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

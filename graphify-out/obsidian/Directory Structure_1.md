@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L5"
+community: "Pre-Deployment Checklist"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Pre-Deployment_Checklist
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

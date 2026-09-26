@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Passw"
+community: "middleware.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+  - community/middlewarepy
 ---
 
 # Deploying AgentShroud on Linux (docs/operations/linux.md)
@@ -17,4 +17,4 @@ tags:
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 - [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

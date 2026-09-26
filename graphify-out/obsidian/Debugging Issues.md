@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "OpenClaw Management Scripts"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Debugging Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "start.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/startsh
 ---
 
 # Dev/Prod Mapping Keyed Off $USER via scripts/asb
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/startsh

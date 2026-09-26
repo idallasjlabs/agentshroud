@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "BotConfig"
+community: "ModeRequest"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ModeRequest
 ---
 
 # Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

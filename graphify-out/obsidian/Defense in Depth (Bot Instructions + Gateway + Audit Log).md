@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "Kill Switch"
+community: "Function Details"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/Function_Details
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch
+#graphify/rationale #graphify/EXTRACTED #community/Function_Details

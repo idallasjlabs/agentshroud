@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L387"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # Decryption errors shouldn't expose the encryption key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encrypted_store_error_no_key_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

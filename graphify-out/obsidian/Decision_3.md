@@ -1,18 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
-location: "L43"
+community: "Weather Skill"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Weather_Skill
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Implementation Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

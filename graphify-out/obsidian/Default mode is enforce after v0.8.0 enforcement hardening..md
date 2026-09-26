@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "TestAuth"
-location: "L49"
+community: "URLAnalyzer"
+location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/URLAnalyzer
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[.test_default_mode_is_enforce()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer

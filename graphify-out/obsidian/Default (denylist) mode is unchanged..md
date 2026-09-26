@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # Default (denylist) mode is unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_denylist_mode_still_works()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

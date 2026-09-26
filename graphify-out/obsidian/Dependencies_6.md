@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L336"
+community: "_age()"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/_age
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/_age

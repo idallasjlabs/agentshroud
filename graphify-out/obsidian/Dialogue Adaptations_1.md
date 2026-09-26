@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Function Details"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Function_Details
 ---
 
 # Dialogue Adaptations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Function_Details

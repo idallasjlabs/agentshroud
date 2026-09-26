@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
-location: "L246"
+community: "sunday-upgrade-apply.sh"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/sunday-upgrade-applysh
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

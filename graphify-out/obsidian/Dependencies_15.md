@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L301"
+community: "Skill: Branding Specialist (BS)"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS

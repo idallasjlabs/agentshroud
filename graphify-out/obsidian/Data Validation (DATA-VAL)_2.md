@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Future Enhancements"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Future_Enhancements
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_82]] - `contains` [EXTRACTED]
-- [[Related Skills_73]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_83]] - `contains` [EXTRACTED]
+- [[README_88]] - `contains` [EXTRACTED]
+- [[Related Skills_89]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_92]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Future_Enhancements

@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "concept"
-community: "check-vendor-compat.sh"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/OutputSchemaEnforcer
 ---
 
 # Dev-to-Prod Handoff Contract
@@ -18,4 +18,4 @@ tags:
 - [[sunday-upgrade]] - `references` [EXTRACTED]
 - [[write_handoff()]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/concept #graphify/EXTRACTED #community/OutputSchemaEnforcer

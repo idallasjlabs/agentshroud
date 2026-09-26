@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "3. Remaining Work — Prioritized by Value"
+community: "LVGL Kawaii Face Component CMakeLists"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_Remaining_Work__Prioritized_by_Value
+  - community/LVGL_Kawaii_Face_Component_CMakeLists
 ---
 
 # Deprioritized (complexity without proportional value)
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value
+#graphify/document #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists

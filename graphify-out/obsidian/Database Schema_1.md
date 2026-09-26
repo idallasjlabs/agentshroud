@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Database Schema
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

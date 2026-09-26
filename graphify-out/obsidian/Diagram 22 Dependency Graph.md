@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.svg"
 type: "image"
-community: "Diagram 22: Dependency Graph"
+community: "i-sdlc SKILL"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_22_Dependency_Graph
+  - community/i-sdlc_SKILL
 ---
 
 # Diagram 22: Dependency Graph
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_22_Dependency_Graph
+#graphify/image #graphify/EXTRACTED #community/i-sdlc_SKILL

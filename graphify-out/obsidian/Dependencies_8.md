@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L336"
+community: "test_security_integration.py"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/test_security_integrationpy
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/test_security_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "cls"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/cls
 ---
 
 # Detect zero-width character sequences (steganographic attacks).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_zero_width()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/cls

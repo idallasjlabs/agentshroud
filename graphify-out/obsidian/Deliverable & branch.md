@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Plan: Proxying HexStrike AI MCP Agents via Agent"
+community: "Phase 1 — Raw Collection"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+  - community/Phase_1__Raw_Collection
 ---
 
 # Deliverable & branch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

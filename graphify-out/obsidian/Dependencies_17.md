@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
-location: "L297"
+community: "Browser — Secure Browser Automation"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

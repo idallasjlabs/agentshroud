@@ -1,23 +1,23 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "consent_framework.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/consent_frameworkpy
 ---
 
 # Deployment Runbook — AgentShroud
 
 ## Connections
-- [[Environment Variables_15]] - `contains` [EXTRACTED]
+- [[Environment Variables]] - `contains` [EXTRACTED]
 - [[First-Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_13]] - `contains` [EXTRACTED]
+- [[Prerequisites_8]] - `contains` [EXTRACTED]
 - [[Rolling Back]] - `contains` [EXTRACTED]
 - [[Standard Deployment]] - `contains` [EXTRACTED]
 - [[Version Tagging]] - `contains` [EXTRACTED]
 - [[deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

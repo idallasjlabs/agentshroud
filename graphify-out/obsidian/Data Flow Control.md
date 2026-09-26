@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "TestConfigValidation"
 location: "L337"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/TestConfigValidation
 ---
 
 # Data Flow Control
@@ -16,4 +16,4 @@ tags:
 - [[Data Entry Points (All User-Controlled)]] - `contains` [EXTRACTED]
 - [[Principle You Decide What The Agent Sees]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

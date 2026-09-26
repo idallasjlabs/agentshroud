@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
-location: "L246"
+community: "test_forward_stream.py"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/test_forward_streampy
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/test_forward_streampy

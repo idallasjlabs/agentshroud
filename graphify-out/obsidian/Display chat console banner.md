@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "rationale"
-community: "chat_console.py"
+community: "ContainerInfo"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/ContainerInfo
 ---
 
 # Display chat console banner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[print_banner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chat_consolepy
+#graphify/rationale #graphify/EXTRACTED #community/ContainerInfo

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # Decides allow / deny / require-approval for MCP tool calls.      Usage::
 
 ## Connections
-- [[MCPPolicyEngine_1]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyEngine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

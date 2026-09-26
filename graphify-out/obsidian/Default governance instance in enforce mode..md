@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "rationale"
-community: "test_subagent_governance.py"
+community: "Quick Reference — AgentShroud"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Default governance instance in enforce mode.
 
 ## Connections
 - [[gov()]] - `rationale_for` [EXTRACTED]
-- [[gov()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

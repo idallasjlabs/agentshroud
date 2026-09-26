@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Enum"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Enum
 ---
 
 # Detect path traversal attempts in raw input before normalization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_raw_traversal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Enum

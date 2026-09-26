@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "gen.py"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/genpy
 ---
 
 # Decision Framework
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 - [[Cost Optimization Priority]] - `contains` [EXTRACTED]
 - [[EBS Performance Analysis (Critical Pattern)]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/genpy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Discord (Via `message`)"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Discord_Via_message
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Discord (Via `message`)
@@ -15,8 +15,8 @@ tags:
 - [[Common Actions (Examples)]] - `contains` [EXTRACTED]
 - [[Guidelines]] - `contains` [EXTRACTED]
 - [[Musts]] - `contains` [EXTRACTED]
+- [[SKILL_204]] - `contains` [EXTRACTED]
 - [[Targets]] - `contains` [EXTRACTED]
 - [[Writing Style (Discord)]] - `contains` [EXTRACTED]
-- [[discordSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Discord_Via_message
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

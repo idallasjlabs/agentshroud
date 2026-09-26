@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "rationale"
-community: "PodmanEngine"
+community: "GatewayEmailService"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/GatewayEmailService
 ---
 
 # Detect podman compose or podman-compose.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PodmanEngine
+#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService

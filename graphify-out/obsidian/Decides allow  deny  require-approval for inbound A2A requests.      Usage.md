@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "AgentTarget"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AgentTarget
 ---
 
 # Decides allow / deny / require-approval for inbound A2A requests.      Usage::
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2APolicyEngine_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

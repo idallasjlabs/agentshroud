@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "AgentShroud Schema Documentation"
+community: "drift_detector.py"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Schema_Documentation
+  - community/drift_detectorpy
 ---
 
 # Database Connection Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SQLite Database Schema]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

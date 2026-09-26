@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "test_sanitizer.py"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/test_sanitizerpy
 ---
 
 # Deliverables
@@ -17,4 +17,4 @@ tags:
 - [[Script Templates_1]] - `contains` [EXTRACTED]
 - [[Scripts (`.scripts`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/test_sanitizerpy

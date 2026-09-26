@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "A2A (Agent-to-Agent) Protocol Threat Analysis"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
 ---
 
 # Deployment Matrix  (Direct to Prod)
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/A2A_Agent-to-Agent_Protocol_Threat_Analysis

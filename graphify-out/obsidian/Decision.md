@@ -1,17 +1,23 @@
 ---
-source_file: "docs/governance/SPRINT_CADENCE.md"
-type: "document"
-community: "Sprint Cadence Decision"
-location: "L7"
+source_file: "gateway/security/module_stats.py"
+type: "code"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L29"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # Decision
 
 ## Connections
-- [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
+- [[.record()_2]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
+- [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[module_stats.py]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/code #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

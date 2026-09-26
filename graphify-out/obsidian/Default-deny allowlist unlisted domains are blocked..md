@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L529"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # Default-deny allowlist: unlisted domains are blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

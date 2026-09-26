@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Decision Framework"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Decision_Framework
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Decision Framework
@@ -17,4 +17,4 @@ tags:
 - [[EBS Performance Analysis (Critical Pattern)_2]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Decision_Framework
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

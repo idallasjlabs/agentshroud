@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "SSHProxy"
+community: "EgressPolicy"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/EgressPolicy
 ---
 
 # Deleted entry is gone (right to erasure).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_delete_entry_removes_it()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "make_event()"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/make_event
 ---
 
 # DelegationError
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[._require_owner()]] - `calls` [EXTRACTED]
 - [[.delegate()]] - `calls` [EXTRACTED]
-- [[DelegationManager]] - `uses` [INFERRED]
+- [[DelegationManager_1]] - `uses` [INFERRED]
 - [[Raised when a delegation operation is invalid.]] - `rationale_for` [EXTRACTED]
-- [[TestAccessControl_2]] - `uses` [INFERRED]
+- [[TestAccessControl]] - `uses` [INFERRED]
 - [[TestDelegateBasic]] - `uses` [INFERRED]
 - [[TestIsDelegated]] - `uses` [INFERRED]
 - [[TestListAndCleanup]] - `uses` [INFERRED]
 - [[TestRedelegation]] - `uses` [INFERRED]
 - [[TestRevoke]] - `uses` [INFERRED]
-- [[TestSerialization_2]] - `uses` [INFERRED]
+- [[TestSerialization]] - `uses` [INFERRED]
 - [[ValueError]] - `inherits` [EXTRACTED]
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DelegationManager
+#graphify/code #graphify/INFERRED #community/make_event

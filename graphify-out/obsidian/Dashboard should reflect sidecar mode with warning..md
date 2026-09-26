@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # Dashboard should reflect sidecar mode with warning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_set_sidecar_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

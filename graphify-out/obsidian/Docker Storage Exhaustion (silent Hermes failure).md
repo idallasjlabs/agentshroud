@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "rationale"
-community: "Local-Model Job Quality Matrix"
+community: "KeyRotationConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/KeyRotationConfig
 ---
 
 # Docker Storage Exhaustion (silent Hermes failure)
@@ -15,4 +15,4 @@ tags:
 - [[Healthcheck Blind Spot (no disk-write probe)]] - `rationale_for` [EXTRACTED]
 - [[Prod-Side 2026-09-06 Upgrade Report]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

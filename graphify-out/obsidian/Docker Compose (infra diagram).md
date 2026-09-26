@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Docker Compose (infra diagram)"
+community: "forward_query()"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/forward_query
 ---
 
 # Docker Compose (infra diagram)
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-internal network (172.20.0.016)]] - `shares_data_with` [EXTRACTED]
 - [[agentshroud-isolated network (172.21.0.016)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/image #graphify/EXTRACTED #community/forward_query

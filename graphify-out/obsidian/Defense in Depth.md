@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
+community: "Multi-Agent Role Matrix"
 location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Defense in Depth
 
 ## Connections
-- [[Security Architecture_5]] - `contains` [EXTRACTED]
+- [[Security Architecture_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

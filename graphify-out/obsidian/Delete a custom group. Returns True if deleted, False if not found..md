@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "SCLClient"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/SCLClient
 ---
 
 # Delete a custom group. Returns True if deleted, False if not found.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/SCLClient

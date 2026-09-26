@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "check-vendor-compat.sh"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/check-vendor-compatsh
 ---
 
 # Delete Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
