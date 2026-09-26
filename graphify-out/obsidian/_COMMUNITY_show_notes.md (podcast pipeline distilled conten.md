@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[P1-P4 Incident Severity Matrix]] - concept - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

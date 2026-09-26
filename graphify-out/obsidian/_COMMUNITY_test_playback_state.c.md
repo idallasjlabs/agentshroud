@@ -1,45 +1,45 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.07
 members: 30
 ---
 
 # test_playback_state.c
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[delivery_resume_offset()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[face_state_t]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[main()_14]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[playback_gate_should_open()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_logic.h]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_step()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[playback_step() — reproduces tts_task's gate-opendrain branches for testing]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[reset_all()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[stubsaudio.h (host-test stub replacing audio.h constants)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
-- [[test_drain_clears_playing_and_returns_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_drain_keeps_face_off_idle_when_retriggered()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_open_sets_speaking_and_tts_playing()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_20s_age()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_768kb_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_reply_complete()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_stays_closed_before_any_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_stays_closed_leaves_state_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_playback_state.c]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_resume_offset_first_attempt_is_zero()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[vt_agent_count()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[vt_remote_log()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[wakeword_set_tts_playing]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_clear()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[Auth Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Egress Filter Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[Error Index]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Excessive False Positives]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[PII Engine Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Pipeline Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_60]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[presidio-analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[spacy]] - document - docs/vault/05 - Dependencies/spacy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,14 +49,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_wakeword.c]]
-- 4 edges to [[_COMMUNITY_app_main.c]]
-- 4 edges to [[_COMMUNITY_test_ptt_state.c]]
-- 2 edges to [[_COMMUNITY_voice_task]]
+- 2 edges to [[_COMMUNITY_TestFileSandbox]]
+- 2 edges to [[_COMMUNITY_archive_old_events()]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_test_egress_callback_stale.py]]
+- 1 edge to [[_COMMUNITY_quick-setup.sh script]]
+- 1 edge to [[_COMMUNITY_TestCredentialLeakDetection]]
+- 1 edge to [[_COMMUNITY_TestGroupMemoryInvisibleFromDM]]
+- 1 edge to [[_COMMUNITY_test_integration.py]]
+- 1 edge to [[_COMMUNITY_TestInjectionDetection]]
 
 ## Top bridge nodes
-- [[wakeword_tts_playing()]] - degree 8, connects to 3 communities
-- [[test_drain_keeps_face_off_idle_when_retriggered()]] - degree 7, connects to 2 communities
-- [[wakeword_set_tts_playing]] - degree 5, connects to 2 communities
-- [[wakeword_tts_stop_clear()]] - degree 5, connects to 2 communities
-- [[playback_step()]] - degree 10, connects to 1 community
+- [[Error Index]] - degree 9, connects to 3 communities
+- [[presidio-analyzer]] - degree 4, connects to 2 communities
+- [[spacy]] - degree 4, connects to 2 communities
+- [[Auth Errors]] - degree 4, connects to 2 communities
+- [[Egress Filter Errors]] - degree 3, connects to 1 community

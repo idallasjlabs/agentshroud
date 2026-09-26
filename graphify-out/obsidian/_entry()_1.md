@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t()"
+community: "MCPServerConfig"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MCPServerConfig
 ---
 
 # _entry()
@@ -15,6 +15,8 @@ tags:
 - [[._results()]] - `calls` [EXTRACTED]
 - [[.test_apply_writes_registry_and_gap()]] - `calls` [EXTRACTED]
 - [[.test_confidence_is_bounded()]] - `calls` [EXTRACTED]
+- [[.test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - `calls` [EXTRACTED]
+- [[.test_gaps_include_partially_mitigated()]] - `calls` [EXTRACTED]
 - [[.test_low_confidence_partial_stays_under_review()]] - `calls` [EXTRACTED]
 - [[.test_mitigation_narrative_nonempty_when_applied()]] - `calls` [EXTRACTED]
 - [[.test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - `calls` [EXTRACTED]
@@ -26,4 +28,4 @@ tags:
 - [[.test_unknown_class_not_source_fixed_stays_under_review()]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

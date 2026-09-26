@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # startInstall()
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
-- [[buildSummary()]] - code - gateway/web/templates/installer.html
-- [[startInstall()]] - code - gateway/web/templates/installer.html
+- [[APPROVAL_ITEMS entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[LEDGER entity (id, timestamp, source, content_hash, original_content_hash, sanitized, size, redaction_count, redaction_types, forwarded_to, content_type, metadata, created_at, expires_at)]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

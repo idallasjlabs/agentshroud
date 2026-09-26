@@ -1,44 +1,44 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.08
 members: 29
 ---
 
 # test_jira_weekly_review.py
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 29 nodes
 
 ## Members
-- [[.__call__()_6]] - code - gateway/tests/test_jira_weekly_review.py
-- [[.__init__()_119]] - code - gateway/tests/test_jira_weekly_review.py
-- [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - rationale - gateway/tests/test_jira_weekly_review.py
-- [[_MockTransport_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[_get_fn_stub()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[_load_module()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_basic_auth_header_is_base64_email_colon_token()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_basic_auth_header_rejects_empty()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_payload_is_valid_adf_doc()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_payload_never_empty()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_url_rejects_empty_cloud_id()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_comment_url_targets_scrum_81_rest_v3()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_extract_scrum_items_from_commits()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_jira_weekly_review.py]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_op_proxy_request_has_bearer_and_system_header()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_op_refs_target_the_atlassian_item()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_parses_response()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_raises_on_non_200()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_resolve_cloud_id_raises_when_field_missing()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_aborts_without_gateway_token()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_posts_comment_with_basic_auth()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_returns_1_on_jira_rejection()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_run_returns_1_when_op_proxy_denies()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_old_activity_flags_stale_even_with_commits()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_with_commits_flags_active()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_summary_with_no_commits_flags_stale()]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_accepts_full_https_domain()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_rejects_empty_domain()_1]] - code - gateway/tests/test_jira_weekly_review.py
-- [[test_tenant_info_url_targets_edge_endpoint()_1]] - code - gateway/tests/test_jira_weekly_review.py
+- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[AgentShroud Skills Library]] - document - skills/README.md
+- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Critical Rules_10]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Custom Skills]] - document - skills/README.md
+- [[Directory Structure_2]] - document - skills/README.md
+- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Infrastructure_9]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
+- [[OpenClaw Built-in Skills]] - document - skills/README.md
+- [[Output Format_40]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[README_131]] - document - skills/README.md
+- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[SKILL_190]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[STPA-Sec Methodology_1]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Usage_128]] - document - skills/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,7 +48,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_jira_weekly_review.py]]
+- 3 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_load_config()]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_3. Security Controls]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_format_upstream_cve_alert()]]
 
 ## Top bridge nodes
-- [[test_jira_weekly_review.py]] - degree 26, connects to 1 community
+- [[SKILL_190]] - degree 28, connects to 17 communities

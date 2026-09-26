@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "EncryptedStore"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/EncryptedStore
 ---
 
 # _coerce_to_ws_event()
@@ -28,11 +28,11 @@ tags:
 - [[.test_unknown_severity_defaults_to_info()]] - `calls` [EXTRACTED]
 - [[.test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
-- [[WSEvent_1]] - `calls` [EXTRACTED]
-- [[WSEvent]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[WSEvent]] - `calls` [EXTRACTED]
+- [[WSEvent_1]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

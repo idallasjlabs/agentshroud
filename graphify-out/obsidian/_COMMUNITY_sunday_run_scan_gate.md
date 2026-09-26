@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.12
 members: 16
 ---
 
 # sunday_run_scan_gate
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[check]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[die (fallback)]] - code - scripts/lib/sunday-scan.sh
-- [[log (fallback)]] - code - scripts/lib/sunday-scan.sh
-- [[make_apply_bin]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_fake_repo]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_apply]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_gate]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[sunday-scan.sh]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_ensure_trivy]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_resolve_scan_image]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_run_scan_gate]] - code - scripts/lib/sunday-scan.sh
-- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[warn (fallback)]] - code - scripts/lib/sunday-scan.sh
-- [[write_fake]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[EXECUTIVE SUMMARY]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[NEXT STEPS]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,13 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_check_upstream_cves]]
-- 1 edge to [[_COMMUNITY_run_test()]]
+- 1 edge to [[_COMMUNITY_ledger.py]]
+- 1 edge to [[_COMMUNITY_TestInstallerAPI]]
 
 ## Top bridge nodes
-- [[sunday_run_scan_gate]] - degree 10, connects to 1 community
-- [[sunday-scan.sh]] - degree 8, connects to 1 community
-- [[sunday_resolve_scan_image]] - degree 4, connects to 1 community
-- [[check]] - degree 3, connects to 1 community
-- [[run_apply]] - degree 3, connects to 1 community
+- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities

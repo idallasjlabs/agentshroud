@@ -1,88 +1,82 @@
 ---
 type: community
-cohesion: 0.05
-members: 73
+cohesion: 0.07
+members: 67
 ---
 
 # test_mfa_guard.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 73 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 67 nodes
 
 ## Members
-- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[.__init__()_165]] - code - gateway/security/mfa_guard.py
-- [[._decode_secret()]] - code - gateway/security/mfa_guard.py
-- [[._prune_used()]] - code - gateway/security/mfa_guard.py
-- [[._totp_for_counter()]] - code - gateway/security/mfa_guard.py
-- [[.from_env()_3]] - code - gateway/security/mfa_guard.py
-- [[.is_required()]] - code - gateway/security/mfa_guard.py
-- [[.verify()_1]] - code - gateway/security/mfa_guard.py
-- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
-- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
-- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
-- [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
-- [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
-- [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
-- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
-- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
-- [[MFAResult]] - code - gateway/security/mfa_guard.py
-- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
-- [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
-- [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
-- [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
-- [[Verify the second factor for a high-risk action.          Args             acti]] - rationale - gateway/security/mfa_guard.py
-- [[_queue()]] - code - gateway/tests/test_mfa_guard.py
-- [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
-- [[_truthy()]] - code - gateway/security/mfa_guard.py
-- [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
-- [[now()_10]] - code - gateway/tests/test_mfa_guard.py
-- [[queue.py]] - code - gateway/approval_queue/queue.py
-- [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_invalid_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_replayed_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_reject_never_requires_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_disabled_allows_even_high_risk_with_no_code()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_disabled_by_default_allows_without_factor()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_empty_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enabled_without_secret_denies_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_missing_item_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_reject_no_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_enabled_no_secret_warns()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_is_required_tool_call_disabled_never_required()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_is_required_tool_call_tier_parsing()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_mfa_guard.py]] - code - gateway/tests/test_mfa_guard.py
-- [[test_missing_code_denies_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_non_high_risk_action_not_required()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_prune_used_drops_stale_entries()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_real_time_default_now()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_replayed_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_uses_constant_time_compare()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_valid_totp_allows_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_valid_totp_prev_window_allowed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_wrong_length_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[.__init__()_51]] - code - gateway/security/agent_isolation.py
+- [[.__init__()_52]] - code - gateway/security/agent_isolation.py
+- [[.from_dict()_3]] - code - gateway/security/agent_isolation.py
+- [[.register()]] - code - gateway/security/agent_isolation.py
+- [[.setup_method()_31]] - code - gateway/tests/test_security_hardening.py
+- [[.test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_compose_security_opts()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_container_config_defaults()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_fully_isolated_agents_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_generate_compose()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_group_agents_are_isolatable()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_and_collab_identities_coexist()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_list_agents()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_list_agents()_1]] - code - gateway/tests/test_security_hardening.py
+- [[.test_network_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_network_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_new_privileges_allowed_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_register_and_get()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_register_and_get()_1]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_group_agent_identity()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_register_group_agent_with_chat_type_supergroup()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_separate_networks_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_separate_volumes_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_serialization()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_serialization_roundtrip()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_shared_network_detected()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_shared_network_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_shared_nothing_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_shared_nothing_security_issue()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_shared_volume_detected()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_shared_volume_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_single_agent_fully_secure()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_unregister()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_unregister_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_unregister_removes_agent()]] - code - gateway/tests/test_agent_isolation.py
+- [[.test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[.to_dict()_4]] - code - gateway/security/agent_isolation.py
+- [[.unregister()]] - code - gateway/security/agent_isolation.py
+- [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
+- [[AgentRegistry]] - code - gateway/security/agent_isolation.py
+- [[ContainerConfig_1]] - code - gateway/tests/test_agent_isolation.py
+- [[ContainerConfig]] - code - gateway/security/agent_isolation.py
+- [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
+- [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
+- [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
+- [[Register a group-{chat_id} identity in AgentRegistry.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Register a supergroup-type agent identity.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Register an agent with its container configuration.]] - rationale - gateway/security/agent_isolation.py
+- [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
+- [[Remove an agent from the registry.]] - rationale - gateway/security/agent_isolation.py
+- [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
+- [[TestAgentIsolation]] - code - gateway/tests/test_security_hardening.py
+- [[TestAgentRegistry]] - code - gateway/tests/test_agent_isolation.py
+- [[TestGenerateCompose]] - code - gateway/tests/test_agent_isolation.py
+- [[TestNetworkIsolation]] - code - gateway/tests/test_agent_isolation.py
+- [[TestSharedNothing]] - code - gateway/tests/test_agent_isolation.py
+- [[TestVolumeIsolation]] - code - gateway/tests/test_agent_isolation.py
+- [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
+- [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
+- [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
+- [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -92,19 +86,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_ApprovalRequest]]
-- 5 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_load_config()]]
-- 1 edge to [[_COMMUNITY_cls]]
-- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded S]]
+- 19 edges to [[_COMMUNITY_ConsentFramework]]
+- 18 edges to [[_COMMUNITY_lifespan.py]]
+- 11 edges to [[_COMMUNITY_TrustManager]]
+- 10 edges to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 8 edges to [[_COMMUNITY_test_security_audit.py]]
+- 6 edges to [[_COMMUNITY__wrap_response()]]
+- 4 edges to [[_COMMUNITY_EgressApprovalQueue]]
+- 3 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 3 edges to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 3 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy;]]
+- 2 edges to [[_COMMUNITY_check_message()]]
+- 2 edges to [[_COMMUNITY_Core Principles]]
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
-- [[MFAGuard_2]] - degree 48, connects to 3 communities
-- [[queue.py]] - degree 14, connects to 3 communities
-- [[_queue()]] - degree 11, connects to 2 communities
-- [[_submit_high_risk()]] - degree 9, connects to 1 community
+- [[AgentRegistry]] - degree 71, connects to 12 communities
+- [[ContainerConfig]] - degree 40, connects to 11 communities
+- [[IsolationVerifier]] - degree 50, connects to 8 communities
+- [[TestAgentIsolation]] - degree 31, connects to 8 communities
+- [[TestSharedNothing]] - degree 12, connects to 1 community

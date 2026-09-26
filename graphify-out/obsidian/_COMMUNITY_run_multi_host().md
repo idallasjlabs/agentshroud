@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.35
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # run_multi_host()
 
-**Cohesion:** 0.35 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.test_all_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_empty_host_list_is_not_ok()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_mixed_pass_fail_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_on_host_callback_invoked_per_host()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_output_tail_is_truncated()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_runner_exception_marks_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return a runner that looks up (exit_code, output) by host name.]] - rationale - gateway/tests/test_multi_host_test.py
-- [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - rationale - gateway/tools/multi_host_test.py
-- [[TestRunMultiHost]] - code - gateway/tests/test_multi_host_test.py
-- [[_fake_runner()]] - code - gateway/tests/test_multi_host_test.py
-- [[run_multi_host()]] - code - gateway/tools/multi_host_test.py
+- [[ADR-004-api-keys-never-in-agent-container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[ADR-004 API Keys Never in Agent Container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Context_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Decision_5]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Implementation]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Mitigation_1]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Negative Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Positive Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Status_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,17 +27,3 @@ members: 11
 TABLE source_file, type FROM #community/run_multi_host
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_MultiHostResult]]
-- 4 edges to [[_COMMUNITY_main()]]
-- 3 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_TestTail]]
-- 1 edge to [[_COMMUNITY_ssh_runner()]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-
-## Top bridge nodes
-- [[run_multi_host()]] - degree 15, connects to 7 communities
-- [[TestRunMultiHost]] - degree 10, connects to 3 communities
-- [[_fake_runner()]] - degree 10, connects to 2 communities

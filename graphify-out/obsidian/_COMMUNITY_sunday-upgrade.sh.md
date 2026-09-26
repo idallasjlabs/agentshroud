@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # sunday-upgrade.sh
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[PATH_2]] - code - scripts/sunday-upgrade.sh
-- [[sunday-upgrade-report.sh]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
-- [[sunday-upgrade-report.sh script]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
-- [[sunday-upgrade.sh]] - code - scripts/sunday-upgrade.sh
-- [[sunday-upgrade.sh script]] - code - scripts/sunday-upgrade.sh
-- [[sunday-upgrade.sh script_1]] - code - scripts/sunday-upgrade.sh
+- [[Purpose_88]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[README_93]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Related Skills_94]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Usage_97]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)_2]] - document - docker/config/openclaw/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[sunday-upgrade.sh]] - degree 5, connects to 1 community
+- [[macOS System Administrator (MAC)_2]] - degree 5, connects to 1 community

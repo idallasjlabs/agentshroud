@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # 🔵 LOW: Improvements & Formatting
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
-- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
-- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
-- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
-- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[API Documentation]] - document - docs/api/README.md
+- [[Current Status_1]] - document - docs/api/README.md
+- [[Planned Documents]] - document - docs/api/README.md
+- [[README_118]] - document - docs/api/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/_LOW_Improvements__Formatting
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
-
-## Top bridge nodes
-- [[🔵 LOW Improvements & Formatting]] - degree 5, connects to 1 community

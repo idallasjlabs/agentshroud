@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.13
 members: 15
 ---
 
 # setup-https-proxy.js
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.constructor()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[.createConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[ConnectProxyAgent]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[NO_PROXY_HOSTS]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[PatchedWebSocket]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[http]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[https]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[net]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy patchWsForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy.js]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[tls]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG]] - document - .agents/skills/i-sad/SKILL.md
+- [[SKILL_47]] - document - .agents/skills/i-sad/SKILL.md
+- [[System Audit & Documentation]] - document - .agents/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Falco Detection Rules]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[setup-https-proxy.js]] - degree 10, connects to 1 community
+- [[System Audit & Documentation]] - degree 15, connects to 1 community

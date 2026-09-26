@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "ModeRequest"
 location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/ModeRequest
 ---
 
 # _default_mtime()
 
 ## Connections
-- [[Path_6]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - `rationale_for` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "mcp_oauth_preflight.py"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/mcp_oauth_preflightpy
 ---
 
 # _entry_to_py()
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
 - [[append_to_registry()]] - `calls` [EXTRACTED]
-- [[qs()]] - `contains` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

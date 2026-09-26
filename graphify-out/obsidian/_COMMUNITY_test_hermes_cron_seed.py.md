@@ -1,37 +1,38 @@
 ---
 type: community
-cohesion: 0.15
-members: 22
+cohesion: 0.09
+members: 23
 ---
 
 # test_hermes_cron_seed.py
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[Map job name - the full '_seed_cron Name ...' call text (all lines, since…]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[SCRUM-81 weekly Jira review cron must exist in both sh and yaml, Sun 0900.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[Stamp-file gating (v1v2v3) caused job triplication on every version bump. The…]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[Validate that init-config.sh cron jobs and jobs.yaml stay in sync. Prevents…]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_seed_cron_calls_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward them as…]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[jira-weekly-review is pure script execution (near-zero free-form generation) —…]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[test_competitive_email_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_competitive_landscape_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_cron_seed_is_stampless_and_idempotent()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_hermes_cron_seed.py]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_init_config_has_expected_cron_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_not_pinned_to_a_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_schedule_is_sunday_9am()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jobs_yaml_has_expected_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_seed_cron_supports_optional_model_and_provider_args()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_stability_report_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - concept - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H1 Telegram Proxy middleware_manager Never Initialized]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H3 Gateway Password Still in auth.token]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[HIGH — Should Fix]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L1 State Dir is a Symlink]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L2 Browser Control Enabled]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L3 Memory Index Not Built]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[LOW — Informational_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M1 No Rate Limiting on Security Endpoints]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M2 subprocess Calls Use Lists (Good) but No Resource Limits]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Summary_14]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,8 +42,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_run_test()]]
-- 1 edge to [[_COMMUNITY_gateway.proxy.llm_proxy]]
+- 1 edge to [[_COMMUNITY_Phase 3 Requirements Working Chat Container]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
 
 ## Top bridge nodes
-- [[test_hermes_cron_seed.py]] - degree 18, connects to 2 communities
+- [[blue-team-assessment-v0.8.0]] - degree 4, connects to 2 communities
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - degree 3, connects to 1 community

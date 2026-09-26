@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # §2 — New Multi-Bot Attack Scenarios (v1.1+ Surfa
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[RT-MB1 — Cross-Bot Trust Pivot]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB2 — Shared-Memory Leak Between Bots]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB3 — Group-Context Escalation (Anticipating Workstream A)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB4 — Hermes Cron Job Injection (NEW — Hermes-specific)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
+- 4 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
 
 ## Top bridge nodes
-- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - degree 7, connects to 1 community
+- [[TestProcScans]] - degree 6, connects to 1 community
+- [[.test_falco_running_detected()]] - degree 2, connects to 1 community
+- [[.test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_absent()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_detected()]] - degree 2, connects to 1 community

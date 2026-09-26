@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "CollaboratorGreeter"
+community: "skill.json"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/skilljson
 ---
 
 # _err_response()
@@ -15,4 +15,4 @@ tags:
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 - [[test_send_failure_does_not_persist_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/skilljson

@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # test_api_contract_fuzz.py
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[Alert  Issue Detected]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot container not healthy or crash-looping]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot not responding on Telegram_1]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Context limit exceeded, bot resets mid-conversation]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Kill switch gateway kill_switch_enabled=true (freezeshutdowndisconnect)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[What is the symptom]] - concept - docs/diagrams/images/diagram-18-runbook.svg
 
 ## Live Query (requires Dataview plugin)
 

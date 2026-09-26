@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation()"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # _entry()
@@ -24,4 +24,4 @@ tags:
 - [[Minimal registry entry shaped like agent_cve_registry.py's dicts.]] - `rationale_for` [EXTRACTED]
 - [[test_auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

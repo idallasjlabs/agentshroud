@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[GitHub MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

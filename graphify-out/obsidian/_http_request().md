@@ -1,20 +1,18 @@
 ---
-source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
+community: "test_config_hot_reload.py"
+location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/test_config_hot_reloadpy
 ---
 
 # _http_request()
 
 ## Connections
-- [[_read_body()]] - `calls` [EXTRACTED]
-- [[cmd_reachability()]] - `calls` [EXTRACTED]
-- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
-- [[oauth_atlassian() (Atlassian 3LO PKCE flow)]] - `calls` [EXTRACTED]
-- [[oauth_github() (GitHub device flow)]] - `calls` [EXTRACTED]
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - `rationale_for` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

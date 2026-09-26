@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_alert_telegram_relay.py — AlertTelegramRelay tests]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
 
 ## Live Query (requires Dataview plugin)
 

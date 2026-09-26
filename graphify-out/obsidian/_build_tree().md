@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "SkillGuard"
+community: "Daedalus — Concept Illustrator"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # _build_tree()
 
 ## Connections
-- [[Path_21]] - `references` [EXTRACTED]
+- [[Path_22]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
-- [[SkillsManifest.from_source()]] - `calls` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

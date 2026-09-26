@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[.test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 6 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 3 edges to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_brand-guidelines]]
+- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
 
 ## Top bridge nodes
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community
+- [[TestInjectionDetection]] - degree 22, connects to 7 communities

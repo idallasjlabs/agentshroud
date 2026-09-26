@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_9]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Function Details_19]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Rule ID Sets]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Purpose_146]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Related_25]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Wazuh Level to Severity Mapping]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[generate_summary(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[level_to_severity(level)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[parse_alert(raw)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[read_alerts(alert_dir, since)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_2]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Constraints_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Evidence_5]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Problem_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remediation_6]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Severity_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_7]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

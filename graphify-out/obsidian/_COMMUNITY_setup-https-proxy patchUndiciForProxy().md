@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[setup-https-proxy patchUndiciForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[AI Agent]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

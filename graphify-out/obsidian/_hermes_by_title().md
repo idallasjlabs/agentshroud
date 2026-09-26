@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "AgentRegistry"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/AgentRegistry
 ---
 
 # _hermes_by_title()
@@ -18,4 +18,4 @@ tags:
 - [[test_hermes_symlink_entry_upstream_fix()]] - `calls` [EXTRACTED]
 - [[test_hermes_wechat_adapter_fully_mitigated()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

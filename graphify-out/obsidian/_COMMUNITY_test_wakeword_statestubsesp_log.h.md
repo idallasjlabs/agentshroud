@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsesp_log.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[SharedMemoryManager Group Memory ReadWrite Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

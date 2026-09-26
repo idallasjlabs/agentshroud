@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "_make_cve()"
+community: "apply-patches.js"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/apply-patchesjs
 ---
 
 # _build_table returns correct sentinel markers and unique element ids.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildTable]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_cve
+#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs

@@ -1,43 +1,44 @@
 ---
 type: community
 cohesion: 0.07
-members: 28
+members: 29
 ---
 
 # test_scanner_integration_coverage.py
 
 **Cohesion:** 0.07 - loosely connected
-**Members:** 28 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[._build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Executive Summary_13]] - document - docs/security/ws-e-audit-v1.2.md
+- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
+- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
+- [[rbac.py (5-level RBAC hierarchy)]] - code - gateway/security/rbac.py
+- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,38 +48,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY__w()]]
-- 4 edges to [[_COMMUNITY__age()]]
-- 2 edges to [[_COMMUNITY_TestAggregateResults]]
-- 2 edges to [[_COMMUNITY_TestIsContainerRunning]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_TestComputeBotScorecard]]
-- 1 edge to [[_COMMUNITY_TestProcScans]]
-- 1 edge to [[_COMMUNITY_TestClamavSummary]]
-- 1 edge to [[_COMMUNITY_TestComplianceMaths]]
-- 1 edge to [[_COMMUNITY_TestFalcoSummary]]
-- 1 edge to [[_COMMUNITY_TestGetSbom]]
-- 1 edge to [[_COMMUNITY_TestIsFresh]]
-- 1 edge to [[_COMMUNITY_TestOpenscapSummary]]
-- 1 edge to [[_COMMUNITY_TestTextReaders]]
-- 1 edge to [[_COMMUNITY_TestTrivyImageSummaries]]
-- 1 edge to [[_COMMUNITY_TestWazuhSummary]]
-- 1 edge to [[_COMMUNITY_TestFluentBitSummary]]
-- 1 edge to [[_COMMUNITY_TestLoadLatestJson]]
-- 1 edge to [[_COMMUNITY_TestResourceAvailability]]
-- 1 edge to [[_COMMUNITY_TestSocketAndPidProbes]]
-- 1 edge to [[_COMMUNITY_TestTrivySummary]]
-- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
-- 1 edge to [[_COMMUNITY_TestDaemonConfigReader]]
-- 1 edge to [[_COMMUNITY_TestIdentityAuth]]
-- 1 edge to [[_COMMUNITY_TestMandatoryGates]]
-- 1 edge to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_falco_monitor.py]]
+- 5 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 2 edges to [[_COMMUNITY_RateLimiter]]
 
 ## Top bridge nodes
-- [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
-- [[._build_modules()]] - degree 3, connects to 1 community
-- [[.test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community
-- [[.test_rich_environment()]] - degree 2, connects to 1 community
-- [[.test_full_stack()_1]] - degree 2, connects to 1 community
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 2 communities
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community

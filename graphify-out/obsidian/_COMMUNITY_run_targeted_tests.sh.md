@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[run_targeted_tests.sh]] - code - .claude/scripts/claude-hooks/run_targeted_tests.sh
-- [[run_targeted_tests.sh script]] - code - .claude/scripts/claude-hooks/run_targeted_tests.sh
+- [[.test_default_config()_4]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test default configuration values._3]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,10 @@ members: 2
 TABLE source_file, type FROM #community/run_targeted_testssh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ContainerEngine]]
+- 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
+
+## Top bridge nodes
+- [[.test_default_config()_4]] - degree 3, connects to 2 communities

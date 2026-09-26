@@ -1,48 +1,48 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.07
 members: 33
 ---
 
 # test_anthropic_openai_translator.py
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[Failover reply with choices (e.g. rate-limit stub) must not return content]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover reply with empty-string content must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover reply with null content and no tool_calls must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover to a qwen-family model must disable thinking mode Qwen3's     think]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Feed raw SSE bytes into the translator and collect Anthropic events.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Tool-call-only SSE stream must produce tool_use at index 0 (no text gap).]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[_collect_sse()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[anthropic_to_openai_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[openai_to_anthropic_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[test_anthropic_openai_translator.py]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_sse_translator_basic_text_stream()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_sse_translator_empty_stream_emits_full_sequence()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_sse_translator_model_preserved_in_message_start()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_sse_translator_stop_reason_propagated()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_sse_translator_tool_call_only_starts_at_index_0()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_anthropic_tool_definitions()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_basic_text_message()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_empty_choices_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_empty_string_content_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_max_tokens_finish_reason()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_no_system_prompt()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_non_qwen_target_unchanged()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_null_content_no_tool_calls_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_openai_to_anthropic_basic()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_preserves_original_model()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_qwen_target_injects_no_think()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_qwen_target_no_system_still_gets_no_think()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_system_block_list()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_calls_to_tool_use()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_result_becomes_tool_role_message()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_use_blocks()]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[2. Health Monitoring]] - document - docs/operations/runbook.md
+- [[7. Backup and Restore Procedures]] - document - docs/operations/runbook.md
+- [[AgentShroud Deployment Procedure]] - document - docs/operations/deployment-procedure.md
+- [[AgentShroud Incident Response Plan]] - document - docs/operations/incident-response.md
+- [[AgentShroud Operations Runbook]] - document - docs/operations/runbook.md
+- [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
+- [[Backup Procedures]] - document - docs/operations/runbook.md
+- [[Container Escape Attempt]] - document - docs/operations/incident-response.md
+- [[Dashboard Access]] - document - docs/operations/runbook.md
+- [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
+- [[Grafana Dashboard Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Maintenance Procedures]] - document - docs/operations/deployment-procedure.md
+- [[Monitoring Setup]] - document - docs/operations/deployment-procedure.md
+- [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
+- [[P3 Medium Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Sanitizer (Presidio + regex hybrid)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Performance Tuning]] - document - docs/operations/deployment-procedure.md
+- [[Production Hardening]] - document - docs/operations/deployment-procedure.md
+- [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
+- [[Restore Procedures]] - document - docs/operations/runbook.md
+- [[Security Hardening]] - document - docs/operations/deployment-procedure.md
+- [[System Architecture Overview]] - document - docs/operations/runbook.md
+- [[System Health Checks]] - document - docs/operations/runbook.md
+- [[Trust Level Anomaly]] - document - docs/operations/incident-response.md
+- [[Trust Manager  Progressive Trust System]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Unauthorized SSH Access Attempt]] - document - docs/operations/incident-response.md
+- [[Update Procedure]] - document - docs/operations/deployment-procedure.md
+- [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[deployment-procedure]] - document - docs/operations/deployment-procedure.md
+- [[runbook]] - document - docs/operations/runbook.md
+- [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,13 +52,30 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_claude_via_openai_path.py]]
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages]]
-- 2 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
-- 2 edges to [[_COMMUNITY_translate_openai_sse_to_anthropic()]]
+- 8 edges to [[_COMMUNITY_SecurityConfig]]
+- 1 edge to [[_COMMUNITY_.test_collaborator_plugin_discovery_request_is_b]]
+- 1 edge to [[_COMMUNITY_.test_collaborator_hidden_channel_exfil_request_]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect]]
+- 1 edge to [[_COMMUNITY_Implement per-user session isolation using Teleg]]
+- 1 edge to [[_COMMUNITY_v1.6.0 Release — Voice Terminal]]
+- 1 edge to [[_COMMUNITY__w()]]
+- 1 edge to [[_COMMUNITY_.test_collaborator_service_control_request_is_bl]]
+- 1 edge to [[_COMMUNITY_.test_owner_revoke_command_requires_target_user_]]
+- 1 edge to [[_COMMUNITY_.test_collaborator_approval_action_request_is_bl]]
+- 1 edge to [[_COMMUNITY_Architecture]]
+- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
+- 1 edge to [[_COMMUNITY_TestTextReaders]]
+- 1 edge to [[_COMMUNITY_TestTrivyImageSummaries]]
+- 1 edge to [[_COMMUNITY_CRITICAL — Must Fix Before Release]]
+- 1 edge to [[_COMMUNITY_TestWazuhSummary]]
+- 1 edge to [[_COMMUNITY_TestScoreIncidentResponse]]
+- 1 edge to [[_COMMUNITY_HIGH — Should Fix]]
+- 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[anthropic_to_openai_request()]] - degree 19, connects to 3 communities
-- [[openai_to_anthropic_response()]] - degree 13, connects to 3 communities
-- [[test_anthropic_openai_translator.py]] - degree 25, connects to 1 community
-- [[_collect_sse()]] - degree 8, connects to 1 community
+- [[AgentShroud Incident Response Plan]] - degree 14, connects to 7 communities
+- [[AgentShroud Operations Runbook]] - degree 14, connects to 6 communities
+- [[AgentShroud Deployment Procedure]] - degree 13, connects to 5 communities
+- [[PII Sanitizer (Presidio + regex hybrid)]] - degree 7, connects to 2 communities
+- [[Trust Manager  Progressive Trust System]] - degree 5, connects to 1 community

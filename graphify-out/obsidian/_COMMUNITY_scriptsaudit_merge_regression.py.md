@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[scriptsaudit_merge_regression.py_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[audio_set_volume() — spoken volume command target]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

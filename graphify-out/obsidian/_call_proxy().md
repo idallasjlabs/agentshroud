@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "The 8D Investigation Process"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/The_8D_Investigation_Process
 ---
 
 # _call_proxy()
@@ -29,4 +29,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `calls` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

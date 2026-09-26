@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # test_openclaw_model_provider_consistency.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_model_provider_consistency.sh_1]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_model_provider_consistency.sh script_1]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[Daedalus Concept Illustrator README (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

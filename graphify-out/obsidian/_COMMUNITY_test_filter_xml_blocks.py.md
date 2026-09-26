@@ -1,60 +1,60 @@
 ---
 type: community
-cohesion: 0.04
+cohesion: 0.08
 members: 45
 ---
 
 # test_filter_xml_blocks.py
 
-**Cohesion:** 0.04 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 45 nodes
 
 ## Members
-- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[.__init__()_64]] - code - gateway/security/consent_framework.py
+- [[.add_to_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.add_to_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.get_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.get_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.remove_from_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.remove_from_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.test_add_and_remove_blacklist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_add_and_remove_whitelist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_blacklisted_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_denied()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_has_timestamp()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_empty_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_path_manipulation()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_secrets_in_value_warned()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_known_dangerous_patterns_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_multiple_configs_validated()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_safe_env_no_warnings()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_backtick_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_curl_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_dollar_paren()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_pipe_to_sh()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_rm_rf_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_wget_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_valid_config_passes()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_whitelisted_command_auto_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.validate_config()]] - code - gateway/security/consent_framework.py
+- [[.validate_configs()]] - code - gateway/security/consent_framework.py
+- [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
+- [[ConfigValidationError]] - code - gateway/security/consent_framework.py
+- [[ConsentFramework]] - code - gateway/security/consent_framework.py
+- [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
+- [[ServerConfig]] - code - gateway/security/consent_framework.py
+- [[ShellInjectionDetected]] - code - gateway/security/consent_framework.py
+- [[TestConsentDecision]] - code - gateway/tests/test_consent_framework.py
+- [[TestEnvironmentValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestServerConfigValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestWhitelistBlacklist]] - code - gateway/tests/test_consent_framework.py
+- [[Validate a server configuration before execution.]] - rationale - gateway/security/consent_framework.py
+- [[consent_framework.py]] - code - gateway/security/consent_framework.py
+- [[framework()]] - code - gateway/tests/test_consent_framework.py
+- [[test_consent_framework.py]] - code - gateway/tests/test_consent_framework.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -64,7 +64,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TrustManager]]
+- 11 edges to [[_COMMUNITY_TrustManager]]
+- 10 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 2 edges to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
 
 ## Top bridge nodes
-- [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community
+- [[ConsentFramework]] - degree 31, connects to 3 communities
+- [[consent_framework.py]] - degree 10, connects to 3 communities
+- [[TestServerConfigValidation]] - degree 13, connects to 1 community
+- [[TestEnvironmentValidation]] - degree 10, connects to 1 community
+- [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

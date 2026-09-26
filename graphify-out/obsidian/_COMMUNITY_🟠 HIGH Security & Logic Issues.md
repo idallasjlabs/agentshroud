@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
-- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
-- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
-- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
+- 3 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 2 edges to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 1 edge to [[_COMMUNITY_GatewayEmailService]]
 
 ## Top bridge nodes
-- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 2 communities
+- [[TestAppleContainerEngine]] - degree 14, connects to 4 communities
+- [[.setup_method()_25]] - degree 2, connects to 1 community

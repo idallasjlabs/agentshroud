@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.16
 members: 15
 ---
 
 # telegram_proxy.py
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.16 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_13]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Function Details_25]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Inbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Outbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Purpose_154]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[.constructor()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[.createConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[ConnectProxyAgent]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[NO_PROXY_HOSTS]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[PatchedWebSocket]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[http]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[https_2]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[net]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy patchWsForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy.js]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[tls]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/telegram_proxypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
+
+## Top bridge nodes
+- [[setup-https-proxy.js]] - degree 10, connects to 1 community

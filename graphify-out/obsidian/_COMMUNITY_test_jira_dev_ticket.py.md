@@ -1,55 +1,55 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 40
 ---
 
 # test_jira_dev_ticket.py
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[.__call__()_1]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[.__init__()_72]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
-- [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_basic_auth_header_is_base64_email_colon_token()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_basic_auth_header_rejects_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_payload_is_valid_adf_doc()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_payload_never_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_full()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_minimal()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_rejects_missing_project()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_rejects_missing_summary()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_matches_destination_status_name()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_matches_transition_name()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_returns_none_when_no_match()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_issue_url_rejects_empty_cloud_id()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_issue_url_targets_cloud_id_gateway()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_jira_dev_ticket.py]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_op_proxy_request_has_bearer_and_system_header()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_op_refs_target_the_atlassian_item()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_openclaw_copy_is_byte_identical_to_hermes_copy()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_parses_response()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_raises_on_non_200()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_raises_when_field_missing()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_aborts_without_gateway_token()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_comment_posts_to_correct_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_create_posts_issue_with_basic_auth()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_create_with_labels_and_parent()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_returns_1_on_jira_rejection()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_returns_1_when_op_proxy_denies()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_transition_applies_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_transition_fails_when_no_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_accepts_full_https_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_rejects_empty_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_targets_edge_endpoint()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_transitions_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_transitions_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
+- [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
+- [[Test PII detection with special characters nearby]] - rationale - gateway/tests/test_security.py
+- [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
+- [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
+- [[Test content with multiple instances of same PII type]] - rationale - gateway/tests/test_security.py
+- [[Test handling of extremely long content (10MB)]] - rationale - gateway/tests/test_security.py
+- [[Test handling of malformed metadata]] - rationale - gateway/tests/test_security.py
+- [[Test handling of null bytes (potential injection attack)]] - rationale - gateway/tests/test_security.py
+- [[Test handling of very large content (1MB+)]] - rationale - gateway/tests/test_security.py
+- [[Test overlapping or nested PII patterns]] - rationale - gateway/tests/test_security.py
+- [[Test rate limiting behavior]] - rationale - gateway/tests/test_security.py
+- [[Test that SQL injection is prevented]] - rationale - gateway/tests/test_security.py
+- [[Test that XSS payloads are safely stored]] - rationale - gateway/tests/test_security.py
+- [[Test that common false positives are handled]] - rationale - gateway/tests/test_security.py
+- [[Test that empty content is rejected]] - rationale - gateway/tests/test_security.py
+- [[Test that invalid source is rejected]] - rationale - gateway/tests/test_security.py
+- [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
+- [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - rationale - gateway/tests/test_security.py
+- [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - code - gateway/ingest_api/auth.py
+- [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
+- [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
+- [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
+- [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
+- [[test_malformed_json_metadata()]] - code - gateway/tests/test_security.py
+- [[test_multiple_same_type_pii()]] - code - gateway/tests/test_security.py
+- [[test_nested_pii_patterns()]] - code - gateway/tests/test_security.py
+- [[test_null_bytes_in_content()]] - code - gateway/tests/test_security.py
+- [[test_rate_limiter()]] - code - gateway/tests/test_security.py
+- [[test_security.py]] - code - gateway/tests/test_security.py
+- [[test_shortcut_content_types_accepted()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_empty_content_rejected()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_rejects_unknown_content_type()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_source_accepted()]] - code - gateway/tests/test_security.py
+- [[test_special_characters_in_pii()]] - code - gateway/tests/test_security.py
+- [[test_sql_injection_attempt()]] - code - gateway/tests/test_security.py
+- [[test_unicode_content()]] - code - gateway/tests/test_security.py
+- [[test_valid_sources()]] - code - gateway/tests/test_security.py
+- [[test_very_large_content()]] - code - gateway/tests/test_security.py
+- [[test_xss_attempt()]] - code - gateway/tests/test_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,7 +59,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_jira_dev_ticket run()]]
+- 9 edges to [[_COMMUNITY_ApprovalRequest]]
+- 3 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 2 edges to [[_COMMUNITY_test_a2a_proxy.py]]
 
 ## Top bridge nodes
-- [[test_jira_dev_ticket.py]] - degree 38, connects to 1 community
+- [[test_security.py]] - degree 25, connects to 3 communities
+- [[test_empty_content_rejection()]] - degree 3, connects to 1 community
+- [[test_invalid_source_rejection()]] - degree 3, connects to 1 community
+- [[test_malformed_json_metadata()]] - degree 3, connects to 1 community
+- [[test_rate_limiter()]] - degree 3, connects to 1 community

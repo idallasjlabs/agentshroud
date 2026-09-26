@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Audio clicking fix — TTS resume dedup + dither + voice-gateway cpuset widen]] - rationale - CHANGELOG.md
-- [[ESP32 live model label fix — server-authoritative label push]] - rationale - CHANGELOG.md
-- [[Firmware TLS connect reliability — timeout 5s to 10s (DERP handshake race)]] - rationale - CHANGELOG.md
-- [[Streaming direct voice path (_call_llm_stream) — avoids blocking full-reply wait]] - rationale - CHANGELOG.md
-- [[v1.6.0 Release — Voice Terminal]] - rationale - CHANGELOG.md
+- [[Container Won't Start_1]] - document - docs/operations/deployment-procedure.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use]] - document - docs/operations/deployment-procedure.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/v160_Release__Voice_Terminal
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+
+## Top bridge nodes
+- [[Troubleshooting Common Issues]] - degree 5, connects to 1 community

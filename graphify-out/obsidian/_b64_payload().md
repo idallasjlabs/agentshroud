@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # _b64_payload()
@@ -18,4 +18,4 @@ tags:
 - [[test_pipeline_clamav_error_fail_open()]] - `calls` [EXTRACTED]
 - [[test_pipeline_clamav_malware_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

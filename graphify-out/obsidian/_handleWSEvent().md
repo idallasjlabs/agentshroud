@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js"
+community: "DelegationManager"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/DelegationManager
 ---
 
 # _handleWSEvent()
@@ -19,4 +19,4 @@ tags:
 - [[_renderSecurityTable()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

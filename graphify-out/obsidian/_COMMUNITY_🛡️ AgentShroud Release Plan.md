@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
-- [[Dependencies]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
-- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Success Criteria_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Summary_10]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
+- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
+- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
+- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
+- [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Source of truth_2]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What happens automatically (confirmed real, in]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What is not currently automated (the 4 gaps)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[hermes-openclaw-dev-workflow]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
+- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,17 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/_AgentShroud_Release_Plan
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
-- 1 edge to [[_COMMUNITY_v0.8.0 Watchtower — Security Fixes + Module Wi]]
-- 1 edge to [[_COMMUNITY_v0.9.0 Sentinel — Data Isolation + SOC + Remed]]
-- 1 edge to [[_COMMUNITY_v1.0.0 Fortress — Ship-Ready Public Release (1]]
-- 1 edge to [[_COMMUNITY_v1.3.0 — Platform Expansion (53 items)]]
-- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Every]]
-- 1 edge to [[_COMMUNITY_7. Pi-hole DNS Security Layer (Built-In)]]
-- 1 edge to [[_COMMUNITY_v0.9.0 — Apple Messages Integration]]
-- 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
-
-## Top bridge nodes
-- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 9 communities

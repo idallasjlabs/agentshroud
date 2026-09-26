@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "_stub_client()"
+community: "jira_weekly_review.py"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/jira_weekly_reviewpy
 ---
 
 # _all_output()
@@ -17,4 +17,4 @@ tags:
 - [[stdout + stderr regardless of click version (mix_stderr removed in 8.2).]] - `rationale_for` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_stub_client
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

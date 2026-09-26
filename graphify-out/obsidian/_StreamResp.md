@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "FetchOutcome"
+community: "plan_remediation()"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/plan_remediation
 ---
 
 # _StreamResp
 
 ## Connections
-- [[.__enter__()_1]] - `method` [EXTRACTED]
-- [[.__exit__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_37]] - `method` [EXTRACTED]
+- [[.__enter__()_3]] - `method` [EXTRACTED]
+- [[.__exit__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_166]] - `method` [EXTRACTED]
 - [[.iter_bytes()_1]] - `method` [EXTRACTED]
 - [[.test_2xx_with_body_is_proven()]] - `calls` [EXTRACTED]
 - [[.test_empty_body_is_not_proven()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

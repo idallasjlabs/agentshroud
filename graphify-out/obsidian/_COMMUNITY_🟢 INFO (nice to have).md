@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.23
 members: 12
 ---
 
 # 🟢 INFO (nice to have)
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.23 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[2. Findings]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[E1 YAML indentation error in `docker-compose.pi.yml`]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I1 Pipeline encoding detector API change]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I2 f-string in logger call]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I3 Owner ID still hardcoded (improved)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I4 Copyright headers added consistently]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W1 `if True  keep indentation` anti-pattern in tests]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W2 Stale compose snapshot committed to tree]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W3 Empty test file placeholder]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🔴 ERRORS (must fix)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🟡 WARNINGS (should fix)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🟢 INFO (nice to have)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[.test_returns_latest_sbom()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_when_no_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_two_when_sbom_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_empty_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_no_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 3 Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreSupplyChain]] - code - gateway/tests/test_scanner_integration.py
+- [[_score_supply_chain()]] - code - gateway/security/scanner_integration.py
+- [[get_sbom()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 4 edges to [[_COMMUNITY_A2AMethod]]
+- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Canvas Skill]]
+- 1 edge to [[_COMMUNITY_agentshroud-bot]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
 
 ## Top bridge nodes
-- [[2. Findings]] - degree 4, connects to 1 community
+- [[get_sbom()]] - degree 9, connects to 4 communities
+- [[_score_supply_chain()]] - degree 9, connects to 4 communities
+- [[TestGetSbom]] - degree 4, connects to 1 community
+- [[TestScoreSupplyChain]] - degree 4, connects to 1 community
+- [[.test_returns_none_when_no_dir()]] - degree 3, connects to 1 community

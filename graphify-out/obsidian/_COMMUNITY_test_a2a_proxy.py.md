@@ -1,64 +1,63 @@
 ---
 type: community
-cohesion: 0.08
-members: 49
+cohesion: 0.04
+members: 48
 ---
 
 # test_a2a_proxy.py
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 49 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 48 nodes
 
 ## Members
-- [[.__init__()_24]] - code - gateway/tests/test_a2a_proxy.py
-- [[.__init__()_25]] - code - gateway/tests/test_a2a_proxy.py
-- [[.forward()]] - code - gateway/tests/test_a2a_proxy.py
-- [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2APolicyEngine]] - code - gateway/tests/test_a2a_proxy.py
-- [[A2AProxy]] - code - gateway/tests/test_a2a_proxy.py
-- [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
-- [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
-- [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
-- [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_proxy.py
-- [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
-- [[proxy()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_concatenates_text_parts()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_empty_message_returns_empty_string()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_flags_binary_parts_without_scanning_them()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_handles_missing_parts_key()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_skips_non_dict_entries_in_parts()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_accepts_legacy_path_style_method_alias()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_callback_url_from_set_push_config()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_method_and_task_id_from_send_message()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_task_id_from_get_task()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_missing_method_field_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_non_dict_body_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_tolerates_non_dict_params()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_unknown_method_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_malformed_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_missing_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_unknown_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_uses_constant_time_comparison()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[.__init__()_10]] - code - gateway/ingest_api/auth.py
+- [[.test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_resets_after_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_empty_or_non_string()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_numeric_input_as_non_command()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_uppercase_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_keeps_allowed_chars_only()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_lowercases_and_preserves_command_shape()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_normalizes_fullwidth_and_zero_width()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_normalizes_fullwidth_mention_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_preserves_hyphen_and_underscore()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_strips_leading_noise_before_symbol_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_strips_mention_and_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_unaffected_by_collaborator_rate_limiter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[After the rate-limit window expires, collaborator messages go through normally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
+- [[Even a generic message triggers _send_collaborator_safe_info_response (local_inf]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Every collaborator message must produce a response — never a silent drop.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[If notice send fails, cooldown should not suppress the next retry attempt.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Messages within the window are blocked; after the window passes they succeed.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner messages are never rate-limited by the collaborator limiter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice path should key retry window by user_id, not chat_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limited collaborators should receive a deterministic retry-window notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[RateLimiter]] - code - gateway/ingest_api/auth.py
+- [[Repeated rate-limited messages should each receive a deterministic notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
+- [[TestCollaboratorRateLimitRecovery]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestCommandTokenNormalization]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestNoResponseGuarantee]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for command token normalization used by local inbound handlers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown users must always receive either a pending notice or a rate-limit notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,14 +67,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_DifferentialPIIDetector]]
-- 12 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 10 edges to [[_COMMUNITY_A2AProxyResult]]
-- 10 edges to [[_COMMUNITY_A2AMethod]]
+- 49 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 18 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 8 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 5 edges to [[_COMMUNITY_FileSandbox]]
+- 4 edges to [[_COMMUNITY_TrustManager]]
+- 3 edges to [[_COMMUNITY_models.py]]
+- 2 edges to [[_COMMUNITY_TestPathIsolationManager]]
+- 2 edges to [[_COMMUNITY_test_jira_dev_ticket.py]]
+- 2 edges to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_IntelReportStore]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_Plan Proxying HexStrike AI MCP Agents via Agent]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves]]
+- 1 edge to [[_COMMUNITY_TestAuditStoreBotId]]
 
 ## Top bridge nodes
-- [[test_a2a_proxy.py]] - degree 50, connects to 4 communities
-- [[A2AProxy]] - degree 27, connects to 4 communities
-- [[_StubForwarder]] - degree 26, connects to 4 communities
-- [[_StubAuditStore]] - degree 12, connects to 4 communities
-- [[A2APolicyEngine]] - degree 10, connects to 4 communities
+- [[RateLimiter]] - degree 47, connects to 16 communities
+- [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
+- [[TestIsGroupMessage]] - degree 10, connects to 3 communities
+- [[TestNoResponseGuarantee]] - degree 9, connects to 3 communities
+- [[TestCollaboratorRateLimitRecovery]] - degree 7, connects to 3 communities

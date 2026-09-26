@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.04
-members: 127
+members: 130
 ---
 
 # soc/router.py
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 127 nodes
+**Members:** 130 nodes
 
 ## Members
 - [[Add or override a specific egress domain rule (CC-10).      Supports optional sc]] - rationale - gateway/soc/router.py
@@ -16,6 +16,7 @@ members: 127
 - [[Create a new group at runtime (owner only).]] - rationale - gateway/soc/router.py
 - [[Create a time-bounded privilege delegation (owner only).]] - rationale - gateway/soc/router.py
 - [[Delete a group at runtime (owner only).]] - rationale - gateway/soc/router.py
+- [[Exchange gateway token for a session cookie.]] - rationale - gateway/soc/router.py
 - [[Fallback minimal dashboard when template file is missing.]] - rationale - gateway/soc/router.py
 - [[Get tool allowdeny lists for a user or group entity.]] - rationale - gateway/soc/router.py
 - [[In-place openclaw upgrade runs npm install -g inside the bot container.      No]] - rationale - gateway/soc/router.py
@@ -40,6 +41,7 @@ members: 127
 - [[Resume a paused contributor's bot access.]] - rationale - gateway/soc/router.py
 - [[Return all active egress rules preloaded permanent, user-created permanent, ses]] - rationale - gateway/soc/router.py
 - [[Return current LLM quota failover statistics.]] - rationale - gateway/soc/router.py
+- [[Return full collaborator activity log. limit=0 returns all entries.      Returns]] - rationale - gateway/soc/router.py
 - [[Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge]] - rationale - gateway/soc/router.py
 - [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - rationale - gateway/soc/router.py
 - [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - rationale - gateway/soc/router.py
@@ -47,7 +49,7 @@ members: 127
 - [[Run a Trivy CVE scan immediately and send the report via Telegram.      Requires]] - rationale - gateway/soc/router.py
 - [[Run a command inside the agentshroud-openclaw container via the Docker socket.]] - rationale - gateway/soc/router.py
 - [[Run a shell command on the Docker Compose host via SSH.      Requires AGENTSHROU]] - rationale - gateway/soc/router.py
-- [[SCLCaller_2]] - code - gateway/soc/router.py
+- [[SCLCaller_1]] - code - gateway/soc/router.py
 - [[Serve the unified SOC web dashboard.]] - rationale - gateway/soc/router.py
 - [[ServiceActionRequest]] - code - gateway/soc/router.py
 - [[Set per-user collab mode override (persists across restarts).]] - rationale - gateway/soc/router.py
@@ -65,10 +67,11 @@ members: 127
 - [[_risk_level_label()]] - code - gateway/soc/router.py
 - [[_ssh_compose()]] - code - gateway/soc/router.py
 - [[acknowledge_config_integrity()]] - code - gateway/soc/router.py
-- [[add_collaborator()]] - code - gateway/soc/router.py
-- [[add_group_member()]] - code - gateway/soc/router.py
+- [[add_collaborator()_1]] - code - gateway/soc/router.py
+- [[add_group_member()_1]] - code - gateway/soc/router.py
 - [[approve_egress()]] - code - gateway/soc/router.py
 - [[approve_request()]] - code - gateway/soc/router.py
+- [[auth_login()]] - code - gateway/soc/router.py
 - [[auth_ws_token()]] - code - gateway/soc/router.py
 - [[build_correlation_summary()]] - code - gateway/security/soc_correlation.py
 - [[clear_group_memory()]] - code - gateway/soc/router.py
@@ -79,18 +82,19 @@ members: 127
 - [[deny_request()]] - code - gateway/soc/router.py
 - [[emergency_block_egress()]] - code - gateway/soc/router.py
 - [[export_audit()]] - code - gateway/soc/router.py
+- [[get_collaborator_activity()]] - code - gateway/soc/router.py
 - [[get_egress_log()]] - code - gateway/soc/router.py
 - [[get_egress_rules()]] - code - gateway/soc/router.py
 - [[get_group()]] - code - gateway/soc/router.py
 - [[get_group_memory()]] - code - gateway/soc/router.py
-- [[get_health()]] - code - gateway/soc/router.py
+- [[get_health()_1]] - code - gateway/soc/router.py
 - [[get_llm_failover_stats()]] - code - gateway/soc/router.py
 - [[get_modules()]] - code - gateway/soc/router.py
 - [[get_modules_heatmap()]] - code - gateway/soc/router.py
 - [[get_privacy_policies()]] - code - gateway/soc/router.py
 - [[get_risk_score()]] - code - gateway/soc/router.py
 - [[get_risk_summary()]] - code - gateway/soc/router.py
-- [[get_sbom()]] - code - gateway/soc/router.py
+- [[get_sbom()_1]] - code - gateway/soc/router.py
 - [[get_scan_results()]] - code - gateway/soc/router.py
 - [[get_scanner_recent_events()]] - code - gateway/soc/router.py
 - [[get_security_alerts()]] - code - gateway/soc/router.py
@@ -106,7 +110,6 @@ members: 127
 - [[list_delegations()]] - code - gateway/soc/router.py
 - [[list_groups()]] - code - gateway/soc/router.py
 - [[list_pending_approvals()_1]] - code - gateway/soc/router.py
-- [[list_services()]] - code - gateway/soc/router.py
 - [[list_users()]] - code - gateway/soc/router.py
 - [[override_egress_rule()]] - code - gateway/soc/router.py
 - [[pause_collaborator_endpoint()]] - code - gateway/soc/router.py
@@ -114,21 +117,21 @@ members: 127
 - [[remove_egress_rule()]] - code - gateway/soc/router.py
 - [[remove_group_member()]] - code - gateway/soc/router.py
 - [[rename_group()]] - code - gateway/soc/router.py
-- [[restart_service()]] - code - gateway/soc/router.py
+- [[restart_service()_1]] - code - gateway/soc/router.py
 - [[revoke_collaborator()]] - code - gateway/soc/router.py
 - [[revoke_delegation()]] - code - gateway/soc/router.py
 - [[revoke_egress_history()]] - code - gateway/soc/router.py
 - [[rollback_gateway()]] - code - gateway/soc/router.py
+- [[router.py_1]] - code - gateway/soc/router.py
 - [[run_scanner()]] - code - gateway/soc/router.py
 - [[set_group_mode()]] - code - gateway/soc/router.py
 - [[set_log_level()]] - code - gateway/soc/router.py
 - [[set_module_mode()]] - code - gateway/soc/router.py
 - [[set_user_collab_mode()]] - code - gateway/soc/router.py
 - [[set_user_role()_1]] - code - gateway/soc/router.py
-- [[socrouter.py]] - code - gateway/soc/router.py
 - [[soc_dashboard()]] - code - gateway/soc/router.py
 - [[start_service()]] - code - gateway/soc/router.py
-- [[stop_service()]] - code - gateway/soc/router.py
+- [[stop_service()_1]] - code - gateway/soc/router.py
 - [[trigger_cve_report()]] - code - gateway/soc/router.py
 - [[unpause_collaborator_endpoint()]] - code - gateway/soc/router.py
 - [[update_display_name()]] - code - gateway/soc/router.py
@@ -146,38 +149,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 71 edges to [[_COMMUNITY_BaseModel]]
-- 33 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 22 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 12 edges to [[_COMMUNITY_group_config.py]]
-- 12 edges to [[_COMMUNITY_ServiceManager]]
-- 8 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 8 edges to [[_COMMUNITY_rbac_config.py]]
-- 5 edges to [[_COMMUNITY_test_dashboard.py]]
-- 4 edges to [[_COMMUNITY_RBACConfig]]
-- 4 edges to [[_COMMUNITY_SecurityEvent]]
-- 3 edges to [[_COMMUNITY_soc.js]]
-- 3 edges to [[_COMMUNITY_DelegationManager]]
-- 3 edges to [[_COMMUNITY_get_trivy_summary()]]
-- 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_load_config()]]
-- 2 edges to [[_COMMUNITY_TeamsConfig]]
-- 2 edges to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY__process_inbound()]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
-- 1 edge to [[_COMMUNITY_compute_scorecard()]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_migrate-cve-registry-ghsa.py]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_SOCWebSocketHandler]]
+- 84 edges to [[_COMMUNITY_main.rs]]
+- 32 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 13 edges to [[_COMMUNITY_SSHProxy]]
+- 13 edges to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY__make_stream_app_state()]]
+- 8 edges to [[_COMMUNITY_SCLClient]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 4 edges to [[_COMMUNITY_.analyze_tool_call()]]
+- 4 edges to [[_COMMUNITY_Findings & Mitigations]]
+- 3 edges to [[_COMMUNITY_make_event()]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 2 edges to [[_COMMUNITY_RateLimiter]]
+- 2 edges to [[_COMMUNITY_ReportStore]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 2 edges to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
+- 2 edges to [[_COMMUNITY_agentshroud-bot]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
+- 2 edges to [[_COMMUNITY_Browser — Secure Browser Automation]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 1 edge to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 1 edge to [[_COMMUNITY_Canvas Skill]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_PromptProtection]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
 
 ## Top bridge nodes
-- [[socrouter.py]] - degree 162, connects to 22 communities
-- [[JSONResponse]] - degree 39, connects to 9 communities
+- [[router.py_1]] - degree 162, connects to 23 communities
+- [[JSONResponse]] - degree 39, connects to 6 communities
 - [[build_correlation_summary()]] - degree 13, connects to 5 communities
-- [[SCLCaller_2]] - degree 87, connects to 3 communities
 - [[create_group()]] - degree 8, connects to 3 communities
+- [[auth_login()]] - degree 6, connects to 3 communities

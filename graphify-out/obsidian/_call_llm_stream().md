@@ -1,33 +1,27 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "test_a2a_policy.py"
 location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_a2a_policypy
 ---
 
 # _call_llm_stream()
 
 ## Connections
-- [[Stream conversation history through the gateway's OpenAI-compat endpoint,…]] - `rationale_for` [EXTRACTED]
+- [[Stream conversation history through the gateway's OpenAI-compat     endpoint, yi]] - `rationale_for` [EXTRACTED]
 - [[_effective_voice_model()]] - `calls` [EXTRACTED]
 - [[omlx-keepwarm.sh]] - `semantically_similar_to` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 - [[test_call_llm_stream_flushes_trailing_fragment()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_flushes_trailing_fragment()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_sends_correct_model_and_max_tokens()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_sends_full_history()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_sends_full_history()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_skips_malformed_chunks()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_skips_malformed_chunks()_1]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_yields_sentences()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_yields_sentences()_1]] - `calls` [EXTRACTED]
-- [[test_voice_gateway.py]] - `imports` [EXTRACTED]
-- [[test_voice_gateway.py_1]] - `references` [EXTRACTED]
+- [[test_voice_gateway.py]] - `references` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

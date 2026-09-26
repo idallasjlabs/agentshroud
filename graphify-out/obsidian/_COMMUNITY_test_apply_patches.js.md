@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # test_apply_patches.js
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
-- [[assert()_1]] - code - tests/startup_smoke/test_apply_patches.js
-- [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[fs_5]] - code - tests/startup_smoke/test_apply_patches.js
-- [[os_1]] - code - tests/startup_smoke/test_apply_patches.js
-- [[path_5]] - code - tests/startup_smoke/test_apply_patches.js
-- [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
-- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[Description_3]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Related Notes_31]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Security_8]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Set In_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Value_2]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 
 ## Live Query (requires Dataview plugin)
 

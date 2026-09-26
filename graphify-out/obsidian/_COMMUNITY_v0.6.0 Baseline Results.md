@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.22
 members: 13
 ---
 
 # v0.6.0 Baseline Results
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[AgentShroud Red Team Assessment — Live Results]] - document - docs/planning/redteam/live-assessment-results.md
-- [[CIS Docker Benchmark 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Container Security Profile 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Deep Integration Test 3637 (97%)]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Expected v0.7.0 Results]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Identified Gaps (Steve Hay's Assessment)]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Module Status 3333 Active]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Sprint Status]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Test Environment]] - document - docs/planning/redteam/live-assessment-results.md
-- [[Unit Tests 1953 passed, 0 failures]] - document - docs/planning/redteam/live-assessment-results.md
-- [[live-assessment-results]] - document - docs/planning/redteam/live-assessment-results.md
-- [[v0.6.0 Baseline Results]] - document - docs/planning/redteam/live-assessment-results.md
-- [[v0.7.0 Remediation (In Progress)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[._handle_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[.datagram_received()]] - code - gateway/proxy/dns_forwarder.py
+- [[.test_malformed_pointer_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_too_short()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_truncated_after_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_valid_a_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_valid_aaaa_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_zero_qdcount()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Extract domain name and query type from a DNS query packet.      Returns (domai]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Handle incoming DNS query.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Process a single DNS query log, forward, respond.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[TestParseQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[parse_query()]] - code - gateway/proxy/dns_forwarder.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,17 @@ members: 13
 TABLE source_file, type FROM #community/v060_Baseline_Results
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_canvas_proxy_app()]]
+- 3 edges to [[_COMMUNITY_Seccomp Profiles]]
+- 2 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
+- 1 edge to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
+
+## Top bridge nodes
+- [[TestParseQuery]] - degree 9, connects to 3 communities
+- [[parse_query()]] - degree 11, connects to 2 communities
+- [[._handle_query()]] - degree 5, connects to 2 communities
+- [[.datagram_received()]] - degree 3, connects to 1 community
+- [[.test_valid_a_query()]] - degree 3, connects to 1 community

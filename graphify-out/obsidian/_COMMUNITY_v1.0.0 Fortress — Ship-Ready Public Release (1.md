@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.19
 members: 14
 ---
 
 # v1.0.0 "Fortress" — Ship-Ready Public Release (1
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.19 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[_python()]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_2]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_3]] - code - scripts/validate-skills-manifest.sh
+- [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
+- [[check()_3]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
+- [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
+- [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh
+- [[test-skills-sync.sh]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[test-skills-sync.sh script]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[validate-skills-manifest.sh]] - code - scripts/validate-skills-manifest.sh
+- [[validate-skills-manifest.sh script]] - code - scripts/validate-skills-manifest.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 
 ## Top bridge nodes
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community
+- [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

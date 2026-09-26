@@ -1,88 +1,82 @@
 ---
 type: community
 cohesion: 0.05
-members: 73
+members: 67
 ---
 
 # test_daily_cve_report.py
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 73 nodes
+**Members:** 67 nodes
 
 ## Members
-- [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_gives_up_and_marks_sent_after_max_retries()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_ingest_records_even_when_disk_write_fails()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_per_agent_check_error_is_isolated_not_fatal()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_retries_on_failed_send_before_giving_up()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_file_missing()_5]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_file_missing()_3]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_ingested_yesterday()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_sent_yesterday()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_summary_without_token()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_true_when_ingested_today()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_true_when_sent_today()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_runs_ingest_records_then_skips_next_iteration()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_sends_telegram_on_success()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_short_text_passes_through_unchanged()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_ingest_when_marked_done_after_wake()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_successful_send_marks_sent_immediately_no_retry()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_trivy_error_still_sends_error_report()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_truncates_over_length_text()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_undelivered_new_advisory_retries_not_marked_ingested()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_undelivered_new_cves_retries_not_marked_checked()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_zero_new_cves_marks_checked_immediately()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[A failed send retries (bounded) within the same day, not next-day.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[A raised per-agent check error is ISOLATED — the ingest still completes.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[After the retry cap, the day IS marked done so the loop moves on.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Any_36]] - code
-- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
-- [[Check if a Trivy report was already sent today (disk-based, secondary to _sent_d]] - rationale - gateway/security/daily_cve_report.py
-- [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - rationale - gateway/security/daily_cve_report.py
-- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - rationale - gateway/security/daily_cve_report.py
-- [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
-- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown).      A]] - rationale - gateway/security/agent_cve_registry.py
-- [[Return the list of registered agent bot IDs with CVE coverage.      Returns]] - rationale - gateway/security/agent_cve_registry.py
-- [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
-- [[Run a Trivy scan, format the report, and send via Telegram.      Args         b]] - rationale - gateway/security/daily_cve_report.py
-- [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - rationale - gateway/security/daily_cve_report.py
-- [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - rationale - gateway/security/trivy_report.py
-- [[Send a message via Telegram Bot API. Returns True on success.      ``text`` is d]] - rationale - gateway/security/daily_cve_report.py
-- [[TestAlreadyIngestedGhsaToday_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestAlreadySentToday_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestCveReportSchedulerRetry_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestGhsaIngestScheduler_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestGhsaIngestSchedulerRetry_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReport_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestSendTelegramTruncation_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestUpstreamCveCheckSchedulerRetry_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[_AGENT_CVE_SOURCES]] - code - gateway/security/agent_cve_registry.py
-- [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
-- [[_already_ingested_ghsa_today()]] - code - gateway/security/daily_cve_report.py
-- [[_already_sent_today()]] - code - gateway/security/daily_cve_report.py
-- [[_make_error_report()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[_running_image()]] - code - gateway/security/daily_cve_report.py
-- [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
-- [[agent_cve_registry.py]] - code - gateway/security/agent_cve_registry.py
-- [[cve_report_scheduler()]] - code - gateway/security/daily_cve_report.py
-- [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
-- [[datetime]] - code
-- [[generate_summary()_3]] - code - gateway/security/trivy_report.py
-- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
-- [[get_agent_ghsa_repo()]] - code - gateway/security/agent_cve_registry.py
-- [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
-- [[list_cve_agents()]] - code - gateway/security/agent_cve_registry.py
-- [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
-- [[run_and_send_cve_report()]] - code - gateway/security/daily_cve_report.py
-- [[run_trivy_scan()_1]] - code - gateway/security/trivy_report.py
-- [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
-- [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
-- [[save_report()_1]] - code - gateway/security/trivy_report.py
-- [[test_daily_cve_report.py_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[trivy_report.py_2]] - code - gateway/security/trivy_report.py
-- [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[.__init__()_160]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_14]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_13]] - code - gateway/tests/test_http_proxy.py
+- [[.drain()_1]] - code - gateway/tests/test_http_proxy.py
+- [[.drain()]] - code - gateway/tests/test_http_proxy.py
+- [[.get_extra_info()]] - code - gateway/tests/test_http_proxy.py
+- [[.get_stats()_3]] - code - gateway/proxy/http_proxy.py
+- [[.start()]] - code - gateway/proxy/http_proxy.py
+- [[.stop()_1]] - code - gateway/proxy/http_proxy.py
+- [[.write()_1]] - code - gateway/tests/test_http_proxy.py
+- [[.write()]] - code - gateway/tests/test_http_proxy.py
+- [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
+- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[HTTPConnectProxy]] - code - gateway/proxy/http_proxy.py
+- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
+- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
+- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
+- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
+- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[_DummyTargetWriter]] - code - gateway/tests/test_http_proxy.py
+- [[_MockWriter]] - code - gateway/tests/test_http_proxy.py
+- [[_make_stream()]] - code - gateway/tests/test_http_proxy.py
+- [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
+- [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
+- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
+- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
+- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
+- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
+- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
+- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
+- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
+- [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
+- [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -92,31 +86,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY__sleep()]]
-- 12 edges to [[_COMMUNITY_gateway.security.daily_cve_report]]
-- 10 edges to [[_COMMUNITY_format_cve_report()]]
-- 7 edges to [[_COMMUNITY_check_upstream_cves()]]
-- 6 edges to [[_COMMUNITY__build_image_targets()]]
-- 5 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 5 edges to [[_COMMUNITY_.test_gives_up_and_marks_sent_after_max_retries(]]
-- 4 edges to [[_COMMUNITY_format_upstream_cve_alert()]]
-- 1 edge to [[_COMMUNITY_patch]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_server.py]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud Changelog]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
-- 1 edge to [[_COMMUNITY__build_image_targets]]
-- 1 edge to [[_COMMUNITY_TestAlreadyCheckedUpstreamToday]]
-- 1 edge to [[_COMMUNITY_TestPerAgentUpstreamChecks]]
-- 1 edge to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
-- 1 edge to [[_COMMUNITY_TestRunningImageResolution]]
-- 1 edge to [[_COMMUNITY_TestRunUpstreamCveCheck]]
-- 1 edge to [[_COMMUNITY_TestTrivySkipDirs]]
+- 40 edges to [[_COMMUNITY_SessionManager]]
+- 22 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 6 edges to [[_COMMUNITY_4. Compliance & Standards Alignment]]
+- 4 edges to [[_COMMUNITY_Usage]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Linux (x86_64  aarch64]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
 
 ## Top bridge nodes
-- [[test_daily_cve_report.py_1]] - degree 38, connects to 11 communities
-- [[datetime]] - degree 33, connects to 6 communities
-- [[daily_cve_report.py]] - degree 24, connects to 4 communities
-- [[run_and_send_cve_report()]] - degree 15, connects to 3 communities
-- [[run_upstream_cve_check()]] - degree 9, connects to 3 communities
+- [[HTTPConnectProxy]] - degree 93, connects to 12 communities
+- [[test_http_proxy.py]] - degree 39, connects to 3 communities
+- [[_MockWriter]] - degree 21, connects to 2 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 2 communities
+- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 1 community

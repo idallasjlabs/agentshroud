@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
-- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
-- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[.test_critical_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_execute_action_medium_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_high_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_read_action_low_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community
+- [[TestAnalyzeRequestForRBAC]] - degree 13, connects to 4 communities

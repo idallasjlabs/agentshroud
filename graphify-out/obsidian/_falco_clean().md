@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "A2AMethod"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/A2AMethod
 ---
 
 # _falco_clean()
@@ -17,7 +17,7 @@ tags:
 - [[.test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
 - [[.test_three_when_both_running()]] - `calls` [EXTRACTED]
 - [[.test_two_when_falco_running()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

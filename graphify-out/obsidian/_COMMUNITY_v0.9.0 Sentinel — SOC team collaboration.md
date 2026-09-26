@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — SOC team collaboration]] - document - CHANGELOG.md
+- [[browser-fetch package.json]] - document - docker/config/hermes/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

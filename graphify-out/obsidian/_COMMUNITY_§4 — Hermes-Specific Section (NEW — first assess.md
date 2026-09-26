@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.53
+members: 6
 ---
 
 # §4 — Hermes-Specific Section (NEW — first assess
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.53 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[4.1 Per-bot egress allowlist completeness]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.2 Per-bot trust seeding]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.3 Per-bot CVE triage cron health]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.4 Hermes SOUL.md information disclosure posture]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.5 Hermes dashboard TCP forwarder — binding address]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[._state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_findings_and_denials_penalised()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_heavy_findings_clamp_to_red_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stats_exception_defaults_to_zero_denials()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unknown_bot_clean_score()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeBotScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessme]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
 
 ## Top bridge nodes
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - degree 7, connects to 1 community
+- [[TestComputeBotScorecard]] - degree 6, connects to 1 community

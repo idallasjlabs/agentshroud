@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "_make_cve()"
+community: "apply-patches.js"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/apply-patchesjs
 ---
 
 # _get_mod()
@@ -20,4 +20,4 @@ tags:
 - [[Return the generate-cve-page module (already loaded above).]] - `rationale_for` [EXTRACTED]
 - [[test_generate_cve_page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

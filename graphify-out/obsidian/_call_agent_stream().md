@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "_call_agent_stream()"
+community: "test_hermes_model_resolver.py"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/test_hermes_model_resolverpy
 ---
 
 # _call_agent_stream()
 
 ## Connections
-- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's POST…]] - `rationale_for` [EXTRACTED]
+- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS]] - `rationale_for` [EXTRACTED]
 - [[_record_turn_latency()]] - `calls` [EXTRACTED]
 - [[_voice_forward_metadata()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
@@ -21,22 +21,14 @@ tags:
 - [[test_call_agent_records_latency_on_read_timeout()]] - `calls` [EXTRACTED]
 - [[test_call_agent_records_latency_on_success()]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_empty_stream_yields_nothing()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_empty_stream_yields_nothing()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_generic_http_error_falls_back()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_generic_http_error_falls_back()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_non_400_http_error_falls_back()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_non_400_http_error_falls_back()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_skips_blank_and_comment_lines()_1]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_yields_sentences_in_order()_1]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
-- [[test_voice_gateway.py_1]] - `imports` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

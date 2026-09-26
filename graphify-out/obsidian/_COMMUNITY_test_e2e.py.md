@@ -1,42 +1,44 @@
 ---
 type: community
 cohesion: 0.07
-members: 27
+members: 29
 ---
 
 # test_e2e.py
 
 **Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[.test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
-- [[AsyncClient]] - code - gateway/proxy/collaborator_greeter.py
-- [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - rationale - gateway/tests/test_e2e.py
-- [[Forward without auth returns 401403.]] - rationale - gateway/tests/test_e2e.py
-- [[Fully initialized async client with lifespan.]] - rationale - gateway/tests/test_e2e.py
-- [[GET dashboard with valid cookie auth returns HTML.]] - rationale - gateway/tests/test_e2e.py
-- [[GET dashboard without auth returns 403.]] - rationale - gateway/tests/test_e2e.py
-- [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
-- [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
-- [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
-- [[client()_5]] - code - gateway/tests/test_dashboard.py
-- [[client()_6]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[client()_7]] - code - gateway/tests/test_e2e.py
-- [[client()_8]] - code - gateway/tests/test_mcp_proxy_endpoint.py
-- [[client()_9]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[client()_10]] - code - gateway/tests/test_security_fixes.py
-- [[client()_11]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[client()_12]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_e2e.py
-- [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
-- [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
-- [[test_e2e.py]] - code - gateway/tests/test_e2e.py
-- [[test_forward_pii_sanitized_and_ledger_entry()]] - code - gateway/tests/test_e2e.py
-- [[test_forward_without_auth_rejected()]] - code - gateway/tests/test_e2e.py
-- [[test_ssh_submit_queues_approval()]] - code - gateway/tests/test_e2e.py
-- [[test_status_endpoint()]] - code - gateway/tests/test_e2e.py
+- [[1. Ingress Controller]] - document - docs/security/security-architecture.md
+- [[10. AppArmorSELinux Policies]] - document - docs/security/security-architecture.md
+- [[11. Linux Capability Dropping]] - document - docs/security/security-architecture.md
+- [[12. User Namespace Isolation]] - document - docs/security/security-architecture.md
+- [[13. Container Runtime Security]] - document - docs/security/security-architecture.md
+- [[14. Process Monitor]] - document - docs/security/security-architecture.md
+- [[15. File System Guard]] - document - docs/security/security-architecture.md
+- [[16. Resource Guard]] - document - docs/security/security-architecture.md
+- [[17. API Key Manager]] - document - docs/security/security-architecture.md
+- [[18. Certificate Authority]] - document - docs/security/security-architecture.md
+- [[19. Session Manager]] - document - docs/security/security-architecture.md
+- [[2. DDoS Protection]] - document - docs/security/security-architecture.md
+- [[20. Role-Based Access Control (RBAC)]] - document - docs/security/security-architecture.md
+- [[21. Encryption Manager]] - document - docs/security/security-architecture.md
+- [[22. Data Loss Prevention (DLP)]] - document - docs/security/security-architecture.md
+- [[23. Backup Integrity]] - document - docs/security/security-architecture.md
+- [[24. Audit Trail Manager]] - document - docs/security/security-architecture.md
+- [[25. Prompt Guard System]] - document - docs/security/security-architecture.md
+- [[26. MCP Inspector]] - document - docs/security/security-architecture.md
+- [[3. Web Application Firewall (WAF)]] - document - docs/security/security-architecture.md
+- [[4. Geo-Blocking]] - document - docs/security/security-architecture.md
+- [[9. seccomp Profiles]] - document - docs/security/security-architecture.md
+- [[Layer 1 Perimeter Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 3 Operating System Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 4 Platform Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 5 Identity & Access Management (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 6 Data Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 7 Application Security (2 Modules)]] - document - docs/security/security-architecture.md
+- [[Security Module Inventory]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,21 +48,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_dashboard.py]]
-- 2 edges to [[_COMMUNITY_make_event()]]
-- 2 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_CollaboratorGreeter]]
-- 1 edge to [[_COMMUNITY_TrustLevel]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 1 edge to [[_COMMUNITY_TestDashboardCookieAuth]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
 
 ## Top bridge nodes
-- [[test_e2e.py]] - degree 13, connects to 5 communities
-- [[AsyncClient]] - degree 10, connects to 1 community
-- [[client()_5]] - degree 2, connects to 1 community
-- [[client()_6]] - degree 2, connects to 1 community
-- [[test_dashboard_serves_html()]] - degree 2, connects to 1 community
+- [[Security Module Inventory]] - degree 8, connects to 2 communities

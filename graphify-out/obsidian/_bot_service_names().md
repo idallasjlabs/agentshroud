@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Return real container names for all configured bots (e.g.     'agentshroud-open]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
-- [[get_logs()]] - `calls` [EXTRACTED]
+- [[get_logs()_1]] - `calls` [EXTRACTED]
 - [[killswitch()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_bot_service_names_uses_resolved_container_name()]] - `calls` [EXTRACTED]

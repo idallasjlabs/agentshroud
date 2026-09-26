@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Function Details_37]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Purpose_168]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Related_43]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_security_options(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_2]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_1]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[warn_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Immediate (Day 1)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Month 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Week 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎯 Marketing Checklist]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,12 @@ members: 14
 TABLE source_file, type FROM #community/securitypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestLoadFromText]]
+- 1 edge to [[_COMMUNITY_8D Root Cause Analysis Skill]]
+- 1 edge to [[_COMMUNITY_Dependency Graph]]
+- 1 edge to [[_COMMUNITY_Hermes Service]]
+
+## Top bridge nodes
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "Community 39"
+community: "GitGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/GitGuard
 ---
 
 # __init__.py
@@ -15,7 +15,6 @@ tags:
 - [[FindingType]] - `imports` [EXTRACTED]
 - [[InspectionFinding]] - `imports` [EXTRACTED]
 - [[InspectionResult]] - `imports` [EXTRACTED]
-- [[LLMProxy]] - `conceptually_related_to` [INFERRED]
 - [[MCPAuditEntry]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector]] - `imports` [EXTRACTED]
@@ -37,4 +36,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/GitGuard

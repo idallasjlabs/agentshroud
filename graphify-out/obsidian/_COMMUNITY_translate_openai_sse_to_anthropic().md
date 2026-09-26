@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.60
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # translate_openai_sse_to_anthropic()
 
-**Cohesion:** 0.60 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi]] - rationale - gateway/proxy/anthropic_openai_sse_translator.py
-- [[_random_msg_id()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
-- [[_sse()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
-- [[anthropic_openai_sse_translator.py]] - code - gateway/proxy/anthropic_openai_sse_translator.py
-- [[translate_openai_sse_to_anthropic()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
+- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Documentation_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages]]
+- 1 edge to [[_COMMUNITY_Multi-Agent Role Matrix]]
 
 ## Top bridge nodes
-- [[translate_openai_sse_to_anthropic()]] - degree 7, connects to 2 communities
+- [[Resources]] - degree 4, connects to 1 community

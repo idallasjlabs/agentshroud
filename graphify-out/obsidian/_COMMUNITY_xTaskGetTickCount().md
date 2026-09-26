@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # xTaskGetTickCount()
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[TickType_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
-- [[test_wakeword_statestubsfreertosFreeRTOS.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
-- [[xTaskGetTickCount()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[Daily Component Health Digest_1]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Trivy (vulnerability scanner)]] - concept - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
 
 ## Live Query (requires Dataview plugin)
 

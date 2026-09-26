@@ -10,43 +10,43 @@ members: 37
 **Members:** 37 nodes
 
 ## Members
-- [[AgentShroud Tagline]] - concept - BRAND.md
-- [[AgentShroud Taglines List]] - document - branding/taglines.json
-- [[_hermes_cron_ids_names()]] - code - docker/bots/hermes/init-config.sh
-- [[_seed_cron()]] - code - docker/bots/hermes/init-config.sh
-- [[_write_soul()]] - code - docker/bots/hermes/init-config.sh
-- [[check_1]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[check_2]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[check_3]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[check()_5]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[check()_6]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[check()_7]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
-- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
-- [[extract_default]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[has]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[has_in_section]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[init-config.sh (Hermes)]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh script]] - code - docker/bots/hermes/init-config.sh
-- [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[run_test()]] - code - scripts/smoke.sh
-- [[smoke.sh]] - code - scripts/smoke.sh
-- [[smoke.sh script]] - code - scripts/smoke.sh
-- [[smoke.sh script_1]] - code - scripts/smoke.sh
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_model_provider_consistency.sh script]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[test_openclaw_readiness_retry.sh]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[test_openclaw_readiness_retry.sh script]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[test_setup_secrets.sh]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[test_setup_secrets.sh script]] - code - tests/startup_smoke/test_setup_secrets.sh
+- [[AI Security Standards Watch Cron Prompt]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
+- [[AI Security Standards Watch Job (OWASP  NIST AI RMF  MITRE ATLAS)]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
+- [[AgentShroud Brand Color Palette]] - concept - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[AgentShroud Branded HTML Report Template]] - document - docker/config/openclaw/cron/templates/report-template.html
+- [[AgentShroud Weekly Summary (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt
+- [[Agentic AI Threat Intelligence Cron Prompt]] - document - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[Brand colors reference]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Canonical storage]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Collaborator Daily Digest Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt
+- [[Collaborator Report (Evening) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Collaborator Report (Morning) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[Collaborator Report - Evening Job]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Collaborator Report Timeout Bump to 1800s]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Contributor Log Read Path (gateway-data primary, memory fallback)]] - concept - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[CronSessionLifecycleClaimError (stale isolated-session claim leases)]] - concept - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Dual-Surface Report Delivery (Email HTML  Telegram Markdown)]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[HTML version (for email)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[How to build it]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Markdown version (for Telegram + archival)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Multi-User Support with Role-Based Permissions]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[OpenClaw Live Cron Job Index (11 jobs)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[OpenClaw Live Cron Store (SQLite on agentshroud-config volume)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - concept - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Quick checklist]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Report Delivery Format Instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Report Template Placeholder Contract ({{REPORT_TITLE}}{{REPORT_TYPE}}{{REPORT_DATE}}{{REPORT_CONTENT}})]] - concept - docker/config/openclaw/cron/templates/report-template.html
+- [[Rules_18]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Scheduled Actions & Automation (in-container cron)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Seed Job AgentShroud Weekly Summary]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Sending via email]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Session Cleanup Reaper (30-min openclaw sessions cleanup --fix-missing)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Source Verification Policy]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Source Verification Policy (MANDATORY)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Stdin-Pipe File Deployment Pattern (never docker cp)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Telegram delivery rules (from AGENTS.md)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Verification checklist (run before saving any report)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[html-report-instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,19 +56,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_hermes_cron_seed.py]]
-- 1 edge to [[_COMMUNITY_sunday_run_scan_gate]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_render_md_email.py]]
-- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_CollaboratorGreeter]]
-- 1 edge to [[_COMMUNITY_post-deploy-check.sh]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
+- 5 edges to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 1 edge to [[_COMMUNITY_GroupRegistry]]
 
 ## Top bridge nodes
-- [[test_openclaw_photo.sh]] - degree 9, connects to 3 communities
-- [[init-config.sh (Hermes)]] - degree 8, connects to 3 communities
-- [[run_test()]] - degree 9, connects to 2 communities
-- [[AgentShroud Tagline]] - degree 2, connects to 1 community
-- [[jobs.yaml (Hermes cron)]] - degree 2, connects to 1 community
+- [[Report Delivery Format Instructions]] - degree 16, connects to 1 community
+- [[OpenClaw Live Cron Job Index (11 jobs)]] - degree 10, connects to 1 community
+- [[Seed Job AgentShroud Weekly Summary]] - degree 2, connects to 1 community
+- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - degree 2, connects to 1 community

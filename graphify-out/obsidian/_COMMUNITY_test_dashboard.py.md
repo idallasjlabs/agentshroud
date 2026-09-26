@@ -1,93 +1,90 @@
 ---
 type: community
-cohesion: 0.04
-members: 78
+cohesion: 0.05
+members: 75
 ---
 
 # test_dashboard.py
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 78 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 75 nodes
 
 ## Members
-- [[.test_scoped_ws_token_is_single_use()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[AuthRequired_3]] - code - gateway/ingest_api/routes/dashboard.py
-- [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
-- [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
-- [[Fallback activity entries when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Fallback activity summary when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[GET dashboard includes Content-Security-Policy header]] - rationale - gateway/tests/test_dashboard.py
-- [[GET dashboard without auth returns 403]] - rationale - gateway/tests/test_dashboard.py
-- [[GET dashboardstats returns JSON stats]] - rationale - gateway/tests/test_dashboard.py
-- [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
-- [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Path_42]] - code - gateway/ingest_api/routes/dashboard.py
-- [[Request_8]] - code - gateway/ingest_api/routes/dashboard.py
-- [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Return a short-lived WS-only auth token for cookie-authenticated sessions.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Scoped WS token should be consumed after first use (single-use)]] - rationale - gateway/tests/test_security_fixes.py
-- [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_dashboard.py
-- [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[WS wsactivity accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should accept scoped ws_ token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket_7]] - code - gateway/ingest_api/routes/dashboard.py
-- [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsegress connects and emits egress snapshot.]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsegress should forward auth_ events for SOC visibility.]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsegress should forward privacy_ events.]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket wsegress should forward scanner_result events.]] - rationale - gateway/tests/test_dashboard.py
-- [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[_build_activity_entries_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_build_activity_summary_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_build_egress_live_snapshot()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/dashboard.py
-- [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
-- [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[get_collaborators()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[serve_dashboard()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[soc_report()]] - code - gateway/ingest_api/main.py
-- [[sync_client()]] - code - gateway/tests/test_dashboard.py
-- [[test_build_activity_entries_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
-- [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - code - gateway/tests/test_dashboard.py
-- [[test_build_activity_summary_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
-- [[test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()]] - code - gateway/tests/test_dashboard.py
-- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - code - gateway/tests/test_dashboard.py
-- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard.py]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_has_csp_header()]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_requires_auth()_1]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_stats_endpoint()]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_stats_requires_auth()]] - code - gateway/tests/test_dashboard.py
-- [[test_dashboard_xss_prevention()]] - code - gateway/tests/test_dashboard.py
-- [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - code - gateway/tests/test_dashboard.py
-- [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_activity_connects()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_activity_receives_events()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_activity_requires_auth()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_egress_connects_and_snapshot()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_egress_receives_auth_event()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_egress_receives_privacy_event()]] - code - gateway/tests/test_dashboard.py
-- [[test_ws_egress_receives_scanner_event()]] - code - gateway/tests/test_dashboard.py
+- [[.__init__()_116]] - code - gateway/security/session_security.py
+- [[._fingerprint()]] - code - gateway/security/session_security.py
+- [[.cleanup_expired()_3]] - code - gateway/security/session_security.py
+- [[.create_session()]] - code - gateway/security/session_security.py
+- [[.destroy_session()]] - code - gateway/security/session_security.py
+- [[.generate_instruction_nonce()]] - code - gateway/security/session_security.py
+- [[.get_document_tag()]] - code - gateway/security/metadata_guard.py
+- [[.guard()_1]] - code - gateway/tests/test_metadata_guard.py
+- [[.manager()_2]] - code - gateway/tests/test_session_security.py
+- [[.register_event_source()]] - code - gateway/security/session_security.py
+- [[.rotate_session()]] - code - gateway/security/session_security.py
+- [[.tag_document()]] - code - gateway/security/metadata_guard.py
+- [[.test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
+- [[.test_create_session()]] - code - gateway/tests/test_session_security.py
+- [[.test_destroy_session()]] - code - gateway/tests/test_session_security.py
+- [[.test_different_ips_not_rate_limited()]] - code - gateway/tests/test_session_security.py
+- [[.test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_document_tag_untrusted_source()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_get_document_tag_unknown_hash_returns_none()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_first_use_passes()]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_generation_unique()]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_replay_blocked()]] - code - gateway/tests/test_session_security.py
+- [[.test_rate_limit_exceeded()_1]] - code - gateway/tests/test_session_security.py
+- [[.test_rate_limit_resets_after_window()]] - code - gateway/tests/test_session_security.py
+- [[.test_rotate_session()]] - code - gateway/tests/test_session_security.py
+- [[.test_rotated_session_valid()]] - code - gateway/tests/test_session_security.py
+- [[.test_session_bound_to_identity()]] - code - gateway/tests/test_session_security.py
+- [[.test_session_id_is_cryptographically_random()]] - code - gateway/tests/test_session_security.py
+- [[.test_tag_document_different_content_different_hash()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
+- [[.test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
+- [[.test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.validate_event()]] - code - gateway/security/session_security.py
+- [[.validate_nonce()]] - code - gateway/security/session_security.py
+- [[.validate_session()]] - code - gateway/security/session_security.py
+- [[A freshly generated nonce validates on first use.]] - rationale - gateway/tests/test_session_security.py
+- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[Any_60]] - code - gateway/security/session_security.py
+- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - paper - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Create and store a provenance tag for a document.]] - rationale - gateway/security/metadata_guard.py
+- [[DocumentTag]] - code - gateway/security/metadata_guard.py
+- [[Each call generates a distinct nonce.]] - rationale - gateway/tests/test_session_security.py
+- [[EventInjectionError]] - code - gateway/security/session_security.py
+- [[Generate a single-use, time-bound nonce for an instruction.          Format ``]] - rationale - gateway/security/session_security.py
+- [[Look up a document tag by its SHA-256 content hash.]] - rationale - gateway/security/metadata_guard.py
+- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - concept - gateway/tests/test_prompt_guard.py
+- [[Provenance record for a document ingested into the agent context.]] - rationale - gateway/security/metadata_guard.py
+- [[RateLimitExceeded]] - code - gateway/security/session_security.py
+- [[Replaying the same nonce is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[Return True if the nonce is valid (not replayed, within 5-min window).]] - rationale - gateway/security/session_security.py
+- [[SessionBindingError]] - code - gateway/security/session_security.py
+- [[SessionError]] - code - gateway/security/session_security.py
+- [[SessionExpired]] - code - gateway/security/session_security.py
+- [[SessionManager]] - code - gateway/security/session_security.py
+- [[TestDocumentTagging]] - code - gateway/tests/test_metadata_guard.py
+- [[TestEventInjection]] - code - gateway/tests/test_session_security.py
+- [[TestInstructionNonce]] - code - gateway/tests/test_session_security.py
+- [[TestRateLimiting_3]] - code - gateway/tests/test_session_security.py
+- [[TestSessionCleanup]] - code - gateway/tests/test_session_security.py
+- [[TestSessionCreation]] - code - gateway/tests/test_session_security.py
+- [[TestSessionRotation]] - code - gateway/tests/test_session_security.py
+- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[Wang et al. 2026 — Event injection attacks (arXiv2602.08412)]] - paper - gateway/security/session_security.py
+- [[manager()_3]] - code - gateway/tests/test_session_security.py
+- [[metadata_guard.py]] - code - gateway/security/metadata_guard.py
+- [[session_security.py]] - code - gateway/security/session_security.py
+- [[test_metadata_guard.py]] - code - gateway/tests/test_metadata_guard.py
+- [[test_session_security.py]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -97,18 +94,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_make_event()]]
-- 8 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 5 edges to [[_COMMUNITY_SSHProxy]]
-- 5 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_test_e2e.py]]
-- 2 edges to [[_COMMUNITY_RateLimiter]]
-- 2 edges to [[_COMMUNITY_approval.py]]
-- 2 edges to [[_COMMUNITY_TestWebSocketHandshakeAuth]]
+- 11 edges to [[_COMMUNITY_TrustManager]]
+- 9 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 2 edges to [[_COMMUNITY_test_filter_xml_blocks.py]]
+- 2 edges to [[_COMMUNITY_System Instructions Credential Security (Ultra-]]
+- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
-- [[dashboard.py]] - degree 23, connects to 6 communities
-- [[test_dashboard.py]] - degree 31, connects to 2 communities
-- [[_build_egress_live_snapshot()]] - degree 10, connects to 2 communities
-- [[soc_report()]] - degree 9, connects to 2 communities
-- [[_create_ws_token()]] - degree 15, connects to 1 community
+- [[session_security.py]] - degree 14, connects to 5 communities
+- [[SessionManager]] - degree 40, connects to 2 communities
+- [[test_metadata_guard.py]] - degree 5, connects to 2 communities
+- [[SessionError]] - degree 16, connects to 1 community
+- [[TestDocumentTagging]] - degree 9, connects to 1 community

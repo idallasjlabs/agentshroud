@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # _adf_doc()
 
 ## Connections
-- [[build_comment_payload()_1]] - `calls` [EXTRACTED]
+- [[build_comment_payload()_2]] - `calls` [EXTRACTED]
 - [[build_create_issue_payload()_1]] - `calls` [EXTRACTED]
-- [[hermesworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

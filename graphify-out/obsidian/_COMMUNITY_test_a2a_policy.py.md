@@ -1,72 +1,72 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 57
 ---
 
 # test_a2a_policy.py
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 57 nodes
 
 ## Members
-- [[.__init__()_180]] - code - gateway/tests/test_a2a_policy.py
-- [[.submit_tool_request()_4]] - code - gateway/tests/test_a2a_policy.py
-- [[.wait_for_decision()_4]] - code - gateway/tests/test_a2a_policy.py
-- [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_policy.py
-- [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
-- [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
-- [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
-- [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
-- [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
-- [[_base_config()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[engine()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[is_safe_a2a_callback_url()]] - code - gateway/security/a2a_policy.py
-- [[test_a2a_policy.py]] - code - gateway/tests/test_a2a_policy.py
-- [[test_allowlisted_peer_low_risk_method_is_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_bare_dot_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_hostname_resolving_to_a_private_ip_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_ipv4_mapped_ipv6_loopback_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_legitimate_public_urls_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_malformed_url_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_out_of_range_decimal_literal_is_not_treated_as_a_valid_ip()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_rejects_non_http_schemes()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_scheme_only_no_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_unresolvable_hostname_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_default_action_allow_lets_unlisted_peers_through_to_risk_tier_check()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_deny_wins_over_allow_for_a_peer_on_both_lists()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_denylisted_peer_is_denied_even_if_method_safe()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_with_no_approval_queue_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_low_risk_method_bypasses_approval_queue_entirely()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_evaluate_accepts_a_plain_string_method_not_just_the_enum()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_high_risk_methods_require_approval()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_low_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_medium_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_access_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_cancel_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_subscribe_to_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_set_push_notification_config_with_safe_callback_still_requires_approval()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_set_push_notification_config_with_unsafe_callback_is_denied_and_severe()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_creator_can_access_their_own_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_unknown_peer_is_denied_by_default()]] - code - gateway/tests/test_a2a_policy.py
+- [[A final delta with no terminal punctuation is flushed once the SSE     stream en]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A malformedunexpected-shape SSE chunk is skipped, not fatal — a good     senten]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta]] - rationale - voice_gateway/server.py
+- [[Build OpenAI-shaped streaming SSE lines for a sequence of content deltas.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build a system message with the current datetime for voice context.]] - rationale - voice_gateway/server.py
+- [[Build the per-device OTA token allowlist (SCRUM-58).      Owner-gated rollout o]] - rationale - voice_gateway/server.py
+- [[Constant-time allowlist check for an OTA ``token=`` value.      Returns True wh]] - rationale - voice_gateway/server.py
+- [[FastAPI_3]] - code - voice_gateway/server.py
+- [[Parse a spoken usetellaskswitch to modelagent command.      Returns (k]] - rationale - voice_gateway/server.py
+- [[Request_9]] - code - voice_gateway/server.py
+- [[Request body must carry the configured model, max_tokens=150, and     streamtru]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Response_1]] - code - voice_gateway/server.py
+- [[Return the requested volume (0-100, clamped) for a spoken     set the volume]] - rationale - voice_gateway/server.py
+- [[Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.]] - rationale - voice_gateway/server.py
+- [[Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect]] - rationale - voice_gateway/server.py
+- [[Spoken answer for a volume READ query the tracked level, or a     calibration h]] - rationale - voice_gateway/server.py
+- [[Stream conversation history through the gateway's OpenAI-compat     endpoint, yi]] - rationale - voice_gateway/server.py
+- [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
+- [[WebSocket_8]] - code - voice_gateway/server.py
+- [[_State]] - code - voice_gateway/server.py
+- [[__init__.py_17]] - code - voice_gateway/__init__.py
+- [[__main__.py]] - code - voice_gateway/__main__.py
+- [[_answer_volume_query()]] - code - voice_gateway/server.py
+- [[_call_llm_stream posts to v1chatcompletions with streamtrue and     yields e]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_llm_stream()]] - code - voice_gateway/server.py
+- [[_effective_voice_model()]] - code - voice_gateway/server.py
+- [[_get_firmware_etag()]] - code - voice_gateway/server.py
+- [[_is_volume_query()]] - code - voice_gateway/server.py
+- [[_keepalive()]] - code - voice_gateway/server.py
+- [[_lifespan()]] - code - voice_gateway/server.py
+- [[_load_ota_tokens()]] - code - voice_gateway/server.py
+- [[_openai_delta_lines()]] - code - gateway/tests/test_voice_gateway.py
+- [[_ota_token_ok()]] - code - voice_gateway/server.py
+- [[_parse_model_switch_command()]] - code - voice_gateway/server.py
+- [[_parse_volume_command()]] - code - voice_gateway/server.py
+- [[_send_state()]] - code - voice_gateway/server.py
+- [[_voice_system_message()]] - code - voice_gateway/server.py
+- [[_warm()]] - code - voice_gateway/server.py
+- [[cmd_persist()]] - code - scripts/tailscale-serve.sh
+- [[cmd_start()]] - code - scripts/tailscale-serve.sh
+- [[cmd_status()_1]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop()]] - code - scripts/tailscale-serve.sh
+- [[firmware_bin()]] - code - voice_gateway/server.py
+- [[health()]] - code - voice_gateway/server.py
+- [[omlx-keepwarm.sh]] - code - scripts/omlx-keepwarm.sh
+- [[omlx-keepwarm.sh script]] - code - scripts/omlx-keepwarm.sh
+- [[server.py]] - code - voice_gateway/server.py
+- [[switch_model.sh main flow]] - code - scripts/switch_model.sh
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_sends_full_history()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_skips_malformed_chunks()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_yields_sentences()]] - code - gateway/tests/test_voice_gateway.py
+- [[voice_endpoint()]] - code - voice_gateway/server.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -76,12 +76,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_A2AMethod]]
-- 10 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 8 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 5 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Dete]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
-- [[A2APolicyEngine_3]] - degree 31, connects to 2 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 2 communities
-- [[A2AMethod_1]] - degree 8, connects to 2 communities
-- [[is_safe_a2a_callback_url()]] - degree 16, connects to 1 community
+- [[server.py]] - degree 29, connects to 5 communities
+- [[voice_endpoint()]] - degree 13, connects to 1 community
+- [[_call_llm_stream()]] - degree 11, connects to 1 community
+- [[_openai_delta_lines()]] - degree 5, connects to 1 community
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - degree 4, connects to 1 community

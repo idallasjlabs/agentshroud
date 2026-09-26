@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h]] - code - firmware/voice-terminal/main/wakeword.h
+- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 

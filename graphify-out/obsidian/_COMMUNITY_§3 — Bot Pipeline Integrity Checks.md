@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.43
+members: 7
 ---
 
 # §3 — Bot Pipeline Integrity Checks
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.43 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[i-mcpm README (MCP Tools Usage)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[i-mcpm-auth-reset README]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[i-mcpm-aws-profile README]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +24,3 @@ members: 8
 TABLE source_file, type FROM #community/3__Bot_Pipeline_Integrity_Checks
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessme]]
-
-## Top bridge nodes
-- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community

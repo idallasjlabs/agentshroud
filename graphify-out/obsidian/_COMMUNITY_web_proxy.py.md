@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.17
 members: 13
 ---
 
 # web_proxy.py
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_177]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Responsibilities_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[API key]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Chat voice responses]] - document - skills/openclaw/sag/SKILL.md
+- [[OpenAI Whisper API (curl)]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Quick start_2]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[SKILL_221]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[SKILL_222]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[SKILL_226]] - document - skills/openclaw/sag/SKILL.md
+- [[Useful flags]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Whisper (CLI)]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[sag]] - document - skills/openclaw/sag/SKILL.md
+- [[transcribe.sh]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[transcribe.sh script]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[usage()_5]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
 
 ## Live Query (requires Dataview plugin)
 

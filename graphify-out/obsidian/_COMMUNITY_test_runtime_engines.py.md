@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.12
-members: 26
+cohesion: 0.11
+members: 27
 ---
 
 # test_runtime_engines.py
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[.client()_4]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_dashboard_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_put_then_get()]] - code - gateway/tests/test_runtime_engines.py
-- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a shell script to start services with Apple Containers.      Apple Cont]] - rationale - gateway/runtime/compose_generator.py
-- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
-- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
-- [[TestConfigRoundTrip]] - code - gateway/tests/test_runtime_engines.py
-- [[TestManagementPage]] - code - gateway/tests/test_runtime_engines.py
-- [[gatewayruntimeconfig.py (RuntimeConfig)]] - code - gateway/runtime/config.py
-- [[gatewayruntimedocker_engine.py (DockerEngine)]] - code - gateway/runtime/docker_engine.py
-- [[gatewayruntimepodman_engine.py (PodmanEngine)]] - code - gateway/runtime/podman_engine.py
-- [[gatewayruntimesecurity.py (get_features_for_runtime)]] - code - gateway/runtime/security.py
-- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
-- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
-- [[test_runtime_engines.py]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
+- [[.test_parse_clean_output()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_infected_files_details()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_infected_output()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_signatures()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_clean()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_34]] - code - gateway/security/clamav_scanner.py
+- [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
+- [[Path_8]] - code - gateway/security/clamav_scanner.py
+- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
+- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
+- [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
+- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
+- [[TestClamAVSummary]] - code - gateway/tests/test_security_toolchain.py
+- [[Update ClamAV virus database using freshclam.      Args         freshclam_bin]] - rationale - gateway/security/clamav_scanner.py
+- [[clamav_scanner.py]] - code - gateway/security/clamav_scanner.py
+- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
+- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
+- [[save_report()]] - code - gateway/security/clamav_scanner.py
+- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,24 +46,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_TestSecurityFeatures]]
-- 6 edges to [[_COMMUNITY_RuntimeConfig]]
-- 6 edges to [[_COMMUNITY_ContainerInfo]]
-- 6 edges to [[_COMMUNITY_PodmanEngine]]
-- 5 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 4 edges to [[_COMMUNITY_DockerEngine]]
-- 3 edges to [[_COMMUNITY_detect_runtime()]]
-- 3 edges to [[_COMMUNITY_get_engine()]]
-- 2 edges to [[_COMMUNITY_TestInstallerAPI]]
-- 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_TestDockerEngine]]
-- 2 edges to [[_COMMUNITY_TestWebAPI]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 10 edges to [[_COMMUNITY_lifespan.py]]
+- 8 edges to [[_COMMUNITY_LLMProxy]]
+- 3 edges to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
 
 ## Top bridge nodes
-- [[test_runtime_engines.py]] - degree 33, connects to 14 communities
-- [[ServiceDef]] - degree 20, connects to 10 communities
-- [[TestComposeGenerator]] - degree 14, connects to 4 communities
-- [[TestConfigRoundTrip]] - degree 8, connects to 4 communities
-- [[TestManagementPage]] - degree 8, connects to 4 communities
+- [[clamav_scanner.py]] - degree 13, connects to 8 communities
+- [[run_clamscan()]] - degree 10, connects to 4 communities
+- [[parse_clamscan_output()]] - degree 18, connects to 3 communities
+- [[TestClamAVParser]] - degree 9, connects to 2 communities
+- [[Any_34]] - degree 6, connects to 2 communities

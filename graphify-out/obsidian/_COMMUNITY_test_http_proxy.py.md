@@ -1,76 +1,75 @@
 ---
 type: community
-cohesion: 0.04
-members: 61
+cohesion: 0.06
+members: 60
 ---
 
 # test_http_proxy.py
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 61 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 60 nodes
 
 ## Members
-- [[.__init__()_177]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_18]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_19]] - code - gateway/tests/test_http_proxy.py
-- [[.drain()_1]] - code - gateway/tests/test_http_proxy.py
-- [[.drain()_2]] - code - gateway/tests/test_http_proxy.py
-- [[.get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
-- [[.write()_1]] - code - gateway/tests/test_http_proxy.py
-- [[.write()_2]] - code - gateway/tests/test_http_proxy.py
-- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
-- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
-- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
-- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
-- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
-- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
-- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[_DummyTargetWriter]] - code - gateway/tests/test_http_proxy.py
-- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
-- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
-- [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
-- [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
-- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
-- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
-- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
-- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
-- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
-- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
-- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
-- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
-- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
-- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
-- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
-- [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
-- [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
+- [[.test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_full_url()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
+- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
+- [[ApprovalResult]] - code - gateway/security/egress_approval.py
+- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
+- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
+- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
+- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
+- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
+- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
+- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
+- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
+- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
+- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
+- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,14 +79,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 10 edges to [[_COMMUNITY_WebProxyConfig]]
-- 10 edges to [[_COMMUNITY_WebProxy]]
-- 3 edges to [[_COMMUNITY_EgressAction]]
+- 32 edges to [[_COMMUNITY_EgressApprovalQueue]]
+- 23 edges to [[_COMMUNITY_ConsentFramework]]
+- 20 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 4 edges to [[_COMMUNITY_Path]]
+- 3 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 2 edges to [[_COMMUNITY_ReportStore]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
 
 ## Top bridge nodes
-- [[test_http_proxy.py]] - degree 39, connects to 4 communities
-- [[_MockWriter_1]] - degree 21, connects to 4 communities
-- [[_DummyTargetWriter]] - degree 8, connects to 4 communities
-- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 3 communities
-- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 3 communities
+- [[ApprovalResult]] - degree 22, connects to 5 communities
+- [[TestEnforceMode]] - degree 16, connects to 4 communities
+- [[_make_filter()]] - degree 33, connects to 3 communities
+- [[test_egress_filter.py]] - degree 29, connects to 3 communities
+- [[TestIPRules]] - degree 14, connects to 3 communities

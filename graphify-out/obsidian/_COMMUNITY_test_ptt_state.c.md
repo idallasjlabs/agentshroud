@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.23
-members: 21
+cohesion: 0.13
+members: 22
 ---
 
 # test_ptt_state.c
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[audio.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
-- [[bspesp-bsp.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[do_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[esp_err.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
-- [[esp_log.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
-- [[freertosFreeRTOS.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
-- [[freertostask.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[iot_button.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[main()_21]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_clear_allows_fresh_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_ptt_finish_ends_listening()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_ptt_finish_noop_when_idle()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_ptt_state.c]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_push_frame_suppressed_while_triggered()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_tap_in_idle_starts_listen()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[test_vad_timeout_fires_without_audio()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
-- [[wakeword_clear()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_ended()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[.test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,14 +41,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_wakeword.c]]
-- 4 edges to [[_COMMUNITY_voice_task]]
-- 4 edges to [[_COMMUNITY_test_playback_state.c]]
-- 2 edges to [[_COMMUNITY_app_main.c]]
+- 9 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 9 edges to [[_COMMUNITY__make_proxy()]]
+- 4 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_models.py]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
 
 ## Top bridge nodes
-- [[wakeword_triggered()]] - degree 16, connects to 4 communities
-- [[wakeword_clear()]] - degree 9, connects to 3 communities
-- [[wakeword_ended()]] - degree 9, connects to 2 communities
-- [[do_tap()]] - degree 8, connects to 1 community
-- [[test_clear_allows_fresh_tap()]] - degree 7, connects to 1 community
+- [[TestMultipartOutboundPipeline]] - degree 15, connects to 3 communities
+- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
+- [[_make_multipart_body()]] - degree 12, connects to 2 communities
+- [[.test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 2 communities
+- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities

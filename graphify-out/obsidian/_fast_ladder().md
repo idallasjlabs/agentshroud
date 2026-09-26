@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "_make_tm()"
+community: "MemoryIntegrityMonitor"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/MemoryIntegrityMonitor
 ---
 
 # _fast_ladder()
@@ -22,6 +22,8 @@ tags:
 - [[.test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[A ladder with thresholds small enough for unit tests.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `references` [EXTRACTED]
+- [[PromotionThreshold]] - `calls` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_tm
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # test_bot_boot_static.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[check()_2]] - code - tests/startup_smoke/test_bot_boot_static.sh
-- [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
-- [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[Internal MCP gateway pattern (Entra-fronted)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Microsoft Entra ID app registration for MCP]] - concept - .llm_settings/docs/MCP_README.md
 
 ## Live Query (requires Dataview plugin)
 

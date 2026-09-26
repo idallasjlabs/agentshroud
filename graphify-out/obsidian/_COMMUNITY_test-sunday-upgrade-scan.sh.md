@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.50
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[check()_10]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test-sunday-upgrade-scan.sh_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test-sunday-upgrade-scan.sh script_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
 
 ## Live Query (requires Dataview plugin)
 

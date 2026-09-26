@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "code"
-community: "Community 1169"
+community: "AgentShroud Data Assets (root)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/AgentShroud_Data_Assets_root
 ---
 
 # __init__.py
@@ -17,4 +17,4 @@ tags:
 - [[Trivy (container vulnerability scanning)]] - `references` [EXTRACTED]
 - [[Wazuh (file integrity monitoring)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1169
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root

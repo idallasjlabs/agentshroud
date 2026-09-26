@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
 
 ## Live Query (requires Dataview plugin)
 

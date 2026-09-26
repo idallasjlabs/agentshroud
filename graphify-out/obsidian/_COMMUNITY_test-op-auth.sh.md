@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.60
+cohesion: 0.70
 members: 5
 ---
 
 # test-op-auth.sh
 
-**Cohesion:** 0.60 - moderately connected
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[Secret Backend Cascade (macOS Keychain → 1Password CLI → homedir file)]] - concept - docker/tests/test-op-auth.sh
-- [[fail()]] - code - docker/tests/test-op-auth.sh
-- [[pass()]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh script]] - code - docker/tests/test-op-auth.sh
+- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
+- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
+- [[api_call()]] - code - scripts/agentshroud-manage.sh
+- [[usage()_3]] - code - scripts/agentshroud-manage.sh
+- [[validate_input()]] - code - scripts/agentshroud-manage.sh
 
 ## Live Query (requires Dataview plugin)
 

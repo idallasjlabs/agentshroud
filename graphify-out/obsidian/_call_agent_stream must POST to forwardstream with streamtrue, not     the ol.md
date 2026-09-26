@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "CollaboratorActivityTracker"
 location: "L1205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/CollaboratorActivityTracker
 ---
 
 # _call_agent_stream must POST to /forward/stream with stream:true, not     the ol
 
 ## Connections
-- [[test_call_agent_stream_posts_to_forward_stream_endpoint()_1]] - `rationale_for` [EXTRACTED]
+- [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker

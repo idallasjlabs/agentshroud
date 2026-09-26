@@ -1,65 +1,63 @@
 ---
 type: community
-cohesion: 0.08
-members: 50
+cohesion: 0.06
+members: 48
 ---
 
 # system-requirements.md
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 50 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 48 nodes
 
 ## Members
-- [[AgentShroud (security proxy)]] - concept - docs/project/glossary.md
-- [[AgentShroud v0.8.0 Watchtower Release Plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[Approval Queue_2]] - concept - docs/project/glossary.md
-- [[Audit Trail_1]] - concept - docs/project/glossary.md
-- [[CVE-2026-22708 (Prompt Injection bypass)]] - concept - docs/project/glossary.md
-- [[CVE-2026-25253 (DNS Tunneling)]] - concept - docs/project/glossary.md
-- [[Competitive Analysis Reports Archive]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[Container Runtime]] - concept - docs/project/glossary.md
-- [[DNS Tunneling]] - concept - docs/project/glossary.md
-- [[Default Selection Notes]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[Enforce Mode]] - concept - docs/project/glossary.md
-- [[Functional Requirements Coverage]] - document - docs/security/audit-specification.md
-- [[HERMES_SETUP]] - document - docs/setup/HERMES_SETUP.md
-- [[Hash Chain]] - concept - docs/project/glossary.md
-- [[Hermes Agent (OpenAI-compatible LLM endpoint)]] - concept - docs/setup/HERMES_SETUP.md
-- [[IEC 62443 Industrial Security Framework]] - document - docs/security/audit-specification.md
-- [[Kill Switch_2]] - concept - docs/project/glossary.md
-- [[MCP (Model Context Protocol)]] - concept - docs/project/glossary.md
-- [[Marvin (proddev host)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Monitor Mode_1]] - concept - docs/project/glossary.md
-- [[NFKC Normalization]] - concept - docs/project/glossary.md
-- [[OPENCLAW_SETUP]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw_1]] - concept - docs/project/glossary.md
-- [[PII (Personally Identifiable Information)]] - concept - docs/project/glossary.md
-- [[Prompt Injection]] - concept - docs/project/glossary.md
-- [[Proxy Mode]] - concept - docs/project/glossary.md
-- [[Raspberry Pi (host, arm64, low-resource)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Reports]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[SSRF (Server-Side Request Forgery)]] - concept - docs/project/glossary.md
-- [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Levels Mapping]] - document - docs/security/audit-specification.md
-- [[Sidecar Mode_1]] - concept - docs/project/glossary.md
-- [[Steven Hay (Security Advisor)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[TELEGRAM_GMAIL_SETUP]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Trillian (host, x86_64)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Trust Level]] - concept - docs/project/glossary.md
-- [[Trust Management]] - concept - docs/project/glossary.md
-- [[WEB_CONTROL_CENTER_SUMMARY]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[Zero-Config Deployment]] - concept - docs/project/glossary.md
-- [[Zero-Trust Architecture]] - concept - docs/project/glossary.md
-- [[access-control-matrix]] - document - docs/security/access-control-matrix.md
-- [[audit-specification]] - document - docs/security/audit-specification.md
-- [[colima-docker-guide]] - document - docs/runbooks/colima-docker-guide.md
-- [[competitive-analysis-reports-archive]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[securityincident-response]] - document - docs/security/incident-response.md
-- [[setup-guide]] - document - docs/setup/setup-guide.md
-- [[system-requirements]] - document - docs/requirements/system-requirements.md
-- [[use-cases]] - document - docs/requirements/use-cases.md
+- [[.test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_mode_is_enforce()_3]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[FastAPI_2]] - code - gateway/tests/test_observatory_mode.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[ModeRequest]] - code - gateway/web/api.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
+- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_11]] - code - gateway/tests/test_observatory_mode.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[set_mode()_1]] - code - gateway/web/api.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -69,28 +67,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 7 edges to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Execution Summ]]
-- 5 edges to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway]]
-- 3 edges to [[_COMMUNITY_EgressFilter]]
-- 2 edges to [[_COMMUNITY_AgentShroud Audit Specification]]
-- 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
-- 1 edge to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
-- 1 edge to [[_COMMUNITY_Telegram & Gmail Integration Guide]]
-- 1 edge to [[_COMMUNITY_AgentShroud Web Control Center - Implementation]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0]]
-- 1 edge to [[_COMMUNITY_Use Cases]]
-- 1 edge to [[_COMMUNITY_AgentShroud Access Control Matrix]]
-- 1 edge to [[_COMMUNITY_Incident Response Playbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Hermes Agent — Connection Setup]]
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
+- 22 edges to [[_COMMUNITY_TeamsConfig]]
+- 21 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 6 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY__call_agent_stream()]]
+- 2 edges to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE D]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_TestCredentialInjection]]
 
 ## Top bridge nodes
-- [[system-requirements]] - degree 16, connects to 3 communities
-- [[OPENCLAW_SETUP]] - degree 9, connects to 3 communities
-- [[Trust Level]] - degree 5, connects to 3 communities
-- [[setup-guide]] - degree 11, connects to 2 communities
-- [[PII (Personally Identifiable Information)]] - degree 9, connects to 2 communities
+- [[ModeRequest]] - degree 47, connects to 8 communities
+- [[test_observatory_mode.py]] - degree 19, connects to 5 communities
+- [[TestSetMode]] - degree 14, connects to 2 communities
+- [[TestGetMode]] - degree 9, connects to 2 communities
+- [[TestModeRequestModel]] - degree 8, connects to 2 communities

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/soc/__init__.py"
 type: "code"
-community: "Community 1867"
+community: "Newsletter: Mac Clustering"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1867
+  - community/Newsletter_Mac_Clustering
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1867
+#graphify/code #graphify/EXTRACTED #community/Newsletter_Mac_Clustering

@@ -1,22 +1,30 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "FetchOutcome"
-location: "L28"
+community: "_call_agent_stream()"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/_call_agent_stream
 ---
 
 # _FakeFetcher
 
 ## Connections
-- [[.__call__()]] - `method` [EXTRACTED]
-- [[.__init__()_36]] - `method` [EXTRACTED]
+- [[.__call__()_2]] - `method` [EXTRACTED]
+- [[.__init__()_141]] - `method` [EXTRACTED]
+- [[._verifier()]] - `calls` [EXTRACTED]
+- [[._verifier()_1]] - `calls` [EXTRACTED]
+- [[.test_host_confusion_urls_rejected_and_never_fetched()]] - `calls` [EXTRACTED]
+- [[.test_ssrf_unsafe_urls_rejected_before_fetch()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - `rationale_for` [EXTRACTED]
+- [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[_inject_fetcher()]] - `calls` [EXTRACTED]
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[test_citation_verifier.py]] - `contains` [EXTRACTED]
+- [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

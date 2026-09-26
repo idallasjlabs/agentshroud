@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[warn_dangerous_bash.sh]] - code - .claude/scripts/claude-hooks/warn_dangerous_bash.sh
-- [[warn_dangerous_bash.sh script]] - code - .claude/scripts/claude-hooks/warn_dangerous_bash.sh
+- [[.test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,9 @@ members: 2
 TABLE source_file, type FROM #community/warn_dangerous_bashsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
+
+## Top bridge nodes
+- [[.test_integrated_memory_protection()]] - degree 2, connects to 1 community

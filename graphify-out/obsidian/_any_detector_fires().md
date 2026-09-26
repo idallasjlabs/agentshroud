@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "_any_detector_fires()"
+community: "BotConfig"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/BotConfig
 ---
 
 # _any_detector_fires()
@@ -23,11 +23,11 @@ tags:
 - [[.test_persona_hijack_detection_rate()]] - `calls` [EXTRACTED]
 - [[.test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
 - [[Combined detected if ANY defense layer triggers.]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier]] - `references` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `references` [EXTRACTED]
 - [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[_heuristic_detects()]] - `calls` [EXTRACTED]
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[_prompt_guard_detects()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/code #graphify/EXTRACTED #community/BotConfig

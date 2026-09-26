@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L2350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # _determine_compliance_level()
@@ -16,4 +16,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/compute_scorecard
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

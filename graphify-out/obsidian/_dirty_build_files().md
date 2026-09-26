@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L222"
+community: "DraftEntry"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/DraftEntry
 ---
 
 # _dirty_build_files()
@@ -16,4 +16,4 @@ tags:
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

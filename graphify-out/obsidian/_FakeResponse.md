@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "EgressAction"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressAction
 ---
 
 # _FakeResponse
 
 ## Connections
-- [[.__init__()_108]] - `method` [EXTRACTED]
-- [[.read()_1]] - `method` [EXTRACTED]
+- [[.__init__()_188]] - `method` [EXTRACTED]
+- [[.read()_2]] - `method` [EXTRACTED]
 - [[.test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[.test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
 - [[.test_500_returns_none()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressAction

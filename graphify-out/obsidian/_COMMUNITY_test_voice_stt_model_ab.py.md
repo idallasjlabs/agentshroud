@@ -1,58 +1,57 @@
 ---
 type: community
-cohesion: 0.05
-members: 43
+cohesion: 0.10
+members: 42
 ---
 
 # test_voice_stt_model_ab.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 43 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 42 nodes
 
 ## Members
-- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
-- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
-- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
-- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
-- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
-- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[_get_model()]] - code - voice_gateway/stt.py
-- [[_get_model() — lazy-loads faster-whisper WhisperModel]] - code - voice_gateway/stt.py
-- [[_resolve_model_size()]] - code - voice_gateway/stt.py
-- [[record_transcription_latency()]] - code - voice_gateway/stt.py
-- [[record_transcription_latency() — RTFlatency structured log]] - code - voice_gateway/stt.py
-- [[reset_model()]] - code - voice_gateway/stt.py
-- [[select_model_size()]] - code - voice_gateway/stt.py
-- [[stt.py]] - code - voice_gateway/stt.py
-- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[transcribe()]] - code - voice_gateway/stt.py
+- [[.__init__()_7]] - code - gateway/cli/client.py
+- [[._request()]] - code - gateway/cli/client.py
+- [[.add_collaborator()]] - code - gateway/cli/client.py
+- [[.add_group_member()]] - code - gateway/cli/client.py
+- [[.approve_egress()]] - code - gateway/cli/client.py
+- [[.block_egress()]] - code - gateway/cli/client.py
+- [[.delete()]] - code - gateway/cli/client.py
+- [[.deny_egress()]] - code - gateway/cli/client.py
+- [[.freeze()]] - code - gateway/cli/client.py
+- [[.get()_2]] - code - gateway/cli/client.py
+- [[.get_correlation()]] - code - gateway/cli/client.py
+- [[.get_egress_pending()]] - code - gateway/cli/client.py
+- [[.get_events()]] - code - gateway/cli/client.py
+- [[.get_groups()]] - code - gateway/cli/client.py
+- [[.get_health()]] - code - gateway/cli/client.py
+- [[.get_logs()]] - code - gateway/cli/client.py
+- [[.get_risk()]] - code - gateway/cli/client.py
+- [[.get_services()]] - code - gateway/cli/client.py
+- [[.get_users()]] - code - gateway/cli/client.py
+- [[.post()_2]] - code - gateway/cli/client.py
+- [[.put()]] - code - gateway/cli/client.py
+- [[.restart_service()]] - code - gateway/cli/client.py
+- [[.run_scan()]] - code - gateway/cli/client.py
+- [[.set_group_mode()]] - code - gateway/cli/client.py
+- [[.stop_service()]] - code - gateway/cli/client.py
+- [[.test_empty_response_body_returns_empty_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_builds_url_headers_and_parses_json()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_with_params_encodes_query_string()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_http_error_with_json_body_returns_parsed_payload()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_http_error_with_non_json_body_returns_error_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_init_strips_trailing_slash_and_builds_soc_base()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
+- [[Any_3]] - code - gateway/cli/client.py
+- [[Exception_3]] - code - gateway/tests/test_cli_coverage.py
+- [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
+- [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[SCLClient]] - code - gateway/cli/client.py
+- [[TestSCLClientRequest]] - code - gateway/tests/test_cli_coverage.py
+- [[_patch_urlopen()]] - code - gateway/tests/test_cli_coverage.py
+- [[agentshroud-soc CLI Group]] - code - gateway/cli/main.py
+- [[test_convenience_methods_hit_expected_endpoints()]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,9 +61,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_server.py]]
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 7 edges to [[_COMMUNITY_AgentShroud Development Team — Agile Structure]]
+- 5 edges to [[_COMMUNITY_patch]]
+- 4 edges to [[_COMMUNITY_api.py]]
+- 4 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_TestToolAuthorization]]
 
 ## Top bridge nodes
-- [[stt.py]] - degree 10, connects to 3 communities
+- [[SCLClient]] - degree 55, connects to 5 communities
+- [[.get()_2]] - degree 13, connects to 1 community
+- [[_patch_urlopen()]] - degree 11, connects to 1 community
+- [[TestSCLClientRequest]] - degree 10, connects to 1 community
+- [[test_convenience_methods_hit_expected_endpoints()]] - degree 3, connects to 1 community

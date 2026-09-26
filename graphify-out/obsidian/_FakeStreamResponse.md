@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "FetchOutcome"
+community: "plan_remediation()"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/plan_remediation
 ---
 
 # _FakeStreamResponse
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__enter__()]] - `method` [EXTRACTED]
 - [[.__exit__()]] - `method` [EXTRACTED]
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_142]] - `method` [EXTRACTED]
 - [[.iter_bytes()]] - `method` [EXTRACTED]
 - [[.test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
 - [[.test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
@@ -22,11 +22,11 @@ tags:
 - [[.test_non_2xx_status_passed_through()]] - `calls` [EXTRACTED]
 - [[.test_secure_stream_kwargs_are_pinned()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

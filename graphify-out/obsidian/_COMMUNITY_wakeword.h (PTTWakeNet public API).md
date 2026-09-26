@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
+- [[Post-Retry Rate Limit Failover Tests]] - code - gateway/tests/test_rate_limit_failover.py
 
 ## Live Query (requires Dataview plugin)
 

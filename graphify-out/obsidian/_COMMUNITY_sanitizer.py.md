@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Function Details_14]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Purpose_141]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Related_20]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[_sanitize_presidio(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[_sanitize_regex(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[block_credentials(content, source)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[filter_xml_blocks(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitize(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitizer.py_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitizer.py_1]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Code Style]] - document - CONTRIBUTING.md
+- [[Code of Conduct]] - document - CONTRIBUTING.md
+- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
+- [[Development Setup]] - document - CONTRIBUTING.md
+- [[Implementation Status_3]] - document - scripts/README.md
+- [[Maintenance Scripts]] - document - scripts/README.md
+- [[Pull Request Process]] - document - CONTRIBUTING.md
+- [[Questions_1]] - document - CONTRIBUTING.md
+- [[README_129]] - document - scripts/README.md
+- [[Requirements]] - document - CONTRIBUTING.md
+- [[Response SLA]] - document - CONTRIBUTING.md
+- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
+- [[Security Scripts]] - document - scripts/README.md
+- [[Test Guidelines]] - document - CONTRIBUTING.md
+- [[Utility Scripts]] - document - scripts/README.md
+- [[What to Contribute]] - document - CONTRIBUTING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,9 @@ members: 16
 TABLE source_file, type FROM #community/sanitizerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+
+## Top bridge nodes
+- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community

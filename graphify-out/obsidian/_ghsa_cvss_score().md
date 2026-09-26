@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "mcp_oauth_preflight.py"
 location: "L534"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/mcp_oauth_preflightpy
 ---
 
 # _ghsa_cvss_score()
 
 ## Connections
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Extract a numeric CVSS base score from an advisory, else None. GitHub…]] - `rationale_for` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Extract a numeric CVSS base score from an advisory, else None.      GitHub advis]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

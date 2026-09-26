@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
-- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
-- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
-- [[Common Commands]] - document - skills/openclaw/tmux/SKILL.md
-- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[Notes_6]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
-- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
-- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
-- [[When NOT to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[When to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
-- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
+- [[Configuration_11]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Error Handling_7]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Threat Model_6]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +34,3 @@ members: 17
 TABLE source_file, type FROM #community/tmux_Session_Control
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_find-sessions.sh]]
-
-## Top bridge nodes
-- [[tmux Session Control]] - degree 8, connects to 1 community

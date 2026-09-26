@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "AgentShroud™ Brand Guidelines"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # _finding_categories()
@@ -35,7 +35,7 @@ tags:
 - [[.test_subprocess_shell_true_flags()]] - `calls` [EXTRACTED]
 - [[.test_urllib_urlopen_flags()]] - `calls` [EXTRACTED]
 - [[.test_wget_pipe_sh_blocks()]] - `calls` [EXTRACTED]
-- [[ScanResult]] - `references` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

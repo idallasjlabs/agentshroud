@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.13
 members: 15
 ---
 
 # tts.py
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Any_68]] - code - voice_gateway/tts.py
-- [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz.      For downsa]] - rationale - voice_gateway/tts.py
-- [[Return text suitable for TTS synthesis on the ESP32 voice interface.      Two]] - rationale - voice_gateway/tts.py
-- [[Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal]] - rationale - voice_gateway/tts.py
-- [[Synthesize text to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.]] - rationale - voice_gateway/tts.py
-- [[_get_pipeline()]] - code - voice_gateway/tts.py
-- [[_get_pipeline() — lazy-inits Kokoro KPipeline singleton]] - code - voice_gateway/tts.py
-- [[_resample_s16le_mono()]] - code - voice_gateway/tts.py
-- [[_resample_s16le_mono() — Kaiser-windowed sinc resampler]] - code - voice_gateway/tts.py
-- [[normalize_for_speech()]] - code - voice_gateway/tts.py
-- [[normalize_for_speech() — redaction-token + markdown normalization]] - code - voice_gateway/tts.py
-- [[split_for_speech()]] - code - voice_gateway/tts.py
-- [[split_for_speech() — splits reply into sentence-sized TTS chunks]] - code - voice_gateway/tts.py
-- [[synthesize()]] - code - voice_gateway/tts.py
-- [[tts.py]] - code - voice_gateway/tts.py
+- [[Configuration  Environment Variables_16]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Docker Security Options Used]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine._cmd(args, kwargs)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.compose_up(file, detach)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Function Details_22]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Purpose_143]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Related_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/ttspy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_server.py]]
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-
-## Top bridge nodes
-- [[tts.py]] - degree 8, connects to 3 communities

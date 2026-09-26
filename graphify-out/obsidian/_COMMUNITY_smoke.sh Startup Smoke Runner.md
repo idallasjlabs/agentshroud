@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # smoke.sh Startup Smoke Runner
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[smoke.sh Startup Smoke Runner]] - code - scripts/smoke.sh
-- [[test_colima_and_sdk_patch_fallback_resolution.sh_2]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[test_openclaw_model_provider_consistency.sh_2]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_readiness_retry.sh_2]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[TickType_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[task.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[vTaskDelay()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/smokesh_Startup_Smoke_Runner
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-
-## Top bridge nodes
-- [[smoke.sh Startup Smoke Runner]] - degree 4, connects to 1 community

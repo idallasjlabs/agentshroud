@@ -10,28 +10,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Phone number with separator must still be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Regex-only path must not match bare 10-digit digit string as phone number.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with multiple PII types]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with no PII]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test credit card redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test email address redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test empty content handling]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test phone number redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[UID in parens — as written in contributor logs — must not be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_email_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_empty_content()]] - code - gateway/tests/test_sanitizer.py
-- [[test_mixed_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_no_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_phone_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_real_phone_still_redacted()]] - code - gateway/tests/test_sanitizer.py
-- [[test_regex_fallback_requires_separator()]] - code - gateway/tests/test_sanitizer.py
-- [[test_sanitizer.py]] - code - gateway/tests/test_sanitizer.py
-- [[test_ssn_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_telegram_uid_not_redacted_as_phone()]] - code - gateway/tests/test_sanitizer.py
-- [[test_uid_inside_parens_preserved()]] - code - gateway/tests/test_sanitizer.py
+- [[AWS Cloud Management & FinOps Agent]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cost Optimization Priority_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Decision Framework_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Deliverables_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS bottleneck vs oversize distinction]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Expertise_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FinOps agent safety model (dry-run default, tiered approval)]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Guardrails_7]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Identity_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Numbered script naming convention (00-99)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[Reports (`.reports`)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Required Tags (All Resources)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[SKILL_71]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Script Templates_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tag Audit Process_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tagging Standard_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Workflow_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +41,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_TestResourceBudgets]]
+- 1 edge to [[_COMMUNITY_find-sessions.sh]]
+- 1 edge to [[_COMMUNITY_port_manager.py]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
 
 ## Top bridge nodes
-- [[test_sanitizer.py]] - degree 12, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent]] - degree 17, connects to 5 communities

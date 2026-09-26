@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.08
 members: 26
 ---
 
 # test_clamav_pipeline.py
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_make_pipeline()_4]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
-- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_clean()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_infected()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[Approval Queue Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
+- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
+- [[Connectivity Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
+- [[Container Stability Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
+- [[Debugging Commands]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
+- [[Egress  Network Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
+- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
+- [[Kill Switch Won't Deactivate Troubleshooting]] - concept - docs/runbooks/troubleshooting.md
+- [[PII  Sanitization Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
+- [[Prompt Injection Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Quick Diagnosis Flow]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Related Notes_64]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
+- [[Security Module Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Startup Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
+- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
+- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
+- [[troubleshooting]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,15 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_Mode A — Single task]]
+- 2 edges to [[_COMMUNITY_Contributing to AgentShroud™]]
+- 1 edge to [[_COMMUNITY_ledger row (id, timestamp, source, hashes, sanit]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
 
 ## Top bridge nodes
-- [[test_clamav_pipeline.py]] - degree 18, connects to 2 communities
-- [[scan_bytes()]] - degree 11, connects to 2 communities
-- [[_make_pipeline()_4]] - degree 8, connects to 1 community
-- [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
-- [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community
+- [[troubleshooting]] - degree 18, connects to 4 communities
+- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 1 community
+- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "archive_old_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # _chain_events()
@@ -23,4 +23,4 @@ tags:
 - [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - `rationale_for` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

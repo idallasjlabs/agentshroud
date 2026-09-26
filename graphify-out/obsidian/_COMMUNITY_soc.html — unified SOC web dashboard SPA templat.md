@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
+- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
 
 ## Live Query (requires Dataview plugin)
 

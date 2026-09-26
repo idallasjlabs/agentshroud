@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # test_credential_injector.py
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_credential_never_in_logs()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_get_status_structure()]] - code - gateway/tests/test_credential_injector.py
-- [[Create a temp secrets directory with a test credential.]] - rationale - gateway/tests/test_credential_injector.py
-- [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestStatus_1]] - code - gateway/tests/test_credential_injector.py
-- [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
-- [[injector()]] - code - gateway/tests/test_credential_injector.py
-- [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
-- [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py
+- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestLeakDetection]]
-- 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
-- 1 edge to [[_COMMUNITY_TestOAuthInjection]]
-- 1 edge to [[_COMMUNITY_CredentialInjector]]
-- 1 edge to [[_COMMUNITY_TestCredentialInjection]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
 
 ## Top bridge nodes
-- [[test_credential_injector.py]] - degree 7, connects to 4 communities
-- [[injector()]] - degree 3, connects to 1 community
+- [[TELEGRAM_API_BASE_URL]] - degree 2, connects to 1 community

@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.27
+cohesion: 0.11
 members: 18
 ---
 
 # session-prompt-setup.sh
 
-**Cohesion:** 0.27 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[SENTINEL_BEGIN]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[SENTINEL_END]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[TARGETS]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_fail()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_hdr()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_info()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_inject_all()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_inject_block()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_ok()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_parse_args()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_remove_all()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_resolve_prompt_file()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_strip_block()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_usage()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[_warn()]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[main()_24]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[session-prompt-setup.sh]] - code - .llm_settings/scripts/session-prompt-setup.sh
-- [[session-prompt-setup.sh script]] - code - .llm_settings/scripts/session-prompt-setup.sh
+- [[6.1 Enforcement Test Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[6.2 Attack Simulation Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[A) Test Coverage Analysis]] - document - .github/agents/test-augmenter.agent.md
+- [[B) Edge Case Identification]] - document - .github/agents/test-augmenter.agent.md
+- [[C) Test Quality]] - document - .github/agents/test-augmenter.agent.md
+- [[Definition of Done_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Environment_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Expected Coverage]] - document - .github/agents/test-augmenter.agent.md
+- [[Python Tests (pytest)]] - document - .github/agents/test-augmenter.agent.md
+- [[Remember_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Repository Context_2]] - document - .github/agents/test-augmenter.agent.md
+- [[Role Definition_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Augmentation Specialist]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Commands]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Standards]] - document - .github/agents/test-augmenter.agent.md
+- [[Tooling Standards]] - document - .github/agents/test-augmenter.agent.md
+- [[What You CANNOT Do]] - document - .github/agents/test-augmenter.agent.md
+- [[Your Responsibilities]] - document - .github/agents/test-augmenter.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +35,11 @@ members: 18
 TABLE source_file, type FROM #community/session-prompt-setupsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ADR-002 Default-Allow Security Philosophy]]
+- 1 edge to [[_COMMUNITY_Error Index]]
+
+## Top bridge nodes
+- [[Test Augmentation Specialist]] - degree 10, connects to 1 community
+- [[A) Test Coverage Analysis]] - degree 4, connects to 1 community

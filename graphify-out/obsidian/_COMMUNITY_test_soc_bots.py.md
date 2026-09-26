@@ -1,110 +1,119 @@
 ---
 type: community
-cohesion: 0.05
-members: 95
+cohesion: 0.04
+members: 104
 ---
 
 # test_soc_bots.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 95 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 104 nodes
 
 ## Members
-- [[._make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_dict_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_augments_result_with_image_scan()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_calls_compute_bot_scorecard()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_returns_per_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_backward_compat_no_bots_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_no_config_returns_synthetic_entry()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_returns_correct_structure()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_returns_default_true_on_default_bot()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_clean_image_score_100()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_config_none_returns_empty_dict()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_domains_has_vuln_and_egress()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_egress_filter_exception_defaults_denials_zero()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_activity_by_bot_id_in_source()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_egress_log_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_events_by_exact_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_history_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_pending_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_services_by_bot_image()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_combined_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_critical_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_egress_denials_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_high_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_medium_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_known_bot_returns_cve_summary()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_missing_bot_returns_empty_image()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_calls_global_scorecard()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_defaults_to_openclaw()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_omits_bot_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_events()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_pending()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_services()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_full_history()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_global_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_scan_data_defaults_zeros()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_result_structure_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_default_when_config_is_none()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_default_when_no_bots_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_registered_bots()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_risk_level_red_below_50()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_risk_level_yellow_50_to_79()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_score_clamped_to_hundred()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_score_clamped_to_zero()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_security_events_filters_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_security_events_nonexistent_bot_returns_empty_not_404()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_single_bot_returns_list_of_one()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_unknown_bot_id_returns_error()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_unknown_bot_returns_error()]] - code - gateway/tests/test_soc_bots.py
-- [[Backward-compat config attr absent → return single OpenClaw default.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Backward-compat no bots section → return single OpenClaw default.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Bot not in config → image='', scan skipped, score based on egress only.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Bot with no image scan data should default criticalhighmedium to 0.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Build an SCLCaller with OWNER role — no FastAPI dependency resolution.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Container Security Scorecard — 12-domain maturity assessment.      Standards bas]] - rationale - gateway/soc/router.py
-- [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
-- [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
-- [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
-- [[Return full collaborator activity log. limit=0 returns all entries.      Returns]] - rationale - gateway/soc/router.py
-- [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - rationale - gateway/soc/router.py
-- [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - rationale - gateway/soc/router.py
-- [[SCLCaller]] - code - gateway/tests/test_soc_bots.py
-- [[TestAgentCvesBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestBotSelectorFrontend]] - code - gateway/tests/test_soc_bots.py
-- [[TestCollaboratorActivityBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestComputeBotScorecard_1]] - code - gateway/tests/test_soc_bots.py
-- [[TestConfigBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressHistoryBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressLogBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressPendingBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestListBots]] - code - gateway/tests/test_soc_bots.py
-- [[TestScannersBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestScorecardBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestSecurityEventsBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestServicesBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - rationale - gateway/soc/router.py
-- [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - rationale - gateway/tests/test_soc_bots.py
-- [[When app_state.config is None, return empty dict (backward-compat).]] - rationale - gateway/tests/test_soc_bots.py
-- [[When bot_id is given, services whose image matches the bot's image are returned.]] - rationale - gateway/tests/test_soc_bots.py
-- [[_make_app_state()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_app_state()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_caller()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_owner_caller()]] - code - gateway/tests/test_soc_bots.py
-- [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
-- [[get_agent_cves()]] - code - gateway/soc/router.py
-- [[get_collaborator_activity()]] - code - gateway/soc/router.py
-- [[get_config()_1]] - code - gateway/soc/router.py
-- [[get_egress_history()]] - code - gateway/soc/router.py
-- [[get_egress_pending()]] - code - gateway/soc/router.py
-- [[get_scanner_results()]] - code - gateway/soc/router.py
-- [[get_security_events()]] - code - gateway/soc/router.py
-- [[get_security_scorecard()]] - code - gateway/soc/router.py
-- [[list_bots()]] - code - gateway/soc/router.py
-- [[test_soc_bots.py]] - code - gateway/tests/test_soc_bots.py
+- [[._make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_hello_in_group_sends_openclaw_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_hermes_mention_ignored_when_processed_as_openclaw()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_hermes_mention_sets_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_immune_command_lists_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_immune_command_no_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_immune_user_lockdown_not_incremented()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_immune_user_message_passes_through_when_suspended()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_locked_no_active_lockdowns()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_partial_match_does_not_fire()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_status_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_suspended_drop_notice_respects_cooldown()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unlock_clears_suspended_drop_cooldown()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unlock_persists_unpause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unlock_unknown_user_returns_no_state_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_username_for_bot_falls_back_to_default()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_username_for_bot_returns_per_bot_username()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[command@botname marks chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[gi uid must grant immunity so the user bypasses lockdown suspension check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[immune must list all immune user IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[immune with no immune users must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[locked must list users with non-normal lockdown state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[locked with no active lockdowns must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[ri uid must remove immunity and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[status in a group sends only the short liveness ack (no operational details).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock uid must call reset() on the lockdown module and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock for a user with no lockdown state must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock must clear the suspended-drop notice cooldown so user gets fresh notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock must persist through unpause_collaborator() so resume survives         a]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for open]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets th]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A user manually revoke'd (paused) with no ProgressiveLockdown block         his]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Build a Telegram group message update.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive escalation notice at block 5.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group messages without @mention are forwarded (for context) but mark chat as res]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group presence probe bare trigger phrases make each bot reply with a short live]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Immune user must not be dropped by the suspension path (stub must not appear).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Integration tests for group at-mention filtering.      The bot reads ALL group m]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Per-bot eligibility — each bot in a shared group tracks mention state independen]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_no_owner_mirror()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_wrap_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello, can you help' must NOT match — exact-match guard.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[test_telegram_proxy_inbound.py]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -114,23 +123,37 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_socrouter.py]]
-- 15 edges to [[_COMMUNITY_RBACConfig]]
-- 15 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 9 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_SecurityEvent]]
-- 5 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 2 edges to [[_COMMUNITY_BaseModel]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_compute_scorecard()]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_Any]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
+- 171 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 18 edges to [[_COMMUNITY_test_a2a_proxy.py]]
+- 8 edges to [[_COMMUNITY_models.py]]
+- 5 edges to [[_COMMUNITY_TrustManager]]
+- 5 edges to [[_COMMUNITY_FileSandbox]]
+- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 4 edges to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 4 edges to [[_COMMUNITY_check_upstream_cves]]
+- 4 edges to [[_COMMUNITY_TestAuditStoreBotId]]
+- 4 edges to [[_COMMUNITY_ota.c]]
+- 3 edges to [[_COMMUNITY_LOG_LEVEL]]
+- 3 edges to [[_COMMUNITY_AGENTSHROUD_CONFIG]]
+- 2 edges to [[_COMMUNITY_test-get-credential.sh]]
+- 2 edges to [[_COMMUNITY_security-entrypoint.sh]]
+- 2 edges to [[_COMMUNITY_TestAlreadyIngestedGhsaToday]]
+- 2 edges to [[_COMMUNITY_Red Team Finding 02 No Human Approval for High-]]
+- 2 edges to [[_COMMUNITY_bsp_iot_button_create()]]
+- 2 edges to [[_COMMUNITY_bsp_iot_button_create()]]
+- 2 edges to [[_COMMUNITY_SECTION 7 FILING CHECKLIST]]
+- 2 edges to [[_COMMUNITY_TestAlreadyCheckedUpstreamToday]]
+- 2 edges to [[_COMMUNITY_Outbound Infrastructure Content Filter (deny-lis]]
+- 2 edges to [[_COMMUNITY_pending (bot submits action requiring approval)]]
+- 2 edges to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 2 edges to [[_COMMUNITY_TestEnforcementModeResolver]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_Plan Proxying HexStrike AI MCP Agents via Agent]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
 
 ## Top bridge nodes
-- [[test_soc_bots.py]] - degree 38, connects to 6 communities
-- [[compute_bot_scorecard()]] - degree 23, connects to 4 communities
-- [[.test_filters_egress_log_by_bot_id()]] - degree 6, connects to 3 communities
-- [[TestComputeBotScorecard_1]] - degree 20, connects to 2 communities
-- [[TestBotSelectorFrontend]] - degree 12, connects to 2 communities
+- [[_wrap_response()]] - degree 233, connects to 21 communities
+- [[test_telegram_proxy_inbound.py]] - degree 28, connects to 12 communities
+- [[TestProgressiveLockdownUX]] - degree 28, connects to 4 communities
+- [[TestGroupMentionFilter]] - degree 12, connects to 4 communities
+- [[TestPerBotGroupMentionFilter]] - degree 12, connects to 4 communities

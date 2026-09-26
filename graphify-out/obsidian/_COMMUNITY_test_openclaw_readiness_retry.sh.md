@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # test_openclaw_readiness_retry.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[check()_12]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[test_openclaw_readiness_retry.sh_1]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[test_openclaw_readiness_retry.sh script_1]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
+- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
 
 ## Live Query (requires Dataview plugin)
 

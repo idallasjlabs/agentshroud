@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.16
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # test_forward_stream.py
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[.__init__()_41]] - code - gateway/tests/test_forward_stream.py
-- [[.process_inbound()_5]] - code - gateway/tests/test_forward_stream.py
-- [[.process_outbound()_5]] - code - gateway/tests/test_forward_stream.py
-- [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
-- [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
-- [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
-- [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
-- [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
-- [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
-- [[_aiter()]] - code - gateway/tests/test_forward_stream.py
-- [[_filtered_sentence_stream()]] - code - gateway/ingest_api/routes/forward.py
-- [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
-- [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_releases_sentences_in_order()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_single_sentence_flushed_alone()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream.py]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_flushes_trailing_fragment_without_punctuation()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_single_delta_full_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_splits_on_boundaries()]] - code - gateway/tests/test_forward_stream.py
+- [[Accessibility Requirements_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Anti-Patterns to Flag_14]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[BEM (Block Element Modifier)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Breakpoints (mobile-first)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Button_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[CSS Architecture Recommendations_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[CSS Modules (React  Next.js)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component Patterns_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component contract rules_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component file structure_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Container Query Pattern (preferred over breakpoints for components)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Core Discipline Structure → Component → Layout → Validate_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dark  Light Theme Implementation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dashboard Grid_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Data Table_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dependencies_10]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Form Field_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Modal  Dialog_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Navigation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[React  Next.js Component Architecture_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Responsive Layout System_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Role_73]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Rules_16]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[SKILL_123]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Skill UI Expert (UI)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[UI Validation Checklist_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Utility-First (Tailwind  custom utilities)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,15 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY__make_stream_app_state()]]
-- 9 edges to [[_COMMUNITY_AgentTarget]]
-- 8 edges to [[_COMMUNITY__process_inbound()]]
-- 3 edges to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[test_forward_stream.py]] - degree 41, connects to 5 communities
-- [[_PassthroughPipeline]] - degree 12, connects to 2 communities
-- [[_filtered_sentence_stream()]] - degree 11, connects to 1 community
-- [[_BlockingPipeline]] - degree 8, connects to 1 community
-- [[_sentences_from_deltas()]] - degree 7, connects to 1 community
+- [[Skill UI Expert (UI)_1]] - degree 14, connects to 1 community

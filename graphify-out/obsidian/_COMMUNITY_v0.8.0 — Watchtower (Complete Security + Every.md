@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 22
 ---
 
 # v0.8.0 — "Watchtower" (Complete Security + Every
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Bad API Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
+- [[Bad Logic Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
+- [[Critical Rules_3]] - document - .github/agents/safe-refactor.agent.md
+- [[Definition of Done]] - document - .github/agents/safe-refactor.agent.md
+- [[Example Refactorings]] - document - .github/agents/safe-refactor.agent.md
+- [[Forbidden Changes]] - document - .github/agents/safe-refactor.agent.md
+- [[Good Extract Helper]] - document - .github/agents/safe-refactor.agent.md
+- [[Good Variable Renaming]] - document - .github/agents/safe-refactor.agent.md
+- [[Refactoring Workflow]] - document - .github/agents/safe-refactor.agent.md
+- [[Remember]] - document - .github/agents/safe-refactor.agent.md
+- [[Repository Context_1]] - document - .github/agents/safe-refactor.agent.md
+- [[Role Definition]] - document - .github/agents/safe-refactor.agent.md
+- [[Safe Refactor Specialist]] - document - .github/agents/safe-refactor.agent.md
+- [[Safe Refactorings]] - document - .github/agents/safe-refactor.agent.md
+- [[Step 1 Verify Tests Pass]] - document - .github/agents/safe-refactor.agent.md
+- [[Step 2 Make Small, Focused Change]] - document - .github/agents/safe-refactor.agent.md
+- [[Step 3 Verify Tests Still Pass]] - document - .github/agents/safe-refactor.agent.md
+- [[Step 4 Check Code Quality]] - document - .github/agents/safe-refactor.agent.md
+- [[What You CAN Refactor]] - document - .github/agents/safe-refactor.agent.md
+- [[When in Doubt]] - document - .github/agents/safe-refactor.agent.md
+- [[⚠️ ONLY Refactor When]] - document - .github/agents/safe-refactor.agent.md
+- [[❌ NEVER]] - document - .github/agents/safe-refactor.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud — Master Feature List (Everything Ev]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feat]]
+- 1 edge to [[_COMMUNITY_ADR-002 Default-Allow Security Philosophy]]
 
 ## Top bridge nodes
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 1 community
-- [[Features_1]] - degree 7, connects to 1 community
-- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community
+- [[Safe Refactor Specialist]] - degree 10, connects to 1 community

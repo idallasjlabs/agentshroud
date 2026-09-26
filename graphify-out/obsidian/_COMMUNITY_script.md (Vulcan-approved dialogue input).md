@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (Vulcan-approved dialogue input)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
 
 ## Live Query (requires Dataview plugin)
 

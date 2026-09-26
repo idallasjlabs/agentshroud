@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Configuration  Environment Variables_15]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Environment Variables_4]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Function Details_21]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Purpose_142]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Related_28]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.effective_rootless (property)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.from_env()]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[config.py_3]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[config.py_2]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/_High-Value_Features_Justify_the_Effort
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
-
-## Top bridge nodes
-- [[Where's The REAL Value]] - degree 4, connects to 1 community

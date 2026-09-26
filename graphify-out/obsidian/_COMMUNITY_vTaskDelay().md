@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # vTaskDelay()
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[TickType_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[test_wakeword_statestubsfreertostask.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[vTaskDelay()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[Cron AgentShroud Daily Check-in]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[daily-checkin.sh (marvinpi status check)]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # 🔴 CRITICAL — Not Wired (code exists, tests pass,
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[SECTION 9 IMPORTANT NOTES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[TEAS Plus vs. TEAS Standard]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[The TM Symbol]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Trademark vs. Patent]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Why Standard Character Mark First]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Comprehensive]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
 
 ## Top bridge nodes
-- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - degree 6, connects to 1 community
+- [[SECTION 9 IMPORTANT NOTES]] - degree 5, connects to 1 community

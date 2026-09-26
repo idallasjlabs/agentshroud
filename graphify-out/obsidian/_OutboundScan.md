@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "RBACConfig"
+community: "TestPathIsolationManager"
 location: "L372"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/TestPathIsolationManager
 ---
 
 # _OutboundScan
@@ -17,9 +17,9 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[Result of the shared outbound text security scan.      processed a scan path (c]] - `rationale_for` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/TestPathIsolationManager

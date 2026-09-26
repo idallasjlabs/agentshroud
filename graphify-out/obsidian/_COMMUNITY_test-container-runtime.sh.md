@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.47
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # test-container-runtime.sh
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[check()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
-- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[Browser — Secure Browser Automation_4]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Purpose_78]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[README_83]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Related Skills_84]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Usage_86]] - document - docker/config/openclaw/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/test-container-runtimesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[Browser — Secure Browser Automation_4]] - degree 5, connects to 1 community

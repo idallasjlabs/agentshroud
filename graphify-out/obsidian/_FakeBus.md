@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "MiddlewareManager"
 location: "L604"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOCWebSocketHandler
+  - community/MiddlewareManager
 ---
 
 # _FakeBus
 
 ## Connections
-- [[.__init__()_10]] - `method` [EXTRACTED]
-- [[.subscribe()]] - `method` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
+- [[.subscribe()_1]] - `method` [EXTRACTED]
 - [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
 - [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
-- [[.unsubscribe()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[.unsubscribe()_1]] - `method` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

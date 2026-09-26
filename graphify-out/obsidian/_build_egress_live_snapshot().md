@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestCollaboratorPromptClassifiers"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # _build_egress_live_snapshot()
@@ -18,9 +18,9 @@ tags:
 - [[dashboard.py]] - `contains` [EXTRACTED]
 - [[dashboard_stats()]] - `calls` [EXTRACTED]
 - [[egress_websocket()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
 - [[soc_report()]] - `calls` [EXTRACTED]
 - [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

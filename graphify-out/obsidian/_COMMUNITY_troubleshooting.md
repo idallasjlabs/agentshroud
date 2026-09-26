@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # Troubleshooting
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Troubleshooting_3]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[VT_AGENTS table (directhermesopenclaw)]] - code - firmware/voice-terminal/main/app_main.c
+- [[Voice Gateway Port 8766 Offset (Lima per-port SSH forwarder race)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Voice Gateway Service]] - code - docker/docker-compose.yml
+- [[Voice Interface (STTTTS, wake word)]] - concept - docs/archive/FUTURE-FEATURES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/Troubleshooting
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-
-## Top bridge nodes
-- [[Troubleshooting_3]] - degree 5, connects to 1 community

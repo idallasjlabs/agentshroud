@@ -12,8 +12,8 @@ tags:
 # _DedupDispatchFake
 
 ## Connections
-- [[.__call__()_9]] - `method` [EXTRACTED]
-- [[.__init__()_195]] - `method` [EXTRACTED]
+- [[.__call__()_5]] - `method` [EXTRACTED]
+- [[.__init__()_147]] - `method` [EXTRACTED]
 - [[.test_recovery_refail_realerts_through_real_dedup()]] - `calls` [EXTRACTED]
 - [[CronStateMonitor]] - `uses` [INFERRED]
 - [[Mimics AlertDispatcher's id-based 24h dedup — the real downstream.]] - `rationale_for` [EXTRACTED]

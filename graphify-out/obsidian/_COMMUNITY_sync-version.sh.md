@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # sync-version.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[check_or_fix()]] - code - scripts/sync-version.sh
-- [[sync-version.sh]] - code - scripts/sync-version.sh
-- [[sync-version.sh script]] - code - scripts/sync-version.sh
+- [[sunday-upgrade-report.sh]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
+- [[sunday-upgrade-report.sh script]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
 
 ## Live Query (requires Dataview plugin)
 

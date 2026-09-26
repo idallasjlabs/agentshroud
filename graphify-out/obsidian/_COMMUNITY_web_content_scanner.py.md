@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_14]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Function Details_26]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_155]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_32]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Check A — Substantive change on the losing side_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Guardrails_11]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Invocation Forms_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Role_76]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[SKILL_128]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/web_content_scannerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - degree 12, connects to 1 community

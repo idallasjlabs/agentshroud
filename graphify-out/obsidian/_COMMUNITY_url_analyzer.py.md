@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Function Details_36]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Purpose_167]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Related_42]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._is_ssrf(hostname)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer.analyze(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer.analyze_and_pin(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[url_analyzer.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[url_analyzer.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[1. Clone the Repository_1]] - document - docs/operations/macos.md
+- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
+- [[3. Set Up Secrets_1]] - document - docs/operations/macos.md
+- [[4. Configure AgentShroud_1]] - document - docs/operations/macos.md
+- [[5. Build and Start_1]] - document - docs/operations/macos.md
+- [[6. Verify_1]] - document - docs/operations/macos.md
+- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
+- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
+- [[Fresh Install_1]] - document - docs/operations/macos.md
+- [[Prerequisites_5]] - document - docs/operations/macos.md
+- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
+- [[Updating to Latest Release_1]] - document - docs/operations/macos.md
+- [[macos]] - document - docs/operations/macos.md
 
 ## Live Query (requires Dataview plugin)
 

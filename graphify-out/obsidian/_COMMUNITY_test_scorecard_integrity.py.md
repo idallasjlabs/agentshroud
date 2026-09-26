@@ -1,55 +1,55 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.07
 members: 40
 ---
 
 # test_scorecard_integrity.py
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[.test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
-- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[TestScoreMalwareDefense_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
-- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
-- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
-- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
-- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[.analyze_content()]] - code - gateway/security/browser_security.py
+- [[.analyze_screenshot()]] - code - gateway/security/browser_security.py
+- [[.can_enter_credentials()]] - code - gateway/security/browser_security.py
+- [[.check_url_reputation()]] - code - gateway/security/browser_security.py
+- [[.test_data_uri_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[.test_excessive_subdomains()]] - code - gateway/tests/test_browser_security.py
+- [[.test_fake_captcha()]] - code - gateway/tests/test_browser_security.py
+- [[.test_fake_dialog_detected()]] - code - gateway/tests/test_browser_security.py
+- [[.test_fake_windows_alert()]] - code - gateway/tests/test_browser_security.py
+- [[.test_homograph_attack()]] - code - gateway/tests/test_browser_security.py
+- [[.test_hook_can_flag_threat()]] - code - gateway/tests/test_browser_security.py
+- [[.test_http_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[.test_https_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[.test_ip_address_url()]] - code - gateway/tests/test_browser_security.py
+- [[.test_ip_blocked_for_credentials()]] - code - gateway/tests/test_browser_security.py
+- [[.test_known_phishing_pattern()]] - code - gateway/tests/test_browser_security.py
+- [[.test_legitimate_url()]] - code - gateway/tests/test_browser_security.py
+- [[.test_localhost_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[.test_multiple_threats_aggregated()]] - code - gateway/tests/test_browser_security.py
+- [[.test_no_hook_returns_none_threat()]] - code - gateway/tests/test_browser_security.py
+- [[.test_safe_content_passes()]] - code - gateway/tests/test_browser_security.py
+- [[.test_screenshot_hook_registered()]] - code - gateway/tests/test_browser_security.py
+- [[.test_suspicious_domain_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[.test_suspicious_subdomain()]] - code - gateway/tests/test_browser_security.py
+- [[.test_tech_support_scam()]] - code - gateway/tests/test_browser_security.py
+- [[.test_urgent_action_required()]] - code - gateway/tests/test_browser_security.py
+- [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
+- [[Exception]] - code
+- [[PhishingURLDetected]] - code - gateway/security/browser_security.py
+- [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
+- [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
+- [[TestScreenshotAnalysis]] - code - gateway/tests/test_browser_security.py
+- [[TestSocialEngineeringDetection]] - code - gateway/tests/test_browser_security.py
+- [[TestURLReputation]] - code - gateway/tests/test_browser_security.py
+- [[ThreatAssessment]] - code - gateway/security/browser_security.py
+- [[ThreatLevel_1]] - code - gateway/security/browser_security.py
+- [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - paper - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[browser_security.py]] - code - gateway/security/browser_security.py
+- [[guard()]] - code - gateway/tests/test_browser_security.py
+- [[test_browser_security.py]] - code - gateway/tests/test_browser_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,16 +59,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY_compute_scorecard()]]
-- 2 edges to [[_COMMUNITY_Any]]
-- 1 edge to [[_COMMUNITY_get_trivy_summary()]]
-- 1 edge to [[_COMMUNITY__score_compliance_auditing()]]
+- 12 edges to [[_COMMUNITY_TrustManager]]
+- 11 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_ApprovalRequest]]
+- 2 edges to [[_COMMUNITY_test_filter_xml_blocks.py]]
+- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 2 edges to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager]]
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_SlackSocketClient]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_FetchOutcome]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
 
 ## Top bridge nodes
-- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
-- [[_score_malware_defense()]] - degree 15, connects to 4 communities
-- [[_is_fresh()]] - degree 8, connects to 4 communities
-- [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community
-- [[TestScoreMalwareDefense_1]] - degree 5, connects to 1 community
+- [[Exception]] - degree 17, connects to 13 communities
+- [[browser_security.py]] - degree 12, connects to 4 communities
+- [[ThreatAssessment]] - degree 22, connects to 3 communities
+- [[ThreatLevel_1]] - degree 9, connects to 3 communities
+- [[TestSocialEngineeringDetection]] - degree 12, connects to 1 community

@@ -1,89 +1,83 @@
 ---
 type: community
 cohesion: 0.04
-members: 74
+members: 68
 ---
 
 # test_agent_cve_registry.py
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 74 nodes
+**Members:** 68 nodes
 
 ## Members
-- [[7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a real…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id. This is the load-…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Freshly-synced advisories must never arrive pre-marked as mitigated — that…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Return a summary of the advisory registry for the specified agent. Counts are…]] - rationale - gateway/security/agent_cve_registry.py
-- [[Same integrity guard as test_no_entry_id_looks_like_a_cve, extended to the…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Synthetic ids are unique and numbered 1..N in list order for each agent.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Tests for gatewaysecurityagent_cve_registry.py — multi-agent advisory…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The first curated OpenClaw entry (Feishu media download) survives migration.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The migration produced a real (non-zero) verified GHSA match set.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
-- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[_hermes_by_title()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[get_agent_cve_summary]] - code - gateway/security/agent_cve_registry.py
-- [[ghsacvepending counts must be internally consistent and honest.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registries_contains_both()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registries_objects_match_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry.py]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_nonempty()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ash_ids_are_unique_and_stable_order()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_equals_openclaw_summary]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_equals_openclaw_summary()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_wrapped_agent_openclaw()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_empty_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_security_tool_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cvss_are_numeric()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_defense_layers_are_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_required_titles_present()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_auth_entries_use_gateway_auth_gate()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_command_injection_high_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_cve_registry_public_alias()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_is_fourteen()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_cves_is_hermes_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_wrapped_agent_is_hermes()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_symlink_entry_upstream_fix()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_verified_ids_are_never_fabricated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_wechat_adapter_fully_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_security_tool_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_first_entry_is_feishu_media_download()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_has_some_confident_ghsa_matches()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_match_counts_are_consistent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_cves_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_ghsa_and_cve_ids_well_formed()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_valid_status_and_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_registries_present_in_registries_dict()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_unknown_bot_id_raises_key_error]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_unknown_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_wrapped_agent_constant_unchanged()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[.test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
+- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
+- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
+- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_slack_proxy.py
+- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - rationale - gateway/tests/test_slack_proxy.py
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -93,12 +87,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_gateway.security.agent_cve_registry]]
-- 1 edge to [[_COMMUNITY_plan_remediation()]]
-- 1 edge to [[_COMMUNITY_check_upstream_cves()]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
+- 33 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 6 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 2 edges to [[_COMMUNITY_input_normalizer.py]]
 
 ## Top bridge nodes
-- [[get_agent_cve_summary]] - degree 31, connects to 5 communities
-- [[test_agent_cve_registry.py]] - degree 61, connects to 1 community
+- [[test_slack_proxy.py]] - degree 10, connects to 3 communities
+- [[_make_proxy()_2]] - degree 36, connects to 2 communities
+- [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
+- [[TestProxyOutbound]] - degree 12, connects to 2 communities
+- [[TestMultiFieldOutboundScanning]] - degree 10, connects to 2 communities

@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.15
 members: 17
 ---
 
 # test_cron_jobs_prompts.py
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Bootstrap cron copy must also have denial-token avoidance — except the     Daily]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Bootstrap cron copy must also have denial-token avoidance.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct the LLM to avoid 'denied'.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Path_40]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[1Password (credential vault)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[1Password Integration (service account)]] - document - docs/api/integration-guide.md
+- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[AgentShroud (system, C4 context)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Anthropic API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Brave Search API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[External Collaborators]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[GitHub (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Isaiah Jefferson (ArchitectOwner)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[OpenAI API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
+- [[Running Containers (gateway + bot, healthy)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
+- [[Telegram (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_config_validation.py]]
+- 1 edge to [[_COMMUNITY_container-net-diag.sh]]
+- 1 edge to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
+- 1 edge to [[_COMMUNITY_TestAppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
 
 ## Top bridge nodes
-- [[test_cron_jobs_prompts.py]] - degree 9, connects to 1 community
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 2 communities
+- [[AgentShroud (system, C4 context)]] - degree 9, connects to 1 community
+- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
+- [[PII Sanitizer (Presidio + Regex)]] - degree 3, connects to 1 community

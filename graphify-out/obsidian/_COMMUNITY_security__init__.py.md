@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
-- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
-- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
-- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
-- [[security__init__.py]] - code - gateway/security/__init__.py
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[⚠️ MEDIUM-VALUE COMPONENTS (Good Intent, Implementation Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ HIGH-VALUE SECURITY COMPONENTS (Real Protection)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ OVERALL ASSESSMENT GENUINE SECURITY FRAMEWORK]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔍 NEEDS STRENGTHENING (Risk of Security Theater)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/security/__init__py
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - degree 5, connects to 1 community

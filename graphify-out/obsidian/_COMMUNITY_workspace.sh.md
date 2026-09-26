@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.47
+cohesion: 0.15
 members: 13
 ---
 
 # workspace.sh
 
-**Cohesion:** 0.47 - moderately connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[check_container()]] - code - docker/scripts/workspace.sh
-- [[cmd_cat()]] - code - docker/scripts/workspace.sh
-- [[cmd_cp_from()]] - code - docker/scripts/workspace.sh
-- [[cmd_cp_to()]] - code - docker/scripts/workspace.sh
-- [[cmd_ls()]] - code - docker/scripts/workspace.sh
-- [[cmd_mkdir()]] - code - docker/scripts/workspace.sh
-- [[cmd_rm()]] - code - docker/scripts/workspace.sh
-- [[cmd_shell()]] - code - docker/scripts/workspace.sh
-- [[cmd_tree()]] - code - docker/scripts/workspace.sh
-- [[main command dispatcher (case $COMMAND)]] - code - docker/scripts/workspace.sh
-- [[usage()_5]] - code - docker/scripts/workspace.sh
-- [[workspace.sh]] - code - docker/scripts/workspace.sh
-- [[workspace.sh script]] - code - docker/scripts/workspace.sh
+- [[Anti-Patterns to Flag_18]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Core Principle_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 1 Application Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 2 Container Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 3 Network Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 4 Data Flow Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Output Format_36]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Review Layers_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Role_103]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[SKILL_179]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[SecureClaw-Specific Threat Model_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Skill Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Verification Commands_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 13
 TABLE source_file, type FROM #community/workspacesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[Skill Security Review (SEC)_2]] - degree 9, connects to 1 community

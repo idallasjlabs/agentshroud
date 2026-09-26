@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "PrivacyPolicyEnforcer"
 location: "L947"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # _already_ingested_ghsa_today()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime]] - `references` [EXTRACTED]
+- [[datetime_2]] - `references` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

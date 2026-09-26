@@ -1,57 +1,56 @@
 ---
 type: community
-cohesion: 0.05
-members: 42
+cohesion: 0.07
+members: 41
 ---
 
 # test_trust_manager.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 42 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[.test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_default_config()_7]] - code - gateway/tests/test_trust_manager.py
-- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_get_trust_unregistered()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_register_idempotent()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_register_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_unregistered_denied()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_untrusted_limited()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
-- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Config with strict thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test that actions are gated by trust level.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestActionGating]] - code - gateway/tests/test_trust_manager.py
-- [[TestAgentRegistration]] - code - gateway/tests/test_trust_manager.py
-- [[TestHistory]] - code - gateway/tests/test_trust_manager.py
-- [[TestPersistence_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustLevels]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
-- [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
-- [[manager()_3]] - code - gateway/tests/test_trust_manager.py
-- [[strict_config()_2]] - code - gateway/tests/test_trust_manager.py
-- [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
-- [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
-- [[trust_db()]] - code - gateway/tests/test_trust_manager.py
+- [[._build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
+- [[._emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
+- [[._enforce_tool_acl()]] - code - gateway/proxy/llm_proxy.py
+- [[._failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._forward_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._get_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._is_connect_error()]] - code - gateway/proxy/llm_proxy.py
+- [[._is_local_oom()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_backend_headers()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_backend_unavailable_response()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_failover_base()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._record_failover_event()]] - code - gateway/proxy/llm_proxy.py
+- [[._scan_inbound()]] - code - gateway/proxy/llm_proxy.py
+- [[._scan_request_data()]] - code - gateway/proxy/llm_proxy.py
+- [[._suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
+- [[._widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
+- [[.proxy_messages()]] - code - gateway/proxy/llm_proxy.py
+- [[.proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
+- [[Add 'null' as an accepted type for every non-required tool parameter, in place.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Append 'no_think' to the last user message, in place, if not already present.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a cloud→local failover dispatch.          Returns (status, headers, body]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a local→local-secondary failover when the primary local model hits OOM.]] - rationale - gateway/proxy/llm_proxy.py
+- [[BaseException]] - code - gateway/proxy/llm_proxy.py
+- [[Build a structured 503 for an unreachable local backend.          Logs one WARNI]] - rationale - gateway/proxy/llm_proxy.py
+- [[Build provider-compatible timeout fallback message to avoid silent Telegram fail]] - rationale - gateway/proxy/llm_proxy.py
+- [[Forward request to the real LLM API provider.          Retries up to 3 times on]] - rationale - gateway/proxy/llm_proxy.py
+- [[Inject per-backend auth for local backends that require it.          Unlike LM S]] - rationale - gateway/proxy/llm_proxy.py
+- [[Persist a failover event to the audit chain if wired.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy an LLM API request.          Returns (status_code, response_headers, respo]] - rationale - gateway/proxy/llm_proxy.py
+- [[Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Return True if the response indicates a local-model OOM or backend_unavailable.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Return the bare secondary local model name, or None if not configured.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan Anthropic tool_use blocks; replace denied tools with a text error block.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan inbound user message text for PII and injection.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan request data for PII and injection across different provider formats.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Send a single Telegram notice per cooldown window when failover activates.]] - rationale - gateway/proxy/llm_proxy.py
+- [[True for connection-level failures (refused  unreachable  reset).          Unw]] - rationale - gateway/proxy/llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,13 +60,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TrustManager]]
-- 10 edges to [[_COMMUNITY_TrustConfig]]
-- 7 edges to [[_COMMUNITY_TrustLevel]]
+- 21 edges to [[_COMMUNITY_soc.js]]
+- 6 edges to [[_COMMUNITY_SecureBrowser]]
+- 3 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
+- 2 edges to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
+- 2 edges to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Project Terminology]]
+- 1 edge to [[_COMMUNITY_graphify Skill]]
+- 1 edge to [[_COMMUNITY_Oracle — Feedback Analyst]]
 
 ## Top bridge nodes
-- [[test_trust_manager.py]] - degree 14, connects to 3 communities
-- [[TestTrustProgression]] - degree 11, connects to 3 communities
-- [[TestAgentRegistration]] - degree 9, connects to 3 communities
-- [[TestActionGating]] - degree 8, connects to 3 communities
-- [[TestHistory]] - degree 7, connects to 3 communities
+- [[.proxy_messages()]] - degree 28, connects to 7 communities
+- [[._failover_request()]] - degree 13, connects to 3 communities
+- [[._local_secondary_failover_request()]] - degree 9, connects to 2 communities
+- [[.proxy_messages_streaming()]] - degree 7, connects to 1 community
+- [[._local_backend_headers()]] - degree 6, connects to 1 community

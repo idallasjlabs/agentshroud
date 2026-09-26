@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Canvas Upstream Hostname Regression (v1.1.0 container rename)]] - rationale - gateway/tests/test_canvas_proxy.py
-- [[test_canvas_proxy.py]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_default_upstream_is_current_container_name()]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_env_override_takes_precedence()]] - code - gateway/tests/test_canvas_proxy.py
+- [[_json_escape()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[_read_token_file()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh script]] - code - docker/scripts/agentshroud-ssh-write-file.sh
 
 ## Live Query (requires Dataview plugin)
 

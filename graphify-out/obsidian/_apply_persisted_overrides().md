@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "TelegramAPIProxy"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TelegramAPIProxy
 ---
 
 # _apply_persisted_overrides()
@@ -15,7 +15,7 @@ tags:
 - [[.model_post_init()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig_2]] - `references` [EXTRACTED]
+- [[TeamsConfig]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

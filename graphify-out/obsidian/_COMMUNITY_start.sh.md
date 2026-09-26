@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.24
+cohesion: 0.15
 members: 13
 ---
 
 # start.sh
 
-**Cohesion:** 0.24 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[HERMES_HOME]] - code - docker/bots/hermes/start.sh
-- [[HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_CACHE_HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_DATA_HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_STATE_HOME]] - code - docker/bots/hermes/start.sh
-- [[_email_owner()]] - code - docker/bots/hermes/start.sh
-- [[_release_telegram_lock()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_bot_token()_1]] - code - docker/bots/hermes/start.sh
-- [[_telegram_get_me_ready()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_send()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_send_photo()]] - code - docker/bots/hermes/start.sh
-- [[start.sh]] - code - docker/bots/hermes/start.sh
-- [[start.sh script]] - code - docker/bots/hermes/start.sh
+- [[Architecture_3]] - document - docs/architecture/per-agent-isolation.md
+- [[Container Configuration]] - document - docs/architecture/per-agent-isolation.md
+- [[Design Principles]] - document - docs/architecture/per-agent-isolation.md
+- [[Docker Compose Template]] - document - docs/architecture/per-agent-isolation.md
+- [[Future Enhancements]] - document - docs/architecture/per-agent-isolation.md
+- [[IsolationVerifier Class]] - concept - docs/architecture/per-agent-isolation.md
+- [[Overview_7]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Audit Trails]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Container Isolation Architecture]] - document - docs/architecture/per-agent-isolation.md
+- [[Request Routing]] - document - docs/architecture/per-agent-isolation.md
+- [[Security Verification]] - document - docs/architecture/per-agent-isolation.md
+- [[Shared-Nothing Isolation Design Principle]] - rationale - docs/architecture/per-agent-isolation.md
+- [[per-agent-isolation]] - document - docs/architecture/per-agent-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,10 @@ members: 13
 TABLE source_file, type FROM #community/startsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+
+## Top bridge nodes
+- [[Shared-Nothing Isolation Design Principle]] - degree 3, connects to 2 communities

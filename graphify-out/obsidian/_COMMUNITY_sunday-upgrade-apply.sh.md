@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.24
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # sunday-upgrade-apply.sh
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[PATH_6]] - code - scripts/sunday-upgrade-apply.sh
-- [[Phantom-Tag False-Pass Bug]] - concept - scripts/lib/sunday-scan.sh
-- [[Prove the Outcome, Never the Steps]] - rationale - CLAUDE.md
-- [[_attempt_rollback()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_build_context_paths()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_buildable_services()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_capture_pins()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_dirty_build_files()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_docker_free_gb()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_mutating()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_should_run()]] - code - scripts/sunday-upgrade-apply.sh
-- [[_ts()]] - code - scripts/sunday-upgrade-apply.sh
-- [[check_noop_gate()]] - code - scripts/sunday-upgrade-apply.sh
-- [[die()_1]] - code - scripts/sunday-upgrade-apply.sh
-- [[err()]] - code - scripts/sunday-upgrade-apply.sh
-- [[log()_3]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_apply()]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_baseline()]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_discover()]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_preflight()]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_scan()]] - code - scripts/sunday-upgrade-apply.sh
-- [[phase_verify()]] - code - scripts/sunday-upgrade-apply.sh
-- [[sunday-scan.sh CVE Scan-Gate Library]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-upgrade-apply.sh]] - code - scripts/sunday-upgrade-apply.sh
-- [[sunday-upgrade-apply.sh main flow]] - code - scripts/sunday-upgrade-apply.sh
-- [[sunday-upgrade-apply.sh script]] - code - scripts/sunday-upgrade-apply.sh
-- [[sunday-upgrade-apply.sh script_1]] - code - scripts/sunday-upgrade-apply.sh
-- [[test-sunday-upgrade-scan.sh_2]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[warn()_1]] - code - scripts/sunday-upgrade-apply.sh
-- [[write_handoff()]] - code - scripts/sunday-upgrade-apply.sh
+- [[Alert Prioritization Display_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Anti-Patterns to Flag_15]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[CLI  TUI UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[CLI UX Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Confirmation Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Content Organization Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Contextual Actions_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Core Discipline Discover → Define → Design → Validate_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Dashboard UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Data Density Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Dependencies_11]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Drill-Down Pattern_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Error Message Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Feedback Loops (response time standards)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Field Design Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Form UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Generic Task Flow Template_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Information Architecture_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Interaction Design Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Navigation Hierarchy Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Progressive Disclosure_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Progressive Form Pattern (for multi-step workflows)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Role_74]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Rules_17]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[SKILL_124]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Site Alarm Acknowledgment Flow_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Skill UX Expert (UX)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Usability Audit Checklist_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[User Flow Diagrams_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Wayfinding_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,20 +50,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_check-vendor-compat.sh]]
-- 4 edges to [[_COMMUNITY_sunday_run_scan_gate]]
-- 3 edges to [[_COMMUNITY_auto_remediate_cves.py]]
-- 3 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 3 edges to [[_COMMUNITY_asb]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade.sh]]
-- 1 edge to [[_COMMUNITY_sunday-scan.sh]]
-- 1 edge to [[_COMMUNITY_8. Governance Model]]
-- 1 edge to [[_COMMUNITY_smoke.sh Startup Smoke Runner]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[sunday-upgrade-apply.sh]] - degree 36, connects to 4 communities
-- [[Prove the Outcome, Never the Steps]] - degree 5, connects to 3 communities
-- [[sunday-upgrade-apply.sh main flow]] - degree 10, connects to 2 communities
-- [[phase_scan()]] - degree 7, connects to 2 communities
-- [[phase_apply()]] - degree 12, connects to 1 community
+- [[Skill UX Expert (UX)_1]] - degree 15, connects to 1 community

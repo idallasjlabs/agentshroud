@@ -1,67 +1,66 @@
 ---
 type: community
-cohesion: 0.06
-members: 52
+cohesion: 0.05
+members: 51
 ---
 
 # test_hermes_model_resolver.py
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 52 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 51 nodes
 
 ## Members
-- [[A HERMES_MAIN_MODEL naming the anchor model directly (not via the…]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[An unrecognized mode value is treated conservatively as cloud.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[LOCAL_MODEL_ROUTES First-Prefix-Match-Wins Ordering Bug Class]] - rationale - gateway/proxy/llm_proxy.py
-- [[Mode comparison tolerates case and surrounding whitespace from env files.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[No arg → emit the model (start.sh convenience).]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[Resolve (model, provider) for Hermes from the container environment.…]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Resolve the model + provider Hermes should use, honouring local-model parity.…]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Return the Hermes provider key for a bare model name. Local models…]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Strip a known provider prefix from a model ref, leaving the bare model name.…]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Tests for the Hermes model resolver (SCRUM-70 — WS-C local-model parity). The…]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[_apply_stale_alias_correction()]] - code - docker/bots/hermes/resolve_model.py
-- [[_load_resolver()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[_resolve_from_env()]] - code - docker/bots/hermes/resolve_model.py
-- [[cloud mode with a Claude HERMES_MAIN_MODEL → that model + anthropic provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode with an OpenAI HERMES_MAIN_MODEL → openai provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode with everything unset → safe Anthropic default, never empty.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_CLOUD_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode must not use a stale cloud HERMES_MAIN_MODEL. Guards against the…]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode requested but neither HERMES_MAIN_MODEL nor local ref is local. Must…]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local-multi mode LM Studio dash-style anchor model → ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[main()]] - code - docker/bots/hermes/resolve_model.py
-- [[parametrize]] - code
-- [[provider_for_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model.py (Hermes)]] - code - docker/bots/hermes/resolve_model.py
-- [[strip_provider_prefix()]] - code - docker/bots/hermes/resolve_model.py
-- [[test_cli_default_key_is_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_emits_model_line()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_emits_provider_line()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_unknown_key_returns_nonzero()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_falls_back_to_cloud_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_no_refs_returns_safe_default()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_openai_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_uses_hermes_main_model_when_claude()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_hermes_model_resolver.py]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_ignores_stale_cloud_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_recognizes_nemotron_as_local()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_uses_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_multi_mode_uses_lmstudio_dash_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_mode_case_insensitive_and_whitespace_tolerant()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_provider_for_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_resolve_model_corrects_stale_alias_from_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_stale_qwen3_rapid_alias_corrected_to_nemotron()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_strip_provider_prefix()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_unknown_mode_treated_as_cloud()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_unrelated_model_names_pass_through_uncorrected()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[A connection-level error (not a statustimeout) also falls back to the     troub]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A single corrupted SSE line logs a warning and is skipped — it must not     abor]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A stream that goes straight to 'done' with no sentence events (e.g.     everythi]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A turn exceeding the soft threshold is flagged as an outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A turn under the soft threshold is recorded as a non-outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build the ``metadata`` dict attached to a voice ``forward`` request.      Defau]] - rationale - voice_gateway/server.py
+- [[DEFAULT OFF forwardstream body carries NO metadata key — byte-for-byte legacy]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Emit a structured per-turn latency record for a voice ``forward`` call.      Re]] - rationale - voice_gateway/server.py
+- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON no_memory=True → {no_memory True} ephemeral tag.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Outliers log at WARNING; normal turns do not.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS]] - rationale - voice_gateway/server.py
+- [[SSE keepalive comments (' ...') and blank lines are ignored, not     treated as]] - rationale - gateway/tests/test_voice_gateway.py
+- [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_call_agent_stream POSTs to forwardstream and yields each sentence     event a]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream emits a latency record on the success path.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_call_agent_stream()]] - code - voice_gateway/server.py
+- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_record_turn_latency()]] - code - voice_gateway/server.py
+- [[_sse_body()]] - code - gateway/tests/test_voice_gateway.py
+- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_voice_forward_metadata()]] - code - voice_gateway/server.py
+- [[test_call_agent_default_body_has_no_metadata()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_read_timeout()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_success()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_stream_empty_stream_yields_nothing()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_generic_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_non_400_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_skips_blank_and_comment_lines()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_yields_sentences_in_order()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_record_turn_latency_boundary_is_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_default_threshold_from_module()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_logs_info()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_outlier_logs_warning()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_over_threshold_is_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_default_off_is_empty()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_module_default_is_off()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_latency_guard.py]] - code - gateway/tests/test_voice_latency_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -71,7 +70,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gateway.proxy.llm_proxy]]
+- 9 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 5 edges to [[_COMMUNITY_test_a2a_policy.py]]
 
 ## Top bridge nodes
-- [[LOCAL_MODEL_ROUTES First-Prefix-Match-Wins Ordering Bug Class]] - degree 2, connects to 1 community
+- [[_call_agent_stream()]] - degree 18, connects to 2 communities
+- [[test_voice_latency_guard.py]] - degree 19, connects to 1 community
+- [[_record_turn_latency()]] - degree 10, connects to 1 community
+- [[_voice_forward_metadata()]] - degree 7, connects to 1 community
+- [[_sse_body()]] - degree 5, connects to 1 community

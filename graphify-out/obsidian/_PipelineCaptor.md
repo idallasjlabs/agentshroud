@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalRequest"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalRequest
 ---
 
 # _PipelineCaptor
 
 ## Connections
-- [[.__init__()_33]] - `method` [EXTRACTED]
+- [[.__init__()_156]] - `method` [EXTRACTED]
 - [[._run_forward()]] - `references` [EXTRACTED]
 - [[.process_inbound()_3]] - `method` [EXTRACTED]
 - [[.process_outbound()_3]] - `method` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[.test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
 - [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - `calls` [EXTRACTED]
 - [[.test_non_owner_body_user_id_passes_through()]] - `calls` [EXTRACTED]
-- [[AgentTarget_1]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Minimal pipeline mock that records which agent_id it was called with.]] - `rationale_for` [EXTRACTED]
 - [[_make_mock_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

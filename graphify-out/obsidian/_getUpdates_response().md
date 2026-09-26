@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "falco_monitor.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/falco_monitorpy
 ---
 
 # _getUpdates_response()
@@ -20,4 +20,4 @@ tags:
 - [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/falco_monitorpy

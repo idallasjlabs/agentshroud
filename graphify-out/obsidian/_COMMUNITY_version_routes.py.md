@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.14
 members: 16
 ---
 
 # version_routes.py
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Function Details_15]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Purpose_142]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Related_21]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[rollback_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[upgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_2]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[03-data]] - document - docs/diagrams/03-data.md
+- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
+- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
+- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
+- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
+- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
+- [[Current Status_2]] - document - docs/data/README.md
+- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
+- [[Data Documentation]] - document - docs/data/README.md
+- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
+- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
+- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
+- [[Planned Documents_1]] - document - docs/data/README.md
+- [[README_119]] - document - docs/data/README.md
+- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
+- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,11 @@ members: 16
 TABLE source_file, type FROM #community/version_routespy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 1 edge to [[_COMMUNITY_ADR-004 API Keys Never in Agent Container]]
+
+## Top bridge nodes
+- [[03-data]] - degree 6, connects to 1 community
+- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "gateway.security.agent_cve_registry"
+community: "Browser-Fetch Skill for 1Password Share Links"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - community/Browser-Fetch_Skill_for_1Password_Share_Links
 ---
 
 # _build_heading()
@@ -16,4 +16,4 @@ tags:
 - [[generate()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/code #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links

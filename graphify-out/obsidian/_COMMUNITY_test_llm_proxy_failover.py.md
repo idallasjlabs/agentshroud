@@ -1,48 +1,49 @@
 ---
 type: community
-cohesion: 0.13
-members: 33
+cohesion: 0.06
+members: 34
 ---
 
 # test_llm_proxy_failover.py
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 33 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[A healthy 200 message body must NOT be failed over.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_default_still_retries_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_interactive_header_skips_retries()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_llm_proxy_failover.py]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_per_request_opt_out_header_skips_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_529()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_http200()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_flag_off_returns_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_ollama_down_no_false_notice()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_streaming_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_tools_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_openai_quota_dropin()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_normal_200_passthrough_untouched()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_post_retry_429_now_failovers()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[.monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[.sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
+- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
+- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
+- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,10 +53,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 16 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_Enum]]
+- 3 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_apply-patches.js (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - REVISED]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_voice_task]]
+- 1 edge to [[_COMMUNITY_rbac_config.py]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
 
 ## Top bridge nodes
-- [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
-- [[make_proxy()_1]] - degree 24, connects to 1 community
-- [[LLMProxy_1]] - degree 2, connects to 1 community
+- [[TestFileSandbox]] - degree 55, connects to 17 communities
+- [[.monitor_sandbox()]] - degree 4, connects to 2 communities
+- [[.sandbox()]] - degree 3, connects to 2 communities

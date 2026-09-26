@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # v0.8.0 Watchtower Complete Feature List Final
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[v0.8.0 Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0 Watchtower Complete Feature List Final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[EnhancedApprovalQueue.submit]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

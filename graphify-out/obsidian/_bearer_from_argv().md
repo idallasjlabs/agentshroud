@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # _bearer_from_argv()
@@ -18,4 +18,4 @@ tags:
 - [[test_token_resolved_from_hermes_auth_token_file()]] - `calls` [EXTRACTED]
 - [[test_token_resolved_from_openclaw_password_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

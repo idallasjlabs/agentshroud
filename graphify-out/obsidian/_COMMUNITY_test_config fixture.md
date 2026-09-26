@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # test_config fixture
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[test_config fixture]] - code - gateway/tests/conftest.py
-- [[test_ledger fixture]] - code - gateway/tests/conftest.py
+- [[nemotron-named models misclassified as needing cloud provider in local mode]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

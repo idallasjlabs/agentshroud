@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[scriptscheck-vendor-compat.sh — A2A JSON-RPC smoke check]] - rationale - CHANGELOG.md
+- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

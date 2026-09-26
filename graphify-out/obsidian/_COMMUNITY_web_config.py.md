@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Purpose_183]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[0. Pre-existing session context worth recording_1]] - document - reports/upgrade-2026-09-06.md
+- [[1. Environment mapping_1]] - document - reports/upgrade-2026-09-06.md
+- [[2. Upgrade table]] - document - reports/upgrade-2026-09-06.md
+- [[3. Security findings]] - document - reports/upgrade-2026-09-06.md
+- [[4. Verification evidence]] - document - reports/upgrade-2026-09-06.md
+- [[5. Breaking changes  manual follow-ups (human review needed)_1]] - document - reports/upgrade-2026-09-06.md
+- [[6. Rollback instructions]] - document - reports/upgrade-2026-09-06.md
+- [[7. Time spent]] - document - reports/upgrade-2026-09-06.md
+- [[8. Branch  commits_1]] - document - reports/upgrade-2026-09-06.md
+- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)_1]] - document - reports/upgrade-2026-09-06.md
+- [[Summary line_1]] - document - reports/upgrade-2026-09-06.md
+- [[upgrade-2026-09-06]] - document - reports/upgrade-2026-09-06.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +29,10 @@ members: 12
 TABLE source_file, type FROM #community/web_configpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+
+## Top bridge nodes
+- [[upgrade-2026-09-06]] - degree 3, connects to 2 communities
